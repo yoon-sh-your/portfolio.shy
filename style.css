@@ -1,37 +1,41 @@
-*{
+/* Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   width: 100%;
-  /* height: 700vh; */
   height: 100%;
+  color: #222;
+  background-color: #e3e3eb;
+  overflow-x: hidden;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #000;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
   color: #fff;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-img {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  will-change: transform;
-  transform: translateX(0) scale(1.35);
-}
-
-section {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  padding: 1.5em;
-  overflow: hidden;
-}
-
-/* loader  */
+/* Loader Styles */
 .loader {
   position: fixed;
   top: 0;
@@ -43,6 +47,7 @@ section {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
+  z-index: 999;
 }
 
 .count-wrapper {
@@ -78,79 +83,41 @@ section {
   font-weight: lighter;
   line-height: 1;
 }
+
 .revealer {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container {
-  position: relative;
+
+/* Hero Section */
+.hero {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-}
-.site-info {
-  position: absolute;
-  top: 2em;
-  left: 2em;
   display: flex;
   flex-direction: column;
-  gap: 0.125em;
+  justify-content: center;
+  align-items: center;
 }
-.line {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  height: 18px;
-}
-.line p {
+
+.hero h1 {
   position: relative;
-  font-size: 14px;
+  left: -0.05em;
+  text-transform: uppercase;
   font-weight: 500;
-  letter-spacing: -0.125px;
-  opacity: 0.5;
-  font-family: "Arial", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transform: translateY(18px);
-  will-change: transform;
-}
-.toggle-btn {
-  position: absolute;
-  top: 2em;
-  right: 2em;
-  width: 60px;
-  height: 50px;
-  background-color: #fff;
-  border-radius: 100%;
-  transform: scale(0);
-}
-.toggle-btn img {
-  transform: scale(0.5);
-  max-width: 160px;
-
-}
-
-.header {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 1em;
-  transform-style: preserve-3d;
-  perspective: 2000px;
-}
-.header h1 {
-  position: relative;
   font-size: 20vw;
-  font-weight: lighter;
-  letter-spacing: -0.02em;
-  line-height: 0.85;
-  transform: rotateY(60deg);
-  transform-origin: bottom left;
-  will-change: transform;
-  opacity: 0;
-  color: #fff;
+  letter-spacing: -0.04em;
+  line-height: 1;
 }
-.hero-copy p{
+
+.hero-copy {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.hero-copy p {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -159,23 +126,61 @@ section {
   perspective: 2000px;
 }
 
+/* Intro Section */
+.intro {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-/* interactive  */
-/* section.interactive {
+.video-container-desktop {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* 화면 전체 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* 비디오가 컨테이너를 넘지 않도록 */
+}
+
+.video-preview {
+  position: relative;
+  width: 80%; /* 비디오 크기 조정 */
+  aspect-ratio: 16/9; /* 비디오 비율 유지 */
+  border-radius: 1.5rem; /* 기존 스타일 유지 */
+  background-color: #b9b9b3; /* 비디오 로딩 중 배경색 */
+  overflow: hidden;
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  pointer-events: none;
+}
+
+/* Interactive Section */
+section.interactive {
   background-color: #141414;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.outro h1 {
-  color: #000;
-  text-transform: uppercase;
-  font-size: 60px;
-  font-weight: 900;
-  letter-spacing: -2px;
-  line-height: 0.9;
+  height: 100vh; /* Ensure full height */
 }
 
 .slider {
@@ -184,6 +189,7 @@ section {
   height: 100%;
   overflow: hidden;
 }
+
 .slides {
   position: relative;
   width: 500%;
@@ -192,28 +198,36 @@ section {
   will-change: transform;
   transform: translateX(0);
 }
-.slide{
+
+.slide {
   position: relative;
   flex: 1;
   height: 100%;
 }
-.img {
+
+.slide .img {
   position: absolute;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.title {
+.slide .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide .title {
   position: relative;
   width: max-content;
   height: 200px;
   margin: 1.5em;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  z-index: 2
+  z-index: 2;
 }
 
-.title h1 {
+.slide .title h1 {
   position: relative;
   color: #fff;
   text-transform: uppercase;
@@ -221,14 +235,410 @@ section {
   font-weight: 900;
   letter-spacing: -2px;
   line-height: 0.9;
-  will-change: transform ;
+  will-change: transform;
 }
-.lenis.lenis-smooth[data-lenis-prevent]{
-  overscroll-behavior:contain;
+
+/* Outro Section */
+.outro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.lenis.lenis-stopped{
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero h1 {
+      font-size: 19vw;
+  }
+
+  .video-container-desktop {
+      display: none;
+  }
+
+  .video-container-mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+  }
+}
+
+/* Lenis and ScrollTrigger Styles */
+.lenis.lenis-smooth[data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
   overflow: clip;
 }
+
 .lenis.lenis-smooth iframe {
   pointer-events: none;
-} */
+}
+
+/* scroll viewer portfolio css */
+::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+h1 {
+  font-family: serif;
+  font-weight: 500;
+  font-size: 58px;
+}
+
+p,a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
+}
+/* slide-pf 컨테이너 스타일 */
+.slide-pf {
+  position: relative;
+  width: 100%;
+  background-color: #e3e3eb;
+  margin-top: 0; /* 메인 섹션과의 간격 제거 */
+}
+
+/* 메인 섹션들의 z-index 설정 */
+.hero, 
+.intro, 
+.interactive, 
+.outro {
+  position: relative;
+  z-index: 2;
+  background-color: #e3e3eb;
+}
+
+/* Gallery 섹션 스타일 수정 */
+.gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20em;
+  z-index: 1;
+}
+
+/* Fixed Elements의 z-index 조정 */
+.project-names,
+.preview-img,
+.progress-bar,
+.footer {
+  position: fixed;
+  z-index: 3;
+}
+
+/* Whitespace 조정 */
+.whitespace {
+  position: relative;
+  width: 100%;
+}
+
+.whitespace.w-1 {
+  height: 50vh;
+}
+
+.whitespace.w-2 {
+  height: 45vh;
+}
+
+/* 로더의 z-index 유지 */
+.loader {
+  z-index: 999;
+}
+.gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20em;
+}
+.project {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.index {
+  flex: 1;
+  padding-left: 2em;
+  height: 0;
+}
+.images {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100vh;
+}
+.img {
+  flex: 1;
+  width: 200px;
+  background-color: lightgray;
+  overflow: hidden;
+}
+.img img {
+  opacity: 0.9;
+}
+.index .mask {
+  position: absolute;
+  top: 0;
+  left: 2em;
+  height: 70px;
+  overflow: hidden;
+  will-change: transform;
+}
+.index .mask h1 {
+  position: relative;
+  will-change: transform;
+}
+
+.index .mask h1 span {
+  position: relative;
+  display: inline-block;
+  will-change: transform;
+}
+
+.digit-wrapper, .digit-wrapper span {
+  display: inline-block;
+  position: relative;
+  will-change: transform;
+}
+/* Fixed Elements 스타일 수정 */
+.project-names {
+  position: fixed;
+  width: 200px;
+  top: 50vh;
+  left: 40%;
+  transform: translateX(0%);
+  z-index: 10; /* z-index 추가 */
+  visibility: visible; /* visibility 수정 */
+  opacity: 1; /* opacity 수정 */
+}
+
+.preview-img {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  max-width: 40vw;
+  height: calc(50vh - 2em);
+  opacity: 0.9;
+  z-index: 10; /* z-index 추가 */
+  visibility: visible; /* visibility 수정 */
+}
+
+/* 갤러리 섹션 관련 스타일 */
+.scroll-pt {
+  position: relative;
+  z-index: 1;
+}
+
+/* Interactive Section 스타일 */
+.interactive.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+/* 갤러리 섹션에서만 visibility 활성화 */
+.slide-pf .project-names,
+.slide-pf .preview-img {
+    visibility: visible;
+}
+.indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+}
+
+.symbol {
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+
+.name {
+  height: 18px;
+}
+
+.name p {
+  color: gray;
+}
+
+.name.active p {
+  color: #000;
+}
+
+.preview-img {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  max-width: 40vw;
+  height: calc(50vh - 2em);
+  opacity: 0.9;
+}
+
+.progress-bar {
+  position : fixed;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100vh;
+  background-color: #000;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+
+/* scroll-pt  */
+
+.whitespace.w-1 {
+  width: 100vw;
+  height: 50vh;
+}
+.whitespace.w-2 {
+  width: 100vw;
+  height: 45vh;
+}
+.gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20em;
+}
+.project {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+.index {
+  flex: 1;
+  padding-left: 2em;
+  height: 0;
+}
+.images {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  height: 100vh;
+}
+.img {
+  flex: 1;
+  width: 200px;
+  background-color: lightgray;
+  overflow: hidden;
+}
+.img img {
+  opacity: 0.9;
+}
+.index .mask {
+  position: absolute;
+  top: 0;
+  left: 2em;
+  height: 70px;
+  overflow: hidden;
+  will-change: transform;
+}
+.index .mask h1 {
+  position: relative;
+  will-change: transform;
+}
+
+.index .mask h1 span {
+  position: relative;
+  display: inline-block;
+  will-change: transform;
+}
+
+.digit-wrapper, .digit-wrapper span {
+  display: inline-block;
+  position: relative;
+  will-change: transform;
+}
+
+.project-names {
+  position: fixed;
+  width: 200px;
+  top: 50vh;
+  left: 40%;
+  transform: translateX(0%);
+}
+
+.indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+}
+
+.symbol {
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+
+.name {
+  height: 18px;
+}
+
+.name p {
+  color: gray;
+}
+
+.name.active p {
+  color: #000;
+}
+
+.preview-img {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  max-width: 40vw;
+  height: calc(50vh - 2em);
+  opacity: 0.9;
+}
+
+.progress-bar {
+  position : fixed;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100vh;
+  background-color: #000;
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+.footer p {
+  position: fixed;
+  bottom: 2em;
+  left: 40%;
+  text-transform: none;
+}
+
