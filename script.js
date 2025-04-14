@@ -172,6 +172,61 @@ document.addEventListener("DOMContentLoaded", () => {
             };
   
             animate();
+
+            // My Skills Section 애니메이션
+const mySkillsSection = document.querySelector(".my-skills");
+
+const revealMySkills = () => {
+  // Animate progress bars
+  const progressBars = mySkillsSection.querySelectorAll(".progress");
+  progressBars.forEach((bar) => {
+    const percentage = bar.getAttribute("data-percentage");
+    setTimeout(() => {
+      bar.style.width = `${percentage}%`;
+    }, 100);
+  });
+
+  // Animate circles
+  const circles = mySkillsSection.querySelectorAll(".circle");
+  circles.forEach((circle) => {
+    const percentage = parseInt(circle.getAttribute("data-percentage"), 10);
+    let currentPercentage = 0;
+
+    const animateCircle = () => {
+      if (currentPercentage <= percentage) {
+        const angle = currentPercentage * 3.6;
+        circle.style.background = `conic-gradient(
+          #00d9ff ${angle}deg,
+          #1e2a38 0deg
+        )`;
+        currentPercentage++;
+        requestAnimationFrame(animateCircle);
+      }
+    };
+
+    requestAnimationFrame(animateCircle);
+  });
+};
+
+// IntersectionObserver로 스크롤 진입 시 애니메이션 실행
+if (mySkillsSection) {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        revealMySkills();
+        obs.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.4
+  });
+
+  observer.observe(mySkillsSection);
+}
+
+
+
+
         }
   
         // Interactive Section Animations
@@ -325,7 +380,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // 이미지 프리뷰 설정
         const previewImg = document.querySelector(".preview-img img");
         const imgElements = document.querySelectorAll(".img img");
-  
+        
+        // ScrollTrigger to change preview image on scroll
         imgElements.forEach((img) => {
             ScrollTrigger.create({
                 trigger: img,
@@ -335,12 +391,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 onEnterBack: () => (previewImg.src = img.src),
             });
         });
-  
+        
         // 프로젝트 이름 및 인디케이터 설정
         const projects = document.querySelectorAll(".project");
         const indicator = document.querySelector(".indicator");
         const projectNames = ["Atilas Studio", "Nimbus", "Solara", "Quantum"];
-  
+        
         // 프로젝트 이름 동적 생성
         const projectNamesContainer = document.querySelector(".project-names");
         projectNamesContainer.innerHTML = `
@@ -353,10 +409,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `).join('')}
         `;
-  
+        
         const names = document.querySelectorAll(".name");
         const indicatorStep = 50;
-  
+        
         // 프로젝트 애니메이션 설정
         projects.forEach((project, index) => {
             ScrollTrigger.create({
@@ -385,7 +441,60 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         });
-  
+        
+        // Adjust opacity for .preview-img and .project-names based on .project .images last img
+        const projectImages = document.querySelectorAll(".project .images img"); // Get all project images
+        const lastImage = projectImages[projectImages.length - 1]; // Get the last image of each project
+        
+        ScrollTrigger.create({
+            trigger: lastImage,
+            start: "top bottom", // When the last image is in the viewport (adjust based on your desired trigger position)
+            end: "bottom bottom", // End when the last image leaves the viewport (adjust based on your desired trigger position)
+            onEnter: () => {
+                // When the last image is in view, set opacity of .preview-img and .project-names to 0
+                gsap.to(".preview-img", {
+                    opacity: 0,
+                    duration: 0.3,
+                    ease: "power2.out",
+                    onStart: () => {
+                      document.querySelector(".project-names").style.display = "none";
+                    }
+                  });
+                gsap.to(".project-names", {
+                    opacity: 0,
+                    duration: 0.3,
+                    ease: "power2.out",
+                    onStart: () => {
+                      document.querySelector(".project-names").style.display = "none";
+                    }
+                  });
+            },
+            onLeaveBack: () => {
+                // When scrolling back up, restore opacity of .preview-img and .project-names to 1
+                gsap.to(".preview-img", {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power2.out",
+                    onStart: () => {
+                      document.querySelector(".project-names").style.display = "block";
+                    }
+                  });
+                gsap.to(".project-names", {
+                    opacity: 1,
+                    duration: 0.3,
+                    ease: "power2.out",
+                    onStart: () => {
+                      document.querySelector(".project-names").style.display = "block";
+                    }
+                  });
+            },
+            start: "bottom+=2% top", // This makes the opacity change happen 5% after the element's bottom
+        });
        
     }
+
+
+
+
+
   });
