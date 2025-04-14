@@ -417,25 +417,25 @@ p,a {
 }
 /* Fixed Elements 스타일 수정 */
 .project-names {
-  position: fixed;
+  position: sticky;
   width: 200px;
-  top: 50vh;
-  left: 40%;
+  bottom: 18em;
+  left: 44vw;
   transform: translateX(0%);
-  z-index: 10; /* z-index 추가 */
-  visibility: visible; /* visibility 수정 */
-  opacity: 1; /* opacity 수정 */
+  z-index: 10; 
+  visibility: visible; 
+  opacity: 1; 
 }
 
 .preview-img {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
+  position: sticky;
+  bottom: 8em;
+  left: 55vw;
   max-width: 40vw;
   height: calc(50vh - 2em);
   opacity: 0.9;
-  z-index: 10; /* z-index 추가 */
-  visibility: visible; /* visibility 수정 */
+  z-index: 10; 
+  visibility: visible; 
 }
 
 /* 갤러리 섹션 관련 스타일 */
@@ -467,12 +467,6 @@ p,a {
   will-change: transform;
 }
 
-.symbol {
-  width: 12px;
-  height: 12px;
-  background-color: #000;
-  clip-path: polygon(0 50%, 100% 100%, 100% 0);
-}
 
 .name {
   height: 18px;
@@ -480,19 +474,13 @@ p,a {
 
 .name p {
   color: gray;
+  font-size: 1.3vw;
+  margin: 0.5em 0;
 }
 
 .name.active p {
   color: #000;
-}
-
-.preview-img {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  max-width: 40vw;
-  height: calc(50vh - 2em);
-  opacity: 0.9;
+  font-weight: bolder;
 }
 
 .progress-bar {
@@ -576,69 +564,5 @@ p,a {
   will-change: transform;
 }
 
-.project-names {
-  position: fixed;
-  width: 200px;
-  top: 50vh;
-  left: 40%;
-  transform: translateX(0%);
-}
 
-.indicator {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  will-change: transform;
-}
-
-.symbol {
-  width: 12px;
-  height: 12px;
-  background-color: #000;
-  clip-path: polygon(0 50%, 100% 100%, 100% 0);
-}
-
-.name {
-  height: 18px;
-}
-
-.name p {
-  color: gray;
-}
-
-.name.active p {
-  color: #000;
-}
-
-.preview-img {
-  position: fixed;
-  bottom: 2em;
-  right: 2em;
-  max-width: 40vw;
-  height: calc(50vh - 2em);
-  opacity: 0.9;
-}
-
-.progress-bar {
-  position : fixed;
-  top: 0;
-  right: 0;
-  width: 8px;
-  height: 100vh;
-  background-color: #000;
-  transform-origin: top;
-  transform: scaleY(0);
-}
-
-.footer p {
-  position: fixed;
-  bottom: 2em;
-  left: 40%;
-  text-transform: none;
-}
 
