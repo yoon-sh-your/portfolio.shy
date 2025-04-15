@@ -1,8 +1,10 @@
+
 /* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -15,7 +17,7 @@ body {
   color: #222;
   background-color: #e3e3eb;
   overflow-x: hidden;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -28,11 +30,24 @@ p {
   font-weight: 500;
 }
 
-a {
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+li {
+  list-style: none;
+}
+
+p,a {
   text-decoration: none;
-  color: #fff;
-  font-size: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
   font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
 }
 
 /* Loader Styles */
@@ -82,6 +97,7 @@ a {
   font-size: 360px;
   font-weight: lighter;
   line-height: 1;
+  font-family: serif;
 }
 
 .revealer {
@@ -91,33 +107,8 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/* Hero Section */
-.hero {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
-.hero h1 {
-  position: relative;
-  left: -0.05em;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 20vw;
-  letter-spacing: -0.04em;
-  line-height: 1;
-}
-
-.hero-copy {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.hero-copy p {
+.header {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -125,6 +116,110 @@ a {
   transform-style: preserve-3d;
   perspective: 2000px;
 }
+.header h1{
+  position: relative;
+  font-size: 25vw;
+  font-weight: lighter;
+  letter-spacing: -0.02em;
+  line-height: 0.85;
+  transform: rotateY(60deg);
+  transform-origin: bottom left;
+  will-change: transform;
+  opacity: 0;
+}
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero_contants {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; 
+  position: absolute;
+  top: 0;
+  left: 1vw;
+  width: 100%;
+  padding: 1vw 2vw;
+}
+.scroll_nts {
+  position: absolute;
+  bottom: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll_nts p{
+  font-size: 1.4vw;
+  text-align: center;
+  margin-bottom: 1vw;
+  font-weight: 100;
+}
+.scroll_nts i{
+  font-size: 3vw;
+}
+
+.hero_le {
+  font-weight: lighter;
+  font-size: 2vw;
+}
+
+.toggle-btn {
+  position: fixed;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    right: 2vw;
+    top: 2vw;
+    z-index: 99999;
+    transform: translateZ(999px); /* 3D 공간에서 앞으로 배치 */
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.toggle-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.toggle-menu {
+  position: fixed;
+  right: 6vw;
+  top: 0px;
+  display: none;
+  z-index: 99998;
+}
+
+.toggle-menu ul{
+  display: flex;
+  gap: 2em;
+}
+
+.toggle-menu ul li a:hover {
+  color: #00d9ff;
+}
+
+.hero h1 {
+  position: relative;
+  font-size: 11vw;
+  font-weight: 500;
+  letter-spacing: -0.8vw;
+  transform: rotateY(60deg);
+  transform-origin: bottom left;
+  will-change: transform;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+
 
 /* Intro Section */
 .intro {
@@ -174,41 +269,38 @@ iframe {
 }
 
 /* Interactive Section */
-section.interactive {
-  background-color: #141414;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh; /* Ensure full height */
+
+.interactive {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .slider {
-  position: relative;
   width: 100%;
   height: 100%;
+  position: relative;
   overflow: hidden;
 }
 
 .slides {
-  position: relative;
-  width: 500%;
-  height: 100%;
   display: flex;
+  height: 100%;
+  position: relative;
   will-change: transform;
-  transform: translateX(0);
 }
 
 .slide {
-  position: relative;
-  flex: 1;
   height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .slide .img {
-  position: absolute;
   width: 100%;
   height: 100%;
+  position: relative;
   overflow: hidden;
 }
 
@@ -216,26 +308,21 @@ section.interactive {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform-origin: center center;
+  will-change: transform;
 }
-
 .slide .title {
-  position: relative;
-  width: max-content;
-  height: 200px;
-  margin: 1.5em;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 10%; /* bottom에서 top으로 변경 */
+  left: 10%;
   z-index: 2;
 }
 
 .slide .title h1 {
-  position: relative;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 85px;
-  font-weight: 900;
-  letter-spacing: -2px;
-  line-height: 0.9;
-  will-change: transform;
+  font-size: 3rem;
+  line-height: 1.2;
+  transform: translateY(-200px); /* 상단에서 내려오는 애니메이션을 위해 유지 */
 }
 
 /* Outro Section */
@@ -276,32 +363,7 @@ section.interactive {
   pointer-events: none;
 }
 
-/* scroll viewer portfolio css */
-::-webkit-scrollbar {
-  display: none;
-}
 
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-h1 {
-  font-family: serif;
-  font-weight: 500;
-  font-size: 58px;
-}
-
-p,a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: serif;
-  font-size: 14px;
-  font-weight: 500;
-  color: #000;
-  transition: color 0.3s;
-}
 /* slide-pf 컨테이너 스타일 */
 .slide-pf {
   position: relative;
@@ -316,8 +378,7 @@ p,a {
 .interactive, 
 .outro {
   position: relative;
-  z-index: 2;
-  background-color: #e3e3eb;
+      z-index: 1;
 }
 
 /* Gallery 섹션 스타일 수정 */
@@ -564,29 +625,33 @@ p,a {
 
 .skills-container {
   text-align: center;
-  width: 90%;
+  width: 100%;
   margin: 2rem;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .skills-container h1 {
-  font-size: 2.5rem;
+  font-size: 7.5rem;
   margin-bottom: 3rem;
   margin-top: 0;
-}
-
-.highlight {
-  color: #00d9ff;
+  font-weight: bold;
+  color: #b4b4b447;
+  position: absolute;
+  top: -55px;
+  left: 0;
+  letter-spacing: -8px;
 }
 
 .skills {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  width: 100%;
 }
 
 .technical-skills, .professional-skills {
@@ -597,6 +662,20 @@ p,a {
 .technical-skills h2 {
   text-decoration: underline;
   margin-bottom: 3rem;
+}
+.circles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 가로 2칸 */
+  gap: 2rem; /* 간격 설정 */
+  justify-items: center; /* 아이템 가운데 정렬 */
+  align-items: center;
+  max-width: 100px;
+  padding: 0 5rem;
+}
+
+.professional-skills h2 {
+  grid-column: 1 / -1; /* 헤더는 그리드 전체 너비 차지 */
+  text-align: center;
 }
 
 .skill {
@@ -683,7 +762,7 @@ p,a {
 
 .design {
   width: 100vw;
-  height: 800vh;
+  height: 700vh;
 }
 
 .card img {
@@ -692,7 +771,12 @@ p,a {
   object-fit: cover;
 }
 
-.design_hero,
+.card-description p {
+  text-transform:lowercase;
+  color: #fff;
+  margin-top: 0.2em;
+}
+
 .design-sticky,
 .outro {
   width: 100vw;
@@ -700,11 +784,7 @@ p,a {
   overflow: hidden;
 }
 
-.design_hero {
-  background: url(./assets/img3.webp) no-repeat 50% 50%;
-  background-size: cover;
 
-}
 .outro {
   display: flex;
   justify-content: center;

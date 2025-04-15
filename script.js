@@ -63,19 +63,140 @@ document.addEventListener("DOMContentLoaded", () => {
             },
         });
     });
+
+
   
     // 메인 컨텐츠 초기화 함수
     function initMainContent() {
-        // Hero Section Animations
-        gsap.to(".hero h1", {
+     // 토글 버튼 초기화
+    gsap.set(".toggle-btn", {
+        opacity: 0,
+        scale: 0,
+        force3D: true,
+    });
+
+    const heroTl = gsap.timeline({
+        defaults: {
+            ease: "power3.out"
+        }
+    });
+
+    heroTl
+        .to(".hero h1", {
             rotateY: 0,
             opacity: 1,
-            duration: 2,
-            ease: "power3.out",
-            delay: 0.5
+            duration: 2
+        })
+        .to(".toggle-btn", {
+            scale: 1,
+            opacity: 1,
+            duration: 1,
+            ease: "power4.inOut",
+            force3D: true
+        }, "-=1.5");
+
+    // 토글 버튼 z-index 유지
+    gsap.set(".toggle-btn", {
+        zIndex: 999999,
+        force3D: true,
+        clearProps: "transform" // transform 속성 초기화
+    });
+
+    // ScrollTrigger에서 토글 버튼 처리
+    ScrollTrigger.create({
+        trigger: "body",
+        start: "top top",
+        end: "bottom bottom",
+        onUpdate: () => {
+            gsap.set(".toggle-btn", {
+                zIndex: 999999,
+                force3D: true,
+                clearProps: "transform"
+            });
+        }
+    });
+}
+// 여기에 토글 메뉴 초기화 코드 추가
+const toggleBtn = document.querySelector('.toggle-btn');
+const toggleMenu = document.querySelector('.toggle-menu');
+let isMenuOpen = false;
+
+// 초기 상태 설정
+gsap.set(toggleMenu, {
+    display: 'none',
+    opacity: 0,
+    zIndex: 99999
+});
+
+// 토글 버튼 클릭 이벤트
+toggleBtn.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+    
+    if (isMenuOpen) {
+        // 메뉴 열기
+        gsap.to(toggleMenu, {
+            display: 'block',
+            opacity: 1,
+            duration: 0.3,
+            ease: 'power2.out',
+            onStart: () => {
+                toggleMenu.style.display = 'block';
+            }
         });
-  
-        // Intro Section Animations (Desktop)
+    } else {
+        // 메뉴 닫기
+        gsap.to(toggleMenu, {
+            opacity: 0,
+            duration: 0.3,
+            ease: 'power2.in',
+            onComplete: () => {
+                toggleMenu.style.display = 'none';
+            }
+        });
+    }
+});
+
+// 메뉴 항목 클릭 시 자동으로 메뉴 닫기
+const menuLinks = toggleMenu.querySelectorAll('a');
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        isMenuOpen = false;
+        gsap.to(toggleMenu, {
+            opacity: 0,
+            duration: 0.3,
+            ease: 'power2.in',
+            onComplete: () => {
+                toggleMenu.style.display = 'none';
+            }
+        });
+    });
+});
+
+
+
+// 현재 스크롤 위치에 따라 active 클래스 추가
+window.addEventListener('scroll', () => {
+    const sections = ['hero', 'interactive', 'scroll-port', 'my-skills', 'design'];
+    const currentSection = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+            const rect = element.getBoundingClientRect();
+            return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+    });
+
+    menuLinks.forEach(link => {
+        const href = link.getAttribute('href').substring(1);
+        if (href === currentSection) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+});
+
+
         if (window.innerWidth >= 900) {
             const videoContainer = document.querySelector(".video-container-desktop");
   
@@ -123,6 +244,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
   
+            ScrollTrigger.create({
+                trigger: ".intro",
+                start: "top bottom",
+                end: "bottom top",
+                onEnter: () => {
+                    gsap.set(".toggle-btn", {
+                        zIndex: 999999,
+                        force3D: true,
+                        clearProps: "transform"
+                    });
+                }
+            });
             gsap.timeline({
                 scrollTrigger: {
                     trigger: ".intro",
@@ -207,7 +340,30 @@ const revealMySkills = () => {
     requestAnimationFrame(animateCircle);
   });
 };
-
+ScrollTrigger.create({
+    trigger: ".scroll-port",
+    start: "top bottom",
+    end: "bottom top",
+    onEnter: () => {
+        gsap.set(".toggle-btn", {
+            zIndex: 999999,
+            force3D: true,
+            clearProps: "transform"
+        });
+    }
+});
+ScrollTrigger.create({
+    trigger: ".outro",
+    start: "top bottom",
+    end: "bottom top",
+    onEnter: () => {
+        gsap.set(".toggle-btn", {
+            zIndex: 999999,
+            force3D: true,
+            clearProps: "transform"
+        });
+    }
+});
 // IntersectionObserver로 스크롤 진입 시 애니메이션 실행
 if (mySkillsSection) {
   const observer = new IntersectionObserver((entries, obs) => {
@@ -230,109 +386,148 @@ if (mySkillsSection) {
         }
   
         // Interactive Section Animations
-        const interSection = document.querySelector(".interactive");
-        const slidesContainer = document.querySelector(".slides");
-        const slider = document.querySelector(".slider");
-        const slides = document.querySelectorAll(".slide");
-  
-        const interHeight = window.innerHeight * 4;
-        const totalMove = slidesContainer.offsetWidth - slider.offsetWidth;
-        const slideWidth = slider.offsetWidth;
-  
-        slides.forEach((slide) => {
-            const title = slide.querySelector(".title h1");
-            gsap.set(title, { y: -200 });
-        });
-  
-        let currentVisibleIndex = null;
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                const currentIndex = Array.from(slides).indexOf(entry.target);
-                const titles = Array.from(slides).map((slide) =>
-                    slide.querySelector(".title h1")
-                );
-  
-                if (entry.intersectionRatio >= 0.25) {
-                    currentVisibleIndex = currentIndex;
-  
-                    titles.forEach((title, index) => {
-                        gsap.to(title, {
-                            y: index === currentIndex ? 0 : -200,
-                            duration: 0.5,
-                            ease: "power2.out",
-                            overwrite: true,
+        function initInteractiveSection() {
+            const interSection = document.querySelector(".interactive");
+            if (!interSection) return;
+        
+            const slidesContainer = document.querySelector(".slides");
+            const slider = document.querySelector(".slider");
+            const slides = document.querySelectorAll(".slide");
+        
+            // 슬라이드 컨테이너의 너비를 모든 슬라이드의 총 너비로 설정
+            const totalSlides = slides.length; // 이제 4가 됨
+            gsap.set(slidesContainer, {
+                width: `${totalSlides * 100}%` // 400%가 됨
+            });
+        
+            // 각 슬라이드의 너비를 전체 너비의 균등한 비율로 설정
+            slides.forEach(slide => {
+                gsap.set(slide, {
+                    width: `${100 / totalSlides}%` // 25%가 됨
+                });
+            });
+        
+            const interHeight = window.innerHeight * 4; // 높이를 4배로 증가
+            const totalMove = slidesContainer.offsetWidth - slider.offsetWidth;
+            const slideWidth = slider.offsetWidth;
+        
+            // 초기 상태 설정
+            gsap.set(slidesContainer, {
+                x: window.innerWidth,
+                opacity: 0
+            });
+        
+            // 타이틀 초기 상태 설정
+            slides.forEach((slide) => {
+                const title = slide.querySelector(".title h1");
+                gsap.set(title, { y: -200 });
+            });
+        
+            let currentVisibleIndex = null;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    const currentIndex = Array.from(slides).indexOf(entry.target);
+                    const titles = Array.from(slides).map((slide) =>
+                        slide.querySelector(".title h1")
+                    );
+        
+                    if (entry.intersectionRatio >= 0.25) {
+                        currentVisibleIndex = currentIndex;
+                        titles.forEach((title, index) => {
+                            gsap.to(title, {
+                                y: index === currentIndex ? 0 : -200,
+                                duration: 0.5,
+                                ease: "power2.out",
+                                overwrite: true,
+                            });
                         });
+                    } else if (
+                        entry.intersectionRatio < 0.25 &&
+                        currentVisibleIndex === currentIndex
+                    ) {
+                        const prevIndex = currentIndex - 1;
+                        currentVisibleIndex = prevIndex >= 0 ? prevIndex : null;
+                        titles.forEach((title, index) => {
+                            gsap.to(title, {
+                                y: index === prevIndex ? 0 : -200,
+                                duration: 0.5,
+                                ease: "power2.out",
+                                overwrite: true,
+                            });
+                        });
+                    }
+                });
+            }, {
+                root: slider,
+                threshold: [0, 0.25],
+            });
+        
+            slides.forEach((slide) => observer.observe(slide));
+        
+            // 진입 애니메이션
+            ScrollTrigger.create({
+                trigger: interSection,
+                start: "top bottom",
+                end: "top center",
+                onEnter: () => {
+                    gsap.to(slidesContainer, {
+                        x: 0,
+                        opacity: 1,
+                        duration: 1.2,
+                        ease: "power3.out"
                     });
-                } else if (
-                    entry.intersectionRatio < 0.25 &&
-                    currentVisibleIndex === currentIndex
-                ) {
-                    const prevIndex = currentIndex - 1;
-                    currentVisibleIndex = prevIndex >= 0 ? prevIndex : null;
-  
-                    titles.forEach((title, index) => {
-                        gsap.to(title, {
-                            y: index === prevIndex ? 0 : -200,
-                            duration: 0.5,
-                            ease: "power2.out",
-                            overwrite: true,
-                        });
+                },
+                once: true
+            });
+        
+            // 메인 슬라이드 애니메이션
+            ScrollTrigger.create({
+                trigger: interSection,
+                start: "top top",
+                end: `+=${interHeight}px`,
+                pin: true,
+                pinSpacing: true,
+                onUpdate: (self) => {
+                    const progress = self.progress;
+                    const mainMove = progress * totalMove;
+        
+                    gsap.set(slidesContainer, {
+                        x: -mainMove
+                    });
+        
+                    const currentSlide = Math.floor(mainMove / slideWidth);
+                    const sliderProgress = (mainMove % slideWidth) / slideWidth;
+        
+                    slides.forEach((slide, index) => {
+                        const image = slide.querySelector("img");
+                        if (image) {
+                            if (index === currentSlide || index === currentSlide + 1) {
+                                const relativeProgress =
+                                    index === currentSlide ? sliderProgress : sliderProgress - 1;
+                                const parallaxAmount = relativeProgress * slideWidth * 0.15;
+                                gsap.set(image, {
+                                    x: parallaxAmount,
+                                    scale: 1.15,
+                                });
+                            } else {
+                                gsap.set(image, {
+                                    x: 0,
+                                    scale: 1,
+                                });
+                            }
+                        }
                     });
                 }
             });
-        }, {
-            root: slider,
-            threshold: [0, 0.25],
-        });
-  
-        slides.forEach((slide) => observer.observe(slide));
-  
-        ScrollTrigger.create({
-            trigger: interSection,
-            start: "top top",
-            end: `+=${interHeight}px`,
-            scrub: 1,
-            pin: true,
-            pinSpacing: true,
-            onUpdate: (self) => {
-                const progress = self.progress;
-                const mainMove = progress * totalMove;
-  
-                gsap.set(slidesContainer, {
-                    x: -mainMove,
-                });
-  
-                const currentSlide = Math.floor(mainMove / slideWidth);
-                const sliderProgress = (mainMove % slideWidth) / slideWidth;
-  
-                slides.forEach((slide, index) => {
-                    const image = slide.querySelector("img");
-                    if (image) {
-                        if (index === currentSlide || index === currentSlide + 1) {
-                            const relativeProgress =
-                                index === currentSlide ? sliderProgress : sliderProgress - 1;
-                            const parallaxAmount = relativeProgress * slideWidth * 0.25;
-                            gsap.set(image, {
-                                x: parallaxAmount,
-                                scale: 1.35,
-                            });
-                        } else {
-                            gsap.set(image, {
-                                x: 0,
-                                scale: 1.35,
-                            });
-                        }
-                    }
-                });
-            }
-        });
+        }
   
         // Portfolio Section 초기화
+        initInteractiveSection()
         initPortfolioSection();
 
         initDesignSection();
-    initModalInteraction(); // modalAni 함수 이름 변경
-    }
+        initModalInteraction(); // modalAni 함수 이름 변경
+    })
   
     // =============== Portfolio Section 코드 시작 =============== //
     function initPortfolioSection() {
@@ -695,5 +890,3 @@ function initDesignSection() {
 }
 
 
-
-  });

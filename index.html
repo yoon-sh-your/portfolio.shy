@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>yoon pf Website</title>
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- font  -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- remix icon  -->
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <!-- style  -->
     <link rel="stylesheet" href="style.css">
+
+
 
 </head>
 <body>
@@ -52,11 +66,29 @@
     </section>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="hero" class="hero">
         <h1>yoonseonhwa</h1>
-        <div class="hero-copy">
-            <p>One subscription, endless web design</p>
-            <p>(Scroll)</p>
+        <div class="hero_contants">
+          <div class="hero_le">
+            portfolio website
+          </div>
+          <div class="toggle-btn" style="opacity: 1; transform: scale(1); z-index: 999999;">
+            <img src="./assets/toggle.png" alt="">
+            <div class="toggle-menu">
+              <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#interactive">Interactive</a></li>
+                <li><a href="#scroll-port">Portfolio</a></li>
+                <li><a href="#my-skills">Skills</a></li>
+                <li><a href="#design">Design</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="scroll_nts">
+          <p>Scroll</p>
+          <i class="ri-scroll-to-bottom-line"></i>
         </div>
     </section>
 
@@ -95,7 +127,7 @@
     </section>
 
     <!-- Interactive Section -->
-    <section class="interactive sticky">
+    <section id="interactive" class="interactive sticky">
         <div class="slider">
             <div class="slides">
                 <div class="slide">
@@ -122,12 +154,19 @@
                         <h1>Title Line <br>title</h1>
                     </div>
                 </div>
-             
+                <div class="slide">
+                  <div class="img">
+                      <img src="./assets/img12.jpg" alt="">
+                  </div>
+                  <div class="title">
+                      <h1>Title Line <br>title</h1>
+                  </div>
+              </div>
             </div>
         </div>
     </section>
     <!-- scroll-pt  -->
-    <section class="scroll-port">
+    <section id="scroll-port" class="scroll-port">
         <div class="scroll-pt">
             <div class="whitespace w-1"></div>
           <div class="gallery">
@@ -184,7 +223,7 @@
     </section>
 
     <!-- my-skills  -->
-    <section class="my-skills">
+    <section id="my-skills" class="my-skills">
     <div class="skills-container">
       <h1>My <span class="highlight">Skills</span></h1>
       <div class="skills">
@@ -231,6 +270,7 @@
         <!-- Professional Skills -->
         <div class="professional-skills">
           <h2>Professional Skills</h2>
+          <div class="circles">
           <div class="circle-skill">
             <div class="circle" data-percentage="90">
               <span>Creativity</span>
@@ -252,15 +292,15 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
     
     </section>
  
     <!-- design  -->
-    <section class="design">
+    <section id="design" class="design">
       <div class="design-wrapper">
-      <div class="hero"></div>
       <div class="design-sticky">
         <div class="sticky-header">
           <h1>my design section</h1>
@@ -335,10 +375,13 @@
         </div>
         
       </div>
-      <div class="outro">
-        <p>(your next section goes here)</p>
-      </div>
+     
     </div>
+    </section>
+    <section>
+      <div class="outro">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae natus labore alias optio voluptatibus minima nam distinctio earum autem voluptatem!</p>
+      </div>
     </section>
 
 
