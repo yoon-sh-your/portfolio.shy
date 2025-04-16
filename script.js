@@ -889,4 +889,21 @@ function initDesignSection() {
     });
 }
 
+// footer 
+document.getElementById("sendBtn").addEventListener("click", function (e) {
+    e.preventDefault(); // 페이지 리로딩 방지
+
+    const userEmail = document.getElementById("emailInput").value;
+
+    if (!userEmail) {
+      alert("Please enter a valid email.");
+      return;
+    }
+
+    const subject = encodeURIComponent("Hello from your portfolio site!");
+    const body = encodeURIComponent("Hi, I'd like to connect with you.");
+
+    // 메일 클라이언트 실행
+    window.location.href = `mailto:${userEmail}?subject=${subject}&body=${body}`;
+  });
 
