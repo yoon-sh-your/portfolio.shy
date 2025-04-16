@@ -271,7 +271,7 @@ window.addEventListener('scroll', () => {
                             animationState.scrollProgress
                         );
   
-                        animationState.scale = gsap.utils.interpolate(0.25, 1.3, animationState.scrollProgress);
+                        animationState.scale = gsap.utils.interpolate(0.25, 1, animationState.scrollProgress);
                     },
                 },
             });
