@@ -1,0 +1,8 @@
+module.exports = {
+  extends: ["stylelint-config-standard"],
+  rules: {
+    "indentation": 2,
+    "number-leading-zero": "always",
+    "string-quotes": "double",
+  },
+};
