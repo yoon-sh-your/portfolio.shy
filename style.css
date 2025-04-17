@@ -1022,3 +1022,102 @@ iframe {
 .footer-menu li a:hover {
   color: var(--main-color);
 }
+
+
+
+/* 태블릿 */
+@media (max-width: 1023px) {
+  /* 전역 스타일 */
+  h1 { font-size: 40px; }
+  p { font-size: 16px; }
+
+  /* Hero 섹션 */
+  .hero h1 { font-size: 15vw; }
+  .hero_le { font-size: 3vw; }
+  .scroll_nts p { font-size: 2vw; }
+  .scroll_nts i { font-size: 4vw; }
+
+  /* Interactive 섹션 */
+  .slide .title h1 { font-size: 10vw; }
+  .slide .title h1 span { font-size: 4vw; }
+  .slide .title p { font-size: 2.2vw; }
+  
+  /* Portfolio 섹션 */
+  .scroll-pt > h1 { font-size: 5.5rem; }
+  .project-names { left: 35vw; }
+  .preview-img { left: 45vw; }
+
+  /* Skills 섹션 */
+  .skills-container h1 { font-size: 5.5rem; }
+  .skills { flex-direction: column; }
+  .circles { padding: 0 2rem; }
+  
+  /* Design 섹션 */
+  .card { width: 500px; height: 300px; }
+  .sticky-header h1 { font-size: 30vw; }
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  /* 전역 스타일 */
+  h1 { font-size: 32px; }
+  p { font-size: 14px; }
+
+  /* Hero 섹션 */
+  .hero h1 { font-size: 18vw; letter-spacing: -0.4vw; }
+  .hero_le { font-size: 4vw; }
+  .toggle-menu ul { flex-direction: column; gap: 1em; }
+  
+  /* Intro 섹션 */
+  .video-preview { width: 90%; }
+  
+  /* Interactive 섹션 */
+  .slide .title h1 { font-size: 12vw; }
+  .slide .title h1 span { font-size: 5vw; }
+  .slide .title p { 
+    font-size: 3vw;
+    max-width: 300px; 
+  }
+  .sub_img {
+    flex-wrap: wrap;
+    max-width: 150px;
+  }
+  
+  /* Portfolio 섹션 */
+  .scroll-pt > h1 { font-size: 3.5rem; }
+  .project-names { 
+    left: 10vw;
+    bottom: 12em; 
+  }
+  .preview-img {
+    left: 10vw;
+    max-width: 80vw;
+  }
+  
+  /* Skills 섹션 */
+  .skills-container h1 { font-size: 3.5rem; }
+  .skill span { width: 70px; }
+  .circles {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+  
+  /* Design 섹션 */
+  .card {
+    width: 300px;
+    height: 250px;
+  }
+  .card .card-img { height: 180px; }
+  .sticky-header h1 { font-size: 35vw; }
+  
+  /* Footer */
+  .footer_msg p { font-size: 6vw; }
+  .footer-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #emailForm {
+    flex-direction: column;
+    align-items: center;
+  }
+}
