@@ -420,7 +420,16 @@ if (mySkillsSection) {
             // 타이틀 초기 상태 설정
             slides.forEach((slide) => {
                 const title = slide.querySelector(".title h1");
-                gsap.set(title, { y: -200 });
+                const subTitle = slide.querySelector(".title p");
+            
+                // 초기 상태
+                gsap.set(title, { y: -200, opacity: 0 });
+                gsap.set(subTitle, { y: -200, opacity: 0 });
+            
+                // 타임라인으로 순차 애니메이션
+                const tl = gsap.timeline();
+                tl.to(title, { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" })
+                  .to(subTitle, { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }, "+=0.2"); // 약간 딜레이
             });
         
             let currentVisibleIndex = null;
@@ -430,6 +439,7 @@ if (mySkillsSection) {
                     const titles = Array.from(slides).map((slide) =>
                         slide.querySelector(".title h1")
                     );
+                    const subTitles = Array.from(slides).map((slide) => slide.querySelector(".title p"));
         
                     if (entry.intersectionRatio >= 0.25) {
                         currentVisibleIndex = currentIndex;
@@ -441,6 +451,27 @@ if (mySkillsSection) {
                                 overwrite: true,
                             });
                         });
+                        if (entry.intersectionRatio >= 0.25) {
+                            currentVisibleIndex = currentIndex;
+                            titles.forEach((title, index) => {
+                                gsap.to(title, {
+                                    y: index === currentIndex ? 0 : -200,
+                                    opacity: index === currentIndex ? 1 : 0,
+                                    duration: 0.5,
+                                    ease: "power2.out",
+                                    overwrite: true,
+                                });
+                            });
+                            subTitles.forEach((sub, index) => {
+                                gsap.to(sub, {
+                                    y: index === currentIndex ? 0 : -200,
+                                    opacity: index === currentIndex ? 1 : 0,
+                                    duration: 0.5,
+                                    ease: "power2.out",
+                                    overwrite: true,
+                                });
+                            });
+                        }
                     } else if (
                         entry.intersectionRatio < 0.25 &&
                         currentVisibleIndex === currentIndex
@@ -593,7 +624,7 @@ if (mySkillsSection) {
         // 프로젝트 이름 및 인디케이터 설정
         const projects = document.querySelectorAll(".project");
         const indicator = document.querySelector(".indicator");
-        const projectNames = ["Atilas Studio", "Nimbus", "Solara", "Quantum"];
+        const projectNames = ["통일법제", "유가네 닭갈비", "리뷰몬스터"];
         
         // 프로젝트 이름 동적 생성
         const projectNamesContainer = document.querySelector(".project-names");

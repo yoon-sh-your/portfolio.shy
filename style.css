@@ -1,4 +1,8 @@
 
+:root{
+  --main-color: #2176ec
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -204,7 +208,7 @@ p,a {
 }
 
 .toggle-menu ul li a:hover {
-  color: #00d9ff;
+  color: var(--main-color);
 }
 
 .hero h1 {
@@ -310,6 +314,31 @@ iframe {
   object-fit: cover;
   transform-origin: center center;
   will-change: transform;
+  position: relative;
+}
+.slide .img::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+.sub_img {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  z-index: 5;
+  max-width: 250px;
+    left: 11%;
+    z-index: 5;
+    display: flex;
+}
+.sub_img img {
+  max-width: 200px;
+  margin: 0 0.4em;
 }
 .slide .title {
   position: absolute;
@@ -319,12 +348,26 @@ iframe {
 }
 
 .slide .title h1 {
-  color: #fff;
-  font-size: 3rem;
+  color: var(--main-color);
+  font-size: 8vw;
   line-height: 1.2;
-  transform: translateY(-200px); 
+  /* transform: translateY(-200px); */
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.slide .title h1 span {
+  font-weight: normal;
+  font-size: 3vw;
 }
 
+.slide .title p {
+  color: #fff;
+  font-size: 1.7vw;
+  margin-top: 1vw;
+  max-width: 470px;
+    font-weight: 300;
+
+}
 
 /* Lenis and ScrollTrigger Styles */
 .lenis.lenis-smooth[data-lenis-prevent] {
@@ -516,6 +559,20 @@ iframe {
 
 
 /* scroll-pt  */
+.scroll-port {
+  position: relative;
+}
+.scroll-pt > h1 {
+    font-size: 7.5rem;
+    margin-bottom: 3rem;
+    margin-top: 0;
+    font-weight: bold;
+    color: #b4b4b447;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    letter-spacing: -8px;
+}
 
 .whitespace.w-1 {
   width: 100vw;
@@ -537,6 +594,10 @@ iframe {
   width: 100vw;
   height: 100vh;
   display: flex;
+}
+.project a {
+  width: 100%;
+  margin-left: 11vw;
 }
 .index {
   flex: 1;
@@ -604,6 +665,7 @@ iframe {
   position: relative;
 }
 
+
 .skills-container h1 {
   font-size: 7.5rem;
   margin-bottom: 3rem;
@@ -670,7 +732,7 @@ iframe {
 
 .progress {
   height: 100%;
-  background-color: #21b5e9;
+  background-color: var(--main-color);
   width: 0; 
   transition: width 2s ease-in-out; 
 }
@@ -717,7 +779,7 @@ iframe {
   content: attr(data-percentage) '%';
   position: absolute;
   font-size: 1.2rem;
-  color: #2586f5;
+  color: var(--main-color);
 }
 
 .circle span {
@@ -882,13 +944,11 @@ iframe {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-bottom: 20px solid var(--main-color);
 }
 
-.footer-line {
-  height: 4px;
-  background-color: #21b5e9;
-  margin-bottom: 20px;
- 
+.footer_logo p{
+  color: var(--main-color);
 }
 
 .footer_msg p{
@@ -898,7 +958,7 @@ iframe {
 }
 
 .email-box {
-  margin-bottom: 13vw;
+  margin-bottom: 10vw;
 }
 
 #emailForm {
@@ -917,7 +977,7 @@ iframe {
 }
 
 #emailForm button {
-  background-color: #21b5e9;
+  background-color: var(--main-color);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -928,7 +988,18 @@ iframe {
 }
 
 #emailForm button:hover {
-  background-color: #21b5e9;
+  background-color: var(--main-color);
+}
+
+.sns {
+  margin-bottom: 1vw;
+
+}
+.sns a {
+  margin: 0 1vw;
+}
+.sns a:hover {
+  color: var(--main-color);
 }
 
 .footer-menu {
@@ -949,5 +1020,5 @@ iframe {
 }
 
 .footer-menu li a:hover {
-  color: #21b5e9;
+  color: var(--main-color);
 }
