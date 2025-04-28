@@ -339,7 +339,7 @@ iframe {
   display: flex;
 }
 .sub_img img {
-  max-width: 200px;
+  max-width: 215px;
   margin: 0 0.4em;
 }
 .slide .title {
@@ -595,6 +595,9 @@ iframe {
 .my-skills {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-container {
@@ -631,6 +634,7 @@ iframe {
 .technical-skills,
 .professional-skills {
   flex: 1;
+  margin-left: 3vw;
 }
 
 .professional-skills h2,
@@ -640,12 +644,10 @@ iframe {
 }
 .circles {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  justify-items: center;
-  align-items: center;
-  max-width: 100px;
-  padding: 0 5rem;
+  grid-template-columns: repeat(2, 1fr); /* 한 줄에 2개 고정 */
+  gap: 3rem; /* 간격 적당히 */
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .professional-skills h2 {
