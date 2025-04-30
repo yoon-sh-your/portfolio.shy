@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA615_04_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema615.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema615">
+      <section class="title group">
+        <h2 lang="y"><span class="puple">[1~6]</span>우리 반 학생들이 배우고 싶어 하는 외국어를 조사하여 띠그래프와 원그래프로 나타내려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_light_purple" lang="y">
+          <span lang="y">우리 반 학생들이 배우고 싶어 하는 외국어를 조사하여 표로 나타내어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema615_03_0004 flex align_center justify_center gap_50">
+          <div class="flex dir_col gap_50">
+            <div class="flex align_center justify_center">
+
+                <div class="tit_title_input graf_flex">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="배우고 싶어 하는 외국어별 학생 수의 비율"></math-field>
+                    <ol class="example_box" style="display: none">
+                      <li>더미</li>
+                    </ol>
+                  </div>
+
+              </div>
+              
+            </div>
+
+            <div class="table_wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 160px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="row" lang="y">종류</th>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="영어"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="스페인어"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="베트남어"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="중국어"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="독일어"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td class="bg">합계</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr></tr>
+                  <tr>
+                    <th scope="row" lang="y">학생 수(명)</th>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="8"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="6"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="5"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="4"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="2"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="25"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" lang="y">배분율(％)</th>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="32"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="24"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="20"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="16"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="8"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="100"></math-field>
+                        <ol class="example_box" style="display: none">
+                          <li>더미</li>
+                        </ol>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>우리 반 학생들을 대상으로 배우고 싶어 하는 외국어를 조사하여 표로 나타냅니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck" data-look="submit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

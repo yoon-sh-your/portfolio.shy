@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_08_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_08.css" />
+    <script src="./../../common_contents/js/ema526_08_0002.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_08_su_0002">
+      <section class="title type2">
+        <h2 data-head="1_orange" lang="y">동전 던지기 실험을 하여 그림면이 나올 가능성과 숫자 면이 나올 가능성을 비교해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="picture_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 880 900" fill="none">
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.9px" lang="y">
+                <tspan x="27.8789" y="74.3384">동전을 던져서 누가</tspan>
+                <tspan x="18.2686" y="100.691">간식을 먹을지 정하자!</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.9px" lang="y">
+                <tspan x="349.787" y="94.2798">좋아. 그림면이</tspan>
+                <tspan x="332.55" y="120.633">나오면 내가 먹을래.</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.9px" lang="y">
+                <tspan x="607.191" y="34.0454">그림면이 나왔어.</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.9px" lang="y">
+                <tspan x="528.549" y="297.575">또 그림면이 나왔네!</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.9px" lang="y">
+                <tspan x="278.144" y="540.397">왜 그림면만</tspan>
+                <tspan x="276.225" y="566.75">나오는 거야.</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.9px" lang="y">
+                <tspan x="684.765" y="551.575">동전을 여러 번 던져서</tspan>
+                <tspan x="678.993" y="577.928">그림면이 나올 가능성과</tspan>
+                <tspan x="677.102" y="604.281">숫자 면이 나올 가능성을</tspan>
+                <tspan x="715.16" y="630.634">비교해 볼까?</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA526_08_SU/0002_content.png" alt="" />
+            <!-- <button class="zoom"></button> -->
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">동전 한 개를 던졌을 때 그림면이 나올 가능성과 숫자 면이 나올 가능성을 각각 수로 나타내고, 비교해 보세요.</h3>
+
+          <ul class="question_box">
+            <li>
+              <span lang="y">그림면이 나올 가능성</span>
+              <div class="boolean_wrap boolean_wrap1">
+                <button data-answer-single="true">
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                </button>
+                <button data-answer-single="false">
+                  <span>0</span>
+                </button>
+                <button data-answer-single="false">
+                  <span>1</span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <span lang="y">숫자 면이 나올 가능성</span>
+              <div class="boolean_wrap boolean_wrap2">
+                <button data-answer-single="true">
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                </button>
+                <button data-answer-single="false">
+                  <span>0</span>
+                </button>
+                <button data-answer-single="false">
+                  <span>1</span>
+                </button>
+              </div>
+            </li>
+            <li>
+              <span lang="y">그림면과 숫자 면이 나올 가능성은</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="같습니다.">
+                  <option></option>
+                  <option value="같습니다."></option>
+                  <option value="다릅니다."></option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">동전 한 개를 10번 던져서 그림면과 숫자 면이 나온 횟수를 각각 써 보세요.</h3>
+
+          <div class="input_area">
+            <div class="question_box">
+              <span lang="y">그림면</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="7"></math-field>
+              </div>
+              <span lang="y">번</span>
+            </div>
+
+            <div class="question_box">
+              <span lang="y">숫자면</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="3"></math-field>
+              </div>
+              <span lang="y">번</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <h3 lang="y">우리 모둠 학생들이 실험한 결과를 더하여 표로 나타내어 보세요.</h3>
+
+          <div class="table_box">
+            <div class="title" lang="y">던진 횟수별 그림면과 숫자 면이 나온 횟수</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">던진 횟수(번)</th>
+                  <td lang="y">40</td>
+                  <td lang="y">60</td>
+                  <td lang="y">80</td>
+                  <td lang="y">100</td>
+                  <td lang="y">120</td>
+                </tr>
+                <tr>
+                  <th lang="y">그림면이 나온 횟수(번)</th>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="16"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="27"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="38"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="49"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="59"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y">숫자 면이 나온 횟수(번)</th>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="24"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="33"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="42"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="51"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="right">
+                      <math-field type="number" data-answer-single="61"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="page page_5">
+          <h3 lang="y">동전을 던진 횟수가 많아질수록 그림면이 나올 가능성과 숫자 면이 나올 가능성이 어떻게 변하는지 비교해 보세요.</h3>
+
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">동전을 던진 횟수가 많아질수록 그림면과 숫자 면이 나올 가능성이 비슷해집니다.</p>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+          <button class="btnSubmit" data-submit="true" data-check="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

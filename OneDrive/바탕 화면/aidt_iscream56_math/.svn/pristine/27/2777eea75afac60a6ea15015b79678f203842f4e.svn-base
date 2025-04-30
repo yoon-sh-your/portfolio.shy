@@ -1,0 +1,407 @@
+.pt_10 {
+  padding-top: 10px;
+}
+.input_wrap:has(.w_80) {
+  min-width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+  position: relative;
+}
+.input_wrap.input_sep {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+  left: calc(100% + 20px);
+  top: 6px;
+  width: auto;
+}
+.input_wrap.hint_left .text_hint {
+  right: calc(100% + 20px);
+  left: auto;
+  top: 6px;
+  width: auto;
+}
+
+.fraction_wrap .hint_up .text_hint {
+  top: auto;
+  bottom: calc(100% + 4px);
+}
+.fraction_wrap.hint_right .text_hint {
+  top: 18px;
+}
+
+math-field.has_ex_text + .text_hint:before {
+  content: '예';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background: var(--primary-blue);
+  border-radius: 12px;
+  color: #fff;
+  line-height: 42px;
+}
+.input_wrap math-field.large {
+  width: 300px !important;
+}
+.w_large {
+  width: 247px !important;
+}
+.formula_box .formula_row {
+  display: flex;
+}
+.formula_box .formula_row.bd_b + .formula_row {
+  margin-top: 10px;
+}
+.formula_box .formula_row.bd_b + .formula_row:has(.input_wrap) {
+  padding-top: 10px;
+}
+.formula_box .formula_row.bd_b {
+  position: relative;
+}
+.formula_box .formula_row.bd_b:before {
+  content: '';
+  display: inline-block;
+  width: calc(100% - 28px);
+  height: 2px;
+  background: var(--font-main);
+  position: absolute;
+  bottom: -13px;
+  left: 29px;
+}
+.formula_box .formula_row > span {
+  display: inline-block;
+  height: 60px;
+  width: 87px;
+  text-align: center;
+  line-height: 60px;
+  position: relative;
+}
+
+.formula_box .formula_row > span:first-of-type {
+  width: 34px;
+}
+.formula_box .formula_row > span.dot:after {
+  content: '.';
+  position: absolute;
+  right: -7px;
+  bottom: 15px;
+  display: inline-block;
+  line-height: 1;
+  font-size: 32px;
+}
+.formula_box .formula_row > span.dot.pt_10:after {
+  bottom: 2px;
+}
+.formula_box .formula_row > span.arrow_up:before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 58px;
+  background: url(./../common/img/img_formula_arrow.png) no-repeat 0 0 / 100% auto;
+  position: absolute;
+  right: -9px;
+  bottom: 21px;
+}
+.formula_box .formula_row > span.arrow_down:before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 105px;
+  background: url(./../common/img/img_formula_arr_down.png) no-repeat 0 0 / 100% auto;
+  position: absolute;
+  top: 40px;
+  left: 37px;
+}
+.formula_box .formula_row > span:has(.input_wrap).dot:after {
+  bottom: 3px;
+}
+.formula_box .formula_row > span.dot + span:has(.input_wrap) {
+  margin-left: 5px;
+}
+.formula_box .formula_row > span.wing:after {
+  content: '';
+  width: 11px;
+  height: 60px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(./../common/img/icon_formula_wing.png) no-repeat 50% / 100% auto;
+  position: absolute;
+  right: -6px;
+}
+.formula_box .formula_row > span.muted {
+  color: #d2d2d2;
+}
+
+.pt_10 {
+  padding-top: 10px;
+}
+.font_sans {
+  font-family: sans-serif;
+}
+.question_box img.arrow {
+  top: 74px;
+  position: relative;
+}
+
+/* ema613_06_ih_0001 */
+.ema613_06_ih_0001 .question_box {
+  gap: 63px;
+}
+.ema613_06_ih_0001 .input_wrap math-field.hint + .text_hint {
+  line-height: 1.5;
+}
+.ema613_06_ih_0001 .input_wrap.hint_left .text_hint,
+.ema613_06_ih_0001 .input_wrap.hint_right .text_hint {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* ema613_06_ih_0002 */
+.ema613_06_ih_0002 .relative {
+  position: relative;
+}
+.ema613_06_ih_0002 .input_col {
+  position: absolute;
+  top: 114px;
+  display: flex;
+  align-items: center;
+}
+.ema613_06_ih_0002 .input_col:first-of-type {
+  left: 6px;
+}
+.ema613_06_ih_0002 .input_col:nth-of-type(2) {
+  left: 346px;
+}
+.ema613_06_ih_0002 .input_position {
+  position: absolute;
+}
+.ema613_06_ih_0002 .input_position.input1 {
+  top: 25px;
+  left: 172px;
+}
+.ema613_06_ih_0002 .input_position.input2 {
+  top: 197px;
+  left: 331px;
+}
+.ema613_06_ih_0002 .input_wrap.hint_right .text_hint {
+  top: 11px;
+}
+
+/* ema613_06_ih_0003 */
+.ema613_06_ih_0003 .question_box {
+  gap: 120px;
+}
+.ema613_06_ih_0003 .question_box > div {
+  gap: 100px;
+}
+.ema613_06_ih_0003 math-field {
+  width: 120px !important;
+}
+
+/* ema613_06_ih_0004 */
+.ema613_06_ih_0004 .img_area {
+  position: relative;
+}
+.ema613_06_ih_0004 .img_area .texts {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  top: 20px;
+  padding-right: 24px;
+}
+
+/* ema613_06_ih_0005 */
+.ema613_06_ih_0005 .img_area {
+  position: relative;
+}
+.ema613_06_ih_0005 .img_area .texts {
+  position: absolute;
+  top: 35px;
+  left: 95px;
+  width: 379px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 70px;
+}
+.ema613_06_ih_0005 .img_area .texts > p {
+  margin-bottom: 18px;
+}
+.ema613_06_ih_0005 .boolean_wrap {
+  position: absolute;
+  top: 27px;
+  left: 81px;
+}
+.ema613_06_ih_0005 .boolean_wrap button {
+  background-color: transparent !important;
+  border-width: 0;
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  border-radius: 0;
+}
+.ema613_06_ih_0005 .boolean_wrap .button1 {
+  top: 10px;
+  left: 5px;
+}
+.ema613_06_ih_0005 .boolean_wrap .button2 {
+  top: 10px;
+  left: 228px;
+}
+.ema613_06_ih_0005 .boolean_wrap .button3 {
+  left: 5px;
+  top: 77px;
+}
+.ema613_06_ih_0005 .boolean_wrap .button4 {
+  top: 77px;
+  left: 228px;
+}
+.ema613_06_ih_0005 .boolean_wrap button:after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  mask: url(./../common/img/icon_checked_round.svg) no-repeat 50% / 100% auto;
+  background-color: transparent;
+  position: absolute;
+  left: -35px;
+  top: -19px;
+  opacity: 0;
+}
+.ema613_06_ih_0005 .boolean_wrap button.selected:after {
+  background-color: var(--font-main);
+  opacity: 1;
+}
+.ema613_06_ih_0005.completed .boolean_wrap button[data-answer-single='true']:after {
+  background-color: var(--secondary-red);
+  opacity: 1;
+}
+.ema613_06_ih_0005.completed .boolean_wrap button[data-answer-single='true'].selected:after {
+  background-color: var(--primary-blue);
+}
+/* .result .ema613_06_ih_0005 .boolean_wrap button[data-answer-single="true"]:after {
+	background-color: var(--primary-blue);
+} */
+
+/* ema613_06_ih_0006 */
+.ema613_06_ih_0006 .img_area {
+  position: relative;
+  margin-right: 70px;
+}
+.ema613_06_ih_0006 .img_area > p {
+  position: absolute;
+  top: 3px;
+  left: 392px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #c0573d;
+}
+.ema613_06_ih_0006 .input_area {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+}
+.ema613_06_ih_0006 .input_wrap math-field.textarea {
+  width: 597px;
+  height: 80px;
+  min-height: unset;
+}
+.ema613_06_ih_0006 .canvas_area {
+  width: 226px;
+  height: 346px;
+  position: absolute;
+  top: 42px;
+  left: 321px;
+  border-radius: 30px;
+}
+.ema613_06_ih_0006 .btn_draw {
+  position: absolute;
+  bottom: 30px;
+}
+.ema613_06_ih_0006 .img_area .example_box {
+  width: 252px;
+  height: 270px;
+  background: #eef9ff;
+  border-radius: 20px;
+  position: relative;
+  top: 20px;
+  left: 308px;
+  display: none;
+  padding: 24px 0 0 100px;
+}
+.ema613_06_ih_0006 .img_area .example_box:before {
+  content: '예';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.ema613_06_ih_0006.completed .img_area .example_box {
+  display: block;
+}
+.ema613_06_ih_0006.completed .img_area .example_box > img {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ema613_06_ih_0007 */
+.ema613_06_ih_0007 .img_area {
+  margin-right: 60px;
+}
+.ema613_06_ih_0007 .input1 math-field {
+  width: 320px;
+}
+.ema613_06_ih_0007 .input2 math-field {
+  width: 160px;
+}
+.ema613_06_ih_0007 .input_area {
+  margin-top: 22px;
+}
+.ema613_06_ih_0007 .input_row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+.ema613_06_ih_0007 .input_area > div {
+  position: relative;
+}
+.ema613_06_ih_0007 .input_area > div:after {
+  content: "";
+  position: absolute;
+  left: 72px;
+  bottom: -8px;
+  height: 1px;
+  background-color: #000;
+}
+.ema613_06_ih_0007 .input_area > div:nth-child(1):after {
+  width: calc(100% - 72px);
+}
+.ema613_06_ih_0007 .input_area > div:nth-child(2):after {
+  width: calc(100% - 110px);
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_02_SU_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_02_su_0008">
+      <section class="title type2">
+        <h2 data-head="6" lang="y">각기둥에서 밑면은 ○표, 옆면에 △표 해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="check_shape2">
+          <div class="cont_img">
+            <img src="../../common_contents/img/EMA612_02_SU/0008_content.png" alt="육각기둥">
+
+            <p class="t01">ㄱ</p>
+            <p class="t02">ㄴ</p>
+            <p class="t03">ㄷ</p>
+            <p class="t04">ㄹ</p>
+            <p class="t05">ㅁ</p>
+            <p class="t06">ㅂ</p>
+            <p class="t07">ㅅ</p>
+            <p class="t08">ㅇ</p>
+            <p class="t09">ㅈ</p>
+            <p class="t10">ㅊ</p>
+            <p class="t11">ㅋ</p>
+            <p class="t12">ㅌ</p>
+          </div>
+
+          <div class="cont_txt">
+            <dl>
+              <dt class="tit f24b mt_10" lang="y">밑면</dt>
+              <dd>
+                  <div class="boolean_wrap circle">
+                    <button data-answer-single="true" lang="y">면 ㄱㄴㄷㄹㅁㅂ</button>
+                    <button data-answer-single="false" lang="y">면 ㄷㅈㅊㄹ</button>
+                    <button data-answer-single="false" lang="y">면 ㅂㅌㅋㅁ</button>
+                    <button data-answer-single="false" lang="y">면 ㄱㅅㅌㅂ</button>
+                    <button data-answer-single="false" lang="y">면 ㄹㅊㅋㅁ</button>
+                    <button data-answer-single="false" lang="y">면 ㄴㅇㅈㄷ</button>
+                    <button data-answer-single="false" lang="y">면 ㄴㅇㅅㄱ</button>
+                    <button data-answer-single="true" lang="y">면 ㅅㅇㅈㅊㅋㅌ</button>
+                  </div>
+              </dd>
+            </dl>
+
+            <dl>
+              <dt class="tit f24b mt_15">옆면</dt>
+              <dd>
+                  <div class="boolean_wrap triangle">
+                    <button data-answer-single="false" lang="y">면 ㄱㄴㄷㄹㅁㅂ</button>
+                    <button data-answer-single="true" lang="y">면 ㄷㅈㅊㄹ</button>
+                    <button data-answer-single="true" lang="y">면 ㅂㅌㅋㅁ</button>
+                    <button data-answer-single="true" lang="y">면 ㄱㅅㅌㅂ</button>
+                    <button data-answer-single="true" lang="y">면 ㄹㅊㅋㅁ</button>
+                    <button data-answer-single="true" lang="y">면 ㄴㅇㅈㄷ</button>
+                    <button data-answer-single="true" lang="y">면 ㄴㅇㅅㄱ</button>
+                    <button data-answer-single="false" lang="y">면 ㅅㅇㅈㅊㅋㅌ</button>
+                  </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

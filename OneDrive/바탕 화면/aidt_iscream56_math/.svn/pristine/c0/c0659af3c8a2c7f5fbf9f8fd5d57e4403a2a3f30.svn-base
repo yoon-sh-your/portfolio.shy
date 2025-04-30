@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_02_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_02_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">소율이네 학교 5학년의 반별 학생 수를 나타낸 표입니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 class="title" lang="y">학생 수의 평균은 몇 명일지 예상해 보세요.</h3>
+          <div class="flex dir_col align_center">
+            <div class="top">
+              <div class="tit_data">
+                <div class="inner">
+                  <span lang="y">반별 학생 수</span>
+                </div>
+              </div>
+              <div class="table_wrap row">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">반</th>
+                      <td lang="y">1반</td>
+                      <td lang="y">2반</td>
+                      <td lang="y">3반</td>
+                      <td lang="y">4반</td>
+                      <td lang="y">5반</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" lang="y">학생 수(명)</th>
+                      <td>24</td>
+                      <td>26</td>
+                      <td>22</td>
+                      <td>21</td>
+                      <td>27</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="question_box justify_center" lang="y">
+              <div class="input_wrap">
+                <math-field data-answer-single="24"></math-field>
+              </div>
+               명
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">학생 수의 평균을 예상해 보고, 예상한 평균을 기준으로 자룟값을 고르게 하여 학생 수의 평균을 구할 수 있습니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 class="title" lang="y"><span class="empty_box nemo"></span>안에 알맞은 수를 써넣어 학생 수의 평균은 몇 명인지 구해 보세요.</h3>
+          <div class="flex dir_col align_center">
+            <div class="top">
+              <div class="tit_data">
+                <div class="inner">
+                  <span lang="y">반별 학생 수</span>
+                </div>
+              </div>
+              <div class="table_wrap row">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">반</th>
+                      <td lang="y">1반</td>
+                      <td lang="y">2반</td>
+                      <td lang="y">3반</td>
+                      <td lang="y">4반</td>
+                      <td lang="y">5반</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" lang="y">학생수(명)</th>
+                      <td>24</td>
+                      <td>26</td>
+                      <td>22</td>
+                      <td>21</td>
+                      <td>27</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="question_box justify_center">
+              <div class="inner">
+                <div class="row" lang="y">
+                  24명보다 2반은
+                  <div class="input_wrap">
+                    <math-field data-answer-single="2"></math-field>
+                  </div>
+                  명 더 많고, 3반은
+                  <div class="input_wrap">
+                    <math-field data-answer-single="2"></math-field>
+                  </div>
+                  명 더 적습니다.
+                </div>
+                <div class="row" lang="y">
+                  24명보다 4반은
+                  <div class="input_wrap">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                  명 더 적고, 5반은
+                  <div class="input_wrap">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                  명 더 많습니다.
+                </div>
+                <div class="row" lang="y">
+                  학생 수를 고르게 하여 학생 수의 평균을 구하면
+                  <div class="input_wrap">
+                    <math-field data-answer-single="24"></math-field>
+                  </div>
+                  명입니다.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">학생 수의 평균을 예상해 보고, 예상한 평균을 기준으로 자룟값을 고르게 하여 학생 수의 평균을 구할 수 있습니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

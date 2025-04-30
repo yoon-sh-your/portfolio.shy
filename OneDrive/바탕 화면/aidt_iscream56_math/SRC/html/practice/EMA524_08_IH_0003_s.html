@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_08_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema524_08_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_08_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">141×57=8037입니다. 1.41×5.7의 곱에 맞게 소수점을 찍어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="question_box">
+            <div class="boolean_wrap">
+              <span>1.41×5.7=8</span>
+              <button type="button" data-answer-single="true"><span>.</span></button>
+              <span>0</span>
+              <button type="button" data-answer-single="false"><span>.</span></button>
+              <span>3</span>
+              <button type="button" data-answer-single="false"><span>.</span></button>
+              <span>7</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">1.41은 141에서 소수점이 왼쪽으로 두 자리, 5.7은 57에서 소수점이 왼쪽으로 한 자리 옮겨졌으므로 8037에서 소수점을 왼쪽으로 세 자리 옮기면 8.037입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

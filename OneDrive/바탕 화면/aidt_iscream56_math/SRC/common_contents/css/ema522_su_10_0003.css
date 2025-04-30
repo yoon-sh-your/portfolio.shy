@@ -1,0 +1,267 @@
+/* EMA522_SU_10_0003_s  */
+.form_wrap {
+    gap: 65px;
+    width: 1635px;
+    height: 628px;
+}
+
+.form_wrap .card_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 770px;
+    height: 624px;
+}
+
+.form_wrap .card_area .card_dummy_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 770px;
+    height: 224px;
+}
+
+.form_wrap .card_area .card_dummy_area .card_dummy_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 224px;
+}
+
+.form_wrap .card_area .card_dummy_area .card_dummy_wrap .btn_card_dummy {
+    width: 180px;
+    height: 150px;
+    background: url(../../common_contents/img/EMA522_SU/0003_img_card_dummy.png) no-repeat center center;
+    background-color: #FFFFFF;
+    background-size: contain;
+}
+
+.form_wrap .card_area .card_dummy_area .card_condition_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 392px;
+    height: 224px;
+}
+
+.form_wrap .card_area .card_dummy_area .card_condition_wrap .card_condition {
+    width: 392px;
+    height: 224px;
+    background: url(../../common_contents/img/EMA522_SU/0003_img_card_condition_back.png) no-repeat center center;
+    background-color: #FFFFFF;
+    background-size: contain;
+}
+
+.form_wrap .card_area .card_open_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 770px;
+    height: 142px;
+}
+
+.form_wrap .card_area .card_open_area .card_open_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 142px;
+}
+
+.form_wrap .card_area .card_open_area .card_open_wrap .btn_card_open  {
+    width: 120px;
+    height: 142px;
+    background: url(../../common_contents/img/EMA522_SU/0003_img_card_back.png) no-repeat center center;
+    background-color: #FFFFFF;
+    background-size: contain;
+}
+
+.form_wrap .calc_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 800px;
+    height: 624px;
+}
+
+.form_wrap .calc_area .calc_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 800px;
+    height: 534px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 56px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_header .calc_form_row {
+    width: 800px;
+    height: 56px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_header .calc_form_row .calc_form_col {
+    border-left: 1px solid #FFFFFF;
+    height: 56px;
+    background: #3B71FE;
+    color: #FFFFFF;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_header .calc_form_row .calc_form_col:first-child {
+    border-left: 0;
+    height: 56px;
+    background: #3B71FE;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 478px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_row .calc_form_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95.6px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_row .calc_form_col:nth-child(1) {
+    width: 100px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_row .calc_form_col:nth-child(2) {
+    width: 520px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_row .calc_form_col:nth-child(3) {
+    width: 180px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row {
+    height: 95.6px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row .calc_form_col {
+    gap: 10px;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row .calc_form_col {
+    gap: 10px;
+    border-left: 1px solid #FFFFFF;
+    border-top: 1px solid #FFFFFF;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row .calc_form_col .sign_multiply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-weight: 500;
+    width: 28px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row .calc_form_col .sign_equal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    font-weight: 500;
+    width: 42px;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row .calc_form_col:first-child {
+    border-left: 0;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row:first-child .calc_form_col {
+    border-top: 0;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row:nth-child(odd) .calc_form_col {
+    background: #D9F0FF;
+}
+
+.form_wrap .calc_area .calc_form .calc_form_body .calc_form_row:nth-child(even) .calc_form_col {
+    background: #EEF9FF;
+}
+
+.form_wrap .calc_area .calc_result_wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 800px;
+    height: 60px;
+}
+
+.form_wrap .calc_area .calc_result_wrap .calc_result_label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 163px;
+    height: 36px;
+    font-size: 20px;
+    color: #222222;
+}
+
+.form_wrap .calc_area .calc_result_wrap .calc_result_label .bullet {
+    width: 8px;
+    height: 8px;
+    background: url(../../common_contents/img/EMA522_SU/bullet.png) no-repeat center center;
+    background-size: contain;
+}
+
+.form_wrap .calc_area .calc_result_wrap .calc_result_input_wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form_wrap .calc_area .calc_result_wrap .calc_result_input_wrap .calc_result_input {
+    width: 120px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    border: 2px solid #3b71fe;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.form_wrap .calc_area .calc_result_wrap .calc_result_point {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    color: #222222;
+}

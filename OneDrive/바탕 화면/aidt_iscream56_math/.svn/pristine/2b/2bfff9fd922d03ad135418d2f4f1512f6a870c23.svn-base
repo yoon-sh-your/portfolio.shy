@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_06_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_08_su.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema522_08_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+              <div class="fraction_txt" lang="y">
+                하준이와 나은이는 직사각형 모양의 멍석을 만들었습니다. 멍석의 가로가
+                <div class="mixed_fraction">
+                  <span>1</span><span class="fraction_box"><span>1</span><span>2</span></span>
+                </div>
+                &nbsp;m 이고, 세로가 
+                <div class="mixed_fraction">
+                  <span>1</span><span class="fraction_box"><span>1</span><span>4</span></span>
+                </div>
+                &nbsp;m 일 때 멍석의 넓이는
+              </div>
+              <div class="fraction_txt" lang="y">
+                몇 ㎡인지 알아봅시다.
+              </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="img_row">
+            <div class="video_wrap">
+              <img src="../../common_contents/img/EMA522_08_SU/0002_img01.png" alt="자치회 활동 이미지" />
+
+              <div class="flex dir_col f16r">
+                직사각형 모양의<br />
+                멍석의 넓이를 어떻게<br />
+                구할 수 있을까?
+              </div>
+              <button class="play" onclick="navigate('../guide_sample/vedio_player')"></button>
+            </div>
+
+            <div class="input_area">
+              <h3 lang="y">영상을 보고 멍석의 넓이를 어떻게 구할 수 있을지 이야기해 봅시다.</h3>
+              <div class="input_area">
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <ol class="example_box">
+                    <li lang="y">직사각형 모양의 멍석이므로 멍석의 가로와 세로를 곱해서 구할 수 있습니다.</li>
+                    <li lang="y" class="f24b fraction_row">
+                      <span class="mixed_fraction">
+                        <span>1</span>
+                        <span class="fraction_box"><span>1</span><span>2</span></span>
+                      </span>
+
+                      <span>을 곱해서 구할 수 있습니다.</span>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset active">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

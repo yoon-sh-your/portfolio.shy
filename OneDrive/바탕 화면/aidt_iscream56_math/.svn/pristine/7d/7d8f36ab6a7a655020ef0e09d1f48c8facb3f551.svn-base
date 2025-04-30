@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema511_su_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+     <link rel="stylesheet" href="./../../common_contents/css/ema511_su.css" />
+     <script src="../../common_contents/js/ema511_su.js"></script>
+</head>
+<body>
+    <div id="app_wrap" class="ema511_08_su_0003 play-howto-layout">
+        <section class="title">
+            <h2 data-text="놀이방법" lang="y">
+                <span class="title-ready"><span class="point">놀이</span> 방법</span>
+                <span class="howto num1">놀이 순서를 정합니다.</span>
+                <span class="howto num2">첫 번째 순서인 사람이 수 카드 3장을 뒤집어 모두에게 보여 줍니다.</span>
+                <span class="howto num3">뒤집은 수 카드를 사용하여 자신의 놀이판에 있는 수가 계산 결과가 되도록 식을 만들고, 만든 식을 모두에게 이야기합니다.</span>
+                <span class="howto num4">다른 사람은 계산 결과가 맞는지 확인합니다. 계산 결과가 맞으면 모든 사람이 놀이판에서 계산 결과를 찾아 색칠하고, 틀리면 색칠할 수 없습니다.</span>
+                <span class="howto num5">
+                    순서에 따라
+                    <img src="../../common_contents/common/img/icon_howto_num3_4.svg" alt="3~4">를 반복합니다. 만약 자신의 놀이판에 있는 수가 계산 결과가 되도록 식을 만들 수 없다면 수 카드를 다시 섞어 3장을 뒤집은 후 뒤집은 수 카드를 사용하여 식을 만듭니다. </span>
+                    
+                </span>
+                <span class="howto num6">가장 먼저 3줄을 색칠한 사람이 ‘빙고’를 외칩니다.</span>
+            </h2>
+
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <!-- flex dir_col -->
+                        
+                        <img src="../../common_contents/img/EMA511_SU/0002_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="../../common_contents/img/EMA511_SU/0002_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="../../common_contents/img/EMA511_SU/0002_img_3.png" alt="">
+                    </article>
+                    <article class="page page_4">
+                        <img src="../../common_contents/img/EMA511_SU/0002_img_4.png" alt="">
+                    </article>
+                    <article class="page page_5">
+                        
+                        
+                        <img src="../../common_contents/img/EMA511_SU/0002_img_5.png" alt="">
+                    </article>
+                    <article class="page page_6">
+                        <img src="../../common_contents/img/EMA511_SU/0002_img_6.png" alt="">
+                    </article>
+
+                </div>
+            </div>
+            
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="play btnBgDefault" lang="y">활동 영상</button>
+                </div>
+                <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+                <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

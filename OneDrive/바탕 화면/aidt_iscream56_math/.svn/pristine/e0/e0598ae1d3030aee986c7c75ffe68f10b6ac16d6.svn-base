@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_07_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_07.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_07_su_0004" data-current-page="page_1, page_2, page_3, page_4">
+    <section class="title type2">
+      <h2 class="flex" data-head="2" lang="y">
+        직육면체의 겉넓이를 구하는 방법을 알아봅시다.
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">여섯 면의 넓이를 더하여 겉넓이를 구해 보세요.</h3>
+        <div class="flex">
+          <div class="left_area">
+            <img src="../../common_contents/img/EMA616_07_SU/616_07_004.png" alt="" />
+            <div class="length_1">3 ㎝</div>
+            <div class="length_2">2 ㎝</div>
+            <div class="length_3">5 ㎝</div>
+            <div class="length_4">5 ㎝</div>
+            <div class="length_5">2 ㎝</div>
+            <div class="length_6">3 ㎝</div>
+          </div>
+          <div class="right_area">
+            <img src="../../common_contents/img/EMA616_07_SU/616_07_003.png" alt="" />
+            <p class="title1" lang="y">(직육면체의 겉넓이)</p>
+            <div class="container">
+              <div class="symbol">=</div>
+              <div class="box pink"></div>
+              <div class="symbol">+</div>
+              <div class="box yellow"></div>
+              <div class="symbol">+</div>
+              <div class="box green"></div>
+              <div class="symbol">+</div>
+              <div class="box blue"></div>
+              <div class="symbol">+</div>
+              <div class="box purple"></div>
+              <div class="symbol">+</div>
+              <div class="box graybrown"></div>
+            </div>
+            <div class="color-boxes">
+              <div class="box1 pink"></div>
+              <div class="box1 yellow"></div>
+              <div class="box1 green"></div>
+              <div class="box1 blue"></div>
+              <div class="box1 purple"></div>
+              <div class="box1 gray"></div>
+            </div>
+            <div class="input_box">
+              <div class="symbol">=</div>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="10"></math-field>
+              </div>
+              <div class="symbol">+</div>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="6"></math-field>
+              </div>
+              <div class="symbol">+</div>
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="15"></math-field>
+              </div>
+              <div class="symbol">+</div>
+              <div class="input_wrap answer4">
+                <math-field data-answer-single="6"></math-field>
+              </div>
+              <div class="symbol">+</div>
+              <div class="input_wrap answer5">
+                <math-field data-answer-single="15"></math-field>
+              </div>
+              <div class="symbol">+</div>
+              <div class="input_wrap answer6">
+                <math-field data-answer-single="10"></math-field>
+              </div>
+            </div>
+            <div class="input_box2">
+              <div class="input_wrap answer7">
+                <div class="symbol">=</div>
+                <math-field data-answer-single="62"></math-field>
+                <span>(㎠)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 1page -->
+
+      <article class="page page_2">
+        <h3 lang="y">평행한 두 면의 넓이가 서로 같다는 것을 이용하여 겉넓이를 구해 보세요.</h3>
+        <div class="flex">
+          <div class="left_area">
+            <img src="../../common_contents/img/EMA616_07_SU/616_07_004.png" alt="" />
+            <div class="length_1">3 ㎝</div>
+            <div class="length_2">2 ㎝</div>
+            <div class="length_3">5 ㎝</div>
+            <div class="length_4">5 ㎝</div>
+            <div class="length_5">2 ㎝</div>
+            <div class="length_6">3 ㎝</div>
+          </div>
+          <div class="right_area">
+            <img src="../../common_contents/img/EMA616_07_SU/616_07_005.png" alt="" />
+            <div class="bubble_wrap">
+              <div class="bubble_img">
+                <img src="../../common_contents/img/EMA616_07_SU/bubble_1.png" alt="">
+                <div class="txt_1">
+                  <p lang=y>
+                  <div class="flex">(<span class="mini_box pink"></span>+<span class="mini_box yellow"></span>+<span
+                      class="mini_box green"></span>)×2로<br /></div>
+                  구할 수도 있어요.</p>
+                </div>
+              </div>
+            </div>
+            <p class="title1" lang="y">(직육면체의 겉넓이)</p>
+            <div class="container">
+              <div class="symbol">=</div>
+              <div class="box pink"></div>
+              <div class="symbol">×2+</div>
+              <div class="box yellow"></div>
+              <div class="symbol">×2+</div>
+              <div class="box green"></div>
+              <div class="symbol">×2</div>
+            </div>
+            <div class="color-boxes">
+              <div class="box1 pink"></div>
+              <div class="box1 yellow"></div>
+              <div class="box1 blue"></div>
+            </div>
+            <div class="input_box">
+              <div class="symbol">=</div>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="10"></math-field>
+              </div>
+              <div class="symbol">×2+</div>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="6"></math-field>
+              </div>
+              <div class="symbol">×2+</div>
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="15"></math-field>
+              </div>
+              <div class="symbol">×2</div>
+            </div>
+            <div class="input_box2">
+              <div class="symbol">=</div>
+              <div class="input_wrap answer7">
+                <math-field data-answer-single="62"></math-field>
+              </div>
+              <span>(㎠)</span>
+            </div>
+
+          </div>
+      </article>
+      <!-- 2page -->
+      <article class="page page_3">
+        <h3 lang="y">
+          두 밑면과 옆면의 넓이를 더하여 겉넓이를 구해 보세요.
+        </h3>
+        <div class="flex">
+          <div class="left_area">
+            <img src="../../common_contents/img/EMA616_07_SU/616_07_004.png" alt="" />
+            <div class="length_1">3 ㎝</div>
+            <div class="length_2">2 ㎝</div>
+            <div class="length_3">5 ㎝</div>
+            <div class="length_4">5 ㎝</div>
+            <div class="length_5">2 ㎝</div>
+            <div class="length_6">3 ㎝</div>
+          </div>
+          <div class="right_area">
+            <img src="../../common_contents/img/EMA616_07_SU/616_05_006.png" alt="" />
+            <div class="bubble_wrap2">
+              <div class="bubble_2">
+                <img src="../../common_contents/img/EMA616_07_SU/bubble_2.png" alt="">
+                <div class="txt_2">
+                  <p lang="y">옆면을 하나의 직사각형으로<br /> 보고 구해 볼까요?</p>
+                </div>
+              </div>
+            </div>
+            <p class="title1" lang="y">(직육면체의 겉넓이)</p>
+            <div class="container">
+              <div class="symbol">=</div>
+              <div class="box pink"></div>
+              <div class="symbol">×2+</div>
+            </div>
+            <div class="color-boxes">
+              <div class="box1 pink"></div>
+              <div class="box1 yellow"></div>
+            </div>
+            <div class="input_box">
+              <div class="symbol">=</div>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="10"></math-field>
+              </div>
+              <div class="symbol">×2+</div>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="42"></math-field>
+              </div>
+            </div>
+            <div class="input_box2">
+              <div class="symbol">=</div>
+              <div class="input_wrap answer7">
+                <math-field data-answer-single="62"></math-field>
+              </div>
+              <span>(㎠)</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_4">
+        <h3 lang="y">
+          직육면체의 겉넓이를 구하는 여러 가지 방법을 비교해 보세요.
+        </h3>
+        <div class="flex">
+          <div class="top_img">
+            <img src="../../common_contents/img/EMA616_07_SU/616_07_007.png" alt="">
+            <div class="unit_a">5 ㎝</div>
+            <div class="unit_b">2 ㎝</div>
+            <div class="unit_c">3 ㎝</div>
+            <div class="unit_d">5 ㎝</div>
+            <div class="unit_e">2 ㎝</div>
+            <div class="unit_f">3 ㎝</div>
+          </div>
+          <div class="input_wrap">
+            <math-field class="textarea" placeholder=" "></math-field>
+            <ol class="example_box">
+              <li lang="y">평행한 두 면의 넓이가 서로 같다는 것을 이용하면 여섯 면의 넓이를 모두 구하지 않고 세 면의 넓이만 구해도 직육면체의 겉넓이를 구할 수 있어 편리합니다.</li>
+              <li lang="y">옆면을 하나의 직사각형으로 보면 밑면과 옆면의 넓이만 구해도 직육면체의 겉넓이를 구할 수 있어서 편리합니다.</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

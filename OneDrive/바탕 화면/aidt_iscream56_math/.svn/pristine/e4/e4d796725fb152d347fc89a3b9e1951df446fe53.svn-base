@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_08_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_08_su_0003">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">
+            예은이네 가족은 이번 달에 다음과 같이 두 가전제품의 사용을 줄여 전기를 절약하려고 합니다. 예은이네 집의 지난달 전기 사용량이 270 kWh였을 때 이번 달에 줄이려는 전기 사용량은 지난달 전기 사용량의 몇 ％인지 구해 봅시다. (단, 다른 가전제품의 전기 사용량은 지난달과 같습니다.)
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+            <div class="question_box">
+              <div class="img_row flex align_start">
+                <div class="picture_wrap">
+                    <img src="../../common_contents/img/EMA614_08_SU/0003_content.png" alt="" />
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 578 450" fill="none">
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="20"
+                            letter-spacing="-0.5px" lang="y">
+                            <tspan x="117" y="71">식기세척기와 ​진공</tspan>
+                            <tspan x="95" y="100">진공청소기의 사용을 줄여</tspan>
+                            <tspan x="114" y="130">전기를 절약해야지.</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="12"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(6 750 635)">
+                            <tspan x="195" y="260">지난달 전기 사용량은?</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="12"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(5 750 635)">
+                            <tspan x="168" y="276">동일 면적 평균 사용량(250 kWh)</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="11"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(-65 0 0)">
+                            <tspan x="-227" y="318">190</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="11"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(-22 0 0)">
+                            <tspan x="99" y="367">230</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="11"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(2 0 0)">
+                            <tspan x="274" y="284">250</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="11"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(30 0 0)">
+                            <tspan x="411" y="108">270</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="11"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(53 0 0)">
+                            <tspan x="472" y="-65">310</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="11"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(6 0 0)">
+                            <tspan x="275" y="296">우리 집 사용량</tspan>
+                            <tspan x="278" y="311">(270 kWh)</tspan>
+                        </text>
+                        <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-size="11"
+                            letter-spacing="-0.5px" lang="y" transform="rotate(6 0 0)">
+                            <tspan x="278" y="332">평균보다 많이</tspan>
+                            <tspan x="275" y="347">사용했습니다.</tspan>
+                        </text>
+                    </svg>
+                    <button class="zoom"></button>
+                  </div>   
+                  <div class="col1 input_area">
+                    <div class="table_box">
+                        <table>
+                          <colgroup>
+                            <col style="width: 296px;">
+                            <col style="width: 450px;">
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th lang="y" scope="col">가전제품</th>
+                              <th lang="y" scope="col">줄이려는 전기 사용량 (kWh)</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th lang="y" scope="row">식기세척기​</th>
+                              <td lang="y">15</td>
+                            </tr>
+                            <tr>
+                              <th lang="y" scope="row">진공청소기</th>
+                              <td lang="y">12</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <div class="input_area">
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="10"></math-field>
+                        </div>
+                        <span class="f32b">％</span>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

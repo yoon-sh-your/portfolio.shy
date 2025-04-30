@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema617_02_su_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema617_02_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema617_02_su_0003">
+    <section class="title type2">
+      <h2 data-head="2">
+        <span lang="y">기사에서 그래프로 나타낼 수 있는 자료를 찾고, 어떤 그래프로 나타내면 좋을지 이야기해 봅시다.​</span>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">   
+      <div class="img_row flex align-start gap_26">
+        <div class="picture_wrap">
+          <img src="./../../common_project/img/EMA617_02_SU/EMA617_02_SU_0003_img.png" alt="" class="img"/>
+          <div class="text_group f24b text_center" lang="y">주어진 자료를​<br>그래프로 나타내어​<br>기사를 고쳐 볼까?​</div>
+          <!-- <button class="zoom"></button> -->
+        </div>
+        <div class="input_area">
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <div class="example_box">
+              <p lang="y">학생들의 교통사고의 원인을 원그래프로 나타내면 좋을 것 같습니다.​</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+    
+  </div>
+</body>
+
+</html>

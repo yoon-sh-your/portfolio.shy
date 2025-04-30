@@ -1,0 +1,35 @@
+.long_division .top {display:flex; justify-content:center;}
+.long_division .top > span {display:block; width:100%; padding:0 12px;}
+.long_division .input_wrap {margin:4px 0;}
+.long_division .top .text_hint {top:-36px;}
+.long_division .row {position:relative;}
+.long_division .row .left {position:absolute; top:0; left:0; transform:translateX(-101%)}
+.long_division .row .right {display:flex; align-items:center; border-top:1px solid #222; background:url(../img/EMA622_02_IH/long_divi.svg) no-repeat left top / auto 100%;}
+.long_division .row .right,
+.long_division .under,
+.long_division .bottom {padding:0 12px;}
+.long_division .row .right > span,
+.long_division .under > span,
+.long_division .bottom > span {font-size:0;}
+.long_division span em {font-size:32px;;}
+.long_division .bottom {border-top:1px solid #222;}
+.long_division em {display:inline-block; font-style:normal; width:0.8em; text-align:center;}
+.long_division .dot {width:8px; text-align:center;}
+.long_division .zero {color:#9E9E9E;}
+.long_division .hidden {opacity:0;}
+.completed .long_division .hidden {opacity:1;}
+.completed .long_division .red {color:#f00;}
+
+.ema622_07_ih_0001 .box {position:relative; display:flex; justify-content:center; width:314px; height:520px; padding:20px 0; border:2px dashed #d2d2d2; border-radius:30px;}
+
+.ema622_07_ih_0004 .tabbox {position:relative; padding-top:46px;}
+.ema622_07_ih_0004 .tabbox1 {width:530px}
+.ema622_07_ih_0004 .tabbox2 {width:650px}
+.ema622_07_ih_0004 .tabbox .tit_tabbox {position:absolute; top:0; left:30px; padding:0 20px; border-radius:20px 20px 0 0; background:#fef6ed; line-height:50px; font-size:24px; color:#c45938; font-weight:bold;}
+.ema622_07_ih_0004 .tabbox .conts_tabbox {border-radius:40px; background:#fef6ed; padding:20px; white-space:normal;}
+.ema622_07_ih_0004 .tabbox .conts_tabbox > .flex {height:440px; padding:20px; background:#fff; border:1px solid #facc9c; border-radius:30px;}
+.ema622_07_ih_0004 .tabbox .boolean_wrap {display:block;}
+.ema622_07_ih_0004 .tabbox .boolean_wrap button {display:block; width:auto; height:auto; padding:0; border:none; background:none; aspect-ratio:unset;}
+.ema622_07_ih_0004 .tabbox .boolean_wrap button.selected .long_division .hidden {opacity:1; color:#f00}
+.ema622_07_ih_0004 .tabbox .boolean_wrap button.selected .bottom {border-color:#f00;}
+.ema622_07_ih_0004 .tabbox .long_division {line-height:1.4;}

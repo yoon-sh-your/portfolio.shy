@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_03_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_03_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">두 사각형은 서로 합동입니다. 대응점, 대응변, 대응각을 각각 찾아 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA523_03_IH/0001_01.png" alt="" />
+          </div>
+          <div class="input_area table_wrap">
+            <table>
+              <colgroup>
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th lang="y" scope="col">점 ㄱ의 대응점</th>
+                  <th lang="y" scope="col">변 ㄷㄹ의 대응변</th>
+                  <th lang="y" scope="col">각 ㄱㄴㄷ의 대응각</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <span lang="y">점</span>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="ㅁ" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <span lang="y">변</span>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="ㅅㅇ" data-answer-multi='{"values": ["ㅅㅇ", "ㅇㅅ"]}' text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <span lang="y">각</span>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="ㅁㅂㅅ" data-answer-multi='{"values": ["ㅁㅂㅅ", "ㅅㅂㅁ"]}' text-align="center"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">두 사각형을 완전히 겹치도록 포개어 보면 점 ㄱ과 점 ㅁ이 겹칩니다.</p>
+                <p lang="y" class="text_bullet">두 사각형을 완전히 겹치도록 포개어 보면 변 ㄷㄹ과 변 ㅅㅇ이 겹칩니다.</p>
+                <p lang="y" class="text_bullet">두 사각형을 완전히 겹치도록 포개어 보면 각 ㄱㄴㄷ과 각 ㅁㅂㅅ이 겹칩니다.</p>
+                <p class="text_label">
+                  <span class="label reference">참고</span>
+                  <span lang="y"> 합동인 두 도형에서 대응변과 대응각을 찾을 때에는 먼저 각각의 대응점을 찾은 후에 대응점과 같은 순서로 기호를 씁니다. </span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

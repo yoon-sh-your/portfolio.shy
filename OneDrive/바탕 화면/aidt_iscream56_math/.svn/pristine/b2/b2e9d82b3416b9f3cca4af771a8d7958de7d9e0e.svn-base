@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_05_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_02_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_05_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">올림하여 십의 자리까지 나타내면 십의 자리 숫자가 5가 되는 수를 모두 찾아 골라 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="boolean_wrap justify_center mt_30">
+          <div class="button_box">
+            <button type="button" data-answer-single="false" class="button1">423</button>
+            <button type="button" data-answer-single="false" class="button2">500</button>
+            <button type="button" data-answer-single="true" class="button3">445</button>
+            <button type="button" data-answer-single="false" class="button4">399</button>
+            <button type="button" data-answer-single="true" class="button5">246</button>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">주어진 수를 올림하여 십의 자리까지 나타내어 봅니다.</p>
+                <p lang="y">42<span class="text_bg_red">3</span> ➔ 430</p>
+                <p lang="y">50<span class="text_bg_red">0</span> ➔ 500</p>
+                <p lang="y">44<span class="text_bg_red">5</span> ➔ 450</p>
+                <p lang="y">39<span class="text_bg_red">9</span> ➔ 400</p>
+                <p lang="y">24<span class="text_bg_red">6</span> ➔ 250</p>
+                <p lang="y">따라서 올림하여 십의 자리까지 나타내면 십의 자리 숫자가 5가 되는 수는 445, 246입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_06_IH_0004</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_06.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_06_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4_deep_green" lang="y">음료수 6개를 3600원에 팔고 있습니다. 이 음료수 10개의 가격은 얼마인지 비례식을 세우고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="flex align_start gap_10">
+            <span lang="y" class="label_gray">비례식</span>
+            <div class="input_wrap input1">
+              <math-field></math-field>
+              <div class="example_box">
+                <p>6:3600=10:□</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex align_start gap_10">
+            <span lang="y" class="label_gray">답</span>
+            <div class="input_wrap input2">
+              <math-field></math-field>
+              <div class="example_box">
+                <p>6000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>음료수 10개의 가격을 <span class="empty_box nemo"></span>원이라 하고 비례식을 세우면 6 : 3600 = 10 : <span class="empty_box nemo"></span>입니다.</p>
+                <p>6 × <span class="empty_box nemo"></span> = 3600 × 10, 6 × <span class="empty_box nemo"></span> = 36000, <span class="empty_box nemo"></span> = 6000이므로 음료수 10개의 가격은 6000원입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

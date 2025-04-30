@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_06_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_06_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" class="fraction_box_title" lang="y">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              넓이가
+              <div class="mixed_fraction">
+                8
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              &nbsp;㎠ 이고 밑변의 길이가 7 ㎝인 평행사변형이 있습니다. 이 평행사변형의 높이는 몇 ㎝인지 구해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="input_wrap fraction_wrap custom">
+            <math-field data-answer-single="1(1)/(4)" data-answer-multi='{"values": ["1(1)/(4)", "(5)/(4)"]}' data-multi-hint="y"></math-field>
+          </div>
+          <span>㎝</span>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

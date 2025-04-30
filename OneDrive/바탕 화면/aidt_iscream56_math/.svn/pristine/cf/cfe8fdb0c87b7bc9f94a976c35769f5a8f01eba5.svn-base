@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA615_03_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+ <!-- 개별 -->
+ <script src="../../common_contents/js/ema615_03_0003.js"></script>
+ <!-- <script src="../../common_contents/js/ema615_03_0005.js"></script> -->
+ <script src="../../common_contents/js/ema615_03_0005-2.js"></script>
+ <link rel="stylesheet" href="./../../common_contents/css/ema615_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema615_03.css" />
+  <!-- <script src="../guide_sample/boolean_roundarea.js"></script> -->
+</head>
+
+<body>
+  <div id="app_wrap" class="ema615_03_su_0005">
+    <section class="title type2">
+      <h2 data-head="3_light_purple" lang="y">
+        <img src="../../common_contents/common/img/title_heading_num_1_light_purple.svg" alt="" width="32px"
+          height="32px">
+        의 표를 보고 원그래프를 완성해 봅시다.</h2>
+      <div class="title_right">
+        <button class="goal" onclick="openPop('.pop_goal_wrap')" lang="y">도움 자료</button>
+      </div>
+    </section>
+
+    <div class="pop_goal_wrap">
+      <div class="pop_goal">
+        <div class="pop_goal_inner">
+          <section class="contents paging_layout">
+            <article class="popup_page popup_page_1">
+              <span class="pop_goal_title">
+                <h3 lang="y">띠그래프와 원그래프로 나타내기</h3>
+                <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+              </span>
+              <div class="question_box justify_center">
+                <div class="popup_container">
+                  <div class="picture_wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1061" height="452" viewBox="0 0 1061 452"
+                      fill="none">
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="28" letter-spacing="-1px">
+                        <tspan x="705.002" y="400.966" lang="y">제목을 먼저 써도 돼.</tspan>
+                      </text>
+                      <rect x="120.002" y="58" width="44" height="44" rx="22" fill="#15255B" />
+                      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="136.377" y="88.5312">1</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="174.494" y="88.5312" lang="y">각 항목의 백분율 구하기</tspan>
+                      </text>
+                      <rect x="120.002" y="117" width="44" height="44" rx="22" fill="#15255B" />
+                      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="134.678" y="147.531">2</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="174.111" y="147.531" lang="y">각 항목의 백분율의 합계가 100 ％인지 확인하기</tspan>
+                      </text>
+                      <rect x="120.002" y="176" width="44" height="44" rx="22" fill="#15255B" />
+                      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="134.338" y="206.531">3</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="174.127" y="206.531" lang="y">각 항목의 백분율만큼 선을 그어 띠(원) 나누기</tspan>
+                      </text>
+                      <rect x="120.002" y="235" width="44" height="44" rx="22" fill="#15255B" />
+                      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="134.115" y="265.531">4</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="174.1" y="265.531" lang="y">나눈 부분에 각 항목의 내용과 백분율 쓰기</tspan>
+                      </text>
+                      <rect x="120.002" y="294" width="44" height="44" rx="22" fill="#15255B" />
+                      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="134.479" y="324.531">5</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="174.373" y="324.531" lang="y">그래프에 알맞은 제목 쓰기</tspan>
+                      </text>
+                    </svg>
+                    <img src="../../common_contents/img/EMA615_03_SU/popup-1.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="popup_page popup_page_2">
+              <span class="pop_goal_title">
+                <h3 lang="y">띠그래프로 나타내기</h3>
+                <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+              </span>
+              <div class="question_box justify_center">
+                <div class="popup_container">
+                  <div class="picture_wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1142" height="332" viewBox="0 0 1142 332"
+                      fill="none">
+                      <text fill="#6A6B94" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="446" y="28.1094" lang="y">좋아하는 운동별 학생 수의 비율</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="37" y="146.109" lang="y">운동</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="947" y="298.109" lang="y">야구(10 %)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="132" y="146.109" lang="y">줄넘기</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="149" y="215.109">18</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="147" y="298.109">36</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="597" y="146.109">0</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="642" y="146.109">10</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="690" y="146.109">20</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="738" y="146.109">30</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="786" y="146.109">40</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="834" y="146.109">50</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="882" y="146.109">60</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="930" y="146.109">70</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="979" y="146.109">80</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="1027" y="146.109">90</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="1070" y="146.109">100(%)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="238" y="215.109">15</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="236" y="298.109">30</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="329" y="215.109">12</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="327" y="298.109">24</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="425" y="215.109">5</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="420" y="298.109">10</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="506" y="215.109">50</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="501" y="298.109">100</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="232" y="146.109" lang="y">축구</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="323" y="146.109" lang="y">피구</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="415" y="146.109" lang="y">야구</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="504" y="146.109" lang="y">합계</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="27.0176" y="199.109" lang="y">학생 수
+                        </tspan>
+                        <tspan x="38.5645" y="231.109" lang="y">(명)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="665.072" y="218.109" lang="y">줄넘기
+                        </tspan>
+                        <tspan x="661.295" y="250.109">(36 %)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="833.465" y="218.109" lang="y">축구
+                        </tspan>
+                        <tspan x="821.119" y="250.109">(30 %)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="963.965" y="218.109" lang="y">피구
+                        </tspan>
+                        <tspan x="952.088" y="250.109">(24 %)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="29.0723" y="284.109" lang="y">백분율
+                        </tspan>
+                        <tspan x="37.6074" y="316.109">(%)</tspan>
+                      </text>
+                    </svg>
+                    <img src="../../common_contents/img/EMA615_03_SU/popup-2.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="popup_page popup_page_3">
+              <span class="pop_goal_title">
+                <h3 lang="y">원그래프로 나타내기</h3>
+                <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+              </span>
+              <div class="question_box justify_center">
+                <div class="popup_container">
+                  <div class="picture_wrap">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1142" height="354" viewBox="0 0 1142 354"
+                      fill="none">
+                      <text fill="#6A6B94" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="445.995" y="28.1094" lang="y">좋아하는 운동별 학생 수의 비율</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="37" y="146.16" lang="y">운동</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="132" y="146.16" lang="y">줄넘기</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="149" y="215.16">18</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="147" y="298.16">36</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="238" y="215.16">15</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="236" y="298.16">30</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="329" y="215.16">12</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="327" y="298.16">24</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="425" y="215.16">5</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="420" y="298.16">10</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="506" y="215.16">50</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="501" y="298.16">100</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="232" y="146.16" lang="y">축구</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="323" y="146.16" lang="y">피구</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="415" y="146.16" lang="y">야구</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="504" y="146.16" lang="y">합계</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="27.0176" y="199.16" lang="y">학생 수
+                        </tspan>
+                        <tspan x="38.5645" y="231.16" lang="y">(명)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="29.0723" y="284.16" lang="y">백분율
+                        </tspan>
+                        <tspan x="37.6074" y="316.16">(%)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="734" y="225.136">75</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="977" y="225.136">25</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="855" y="344.136">50</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="720" y="114.136" lang="y">야구(10 %)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="847.465" y="263.136" lang="y">축구
+                        </tspan>
+                        <tspan x="835.119" y="295.136">(30 %)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="790.965" y="199.136" lang="y">피구
+                        </tspan>
+                        <tspan x="779.088" y="231.136">(24 %)</tspan>
+                      </text>
+                      <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                        font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                        <tspan x="884.072" y="183.136" lang="y">줄넘기
+                        </tspan>
+                        <tspan x="880.295" y="215.136">(36 %)</tspan>
+                      </text>
+                    </svg>
+                    <img src="../../common_contents/img/EMA615_03_SU/popup-3.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="graph">
+      <div class="circle-graph-division" data-single-answer='[40,25,20,10,5]'>
+        <svg id="circleSvg" width="500" height="500" viewBox="0 0 500 500">
+          <circle class="circle" cx="250" cy="250" r="200"/>
+          <circle class="center-point" cx="250" cy="250" r="5" />
+        </svg>
+        <div class="option-selector" id="optionSelector"></div>
+      </div>
+    </div>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">각 항목의 백분율만큼 선을 그어 원을 나누어 보세요. </h3>
+
+        <div class="picture_wrap bubble">
+          <svg xmlns="http://www.w3.org/2000/svg" width="395" height="193" viewBox="0 0 395 193" fill="none">
+            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24"
+              letter-spacing="-0.5px">
+              <tspan x="63.3789" y="78.5312" lang="y">원을 나눌 때에는
+              </tspan>
+              <tspan x="30.0156" y="114.531" lang="y">원의 중심에서 눈금까지
+              </tspan>
+              <tspan x="47.4609" y="150.531" lang="y">선으로 이어야 해요.</tspan>
+            </text>
+          </svg>
+          <img src="../../common_contents/img/EMA615_03_SU/0005_img.png" alt="">
+        </div>
+
+        <div class="table-container">
+          <div class="table-title" lang="y">고민 상담 대상별 학생 수의 비율</div>
+          <table class="my-table">
+            <thead>
+              <tr>
+                <th lang="y">대상</th>
+                <th lang="y">친구</th>
+                <th lang="y">부모님</th>
+                <th lang="y">선후배</th>
+                <th lang="y">형제</th>
+                <th lang="y">기타</th>
+                <th lang="y">합계</th>
+              </tr>
+            </thead> 
+            <tbody>
+              <tr>
+                <th lang="y">백분율(％)</th>
+                <td>40</td>
+                <td>25</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">나눈 부분에 각 항목의 내용과 백분율을 써 보세요.</h3>
+
+        <div class="table-container">
+          <div class="table-title" lang="y">고민 상담 대상별 학생 수의 비율</div>
+          <table class="my-table">
+            <thead>
+              <tr>
+                <th lang="y">대상</th>
+                <th lang="y">친구</th>
+                <th lang="y">부모님</th>
+                <th lang="y">선후배</th>
+                <th lang="y">형제</th>
+                <th lang="y">기타</th>
+                <th lang="y">합계</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th lang="y">백분율(％)</th>
+                <td>40</td>
+                <td>25</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="input_group">
+          <div class="input_1">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="부모님" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="25" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+          <div class="input_2">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="선후배" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="20" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+          <div class="input_3">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="형제" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="10" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+          <div class="input_4">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="기타" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="5" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+        </div>
+
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">알맞은 제목을 써 보세요.</h3>
+     
+        <div class="table-container">
+          <div class="table-title" lang="y">고민 상담 대상별 학생 수의 비율</div>
+          <table class="my-table">
+            <thead>
+              <tr>
+                <th lang="y">대상</th>
+                <th lang="y">친구</th>
+                <th lang="y">부모님</th>
+                <th lang="y">선후배</th>
+                <th lang="y">형제</th>
+                <th lang="y">기타</th>
+                <th lang="y">합계</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th lang="y">백분율(％)</th>
+                <td>40</td>
+                <td>25</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="input_group">
+          <div class="input_1">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="부모님" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="25" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+          <div class="input_2">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="선후배" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="20" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+          <div class="input_3">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="형제" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="10" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+          <div class="input_4">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="기타" lang="y">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="친구" lang="y"></option>
+                <option value="부모님" lang="y"></option>
+                <option value="선후배" lang="y"></option>
+                <option value="형제" lang="y"></option>
+                <option value="기타" lang="y"></option>
+              </select>
+            </div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="5" text-align="center" placeholder=" "></math-field>
+            </div>
+            ％
+          </div>
+        </div>
+
+        <div class="input_wrap graph_title_input">
+          <math-field class="textarea"></math-field>
+          <div class="example_box">
+            <p lang="y">고민 상담 대상별 학생 수의 비율</p>
+          </div>
+        </div>
+
+      </article>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

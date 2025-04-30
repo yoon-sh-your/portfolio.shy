@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_03_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_03_ih_0006 paging">
+      <section class="title type2 score">
+        <h2 data-head="6" class="is_star2" lang="y">어떤 수를 7로 나누어야 할 것을 잘못하여 곱했더니 63이 되었습니다. 옳게 계산한 값을 분수로 나타내려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">어떤 수를 구해 보세요.</h3>
+          <div class="question_box justify_center mt_30">
+            <div class="input_area">
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="9"></math-field>
+              </div>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p><span lang="y">어떤 수를 </span><span class="empty_box nemo"></span><span lang="y">라 하면 </span><span class="empty_box nemo"></span><span lang="y">×7=63이므로</span> <span class="empty_box nemo"></span><span lang="y">=63÷7=9입니다</span></p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">옳게 계산한 값을 분수로 나타내어 보세요.</h3>
+          <div class="question_box justify_center mt_30">
+            <div class="input_area">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="1(2)/(7)(=(9)/(7))" text-align="center" placeholder="&nbsp;"></math-field>
+              </div>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex gap_0 align_center">
+                    <span lang="y">옳게 계산하면 9÷7=입니다.</span>
+                    <div class="fraction_box"><span>9</span><span>7</span></div>
+                    =
+                    <div class="mixed_fraction">
+                      <span>1</span>
+                      <div class="fraction_box"><span>2</span><span>7</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_03_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_03_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          <div class="fraction_row">
+            <div class="fraction_inn">
+               바닷물로 만든 식수
+              <span class="fraction_box"><span>7</span><span>9</span></span
+              > L를 들이가 <span class="fraction_box"><span>2</span><span>9</span></span
+              > L인 컵에 옮겨 담으려고 합니다. 식수를 모두 옮겨 담으면 몇 컵이 되는지 구해 봅시다.
+            </div>
+            
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+            <article class="page page_1">
+              <div class="img_row">
+                <div class="picture_wrap">
+                  <img src="../../common_contents/img/EMA621_03_SU/0003_content.png" alt="자치회 활동 이미지" />
+                  <button class="zoom"></button>
+                </div>
+              
+              <div class="input_area">
+                <h3 lang="y">구하는 식을 써 보세요.</h3>
+                <div class="question_box justify_center">
+                  <div class="input_wrap fraction_wrap">
+                    <math-field data-answer-single="(7)/(9)÷(2)/(9)"></math-field>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="page page_2">
+              <h3 lang="y">
+                식수를 모두 옮겨 담으면 몇 컵이 되는지 구하는 방법을 생각해 보고, 그림을 이용하여 알아보세요.
+              </h3>
+              <div class="speech_bubble">
+                <div class="bubble_txt">
+                  1컵의 반은<br>몇 컵일까?
+                </div>
+              </div>
+              <div class="question_box justify_center">
+                <div class="box">
+                  <div class="txt txt1">
+                    <span class="fraction_box"><span>1</span><span>10</span></span>
+                    <span lang="y">&nbsp;L</span>
+                  </div>
+                  <div class="txt txt2" lang="y">1 (L)</div>
+                  <div class="txt txt3" lang="y">0</div>
+                  <div class="boolean_count_wrap col">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                  </div>
+                  <span class="txt txt4" lang="y">1컵</span>
+                </div>
+              </div>
+            </article>
+            <article class="page page_3">              
+                <div class="img_row">
+                  <div class="picture_wrap">
+                    <img src="../../common_contents/img/EMA621_03_SU/0003_content.png" alt="자치회 활동 이미지" />
+                    <button class="zoom"></button>
+                  </div>
+                
+                <div class="input_area">
+                  <h3 lang="y">식수를 모두 옮겨 담으면 몇 컵이 되나요?</h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="3(1)/(2)"></math-field>
+                    </div>
+                  </div>
+                </div>
+            </article>
+            
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

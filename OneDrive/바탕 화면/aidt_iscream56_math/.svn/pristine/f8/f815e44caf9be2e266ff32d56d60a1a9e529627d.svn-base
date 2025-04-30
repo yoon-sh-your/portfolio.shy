@@ -1,0 +1,340 @@
+/* ema613_09_SU_0002_s */
+.ema613_09_su_0002 {
+    .title h2[data-head] {
+        span {
+            position: relative;
+
+            .calculator {
+                position: absolute;
+                display: inline-flex;
+            }
+        }
+    }
+
+    .picture_wrap {
+        height: 494px;
+
+        img {
+            top: 0;
+            transform: translate(-50%, 0);
+            height: unset;
+            width: 660px;
+        }
+
+        .txt_box {
+            width: 150px;
+            font-size: 12px;
+            letter-spacing: -0.5px;
+            z-index: 99;
+            text-align: center;
+
+            &.abs_1 {
+                position: absolute;
+                top: 365px;
+                left: 114px;
+
+                .name {
+                    position: absolute;
+                    top: -44px;
+                    left: 137px;
+                    white-space: nowrap;
+                }
+            }
+
+            &.abs_2 {
+                position: absolute;
+                top: 394px;
+                right: 116px;
+
+                .name {
+                    position: absolute;
+                    top: -52px;
+                    left: -4px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+    .page_1 {
+        .img_box {
+            overflow: visible;
+            position: relative;
+            width: 475px;
+            height: 500px;
+            display: flex;
+            flex: 0 0 auto;
+            margin: auto;
+
+            .txt_box {
+                width: 114px;
+                font-size: 8px;
+                letter-spacing: -0.5px;
+                z-index: 99;
+                text-align: center;
+
+                &.abs_1 {
+                    position: absolute;
+                    top: 255px;
+                    left: 55px;
+
+                    .name {
+                        position: absolute;
+                        top: -32px;
+                        left: 97px;
+                        white-space: nowrap;
+                    }
+                }
+
+                &.abs_2 {
+                    position: absolute;
+                    top: 276px;
+                    right: 70px;
+
+                    .name {
+                        position: absolute;
+                        top: -39px;
+                        left: 2px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            table {
+                position: absolute;
+                z-index: 99;
+                bottom: 10px;
+                left: -7px;
+                margin: 0 50px;
+                width: 373px;
+                font-size: 10px;
+
+                caption {
+                    padding-bottom: 5px;
+                    padding-left: 6px;
+                }
+
+                th {
+                    font-size: 10px;
+                    padding: 5px;
+                }
+
+                td {
+                    text-align: center;
+                    font-size: 10px;
+                    padding: 4px 5px;
+                }
+
+                tfoot td {
+                    text-align: right;
+                }
+            }
+
+            .notice {
+                position: absolute;
+                z-index: 99;
+                bottom: -16px;
+                right: 40px;
+                font-size: 8px;
+                letter-spacing: -0.5px;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 7px;
+                    height: 7px;
+                    background: url(../../common_contents/img/EMA613_09_SU/0002_img02.png) no-repeat bottom center / 100%;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+    .page_2 {
+        h3 {
+            margin-bottom: 12px;
+        }
+
+        .input_wrap {
+
+            math-field.textarea {
+                height: 94px;
+                min-height: unset;
+            }
+
+            .example_box {
+                max-height: 190px;
+            }
+        }
+    }
+
+    .picture_wrap svg {
+        top: 61%;
+    }
+
+    .page_3 {
+        h3 {
+            margin-bottom: 12px;
+        }
+
+        .hint_area {
+            color: #FF0000;
+            white-space: nowrap;
+            opacity: 0;
+        }
+
+        &:has(.example_box.on) {
+            .hint_area {
+                opacity: 1;
+            }
+        }
+
+        .input_wrap {
+            width: 100%;
+
+            math-field.textarea {
+                height: 94px;
+            }
+        }
+
+    }
+
+    .page_4 {
+
+        .input_wrap .text_hint {
+            top: 20%;
+            left: 100%;
+            text-align: left;
+            padding-left: 8px;
+        }
+
+        table {
+            width: 1170px;
+            height: 398px;
+            margin: auto;
+            background: url(../../common_contents/img/EMA613_09_SU/0002_img04.png) no-repeat top center;
+
+            th {
+                font-size: 32px;
+                font-weight: 700;
+                text-align: center;
+                padding: 16px 0 10px 0;
+            }
+
+            td {
+                font-size: 32px;
+                font-weight: 700;
+                text-align: center;
+            }
+        }
+    }
+
+    .page_5 {
+        h3 {
+            margin-bottom: 12px;
+        }
+
+        .hint_area {
+            color: #FF0000;
+            white-space: nowrap;
+            opacity: 0;
+        }
+
+        &:has(.example_box.on) {
+            .hint_area {
+                opacity: 1;
+            }
+        }
+
+        .input_wrap {
+            margin-top: 12px;
+
+            math-field.textarea {
+                height: 120px;
+                min-height: unset;
+            }
+        }
+    }
+
+    &[data-current-page='page_1'] .calculator,
+    &[data-current-page='page_2'] .calculator,
+    &[data-current-page='page_3'] .calculator,
+    &[data-current-page='page_5'] .calculator {
+        display: none !important;
+    }
+
+    &[data-current-page='page_1'] .btn_area .btnSample,
+    &[data-current-page='page_1'] .btn_area .btnSubmit,
+    &[data-current-page='page_1'] .btn_area .btnType,
+    &[data-current-page='page_1'] .btn_area .btnCheck,
+    &[data-current-page='page_1'] .btn_area .btnReset,
+    &[data-current-page='page_2'] .btn_area .btnCheck,
+    &[data-current-page='page_2'] .btn_area .btnSample,
+    &[data-current-page='page_3'] .btn_area .btnSample,
+    &[data-current-page='page_3'] .btn_area .btnType,
+    &[data-current-page='page_3'] .btn_area .btnSubmit,
+    &[data-current-page='page_4'] .btn_area .btnSubmit,
+    &[data-current-page='page_4'] .btn_area .btnSample,
+    &[data-current-page='page_5'] .btn_area .btnCheck,
+    &[data-current-page='page_5'] .btn_area .btnSample {
+        display: none;
+    }
+}
+
+/*ema613_09_su_0003s*/
+.ema613_09_su_0003 {
+    .input_area {
+        margin: 0 70px;
+    }
+
+
+
+    .hint_area {
+        color: #FF0000;
+        white-space: nowrap;
+        opacity: 0;
+    }
+
+    &:has(.example_box.on) {
+        .hint_area {
+            opacity: 1;
+        }
+    }
+
+    .table_wrap {
+        position: relative;
+        width: 949px;
+        height: 434px;
+        margin-left: 100px;
+        background: url(../../common_contents/img/EMA613_09_SU/0003_bg.png) no-repeat bottom center;
+        font-size: 16px;
+        padding-top: 190px;
+
+        table {
+            position: absolute;
+            z-index: 99;
+            bottom: 3px;
+            left: 145px;
+            width: 634px;
+
+            caption {
+                padding-bottom: 12px;
+            }
+
+            th {
+                font-size: 16px;
+                padding: 9px 0;
+            }
+
+            td {
+                text-align: center;
+                font-size: 16px;
+                padding: 9px 0;
+            }
+
+            tfoot td {
+                text-align: right;
+            }
+        }
+    }
+}

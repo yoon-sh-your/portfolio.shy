@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_02_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_02_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">왼쪽 수가 오른쪽 수의 약수인 것에 모두 ○표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="boolean_wrap">
+          <button class="button1" data-answer-single="true">
+            <span>7</span>
+            <span>21</span>
+          </button>
+          <button class="button2" data-answer-single="true">
+            <span>3</span>
+            <span>15</span>
+          </button>
+          <button class="button3" data-answer-single="false">
+            <span>9</span>
+            <span>28</span>
+          </button>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">21÷7=3이므로 7은 21의 약수입니다.</p>
+                <p class="text_bullet" lang="y">15÷3=5이므로 3은 15의 약수입니다.</p>
+                <p class="text_bullet" lang="y">28÷9=3 ··· 1이므로 9는 28의 약수가 아닙니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paging 1</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <script src="./selection_limit.js"></script>
+    <style>
+        /* 인라인 스타일은 쓰지마세요. 이거는 예시를 위한 예외 사용입니다. */
+        article{
+            width: 100%;
+            height: 100%;
+        }
+
+        /* 체크박스 숨김 처리 */
+        input[type="checkbox"] {
+            display: none;
+            width: 100px;
+        }
+
+        /* 체크박스 체크 시 다음 span 요소 스타일 */
+        input[type="checkbox"]:checked + span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0000;
+            cursor: pointer;
+        }
+        .selection_limit_item label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        /* 비활성화 상태 스타일 */
+        .selection_limit_item.disabled label {
+            background-color: #e0e0e0;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div id="app_wrap">
+        <section class="title type2">
+            <h2 data-head="1">뭐든지 상관없이 4개만 선택</h2>
+        </section>
+
+        <!-- section.contents 에 pagine_layout 클래스를 추가하고 article.page.page_n 태그를 추가하면 슬라이드 페이지 개수에 맞는 페이징컨트롤러가 동적으로 생성됩니다. -->
+        <section class="contents">
+          <div class="selection_limit_wrap" data-limit="4">
+            <div class="selection_limit_item">
+                <label> 
+                    <input type="checkbox" name="selection_limit_item" value="1">
+                    <span>1</span>
+                </label>
+            </div>
+            <div class="selection_limit_item">
+                <label>
+                    <input type="checkbox" name="selection_limit_item" value="2">
+                    <span>2</span>
+                </label>
+            </div>
+            <div class="selection_limit_item">
+                <label>
+                    <input type="checkbox" name="selection_limit_item" value="3">
+                    <span>3</span>
+                </label>
+            </div>
+            <div class="selection_limit_item">
+                <label>
+                    <input type="checkbox" name="selection_limit_item" value="4">
+                    <span>4</span>
+                </label>
+            </div>
+            <div class="selection_limit_item">
+                <label>
+                    <input type="checkbox" name="selection_limit_item" value="5">
+                    <span>5</span>
+                </label>
+            </div>
+            <div class="selection_limit_item">
+                <label>
+                    <input type="checkbox" name="selection_limit_item" value="6">
+                    <span>6</span>
+                </label>
+            </div>
+          </div>
+        </section>
+
+        <div class="btn_area">
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+        </div>
+    </div>
+</body>
+</html>

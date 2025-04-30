@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_04_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_04_su_0004">
+      <section class="title type2">
+        <h2 data-head="2_light_purple" lang="y">
+          <div>
+            <span lang="y">단면이 원 모양인 기둥이 있습니다. 이 기둥의 단면의 원주가 100.48 ㎝일 때 지름은 몇 ㎝인지 구해 봅시다.</span>
+            <button type="button" class="btn calculator">계산기</button>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="img_row">
+            <div class="picture_wrap type2">
+              <img src="../../common_contents/img/EMA625_04_SU/0004_content.png" alt="건물의 원기둥">
+            </div>
+  
+            <div class="input_area">
+              <h3 lang="y">기둥의 단면의 지름을 구하기 위해 무엇을 알아야 할까요?</h3>
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">기둥의 단면의 원주와 원주율을 알아야 합니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2"> 
+          <div class="img_row">
+            <div class="picture_wrap type2">
+              <img src="../../common_contents/img/EMA625_04_SU/0004_content.png" alt="건물의 원기둥">
+            </div>
+  
+            <div class="right_range">
+              <h3 lang="y">‘원주’, ‘원주율’을 이용하여 지름을 구하는 방법을 식으로 나타내어 보세요.</h3>
+
+              <div class="dragndrop_fraction_wrap">
+                <div class="drag_group">
+                    <div class="drag_item" data-pair="1" data-value="원주">원주</div>
+                    <div class="drag_item" data-pair="1" data-value="원주율">원주율</div>
+                </div>
+
+                <div class="drop_group">
+                    <span class="f32b">(지름)=</span>
+                    <div class="drop_item" data-pair="1" data-answer-single="원주"></div>
+                    <span class="f32b multiple_unit">÷</span>
+                    <div class="drop_item" data-pair="1" data-answer-single="원주율"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="img_row">
+            <div class="picture_wrap type2">
+              <img src="../../common_contents/img/EMA625_04_SU/0004_content.png" alt="건물의 원기둥">
+            </div>
+  
+            <div class="right_range">
+              <h3 lang="y">기둥의 단면의 지름은 몇 ㎝인지 구해 보세요.</h3>
+
+              <div class="text_box">
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="32"></math-field>
+                </div>
+                <span lang="y" class="f32b">㎝</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

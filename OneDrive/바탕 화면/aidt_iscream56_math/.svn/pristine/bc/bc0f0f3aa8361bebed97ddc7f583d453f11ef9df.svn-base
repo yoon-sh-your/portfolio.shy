@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_03_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_03_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <span class="fraction_box ml_0"><span>6</span><span>8</span></span>과 크기가 같은 분수를 3개 만들고, 만든 방법을 이야기해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="fraction_col">
+            <div class="">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(12)/(16)"></math-field>
+              </div>
+            </div>
+            ,
+            <div>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(18)/(24)"></math-field>
+              </div>
+            </div>
+            ,
+            <div>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(24)/(32)"></math-field>
+              </div>
+            </div>
+          </div>
+          <div class="text_wrap input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">분모와 분자에 각각 0이 아닌 같은 수를 곱했습니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit">제출</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

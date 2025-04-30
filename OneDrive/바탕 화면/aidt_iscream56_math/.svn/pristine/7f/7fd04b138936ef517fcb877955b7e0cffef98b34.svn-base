@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_02_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_02_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          분수만큼 색칠하고
+          <div class="fraction_box">
+            <span>2</span>
+            <span>3</span>
+          </div>
+          +
+          <div class="fraction_box">
+            <span>1</span>
+            <span>9</span>
+          </div>
+          을 계산해 보세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box top">
+          <div class="flex align_center gap_60">
+            <div class="ema515_02_001_box">
+              <div class="boolean_count_wrap" data-answer-single="6">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+
+              <!-- <img src="../../common_practice/img/EMA515_02_IH/0001_img1.svg" alt="" /> -->
+            </div>
+            <!-- <img src="../../common_practice/img/EMA515_02_IH/0001_img1_correct.svg" alt="정답 이미지" /> -->
+            <div class="flex align_center gap_4">
+              <div class="fraction_box">
+                <span>2</span>
+                <span>3</span>
+              </div>
+              =
+              <div class="fraction_box">
+                <div class="input_wrap"><math-field data-answer-single="6"></math-field></div>
+                <span>9</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex align_center gap_60">
+            <div class="ema515_02_001_box">
+              <div class="boolean_count_wrap">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+
+              <!-- <img src="../../common_practice/img/EMA515_02_IH/0001_img1.svg" alt="" /> -->
+            </div>
+
+            <!-- <img src="../../common_practice/img/EMA515_02_IH/0001_img2.svg" alt="" /> -->
+            <!-- <img src="../../common_practice/img/EMA515_02_IH/0001_img2_correct.svg" alt="정답 이미지" /> -->
+            <div class="flex align_center gap_4">
+              <div class="fraction_box">
+                <span>1</span>
+                <span>9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question_box bottom mt_20">
+          <div class="flex align_center gap_4">
+            <div class="fraction_box">
+              <span>2</span>
+              <span>3</span>
+            </div>
+            +
+            <div class="fraction_box">
+              <span>1</span>
+              <span>9</span>
+            </div>
+            =
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap"><math-field data-answer-single="6"></math-field></div
+              ></span>
+              <span>9</span>
+            </div>
+            +
+            <div class="fraction_box">
+              <span>1</span>
+              <span>9</span>
+            </div>
+            =
+            <div class="fraction_box">
+              <div class="input_wrap"><math-field data-answer-single="7"></math-field></div>
+              <span>9</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">분모가 다른 분수의 덧셈은 분수를 통분한 후 분모는 그대로 쓰고 분자끼리 더합니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

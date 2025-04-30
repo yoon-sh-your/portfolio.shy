@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_05_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_05">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">
+          <span lang="y"
+            >이준이는 100 m를 달리는 데 25초가 걸렸고, 민하는 80 m를 달리는 데 16초가 걸렸습니다. 걸린 시간에 대한 달린 거리의<br />
+            비율이 더 높은 사람을 구하려고 합니다. 물음에 답해 보세요.</span
+          >
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1 on">
+          <h3 lang="y">두 사람의 걸린 시간에 대한 달린 거리의 비율을 각각 구해 보세요.</h3>
+
+          <div class="flex justify_center align_center gap_40">
+            <div class="flex justify_center align_center gap_4">
+              <p lang="y">
+                <span>이준</span>
+              </p>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(4)/(10)(=(2)/(5))"
+                data-answer-multi='{"values": ["(100)/(25)", "4"]}' text-align="center"
+                placeholder=" "></math-field>
+              </div>
+            </div>
+            <div class="flex justify_center align_center gap_4">
+              <p lang="y">
+                <span>민하</span>
+              </p>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(80)/(16)(=5)"
+                data-answer-multi='{"values": ["(80)/(16)", "5"]}' text-align="center"
+                placeholder=" "></math-field>
+              </div>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex gap_4 align_center">
+                    <p>이준이는 100 m를 달리는 데 25초가 걸렸으므로 걸린 시간에 대한 달린 거리의 비율은</ㅔ>
+                  </div>
+                  <div class="flex gap_4 align_center">
+                    <div class="fraction_box">
+                      <span>100</span>
+                      <span>25</span>
+                    </div>
+                    <p>(=4)입니다. 민하는 80 m를 달리는 데 16초가 걸렸으므로 걸린 시간에 대한 달린 거리의</p>
+                  </div>
+                  <div class="flex gap_4 align_center">
+                    <p>비율은</p>
+                    <div class="fraction_box ml_10">
+                      <span>80</span>
+                      <span>16</span>
+                    </div>
+                    <p>(=5)입니다.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">걸린 시간에 대한 달린 거리의 비율이 더 높은 사람의 이름을 써 보세요.</h3>
+
+          <div class="flex justify_center align_center gap_40">
+            <div class="flex justify_center align_center gap_4">
+              <div class="input_wrap">
+                <math-field data-answer-single="민하"></math-field>
+              </div>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex gap_4 align_center">
+                    <p>4 < 5이므로 걸린 시간에 대한 달린 거리의 비 율이 더 높은 사람은 민하입니다.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

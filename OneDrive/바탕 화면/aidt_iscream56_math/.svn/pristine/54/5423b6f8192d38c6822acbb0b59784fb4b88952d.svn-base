@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema611_10_su_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_10_su_0005">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="4" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <span class="fraction_box ml_0">
+                <span>7</span>
+                <span>8</span>
+              </span>
+              ÷4를 잘못 계산한 사람의 이름을 선택하고, 설명한 방법대로 옳게 계산해 보세요.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="left_box">
+          <img src="../../common_contents/img/EMA611_10_SU/0005_content.png" alt="">
+          <span class="name name1">연우</span>
+          <span class="name name2">서희</span>
+          <span class="text text1">
+            분자를 자연수로<br>
+            나누어 계산했어.
+          </span>
+          <span class="text text2">
+            분수의 곱셈으로<br>
+            나타내어 계산했어
+          </span>
+
+          <div class="equation equation1">
+            <span class="fraction_box">
+              <span>7</span>
+              <span>8</span>
+            </span>
+            <span>÷4=</span>
+            <span class="fraction_box">
+              <span>7</span>
+              <span>8÷4</span>
+            </span>
+          </div>
+
+          <div class="equation equation2">
+            <span class="flex align_center gap_4">
+              <span>=</span>
+              <span class="fraction_box">
+                <span>7</span>
+                <span>2</span>
+              </span>
+            </span>
+            <span class="flex align_center gap_4">
+              <span>=3</span>
+              <span class="fraction_box">
+                <span>1</span>
+                <span>2</span>
+              </span>
+            </span>
+          </div>
+
+          <div class="equation equation3">
+            <span class="fraction_box">
+              <span>7</span>
+              <span>8</span>
+            </span>
+            <span>÷4=</span>
+            <span class="fraction_box">
+              <span>7</span>
+              <span>8</span>
+            </span>
+            <span>×</span>
+            <span class="fraction_box">
+              <span>1</span>
+              <span>4</span>
+            </span>
+          </div>
+
+          <div class="equation equation4">
+            <span>=</span>
+            <span class="fraction_box">
+              <span>7</span>
+              <span>32</span>
+            </span>
+          </div>
+
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="연우">
+              <option></option>
+              <option value="연우"></option>
+              <option value="서희"></option>
+            </select>
+          </div>
+        </div>
+
+        <div class="right_box">
+          <div class="title" lang="y">옳은 계산</div>
+
+          <div class="input_area">
+            <span class="fraction_box">
+              <span>7</span>
+              <span>8</span>
+            </span>
+            <span>÷4=</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(28)/(32)-:4" text-align="center"></math-field>
+            </div>
+            <span>=</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(28-:4)/(32)" text-align="center"></math-field>
+            </div>
+            <span>=</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(7)/(32)" text-align="center"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

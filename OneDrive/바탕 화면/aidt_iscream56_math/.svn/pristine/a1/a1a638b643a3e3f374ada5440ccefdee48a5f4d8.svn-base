@@ -1,0 +1,407 @@
+/* 분수 */
+.fraction_inn {
+  display: flex;
+  align-items: center;
+}
+
+.operations {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  /* gap: 4px; */
+}
+
+.operations .input_wrap {
+  align-items: center;
+  min-width: 80px;
+}
+
+.input_wrap math-field:not(.textarea) {
+  width: 80px;
+  height: 60px;
+}
+
+/* container */
+.container_515 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  background-repeat: no-repeat;
+}
+
+/* 슬라이드 페이지 공통 */
+.page math-field.textarea {
+  width: 100%;
+}
+
+.page .question_box {
+  height: 434px;
+  align-items: start;
+}
+
+.page.fraction_title .question_box {
+  height: 418px;
+  /* 434 - 16*/
+}
+
+/* 방법 1,2 */
+.container_515 h3::before {
+  display: none;
+}
+
+.method {
+  color: #ffffff;
+  text-shadow: -2px 0px #5BB8A1, 0px 2px #5BB8A1, 2px 0px #5BB8A1, 0px -2px #5BB8A1;
+  position: relative;
+  width: 115px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position: bottom right 10px;
+  /* background-color: tomato; */
+  padding-right: 50px;
+}
+
+.method[circle-number="1"] {
+  background-image: url(../img/EMA515_04_SU/0005_cricle-1.png);
+}
+
+.method[circle-number="2"] {
+  background-image: url(../img/EMA515_04_SU/0005_cricle-2.png);
+}
+
+.method::before {
+  content: '';
+  width: 97px;
+  height: 23px;
+  background-color: #5BB8A1;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+/* 서술형 */
+.input_area {
+  /* background-color: yellow; */
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex.align_start .input_wrap:not(:has(math-field[data-answer-single])) {
+  width: 100%;
+  height: 76%;
+}
+
+.flex.align_start math-field.textarea {
+  height: 100%;
+  /* background-color: green; */
+}
+
+.contents.paging_layout .flex.align_start {
+  padding: 0 20px;
+}
+
+.contents.paging_layout .picture_wrap {
+  width: 700px;
+  height: 390px;
+}
+
+.contents>.flex {
+  /* background-color: tomato; */
+  gap: 26px;
+}
+
+/* Page */
+.page>.question_box {
+  /* border: 1px solid red; */
+  width: calc(1635px - 160px - 40px);
+  height: calc(578px - 48px - 20px - 64px - 12px);
+  position: relative;
+  margin: 0 auto;
+}
+
+.page .input_area .question_box {
+  color: var(--Text-Gray-900, #222);
+
+  /* Title/H_02_BOLD */
+  font-family: Pretendard;
+  font-size: unset;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  /* 150% */
+  letter-spacing: -1px;
+
+  gap: 12px;
+}
+
+.page .input_area {
+  /* background-color: yellow; */
+  width: 709px;
+  height: 502px;
+}
+
+/* 분수 색칠 */
+.boolean_count_wrap button.selected {
+  background-color: #D2D2D2;
+}
+
+/* ==============================================
+   🎨 차시 스타일
+   ============================================== */
+/* 0002 */
+.ema515_03_su_0002 .picture_wrap {
+  transform: scale(1.3) translate(-60px, 20px);
+}
+
+.ema515_03_su_0002 .flex.align_start math-field.textarea {
+  height: 216px;
+}
+
+/* 0003 */
+/* 확인 버튼 가리기 */
+.ema515_03_su_0003:not([data-current-page='page_4']) .btn_area .btnSubmit,
+.ema515_03_su_0003[data-current-page='page_4'] .btn_area .btnCheck {
+  display: none;
+}
+
+/* 특정 페이지 picture_wrap 가리기 */
+.ema515_03_su_0003[data-current-page='page_2'] .contents div.flex,
+.ema515_03_su_0003[data-current-page='page_2'] .contents .picture_wrap {
+  display: none;
+}
+
+.ema515_03_su_0003 .container_515 {
+  width: 1188px;
+  height: 343px;
+  background-image: url(../img/EMA515_03_SU/0004_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* flex-direction: row; */
+  /* border: 2px solid blue; */
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ema515_03_su_0003 .container_515 .col-1,
+.ema515_03_su_0003 .container_515 .col-2,
+.ema515_03_su_0003 .container_515 .col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0 12px 0;
+  /* gap: 10px; */
+  height: 100%;
+}
+
+.ema515_03_su_0003 .container_515 .col-1 {
+  /* background-color: antiquewhite; */
+  /* border: 2px solid red; */
+  flex: 1;
+}
+
+.ema515_03_su_0003 .container_515 .col-2 {
+  /* background-color: bisque; */
+  /* border: 2px solid orange; */
+  flex: .6;
+}
+
+.ema515_03_su_0003 .container_515 .col-3 {
+  /* background-color: burlywood; */
+  /* border: 2px solid green; */
+  flex: 3;
+}
+
+.ema515_03_su_0003 .row-551 {
+  display: flex;
+  gap: 30px;
+}
+
+.ema515_03_su_0003 .boolean_count_wrap button {
+  width: 148px;
+  --base-height: 20px;
+  height: var(--base-height);
+}
+
+.ema515_03_su_0003 .boolean_count_wrap button.count-6 {
+  height: calc(var(--base-height) * 6);
+}
+
+/* .ema515_03_su_0003 .page.page_4 math-field.textarea {
+  height: 300px;
+} */
+
+.ema515_03_su_0003 .page.page_4 .input_wrap {
+  height: 80%;
+  margin-top: 30px;
+}
+
+.ema515_03_su_0003 .page_1 .frac1 math-field{
+  width: 230px;
+}
+
+.ema515_03_su_0003 .page_2 .col-2 >div:nth-child(2) {
+  /* background-color: #5BB8A1; */
+  height: 150px;
+}
+
+.fraction_box.fr1 > span:first-child .input_wrap[data-hint-position="right"] .text_hint, 
+.fraction_box.fr1 > .input_wrap[data-hint-position="right"]:first-child .text_hint{
+  top: 30% !important;
+}
+
+.fraction_box.fr2 > span:first-child .input_wrap[data-hint-position="right"] .text_hint, 
+.fraction_box.fr2 > .input_wrap[data-hint-position="right"]:first-child .text_hint{
+  top: 30% !important;
+}
+
+/* 0004 */
+/* 확인 버튼 가리기 */
+.ema515_03_su_0004:not([data-current-page='page_3']) .btn_area .btnSubmit,
+.ema515_03_su_0004[data-current-page='page_3'] .btn_area .btnCheck {
+  display: none;
+}
+
+.ema515_03_su_0004 .operations_column {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.ema515_03_su_0004 .page math-field.textarea {
+  width: 1208px;
+}
+
+/* 0005 */
+.ema515_03_su_0005 h3 {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+.ema515_03_su_0005 .container_515{
+  width: 100%;
+}
+
+.ema515_03_su_0005 .frac1 math-field{
+  width: 284px;
+}
+
+.ema515_03_su_0005 .frac2 math-field{
+  width: 284px;
+}
+
+/* 0006 */
+.left_515 {
+  /* padding: 20px; */
+  /* background-color: antiquewhite; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.right_515 {
+  /* padding: 20px; */
+  /* background-color: beige; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.container_515.col_515 {
+  flex-direction: column;
+  gap: 0;
+}
+
+.ema515_03_su_0006 .container_515 {
+  background-image: url(../img/EMA515_03_SU/0006_bg.png);
+  background-position: center  20px;
+  position: relative;
+  /* padding-right: 220px;
+  padding-top: 95px;
+  padding-left: 200px; */
+  width: 1240px;
+  height: 495px;
+  /* background-color: aquamarine; */
+}
+
+.ema515_03_su_0006 .container_515 .right_515 {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  align-items: start;
+  flex: unset;
+  width: auto;
+  padding-right: 20px;
+}
+
+.ema515_03_su_0006 .container_515 .right_515 > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #1454b9; */
+  /* border: 1px solid red; */
+  width: 200px;
+  gap: 10px;
+  padding-top: 37px;
+}
+
+.ema515_03_su_0006 .container_515 .right_515 .col_515-3 {
+  gap: 20px;
+}
+
+.ema515_03_su_0006 .container_515 .right_515 .text_515 {
+  text-align: center;
+  height: 80px;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.ema515_03_su_0006 .container_515 .right_515 div:nth-child(2) .text_515 {
+  margin-left: 10px;
+}
+
+.ema515_03_su_0006 math-field.textarea {
+  min-width: unset;
+  min-height: unset;
+  width: 80px;
+  height: 112px;
+}
+
+.ema515_03_su_0006 .input_wrap .example_box {
+  color: #1454B9;
+}
+.ema515_03_su_0006 .col_515-3 .input_wrap {
+  /* border: 10px solid pink; */
+}
+
+.ema515_03_su_0006 .col_515-3 .example_box {
+  /* border: 10px solid green; */
+  /* margin-left: 60px;
+  padding-left: 30px; */
+  left: 30px;
+}
+
+.ema515_03_su_0006 .input_wrap {
+  align-items: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema612_01_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_01.css" />
+    <script src="../../common_practice/js/ema612_01_02_ih.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema612_01_ih_0003">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 5-2』 직육면체의 전개도 그리기 </span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_green" lang="y">직육면체의 겨냥도를 보고 전개도를 완성해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA612_01_IH/0003_01.png" alt="" />
+            <p class="text1">2 ㎝</p>
+            <p class="text2">4 ㎝</p>
+            <p class="text3">3 ㎝</p>
+          </div>
+          <div class="canvas_area">
+            <p class="text1">1 ㎝</p>
+            <p class="text2">1 ㎝</p>
+            <canvas id="gridCanvas" width="560" height="396"></canvas>
+            <!-- 스타일 선택 팝업 -->
+            <div id="lineSelectLayer">
+              <button class="to_solid" title="실선"></button>
+              <button class="to_dotted" title="점선"></button>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">전개도를 그릴 때 잘린 모서리는 실선으로, 잘리지 않은 모서리는 점선으로 그립니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

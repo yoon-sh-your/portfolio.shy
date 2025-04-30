@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_12_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema523_su_12.css" />
+
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_12_su_0005">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="4_pink" lang="y">선대칭도형과 점대칭도형을 각각 완성해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center align_center">
+          <div class="img_area img_area1 drawline_grid">
+            <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+            <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+            <strong class="title" lang="y">선대칭도형</strong>
+            <div class="drawing_grid_area"
+                data-grid-size='40'
+                 data-answer-single='[[{"x":40,"y":160},{"x":40,"y":240},{"x":200,"y":240},{"x":240,"y":280},{"x":280,"y":200},{"x":360,"y":240},{"x":360,"y":160}]]' 
+                 data-sample-line='[[{"x":40,"y":160},{"x":40,"y":80},{"x":200,"y":80},{"x":240,"y":40},{"x":280,"y":120},{"x":360,"y":80},{"x":360,"y":160}]]'>
+                 <svg class="line_canvas"></svg>
+                 <!-- <div class="dot_wrap">
+                  <div class="dot dot1"></div>
+                  <div class="dot dot2"></div>
+                  <div class="dot dot3"></div>
+                  <div class="dot dot4"></div>
+                  <div class="dot dot5"></div>
+                  <div class="dot dot6"></div>
+                  <div class="dot dot7"></div>
+                </div> -->
+            </div>
+            
+        </div>
+        <div class="img_area img_area2 drawline_grid">
+          <strong class="title" lang="y">점대칭도형</strong>
+          <div class="drawing_grid_area"
+                data-grid-size='40'
+                 data-answer-single='[[{"x":200,"y":40},{"x":320,"y":120},{"x":360,"y":200},{"x":280,"y":200},{"x":200,"y":280}]]' 
+                 data-sample-line='[[{"x":200,"y":40},{"x":120,"y":120},{"x":40,"y":120},{"x":80,"y":200},{"x":200,"y":280}]]'>
+                 <svg class="line_canvas"></svg>
+                 <!-- <div class="dot_wrap">
+                  <div class="dot dot1"></div>
+                  <div class="dot dot2"></div>
+                  <div class="dot dot3"></div>
+                  <div class="dot dot4"></div>
+                  <div class="dot dot5"></div>
+                </div> -->
+            </div>
+        </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

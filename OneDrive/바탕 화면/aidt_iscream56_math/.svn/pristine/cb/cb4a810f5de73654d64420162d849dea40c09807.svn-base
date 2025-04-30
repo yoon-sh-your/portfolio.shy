@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema515_10_su_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_10.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_10_su_0008">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="7" class="is_star" lang="y">지훈이와 서윤이는 수 카드를 한 번씩만 사용하여 각각 가장 큰 대분수를 만들고, 만든 대분수의 합을 구하려고 합니다. 물음에 답해보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">지훈이와 서윤이가 만든 대분수를 각각 구해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="container_515 col_515">
+                <div class="top_515">
+                  <div class="left_515">
+                    <div class="name jihoon" lang="y">지훈</div>
+                    <div class="cards">
+                      <div class="card card-2"></div>
+                      <div class="card card-5"></div>
+                      <div class="card card-9"></div>
+                    </div>
+                  </div>
+
+                  <div class="right_515">
+                    <div class="name seoyoon" lang="y">서윤</div>
+                    <div class="cards">
+                      <div class="card card-4"></div>
+                      <div class="card card-6"></div>
+                      <div class="card card-7"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_515">
+                  <div class="content">
+                    <div class="operations" lang="y">
+                      지훈
+                      <span class="bracket-left"></span>
+                      <div class="input_wrap fraction_wrap frac1">
+                        <math-field data-answer-single="9(2)/(5)"></math-field>
+                      </div>
+                      <span class="bracket-right"></span>
+                      ,&nbsp; 서윤
+                      <span class="bracket-left"></span>
+                      <div class="input_wrap fraction_wrap frac1">
+                        <math-field data-answer-single="7(4)/(6)"></math-field>
+                      </div>
+                      <span class="bracket-right"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">지훈이와 서윤이가 만든 대분수를 합을 구해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="container_515 col_515">
+                <div class="top_515">
+                  <div class="left_515">
+                    <div class="name jihoon" lang="y">지훈</div>
+                    <div class="cards">
+                      <div class="card card-2"></div>
+                      <div class="card card-5"></div>
+                      <div class="card card-9"></div>
+                    </div>
+                  </div>
+
+                  <div class="right_515">
+                    <div class="name seoyoon" lang="y">서윤</div>
+                    <div class="cards">
+                      <div class="card card-4"></div>
+                      <div class="card card-6"></div>
+                      <div class="card card-7"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom_515">
+                  <div class="content">
+                    <div class="operations" lang="y">
+                      <div class="input_wrap fraction_wrap frac1">
+                        <math-field data-answer-single="17(1)/(15)" data-answer-multi='{"values": ["17(1)/(15)","(256)/(15)"]}' data-multi-hint="y"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>파일 목록</title>
+
+    <!-- DataTables CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+    />
+    <!-- DataTables Buttons CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css"
+    />
+    <!-- DataTables Select CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/select/1.6.2/css/select.dataTables.min.css"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 8px;
+      }
+      h2 {
+        margin: 0 0 8px 0;
+        font-size: 14px;
+      }
+      table.dataTable {
+        margin: 0 !important;
+        width: auto !important;
+        max-width: 100% !important;
+      }
+      table.dataTable tbody th,
+      table.dataTable tbody td {
+        padding: 2px 4px;
+        font-size: 11px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+      table.dataTable tbody td:nth-child(3),
+      table.dataTable tbody td:last-child {
+        text-align: left;
+        white-space: normal;
+        min-width: 120px;
+      }
+      table.dataTable tbody tr:nth-child(odd) {
+        background: #f8f9fa;
+      }
+      .open-btn {
+        padding: 1px 4px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        cursor: pointer;
+        border-radius: 2px;
+        font-size: 11px;
+      }
+      .open-btn:hover {
+        background-color: #e9ecef;
+      }
+      table.dataTable thead th {
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: bottom;
+        padding: 4px 14px 25px 4px;
+        background-color: #f1f3f5;
+        border-bottom: 1px solid #dee2e6;
+        font-size: 11px;
+      }
+      .column-filter {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1px;
+        border: 1px solid #ced4da;
+        border-radius: 2px;
+        font-size: 10px;
+        background-color: white;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .dt-buttons {
+        margin-bottom: 4px;
+        float: left;
+      }
+      .dt-buttons .dt-button {
+        margin-right: 2px;
+        padding: 2px 6px;
+        border: 1px solid #ced4da;
+        border-radius: 2px;
+        background-color: white;
+        font-size: 11px;
+        cursor: pointer;
+      }
+      .dt-buttons .dt-button:hover {
+        background-color: #e9ecef;
+      }
+      .dataTables_length {
+        float: left;
+        font-size: 11px;
+        margin-right: 8px;
+      }
+      .dataTables_length select {
+        padding: 1px 2px;
+        border: 1px solid #ced4da;
+        border-radius: 2px;
+        margin: 0 2px;
+        font-size: 11px;
+      }
+      .dataTables_filter {
+        float: right;
+        font-size: 11px;
+      }
+      .dataTables_filter input {
+        padding: 1px 2px;
+        border: 1px solid #ced4da;
+        border-radius: 2px;
+        margin-left: 4px;
+        font-size: 11px;
+      }
+      .dataTables_info {
+        font-size: 11px;
+        padding: 4px 0;
+      }
+      .dataTables_paginate {
+        font-size: 11px;
+        padding: 4px 0;
+      }
+      .dataTables_paginate .paginate_button {
+        padding: 1px 4px;
+        margin: 0 1px;
+      }
+      #file-table {
+        border: 1px solid #dee2e6;
+        border-radius: 2px;
+        border-collapse: collapse;
+      }
+      .dataTables_wrapper {
+        padding: 4px;
+      }
+      .sorting:before,
+      .sorting:after,
+      .sorting_asc:before,
+      .sorting_asc:after,
+      .sorting_desc:before,
+      .sorting_desc:after {
+        right: 2px !important;
+      }
+      .sorting:before,
+      .sorting_asc:before,
+      .sorting_desc:before {
+        top: 2px !important;
+      }
+      .sorting:after,
+      .sorting_asc:after,
+      .sorting_desc:after {
+        top: 8px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>수학 56 산출물 목록</h2>
+    <table id="file-table">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>링크</th>
+          <th>ID</th>
+          <th>학년</th>
+          <th>단원</th>
+          <th>학기</th>
+          <th>차시</th>
+          <th>메뉴</th>
+          <th>세부메뉴</th>
+          <th>화면번호</th>
+          <th>작업자</th>
+          <th>제작날짜</th>
+          <th>비고</th>
+        </tr>
+      </thead>
+      <tbody id="file-table-body"></tbody>
+    </table>
+
+    <!-- DataTables & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <!-- DataTables Buttons -->
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.print.min.js"></script>
+    <!-- DataTables Select -->
+    <script src="https://cdn.datatables.net/select/1.6.2/js/dataTables.select.min.js"></script>
+
+    <script>
+      // 작업자별 파일 데이터 구조화
+      const workerFiles = {
+        가이드: {
+          "-": [
+            "../guide_sample/dragndrop_diagram_multicase.html|드래그앤드롭-도형멀티케이스",
+            "../guide_sample/custom_answer_check.html|커스텀 정답 체크 사용법 가이드",
+            "../guide_sample/boolean.html|참/거짓 선택 컴포넌트",
+            "../guide_sample/cardflip.html|카드 뒤집기 컴포넌트", 
+            "../guide_sample/context.html|문맥 컴포넌트",
+            "../guide_sample/dragndrop_eraser.html|지우개 드래그 컴포넌트",
+            "../guide_sample/dragndrop_limit.html|제한영역 드래그 컴포넌트",
+            "../guide_sample/dragndrop_fraction.html|수식만들기 드래그 컴포넌트",
+            "../guide_sample/drawline_calc.html|수식 선잇기 컴포넌트",
+            "../guide_sample/drawline_grid.html|그리드 점 연결선 컴포넌트",
+            "../guide_sample/drawline.html|선잇기 컴포넌트",
+            "../guide_sample/header.html|헤더 컴포넌트",
+            "../guide_sample/input.html|입력 컴포넌트",
+            "../guide_sample/module.html|삼각자, 눈금자, 계산기",
+            "../guide_sample/paging.html|페이징 컴포넌트",
+            "../guide_sample/problem_generator.html|문제 생성기 컴포넌트",
+            "../guide_sample/reveal.html|숨김/보이기 컴포넌트",
+            "../guide_sample/self_check.html|자가진단 컴포넌트",
+            "../guide_sample/vedio_player.html|동영상 플레이어 컴포넌트",
+            "../guide_sample/zoomimage.html|이미지 확대/축소 컴포넌트",
+            "../guide_sample/boolean_roundarea.html|원형 그래프 컴포넌트",
+            "../contents/EMA615_03_SU_0005_s.html|원형 그래프 컴포넌트 활용 예시 화면1",
+            "../contents/EMA615_03_SU_0004_s.html|원형 그래프 컴포넌트 활용 예시 화면2",
+            "../guide_sample/change_answer1.html|카운팅 컴포넌트",
+            "../contents/EMA616_02_SU_0003_s.html|카운팅 컴포넌트 활용 예시 화면1",
+            "../guide_sample/ladder_animation.html|사다리 애니메이션 컴포넌트",
+            "../practice/EMA521_11_IH_0001_s.html|사다리 애니메이션 컴포넌트 활용 예시 화면1",
+            "../guide_sample/range_answer1.html|범위 답안 컴포넌트",
+            "../contents/EMA516_04_SU_0004_s.html|그리기 모듈 제어 가능한 공용 지우개 버튼",
+            "../practice/EMA516_17_IH_0001_s.html|화면 전체 확대/축소 컴포넌트",
+          ],
+        },
+        
+      };
+
+      // 파일 데이터를 배열로 변환
+      const htmlFiles = [];
+      for (const [worker, dates] of Object.entries(workerFiles)) {
+        for (const [date, files] of Object.entries(dates)) {
+          files.forEach((file) => {
+            htmlFiles.push({
+              worker,
+              date,
+              file,
+            });
+          });
+        }
+      }
+
+      function parseFileName(fileData, index) {
+        let splitData = fileData.file.split("|");
+        let filePath = splitData[0];
+        let remarks = splitData[1] || "";
+
+        if (filePath.startsWith("../")) {
+          let extractedName = filePath.split("/").pop().replace(".html", "");
+
+          return {
+            Index: index + 1,
+            ID: extractedName,
+            학년: "-",
+            단원: "-",
+            학기: "-",
+            차시: "-",
+            메뉴: "가이드",
+            세부메뉴: "-",
+            화면번호: "-",
+            작업자: fileData.worker,
+            제작날짜: fileData.date,
+            비고: remarks,
+            파일명: filePath,
+            isSimpleLink: true,
+          };
+        } else {
+          const rawName = filePath.replace(".html", "");
+          const fileType = rawName.substring(10, rawName.indexOf("_", 10));
+
+          const info = {
+            Index: index + 1,
+            isSimpleLink: false,
+            ID: rawName,
+            학년: rawName.substring(3, 4),
+            학기: rawName.substring(4, 5),
+            단원: rawName.substring(5, 6),
+            차시: rawName.substring(7, 9),
+            화면번호: rawName.substring(
+              rawName.indexOf("_", 10) + 1,
+              rawName.indexOf("_", 10) + 5
+            ),
+            작업자: fileData.worker,
+            제작날짜: fileData.date,
+            비고: remarks,
+            파일명: filePath,
+          };
+
+          // 메뉴와 세부 메뉴 설정
+          switch (fileType) {
+            case "SU":
+              info.메뉴 = "진도학습";
+              info.세부메뉴 = "수업";
+              break;
+            case "IH":
+              info.메뉴 = "수학의힘";
+              info.세부메뉴 = "수학익힘";
+              break;
+            case "SJ":
+              info.메뉴 = "보탬자료";
+              info.세부메뉴 = "수준별 자료";
+              break;
+            case "HJ":
+              info.메뉴 = "보탬자료";
+              info.세부메뉴 = "활동 자료";
+              break;
+            case "YS":
+              info.메뉴 = "보탬자료";
+              info.세부메뉴 = "영상";
+              break;
+            case "JP":
+              info.메뉴 = "평가";
+              info.세부메뉴 = "진단 평가";
+              break;
+            case "HP":
+              info.메뉴 = "평가";
+              info.세부메뉴 = "형성 평가";
+              break;
+            case "DP":
+              info.메뉴 = "평가";
+              info.세부메뉴 = "단원 평가";
+              break;
+            case "SP":
+              info.메뉴 = "평가";
+              info.세부메뉴 = "수행 평가";
+              break;
+            case "CP":
+              info.메뉴 = "평가";
+              info.세부메뉴 = "종합 평가";
+              break;
+            case "AUP":
+              info.메뉴 = "평가";
+              info.세부메뉴 = "AI 진단 평가";
+              break;
+            case "GJ":
+              info.메뉴 = "스스로 학습";
+              info.세부메뉴 = "과제";
+              break;
+            case "MI":
+              info.메뉴 = "스스로 학습";
+              info.세부메뉴 = "메일 연어";
+              break;
+            case "WS":
+              info.메뉴 = "보탬자료";
+              info.세부메뉴 = "워크시트";
+              break;
+            case "DH":
+              info.메뉴 = "보탬자료";
+              info.세부메뉴 = "단어 활동";
+              break;
+            case "EW":
+              info.메뉴 = "보탬자료";
+              info.세부메뉴 = "용어";
+              break;
+            default:
+              info.메뉴 = "-";
+              info.세부메뉴 = "-";
+          }
+
+          return info;
+        }
+      }
+
+      function populateTable() {
+        const tbody = document.getElementById("file-table-body");
+        tbody.innerHTML = "";
+
+        htmlFiles.forEach((file, index) => {
+          const data = parseFileName(file, index);
+          if (!data) return;
+
+          let row = document.createElement("tr");
+
+          if (data.isSimpleLink) {
+            row.innerHTML = `
+                        <td>${data.Index}</td>
+                        <td>
+                            <button class="open-btn" onclick="openFile('${data.파일명}')">📂</button>
+                        </td>
+                        <td>${data.ID}</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>가이드</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>${data.작업자}</td>
+                        <td>${data.제작날짜}</td>
+                        <td>${data.비고}</td>
+                    `;
+          } else {
+            row.innerHTML = `
+                        <td>${data.Index}</td>
+                        <td>
+                            <button class="open-btn" onclick="openFile('${data.파일명}')">📂</button>
+                        </td>
+                        <td>${data.ID}</td>
+                        <td>${data.학년}</td>
+                        <td>${data.단원}</td>
+                        <td>${data.학기}</td>
+                        <td>${data.차시}</td>
+                        <td>${data.메뉴}</td>
+                        <td>${data.세부메뉴}</td>
+                        <td>${data.화면번호}</td>
+                        <td>${data.작업자}</td>
+                        <td>${data.제작날짜}</td>
+                        <td>${data.비고}</td>
+                    `;
+          }
+          tbody.appendChild(row);
+        });
+
+        // DataTables 적용
+        const table = $("#file-table").DataTable({
+          destroy: true,
+          order: [[0, "asc"]],
+          pageLength: 25,
+          lengthMenu: [10, 25, 50, 100],
+          dom: '<"d-flex justify-content-between"Bl>frtip',
+          ordering: true,
+          orderCellsTop: true,
+          autoWidth: true,
+          columnDefs: [
+            { orderable: false, targets: 1, width: "30px" },
+            { targets: 0, width: "30px" },
+            { targets: 2, width: "auto", minWidth: "120px" },
+            { targets: [3, 4, 5, 6], width: "30px" },
+            { targets: [7, 8], width: "60px" },
+            { targets: 9, width: "50px" },
+            { targets: [10, 11], width: "60px" },
+            { targets: 12, width: "auto", minWidth: "120px" },
+            { type: "natural", targets: [3, 4, 5, 6] },
+            { type: "date", targets: 11 },
+            {
+              targets: [0, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+              className: "dt-center",
+            },
+            {
+              targets: [2, 12],
+              className: "dt-left",
+            },
+          ],
+          buttons: [
+            {
+              text: "복사",
+              extend: "copy",
+              className: "btn-sm",
+            },
+            {
+              text: "엑셀",
+              extend: "excel",
+              className: "btn-sm",
+            },
+            {
+              text: "인쇄",
+              extend: "print",
+              className: "btn-sm",
+            },
+            {
+              text: "필터 초기화",
+              className: "btn-sm",
+              action: function (e, dt, node, config) {
+                dt.search("").columns().search("").draw();
+                $(".column-filter").val("");
+              },
+            },
+          ],
+          language: {
+            search: "검색:",
+            lengthMenu: "_MENU_개",
+            info: "_TOTAL_개 중 _START_~_END_",
+            infoEmpty: "데이터 없음",
+            emptyTable: "데이터 없음",
+            paginate: {
+              first: "처음",
+              last: "끝",
+              next: "다음",
+              previous: "이전",
+            },
+          },
+          initComplete: function () {
+            const filterColumns = [
+              { idx: 3, title: "학년", values: ["1", "2", "3", "4", "5", "6"] },
+              {
+                idx: 4,
+                title: "단원",
+                values: ["1", "2", "3", "4", "5", "6", "7", "8"],
+              },
+              { idx: 5, title: "학기", values: ["1", "2"] },
+              {
+                idx: 6,
+                title: "차시",
+                values: [
+                  "00",
+                  "01",
+                  "02",
+                  "03",
+                  "04",
+                  "05",
+                  "06",
+                  "07",
+                  "08",
+                  "09",
+                  "10",
+                ],
+              },
+              {
+                idx: 7,
+                title: "메뉴",
+                values: [
+                  "진도학습",
+                  "수학의힘",
+                  "보탬자료",
+                  "평가",
+                  "스스로 학습",
+                ],
+              },
+              {
+                idx: 8,
+                title: "세부메뉴",
+                values: [
+                  "수업",
+                  "수학익힘",
+                  "수준별 자료",
+                  "활동 자료",
+                  "영상",
+                  "진단 평가",
+                  "형성 평가",
+                  "단원 평가",
+                  "수행 평가",
+                  "종합 평가",
+                  "AI 진단 평가",
+                  "과제",
+                  "메일 연어",
+                  "워크시트",
+                  "단어 활동",
+                  "용어",
+                ],
+              },
+              { idx: 9, title: "화면번호", dynamic: true },
+              {
+                idx: 10,
+                title: "작업자",
+                values: [
+                  "김용현",
+                  "임수희",
+                  "김수민",
+                  "김아린",
+                  "이수연",
+                  "정희원",
+                  "박나율",
+                ],
+              },
+              { idx: 11, title: "제작날짜", dynamic: true },
+              { idx: 12, title: "비고", dynamic: true },
+            ];
+
+            filterColumns.forEach((filter) => {
+              const column = this.api().column(filter.idx);
+              const header = $(column.header());
+
+              header.find(".column-filter").remove();
+
+              const select = $(
+                '<select class="column-filter"><option value="">전체</option></select>'
+              );
+
+              let values = filter.values;
+              if (filter.dynamic) {
+                values = column
+                  .data()
+                  .unique()
+                  .toArray()
+                  .filter((v) => v && v !== "-" && v.trim() !== "")
+                  .sort();
+              }
+
+              values.forEach((value) => {
+                if (value && value.trim()) {
+                  select.append(`<option value="${value}">${value}</option>`);
+                }
+              });
+
+              header.append(select);
+
+              select
+                .on("click", function (e) {
+                  e.stopPropagation();
+                })
+                .on("change", function () {
+                  const val = $(this).val();
+                  column.search(val ? `^${val}$` : "", true, false).draw();
+                });
+            });
+          },
+        });
+      }
+
+      function openFile(fileName) {
+        // 파일 경로가 "../"로 시작하는 경우, 현재 디렉토리 기준으로 접근
+        let filePath = fileName.startsWith("../") ? fileName : `./${fileName}`;
+        window.open(filePath, "_blank");
+      }
+
+      populateTable();
+    </script>
+  </body>
+</html>

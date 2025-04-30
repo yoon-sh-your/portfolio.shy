@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema525_01_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_00.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_00_su_0004">
+      <section class="title type2">
+          <!-- data-icon로 common/img폴더 내 icon_**.svg 형태 이미지 호출 **에 호출할 파일명 기입 시 해당 이미지 호출 가능-->
+          <h2 data-icon="speech" lang="y">영상을 보고 어떤 상황을 나타내고 있는지 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align-start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+          <div class="leftside input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">연서는 아버지가 일하시는 국제 물류 센터에 견학을 갔습니다.</li>
+                <li lang="y">로봇이 상자를 분류하고, 운반하고, 정리하고 있습니다.</li>
+                <li lang="y">로봇이 상자를 잘라서 펼치고 있습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

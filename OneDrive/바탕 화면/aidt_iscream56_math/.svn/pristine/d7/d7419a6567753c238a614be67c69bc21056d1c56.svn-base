@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_07_SU_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_07.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="dragndrop fraction drawline ema523_07_su_0006">
+    <section class="title type2">
+      <h2 data-head="4_pink">
+          <div>
+              <span lang="y">점 ㅇ을 대칭의 중심으로 하는 점대칭도형에서 대응점, 대응변, 대응각을 각각 찾아봅시다.</span>
+              <button type="button" class="icon_supplies" lang="y" data-supplies="pop_supplies_area_1">준비물</button>
+          </div>
+      </h2>
+    </section>
+
+    <div class="pop_area pop_supplies_area pop_supplies_area_1">
+      <div class="supplies_zoom_wrap">
+        <button type="button" class="close"></button>
+        <div class="supplies_zoom scrollable">
+          <div class="supplies_box_wrap">
+            <div class="supplies_box">
+              <div class="supplies_tit">도형</div>
+              <div class="supplies_contents">
+                <img src="../../common_contents/img/EMA523_07_SU/0006_supplies.svg" alt="준비물 도형" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="controller">
+            <button class="supplies_scale_down" disabled></button>
+            <button class="supplies_scale_up"></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">점 ㄱ, 점 ㄴ, 점 ㄷ의 대응점을 각각 찾아보세요.​</h3>
+        <div class="figure_wrap">
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>점 ㄱ</li>
+              <li>점 ㄴ</li>
+              <li>점 ㄷ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e1"],["s2","e3"],["s3","e2"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s1"></div>
+                    <div class="connect_point" data-id="s2"></div>
+                    <div class="connect_point" data-id="s3"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e1"></div>
+                    <div class="connect_point" data-id="e2"></div>
+                    <div class="connect_point" data-id="e3"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+              <li>점 ㄹ</li>
+              <li>점 ㅂ</li>
+              <li>점 ㅁ</li>
+            </ul>
+          </div>
+          <div class="figure_box">
+            <div class="figure_triangle">
+              <span class="txt_1" lang="y">ㄱ</span>
+              <span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span><span class="txt_4" lang="y">ㄹ</span>
+              <span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span><span class="txt_7" lang="y">ㅇ</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">변 ㄱㄴ, 변 ㄴㄷ, 변 ㄷㄹ의 대응변을 각각 찾아보세요.​</h3>
+        <div class="figure_wrap">
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>변 ㄱㄴ</li>
+              <li>변 ㄴㄷ</li>
+              <li>변 ㄷㄹ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"],["s3","e3"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s1"></div>
+                    <div class="connect_point" data-id="s2"></div>
+                    <div class="connect_point" data-id="s3"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e1"></div>
+                    <div class="connect_point" data-id="e2"></div>
+                    <div class="connect_point" data-id="e3"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+              <li>변 ㅁㅂ</li>
+              <li>변 ㄹㅁ</li>
+              <li>변 ㅂㄱ</li>
+            </ul>
+          </div>
+          <div class="figure_box">
+            <div class="figure_triangle">
+              <span class="txt_1" lang="y">ㄱ</span>
+              <span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span><span class="txt_4" lang="y">ㄹ</span>
+              <span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span><span class="txt_7" lang="y">ㅇ</span></div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">각 ㄱㄴㄷ, 각 ㄴㄷㄹ, 각 ㄷㄹㅁ의 대응각을 각각 찾아보세요.​</h3>
+        <div class="figure_wrap">
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>각 ㄱㄴㄷ</li>
+              <li>각 ㄴㄷㄹ</li>
+              <li>각 ㄷㄹㅁ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"],["s3","e3"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s1"></div>
+                    <div class="connect_point" data-id="s2"></div>
+                    <div class="connect_point" data-id="s3"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e1"></div>
+                    <div class="connect_point" data-id="e2"></div>
+                    <div class="connect_point" data-id="e3"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+              <li>각 ㅁㅂㄱ</li>
+              <li>각 ㄹㅁㅂ</li>
+              <li>각 ㅂㄱㄴ</li>
+            </ul>
+          </div>
+          <div class="figure_box">
+            <div class="figure_triangle">
+              <span class="txt_1" lang="y">ㄱ</span>
+              <span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span><span class="txt_4" lang="y">ㄹ</span>
+              <span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span><span class="txt_7" lang="y">ㅇ</span></div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <!-- <button class="btnType key">입력타입토글</button> -->
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <!-- <button class="btnSubmit">확인</button> -->
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

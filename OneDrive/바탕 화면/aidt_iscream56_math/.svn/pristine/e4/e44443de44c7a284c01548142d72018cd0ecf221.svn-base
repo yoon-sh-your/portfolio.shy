@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_02_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_contents/js/ema614_02_su_0005.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_02_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">어느 반찬 가게에서 호박전 400 g과 꼬치전 100 g을 한 통에 담아 팔고 있습니다. 통 수에 따른 호박전의 양과 꼬치전의 양을 비교해 봅시다. ​</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">통 수에 따른 호박전의 양과 꼬치전의 양을 각각 구하여 표를 완성해 보세요.​</h3>
+            <div class="question_box">
+              <div class="table_box">
+                <table>
+                  <thead>
+                    <tr>
+                      <th lang="y" scope="col">통 수</th>
+                      <th lang="y" scope="col">한 통</th>
+                      <th lang="y" scope="col">두 통</th>
+                      <th lang="y" scope="col">세 통</th>
+                      <th lang="y" scope="col">네 통</th>
+                      <th lang="y" scope="col">...</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y" scope="row">호박전의 양(g)</th>
+                      <td>400</td>
+                      <td>800</td>
+                      <td>1200</td>
+                      <td>
+                        <div class="input_wrap" data-hint-position="right">
+                          <math-field data-answer-single="1600"></math-field>
+                        </div>
+                      </td>
+                      <td>...</td>
+                    </tr>
+                    <tr>
+                      <th lang="y" scope="row">꼬치전의 양(g)</th>
+                      <td>100</td>
+                      <td>200</td>
+                      <td>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="300"></math-field>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="400"></math-field>
+                        </div>
+                      </td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <h3 lang="y">전을 담은 통이 다섯 통일 때 호박전의 양은 꼬치전의 양의 몇 배인지 구하고, 그 이유를 이야기해 보세요.</h3>
+            <div class="question_box">
+              <div class="row">
+                <div class="input_wrap">
+                  <math-field data-answer-single="4" class="answer-field"></math-field>
+                </div>
+                <span class="f32b">배</span>
+              </div>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">통 수가 계속 늘어나도 통 수에 따른 호박전의 양은 항상 꼬치전의 양의 4배이기 때문입니다.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit" data-submit="true">제출</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

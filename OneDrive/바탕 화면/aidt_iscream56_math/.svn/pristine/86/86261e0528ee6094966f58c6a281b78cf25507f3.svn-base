@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_08_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_08.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_08_su_0003">
+    <section class="title type2">
+      <h2 data-head="2_green" lang="y">수찬이네 어머니는 연료 1 L로 8.52 km를 갈 수 있는 휘발유 자동차를 연료 1 L로 24.14 km를 갈 수 있는 친환경 자동차로 바꾸었습니다. 집에서 거리가 144.84 km 떨어진 동물원에 가는 데 친환경 자동차를 타고 가면 휘발유 자동차를 타고 갈 때보다 연료를 몇 L 절약할 수 있는지 구해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="flex align_start">
+        <div class="question_box justify_center">
+
+
+          <div class="container">
+
+            <div class="c1">
+
+              <div class="operation">
+                <div class="input_wrap">
+                  <math-field data-answer-single="35.2"></math-field>
+                </div>
+                L
+              </div>
+
+            </div>
+
+            <div class="c2">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="700" height="390" viewBox="0 0 700 390" fill="none">
+                <g clip-path="url(#clip0_10186_352699)">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12" font-weight="bold" letter-spacing="-0.5px"><tspan x="331.064" y="77.2656" lang="y">친환경 자동차를 타고
+                </tspan><tspan x="340.479" y="93.2656" lang="y">동물원으로 출발!</tspan></text>
+                <text transform="translate(431.562 120) rotate(4.19724)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="10" font-weight="bold" letter-spacing="-0.5px"><tspan x="2.94885" y="14.229" lang="y">수찬</tspan></text>
+                </g>
+                <defs>
+                <clipPath id="clip0_10186_352699">
+                <rect width="700" height="390" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+                
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

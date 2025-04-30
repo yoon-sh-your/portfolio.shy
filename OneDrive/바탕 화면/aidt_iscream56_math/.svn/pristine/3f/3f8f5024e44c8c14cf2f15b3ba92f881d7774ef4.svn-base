@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_04_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_04_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">관계있는 것끼리 이어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_center justify_center gap_12">
+          <ul class="connect_line_box start">
+            <li>7×(4+3)-40</li>
+            <li>15+3×2-14</li>
+            <li>29-2×(8+4)</li>
+          </ul>
+          <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e2"],["s3","e1"]]'>
+            <div class="start_group">
+              <div class="connect_point" data-id="s1"></div>
+              <div class="connect_point" data-id="s2"></div>
+              <div class="connect_point" data-id="s3"></div>
+            </div>
+            <div class="end_group">
+              <div class="connect_point" data-id="e1"></div>
+              <div class="connect_point" data-id="e2"></div>
+              <div class="connect_point" data-id="e3"></div>
+            </div>
+            <svg class="connect_lines"></svg>
+          </div>
+          <ul class="connect_line_box end">
+            <li>5</li>
+            <li>7</li>
+            <li>9</li>
+          </ul>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <table>
+                  <tr>
+                    <td>7×(4+3)-40</td>
+                    <td>=7×7-40</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=49-40=9</td>
+                  </tr>
+                  <tr>
+                    <td>15+3×2-14</td>
+                    <td>=15+6-14</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=21-14=7</td>
+                  </tr>
+                  <tr>
+                    <td>29-2×(8+4)</td>
+                    <td>=29-2×12</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=29-24=5</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

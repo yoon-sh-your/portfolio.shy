@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA626_06_SU_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema626_06.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema626_06_su_0006">
+    <section class="title type2">
+      <!-- data-icon로 common/img폴더 내 icon_**.svg 형태 이미지 호출 **에 호출할 파일명 기입 시 해당 이미지 호출 가능-->
+      <h2 data-type="11" data-text="창의+" lang="y">우리 주변에서 원기둥, 원뿔, 구 모양의 물건을 찾아 이야기해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="question_box justify_center dir_col">
+        <div class="cont_img_box">
+          <div class="text_box">
+            <div class="text text01"  lang="y">
+              내가 가지고 다니는 물통은<br>
+              원기둥 모양이야.
+            </div>
+            <div class="text text02" lang="y">
+              고깔모자는<br>
+              원뿔 모양이야.
+            </div>
+            <div class="text text03" lang="y">
+              내가 좋아하는 사탕은<br>
+              구 모양이야.
+            </div>
+          </div>
+          <img src="../../common_contents/img/EMA626_06_SU/0006_content.png" alt="배경 이미지">
+        </div>
+
+        <div class="input_wrap">
+          <math-field class="textarea"></math-field>
+          <ol class="example_box">
+            <li lang="y">통조림은 원기둥 모양입니다.</li>
+            <li lang="y">팽이는 원뿔 모양입니다.</li>
+            <li lang="y">지구본은 구 모양입니다.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key" lang="y">입력타입토글</button>
+        <button class="btnReset" lang="y">리셋</button>
+        <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

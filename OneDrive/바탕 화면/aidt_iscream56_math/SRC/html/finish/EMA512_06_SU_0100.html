@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" /> -->
+    <meta content="width=1715,height=764" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="../../common_finish/common/css/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <title>차시마무리 평가</title>
+    <script src="../../common_finish/common/js/jquery.min.js"></script>
+    <script src="../../common_finish/common/js/jquery-ui.min.js"></script>
+    <script src="../../common_finish/common/js/jquery.ui.touch-punch.min.js"></script>
+    <script id="MathJax-script" async src="../../common_finish/common/js/MathJax/tex-chtml.js"></script>
+    <script type="module" src="../../common_finish/common/js/main.js"></script>
+  </head>
+  <style>
+    #q1 .qe_area .ans {
+      width: 250px;
+    }
+  </style>
+  <body>
+    <div id="scaleWrapper">
+      <div id="intro" class="intro_2">
+        <div class="inner">
+          <div class="top">
+            <span lang="y" class="danwon_num">2단원</span>
+            <span lang="y" class="danwon_name">평면도형</span>
+          </div>
+          <h1 lang="y" class="title">마무리 평가</h1>
+          <p lang="y" class="qe_num">문항수 : 5개</p>
+          <p lang="y" class="guide">
+            답안 제출 기회는 2번씩 있어요.<br />
+            준비가 되면 시작 버튼을 눌러 주세요.<br />
+            준비되었나요?
+          </p>
+          <button lang="y" type="button" class="intro_btn">시작하기</button>
+        </div>
+      </div>
+      <div id="quest">
+        <div class="nav">
+          <div class="pagination">
+            <button type="button" class="p1 on" aria-current="page" aria-label="현재 페이지1">
+              <span>1</span>
+            </button>
+            <button type="button" class="p2" aria-label="페이지2">
+              <span>2</span>
+            </button>
+            <button type="button" class="p3" aria-label="페이지3">
+              <span>3</span>
+            </button>
+            <button type="button" class="p4" aria-label="페이지4">
+              <span>4</span>
+            </button>
+            <button type="button" class="p5" aria-label="페이지5">
+              <span>5</span>
+            </button>
+          </div>
+          <div class="center">
+            <button type="button" class="submit disable"><img src="../../common_finish/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+          </div>
+        </div>
+
+        <div id="q1" class="page on">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">8과 4의 공배수 중 가장 작은 수부터 차례로 쓸 때 6번째 공배수는 무엇인지 골라 보세요.</span>
+            </div>
+            <div class="qe_area">
+              <fieldset class="item_wrap vertical5" role="group" aria-labelledby="q1-label">
+                <legend id="q1-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">32</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">48</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">64</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">72</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">80</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q2" class="page">
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">60보다 크고 90보다 작은 자연수 중에서 6과 8의 공배수는 얼마인가요?</span>
+              </div>
+              <div class="qe_area">
+                <div class="ans_wrap">
+                  <div class="ans">
+                    <label for="answer2" class="sr-only">첫 번째 정답 입력</label>
+                    <input type="number" id="answer2" class="answer answer2 active" readonly />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" readonly aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="q3" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">두 수의 최소공배수를 찾아 선으로 연결해 보세요.</span>
+            </div>
+            <div class="qe_area">
+              <div class="dot_area flex al-cen">
+                <div class="area left">
+                  <div class="wrap">
+                    <div class="item"><span>16, 24</span></div>
+                    <div class="dot" pos="1"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="item"><span>30, 45</span></div>
+                    <div class="dot" pos="2"></div>
+                  </div>
+                </div>
+                <div class="area right">
+                  <div class="wrap">
+                    <div class="item"><span>75</span></div>
+                    <div class="dot" pos="3"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="item"><span>90</span></div>
+                    <div class="dot" pos="4"></div>
+                  </div>
+                  <div class="wrap">
+                    <div class="item"><span>48</span></div>
+                    <div class="dot" pos="5"></div>
+                  </div>
+                </div>
+              </div>
+              <svg class="theboard" style="position: absolute; width: 100%; height: 100%">
+                <circle n="1" pos="1" tabindex="0" style="cursor: pointer" r="30" fill="red" stroke="#000" stroke-width="1" class="thapoint" />
+                <circle n="2" pos="2" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint" />
+
+                <circle n="1" pos="5" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
+                <circle n="2" pos="4" tabindex="0" style="cursor: pointer" r="30" fill="blue" stroke="#000" stroke-width="1" class="thapoint2" />
+
+                <g class="area-solution"></g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div id="q4" class="page">
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">어떤 두 수의 최소공배수가 12일 때 네 번째로 작은 공배수를 구해 보세요.</span>
+              </div>
+              <div class="qe_area">
+                <div class="ans_wrap">
+                  <div class="ans">
+                    <label for="answer4" class="sr-only">첫 번째 정답 입력</label>
+                    <input type="number" id="answer4" class="answer answer4 active" readonly />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" readonly aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="q5" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">어떤 두 수를 여러 수의 곱으로 나타낸 식을 보고 두 수의 최소공배수가 더 큰 쪽의 기호를 골라 보세요.</span>
+            </div>
+            <div class="qe_area center">
+              <div class="t-box flex">
+                <div class="spanw flex">
+                  <span> ㉠ &nbsp; </span><span>☆= 2×2×3×5×7<br />★= 2×3×3×5×11</span>
+                </div>
+                &nbsp;
+                <div class="spanw flex">
+                  <span> ㉡ &nbsp; </span><span>♡= 2×3×5×7<br />♥= 3×3×5×7×11</span>
+                </div>
+              </div>
+              <fieldset class="item_wrap vertical" role="group" aria-labelledby="q5-label">
+                <legend id="q5-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">㉠</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">㉡</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="submitModal" class="modal">
+        <div class="modal-content">
+          <p lang="y" class="modal-message">이대로 제출하겠습니까?</p>
+          <div class="modal-buttons">
+            <button lang="y" type="button" class="modal-cancel">취소</button>
+            <button lang="y" type="button" class="modal-confirm">제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /* 
+    각 문항의 유형 + (답안 예시)
+    1. : 입력형           input.answer
+    2. : item 선택형      .answer.selected
+    3. : 선택지 선택형     .answer:checked
+    4. : D&D              .dropped-item
+    5. : 선긋기           
+    */
+      window.questionTypes = [2, 1, 5, 1, 2];
+      window.correctAnswers = {
+        1: ["item2"],
+        2: [72],
+        3: ["48", "90"],
+        4: [48],
+        5: ["item1"],
+      };
+    </script>
+  </body>
+</html>

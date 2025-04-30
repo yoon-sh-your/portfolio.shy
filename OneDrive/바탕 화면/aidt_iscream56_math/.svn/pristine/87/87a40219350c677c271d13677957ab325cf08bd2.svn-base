@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_01_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_01_ih_0004">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 5-2』 (분수)×(분수)</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="4_brown" lang="y">계산해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="question_row">
+            <div class="fraction_box"><span>5</span><span>8</span></div>
+            ×
+            <div class="fraction_box"><span>4</span><span>9</span></div>
+            =
+            <div class="input_wrap fraction_wrap" data-hint-position="right">
+              <math-field data-answer-single="(5)/(18)" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+            </div>
+          </div>
+
+          <div class="question_row">
+            2
+            <div class="fraction_box"><span>4</span><span>5</span></div>
+            ×
+            <div class="fraction_box"><span>2</span><span>7</span></div>
+            =
+            <div class="input_wrap fraction_wrap" data-hint-position="right">
+              <math-field data-answer-single="(4)/(5)" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_0 align_center">
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span class="mark_error"
+                      >8
+                      <i>2</i>
+                    </span>
+                  </div>
+                  ×
+                  <div class="fraction_box">
+                    <span class="mark_error up">4<i>1</i></span
+                    ><span>9</span>
+                  </div>
+                  =
+                  <div class="fraction_box"><span>5</span><span>18</span></div>
+                </div>
+                <div class="flex gap_0 align_center">
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box"><span>4</span><span>5</span></div>
+                  </div>
+                  ×
+                  <div class="fraction_box"><span>2</span><span>7</span></div>
+                  =
+                  <div class="fraction_box">
+                    <span class="mark_error up">14<i>2</i></span
+                    ><span>5</span>
+                  </div>
+                  ×
+                  <div class="fraction_box">
+                    <span>2</span><span class="mark_error">7<i>1</i></span>
+                  </div>
+                  =
+                  <div class="fraction_box"><span>4</span><span>5</span></div>
+                </div>
+                <p class="text_label mt_30">
+                  <span class="label caution">주의</span>
+                  <span lang="y"> 대분수는 가분수로 바꾸어 계산합니다.</span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

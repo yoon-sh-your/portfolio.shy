@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_09_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_09.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_09_su_0002"> 
+      <section class="title type2">
+        <h2 data-head="1" lang="y">5학년 여학생의 한 끼 식사로 적절한 열량은 600 킬로칼로리라고 합니다. 5학년인 예은이가 점심에 먹은 음식의 열량을 구해 보고, 적절한 한 끼 식사 열량과 비교해 봅시다.
+        </h2>
+      </section>
+        
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="wrap"> 
+            <div class="image-preview _1">
+              <div class="box_wrap">
+                <div class="box flex">
+                  <p lang="y">소고기볶음밥 1 그릇<br/>352 킬로칼로리</p>
+                  <p lang="y">단팥도넛 1 개<br/>142.5 킬로칼로리</p>
+                  <p lang="y">우유 1 컵<br/>67 킬로칼로리</p>
+                </div>
+                <div class="box flex dir_col">
+                  <p lang="y">예은이가 점심에 먹은 음식</p>
+                  <p lang="y">소고기볶음밥 0.5 그릇</p>
+                  <p lang="y">단팥도넛 2 개</p>
+                  <p lang="y">우유 1.5 컵</p>
+                </div>
+                <div class="box">
+                  <span lang="y">✽ 열량: 음식을 먹었을 때<br/>낼 수 있는 에너지의 양을<br/>킬로칼로리 단위로 나타낸 것.</span>
+                </div>
+                <div class="box">
+                  <span lang="y">(출처: 식품안전나라, 2024)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="img_row">
+            <div class="image-preview picture_wrap _2">
+              <div class="box_wrap">
+                <div class="box flex">
+                  <p lang="y">소고기볶음밥 1 그릇<br/>352 킬로칼로리</p>
+                  <p lang="y">단팥도넛 1 개<br/>142.5 킬로칼로리</p>
+                  <p lang="y">우유 1 컵<br/>67 킬로칼로리</p>
+                </div>
+                <div class="box flex dir_col">
+                  <p lang="y">예은이가 점심에 먹은 음식</p>
+                  <p lang="y">소고기볶음밥 0.5 그릇</p>
+                  <p lang="y">단팥도넛 2 개</p>
+                  <p lang="y">우유 1.5 컵</p>
+                </div>
+                <div class="box">
+                  <span lang="y">✽ 열량: 음식을 먹었을 때<br/>낼 수 있는 에너지의 양을<br/>킬로칼로리 단위로 나타낸 것.</span>
+                </div>
+                <div class="box">
+                  <span lang="y">(출처: 식품안전나라, 2024)</span>
+                </div>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="flex gap_12 align_center">
+                <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                <h3 class="mt_18" lang="y">구하려고 하는 것은 무엇인가요?</h3>
+              </div>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="예은이가 점심에 먹은 음식의 열량"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="img_row">
+            <div class="image-preview picture_wrap _2">
+              <div class="box_wrap">
+                <div class="box flex">
+                  <p lang="y">소고기볶음밥 1 그릇<br/>352 킬로칼로리</p>
+                  <p lang="y">단팥도넛 1 개<br/>142.5 킬로칼로리</p>
+                  <p lang="y">우유 1 컵<br/>67 킬로칼로리</p>
+                </div>
+                <div class="box flex dir_col">
+                  <p lang="y">예은이가 점심에 먹은 음식</p>
+                  <p lang="y">소고기볶음밥 0.5 그릇</p>
+                  <p lang="y">단팥도넛 2 개</p>
+                  <p lang="y">우유 1.5 컵</p>
+                </div>
+                <div class="box">
+                  <span lang="y">✽ 열량: 음식을 먹었을 때<br/>낼 수 있는 에너지의 양을<br/>킬로칼로리 단위로 나타낸 것.</span>
+                </div>
+                <div class="box">
+                  <span lang="y">(출처: 식품안전나라, 2024)</span>
+                </div>
+              </div>
+            </div>
+            <div class="input_area flex">
+              <div class="flex gap_12 align_center">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <h3 class="mt_18" lang="y">예은이는 점심에 무엇을 얼마나 먹었나요?</h3>
+              </div>
+              <div class="flex dir_col align-start f32b">
+                <div class="flex gap_10 align_center">
+                  <span lang="y">소고기볶음밥</span>
+                  <div class="input_wrap answer2">
+                    <math-field data-answer-single="0.5"></math-field>
+                  </div>
+                  <span lang="y">그릇</span>
+                </div>
+                <div class="flex gap_10 align_center">
+                  <span lang="y">단팥도넛</span>
+                  <div class="input_wrap answer3">
+                    <math-field data-answer-single="2"></math-field>
+                  </div>
+                  <span lang="y">개</span>
+                </div>
+                <div class="flex gap_10 align_center">
+                  <span lang="y">우유</span>
+                  <div class="input_wrap answer4">
+                    <math-field data-answer-single="1.5"></math-field>
+                  </div>
+                  <span lang="y">컵</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <div class="img_row">
+            <div class="image-preview picture_wrap _2">
+              <div class="box_wrap">
+                <div class="box flex">
+                  <p lang="y">소고기볶음밥 1 그릇<br/>352 킬로칼로리</p>
+                  <p lang="y">단팥도넛 1 개<br/>142.5 킬로칼로리</p>
+                  <p lang="y">우유 1 컵<br/>67 킬로칼로리</p>
+                </div>
+                <div class="box flex dir_col">
+                  <p lang="y">예은이가 점심에 먹은 음식</p>
+                  <p lang="y">소고기볶음밥 0.5 그릇</p>
+                  <p lang="y">단팥도넛 2 개</p>
+                  <p lang="y">우유 1.5 컵</p>
+                </div>
+                <div class="box">
+                  <span lang="y">✽ 열량: 음식을 먹었을 때<br/>낼 수 있는 에너지의 양을<br/>킬로칼로리 단위로 나타낸 것.</span>
+                </div>
+                <div class="box">
+                  <span lang="y">(출처: 식품안전나라, 2024)</span>
+                </div>
+              </div>
+            </div>
+            <div class="input_area flex">
+              <div class="flex gap_12 align_start">
+                <div class="title_label mt_23" lang="y"><span class="point">계획</span>해요</div>
+                <h3 class="mt_18" lang="y">예은이가 점심에 먹은 음식의 열량은 어떻게 구<br/>할 수 있나요?</h3>
+              </div>
+              <div>
+                <div class="input_wrap answer5">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                    <p lang="y">음식별 열량과 먹은 음식의 양을 곱하여 구하면 될 것 같습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_5">
+          <div class="img_row">
+            <div class="image-preview picture_wrap _2">
+              <div class="box_wrap">
+                <div class="box flex">
+                  <p lang="y">소고기볶음밥 1 그릇<br/>352 킬로칼로리</p>
+                  <p lang="y">단팥도넛 1 개<br/>142.5 킬로칼로리</p>
+                  <p lang="y">우유 1 컵<br/>67 킬로칼로리</p>
+                </div>
+                <div class="box flex dir_col">
+                  <p lang="y">예은이가 점심에 먹은 음식</p>
+                  <p lang="y">소고기볶음밥 0.5 그릇</p>
+                  <p lang="y">단팥도넛 2 개</p>
+                  <p lang="y">우유 1.5 컵</p>
+                </div>
+                <div class="box">
+                  <span lang="y">✽ 열량: 음식을 먹었을 때<br/>낼 수 있는 에너지의 양을<br/>킬로칼로리 단위로 나타낸 것.</span>
+                </div>
+                <div class="box">
+                  <span lang="y">(출처: 식품안전나라, 2024)</span>
+                </div>
+              </div>
+            </div>
+            <div class="input_area flex dir_col">
+              <div class="flex gap_12 align_start">
+                <div class="title_label mt_23" lang="y"><span class="point">해결</span>해요</div>
+                <h3 class="mt_18" lang="y">예은이가 점심에 먹은 음식의 열량을 구해 보세요.</h3>
+              </div>
+              <div>
+                <div class="color_table flex gap_10 align_center justify_center dir_col">
+                  <p lang="y" class="color_table_title">음식별 열량</p>
+                  <div class="flex">
+                    <div class="flex dir_col ">
+                      <span lang="y">먹은 음식</span>
+                      <span lang="y">열량<br/>(킬로칼로리)</span>
+                    </div>
+                    <div class="flex dir_col ">
+                      <span lang="y">소고기볶음밥<br/>0.5그릇</span>
+                      <div class="input_wrap answer6">
+                        <math-field data-answer-single="176"></math-field>
+                      </div>
+                    </div>
+                    <div class="flex dir_col ">
+                      <span lang="y">단팥도넛<br/>2개</span>
+                      <div class="input_wrap answer7">
+                        <math-field data-answer-single="285"></math-field>
+                      </div>
+                    </div>
+                    <div class="flex dir_col ">
+                      <span lang="y">우유<br/>1.5컵</span>
+                      <div class="input_wrap answer8">
+                        <math-field data-answer-single="100.5"></math-field>
+                      </div>
+                    </div>
+                    <div class="flex dir_col ">
+                      <span lang="y">합계</span>
+                      <div class="input_wrap answer9">
+                        <math-field data-answer-single="561.5"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_6 lookbackon">
+          <div class="title_box">
+            <div class="title_label title_label_3" lang="y"><span class="point">되돌아</span>봐요</div>
+            <h3 lang="y">문제를 잘 해결했나요?</h3>
+          </div>
+
+          <div class="lookbackon_contents">
+              <div class="leftbox">
+                  <h4 class="tit" lang="y">잘 해결한 경우</h4>
+                  <div class="cont">
+                      <ul class="lookbackon_list">
+                          <li>문제를 해결한 방법을 설명해 보세요.</li>
+                          <li>문제를 해결할 수 있는 다른 방법을 찾아보세요.</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="rightbox">
+                  <h4 class="tit" lang="y">해결하지 못한 경우</h4>
+                  <div class="cont">
+                      <div class="title_label_wrap">
+                          <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                          <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+                          <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+                      </div>
+                      <p class="lookbackon_txt" lang="y">단계를 다시 확인해 보세요.</p>
+                  </div>
+              </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+        
+        
+    </div>
+  </body>
+</html>

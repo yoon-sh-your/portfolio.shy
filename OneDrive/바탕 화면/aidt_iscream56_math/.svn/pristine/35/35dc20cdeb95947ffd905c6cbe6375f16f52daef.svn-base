@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA626_03_SU_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema626_03.css" />
+    <script src="../../common_contents/js/ema626_03_0007.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema626_03_su_0007">
+      <section class="title type2">
+        <h2 data-head="5_orange" lang="y">원기둥의 전개도를 그려 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">원기둥의 전개도를 그려 보고, 전개도에 밑면의 반지름, 옆면의 가로와 세로는 각각 몇 ㎝인지 나타내어 보세요.</h3>
+
+          <div class="question_box justify_center">
+            <div class="img_wrap">
+              <img src="../../common_contents/img/EMA626_03_SU/0007_content01.png" alt="원기둥 전개도 이미지" />
+              <div class="text_box">
+                <span class="text text01" lang="y">2.5 ㎝</span>
+                <span class="text text02" lang="y">2 ㎝</span>
+              </div>
+            </div>
+
+            <div class="drow_wrap">
+              <canvas class="draw-area" width="522" height="424" data-canvas-id="canvas_1"></canvas>
+              <div class="ex_box">
+                <div class="ex_img">
+                  <img src="../../common_contents/img/EMA626_03_SU/0007_content02.png" alt="원기둥 전개도 이미지" />
+                  <div class="text_box">
+                    <span class="text text01" lang="y">2.5 ㎝</span>
+                    <span class="text text02" lang="y">15.7 ㎝</span>
+                    <span class="text text03" lang="y">2 ㎝</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 그리기도구 팝업 -->
+            <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+              <div class="draw-tool-wrap-header">
+                <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+                <div class="close_but add_cursor">
+                  <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+                </div>
+              </div>
+              <div class="draw-tool-wrap-body">
+                <div class="tool-row function-item">
+                  <button type="button" class="ic_pen active"></button>
+                  <button type="button" class="ic_txt"></button>
+                  <button type="button" class="ic_eraser"></button>
+                </div>
+                <div class="tool-row function-item">
+                  <button type="button" class="ic_triangle"></button>
+                  <button type="button" class="ic_square"></button>
+                  <button type="button" class="ic_circle"></button>
+                  <button type="button" class="ic_polygon"></button>
+                </div>
+                <div class="tool-row function-item">
+                  <button type="button" class="ic_line"></button>
+                  <button type="button" class="ic_dash"></button>
+                  <button type="button" class="ic_draw"></button>
+                  <button type="button" class="ic_pull"></button>
+                </div>
+                <div class="tool-row palette-item">
+                  <button type="button" class="p_red"></button>
+                  <button type="button" class="p_yellow"></button>
+                  <button type="button" class="p_green"></button>
+                  <button type="button" class="p_blue"></button>
+                  <button type="button" class="p_purple"></button>
+                  <button type="button" class="p_black active"></button>
+                </div>
+                <div class="tool-row range-item">
+                  <input type="range" name="thickness" class="draw-scale-range" />
+                </div>
+                <div class="tool-row range-item">
+                  <input type="range" name="opacity" class="draw-trans-range" />
+                </div>
+                <div class="tool-row function-item">
+                  <div class="arrow-item">
+                    <button type="button" class="ic_undo"></button>
+                    <button type="button" class="ic_redo"></button>
+                  </div>
+                  <button type="button" class="ic_del"></button>
+                </div>
+
+                <div class="ic_polygon_pop">
+                  <span>꼭지점</span>
+                  <button type="button" class="ipp_minus"></button>
+                  <div>
+                    <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                    <label for="ipp_num">개</label>
+                  </div>
+                  <button type="button" class="ipp_plus"></button>
+                </div>
+              </div>
+            </div>
+            <!-- //그리기도구 팝업 -->
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">전개도를 옳게 그렸는지 확인해 보세요.</h3>
+
+          <div class="question_box justify_center dir_col">
+            <div class="inner_top">
+              <div class="drow_wrap">
+                <!-- <canvas class="draw-area" width="522" height="424" data-canvas-id="canvas_1"></canvas> -->
+                <div class="ex_box active">
+                  <div class="ex_img">
+                    <img src="../../common_contents/img/EMA626_03_SU/0007_content02.png" alt="원기둥 전개도 이미지" />
+                    <div class="text_box">
+                      <span class="text text01" lang="y">2.5 ㎝</span>
+                      <span class="text text02" lang="y">15.7 ㎝</span>
+                      <span class="text text03" lang="y">2 ㎝</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="noti_wrap">
+                <img src="../../common_contents/img/EMA626_03_SU/0007_content03.png" alt="이미지" />
+                <div class="text_box">
+                  <span class="text" lang="y">밑면은 합동인 원 2개로,<br />옆면은 직사각형 1개로<br />그렸을까?</span>
+                  <span class="text" lang="y">전개도를 접었을 때<br />맞닿는 부분의 길이를<br />같게 그렸을까?</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">밑면은 합동인 원 2개로, 옆면은 직사각형 1개로 그리고, 전개도를 접었을 때 맞닿는 부분의 길이를 같게 그렸으므로 옳게 그렸습니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">전개도를 옳게 그렸는지 확인해 보세요.</h3>
+
+          <div class="question_box justify_center dir_col">
+            <!-- <div class="inner_top">
+              <div class="drow_wrap">
+                <div class="ex_box active">
+                  <div class="ex_img">
+                    <img src="../../common_contents/img/EMA626_03_SU/0007_content02.png" alt="원기둥 전개도 이미지">
+                    <div class="text_box">
+                      <span class="text text01" lang="y">2.5 ㎝</span>
+                      <span class="text text02" lang="y">15.7 ㎝</span>
+                      <span class="text text03" lang="y">2 ㎝</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="noti_wrap">
+                <img src="../../common_contents/img/EMA626_03_SU/0007_content03.png" alt="이미지">
+                <div class="text_box">
+                  <span class="text" lang="y">밑면은 합동인 원 2개로,<br>옆면은 직사각형 1개로<br>그렸을까?</span>
+                  <span class="text" lang="y">전개도를 접었을 때<br>맞닿는 부분의 길이를<br>같게 그렸을까?</span>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">
+                  밑면은 합동인 원 2개로, 옆면은 직사각형 1개로 그리고, 전개도를 접었을 때 맞닿는 부분의 길이를 같게 그렸으므로<br />
+                  옳게 그렸습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <button type="button" class="btn btn_draw"></button>
+        <div class="btn_area">
+          <button class="btnErase">지우기</button>
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

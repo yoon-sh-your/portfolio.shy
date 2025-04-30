@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema526_10_su_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_10_su_0007">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="6_orange" class="is_star" lang="y">예린이와 윤호 중에서 종이학을 더 많이 가지고 있는 사람은 누구인지 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">예린이와 윤호가 가지고 있는 종이학은 각각 몇 마리인지 구해 보세요.</h3>
+  
+          <div class="question_box">
+            <div class="img_box">
+              <img src="../../common_contents/img/EMA526_10_SU/0007_content.png" alt="">
+  
+              <span class="name name1" lang="y">예린</span>
+              <span class="name name2" lang="y">윤호</span>
+  
+              <span class="txt txt1" lang="y">
+                나는 통 8개에 종이학을<br>
+                접어서 넣었어. 통 한 개에<br>
+                평균 65마리가 들어 있어.
+              </span>
+              <span class="txt txt2" lang="y">
+                나는 통 6개에 종이학을<br>
+                접어서 넣었어. 통 한 개에<br>
+                평균 90마리가 들어 있어.
+              </span>
+            </div>
+  
+            <div class="input_area">
+              <span lang="y">예린 (&nbsp;</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="520"></math-field>
+              </div>
+              <span lang="y">&nbsp;) 마리, 윤호 (&nbsp;</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="540"></math-field>
+              </div>
+              <span lang="y">&nbsp;) 마리</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">종이학을 더 많이 가지고 있는 사람의 이름을 써 보세요.</h3>
+
+          <div class="question_box">
+            <div class="img_box">
+              <img src="../../common_contents/img/EMA526_10_SU/0007_content.png" alt="">
+
+              <span class="name name1" lang="y">예린</span>
+              <span class="name name2" lang="y">윤호</span>
+
+              <span class="txt txt1" lang="y">
+                나는 통 8개에 종이학을<br>
+                접어서 넣었어. 통 한 개에<br>
+                평균 65마리가 들어 있어.
+              </span>
+              <span class="txt txt2" lang="y">
+                나는 통 6개에 종이학을<br>
+                접어서 넣었어. 통 한 개에<br>
+                평균 90마리가 들어 있어.
+              </span>
+            </div>
+
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="윤호">
+                <option></option>
+                <option value="예린"></option>
+                <option value="윤호"></option>
+              </select>
+            </div>
+          </div>
+        </article>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

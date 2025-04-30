@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_03_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_03_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">그림을 보고 크기가 같은 분수가 되도록<span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_40">
+          <div class="item">
+            <img src="../../common_practice/img/EMA514_03_IH/0001_img1.png" alt="" />
+            <div class="question_box">
+              <div class="fraction_box">
+                <span>2</span>
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../../common_practice/img/EMA514_03_IH/0001_img2.png" alt="" />
+            <div class="question_box">
+              <div class="left">
+                <div class="fraction_box">
+                  <div class="top flex align_center">
+                    2×
+                    <div class="input_wrap"><math-field data-answer-single="2" tabindex="1"></math-field></div>
+                  </div>
+                  <div class="bottom flex align_center">
+                    5×
+                    <div class="input_wrap"><math-field data-answer-single="2" tabindex="2"></math-field></div>
+                  </div>
+                </div>
+              </div>
+              =
+              <div class="right">
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="4" tabindex="1"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="10" tabindex="2"></math-field></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="../../common_practice/img/EMA514_03_IH/0001_img3.png" alt="" />
+            <div class="question_box">
+              <div class="left">
+                <div class="fraction_box">
+                  <div class="top flex align_center">
+                    2×
+                    <div class="input_wrap"><math-field data-answer-single="3" tabindex="3"></math-field></div>
+                  </div>
+                  <div class="bottom flex align_center">
+                    5×
+                    <div class="input_wrap"><math-field data-answer-single="6" tabindex="4"></math-field></div>
+                  </div>
+                </div>
+              </div>
+              =
+              <div class="right">
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="3" tabindex="3"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="15" tabindex="4"></math-field></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">분모와 분자에 각각 0이 아닌 같은 수를 곱하면 크기가 같은 분수가 됩니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

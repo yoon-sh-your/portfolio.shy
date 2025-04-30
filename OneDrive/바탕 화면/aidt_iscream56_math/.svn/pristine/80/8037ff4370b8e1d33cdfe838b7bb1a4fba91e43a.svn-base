@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_03_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema525_03_ih_0002.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_03_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">직육면체의 겨냥도를 옳게 그린 것을 찾아 기호를 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="img">
+            <img src="../../common_practice/img/EMA525_03_IH/0002_img.png" alt="" width="841" />
+            <div class="boolean_wrap">
+              <button type="button" class="button1" data-answer-single="false"></button>
+              <button type="button" class="button2" data-answer-single="false"></button>
+              <button type="button" class="button3" data-answer-single="false"></button>
+              <button type="button" class="button4" data-answer-single="true"></button>
+              <button type="button" class="button5" data-answer-single="false"></button>
+              <button type="button" class="button6" data-answer-single="false"></button>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">보이는 모서리는 실선으로, 보이지 않는 모서리는 점선으로 나타낸 겨냥도를 찾으면 라입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

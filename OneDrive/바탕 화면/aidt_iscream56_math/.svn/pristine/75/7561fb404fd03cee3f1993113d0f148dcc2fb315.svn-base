@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_05_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema514_07_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_su_0005">         
+      <section class="title type2">
+        <h2 data-head="3" lang="y">전개도를 접어서 정육면체를 만들었을 때 겹치는 부분을 알아봅시다.
+          <span class="title_right ml_20">
+            <button class="goal" onclick="openPop('.pop_goal_wrap')">도움 자료</button>
+          </span>
+        </h2>
+      </section>
+
+      <div class="pop_goal_wrap">
+        <div class="pop_goal">
+            <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+            <div class="pop_goal_inner">
+              <h3 lang="y">‘알지오매스 키즈’를 이용하여 정육면체의 전개도를 알아보는 방법​</h3>
+              <section class="contents paging_layout">
+                 <article class="popup_page popup_page_1"> 
+                    <div class="how-to-do-box">
+                      <div class="how-to-do-list" lang="y">
+                        <span class="ico_num">1</span>‘알지오매스 키즈’에 접속하여 ‘알지오도구’, ‘알지오 매스 키즈 3D’를 차례대로 누릅니다.
+                      </div>
+                      <div class="how-to-do-list" lang="y">
+                        <span class="ico_num">2</span>
+                        <img src="../../common_contents/img/EMA525_04_SU/0005_icon1.png" class="inline-icon" alt="전개도 아이콘"/>
+                        에서 
+                        <img src="../../common_contents/img/EMA525_04_SU/0005_icon2.png" class="inline-icon" alt="전개도 버튼 아이콘"/> 
+                        를 누릅니다.
+                      </div>
+                      <div class="how-to-do-list" lang="y">
+                        <span class="ico_num">3</span>원하는 전개도 모양을 선택하여 전개도를 그립니다.
+                        <img src="../../common_contents/img/EMA525_04_SU/0005_pop1.png" class="img" alt="전개도를 그리는 예시 이미지"/> 
+                      </div>
+                    </div>
+                  </article>
+                  <article class="popup_page popup_page_2"> 
+                    <div class="how-to-do-box">
+                      <div class="how-to-do-list" lang="y">
+                        <span class="ico_num">4</span>
+                        <img src="../../common_contents/img/EMA525_04_SU/0005_icon1.png" class="inline-icon" alt="전개도 아이콘"/>
+                        에서 
+                        <img src="../../common_contents/img/EMA525_04_SU/0005_icon2.png" class="inline-icon" alt="전개도 버튼 아이콘"/> 
+                        를 누른 후 기준면을 선택합니다.
+                        <img src="../../common_contents/img/EMA525_04_SU/0005_pop2.png" class="img" alt="기준면을 선택하는 예시 이미지"/> 
+                      </div>
+                      <div class="how-to-do-list" lang="y">
+                        <span class="ico_num">5</span>
+                        <span class="ico_num">4</span>
+                        에서 선택한 면을 눌러 전개도를 접습니다.
+                        <img src="../../common_contents/img/EMA525_04_SU/0005_pop3.png" class="img" alt="전개도를 접는 예시 이미지"/> 
+                      </div>
+                    </div>
+                  </article>
+              </section>
+            </div>
+        </div>
+      </div>
+
+       
+      <section class="contents flex gap_35">
+        <div class="example_img">
+          <ul>
+            <li lang="y">ㄱ</li>
+            <li lang="y">ㄴ</li>
+            <li lang="y">ㄷ</li>
+            <li lang="y">ㄹ</li>
+            <li lang="y">ㅁ</li>
+            <li lang="y">ㅂ</li>
+            <li lang="y">ㅅ</li>
+            <li lang="y">ㅇ</li>
+            <li lang="y">ㅈ</li>
+            <li lang="y">ㅊ</li>
+            <li lang="y">ㅋ</li>
+            <li lang="y">ㅌ</li>
+            <li lang="y">ㅍ</li>
+            <li lang="y">ㅎ</li>
+          </ul>
+          <img src="../../common_contents/img/EMA525_04_SU/0005_contents2.png" alt="정육면체의 전개도 이미지"/>
+        </div>
+        <div class="contents_table flex">
+          <div class="flex col f24b">
+            <span lang="y">점 ㅌ과 겹치는 점​</span>
+            <span lang="y">점 ㅈ과 겹치는 점​​</span>
+            <span lang="y">선분 ㄴㄷ과 겹치는 선분​​</span>
+            <span lang="y">선분 ㅇㅅ과 겹치는 선분​​</span>
+          </div>
+          <div class="flex col dropdown_area">
+            <div>
+              <div class="dropdown_wrap" data-hint-position="right">
+                <select class="custom_dropdown" data-answer-single="점 ㅎ">
+                  <option></option><!--최초선택데이터 생성 방지용-->
+                  <option value="점 ㅎ"></option>
+                  <option value="점 ㄱ, 점 ㅋ"></option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown_wrap" data-hint-position="right">
+                <select class="custom_dropdown" data-answer-single="점ㄱ, 점 ㅋ">
+                  <option></option><!--최초선택데이터 생성 방지용-->
+                  <option value="점 ㅎ"></option>
+                  <option value="점ㄱ, 점 ㅋ"></option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown_wrap" data-hint-position="right">
+                <select class="custom_dropdown" data-answer-single="선분 ㄹㄷ">
+                  <option></option><!--최초선택데이터 생성 방지용-->
+                  <option value="선분 ㄹㄷ"></option>
+                  <option value="선분 ㄹㅁ"></option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown_wrap" data-hint-position="right">
+                <select class="custom_dropdown" data-answer-single="선분 ㄹㅁ">
+                  <option></option><!--최초선택데이터 생성 방지용-->
+                  <option value="선분 ㄹㄷ"></option>
+                  <option value="선분 ㄹㅁ"></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

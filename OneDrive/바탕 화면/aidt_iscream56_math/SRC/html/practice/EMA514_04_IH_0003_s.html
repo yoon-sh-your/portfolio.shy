@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_04_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_04_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">약분한 분수를 모두 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col">
+          <div class="question_box">
+            <div class="left">
+              <div class="fraction_box">
+                <span>14</span>
+                <span>56</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="bracket">
+                <span class="bracket-l"></span>
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(7)/(28)" text-align="center"></math-field>
+                </div>
+                <span class="comma">,</span>
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(2)/(8)" text-align="center"></math-field>
+                </div>
+                <span class="comma">,</span>
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(1)/(4)" text-align="center"></math-field>
+                </div>
+                <span class="bracket-r"></span>
+              </div>
+            </div>
+          </div>
+          <div class="question_box">
+            <div class="left">
+              <div class="fraction_box">
+                <span>30</span>
+                <span>75</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="bracket">
+                <span class="bracket-l"></span>
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(10)/(25)" text-align="center"></math-field>
+                </div>
+                <span class="comma">,</span>
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(6)/(15)" text-align="center"></math-field>
+                </div>
+                <span class="comma">,</span>
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(2)/(5)" text-align="center"></math-field>
+                </div>
+                <span class="bracket-r"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">
+                  56과 14의 공약수: 1, 2, 7, 14 <br />
+
+                  <span>
+                    ➔
+                    <spab class="fraction_box">
+                      <span>14</span>
+                      <span>56</span>
+                    </spab>
+                    =
+                    <spab class="fraction_box">
+                      <span>14÷2</span>
+                      <span>56÷2</span>
+                    </spab>
+                    =
+                    <spab class="fraction_box">
+                      <span>7</span>
+                      <span>28</span>
+                    </spab>
+                    ,
+
+                    <spab class="fraction_box">
+                      <span>14</span>
+                      <span>56</span>
+                    </spab>
+                    =
+                    <spab class="fraction_box">
+                      <span>14÷7</span>
+                      <span>56÷7</span>
+                    </spab>
+                    =
+                    <spab class="fraction_box">
+                      <span>2</span>
+                      <span>8</span>
+                    </spab>
+                    ,
+
+                    <spab class="fraction_box">
+                      <span>14</span>
+                      <span>56</span>
+                    </spab>
+                    =
+                    <spab class="fraction_box">
+                      <span>14÷14</span>
+                      <span>56÷14</span>
+                    </spab>
+                    =
+                    <spab class="fraction_box">
+                      <span>1</span>
+                      <span>4</span>
+                    </spab>
+                  </span>
+                </p>
+
+                <p class="text_bullet mt_12" lang="y">
+                  75와 30의 공약수: 1, 3, 5, 15 <br />
+                  <span>
+                    ➔
+                    <span class="fraction_box">
+                      <span>30</span>
+                      <span>75</span>
+                    </span>
+                    =
+                    <span class="fraction_box">
+                      <span>30÷3</span>
+                      <span>75÷3</span>
+                    </span>
+                    =
+                    <span class="fraction_box">
+                      <span>10</span>
+                      <span>25</span>
+                    </span>
+                    ,
+                    <span class="fraction_box">
+                      <span>30</span>
+                      <span>75</span>
+                    </span>
+                    =
+                    <span class="fraction_box">
+                      <span>30÷5</span>
+                      <span>75÷5</span>
+                    </span>
+                    =
+                    <span class="fraction_box">
+                      <span>6</span>
+                      <span>15</span>
+                    </span>
+                    ,
+                    <span class="fraction_box">
+                      <span>30</span>
+                      <span>75</span>
+                    </span>
+                    =
+                    <span class="fraction_box">
+                      <span>30÷15</span>
+                      <span>75÷15</span>
+                    </span>
+                    =
+                    <span class="fraction_box">
+                      <span>2</span>
+                      <span>5</span>
+                    </span>
+                  </span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

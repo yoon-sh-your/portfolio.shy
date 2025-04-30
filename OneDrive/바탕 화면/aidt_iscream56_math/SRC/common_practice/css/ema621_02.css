@@ -1,0 +1,38 @@
+.input_wrap.fraction_wrap {width:80px;}
+.input_wrap.fraction_wrap math-field {width:100%;}
+.fraction_box_wrap {display: inline-flex;  align-items: center;  gap: 4px;}
+.fraction_box_wrap .fraction_box {min-width: 0;}
+.fraction_box {vertical-align:middle;}
+.bracket.gap_0 [class^="bracket-"] {margin:0;}
+.icon_arrow {margin-right:20px;}
+.boolean_wrap.type_chk button {position:relative; width:auto; border:none; border-radius:0; background:none !important; aspect-ratio:none; padding:0;}
+.boolean_wrap.type_chk button:after {content:''; display:inline-block; width:60px; height:60px; mask: url(./../../common_practice/common/img/icon_checked_round.svg) no-repeat 50% / 100% auto; background-color:transparent; position:absolute; top:50%; left:-47px; transform:translateY(-50%); margin-top:-8px;}
+.boolean_wrap.type_chk button.selected:after {background-color: var(--font-main);}
+.result .boolean_wrap.type_chk button[data-answer-single='true']:after {background-color: var(--secondary-red);}
+.result .boolean_wrap.type_chk button.selected[data-answer-single='true']:after {background-color: var(--primary-blue);}
+.boolean_wrap .num_sign {margin-right:10px;}
+.num_sign {flex-shrink:0;}
+.box_line {border:20px solid #C2E1EE; border-radius:90px;}
+.box_line .inner {margin:-12px; padding:0 80px; gap:40px; border:4px dashed #fff; border-radius:90px;}
+
+
+.ema621_02_ih_0002 .box_line .inner {height:296px;}
+
+.ema621_02_ih_0003 .question_box {gap:200px;}
+
+.ema621_02_ih_0004 .inner {width:490px; height:468px; background:url(../img/EMA621_02_IH/0004_bg.svg); padding:64px 0 0 71px;}
+.ema621_02_ih_0004 .item {display:flex; justify-content:center; align-items:center; width:136px; height:132px;}
+.ema621_02_ih_0004 .item .input_wrap {width:80px;}
+.ema621_02_ih_0004 .item .input_wrap math-field {width:100%;}
+
+.ema621_02_ih_0005 .inner {display:flex; justify-content:center; align-items:center; width:463px; height:480px; background:url(../img/EMA621_02_IH/0005_bg.svg);}
+.ema621_02_ih_0005 .boolean_wrap {flex-direction:column; align-items:flex-start;}
+
+.ema621_02_ih_0006 .question_box {margin-top:60px;}
+.ema621_02_ih_0006 .answer1 {width:400px;}
+
+.ema621_02_ih_0007 .page_1 h3.title {gap:0;}
+.ema621_02_ih_0007 .page_1 h3.title .fraction_box {margin:0}
+.ema621_02_ih_0007 .box_line .inner {height:152px}
+
+.solve_area .flex {gap: 8px;}

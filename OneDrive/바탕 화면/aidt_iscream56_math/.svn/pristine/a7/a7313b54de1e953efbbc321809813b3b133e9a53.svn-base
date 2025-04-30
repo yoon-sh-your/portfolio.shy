@@ -1,0 +1,407 @@
+/* .input_area .fraction_box {
+	vertical-align: middle;
+	margin-left: 5px;
+} */
+.input_wrap:has(.w_80) {
+	min-width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+	bottom: calc(100% + 4px);
+	top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+	position: relative;
+}
+.input_wrap.input_sep {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+	left: calc(100% + 20px);
+	top: 12px;
+	width: auto;
+}
+.mark_error {
+	position: relative;
+}
+
+.mark_error:after {
+	content: "";
+	display: inline-block;
+	width: 55px;
+	height: 3px;
+	background: #ff0000;
+	position: absolute;
+	bottom: 36px;
+	left: 50%;
+	transform: rotate(-30deg) translateX(-50%);
+}
+.mark_error.blue:after {
+	background: var(--primary-blue);
+}
+.mark_error i {
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 700;
+	color: #ff0000;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.mark_error.up > i {
+	top: auto;
+	bottom: 50px;
+}
+.fraction_wrap .hint_up .text_hint {
+	top: auto;
+	bottom: calc(100% + 4px);
+}
+.fraction_wrap.hint_right .text_hint {
+	top: 18px;
+}
+.label_method {
+	display: inline-block;
+	color: #a1d08f;
+	background: #fff;
+	border: 3px solid #a1d08f;
+	font-size: 16px;
+	width: 52px;
+	height: 32px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	line-height: 32px;
+	text-align: center;
+}
+math-field.has_ex_text + .text_hint:before {
+	content: "예";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 44px;
+	height: 44px;
+	background: var(--primary-blue);
+	border-radius: 12px;
+	color: #fff;
+	line-height: 42px;
+}
+
+/* ema611_04_ih_0001 */
+.ema611_04_ih_0001 .img_area {
+	position: relative;
+}
+.ema611_04_ih_0001 .img_area p {
+	position: absolute;
+}
+.ema611_04_ih_0001 .img_area .text1 {
+	left: 0;
+}
+.ema611_04_ih_0001 .img_area .text2 {
+	right: 0;
+}
+.ema611_04_ih_0001 .input_area {
+	margin-top: 90px;
+}
+
+/* ema611_04_ih_0002 */
+.ema611_04_ih_0002 .img_area {
+	position: relative;
+}
+.ema611_04_ih_0002 .img_area > div {
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	gap: 95px;
+	left: 28px;
+}
+.ema611_04_ih_0002 .text_wrap {
+	margin-bottom: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	height: 100px;
+}
+.ema611_04_ih_0002 .boolean_col:first-of-type {
+	margin-right: 60px;
+}
+.ema611_04_ih_0002 .boolean_col .boolean_count_wrap {
+	width: 187px;
+	flex-direction: column;
+}
+.ema611_04_ih_0002 .boolean_col .boolean_count_wrap button {
+	min-width: unset;
+	height: 25px;
+}
+.ema611_04_ih_0002 .boolean_count_wrap button.selected {
+	background: #d8e9f8;
+}
+.ema611_04_ih_0002 .boolean_count_wrap.bgrd button.selected {
+	background: url(./../img/EMA611_05_IH/0001_selected_bg.png) repeat-x 50% / 100% auto;
+}
+.ema611_04_ih_0002 .boolean_col:first-of-type .boolean_count_wrap button {
+	width: 100%;
+}
+.ema611_04_ih_0002 .boolean_col:nth-of-type(2) .boolean_count_wrap {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.ema611_04_ih_0002 .boolean_col:nth-of-type(2) .boolean_count_wrap button {
+	width: 61px;
+	margin-left: -1px;
+}
+.ema611_04_ih_0002 .boolean_count_wrap button.border_t0 {
+	border-top: 0;
+}
+.ema611_04_ih_0002 .boolean_count_wrap button:before {
+	width: 100%;
+	height: 1px;
+	top: -1px;
+	left: 0;
+}
+.ema611_04_ih_0002 .boolean_count_wrap button + button {
+	border-top: 1px dashed var(--font-main);
+}
+.ema611_04_ih_0002 .boolean_count_wrap button:before {
+	display: none;
+}
+.result .ema611_04_ih_0002 .boolean_count_wrap.bgrd button.selected {
+  background: none;
+}
+.result .ema611_04_ih_0002 .boolean_count_wrap.bgrd button.correct {
+  background: url(./../img/EMA611_05_IH/0001_selected_bg.png) repeat-x 50% / 100% auto;
+}
+.ema611_04_ih_0002 .boolean_col:nth-of-type(2) .boolean_count_wrap button:first-of-type:before,
+.ema611_04_ih_0002 .boolean_col:nth-of-type(2) .boolean_count_wrap button:nth-of-type(2):before {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 6px;
+	position: absolute;
+	top: 0;
+	right: -1px;
+	left: auto;
+	background: var(--font-main);
+}
+.ema611_04_ih_0002 .boolean_col:nth-of-type(2) .boolean_count_wrap button:nth-of-type(16):before,
+.ema611_04_ih_0002 .boolean_col:nth-of-type(2) .boolean_count_wrap button:nth-of-type(17):before {
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 6px;
+	position: absolute;
+	bottom: 0;
+	right: -1px;
+	left: auto;
+	background: var(--font-main);
+	top: auto;
+}
+.ema611_04_ih_0002 .input_area {
+	display: flex;
+	align-items: center;
+	/* width: 100%; */
+	justify-content: center;
+	/* position: absolute;
+	top: 422px; */
+}
+
+.ema611_04_ih_0002 .solve_area .fraction_box {
+	position: relative;
+	top: -15px;
+}
+/* .input_wrap + span {
+	height: 60px;
+	display: block;
+}
+.fraction_box > span {
+	height: 60px;
+} */
+
+/* ema611_04_ih_0003 */
+.ema611_04_ih_0003 .input_row + .input_row {
+	margin-top: 80px;
+}
+
+/* ema611_04_ih_0004 */
+.ema611_04_ih_0004 .img_area {
+	position: relative;
+}
+.ema611_04_ih_0004 .img_area [class^="text"],
+.ema611_04_ih_0004 .img_area .fraction_box,
+.ema611_04_ih_0004 .fraction_wrap {
+	position: absolute;
+}
+.ema611_04_ih_0004 .t1 {
+	position: absolute;    
+	top: 8px;
+	left: 200px;
+}
+.ema611_04_ih_0004 .t2 {
+	position: absolute;    
+	top: 182px;
+  left: 23px;
+}
+.ema611_04_ih_0004 .img_area .text1 {
+	top: 102px;
+	left: 118px;
+}
+.ema611_04_ih_0004 .img_area .text2 {
+	top: 112px;
+	left: 272px;
+}
+.ema611_04_ih_0004 .img_area .text3 {
+	top: 80px;
+	left: 383px;
+}
+.ema611_04_ih_0004 .img_area .text4 {
+	top: 248px;
+	left: 133px;
+}
+.ema611_04_ih_0004 .img_area .text5 {
+	top: 350px;
+	left: 103px;
+}
+.ema611_04_ih_0004 .input_wrap.fraction_wrap .text_hint {
+	top: calc(100% + 48px);
+}
+
+/* ema611_04_ih_0005 */
+.ema611_04_ih_0005 .img_area {
+	position: relative;
+}
+.ema611_04_ih_0005 .img_area .texts {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 105px;
+}
+
+/* ema611_04_ih_0006 */
+.ema611_04_ih_0006 .title h2 {
+	padding-left: 80px;
+	flex-wrap: wrap;
+}
+.ema611_04_ih_0006 .title h2 img.heading {
+	position: absolute;
+	left: 0;
+}
+.ema611_04_ih_0006 .input_area {
+	display: flex;
+	gap: 80px;
+}
+.ema611_04_ih_0006 .input_col {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.ema611_04_ih_0006 .input1 math-field {
+	width: 200px !important;
+}
+
+/* ema611_04_ih_0007 */
+.ema611_04_ih_0007 .question_box {
+	position: relative;
+}
+.ema611_04_ih_0007 .img_area {
+	position: relative;
+}
+.ema611_04_ih_0007 .text_area {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	display: flex;
+}
+.ema611_04_ih_0007 .text_area > dl {
+	width: 920px;
+}
+.ema611_04_ih_0007 .text_area dt {
+	position: absolute;
+	top: 5px;
+	left: 42px;
+	padding: 2px 20px;
+	color: #c0573d;
+}
+.ema611_04_ih_0007 .text_area dd {
+	padding-left: 80px;
+}
+.ema611_04_ih_0007 .text_area dd:first-of-type {
+	margin-top: 87px;
+}
+
+.ema611_04_ih_0007 .text_area dd:nth-of-type(2) {
+	margin-top: 10px;
+}
+.ema611_04_ih_0007 .text_area dd:nth-of-type(2) .input_wrap {
+	width: calc(100% - 57px);
+}
+.ema611_04_ih_0007 .text_area dd:nth-of-type(2) math-field {
+	min-height: unset;
+	height: 60px;
+	padding-top: 11px;
+}
+.ema611_04_ih_0007 .text_area dd:nth-of-type(2) math-field::part(placeholder) {
+	top: -3px;
+}
+.ema611_04_ih_0007 .text_area dd .input_wrap .text_hint {
+	top: calc(100% + 18px);
+	white-space: normal;
+	word-break: keep-all;
+	text-align: left;
+	padding-left: 54px;
+}
+.ema611_04_ih_0007 .text_area dd .input_wrap .text_hint:before {
+	position: absolute;
+	left: 0;
+	text-align: center;
+}
+.ema611_04_ih_0007 .input_position {
+	position: absolute;
+	top: 308px;
+	right: 58px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.ema611_04_ih_0007 math-field + .example_box {
+	position: absolute;
+}
+.ema611_04_ih_0007 math-field.textarea + .example_box {
+	top: calc(100% + 6px);
+}
+.ema611_04_ih_0007 math-field.textarea + .example_box p {
+	white-space: normal;
+}
+.ema611_04_ih_0007 .input_position .example_box {
+	bottom: calc(100% + 6px);
+	padding: 0;
+	margin-top: 0;
+	overflow-y: visible;
+	background: none;
+	text-align: center;
+	color: #ff0000;
+}
+.ema611_04_ih_0007 .input_position .example_box:before {
+	display: none;
+}
+.ema611_04_ih_0007 .input_position .example_box .fraction_box:before {
+	background: #ff0000;
+}
+

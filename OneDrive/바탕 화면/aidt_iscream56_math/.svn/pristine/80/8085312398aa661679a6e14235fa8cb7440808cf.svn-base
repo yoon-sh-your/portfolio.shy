@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_09_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_09_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="EMA611_09_SU_0003 play-howto-layout">
+      <section class="title">
+        <h2 data-text="놀이방법" lang="y">
+          <span class="title-ready"><span class="point">놀이</span> 방법</span>
+          <span class="howto num1">맨 뒷사람은 쌓아 둔 카드 중 맨 위에 있는 카드 한 장을 뒤집어 분수의 나눗셈을 확인합니다. 카드에 적힌 분수의 나눗셈을 화이트보드에 옮겨 쓴 후 카드를 앞사람에게 보이지 않도록 카드 더미 옆에 내려놓습니다.</span>
+          <span class="howto num2">바로 앞사람에게 화이트보드에 쓴 분수의 나눗셈을 보여 줍니다.</span>
+          <span class="howto num3">전달받은 분수의 나눗셈을 외워 자신의 화이트보드에 쓰고, 바로 앞사람에게 보여 줍니다. 정한 시간 동안 줄을 선 순서대로 맨 앞사람까지 전달합니다.</span>
+          <span class="howto num4">맨 앞사람은 전달받은 분수의 나눗셈을 칠판에 쓰고 계산합니다.</span>
+          <span class="howto num5">점수 계산 방법에 따라 모둠별로 점수를 얻습니다.</span>
+        </h2>
+      </section>
+      <section class="contents paging_layout">
+        <div class="flex align_start conts_cover">
+          <div class="input_area conts_cover">
+            <article class="page page_1">
+              <!-- flex dir_col -->
+
+              <img src="../../common_contents/img/EMA611_09_SU/0003_img_1.png" alt="" />
+            </article>
+            <article class="page page_2">
+              <img src="../../common_contents/img/EMA611_09_SU/0003_img_2.png" alt="" />
+            </article>
+            <article class="page page_3">
+              <img src="../../common_contents/img/EMA611_09_SU/0003_img_3.png" alt="" />
+            </article>
+            <article class="page page_4">
+              <img src="../../common_contents/img/EMA611_09_SU/0003_img_4.png" alt="" />
+            </article>
+            <article class="page page_5">
+              <img src="../../common_contents/img/EMA611_09_SU/0003_img_5.png" alt="" />
+            </article>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <div class="btn-play-video">
+            <button class="btnBgDefault" lang="y">활동 영상</button>
+          </div>
+          <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+          <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

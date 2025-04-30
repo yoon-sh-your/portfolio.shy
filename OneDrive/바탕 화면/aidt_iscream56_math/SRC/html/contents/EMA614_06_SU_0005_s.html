@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_06_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema614_06_0005.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_06_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">
+            비율을 백분율로 나타내어 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+            <div class="question_box justify_center">
+                <div class="row">
+                    <div class="col">
+                        <span class="fraction_box">
+                            <span>1</span>
+                            <span>25</span>
+                        </span>
+                        <span>→</span>
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="4" ></math-field>
+                        </div>
+                        <span>％</span>
+                    </div>
+                     <div class="col">
+                        <span>0.45 →</span>
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="45" ></math-field>
+                        </div>
+                        <span>％</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <span class="fraction_box">
+                            <span>11</span>
+                            <span>20</span>
+                        </span>
+                        <span>→</span>
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="55" ></math-field>
+                        </div>
+                        <span>％</span>
+                    </div>
+                    <div class="col">
+                        <span>0.7 →</span>
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="70" ></math-field>
+                        </div>
+                        <span>％</span>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

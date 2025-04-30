@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_03_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star">잘못 계산한 부분을 찾아 이유를 쓰고, 옳게 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="tabbox_wrap left">
+            <div class="top">
+              <div class="flex align_center gap_4">
+                2.35×4=
+                <div class="fraction_box">
+                  <span>235</span>
+                  <span>10</span>
+                </div>
+                ×4=
+                <div class="fraction_box">
+                  <span>235×4</span>
+                  <span>10</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span>940</span>
+                  <span>10</span>
+                </div>
+                =94
+              </div>
+            </div>
+            <div class="tabbox">
+              <span class="tit_box" lang="y">이유</span>
+              <div class="conts_box">
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                    <div lang="y">
+                      2.35를
+                      <div class="fraction_box">
+                        <span>235</span>
+                        <span>100</span>
+                      </div>
+                      로 나타내어야 하는데
+                      <div class="fraction_box">
+                        <span>235</span>
+                        <span>10</span>
+                      </div>
+                      로 잘못 나타내었습니다.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabbox right">
+            <strong class="tit_tabbox" lang="y">옳은 계산</strong>
+            <div class="conts_tabbox">
+              <div class="flex dir_col">
+                2.35×4=
+                <div class="flex align_center align_center gap_4">
+                  <div class="input_wrap fraction_wrap answer1">
+                    <math-field data-answer-single="(235)/(100)×4"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap answer1">
+                    <math-field data-answer-single="(235xx4)/(100)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap answer2">
+                    <math-field data-answer-single="(940)/(100)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap">
+                    <math-field data-answer-single="9.4"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="fraction_text" lang="y">
+                  2.35는 소수 두 자리 수이므로
+                  <div class="fraction_box">
+                    <span>235</span>
+                    <span>100</span>
+                  </div>
+                  로 나타내어 계산해야 합니다.
+                </div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

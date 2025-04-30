@@ -1,0 +1,195 @@
+/* ema516_13_su_0003 */
+.ema516_13_su_0003 .answer_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.trapezoid {
+  position: relative;
+  display: inline-block;
+}
+.trapezoid .line {
+  position: absolute;
+  background-color: transparent;
+  transition: background-color 0.3s;
+  z-index: 1;
+  cursor: pointer;
+}
+.trapezoid .line.top {
+  top: -2px;
+  left: 112px;
+  right: 112px;
+  height: 4px;
+}
+.trapezoid .line.bottom {
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+.trapezoid .line.left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  transform: skew(-22.5deg, 0);
+  transform-origin: bottom;
+}
+.trapezoid .line.right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  transform: skew(22.5deg, 0);
+  transform-origin: bottom;
+}
+.trapezoid .line.active {
+  background-color: #07bba9;
+}
+.ema516_13_su_0003 .canvas_wrap {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+}
+.ema516_13_su_0003 .canvas_wrap canvas {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.ema516_13_su_0003 .btn_draw {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+}
+.ema516_13_su_0003[data-current-page="page_2"] .draw-tool-wrap {
+  bottom: 100px;
+  left: 150px;
+}
+.ema516_13_su_0003[data-current-page="page_1"] .btn_draw,
+.ema516_13_su_0003[data-current-page="page_3"] .btn_draw {
+  display: none;
+}
+.ema516_13_su_0003[data-current-page="page_2"] .btnSubmit:not([data-submit="true"]) {
+  display: none;
+}
+.ema516_13_su_0005[data-current-page="page_1"] .btnSubmit:not([data-submit="true"]),
+.ema516_13_su_0005[data-current-page="page_2"] .btnSubmit:not([data-submit="true"]) {
+  display: none;
+}
+
+.peace_img {
+  position: absolute;
+  cursor: pointer;
+}
+.peace_img.dropped {
+  filter: grayscale(1);
+}
+
+/* ema516_13_su_0005 */
+.ema516_13_su_0005 .page_1 .unit {
+  position: absolute;
+  top: 50px;
+  left: 42px;
+}
+.ema516_13_su_0005 .page_2 .unit {
+  position: absolute;
+  top: 60px;
+  left: 42px;
+}
+
+.ema516_13_su_0005 .peace_orgparallelogram {
+  position: absolute;
+  top: 95px;
+  left: 123px;
+}
+.ema516_13_su_0005 .peace_img1 {
+  top: 105px;
+  left: 141px;
+  z-index: 1;
+}
+.ema516_13_su_0005 .peace_img2 {
+  top: 199px;
+  left: 94px;
+  z-index: 1;
+}
+.ema516_13_su_0005 .peace_img1.cutting {
+  top: 75px;
+  left: 230px;
+}
+.ema516_13_su_0005 .peace_img2.cutting {
+  top: 210px;
+  left: 100px;
+}
+.ema516_13_su_0005[data-current-page="page_2"] .btn_draw,
+.ema516_13_su_0005[data-current-page="page_3"] .btn_draw,
+.ema516_13_su_0005[data-current-page="page_4"] .btn_draw,
+.ema516_13_su_0005[data-current-page="page_5"] .btn_draw {
+  display: none;
+}
+
+.ema516_13_su_0005[data-current-page="page_4"] .btnSubmit[data-submit="true"] {
+  display: none;
+}
+
+.ema516_13_su_0005 .canvas_wrap {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+}
+.ema516_13_su_0005 .canvas_wrap canvas {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.ema516_13_su_0005[data-current-page="page_2"] .draw-tool-wrap {
+  bottom: 100px;
+  left: 150px;
+}
+
+.ema516_13_su_0005 .page_2 .answer_img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+.ema516_13_su_0005 .page_1 .answer_img,
+.ema516_13_su_0005 .diagram {
+  position: absolute;
+  top: 91px;
+  left: 117px;
+}
+.answer_img.active {
+  display: block;
+}
+.ema516_13_su_0005 .page_1 .answer_img::before {
+  top: -80px;
+  left: -180px;
+}
+
+.ema516_13_su_0004 .page_2 .answer_img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+.ema516_13_su_0004 .page_1 .answer_img,
+.ema516_13_su_0004 .diagram {
+  position: absolute;
+  top: 91px;
+  left: 117px;
+}
+.answer_img.active {
+  display: block;
+}
+.ema516_13_su_0004 .page_1 .answer_img::before {
+  top: -80px;
+  left: -180px;
+}

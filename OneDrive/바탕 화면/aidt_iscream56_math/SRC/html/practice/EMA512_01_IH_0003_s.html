@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_01_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_01_ih_0003">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 3-2』 (몇십)÷(몇), (몇십몇)÷(몇)</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3" lang="y">관계있는 것끼리 이어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_center justify_center gap_12">
+          <ul class="connect_line_box start">
+            <li>30÷3</li>
+            <li>48÷2</li>
+            <li>72÷4</li>
+          </ul>
+          <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"],["s3","e3"]]'>
+            <div class="start_group">
+              <div class="connect_point" data-id="s1"></div>
+              <div class="connect_point" data-id="s2"></div>
+              <div class="connect_point" data-id="s3"></div>
+            </div>
+            <div class="end_group">
+              <div class="connect_point" data-id="e1"></div>
+              <div class="connect_point" data-id="e2"></div>
+              <div class="connect_point" data-id="e3"></div>
+            </div>
+            <svg class="connect_lines"></svg>
+          </div>
+          <ul class="connect_line_box end">
+            <li>24</li>
+            <li>10</li>
+            <li>18</li>
+          </ul>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>30÷3=10, 48÷2=24, 72÷4=18</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

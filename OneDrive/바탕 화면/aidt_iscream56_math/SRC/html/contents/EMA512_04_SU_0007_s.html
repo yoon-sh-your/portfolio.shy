@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_04_SU_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_01.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_02.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_03.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+
+    <script src="../../common_contents/js/ema512_04_0005.js"></script>
+</head>
+
+<body>
+    <div id="app_wrap" class="ema512_04_su_0007" data-current-page="page_2">
+      <section class="title type2">
+        <h2 data-head="5_green" lang="y">공약수로 나누어 12와 18의 최대공약수를 구하는 방법을 알아봅시다.</h2>
+      </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">12와 18을 공통으로 나눌 수 있는 수를 모두 구해 보세요.</h3>
+                    <div class="page_1_cont margin_center  problem1">
+                        <div class="question_box flex justify_center gap_12 multi_input_wrap">
+                            <div class="flex align_end ">
+                                <div class="input_wrap answer1 flex">
+                                    <math-field data-answer-single="1, 2, 3, 6 중 하나"
+                                        data-answer-multi='{"values": ["1", "2", "3","6"]}' text-align="center"
+                                        placeholder=" "></math-field>
+                                </div>
+                                ,
+                            </div>
+                            <div class="flex align_end ">
+                                <div class="input_wrap answer1 flex">
+                                    <math-field data-answer-single="1, 2, 3, 6 중 하나"
+                                        data-answer-multi='{"values": ["1", "2", "3","6"]}' text-align="center"
+                                        placeholder=" "></math-field>
+                                </div>
+                                ,
+                            </div>
+                            <div class="flex align_end ">
+                                <div class="input_wrap answer1 flex">
+                                    <math-field data-answer-single="1, 2, 3, 6 중 하나"
+                                        data-answer-multi='{"values": ["1", "2", "3","6"]}' text-align="center"
+                                        placeholder=" "></math-field>
+                                </div>
+                                ,
+                            </div>
+                            <div class="flex">
+                                <div class="input_wrap answer1 flex">
+                                    <math-field data-answer-single="1, 2, 3, 6 중 하나"
+                                        data-answer-multi='{"values": ["1", "2", "3","6"]}' text-align="center"
+                                        placeholder=" "></math-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <h3 lang="y">공약수로 나누어 12와 18의 최대공약수를 구하는 방법을 이야기해 보세요.</h3>
+                    <div class="page_2_cont">
+                        <div class="example_img margin_center">
+                            <div class="flex">
+                                <div class="flex justify_end gap_10">
+                                    <div>
+                                        <p lang="y" class="mb_10">12와 18의 공약수 → </p>
+                                        <p lang="y">6와 9의 공약수 → </p>
+                                    </div>
+                                    <div>
+                                        <p lang="y" class="fontSize24">2</span></p>
+                                        <p lang="y" class="fontSize24">3</span></p>
+                                    </div>
+                                    <div class="ml_20">
+                                        <p class="fontSize24">12</p>
+                                        <p class="fontSize24">6</p>
+                                        <p class="fontSize24">2</p>
+                                    </div>
+                                    <div class="ml_20">
+                                        <p class="fontSize24">18</p>
+                                        <p class="fontSize24">9</p>
+                                        <p class="fontSize24">3</p>
+                                    </div>
+                                    <h4 lang="y" class="fontSize24">12와 18의 최대공약수:2&times;3=6</h4>
+                                </div>
+                                <div class="flex justify_start gap_10">
+                                    <div>
+                                        <p class="fontSize24">6</p>
+                                    </div>
+                                    <div class="ml_20">
+                                        <p class="fontSize24">12</p>
+                                        <p class="fontSize24">2</p>
+                                    </div>
+                                    <div class="ml_20">
+                                        <p class="fontSize24">18</p>
+                                        <p class="fontSize24">3</p>
+                                    </div>
+                                    <div class="after6">
+                                        <p lang="y">6으로 나누었을 때의 몫</p>
+                                    </div>
+                                    <h4 lang="y" class="fontSize24">12와 18의 최대공약수: 6</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="margin_center">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <ol class="example_box">
+                                    <li lang="y">두 수의 공약수로 더 이상 나눌 수 없을 때까지 나누고, 나눈 공약수를 모두 곱하면 최대공약수입니다.</li>
+                                    <li lang="y">두 수의 공약수 중에서 가장 큰 수를 찾으면 최대공약수입니다.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button class="btnReset" lang="y">리셋</button>
+                <button class="btnCheck" lang="y">확인</button>
+                <button class="btnSubmit" lang="y" data-submit="true">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

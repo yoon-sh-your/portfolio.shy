@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA615_03_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema615.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema615">
+      <section class="title group">
+        <h2 lang="y"><span class="puple">[1~3]</span> 시은이네 아파트에서 일주일 동안 배출한 재활용품의 종류를 조사하여 나타낸 표입니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="2_light_purple" lang="y">
+          <span lang="y">표를 보고 띠그래프를 완성해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema615_03_0001 flex align_center justify_center gap_50">
+          <div class="flex dir_col gap_50">
+            <div class="flex align_center justify_center">
+              <div class="tit_title">
+                <span lang="y">재활용품의 종류별 배출량의 비율</span>
+              </div>
+            </div>
+
+            <div class="table_wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 160px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="row" lang="y">종류</th>
+                    <td class="bg">종이류</td>
+                    <td class="bg">플라스틱류</td>
+                    <td class="bg">캔류</td>
+                    <td class="bg">병류</td>
+                    <td class="bg">합계</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr></tr>
+                  <tr>
+                    <th scope="row" lang="y">배출량(kg)</th>
+                    <td>80</td>
+                    <td>60</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>200</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" lang="y">백분율(％)</th>
+                    <td>40</td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="30"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="20"></math-field>
+                      </div>
+                    </td>
+                    <td>10</td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="100"></math-field>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="flex align_center justify_center">
+              <div class="tit_title">
+                <span lang="y">재활용품의 종류별 배출량의 비율</span>
+              </div>
+            </div>
+
+            <div class="graf_flex">
+              <div class="in_graf">
+                <div class="input_are">
+                  <div class="tit tit01">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="플라스틱류">
+                        <option></option>
+                        <option value="플라스틱류"></option>
+                        <option value="캔류"></option>
+                        <option value="병류"></option>
+                      </select>
+                    </div>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="30"></math-field>
+                    </div>
+                    <p>％</p>
+                  </div>
+                  <div class="tit tit02">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="캔류">
+                        <option></option>
+                        <option value="플라스틱류"></option>
+                        <option value="캔류"></option>
+                        <option value="병류"></option>
+                      </select>
+                    </div>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="20"></math-field>
+                    </div>
+                    <p>％</p>
+                  </div>
+                  <div class="tit tit03">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="병류">
+                        <option></option>
+                        <option value="플라스틱류"></option>
+                        <option value="캔류"></option>
+                        <option value="병류"></option>
+                      </select>
+                    </div>
+                    <div class="flex gap_4 align_center">
+                      <div class="up_hint input_wrap">
+                        <math-field data-answer-single="10"></math-field>
+                      </div>
+                      <p>％</p>
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <svg width="1046" height="146" viewBox="0 0 1046 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="path-1-inside-1_10918_449654" fill="white">
+                    <path d="M5.5 0H1005.5V56H5.5V0Z" />
+                  </mask>
+                  <path d="M1005.5 55H5.5V57H1005.5V55Z" fill="#222222" mask="url(#path-1-inside-1_10918_449654)" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="-1.14844" y="26.5312">0</tspan></text>
+                  <path d="M6 36V56" stroke="black" />
+                  <path d="M55.95 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="93.7397" y="26.5312">10</tspan></text>
+                  <path d="M105.9 36V56" stroke="black" />
+                  <path d="M155.85 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="191.859" y="26.5312">20</tspan></text>
+                  <path d="M205.8 36V56" stroke="black" />
+                  <path d="M255.75 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="291.395" y="26.5312">30</tspan></text>
+                  <path d="M305.7 36V56" stroke="black" />
+                  <path d="M355.65 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="391.213" y="26.5312">40</tspan></text>
+                  <path d="M405.6 36V56" stroke="black" />
+                  <path d="M455.55 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="491.441" y="26.5312">50</tspan></text>
+                  <path d="M505.5 36V56" stroke="black" />
+                  <path d="M555.45 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="591.142" y="26.5312">60</tspan></text>
+                  <path d="M605.4 36V56" stroke="black" />
+                  <path d="M655.35 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="691.968" y="26.5312">70</tspan></text>
+                  <path d="M705.3 36V56" stroke="black" />
+                  <path d="M755.25 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="791.024" y="26.5312">80</tspan></text>
+                  <path d="M805.2 36V56" stroke="black" />
+                  <path d="M855.15 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="890.842" y="26.5312">90</tspan></text>
+                  <path d="M905.1 36V56" stroke="black" />
+                  <path d="M955.05 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="980.942" y="26.5312">100</tspan></text>
+                  <path d="M1005 36V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="1022" y="26.5312">％</tspan></text>
+                  <mask id="path-36-inside-2_10918_449654" fill="white">
+                    <path d="M5.5 66H405.5V146H5.5V66Z" />
+                  </mask>
+                  <path d="M5.5 66H405.5V146H5.5V66Z" fill="#FDE3D7" />
+                  <path d="M5.5 66V65H4.5V66H5.5ZM5.5 146H4.5V147H5.5V146ZM5.5 67H405.5V65H5.5V67ZM405.5 145H5.5V147H405.5V145ZM6.5 146V66H4.5V146H6.5Z" fill="#222222" mask="url(#path-36-inside-2_10918_449654)" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px">
+                    <tspan x="174.887" y="96.5312">&#xc885;&#xc774;&#xb958;&#10;</tspan>
+                    <tspan x="173.336" y="132.531">(40 ％)</tspan>
+                  </text>
+                  <mask id="path-39-inside-3_10918_449654" fill="white">
+                    <path d="M405.5 66H705.5V146H405.5V66Z" />
+                  </mask>
+                  <path d="M405.5 66H705.5V146H405.5V66Z" fill="white" />
+                  <path d="M405.5 66V65H404.5V66H405.5ZM405.5 146H404.5V147H405.5V146ZM405.5 67H705.5V65H405.5V67ZM705.5 145H405.5V147H705.5V145ZM406.5 146V66H404.5V146H406.5Z" fill="#222222" mask="url(#path-39-inside-3_10918_449654)" />
+                  <mask id="path-41-inside-4_10918_449654" fill="white">
+                    <path d="M705.5 66H905.5V146H705.5V66Z" />
+                  </mask>
+                  <path d="M705.5 66H905.5V146H705.5V66Z" fill="white" />
+                  <path d="M705.5 66V65H704.5V66H705.5ZM705.5 146H704.5V147H705.5V146ZM705.5 67H905.5V65H705.5V67ZM905.5 145H705.5V147H905.5V145ZM706.5 146V66H704.5V146H706.5Z" fill="#222222" mask="url(#path-41-inside-4_10918_449654)" />
+                  <rect x="906" y="66.5" width="99" height="79" fill="white" />
+                  <rect x="906" y="66.5" width="99" height="79" stroke="#222222" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>띠그래프의 작은 눈금 한 칸은 5 ％를 나타냅니다 ➔</p>
+                  <p>플라스틱류: 6칸, 캔류: 4칸, 병류: 2칸</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>각 항목의 백분율만큼 선을 그어 띠를 나눈 후 나눈 부분에 각 항목의 내용과 백분율을 씁니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck" data-look="submit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

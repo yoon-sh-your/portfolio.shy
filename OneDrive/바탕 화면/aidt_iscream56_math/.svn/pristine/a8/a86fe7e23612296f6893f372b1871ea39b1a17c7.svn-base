@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_06_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_06_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">그림을 보고 <sapn class="empty_box nemo"></sapn> 안에 알맞은 수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img"><img src="../../common_practice/img/EMA524_06_IH/0001_img.svg" alt="" /></div>
+          <div class="flex dir_col gap_60">
+            <div>
+              <span lang="y">색칠한 부분은 가로 5칸, 세로 9칸으로 모두</span>
+              <div class="flex align_center gap_4">
+                <div class="input_wrap">
+                  <math-field data-answer-single="45"></math-field>
+                </div>
+                <span lang="y">칸입니다.</span>
+              </div>
+            </div>
+            <div class="flex align_center gap_4">
+              <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="icon_arrow" alt="" />
+              0.5×0.9=0.01×
+              <div class="input_wrap">
+                <math-field data-answer-single="45"></math-field>
+              </div>
+              =
+              <div class="input_wrap">
+                <math-field data-answer-single="0.45"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">모눈종이의 가로를 0.5만큼, 세로를 0.9만큼 색칠하면 모두 45칸이므로 색칠한 부분의 넓이는 0.45입니다.</p>
+                <div class="flex align_center gap_12">
+                  <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="icon_arrow" alt="" />
+                  <p>0.5×0.9=0.45</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

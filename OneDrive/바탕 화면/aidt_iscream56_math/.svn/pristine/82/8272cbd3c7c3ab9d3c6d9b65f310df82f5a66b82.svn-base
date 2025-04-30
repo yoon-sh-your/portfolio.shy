@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_07_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_07.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_07_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1">
+          <span lang="y">100÷4를 이용하여 1÷4의 몫을 소수로 나타내려고 합니다.</span>
+          <span class="nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="relative">
+            <img src="./../../common_practice/img/EMA613_05_IH/0002_01.png" alt="" />
+            <div class="input_col">
+              100÷4=
+              <div class="input_wrap" data-hint-position="right">
+                <math-field data-answer-single="25"></math-field>
+              </div>
+            </div>
+            <div class="input_col">
+              1÷4=
+              <div class="input_wrap" data-hint-position="right">
+                <math-field data-answer-single="0.25"></math-field>
+              </div>
+            </div>
+            <div class="input_position mixed_fraction input1">
+              <div class="fraction_box">
+                <span>1</span>
+                <span>100</span>
+              </div>
+              <span>배</span>
+            </div>
+            <div class="input_position flex align_center gap_10 input2">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(1)/(100)" class="w_80"></math-field>
+              </div>
+              <span>배</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>
+                  나누는 수가 그대로이고, 나누어지는 수가
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>100</span>
+                  </span>
+                  배가 되면 몫도
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>100</span>
+                  </span>
+                  배가 됩니다.
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

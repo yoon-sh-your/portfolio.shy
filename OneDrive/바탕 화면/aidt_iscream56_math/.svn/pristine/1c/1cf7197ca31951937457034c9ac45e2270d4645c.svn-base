@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_05_IH_0004</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_02_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_06_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">버림하여 소수 첫째 자리까지 나타낸 수가 다른 하나를 찾아 기호를 골라 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="boolean_wrap type_chk justify_center mt_30">
+          <div class="button_box">
+            <button type="button" data-answer-single="false" class="button1"><i class="num_sign mr_5">ㄱ</i> 5.41</button>
+            <button type="button" data-answer-single="false" class="button2"><i class="num_sign mr_5">ㄴ</i> 5.49</button>
+            <button type="button" data-answer-single="true" class="button3"><i class="num_sign mr_5">ㄷ</i> 5.52</button>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">버림하여 소수 첫째 자리까지 나타내어 봅니다.</p>
+                <p>㉠ 5.4<span class="text_bg_red">1</span> ➔ 5.4</p>
+                <p>㉡ 5.4<span class="text_bg_red">9</span> ➔ 5.4</p>
+                <p>㉢ 5.5<span class="text_bg_red">2</span> ➔ 5.5</p>
+                <p lang="y">따라서 버림하여 소수 첫째 자리까지 나타낸 수가 다른 하나는 ㉢입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_03_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_03_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" class="is_star2" lang="y">
+          우리 지역의 지난주 요일별 최고 기온을 조사하여 평균을 구하려고 합니다. 물음에 답해 보세요.
+          <button type="button" class="btn calculator"></button>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 class="title" lang="y">우리 지역의 지난주 요일별 최고 기온을 조사하여 표로 나타내어 보세요.</h3>
+          <div class="flex justify_center">
+            <div class="img">
+              <img src="../../common_practice/img/EMA526_03_IH/0004_img.png" alt="" />
+              <span class="text" lang="y">‘기상청 날씨누리’ 누리집에서<br />우리 지역의 지난주 요일별<br />최고 기온을 찾아보세요.</span>
+              <div class="day">
+                <span lang="y">월요일</span>
+                <span lang="y">화요일</span>
+                <span lang="y">수요일</span>
+                <span lang="y">목요일</span>
+                <span lang="y">금요일</span>
+              </div>
+            </div>
+            <div class="question_box">
+              <div class="tit_data">
+                <div class="inner">
+                  <span lang="y">요일별 최고 기온</span>
+                </div>
+              </div>
+              <div class="table_wrap row">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">요일</th>
+                      <td lang="y">월요일</td>
+                      <td lang="y">화요일</td>
+                      <td lang="y">수요일</td>
+                      <td lang="y">목요일</td>
+                      <td lang="y">금요일</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row" lang="y">최고 기온(°C)</th>
+                      <td>
+                        <div class="input_wrap">
+                          <math-field></math-field>
+                          <div class="example_box small">
+                            <p>8</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_wrap">
+                          <math-field></math-field>
+                          <div class="example_box small">
+                            <p>4</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_wrap">
+                          <math-field></math-field>
+                          <div class="example_box small">
+                            <p>5</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_wrap">
+                          <math-field></math-field>
+                          <div class="example_box small">
+                            <p>6</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_wrap">
+                          <math-field></math-field>
+                          <div class="example_box small">
+                            <p>7</p>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 class="title" lang="y">최고 기온의 평균은 몇 ℃인가요?</h3>
+          <div class="flex justify_center">
+            <div class="img">
+              <img src="../../common_practice/img/EMA526_03_IH/0004_img.png" alt="" />
+              <span class="text" lang="y">‘기상청 날씨누리’ 누리집에서<br />우리 지역의 지난주 요일별<br />최고 기온을 찾아보세요.</span>
+              <div class="day">
+                <span lang="y">월요일</span>
+                <span lang="y">화요일</span>
+                <span lang="y">수요일</span>
+                <span lang="y">목요일</span>
+                <span lang="y">금요일</span>
+              </div>
+            </div>
+            <div class="question_box">
+              <div class="flex align_center gap_4">
+                (
+                <div class="input_wrap">
+                  <math-field></math-field>
+                  <div class="example_box small">
+                    <p>6</p>
+                  </div>
+                </div>
+                ) ℃
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">최고 기온의 평균은 5일 동안 최고 기온의 합을 5로 나누어서 구합니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <h3 class="title" lang="y">구한 평균을 보고 알 수 있는 내용을 한 가지 써 보세요.</h3>
+          <div class="flex justify_center">
+            <div class="img">
+              <img src="../../common_practice/img/EMA526_03_IH/0004_img.png" alt="" />
+              <span class="text" lang="y">‘기상청 날씨누리’ 누리집에서<br />우리 지역의 지난주 요일별<br />최고 기온을 찾아보세요.</span>
+              <div class="day">
+                <span lang="y">월요일</span>
+                <span lang="y">화요일</span>
+                <span lang="y">수요일</span>
+                <span lang="y">목요일</span>
+                <span lang="y">금요일</span>
+              </div>
+            </div>
+            <div class="question_box">
+              <div class="flex gap_12">
+                <span class="label_gray" lang="y">알 수 있는 내용</span>
+                <div class="input_wrap">
+                  <math-field></math-field>
+                  <div class="example_box">
+                    <p lang="y">최고 기온이 평균보다 낮은 요일은 화요일, 수요일입니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">최고 기온의 평균은 5일 동안 최고 기온의 합을 5로 나누어서 구합니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema517_02_su_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema517_02_SU.css" />
+    <script src="../../common_project/js/ema517_02_SU.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema517_02_su_0002" data-current-page="page_1, page_2">
+      <section class="title">
+        <h2 data-head="1">
+          <span lang="y">김장에 필요한 채소를 선택하고, 많이 수확하고 싶은 채소를 정해 봅시다.​</span>
+        </h2>
+      </section> 
+
+      <section class="contents paging_layout" >
+        <article class="page page_1">
+          <section class="contents">
+            <div class="flex dir_col gap_20">
+              <h3 lang="y">채소 6가지 중에서 김장에 필요한 채소 4가지를 선택하려고 합니다. 필요한 자료를 조사해 보세요.​</h3>
+              <div class="img_wrap">
+                <img src="./../../common_project/img/EMA517_02_SU/text box-1.png" alt="">
+                <img src="./../../common_project/img/EMA517_02_SU/image.png" alt="" class="img"/>
+                <img src="./../../common_project/img/EMA517_02_SU/text box.png" alt="">
+              </div>
+    
+              <div class="text">
+              <h2 lang="y">김장용 채소에는​ <br>
+                어떤 종류가 있는지 살펴볼게.​</h2>
+    
+                <h2 lang="y">김장을 담글 때 어떤 재료를​ <br>
+                  많이 사용하는지도 알아보자.​</h2>
+                </div>
+            
+            </div>
+          </section>
+
+        </article>
+
+        <article class="page page_2">
+          <section class="contents">
+            <div class="flex dir_col gap_20">
+              <h3 lang="y">조사한 자료를 바탕으로 채소밭에 심을 채소 4가지를 고르세요.​</h3>
+
+              <div class="img">
+                <img src="./../../common_project/img/EMA517_02_SU/img box (10).png" alt="">
+              </div>
+
+
+          
+              <div class="p">
+                <p lang="y">파</p>
+                <p lang="y">브로콜리</p>
+                <p lang="y">배추</p>
+                <p lang="y">부추</p>
+                <p lang="y">호박</p>
+                <p lang="y">무</p>
+
+              </div>
+
+              
+              <div class="selection_limit_wrap" data-limit="4">
+                <div class="selection_limit_item">
+                    <label> 
+                        <input type="checkbox" name="selection_limit_item" value="1">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="selection_limit_item">
+                    <label> 
+                        <input type="checkbox" name="selection_limit_item" value="2">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="selection_limit_item">
+                    <label> 
+                        <input type="checkbox" name="selection_limit_item" value="3">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="selection_limit_item">
+                    <label> 
+                        <input type="checkbox" name="selection_limit_item" value="4">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="selection_limit_item">
+                    <label> 
+                        <input type="checkbox" name="selection_limit_item" value="5">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="selection_limit_item">
+                    <label> 
+                        <input type="checkbox" name="selection_limit_item" value="6">
+                        <span></span>
+                    </label>
+                </div>
+              </div>
+        
+            
+            </div>
+      
+          </section>
+  
+    
+          <div class="btn_area">
+            <button class="btnReset">리셋</button>
+            <!-- <button class="btnCheck">확인</button> -->
+            <button class="btnSubmit" data-submit="true">제출</button>
+          </div>
+
+        </article>
+
+      </section>
+
+
+    </div>
+  </body>
+</html>

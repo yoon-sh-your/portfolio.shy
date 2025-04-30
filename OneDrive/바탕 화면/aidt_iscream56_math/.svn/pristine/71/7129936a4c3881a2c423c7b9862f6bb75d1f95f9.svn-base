@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_11_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <script src="../../common_practice/js/ema613_11_ih_0001.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_11.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_11_ih_0001">
+      <section class="title type2">
+        <h2 data-puzzle="pink" class="flex align_center" lang="y">
+          몫이 큰 것부터 차례대로 이어 카시오페아자리를 완성해 보세요.
+          <button class="btn_zoom" data-target="target1" data-tit="그림을 보고 생활에서 똑같은 모양을 보았던 경험을 이야기해 봅시다." data-head="1"></button>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center align_start">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_11_IH/0001_01.png" alt="" />
+            <img src="./../../common_practice/img/EMA613_11_IH/0001_02.png" alt="정답이미지" class="answer_img" />
+            <canvas id="gridCanvas" width="800" height="670"></canvas>
+            <p lang="y" class="text_desc">*카시오페이아자리: 북극성을 중심으로 북두칠성의 맞은편에 있는 별자리.</p>
+          </div>
+          
+          <div class="input_area">
+            <div class="input_row">
+              <i class="label_num">1</i>
+              14.42÷7=
+              <div class="input_wrap hint_right">
+                <math-field data-answer-single="2.06"></math-field>
+              </div>
+            </div>
+            <div class="input_row">
+              <i class="label_num">2</i>
+              20.5÷5=
+              <div class="input_wrap hint_right">
+                <math-field data-answer-single="4.1"></math-field>
+              </div>
+            </div>
+            <div class="input_row">
+              <i class="label_num">3</i>
+              7÷4=
+              <div class="input_wrap hint_right">
+                <math-field data-answer-single="1.75"></math-field>
+              </div>
+            </div>
+            <div class="input_row">
+              <i class="label_num">4</i>
+              3.8÷5=
+              <div class="input_wrap hint_right">
+                <math-field data-answer-single="0.76"></math-field>
+              </div>
+            </div>
+            <div class="input_row">
+              <i class="label_num">5</i>
+              13.5÷3=
+              <div class="input_wrap hint_right">
+                <math-field data-answer-single="4.5"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <ul>
+                  <li><i class="label_num">1</i> 14.42÷7=2.06</li>
+                  <li><i class="label_num">2</i> 20.5÷5=4.1</li>
+                  <li><i class="label_num">3</i> 7÷4=1.75</li>
+                  <li><i class="label_num">4</i> 3.8÷5=0.76</li>
+                  <li><i class="label_num">5</i> 13.5÷3=4.5</li>
+                  <li lang="y">➔ 4.5>4.1>2.06>1.75>0.76이므로 몫이 큰 것부터 차례대로 번호를 쓰면</li>
+                  <li>
+                    <i class="label_num">5</i>, <i class="label_num">2</i>, <i class="label_num">1</i>, <i class="label_num">3</i>,
+                    <i class="label_num">4</i>
+                    <span lang="y">입니다.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+        <div class="picture_wrap target1">
+          <img src="./../../common_practice/img/EMA613_11_IH/0001_01.png" alt="" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

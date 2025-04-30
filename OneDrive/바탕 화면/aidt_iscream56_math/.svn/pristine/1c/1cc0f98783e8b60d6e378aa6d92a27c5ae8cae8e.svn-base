@@ -1,0 +1,660 @@
+/**
+* 단원 미리보기 : 드래그 앤 드롭 시 지우기 효과
+*/
+.letKnow {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.letKnow li {
+  position: relative;
+}
+
+.letKnow li .draggable {
+  width: 64px;
+  height: 64px;
+  background: url(../img/icon_eraser.svg) no-repeat center / 40px, var(--bg-default);
+  border: 1px solid var(--stroke-default);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 18px;
+  left: -88px;
+  z-index: 1000;
+  touch-action: none;
+}
+
+.letKnow li.on .draggable {
+  background: url(../img/icon_eraser_grey.svg) no-repeat center / 40px, var(--bg-default);
+}
+
+.letKnow .droppable {
+  width: 1208px;
+  height: 100px;
+  border-radius: 20px;
+  border: 2px dashed var(--stroke-default);
+  background-color: var(--common-grey-100);
+  /* position: relative; */
+  z-index: 1;
+}
+
+.letKnow .droppable p {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  /* line-height: 48px; */
+  letter-spacing: -1px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.letKnow .droppable p::before {
+  content: '';
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  background-color: var(--bg-default);
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.letKnow li.on .droppable p {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.letKnow li svg {
+  width: 1204px;
+  height: 96px;
+  border-radius: 20px;
+  fill: var(--bg-disabled);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.letKnow li .scratch_path {
+  stroke: black;
+  stroke-width: 60;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 1300;
+  stroke-dashoffset: 1300;
+}
+
+.letKnow li.on .scratch_path {
+  animation: scratchEffect 1.5s ease-out forwards;
+}
+
+.letKnow li.on svg {
+  animation: fadeOut 0.5s ease-out 1s forwards;
+}
+
+/* 긁기 애니메이션 */
+@keyframes scratchEffect {
+  0% {
+    stroke-dashoffset: 1300;
+  }
+
+  100% {
+    stroke-dashoffset: 2600;
+  }
+}
+
+/* 사라지기 애니메이션 */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+
+
+/**
+* 이전 단원 확인하기 : 카드 플립
+*/
+.letCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  opacity: 0;
+}
+
+.letCheck[data-count] {
+  opacity: 1;
+}
+
+.letCheck[data-count="4"] {
+  padding: 0;
+  width: 840px;
+}
+
+.letCheck[data-count="1"],
+.letCheck[data-count="2"],
+.letCheck[data-count="3"] {
+  padding-top: 140px;
+}
+
+.letCheck li {
+  width: 408px;
+  height: 240px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 2px dashed var(--stroke-default);
+  background-color: var(--common-grey-100);
+}
+
+.letCheck .cover {
+  width: 101%;
+  height: 101%;
+  background-color: var(--primary-blue-50);
+  border: 2px dashed var(--primary-blue);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.letCheck .front,
+.letCheck .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 24px);
+  height: calc(100% - 24px);
+  border-radius: 12px;
+  background-color: var(--bg-default);
+  word-break: keep-all;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.letCheck .back,
+.letCheck li.flip .front {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.letCheck li.flip .back {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+
+/**
+* 다음시간에 공부할 내용
+*/
+.to_be {
+  width: 100%;
+  height: 100%;
+  padding: 40px 55px 40px 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.to_be .inwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 56px;
+  width: 100%;
+  height: 100%;
+  padding-top: 170px; /* 다음 시간에 공부할 내용 두번째 스프링에 맞춰 여백 수정 (250428) */
+  padding-left: 169px;
+  border-radius: 12px;
+  background-color: #f7dad5;
+  position: relative;
+}
+
+.to_be.pre .inwrap {
+  background-color: var(--primary-blue-200);
+  padding-top: 120px; /* 이번 시간에 공부할 내용 기존 여백 유지 (250428) */
+}
+
+.to_be .inwrap::before {
+  content: '';
+  width: 100px;
+  height: 524px;
+  background: url(../img/bg_fin_string.svg) no-repeat center / 100%;
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%);
+}
+
+.to_be.pre .inwrap::before {
+  background: url(../img/bg_start_string.svg) no-repeat center / 100%;
+}
+
+.to_be .inwrap::after {
+  content: '';
+  display: block;
+  width: 480px;
+  height: 480px;
+  background: url(../img/charactor_math_02.svg) no-repeat center / 100%;
+  position: absolute;
+  bottom: -136px;
+  right: -15px;
+}
+
+.to_be.pre .inwrap::after {
+  background: url(../img/charactor_math_01.svg) no-repeat center / 100%;
+}
+
+.to_be label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: var(--secondary-red);
+  font-size: 20px;
+  font-weight: 700;
+  /* line-height: 32px; */
+  letter-spacing: -0.5px;
+  border-radius: 12px;
+  color: var(--font-main-reverse);
+}
+
+.to_be.pre label {
+  background-color: var(--primary-blue);
+}
+
+.to_be .context {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.to_be .main {
+  font-size: 64px;
+  /* line-height: 88px; */
+  letter-spacing: -1px;
+}
+
+.to_be .main p {
+  font-weight: 700;
+}
+
+.to_be .main .sub {
+  font-size: 32px;
+}
+
+.to_be .main .orange {
+  color: rgba(238, 79, 36, 1) !important;
+}
+
+.to_be .main .blue {
+  color: rgba(59, 113, 254, 1) !important;
+}
+
+.to_be p strong {
+  color: var(--primary-blue);
+}
+
+.to_be .page {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.to_be .page>div {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 52px;
+  font-size: 20px;
+  /* line-height: 32px; */
+  position: relative;
+}
+
+.to_be .page>div::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon_book_3.svg) no-repeat center left / 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.to_be .what_do {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.to_be .what_do li {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  font-size: 24px;
+}
+
+.to_be .what_do li::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-top: 15px;
+  border-radius: 50%;
+  background-color: #6a6a6a;
+}
+
+/**
+* 정리해 볼까요
+*/
+.summarize_wrap .summarize {
+  width: 1280px;
+  min-height: 350px;
+  border: 4px solid var(--secondary-green);
+  background-color: #fff;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  gap: 30px;  
+  padding: 70px 0;
+}
+
+.summarize_wrap::before {
+  content: '';
+  width: 406px;
+  height: 407px;
+  background: url(../img/bg_summarize.png) no-repeat bottom left / 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.summarize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.summarize label {
+  height: 68px;
+  padding: 16px;
+  background-color: var(--secondary-green);
+  border-radius: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--font-main-reverse);
+  /* line-height: 36px; */
+  position: absolute;
+  top: -34px;
+  left: 34px;
+}
+
+.summarize label::before {
+  content: '';
+  display: block;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  border-radius: 40px;
+  border: 2px dashed #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.summarize .summarize_text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.summarize>div,
+.summarize .summarize_text > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* gap: 12px; */
+  gap: 8px; /* 여백 통일 (250418) */
+  position: relative;
+}
+
+.summarize>div .small-gap {
+  margin-left: -8px;
+}
+
+.summarize>div,
+.summarize .reveal_btn {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.summarize .reveal_btn {
+  padding: 8px 20px;
+  color: #d1232a; /* 색자 처리 (250423) */
+}
+
+.summarize .reveal_btn .fraction_box::before {
+  background-color: #d1232a; /* 색자 처리 (250429) */
+}
+
+.summarize .reveal_btn:not(:disabled):after {
+  bottom: -16px;
+}
+
+.summarize_wrap .summarize.promise {
+  border: 4px solid var(--secondary-yellow);
+}
+
+.summarize_wrap .summarize.promise label {
+  background-color: var(--secondary-yellow);
+  color: #a55935;
+}
+
+.summarize_wrap .summarize.promise label::after {
+  display: none;
+}
+
+/**
+* 계산결과 비교 화면
+*/
+.contents:not(.paging_layout).compair {
+  width: 1400px;
+  margin: 0 auto;
+}
+.contents.paging_layout .compair .compair_inwrap {
+  width: 100%;
+}
+
+.compair .compair_inwrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1400px;
+  padding: 14px;
+  position: relative;
+}
+
+.compair_inwrap .input_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-default);
+  border-radius: 40px;
+  border: 4px dashed #aadad3;
+  width: 100%;
+  padding: 27px 0;
+}
+
+.compair_inwrap::before,
+.compair_inwrap::after {
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: #d8edea;
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.compair_inwrap::before {
+  left: 0;
+}
+
+.compair_inwrap::after {
+  right: 0;
+}
+
+/* 셀프체크 */
+.self_check {
+  display: flex;
+  flex-direction: column;
+  padding: 0 112px;
+}
+
+.self_check li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  padding: 16px 32px;
+  position: relative;
+}
+
+.self_check li>img {
+  margin-right: 48px;
+}
+
+.self_check li p {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.self_check .state_wrap {
+  display: flex;
+  align-self: center;
+  gap: 8px;
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.self_check .state_wrap input[type='radio'] {
+  display: none;
+}
+
+.self_check .state_wrap label {
+  width: 68px;
+  height: 68px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.completed .self_check .state_wrap label {
+  pointer-events: none;
+}
+
+.self_check .state_wrap label:nth-child(2) {
+  background-image: url(../img/icon_pipi_face_00.png);
+}
+
+.self_check .state_wrap label:nth-child(4) {
+  background-image: url(../img/icon_pipi_face_10.png);
+}
+
+.self_check .state_wrap label:nth-child(6) {
+  background-image: url(../img/icon_pipi_face_20.png);
+}
+
+.self_check .state_wrap input[type='radio']:checked+label:nth-child(2) {
+  background-image: url(../img/icon_pipi_face_01.png);
+}
+
+.self_check .state_wrap input[type='radio']:checked+label:nth-child(4) {
+  background-image: url(../img/icon_pipi_face_11.png);
+}
+
+.self_check .state_wrap input[type='radio']:checked+label:nth-child(6) {
+  background-image: url(../img/icon_pipi_face_21.png);
+}
+
+.self_check[data-grade="5"] .state_wrap label:nth-child(2) {
+  background-image: url(../img/icon_pipi_face_00_5.png);
+}
+
+.self_check[data-grade="5"] .state_wrap label:nth-child(4) {
+  background-image: url(../img/icon_pipi_face_10_5.png);
+}
+
+.self_check[data-grade="5"] .state_wrap label:nth-child(6) {
+  background-image: url(../img/icon_pipi_face_20_5.png);
+}
+
+.self_check[data-grade="5"] .state_wrap input[type='radio']:checked+label:nth-child(2) {
+  background-image: url(../img/icon_pipi_face_01_5.png);
+}
+
+.self_check[data-grade="5"] .state_wrap input[type='radio']:checked+label:nth-child(4) {
+  background-image: url(../img/icon_pipi_face_11_5.png);
+}
+
+.self_check[data-grade="5"] .state_wrap input[type='radio']:checked+label:nth-child(6) {
+  background-image: url(../img/icon_pipi_face_21_5.png);
+}
+
+.self_check li>svg {
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}

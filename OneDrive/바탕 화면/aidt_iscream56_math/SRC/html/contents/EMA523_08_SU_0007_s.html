@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_08_SU_0007_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_08.css" />
+  <script src="../../common_contents/js/ema523_08_0007.js"></script>
+  
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_08_su_0007 paging">
+    <section class="title type2">
+      <h2 data-head="5_pink" lang="y">점대칭도형을 완성해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">점대칭도형을 완성해 보세요.</h3>
+        <div class="input_wrap flex1">
+          <div class="figure_box drawline_grid flex align_center justify_center">
+            <div class="drawing_grid_area" data-grid-size='32'
+                     data-answer-single='[[{"x":384,"y":160},{"x":288,"y":256},{"x":96,"y":256},{"x":64,"y":160}]]' 
+                     data-sample-line='[[{"x":64,"y":160},{"x":160,"y":64},{"x":352,"y":64},{"x":384,"y":160}]]'>
+                <svg class="line_canvas"></svg>
+                <span class="dot"></span>
+              </div>
+
+              <div class="drawing_grid_area" data-grid-size='32'
+                     data-answer-single='[[{"x":160,"y":160},{"x":160,"y":96},{"x":384,"y":64},{"x":288,"y":160}]]' 
+                     data-sample-line='[[{"x":160,"y":160},{"x":64,"y":256},{"x":288,"y":224},{"x":288,"y":160}]]'>
+                <svg class="line_canvas"></svg>
+                <span class="dot"></span>
+              </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">완성한 도형이 점대칭도형인지 확인해 보세요.</h3>
+        <div class="input_wrap flex1">
+          <div class="figure_box drawline_grid flex align_center justify_center">
+              <div class="flex align_center po_relative">
+                <button class="btn_rotation"><span>회전버튼</span></button>
+                <div class="drawing_grid_area justify_center" data-answer-single="empty_answer">
+                  <svg width="318" height="237" viewBox="0 0 259 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M309.23 0.875H310.322" stroke="#009FE3" stroke-width="0.545686" stroke-miterlimit="10"/>
+                    <path d="M132.474 78.2237C132.478 78.7339 132.33 79.2337 132.048 79.6597C131.766 80.0856 131.364 80.4186 130.893 80.6163C130.421 80.8141 129.901 80.8677 129.399 80.7704C128.897 80.673 128.435 80.4292 128.072 80.0697C127.709 79.7102 127.461 79.2512 127.36 78.7511C127.258 78.2509 127.309 77.7321 127.503 77.2603C127.698 76.7886 128.029 76.3853 128.455 76.1014C128.88 75.8176 129.38 75.666 129.891 75.666C130.573 75.666 131.228 75.9349 131.711 76.414C132.195 76.8932 132.47 77.5437 132.474 78.2237Z" fill="#E6007E"/>
+                    <path d="M1.01562 78.2224L78.3468 0.875H232.991L258.762 78.2224" stroke="#1D1D1B" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M258.68 78.3809L181.453 155.551H26.6137L1.12891 78.3809" stroke="#222222" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="drawing_bg">
+                  <svg width="318" height="237" viewBox="0 0 259 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <path d="M1.01562 78.2224L78.3468 0.875H232.991L258.762 78.2224" stroke="#1D1D1B" stroke-width="1.36421" stroke-linejoin="round"/>
+                    <path d="M258.68 78.3809L181.453 155.551H26.6137L1.12891 78.3809" stroke="#222222" stroke-width="1.36421"/>
+                  </svg>                  
+                </div>
+              </div>
+              <div class="flex align_center po_relative">
+                <button class="btn_rotation"><span>회전버튼</span></button>
+                <div class="drawing_grid_area justify_center" data-answer-single="empty_answer">
+                  <svg width="320" height="256" viewBox="0 0 261 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M132.685 78.0036C132.685 78.5131 132.534 79.0111 132.25 79.4347C131.966 79.8583 131.563 80.1884 131.091 80.3834C130.619 80.5783 130.1 80.6294 129.599 80.53C129.097 80.4306 128.637 80.1853 128.276 79.825C127.915 79.4648 127.669 79.0058 127.569 78.5061C127.47 78.0065 127.521 77.4886 127.716 77.0179C127.912 76.5472 128.243 76.145 128.667 75.8619C129.092 75.5789 129.592 75.4278 130.102 75.4278C130.442 75.4254 130.779 75.4904 131.094 75.619C131.408 75.7476 131.694 75.9372 131.934 76.1769C132.175 76.4165 132.365 76.7015 132.494 77.0151C132.623 77.3287 132.688 77.6647 132.685 78.0036Z" fill="#E6007E"/>
+                    <path d="M78.3759 78.002L1.22656 155.132L181.66 129.41V78.002" stroke="#1D1D1B" stroke-width="2" stroke-linejoin="round"/>
+                    <path d="M181.259 78.3825L258.486 1.21289L78.9336 26.1682V78.3825" stroke="#222222" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="drawing_bg">
+                  <svg width="320" height="256" viewBox="0 0 261 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M78.3759 78.002L1.22656 155.132L181.66 129.41V78.002" stroke="#1D1D1B" stroke-width="1.36421" stroke-linejoin="round"/>
+                    <path d="M181.259 78.3825L258.486 1.21289L78.9336 26.1682V78.3825" stroke="#222222" stroke-width="1.36421"/>
+                  </svg>
+                </div>
+              </div>
+          </div>
+          <div class="question_box mt_20">
+            <div class="flex align_center gap_12 f32b">
+              <span lang="y">도형은 점대칭도형이 </span>
+  
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="맞습니다.">
+                  <option></option>
+                  <option value="맞습니다."></option>
+                  <option value="아닙니다."></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>  
+      <div class="btn_area">
+        <!-- <button class="btnType key">입력타입토글</button> -->
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

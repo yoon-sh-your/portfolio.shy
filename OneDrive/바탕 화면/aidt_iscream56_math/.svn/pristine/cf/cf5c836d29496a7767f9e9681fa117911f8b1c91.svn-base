@@ -1,0 +1,124 @@
+// main.js
+import "./resize.js";
+import "./questionTypes.js";
+import "./keypad.js";
+
+import "./lineMatching.js";
+// import './lineMatching1.js';
+// import './lineMatching2.js';
+import { setupDragAndDrop } from "./drag.js";
+import { setupPagingHandlers } from "./common.js";
+
+jQuery(function ($) {
+  setupPagingHandlers();
+  setupDragAndDrop(); // .score 없으면 내부에서 무시하고 종료됨
+
+  // $('#intro').hide();
+  // $('#quest').show();
+  // $('.pagination .p2').click();
+
+  // 시작하기 버튼 클릭 시 intro 숨기고 q1 show
+  $(".intro_btn").on("click", function () {
+    $("#intro").hide();
+    $("#quest").show();
+    playSound("click");
+
+    window.visitedPages[1] = true;
+  });
+
+  // 개발 모드
+  let devMode = true;
+  if (devMode) {
+    $("#intro").hide();
+    $("#quest").show();
+  } else {
+    setTutorial();
+  }
+
+  // 선긋기 게임 좌측(output-field) 이미지 우측정렬
+  if (!window.disableImageAlign1 && document.getElementById("svg1")) {
+    rightAlignImagesInSVG("svg1"); // 기본 여유 50
+  }
+  if (!window.disableImageAlign2 && document.getElementById("svg2")) {
+    // rightAlignImagesInSVG('svg2', 30); 여유 30px로 조정
+    rightAlignImagesInSVG("svg2");
+  }
+
+  $(".bg")
+    .not(".withKeypad")
+    .each(function () {
+      const $button = $(`
+        <button type="button" class="btnReset disable" aria-label="결과 지우기">
+          <span class="sr-only">리셋 버튼</span>
+        </button>
+      `);
+      $(this).append($button);
+    });
+});
+
+function rightAlignImagesInSVG(svgId, marginRight = 50) {
+  const svg = document.getElementById(svgId);
+  if (!svg) return;
+
+  const portX = 430; // 포트 중심 x좌표 기준 (공통값)
+  const outputFields = svg.querySelectorAll(".output-field"); // output만!
+
+  outputFields.forEach((field) => {
+    const image = field.querySelector("image");
+    if (!image) return;
+
+    const imageWidth = parseFloat(image.getAttribute("width")) || image.getBBox().width;
+    const x = portX - imageWidth - marginRight;
+    image.setAttribute("x", x);
+  });
+}
+
+function setTutorial() {
+  $("#quest").prepend(`
+    <div id="tutorial">
+      <div class="nav">
+        <div class="pagination">
+          <button type="button" class="p1 on" aria-current="page" aria-label="현재 페이지1">
+            <span>1</span>
+          </button>
+          <button type="button" class="p2" aria-label="페이지2">
+            <span>2</span>
+          </button>
+          <button type="button" class="p3" aria-label="페이지3">
+            <span>3</span>
+          </button>
+          <button type="button" class="p4" aria-label="페이지4">
+            <span>4</span>
+          </button>
+          <button type="button" class="p5" aria-label="페이지5">
+            <span>5</span>
+          </button>
+        </div>
+        <div class="center">
+          <button type="button" class="submit disable"><img src="../../common_finish/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+        </div>
+      </div>
+
+      <ul class="txts">
+        <li>1. 풀고 있는 문제를 확인해요</li>
+        <li>2. 답안을 입력해요.</li>
+        <li>3. 작성한 답안을 지우거나 정답을 확인해요.</li>
+        <li>4. 제출을 눌러 선생님께 결과를 전송해요.</li>
+      </ul>
+
+      <div class="bt_area">
+        <label class="chk_wrap">
+          <input type="checkbox" />
+          <span class="chk"></span>
+          <span>다시보지 않기</span>
+        </label>
+
+        <button type="button" class="btn_start">시작</button>
+      </div>
+    </div>`);
+
+  $(document).on("click", "#tutorial .btn_start", function () {
+    $("#tutorial").addClass("hidden");
+    playSound("click");
+  });
+}

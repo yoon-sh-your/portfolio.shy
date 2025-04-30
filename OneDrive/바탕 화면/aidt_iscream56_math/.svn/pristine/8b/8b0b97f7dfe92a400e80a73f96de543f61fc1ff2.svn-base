@@ -1,0 +1,332 @@
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+
+.input_wrap.w180 math-field {
+	width: 180px;
+}
+.input_area .fraction_box {
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.input_wrap:has(.w_80) {
+	min-width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+	bottom: calc(100% + 4px);
+	top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+	position: relative;
+}
+.input_wrap.input_sep {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -60px;
+}
+.input_wrap.input_sep.hint_up {
+	top: -60px;
+	bottom: auto;
+}
+.input_wrap.hint_right .text_hint {
+	left: calc(100% + 20px);
+	top: 12px;
+	width: auto;
+}
+.mark_error {
+	position: relative;
+}
+
+.mark_error:after {
+	content: "";
+	display: inline-block;
+	width: 55px;
+	height: 3px;
+	background: #ff0000;
+	position: absolute;
+	bottom: 36px;
+	left: 50%;
+	transform: rotate(-30deg) translateX(-50%);
+}
+.mark_error.blue:after {
+	background: var(--primary-blue);
+}
+.mark_error i {
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 700;
+	color: #ff0000;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.mark_error.up > i {
+	top: auto;
+	bottom: 50px;
+}
+.fraction_wrap .hint_up .text_hint {
+	top: auto;
+	bottom: calc(100% + 4px);
+}
+
+.title .icon_badge {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 90px;
+	height: 28px;
+	background: url(../img/EMA516_03_IH/0007_icon.png) no-repeat 0 0;
+	padding: 0 10px 0 35px;
+	margin-left: 14px;
+	border-radius: 0 4px 4px 0;
+	font-style: normal;
+	font-size: 20px;
+	color: #774e92;
+	font-weight: 700;
+	gap: 4px;
+}
+
+/* ema523_04_ih_0001 */
+.ema523_04_ih_0001 .question_box {
+	gap: 71px;
+}
+.ema523_04_ih_0001 .input_area {
+	width: 753px;
+	height: 376px;
+	background: url(./../img/EMA523_02_IH/0001_02.png) no-repeat 50% / 100% auto;
+	padding: 60px 0 0 56px;
+}
+.ema523_04_ih_0001 .input_row + .input_row {
+	margin-top: 20px;
+}
+.ema523_04_ih_0001 .input_row:last-of-type {
+	margin-top: 45px;
+}
+
+/* ema523_04_ih_0002 */
+.ema523_04_ih_0002 .img_area {
+	position: relative;
+}
+.ema523_04_ih_0002 .boolean_wrap button {
+	position: absolute;
+	background: none;
+	top: 117px;
+	width: 68px;
+	max-width: 68px;
+	height: 68px;
+}
+.ema523_04_ih_0002 .boolean_wrap .button1 {
+	left: 103px;
+}
+.ema523_04_ih_0002 .boolean_wrap .button2 {
+	left: 414px;
+}
+.ema523_04_ih_0002 .boolean_wrap .button3 {
+	left: 740px;
+}
+.ema523_04_ih_0002 .boolean_wrap .button4 {
+	left: 1013px;
+}
+.ema523_04_ih_0002 .boolean_wrap .button5 {
+	left: 1260px;
+}
+.ema523_04_ih_0002 .boolean_wrap button.hint {
+	border-color: transparent;
+}
+.ema523_04_ih_0002 .boolean_wrap button.selected {
+	border-color: var(--font-main);
+}
+.result .ema523_04_ih_0002 .boolean_wrap button[data-answer-single="true"] {
+	/* border-color: var(--primary-blue);
+  background: #3b71fe4d; */
+	color: var(--primary-blue);
+	border: none;
+}
+
+/* ema523_04_ih_0003 */
+.ema523_04_ih_0003 .table_wrap {
+	margin: 0 0 0 60px;
+	width: 800px;
+	overflow: hidden;
+}
+.ema523_04_ih_0003 table td {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 0 100px 0 60px;
+}
+.ema523_04_ih_0003 table col:first-of-type {
+	width: 160px;
+}
+.ema523_04_ih_0003 table td {
+	border-top: 2px solid #e8e8e8;
+}
+.ema523_04_ih_0003 table tr:first-of-type td {
+	border-top: 0;
+}
+
+/* ema523_04_ih_0004 */
+.ema523_04_ih_0004 .question_box {
+	flex-direction: column;
+}
+.ema523_04_ih_0004 .click_area {
+	position: relative;
+	width: max-content;
+}
+
+.ema523_04_ih_0004 .connect_point {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	z-index: 1;
+}
+.ema523_04_ih_0004 .connect_point::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 16px;
+	height: 16px;
+	background-color: #000;
+	border-radius: 100%;
+}
+.ema523_04_ih_0004 .connect_point.selected::before {
+	background-color: #3b71fe;
+}
+.ema523_04_ih_0004 .cp1,
+.ema523_04_ih_0004 .cp2,
+.ema523_04_ih_0004 .cp3 {
+	top: 50px;
+}
+.ema523_04_ih_0004 .cp1 {
+	left: 126px;
+}
+.ema523_04_ih_0004 .cp2 {
+	left: 200px;
+}
+.ema523_04_ih_0004 .cp3 {
+	left: 274px;
+}
+.ema523_04_ih_0004 .cp4,
+.ema523_04_ih_0004 .cp5 {
+	top: 123px;
+}
+.ema523_04_ih_0004 .cp4 {
+	left: 88px;
+}
+.ema523_04_ih_0004 .cp5 {
+	left: 312px;
+}
+.ema523_04_ih_0004 .cp6,
+.ema523_04_ih_0004 .cp7,
+.ema523_04_ih_0004 .cp8,
+.ema523_04_ih_0004 .cp9,
+.ema523_04_ih_0004 .cp10 {
+	top: 200px;
+	left: 50px;
+}
+.ema523_04_ih_0004 .cp7 {
+	left: 126px;
+}
+.ema523_04_ih_0004 .cp8 {
+	left: 200px;
+}
+.ema523_04_ih_0004 .cp9 {
+	left: 274px;
+}
+.ema523_04_ih_0004 .cp10 {
+	left: 350px;
+}
+.ema523_04_ih_0004 .cp11 {
+	top: 124px;
+	left: 424px;
+}
+.ema523_04_ih_0004 .cp12,
+.ema523_04_ih_0004 .cp13 {
+	top: 69px;
+	left: 482px;
+}
+.ema523_04_ih_0004 .cp13 {
+	top: 181px;
+}
+.ema523_04_ih_0004 .cp14,
+.ema523_04_ih_0004 .cp15 {
+	top: 14px;
+	left: 537px;
+}
+.ema523_04_ih_0004 .cp15 {
+	top: 234px;
+}
+.ema523_04_ih_0004 .cp16,
+.ema523_04_ih_0004 .cp17 {
+	top: 50px;
+	left: 611px;
+}
+.ema523_04_ih_0004 .cp17 {
+	top: 200px;
+}
+.ema523_04_ih_0004 .cp18 {
+	top: 124px;
+	left: 686px;
+}
+.ema523_04_ih_0004 .cp19,
+.ema523_04_ih_0004 .cp20,
+.ema523_04_ih_0004 .cp21,
+.ema523_04_ih_0004 .cp23 {
+	top: 13px;
+	left: 760px;
+}
+.ema523_04_ih_0004 .cp20,
+.ema523_04_ih_0004 .cp22,
+.ema523_04_ih_0004 .cp24 {
+	left: 834px;
+}
+.ema523_04_ih_0004 .cp21,
+.ema523_04_ih_0004 .cp22 {
+	top: 106px;
+}
+.ema523_04_ih_0004 .cp23,
+.ema523_04_ih_0004 .cp27,
+.ema523_04_ih_0004 .cp28 {
+	top: 236px;
+}
+.ema523_04_ih_0004 .cp24,
+.ema523_04_ih_0004 .cp25,
+.ema523_04_ih_0004 .cp26 {
+	top: 162px;
+}
+.ema523_04_ih_0004 .cp25,
+.ema523_04_ih_0004 .cp27 {
+	left: 889px;
+}
+.ema523_04_ih_0004 .cp26,
+.ema523_04_ih_0004 .cp28 {
+	left: 984px;
+}
+.ema523_04_ih_0004 .example {
+	margin-top: 20px;
+	opacity: 0;
+	width: 100%;
+	padding-left: 264px;
+}
+.ema523_04_ih_0004 .example.on {
+	opacity: 1;
+}
+/* ema523_04_ih_0005 */
+.ema523_04_ih_0005 .input_area > span {
+	margin: 0 10px;
+}

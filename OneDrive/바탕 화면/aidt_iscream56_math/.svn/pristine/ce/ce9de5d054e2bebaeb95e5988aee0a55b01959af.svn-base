@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema511_09_su_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema511_09.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_09_su_0008">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="7" class="is_star" lang="y">지훈이가 5000원으로 학용품을 사려고 합니다. ㉠에 알맞은 식과 ㉡에 알맞은 수를 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="picture_wrap">
+          <svg width="800" height="511" viewBox="0 0 800 511" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="10" letter-spacing="-0.5px" lang="y">
+              <tspan x="180" y="161.652">필통 1개</tspan>
+              <tspan x="180" y="177.652">3500원</tspan>
+            </text>
+            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="10" letter-spacing="-0.5px" lang="y">
+              <tspan x="262.053" y="161.555">색연필 3자루</tspan>
+              <tspan x="272.095" y="177.555">1200원</tspan>
+            </text>
+            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="132" y="250.688">다연</tspan>
+            </text>
+            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="312" y="250.688">지훈</tspan>
+            </text>
+            <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="495.578" y="357.688">그럼 남은 돈은</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="NanumMyeongjo" font-size="24" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="473.598" y="405.195">ㄴ</tspan>
+            </text>
+            <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="575.086" y="403.688">원이겠네.</tspan>
+            </text>
+            <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="421.898" y="47.6875">5000원으로</tspan>
+              <tspan x="420.172" y="71.6875">어떤 학용품을</tspan>
+              <tspan x="436.109" y="95.6875">살 거야?</tspan>
+            </text>
+            <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="589.227" y="65.6875">3500원짜리 필통 1개와</tspan>
+              <tspan x="590.852" y="89.6875">색연필 2자루를 살 거야.</tspan>
+            </text>
+            <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="204.906" y="357.688">네가 학용품을 사고 남은 돈은</tspan>
+              <tspan x="193.172" y="381.688">얼마인지 하나의 식으로 나타내면</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="NanumMyeongjo" font-size="24" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="233.598" y="429.195">ㄱ</tspan>
+            </text>
+            <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px" lang="y">
+              <tspan x="335.18" y="427.688">(이)야.</tspan>
+            </text>
+          </svg>            
+          <img src="../../common_contents/img/EMA511_09_SU/0008_content.png" alt="" />
+          <!-- <button class="zoom"></button> -->
+        </div>
+
+        <div class="input_area">
+          <div class="flex align_center gap_12">
+            <span>㉠</span>
+            <div class="flex align_center">
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="5000-(3500+1200÷3×2)"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="700"></math-field>
+              </div>
+            </div>
+          </div>
+          <div class="flex align_center gap_12">
+            <span>㉡</span>
+            <div class="flex align_center gap_8">
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="700"></math-field>
+              </div>
+              <span>원</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

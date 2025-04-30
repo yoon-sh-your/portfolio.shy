@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_03_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">승민이가 쿠키를 한 판에 12개씩 8판을 만들었습니다. 만든 쿠키를 24명에게 남김없이 똑같이 나누어 준다면 한 명에게 주는 쿠키는 몇 개인지 하나의 식으로 나타내어 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_26">
+          <div class="img_box">
+            <div class="img_wrap">
+              <img src="../../common_practice/img/EMA511_03_IH/0006_img.png" alt="" />
+            </div>
+          </div>
+          <div class="question_box dir_col align_start gap_60">
+            <div class="flex align_center gap_12">
+              <span lang="y">식:</span>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="12×8÷24"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="4"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center gap_12">
+              <span lang="y">답:</span>
+              <div class="flex align_center gap_4">
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="4"></math-field>
+                </div>
+                <span lang="y">개</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(한 명에게 주는 쿠키의 수)</p>
+                <p lang="y">=12×8÷24=96÷24=4(개)</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

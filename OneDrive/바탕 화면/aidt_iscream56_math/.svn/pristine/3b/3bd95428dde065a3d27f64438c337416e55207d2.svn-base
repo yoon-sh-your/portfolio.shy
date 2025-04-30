@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema511_09_su_0009_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema511_09.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_09_su_0009">
+      <div class="scroll_page">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 4">
+              <span class="blue line" lang="y">확인하고 정리해요</span>
+              <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+        </section>
+  
+        <section class="title type2 jgjd_4_sub_title">
+          <h2>
+            <div class="title_row">
+              <span class="nemo_blank"></span>
+              <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+            </div>
+          </h2>
+        </section>
+  
+        <section class="contents">
+          <div class="scroll_area">
+            <img src="../../common_contents/img/EMA511_09_SU/0009_content.png" alt="" />
+  
+            <div class="question_box question_box1">
+              <div class="title" lang="y">
+                덧셈과 뺄셈이<br />
+                섞여 있는 식
+              </div>
+  
+              <div class="text" lang="y">앞에서부터 차례대로 계산해요.</div>
+  
+              <div class="flex align_center">
+                <span>29-13+5=</span>
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="21"></math-field>
+                </div>
+  
+                <img class="q_img q1_img1" src="../../common_contents/img/EMA511_09_SU/0009_q1_img1.svg" alt="" />
+                <img class="q_img q1_img2" src="../../common_contents/img/EMA511_09_SU/0009_q1_img2.svg" alt="" />
+              </div>
+            </div>
+  
+            <div class="question_box question_box2">
+              <div class="text" lang="y">(&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)가 있는 식은 (&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;) 안을 가장 먼저 계산해요.</div>
+            </div>
+  
+            <div class="question_box question_box3">
+              <div class="title" lang="y">
+                곱셈과 나눗셈이<br />
+                섞여 있는 식
+              </div>
+  
+              <div class="text" lang="y">앞에서부터 차례대로 계산해요.</div>
+  
+              <div class="flex align_center">
+                <span>40÷2×4=</span>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="80"></math-field>
+                </div>
+  
+                <img class="q_img q2_img1" src="../../common_contents/img/EMA511_09_SU/0009_q2_img1.svg" alt="" />
+                <img class="q_img q2_img2" src="../../common_contents/img/EMA511_09_SU/0009_q2_img2.svg" alt="" />
+              </div>
+            </div>
+  
+            <div class="question_box question_box4">
+              <div class="title" lang="y">
+                덧셈, 뺄셈, 곱셈, 나눗셈이 <br />
+                섞여 있는 식
+              </div>
+  
+              <div class="text" lang="y">곱셈과 나눗셈을 먼저 계산해요.</div>
+  
+              <div class="flex align_center">
+                <span>2+4×7-15÷3=</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="25"></math-field>
+                </div>
+  
+                <img class="q_img q3_img1" src="../../common_contents/img/EMA511_09_SU/0009_q3_img1.svg" alt="" />
+                <img class="q_img q3_img2" src="../../common_contents/img/EMA511_09_SU/0009_q3_img2.svg" alt="" />
+                <img class="q_img q3_img3" src="../../common_contents/img/EMA511_09_SU/0009_q3_img3.svg" alt="" />
+                <img class="q_img q3_img4" src="../../common_contents/img/EMA511_09_SU/0009_q3_img4.svg" alt="" />
+              </div>
+            </div>
+  
+            
+            <div class="btn_area relative">
+              <button class="btnType key">입력타입토글</button>
+              <button class="btnReset">리셋</button>
+              <button class="btnCheck">확인</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

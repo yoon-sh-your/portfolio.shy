@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA615_06_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema615.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema615">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="7_light_purple" lang="y">위의 띠그래프를 보고 알 수 있는 내용으로 문제를 만들고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col gap_12 mt_40">
+          <div class="in_box">
+            <div class="title_box">
+              <span>문제 만들기</span>
+            </div>
+
+            <div class="input_box">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">2023년의 50대 자원봉사 참여자 수의 비율은 30대 자원봉사 참여자 수의 비율의 몇 배인가요?</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="l_right">
+              <p lang="y">답</p>
+              <div class="input_wrap">
+                <math-field data-answer-single="2배"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>두 띠그래프를 보고 각 항목의 비율을 비교하여 알 수 있는 내용을 찾아 문제를 만들고 해결해 봅니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnCheck" data-look="submit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

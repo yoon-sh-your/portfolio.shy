@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_11_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema621_11.css">
+  </head>
+  <body>
+
+    <!-- 창의 퍼즐 -->
+    <div id="app_wrap" class="ema621_11_ih_0001">
+        <section class="title type2">
+            <h2 data-puzzle="blue" lang="y"> 
+                몫이 2보다 큰 나눗셈의 그림은 연필을 떼지 않고 한 번에 그릴 수 있습니다. 나눗셈을 하고 한 번에 그릴 수 있는지 확인해 보세요. (단, 한 번 지나간 선은 다시 지나갈 수 없습니다.)
+                <div class="picture_wrap" data-head="" data-title=" ">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../../common_practice/img/EMA621_11_IH/img.png" alt="" />
+                        </div>
+                    </div>
+                    <button class="zoom"></button>
+                </div>
+            </h2>
+        </section>
+  
+        <section class="contents">
+            <div class="question_box justify_center">
+                <div class="img_box">
+                    <canvas class="draw-area" width="1509px" height="1437px" data-canvas-id="canvas_1"></canvas>
+                    <img src="../../common_practice/img/EMA621_11_IH/img.png" alt="" />
+                    
+                    
+                    <div class="item1">
+                        <div class="flex align_center">
+                            <div class="fraction_box">
+                                <span>3</span>
+                                <span>4</span>
+                            </div>
+                            ÷
+                            <div class="fraction_box">
+                                <span>1</span>
+                                <span>4</span>
+                            </div>
+                            =
+                            <div class="input_wrap">
+                                <math-field data-answer-single="3"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item2">
+                        <div class="flex align_center">
+                            <div class="fraction_box_wrap">
+                                <span>2</span>
+                                <div class="fraction_box">
+                                    <span>2</span>
+                                    <span>9</span>
+                                </div>
+                            </div>
+                            ÷
+                            <div class="fraction_box_wrap">
+                                <span>1</span>
+                                <div class="fraction_box">
+                                    <span>3</span>
+                                    <span>5</span>
+                                </div>
+                            </div>
+                            =
+                            <div class="input_wrap fraction_wrap">
+                                <math-field data-answer-single="1(7)/(18)(=(25)/(18))" data-answer-multi='{"values": ["1(7)/(18)", "(25)/(18)"]}'></math-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item3">
+                        <div class="flex align_center">
+                            <div class="fraction_box">
+                                <span>5</span>
+                                <span>6</span>
+                            </div>
+                            ÷
+                            <div class="fraction_box">
+                                <span>5</span>
+                                <span>8</span>
+                            </div>
+                            =
+                            <div class="input_wrap fraction_wrap">
+                                <math-field data-answer-single="1(1)/(3)(=(4)/(3))" data-answer-multi='{"values": ["1(1)/(3)", "(4)/(3)"]}'></math-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item4">
+                        <div class="flex align_center">
+                            20
+                            ÷
+                            <div class="fraction_box">
+                                <span>4</span>
+                                <span>5</span>
+                            </div>
+                            =
+                            <div class="input_wrap">
+                                <math-field data-answer-single="25"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="drawing-container">
+                <button type="button" class="btn btn_draw"></button>
+            </div>
+
+
+
+
+<!-- 그리기도구 팝업 -->
+<div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+    <div class="draw-tool-wrap-header">
+        <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+        <div class="close_but add_cursor">
+            <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+        </div>
+    </div>
+    <div class="draw-tool-wrap-body">
+        <div class="tool-row function-item">
+            <button type="button" class="ic_pen active"></button>
+            <button type="button" class="ic_txt "></button>
+            <button type="button" class="ic_eraser"></button>
+        </div>
+        <div class="tool-row function-item">
+            <button type="button" class="ic_triangle"></button>
+            <button type="button" class="ic_square"></button>
+            <button type="button" class="ic_circle"></button>
+            <button type="button" class="ic_polygon"></button>
+        </div>
+        <div class="tool-row function-item">
+            <button type="button" class="ic_line"></button>
+            <button type="button" class="ic_dash"></button>
+            <button type="button" class="ic_draw"></button>
+            <button type="button" class="ic_pull"></button>
+        </div>
+        <div class="tool-row palette-item">
+            <button type="button" class="p_red"></button>
+            <button type="button" class="p_yellow"></button>
+            <button type="button" class="p_green"></button>
+            <button type="button" class="p_blue"></button>
+            <button type="button" class="p_purple"></button>
+            <button type="button" class="p_black active"></button>
+        </div>
+        <div class="tool-row range-item">
+            <input type="range" name="thickness" class="draw-scale-range">
+        </div>
+        <div class="tool-row range-item">
+            <input type="range" name="opacity" class="draw-trans-range">
+        </div>
+        <div class="tool-row function-item">
+            <div class="arrow-item">
+                <button type="button" class="ic_undo"></button>
+                <button type="button" class="ic_redo"></button>
+            </div>
+            <button type="button" class="ic_del"></button>
+        </div>
+
+        <div class="ic_polygon_pop">
+            <span>꼭지점</span>
+            <button type="button" class="ipp_minus"></button>
+            <div>
+                <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                <label for="ipp_num">개</label>
+            </div>
+            <button type="button" class="ipp_plus"></button>
+        </div>
+    </div>
+</div>
+<!-- //그리기도구 팝업 -->
+
+
+
+
+           <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+            </div>
+        </section>
+      </div>
+
+    
+  </body>
+</html>

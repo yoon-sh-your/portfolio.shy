@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_11_su_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_11_su.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_11_su_0003">
+        <section class="title type2">
+            <h2 data-type="1" data-text="자기주도 3">
+                <span class="blue line" lang="y">내 힘으로 풀어요</span>
+                <span lang="y">공부한 내용을 확인해요</span>
+            </h2>
+        </section>
+
+        <section class="title type2 jgjd_3_sub_title">
+            <h2 data-head="1" lang="y" class="fraction_box_title">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <div class="operation_box ml_0">
+                        <span>3</span>
+                        <span>&times;</span>
+                        <span class="mixed_fraction">
+                            <span>1</span>
+                            <span class="fraction_box"><span>2</span><span>5</span></span>
+                        </span>
+                    </div>                    
+                    <span>를 두 가지 방법으로 계산하려고 합니다.</span>
+                    <span class="nemo_blank"></span>
+                    <span>안에 알맞은 수를 써넣으세요.</span>
+                  </div>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <div class="question_box align_start dir_col">
+                        <div class="tit">
+                            <span class="label"><i>방법1</i></span>
+                            <span class="tit_txt">대분수를 자연수와 진분수의 합으로 나타내어 계산하기​</span>
+                        </div>
+                        <div class="mixed_fraction f32b m_auto gap_0">
+                            <span>3&times;1</span>
+                            <span class="fraction_box">
+                                <span>2</span>
+                                <span>5</span>
+                            </span>
+                            =
+                            <div class="pare_wrap">3&times;1</div>
+                            +
+                            <div class="pare_wrap">
+                                3&times;
+                                <span class="fraction_box">
+                                    <span>2</span>
+                                    <span>5</span>
+                                </span>
+                            </div>
+                            =
+                            <span class="input_wrap">
+                                <math-field data-answer-single="3"></math-field>
+                            </span>
+                            +
+                            <span class="fraction_box">
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="6"></math-field>
+                                </span>
+                                <span>
+                                    <span>5</span>
+                                </span>
+                            </span>
+                            =
+                            <span class="input_wrap">
+                                <math-field data-answer-single="3"></math-field>
+                            </span>
+                            +
+                            <span class="input_wrap">
+                                <math-field data-answer-single="1"></math-field>
+                            </span>
+                            <span class="fraction_box">
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="1"></math-field>
+                                </span>
+                                <span>5</span>
+                            </span>
+                            =
+                            <span class="input_wrap">
+                                <math-field data-answer-single="4"></math-field>
+                            </span>
+                            <span class="fraction_box">
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="1"></math-field>
+                                </span>
+                                <span>5</span>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <div class="question_box align_start dir_col">
+                        <div class="tit">
+                            <span class="label"><i>방법2</i></span>
+                            <span class="tit_txt">대분수를 가분수로 나타내어 계산하기​</span>
+                        </div>
+                        <div class="mixed_fraction f32b m_auto gap_0">
+                            <span>3&times;1</span>
+                            <span class="fraction_box">
+                                <span>2</span>
+                                <span>5</span>
+                            </span>
+                            =3&times;
+                            <span class="fraction_box">
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="7"></math-field>
+                                </span>
+                                <span>5</span>
+                            </span>
+                            =
+                            <span class="fraction_box">
+                                <span>
+                                    <span class="input_wrap">
+                                        <math-field data-answer-single="3"></math-field>
+                                    </span>
+                                    &times;
+                                    <span class="input_wrap">
+                                        <math-field data-answer-single="7"></math-field>
+                                    </span>
+                                </span>
+                                <span>5</span>
+                            </span>
+                            =
+                            <span class="fraction_box">
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="21"></math-field>
+                                </span>
+                                <span>
+                                    <span>5</span>
+                                </span>
+                            </span>
+                            =
+                            <span class="input_wrap">
+                                <math-field data-answer-single="4"></math-field>
+                            </span>
+                            <span class="fraction_box">
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="1"></math-field>
+                                </span>
+                                <span>
+                                    <span>5</span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

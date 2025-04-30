@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_06_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_06_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5"><span lang="y">곱이 더 큰 것에</span> ○<span lang="y">표 하세요.</span></h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="qustion_row">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA522_06_IH/0005_01.png" alt="" />
+              <div class="flex align_center gap_10">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>14</span>
+                </div>
+                <span>×</span>
+                <div class="fraction_box">
+                  <span>7</span>
+                  <span>8</span>
+                </div>
+              </div>
+            </div>
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA522_06_IH/0005_01.png" alt="" />
+              <div class="flex align_center gap_10">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>7</span>
+                </div>
+                <span>×</span>
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>9</span>
+                </div>
+                <span>×</span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+            </div>
+            <div class="boolean_wrap">
+              <div class="">
+                <button type="button" data-answer-single="true"></button>
+              </div>
+              <div class="">
+                <button type="button" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="boolean_wrap">
+						<div class="bracket">
+							<span class="bracket-l"></span>
+							<button type="button" data-answer-single="true"></button>
+							<span class="bracket-r"></span>
+						</div>
+						<div class="bracket">
+							<span class="bracket-l"></span>
+							<button type="button" data-answer-single="false"></button>
+							<span class="bracket-r"></span>
+						</div>
+					</div> -->
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <div class="fraction_box">
+                    <span>1</span><span class="mark_error">14<i>2</i></span>
+                  </div>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">7<i>1</i></span
+                    ><span>8</span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>1</span><span>2×8</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>1</span><span>16</span></div>
+                </div>
+                <div class="flex align_center gap_10 mt_36">
+                  <div class="fraction_box"><span>1</span><span>7</span></div>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">4<i>1</i></span
+                    ><span class="mark_error">9<i>3</i></span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">3<i>1</i></span
+                    ><span class="mark_error">4<i>1</i></span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>1</span><span>7×3×1</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>1</span><span>21</span></div>
+                </div>
+                <div class="flex align_center gap_10 mt_36">
+                  <span>따라서 곱이 더 큰 것은</span>
+                  <div class="fraction_box"><span>1</span><span>14</span></div>
+                  <span>×</span>
+                  <div class="fraction_box"><span>7</span><span>8</span></div>
+                  <span>입니다.</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

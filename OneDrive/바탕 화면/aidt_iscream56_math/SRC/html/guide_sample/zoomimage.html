@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zoom image</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="zoomimage">
+        <section class="title type2">
+            <h2 data-icon="speech"><div class="fraction_box"><span>1</span><span>2</span></div>그림을 보고 자치회 활동에 참여했던 경험을 이야기해 봅시다.
+
+                <!-- 줌기능 팝업창 wrap태그 외부에 버튼 태그 사용 -->
+                <!-- data-target 속성에 팝업창 태그의 클래스 이름 부여 -->
+                <button class="btn_zoom" data-target="target1"></button>
+            </h2>
+        </section>
+
+        <section class="contents">
+            <!-- 줌기능 팝업창 ui 동적 생성 -->
+            <!-- 팝업창 헤딩 data-head로 부여. 없을 시 생성 안됨 -->
+            <!-- 팝업창 타이틀 data-tit로 부여. 없을 시 section.title h2의 택스트를 받아옴-->
+            <div class="picture_wrap" data-head="1" data-tit="그림을 보고 자치회 활동에 참여했던 경험을 이야기해 봅시다.">
+                <!-- img태그의 src를 참조하므로 확대할 이미지를 이미지태그 대신 일반태그에 background로 설정해서 사용하는 형태는 안됩니다. -->
+                <img src="../../common_contents/img/EMA511_01_SU/0005_content.png" alt="자치회 활동 이미지" />
+                <button class="zoom"></button>
+            </div>
+
+
+            <div class="picture_wrap target1">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 2034 1361" fill="none">
+                    <text fill="white" xml:space="preserve" style="white-space: pre" font-size="40"
+                        letter-spacing="-0.5px" lang="y">
+                        <tspan x="1216.11" y="297.545">학급 임원 선거</tspan>
+                        <tspan x="1231.91" y="345.545">&lt;참여 인원&gt;</tspan>
+                    </text>
+                    <text fill="white" xml:space="preserve" style="white-space: pre" font-size="40"
+                        letter-spacing="-0.5px" lang="y">
+                        <tspan x="1139" y="407.545">여학생: 14명 (결석: 2명)</tspan>
+                        <tspan x="1139" y="455.545">남학생: 10명</tspan>
+                    </text>
+                    <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="32"
+                        letter-spacing="-0.5px" lang="y">
+                        <tspan x="1263" y="547.636">투표함</tspan>
+                    </text>
+                    <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="32"
+                        letter-spacing="-0.5px" lang="y">
+                        <tspan x="948.266" y="1120.64">여학생 14명 중에서</tspan>
+                        <tspan x="970.594" y="1156.64">2명이 결석했어.</tspan>
+                    </text>
+                    <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="32"
+                        letter-spacing="-0.5px" lang="y">
+                        <tspan x="1359.25" y="1120.64">남학생은 10명이</tspan>
+                        <tspan x="1372.03" y="1156.64">모두 출석했어.</tspan>
+                    </text>
+                </svg>
+                <img src="../../common_contents/img/EMA511_02_SU/0003_content.png" alt="자치회 활동 이미지" />
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

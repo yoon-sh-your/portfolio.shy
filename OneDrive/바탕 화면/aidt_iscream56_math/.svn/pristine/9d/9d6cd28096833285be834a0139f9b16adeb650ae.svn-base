@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_05_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_05_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">호두과자 243개를 사려고 합니다. 호두과자를 10개씩 담은 상자와 100개씩 담은 상자로 팔고 있다면 최소로 사야 하는 호두과자의 수를 어떻게 구할 수 있을지 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="talk_box">
+            <div class="talk_txt">
+              <p lang="y">호두과자 3개를 10개씩 <br>담은 상자로 산다면 <br>최소 몇 개 사야 할까?</p>
+            </div>
+
+            <div class="develope_box">
+              <h3 lang="y">호두과자 243개를 10개씩 담은 상자로 산다면 호두과자를 최소 몇 개 사야 하나요?</h3>
+
+              <div class="input_area">
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="250"></math-field>
+                </div>
+                <span class="f32b" lang="y">개</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="talk_box">
+            <div class="talk_txt">
+              <p lang="y">호두과자 43개를 100개씩 <br>담은 상자로 산다면 <br>최소 몇 개 사야 할까?</p>
+            </div>
+
+            <div class="develope_box">
+              <h3 lang="y">호두과자 243개를 100개씩 담은 상자로 산다면 호두과자를 최소 몇 개 사야 하나요?</h3>
+
+              <div class="input_area">
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="300"></math-field>
+                </div>
+                <span class="f32b" lang="y">개</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">사야 하는 호두과자의 수를 어떻게 어림했는지 이야기해 보세요.</h3>
+
+          <div class="develope_box_full">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">10개씩 담은 상자로 살 때는 250개, 100개씩 담은 상자로 살 때는 300개로 생각했습니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">약속해 볼까요</label>
+
+              <div class="phrase">
+                <span lang="y">구하려는 자리의 아래 수를 올려서 나타내는 방법을</span>
+                <button class="reveal_btn" data-pair="1" lang="y">올림</button><span lang="y">이라고 합니다.</span>
+              </div>
+
+              <div class="flex check_up">
+                <div class="left_range">
+                  <div class="phrase">
+                    <span lang="y">243을 올림하여</span>
+                  </div>
+
+                  <div class="phrase">
+                    <button class="reveal_btn" data-pair="2" lang="y">십</button><span lang="y">의 자리까지 나타내기</span>
+                  </div>
+
+                  <div class="phrase">
+                    <span lang="y">3을</span>
+                    <button class="reveal_btn" data-pair="3" lang="y">10</button><span lang="y">으로 생각하여 올림합니다.</span>
+                  </div>
+
+                  <div class="phrase">
+                    <button class="reveal_btn num_txt" data-pair="4" lang="y">
+                      <img src="../../common_contents/img/EMA521_05_SU/0003_check_answer_01.png" alt="">
+                    </button>
+                  </div>
+                </div>
+
+                <div class="right_range">
+                  <div class="phrase">
+                    <span lang="y">243을 올림하여</span>
+                  </div>
+
+                  <div class="phrase">
+                    <button class="reveal_btn" data-pair="5" lang="y">백</button><span lang="y">의 자리까지 나타내기</span>
+                  </div>
+
+                  <div class="phrase">
+                    <span lang="y">43을</span>
+                    <button class="reveal_btn" data-pair="6" lang="y">100</button><span lang="y">으로 생각하여 올림합니다.</span>
+                  </div>
+
+                  <div class="phrase">
+                    <button class="reveal_btn num_txt" data-pair="7" lang="y">
+                      <img src="../../common_contents/img/EMA521_05_SU/0003_check_answer_02.png" alt="">
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

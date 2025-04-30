@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_03_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="../../common_practice/js/ema521_01_02_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_03_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star" lang="y">버스 한 대에 24명 미만의 학생이 탈 수 있습니다. 반별로 버스를 탈 때, 버스 한 대에 모두 탈 수 없는 반은 어느 반인지 찾아 써 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <h4>반별 학생 수</h4>
+          <div class="table_wrap">
+            <table>
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <th lang="y" scope="row">반</th>
+                <td lang="y" scope="col">1반</td>
+                <td lang="y" scope="col">2반</td>
+                <td lang="y" scope="col">3반</td>
+                <td lang="y" scope="col">4반</td>
+              </thead>
+              <tbody>
+                <th lang="y">학생 수 (명)</th>
+                <td lang="y">22</td>
+                <td lang="y">23</td>
+                <td lang="y">21</td>
+                <td lang="y">24</td>
+              </tbody>
+            </table>
+          </div>
+          <div class="input_area">
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="4"></math-field>
+            </div>
+            <span lang="y">)반</span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">24명 미만은 24명보다 적은 인원이므로 버스 한 대에 모두 탈 수 있는 반은 학생이 24명보다 적은 반입니다. 따라서 학생이 24명인 4반은 버스 한 대에 모두 탈 수 없습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

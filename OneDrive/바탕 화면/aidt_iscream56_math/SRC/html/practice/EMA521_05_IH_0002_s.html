@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_05_IH_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="../../common_practice/js/ema521_01_02_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_05_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2">
+          <span class="label_bogi" lang="y">보기</span>
+          <span lang="y">와 같이 소수를 올림해 보세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="text_wrap">
+            <dl>
+              <dt class="label_bogi" lang="y">보기</dt>
+              <dd class="text_bullet" lang="y">3.419를 올림하여 소수 첫째 자리까지 나타내면 3.5입니다.</dd>
+              <dd class="text_bullet" lang="y">3.419를 올림하여 소수 둘째 자리까지 나타내면 3.42입니다.</dd>
+            </dl>
+          </div>
+          <div class="input_area justify_center mt_30">
+            <div class="input_row">
+              <span class="text_bullet" lang="y">9.162를 올림하여 소수 첫째 자리까지 나타내면</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="9.2"></math-field>
+              </div>
+              <span lang="y" class="ml-6">입니다.</span>
+            </div>
+            <div class="input_row">
+              <span class="text_bullet" lang="y">9.162를 올림하여 소수 둘째 자리까지 나타내면</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="9.17"></math-field>
+              </div>
+              <span lang="y" class="ml-6">입니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">9.162의 소수 첫째 자리 아래 수인 0.062를 0.1로 생각하여 소수 첫째 자리까지 나타내면 9.2입니다.</p>
+                <p lang="y" class="text_bullet">9.162의 소수 둘째 자리 아래 수인 0.002를 0.01로 생각하여 소수 둘째 자리까지 나타내면 9.17입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

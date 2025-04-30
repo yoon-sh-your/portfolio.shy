@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA622_05_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema622_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema622_05_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6_green" class="is_star" lang="y">
+					잘못 계산한 곳을 찾아 이유를 쓰고, 옳게 계산해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center gap_60">
+					<div class="left">
+						<div class="tabbox">
+							<div class="conts_tabbox">
+								<div class="flex justify_center">
+									<div class="long_division">
+										<div class="top"><span>2.4</span></div>
+										<div class="row">
+											<span class="left">3.5</span>
+											<span class="right"><span class="align_left">84</span></span>
+										</div>
+										<div class="under"><span class="align_left">70</span></div>
+										<div class="bottom">140</div>
+										<div class="under">140</div>
+										<div class="bottom">0</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img src="../../common_practice/common/img/icon_arrow_right_navy.svg" alt="">
+						<div class="tabbox">
+							<strong class="tit_tabbox" lang="y">옳은 계산</strong>
+							<div class="conts_tabbox">
+								<div class="flex justify_center">
+									<div class="long_division">
+										<div class="top"><span>2.4</span></div>
+										<div class="row">
+											<span class="left">3.5</span>
+											<span class="right"><span class="align_left red">840</span></span>
+										</div>
+										<div class="under"><span class="align_left red">70</span></div>
+										<div class="bottom red">140</div>
+										<div class="under red">140</div>
+										<div class="bottom red">0</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="flex gap_10">
+							<span class="label_gray" lang="y">이유</span>
+							<div class="input_wrap">
+								<math-field class="textarea"></math-field>
+								<div class="example_box">
+									<p lang="y">나누는 수가 자연수가 되도록 나누어지는 수와 나누는 수에 각각 10씩 곱하여 나누어야 하므로 840을 35로 나눈 몫을 써야 합니다.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

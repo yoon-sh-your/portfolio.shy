@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema517_02_su_0004</title>
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" />
+    <!-- 창의 프로젝트 공통 -->
+    <!-- 개별 -->
+    <script src="../../common_project/js/ema517_02_su_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_project/css/ema517_02_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema517_02_su_0004" data-current-page="page_1,page_2">
+      <section class="title">
+        <h2 data-head="3">
+          <span lang="y">우리 모둠의 채소밭을 정하고 올해 채소별 예상 수확량을 구해 봅시다.​​</span>
+        </h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <section class="contents">
+            <div class="content">
+              <h3 lang="y">채소별 밭의 넓이(㎡)를 ○, 올해 예상 수확량(kg)을 △라고 할 때, 두 양 사이의 대응 관계를 식으로 나타내어 보세요.​​</h3>
+              <div class="tablebox">
+                <table>
+                  <thead>
+                    <th lang="y">채소 종류</th>
+                    <th lang="y">연간 채소별 1 ㎡당 수확량(kg)</th>
+                    <th lang="y">대응 관계</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="flex align_center">
+                          <div class="input_wrap input2">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>
+                          =
+                          <div class="input_wrap input3">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>                        
+                          <div class="dropdown_wrap">
+                            <select class="custom_dropdown math_symbol" data-answer-single="×">
+                                <option></option>
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="×">×</option>
+                                <option value="÷">÷</option>
+                            </select>
+                          </div>
+                          <div class="input_wrap input2">
+                            <math-field 
+                              data-answer-single='○ 혹은 △'
+                              data-answer-multi='
+                                {
+                                  "value": ["○", "△"]
+                                }  
+                              '
+                            >
+                            </math-field>
+                          </div>                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="flex align_center">
+                          <div class="input_wrap input2">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>
+                          =
+                          <div class="input_wrap input3">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>                        
+                          <div class="dropdown_wrap">
+                            <select class="custom_dropdown math_symbol" data-answer-single="×">
+                                <option></option>
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="×">×</option>
+                                <option value="÷">÷</option>
+                            </select>
+                          </div>
+                          <div class="input_wrap input2">
+                            <math-field 
+                              data-answer-single='○ 혹은 △'
+                              data-answer-multi='
+                                {
+                                  "value": ["○", "△"]
+                                }  
+                              '
+                            >
+                            </math-field>
+                          </div>                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="flex align_center">
+                          <div class="input_wrap input2">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>
+                          =
+                          <div class="input_wrap input3">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>                        
+                          <div class="dropdown_wrap">
+                            <select class="custom_dropdown math_symbol" data-answer-single="×">
+                                <option></option>
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="×">×</option>
+                                <option value="÷">÷</option>
+                            </select>
+                          </div>
+                          <div class="input_wrap input2">
+                            <math-field 
+                              data-answer-single='○ 혹은 △'
+                              data-answer-multi='
+                                {
+                                  "value": ["○", "△"]
+                                }  
+                              '
+                            >
+                            </math-field>
+                          </div>                          
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="flex align_center">
+                          <div class="input_wrap input2">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>
+                          =
+                          <div class="input_wrap input3">
+                            <select class="custom_dropdown target" data-answer-multi='["○"], ["△"]'>
+                              <option></option>
+                              <!--최초선택데이터 생성 방지용-->
+                              <option value="○"></option>
+                              <option value="△"></option>
+                            </select>
+                          </div>                        
+                          <div class="dropdown_wrap">
+                            <select class="custom_dropdown math_symbol" data-answer-single="×">
+                                <option></option>
+                                <option value="+">+</option>
+                                <option value="-">-</option>
+                                <option value="×">×</option>
+                                <option value="÷">÷</option>
+                            </select>
+                          </div>
+                          <div class="input_wrap input2">
+                            <math-field 
+                              data-answer-single='○ 혹은 △'
+                              data-answer-multi='
+                                {
+                                  "value": ["○", "△"]
+                                }  
+                              '
+                            >
+                            </math-field>
+                          </div>                          
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </article>
+        <article class="page page_2">
+          <section class="contents">
+            <div class="content">
+              <h3 lang="y">우리 모둠에서 정한 채소밭의 올해 채소별 예상 수확량은 몇 kg인지 구해 보세요.</h3>
+              <div class="tablebox">
+                <table>
+                  <thead>
+                    <th lang="y">채소 종류</th>
+                    <th lang="y">연간 채소별 1 ㎡당 수확량(kg)</th>
+                    <th lang="y">채소밭 넓이(㎡)</th>
+                    <th lang="y">예상 수확량(kg)​</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="input_wrap input3 input-area">
+                          <math-field></math-field>
+                        </div>
+                      </td>
+                      <td><span class="result"></span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="input_wrap input3 input-area">
+                          <math-field></math-field>
+                        </div>
+                      </td>
+                      <td><span class="result"></span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="input_wrap input3 input-area">
+                          <math-field></math-field>
+                        </div>
+                      </td>
+                      <td><span class="result"></span></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown target" data-answer-multi='["브로콜리"], ["배추"], ["무"],["파"],["부추"],["호박"]'>
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="브로콜리" data-value="6"></option>
+                          <option value="배추" data-value="6"></option>
+                          <option value="무" data-value="6"></option>
+                          <option value="파" data-value="6"></option>
+                          <option value="부추" data-value="2"></option>
+                          <option value="호박" data-value="2"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <span class="value"></span>
+                      </td>
+                      <td>
+                        <div class="input_wrap input3 input-area">
+                          <math-field></math-field>
+                        </div>
+                      </td>
+                      <td><span class="result"></span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      $(document).ready(function () {
+        // select 선택 시 .value에 data-value 값 입력
+        $('.custom_dropdown.target').on('change', function () {
+          const selectedValue = $(this).find('option:selected').data('value');
+          const $row = $(this).closest('tr');
+          $row.find('.value').text(selectedValue);
+
+          // math-field 값과 곱해서 result 출력
+          const mathFieldEl = $row.find('math-field')[0];
+          if (mathFieldEl) {
+            // 수식의 텍스트 값이 <span class="ML__text">에 들어가 있으므로 이 값들 가져오기
+            const mathText = $(mathFieldEl).find('.ML__text').toArray().map(span => $(span).text()).join('');
+            
+            // 텍스트 값이 숫자인지 확인 후 계산
+            const mathValue = parseFloat(mathText);
+            if (!isNaN(mathValue)) {
+              $row.find('.result').text(mathValue * selectedValue);
+            } else {
+              $row.find('.result').text('');
+            }
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

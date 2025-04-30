@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_03_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_03_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star" lang="y">둘레가 15 ㎝인 마름모가 있습니다. 이 마름모의 한 변의 길이는 몇 ㎝인지 식을 쓰고 답을 분수로 나타내어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA611_03_IH/0005_01.png" alt="" />
+          </div>
+          <div class="input_area">
+            <div class="input_col">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="15÷4" text-align="center"></math-field>
+              </div>
+              =
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="3(3)/(4)" text-align="center" class="w_80"></math-field>
+              </div>
+            </div>
+            <div class="input_col">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap fraction_wrap input3">
+                <!-- <math-field data-answer-single="3(3)/(4)=((15)/(4))" text-align="center"></math-field> -->
+                <math-field data-answer-single="3(3)/(4)" data-answer-multi='{"values": ["3(4)/(4)","(15)/(4)"]}' data-multi-hint="y"></math-field>
+              </div>
+              ㎝
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve top0">
+                <p lang="y">마름모는 네 변의 길이가 모두 같습니다. </p>
+                <p lang="y">(마름모의 한 변의 길이)</p>
+                <div class="flex align_center gap_0">
+                  =15÷4=
+                  <div class="fraction_box"><span>15</span><span>4</span></div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>3</span>
+                    <div class="fraction_box"><span>3</span><span>4</span></div>
+                  </div>&nbsp;(㎝)
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

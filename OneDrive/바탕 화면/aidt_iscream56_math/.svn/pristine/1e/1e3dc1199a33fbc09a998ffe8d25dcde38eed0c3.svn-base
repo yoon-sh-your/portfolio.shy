@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_01_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_01_ih_0002">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 4-2』 소수 사이의 관계</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="2" lang="y">빈칸에 알맞은 수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box">
+          <div class="item">
+            <div class="input_wrap">
+              <math-field data-answer-single="0.047"></math-field>
+            </div>
+          </div>
+          <div class="item">
+            <div class="input_wrap">
+              <math-field data-answer-single="0.47"></math-field>
+            </div>
+            <div class="sup left">
+              <div class="inr" lang="y">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>10</span>
+                </div>
+                배
+              </div>
+            </div>
+          </div>
+          <div class="item center">
+            <span>4.7</span>
+            <div class="sup left">
+              <div class="inr" lang="y">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>10</span>
+                </div>
+                배
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="input_wrap">
+              <math-field data-answer-single="47"></math-field>
+            </div>
+            <div class="sup right">
+              <div class="inr" lang="y">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>10</span>
+                </div>
+                배
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="input_wrap">
+              <math-field data-answer-single="470"></math-field>
+            </div>
+            <div class="sup right">
+              <div class="inr" lang="y">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>10</span>
+                </div>
+                배
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div lang="y">
+                  어떤 수를 10배 하면 소수점을 오른쪽으로 한 자리 이동하고,
+                </div>
+                <div lang="y">
+                  어떤 수를
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>10</span>
+                  </div>
+                  배 하면 소수점을 왼쪽 으로 한 자리 이동합니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve">
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_05_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_05_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">건강 팀과 장수 팀이 콩 주머니 던지기를 하였습니다. 이긴 팀을 정하기 위해 두 팀의 점수를 어떻게 비교할 수 있을지 생각해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1486 783" fill="none">
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21.9533" letter-spacing="-0.91472px" lang="y">
+                <tspan x="125.427" y="346.25">귤을 나누어 드리려고</tspan>
+                <tspan x="120.8" y="375.521">귤 한 상자를 준비했어.</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21.9533" letter-spacing="-0.91472px" lang="y">
+                <tspan x="808.615" y="402.961">우유  한 갑을</tspan>
+                <tspan x="813.178" y="432.232">마셔야겠어.</tspan>
+              </text>
+              <text transform="translate(891.669 184.771) rotate(15.9636)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21.9533" letter-spacing="-0.91472px" lang="y">
+                <tspan x="0.396221" y="22.4392">크림붕어빵</tspan>
+              </text>
+              <text transform="translate(1233.74 213.996) rotate(-4.03963)" fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21.9533" letter-spacing="-0.91472px" lang="y">
+                <tspan x="0.425503" y="22.4392">팥붕어빵</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="21.9533" letter-spacing="-0.91472px" lang="y">
+                <tspan x="1216.85" y="86.4685">붕어빵 한 개를</tspan>
+                <tspan x="1228.14" y="115.74">먹어야겠어.</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA526_05_SU/0002_content.png" alt="" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고, 귤 상자를 열었을 때 귤이 나올 가능성을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">귤이 들어 있는 상자이므로 귤이 나올 가능성은 확실합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

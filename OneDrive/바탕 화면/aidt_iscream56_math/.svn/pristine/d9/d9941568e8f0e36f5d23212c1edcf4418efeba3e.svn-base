@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA615_07_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <script src="./../../common_practice/js/ema614_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema615.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema615">
+      <section class="title group">
+        <h2 lang="y"><span class="puple">[2~3]</span>우리나라에서 상영한 영화에 대해 조사하여 각각 나타낸 그래프입니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="title type2">
+        <h2 data-head="3_light_purple" class="is_star2" lang="y">
+          <span lang="y">각 그래프의 특징에 대해 잘못 설명한 것을 찾아 기호를 고르고, 내용을 옳게 고쳐 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents p_bottom">
+        <div class="ema615_07_0003 flex align_center justify_center">
+          <div class="flex gap_50 dir_col flex justify_center">
+            <div class="flex align_center dir_col gap_40">
+              <div class="ema615_07_0003_box">
+                <div class="boolean_wrap type_chk">
+                  <button class="item" data-answer-single="true">
+                    <p lang="y">띠그래프는 각 항목의 수량을 한눈에 알아보기 편리합니다.</p>
+                  </button>
+
+                  <button class="item" data-answer-single="false">
+                    <p lang="y">꺾은선그래프는 시간의 흐름에 따라 변화하는 모습과 정도를 알아보기 쉽습니다.</p>
+                  </button>
+
+                  <button class="item" data-answer-single="false">
+                    <p lang="y">그림그래프는 그림의 크기와 수로 수량의 많고 적음을 비교하기 편리합니다.</p>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap_12">
+              <span class="label_gray" lang="y">옳게 고치기</span>
+              <div class="input_wrap">
+                <math-field></math-field>
+                <div class="example_box">
+                  <p lang="y">띠그래프는 전체에 대한 각 부분의 비율을 한눈에 알아보기 편리합니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>띠그래프는 전체에 대한 각 부분의 비율을 한눈에 알아보거나 전체에 대한 각 부분의 비율을 비교하기에 편리합니다. 따라서 잘못 설명한 것은 ㉠입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit">제출</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_08_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_08_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">어느 영화관의 작년과 올해의 방문객 수를 반올림하여 십만의 자리까지 나타내어 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <h4 lang="y">작년과 올해의 방문객 수</h4>
+
+          <div class="table_wrap input_area mt_30">
+            <div class="fffBox"></div>
+            <table>
+              <colgroup>
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th class="none"></th>
+                  <th lang="y" class="borderRound">방문객 수(명)</th>
+                  <th lang="y">반올림(명)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th lang="y" class="borderRound">작년</th>
+                  <td lang="y">1945346</td>
+                  <td lang="y">
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="1900000"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y">올해</th>
+                  <td lang="y">1562189</td>
+                  <td lang="y">
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="1600000"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">1945346의 만의 자리 숫자가 4이므로 버림하여 십만의 자리까지 나타내면 1900000입니다.</p>
+                <p lang="y" class="text_bullet">1562189의 만의 자리 숫자가 6이므로 올림하여 십만의 자리까지 나타내면 1600000입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

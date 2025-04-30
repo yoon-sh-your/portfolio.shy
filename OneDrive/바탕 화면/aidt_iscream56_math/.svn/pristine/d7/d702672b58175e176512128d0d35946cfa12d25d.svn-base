@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_05_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_05_su_0002"> 
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">은성이는 벽화 그리기 체험을 하는 데 페인트를 2 L의 0.75배 만큼 사용하였습니다. 은성이가 사용한 페인트는 몇 L인지 알아봅시다.</h2>
+      </section>
+
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <p lang="y">사용한 페인트의<br>양을 어떻게 구할 수<br>있을까?</p>
+            <button class="play" onclick="navigate('../guide_sample/vedio_player')"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <h3 lang="y">영상을 보고 은성이가 사용한 페인트의 양을 어떻게 구해야 할지 이야기해 봅시다.</h3>
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">2의 0.75 배이므로 2와 0.75를 곱하면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+    </section>
+    
+    </div>
+  </body>
+</html>

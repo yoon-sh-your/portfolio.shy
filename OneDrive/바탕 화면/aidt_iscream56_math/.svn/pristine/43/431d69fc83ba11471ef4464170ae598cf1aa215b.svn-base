@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA514_05_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema514_05_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_05.css">
+
+</head>
+<body>
+    <div id="app_wrap" class="ema514_05_su_0004">
+        <section class="title type2">
+            <h2 data-head="2" lang="y" class="fraction_box_title">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <span class="fraction_box ml_0"><span>3</span><span>4</span></span>과
+                    <span class="fraction_box"><span>5</span><span>6</span></span>를 분모가 같은 분수로 나타내어 봅시다.
+                  </div>
+                </div>                
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            
+                <article class="page page_1">
+                    <h3 lang="y">
+                        <div class="fraction_txt_wrap">
+                          <div class="fraction_txt" lang="y">
+                            <span class="fraction_box ml_0"><span>3</span><span>4</span></span>,
+                            <span class="fraction_box "><span>5</span><span>6</span></span>
+                            와 각각 크기가 같은 분수를 분모가 작은 분수부터 차례대로 5개 써 보세요.
+                          </div>
+                        </div>                        
+                    </h3>
+                    <div class="question_box justify_center">
+                        <div class="count_wrap">
+                            <div class="fraction_row row1">
+                                <div class="fra_ex"><span class="fraction_box f32b"><span>3</span><span>4</span></span></div>
+                                <div class="fra_inn">
+                                    <div class="fraction_box fra_ex1 f32b"><span>6</span><span>8</span></div>,
+                                    <div class="input_wrap fraction_wrap" data-hint-position="up">
+                                        <math-field data-answer-single="(9)/(12)"></math-field>
+                                    </div>,
+                                    <div class="input_wrap fraction_wrap" data-hint-position="up">
+                                        <math-field data-answer-single="(12)/(16)"></math-field>
+                                    </div>,
+                                    <div class="input_wrap fraction_wrap" data-hint-position="up">
+                                        <math-field data-answer-single="(15)/(20)"></math-field>
+                                    </div>,
+                                    <div class="input_wrap fraction_wrap" data-hint-position="up">
+                                        <math-field data-answer-single="(18)/(24)"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fraction_row row2">
+                                <div class="fra_ex"><span class="fraction_box f32b"><span>5</span><span>6</span></span></div>
+                                <div class="fra_inn">
+                                    <div class="fraction_box fra_ex1 f32b"><span>10</span><span>12</span></div>,
+                                    <div class="input_wrap fraction_wrap">
+                                        <math-field data-answer-single="(15)/(18)"></math-field>
+                                    </div>,
+                                    <div class="input_wrap fraction_wrap">
+                                        <math-field data-answer-single="(20)/(24)"></math-field>
+                                    </div>,
+                                    <div class="input_wrap fraction_wrap">
+                                        <math-field data-answer-single="(25)/(30)"></math-field>
+                                    </div>,
+                                    <div class="input_wrap fraction_wrap">
+                                        <math-field data-answer-single="(30)/(36)"></math-field>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <h3 lang="y">
+                        분모가 같은 분수끼리 짝 지어 나타내고, 짝 지은 분수의 분모들의 특징을 이야기해 보세요.
+                    </h3>
+                    <div class="speech_bubble">
+                        12는 4와 6의<br>최소공배수네.
+                    </div>
+                    <div class="question_box justify_center">
+                        <div class="fraction_row">
+                            <div class="fra_arr col1">
+                                <div class="fra_parens">
+                                    <span class="fraction_box f32b"><span>3</span><span>4</span></span>
+                                    <span class="comma">,</span>
+                                    <span class="fraction_box f32b"><span>5</span><span>6</span></span>
+                                </div>
+                            </div>
+                            <div class="fra_inn col2">
+                                <div class="fra_parens">
+                                    <span class="fraction_box f32b">
+                                        <span class="input_wrap">
+                                            <math-field data-answer-single="9"></math-field>
+                                        </span>
+                                        <span>12</span>
+                                    </span>
+                                    <span class="comma">,</span>
+                                    <span class="fraction_box f32b">
+                                        <span class="input_wrap">
+                                            <math-field data-answer-single="10"></math-field>
+                                        </span>
+                                        <span>12</span>
+                                    </span>
+                                </div>
+                                <span class="comma">,</span>
+                                <div class="fra_parens">
+                                    <span class="fraction_box f32b">
+                                        <span class="input_wrap">
+                                            <math-field data-answer-single="18"></math-field>
+                                        </span>
+                                        <span>24</span>
+                                    </span>
+                                    <span class="comma">,</span>
+                                    <span class="fraction_box f32b">
+                                        <span class="input_wrap">
+                                            <math-field data-answer-single="20"></math-field>
+                                        </span>
+                                        <span>24</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text_area">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <div class="example_box">
+                                    <p lang="y">4와 6의 공배수입니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+            
+            <article class="page page_5">
+                <div class="summarize_wrap">
+                    <div class="summarize promise">
+                        <label lang="y">약속해 볼까요</label>
+                        <div>
+                            <span lang="y">분모가 다른 분수의 분모를 같게 나타내는 것을</span>
+                            <button class="reveal_btn" data-pair="1" lang="y">통분</button>
+                            <span lang="y" class="small-gap">한다고 하고,</span>
+                        </div>
+                        <div>
+                            <span lang="y">통분한 분모를</span>
+                            <button class="reveal_btn" data-pair="2" lang="y">공통분모</button>
+                            <span lang="y" class="small-gap">라고 합니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <!-- <button class="btnSubmit">확인</button> -->
+            </div>
+        </section>
+    </div>
+</body>
+</html>

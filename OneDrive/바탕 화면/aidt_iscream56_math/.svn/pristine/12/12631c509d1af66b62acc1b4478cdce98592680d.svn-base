@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_01_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_01_ih_0002">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <!-- <span class="blue">[배운 내용을 떠올려요]</span> -->
+        </h2>
+        <span lang="y" class="title_sub_me">『수학 5-1』 1 cm²와 1 m²의 관계 알아보기</span>
+      </section>
+
+      <section class="title type2">
+        <h2 data-head="2_orange" lang="y">
+          <span class="empty_box nemo head"></span>
+          (점을 찍는다 ) 안에 알맞은 수를 써넣으세요
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="flex justify_center gap_120">
+            <div class="question_box">
+              <div class="inout_box">
+                <!-- <img src="../../common_practice/img/EMA616_01_IH/616_01_02.png" alt="" /> -->
+
+                <span class="to_out">
+                  1m²=
+                  <div class="input_wrap">
+                    <math-field data-answer-single="10"></math-field>
+                  </div>
+                  cm²
+                </span>
+                <span class="cm1">1m</span>
+                <span class="cm2">1m</span>
+                <span class="cm3">100cm</span>
+                <span class="cm4">100cm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_11_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_11.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_11_su_0002">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+      <section class="title type2 jgjd_4_sub_title">
+        <h2>
+          <div class="title_row">
+            <span class="nemo_blank"></span>
+            <span lang="y">안에 알맞은 말이나 수를 써넣으세요.</span>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="row1 f32b">
+            <span class="fraction_box">
+              <span>8</span>
+              <span>11</span>
+            </span>
+            은
+            <span class="fraction_box ml_8">
+              <span>1</span>
+              <span>11</span>
+            </span>
+            이&nbsp;
+            <div class="input_wrap ml_8">
+              <math-field data-answer-single="8"></math-field>
+            </div>
+            개이고
+            <span class="fraction_box ml_8">
+              <span>2</span>
+              <span>11</span>
+            </span>
+            는
+            <span class="fraction_box ml_8">
+              <span>1</span>
+              <span>11</span>
+            </span>
+            이&nbsp;
+            <div class="input_wrap ml_8">
+              <math-field data-answer-single="2"></math-field>
+            </div>
+            개입니다.
+          </div>
+          <div class="row2 f32b">
+            <span class="fraction_box">
+              <span>8</span>
+              <span>11</span>
+            </span>
+            &divide;
+            <span class="fraction_box">
+              <span>2</span>
+              <span>11</span>
+            </span>
+            =
+            <div class="input_wrap">
+              <math-field data-answer-single="8"></math-field>
+            </div>
+            &divide;
+            <div class="input_wrap">
+              <math-field data-answer-single="2"></math-field>
+            </div>
+            =
+            <div class="input_wrap">
+              <math-field data-answer-single="4"></math-field>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

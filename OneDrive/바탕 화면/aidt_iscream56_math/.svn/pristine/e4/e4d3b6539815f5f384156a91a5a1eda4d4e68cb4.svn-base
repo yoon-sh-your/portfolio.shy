@@ -1,0 +1,914 @@
+/* ema615_04_su_0002 */
+.ema615_04_su_0002 .video_wrap {
+    width: 812px;
+    height: 428px;
+    /* border: 1px solid red; */
+}
+
+.ema615_04_su_0002 .flex.align_start {
+    gap: 26px;
+}
+
+.ema615_04_su_0002 .input_area {
+    width: 797px;
+    height: calc(502px - 96px);
+}
+
+.ema615_04_su_0002 .input_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.ema615_04_su_0002 .input_wrap math-field.textarea {
+    min-height: auto;
+    height: 170px;
+}
+
+.ema615_04_su_0002 .video_wrap img,
+.ema615_04_su_0002 .video_wrap svg {
+    transform: scale(.7) translate(-70%, -70%);
+}
+
+
+
+
+
+
+
+
+
+/* ema615_04_su_0003 */
+/* 페이지 수: ~ 2 페이지 (서술형만 있는 페이지) */
+/* picture_wrap 가리는 페이지: - */
+/* 서술형 페이지: 1, 2 */
+section.title.type2+section.contents {
+    /* background-color: aqua; */
+}
+
+section.contents.paging_layout {
+    /* background-color: aquamarine; */
+}
+
+.page {
+    /* background-color: orange; */
+}
+
+.ema615_04_su_0003 .page_1 .question_box {
+    width: calc(1635px - 160px);
+}
+
+.ema615_04_su_0003 .page_1 .container {
+    --content-h: 578px;
+    --space-b: 12px;
+    --h3-h: calc(48px + 20px);
+    --btn-h: 64px;
+    width: 100%;
+    height: calc(var(--content-h) - var(--h3-h) - var(--btn-h) - var(--space-b));
+
+    margin-top: -18px;
+}
+
+.ema615_04_su_0003 .page_1 .container .r1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+}
+
+.ema615_04_su_0003 .page_1 .container .r1 .picture_wrap {
+    width: 751px;
+    height: 171px;
+}
+
+.ema615_04_su_0003 .page_1 .container .r1 .picture_wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.ema615_04_su_0003 .page_1 .container .r2 {
+    display: flex;
+    gap: 26px;
+
+}
+
+.ema615_04_su_0003 .page_1 .container .r2>div {
+    flex: 1;
+}
+
+.ema615_04_su_0003 .page_1 .container .r2 h3 {
+    margin-bottom: 12px;
+}
+
+.ema615_04_su_0003 .page_1 .container .r2 h3::before {
+    display: none;
+}
+
+.ema615_04_su_0003 .page_1 .input_wrap {
+    width: 100%;
+}
+
+.ema615_04_su_0003 .page_1 .input_wrap math-field.textarea {
+    min-height: auto;
+    /* height: 80px; */
+}
+
+
+
+
+.ema615_04_su_0003 .page_2 .question_box {
+    width: calc(1635px - 160px);
+    /* border: 1px  solid red; */
+}
+
+.ema615_04_su_0003 .page_2 .container {
+    --content-h: 578px;
+    --space-b: 12px;
+    --h3-h: calc(48px + 20px);
+    --btn-h: 64px;
+    width: 100%;
+    height: calc(var(--content-h) - var(--h3-h) - var(--btn-h) - var(--space-b));
+
+    margin-top: -18px
+}
+
+.ema615_04_su_0003 .page_2 .container .r1 {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 20px 0;
+    transform: scale(.9);
+}
+
+.ema615_04_su_0003 .page_2 .container .r1 .picture_wrap {
+    width: 619px;
+    height: 230px;
+}
+
+.ema615_04_su_0003 .page_2 .container .r1 .picture_wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.ema615_04_su_0003 .page_2 .container .r2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ema615_04_su_0003 .page_2 .input_wrap {
+    width: 100%;
+}
+
+.ema615_04_su_0003 .page_2 .input_wrap math-field.textarea {
+    width: 1208px;
+    min-height: auto;
+    /* height: 80px; */
+    margin-top: -10px;
+}
+
+.ema615_04_su_0003 .page_2 .input_wrap .example_box::before {
+    display: none;
+}
+
+.ema615_04_su_0003 .page_2 .input_wrap .example_box {
+    padding-left: calc(82px - 45px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.question_box.justify_center {
+    color: var(--Secondary-Text-Gray-900, #222);
+
+    /* Title/H_02_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.operation {
+    display: flex;
+    align-items: center;
+}
+
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field:not(.textarea) {
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+/* ema615_04_su_0004 */
+/* 페이지 수: ~ 4 페이지 */
+/* picture_wrap 가리는 페이지: - */
+/* 서술형 페이지: - */
+section.title.type2+section.contents {
+    /* background-color: aqua; */
+}
+
+section.contents.paging_layout {
+    /* background-color: aquamarine; */
+}
+
+.page {
+    /* background-color: orange; */
+}
+
+/* 서술형 페이지 버튼 */
+.ema615_04_su_0004:not([data-current-page='page_2']) .btn_area .btnSubmit,
+.ema615_04_su_0004[data-current-page='page_2'] .btn_area .btnCheck {
+    display: none;
+}
+
+.ema615_04_su_0004 .page_1 .question_box {
+    width: calc(1635px - 160px);
+}
+
+.ema615_04_su_0004 .page_1 .container {
+    --content-h: 578px;
+    --space-b: 12px;
+    --h3-h: calc(48px + 20px);
+    --btn-h: 64px;
+    width: 100%;
+    height: calc(var(--content-h) - var(--h3-h) - var(--btn-h) - var(--space-b));
+
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.ema615_04_su_0004 .page_1 .container .r1 {
+    display: flex;
+    justify-content: center;
+}
+
+.ema615_04_su_0004 .page_1 .container .r1 .input_wrap {
+    width: 100%;
+}
+
+.ema615_04_su_0004 .page_1 .input_wrap .example_box {
+    margin-top: -98px;
+}
+
+.ema615_04_su_0004 .page_1 .input_wrap math-field.textarea {
+    min-height: auto;
+}
+
+.ema615_04_su_0004 .page_1 .container .r2 {
+    display: flex;
+    justify-content: center;
+}
+
+.ema615_04_su_0004 .page_1 .ip1 math-field:not(.textarea) {
+    width: 177px;
+}
+
+.ema615_04_su_0004 .page_1 .ip2 math-field:not(.textarea) {
+    width: 160px;
+}
+
+.ema615_04_su_0004 .page_1 .ip3 math-field:not(.textarea) {
+    width: 177px;
+}
+
+.ema615_04_su_0004 .page_1 .ip4 math-field:not(.textarea) {
+    width: 139px;
+}
+
+.ema615_04_su_0004 .page_1 .ip5 math-field:not(.textarea) {
+    width: 198px;
+}
+
+.ema615_04_su_0004 .page_1 .ip6 math-field:not(.textarea) {
+    width: 123px;
+}
+
+.ema615_04_su_0004 .page_1 th,
+.ema615_04_su_0004 .page_1 td {
+    width: 218px;
+    height: 90px;
+}
+
+.ema615_04_su_0004 .page_1 th>div,
+.ema615_04_su_0004 .page_1 td>div {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* 가로 중앙 */
+    /* align-items: center; */
+    /* 세로 중앙 */
+    /* height: 100%; */
+}
+
+
+
+
+.ema615_04_su_0004 .page_2 .question_box {
+    width: calc(1635px - 160px);
+    /* border: 1px  solid red; */
+}
+
+.ema615_04_su_0004 .page_2 .container {
+    --content-h: 578px;
+    --space-b: 12px;
+    --h3-h: calc(48px + 20px);
+    --btn-h: 64px;
+    width: 100%;
+    height: calc(var(--content-h) - var(--h3-h) - var(--btn-h) - var(--space-b));
+
+    /* margin-top: -18px */
+}
+
+.ema615_04_su_0004 .page_2 .container>div {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+}
+
+.ema615_04_su_0004 .page_2 .container .r1 {
+    /* padding: 0 0 20px 0; */
+    /* transform: scale(.9); */
+    height: 180px;
+}
+
+.ema615_04_su_0004 .page_2 .table-container {
+    transform: scale(.7);
+    margin-top: -68px;
+}
+
+.ema615_04_su_0004 .page_2 .table-title {
+    padding: 4px 0px;
+}
+
+.ema615_04_su_0004 .page_2 th,
+.ema615_04_su_0004 .page_2 td {
+    width: 218px;
+}
+
+.ema615_04_su_0004 .page_2 th>div,
+.ema615_04_su_0004 .page_2 td>div {
+    display: flex;
+    justify-content: center;
+    /* 가로 중앙 */
+    align-items: center;
+    /* 세로 중앙 */
+    height: 100%;
+}
+
+.ema615_04_su_0004 .page_2 .container .r2 {
+    /* height: 90px; */
+}
+
+.ema615_04_su_0004 .page_2 .input_wrap {
+    width: 100%;
+}
+
+.ema615_04_su_0004 .page_2 .input_wrap .example_box {
+    margin-top: -84px;
+    /* border: 3px solid purple; */
+}
+
+.ema615_04_su_0004 .page_2 .input_wrap math-field.textarea {
+    width: 1208px;
+    min-height: auto;
+    /* height: 60px; */
+    /* margin-top: -10px; */
+}
+
+.ema615_04_su_0004 .page_2 .container .r3 {
+    height: 162px;
+    align-items: center;
+}
+
+
+
+
+
+
+.ema615_04_su_0004 .page_3 .question_box {
+    width: calc(1635px - 160px);
+}
+
+.ema615_04_su_0004 .page_3 .container {
+    --content-h: 578px;
+    --space-b: 12px;
+    --h3-h: calc(48px + 20px);
+    --btn-h: 64px;
+    width: 100%;
+    height: calc(var(--content-h) - var(--h3-h) - var(--btn-h) - var(--space-b));
+
+    /* margin-top: -18px */
+    display: flex;
+}
+
+.ema615_04_su_0004 .page_3 .container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ema615_04_su_0004 .page_3 .c1 {}
+
+.ema615_04_su_0004 .page_3 .table-container {
+    transform: translate(-50px, 50px) scale(0.7);
+}
+
+.ema615_04_su_0004 .page_3 .completed_table_title {
+    border-radius: 12px;
+    border: 1px solid var(--Text-Color-Disable, #808080);
+    background: var(--black-white-white, #FFF);
+    padding: 20px;
+
+    color: #000;
+
+    /* Body/BODY_01_REGULAR */
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 160% */
+    letter-spacing: -0.5px;
+
+    width: 500px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    margin-bottom: 1%;
+}
+
+.ema615_04_su_0004 .page_3 th,
+.ema615_04_su_0004 .page_3 td {
+    width: 218px;
+}
+
+.ema615_04_su_0004 .page_3 th>div,
+.ema615_04_su_0004 .page_3 td>div {
+    display: flex;
+    justify-content: center;
+    /* 가로 중앙 */
+    align-items: center;
+    /* 세로 중앙 */
+    height: 100%;
+}
+
+.ema615_04_su_0004 .page_3 .container .c2 {
+    justify-content: center;
+}
+
+.ema615_04_su_0004 .page_3 .input_wrap {
+    width: 100%;
+}
+
+.ema615_04_su_0004 .page_3 .input_wrap math-field.textarea {
+    width: 460px;
+    min-height: auto;
+    /* height: 60px; */
+    /* margin-top: -10px; */
+}
+
+.ema615_04_su_0004 .page_3 .input_wrap .example_box {
+    margin-top: -80px;
+}
+
+.ema615_04_su_0004 .page_3 .circle-graph-division {
+    background: url(../img/EMA615_04_SU/0004_circle-graph_bg.png.png);
+    width: 306px;
+    height: 320.5px;
+}
+
+.ema615_04_su_0004 .page_3 .circle-graph-division svg {
+    width: 306px;
+    height: 335.5px;
+}
+
+
+
+
+
+
+
+/*ema615_04_SU_0005_s*/
+.ema615_04_su_0005 .question_box.justify_center {
+    /* background-color: #808080; */
+    width: 1400px;
+}
+
+.ema615_04_su_0005 .container_615 {
+    justify-content: center;
+    /* background-color: teal; */
+    /* width: 1635px;
+    height: 450px; */
+}
+
+.ema615_04_su_0005 .page.page_1 .picture_wrap {
+    width: 484px;
+    height: 495px;
+}
+
+.ema615_04_su_0005 .page.page_2 .picture_wrap {
+    width: 685px;
+    height: 498px;
+}
+
+.ema615_04_su_0005 .page.page_3 .picture_wrap {
+    width: 808px;
+    height: 370px;
+}
+
+.ema615_04_su_0005 .page.page_4 .picture_wrap {
+    width: 945px;
+    height: 486px;
+}
+
+.ema615_04_su_0005 .page.page_5 .picture_wrap {
+    width: 1441px;
+    height: 480px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*ema615_04_SU_0006_s*/
+/* 페이징 레이아웃 아닌 화면 크기 */
+.ema615_04_su_0006 .question_box {
+    width: 1635px;
+    height: calc(626px - 30px - 30px - 64px - 12px);
+    /* border: 1px solid red; */
+}
+
+.ema615_04_su_0006 .container {
+    --content-h: 578px;
+    --space-b: 12px;
+    --h3-h: calc(48px + 20px);
+    --btn-h: 64px;
+    width: 100%;
+    height: calc(var(--content-h) - var(--h3-h) - var(--btn-h) - var(--space-b));
+
+    margin-top: -18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 26px;
+}
+
+.ema615_04_su_0006 .container > div {
+    display: flex;
+    justify-content: center;
+}
+
+.ema615_04_su_0006 .container .picture_wrap {
+    width: 792px;
+    height: 311px;
+}
+
+/* 이미지가 flex로 커질 때 */
+.ema615_04_su_0006 .container .picture_wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.ema615_04_su_0006 .input_wrap {
+    width: 100%;
+}
+
+.ema615_04_su_0006 .input_wrap math-field.textarea {
+    width: 1208px;
+    min-height: auto;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* table */
+.table-container {
+    /* width: 100%; */
+    /* max-width: 600px; */
+    /* margin: 40px auto; */
+    /* font-family: Arial, sans-serif; */
+}
+
+.table-title {
+    /* text-align: center; */
+    color: #504D7C;
+
+    /* Title/H_02_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* width: 592.195px;
+    height: 55.486px; */
+
+    /* background-color: #504D7C; */
+    background: url(../../common_contents/img/EMA615_11_SU/0002_table_title_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+table {
+    /* width: 100%; */
+    /* height: 229px; */
+    border-collapse: collapse;
+    /* border: 1px solid #ccc; */
+    /* overflow: hidden; */
+
+    color: #000;
+    text-align: center;
+
+    /* Title/H_02_REGULAR */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* border: 2px solid white; */
+
+    border-collapse: separate;
+}
+
+thead {
+    background-color: #EFEEEE;
+}
+
+thead th {
+    background-color: #EFEEEE;
+}
+
+thead th:nth-of-type(1),
+tbody th {
+    background-color: #E4E9F7;
+    border-right: 3.47px solid #fff;
+    width: 200px;
+}
+
+th {
+    /* border: 3.47px solid #fff; */
+    border: 1px solid #fff;
+}
+
+th,
+td {
+    text-align: center;
+    width: 160px;
+    height: 70px;
+}
+
+tbody tr {
+    background-color: #fff;
+}
+
+tbody td {
+    /* border: 1.74px solid #DADADA; */
+    border: 1px solid #DADADA;
+}
+
+/* 왼쪽 위 */
+.my-table thead tr:first-child th:first-child {
+    border-top-left-radius: 30px;
+}
+
+/* 오른쪽 위 */
+.my-table tr:first-child th:last-child {
+    border-top-right-radius: 30px;
+}
+
+/* 왼쪽 아래 */
+.my-table tbody tr:last-child th:first-child {
+    border-bottom-left-radius: 30px;
+}
+
+/* 오른쪽 아래 */
+.my-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 30px;
+    /* border: 2px solid purple; */
+    /* border-radius: 40px; */
+}
+
+
+
+
+
+
+
+
+
+/* graph */
+svg {
+    /* border: 1px solid #ccc; */
+    background: transparent;
+}
+
+.bar {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 2;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.circle {
+    fill: transparent;
+    /* stroke: #000;
+    stroke-width: 2; */
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.center-point {
+    fill: #000;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.diameter-point-area {
+    fill: transparent;
+    cursor: pointer;
+}
+
+.diameter-point {
+    fill: #ff0000;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.diameter-point:hover {
+    fill: #ff6666;
+    r: 8;
+}
+
+.click-line {
+    stroke: #0000ff;
+    stroke-width: 3;
+    pointer-events: none;
+}
+
+.click-point {
+    fill: #0000ff;
+    pointer-events: none;
+}
+
+.preview-line {
+    stroke: #0000ff;
+    stroke-width: 2;
+    stroke-dasharray: 5, 5;
+    opacity: 0.5;
+}
+
+.percentage-text {
+    font-size: 14px;
+    fill: #000;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.option-selector {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option-button:hover {
+    background: #e0e0e0;
+}
+
+.click-line {
+    stroke: #000;
+    stroke-width: 2;
+}
+
+.click-point {
+    fill: #000;
+    cursor: pointer;
+}
+
+.diameter-point {
+    fill: #ccc;
+    cursor: pointer;
+}
+
+.diameter-point-area {
+    fill: transparent;
+    cursor: pointer;
+}
+
+.preview-line {
+    stroke: #ccc;
+    stroke-width: 1;
+    stroke-dasharray: 5, 5;
+}
+
+.percentage-text {
+    font-size: 14px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.percentage-text {
+    color: #1D1D1B;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 22.011px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.017px;
+    /* 150% */
+    letter-spacing: -0.688px;
+}
+
+
+
+
+
+
+
+
+
+/* tspan[lang="y"] {
+    fill: red;
+    font-weight: bold;
+}
+
+*[lang="y"] {
+    color: green !important;
+    font-weight: bold;
+} */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA521_06_IH_0003</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="../../common_practice/js/ema521_01_02_ih.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema521_06.css" />
+	</head>
+	<body>
+		<div id="app_wrap" class="ema521_06_ih_0003">
+			<section class="title type2">
+				<h2 data-head="3" lang="y">버림하여 백의 자리까지 나타내면 3400이 되는 수를 모두 찾아 골라 보세요.</h2>
+			</section>
+			<section class="contents">
+				<div class="boolean_wrap justify_center mt_30">
+					<div class="button_box">
+						<button type="button" data-answer-single="true" class="button1">3467</button>
+						<button type="button" data-answer-single="false" class="button2">3352</button>
+						<button type="button" data-answer-single="false" class="button3">3721</button>
+						<button type="button" data-answer-single="true" class="button4">3494</button>
+					</div>
+				</div>
+
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">주어진 수를 버림하여 백의 자리까지 나타내어 봅니다.</p>
+								<p>
+									<span>34<span class="text_bg_red">67</span> ➔ 3400</span><br /><span
+										>33<span class="text_bg_red">52</span> ➔ 3300</span
+									><br />
+									<span>37<span class="text_bg_red">21</span> ➔ 3700</span
+									><br />34<span class="text_bg_red">94</span> ➔ 3400</span>
+								</p>
+								<p lang="y">
+									따라서 버림하여 백의 자리까지 나타내면 3400이 되는 수는 3467, 3494입니다.
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+
+				<div class="btn_area">
+					<!-- <button class="btnType key">입력타입토글</button> -->
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

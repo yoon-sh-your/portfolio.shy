@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_04_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_04_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6_pink" class="is_star" lang="y">어느 박물관의 입장객 수와 입장료 사이의 대응 관계를 나타낸 표입니다. 입장객 수와 입장료 사이의 대응 관계를 잘못 설명한 사람의 이름을 고르고, 내용을 옳게 고쳐 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="flex justify_center dir_col gap_30">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">입장객 수(명)</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">입장료(원)</th>
+                  <td>1500</td>
+                  <td>3000</td>
+                  <td>4500</td>
+                  <td>6000</td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="img_box">
+            <div class="img_wrap">
+              <img src="../../common_practice/img/EMA513_04_IH/0006_img.png" alt="" />
+              <span class="name1" lang="y">재윤</span>
+              <span class="text1" lang="y">입장객 수를 ☆, 입장료를 ♡라고 할 때,<br />두 양 사이의 대응 관계를 식으로 나타내면<br />♡=☆×1500이야.</span>
+              <span class="name2" lang="y">채은</span>
+              <span class="text2" lang="y">두 양 사이의 대응 관계를<br />나타낸 식 ◇=◎÷1500에서<br />◎는 입장객 수, ◇는 입장료야.</span>
+            </div>
+          </div>
+        </div>
+        <div class="question_box dir_col">
+          <div class="flex align_center gap_10">
+            <span class="label_gray" lang="y">이름</span>
+            <div class="input_wrap_underline">
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="채은">
+                  <option></option>
+                  <option value="재윤" lang="y">재윤</option>
+                  <option value="채은" lang="y">채은</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap_10">
+            <span class="label_gray mt_12" lang="y">옳게 고치기</span>
+            <div class="input_wrap_underline">
+              <div class="input_wrap">
+                <math-field></math-field>
+                <div class="example_box">
+                  <p lang="y">두 양 사이의 대응 관계를 나타낸 식 ◇=◎÷1500에서 ◎는 입장료, ◇는 입장객 수야.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">입장료는 입장객 수의 1500배이므로<br />(입장료) = (입장객 수) × 1500입니다.</p>
+                <p lang="y">또는 입장객 수는 입장료를 1500으로 나눈 것과 같으므로<br />(입장객 수) = (입장료) ÷ 1500입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit">전송</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

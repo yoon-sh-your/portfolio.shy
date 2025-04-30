@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_03_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_03_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">옳게 계산한 사람의 이름을 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_120">
+          <div class="flex align_end gap_26">
+            <div class="img_box">
+              <img src="./../../common_practice/img/EMA511_03_IH/0004_img.png" alt="" />
+              <div class="cont_box">
+                <div class="question_box">
+                  <span class="name1" lang="y">준희</span>
+                  <span class="txt flex align_center gap_12">72÷(12×3)<br />=72</span>
+                </div>
+                <div class="question_box">
+                  <span class="name2" lang="y">은서</span>
+                  <span class="txt flex align_center gap_12">72÷(12×3)<br />=2</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="은서">
+                <option></option>
+                <option value="준희"></option>
+                <option value="은서"></option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>24÷(2×6)=24÷12=2</p>
+                <p lang="y">따라서 옳게 계산한 사람은 은서입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

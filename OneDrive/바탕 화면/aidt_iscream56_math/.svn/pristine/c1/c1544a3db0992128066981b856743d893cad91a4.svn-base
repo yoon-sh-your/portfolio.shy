@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_12_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema523_su_12.css" />
+
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_12_su_0004">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="3_pink" lang="y">선대칭도형에서 대칭축의 수가 많은 것부터 차례대로 기호를 끌어다 놓으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center dir_col align_center gap_20">
+          <div class="figure_wrap">
+            <div class="figure_triangle">
+              <span lang="y" class="txt txt-1">가</span>
+              <img src="../../common_contents/img/EMA523_12_SU/0004_content01.svg" alt="도형 이미지">
+            </div>
+            <div class="figure_triangle">
+              <span lang="y" class="txt txt-1">나</span>
+              <img src="../../common_contents/img/EMA523_12_SU/0004_content02.svg" alt="도형 이미지">
+            </div>
+            <div class="figure_triangle">
+              <span lang="y" class="txt txt-1">다</span>
+              <img src="../../common_contents/img/EMA523_12_SU/0004_content03.svg" alt="도형 이미지">
+            </div>
+          </div>
+          <div class="dragndrop_fraction_wrap">
+            <div class="drag_group">
+                <div class="drag_item" data-pair="1" data-value="가">가</div>
+                <div class="drag_item" data-pair="1" data-value="나">나</div>
+                <div class="drag_item" data-pair="1" data-value="다">다</div>
+            </div>
+            <div class="drop_group">
+                <div class="drop_item" data-pair="1" data-answer-single="다"></div>,
+                <div class="drop_item" data-pair="1" data-answer-single="나"></div>,
+                <div class="drop_item" data-pair="1" data-answer-single="가"></div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

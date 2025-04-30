@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_06_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_06_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y">가로가 4.5 m, 세로가 3.5 m인 직사각형 모양의 꽃밭이 있습니다. 이 꽃밭의 가로와 세로를 각각 1.2배씩 늘여 새로운 꽃밭을 만들려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page">
+          <div class="flex justify_center">
+            <div class="question_box">
+              <div class="img"><img src="../../common_practice/img/EMA524_06_IH/0007_img.png" alt="" /></div>
+              <div class="flex dir_col gap_20">
+                <div class="flex align_center gap_4">
+                  가로 (
+                  <div class="input_wrap top">
+                    <math-field data-answer-single="5.4"></math-field>
+                  </div>
+                  )m
+                </div>
+                <div class="flex align_center gap_4">
+                  세로 (
+                  <div class="input_wrap">
+                    <math-field data-answer-single="4.2"></math-field>
+                  </div>
+                  )m
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(새로운 꽃밭의 가로)=4.5×1.2=5.4 (m)(새로운 꽃밭의 세로)=3.5×1.2=4.2 (m)</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page">
+          <div class="flex justify_center">
+            <div class="question_box">
+              <div class="img"><img src="../../common_practice/img/EMA524_06_IH/0007_img.png" alt="" /></div>
+              <div class="flex align_center gap_4">
+                (
+                <div class="input_wrap">
+                  <math-field data-answer-single="22.68"></math-field>
+                </div>
+                )㎡
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(새로운 꽃밭의 넓이)=5.4×4.2=22.68 (㎡)</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

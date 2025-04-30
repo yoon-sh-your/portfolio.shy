@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_06_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_06_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">가장 먼저 계산해야 하는 부분에 <span class="ico_round"></span>표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="expression_wrap">
+          <div class="question_box">
+            <div class="question_box_inwrap">
+              <span>56-18÷2+3×5</span>
+              <div class="boolean_wrap">
+                <button class="button1" data-answer-single="false"></button>
+                <button class="button2" data-answer-single="true"></button>
+                <button class="button3" data-answer-single="false"></button>
+                <button class="button4" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="question_box">
+            <div class="question_box_inwrap">
+              <span>(56-18)÷2+3×5</span>
+              <div class="boolean_wrap">
+                <button class="button5" data-answer-single="true"></button>
+                <button class="button6" data-answer-single="false"></button>
+                <button class="button7" data-answer-single="false"></button>
+                <button class="button8" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">덧셈, 뺄셈, 곱셈, 나눗셈이 섞여 있는 식은 곱셈과 나눗셈을 먼저 계산합니다.</p>
+                <p class="text_bullet" lang="y">(<span class="gh"></span>)가 있는 식은 (<span class="gh"></span>) 안을 가장 먼저 계산합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

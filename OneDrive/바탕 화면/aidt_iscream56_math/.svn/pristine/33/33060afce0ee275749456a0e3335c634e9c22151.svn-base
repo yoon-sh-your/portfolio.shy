@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema526_su_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_su_09_0003.css" />
+    <script src="../../common_contents/js/ema526_SU_09_0003.js"></script>
+</head>
+<body>
+    <div id="app_wrap" class="ema526_su_0003">
+        <section class="contents">
+            <form id="form">
+                <div class="form_wrap flex align_start justify_center">
+                    <div class="form_group">
+                        <div class="input_wrap">
+                            <math-field class="textarea" data-answer-single="정답"></math-field>
+                        </div>
+                        <div class="form_grid">
+                            <div class="form_row">
+                                <div>이름</div>
+                                <div>
+                                    기록(<div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>)
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_1_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_1_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_1_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_1_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div>평균</div>
+                                    <div class="calculator-group">
+                                        <!-- 계산기 팝업 -->
+                                        <div class="calculator cal-popup" tabindex="-1">
+                                            <div class="calculator-area">
+                                                <input type="text" class="cal-display" disabled value="0" />
+                                                <div class="calculator-buttons">
+                                                    <button type="button" class="btn-calculator" data-value="AC">AC</button>
+                                                    <button type="button" class="btn-calculator" data-value="CE">CE</button>
+                                                    <button type="button" class="btn-calculator" data-value="%">%</button>
+                                                    <button type="button" class="btn-calculator" data-value="/">/</button>
+                                                    <button type="button" class="btn-calculator" data-value="7">7</button>
+                                                    <button type="button" class="btn-calculator" data-value="8">8</button>
+                                                    <button type="button" class="btn-calculator" data-value="9">9</button>
+                                                    <button type="button" class="btn-calculator" data-value="*">*</button>
+                                                    <button type="button" class="btn-calculator" data-value="4">4</button>
+                                                    <button type="button" class="btn-calculator" data-value="5">5</button>
+                                                    <button type="button" class="btn-calculator" data-value="6">6</button>
+                                                    <button type="button" class="btn-calculator" data-value="-">-</button>
+                                                    <button type="button" class="btn-calculator" data-value="1">1</button>
+                                                    <button type="button" class="btn-calculator" data-value="2">2</button>
+                                                    <button type="button" class="btn-calculator" data-value="3">3</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-zero" data-value="0">0</button>
+                                                    <button type="button" class="btn-calculator" data-value=".">.</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-result" data-value="=">=</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-plus" data-value="+">+</button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-close-calculator" tabindex="0" aria-label="계산기 닫기">닫기</button>
+                                            <div class="calculator-tail"></div>
+                                        </div>
+                                        <!-- ./계산기 팝업 -->
+                                        <button type="button" class="btnFormula btn-toggle-calculator"></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_result" id="input_1_result" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="input_wrap">
+                            <math-field class="textarea" data-answer-single="정답"></math-field>
+                        </div>
+                        <div class="form_grid">
+                            <div class="form_row">
+                                <div>이름</div>
+                                <div>
+                                    기록(<div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>)
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_2_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_2_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_2_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_2_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div>평균</div>
+                                    <div class="calculator-group">
+                                        <!-- 계산기 팝업 -->
+                                        <div class="calculator cal-popup" tabindex="-1">
+                                            <div class="calculator-area">
+                                                <input type="text" class="cal-display" disabled value="0" />
+                                                <div class="calculator-buttons">
+                                                    <button type="button" class="btn-calculator" data-value="AC">AC</button>
+                                                    <button type="button" class="btn-calculator" data-value="CE">CE</button>
+                                                    <button type="button" class="btn-calculator" data-value="%">%</button>
+                                                    <button type="button" class="btn-calculator" data-value="/">/</button>
+                                                    <button type="button" class="btn-calculator" data-value="7">7</button>
+                                                    <button type="button" class="btn-calculator" data-value="8">8</button>
+                                                    <button type="button" class="btn-calculator" data-value="9">9</button>
+                                                    <button type="button" class="btn-calculator" data-value="*">*</button>
+                                                    <button type="button" class="btn-calculator" data-value="4">4</button>
+                                                    <button type="button" class="btn-calculator" data-value="5">5</button>
+                                                    <button type="button" class="btn-calculator" data-value="6">6</button>
+                                                    <button type="button" class="btn-calculator" data-value="-">-</button>
+                                                    <button type="button" class="btn-calculator" data-value="1">1</button>
+                                                    <button type="button" class="btn-calculator" data-value="2">2</button>
+                                                    <button type="button" class="btn-calculator" data-value="3">3</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-zero" data-value="0">0</button>
+                                                    <button type="button" class="btn-calculator" data-value=".">.</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-result" data-value="=">=</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-plus" data-value="+">+</button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-close-calculator" tabindex="0" aria-label="계산기 닫기">닫기</button>
+                                            <div class="calculator-tail"></div>
+                                        </div>
+                                        <!-- ./계산기 팝업 -->
+                                        <button type="button" class="btnFormula btn-toggle-calculator"></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_result" id="input_2_result" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="input_wrap">
+                            <math-field class="textarea" data-answer-single="정답"></math-field>
+                        </div>
+                        <div class="form_grid">
+                            <div class="form_row">
+                                <div>이름</div>
+                                <div>
+                                    기록(<div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>)
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_3_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_3_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_3_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_3_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div>평균</div>
+                                    <div class="calculator-group">
+                                        <!-- 계산기 팝업 -->
+                                        <div class="calculator cal-popup" tabindex="-1">
+                                            <div class="calculator-area">
+                                                <input type="text" class="cal-display" disabled value="0" />
+                                                <div class="calculator-buttons">
+                                                    <button type="button" class="btn-calculator" data-value="AC">AC</button>
+                                                    <button type="button" class="btn-calculator" data-value="CE">CE</button>
+                                                    <button type="button" class="btn-calculator" data-value="%">%</button>
+                                                    <button type="button" class="btn-calculator" data-value="/">/</button>
+                                                    <button type="button" class="btn-calculator" data-value="7">7</button>
+                                                    <button type="button" class="btn-calculator" data-value="8">8</button>
+                                                    <button type="button" class="btn-calculator" data-value="9">9</button>
+                                                    <button type="button" class="btn-calculator" data-value="*">*</button>
+                                                    <button type="button" class="btn-calculator" data-value="4">4</button>
+                                                    <button type="button" class="btn-calculator" data-value="5">5</button>
+                                                    <button type="button" class="btn-calculator" data-value="6">6</button>
+                                                    <button type="button" class="btn-calculator" data-value="-">-</button>
+                                                    <button type="button" class="btn-calculator" data-value="1">1</button>
+                                                    <button type="button" class="btn-calculator" data-value="2">2</button>
+                                                    <button type="button" class="btn-calculator" data-value="3">3</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-zero" data-value="0">0</button>
+                                                    <button type="button" class="btn-calculator" data-value=".">.</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-result" data-value="=">=</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-plus" data-value="+">+</button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-close-calculator" tabindex="0" aria-label="계산기 닫기">닫기</button>
+                                            <div class="calculator-tail"></div>
+                                        </div>
+                                        <!-- ./계산기 팝업 -->
+                                        <button type="button" class="btnFormula btn-toggle-calculator"></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_result" id="input_3_result" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <div class="input_wrap">
+                            <math-field class="textarea" data-answer-single="정답"></math-field>
+                        </div>
+                        <div class="form_grid">
+                            <div class="form_row">
+                                <div>이름</div>
+                                <div>
+                                    기록(<div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>)
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_4_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_4_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_4_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_value input_4_value" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_row">
+                                <div>
+                                    <div>평균</div>
+                                    <div class="calculator-group">
+                                        <!-- 계산기 팝업 -->
+                                        <div class="calculator cal-popup" tabindex="-1">
+                                            <div class="calculator-area">
+                                                <input type="text" class="cal-display" disabled value="0" />
+                                                <div class="calculator-buttons">
+                                                    <button type="button" class="btn-calculator" data-value="AC">AC</button>
+                                                    <button type="button" class="btn-calculator" data-value="CE">CE</button>
+                                                    <button type="button" class="btn-calculator" data-value="%">%</button>
+                                                    <button type="button" class="btn-calculator" data-value="/">/</button>
+                                                    <button type="button" class="btn-calculator" data-value="7">7</button>
+                                                    <button type="button" class="btn-calculator" data-value="8">8</button>
+                                                    <button type="button" class="btn-calculator" data-value="9">9</button>
+                                                    <button type="button" class="btn-calculator" data-value="*">*</button>
+                                                    <button type="button" class="btn-calculator" data-value="4">4</button>
+                                                    <button type="button" class="btn-calculator" data-value="5">5</button>
+                                                    <button type="button" class="btn-calculator" data-value="6">6</button>
+                                                    <button type="button" class="btn-calculator" data-value="-">-</button>
+                                                    <button type="button" class="btn-calculator" data-value="1">1</button>
+                                                    <button type="button" class="btn-calculator" data-value="2">2</button>
+                                                    <button type="button" class="btn-calculator" data-value="3">3</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-zero" data-value="0">0</button>
+                                                    <button type="button" class="btn-calculator" data-value=".">.</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-result" data-value="=">=</button>
+                                                    <button type="button" class="btn-calculator btn-calculator-plus" data-value="+">+</button>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-close-calculator" tabindex="0" aria-label="계산기 닫기">닫기</button>
+                                            <div class="calculator-tail"></div>
+                                        </div>
+                                        <!-- ./계산기 팝업 -->
+                                        <button type="button" class="btnFormula btn-toggle-calculator"></button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="input_wrap">
+                                        <math-field class="input_result" id="input_4_result" type="number" data-answer-single="정답"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn_area">
+                    <button type="button" class="btnType key">입력타입토글</button>
+                    <button type="button" class="btnReset" id="btnReset">리셋</button>
+                    <button class="btnSubmit">확인</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

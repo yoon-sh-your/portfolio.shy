@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema521_su_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+     <link rel="stylesheet" href="./../../common_contents/css/ema521_04.css" />
+     <script src="../../common_contents/js/ema521_SU_0004.js"></script>
+</head>
+<body>
+    <div id="app_wrap" class="ema521_su_0004">
+        <section class="contents">
+            <form id="form">
+                <div class="form_wrap flex dir_col align_center justify_center">
+                    <div class="board_area">
+                        <div class="start_wrap">
+                            <button lang="y" type="button" class="btn btn_start" id="btn_start">놀이 시작하기!</button>
+                        </div>
+                        <div class="board_wrap">
+                            <div class="board" id="board" lang="y"></div>
+                        </div>
+                        <div class="submit_wrap">
+                            <div class="input_wrap">
+                                <math-field id="answer_input" type="number" placeholder=" " data-answer-single="정답"></math-field>
+                            </div>
+                            <button lang="y" type="button" class="btn btn_input btn_reset" id="btn_reset_input">리셋</button>
+                            <button lang="y" type="button" class="btn btn_input btn_check" id="btn_check_input">확인</button>
+                        </div>
+                    </div>
+                    <div class="result_wrap">
+                        <div class="result_label_row">
+                            <div class="result_label_col">1</div>
+                            <div class="result_label_col">2</div>
+                            <div class="result_label_col">3</div>
+                            <div class="result_label_col">4</div>
+                            <div class="result_label_col">5</div>
+                            <div class="result_label_col">6</div>
+                            <div class="result_label_col">7</div>
+                            <div class="result_label_col">8</div>
+                            <div class="result_label_col">9</div>
+                            <div class="result_label_col">10</div>
+                            <div class="result_label_col">11</div>
+                            <div class="result_label_col">12</div>
+                            <div class="result_label_col">13</div>
+                            <div class="result_label_col">14</div>
+                            <div class="result_label_col">15</div>
+                            <div class="result_label_col">16</div>
+                            <div class="result_label_col">17</div>
+                            <div class="result_label_col">18</div>
+                            <div class="result_label_col">19</div>
+                            <div class="result_label_col">20</div>
+                        </div>
+                        <div class="result_row">
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                            <div class="result_col">
+                                <input class="result_input" type="text" disabled value="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn_line">
+                    <div class="btn_area">
+                        <button lang="y" type="button" class="btnType key">입력타입토글</button>
+                    </div>
+                    <div class="form_btn_area">
+                        <button lang="y" type="button" class="btn btn_reset btn_reset_form" id="btn_reset_form">리셋</button>
+                        <button lang="y" class="btn btn_submit btn_submit_form" id="btn_submit_form">확인</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

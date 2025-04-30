@@ -1,0 +1,216 @@
+/* ema624_08_su_0002 */
+
+.ema624_08_su_0002 .page_1 .flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.ema624_08_su_0002 .picture_area {
+  position: relative;
+}
+
+.ema624_08_su_0002 .page_1 .title_box p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+.ema624_08_su_0002 .page_1 .main_box p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #9b1310;
+  text-indent: -24px;
+  padding-left: 24px;
+}
+
+.ema624_08_su_0002 .page_1 .title_box {
+  position: absolute;
+  top: 28px;
+  left: 314px;
+}
+.ema624_08_su_0002 .page_1 .main_box {
+  position: absolute;
+  top: 145px;
+  left: 97px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ema624_08_su_0002 .answer1 {
+  flex-direction: row;
+  align-items: center;
+}
+.ema624_08_su_0002 .answer2 {
+  flex-direction: row;
+  align-items: center;
+}
+
+.ema624_08_su_0002 .answer1 span {
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema624_08_su_0002 .answer2 span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema624_08_su_0002 .input {
+  display: flex;
+  justify-content: center;
+}
+
+.ema624_08_su_0002 .page_6 .flex,
+.ema624_08_su_0002 .page_7 .flex {
+  position: relative;
+}
+
+.ema624_08_su_0002 .hint_wrap {
+  position: absolute;
+  bottom: -64px;
+  left: 425px;
+}
+
+.ema624_08_su_0002 .hint_img {
+  position: relative;
+}
+
+.ema624_08_su_0002 .bubble {
+  position: absolute;
+  top: 16px;
+  left: 29px;
+  text-align: center;
+}
+
+.ema624_08_su_0002 .bubble p {
+  font-size: 14px;
+}
+
+.empty_box {
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  border-radius: 4px;
+  border: solid 2px #3b71fe;
+  padding: 0;
+}
+
+.ema624_08_su_0002 .input_wrapping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ema624_08_su_0002 .input_wrapping span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema624_08_su_0002 .page_13 .input_wrapping {
+  flex-direction: column;
+  gap: 40px;
+}
+.ema624_08_su_0002 .page_9 math-field,
+.ema624_08_su_0002 .page_11 math-field {
+  width: 160px;
+}
+.ema624_08_su_0002 .page_9 .example_box,
+.ema624_08_su_0002 .page_11 .example_box {
+  position: absolute;
+  top: 100%;
+}
+
+/* ema624_08_su_0003 */
+
+.ema624_08_su_0003 .flex {
+  flex-direction: column;
+}
+
+.ema624_08_su_0003 .img_a {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.ema624_08_su_0003 .text_title p,
+.ema624_08_su_0003 .main_txt p {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema624_08_su_0003 .text_title p {
+  color: #fff;
+}
+.ema624_08_su_0003 .main_txt p {
+  color: #9b1310;
+}
+.ema624_08_su_0003 .main_txt p:nth-child(2) {
+  text-indent: -30px;
+  padding-left: 30px;
+}
+.ema624_08_su_0003 .text_title {
+  position: absolute;
+  top: 22px;
+  left: 783px;
+}
+.ema624_08_su_0003 .main_txt {
+  position: absolute;
+  top: 118px;
+  left: 526px;
+}
+
+.ema624_08_su_0003 .input_wrap span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema624_08_su_0003 .input_box_area {
+  padding-left: 140px;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.ema624_08_su_0003 .input_wrap {
+  flex-direction: row;
+  align-items: center;
+}
+
+.ema624_08_su_0003 .input_wrap math-field.hint + .text_hint {
+  left: 60px;
+}
+
+.ema624_08_su_0002 .page_10 .input_wrap math-field.hint + .text_hint {
+  left: -9px;
+}
+.ema624_08_su_0002 .page_12 .input_wrap math-field.hint + .text_hint {
+  left: -9px;
+}
+.ema624_08_su_0002 .page_13 .answer2 math-field.hint + .text_hint {
+  left: 71px;
+}
+.ema624_08_su_0002 .page_13 .answer1 math-field.hint + .text_hint {
+  left: 60px;
+}
+
+.ema624_08_su_0002[data-current-page='page_1'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_1'] .btnType,
+.ema624_08_su_0002[data-current-page='page_1'] .btnReset,
+.ema624_08_su_0002[data-current-page='page_1'] .btnCheck,
+.ema624_08_su_0002[data-current-page='page_2'] .btnCheck,
+.ema624_08_su_0002[data-current-page='page_3'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_4'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_5'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_6'] .btnCheck,
+.ema624_08_su_0002[data-current-page='page_7'] .btnCheck,
+.ema624_08_su_0002[data-current-page='page_8'] .btnCheck,
+.ema624_08_su_0002[data-current-page='page_9'] .btnCheck,
+.ema624_08_su_0002[data-current-page='page_10'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_11'] .btnCheck,
+.ema624_08_su_0002[data-current-page='page_12'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_13'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_14'] .btnSubmit,
+.ema624_08_su_0002[data-current-page='page_14'] .btnType,
+.ema624_08_su_0002[data-current-page='page_14'] .btnReset,
+.ema624_08_su_0002[data-current-page='page_14'] .btnCheck {
+  display: none;
+}

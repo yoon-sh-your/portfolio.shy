@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA613_10_SU_0004_s</title>
+        <link rel="stylesheet" href="https://unpkg.com/mathlive/dist/mathlive.core.css" />
+        <script src="https://unpkg.com/mathlive"></script>
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema613_10.css" />
+        <style></style>
+    </head>
+    <body>
+        <div id="app_wrap" class="ema613_10_su_0004">
+            <section class="table-section">
+                <table>
+                    <colgroup>
+                        <col width="16.6%" />
+                        <col width="16.6%" />
+                        <col width="16.6%" />
+                        <col width="16.6%" />
+                        <col width="16.6%" />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>6.25÷5</td>
+                            <td>6.25÷5</td>
+                            <td>10.15÷5</td>
+                            <td>9÷5</td>
+                            <td class="calc">
+                                <!-- <span>계산기</span> -->
+                                24.36÷7
+                            </td>
+                            <td class="bonus">원하는 땅 한 칸<br />색칠하기</td>
+                        </tr>
+                        <tr>
+                            <td>11.2÷5</td>
+                            <td>5.6÷8</td>
+                            <td class="stay">한 번 쉬기</td>
+                            <td>10÷8</td>
+                            <td>33÷5</td>
+                            <td>11.2÷5</td>
+                        </tr>
+                        <tr>
+                            <td>9.9÷6</td>
+                            <td>26÷5</td>
+                            <td class="calc">
+                                <!-- <span>계산기</span> -->
+                                10.8÷24
+                            </td>
+                            <td>19.2÷6</td>
+                            <td>3.6÷5</td>
+                            <td class="calc">
+                                <!-- <span>계산기</span> -->
+                                36.72÷12
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5÷4</td>
+                            <td>17.2÷2</td>
+                            <td>8.12÷4</td>
+                            <td class="calc">
+                                <!-- <span>계산기</span> -->
+                                85.05÷7
+                            </td>
+                            <td class="stay">한 번 쉬기</td>
+                            <td>0.6÷4</td>
+                        </tr>
+                        <tr>
+                            <td class="bonus">원하는 땅 한 칸<br />색칠하기</td>
+                            <td>13.5÷9</td>
+                            <td class="launch" colspan="2" rowspan="2">발사</td>
+                            <td>17.2÷2</td>
+                            <td>17.2÷2</td>
+                        </tr>
+                        <tr>
+                            <td class="calc">
+                                <!-- <span>계산기</span> -->
+                                43.2÷9
+                            </td>
+                            <td>44.7÷2</td>
+                            <td>14.28÷6</td>
+                            <td>14.28÷6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="clip"></div>
+            </section>
+            <section class="info-section">
+                <div class="timer-wrap">
+                    <div class="timer-box">
+                        <label><input type="number" id="minute" min="0" max="10" value="0" /> <span>분</span></label>
+                        <label><input type="number" id="second" min="0" max="60" value="0" /> <span>초</span></label>
+                    </div>
+                    <button id="startBtn" class="btnCheck" disabled>확인</button>
+                </div>
+                <ul class="score-wrap">
+                    <li>
+                        <p>1번 <em>색칠한 칸</em></p>
+                        <p><span id="score1"></span>개</p>
+                    </li>
+                    <li>
+                        <p>2번 <em>색칠한 칸</em></p>
+                        <p><span id="score2"></span>개</p>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="modal modal-type1" id="modal1">
+                <div class="modal-inner">
+                    <div class="quiz">
+                        <p>
+                            <span class="number">99÷6</span>
+                            =
+                        </p>
+                        <input type="number" />
+                        <button class="check">확인</button>
+                    </div>
+                    <div class="actions">
+                        <span class="label">친구 확인</span>
+                        <div class="circle-group">
+                            <button class="circle ok">O</button>
+                            <button class="circle no">X</button>
+                        </div>
+                    </div>
+                    <div class="colors">
+                        <button class="color yellow" disabled="disabled">노란색 칠하기</button>
+                        <button class="color blue" disabled="disabled">파란색 칠하기</button>
+                    </div>
+                    <button class="close">×</button>
+                </div>
+            </div>
+
+            <div class="modal modal-type2" id="modal2">
+                <div class="modal-inner">
+                    <div class="quiz">
+                        <p>
+                            <span class="number">99÷6</span>
+                            =
+                        </p>
+                        <input type="number" />
+                        <button class="calc-icon">계산기</button>
+                        <button class="check">확인</button>
+                    </div>
+                    <div class="actions">
+                        <span class="label">친구 확인</span>
+                        <div class="circle-group">
+                            <button class="circle ok">O</button>
+                            <button class="circle no">X</button>
+                        </div>
+                    </div>
+                    <div class="colors">
+                        <button class="color yellow" disabled="disabled">노란색 칠하기</button>
+                        <button class="color blue" disabled="disabled">파란색 칠하기</button>
+                    </div>
+                    <button class="close">×</button>
+                </div>
+            </div>
+
+            <div class="modal modal-type3" id="modal3">
+                <div class="modal-inner">
+                    <div class="colors">
+                        <button class="color yellow" disabled="disabled">노란색 칠하기</button>
+                        <button class="color blue" disabled="disabled">파란색 칠하기</button>
+                    </div>
+                    <button class="close">×</button>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <div class="device_change_wrap">
+                    <button class="device_change" lang="y">대표 기기 변경하기</button>
+                </div>
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button class="btnReset btnBgDefault" lang="y">리셋</button>
+                <button class="btnSubmit btnBgDefault" lang="y">확인</button>
+            </div>
+            <script src="../../common_contents/js/ema613_10_0004.js"></script>
+        </div>
+    </body>
+</html>

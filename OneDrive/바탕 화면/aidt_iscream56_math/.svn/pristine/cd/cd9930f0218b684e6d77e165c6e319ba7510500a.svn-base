@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_08_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_08_su_0003">
+        <section class="title type2">
+            <h2 data-head="3" lang="y">
+                <div class="fraction_row">
+                  <div class="fraction_inn">
+                    달콤 가게에서는 무
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>4</span>
+                    </span>
+                    을 900원에, 새콤 가게에서는 무
+                    <span class="fraction_box">
+                      <span>8</span>
+                      <span>9</span>
+                    </span>㎏
+                    을 1600원에 판매하고 있습니다. 어느 가게에서 무를 사는 것이 더
+                  </div>
+                  저렴한지 구해 봅시다.
+                </div>
+              </h2>
+        </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <!-- <div class="row">
+            <span class="nm" lang="y">달콤 가게</span>
+            <span class="nm" lang="y">새콤 가게</span>
+          </div> -->
+          <div class="boolean_wrap">
+            <button data-answer-single="true">달콤 가게</button>
+            <button data-answer-single="false">새콤 가게</button>
+          </div>  
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+        </div>
+      </div>
+      </section>
+    </div>
+  </body>
+</html>

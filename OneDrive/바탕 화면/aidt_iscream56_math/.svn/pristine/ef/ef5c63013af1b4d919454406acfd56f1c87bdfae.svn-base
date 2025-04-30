@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_04_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema525_04_ih_0006.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star2" lang="y">직육면체에서 색칠한 두 면과 동시에 수직인 면을 모두 찾아 쓰려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y" class="title" lang="y">면 ㄱㄴㄷㄹ과 수직인 면에 모두 ○표, 면 ㄷㅅㅇㄹ과 수직인 면에 모두 △표 하세요.</h3>
+          <div class="flex justify_center gap_60">
+            <div class="img"><img src="../../common_practice/img/EMA525_04_IH/0006_img.svg" alt="" /></div>
+            <div class="drag_checkout">
+              <div class="draggable_wrap">
+                <div class="single_draggable draggable circle"></div>
+                <div class="single_draggable draggable triangle"></div>
+              </div>
+              <div class="drag_group g1" data-group-limit="6" data-answer-single="[[true, false], [false, true], [true, true], [false, true], [true, true], [true, false]]">
+                <div class="droppable" data-value="false false">면 ㄱㄴㄷㄹ</div>
+                <div class="droppable" data-value="false false">면 ㄴㅂㅁㄱ</div>
+                <div class="droppable" data-value="false false">면 ㄴㅂㅅㄷ</div>
+                <div class="droppable" data-value="false false">면 ㄷㅅㅇㄹ</div>
+                <div class="droppable" data-value="false false">면 ㄱㅁㅇㄹ</div>
+                <div class="droppable" data-value="false false">면 ㅁㅂㅅㅇ</div>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">면 ㄱㄴㄷㄹ과 수직인 면은 면 ㄴㅂㅅㄷ, 면 ㄷㅅㅇㄹ, 면 ㄱㅁㅇㄹ, 면 ㄴㅂㅁㄱ입니다.</p>
+                  <p lang="y">면 ㄷㅅㅇㄹ과 수직인 면은 면 ㄱㄴㄷㄹ, 면 ㄴㅂㅅㄷ, 면 ㅁㅂㅅㅇ, 면 ㄱㅁㅇㄹ입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y" class="title" lang="y">색칠한 두 면과 동시에 수직인 면을 모두 찾아 고르세요.</h3>
+          <div class="flex justify_center align_center gap_120">
+            <div class="img"><img src="../../common_practice/img/EMA525_04_IH/0006_img.svg" alt="" /></div>
+            <div class="question_box">
+              <span lang="y">면 ㄱㄴㄷㄹ</span>
+              <span lang="y">면 ㄴㅂㅁㄱ</span>
+              <span lang="y">면 ㄴㅂㅅㄷ</span>
+              <span lang="y">면 ㄷㅅㅇㄹ</span>
+              <span lang="y">면 ㄱㅁㅇㄹ</span>
+              <span lang="y">면 ㅁㅂㅅㅇ</span>
+              <div class="boolean_wrap before">
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="true"></button>
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="true"></button>
+                <button type="button" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">면 ㄱㄴㄷㄹ, 면 ㄷㅅㅇㄹ과 동시에 수직인 면은 면 ㄴㅂㅅㄷ, 면 ㄱㅁㅇㄹ입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

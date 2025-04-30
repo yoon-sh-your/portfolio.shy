@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_03_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema511_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_03_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">학급 임원 48명이 6명씩 모둠을 만들어 자치회에서 운영할 활동을 정하려고 합니다. 한 모둠이 활동을 2가지씩 정한다면 자치회에서 운영할 활동은 몇 가지인지 알아봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3059 2163" fill="none">
+              <text fill="black" xml:space="preserve" lang="y">
+                <tspan x="887" y="1937.33">한 모둠에 6명이네.</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" lang="y">
+                <tspan x="1837" y="1895.33">한 모둠이 활동을</tspan>
+                <tspan x="1837" y="1967.33">2가지씩 정하면....</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA511_03_SU/0003_content.png" alt="자치회 활동 이미지" />
+            
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고 자치회에서 운영할 활동의 수를 어떻게 구할 수 있을지 이야기해 보세요.</h3>
+            <div class="input_wrap" data-hint-position="right">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">자치회 전체 학생 수를 한 모둠당 학생 수로 나누어 모둠의 수를 구하고, 모둠마다 정하는 활동의 수를 곱해서 구하면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

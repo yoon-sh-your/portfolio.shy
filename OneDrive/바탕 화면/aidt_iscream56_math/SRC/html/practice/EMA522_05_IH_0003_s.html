@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_05_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema522_05_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_05_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">곱이 7보다 큰 것에는 ○표, 7보다 작은 것에는 △표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="dragndrop_fraction_wrap">
+            <div class="imgwrap">
+              <div class="drag_item_group">
+                <div class="drag_item" data-pair="1" data-value="1">
+                  <img src="../../common_contents/img/EMA514_08_SU/0003_mark1.svg" alt="동그라미" />
+                </div>
+                <div class="drag_item" data-pair="2" data-value="2">
+                  <img src="../../common_contents/img/EMA514_08_SU/0003_mark2.svg" alt="세모" />
+                </div>
+              </div>
+              <div class="drop_group" data-answer-multi='[["1", "2"]]'>
+                <div class="drop_item" data-pair="3" data-answer-single="3">7 × 1</div>
+                <div class="drop_item" data-pair="1" data-answer-single="1">
+                  7 × 1
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span>
+                  </span>
+                </div>
+                <div class="drop_item" data-pair="2" data-answer-single="2">
+                  7 ×
+                  <span class="fraction_box">
+                    <span>9</span>
+                    <span>10</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <span>7×1=7<span class="text_bg_red">=</span>7</span>
+                </div>
+                <div class="flex align_center gap_10 mt_20">
+                  <span>7</span>
+                  <span>×</span>
+                  <span>1</span>
+                  <div class="fraction_box"><span>3</span><span>4</span></div>
+                  <span>=</span>
+                  <span>7×</span>
+                  <div class="fraction_box"><span>7</span><span>4</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>7×7</span><span>4</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>49</span><span>4</span></div>
+                  <span>=</span>
+                  <span>12</span>
+                  <div class="fraction_box"><span>1</span><span>4</span></div>
+                  <span><span class="text_bg_red">></span>7</span>
+                </div>
+                <div class="flex align_center gap_10 mt_20">
+                  <span>7</span>
+                  <span>×</span>
+                  <div class="fraction_box"><span>9</span><span>10</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>7×9</span><span>10</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>63</span><span>10</span></div>
+                  <span>=</span>
+                  <span>6</span>
+                  <div class="fraction_box"><span>3</span><span>10</span></div>
+                  <span><span class="text_bg_red"><</span>7</span>
+                </div>
+                <div class="flex align_center gap_10 mt_12 text_label">
+                  <span><span class="label reference">참고</span>7에 1보다 더 큰 수를 곱하면 곱은 7보다 더 커지고, 1보다 더 작은 수를 곱하면 곱은 7보다 더 작아집니다.</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- <button class="btnType key" lang="y">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

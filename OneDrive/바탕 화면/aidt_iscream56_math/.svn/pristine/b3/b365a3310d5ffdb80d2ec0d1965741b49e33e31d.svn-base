@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_10_IH_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_10_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2">
+          <span lang="y">똑같은 삼각형 2개로 평행사변형을 만들었습니다. </span>
+          <span class="nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center mt_20 dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA516_10_IH/0002_01.png" alt="" />
+            <p class="text_square_bg">1 ㎠</p>
+            <p class="text_square_bg">1 ㎠</p>
+            <p class="text1" lang="y">높이</p>
+            <p class="text2" lang="y">밑변</p>
+          </div>
+          <div class="input_area mt_40">
+            <div class="input_row" lang="y">(삼각형의 넓이)=(만든 평행사변형의 넓이)÷2</div>
+            <div class="input_row mt_10">
+              <span>=</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="4" class="w_136"></math-field>
+              </div>
+              <span>×</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="3" class="w_136"></math-field>
+              </div>
+              <span>÷2 =</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="6" class="w_136"></math-field>
+              </div>
+              <span>(㎠)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(삼각형의 넓이) =(만든 평행사변형의 넓이)÷2</p>
+                <p lang="y">
+                  <span class="blank"></span>
+                  =(밑변의 길이)×(높이)÷2
+                </p>
+                <p lang="y">
+                  <span class="blank"></span>
+                  =4×3÷2=6 (㎠)
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

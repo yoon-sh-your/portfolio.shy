@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMA515_01_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema515_01.css" />
+
+  <!-- 분수 표현 -->
+</head>
+
+<body>
+  <div id="app_wrap" class="ema515_01_su_0003">
+    <section class="title type2">
+      <h2 data-type="1" data-text="자기주도 2">
+        <span class="blue line" lang="y">배운 내용을 떠올려요</span>
+        <span lang="y">카드를 선택하여 이전에 배운 내용을 확인해 봅시다.</span>
+      </h2>
+    </section>
+
+    <section class="contents">
+      <ul class="letCheck">
+        <li>
+          <div class="cover pointer large"></div>
+          <div class="front">
+            <p class="f32b" lang="y">대분수를 가분수로, <br />가분수를 대분수로 나타내기</p>
+          </div>
+          <div class="back">
+            <div class="operations">
+              <div class="mixed_fraction">
+                <span>1</span>
+                <span class="fraction_box">
+                  <span>3</span>
+                  <span>5</span>
+                </span>
+              </div>
+              =
+              <div class="mixed_fraction">
+                <span></span>
+                <span class="fraction_box">
+                  <span>8</span>
+                  <span>5</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cover pointer large"></div>
+          <div class="front">
+            <p class="f32b" lang="y">분모가 같은 분수의 <br />덧셈과 뺄셈하기</p>
+          </div>
+          <div class="back">
+            <div class="operations">
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>2</span>
+                  <span>7</span>
+                </div>
+              </div>
+              +
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>7</span>
+                </div>
+              </div>
+              =
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>5</span>
+                  <span>7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="cover pointer large"></div>
+          <div class="front">
+            <p class="f32b" lang="y">통분하기</p>
+          </div>
+          <div class="back">
+            <p class="f32b">
+            <div class="operations">
+              <span class="bracket-left"></span>
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              ,
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+              </div>
+              <span class="bracket-right"></span>
+              →
+              <span class="bracket-left"></span>
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>9</span>
+                  <span>12</span>
+                </div>
+              </div>
+              ,
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>12</span>
+                </div>
+              </div>
+              <span class="bracket-right"></span>
+            </div>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="cover pointer large"></div>
+          <div class="front">
+            <p class="f32b" lang="y">분모가 다른 분수의 크기 <br />비교하기</p>
+          </div>
+          <div class="back">
+            <div class="operations">
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>5</span>
+                  <span>8</span>
+                </div>
+              </div>
+              <img src="../../common_contents/common/img/icon_arrow_right.svg" alt="">
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>7</span>
+                  <span>12</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="bubble_charactor" data-charactor="1" style="display: none;">
+        <div class="bubble" data-point-position="bottom left">
+          <p lang="y">카드를 한 번 더 선택하면</p>
+          <p lang="y">내용을 볼 수 있어요.</p>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <!-- 불필요한 태그 제외 후 사용 -->
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

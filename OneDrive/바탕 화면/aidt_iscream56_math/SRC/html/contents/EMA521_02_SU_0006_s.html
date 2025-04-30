@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_02_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_02.css" />
+    <script src="../../common_contents/js/ema512_04_0004.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_02_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">68 이상인 수에 모두 <span class="ico_circle"></span>표, 52 이하인 수에 모두 <span class="ico_triangle"></span>표 해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+
+        <div class="drag_checkout">
+          <div class="draggable_wrap">
+            <div class="single_draggable draggable circle"></div>
+            <div class="single_draggable draggable triangle"></div>
+          </div>
+
+          <div class="drag_group g1" data-group-limit="7" data-answer-single="[[false, false], [true, false], [false, true], [false, false], [false, true], [false, true], [true, false]]">
+            <div class="droppable" data-value="false false">54</div>
+            <div class="droppable" data-value="false false">48.7</div>
+            <div class="droppable" data-value="false false">75</div>
+            <div class="droppable" data-value="false false">67.9</div>
+            <div class="droppable" data-value="false false">68</div>
+            <div class="droppable" data-value="false false">68.3</div>
+            <div class="droppable" data-value="false false">52</div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

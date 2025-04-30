@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_01_SU_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_01_su.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_01_su_0001 intro_page">
+        <section class="title type1">
+            <h1 data-number="2" lang="y">분수의 곱셈</h1>
+            <button class="goal" onclick="openPop('.pop_goal_wrap')" lang="y">학습 목표</button>
+        </section>
+
+        <div class="pop_goal_wrap">
+            <div class="pop_goal">
+                <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+                <div class="pop_goal_inner">
+                    <label>이번 시간에 공부할 내용</label>
+                    <p>우리 주변에서 분수의 곱셈을 이용할 수 있는 상황들을 이야기해 보고, 이 단원에서 배울 내용을 생각해 봅시다.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="contents">
+            <div class="text_box">
+                <p class="f20b" lang="y">
+                    향유고래는 이빨을 가진 동물 중 가장 큰 동물이야.
+                    <div class="mixed_fraction">머리 길이가 몸길이의 <span class="fraction_box"><span>1</span><span>3</span></span>만큼이나 된대.</div>
+                    몸길이가 16 m라면 머리 길이는 몇 m일까?
+                </p>
+            </div>
+            <div class="input_area">
+                <label for="inputElement01" class="img" lang="y">그림은 어떤 상황을 나타내고 있나요?</label>
+                <div class="input_wrap">
+                    <math-field class="textarea" id="inputElement01" type="text" placeholder=" "></math-field>
+                    <ol class="example_box">
+                        <li lang="y">향유고래의 모습입니다.</li>
+                        placeholder=" "                  <li lang="y">향유고래가 바닷속을 헤엄치고 있습니다.</li>
+                        <li lang="y">향유고래는 이빨을 가진 동물 중 가장 큰 동물이라고 합니다.</li>
+                        <li lang="y">
+                            <p class="f24b fraction_row" lang="y">
+                                <span>향유고래의 머리 길이는 몸길이의</span>
+                                <span class="fraction_box"><span>1</span><span>3</span></span>
+                                <span>만큼이라고 합니다.</span>
+                            </p>
+                        </li>
+                        <li lang="y">향유고래의 몸길이가 16 m라면 머리 길이는 몇 m일지 궁금해하고 있습니다.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="info">(출처: 『중앙일보』, 2024년)</div>
+
+            <div class="btn_area">
+                <!-- 예시 필드에서 사용 -->
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSample">예시</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

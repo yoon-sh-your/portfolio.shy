@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_07_SU_0009_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+   <!-- 개별 -->
+   <link rel="stylesheet" href="./../../common_contents/css/ema616_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema616_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_07_su_0009 ">
+      <section class="title type2">
+        <h2 data-type="3" data-text="창의+">
+            <div>
+                <span lang="y">우리 주변에서 직육면체 모양의 물건을 찾아 겉넓이를 구하는 문제를 만들고, 친구와 바꾸어 해결해 봅시다.</span>
+                <button type="button" class="btn calculator">계산기</button>
+            </div>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="flex">
+          <div class="img_area">
+            <img
+              src="../../common_contents/img/EMA616_07_SU/616_07_11.png"
+              alt=""
+            />
+            <div class="title_a">
+                <p lang="y">문제 만들기</p>
+            </div>
+            <div class="input_area">
+              <div>
+                <span lang="y">가로가&nbsp;</span>
+                <div class="input_wrap answer2">
+                  <math-field
+                    data-answer-single="7"
+                  ></math-field>
+                  <span>㎝,&nbsp;</span>
+                </div>
+                <span>세로가&nbsp;</span>
+                <div class="input_wrap answer2">
+                  <math-field
+                    data-answer-single="3"
+                  ></math-field>
+                  <span>㎝,&nbsp;</span>
+                </div>
+                <span>높이가&nbsp;</span>
+                <div class="input_wrap answer2">
+                  <math-field
+                    data-answer-single="2"
+                  ></math-field>
+                  <span>㎝</span>
+                </div>
+                <span>인 직육면체 모양의</span>
+              </div>
+            <div>
+              <div class="input_wrap answer4">
+                <math-field
+                  data-answer-single="초콜릿 상자"
+                ></math-field>
+              </div>
+            <span>이/가 있습니다. 이&nbsp;</span>
+            <div class="input_wrap answer4">
+              <math-field data-answer-single="초콜릿 상자"></math-field>
+            </div>
+            <span>의 겉넓이는 몇 ㎠인가요?</span>
+          </div>
+        </div>
+        <div class="bottom_txt">
+          <span class="color_txt">답</span>
+            <div class="input_wrap answer3">
+                <math-field data-answer-single="82"></math-field>
+                <span>㎠</span>
+              </div>
+        </div>
+    </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

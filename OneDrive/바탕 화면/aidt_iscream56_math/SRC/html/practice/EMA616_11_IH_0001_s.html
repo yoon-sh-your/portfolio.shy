@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_11_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_09.css">
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_11.css">
+  </head>
+  <body>
+
+    <!-- 창의 퍼즐 -->
+    <div id="app_wrap" class="ema616_11_ih_0001">
+        <section class="title type2">
+            <h2 data-puzzle="orange" lang="y"> 
+            문제를 해결하여 미로를 빠져나가 보세요.
+        
+            <div class="picture_wrap" data-head="" data-title=" ">
+                <div class="img_box">
+                    <div class="img_wrap">
+                        <img src="../../common_practice/img/EMA616_11_IH/map1.png" alt="" />
+                        <!-- <div class="text_group">
+                            <span class="txt1" lang="y">출발</span>
+                            <span class="txt2" lang="y">도착</span>
+                            <span class="txt3" lang="y">공사중</span>
+                        </div> -->
+                    </div>
+                </div>
+                <button class="zoom"></button>
+            </div>
+        </h2>
+        </section>
+  
+        <section class="contents">
+         
+            <div class="flex justify_center">
+                <div class="map_area">
+                    <img src="../../common_practice/img/EMA616_11_IH/puzzle_img10002.png" alt="">
+                    <!-- <div class="text_group">
+                        <span class="txt1" lang="y">출발</span>
+                        <span class="txt2" lang="y">도착</span>
+                        <span class="txt3" lang="y">공사중</span>
+                    </div> -->
+
+                    <svg width="1000" height="668" viewBox="0 0 1000 668" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       
+
+                        <path class="load1" data-quiz="한 모서리의 길이가 1 ㎝인 정육면체의 부피는 1 ㎤입니다. (O, X) " data-left="O" data-right="X" data-true="X" 
+                        d="M191.464 148L224 176.5C230.5 182 237.261 194.71 226.94 211.021C214.04 231.41 183.171 281.456 192.847 393.133C193.064 396.922 194.2 405.8 197 411" 
+                        stroke="none" stroke-width="4"/>
+                
+
+                        <path class="load2" data-quiz="가로가 4 ㎝, 세로가 2 ㎝, 높이가 3 ㎝인 직육면체의 부피는  4×2×3=24(㎤)입니다.(O, X)" data-left="O" data-right="X" data-true="O" 
+                        d="M200 395.883C203.452 400.778 210.174 403.576 224.036 403.576C239.242 403.576 246.642 397.893 245.536 366.383C244.154 326.995 226.673 184.856 434 173.271C435.879 173.177 439.046 172.91 442.536 173.031"
+                         stroke="none" stroke-width="4"/>
+
+                        <path class="load3" data-quiz="1 ㎥는 1000000 ㎤입니다. " data-left="O" data-right="X" data-true="O" 
+                        d="M765 397.5C818.905 403.988 825.808 363.429 808.3 316.163C790.793 268.897 746.102 259.166 702.333 251.752C667.318 245.82 588.455 245.573 553.9 246.191C541.5 246.413 544 231.963 544 212.5C544 201.694 534.417 199.423 526.5 199.148" 
+                        stroke="none" stroke-width="4"/>
+
+
+                        <path class="load4" data-quiz="한 모서리의 길이가 3 ㎝인 정육면체의 겉넓이는 3×3×6=54 (㎠)입니다." data-left="O" data-right="X" data-true="X" 
+                        d="M762.998 397.498C761.309 396.262 752.907 398.804 751.498 409.998C749.942 422.368 732.998 460.498 595.971 452.348C583.378 451.267 558.284 457.724 558.652 492.2C559.113 535.295 568.563 553.88 622.929 554.343C677.295 554.807 804.916 559.441 851.45 467.689C862.661 449.772 883.24 398.644 875.868 337.477C873.872 328.981 873.933 311.341 890.151 308.746C895.154 306.989 903.138 305.562 910.498 307.157" 
+                        stroke="none" stroke-width="4"/>
+                        
+
+                        <path class="load5" 
+                        d="M914.932 614.036L868.5 576.501C846.016 556.483 856.821 539.672 864.5 529.787C908.269 472.326 916.921 344.894 909.549 321.724C906.702 312.774 900.373 308.649 893.5 307.16"
+                        stroke="none" stroke-width="4"/>
+
+                        <image id="obj_move" href="../../common_practice/img/EMA616_11_IH/kid.png" x="70" y="25" width="123" height="123"/>
+                    </svg>
+
+                    <span class="obj_arrival"><img src="../../common_practice/img/EMA616_11_IH/kid-2.png" alt="도착 이미지"></span>
+                </div>
+
+            </div>
+
+           <div class="btn_area">
+                
+                    <button class="btnCheck">확인</button>
+                  </div>
+            </div>
+        </section>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const obj = document.getElementById("obj_move");
+            const pathElements = document.querySelectorAll("svg path[class^='load']");
+            let currentPathIndex = 0;
+            let state = "ready"; // ready, moving, quiz
+    
+            function moveAlongPath(pathEl) {
+                state = "moving";
+    
+                const pathLength = pathEl.getTotalLength();
+                const speed = 200;
+                const duration = (pathLength / speed) * 1000;
+    
+                const fps = 60;
+                const steps = Math.round(duration / (1000 / fps));
+                let step = 0;
+    
+                const start = pathEl.getPointAtLength(0);
+                obj.setAttribute("x", start.x - obj.width.baseVal.value / 2);
+                obj.setAttribute("y", start.y - obj.height.baseVal.value / 2);
+                obj.setAttribute("transform", "scale(0.9)");
+    
+                const interval = setInterval(() => {
+                    const progress = step / steps;
+                    const isReversed = pathEl.classList.contains("load3") ||
+                   pathEl.classList.contains("load5");
+const point = pathEl.getPointAtLength((isReversed ? (1 - progress) : progress) * pathLength);
+    
+                    obj.setAttribute("x", point.x - obj.width.baseVal.value / 2);
+                    obj.setAttribute("y", point.y - obj.height.baseVal.value / 2);
+    
+                    step++;
+    
+                    if (step > steps) {
+                    clearInterval(interval);
+                    state = "quiz"; // 이동 완료 후 퀴즈 대기
+                    showQuiz(pathEl); // ✅ 자동으로 팝업 띄우기
+                }
+                }, 1000 / fps);
+            }
+    
+            function renderFractionHTML(str) {
+                return str
+                    .split("+")
+                    .map(part => {
+                        const mixedMatch = part.match(/^(\d+)\((\d+)\)\/\((\d+)\)$/); 
+                        const fractionMatch = part.match(/^\((\d+)\)\/\((\d+)\)$/);   
+    
+                        if (mixedMatch) {
+                            return `
+                                <div class="fraction_box_wrap">
+                                    <span>${mixedMatch[1]}</span>
+                                    <div class="fraction_box">
+                                        <span>${mixedMatch[2]}</span>
+                                        <span>${mixedMatch[3]}</span>
+                                    </div>
+                                </div>
+                            `;
+                        } else if (fractionMatch) {
+                            return `
+                                <div class="fraction_box">
+                                    <span>${fractionMatch[1]}</span>
+                                    <span>${fractionMatch[2]}</span>
+                                </div>
+                            `;
+                        } else {
+                            return `<span>${part}</span>`; 
+                        }
+                    })
+                    .join('<span class="operator">+</span>');
+            }
+    
+            function showQuiz(pathEl) {
+                const quiz = pathEl.dataset.quiz;
+                const left = pathEl.dataset.left;
+                const right = pathEl.dataset.right;
+                const correct = pathEl.dataset.true;
+    
+                const popArea = document.createElement("div");
+                popArea.className = "pop_area";
+                popArea.innerHTML = `
+                    <div class="quiz_pop">
+                        <button type="button" class="close" style="display: none;"></button>
+                        <div class="inner_pop quiz${currentPathIndex + 1}">
+                            <div class="txt_quiz">${renderFractionHTML(quiz)}</div>
+                            <div class="question_box">
+                                <button type="button" class="left" data-answer-single="${left === correct}">
+                                    ${renderFractionHTML(left)}
+                                </button>
+                                <div class="center">
+                                    <img src="../../common_practice/img/EMA616_11_IH/kid.png" alt="">
+                                </div>
+                                <button type="button" class="right" data-answer-single="${right === correct}">
+                                    ${renderFractionHTML(right)}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+    
+                document.querySelector(".contents")?.after(popArea);
+    
+                const leftBtn = popArea.querySelector(".left");
+                const rightBtn = popArea.querySelector(".right");
+    
+                leftBtn.addEventListener("click", checkAnswer);
+                rightBtn.addEventListener("click", checkAnswer);
+            }
+    
+            function checkAnswer(e) {
+    const selected = e.currentTarget;
+    const isCorrect = selected.dataset.answerSingle === "true";
+
+    const quizPop = document.querySelector(".quiz_pop");
+
+    if (isCorrect) {
+        quizPop.classList.remove("error");
+        quizPop.classList.add("result");
+
+        setTimeout(() => {
+            document.querySelector(".pop_area")?.remove();
+            currentPathIndex++;
+            
+            // 마지막 path (load5) 이후는 퀴즈 생략하고 바로 종료 처리
+            if (currentPathIndex < pathElements.length) {
+                const nextPath = pathElements[currentPathIndex];
+                const isLast = nextPath.classList.contains("load5");
+
+                if (isLast) {
+                    // 바로 result 처리 후 종료
+                    moveAlongPath(nextPath);
+                    setTimeout(() => {
+                        document.querySelector(".map_area")?.classList.add("result");
+                        state = "done";
+                    }, 1000); // 살짝 여유 시간
+                } else {
+                    moveAlongPath(nextPath);
+                }
+            } else {
+                document.querySelector(".map_area")?.classList.add("result");
+                state = "done";
+            }
+        }, 800);
+    } else {
+        quizPop.classList.remove("result");
+        quizPop.classList.add("error");
+        setTimeout(() => {
+            quizPop.classList.remove("error");
+        }, 1000);
+    }
+}
+    
+            obj.addEventListener("click", () => {
+                if (state === "ready" && currentPathIndex < pathElements.length) {
+                    moveAlongPath(pathElements[currentPathIndex]);
+                } else if (state === "quiz") {
+                    showQuiz(pathElements[currentPathIndex]);
+                }
+            });
+        });
+    </script>
+    
+  </body>
+</html>

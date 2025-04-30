@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA623_04_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema623_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema623_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema623_04_SU_0003">
+      <section class="title type2">
+        <h2 data-head="1_pink" lang="y">쌓기나무로 시청 모양을 만들었습니다. 시청 모양을 각 방향에서 본 모양을 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="img_row">
+            <div class="picture_wrap" data-head="" data-tit="쌓기나무로 똑같이 만들어 보세요.">
+              <img src="../../common_contents/img/EMA623_04_SU/0002_contents.png" alt="" />
+              <button class="zoom"></button>
+            </div>
+  
+            <div class="input_area">
+              <div>
+                <h3 lang="y">쌓기나무로 시청 모양을 만들었습니다. 시청 모양을 각 방향에서 본 모양을 알아봅시다.</h3>
+                <ul>
+                  <li class="diagram_tag green" lang="y">위에서 본 모양</li>
+                  <li class="diagram_tag yellow" lang="y">위에서 본 모양</li>
+                  <li class="diagram_tag blue" lang="y">위에서 본 모양</li>
+                  <li class="diagram_tag red" lang="y">위에서 본 모양</li>
+                  <li class="diagram_tag purple" lang="y">위에서 본 모양</li>
+                </ul>
+                <img src="../../common_contents/img/EMA623_04_SU/0003_img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">각 방향에서 본 모양을 비교해 보고, 좌우로 뒤집었을 때 모양이 같은 것을 찾아보세요.</h3>
+          <img src="../../common_contents/img/EMA623_04_SU/0003_img.png" alt="" />
+        </article>
+        <article class="page page_3">
+          <div class="img_row">
+            <img src="../../common_contents/img/EMA623_04_SU/0002_contents.png" alt="" />
+  
+            <div class="input_area">
+              <div>
+                <h3 lang="y">각 방향에서 본 모양을 모두 알아야만 쌓기나무로 만든 모양을 나타낼 수 있나요? 그 이유를 이야기해 보세요.</h3>
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <ol class="example_box">
+                    <li lang="y">뒤집어서 같은 모양인 경우는 한 방향에서 본 모양만 알아도 됩니다.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <h3 lang="y">쌓기나무로 만든 모양을 보고 위, 앞, 옆에서 본 모양을 각각 그려 보세요.</h3>
+          <img src="../../common_contents/img/EMA623_04_SU/0003_img06.png" alt="" />
+          <img src="../../common_contents/img/EMA623_04_SU/0004_contents.png" alt="" />
+        </article>
+
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_07_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_07_su_0006">
+      <section class="title type2">
+        <h2 data-type="3" data-text="창의+" lang="y">독도에 대해 조사하여 그린 그림입니다. 그림에서 수를 골라 반올림하고, 친구와 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="img_box">
+            <img src="../../common_contents/img/EMA521_07_SU/0006_contents.png" alt="독도 전체 넓이">
+  
+            <p class="t01" lang="y">독도의 전체 넓이를 <br>반올림하여 만의 <br>자리까지 나타내면....</p>
+            <p class="t02" lang="y">서도의 높이를 <br>반올림하여 일의 <br>자리까지 나타내면....</p>
+            <p class="t03" lang="y">187554 ㎡</p>
+            <p class="t04" lang="y">168.5 m</p>
+            <p class="t05" lang="y">98.6 m</p>
+            <p class="t06" lang="y">(출처 : 외교부 독도, 2024)</p>
+          </div>
+
+          <div class="develope_box">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">독도의 전체 넓이를 반올림하여 만의 자리까지 나타내면 190000 ㎡입니다.</li>
+                <li lang="y">서도의 높이를 반올림하여 십의 자리까지 나타내면 170 m입니다.</li>
+                <li lang="y">동도의 높이를 반올림하여 일의 자리까지 나타내면 99 ㎡입니다.</li>
+              </ol>
+            </div>
+          </div> 
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

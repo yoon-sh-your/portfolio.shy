@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA513_05_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <link rel="stylesheet" href="./../../common_contents/css/ema513_05.css">
+    <script src="../../common_contents/js/ema513_05_0003.js"></script>
+
+    <style>
+        /* 인라인 스타일은 쓰지마세요. 이거는 예시를 위한 예외 사용입니다. */
+        article {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app_wrap" class="ema513_05_su_0003" data-current-page="page_1,page_2,page_3,page_4">
+        <section class="title type2">
+            <h2 data-head="1_pink">에너지 공원에서 서로 대응하는 두 양을 찾고, 서로 대응하는 두 양 사이의 대응 관계를 식으로 나타내어 봅시다.</h2>
+        </section>
+
+        <!-- section.contents 에 pagine_layout 클래스를 추가하고 article.page.page_n 태그를 추가하면 슬라이드 페이지 개수에 맞는 페이징컨트롤러가 동적으로 생성됩니다. -->
+        <section class="contents paging_layout">
+            <!-- 아티클 태그 묶음은 위치에 상관없이 내부 컨텐츠가 전환 됩니다.(다른 태그로 감싸도 괜찮음) -->
+            <article class="page page_1">
+                <h3 lang="y"> 표를 완성하고 풍력 발전기의 수와 날개의 수 사이의 대응 관계를 이야기해 보세요.</h3>
+
+                <section class="contents">
+                    <div class="img_row align-start">
+                        <div class="picture_wrap"
+                            data-tit="에너지 공원에서 서로 대응하는 두 양을 찾고, 서로 대응하는 두 양 사이의 대응 관계를 식으로 나타내어 봅시다.">
+                            <svg width="812" height="428" viewBox="0 0 812 428" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="812" height="428" fill="url(#pattern0_10180_590645)" />
+                            <path d="M194.5 217.5L142 221L153 264.5L198 260.5L210 251.5L194.5 217.5Z" fill="#E0F1F8" />
+                            <path d="M214 267.5L155.5 271.5L163 304L184.5 303L217 294.5L214 267.5Z" fill="#E0F1F8" />
+                            <text transform="matrix(0.992088 -0.125547 0.211535 0.97737 147.907 220.188)" fill="black"
+                              xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12" font-weight="bold"
+                              letter-spacing="-0.5px">
+                              <tspan lang="y" x="9.94336" y="12.2656">펜을</tspan>
+                              <tspan lang="y" x="1.3125" y="28.2656">1번 들으면</tspan>
+                              <tspan lang="y" x="0.0722656" y="44.2656">모노레일은</tspan>
+                            </text>
+                            <text transform="matrix(0.994522 -0.104528 0 1 161 272.539)" fill="black" xml:space="preserve"
+                              style="white-space: pre" font-family="Pretendard" font-size="12" font-weight="bold" letter-spacing="-0.5px">
+                              <tspan lang="y" x="5.9375" y="12.2656">50㎝를</tspan>
+                              <tspan lang="y" x="0.128906" y="28.2656">이동합니다.</tspan>
+                            </text>
+                            <path
+                              d="M542.5 83.9997L542.5 70.1114L546.978 70.112L587.148 76.1619L616.376 82.1006L661.5 89L659.75 103.353L640.232 100.862L628.631 109.281L583.679 102.125L577.66 91.8534L542.5 83.9997Z"
+                              fill="white" />
+                            <text transform="matrix(0.987359 0.158499 -0.0195425 0.999809 551.586 69)" fill="black" xml:space="preserve"
+                              style="white-space: pre" font-family="Pretendard" font-size="10" font-weight="bold" letter-spacing="-0.5px">
+                              <tspan lang="y" x="0.0390625" y="10.5547">전기 열차는 1분에 100m정도</tspan>
+                              <tspan lang="y" x="29.3936" y="24.5547">이동합니다</tspan>
+                            </text>
+                            <defs>
+                              <pattern id="pattern0_10180_590645" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_10180_590645" transform="matrix(0.000388199 0 0 0.000736489 0 -0.75019)" />
+                              </pattern>
+                            </defs>
+                          </svg>
+                          <img src="../../common_contents/img/EMA513_05_SU/0001_content.png" alt="에너지 공원 영상">
+                            <button class="zoom"></button>
+                        </div>
+                        <div class="table_box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th lang="y"> 풍력 발전기의 수(대) </th>
+                                        <th lang="y">1</th>
+                                        <th lang="y">2</th>
+                                        <th lang="y">3</th>
+                                        <th lang="y">
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="4"></math-field>
+                                            </div>
+                                        </th>
+                                        <th lang="y">...</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td lang="y">
+                                            날개의 수(개)</td>
+
+                                        <td> 3 </td>
+                                        <td>
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="5"></math-field>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="5"></math-field>
+                                            </div>
+                                        </td>
+                                        <td>12 </td>
+
+                                        <td>...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="inputs">
+                                <div class="input_wrap">
+                                    <math-field class="textarea"></math-field>
+                                    <ol class="example_box">
+                                        <li lang="y">날개의 수는 풍력 발전기의 수의 3배입니다.</li>
+                                        <li lang="y">풍력 발전기의 수는 날개의 수를 3으로 나눈 것과 같습니다.</li>
+
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="page page_2">
+
+                <section class="contents">
+                    <h3 lang="y">풍력 발전기의 수와 날개의 수 사이의 대응 관계를 식으로 나타내어 보세요.</h3>
+                    <div class="img_row align-start">
+                        <div class="picture_wrap" data-tit="그림을 보고 자치회 활동에 참여했던 경험을 이야기해 봅시다.">
+                            <svg width="812" height="428" viewBox="0 0 812 428" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="812" height="428" fill="url(#pattern0_10180_590645)" />
+                            <path d="M194.5 217.5L142 221L153 264.5L198 260.5L210 251.5L194.5 217.5Z" fill="#E0F1F8" />
+                            <path d="M214 267.5L155.5 271.5L163 304L184.5 303L217 294.5L214 267.5Z" fill="#E0F1F8" />
+                            <text transform="matrix(0.992088 -0.125547 0.211535 0.97737 147.907 220.188)" fill="black"
+                              xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12" font-weight="bold"
+                              letter-spacing="-0.5px">
+                              <tspan lang="y" x="9.94336" y="12.2656">펜을</tspan>
+                              <tspan lang="y" x="1.3125" y="28.2656">1번 들으면</tspan>
+                              <tspan lang="y" x="0.0722656" y="44.2656">모노레일은</tspan>
+                            </text>
+                            <text transform="matrix(0.994522 -0.104528 0 1 161 272.539)" fill="black" xml:space="preserve"
+                              style="white-space: pre" font-family="Pretendard" font-size="12" font-weight="bold" letter-spacing="-0.5px">
+                              <tspan lang="y" x="5.9375" y="12.2656">50㎝를</tspan>
+                              <tspan lang="y" x="0.128906" y="28.2656">이동합니다.</tspan>
+                            </text>
+                            <path
+                              d="M542.5 83.9997L542.5 70.1114L546.978 70.112L587.148 76.1619L616.376 82.1006L661.5 89L659.75 103.353L640.232 100.862L628.631 109.281L583.679 102.125L577.66 91.8534L542.5 83.9997Z"
+                              fill="white" />
+                            <text transform="matrix(0.987359 0.158499 -0.0195425 0.999809 551.586 69)" fill="black" xml:space="preserve"
+                              style="white-space: pre" font-family="Pretendard" font-size="10" font-weight="bold" letter-spacing="-0.5px">
+                              <tspan lang="y" x="0.0390625" y="10.5547">전기 열차는 1분에 100m정도</tspan>
+                              <tspan lang="y" x="29.3936" y="24.5547">이동합니다</tspan>
+                            </text>
+                            <defs>
+                              <pattern id="pattern0_10180_590645" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_10180_590645" transform="matrix(0.000388199 0 0 0.000736489 0 -0.75019)" />
+                              </pattern>
+                            </defs>
+                          </svg>
+                          <img src="../../common_contents/img/EMA513_05_SU/0001_content.png" alt="에너지 공원 영상">
+                            <button class="zoom"></button>
+                        </div>
+
+                        <section class="contents1">
+                            <div class="dragndrop_fraction_wrap">
+                                <div class="drag_group">
+                                    <div class="drag_item" data-pair="1" data-value="날개의 수">날개의 수</div>
+                                    <div class="drag_item" data-pair="2" data-value="=">=</div>
+                                    <div class="drag_item" data-pair="2" data-value="×">×</div>
+                                    <div class="drag_item" data-pair="2" data-value="÷">÷</div>
+                                    <div class="drag_item" data-pair="1" data-value="풍력 발전기의 수">풍력 발전기의 수</div>
+                                    <div class="drag_item" data-pair="3" data-value="1">1</div>
+                                    <div class="drag_item" data-pair="3" data-value="2">2</div>
+                                    <div class="drag_item" data-pair="3" data-value="3">3</div>
+                                </div>
+                                <div class="drop_group"
+                                    data-answer-multi='[["날개의 수", "=", "풍력 발전기의 수", "×", "3"], ["풍력 발전기의 수", "=", "날개의 수", "÷", "3"]]'>
+                                    <div class="drop_item" data-pair="1" data-answer-single="풍력 발전기의 수"></div>
+                                    <div class="drop_item" data-pair="2" data-answer-single="="></div>
+                                    <div class="drop_item" data-pair="1" data-answer-single="날개의 수"></div>
+                                    <div class="drop_item" data-pair="2" data-answer-single="÷"></div>
+                                    <div class="drop_item" data-pair="3" data-answer-single="3"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </article>
+            <article class="page page_3">
+                <section class="contents">
+                    <h3 lang="y">에너지 공원에서 찾은 서로 대응하는 두 양을 각각 기호로 나타내고, 두 양 사이의 대응 관계를 기호를 사용하여 식으로 나타내어 보세요. </h3>
+                    <div class="flex align-start">
+                        <div class="picture_wrap" data-head="1_pink" data-tit="그림을 보고 자치회 활동에 참여했던 경험을 이야기해 봅시다.">
+                            <svg width="812" height="428" viewBox="0 0 812 428" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect width="812" height="428" fill="url(#pattern0_10180_590645)" />
+                            <path d="M194.5 217.5L142 221L153 264.5L198 260.5L210 251.5L194.5 217.5Z" fill="#E0F1F8" />
+                            <path d="M214 267.5L155.5 271.5L163 304L184.5 303L217 294.5L214 267.5Z" fill="#E0F1F8" />
+                            <text transform="matrix(0.992088 -0.125547 0.211535 0.97737 147.907 220.188)" fill="black"
+                              xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12" font-weight="bold"
+                              letter-spacing="-0.5px">
+                              <tspan lang="y" x="9.94336" y="12.2656">펜을</tspan>
+                              <tspan lang="y" x="1.3125" y="28.2656">1번 들으면</tspan>
+                              <tspan lang="y" x="0.0722656" y="44.2656">모노레일은</tspan>
+                            </text>
+                            <text transform="matrix(0.994522 -0.104528 0 1 161 272.539)" fill="black" xml:space="preserve"
+                              style="white-space: pre" font-family="Pretendard" font-size="12" font-weight="bold" letter-spacing="-0.5px">
+                              <tspan lang="y" x="5.9375" y="12.2656">50㎝를</tspan>
+                              <tspan lang="y" x="0.128906" y="28.2656">이동합니다.</tspan>
+                            </text>
+                            <path
+                              d="M542.5 83.9997L542.5 70.1114L546.978 70.112L587.148 76.1619L616.376 82.1006L661.5 89L659.75 103.353L640.232 100.862L628.631 109.281L583.679 102.125L577.66 91.8534L542.5 83.9997Z"
+                              fill="white" />
+                            <text transform="matrix(0.987359 0.158499 -0.0195425 0.999809 551.586 69)" fill="black" xml:space="preserve"
+                              style="white-space: pre" font-family="Pretendard" font-size="10" font-weight="bold" letter-spacing="-0.5px">
+                              <tspan lang="y" x="0.0390625" y="10.5547">전기 열차는 1분에 100m정도</tspan>
+                              <tspan lang="y" x="29.3936" y="24.5547">이동합니다</tspan>
+                            </text>
+                            <defs>
+                              <pattern id="pattern0_10180_590645" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_10180_590645" transform="matrix(0.000388199 0 0 0.000736489 0 -0.75019)" />
+                              </pattern>
+                            </defs>
+                          </svg>
+                          <img src="../../common_contents/img/EMA513_05_SU/0001_content.png" alt="에너지 공원 영상">
+                            <button class="zoom"></button>
+                        </div>
+
+                        <div class="table_box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th lang="y"> 서로 대응하는 두 양 </th>
+                                        <th lang="y">기호</th>
+                                        <th lang="y">식</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td lang="y">풍력 발전기의 수 (대)</td>
+                                        <td> ◇ </td>
+                                        <td rowspan='2'>♡=◇×3 </td>
+                                    </tr>
+                                    <tr>
+                                        <td lang="y">날개의 수 (개)</td>
+                                        <td>♡</td>
+                                    </tr>
+                                    <tr>
+                                        <td lang="y">
+                                            <div class="input_wrap input2">
+                                                <math-field
+                                                    data-answer-single="전기 열차 운행 시간(분)">
+                                                </math-field>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="□ "></math-field>
+                                            </div>
+                                        </td>
+                                        <td rowspan='2'>
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="☆=□×100"></math-field>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td lang="y">
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="전기 열차 이동 거리(m)""></math-field>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="☆"></math-field>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td lang="y">
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="의자의 수(개)"></math-field>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="○"></math-field>
+                                            </div>
+                                        </td>
+                                        <td rowspan='2'>
+                                            <div class="input_wrap input2">
+                                                <math-field data-answer-single="△=○-1"></math-field>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td lang="y">
+                                            <div class="input_wrap input2">
+                                                <math-field
+                                                    data-answer-single="태양열 충전기의 수(개)">
+                                                </math-field>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="input_wrap input2">
+                                                <math-field
+                                                    data-answer-single="△">
+                                                </math-field>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                </section>
+            </article>
+            <article class="page page_4">
+                <section class="title">
+                    <h3 lang="y">친구가 나타낸 식과 비교하여 이야기해 보세요.</h3>
+                </section>
+                <div class="input_area">
+                    <div class="input_wrap">
+                        <math-field class="textarea"></math-field>
+                        <div class="example_box">
+                            <p lang="y">
+                                서로 대응하는 두 양을 기호를 다르게 하여 식으로 나타냈습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <div class="btn_area">
+            <!-- 예시 필드에서 사용 -->
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+            <button class="btnSubmit">제출</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema511_05_su_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <script src="./boolean_roundarea.js"></script>
+    <style>
+        .contents {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 600px;
+        }
+        
+        svg {
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+        
+        .circle {
+            fill: #FFF;
+            stroke: #000;
+            stroke-width: 2;
+            cursor: pointer;
+            pointer-events: none;
+        }
+        
+        .center-point {
+            fill: #000;
+            cursor: pointer;
+            pointer-events: none;
+        }
+        
+        .diameter-point-area {
+            fill: transparent;
+            cursor: pointer;
+        }
+        
+        .diameter-point {
+            fill: #ff0000;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .diameter-point:hover {
+            fill: #ff6666;
+            r: 8;
+        }
+        
+        .click-line {
+            stroke: #0000ff;
+            stroke-width: 3;
+            pointer-events: none;
+        }
+        
+        .click-point {
+            fill: #0000ff;
+            pointer-events: none;
+        }
+
+        .preview-line {
+            stroke: #0000ff;
+            stroke-width: 2;
+            stroke-dasharray: 5, 5;
+            opacity: 0.5;
+        }
+
+        .percentage-text {
+            font-size: 14px;
+            fill: #000;
+            font-weight: bold;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+
+        .option-selector {
+            position: absolute;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            display: none;
+        }
+
+        .option-button {
+            display: block;
+            width: 100%;
+            padding: 5px 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .option-button:hover {
+            background: #e0e0e0;
+        }
+   
+        .circle-graph-division {
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+        .circle-graph-division svg {
+            width: 100%;
+            height: 100%;
+        }
+        .click-line {
+            stroke: #000;
+            stroke-width: 2;
+        }
+        .click-point {
+            fill: #000;
+            cursor: pointer;
+        }
+        .diameter-point {
+            fill: #ccc;
+            cursor: pointer;
+        }
+        .diameter-point-area {
+            fill: transparent;
+            cursor: pointer;
+        }
+        .preview-line {
+            stroke: #ccc;
+            stroke-width: 1;
+            stroke-dasharray: 5,5;
+        }
+        .percentage-text {
+            font-size: 14px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app_wrap" class="ema511_05_su_0005">
+        <section class="title type2">
+            <h1>20등분 원 클릭하기</h1>
+        </section>
+
+        <section class="contents">
+            <div class="circle-graph-division circle-container1" data-single-answer='[50,50]'>
+                <svg id="circleSvg" width="500" height="500" viewBox="0 0 500 500">
+                    <circle class="circle" cx="250" cy="250" r="200"/>
+                    <circle class="center-point" cx="250" cy="250" r="5"/>
+                </svg>
+                <div class="option-selector" id="optionSelector"></div>
+            </div>
+        </section>
+        <div class="btn_area">
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+        </div>
+    </div>
+</body>
+
+</html>

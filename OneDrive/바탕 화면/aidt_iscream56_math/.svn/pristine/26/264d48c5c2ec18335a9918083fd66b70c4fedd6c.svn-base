@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_05_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_05_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_orange" class="is_star" lang="y">부피가 큰 것부터 차례대로 기호를 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <ul class="flex dir_col gap_8">
+            <li>㉠ 4.5 ㎥</li>
+            <li>㉡ 6000000 ㎤</li>
+            <li>㉢ 한 모서리의 길이가 2 m인 정육면체의 부피</li>
+            <li>㉣ 가로가 300 ㎝, 세로가 30 ㎝, 높이가 400 ㎝인 직육면체의 부피</li>
+          </ul>
+        </div>
+
+        <div class="question_box2 flex align_center justify_center">
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="㉢">
+              <option></option>
+              <option value="㉠">㉠</option>
+              <option value="㉡">㉡</option>
+              <option value="㉢">㉢</option>
+              <option value="㉣">㉣</option>
+            </select>
+          </div>
+          <h2 class="mr_10">,</h2>
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="㉡">
+              <option></option>
+              <option value="㉠">㉠</option>
+              <option value="㉡">㉡</option>
+              <option value="㉢">㉢</option>
+              <option value="㉣">㉣</option>
+            </select>
+          </div>
+          <h2 class="mr_10">,</h2>
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="㉠">
+              <option></option>
+              <option value="㉠">㉠</option>
+              <option value="㉡">㉡</option>
+              <option value="㉢">㉢</option>
+              <option value="㉣">㉣</option>
+            </select>
+          </div>
+          <h2 class="mr_10">,</h2>
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="㉣">
+              <option></option>
+              <option></option>
+              <option value="㉠">㉠</option>
+              <option value="㉡">㉡</option>
+              <option value="㉢">㉢</option>
+              <option value="㉣">㉣</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">㉡ 6000000 ㎤=6 ㎥</p>
+                <p lang="y">㉢ 2×2×2=8 (㎥)</p>
+                <p lang="y">㉣ 300×30×400=3600000 (㎤) ➔ 3.6 ㎥</p>
+                <p lang="y">8 > 6 > 4.5 > 3.6이므로 부피가 큰 것부터 차례대로 기호를 쓰면 ㉢, ㉡, ㉠, ㉣입니다</p>
+              </div>
+            </div>
+            <div class="buttons_solve">
+              <div>
+                <button type="button" class="btnVideo"><span lang="y">해설 영상</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

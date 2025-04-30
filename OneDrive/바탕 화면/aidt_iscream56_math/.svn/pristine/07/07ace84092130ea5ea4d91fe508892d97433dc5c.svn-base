@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_13_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_13.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_13_ih_0003">
+      <section class="title">
+        <h2 data-head="3">
+          <span lang="y">사다리꼴을 삼각형 2개로 나누어서 넓이를 구하려고 합니다.</span>
+          <span class="nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center mt_20 align_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA516_13_IH/0003_01.png" alt="" />
+            <p class="text1" lang="y">가</p>
+            <p class="text2" lang="y">나</p>
+            <p class="text3">4 ㎝</p>
+            <p class="text4">6 ㎝</p>
+            <p class="text5">7 ㎝</p>
+          </div>
+          <div class="input_area">
+            <div class="input_row row1">
+              <span lang="y">삼각형 가의 넓이는</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="12" class="w_136"></math-field>
+              </div>
+              <span lang="y">㎠이고,</span>
+            </div>
+            <div class="input_row row2">
+              <span lang="y">삼각형 나의 넓이는</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="21" class="w_136"></math-field>
+              </div>
+              <span lang="y">㎠입니다.</span>
+            </div>
+            <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" class="arrrow" />
+            <div class="input_row row3">
+              <span lang="y">(사다리꼴의 넓이) <br />=(가의 넓이)+(나의 넓이)</span>
+            </div>
+            <div class="input_row row4">
+              <span>=</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="12" class="w_136"></math-field>
+              </div>
+              <span>+</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="21" class="w_136"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="33" class="w_136"></math-field>
+              </div>
+              <span lang="y">(㎠)</span>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">
+                  (삼각형 가의 넓이)=4×6÷2=12 (㎠)<br />
+                  (삼각형 나의 넓이)=7×6÷2=21 (㎠)<br />
+                  (사다리꼴의 넓이)=(가의 넓이)+(나의 넓이)=12+21=33 (㎠)
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

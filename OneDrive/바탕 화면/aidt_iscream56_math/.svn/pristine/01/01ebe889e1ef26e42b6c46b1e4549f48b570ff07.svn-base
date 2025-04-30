@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_01_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_01_ih_0002">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 4-1』 도형의 배열에서 규칙 찾기</span>
+        </div>
+      </section>
+      <section class="title group mt_12">
+        <h2 lang="y"><span>[2~3]</span>사각형으로 만든 모양의 배열을 보고 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center mt_20">
+          <div class="img_wrap">
+            <img src="../../common_practice/img/EMA513_01_IH/0002_img.svg" alt="" />
+            <span class="txt1" lang="y">첫째</span>
+            <span class="txt2" lang="y">둘째</span>
+            <span class="txt3" lang="y">셋째</span>
+            <span class="txt4" lang="y">넷째</span>
+          </div>
+        </div>
+        <div class="title type2">
+          <h2 data-head="2_pink" lang="y">사각형의 수를 세어 표를 완성해 보세요.</h2>
+        </div>
+        <div class="question_box">
+          <div class="table_box">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col" lang="y">첫째</th>
+                  <th scope="col" lang="y">둘째</th>
+                  <th scope="col" lang="y">셋째</th>
+                  <th scope="col" lang="y">넷째</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">사각형의 수</th>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>
+                    <div class="input_wrap"><math-field data-answer-single="9"></math-field></div>
+                  </td>
+                  <td>
+                    <div class="input_wrap"><math-field data-answer-single="16"></math-field></div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">사각형이 1개부터 시작하여 아래쪽으로 3개, 5개, 7개, ...씩 늘어나는 규칙입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

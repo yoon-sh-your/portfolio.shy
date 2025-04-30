@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_02_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_02_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_120">
+          <div class="question_box gap_4">
+            <span class="flex align_center">48+25-17</span> <span class="inline_block">=</span>
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="56"></math-field>
+            </div>
+          </div>
+          <div class="question_box gap_4">
+            <span class="flex align_center">63-(32+19)</span><span class="inline_block">=</span>
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="12"></math-field>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>48+25-17=73-17=56</p>
+                <p>63-(32+19)=63-51=12</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

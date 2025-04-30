@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_05_IH_0002</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_05_ih_0002 paging">
+			<section class="title type2 score">
+				<h2 data-head="2_light_purple" lang="y">
+					반지름이 8 ㎝인 원의 넓이를 어림하려고 합니다. 물음에 답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3 class="title" lang="y">
+						모눈을 이용하여 반지름이 6 ㎝인 원의 넓이를 어림하려고 합니다. 물음에 답해 보세요.
+					</h3>
+
+					<div class="question_box justify_center align_center">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA625_05_IH/0002_01.png" alt="" />
+							<p>1 ㎠</p>
+						</div>
+						<div class="input_area">
+							<div class="flex align_center">
+								<span lang="y">모눈 :</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="88"></math-field>
+								</div>
+								<span lang="y">칸</span>
+							</div>
+							<div class="flex align_center">
+								<span lang="y">넓이 :</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="88"></math-field>
+								</div>
+								<span lang="y">㎠</span>
+							</div>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p lang="y" class="text_bullet">해설 수급 필요</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+				</article>
+				<article class="page page_2">
+					<h3 class="title" lang="y">빨간색 선 안쪽 모눈은 모두 몇 칸이고, 넓이는 몇 ㎠인지 구해 보세요.</h3>
+
+					<div class="question_box justify_center align_center">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA625_05_IH/0002_01.png" alt="" />
+							<p>1 ㎠</p>
+						</div>
+						<div class="input_area">
+							<div class="flex align_center">
+								<span lang="y">모눈 :</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="132"></math-field>
+								</div>
+								<span lang="y">칸</span>
+							</div>
+							<div class="flex align_center">
+								<span lang="y">넓이 :</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="132"></math-field>
+								</div>
+								<span lang="y">㎠</span>
+							</div>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p lang="y" class="text_bullet">해설 수급 필요</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+				</article>
+				<article class="page page_3">
+					<h3 class="title" lang="y">원의 넓이를 어림해 보세요.</h3>
+
+					<div class="question_box justify_center align_center">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA625_05_IH/0002_01.png" alt="" />
+							<p>1 ㎠</p>
+						</div>
+						<div class="input_area">
+							<div class="img_area">
+								<img src="./../../common_practice/img/EMA625_05_IH/0002_02.png" alt="" />
+								<div>
+									<div class="flex align_center input_row">
+										<span lang="y">원의 넓이는</span>
+										<div class="input_wrap ml_10">
+											<math-field data-answer-single="88"></math-field>
+										</div>
+										<span lang="y">㎠보다 넓고</span>
+									</div>
+									<div class="flex align_center input_row">
+										<div class="input_wrap">
+											<math-field data-answer-single="132"></math-field>
+										</div>
+										<span lang="y">㎠보다 좁습니다.</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p lang="y" class="text_bullet">해설 수급 필요</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+				</article>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

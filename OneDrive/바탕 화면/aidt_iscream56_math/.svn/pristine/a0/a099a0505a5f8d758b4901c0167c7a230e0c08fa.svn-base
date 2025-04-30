@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_11_SU_0008_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_11.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_11_su_0008">
+    <div class="scroll_page">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 4">
+          <span class="blue line" lang="y">확인하고 정리해요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_4_sub_title">
+        <h2 lang="y">
+          <div class="title_row">
+            <span class="nemo_blank"></span>
+            <span lang="y">안에 말이나 수를 써넣으세요.</span>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="scroll_area">
+          <img src="../../common_contents/img/EMA616_11_SU/11_bg.png " alt="" />
+          <div class="txt1">
+            <p lang="y">직육면체의<br />부피와 겉넓이</p>
+          </div>
+          <div class="txt2">
+            <p lang="y">부피의 단위</p>
+            <p>1 ㎤</p>
+            <p>1 ㎥=1000000㎤</p>
+          </div>
+          <div class="txt3">
+            <p lnag="y">직육면체</p>
+          </div>
+          <div class="unit1"><span lang="y">가로</span></div>
+          <div class="unit2"><span lang="y">세로</span></div>
+          <div class="unit3"><span lang="y">높이</span></div>
+          <div class="txt4">
+            <p lang="y">정육면체</p>
+          </div>
+          <div class="unit4"><span lang="y">한 모서리의 길이</span></div>
+
+          <div class="txt5">
+            <span lang="y">(부피)=(가로)&times;</span>
+            <div class="input_wrap answer">
+              <math-field data-answer-single="세로"></math-field>
+            </div>
+            <span lang="y">&times;(높이)</span>
+          </div>
+          <div class="txt6">
+            <span lang="y">(겉넓이)=(면㉮의 넓이)&times;</span>
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="2"></math-field>
+            </div>
+          </div>
+          <div class="txt7">
+            <span lang="y">+(면 ㉯의 넓이)&times;2</span>
+            <span lang="y">+(면 ㉰의 넓이)&times;2</span>
+          </div>
+          <div class="txt8">
+            <span lang="y">(부피) = (한 모서리의 길이)</span>
+            <span class="indent" lang="y">&times;(한 모서리의 길이)</span>
+            <span class="indent" lang="y">&times;(한 모서리의 길이)</span>
+            <div class="wrap_box">
+              <span lang="y">(겉넓이)=(한 면의 넓이)&times;</span>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="6"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area relative">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

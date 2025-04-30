@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_02_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_02_su_0006">
+      <section class="title type2">
+        <h2 data-head="4_light_purple" lang="y">직육면체와 정육면체를 비교해 봅시다.
+        </h2>
+      </section>
+        
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">직육면체와 정육면체의 공통점을 이야기해 보세요.</h3>     
+          <div class="wrap flex justify-conter dir_col gap_20">     
+            <div class="contents_img">
+              <img src="../../common_contents/img/EMA525_01_SU/0006_contents.png" alt="직육면체,정육면체 이미지"/>    
+              <div class="character_img">
+                <p lang="y">면, 모서리, 꼭짓점을<br/>살펴봐.</p>
+                <img src="../../common_contents/img/EMA524_05_SU/0003_contents.png" alt="힌트를 주는 오리 캐릭터"/>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <ol class="example_box">
+                  <li lang="y">직육면체와 정육면체의 면의 수는 6개로 같습니다.</li>
+                  <li lang="y">직육면체와 정육면체의 모서리의 수는 12개로 같습니다.</li>
+                  <li lang="y">직육면체와 정육면체의 꼭짓점의 수는 8개로 같습니다.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">직육면체와 정육면체의 차이점을 이야기해 보세요.</h3>     
+          <div class="wrap flex justify-conter dir_col gap_20">     
+            <div class="contents_img">
+              <img src="../../common_contents/img/EMA525_01_SU/0006_contents.png" alt="직육면체,정육면체 이미지"/>    
+              <div class="character_img">
+                <p lang="y">면, 모서리, 꼭짓점을<br/>살펴봐.</p>
+                <img src="../../common_contents/img/EMA524_05_SU/0003_contents.png" alt="힌트를 주는 오리 캐릭터"/>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <ol class="example_box">
+                  <li lang="y">직육면체는 면의 모양이 모두 직사각형이지만 정육면체는 면의 모양이 모두 정사각형입니다.</li>
+                  <li lang="y">직육면체는 면의 모양이 모두 합동은 아니지만 정육면체는 면의 모양이 모두 합동입니다.</li>
+                  <li lang="y">직육면체는 길이가 같은 모서리가 4개씩 3쌍 있지만 정육면체는 모든 모서리의 길이가 같습니다.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

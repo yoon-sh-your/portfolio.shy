@@ -1,0 +1,256 @@
+/* ema625_11_ih_0001 */
+.ema625_11_ih_0001#app_wrap {
+	max-height: unset;
+}
+.ema625_11_ih_0001 .title .square {
+	display: inline-block;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #7dc058;
+	margin-right: 6px;
+}
+
+.ema625_11_ih_0001 .title .btn_zoom {
+	margin-left: 10px;
+}
+
+.ema625_11_ih_0001 .question_box {
+	width: 1435px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.ladder-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.ema625_11_ih_0001 .btn_area {
+	position: relative;
+	bottom: 0;
+	margin-top: 30px;
+}
+
+.obj_box {
+	position: absolute;
+}
+
+.obj_box1 {
+	top: 381px;
+	left: 252px;
+	width: 921.7px;
+	height: 720.9px;
+}
+
+.obj_box2 {
+	top: 381px;
+	left: 252px;
+	width: 921.7px;
+	height: 720.9px;
+}
+
+.obj_box3 {
+	top: 381px;
+	left: 252px;
+	width: 921.7px;
+	height: 720.9px;
+}
+
+.path-draw {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+.obj_box1 .path-draw path {
+	stroke: var(--secondary-red);
+}
+.obj_box2 .path-draw path {
+	stroke: #22b24c;
+}
+.obj_box3 .path-draw path {
+	stroke: #6247dc;
+}
+.path-draw path {
+	display: flex;
+	align-items: flex-end;
+	stroke: #ff6b6b;
+	stroke-width: 8;
+	stroke-linecap: round;
+	fill: none;
+	stroke-dasharray: 4000;
+	stroke-dashoffset: 4000;
+}
+
+@keyframes dummyAni {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.obj {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	visibility: hidden;
+	animation: dummyAni 6.5s linear forwards;
+}
+/* .obj_box1 .obj {
+	animation-duration: 6.3s;
+}
+.obj_box2 .obj {
+	animation-duration: 3s;
+}
+.obj_box3 .obj {
+	animation-duration: 3s;
+} */
+
+.obj_box1 .obj {
+	offset-path: path(
+		"M1.1,0c0,35.6,0,71.2,0,106.8C158.2,86,315.2,65.3,472.3,44.5c-0.5,54-0.9,108-1.3,162 c149.8,5.4,299.7,10.8,449.5,16.2c0,67.1,0,134.1,0,201.2c-150.3,31.5-300.6,63-450.9,94.5c0,26.6,0,53.2,0,79.8 C314.8,587.8,160,577.4,5.2,567c0,51.3,0,102.6,0,153.9"
+	);
+}
+
+.obj_box2 .obj {
+	offset-path: path(
+		"M470.9,0c0,14.3,0,28.5,0,42.8C314,65.5,157,88.3,0,111.1c0,74.4,0,148.8,0,223.2c155.2,9,310.4,18,465.5,27 c0.6,53.4,1.2,106.8,1.8,160.2c151.4-31.8,302.9-63.6,454.4-95.4c0,98.3,0,196.5,0,294.8"
+	);
+}
+
+.obj_box3 .obj {
+	offset-path: path(
+		"M921.7,0c0,72.9,0,145.8,0,218.7c-151.6-3.2-303.2-6.3-454.8-9.4c0,51.3,0,102.6,0,153.9 C311.3,355.1,155.6,347,0,338.8c0,76.5,0,153,0,229.5c155.6,12.1,315.9,23.9,471.5,36c0,36.1,0.8,80.5,0.8,116.6"
+	);
+}
+
+.active .path-draw.path1 path {
+	animation: drawPath 5.5s linear forwards;
+}
+
+.active .path-draw.path2 path {
+	animation: drawPath 5.5s linear forwards;
+}
+
+.active .path-draw.path3 path {
+	animation: drawPath 5.5s linear forwards;
+}
+
+@keyframes drawPath {
+	to {
+		stroke-dashoffset: 100%;
+	}
+}
+
+.start-point {
+	position: absolute;
+	width: 317px;
+	height: 350px;
+	top: 27px;
+	cursor: pointer;
+}
+
+.start-point1 {
+	left: 96px;
+}
+
+.start-point2 {
+	left: 560px;
+}
+
+.start-point3 {
+	left: 1021px;
+}
+
+.start-point .num {
+	width: 36px;
+	height: 36px;
+	display: inline-block;
+	font-style: normal;
+	font-size: 32px;
+	position: absolute;
+	top: 26px;
+	left: 23px;
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+}
+.start-point .cm {
+	font-size: 24px;
+	position: absolute;
+}
+.start-point1 .cm {
+	top: 145px;
+	left: 175px;
+}
+.start-point2 .cm {
+	top: 98px;
+	left: 146px;
+}
+.start-point3 .cm {
+	top: 176px;
+	left: 100px;
+}
+.start-point .nemo_area {
+	width: 100%;
+	position: absolute;
+	top: 266px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.start-point .nemo_area .blank {
+	display: inline-block;
+	vertical-align: middle;
+	width: 120px;
+	height: 60px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 12px;
+	margin: 0 5px 0 7px;
+	font-size: 20px;
+	line-height: 58px;
+	text-align: center;
+	font-weight: 700;
+}
+.input_wrap_area {
+	position: absolute;
+	bottom: 130px;
+	left: 195px;
+}
+.input_wrap_area .input2 {
+	margin-left: 350px;
+}
+.input_wrap_area .input3 {
+	margin-left: 327px;
+}
+.picture_wrap {
+	display: none;
+}
+.input_wrap .text_hint {
+	background: rgba(255, 255, 255, 0.5);
+}
+.solve_area .inner_solve i.num {
+	display: inline-block;
+	vertical-align: top;
+	font-style: normal;
+	color: #ee7439;
+}
+.pop_area .btn_zoom {
+	display: none;
+}
+.image_zoom_wrap,
+.supplies_zoom_wrap {
+	top: 34%;
+}

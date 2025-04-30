@@ -1,0 +1,368 @@
+.input_area .fraction_box {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.input_wrap:has(.w_80) {
+  min-width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+  position: relative;
+}
+.input_wrap.input_sep {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+.input_wrap.input_sep.hint_up {
+  top: -60px;
+  bottom: auto;
+}
+.input_wrap.input_sep.hint_right .text_hint {
+  left: calc(100% + 4px);
+  top: 12px;
+  width: auto;
+}
+.mark_error {
+  position: relative;
+}
+.mark_error:after {
+  content: '';
+  display: inline-block;
+  width: 55px;
+  height: 3px;
+  background: #ff0000;
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: rotate(-30deg) translateX(-50%);
+}
+.mark_error.blue:after {
+  background: var(--primary-blue);
+}
+.mark_error i {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff0000;
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mark_error.up > i {
+  bottom: 35px;
+}
+.fraction_wrap .hint_up .text_hint {
+  top: auto;
+  bottom: calc(100% + 4px);
+}
+
+/* ema522_03_ih_0001 */
+
+.ema522_03_ih_0001 .question_box {
+  position: relative;
+  padding: 0 40px 20px;
+}
+.ema522_03_ih_0001 .img_area {
+  width: 1146px;
+  margin-top: 60px;
+}
+.ema522_03_ih_0001 .img_area img {
+  width: 100%;
+}
+.ema522_03_ih_0001 .label_method {
+  position: absolute;
+  top: -22px;
+  left: 70px;
+}
+/* .ema522_03_ih_0002 */
+
+.gap_100 {
+  gap: 100px;
+}
+
+/* ema522_03_ih_0003 */
+.ema522_03_ih_0003 .connection_line {
+  stroke: var(--font-main);
+}
+/* .result .ema522_03_ih_0003 line.hint_line {
+	stroke: #ff0000;
+	stroke-width: 2;
+} */
+.ema522_03_ih_0003 .conts_solve {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ema522_03_ih_0004 */
+.ema522_03_ih_0004 .img_area {
+  position: relative;
+}
+.ema522_03_ih_0004 .img_area .texts {
+  position: absolute;
+  width: 100%;
+  top: 61px;
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+}
+.ema522_03_ih_0004 .img_area .texts > div {
+  display: inline-flex;
+  align-items: center;
+}
+.ema522_03_ih_0004 .input_area math-field {
+  width: 230px;
+  margin: 0 10px;
+}
+
+/* ema522_03_ih_0005 */
+
+.ema522_03_ih_0005 math-field::part(container),
+.ema522_03_ih_0005 math-field::part(content) {
+  width: 500px;
+  white-space: normal;
+}
+.ema522_03_ih_0005 .question_box {
+  padding: 0 170px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.ema522_03_ih_0005 .question_box > div {
+  flex: 1;
+}
+.ema522_03_ih_0005 .l_left {
+  background: #fff4ea;
+  border: 2px solid #fbcba1;
+  border-radius: 30px;
+  padding: 10px;
+}
+.ema522_03_ih_0005 .l_left .text_area {
+  margin-top: 30px;
+}
+.ema522_03_ih_0005 .l_left .input_area {
+  margin-top: 40px;
+}
+.ema522_03_ih_0005 .l_left .input_wrap {
+  width: 100%;
+}
+.ema522_03_ih_0005 .l_left .input_wrap dt {
+  padding: 12px 20px 0;
+  background: #fff;
+  border-radius: 15px 15px 0 0;
+  font-size: 32px;
+  color: #c0573d;
+  margin-left: 40px;
+  line-height: 1;
+}
+.ema522_03_ih_0005 .l_left .input_wrap dd {
+  width: 100%;
+  padding: 18px;
+  background: #fff;
+  border-radius: 30px;
+}
+.ema522_03_ih_0005 .input_wrap .example_box {
+  position: absolute;
+  background: none;
+}
+.ema522_03_ih_0005 .input_wrap .example_box p,
+.ema522_03_ih_0005 .input_wrap .example_box div {
+  color: #ff0000;
+  gap: 5px;
+}
+.ema522_03_ih_0005 .l_right {
+  background: #fef6ed;
+  border-radius: 30px;
+  padding: 50px 26px 40px;
+  position: relative;
+}
+.ema522_03_ih_0005 .l_right dt {
+  color: #c0573d;
+  line-height: 1;
+  /* margin-bottom: 10px; */
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  padding: 15px 20px;
+  background: #fef6ed;
+  border-radius: 30px 30px 0 0;
+}
+.ema522_03_ih_0005 .l_right dd {
+  background: #fff;
+  border: 1px solid #facc9c;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+.ema522_03_ih_0005 .calc_row {
+  padding: 30px 35px;
+}
+.ema522_03_ih_0005 .l_right math-field {
+  width: 230px;
+  height: 112px;
+  min-width: auto;
+  min-height: auto;
+}
+.ema522_03_ih_0005 .l_right .example_box {
+  top: 110px;
+  left: -190px;
+  font-size: 24px;
+  width: 575px;
+  height: 147px;
+}
+.ema522_03_ih_0005 .l_right .calc_row:has(.example_box.on) {
+  height: 320px;
+  align-items: flex-start !important;
+}
+.ema522_03_ih_0005 .l_right .example_box .fraction_box {
+  margin: 0;
+}
+.ema522_03_ih_0005 .l_right .example_box .fraction_box::before {
+  background-color: #ff0000;
+}
+.ema522_03_ih_0005 .l_right .mark_error:after {
+  bottom: 20px;
+  width: 35px;
+}
+.ema522_03_ih_0005 .l_right .mark_error i {
+  top: 24px;
+}
+.ema522_03_ih_0005 .l_right .mark_error.up i {
+  top: auto;
+  bottom: 24px;
+}
+/* .ema522_03_ih_0005 .btnSample {
+  color: transparent !important;
+  background-image: url(./../common/img/icon_check_disabled.svg) !important;
+}
+.ema522_03_ih_0005 .btnSample.active {
+  border-color: transparent !important;
+}
+.ema522_03_ih_0005 .btnSample.close {
+  background-image: url(./../common/img/icon_close_white.svg) !important;
+}
+.ema522_03_ih_0005 .btnSample.active:not(.close) {
+  background-image: url(./../common/img/icon_check_white.svg) !important;
+  background-color: var(--btn-default) !important;
+} */
+.ema522_03_ih_0005 .fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+}
+/* ema522_03_ih_0006 */
+.ema522_03_ih_0006 .question_box {
+  padding-left: 300px;
+  position: relative;
+}
+.ema522_03_ih_0006 .question_box dl {
+  background: #fff4ea;
+  border-radius: 30px;
+  padding: 47px 20px 17.5px 35px;
+}
+.ema522_03_ih_0006 .question_box dt {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #c0573d;
+  position: absolute;
+  top: -20px;
+  background: #fff4ea;
+  padding: 15px 20px 0;
+  border-radius: 30px 30px 0 0;
+  line-height: 1;
+}
+.ema522_03_ih_0006 .question_box .text_area {
+  padding-left: 20px;
+}
+.ema522_03_ih_0006 .question_box .question_row {
+  background: #fff;
+  border: 1px solid #facc9c;
+  border-radius: 30px;
+  padding: 21px 15px 18px 15px;
+  width: 558px;
+}
+.ema522_03_ih_0006 .question_box .question_row .text_hint {
+  top: 0;
+  left: calc(100% + 60px);
+  white-space: normal;
+  text-align: left;
+}
+.ema522_03_ih_0006 .question_box .question_row .input_wrap {
+  width: 100%;
+}
+.ema522_03_ih_0006 .question_box .answer_row {
+  margin-top: 15px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.ema522_03_ih_0006 .question_box .answer_row math-field {
+  width: 232px;
+  height: 60px;
+  min-height: auto;
+}
+.ema522_03_ih_0006 .question_box .answer_row .input_wrap.fraction_wrap math-field::part(container) {
+  height: auto;
+}
+.ema522_03_ih_0006 .question_box .answer_row .bg_white {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 38px;
+  width: 49px;
+  height: 40px;
+  background: #fff;
+  border-radius: 40px 40px 0 40px;
+}
+.ema522_03_ih_0006 .question_box .answer_row .text_hint {
+  left: 100%;
+  top: 0;
+}
+.ema522_03_ih_0006 .question_box .question_row .example_box {
+  position: absolute;
+  background: none;
+  left: 557px;
+  width: 500px;
+  white-space: normal;
+}
+.ema522_03_ih_0006 .question_box .question_row .example_box p,
+.ema522_03_ih_0006 .question_box .question_row .example_box div {
+  color: #ff0000;
+  gap: 5px;
+}
+
+.ema522_03_ih_0006 .question_box .answer_row .example_box {
+  font-size: 32px;
+  position: absolute;
+  background: none;
+  left: 207px;
+  top: -45px;
+  width: 200px;
+  white-space: normal;
+}
+.ema522_03_ih_0006 .question_box .answer_row .example_box .fraction_box > span {
+  font-size: 32px;
+}
+.ema522_03_ih_0006 .question_box .answer_row .example_box::before {
+  display: none;
+}
+.ema522_03_ih_0006 .question_box .answer_row .example_box p,
+.ema522_03_ih_0006 .question_box .answer_row .example_box div {
+  color: #ff0000;
+  gap: 5px;
+}

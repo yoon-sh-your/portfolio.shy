@@ -1,0 +1,137 @@
+.ema623_01_ih_0001 .question_box {
+	gap: 48px;
+}
+.ema623_01_ih_0001 .question_box .img_area,
+.ema623_01_ih_0001 .question_box .input_area {
+    position: relative;
+}
+.ema623_01_ih_0001 .question_box .img_area .text {
+	position: absolute;
+}
+.ema623_01_ih_0001 .question_box .img_area .text1 {
+	top: 311px;
+	left: 100px;
+}
+.ema623_01_ih_0001 .question_box .img_area .text2 {
+	top: 218px;
+	left: 306px;
+}
+.ema623_01_ih_0001 .question_box .text_area {
+    position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.ema623_01_ih_0001 .question_box p {
+	font-weight: 700;
+}
+
+.ema623_02_ih_0002 .question_box .img_area {
+	position: relative;
+}
+.ema623_02_ih_0002 .question_box .img_area .text {
+	position: absolute;
+	font-weight: 700;
+}
+.ema623_02_ih_0002 .question_box .img_area .text1 {
+	top: 0;
+	left: -45px;
+}
+.ema623_02_ih_0002 .question_box .img_area .text2 {
+	top: 0;
+	left: calc(50% - 177px);
+}
+.ema623_02_ih_0002 .question_box .img_area .text3 {
+	top: 0;
+	right: calc(50% - 350px);
+}
+.ema623_02_ih_0002 .boolean_wrap button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+}
+.ema623_02_ih_0002 .boolean_wrap .button1 {
+    left: 85px;
+}
+.ema623_02_ih_0002 .boolean_wrap .button2 {
+   left: 50%;
+}
+.ema623_02_ih_0002 .boolean_wrap .button3 {
+   right: 85px;
+}
+
+/* .ema623_03_ih_0003  */
+  .ema623_03_ih_0003 .quiz_area {
+	position: relative;
+	width: 1018px;
+	height: 395px;
+	margin: 0 auto;
+  }
+  .ema623_03_ih_0003 .quiz_area .image {
+	width: 235px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.ema623_03_ih_0003 .quiz_area .image1 {
+	width: 240px;
+    position: absolute;
+	top: 75px;
+    left: 76px;
+}
+.ema623_03_ih_0003 .quiz_area .image2 {
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -30px;
+  margin-left: 28px;
+}
+.ema623_03_ih_0003 .quiz_area .line_area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 390px;
+	height: 390px;
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	border: dashed 2px #00a0e9;
+}
+.ema623_03_ih_0003 .quiz_area .line_area + .line_area {
+	left: auto;
+	right: 0;
+  }
+.ema623_03_ih_0003 .quiz_area .line_area .column {
+	width: 100%;
+	height: 78px;
+	display: flex;
+}
+.ema623_03_ih_0003 .quiz_area .line_area .column + .column {
+	border-top: dashed 1px #00a0e9;
+  }
+.ema623_03_ih_0003 .quiz_area .line_area .column .row {
+	flex: 1;
+	width: 78px;
+	height: 100%;
+}
+.ema623_03_ih_0003 .quiz_area .line_area .column .row + .row {
+	border-left: dashed 1px #00a0e9;
+}
+.ema623_03_ih_0003 .quiz_area .drawing_grid_area {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 390px;
+	height: 390px;
+	border: none;
+	background: none;
+}
+
+
+
+ 

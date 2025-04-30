@@ -1,0 +1,1065 @@
+/**
+* 확대 이미지 ui
+*/
+.picture_wrap {
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 16 / 9;
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    border: solid 2px #F4F4F4;
+}
+
+.picture_wrap button.zoom,
+.btn_zoom {
+    width: 64px;
+    min-width: unset;
+    height: 64px;
+    background: url(../../common/img/icon_image_zoom.svg) no-repeat center / 40px, var(--bg-default);
+    border-radius: 16px;
+    border: 1px solid var(--stroke-default);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    z-index: 3;
+}
+
+.btn_zoom {
+    position: relative;
+    bottom: unset;
+    right: unset;
+}
+
+.picture_wrap button.zoom:hover,
+.btn_zoom:hover {
+    background-color: var(--primary-blue-50);
+}
+
+.picture_wrap img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.picture_wrap.type2 img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+}
+
+.picture_wrap svg {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.image_zoom_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 1635px;
+    height: 684px;
+    padding: 40px;
+    background-color: var(--bg-default);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image_zoom_wrap button {
+    min-width: unset;
+}
+
+.image_zoom_wrap .title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.image_zoom_wrap .title h3 {
+    display: flex;
+    font-size: 32px;
+    font-weight: 700;
+    /* line-height: 48px; */
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+
+.image_zoom_wrap .title h3>span {
+    color: var(--primary-blue);
+    margin-right: 12px;
+}
+
+.image_zoom_wrap button.close {
+    width: 40px;
+    height: 40px;
+    background: url(../../common/img/icon_times_blk.svg) no-repeat center / 40px;
+}
+
+.image_zoom_wrap .image-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.image_zoom_wrap .image_zoom {
+    overflow: auto;
+    position: relative;
+}
+
+.image_zoom_wrap .image_zoom.grab {
+    cursor: move;
+}
+
+/* .image_zoom_wrap .image_zoom::after{
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+  } */
+.image_zoom_wrap .image_zoom img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+.image_zoom_wrap .image_zoom svg {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    max-width: none;
+    position: absolute;
+    -webkit-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.image_zoom_wrap .controller {
+    display: inline-flex;
+    gap: 12px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 3;
+}
+
+.image_zoom_wrap .controller>button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid var(--stroke-default);
+    position: relative;
+    background-color: var(--bg-default);
+}
+
+.image_zoom_wrap .controller>button::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image_zoom_wrap .controller>button:hover {
+    background-color: var(--primary-blue-50);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.image_zoom_wrap .controller>button:disabled {
+    background-color: var(--btn-disabled-bg);
+    border-color: var(--stroke-default);
+    box-shadow: none;
+}
+
+.image_zoom_wrap .controller>button:disabled::after {
+    -webkit-filter: grayscale(100%) opacity(50%);
+    filter: grayscale(100%) opacity(50%);
+}
+
+.image_zoom_wrap .scale_up::after {
+    background-image: url(../img/icon_plus.svg);
+}
+
+.image_zoom_wrap .scale_down::after {
+    background-image: url(../img/icon_minus.svg);
+}
+
+/**
+* 페이징 기능 ui
+*/
+.paging_layout {
+    padding: 0 80px;
+    /* 소발문 위치로 인하여 80px으로 고정되어야 합니다. (250421) */
+}
+
+.paging_controller .pagenation {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.paging_controller>button {
+    min-width: unset;
+    /* width: 80px;
+    height: 80px; */
+    /* 소발문 위치와 콘텐츠 버튼 겹침 이슈로 인한 사이즈 수정 (250421) */
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+    background-color: var(--bg-default);
+    border-radius: 50%;
+    border: 1px solid var(--stroke-default);
+    box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.paging_controller>button.disabled {
+    display: none;
+}
+
+.paging_controller>button:hover {
+    background-color: var(--primary-blue-50);
+}
+
+.paging_controller>button:disabled {
+    background-color: var(--bg-disabled);
+}
+
+.paging_controller>button.prev {
+    left: 40px;
+    background-image: url(../img/icon_paging_arrow_prev.svg);
+}
+
+.paging_controller>button.next {
+    right: 40px;
+    background-image: url(../img/icon_paging_arrow_next.svg);
+}
+
+.pagenation>button {
+    min-width: unset;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #d2d3d7;
+    color: #000;
+    font-size: 0;
+}
+
+.pagenation>button.on {
+    background-color: var(--primary-blue);
+}
+
+.paging_layout article.page {
+    display: none;
+}
+
+.paging_layout article.page.on {
+    display: block;
+}
+
+.pagenation>button:disabled {
+    opacity: 0.6;
+}
+
+/**
+  * 질문 영역
+  */
+.question_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    /* gap: 12px; 연산자와의 간격 삭제 */
+    font-size: 44px;
+}
+
+.question_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.group_box {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 5px;
+    border-radius: 12px;
+    background-color: var(--secondary-coral-300);
+}
+
+/* 숨김 들어내기 기능 버튼 */
+.reveal_btn {
+    height: unset;
+    min-width: 120px;
+    padding: 14px 20px;
+    background-color: var(--bg-default);
+    border: 2px solid var(--stroke-default);
+    
+    /* font-size: 24px; */
+    /* 250418 폰트 공통 적용 요청 */
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    
+    font-weight: 700;
+    color: #222;
+    border-radius: 12px;
+    position: relative;
+}
+
+.reveal_btn.on {
+    border: 2px solid var(--primary-blue);
+}
+
+.reveal_btn:hover {
+    background-color: var(--bg-default);
+    border-color: var(--stroke-hover);
+}
+
+.reveal_btn::before {
+    content: '';
+    display: block;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    border-radius: 12px;
+    background-color: var(--bg-default);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.reveal_btn:not(:disabled):after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 80px;
+    border-radius: 12px;
+    background: url(../img/cursor_pointer_large.svg) no-repeat center / 100%;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.reveal_btn.on::before,
+.reveal_btn.on {
+    cursor: default;
+}
+
+.reveal_btn.on::before,
+.reveal_btn.on::after {
+    content: none;
+}
+
+.hidden_obj {
+    opacity: 0;
+}
+
+.hidden_obj>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hidden_obj.on {
+    opacity: 1;
+}
+
+/* 수식 꺽은선 연결 그리기 */
+.drawing_area {
+    min-width: 200px;
+    min-height: 150px;
+    position: relative;
+    border-radius: 12px;
+}
+
+.drawing_area.hint {
+    background-color: #ffe5e5;
+}
+
+.drawing_area .dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--font-main);
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    /* 상단에 배치 */
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.drawing_area .dot::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.drawing_area .dot.selected {
+    border: 2px solid #007bff;
+    background-color: rgba(0, 123, 255, 0.2);
+}
+
+/* 점들의 X축 위치 조정 */
+.dot_1 {
+    left: 20px;
+}
+
+.dot_2 {
+    left: 60px;
+}
+
+.dot_3 {
+    left: 100px;
+}
+
+.dot_4 {
+    left: 140px;
+}
+
+.dot_5 {
+    left: 180px;
+}
+
+/* SVG 컨테이너 */
+.connection_lines {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* pointer-events: none; */
+    stroke: #00a0e9;
+}
+
+.connection_label {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00a0e9;
+    border: 2px solid #00a0e9;
+    pointer-events: none;
+}
+
+.connection_line {
+    stroke: #222222;
+    /* 모든 선 기본 색상 */
+}
+
+.connect_lines line.correct_line {
+    opacity: 0.3;
+    stroke-width: 16px;
+}
+
+/* 선 클릭 영역 스타일 */
+.drawing_area .connection_lines path {
+    cursor: pointer;
+    stroke-linecap: round;
+    transition: stroke-width 0.2s ease;
+}
+
+.drawing_area .connection_lines path:hover {
+    stroke-width: 4px;
+}
+
+/* 참거짓 */
+
+.boolean_wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.boolean_wrap button {
+    min-width: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84px;
+    height: 84px;
+    aspect-ratio: 1 / 1;
+    font-size: 32px;
+    color: var(--font-main);
+    background-color: var(--bg-default);
+    border: 4px solid transparent;
+    border-radius: 50%;
+}
+
+.boolean_wrap button:hover {
+    border-color: var(--primary-blue-300);
+}
+
+.boolean_wrap button.selected {
+    border-color: var(--font-main);
+}
+
+.boolean_wrap button.hint {
+    border-width: 6px;
+    border-color: var(--secondary-red);
+}
+
+#app_wrap.completed .boolean_count_wrap button {
+    pointer-events: none;
+}
+
+.boolean_count_wrap {
+    display: inline-flex;
+    gap: 1px;
+    border: 2px solid var(--font-main);
+}
+
+.boolean_count_wrap button {
+    min-width: 40px;
+    background: var(--font-main-reverse);
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+}
+
+.boolean_count_wrap button:not(:first-child)::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-image: repeating-linear-gradient(to bottom, var(--font-main), var(--font-main) 4px, transparent 4px, transparent 8px);
+    position: absolute;
+    top: 0;
+    left: -1px;
+}
+
+.boolean_count_wrap button.selected {
+    background-color: var(--font-main);
+}
+
+.boolean_count_wrap.col {
+    flex-direction: column-reverse;
+}
+
+.boolean_count_wrap.col button:not(:first-child)::before {
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(to right, var(--font-main), var(--font-main) 4px, transparent 4px, transparent 8px);
+    top: unset;
+    bottom: -1px;
+    left: 0;
+}
+
+/* 선잇기 */
+.connect_line_box {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    padding: 12px;
+}
+
+.connect_line_box li {
+    border-radius: 12px;
+    background: var(--bg-default);
+    font-size: 32px;
+    font-weight: 700;
+    padding: 12px 60px;
+    position: relative;
+}
+
+.connect_line_box li::after {
+    content: '';
+    width: calc(100% + 24px);
+    height: calc(100% + 24px);
+    border-radius: 20px;
+    border: 2px dashed var(--stroke-default);
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    z-index: -1;
+}
+
+.connect_line_box.start li {
+    border: 2px dashed #8a72f3;
+}
+
+.connect_line_box.start li::after {
+    background: #ede9ff;
+}
+
+.connect_line_box.end li {
+    border: 2px dashed var(--primary-blue-300);
+}
+
+.connect_line_box.end li::after {
+    background: var(--primary-blue-50);
+}
+
+.connect_wrap {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.connect_wrap.disabled {
+    pointer-events: none;
+}
+
+.connect_wrap.disabled .connect_lines line {
+    cursor: default;
+}
+
+.start_group,
+.end_group {
+    display: flex;
+    flex-direction: column;
+    gap: 108px;
+    justify-content: center;
+    z-index: 1;
+}
+
+.connect_point {
+    width: 20px;
+    height: 20px;
+    background-color: var(--font-main-700);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.connect_point:hover {
+    background: var(--font-main);
+}
+
+.connect_lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* 선은 클릭 안되게 */
+    z-index: 0;
+}
+
+.connect_lines line {
+    pointer-events: all;
+    /* 선 클릭해서 삭제 가능하도록 */
+    cursor: pointer;
+}
+
+.connect_point.selected {
+    background-color: var(--font-main);
+}
+
+/* 드래그앤드롭 */
+.ui-state-hover {
+    outline: 2px dashed var(--stroke-hover);
+}
+
+/* 도움말 버블 캐릭터 */
+.bubble_charactor {
+    width: 240px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    position: absolute;
+    bottom: 30px;
+    right: 140px;
+    z-index: 10;
+}
+
+.bubble_charactor[data-charactor='1'] {
+    background-image: url(../img/charactor_math_01.svg);
+}
+
+.bubble_charactor[data-charactor='2'] {
+    background-image: url(../img/charactor_math_02.svg);
+}
+
+.bubble_charactor[data-charactor='3'] {
+    background-image: url(../img/charactor_math_03.svg);
+}
+
+.bubble_charactor .bubble {
+    /* min-width: 380px; */
+    width: 392px;
+    height: 78px;
+    padding: 4px 40px;
+    background: url(../../common/img/charactor_bubble.svg) no-repeat right top;
+    position: absolute;
+    margin-right: -30px;
+}
+
+/*
+.bubble_charactor .bubble::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../../common/img/charactor_bubble.svg) no-repeat right top;
+    position: absolute;
+}
+*/
+
+.bubble_charactor .bubble[data-point-position='top left'] {
+    top: 20px;
+    right: 100%;
+}
+
+.bubble_charactor .bubble[data-point-position='bottom right'] {
+    bottom: 20px;
+    left: 100%;
+}
+
+.bubble_charactor .bubble[data-point-position='bottom left'] {
+    bottom: 20px;
+    right: 100%;
+}
+
+.bubble_charactor .bubble[data-point-position='top right'] {
+    top: 20px;
+    left: 100%;
+}
+
+
+/*
+
+.bubble_charactor .bubble[data-point-position='top left']::after {
+    transform: scaleY(-1);
+    bottom: -1px;
+    right: -10.5px;
+}
+
+.bubble_charactor .bubble[data-point-position='bottom right']::after {
+    transform: scaleX(-1);
+    top: 1px;
+    left: -10.5px;
+}
+
+.bubble_charactor .bubble[data-point-position='bottom left']::after {
+    top: 1px;
+    right: -10.5px;
+}
+
+.bubble_charactor .bubble[data-point-position='top right']::after {
+    transform: scaleX(-1) scaleY(-1);
+    bottom: -1px;
+    left: -10.5px;
+}
+
+*/
+
+
+.bubble_charactor .bubble p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.bubble_charactor .bubble p strong {
+    color: var(--secondary-red);
+}
+
+/* 격자 그리기 */
+.drawing_grid_area {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: white;
+    border: 2px solid black;
+    background-image: linear-gradient(to right, lightblue 1px, transparent 1px), linear-gradient(to bottom, lightblue 1px, transparent 1px);
+    background-size: 50px 50px;
+    user-select: none;
+}
+
+.drawing_grid_area .hit_area {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.drawing_grid_area .point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.drawing_grid_area svg.line_canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.drawing_grid_area line {
+    stroke: black;
+    stroke-width: 2;
+}
+
+.drawing_grid_area .drawing_grid_area.correct {
+    border: 2px solid green;
+}
+
+.drawing_grid_area .drawing_grid_area.hint {
+    border: 2px solid red;
+}
+
+/* 컨텐츠 비활성화 */
+.completed .disabled,
+.completed .drawing_area,
+.completed .circle-graph-division {
+    pointer-events: none;
+    cursor: default;
+}
+
+.completed .disabled *,
+.completed .drawing_area *,
+.completed .circle-graph-division * {
+    pointer-events: none;
+}
+
+/* 화면전체 줌 기능 */
+.content_zoom_area.on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.content_zoom_area.on .content_zoom_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 1635px;
+    height: 684px;
+    padding: 40px;
+    background-color: var(--bg-default);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    overflow: hidden;
+}
+
+/* Style for the inner scrolling div */
+.content_zoom_area.on .zoom_scroll_content {
+    flex-grow: 1; /* Allow div to grow and fill space */
+    overflow: auto; /* Enable scrolling for this div */
+}
+
+/* Apply scaling and origin to the .contents element *inside* the zoom area */
+.content_zoom_area.on .contents {
+    transform-origin: top left; /* Scaling origin */
+    transform: scale(1); /* Default scale */
+}
+
+.content_zoom_area .controller,
+.content_zoom_area .btn_close {
+    display: none;
+}
+
+.content_zoom_area.on .controller,
+.content_zoom_area.on .btn_close {
+    display: flex;
+}
+
+.content_zoom_area .btn_close {
+    width: 40px;
+    height: 40px;
+    background: url(../../common/img/icon_times_blk.svg) no-repeat center / 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 3;
+}
+
+.content_zoom_area .controller {
+    gap: 12px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 3;
+}
+
+.content_zoom_area button {
+    min-width: unset;
+}
+
+.content_zoom_area button.btn_close {
+    width: 40px;
+    height: 40px;
+    background: url(../../common/img/icon_times_blk.svg) no-repeat center / 40px;
+}
+
+.content_zoom_area .controller button.scale_down,
+.content_zoom_area .controller button.scale_up {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid var(--stroke-default);
+    position: relative;
+    background-color: var(--bg-default);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px;
+}
+
+.content_zoom_area .controller button.scale_down {
+    background-image: url(../../common/img/icon_minus.svg);
+}
+
+.content_zoom_area .controller button.scale_up {
+    background-image: url(../../common/img/icon_plus.svg);
+}
+
+.content_zoom_area:not(.zoom_lv1):not(.zoom_lv2) .controller button.scale_down,
+.content_zoom_area.zoom_lv2 .controller button.scale_up {
+    background-color: var(--btn-disabled-bg);
+    border-color: var(--stroke-default);
+    box-shadow: none;
+    pointer-events: none;
+}
+
+.content_zoom_area:not(.zoom_lv1):not(.zoom_lv2) .controller button.scale_down::after,
+.content_zoom_area.zoom_lv2 .controller button.scale_up::after {
+    -webkit-filter: grayscale(100%) opacity(50%);
+    filter: grayscale(100%) opacity(50%);
+}
+
+.content_zoom_area .controller button.scale_down:hover,
+.content_zoom_area .controller button.scale_up:hover {
+    background-color: var(--primary-blue-50);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.content_zoom_area .controller button.scale_down:active,
+.content_zoom_area .controller button.scale_up:active {
+    background-color: var(--primary-blue);
+}
+
+.content_zoom_area .controller button.scale_down:active::after,
+.content_zoom_area .controller button.scale_up:active::after {
+    -webkit-filter: grayscale(100%) opacity(50%);
+    filter: grayscale(100%) opacity(50%);
+}
+
+/* Apply scaling to .contents based on parent zoom level */
+.content_zoom_area.zoom_lv1 .contents {
+    transform: scale(1.5);
+}
+
+.content_zoom_area.zoom_lv2 .contents {
+    transform: scale(2);
+}
+
+/* 드래그 커서 스타일 */
+.zoom_scroll_content.grab {
+    cursor: grab;
+}
+.zoom_scroll_content.grabbing {
+    cursor: grabbing;
+}
+
+/* 준비물 팝업 */
+.pop_supplies_area:not(.show) {
+    display: none;
+}
+
+.pop_supplies_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 1635px;
+    height: 684px;
+    padding: 40px;
+    background-color: var(--bg-default);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pop_supplies_wrap button.close {
+    min-width: auto;
+    width: 40px;
+    height: 40px;
+    background: url(../../common/img/icon_times_blk.svg) no-repeat center / 40px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 3;
+}
+
+.pop_supplies_wrap .pop_supplies_contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

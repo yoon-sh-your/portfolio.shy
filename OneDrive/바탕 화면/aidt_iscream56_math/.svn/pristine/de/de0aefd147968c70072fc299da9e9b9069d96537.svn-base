@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_11_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_09.css">
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_11.css">
+  </head>
+  <body>
+
+    <!-- 창의 퍼즐 -->
+    <div id="app_wrap" class="ema616_11_ih_0001">
+        <section class="title type2">
+            <h2 data-puzzle="orange" lang="y"> 
+            문제를 해결하여 미로를 빠져나가 보세요.
+        
+            <div class="picture_wrap" data-head="" data-title=" ">
+                <div class="img_box">
+                    <div class="img_wrap">
+                        <img src="../../common_practice/img/EMA616_11_IH/map1.png" alt="" />
+                        <!-- <div class="text_group">
+                            <span class="txt1" lang="y">출발</span>
+                            <span class="txt2" lang="y">도착</span>
+                            <span class="txt3" lang="y">공사중</span>
+                        </div> -->
+                    </div>
+                </div>
+                <button class="zoom"></button>
+            </div>
+        </h2>
+        </section>
+  
+        <section class="contents">
+         
+            <div class="flex justify_center">
+                <div class="map_area">
+                    <img src="../../common_practice/img/EMA616_11_IH/map1.png" alt="">
+                    <!-- <div class="text_group">
+                        <span class="txt1" lang="y">출발</span>
+                        <span class="txt2" lang="y">도착</span>
+                        <span class="txt3" lang="y">공사중</span>
+                    </div> -->
+
+                    <svg width="540" height="495" viewBox="0 0 540 495" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       
+
+                        <path class="load1" data-quiz="한 모서리의 길이가 1 ㎝인 정육면체의 부피는 1 ㎤입니다. (O, X) " data-left="O" data-right="X" data-true="X" 
+                        d="M102.24859 71L109.6616 86.2532C123.1404 89.1968 126.7587 95.9991 121.2353 104.7289C114.3311 115.6412 97.81014 142.4259 102.98834 202.195C103.10489 204.223 103.71264 208.975 105.2112 211.758" 
+                        stroke="none" stroke-width="4"/>
+                
+
+                        <path class="load2" data-quiz="가로가 4 ㎝, 세로가 2 ㎝, 높이가 3 ㎝인 직육면체의 부피는  4×2×3=24(㎤)입니다.(O, X)" data-left="X" data-right="O" data-true="O" 
+                        d="m120.6,218.4c0,-1 -1,-64 18,-84c19,-20 54,-44 89,-42"
+                         stroke="none" stroke-width="4"/>
+
+                        <path class="load3" data-quiz="1 ㎥는 1000000 ㎤입니다. " data-left="O" data-right="X" data-true="O" 
+                        d="m230.6,104.4c0,0 112,-13 139,9c27,22 31,17 40.4,46.6c9.4,29.6 -4.4,43.4 -24.4,56.4"
+                        stroke="none" stroke-width="4"/>
+
+
+
+                        <path class="load4" data-quiz="한 모서리의 길이가 3 ㎝인 정육면체의 겉넓이는 3×3×6=54 (㎠)입니다." data-left="O" data-right="X" data-true="X" 
+                        d="m355.6,226.4c0,0 -41,25 -61,26c-20,1 -29,5 -32,21c-3,16 -3,20 12,33c15,13 60,1 80,-6c20,-7 78,-36 90,-60c12,-24 17,-71 12,-78""
+                        stroke="none" stroke-width="4"/>
+
+
+                        <path class="load5" data-quiz="15+(12-9)×4" data-left="72" data-right="27" data-true="72" 
+                        d="m474.6,154.4c0,0 17,3 22,10c5,7 9,45 -10,87c-19,42 -19,30 -29,42c-10,12 -9,14 4,31"
+                        stroke="none" stroke-width="4"/>
+
+                        <image id="obj_move" href="../../common_practice/img/EMA616_11_IH/kid.png" x="25" y="10" width="90" height="78"/>
+                    </svg>
+
+                    <span class="obj_arrival"><img src="../../common_practice/img/EMA616_11_IH/kid-2.png" alt="도착 이미지"></span>
+                </div>
+
+            </div>
+
+           <div class="btn_area">
+                
+                    <button class="btnCheck">확인</button>
+                  </div>
+            </div>
+        </section>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const obj = document.getElementById("obj_move");
+            const pathElements = document.querySelectorAll("svg path[class^='load']");
+            let currentPathIndex = 0;
+            let state = "ready"; // ready, moving, quiz
+    
+            function moveAlongPath(pathEl) {
+                state = "moving";
+    
+                const pathLength = pathEl.getTotalLength();
+                const speed = 200;
+                const duration = (pathLength / speed) * 1000;
+    
+                const fps = 60;
+                const steps = Math.round(duration / (1000 / fps));
+                let step = 0;
+    
+                const start = pathEl.getPointAtLength(0);
+                obj.setAttribute("x", start.x - obj.width.baseVal.value / 2);
+                obj.setAttribute("y", start.y - obj.height.baseVal.value / 2);
+                obj.setAttribute("transform", "scale(0.9)");
+    
+                const interval = setInterval(() => {
+                    const progress = step / steps;
+                    const point = pathEl.getPointAtLength(progress * pathLength);
+    
+                    obj.setAttribute("x", point.x - obj.width.baseVal.value / 2);
+                    obj.setAttribute("y", point.y - obj.height.baseVal.value / 2);
+    
+                    step++;
+    
+                    if (step > steps) {
+                        clearInterval(interval);
+                        state = "quiz"; // 이동 완료 후 퀴즈 대기
+                    }
+                }, 1000 / fps);
+            }
+    
+            function renderFractionHTML(str) {
+                return str
+                    .split("+")
+                    .map(part => {
+                        const mixedMatch = part.match(/^(\d+)\((\d+)\)\/\((\d+)\)$/); 
+                        const fractionMatch = part.match(/^\((\d+)\)\/\((\d+)\)$/);   
+    
+                        if (mixedMatch) {
+                            return `
+                                <div class="fraction_box_wrap">
+                                    <span>${mixedMatch[1]}</span>
+                                    <div class="fraction_box">
+                                        <span>${mixedMatch[2]}</span>
+                                        <span>${mixedMatch[3]}</span>
+                                    </div>
+                                </div>
+                            `;
+                        } else if (fractionMatch) {
+                            return `
+                                <div class="fraction_box">
+                                    <span>${fractionMatch[1]}</span>
+                                    <span>${fractionMatch[2]}</span>
+                                </div>
+                            `;
+                        } else {
+                            return `<span>${part}</span>`; 
+                        }
+                    })
+                    .join('<span class="operator">+</span>');
+            }
+    
+            function showQuiz(pathEl) {
+                const quiz = pathEl.dataset.quiz;
+                const left = pathEl.dataset.left;
+                const right = pathEl.dataset.right;
+                const correct = pathEl.dataset.true;
+    
+                const popArea = document.createElement("div");
+                popArea.className = "pop_area";
+                popArea.innerHTML = `
+                    <div class="quiz_pop">
+                        <button type="button" class="close" style="display: none;"></button>
+                        <div class="inner_pop quiz${currentPathIndex + 1}">
+                            <div class="txt_quiz">${renderFractionHTML(quiz)}</div>
+                            <div class="question_box">
+                                <button type="button" class="left" data-answer-single="${left === correct}">
+                                    ${renderFractionHTML(left)}
+                                </button>
+                                <div class="center">
+                                    <img src="../../common_practice/img/EMA616_11_IH/kid.png" alt="">
+                                </div>
+                                <button type="button" class="right" data-answer-single="${right === correct}">
+                                    ${renderFractionHTML(right)}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+    
+                document.querySelector(".contents")?.after(popArea);
+    
+                const leftBtn = popArea.querySelector(".left");
+                const rightBtn = popArea.querySelector(".right");
+    
+                leftBtn.addEventListener("click", checkAnswer);
+                rightBtn.addEventListener("click", checkAnswer);
+            }
+    
+            function checkAnswer(e) {
+                const selected = e.currentTarget;
+                const isCorrect = selected.dataset.answerSingle === "true";
+    
+                const quizPop = document.querySelector(".quiz_pop");
+    
+                if (isCorrect) {
+                    quizPop.classList.remove("error");
+                    quizPop.classList.add("result");
+    
+                    const closeBtn = quizPop.querySelector(".close");
+                    closeBtn.style.display = "block";
+    
+                    closeBtn.addEventListener("click", () => {
+                        document.querySelector(".pop_area")?.remove();
+                        currentPathIndex++;
+                        if (currentPathIndex < pathElements.length) {
+                            moveAlongPath(pathElements[currentPathIndex]);
+                        } else {
+                            document.querySelector(".map_area")?.classList.add("result");
+                            state = "done";
+                        }
+                    });
+                } else {
+                    quizPop.classList.remove("result");
+                    quizPop.classList.add("error");
+                    setTimeout(() => {
+                        quizPop.classList.remove("error");
+                    }, 1000);
+                }
+            }
+    
+            obj.addEventListener("click", () => {
+                if (state === "ready" && currentPathIndex < pathElements.length) {
+                    moveAlongPath(pathElements[currentPathIndex]);
+                } else if (state === "quiz") {
+                    showQuiz(pathElements[currentPathIndex]);
+                }
+            });
+        });
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,435 @@
+runAfterAppReady(function () {
+    const showArcDiv = document.querySelector('.show_arc');
+    const showArcInstance = new showArc(showArcDiv);
+
+    // 버튼 활성화 규칙 정의
+    defineButtonClassRules([
+        {
+            selector: ".show_arc",
+            test: (el) => {
+                // correction 데이터 가져오기
+                const correction = el.getAttribute('data-correction');
+                // correction 속성이 없거나 빈 배열이면 false
+                return !correction || correction === '[]' ? false : true;
+            },
+            setClass: [
+                { target: ".btnReset", class: "active" },
+                { target: ".btnCheck", class: "active" }
+            ]
+        }
+    ]);
+
+    window.resetCustom = function () {
+        const activePage = pagenation.activePage;
+        if (activePage) {
+            const activeShowArc = activePage.querySelector('.show_arc');
+
+            // 모든 선 제거
+            const lines = activeShowArc.querySelectorAll('.click-line');
+            lines.forEach(line => line.remove());
+
+            // 모든 점 제거
+            const points = activeShowArc.querySelectorAll('.click-point');
+            points.forEach(point => point.remove());
+
+            // data-correction 속성 제거
+            activeShowArc.removeAttribute('data-correction');
+
+            // data-connection 속성 초기화
+            activeShowArc.setAttribute('data-connection', JSON.stringify([]));
+
+            // 인스턴스의 정보 제거
+            showArcInstance.reset();
+
+            // 버튼 상태 업데이트
+            window.forceWatchEvaluation();
+        }
+    }
+
+    window.getCustomTargets = function (page) {
+        return $(page).find(".show_arc");
+    };
+
+    let dataAnswers;
+    // 커스텀 정답 조건
+    window.customCheckCondition = function (el) {
+        // data-correction 속성이 'true'이면 정답 처리
+        console.log(el);
+        const correction = el.getAttribute('data-correction');
+        dataAnswers = el.getAttribute('data-single-answer');
+        if (correction === 'true') {
+            return true;
+        }
+
+        // data-correction 속성이 없거나 'false'이면 오답 처리
+        return false;
+    };
+
+    // 두 번째 오답 시
+    window.onIncorrectTwiceCustom = function () {
+        alert("🚨 정답 공개됩니다!");
+
+        showArcInstance.reset();
+
+        // 정답 선 그리기
+        // console.log("dataAnswers", dataAnswers);
+        // dataAnswersParsed = JSON.parse(dataAnswers);
+
+        const forceClickArr = [1, 6, 6, 11];
+        forceClickArr.forEach((value, index) => {
+            showArcInstance.forceClick(value);
+            // console.log(value);
+        });
+    };
+});
+
+const colors = ['#F00', '#3B71FE', '#222'];
+
+class showArc {
+    constructor(showArcDiv) {
+        this.showArcDiv = showArcDiv;
+        this.svg = showArcDiv.querySelector('#showArcSvg');
+        this.NS = "http://www.w3.org/2000/svg";
+
+        this.svgHeight = Number(this.svg.getAttribute('height'));
+        this.svgWidth = Number(this.svg.getAttribute('width'));
+
+        this.barRect = this.svg.querySelector('rect.bar');
+        this.barWidth = Number(this.barRect.getAttribute('width'));
+        this.barHeight = Number(this.barRect.getAttribute('height'));
+        this.barStartX = Number(this.barRect.getAttribute('x'));
+        this.barStartY = Number(this.barRect.getAttribute('y'));
+
+        this.sectionPx = this.barWidth / 15;
+
+        // // 기본 설정 값 로그
+        // console.log("this.svgHeight", this.svgHeight);
+        // console.log("this.svgWidth", this.svgWidth);
+        // console.log("this.barWidth", this.barWidth);
+        // console.log("this.barHeight", this.barHeight);
+        // console.log("this.barStartX", this.barStartX);
+        // console.log("this.barStartY", this.barStartY);
+
+        // // 계산 로그
+        // console.log("this.barWidth / 15", this.barWidth / 15); // 70
+
+        // 상태 관리
+        this.state = {
+            arcs: [],
+        };
+
+        this.selectedPoints = [];
+        this.selectedtwoPoints = [];
+        this.selectedClickPoints = [];
+
+        this.init();
+    };
+
+    init() {
+        console.log('init');
+
+        // 초기 점들 생성
+        this.createDiameterPoints();
+    }
+
+    createDiameterPoints() {
+        for (let i = 0; i < 11; i++) {
+            const x = this.barStartX + (this.sectionPx * 5) + (i * this.sectionPx);
+            const y = this.barStartY;
+
+            const clickArea = document.createElementNS(this.NS, "circle");
+            clickArea.setAttribute("cx", x);
+            clickArea.setAttribute("cy", y);
+            clickArea.setAttribute("r", "16");
+            clickArea.setAttribute("class", "diameter-point-area");
+            clickArea.setAttribute("data-selected", "false");
+            clickArea.setAttribute("data-order", `${i + 1}`);
+
+            const point = document.createElementNS(this.NS, "circle");
+            point.setAttribute("cx", x);
+            point.setAttribute("cy", y);
+            point.setAttribute("r", "16");
+            point.setAttribute("class", "diameter-point");
+            point.setAttribute("data-selected", "false");
+
+            const handleClick = (e) => {
+                e.stopPropagation();
+
+                clickArea.setAttribute("data-selected", "true");
+                point.setAttribute("data-selected", "true");
+
+                this.selectedPoints.push({ x, y });
+                this.selectedtwoPoints.push({ clickArea, point });
+
+                this.drawPoint(x, y);
+
+                if (this.selectedPoints.length === 2) {
+                    const [p1, p2] = this.selectedPoints;
+
+                    const existingLine = this.state.arcs.find(arc => {
+                        const match1 = arc.x1 === p1.x && arc.y1 === p1.y && arc.x2 === p2.x && arc.y2 === p2.y;
+                        const match2 = arc.x1 === p2.x && arc.y1 === p2.y && arc.x2 === p1.x && arc.y2 === p1.y;
+                        return match1 || match2;
+                    });
+
+                    if (existingLine) {
+                        console.log('이미 존재하는 선입니다!');
+
+                        this.svg.querySelector(`.diameter-point-area[cx="${p1.x}"][cy="${p1.y}"]`)?.setAttribute('data-selected', 'false');
+                        this.svg.querySelector(`.diameter-point[cx="${p1.x}"][cy="${p1.y}"]`)?.setAttribute('data-selected', 'false');
+                        this.svg.querySelector(`.diameter-point-area[cx="${p2.x}"][cy="${p2.y}"]`)?.setAttribute('data-selected', 'false');
+                        this.svg.querySelector(`.diameter-point[cx="${p2.x}"][cy="${p2.y}"]`)?.setAttribute('data-selected', 'false');
+
+                        for(const arc of this.state.arcs){
+                            const equalArc = (
+                                arc.x1 === p1.x && arc.x2 === p2.x || 
+                                arc.x2 === p1.x && arc.x1 === p2.x
+                            );
+                            console.log('equalArc', equalArc);
+                            if(equalArc){
+                                this.svg.removeChild(arc.path);
+                                this.state.arcs.pop(arc);
+                                console.log(this.state.arcs);
+                            }
+                        }
+                        for (const sCPoint of this.selectedClickPoints) {
+                            console.log('sCPoint', sCPoint);
+                            console.log('sCPoint parentNode', sCPoint.parentNode);
+                            this.svg.removeChild(sCPoint);
+                            // this.state.twoPoint.pop(sCPoint);
+
+                            const existingPoints = Array.from(this.svg.getElementsByClassName('click-point'));
+                            console.log("existingPoints.length", existingPoints.length)
+                            for(const exPoint of existingPoints){
+                                const exCx = exPoint.getAttribute("cx");
+                                const spCx = sCPoint.getAttribute("cx");
+                                if(exCx === spCx) {
+                                    console.log('exPoint', exPoint);
+                                    if(exPoint) {
+                                        this.svg.removeChild(exPoint);
+                                    }
+                                    break;
+                                }
+                            }
+                        }
+                    } else {
+                        console.log('호 그리기');
+                        this.drawArc();
+                    }
+
+                    this.selectedPoints = [];
+                    this.selectedtwoPoints = [];
+                    this.selectedClickPoints = [];
+                }
+
+                console.log('this.state', this.state);
+                this.update();
+            };
+
+            clickArea.addEventListener('click', handleClick);
+            point.addEventListener('click', handleClick);
+
+            this.svg.appendChild(clickArea);
+            this.svg.appendChild(point);
+        }
+    }
+
+    drawPoint(x, y) {
+        const existingPoints = Array.from(this.svg.getElementsByClassName('click-point'));
+
+        const point = document.createElementNS(this.NS, "circle");
+        point.setAttribute("cx", x);
+        point.setAttribute("cy", y);
+        point.setAttribute("r", "6");
+        point.setAttribute("class", "click-point");
+        // point.setAttribute('data-id', Math.random());
+
+        this.svg.appendChild(point);
+
+        this.selectedClickPoints.push(point);
+        console.log('this.selectedClickPoints', this.selectedClickPoints);
+
+        // if(this.selectedClickPoints.length === 2){
+        //     this.selectedClickPoints = [];
+        //     console.log('this.selectedClickPoints clear', this.selectedClickPoints);
+        // }
+    }
+
+    // remove2point(twoPoint) {
+    //     // 두 점 지우기
+    //     // 존재하는 라인과 점들
+    //     const existingPoints = Array.from(this.svg.getElementsByClassName('click-point'));
+    //     // 두 점 삭제
+    //     for (const point of twoPoint) {
+    //         const { x, y } = point;
+    
+    //         // 1. 점 삭제
+    //         for (const exPoint of existingPoints) {
+    //             const exCX = parseFloat(exPoint.getAttribute('cx'));
+    //             const exCY = parseFloat(exPoint.getAttribute('cy'));
+    
+    //             if (exCX === x && exCY === y) {
+    //                 // 점 삭제
+    //                 this.svg.removeChild(exPoint);
+    //             }
+    //         }
+    //     }
+    // }
+
+    // removeArc() {
+    //     const existingArcs = Array.from(this.svg.getElementsByClassName('click-line'));
+
+    //     for (const point of this.selectedPoints) {
+    //         const { x, y } = point;
+
+    //         for (const arc of existingArcs) {
+    //             const x1 = parseFloat(arc.getAttribute('data-x1'));
+    //             const y1 = parseFloat(arc.getAttribute('data-y1'));
+    //             const x2 = parseFloat(arc.getAttribute('data-x2'));
+    //             const y2 = parseFloat(arc.getAttribute('data-y2'));
+
+    //             const isConnected = (x1 === x && y1 === y) || (x2 === x && y2 === y);
+
+    //             if (isConnected) {
+    //                 if (this.svg.contains(arc)) {
+    //                     this.svg.removeChild(arc);
+    //                 }
+    //                 this.state.arcs = this.state.arcs.filter(a =>
+    //                     !((a.x1 === x1 && a.y1 === y1 && a.x2 === x2 && a.y2 === y2) ||
+    //                         (a.x1 === x2 && a.y1 === y2 && a.x2 === x1 && a.y2 === y1))
+    //                 );
+    //             }
+    //         }
+    //     }
+    // }
+
+    drawArc() {
+        const [p1, p2] = this.selectedPoints;
+
+        const cx1 = p1.x + (p2.x - p1.x) * 0.25;
+        const cy1 = p1.y - (Math.abs(p2.x - p1.x) / 5.6) - 16;
+        const cx2 = p1.x + (p2.x - p1.x) * 0.75;
+        const cy2 = p2.y - (Math.abs(p2.x - p1.x) / 5.6) - 16;
+
+        const path = document.createElementNS(this.NS, "path");
+        const d = `M${p1.x} ${p1.y} C${cx1} ${cy1} ${cx2} ${cy2} ${p2.x} ${p2.y}`;
+
+        path.setAttribute("d", d);
+        path.setAttribute("stroke", colors[this.state.arcs.length % colors.length]);
+        path.setAttribute("stroke-width", "2");
+        path.setAttribute("stroke-dasharray", "4 4");
+        path.setAttribute("fill", "transparent");
+        path.setAttribute("class", "click-line");
+        path.setAttribute("data-x1", p1.x);
+        path.setAttribute("data-x2", p2.x);
+        path.setAttribute("data-y1", p1.y);
+        path.setAttribute("data-y2", p2.y);
+
+        this.svg.appendChild(path);
+
+        this.state.arcs.push({ x1: p1.x, y1: p1.y, x2: p2.x, y2: p2.y, area: Math.round(Math.abs(p2.x - p1.x) / this.sectionPx), path: path});
+        console.log('this.state.arcs', this.state.arcs);
+    }
+
+    update() {
+        this.showArcDiv.removeAttribute('data-correction');
+        this.showArcDiv.setAttribute('data-connection', JSON.stringify([]));
+        // 버튼 상태 업데이트
+        window.forceWatchEvaluation();
+
+        const areas = [];
+        for(const arc of this.state.arcs) {
+            areas.push(arc.area);
+        }
+
+        // connection 데이터 업데이트
+        this.showArcDiv.setAttribute('data-connection', JSON.stringify(areas));
+
+        // correction 데이터 체크
+        const answerData = this.showArcDiv.getAttribute('data-single-answer');
+
+        console.log('현재 영역:', areas);
+        console.log('정답 데이터:', answerData);
+
+        if (answerData) {
+            try {
+                // data-single-answer 값을 JSON으로 파싱
+                const answers = JSON.parse(answerData);
+
+                console.log('파싱된 정답:', answers);
+
+                // 배열 길이가 다르면 false
+                if (areas.length !== answers.length) {
+                    console.log('배열 길이 불일치:', areas.length, answers.length);
+                    this.showArcDiv.setAttribute('data-correction', 'false');
+                    // 버튼 상태 업데이트
+                    window.forceWatchEvaluation();
+                    return;
+                }
+
+                // 값만 비교하려면 두 배열을 정렬 후 비교
+                const sortedPercentages = [...areas].sort((a, b) => a - b);
+                const sortedAnswers = [...answers].sort((a, b) => a - b);
+
+                // 배열 값 비교
+                let isCorrect = sortedPercentages.every((val, index) => parseInt(val) === parseInt(sortedAnswers[index]));
+
+                console.log('정답 여부:', isCorrect);
+                if (isCorrect) {
+                    this.showArcDiv.setAttribute('data-correction', 'true');
+                } else {
+                    this.showArcDiv.setAttribute('data-correction', 'false');
+                }
+                // 버튼 상태 업데이트
+                window.forceWatchEvaluation();
+            } catch (e) {
+                console.error('JSON 파싱 에러:', e);
+                this.showArcDiv.setAttribute('data-correction', 'false');
+                // 버튼 상태 업데이트
+                window.forceWatchEvaluation();
+            }
+        }
+    }
+
+    reset() {
+        // 모든 선, 점, 텍스트 제거
+        const arcs = this.svg.getElementsByClassName('click-line');
+        const points = this.svg.getElementsByClassName('click-point');
+
+        while (arcs.length > 0) arcs[0].remove();
+        while (points.length > 0) points[0].remove();
+
+        // 상태 초기화
+        this.state.arcs = [];
+
+        // data-selected=true 제거
+        const selectedElements = this.svg.querySelectorAll('[data-selected="true"]');
+        selectedElements.forEach(el => {
+            el.setAttribute('data-selected', 'false');
+        });
+
+        // data-correction 속성 제거
+        this.showArcDiv.removeAttribute('data-correction');
+
+        console.log('showArcInstans 리셋 됨');
+    }
+
+    // 클릭 이벤트 발생 시키기
+    forceClick(dataOrder) {
+        // 클릭 이벤트 발생시켜 선 추가
+        const clickPoints = document.querySelectorAll(`circle[data-order="${dataOrder}"]`);
+        if (clickPoints) {
+            clickPoints.forEach((value) => {
+                // 'click' 이벤트를 강제로 발생시킴
+                const clickEvent = new MouseEvent('click', {
+                    bubbles: true,
+                    cancelable: true,
+                    view: window
+                });
+                value.dispatchEvent(clickEvent);
+            });
+        } else {
+            console.warn(`circle[data-order="${dataOrder}"]를 찾을 수 없습니다.`);
+        }
+    }
+}

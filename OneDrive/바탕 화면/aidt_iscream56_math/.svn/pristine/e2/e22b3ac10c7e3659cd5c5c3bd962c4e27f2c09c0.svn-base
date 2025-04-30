@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_04_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_04.css" />
+    <script src="../../common_contents/js/ema626_04_0003.js"></script>
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_04_su_0003" data-current-page="page_1, page_2, page_3, page_4">
+        <section class="title type2">
+            <h2 data-head="1_green" lang="y">
+                친환경 신발 한 켤레당 페트병 6개와 나무 껍질 20 g이 필요합니다. 친환경 신발 수에 따른 페트병 수와 나무 껍질 양의 비를 식으로 나타내어 봅시다.
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">페트병 수와 나무 껍질 양의 비와 비율을 각각 구해 보세요.</h3>
+                    <div class="question_box justify_center">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <td class="br_1">친환경 신발발 수</th>
+                                    <th>한 켤레</th>
+                                    <th class="br_2">두 켤레</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>단추 수와 자투리<br>가족 수의 비</td>
+                                    <td><span>6:20</span></td>
+                                    <td>
+                                        <div class="input_wrap answer1">
+                                            <span>12:</span>
+                                            <math-field type="number" data-answer-single="40" text-align="center"></math-field>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="br_3">단추 수와 자투리<br>가족 수의 비율</td>
+                                    <td>
+                                        <div class="fraction_wrap">
+                                            <div class="input_wrap fraction_wrap">
+                                                <math-field data-answer-single="(6)/(20)" data-answer-multi='{"values": ["(2500000)/(1600)","(3)/(10)"]}' data-multi-hint="y"></math-field>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input_wrap">
+                                            <div class="input_wrap fraction_wrap answer2">
+                                                <math-field data-answer-single="(12)/(40)" data-answer-multi='{"values": ["(2500000)/(1600)","(3)/(10)"]}' data-multi-hint="y"></math-field>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article><!-- 1페이지 -->
+                <article class="page page_2">
+                    <div class="img_row flex align_start">
+                        <div class="picture_wrap">
+                            <svg width="700" height="390" viewBox="0 0 700 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.5px">
+                                    <tspan x="434.697" y="123.314">&#xd328;&#xd2b8;&#xbcd1;&#xacfc; &#xb098;&#xbb34; &#xaecd;&#xc9c8;&#xc744;&#10;</tspan>
+                                    <tspan x="462.135" y="155.314">&#xd65c;&#xc6a9;&#xd558;&#xc5ec; &#xb9cc;&#xb4e0;&#10;</tspan>
+                                    <tspan x="470.498" y="187.314">&#xc2e0;&#xbc1c;&#xc774;&#xc5d0;&#xc694;.</tspan>
+                                </text>
+                                <text transform="translate(232.277 3) rotate(8.20215)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="44" letter-spacing="0px">
+                                    <tspan x="0.0117188" y="38.0918">&#xce5c;&#xd658;&#xacbd; &#xc2e0;&#xbc1c;</tspan>
+                                </text>
+                            </svg>
+                            <img src="../../common_contents/img/EMA624_04_SU/624_04_0002.png" alt="">
+                            <button class="zoom"></button>
+                        </div>
+                        <div class="input_area">
+                            <h3 lang="y">앞에서 구한 두 비율을 비교해 보세요.</h3>
+                            <div class="question_box justify_center">
+                                <div class="fraction_wrap">
+                                    <span lang="y">두 비율은&nbsp;</span>
+                                    <div class="input_wrap fraction_wrap">
+                                        <math-field data-answer-single="(3)/(10)"></math-field>
+                                    </div>
+                                </div>
+                                <span>로&nbsp;</span>
+                                <div class="dropdown_wrap">
+                                    <select class="custom_dropdown" data-answer-single="">
+                                        <option></option><!--최초선택데이터 생성 방지용-->
+                                        <option value="같습니다."></option>
+                                        <option value="다릅니다."></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 2페이지 -->
+                <article class="page page_3">
+                    <div class="img_row flex align_start">
+                        <div class="picture_wrap">
+                            <svg width="700" height="390" viewBox="0 0 700 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.5px">
+                                    <tspan x="434.697" y="123.314">&#xd328;&#xd2b8;&#xbcd1;&#xacfc; &#xb098;&#xbb34; &#xaecd;&#xc9c8;&#xc744;&#10;</tspan>
+                                    <tspan x="462.135" y="155.314">&#xd65c;&#xc6a9;&#xd558;&#xc5ec; &#xb9cc;&#xb4e0;&#10;</tspan>
+                                    <tspan x="470.498" y="187.314">&#xc2e0;&#xbc1c;&#xc774;&#xc5d0;&#xc694;.</tspan>
+                                </text>
+                                <text transform="translate(232.277 3) rotate(8.20215)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="44" letter-spacing="0px">
+                                    <tspan x="0.0117188" y="38.0918">&#xce5c;&#xd658;&#xacbd; &#xc2e0;&#xbc1c;</tspan>
+                                </text>
+                            </svg>
+                            <img src="../../common_contents/img/EMA624_04_SU/624_04_0002.png" alt="">
+                            <button class="zoom"></button>
+                        </div>
+                        <div class="input_area">
+                            <h3 lang="y">
+                                <div class="in_block">
+                                    비율이 같은 두 비를 식으로 어떻게 나타내면 좋을지 이야기해 보세요.
+                                </div>
+                            </h3>
+                            <div class="question_box justify_center">
+                                <div class="input_wrap">
+                                    <math-field class="textarea"></math-field>
+                                    <div class="example_box">
+                                        <p>기호 =를 사용하여 나타내면 좋을 것 같습니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article> <!-- 3페이지 -->
+                <article class="page page_4">
+                    <div class="summarize_wrap">
+                        <div class="summarize">
+                            <label lang="y">약속해 볼까요</label>
+
+                            <div>
+                                <span lang="y">비율이 같은 두 비를 기호 =를 사용하여여</span>
+                            </div>
+                            <div>
+                                <span lang="y">6:20=12:40과 같이 나타낼 수 있습니다.</span>
+                            </div>
+
+                            <div>
+                                <span lang="y">이와 같은 식을</span>
+                                <button class="reveal_btn" data-pair="비례식" lang="y">비례식</button>
+                                <span lang="y">이라고 합니다.</span>
+                            </div>
+
+                            <div>
+                                <span lang="y"> 비례식 6 : 20=12 : 40에서 바깥쪽에 있는 6과 40을</span>
+                            </div>
+
+                            <div>
+                                <button class="reveal_btn" data-pair="외항" lang="y">외항</button>
+                                <span lang="y">, 안쪽에 있는 20과 12를</span>
+                                <button class="reveal_btn" data-pair="내항" lang="y">내항</button>
+                                <span lang="y">이라고 합니다.</span>
+                            </div>
+                        </div>
+                        <div class="img_box">
+                            <img src="../../common_contents/img/EMA624_04_SU/624_04_0003.png" alt="">
+                            <div class="txt_a"><span>외항</span></div>
+                            <div class="txt_b">
+                                <span>6</span>
+                                <span>:</span>
+                                <span>20</span>
+                                <span>=</span>
+                            </div>
+                            <div class="txt_c"><span>내항</span></div>
+                            <div class="txt_d">
+                                <span>6</span>
+                                <span>:</span>
+                                <span>20</span>
+                            </div>
+                        </div>
+                    </div>
+                </article> <!-- 4페이지 -->
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType">입력토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit" data-submit="true">확인</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

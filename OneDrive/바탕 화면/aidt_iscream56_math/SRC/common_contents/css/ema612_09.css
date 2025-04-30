@@ -1,0 +1,150 @@
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.txt_color_main_blue {
+  color: var(--primary-blue);
+}
+.txt_color_main_red {
+  color: var(--secondary-red);
+}
+
+
+/* ema612_07_SU_0002_s */
+.ema612_09_su_0002 .picture_wrap_ty1 {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+} 
+.ema612_09_su_0002 .picture_wrap_ty1 img {
+  width: 986px;
+  margin-top: 30px;
+}
+.ema612_09_su_0002 .image_zoom_wrap .title h3 {
+  visibility: hidden;
+}
+.ema612_09_su_0002 .flex_col_box {
+  width: 100%;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+}
+.ema612_09_su_0002 .flex_col_box .picture_wrap {
+  width: 700px;
+  height: 390px;
+  flex: 0 0 auto;
+}
+.ema612_09_su_0002 .flex_col_box .text_box {
+  width: 710px;
+}
+.ema612_09_su_0002 .flex_col_box .text_box .input_wrap:not(.answer1,.answer2) {
+  width: 100%;
+}
+.ema612_09_su_0002 .flex_col_box .text_box .input_wrap math-field.textarea {
+  height: 240px;
+}
+.ema612_09_su_0002 .tb_area_big {
+  margin: 0 auto;
+  width: 1302px;
+  height: 391px;
+  background: url(../../common_contents/img/EMA612_09_SU/0002_bg_table.png) 0px -38px no-repeat;
+}
+.ema612_09_su_0002 .tb_area_big table {
+  width: 100%;
+}
+.ema612_09_su_0002 .tb_area_big table th,
+.ema612_09_su_0002 .tb_area_big table td {
+  width: auto;
+  height: 70px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema612_09_su_0002 .tb_area_big table thead th:first-child {
+  width: 300px;
+  height: 109px;
+}
+.ema612_09_su_0002 .tb_area_big table thead th > img {
+  margin: 0 auto;
+}
+.ema612_09_su_0002 .tb_area_big table td .dropdown_wrap,
+.ema612_09_su_0002 .tb_area_big table td .dropdown_wrap .custom_select {
+  width: 170px;
+  margin: 0 auto;
+}
+.ema612_09_su_0002 .tb_area_big table td .dropdown_wrap .custom_select .text_hint {
+  position: absolute;
+  top: 50%;
+  left: auto;
+  right: -120px;
+  transform: translateY(-50%);
+}
+.ema612_09_su_0002 .tb_area_big table td .input_wrap {
+  width: 120px;
+}
+.ema612_09_su_0002 .page_4 .flex_col_box .text_box .input_wrap math-field.textarea {
+  height: 225px;
+}
+.ema612_09_su_0002 .page_5 .flex_col_box .text_box .input_wrap math-field.textarea {
+  height: 180px;
+}
+.ema612_09_su_0002 .page_6 .flex_col_box .text_box .input_wrap math-field.textarea {
+  min-height: 100px;
+  height: 100px;
+}
+.ema612_09_su_0002 .page_7 .flex_col_box .text_box .flex {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  margin-left: 190px;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.ema612_09_su_0002 .page_7 .flex_col_box .text_box .flex > span {
+  flex-shrink: 0;
+}
+.ema612_09_su_0002[data-current-page='page_1'] .btn_area,
+.ema612_09_su_0002[data-current-page='page_8'] .btn_area {
+  display: none;
+}
+.ema612_09_su_0002[data-current-page='page_2'] .btnCheck,
+.ema612_09_su_0002[data-current-page='page_4'] .btnCheck,
+.ema612_09_su_0002[data-current-page='page_5'] .btnCheck, 
+.ema612_09_su_0002[data-current-page='page_6'] .btnCheck {
+  display: none;
+}
+.ema612_09_su_0002[data-current-page='page_3'] .btnSubmit,
+.ema612_09_su_0002[data-current-page='page_7'] .btnSubmit {
+  display: none;
+}
+
+
+/* ema612_09_SU_0003_s */
+.ema612_09_su_0003 .diagram_set {
+  display: flex;
+  justify-content: center;
+}
+.ema612_09_su_0003 .text_box {
+  text-align: center;
+}
+.ema612_09_su_0003 .text_box .flex {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.ema612_09_su_0003 .text_box .flex + .flex {
+  margin-top: 40px;
+}
+.ema612_09_su_0003 .text_box .flex > span {
+  flex-shrink: 0;
+}

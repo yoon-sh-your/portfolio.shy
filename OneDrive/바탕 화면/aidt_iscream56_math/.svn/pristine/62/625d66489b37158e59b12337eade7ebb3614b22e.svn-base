@@ -1,0 +1,181 @@
+.title h2[data-head] .fraction_box {
+  margin-left: 0;
+}
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+.fraction_box {
+  min-width: 40px;
+}
+.input_wrap.fraction_wrap,
+.fraction_box .input_wrap {
+  min-width: 0;
+  min-width: 80px;
+}
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap math-field {
+  width: 100%;
+}
+.fraction_box:has(.input_wrap) span {
+  line-height: 60px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.fraction_box_wrap .fraction_box {
+  min-width: 0;
+}
+.label_bogi {
+  width: 52px;
+  height: 32px;
+  border: 2px solid var(--secondary-red);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--secondary-red);
+  z-index: 1;
+}
+.solve_area .icon_arrow {
+  width: 32px;
+}
+
+.ema524_04_ih_0001 .img {
+  position: relative;
+}
+.ema524_04_ih_0001 .img span {
+  position: absolute;
+  bottom: -5px;
+  right: 38px;
+  transform: translateX(100%);
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.ema524_04_ih_0002 .bottom {
+  margin-top: 60px;
+}
+.ema524_04_ih_0002 .answer1 {
+  width: 160px;
+}
+.ema524_04_ih_0002 .answer2 {
+  width: 120px;
+}
+
+.ema524_04_ih_0004 .img {
+  position: relative;
+  padding-bottom: 72px;
+}
+.ema524_04_ih_0004 .img .input_wrap {
+  position: absolute;
+  bottom: 0;
+  right: 16px;
+}
+.ema524_04_ih_0004 .txt {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  font-size: 34px;
+}
+.ema524_04_ih_0004 .txt.t2 {
+  top: 160px;
+  left: 129px;
+}
+
+.ema524_04_ih_0005 .circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  font-size: 24px;
+}
+.ema524_04_ih_0005 .top {
+  border: 2px dashed #d2d2d2;
+  border-radius: 172px;
+  background: #eef9ff;
+  padding: 12px;
+}
+.ema524_04_ih_0005 .top .inr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 784px;
+  height: 148px;
+  background-color: #fff;
+  border-radius: 148px;
+  border: 2px dashed #8cd6ff;
+}
+.ema524_04_ih_0005 .top .item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.ema524_04_ih_0005 .bottom {
+  display: flex;
+  gap: 50px;
+}
+.ema524_04_ih_0005 .bottom .custom_select {
+  width: 167px;
+}
+.ema524_04_ih_0005 .select_trigger,
+.ema524_04_ih_0005 .select_options li {
+  font-size: 32px;
+  font-weight: normal;
+  padding: 8px 20px;
+}
+.ema524_04_ih_0005 .solve_area .conts_solve > .flex:first-child {
+  gap: 24px;
+}
+
+.ema524_04_ih_0006 .label_gray {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.ema524_04_ih_0006 .input_wrap_underline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ema524_04_ih_0006 .answer1,
+.ema524_04_ih_0006 .answer1 math-field {
+  width: 180px;
+}
+.ema524_04_ih_0006 .dir_col > .flex:first-child .input_wrap .text_hint {
+  top: -36px;
+}
+
+.ema524_04_ih_0007 h3.title:before {
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+}
+.ema524_04_ih_0007 .question_box {
+  width: 543px;
+  height: 200px;
+  justify-content: center;
+  background: url(../img/EMA524_04_IH/0007_bg.svg) no-repeat center center / 100% 100%;
+}
+.ema524_04_ih_0007 .right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.ema524_04_ih_0007 .empty_box {
+  justify-content: center;
+}
+.ema524_04_ih_0007 .solve_area .inner_solve {
+  margin-top: 30px;
+}

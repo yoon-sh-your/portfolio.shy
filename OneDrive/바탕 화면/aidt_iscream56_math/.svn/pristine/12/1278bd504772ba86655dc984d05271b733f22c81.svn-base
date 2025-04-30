@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema516_08_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_08_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">두 평행사변형 가와 나의 넓이가 같습니다. 그 이유를 써 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box dir_col justify_center mt_30">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA516_08_IH/0006_01.png" alt="" />
+            <p class="text1">가</p>
+            <p class="text2">나</p>
+            <p class="text3">6 ㎝</p>
+            <p class="text4">6 ㎝</p>
+          </div>
+          <div class="flex align_center justify_center mt_10">
+            <span class="label_reason mr_10" lang="y">이유</span>
+            <div class="input_wrap_underline">
+              <div class="input_wrap">
+                <math-field></math-field>
+                <div class="example_box">
+                  <p lang="y">밑변의 길이와 높이가 각각 같기 때문입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">평행사변형의 모양은 달라도 밑변의 길이와 높이가 각각 같으면 넓이가 같습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

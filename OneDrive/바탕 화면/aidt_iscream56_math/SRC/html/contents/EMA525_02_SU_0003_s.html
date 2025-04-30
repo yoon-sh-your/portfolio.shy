@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA525_02_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema525_su_02.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema525_02_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_light_purple" lang="y">상자를 둘러싸고 있는 도형을 살펴봅시다.
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">상자를 둘러싸고 있는 사각형을 살펴보며 상자를 어떻게 분류할 수 있을지 이야기해 보세요.</h3>
+        <div class="wrap flex justify-conter dir_col gap_20">
+          <div class="contents_img">
+            <ul class="example_num">
+              <li lang="y" class="f24b"><span>가</span></li>
+              <li lang="y" class="f24b"><span>나</span></li>
+              <li lang="y" class="f24b"><span>다</span></li>
+              <li lang="y" class="f24b"><span>라</span></li>
+              <li lang="y" class="f24b"><span>마</span></li>
+              <li lang="y" class="f24b"><span>바</span></li>
+            </ul>
+            <img src="../../common_contents/img/EMA525_01_SU/0003_contents1.png" alt="직육면체,정육면체 예시 이미지" />
+          </div>
+          <div class="text-align_center">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">직사각형으로만 둘러싸인 상자, 정사각형으로만 둘러싸인 상자, 그 외의 사각형으로 둘러싸인 상자로 분류할 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">직사각형으로 둘러싸인 상자를 모두 찾아 기호를 고르세요.</h3>
+        <div class="contents_img">
+          <div class="boolean_wrap span_type">
+            <button data-answer-single="true"><span class="f24b">가</span></button>
+            <button data-answer-single="false"><span class="f24b">나</span></button>
+            <button data-answer-single="true"><span class="f24b">다</span></button>
+            <button data-answer-single="false"><span class="f24b">라</span></button>
+            <button data-answer-single="true"><span class="f24b">마</span></button>
+            <button data-answer-single="true"><span class="f24b">바</span></button>
+          </div>
+          <img src="../../common_contents/img/EMA525_01_SU/0003_contents2.png" alt="직육면체,정육면체 예시 이미지" />
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">정사각형으로 둘러싸인 상자를 모두 찾아 기호를 고르세요.</h3>
+        <div class="contents_img">
+          <div class="boolean_wrap span_type">
+            <button data-answer-single="false"><span class="f24b">가</span></button>
+            <button data-answer-single="false"><span class="f24b">나</span></button>
+            <button data-answer-single="true"><span class="f24b">다</span></button>
+            <button data-answer-single="false"><span class="f24b">라</span></button>
+            <button data-answer-single="true"><span class="f24b">마</span></button>
+            <button data-answer-single="false"><span class="f24b">바</span></button>
+          </div>
+          <img src="../../common_contents/img/EMA525_01_SU/0003_contents2.png" alt="직육면체,정육면체 예시 이미지" />
+        </div>
+      </article>
+      <article class="page page_4">
+        <div class="summarize_wrap yellow">
+          <div class="summarize promise">
+            <label lang="y">약속해 볼까요</label>
+
+            <div>
+              <img src="../../common_contents/img/EMA525_01_SU/0003_contents3.png" alt="직육면체 예제 이미지" />
+            </div>
+            <div>
+              <span lang="y">직사각형 6개로 둘러싸인 도형을 </span>
+              <button class="reveal_btn" data-pair="직육면체" lang="y">직육면체</button>
+              <span lang="y" class="small-gap">라고 합니다.</span>
+            </div>
+            <div>
+              <img src="../../common_contents/img/EMA525_01_SU/0003_contents4.png" alt="정육면체 예제 이미지" />
+            </div>
+            <div>
+              <span lang="y">정사각형 6개로 둘러싸인 도형을</span>
+              <button class="reveal_btn" data-pair="정육면체" lang="y">정육면체</button>
+              <span lang="y" class="small-gap">라고 합니다.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

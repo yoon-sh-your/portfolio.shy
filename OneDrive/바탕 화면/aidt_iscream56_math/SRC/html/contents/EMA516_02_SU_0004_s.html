@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA516_02_SU_0004_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema516_02.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="ema516_02_su_0004" data-current-page="page_1, page_2, page_3, page_4">
+            <section class="title type2">
+                <h2 data-head="2">정다각형의 둘레를 구하는 방법을 생각해 봅시다.</h2>
+            </section>
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">확인</button>
+            </div>
+            <section class="contents paging_layout">
+                <article class="page page_1">
+                    <h3 lang="y">정다각형에서 변의 길이는 어떤 특징이 있나요?</h3>
+                    <div class="input_area">
+                        <div class="question_box dir_col align_start">
+                            <div class="flex align_center gap_12">
+                                <div class="imgBox">
+                                    <img src="../../common_contents/img/EMA516_04_SU/ShapeSample.png" alt="도형 샘플 이미지" />
+                                    <div class="ractangleName1"><span lang="y">정삼각형</span></div>
+                                    <div class="ractangleName2"><span lang="y">정사각형</span></div>
+                                    <div class="ractangleName3"><span lang="y">정오각형</span></div>
+                                    <div class="txt1"><span>3 ㎝</span></div>
+                                    <div class="txt2"><span>3 ㎝</span></div>
+                                    <div class="txt3"><span>3 ㎝</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex mt_40">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <div class="example_box">
+                                    <p lang="y">정다각형의 한 변의 길이에 변의 수를 곱하여 구합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- 1page -->
+
+                <article class="page page_2">
+                    <h3 lang="y">정다각형의 둘레를 구하는 방법을 이야기해 보세요.</h3>
+                    <div class="input_area">
+                        <div class="question_box dir_col align_start">
+                            <div class="flex align_center gap_12">
+                                <div class="imgBox">
+                                    <img src="../../common_contents/img/EMA516_04_SU/ShapeSample.png" alt="도형 샘플 이미지" />
+                                    <div class="ractangleName1"><span lang="y">정삼각형</span></div>
+                                    <div class="ractangleName2"><span lang="y">정사각형</span></div>
+                                    <div class="ractangleName3"><span lang="y">정오각형</span></div>
+                                    <div class="txt1"><span>3 ㎝</span></div>
+                                    <div class="txt2"><span>3 ㎝</span></div>
+                                    <div class="txt3"><span>3 ㎝</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex mt_40">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <div class="example_box">
+                                    <p lang="y">정다각형의 한 변의 길이에 변의 수를 곱하여 구합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!-- 2page -->
+
+                <article class="page page_3">
+                    <h3 lang="y">정다각형의 둘레는 몇 ㎝인지 구해 보세요.</h3>
+                    <div class="flex gap_26">
+                        <div class="img_box">
+                            <img src="../../common_contents/img/EMA516_04_SU/ShapeSample.png" alt="도형 샘플 이미지" />
+                            <div class="ractangle4"><span lang="y">정사각형</span></div>
+                            <div class="ractangle5"><span lang="y">정삼각형</span></div>
+                            <div class="ractangle6"><span lang="y">정오각형</span></div>
+                            <div class="txt4"><span>3 ㎝</span></div>
+                            <div class="txt5"><span>3 ㎝</span></div>
+                            <div class="txt6"><span>3 ㎝</span></div>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th lang="y" class="row1">한 변의 길이 (㎝)</th>
+                                    <th lang="y" class="row2">변의 수 (개)</th>
+                                    <th lang="y" class="row3">둘레 (㎝)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td lang="y" class="vertical1">정삼각형</td>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="input_wrap input3">
+                                            <math-field data-answer-single="3"></math-field>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input_wrap input3">
+                                            <math-field data-answer-single="9"></math-field>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td lang="y" class="vertical2">정사각형</td>
+                                    <td>
+                                        <div class="input_wrap input3">
+                                            <math-field data-answer-single="3"></math-field>
+                                        </div>
+                                    </td>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="input_wrap input3">
+                                            <math-field data-answer-single="12"></math-field>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td lang="y" class="vertical3">정오각형</td>
+                                    <td>
+                                        <div class="input_wrap input2">
+                                            <math-field data-answer-single="3"></math-field>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input_wrap input2">
+                                            <math-field data-answer-single="5"></math-field>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input_wrap input2">
+                                            <math-field data-answer-single="15"></math-field>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <!-- 3page -->
+
+                <article class="page page_4">
+                    <h3 lang="y">정다각형의 둘레는 몇 ㎝인지 구해 보세요.</h3>
+                    <div class="input_area po_absolute" style="margin-top: 20px">
+                        <div class="question_box dir_col align_start">
+                            <div class="flex align_center gap_12">
+                                <div class="img_box">
+                                    <img src="../../common_contents/img/EMA516_04_SU/ShapeSample.png" alt="도형 샘플 이미지" />
+                                    <div class="ractangle7"><span lang="y">정사각형</span></div>
+                                    <div class="ractangle8"><span lang="y">정삼각형</span></div>
+                                    <div class="ractangle9"><span lang="y">정오각형</span></div>
+                                    <div class="txt7"><span>3 ㎝</span></div>
+                                    <div class="txt8"><span>3 ㎝</span></div>
+                                    <div class="txt9"><span>3 ㎝</span></div>
+                                </div>
+                            </div>
+                            <div class="bottomArea">
+                                <div class="line">
+                                    <div class="modification">
+                                        <span lang="y">(정다각형의 둘레) = </span>
+                                        <button class="reveal_btn btn_1" data-pair="1">한 변의 길이</button>
+                                        <span>&nbsp;×&nbsp;</span>     
+                                        <button class="reveal_btn btn_2" data-pair="2">변의 수</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                </article>
+                <!-- 4page -->
+            </section>
+        </div>
+    </body>
+</html>

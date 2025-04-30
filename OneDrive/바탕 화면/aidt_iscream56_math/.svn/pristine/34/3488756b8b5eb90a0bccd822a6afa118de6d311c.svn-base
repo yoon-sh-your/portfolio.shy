@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_01_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema516_01_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_01_ih_0001">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 4-2』 평행선 사이의 거리</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="1" lang="y">직선 가와 직선 나는 서로 평행합니다. 평행선 사이의 거리를 나타내는 선분을 찾아 기호를 골라 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="select_line_wrap boolean_wrap">
+          <div class="select_line_inner">
+            <button type="button" class="line1" data-answer-single="false">
+              <p class="num_sign">ㄱ</p>
+            </button>
+            <button type="button" class="line2" data-answer-single="false">
+              <p class="num_sign">ㄴ</p>
+            </button>
+            <button type="button" class="line3" data-answer-single="true">
+              <p class="num_sign">ㄷ</p>
+            </button>
+            <button type="button" class="line4" data-answer-single="false">
+              <p class="num_sign">ㄹ</p>
+            </button>
+          </div>
+          <p class="text1">가</p>
+          <p class="text2">나</p>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">평행선 사이의 거리는 평행선 사이의 수직인 선분의 길이입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

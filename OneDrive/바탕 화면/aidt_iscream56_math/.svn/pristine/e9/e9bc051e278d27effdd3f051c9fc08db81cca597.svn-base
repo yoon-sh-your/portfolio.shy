@@ -1,0 +1,313 @@
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+
+.input_wrap:has(.w_80) {
+	min-width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+	bottom: calc(100% + 4px);
+	top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+	position: relative;
+}
+.input_wrap.input_sep {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+	left: calc(100% + 20px);
+	top: 6px;
+	width: auto;
+}
+.input_wrap.hint_left .text_hint {
+	right: calc(100% + 20px);
+	left: auto;
+	top: 6px;
+	width: auto;
+}
+
+.fraction_wrap .hint_up .text_hint {
+	top: auto;
+	bottom: calc(100% + 4px);
+}
+.fraction_wrap.hint_right .text_hint {
+	top: 18px;
+}
+
+math-field.has_ex_text + .text_hint:before {
+	content: "예";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 44px;
+	height: 44px;
+	background: var(--primary-blue);
+	border-radius: 12px;
+	color: #fff;
+	line-height: 42px;
+}
+.input_wrap math-field.large {
+	width: 300px !important;
+}
+.w_large {
+	width: 247px !important;
+}
+.formula_box .formula_row {
+	display: flex;
+}
+.formula_box .formula_row.bd_b + .formula_row {
+	margin-top: 10px;
+}
+.formula_box .formula_row.bd_b + .formula_row:has(.input_wrap) {
+	padding-top: 10px;
+}
+.formula_box .formula_row.bd_b {
+	position: relative;
+}
+.formula_box .formula_row.bd_b:before {
+	content: "";
+	display: inline-block;
+	width: calc(100% - 28px);
+	height: 2px;
+	background: var(--font-main);
+	position: absolute;
+	bottom: -13px;
+	left: 29px;
+}
+.formula_box .formula_row > span {
+	display: inline-block;
+	height: 60px;
+	width: 87px;
+	text-align: center;
+	line-height: 60px;
+	position: relative;
+}
+
+.formula_box .formula_row > span:first-of-type {
+	width: 34px;
+}
+.formula_box .formula_row > span.dot:after {
+	content: ".";
+	position: absolute;
+	right: -7px;
+	bottom: 15px;
+	display: inline-block;
+	line-height: 1;
+	font-size: 32px;
+}
+.formula_box .formula_row > span.arrow_up:before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 58px;
+	background: url(./../common/img/img_formula_arrow.png) no-repeat 0 0 / 100% auto;
+	position: absolute;
+	right: -9px;
+	bottom: 21px;
+}
+.formula_box .formula_row > span.arrow_down:before {
+	content: "";
+	display: inline-block;
+	width: 12px;
+	height: 105px;
+	background: url(./../common/img/img_formula_arr_down.png) no-repeat 0 0 / 100% auto;
+	position: absolute;
+	top: 40px;
+	left: 37px;
+}
+.formula_box .formula_row > span:has(.input_wrap).dot:after {
+	bottom: 3px;
+}
+.formula_box .formula_row > span.dot + span:has(.input_wrap) {
+	margin-left: 5px;
+}
+.formula_box .formula_row > span.wing:after {
+	content: "";
+	width: 11px;
+	height: 60px;
+	display: inline-block;
+	vertical-align: top;
+	background: url(./../common/img/icon_formula_wing.png) no-repeat 50% / 100% auto;
+	position: absolute;
+	right: -6px;
+}
+.formula_box .formula_row > span.muted {
+	color: #d2d2d2;
+}
+
+.pt_10 {
+	padding-top: 10px;
+}
+.font_sans {
+	font-family: sans-serif;
+}
+.question_box img.arrow {
+	top: 74px;
+	position: relative;
+}
+
+/* ema613_07_ih_0001 */
+.ema613_07_ih_0001 .relative {
+	position: relative;
+}
+.ema613_07_ih_0001 .input_col {
+	position: absolute;
+	top: 114px;
+	display: flex;
+	align-items: center;
+}
+.ema613_07_ih_0001 .input_col:first-of-type {
+	left: 6px;
+}
+.ema613_07_ih_0001 .input_col:nth-of-type(2) {
+	left: 346px;
+}
+.ema613_07_ih_0001 .input_position {
+	position: absolute;
+}
+.ema613_07_ih_0001 .input_position.input1 {
+	top: 25px;
+	left: 172px;
+}
+.ema613_07_ih_0001 .input_position.input2 {
+	top: 197px;
+	left: 331px;
+}
+
+/* ema613_07_ih_0002 */
+.ema613_07_ih_0002 .question_box {
+	gap: 120px;
+}
+
+/* ema613_07_ih_0003 */
+.ema613_07_ih_0003 .question_box {
+	gap: 120px;
+}
+.ema613_07_ih_0003 .question_box > div {
+	gap: 100px;
+}
+.ema613_07_ih_0003 math-field {
+	width: 120px !important;
+}
+
+/* ema613_07_ih_0004 */
+.ema613_07_ih_0004 .img_area {
+	position: relative;
+}
+.ema613_07_ih_0004 .img_area p,
+.ema613_07_ih_0004 .img_area .input_wrap {
+	position: absolute;
+}
+.ema613_07_ih_0004 .img_area .text1 {
+	top: 47px;
+	left: 3px;
+}
+.ema613_07_ih_0004 .img_area .text2 {
+	top: 47px;
+	left: 206px;
+}
+.ema613_07_ih_0004 .img_area .input_wrap {
+	top: 37px;
+	left: 413px;
+}
+
+/* ema613_07_ih_0005 */
+.ema613_07_ih_0005 .img_area {
+	position: relative;
+}
+.ema613_07_ih_0005 .img_area p {
+	position: absolute;
+}
+.ema613_07_ih_0005 .img_area .text1 {
+	top: 47px;
+	left: 147px;
+}
+.ema613_07_ih_0005 .img_area .text2 {
+	top: 154px;
+	left: 217px;
+}
+.ema613_07_ih_0005 .img_area [class^="name"] {
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+}
+.ema613_07_ih_0005 .img_area .name1 {
+	top: 18px;
+	left: 96px;
+	transform: rotate(-5deg);
+}
+.ema613_07_ih_0005 .img_area .name2 {
+	top: 124px;
+	left: 378px;
+	transform: rotate(7deg);
+}
+.ema613_07_ih_0005 .boolean_wrap button {
+	position: absolute;
+	background: transparent;
+}
+.ema613_07_ih_0005 .boolean_wrap button.hint {
+	border-color: transparent;
+}
+.ema613_07_ih_0005 .boolean_wrap button.selected {
+	border-color: var(--font-main);
+}
+.ema613_07_ih_0005 .boolean_wrap button {
+	width: 40%;
+}
+.ema613_07_ih_0005 .boolean_wrap .button1 {
+	top: 28px;
+	left: 120px;
+}
+.ema613_07_ih_0005 .boolean_wrap .button2 {
+	top: 134px;
+	left: 190px;
+}
+.result .ema613_07_ih_0005 .boolean_wrap button[data-answer-single="true"] {
+	border-color: var(--primary-blue);
+}
+
+/* ema613_07_ih_0006 */
+.ema613_07_ih_0006 .img_area {
+	margin-right: 60px;
+}
+.ema613_07_ih_0006 .input1 math-field {
+	width: 320px;
+}
+.ema613_07_ih_0006 .input2 math-field {
+	width: 160px;
+}
+.ema613_07_ih_0006 .input_area {
+	margin-top: 22px;
+}
+.ema613_07_ih_0006 .input_row {
+	display: flex;
+	gap: 10px;
+	align-items: flex-start;
+	margin-bottom: 60px;
+}
+.unit {
+	margin: 8px 0 0 -8px;
+}
+
+/* ema613_07_ih_0007 */
+.ema613_07_ih_0007 .img_area {
+	position: relative;
+}
+.ema613_07_ih_0007 .input_area {
+	position: absolute;
+	top: 250px;
+	left: 55px;
+}

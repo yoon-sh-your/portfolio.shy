@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_11_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_11.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_11_su_0003">
+    <section class="title type2">
+      <h2 data-type="1" data-text="자기주도 3">
+        <span class="blue line" lang="y">내 힘으로 풀어요</span>
+        <span lang="y">공부한 내용을 확인해요</span>
+      </h2>
+    </section>
+
+    <section class="title type2 jgjd_3_sub_title">
+      <h2 data-head="2_green" lang="y">
+        <div class="label_bogi">보기</div>와 같이 계산해 보세요.​
+      </h2>
+    </section>
+
+    <section class="contents">
+      <div class="question_box justify_center">
+
+        <div class="container">
+
+          <div class="r1">
+
+            <div class="label_bogi_box">
+              <div class="label_bogi">보기</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="463" height="112" viewBox="0 0 463 112" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="0.5" y="67.375">36÷1.2=</tspan>
+                </text>
+                <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+                  font-weight="bold" letter-spacing="-1px">
+                  <tspan x="124.5" y="35.375">360</tspan>
+                </text>
+                <path d="M124.5 56H185.5" stroke="#222222" stroke-width="1.235" stroke-linecap="square" />
+                <g clip-path="url(#clip0_10329_98083)">
+                  <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="137" y="99.375">10</tspan>
+                  </text>
+                </g>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="189.5" y="67.375">÷</tspan>
+                </text>
+                <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+                  font-weight="bold" letter-spacing="-1px">
+                  <tspan x="223.5" y="35.375">12</tspan>
+                </text>
+                <path d="M214.5 56H266.5" stroke="#222222" stroke-width="1.235" stroke-linecap="square" />
+                <g clip-path="url(#clip1_10329_98083)">
+                  <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="222.5" y="99.375">10</tspan>
+                  </text>
+                </g>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="270.5" y="67.375">=360÷12=30</tspan>
+                </text>
+                <defs>
+                  <clipPath id="clip0_10329_98083">
+                    <rect width="36" height="48" fill="white" transform="translate(137 64)" />
+                  </clipPath>
+                  <clipPath id="clip1_10329_98083">
+                    <rect width="36" height="48" fill="white" transform="translate(222.5 64)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+          </div>
+
+          <div class="r2">
+
+            <div class="operation">
+
+              15÷2.5=
+              <div class="input_wrap fraction_wrap i1">
+                <math-field data-answer-single="(150)/(10)+(25)/(10)" text-align="center"></math-field>
+              </div>
+              =
+              <div class="input_wrap i2">
+                <math-field data-answer-single="150÷25"></math-field>
+              </div>
+              =
+              <div class="input_wrap i3">
+                <math-field data-answer-single="6"></math-field>
+              </div>
+
+              <div class="gap-19"></div>
+
+              21÷0.84=
+              <div class="input_wrap fraction_wrap i4">
+                <math-field data-answer-single="(2100)/(100)+(84)/(100)" text-align="center"></math-field>
+              </div>
+              =
+              <div class="input_wrap i5">
+                <math-field data-answer-single="2100÷84"></math-field>
+              </div>
+              =
+              <div class="input_wrap i6">
+                <math-field data-answer-single="25"></math-field>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

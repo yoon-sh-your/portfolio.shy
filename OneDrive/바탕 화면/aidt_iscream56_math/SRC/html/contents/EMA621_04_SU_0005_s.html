@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_04_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">계산해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="col">
+            <span class="fraction_box f32b">
+              <span>6</span>
+              <span>7</span>
+            </span>
+            <span class="f32b">&divide;</span>
+            <span class="fraction_box f32b">
+              <span>3</span>
+              <span>14</span>
+            </span>
+            <span class="f32b">=</span>
+            <div class="input_wrap f32b">
+              <math-field data-answer-single="4"></math-field>
+            </div>
+          </div>
+          <div class="col">
+            <span class="fraction_box f32b">
+              <span>7</span>
+              <span>8</span>
+            </span>
+            <span class="f32b">&divide;</span>
+            <span class="fraction_box f32b">
+              <span>5</span>
+              <span>8</span>
+            </span>
+            <span class="f32b">=</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="1(2)/(5)" data-answer-multi='{"values": ["1(2)/(5)", "(7)/(5)"]}' data-multi-hint="y"></math-field>
+            </div>
+          </div>
+          <div class="col">
+            <span class="fraction_box f32b">
+              <span>2</span>
+              <span>3</span>
+            </span>
+            <span class="f32b">&divide;</span>
+            <span class="fraction_box f32b">
+              <span>3</span>
+              <span>4</span>
+            </span>
+            <span class="f32b">=</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(8)/(9)"></math-field>
+            </div>
+          </div>
+          <div class="col">
+            <span class="fraction_box f32b">
+              <span>5</span>
+              <span>6</span>
+            </span>
+            <span class="f32b">&divide;</span>
+            <span class="fraction_box f32b">
+              <span>3</span>
+              <span>8</span>
+            </span>
+            <span>=</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="2(2)/(9)" data-answer-multi='{"values": ["2(2)/(9)", "(20)/(9)"]}' data-multi-hint="y"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

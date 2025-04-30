@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema511_07_su_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema511_07.css" />
+    <script src="../../common_contents/js/ema511_07_0004.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_07_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">나만의 생존 가방을 준비해 봅시다.</h2>
+      </section>
+      
+      <section class="contents paging_layout">
+        
+
+        <div class="drop_wrap">
+          <img src="../../common_contents/img/EMA511_07_SU/0004_content.png" alt="" />
+          <div class="droppable_bag"></div>
+        </div>
+
+        <article class="page page_1 drop"> 
+          <h3 lang="y">생존 가방에 생존 물건을 필요한 개수만큼 옮기고, 생존 가방에 넣은 물건의 무게를 각각 하나의 식으로 나타내어 구해 보세요.</h3>
+          <div class="page_inwrap">
+            <div class="question_wrap">
+              <ul class="drag_wrap">
+                <li class="draggable_bag">
+                  <div class="img_box mr_19">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list01.png" alt="라디오" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">라디오 1개</span><br />
+                    <span>500 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_13">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list04.png" alt="손전등" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">손전등 2개</span><br />
+                    <span>1000 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_32">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list07.png" alt="우비" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">우비 1벌</span><br />
+                    <span>600 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_13">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list10.png" alt="초콜릿" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">초콜릿 5개</span><br />
+                    <span>1000 g</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="input_area">
+                <li class="title">
+                  <div class="quantity">수량</div>
+                  <div class="equation">식</div>
+                </li>
+                <li value="라디오">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="손전등">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="우비">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="초콜릿">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2 drop"> 
+          <h3 lang="y">생존 가방에 생존 물건을 필요한 개수만큼 옮기고, 생존 가방에 넣은 물건의 무게를 각각 하나의 식으로 나타내어 구해 보세요.</h3>
+          <div class="page_inwrap">
+            <div class="question_wrap">
+              <ul class="drag_wrap">
+                <li class="draggable_bag">
+                  <div class="img_box mr_5">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list02.png" alt="담요" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">담요 2개</span><br />
+                    <span>3000 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_30">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list05.png" alt="휴지" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">휴지 10개</span><br />
+                    <span>1000 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_13">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list08.png" alt="성냥개비" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">성냥개비 10세트</span><br />
+                    <span>150 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list11.png" alt="통조림" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">통조림 10개</span><br />
+                    <span>5000 g</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="input_area">
+                <li class="title">
+                  <div class="quantity">수량</div>
+                  <div class="equation">식</div>
+                </li>
+                <li value="담요">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="휴지">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="성냥개비">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="통조림">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3 drop">
+          <h3 lang="y">생존 가방에 생존 물건을 필요한 개수만큼 옮기고, 생존 가방에 넣은 물건의 무게를 각각 하나의 식으로 나타내어 구해 보세요.</h3> 
+          <div class="page_inwrap">
+            <div class="question_wrap">
+              <ul class="drag_wrap">
+                <li class="draggable_bag">
+                  <div class="img_box mr_10">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list03.png" alt="호루라기" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">호루라기 1개</span><br />
+                    <span>20 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_18">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list06.png" alt="물티슈" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">물티슈 20개</span><br />
+                    <span>1300 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_36">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list09.png" alt="물" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">물 6병</span><br />
+                    <span>9000 g</span>
+                  </div>
+                </li>
+                <li class="draggable_bag">
+                  <div class="img_box mr_13">
+                    <img src="../../common_contents/img/EMA511_07_SU/0002_list12.png" alt="쿠키" />
+                  </div>
+                  <div class="text_box">
+                    <span lang="y">쿠키 40개</span><br />
+                    <span>800 g</span>
+                  </div>
+                </li>
+              </ul>
+              <ul class="input_area">
+                <li class="title">
+                  <div class="quantity">수량</div>
+                  <div class="equation">식</div>
+                </li>
+                <li value="호루라기">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="물티슈">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="물">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+                <li value="쿠키">
+                  <div class="quantity">
+                    <div class="input_wrap answer1">
+                      <math-field value="0"></math-field>
+                    </div>
+                  </div>
+                  <div class="equation">
+                    <div class="input_wrap answer2">
+                      <math-field value="" disabled/>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer3">
+                      <math-field value="" disabled/>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <h3 lang="y">생존 가방에 넣은 물건의 무게는 모두 몇 g인지 구해 보세요.</h3>
+          <div class="page_inwrap">
+
+            <div class="question_wrap">
+
+              <div class="table_box">
+                <table cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td class="name">
+                        <span lang="y">라디오</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">손전등</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">우비</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">초콜릿</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="name">
+                        <span lang="y">담요</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">휴지</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">성냥개비</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">통조림</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="name">
+                        <span lang="y">호루라기</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">물티슈</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">물</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                      <td class="name">
+                        <span lang="y">쿠키</span>
+                      </td>
+                      <td class="num">
+                        <span lang="y"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="question_box">
+                <!-- <div class="flex align_center gap_12">
+                  <span class="title" lang="y">식:</span>
+                  <div class="flex align_center gap_12">
+                    <div class="input_wrap answer1">
+                      <math-field data-answer-single="150÷10×2+9000÷6+1000÷5×3+5000÷10×2+3000÷2"></math-field>
+                    </div>
+                    <span>=</span>
+                    <div class="input_wrap answer2">
+                      <math-field data-answer-single="30"></math-field>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="flex align_center gap_8">
+                  <div class="input_wrap answer3">
+                    <math-field data-answer-single="30"></math-field>
+                  </div>
+                  <span>g</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_5">
+          <h3 lang="y">생존 가방에 넣은 물건의 무게가 적절한지 확인해 보세요.</h3>
+
+          <div class="flex justify_center gap_26">
+            <div class="picture_wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 701 390" fill="none">
+                <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14" letter-spacing="-0.5px" lang="y">
+                  <tspan x="222.417" y="87.9766">좋은 생각이야.</tspan>
+                  <tspan x="196.225" y="107.977">생존 가방에 넣을 수 있는</tspan>
+                  <tspan x="199.238" y="127.977">물건의 무게는 몸무게에</tspan>
+                  <tspan x="228.217" y="147.977">따라 달라져.</tspan>
+                </text>
+                <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14" letter-spacing="-0.5px" lang="y">
+                  <tspan x="358.018" y="129.977">초등학교 5학년</tspan>
+                  <tspan x="339.44" y="149.977">학생은 5000 g 정도로</tspan>
+                  <tspan x="341.511" y="169.977">준비하는 게 좋겠구나.</tspan>
+                </text>
+                <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14" letter-spacing="-0.5px" lang="y">
+                  <tspan x="30.6377" y="162.977">저도 생존 가방을</tspan>
+                  <tspan x="23.3105" y="182.977">준비해 놓고 싶어요.</tspan>
+                </text>
+                <text fill="#6A6A6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14" letter-spacing="-0.5px" lang="y">
+                  <tspan x="530.783" y="208.977">네! 생존 가방에 넣을</tspan>
+                  <tspan x="516.438" y="228.977">물건의 무게를 생각하면서</tspan>
+                  <tspan x="513.384" y="248.977">생존 가방을 준비해 볼게요!</tspan>
+                </text>
+              </svg>
+              <img src="../../common_contents/img/EMA511_07_SU/0003_content.png" alt="" />
+              <!-- <button class="zoom"></button> -->
+            </div>
+  
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">무게가 5000g 보다 가벼우므로 적절합니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_6">
+          <div class="page_inwrap">
+            
+            <div class="question_wrap">
+              <h3 lang="y">나만의 생존 가방을 친구에게 설명해 보세요.</h3>
+              
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">“나는 어두운 게 무서울 것 같아서 불을 밝히기 위해서 성냥을 넉넉히 챙겼어. 나는 추운 게 싫어서 담요를 챙겼어.”</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

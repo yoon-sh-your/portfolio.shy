@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema516_09_su_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+</head>
+<body>
+    <div id="app_wrap" class="ema516_09_su_0003 play-howto-layout">
+        <section class="title">
+            <h2 data-text="놀이방법" lang="y">
+                <span lang="y" class="title-play"><span class="point">놀이</span> 방법</span>
+                <span class="howto num1">자신의 색연필 색을 정한 후 가위바위보로 놀이 순서와 출발 위치를 정합니다.</span>
+                <span class="howto num2">정한 순서에 따라 주사위 2개를 동시에 던진 후 나온 눈의 수를 곱합니다.</span>
+                <span class="howto num3">곱이 넓이 또는 둘레가 되도록 약속에 따라 직사각형을 그립니다. 그린 직사각형 안에 보물이 있으면 자신의 색연필로 보물이 있는 칸을 색칠하여 보물을 획득합니다. 이때 상대방이 먼저 획득한 보물은 가져올 수 없습니다.</span>
+                <span class="howto num4">보물을 모두 획득할 때까지 <img src="../../common_contents/common/img/icon_howto_num2_3.svg" alt="">을 반복하여 더 많은 보물을 획득한 사람이 이깁니다.</span></span>
+               
+            </h2>
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <img src="./../../common_contents/img/EMA516_16_SU/0003_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="./../../common_contents/img/EMA516_16_SU/0003_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="./../../common_contents/img/EMA516_16_SU/0003_img_3.png" alt="">
+                    </article>
+                    <article class="page page_4">
+                        <img src="./../../common_contents/img/EMA516_16_SU/0003_img_4.png" alt="">
+                    </article>
+                    <article class="page page_5">
+                        <img src="./../../common_contents/img/EMA516_16_SU/0003_img_5.png" alt="">
+                    </article>
+
+                </div>
+            </div>
+            
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="play btnBgDefault" lang="y">활동 영상</button>
+                </div>
+                <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+                <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

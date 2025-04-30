@@ -1,0 +1,44 @@
+.title h2 .in_flex .fraction_box {margin:0;}
+.input_wrap:not(:has(.textarea)) {min-width:0; width:120px;}
+.input_wrap.fraction_wrap {width:80px;}
+.input_wrap.fraction_wrap math-field {width:100%;}
+.input_wrap math-field:not(.textarea) {min-width:0; width:100%;}
+.fraction_box_wrap {display:inline-flex;  align-items:center;  gap:4px;}
+.fraction_box_wrap .fraction_box {min-width:0;}
+.fraction_box {vertical-align:middle;}
+.fraction_box > span {position:relative;}
+.slash {position:relative;}
+.slash:after {position:absolute; top:50%; left:50%; width:2px; height:48px; background:#E4007F; transform:translate(-50%, -50%) rotate(45deg); content:'';}
+.slash em {position:absolute; font-style:normal; left:50%; transform:translateX(-50%); white-space:nowrap; font-size:24px; color:#E4007F;}
+.slash .sup {top:-1.1em;}
+.slash .sub {bottom:-1.1em;}
+.fraction_box .input_wrap {width:80px;}
+.icon_arrow {margin-right:20px;}
+.box_line {border:20px solid #C2E1EE; border-radius:90px;}
+.box_line .inner {margin:-12px; padding:0 80px; gap:40px; border:4px dashed #fff; border-radius:90px;}
+.box_dot {border:2px dashed #D2D2D2; border-radius:20px; background:#EEF9FF; padding:10px;}
+.box_dot .inner {display:flex; background:#fff; border:2px dashed #8CD6FF; border-radius:12px;}
+
+.row_calc {display:flex; align-items:flex-start;}
+.row_calc + .row_calc {margin-top:60px; padding-top:60px; border-top:2px dashed #5BB8A1;}
+.tit_bar {display:inline-block; position:relative; vertical-align:4px;}
+.tit_bar:before {content:''; position:absolute; bottom:0; left:0; width:calc(100% - 14px); height:23px; border-radius:23px; background:#5BB8A1;}
+.tit_bar .tit_txt {position:relative; padding:0 40px 0 12px; color:#fff; font-size:32px; font-weight:800; -webkit-text-stroke:2px #5BB8A1; text-shadow: -1px -1px 0 #5BB8A1, 1px -1px 0 #5BB8A1, -1px 1px 0 #5BB8A1, 1px 1px 0 #5BB8A1; line-height:40px;}
+.tit_bar .num {position:absolute; bottom:0; right:0; display:flex; justify-content:center; align-items:center; width:40px; height:40px; background:#fff; border:3px solid #5BB8A1; border-radius:100%; font-size:24px; color:#5BB8A1;}
+.row_calc .tit_bar {margin-right:24px;}
+.row_calc .question_box {gap:2px}
+.row_calc .input_wrap.fraction_wrap .text_hint {top:50%; left:100%; padding:0 16px; width:auto; transform:translateY(-50%)}
+
+.ema621_07_ih_0001 .input_wrap.fraction_wrap {width:247px;}
+
+.ema621_07_ih_0003 .question_box {gap:200px;}
+.ema621_07_ih_0003 .question_box .input_wrap.fraction_wrap {width:247px;}
+
+.ema621_07_ih_0004 .question_box {gap:50px;}
+.ema621_07_ih_0004 .box_dot .inner {width:325px; height:128px;}
+
+.ema621_07_ih_0005 .box_line .inner {height:152px; display:flex; align-items:center;}
+
+.ema621_07_ih_0005 .input_wrap.fraction_wrap,
+.ema621_07_ih_0006 .input_wrap.fraction_wrap,
+.ema621_07_ih_0007 .input_wrap.fraction_wrap {width:247px;}

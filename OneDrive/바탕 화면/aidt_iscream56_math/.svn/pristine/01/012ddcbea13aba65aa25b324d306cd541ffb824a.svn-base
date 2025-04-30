@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA626_03_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema626_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema626_03_su_0006">
+      <section class="title type2">
+        <h2 data-head="4_orange">
+          <div class="title_row">
+            <span lang="y">원기둥을 보고</span>
+            <span class="nemo_blank"></span>
+            <span lang="y">안에 알맞은 수를 써넣어 봅시다.</span>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="question_box justify_center dir_col">
+          <div class="img_wrap">
+            <img src="../../common_contents/img/EMA626_03_SU/0006_content.png" alt="원기둥 전개도 이미지" />
+            <div class="text_box">
+              <span class="text text01" lang="y">2 ㎝</span>
+              <span class="text text02" lang="y">7 ㎝</span>
+            </div>
+            <div class="form_box">
+              <div class="input_form form1">
+                <div class="input_wrap">
+                  <math-field data-answer-single="2"></math-field>
+                </div>
+                <span lang="y">㎝</span>
+              </div>
+              <div class="input_form form2">
+                <div class="input_wrap">
+                  <math-field data-answer-single="12.56"></math-field>
+                </div>
+                <span lang="y">㎝</span>
+              </div>
+              <div class="input_form form3">
+                <div class="input_wrap">
+                  <math-field data-answer-single="7"></math-field>
+                </div>
+                <span lang="y">㎝</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

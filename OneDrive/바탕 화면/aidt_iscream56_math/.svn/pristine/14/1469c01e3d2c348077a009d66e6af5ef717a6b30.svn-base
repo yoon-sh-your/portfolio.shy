@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_04_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_04.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_04_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_green" lang="y">1초 동안 빨간색 로봇은 5.89 m, 파란색 로봇은 3.1 m 이동했습니다. 빨간색 로봇이 이동한 거리는 파란색 로봇이 이동한 거리의 몇 배인지
+        구해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start">
+        <div class="picture_wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="848" height="685" viewBox="0 0 848 685" fill="none">
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="218" y="500.712" lang="y">빨간색 로봇이 이동한 거리는
+              </tspan>
+              <tspan x="218" y="548.712" lang="y">파란색 로봇이 이동한 거리의
+              </tspan>
+              <tspan x="218" y="596.712" lang="y">몇 배인지 어떻게 구할 수 있을까?</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="152" y="139.712" lang="y">1초</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="628.344" y="139.375" lang="y">출발</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="527.453" y="298.375">5.89 m</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="541.25" y="416.375">3.1 m</tspan>
+            </text>
+          </svg>
+          <img src="../../common_contents/img/EMA622_04_SU/0002_content.png" alt="자치회 활동 이미지" /> <button
+            class="zoom"></button>
+        </div>
+
+        <article class="page page_1">
+          <div class="input_area">
+            <h3 lang="y">구하는 식을 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="5.89÷3.1"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="input_area">
+            <h3 lang="y">빨간색 로봇이 이동한 거리는 파란색 로봇이 이동한 거리의 몇 배일지 어림셈해 보고, 어떻게 어림셈했는지 이야기해 보세요.</h3>
+            <div class="question_box justify_center">
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">5.89를 6으로, 3.1을 3으로 어림하면 6÷3=2이므로 2배쯤 될 것 같습니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="input_area">
+            <h3 lang="y">5.89÷3.1을 어떻게 계산할 수 있을지 이야기해 보세요.</h3>
+            <div class="question_box justify_center">
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">자연수의 나눗셈이나 (소수)÷(자연수)를 이용하여 계산할 수 있습니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <h3 lang="y">589÷310을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요. </h3>
+
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="1179" height="221" viewBox="0 0 1179 221" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="25.6129" font-weight="bold" letter-spacing="-0.914747px">
+                  <tspan x="206.092" y="111.456">÷</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="22.1641" font-weight="bold" letter-spacing="-0.692629px">
+                  <tspan x="446.313" y="110.387">÷</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="140.049" y="111.971">5.89</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="380.714" y="111.971">589</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="242.1" y="111.971">3.1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="481.7" y="111.971">310</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="22.1641" font-weight="bold" letter-spacing="-0.692629px">
+                  <tspan x="541.896" y="111.769">=</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="261.813" y="48.25" lang="y">100배</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="347.7" y="182.621" lang="y">100배</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="771" y="115.375">5.89÷3.1=</tspan>
+                </text>
+              </svg>
+
+              <div class="input_wrap i1">
+                <math-field data-answer-single="1.9"></math-field>
+              </div>
+
+              <div class="input_wrap i2">
+                <math-field data-answer-single="1.9"></math-field>
+              </div>
+
+            </div>
+        </article>
+        <article class="page page_5">
+          <h3 lang="y">589÷310을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요.</h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="883" height="434" viewBox="0 0 883 434" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="754.396" y="121.438">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="780.117" y="90.5312">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="31.3359" y="88.5312">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="242.352" y="82.5312">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="477.113" y="86.5312">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="685.059" y="90.5312">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="106.951" y="88.5312">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="316.932" y="82.5312">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="551.692" y="86.5312">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="756.537" y="90.5312">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="314.631" y="151.672">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="549.392" y="155.672">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="755.176" y="153.531">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="314.791" y="113.438">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="549.552" y="117.438">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="47.6562" y="88.5312">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="122.13" y="88.5312">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="378.669" y="46.5312">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="772.752" y="90.5312">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="698.312" y="90.5312">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="613.43" y="50.5312">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="818.273" y="54.5312">.</tspan>
+                </text>
+                <text fill="#9E9E9E" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="76.2373" y="88.5312">0</tspan>
+                </text>
+                <text fill="#9E9E9E" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="286.219" y="82.5312">0</tspan>
+                </text>
+                <text fill="#9E9E9E" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="520.98" y="86.5312">0</tspan>
+                </text>
+                <text fill="#9E9E9E" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="728.927" y="90.5312">0</tspan>
+                </text>
+                <text fill="#9E9E9E" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="386.507" y="82.5312">0</tspan>
+                </text>
+                <text fill="#9E9E9E" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="621.268" y="86.5312">0</tspan>
+                </text>
+                <text fill="#9E9E9E" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="826.112" y="90.5312">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="383.472" y="151.672">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="618.233" y="155.672">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="824.017" y="153.531">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="618.233" y="188.441">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="824.017" y="186.301">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="152.322" y="88.5312">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="364.303" y="82.5312">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="599.062" y="86.5312">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="803.908" y="90.5312">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="620.844" y="50.5312">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="825.688" y="54.5312">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="361.27" y="151.672">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="596.028" y="155.672">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="801.814" y="153.531">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="360.727" y="113.438">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="595.487" y="117.438">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="800.332" y="121.438">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="361.057" y="46.5312">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="595.819" y="50.5312">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="800.662" y="54.5312">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="55.8574" y="88.5312">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="264.839" y="82.5312">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="499.599" y="86.5312">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="707.545" y="90.5312">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="129.531" y="88.5312">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="340.513" y="82.5312">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="575.271" y="86.5312">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="336.966" y="151.672">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="571.726" y="155.672">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="777.512" y="153.531">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="338.312" y="113.438">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="573.072" y="117.438">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="777.918" y="121.438">1</tspan>
+                </text>
+              </svg>
+
+              <ul class="letCheck lc1">
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b" lang="y">나누어지는 수와
+                      나누는 수가 자연수가 되도록 두 수에 각각 100씩 곱해요.​​</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b" lang="y">589를 310으로 나눈 몫 1을 써요. 589 뒤에 소수점과 0이 있다고
+                      생각하고 그에 맞추어 점을 찍은 후 0을 내려요.​</p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="letCheck lc2">
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b" lang="y">0.1의 개수인 2790을
+                      310으로 나눈 몫을 써요.​​</p>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_6">
+          <h3 lang="y">589÷310을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요. </h3>
+
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="1179" height="225" viewBox="0 0 1179 225" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="25.6129" font-weight="bold" letter-spacing="-0.914747px">
+                  <tspan x="211.092" y="114.456">÷</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="22.1641" font-weight="bold" letter-spacing="-0.692629px">
+                  <tspan x="461.313" y="113.387">÷</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="143.549" y="116.187">5.89</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="392.977" y="116.187">58.9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="247.6" y="116.187">3.1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="498.371" y="116.187">31</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="22.1641" font-weight="bold" letter-spacing="-0.692629px">
+                  <tspan x="554.897" y="115.618">=</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="264.812" y="52.1775" lang="y">10배</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="352.699" y="187.158" lang="y">10배</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="758" y="118.845">5.89÷3.1=</tspan>
+                </text>
+              </svg>
+
+              <div class="input_wrap i1">
+                <math-field data-answer-single="1.9"></math-field>
+              </div>
+
+              <div class="input_wrap i2">
+                <math-field data-answer-single="1.9"></math-field>
+              </div>
+
+            </div>
+        </article>
+        <article class="page page_7">
+          <h3 lang="y">58.9÷31을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요.</h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="881" height="434" viewBox="0 0 881 434" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="765.494" y="125.121">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="788.807" y="94.6289">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="62.3203" y="93.6133">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="290.953" y="87.5156">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="519.586" y="89.5469">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="715.703" y="94.6289">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="117.332" y="93.6133">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="343.934" y="87.5156">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="571.551" y="89.5469">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="765.635" y="94.6289">5</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="343.633" y="159.68">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="571.25" y="157.646">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="571.25" y="194.236">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="767.365" y="162.729">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="767.365" y="194.236">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="343.793" y="122.072">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="571.41" y="120.039">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="78.3566" y="93.6133">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="133.228" y="93.6133">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="383.2" y="49.9082">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="782.546" y="94.6289">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="729.708" y="94.6289">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="611.835" y="50.9238">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="805.919" y="49.9082">.</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="163.889" y="93.6133">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="390.488" y="87.5156">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="618.105" y="89.5469">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="812.189" y="94.6289">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="619.121" y="50.9238">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="813.205" y="49.9082">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="389.473" y="159.68">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="617.09" y="157.646">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="617.09" y="194.236">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="813.205" y="162.729">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="813.205" y="194.236">9</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="617.895" y="230.826">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="811.979" y="230.826">0</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="368.219" y="49.9082">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="596.854" y="50.9238">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="790.938" y="49.9082">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="87.7622" y="93.6133">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="312.333" y="87.5156">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="539.95" y="89.5469">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="740.129" y="94.6289">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="140.504" y="93.6133">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="367.105" y="87.5156">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="594.723" y="89.5469">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="366.926" y="159.68">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="594.543" y="157.646">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="594.543" y="194.236">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="790.66" y="162.729">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="790.66" y="194.236">7</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="369.237" y="122.072">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="596.854" y="120.039">1</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="790.938" y="125.121">1</tspan>
+                </text>
+              </svg>
+
+              <ul class="letCheck lc1">
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b" lang="y">나누는 수가 자연수가 되도록 나누어지는 수와 나누는 수에 각각 10씩 곱해요.​​</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b" lang="y">58을 31로 나눈 몫 1을
+                      쓰고, 58.9의 소수점에
+                      맞추어 점을 찍어요.​</p>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="letCheck lc2">
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b" lang="y">0.1의 개수인 279를
+                      31로 나눈 몫을 써요.​​</p>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_8">
+          <h3 lang="y">빨간색 로봇이 이동한 거리는 파란색 로봇이 이동한 거리의 몇 배인지 구하고, 어림셈한 결과와 비교해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="container">
+
+              <div lang="y">
+                <div class="input_wrap">
+                  <math-field data-answer-single="1.9"></math-field>
+                </div>
+                배
+              </div>
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">어림셈한 결과인 2배와 비슷합니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_9">
+          <h3 lang="y">(소수 두 자리 수)÷(소수 한 자리 수)를 계산하는 방법을 이야기해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="container">
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">나누어지는 수와 나누는 수를 각각 100배 하여 자연수의 나눗셈과 같은 방법으로 계산하거나 나누어지는 수와 나누는 수를 각각 10배 하여 (소수)÷(자연수)와
+                    같은 방법으로 계산합니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

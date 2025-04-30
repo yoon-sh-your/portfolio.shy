@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA512_06_SU_0004_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+        <link rel="stylesheet" href="./../../common_contents/css/ema512_06.css" />
+
+        <script src="../../common_contents/js/ema512_06_0004.js"></script>
+    </head>
+
+    <body>
+        <div id="app_wrap" class="ema512_06_su_0004" data-current-page="page_1, page_4">
+            <section class="title type2">
+                <h2 data-head="2_green" lang="y">4와 6의 공통된 배수를 찾아봅시다.</h2>
+            </section>
+
+            <section class="contents paging_layout">
+                <div class="input_area">
+                    <article class="page page_1">
+                        <h3 lang="y">4의 배수에 모두 O표를, 6의 배수에 모두 △표를 끌어다 놓으세요.</h3>
+                        <div class="page_1_cont">
+                            <div class="drag_checkout">
+                                <div class="draggable_wrap">
+                                    <div class="single_draggable draggable circle"></div>
+                                    <div class="single_draggable draggable triangle"></div>
+                                </div>
+
+                                <div
+                                    class="drag_group g1"
+                                    data-group-limit="8"
+                                    data-answer-single="[[false, false], [false, false], [false, false], [false, true], [false, false], [true, false], [false, false], [false, true], [false, false], [false, false], [false, false], [true, true],    [false, false], [false, false], [false, false], [false, true], [false, false], [true, false], [false, false], [false, true], [false, false], [false, false], [false, false], [true, true]]"
+                                >
+                                    <div class="flex">
+                                        <div class="droppable" data-value="false false">1</div>
+                                        <div class="droppable" data-value="false false">2</div>
+                                        <div class="droppable" data-value="false false">3</div>
+                                        <div class="droppable" data-value="false false">4</div>
+                                        <div class="droppable" data-value="false false">5</div>
+                                        <div class="droppable" data-value="false false">6</div>
+                                        <div class="droppable" data-value="false false">7</div>
+                                        <div class="droppable" data-value="false false">8</div>
+                                        <div class="droppable" data-value="false false">9</div>
+                                        <div class="droppable" data-value="false false">10</div>
+                                        <div class="droppable" data-value="false false">11</div>
+                                        <div class="droppable" data-value="false false">12</div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="droppable" data-value="false false">13</div>
+                                        <div class="droppable" data-value="false false">14</div>
+                                        <div class="droppable" data-value="false false">15</div>
+                                        <div class="droppable" data-value="false false">16</div>
+                                        <div class="droppable" data-value="false false">17</div>
+                                        <div class="droppable" data-value="false false">18</div>
+                                        <div class="droppable" data-value="false false">19</div>
+                                        <div class="droppable" data-value="false false">20</div>
+                                        <div class="droppable" data-value="false false">21</div>
+                                        <div class="droppable" data-value="false false">22</div>
+                                        <div class="droppable" data-value="false false">23</div>
+                                        <div class="droppable" data-value="false false">24</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="page page_2">
+                        <h3 lang="y">4와 6의 공통된 배수를 모두 써 보세요.</h3>
+                        <div class="drag_checkout mb_20">
+                            <div class="drag_group g2 correct" data-group-limit="8">
+                                <div class="flex">
+                                    <div class="droppable">1</div>
+                                    <div class="droppable">2</div>
+                                    <div class="droppable">3</div>
+                                    <div class="droppable circle">4</div>
+                                    <div class="droppable">5</div>
+                                    <div class="droppable triangle">6</div>
+                                    <div class="droppable">7</div>
+                                    <div class="droppable circle">8</div>
+                                    <div class="droppable">9</div>
+                                    <div class="droppable">10</div>
+                                    <div class="droppable">11</div>
+                                    <div class="droppable circle triangle">12</div>
+                                </div>
+                                <div class="flex">
+                                    <div class="droppable">13</div>
+                                    <div class="droppable">14</div>
+                                    <div class="droppable">15</div>
+                                    <div class="droppable circle">16</div>
+                                    <div class="droppable">17</div>
+                                    <div class="droppable triangle">18</div>
+                                    <div class="droppable">19</div>
+                                    <div class="droppable circle">20</div>
+                                    <div class="droppable">21</div>
+                                    <div class="droppable">22</div>
+                                    <div class="droppable">23</div>
+                                    <div class="droppable circle triangle">24</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question_box flex justify_center">
+                            <div class="flex gap_12">
+                                <div class="input_wrap align_end">
+                                    <math-field data-answer-single="12 또는 20" data-answer-multi='{"values": ["12", "20"]}' text-align="center" placeholder=" "></math-field>
+                                    ,
+                                </div>
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="12 또는 20" data-answer-multi='{"values": ["12", "20"]}' text-align="center" placeholder=" "></math-field>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="page page_3">
+                        <h3 lang="y">4와 6의 공통된 배수 중에서 가장 작은 수를 찾아보세요.</h3>
+                        <div class="drag_checkout mb_20">
+                            <div class="drag_group g3 correct" data-group-limit="8">
+                                <div class="flex">
+                                    <div class="droppable">1</div>
+                                    <div class="droppable">2</div>
+                                    <div class="droppable">3</div>
+                                    <div class="droppable circle">4</div>
+                                    <div class="droppable">5</div>
+                                    <div class="droppable triangle">6</div>
+                                    <div class="droppable">7</div>
+                                    <div class="droppable circle">8</div>
+                                    <div class="droppable">9</div>
+                                    <div class="droppable">10</div>
+                                    <div class="droppable">11</div>
+                                    <div class="droppable circle triangle">12</div>
+                                </div>
+                                <div class="flex">
+                                    <div class="droppable">13</div>
+                                    <div class="droppable">14</div>
+                                    <div class="droppable">15</div>
+                                    <div class="droppable circle">16</div>
+                                    <div class="droppable">17</div>
+                                    <div class="droppable triangle">18</div>
+                                    <div class="droppable">19</div>
+                                    <div class="droppable circle">20</div>
+                                    <div class="droppable">21</div>
+                                    <div class="droppable">22</div>
+                                    <div class="droppable">23</div>
+                                    <div class="droppable circle triangle">24</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question_box flex justify_center">
+                            <div class="flex gap_12">
+                                <div class="input_wrap answer1">
+                                    <math-field data-answer-single="12"></math-field>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <article class="page page_4">
+                    <div class="summarize_wrap">
+                        <div class="summarize">
+                            <label lang="y">정리해 볼까요</label>
+
+                            <div>
+                                <span lang="y">12, 24, ...는 4의 배수도 되고, 6의 배수도 됩니다. </span>
+                            </div>
+                            <div>
+                                <span lang="y">4와 6의 공통된 배수인 12, 24, ...를 4와 6의 </span>
+                                <button class="reveal_btn" data-pair="공배수" lang="y">공배수</button>
+                                <span lang="y" class="small-gap">라고 합니다.</span>
+                            </div>
+                            <div>
+                                <span lang="y">공배수 중에서 가장 작은 수인 12를 4와 6의</span>
+                                <button class="reveal_btn" data-pair="최소공배수" lang="y">최소공배수</button>
+                                <span lang="y" class="small-gap">라고 합니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="btn_area">
+                    <button class="btnType key" lang="y">입력타입토글</button>
+                    <button class="btnReset" lang="y">리셋</button>
+                    <button class="btnCheck" lang="y">확인</button>
+                    <!-- <button class="btnSubmit">확인</button> -->
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

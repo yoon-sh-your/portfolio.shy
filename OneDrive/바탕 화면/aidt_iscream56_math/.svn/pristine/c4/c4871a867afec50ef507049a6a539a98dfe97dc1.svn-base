@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema513_04.css" />
+
+    <style>
+      /* 인라인 스타일은 쓰지마세요. 이거는 예시를 위한 예외 사용입니다. */
+      article {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_04_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_pink">티볼 공 1개의 무게는 80 g입니다. 티볼 공의 수와 티볼 공의 무게 사이의 대응 관계를 식으로 나타내어 봅시다.</h2>
+      </section>
+
+      <!-- section.contents 에 pagine_layout 클래스를 추가하고 article.page.page_n 태그를 추가하면 슬라이드 페이지 개수에 맞는 페이징컨트롤러가 동적으로 생성됩니다. -->
+      <section class="contents paging_layout">
+        <!-- 아티클 태그 묶음은 위치에 상관없이 내부 컨텐츠가 전환 됩니다.(다른 태그로 감싸도 괜찮음) -->
+        <article class="page page_1">
+          <h3 lang="y">표를 완성해 보세요.</h3>
+
+          <section class="contents">
+
+          <div class="table_box">
+            <table>
+              <thead>
+                <tr>
+                  <th lang="y">티볼 공의 수(개)</th>
+                  <th lang="y">1</th>
+                  <th lang="y">2</th>
+                  <th lang="y">
+                    <div class="input_wrap input2">
+                      <math-field data-answer-single="3"></math-field>
+                    </div>
+                  </th>
+                  <th lang="y">4</th>
+                  <th lang="y">
+                    <div class="input_wrap input2">
+                      <math-field data-answer-single="5"></math-field>
+                    </div>
+                  </th>
+                  <th lang="y">...</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td lang="y">티볼 공의 무게(g)</td>
+                  <td>80</td>
+                  <td >
+                    <div class="input_wrap input2">
+                      <math-field data-answer-single="160"></math-field>
+                    </div>
+                  </td>
+
+                  <td lang="y" >240</td>
+                  <td>
+                    <div class="input_wrap input2">
+                      <math-field data-answer-single="320"></math-field>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="input_wrap input2">
+                      <math-field data-answer-single="400"></math-field>
+                    </div>
+                  </td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <img src="../../common_contents/img/EMA513_04_SU/b7c9da6807b20cb30655acc774bc2be4.png" alt="" />
+</div>
+            <div class="btn_area">
+              <!-- 불필요한 태그 제외 후 사용 -->
+              <button class="btnType key">입력타입토글</button>
+              <button class="btnReset">리셋</button>
+              <button class="btnCheck">확인</button>
+            </div>
+          
+
+        </section>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">알맞은 것을 옮겨 티볼 공의 수와 티볼 공의 무게 사이의 대응 관계를 식으로 나타내어 보세요.</h3>
+
+          <section class="contents">
+            <div class="dragndrop_fraction_wrap">
+              <div class="drag_group">
+                <div class="drag_item" data-pair="1"  data-value="티볼 공의 무게">티볼 공의 무게</div>
+                <div class="drag_item" data-pair="2"  data-value="=">=</div>
+                <div class="drag_item" data-pair="2"  data-value="×">×</div>
+                <div class="drag_item" data-pair="2"  data-value="÷">÷</div>
+                <div class="drag_item" data-pair="1"  data-value="티볼 공의 수">티볼 공의 수</div>
+                <div class="drag_item" data-pair="3"  data-value="1">1</div>
+                <div class="drag_item" data-pair="3"  data-value="80">80</div>
+              </div>
+              <div class="drop_group" data-answer-multi='[["티볼 공의 무게", "=", "티볼 공의 수", "×", "80"], ["티볼 공의 수", "=", "티볼 공의 무게", "÷", "80"]]'>
+                <div class="drop_item" data-pair="1" data-answer-single="티볼 공의 무게" , data-answer-single="티볼 공의 수"></div>
+                <div class="drop_item" data-pair="2" data-answer-single="="></div>
+                <div class="drop_item" data-pair="1" data-answer-single="티볼 공의 수"></div>
+                <div class="drop_item" data-pair="2" data-answer-single="×" , data-answer-single="÷"></div>
+                <div class="drop_item" data-pair="3" data-answer-single="80"></div>
+              </div>
+            </div>
+          </section>
+
+          <div class="btn_area">
+            <!-- 불필요한 태그 제외 후 사용 -->
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">티볼 공의 수를 ☆ 티볼 공의 무게를 □라고 할 때, 알맞은 것을 옮겨 두 양 사이의 대응 관계를 식으로 나타내어 보세요.</h3>
+
+          <section class="contents">
+            <div class="dragndrop_fraction_wrap">
+              <div class="drag_group">
+                <div class="drag_item" data-pair="2"  data-value="=">=</div>
+                <div class="drag_item" data-pair="2" data-value="-">-</div>
+                <div class="drag_item" data-pair="2" data-value="+">+</div>
+                <div class="drag_item" data-pair="2" data-value="×">×</div>
+                <div class="drag_item" data-pair="2" data-value="÷">÷</div>
+                <div class="drag_item" data-pair="1" data-value="☆">☆</div>
+                <div class="drag_item" data-pair="1" data-value="□">□</div>
+                <div class="drag_item" data-pair="3" data-value="1">1</div>
+                <div class="drag_item" data-pair="3" data-value="80">80</div>
+              </div>
+              <div class="drop_group" data-answer-multi='[["□", "=", "☆", "×", "80"], ["☆", "=", "□", "÷", "80"]]'>
+                <div class="drop_item" data-pair="1" data-answer-single="□" ,data-answer-single="☆"></div>
+                <div class="drop_item" data-pair="2" data-answer-single="="></div>
+                <div class="drop_item" data-pair="1" data-answer-single="☆" , data-answer-single="□"></div>
+                <div class="drop_item" data-pair="2" data-answer-single="×" , data-answer-single="÷"></div>
+                <div class="drop_item" data-pair="3" data-answer-single="80 "></div>
+              </div>
+            </div>
+          </section>
+
+          <div class="btn_area">
+            <!-- 불필요한 태그 제외 후 사용 -->
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+
+          <div class="btn_area">
+            <!-- 불필요한 태그 제외 후 사용 -->
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <h3 lang="y">티볼 공이 50개일 때, 티볼 공의 무게는 몇 g인지 구해 보세요.</h3>
+
+          <section class="contents">
+
+          <div class="input_wrap input2">
+            <math-field data-answer-single="4000"></math-field>
+            <span>g</span>
+          </div>
+
+        </section>
+       
+
+          <div class="btn_area">
+            <!-- 불필요한 태그 제외 후 사용 -->
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

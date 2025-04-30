@@ -1,0 +1,576 @@
+/**
+* input 스타일
+*/
+.input_wrap {
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: column;
+  /* min-width: 120px; */
+  min-width: 80px;
+  max-width: 1208px;
+  position: relative;
+}
+.input_wrap math-field {
+  position: relative;
+  opacity: 1;
+}
+.input_wrap math-field:not(.textarea) {
+  width: 120px;
+  height: 60px;
+  padding: 10px 10px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  border: 1px solid var(--stroke-default);
+  border-radius: 12px;
+  background: var(--bg-input);
+}
+
+.input_wrap math-field.textarea {
+  width: 100%;
+  min-width: 400px;
+  min-height: 160px;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  border: 1px solid var(--stroke-default);
+  border-radius: 12px;
+  background: var(--bg-input);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.input_wrap math-field.correct {
+  color: var(--primary-blue);
+  background-color: var(--primary-blue-50);
+  pointer-events: none;
+  opacity: 1;
+}
+.input_wrap math-field:not(.textarea).correct,
+.input_wrap math-field.textarea.correct {
+  border-color: var(--stroke-correct);
+}
+
+.input_wrap math-field:not(.textarea).correct:disabled:hover,
+.input_wrap math-field.textarea.correct:disabled:hover,
+.input_wrap math-field:not(.textarea).correct:focus,
+.input_wrap math-field.textarea.correct:focus {
+  border-color: var(--stroke-correct);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.input_wrap math-field.correct::part(placeholder) {
+  display: none;
+}
+
+.input_wrap math-field[data-correction].hint:disabled {
+  background-color: var(--secondary-coral-300);
+  opacity: 1;
+}
+.input_wrap math-field[data-correction]:not(.textarea).hint:disabled,
+.input_wrap math-field[data-correction].textarea.hint:disabled {
+  border-color: var(--stroke-error);
+}
+
+.input_wrap.keypad_mode math-field:not(.hint):disabled {
+    /* 필기인식+수식입력인 경우 inputbox 흰색배경의 비활성화, 클릭해서 키패드를 띄우도록 함 */
+    background: var(--bg-input);
+    cursor: pointer;
+}
+
+.input_wrap math-field[data-correction]:not(.textarea).hint:disabled:hover,
+.input_wrap math-field[data-correction].textarea.hint:disabled:hover,
+.input_wrap math-field[data-correction]:not(.textarea).hint:disabled:focus,
+.input_wrap math-field[data-correction].textarea.hint:disabled:focus {
+  border-color: var(--stroke-error);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.input_wrap.fraction_wrap math-field {
+  min-height: 112px;
+}
+
+.input_wrap.fraction_wrap math-field::part(placeholder) {
+  font-size: 24px;
+}
+
+.input_wrap input::placeholder,
+.input_wrap textarea::placeholder,
+.input_wrap math-field:not(.textarea)::placeholder,
+.input_wrap math-field.textarea::placeholder {
+  color: #999;
+  font-size: 14px;
+  background-image: url("../img/icon_hint.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 40px;
+  white-space: nowrap;
+}
+
+.input_wrap math-field:not(.textarea)::after,
+.input_wrap math-field.textarea::after {
+  content: "";
+  display: block;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.input_wrap input:hover::after,
+.input_wrap textarea:hover::after,
+.input_wrap math-field:not(.textarea):hover,
+.input_wrap math-field.textarea:hover,
+.input_wrap input:focus,
+.input_wrap textarea:focus,
+.input_wrap textarea:focus,
+.input_wrap math-field:not(.textarea):focus,
+.input_wrap math-field.textarea:focus {
+  border-color: var(--stroke-hover);
+}
+
+.input_wrap input:focus-visible,
+.input_wrap textarea:focus-visible,
+.input_wrap textarea:focus-visible
+{
+  border-width: 3px;
+  border-style: dashed;
+  border-color: var(--stroke-focus-visible);
+}
+.input_wrap math-field:not(.textarea):focus-visible,
+.input_wrap math-field.textarea:focus-visible {
+  outline: var(--stroke-focus-visible) dashed 3px;
+  border-radius: 12px; 
+}
+.input_wrap math-field:focus-within {
+  outline: var(--stroke-focus-visible) dashed 3px;
+  border-radius: 12px;
+}
+
+.input_wrap input:disabled,
+.input_wrap textarea:disabled,
+.input_wrap math-field:disabled {
+  background: var(--bg-disabled);
+  pointer-events: none;
+}
+
+.input_wrap math-field:disabled:not(.textarea):hover,
+.input_wrap math-field:disabled.textarea:hover {
+  border-width: 1px;
+  border-color: var(--stroke-default);
+}
+
+
+
+/* .input_wrap math-field.disabled::part(container) {
+  pointer-events: none;
+} */
+
+.input_wrap.keypad_mode input,
+.input_wrap.keypad_mode textarea {
+  pointer-events: none;
+}
+
+.input_wrap.keypad_mode input::placeholder,
+.input_wrap.keypad_mode textarea::placeholder,
+.input_wrap.keypad_mode math-field::placeholder {
+  background-image: url(../img/icon_keypad_grey.svg);
+}
+
+.input_wrap input::placeholder,
+.input_wrap textarea::placeholder,
+.input_wrap math-field::placeholder {
+  color: var(--font-placeholder);
+  padding-left: 45px;
+  background-image: url(../img/icon_keyboard_grey.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  white-space: nowrap;
+}
+/* 
+.input_wrap math-field.scroll {
+  overflow-y: auto;
+} */
+
+/* Error 상태 */
+.input_wrap.error::after {
+  content: "에러문구 지정 필요";
+  display: block;
+  padding-left: 20px;
+  background: url(../img/icon_input_error.svg) no-repeat center left 4px / 12px;
+  color: var(--font-negative);
+  position: absolute;
+  top: 64px;
+  left: 0;
+}
+
+.input_wrap.error input,
+.input_wrap.error textarea,
+.input_wrap.error math-field {
+  border-color: var(--stroke-error);
+}
+
+.input_wrap math-field[data-correction="false"].disabled {
+  border-color: var(--stroke-error);
+  border-width: 2px;
+}
+
+.input_wrap math-field[data-correction="true"].disabled {
+  border-color: var(--stroke-completion);
+  border-width: 2px;
+}
+
+.input_wrap math-field.hint + .text_hint {
+  opacity: 1;
+}
+
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint,
+.dragndrop_fraction_wrap .drop_item::after {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--font-negative);
+  text-align: center;
+  /* line-height: 64px; */
+  letter-spacing: -1px;
+  border-radius: 12px;
+  /*background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px); 오답 투명망 제거*/
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.input_wrap .text_hint.fraction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  /* gap: 8px; */
+}
+
+.input_wrap .text_hint.fraction .fraction_box::before {
+  background-color: var(--font-negative);
+}
+
+.input_wrap .text_hint.multiple_hint_wrap,
+.input_wrap .text_hint.multiple_hint_wrap .multiple_hint {
+  display: flex;
+  align-items: center;
+}
+
+.input_wrap .text_hint.multiple_hint_wrap .multiple_hint {
+  gap: 8px;
+  margin-left: 8px;
+}
+
+/* 괄호 스타일 수정 시 _layout.css pare_wrap 에도 동시 적용 되어야 함. (250423) */
+.input_wrap .text_hint .pare_wrap::before,
+.input_wrap .text_hint.multiple_hint_wrap .multiple_hint::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 40px;
+  background: url(../img/pare_ico1.svg) no-repeat center / 100%;
+  margin-right: -6px;
+}
+
+.input_wrap .text_hint .pare_wrap::after,
+.input_wrap .text_hint.multiple_hint_wrap .multiple_hint::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 40px;
+  background: url(../img/pare_ico2.svg) no-repeat center / 100%;
+  margin-left: -6px;
+}
+
+.input_wrap .text_hint .pare_wrap:has(.fraction_box)::before,
+.input_wrap .text_hint.multiple_hint_wrap .multiple_hint:has(.fraction_box)::before {
+  width: 14px;
+  height: 76px;
+  background-image: url("../img/pare_ico1_big.svg");
+  margin-right: -8px;
+}
+
+.input_wrap .text_hint .pare_wrap:has(.fraction_box)::after,
+.input_wrap .text_hint.multiple_hint_wrap .multiple_hint:has(.fraction_box)::after {
+  width: 14px;
+  height: 76px;
+  background-image: url("../img/pare_ico2_big.svg");
+  margin-left: -8px;
+}
+
+.input_wrap .text_hint.multiple_hint_wrap .multiple_hint > span:has(.fraction_box) {
+  line-height: 1;
+}
+
+.dragndrop_fraction_wrap .drop_item::after {
+  content: attr(data-answer-single);
+}
+
+.dragndrop_fraction_wrap .drop_item.hint::after {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.input_box {
+  width: unset !important;
+  min-width: 120px;
+  position: relative;
+}
+
+.input_box input {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background-color: white;
+  padding: 0 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.input_box .text_hint {
+  min-width: 120px;
+  position: relative;
+  padding: 0 12px;
+  transform: translateY(calc(100% + 4px));
+}
+
+.input_wrap .text_hint:has(.fraction_box) {
+  top: calc(100% + 12px);
+}
+
+.fraction_box > span:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: auto !important;
+  bottom: calc(100% + 4px);
+}
+
+.input_wrap[data-hint-position="up"] .text_hint:has(.fraction_box),
+.fraction_box > span:first-child .input_wrap .text_hint:has(.fraction_box),
+.fraction_box > .input_wrap:first-child .text_hint:has(.fraction_box) {
+  bottom: calc(100% + 12px);
+}
+
+.input_wrap[data-hint-position="right"] .text_hint {
+  width: auto;
+  left: calc(100% + 14px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fraction_box > span .input_wrap[data-hint-position="right"] .text_hint,
+.fraction_box > .input_wrap[data-hint-position="right"] .text_hint {
+  width: auto;
+  left: calc(100% + 14px);
+  bottom: auto;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.input_wrap[data-hint-position="left"] .text_hint {
+  width: auto;
+  left: auto;
+  right: calc(100% + 14px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fraction_box > span .input_wrap[data-hint-position="left"] .text_hint,
+.fraction_box > .input_wrap[data-hint-position="left"] .text_hint {
+  width: auto;
+  left: auto;
+  right: calc(100% + 14px);
+  bottom: auto;
+  top: 50% !important;
+  transform: translateY(-50%);
+}
+
+.input_wrap[data-hint-position="up"] .text_hint {
+  top: auto !important;
+  bottom: calc(100% + 4px);
+}
+
+/*=======================================================================
+* math-field 스타일
+========================================================================*/
+math-field::part(virtual-keyboard-toggle) {
+  display: none;
+}
+
+math-field {
+  --composition-background-color: transparent; /* 한글 조합 모드에서 배경색 투명하게 *
+  --smart-fence-color: transparent;*/
+  --highlight-text: transparent;
+}
+
+/* 컨테이너 중앙 정렬 */
+/*math-field:not(.textarea)::part(content),
+math-field:not(.textarea).align_center::part(content),
+math-field.align_center::part(content) {
+  display: flex;
+  justify-content: center;
+}*/
+
+/* 플레이스홀더 좌측 정렬 */
+math-field::part(placeholder) {
+  color: var(--font-placeholder);
+  padding-left: 40px;
+  background-image: url(../img/icon_keyboard_grey.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 40px;
+  white-space: nowrap;
+  text-align: left;
+  /* width: calc(100% - 40px); */
+  justify-content: flex-start;
+  position: absolute;
+}
+math-field:not(.textarea)::part(placeholder) {
+  top: -1px;
+}
+
+/* keypad 모드 placeholder 스타일 */
+.input_wrap.keypad_mode math-field::part(placeholder) {
+  background-image: url(../img/icon_formula_grey.svg);
+  align-self: flex-start;
+  /* margin-left: 20px; */
+}
+
+/* 라벨 */
+label {
+  display: inline-block;
+  min-height: 62px;
+  padding: 8px 24px;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+
+.input_area label {
+  color: var(--font-main-reverse);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.input_area label.img {
+  padding: 8px 24px;
+  background-color: var(--primary-blue);
+}
+
+.input_area label::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 26px;
+  background-color: var(--primary-blue);
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+/* 예시 박스 */
+.input_wrap .example_box {
+  width: 100%;
+  height: auto;
+  max-height: 128px;
+  margin-top: 12px;
+  padding: 28px 24px 28px 82px;
+  position: relative;
+  background-color: var(--primary-blue-50);
+  border-radius: 20px;
+  opacity: 0;
+  pointer-events: none;
+  overflow-y: auto;
+}
+
+.input_wrap .example_box.ex {
+  padding-top: 24px;
+}
+
+.input_wrap .example_box.on {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.input_wrap .example_box::before {
+  content: "예";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.input_wrap .example_box > p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  /* line-height: 1.5; */
+  color: var(--primary-blue-800);
+}
+
+.input_wrap ol.example_box li {
+  position: relative;
+  padding-left: 16px;
+  color: var(--primary-blue-800);
+  font-size: 24px;
+  font-weight: 700;
+  /* line-height: 1.5; */
+}
+
+.input_wrap ol.example_box li:not(:first-child) {
+  margin-top: 8px;
+}
+
+.input_wrap ol.example_box li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary-blue-800);
+  border-radius: 50%;
+}
+
+.input_wrap ol.example_box li:has(.fraction_box)::before {
+  /* top: 16px; */
+  top: 18px;
+}
+
+.answer_text_area {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.answer_text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+}

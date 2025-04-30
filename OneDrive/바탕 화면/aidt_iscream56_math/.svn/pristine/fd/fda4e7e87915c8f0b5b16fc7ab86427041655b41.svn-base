@@ -1,0 +1,135 @@
+/* 계산기 */
+/* 계산기 */
+.btn.cal_icon {
+    min-width: unset;
+    background: #fff url(../../common/img/calculator-icon.svg) no-repeat center;
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    margin-left: 20px;
+    border: 1px solid #d2d2d2;
+}
+.btn.cal_icon:hover{
+    background-color: var(--primary-blue-50);
+}
+  .cal_popup {
+    display: none;
+    position: absolute;
+    cursor: move;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    width: 340px;
+    height: 541px;
+    padding: 94px 34px 34px 34px;
+    border: 4px solid #9fcef8;
+    border-radius: 20px;
+    background-color: #fff;
+    z-index: 10;
+  }
+  .cal_popup .imgClose {
+    position: absolute;
+    top: 20px;
+    right: 21px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    width: 125px;
+    height: 53px;
+    border-radius: 30px;
+  }
+
+  .calculator_wrap .calculator_area input[type='text'].cal_display {
+    width: 100%;
+    background: none;
+    border: 0;
+    text-align: right;
+    padding: 8px 28px 0 28px;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 41px;
+    height: 70px;
+}
+  
+  .calculator_area {
+    position: relative;
+    width: 271px;
+    height: 416px;
+    background: url(../img/calculator-img.png) no-repeat center / 100% 100%;
+    padding: 28px;
+  }
+  
+  .cal_btn.clear_btn {
+    left: 193px;
+    top: 119px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .cal_popup .cal_buttons {
+      display: flex;
+      margin-top: 75px;
+      flex-wrap: wrap; 
+      gap: 7.5px;
+    }
+  
+  .calculator_wrap .cal_btn {
+    min-width: unset;
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-indent: -99999em;
+    background-color: unset;
+}
+.calculator_wrap .img_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+}
+.calculator_wrap .btn.on {
+    background-color: var(--btn-default);
+    box-shadow: 0 5px 0 rgba(54, 117, 174, 0.35);
+}
+.calculator_wrap .cal_btn.clear_btn {
+    position: absolute;
+    left: 189px;
+    top: 119px;
+}
+  .text-area.cal_page {
+    width: 30%;
+  }
+  
+  .cal_icon {
+    background: #3675ae url(../img/calculator-icon.svg) no-repeat center;
+  }
+  .cal_icon:hover {
+    background: #264370 url(../img/calculator-icon.svg) no-repeat center;
+  }
+  
+  .cal_icon:active {
+    border: var(--btn-active-bo);
+    background: #1186ef url(../img/calculator-icon.svg) no-repeat center;
+  }
+  
+  .calculator_area .cal_display {
+    align-items: center;
+    margin-left: 4px;
+    width: 216px;
+  }
+  .btn-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+  }

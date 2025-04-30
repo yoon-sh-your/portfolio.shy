@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_01_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_01_ih_0002">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 4-2』 수직</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="2" lang="y">그림을 보고 <span class="empty_box nemo"></span> 안에 알맞은 기호를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_center dir_col gap_60">
+          <div class="img"><img src="../../common_practice/img/EMA525_01_IH/0002_img.png" alt="" /></div>
+          <div class="question_box gap_8" lang="y">
+            직선 가에 수직인 직선은 직선
+            <div class="input_wrap"><math-field data-answer-single="다"></math-field></div>
+            , 직선
+            <div class="input_wrap"><math-field data-answer-single="라"></math-field></div>
+            , 직선
+            <div class="input_wrap"><math-field data-answer-single="바"></math-field></div>
+            입니다.
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">두 직선이 만나서 이루는 각이 직각일 때, 두 직선은 서로 수직입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve">
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

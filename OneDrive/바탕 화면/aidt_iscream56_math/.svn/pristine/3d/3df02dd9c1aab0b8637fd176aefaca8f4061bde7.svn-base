@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema612_02_IH_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema612_02_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2_green" lang="y">각기둥의 밑면을 모두 찾아 색칠해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <h3><img src="./../../common_practice/img/EMA612_02_IH/icon_cursor.png" alt="" class="cursor" />그림을 클릭하세요.</h3>
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA612_02_IH/0002_bg.png" alt="" />
+            <div class="boolean_wrap boolean1">
+              <button data-answer-single="true" class="button1 box1"></button>
+              <button data-answer-single="true" class="button2 box1"></button>
+
+              <button data-answer-single="true" class="button1 box2"></button>
+              <button data-answer-single="true" class="button2 box2"></button>
+
+              <button data-answer-single="true" class="button1 box3"></button>
+              <button data-answer-single="true" class="button2 box3"></button>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">각기둥에서 평행하고 합동인 두 면을 찾아 색칠해 봅니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+    <!-- <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const wrap = document.querySelectorAll(".boolean_wrap");
+
+				wrap.forEach(function (wrp) {
+					const btns = wrp.querySelectorAll("button");
+
+					if (wrp.classList.contains("multiple")) {
+						btns.forEach((btn) => {
+							btn.addEventListener("click", () => {
+								document.querySelector("#sound_click").play();
+
+								if (btn.classList.contains("selected")) {
+									btn.classList.remove("selected");
+								} else {
+									btn.classList.add("selected");
+								}
+							});
+						});
+					} else {
+						btns.forEach(function (btn) {
+							btn.addEventListener("click", () => {
+								document.querySelector("#sound_click").play();
+
+								for (let i = 0; i < btns.length; i++) {
+									btns[i].classList.remove("selected");
+								}
+
+								btn.classList.add("selected");
+							});
+						});
+					}
+				});
+			});
+		</script> -->
+  </body>
+</html>

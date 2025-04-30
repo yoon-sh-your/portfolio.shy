@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA622_05_IH_0005</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema622_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema622_05_ih_0005">
+			<section class="title type2">
+				<h2 data-head="5_green" lang="y">
+					두 나눗셈의 몫의 차를 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="flex dir_col align_center gap_60">
+					<div class="question_box justify_center gap_60">
+						<div class="box_line">
+							<div class="inner">
+								72÷1.6
+							</div>
+						</div>
+						<div class="box_line">
+							<div class="inner">
+								49÷2.45
+							</div>
+						</div>
+					</div>
+					<div class="input_wrap">
+						<math-field data-answer-single="25"></math-field>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+.title h2 .blue {
+  color: rgba(59, 113, 254, 1);
+}
+
+/* EMA612_01_su_0001_s */
+.ema612_01_su_0001#app_wrap {
+  background: url(../img/EMA612_01_SU/0001_bg.png) no-repeat left bottom / 857px, #69C183;
+}
+.ema612_01_su_0001 .text_box {
+  color: #1454b9;
+  position: absolute;
+  top: 636px;
+  left: 290px;
+}
+.ema612_01_su_0001 .input_wrap {
+  width: 100%;
+}
+
+
+/* EMA612_01_su_0002_s */
+.ema612_01_su_0002 .contents > .flex {
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* EMA612_01_su_0003_s */
+.ema612_01_su_0003 .letCheck li {
+  width: calc((100% - 24px) / 3);
+}
+.ema612_01_su_0003 .contents .letCheck {
+  width: 1272px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-top: 140px;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .tit {
+  position: absolute;
+  top: -73px;
+  display: flex; 
+  align-items: center; 
+  gap: 10px;
+  letter-spacing: -3px;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .tit::before {
+  content:""; 
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #222;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .po_relative {
+  width:100%; 
+  height:100%; 
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .po_relative > span {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 700;
+}
+.img-0003-01 {
+  width: 213px;
+  height: 160px;
+}
+.img-0003-02 {
+  height: 216px;
+}
+.img-0003-03 {
+  width: 188px;
+  height: 157px;
+}
+.img-0003-arrow {
+  width: 30px;
+  height: 27px;
+  margin-right: 20px;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .po_relative > .t01 {
+  top: 109px;
+  left:0;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .po_relative > .t02 {
+  top: 119px;
+  left: 106px;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .po_relative > .t03 {
+  top: 141px;
+  left: 39px;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .po_relative > .t04 {
+  top: 14px;
+  left: 194px;
+  font-size: 10px;
+}
+.ema612_01_su_0003 .contents > .letCheck .flip .back .po_relative > .t05 {
+  top: 35px;
+  left: 170px;
+  font-size: 10px;
+}
+
+
+
+/* EMA612_01_su_0004_s */
+.ema612_01_su_0004 .contents > .flex .video_wrap {
+  background: url(../../common_contents/img/EMA612_01_SU/0004_content.png) no-repeat -10px -10px;
+  background-size: 110%;
+}
+
+
+/* EMA612_01_su_0005_s */
+.ema612_01_su_0005 .contents > .flex {
+  gap: 26px;
+}
+.ema612_01_su_0005 .picture_wrap img {
+  height: 100%;
+  object-fit: cover;
+}
+.ema612_01_su_0005 .input_wrap {
+  width: 817px;
+}
+.ema612_01_su_0005 .input_wrap math-field.textarea {
+  height: 407px;
+}
+.input_wrap math-field:not(.textarea) {
+  margin-top: 12px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_01_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_01">
+      <section class="title type2 flex">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 5-1』 대응 관계를 식으로 나타내기</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="2" lang="y">
+          <!-- <span class="empty_box nemo"></span> -->
+          <span lang="y">삼각형의 수와 삼각형의 변의 수 사이의 대응 관계를 식으로 나타내려고 합니다. 물음에 답해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1 on">
+          <h3 lang="y">표를 완성해 보세요.</h3>
+
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">삼각형의 수(개)</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="4"></math-field>
+                    </div>
+                  </td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">삼각형의 변의 수(개)</th>
+                  <td>3</td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="6"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="9"></math-field>
+                    </div>
+                  </td>
+                  <td>12</td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">삼각형의 변은 3개이므로 삼각형의 수가 1개씩 늘어날 때마다 삼각형의 변의 수는 3개씩 늘어납니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">삼각형의 수를 ☐, 삼각형의 변의 수를 △라고 할 때, 두 양사이의 대응 관계를 식으로 나타내어 보세요.</h3>
+
+          <div class="only_input">
+            <div class="input_wrap">
+              <math-field data-answer-single=" ☐=△÷3, △=☐×3"></math-field>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">해설 삼각형의 변의 수는 삼각형의 수의 3배이므로 삼각형의 수를 □, 삼각형의 변의 수를 △라고 할 때, 두 양 사이의 대응 관계를 식으로 나타 내면 □=△÷3 또는 △=□×3입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

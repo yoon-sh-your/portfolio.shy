@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_03_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_03">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">
+          <span lang="y">그림을 보고 축구공 수와 전체 공 수의 비를 써 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ball flex justify_center align_end">
+          <div class="ball_box flex gap_8 align_center justify_center">
+            <div class="input_wrap">
+              <math-field data-answer-single="3"></math-field>
+            </div>
+            <span class="fs_32">:</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="10"></math-field>
+            </div>
+          </div>
+          <div class="ball_box flex gap_8 align_center justify_center">
+            <div class="input_wrap">
+              <math-field data-answer-single="4"></math-field>
+            </div>
+            <span class="fs_32">:</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="6"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve"></div>
+              <p>
+                전체 공 10개 중 축구공은 3개이므로 축구공 수와 전체 공 수의 비는 3 : 10입니다. <br />
+                전체 공 6개 중 축구공은 4개이므로 축구공 수와 전체 공 수의 비는 4 : 6입니다.
+              </p>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

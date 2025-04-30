@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star2" lang="y">선대칭도형에서 대칭축의 수가 많은 것부터 차례대로 기호를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA523_04_IH/0005_01.png" alt="" />
+          </div>
+          <div class="input_area mt_20">
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="가" text-align="center"></math-field>
+            </div>
+            <span>,</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="라" text-align="center"></math-field>
+            </div>
+            <span>,</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="나" text-align="center"></math-field>
+            </div>
+            <span>,</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="다" text-align="center"></math-field>
+            </div>
+            <span>)</span>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <img src="./../../common_practice/img/EMA523_04_IH/0005_02.png" alt="" />
+                <p lang="y">원은 대칭축이 셀 수 없이 많습니다. 따라서 대칭축의 수가 많은 것부터 차례대로 기호를 쓰면 가, 라, 나, 다입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

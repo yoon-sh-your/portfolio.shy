@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA522_04_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/EMA522_04_su.css">
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_04_su_0002">
+        <section class="title type2">
+            <h2 data-type="2" data-text="생각 깨우기" lang="y" class="fraction_box_title">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    나은이는 전통 빗자루를 만드는 데 끈 6 m의
+                    <span class="fraction_box"><span>1</span><span>3</span></span> 만큼을 사용했습니다. 전통 빗자루를 만드는 데 사용한 끈은 몇 m인지 알아
+                  </div>
+                  <div class="fraction_txt" lang="y">
+                    봅시다.
+                  </div>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <div class="img_row">
+
+                    <div class="video_wrap type2">
+                        <img src="../../common_contents/img/EMA522_04_SU/0002_img01.png" alt="자치회 활동 이미지" />
+                        <div class="svg f24r fraction_txt_wrap align_center">
+                            <div class="fraction_txt">6 m의 <span class="fraction_box"><span>1</span><span>3</span></span> 만큼을</div>
+                            <div class="fraction_txt">어떻게 구할 수 있을까?</div>
+                        </div>
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="209" height="119" viewBox="0 0 209 119"
+                            fill="none">
+                            <path
+                                d="M112.811 104C36.3488 104 17.3105 93.6684 17.3105 52.5C17.3105 6.73099 41.1169 1 112.811 1C179.942 1 208.311 9.91195 208.311 52.5C208.311 97.5855 182.446 104 112.811 104Z"
+                                fill="white" stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M161.732 100.452C161.732 100.452 159.911 103.084 159.726 107.608C159.541 112.133 162.663 120.937 157.406 116.357L145.282 101.725"
+                                fill="white" />
+                            <path
+                                d="M161.732 100.452C161.732 100.452 159.911 103.084 159.726 107.608C159.541 112.133 162.663 120.937 157.406 116.357L145.282 101.725"
+                                stroke="#222222" stroke-linecap="round" stroke-linejoin="round" />
+                            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                                font-size="16" letter-spacing="-0.5px">
+                                <tspan x="70.5" y="46.3516">6 m의</tspan>
+                            </text>
+                            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                                font-size="16" letter-spacing="-0.5px">
+                                <tspan x="113.992" y="34.3516">1</tspan>
+                            </text>
+                            <line x1="112.5" y1="40" x2="122.5" y2="40" stroke="black" />
+                            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                                font-size="16" letter-spacing="-0.5px">
+                                <tspan x="112.562" y="58.3516">3</tspan>
+                            </text>
+                            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                                font-size="16" letter-spacing="-0.5px">
+                                <tspan x="124.5" y="46.3516">만큼을</tspan>
+                            </text>
+                            <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                                font-size="16" letter-spacing="-0.5px">
+                                <tspan x="48.5" y="78.3516">어떻게 구할 수 있을까?</tspan>
+                            </text>
+                        </svg> -->
+                        <button class="play" data-video="1"></button>
+                    </div>
+
+                    <div class="input_area">
+                        <h3 lang="y">
+                            영상을 보고 사용한 끈의 길이를 어떻게 구할 수 있을지 이야기해 보세요.
+                        </h3>
+                        <div class="input_area m_auto">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <ol class="example_box">
+                                    <li lang="y">
+                                        <span class="mixed_fraction">6을 똑같이 3부분으로 나누어 그중 1부분의 길이로 구할 수 있습니다.</span>
+                                    </li>
+                                    <li lang="y">
+                                        <span class="mixed_fraction">
+                                            <span>6 m의</span>
+                                            <span class="fraction_box"><span>1</span><span>3</span></span>
+                                            <span>만큼이므로 6에 </span>
+                                            <span class="fraction_box"><span>1</span><span>5</span></span>
+                                            <span>을 곱해서 구할 수 있을 것 같습니</span>
+                                        </span>
+                                        <span class="mixed_fraction">
+                                            <span>다.</span>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <!-- 예시 필드에서 사용 -->
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit">제출</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

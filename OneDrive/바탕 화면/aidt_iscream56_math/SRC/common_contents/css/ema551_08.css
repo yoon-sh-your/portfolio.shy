@@ -1,0 +1,327 @@
+/* ==============================================
+   📌 공통 - 5단원
+   ============================================== */
+/* 분수 연산 */
+.operations {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+    gap: 4px;
+}
+
+/* 분수 whole */
+.f32b {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* 분수 문장 */
+.fraction-text-align {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.fraction-text-align>.f32b {
+    padding: 0px 8px;
+}
+
+.fraction-text-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.fraction-text-column .fraction-text-align:nth-child(2) {
+    margin-top: -18px;
+}
+
+/* 분수 힌트 위치 수정 */
+.input_wrap.hint .text_hint {
+    font-size: 24px;
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    background: none;
+    backdrop-filter: unset;
+}
+
+/* 분수 인풋 사이즈 */
+.input_wrap {
+    align-items: center;
+    min-width: 80px;
+}
+
+.input_wrap input {
+    width: 80px;
+    height: 60px;
+}
+
+/* 서술형 예시 답 분수 문장 */
+.example_box .fraction-text-column {
+    display: flex;
+    gap: 12px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--primary-blue-800);
+}
+
+.example_box .fraction-text-column .f32b {
+    color: var(--Blue-scale_T-Blue-800, #1454B9);
+    /* Title/H_04_BOLD */
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+    letter-spacing: -0.5px;
+}
+
+.fraction_container .input_wrap .example_box::before {
+    margin-top: 20px;
+}
+
+/* 비디오, 사진 페이지 공통 */
+.contents>.flex {
+    gap: 26px;
+}
+
+.video_wrap .play {
+    z-index: 999;
+}
+
+.video_wrap {
+    background: none;
+}
+
+.flex.align_start math-field.textarea {
+    width: 797px;
+    height: 250px;
+}
+
+/* .title h2[data-type="1"] .title_head,
+.title h2[data-type="2"] .title_head {
+    margin-top: 35px;
+} */
+
+/* 슬라이드 페이지 공통 */
+.page math-field.textarea {
+    width: 1200px;
+    height: 294px;
+}
+
+/* 커스텀 페이지 공통 */
+.container_551 h3::before {
+    display: none;
+}
+
+.container_551 {
+    /* padding: 20px; */
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-direction: row;
+    min-height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1635px;
+    height: 478px;
+    gap: 40px;
+}
+
+.container_551.col_551 {
+    flex-direction: column;
+    gap: 0;
+}
+
+.top_551 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.bottom_551 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.left_551 {
+    /* padding: 20px; */
+    /* background-color: antiquewhite; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.right_551 {
+    /* padding: 20px; */
+    /* background-color: beige; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.row_551-1,
+.row_551-2,
+.row_551-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.row_551-1 {
+    /* padding: 10px; */
+    /* background-color: orange; */
+    justify-content: center;
+    align-items: center;
+}
+
+.row_551-2 {
+    /* padding: 10px; */
+    /* background-color: yellow; */
+}
+
+.row_551-3 {
+    /* padding: 10px; */
+    /* background-color: green; */
+}
+
+/* 분수 색칠 */
+.count_row {
+    display: flex;
+    flex-direction: column;
+}
+
+.count_row .nums {
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boolean-counts {
+    display: flex;
+    gap: 20px
+}
+
+/* 색칠 - 그리드 */
+.boolean_count_wrap.grid_551 {
+    display: grid;
+    gap: 0;
+}
+
+.boolean_count_wrap.grid_551.c4r3 {
+    grid-template-columns: repeat(4, 1fr); /* 가로 4칸 */
+    grid-template-rows: repeat(3, 1fr); /* 세로 3칸 */
+}
+
+.boolean_count_wrap.grid_551.c5r3 {
+    grid-template-columns: repeat(5, 1fr); /* 가로 4칸 */
+    grid-template-rows: repeat(3, 1fr); /* 세로 3칸 */
+}
+
+.boolean_count_wrap.grid_551 button {
+    /* border: 1px dashed black; */
+    border: 1px solid;
+    border-image-source: repeating-linear-gradient(45deg, black 0px, black 3px, white 3px, white 5px);
+    border-image-slice: 3;
+    min-width: auto;
+    width: 30px;
+    height: 40px;
+}
+
+.boolean_count_wrap.grid_551 button:not(:first-child)::before {
+    display: none;
+}
+
+/* 네모 안에 */
+.nemo {
+    border-radius: 4px;
+    border: 2px solid var(--Blue-scale_T-Blue-600, #3B71FE);
+    background: var(--Text-White, #FFF);
+    display: flex;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* 유나 예준이와 다른 방법으로 */
+.other_method_name {
+    color: #FFF;
+    /* Title/H_04_BOLD */
+    font-family: Pretendard;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    /* 150% */
+    letter-spacing: -0.5px;
+    transform: rotate(4.002deg);
+    position: absolute;
+    top: 132px;
+    left: 140px;
+}
+
+/* 보기 */
+.look {
+    display: flex;
+    padding: 4px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 4px;
+    border: 2px solid var(--Secondary-Red, #EE4F24);
+    background: var(--Text-White, #FFF);
+    color: var(--Secondary-Red, #EE4F24);
+    /* Caption/Caption_01_BOLD */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.5px;
+}
+
+/* ==============================================
+   🎨 차시 스타일
+   ============================================== */
+
+   /* 0002 */
+   .container_551 {
+    width: 769px;
+    height: 446px;
+   }
+
+   .top_551 {
+    gap: 60px;
+   }
+
+   .left_551,
+   .right_551 {
+    gap: 40px;
+   }

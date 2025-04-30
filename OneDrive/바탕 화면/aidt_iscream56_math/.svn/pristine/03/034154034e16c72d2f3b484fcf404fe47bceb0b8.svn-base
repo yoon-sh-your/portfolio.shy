@@ -1,0 +1,110 @@
+.ema513_01_ih_0001 .question_box {
+  position: relative;
+  justify-content: center;
+  gap: 36px;
+}
+.ema513_01_ih_0001 .question_box:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  right: 200px;
+  height: 6px;
+  background: #f9d993;
+  transform: translateY(-50%);
+}
+.ema513_01_ih_0001 .item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 216px;
+  height: 120px;
+  background: url(../img/EMA513_01_IH/0001_img01.png) no-repeat center center;
+}
+.ema513_01_ih_0001 .item.has_input {
+  background-image: url(../img/EMA513_01_IH/0001_img02.png);
+}
+
+.ema513_01_ih_0002 .title.group span,
+.ema513_01_ih_0003 .title.group span {
+  color: #9f5629;
+}
+.ema513_01_ih_0002 .img_wrap {
+  position: relative;
+}
+.ema513_01_ih_0002 .img_wrap img {
+  width: 758px;
+}
+.ema513_01_ih_0002 .img_wrap span {
+  position: absolute;
+  top: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.ema513_01_ih_0002 .img_wrap .txt1 {
+  left: 11px;
+}
+.ema513_01_ih_0002 .img_wrap .txt2 {
+  left: 138px;
+}
+.ema513_01_ih_0002 .img_wrap .txt3 {
+  left: 332px;
+}
+.ema513_01_ih_0002 .img_wrap .txt4 {
+  left: 602px;
+}
+.ema513_01_ih_0002 .question_box {
+  justify-content: center;
+}
+.ema513_01_ih_0002 .table_box {
+  background: url(../img/EMA513_01_IH/0002_bg.png) no-repeat center center / 100% 100%;
+}
+.ema513_01_ih_0002 .table_box th,
+.ema513_01_ih_0002 .table_box td {
+  width: 236px;
+}
+.ema513_01_ih_0002 .table_box thead th {
+  height: 70px;
+}
+.ema513_01_ih_0002 .table_box tbody td {
+  height: 110px;
+  text-align: center;
+}
+
+.ema513_01_ih_0003 .tit_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 62px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 500;
+  background: url(../img/EMA513_01_IH/0003_img.png) no-repeat center center / cover;
+}
+.ema513_01_ih_0003 .boolean_wrap {
+  width: 573px;
+  margin: 10px auto 0;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+  border-right: 1px dashed #00a0e9;
+  border-bottom: 1px dashed #00a0e9;
+}
+.ema513_01_ih_0003 .boolean_wrap button {
+  width: 52px;
+  height: 52px;
+  border: 1px dashed #00a0e9;
+  border-bottom: none;
+  border-right: none;
+  border-radius: 0;
+}
+.ema513_01_ih_0003 .boolean_wrap button.selected {
+  background-color: #dcedd8;
+}

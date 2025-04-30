@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_01_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_00_su_0004">
+      <section class="title type2">
+        <h2 lang="y" data-icon="speech">
+          영상을 보고 어떤 상황을 나타내고 있는지 이야기해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align-start">
+          <div class="video_wrap type2">
+            <button class="play" data-video="1"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">태민이가 온라인 공간에서 집을 짓고 있습니다.</li>
+                <li lang="y">집터에 정사각형 모양으로 울타리를 쳤습니다.</li>
+                <li lang="y">직사각형 모양의 정원을 만들었습니다.</li>
+                <li lang="y">직사각형 모양의 문패를 만들었습니다.</li>
+                <li lang="y">창고에 삼각형 모양의 창문을 만들었습니다.</li>
+                <li lang="y">마름모 모양의 텃밭을 만들었습니다.</li>
+                <li lang="y">
+                  수영장에 사다리꼴 모양의 그늘막을 만들었습니다.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

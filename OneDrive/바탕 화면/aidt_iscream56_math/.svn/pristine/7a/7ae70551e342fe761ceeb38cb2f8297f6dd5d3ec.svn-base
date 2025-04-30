@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_02_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_02.css" />
+  <script src="../../common_contents/js/ema523_02_0005.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_02_su_0005">
+    <section class="title type2">
+      <h2 data-head="3_pink" lang="y">서로 합동인 도형을 찾아봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">서로 합동인 도형을 모두 찾아보세요.​</h3>
+        <div class="question_box mt_20 justify_center">
+          <div class="check_shape_wrap example_box">
+            <div class="img_box shape1" data-answer-single="blue" data-color-pair="triangle">
+              <svg width="144" height="88" viewBox="0 0 144 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M142.986 86.9003L0.908203 1.70068H142.986V86.9003Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+                </svg>                
+              <span lang="y">가</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="blue">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape2" data-answer-single="red"  data-color-pair="rectangle">
+              <svg width="116" height="201" viewBox="0 0 116 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M115.045 0.913574H1.39453V199.706H115.045V0.913574Z" stroke="#1D1D1D" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>                
+              <span lang="y">나</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="red">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape3" data-answer-single="green" data-color-pair="circle">
+              <svg width="173" height="173" viewBox="0 0 173 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M146.976 146.342C180.265 113.07 180.265 59.1245 146.976 25.8519C113.687 -7.42057 59.7142 -7.42056 26.425 25.852C-6.86431 59.1245 -6.8643 113.07 26.425 146.342C59.7142 179.615 113.687 179.615 146.976 146.342Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>               
+              <span lang="y">다</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="green">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape4" data-answer-single="empty_answer"  data-color-pair="empty_answer">
+              <svg width="59" height="201" viewBox="0 0 59 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.36328 199.706V0.913574H58.1783L1.36328 199.706Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>                             
+              <span lang="y">라</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape5" data-answer-single="red" data-color-pair="rectangle">
+              <svg width="201" height="116" viewBox="0 0 201 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M200.07 1.11279H1.17773V114.706H200.07V1.11279Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>              
+              <span lang="y">마</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="red">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape6" data-answer-single="green" data-color-pair="circle">
+              <svg xmlns="http://www.w3.org/2000/svg" width="173" height="173" viewBox="0 0 173 173" fill="none">
+                <path d="M86.1507 172.105C133.229 172.105 171.393 133.96 171.393 86.9057C171.393 39.8512 133.229 1.70605 86.1507 1.70605C39.0726 1.70605 0.908203 39.8512 0.908203 86.9057C0.908203 133.96 39.0726 172.105 86.1507 172.105Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>                
+              <span lang="y">바</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="green">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape7" data-answer-single="empty_answer" data-color-pair="empty_answer">
+              <svg width="144" height="116" viewBox="0 0 144 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M142.878 1.49365L0.800781 115.106H142.878V1.49365Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>              
+              <span lang="y">사</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape8" data-answer-single="empty_answer" data-color-pair="empty_answer">
+              <svg width="116" height="144" viewBox="0 0 116 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M114.936 1.10107H1.28613V143.107H114.936V1.10107Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>               
+              <span lang="y">아</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape9" data-answer-single="empty_answer" data-color-pair="empty_answer">
+              <svg width="116" height="116" viewBox="0 0 116 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M114.421 58.3C114.429 69.537 111.102 80.5239 104.862 89.8709C98.6218 99.218 89.7482 106.505 79.3636 110.811C68.9791 115.117 57.5502 116.247 46.5226 114.06C35.4951 111.873 25.3643 106.465 17.4117 98.5225C9.45921 90.5796 4.04225 80.4577 1.84601 69.4372C-0.350234 58.4168 0.772937 46.9929 5.07347 36.6105C9.37399 26.2282 16.6587 17.3538 26.006 11.1101C35.3533 4.86636 46.3434 1.53369 57.586 1.53369C72.6526 1.53369 87.1028 7.51313 97.7603 18.1577C108.418 28.8023 114.41 43.241 114.421 58.3Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>           
+              <span lang="y">자</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+            <div class="img_box shape10" data-answer-single="blue" data-color-pair="triangle">
+              <svg width="87" height="144" viewBox="0 0 87 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M86.0716 143.107H0.829102V1.10107L86.0716 143.107Z" stroke="#1D1D1B" stroke-width="1.50407" stroke-linejoin="round"/>
+              </svg>                
+              <span lang="y">차</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="blue">
+                  <option></option>
+                  <option value="blue">-</option>
+                  <option value="red">-</option>
+                  <option value="green">-</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">서로 합동인 도형을 어떻게 찾았는지 이야기해 보세요.</h3>
+        <div class="question_box mt_20 justify_center">
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">모눈종이의 칸 수를 세어서 찾았습니다.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSample">예시</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

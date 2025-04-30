@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_05_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_contents/js/ema612_05_su_0005.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_05_su_0005">
+      <section class="title type2">
+        <h2 data-head="3">
+          <div>
+            <span lang="y">삼각기둥의 전개도를 그려 봅시다.</span>
+            <button type="button" class="btn_reference" onclick="openPop('.pop_reference_wrap')">도움 자료</button>
+          </div>
+        </h2>
+      </section>
+
+      <div class="pop_reference_wrap">
+        <div class="pop_reference">
+          <button class="close" onclick="closePop('.pop_reference_wrap')">닫기</button>
+
+          <div class="pop_reference_inner">
+            <h3 lang="y">각기둥의 전개도를 그릴 때 생각해야 할 점</h3>
+            <section class="contents">
+              <div class="flex_col_box">
+                <ul class="dot_list">
+                  <li class="txt" lang="y">
+                    밑면은 2개, 옆면은 한 밑면의 변의 수만큼 그립니다.
+                  </li>
+                  <li class="txt" lang="y">
+                    옆면은 모두 직사각형으로 그립니다.
+                  </li>
+                  <li class="txt" lang="y">
+                    전개도를 접었을 때 겹치는 면이 없도록 그립니다.
+                  </li>
+                  <li class="txt" lang="y">
+                    전개도를 접었을 때 서로 맞닿는 선분의 길이를 같게 그립니다.
+                  </li>
+                </ul>
+
+                <div class="info_txt">
+                  <img
+                    src="../../common_contents/img/EMA612_05_SU/0005_pop_cont01.png"
+                    alt="배경이미지"
+                  />
+
+                  <p class="h01" lang="y">
+                    각기둥의 전개도를 그릴 때 <br />잘린 모서리는 실선으로,
+                    <br />잘리지 않은 모서리는 <br />점선으로 그려요.
+                  </p>
+                  <p class="t01" lang="y">
+                    한 밑면의 변이 3개이므로 <br />옆면은 직사각형으로 3개
+                    그려요.
+                  </p>
+                  <p class="t02" lang="y">
+                    밑면 2개가 <br />겹치지 않게<br />
+                    그려요.
+                  </p>
+                  <p class="t03" lang="y">
+                    맞닿는 선분의 길이를 <br />같게 그려요.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- pop_reference_wrap end -->
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">삼각기둥의 전개도를 완성해 보세요.</h3>
+
+          <div class="flex_col_box2">
+            <div class="d_img">
+              <img
+                src="../../common_contents/img/EMA612_05_SU/0005_diagram_01.png"
+                alt="삼각기둥"
+              />
+              <p class="t01">4 ㎝</p>
+              <p class="t02">5 ㎝</p>
+              <p class="t03">5 ㎝</p>
+              <p class="t04">3 ㎝</p>
+            </div>
+
+            <div class="img_paper">
+              <p class="t01">1 ㎝</p>
+              <p class="t02">1 ㎝</p>
+
+              <div class="drawline_grid">
+                <!-- 선 속성 선택 팝업 -->
+                <div class="select_line_type">
+                  <ul class="select_type_options">
+                    <li data-value="solid">solid</li>
+                    <li data-value="dotted">dotted</li>
+                  </ul>
+                </div>
+                <!--drawing-->
+                <div
+                  class="drawing_grid_area"
+                  data-grid-size="30"
+                  id="drawingArea"
+                  data-answer-single='[[{"x":60,"y":120},{"x":60,"y":270},{"x":150,"y":270},{"x":150,"y":360},{"x":270,"y":270},{"x":390,"y":270},{"x":390,"y":120},{"x":270,"y":120},{"x":150,"y":30},{"x":150,"y":120},{"x":150,"y":120},{"x":150,"y":270},{"x":270,"y":270},{"x":270,"y":120},{"x":60,"y":120},{"x":150,"y":120}],{"x":60,"y":120}]'
+                  data-sample-line=""
+                >
+                  <svg class="line_canvas"></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">앞에서 완성한 전개도와 다른 모양으로 완성해 보세요.</h3>
+
+          <div class="flex_col_box2">
+            <div class="d_img">
+              <img
+                src="../../common_contents/img/EMA612_05_SU/0005_diagram_01.png"
+                alt="삼각기둥"
+              />
+              <p class="t01">4 ㎝</p>
+              <p class="t02">5 ㎝</p>
+              <p class="t03">5 ㎝</p>
+              <p class="t04">3 ㎝</p>
+            </div>
+
+            <div class="img_paper">
+              <p class="ex_txt">예</p>
+
+              <!-- <img
+                src="../../common_contents/img/EMA612_05_SU/0005_graph_paper_02.png"
+                alt="모눈종이 배경"
+              /> -->
+
+              <p class="t01">1 ㎝</p>
+              <p class="t02">1 ㎝</p>
+
+              <div class="drawline_grid">
+                <!-- 선 속성 선택 팝업 -->
+                <div class="select_line_type">
+                  <ul class="select_type_options">
+                    <li data-value="solid">solid</li>
+                    <li data-value="dotted">dotted</li>
+                  </ul>
+                </div>
+                <!--drawing-->
+                <div
+                  class="drawing_grid_area"
+                  data-grid-size="26"
+                  id="drawingArea"
+                  data-answer-single='[[{"x":0,"y":104},{"x":78,"y":0},{"x":78,"y":104},{"x":208,"y":104},{"x":364,"y":104},{"x":364,"y":260},{"x":208,"y":260},{"x":78,"y":364},{"x":78,"y":260},{"x":0,"y":260}],[{"x":78,"y":104},{"x":78,"y":260},{"x":208,"y":260},{"x":208,"y":104},{"x":0,"y":104},{"x":78,"y":104}],[{"x":0,"y":260},{"x":0,"y":104}]]'
+                  data-sample-line=""
+                >
+                  <svg class="line_canvas"></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">내가 그린 전개도를 친구와 비교해 보세요.</h3>
+
+          <div class="text_box input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">
+                  친구가 그린 전개도와 내가 그린 전개도의 옆면은 똑같은데,
+                  밑면을 그린 방향이 다릅니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+```

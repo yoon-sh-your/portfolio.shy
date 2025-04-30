@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema511_06_su_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema511_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_06_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">텃밭 상자 6개에 고추 모종을 각각 3개씩 2줄로 심었습니다. 상추 모종 32개 중에서 시든 모종 2개를 빼고 남은 모종을 텃밭 상자 6개에 똑같이 나누어 심으려고 합니다. 텃밭 상자 한 개에 심는 모종은 모두 몇 개가 될지 알아보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2870 1599" fill="none">
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="49.2" letter-spacing="-2.05px" lang="y">
+                <tspan x="754.778" y="1013.79">텃밭 상자 한 개에</tspan>
+                <tspan x="759.927" y="1079.39">심는 모종은 모두</tspan>
+                <tspan x="789.628" y="1144.99">몇 개가 될까?</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA511_06_SU/0003_content.png" alt="자치회 활동 이미지" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">
+              영상을 보고 텃밭 상자 한 개에 심는 모종의 수를 어떻게 구할 수<br />
+              있을지 이야기해 봅시다.
+            </h3>
+            <div class="input_wrap" data-hint-position="right">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">
+                  텃밭 상자 한 개에 심는 고추 모종의 수와 상추 모종의 수를 더하면 될 것<br />
+                  같습니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_04_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_04_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y">
+          수 카드
+          <img src="../../common_practice/img/EMA524_04_IH/0007_img1.svg" class="ml_4" alt="" />, <img src="../../common_practice/img/EMA524_04_IH/0007_img2.svg" alt="" />,
+          <img src="../../common_practice/img/EMA524_04_IH/0007_img3.svg" alt="" />
+          를 한 번씩만 사용하여 곱이 가장 큰 (자연수)×(소수 한 자리 수)를 만들려고 합니다. 물음에 답해 보세요.
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page">
+          <h3 class="title"><span class="empty_box nemo"></span>안에 알맞은 수를 써넣어 곱이 가장 큰 곱셈을 만들어 보세요.</h3>
+          <div class="flex justify_center">
+            <div class="question_box">
+              <div class="input_wrap">
+                <math-field data-answer-single="5"></math-field>
+              </div>
+              ×
+              <div class="input_wrap">
+                <math-field data-answer-single="4"></math-field>
+              </div>
+              .
+              <div class="input_wrap">
+                <math-field data-answer-single="2"></math-field>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(자연수)x(소수 한 자리 수)의 곱이 가장 크게 되려면 자연수에 가장 큰 수를 넣고 남은 두 수로 가장 큰 소수 한 자리 수를 만들면 됩니다. 5>4>2이므로 곱이 가장 큰 곱셈은 5x4.2입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page">
+          <h3 class="title">곱이 가장 클 때의 값은 얼마인지 구해 보세요.</h3>
+          <div class="flex justify_center align_center gap_30">
+            <div class="question_box">
+              <div class="empty_box">5</div>
+              ×
+              <div class="empty_box">4</div>
+              .
+              <div class="empty_box">2</div>
+            </div>
+            <div class="right">
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="21"></math-field>
+              </div>
+              )
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p>5×4.2=21</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

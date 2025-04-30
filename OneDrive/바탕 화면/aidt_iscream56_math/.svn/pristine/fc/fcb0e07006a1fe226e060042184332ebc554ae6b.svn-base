@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_09_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_09.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_09_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">시온이네 반 친구들이 전학 간 친구에게 줄 선물을 넣은 상자 2개를 택배로 보내려고 합니다. 택배 요금은 모두 얼마인지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="flex_col_box">
+            <div class="img_box_set">
+              <div class="img_box">
+                <span class="tit">가</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_01.png" alt="택배상자" />
+
+                <p class="t01" lang="y">27 ㎝</p>
+                <p class="t02" lang="y">24 ㎝</p>
+                <p class="t03" lang="y">20 ㎝</p>
+                <p class="t04" lang="y">5 ㎏</p>
+              </div>
+
+              <div class="img_box">
+                <span class="tit">나</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_02.png" alt="택배상자" />
+
+                <p class="t05" lang="y">30 ㎝</p>
+                <p class="t06" lang="y">32 ㎝</p>
+                <p class="t07" lang="y">28 ㎝</p>
+                <p class="t08" lang="y">12 ㎏</p>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+              <h3 lang="y">택배 요금은 무엇에 따라 정해지나요?</h3>
+
+              <div class="input_area">
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="상자의 무게와 크기"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="flex_col_box">
+            <div class="img_box_set">
+              <div class="img_box">
+                <span class="tit">가</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_01.png" alt="택배상자" />
+
+                <p class="t01" lang="y">27 ㎝</p>
+                <p class="t02" lang="y">24 ㎝</p>
+                <p class="t03" lang="y">20 ㎝</p>
+                <p class="t04" lang="y">5 ㎏</p>
+              </div>
+
+              <div class="img_box">
+                <span class="tit">나</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_02.png" alt="택배상자" />
+
+                <p class="t05" lang="y">30 ㎝</p>
+                <p class="t06" lang="y">32 ㎝</p>
+                <p class="t07" lang="y">28 ㎝</p>
+                <p class="t08" lang="y">12 ㎏</p>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+              <h3 lang="y">가 상자의 무게와 상자에 표시된 길이는 각각 얼마인가요?</h3>
+
+              <div class="input_area ty1">
+                <span class="f32b" lang="y">무게:</span>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="5"></math-field>
+                </div>
+                <span class="f32b" lang="y">㎏</span>
+              </div>
+
+              <div class="input_area ty1">
+                <span class="f32b" lang="y">길이:</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="27" data-answer-multi='{"values": ["27", "24", "20"]}'></math-field>
+                </div>
+                <span class="f32b txt_comma">,</span>
+                <div class="input_wrap answer4">
+                  <math-field data-answer-single="24" data-answer-multi='{"values": ["27", "24", "20"]}'></math-field>
+                </div>
+                <span class="f32b txt_comma" lang="y">,</span>
+                <div class="input_wrap answer5">
+                  <math-field data-answer-single="20" data-answer-multi='{"values": ["27", "24", "20"]}'></math-field>
+                </div>
+                <span class="f32b" lang="y">㎝</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="flex_col_box">
+            <div class="img_box_set">
+              <div class="img_box">
+                <span class="tit">가</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_01.png" alt="택배상자" />
+
+                <p class="t01" lang="y">27 ㎝</p>
+                <p class="t02" lang="y">24 ㎝</p>
+                <p class="t03" lang="y">20 ㎝</p>
+                <p class="t04" lang="y">5 ㎏</p>
+              </div>
+
+              <div class="img_box">
+                <span class="tit">나</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_02.png" alt="택배상자" />
+
+                <p class="t05" lang="y">30 ㎝</p>
+                <p class="t06" lang="y">32 ㎝</p>
+                <p class="t07" lang="y">28 ㎝</p>
+                <p class="t08" lang="y">12 ㎏</p>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+              <h3 lang="y">나 상자의 무게와 상자에 표시된 길이는 각각 얼마인가요?</h3>
+
+              <div class="input_area ty1">
+                <span class="f32b" lang="y">무게:</span>
+                <div class="input_wrap answer6">
+                  <math-field data-answer-single="12"></math-field>
+                </div>
+                <span class="f32b" lang="y">㎏</span>
+              </div>
+
+              <div class="input_area ty1">
+                <span class="f32b" lang="y">길이:</span>
+                <div class="input_wrap answer7">
+                  <math-field data-answer-single="30"></math-field>
+                </div>
+                <span class="f32b txt_comma">,</span>
+                <div class="input_wrap answer8">
+                  <math-field data-answer-single="32"></math-field>
+                </div>
+                <span class="f32b txt_comma" lang="y">,</span>
+                <div class="input_wrap answer9">
+                  <math-field data-answer-single="28"></math-field>
+                </div>
+                <span class="f32b" lang="y">㎝</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <div class="flex_col_box">
+            <div class="picture_wrap_ty1">
+              <img src="../../common_contents/img/EMA521_09_SU/0002_contents.png" alt="택배요금 안내표" />
+  
+              <p class="t01" lang="y">상자의 크기는 <br />㉠, ㉡, ㉢의 합으로 구해요.</p>
+              <p class="t02" lang="y">상자의 무게가 3 kg, <br />크기가 50 ㎝라면 <br />택배 요금은 <br />7000원이에요.</p>
+              <p class="t03" lang="y">㉠</p>
+              <p class="t04" lang="y">㉡</p>
+              <p class="t05" lang="y">㉢</p>
+              <p class="t06" lang="y">(출처: 찾기쉬운 생활법령정보, 2024)</p>
+  
+              <div class="t07">
+                <p>상자의 무게와 크기별 택배 요금</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">무게</th>
+                      <th scope="col" lang="y">크기</th>
+                      <th scope="col" lang="y">택배 요금</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td lang="y">2 kg 이하</td>
+                      <td lang="y">60 ㎝ 이하</td>
+                      <td lang="y">6000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">2 kg 초과 10 kg 이하</td>
+                      <td lang="y">60 ㎝ 초과 120 ㎝ 이하</td>
+                      <td lang="y">7000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">10 kg 초과 20 kg 이하</td>
+                      <td lang="y">120 ㎝ 초과 140 ㎝ 이하</td>
+                      <td lang="y">8000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">20 kg 초과 30 kg 이하</td>
+                      <td lang="y">140 ㎝ 초과 160 ㎝ 이하</td>
+                      <td lang="y">9000원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+              <h3 lang="y">무게에 따른 요금과 크기에 따른 요금이 다른 경우 택배 요금은 어떻게 정해지나요?</h3>
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">무게에 따른 요금과 크기에 따른 요금 중 더 높은 요금으로 정해집니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_5">
+          <div class="flex_col_box">
+            <div class="img_box_set">
+              <div class="img_box">
+                <span class="tit">가</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_01.png" alt="택배상자" />
+
+                <p class="t01" lang="y">27 ㎝</p>
+                <p class="t02" lang="y">24 ㎝</p>
+                <p class="t03" lang="y">20 ㎝</p>
+                <p class="t04" lang="y">5 ㎏</p>
+              </div>
+
+              <div class="img_box">
+                <span class="tit">나</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_02.png" alt="택배상자" />
+
+                <p class="t05" lang="y">30 ㎝</p>
+                <p class="t06" lang="y">32 ㎝</p>
+                <p class="t07" lang="y">28 ㎝</p>
+                <p class="t08" lang="y">12 ㎏</p>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+              <h3 lang="y">택배 요금이 모두 얼마인지 어떻게 구할 수 있을까요?</h3>
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">가 상자와 나 상자가 각각 속하는 상자의 무게와 크기의 범위를 찾아 택배 요금을 구하고, 두 택배 요금의 합을 구합니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_6">
+          <div class="flex_col_box">
+            <div class="img_box_set">
+              <div class="img_box">
+                <span class="tit">가</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_01.png" alt="택배상자" />
+
+                <p class="t01" lang="y">27 ㎝</p>
+                <p class="t02" lang="y">24 ㎝</p>
+                <p class="t03" lang="y">20 ㎝</p>
+                <p class="t04" lang="y">5 ㎏</p>
+              </div>
+
+              <div class="img_box">
+                <span class="tit">나</span>
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_01_02.png" alt="택배상자" />
+
+                <p class="t05" lang="y">30 ㎝</p>
+                <p class="t06" lang="y">32 ㎝</p>
+                <p class="t07" lang="y">28 ㎝</p>
+                <p class="t08" lang="y">12 ㎏</p>
+              </div>
+
+              <div class="img_box_full">
+                <img src="../../common_contents/img/EMA521_09_SU/0002_content_02_01.png" alt="택배상자 정보 제공 대화" />
+
+                <p class="t01" lang="y">상자의 크기는 <br />㉠, ㉡, ㉢의 합으로 구해요.</p>
+                <p class="t02" lang="y">상자의 무게가 3 kg, <br />크기가 50 ㎝라면 <br />택배 요금은 <br />7000원이에요.</p>
+                <p class="t03" lang="y">㉠</p>
+                <p class="t04" lang="y">㉡</p>
+                <p class="t05" lang="y">㉢</p>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+              <h3 lang="y">두 상자의 크기는 각각 몇 ㎝인지 구해 보세요.</h3>
+
+              <div class="input_area ty1">
+                <span class="f32b" lang="y">가 상자:</span>
+                <div class="input_wrap answer10">
+                  <math-field data-answer-single="71"></math-field>
+                </div>
+                <span class="f32b" lang="y">㎝</span>
+              </div>
+
+              <div class="input_area ty1">
+                <span class="f32b" lang="y">나 상자:</span>
+                <div class="input_wrap answer11">
+                  <math-field data-answer-single="90"></math-field>
+                </div>
+                <span class="f32b" lang="y">㎝</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_7">
+          <div class="flex_col_box">
+            <div class="picture_wrap_ty1">
+              <img src="../../common_contents/img/EMA521_09_SU/0002_contents.png" alt="택배요금 안내표" />
+  
+              <p class="t01" lang="y">상자의 크기는 <br />㉠, ㉡, ㉢의 합으로 구해요.</p>
+              <p class="t02" lang="y">상자의 무게가 3 kg, <br />크기가 50 ㎝라면 <br />택배 요금은 <br />7000원이에요.</p>
+              <p class="t03" lang="y">㉠</p>
+              <p class="t04" lang="y">㉡</p>
+              <p class="t05" lang="y">㉢</p>
+              <p class="t06" lang="y">(출처: 찾기쉬운 생활법령정보, 2024)</p>
+  
+              <div class="t07">
+                <p>상자의 무게와 크기별 택배 요금</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">무게</th>
+                      <th scope="col" lang="y">크기</th>
+                      <th scope="col" lang="y">택배 요금</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td lang="y">2 kg 이하</td>
+                      <td lang="y">60 ㎝ 이하</td>
+                      <td lang="y">6000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">2 kg 초과 10 kg 이하</td>
+                      <td lang="y">60 ㎝ 초과 120 ㎝ 이하</td>
+                      <td lang="y">7000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">10 kg 초과 20 kg 이하</td>
+                      <td lang="y">120 ㎝ 초과 140 ㎝ 이하</td>
+                      <td lang="y">8000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">20 kg 초과 30 kg 이하</td>
+                      <td lang="y">140 ㎝ 초과 160 ㎝ 이하</td>
+                      <td lang="y">9000원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+              <h3 lang="y">가 상자의 택배 요금을 구해 보세요.</h3>
+
+              <div class="input_area ty1">
+                <div class="input_wrap answer10">
+                  <math-field data-answer-single="7000"></math-field>
+                </div>
+                <span class="f32b" lang="y">원</span>
+              </div>
+
+              <h3 lang="y">나 상자의 택배 요금을 구해 보세요.</h3>
+              <div class="input_area ty1">
+                <div class="input_wrap answer11">
+                  <math-field data-answer-single="8000"></math-field>
+                </div>
+                <span class="f32b" lang="y">원</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_8">
+          <div class="flex_col_box">
+            <div class="picture_wrap_ty1">
+              <img src="../../common_contents/img/EMA521_09_SU/0002_contents.png" alt="택배요금 안내표" />
+  
+              <p class="t01" lang="y">상자의 크기는 <br />㉠, ㉡, ㉢의 합으로 구해요.</p>
+              <p class="t02" lang="y">상자의 무게가 3 kg, <br />크기가 50 ㎝라면 <br />택배 요금은 <br />7000원이에요.</p>
+              <p class="t03" lang="y">㉠</p>
+              <p class="t04" lang="y">㉡</p>
+              <p class="t05" lang="y">㉢</p>
+              <p class="t06" lang="y">(출처: 찾기쉬운 생활법령정보, 2024)</p>
+  
+              <div class="t07">
+                <p>상자의 무게와 크기별 택배 요금</p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">무게</th>
+                      <th scope="col" lang="y">크기</th>
+                      <th scope="col" lang="y">택배 요금</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td lang="y">2 kg 이하</td>
+                      <td lang="y">60 ㎝ 이하</td>
+                      <td lang="y">6000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">2 kg 초과 10 kg 이하</td>
+                      <td lang="y">60 ㎝ 초과 120 ㎝ 이하</td>
+                      <td lang="y">7000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">10 kg 초과 20 kg 이하</td>
+                      <td lang="y">120 ㎝ 초과 140 ㎝ 이하</td>
+                      <td lang="y">8000원</td>
+                    </tr>
+                    <tr>
+                      <td lang="y">20 kg 초과 30 kg 이하</td>
+                      <td lang="y">140 ㎝ 초과 160 ㎝ 이하</td>
+                      <td lang="y">9000원</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="text_box">
+              <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+              <h3 lang="y">택배 요금은 모두 얼마인지 구해 보세요.</h3>
+
+              <div class="input_area ty1">
+                <div class="input_wrap answer11">
+                  <math-field data-answer-single="15000"></math-field>
+                </div>
+                <span class="f32b" lang="y">원</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_9 lookbackon">
+          <div class="title_box">
+            <div class="title_label title_label_3" lang="y"><span class="point">되돌아</span>봐요</div>
+            <h3 lang="y">문제를 잘 해결했나요?</h3>
+          </div>
+
+          <div class="lookbackon_contents">
+            <div class="leftbox">
+              <h4 class="tit" lang="y">잘 해결한 경우</h4>
+              <div class="cont">
+                <ul class="lookbackon_list">
+                  <li>문제를 해결한 방법을 설명해 보세요.</li>
+                  <li>문제를 해결할 수 있는 다른 방법을 찾아보세요.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="rightbox">
+              <h4 class="tit" lang="y">해결하지 못한 경우</h4>
+              <div class="cont">
+                <div class="title_label_wrap">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+                  <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+                </div>
+                <p class="lookbackon_txt" lang="y">단계를 다시 확인해 보세요.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnCheck" data-look="submit">채점</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/* ema624_07_su_0003 */
+
+.drag_share {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+}
+
+.draggable_wrap {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.single_draggable  {
+    width: 91px;
+    height: 56px;
+    cursor: grab;
+    background: url(../../common_contents/img/EMA624_07_SU/Asset624_06_02.png) no-repeat center;
+    z-index: 10;
+}
+
+.droppable {
+    width: 401px;
+    height: 123px;
+    background-image: url(../../common_contents/img/EMA624_07_SU/drop_box.png);
+    z-index: -1;
+}
+
+.draggable.ui-draggable-dragging {
+    background: url(../../common_contents/img/EMA624_07_SU/Asset624_06_02.png) no-repeat center;
+    width: 91px;
+    height: 56px;
+  }
+
+.drag_group{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}

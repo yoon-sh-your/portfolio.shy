@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_08_IH_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_08_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">어림셈한 결과를 이용하여 몫의 소수점을 찍어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_08_IH/0002_01.png" alt="" />
+            <div class="input_area">
+              <div class="input_col">
+                <div class="input_row">
+                  <span class="label_gray" lang="y">식</span>
+                  39.6÷8
+                </div>
+                <div class="input_row">
+                  <span class="label_gray" lang="y">어림셈</span>
+                  40÷8
+                  <img class="arrow" src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                  <span lang="y">약</span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="5"></math-field>
+                  </div>
+                </div>
+                <div class="input_row">
+                  <span class="label_gray" lang="y">몫</span>
+                  <span>4</span>
+                  <div class="input_wrap small">
+                    <math-field id="field1-1" data-answer-single="."></math-field>
+                  </div>
+                  <span>9</span>
+                  <div class="input_wrap small">
+                    <math-field id="field1-2" data-answer-single="empty_answer"></math-field>
+                  </div>
+                  <span>5</span>
+                </div>
+              </div>
+              <div class="input_col">
+                <div class="input_row">
+                  <span class="label_gray" lang="y">식</span>
+                  15.9÷2
+                </div>
+                <div class="input_row">
+                  <span class="label_gray" lang="y">어림셈</span>
+                  16÷2
+                  <img class="arrow" src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                  <span lang="y">약</span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="8"></math-field>
+                  </div>
+                </div>
+                <div class="input_row">
+                  <span class="label_gray" lang="y">몫</span>
+                  <span>7</span>
+                  <div class="input_wrap small">
+                    <math-field id="field2-1" data-answer-single="."></math-field>
+                  </div>
+                  <span>9</span>
+                  <div class="input_wrap small">
+                    <math-field id="field2-2" data-answer-single="empty_answer"></math-field>
+                  </div>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">
+                  39.6÷8을 40÷8로 어림셈하면 약 5이므로 몫은 4.95입니다.<br />
+                  15.9÷2를 16÷2로 어림셈하면 약 8이므로 몫은 7.95입니다.
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      function latexToText(val) {
+        return val.replace(/^\\text{(.+)}$/, '$1');
+      }
+
+      window.customCheckCondition = function () {
+        const $f11 = $('#field1-1');
+        const $f12 = $('#field1-2');
+        const $f21 = $('#field2-1');
+        const $f22 = $('#field2-2');
+
+        const v11 = latexToText($f11.prop('value')?.trim() || '');
+        const v12 = latexToText($f12.prop('value')?.trim() || '');
+        const v21 = latexToText($f21.prop('value')?.trim() || '');
+        const v22 = latexToText($f22.prop('value')?.trim() || '');
+
+        const r11 = ($f11.attr('data-answer-single') || '').trim();
+        const r12 = ($f12.attr('data-answer-single') || '').trim();
+        const r21 = ($f21.attr('data-answer-single') || '').trim();
+        const r22 = ($f22.attr('data-answer-single') || '').trim();
+
+        const isEmptyGroup1 = v11 === '' && v12 === '';
+        const isEmptyGroup2 = v21 === '' && v22 === '';
+
+        if (isEmptyGroup1 && isEmptyGroup2) {
+          return 'empty';
+        }
+
+        if ((isEmptyGroup1 && !isEmptyGroup2) || (!isEmptyGroup1 && isEmptyGroup2)) {
+          return 'empty';
+        }
+
+        let group1Correct = true;
+        if (v11 !== '') {
+          group1Correct = group1Correct && v11 === r11;
+        }
+        if (v12 !== '') {
+          group1Correct = group1Correct && v12 === r12;
+        }
+        let group2Correct = true;
+        if (v21 !== '') {
+          group2Correct = group2Correct && v21 === r21;
+        }
+        if (v22 !== '') {
+          group2Correct = group2Correct && v22 === r22;
+        }
+
+        return group1Correct && group2Correct;
+      };
+    </script>
+  </body>
+</html>

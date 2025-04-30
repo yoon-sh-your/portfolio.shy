@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_02_IH_0003</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="./../../common_practice/js/ema625_02_ih.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_02.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema625_02_ih_0003">
+			<section class="title type2">
+				<h2 data-head="3_light_purple" class="is_star" lang="y">
+					규민이와 시은이가 지름이 3 ㎝인 원의 원주를 그림에 나타내었습니다. 지름이 3 ㎝인 원의 원주와 더
+					비슷한 길이를 나타낸 사람의 이름을 쓰고, 그 이유를 써 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center dir_col">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA625_02_IH/0003_01.png" alt="" />
+						<p class="text1">3 ㎝</p>
+						<div class="text_row row1">
+							<p class="name" lang="y">규민</p>
+							<ul>
+								<li class="num0">0</li>
+								<li class="num1">1</li>
+								<li class="num2">2</li>
+								<li class="num3">3</li>
+								<li class="num4">4</li>
+								<li class="num5">5</li>
+								<li class="num6">6</li>
+								<li class="num7">7</li>
+								<li class="num8">8</li>
+								<li class="num9">9</li>
+								<li class="num10">10</li>
+								<li class="num11">11</li>
+								<li class="num12">12(㎝)</li>
+							</ul>
+						</div>
+						<div class="text_row row2">
+							<p class="name" lang="y">시은</p>
+							<ul>
+								<li class="num0">0</li>
+								<li class="num1">1</li>
+								<li class="num2">2</li>
+								<li class="num3">3</li>
+								<li class="num4">4</li>
+								<li class="num5">5</li>
+								<li class="num6">6</li>
+								<li class="num7">7</li>
+								<li class="num8">8</li>
+								<li class="num9">9</li>
+								<li class="num10">10</li>
+								<li class="num11">11</li>
+								<li class="num12">12(㎝)</li>
+							</ul>
+						</div>
+						<div class="boolean_wrap">
+							<div>
+								<button data-answer-single="false" class="button1"></button>
+								<button data-answer-single="true" class="button2"></button>
+							</div>
+						</div>
+					</div>
+					<div class="input_area">
+						<span lang="y" class="label_gray">이유</span>
+
+						<div class="input_wrap">
+							<math-field class="textarea"></math-field>
+							<div class="example_box">
+								<p lang="y">
+									지름이 3 ㎝인 원의 원주는 지름이 3배인 9 ㎝보다 길고 4배인 12 ㎝보다 짧기
+									때문입니다.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">해설 수급 필요</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

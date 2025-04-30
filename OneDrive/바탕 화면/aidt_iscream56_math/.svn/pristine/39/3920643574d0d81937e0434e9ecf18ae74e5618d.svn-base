@@ -1,0 +1,130 @@
+<p class="title">
+    <!DOCTYPE html>
+    <html lang="ko">
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>EMA615_10_SU_0004_s</title>
+            <!-- 공통 js-->
+            <script src="../../common_contents/common/js/app.js"></script>
+
+            <!-- 공통 css-->
+            <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+            <!-- 개별 -->
+            <link rel="stylesheet" href="./../../common_contents/css/ema615_10.css" />
+        </head>
+        <body>
+            <div id="app_wrap" class="ema615_10_su_0004">
+                <ul class="bingo-board" id="bingoBoard" lang="y">
+                    <li class="bingo-cell graph-bar item1">
+                        <p class="title">배우고 있는 운동별<br />학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>태권도<br />(30 ％)</li>
+                            <li>수영<br />(25 ％)</li>
+                            <li>축구<br />(20 ％)</li>
+                            <li>농구(15 ％)</li>
+                            <li>기타(10 ％)</li>
+                        </ul>
+                    </li>
+                    <li class="bingo-cell graph-bar item2">
+                        <p class="title">혈액형별 학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>A형<br />(30 ％)</li>
+                            <li>B형<br />(30 ％)</li>
+                            <li>O형<br />(25 ％)</li>
+                            <li>AB형(15 ％)</li>
+                        </ul>
+                    </li>
+                    <li class="bingo-cell graph-bar item3">
+                        <p class="title">기르고 있는 반려동물별<br />학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>개<br />(48 ％)</li>
+                            <li>고양이<br />(24 ％)</li>
+                            <li>물고기(18 ％)</li>
+                            <li>기타(10 ％)</li>
+                        </ul>
+                    </li>
+
+                    <li class="bingo-cell graph-bar item4">
+                        <p class="title">방학 때 휴가 가고 싶어 하는<br />장소별 학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>산<br />(20 ％)</li>
+                            <li>바다<br />(40 ％)</li>
+                            <li>계곡<br />(18 ％)</li>
+                            <li>섬(12 ％)</li>
+                            <li>기타(10 ％)</li>
+                        </ul>
+                    </li>
+                    <li class="bingo-cell graph-bar item5">
+                        <p class="title">기구한 물품별<br />학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>학용품<br />(35 ％)</li>
+                            <li>B형<br />(30 ％)</li>
+                            <li>장난감<br />(20 ％)</li>
+                            <li>옷(15 ％)</li>
+                        </ul>
+                    </li>
+                    <li class="bingo-cell graph-bar item6">
+                        <p class="title">체험 학습으로 가고 싶어 하는<br />장소별 학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>놀이공원<br />(55 ％)</li>
+                            <li>박물관<br />(20 ％)</li>
+                            <li>문화 유적지(15 ％)</li>
+                            <li>미술관(10 ％)</li>
+                        </ul>
+                    </li>
+
+                    <li class="bingo-cell graph-circle item7">
+                        <p class="title">학급 문고의 종류별<br />책 수의 비율</p>
+                        <ul class="graph">
+                            <li>기타(5 ％)</li>
+                            <li>과학책(15 ％)</li>
+                            <li>만화책<br />(20 ％)</li>
+                            <li>역사책<br />(25 ％)</li>
+                            <li>동화책<br />(35 ％)</li>
+                        </ul>
+                    </li>
+                    <li class="bingo-cell graph-circle item8">
+                        <p class="title">좋아하는 꽃별<br />학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>기타(12 ％)</li>
+                            <li>튤립(15 ％)</li>
+                            <li>해바라기<br />(20 ％)</li>
+                            <li>장미<br />(25 ％)</li>
+                            <li>무궁화<br />(28 ％)</li>
+                        </ul>
+                    </li>
+                    <li class="bingo-cell graph-circle item9">
+                        <p class="title">좋아하는 색깔별<br />학생 수의 비율</p>
+                        <ul class="graph">
+                            <li>기타(3 ％)</li>
+                            <li>초록색<br />(12 ％)</li>
+                            <li>빨간색<br />(15 ％)</li>
+                            <li>노란색<br />(16 ％)</li>
+                            <li>보라색<br />(24 ％)</li>
+                            <li>파란색<br />(30 ％)</li>
+                        </ul>
+                    </li>
+                    <li class="bingo-line line-row-0"></li>
+                    <li class="bingo-line line-row-1"></li>
+                    <li class="bingo-line line-row-2"></li>
+                    <li class="bingo-line line-col-0"></li>
+                    <li class="bingo-line line-col-1"></li>
+                    <li class="bingo-line line-col-2"></li>
+                    <li class="bingo-line line-diag-0"></li>
+                    <li class="bingo-line line-diag-1"></li>
+                </ul>
+                <div class="btn_area">
+                    <div class="device_change_wrap">
+                        <button class="device_change" lang="y">대표 기기 변경하기</button>
+                    </div>
+                    <!-- <button class="btnType key" lang="y">입력타입토글</button> -->
+                    <button class="btnReset btnBgDefault" lang="y" id="btnReset">리셋</button>
+                    <button class="btnSubmit btnBgDefault" lang="y" id="btnSubmit">확인</button>
+                </div>
+            </div>
+            <script src="../../common_contents/js/ema615_10_0004.js"></script>
+        </body>
+    </html>
+</p>

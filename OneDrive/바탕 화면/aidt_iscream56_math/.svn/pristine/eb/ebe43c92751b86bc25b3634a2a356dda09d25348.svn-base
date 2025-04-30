@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_07_IH_0005</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_07.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_07_ih_0005">
+			<section class="title type2">
+				<h2 data-head="5" lang="y">가장 큰 수를 가장 작은 수로 나눈 몫을 구해 보세요.</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box dir_col gap_60">
+					<div class="box_line">
+						<div class="inner">
+							<div class="flex align_center gap_120">
+								<div class="fraction_box_wrap">
+									<span>1</span>
+									<div class="fraction_box">
+										<span>1</span>
+										<span>6</span>
+									</div>
+								</div>
+								<div class="fraction_box">
+									<span>21</span>
+									<span>8</span>
+								</div>
+								<div class="fraction_box">
+									<span>5</span>
+									<span>8</span>
+								</div>
+								<div class="fraction_box_wrap">
+									<span>4</span>
+									<div class="fraction_box">
+										<span>2</span>
+										<span>7</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="input_wrap fraction_wrap">
+						<math-field data-answer-single="6(6)/(7)(=(48)/(7))" data-answer-multi='{"values": ["6(6)/(7)", "(48)/(7)"]}'></math-field>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

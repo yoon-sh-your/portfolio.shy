@@ -1,0 +1,321 @@
+.img_area {
+  position: relative;
+}
+
+.length1 span,
+.length2 span,
+.length3 span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.length1 {
+  position: absolute;
+  top: 4px;
+  left: 168px;
+}
+.length2 {
+  position: absolute;
+  top: 39px;
+  left: 122px;
+}
+.length3 {
+  position: absolute;
+  top: 67px;
+  left: 96px;
+}
+
+.input_wrap math-field.textarea {
+  width: 1208px;
+  height: 300px;
+}
+
+.page_2 .po_absolute {
+  top: 54%;
+}
+
+table {
+  width: 1300px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th:nth-child(1) {
+  background-color: #ffeef5;
+  border: 1px solid #fff;
+}
+.top_table {
+  border-radius: 30px 0 0 0;
+}
+.bottom_table {
+  border-radius: 0 0 0 30px;
+}
+/* .end_table {
+  border-radius: 0 0 30px 0;
+} */
+th:last-child {
+  border-top-right-radius: 10px;
+}
+
+th,
+td {
+  font-size: 32px;
+  font-weight: 700;
+  border: 1px solid #d2d2d2;
+  text-align: center;
+  padding: 21px;
+  position: relative;
+}
+
+.ema516_15_su_0003 .page_3 .flex {
+  margin-top: 22px;
+}
+
+.ema516_15_su_0003 .page_3 .input_wrap .example_box.on {
+  height: 104px;
+  padding: 18px 24px 24px 82px;
+}
+
+.flex_wrap {
+  justify-content: center;
+}
+
+.answer1 {
+  flex-direction: row;
+/*   gap: 10px; */
+}
+
+.answer1 span {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.ema516_15_su_0003 .page_3 .po_absolute {
+  top: 54%;
+}
+
+/* ema516_15_su_0002 버튼 */
+
+.ema516_15_su_0002[data-current-page="page_1"] .btnType,
+.ema516_15_su_0002[data-current-page="page_1"] .btnSubmit {
+  display: none;
+}
+.ema516_15_su_0002[data-current-page="page_2"] .btnCheck {
+  display: none;
+}
+.ema516_15_su_0002[data-current-page="page_3"] .btnSubmit {
+  display: none;
+}
+
+.ema516_15_su_0002[data-current-page="page_4"] .btnSubmit {
+  display: none;
+}
+
+.ema516_15_su_0002 .answer_area,
+.ema516_15_su_0003 .answer_area {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  left: 165px;
+  top: 65px;
+}
+.ema516_15_su_0002 .answer_area.show,
+.ema516_15_su_0003 .answer_area.show {
+  display: block;
+}
+.ema516_15_su_0002[data-current-page="page_1"] .example_box,
+.ema516_15_su_0003[data-current-page="page_2"] .example_box {
+  width: 870px;
+  height: 300px;
+  position: absolute;
+  display: none;
+}
+.ema516_15_su_0002[data-current-page="page_1"] .example_box.on,
+.ema516_15_su_0003[data-current-page="page_2"] .example_box.on {
+  display: block;
+  left: 167px;
+  top: 65px;
+}
+
+.ema516_15_su_0002[data-current-page="page_1"] .example_box::before,
+.ema516_15_su_0003[data-current-page="page_2"] .example_box::before {
+  content: "예";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.ema516_15_su_0002 .page_1 .example_box img,
+.ema516_15_su_0003 .page_2 .example_box img {
+  width: 870px;
+  height: 300px;
+}
+
+.ema516_15_su_0002 #square,
+.ema516_15_su_0003 #square {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ema516_15_su_0002 .draggable-rect,
+.ema516_15_su_0003 .draggable-rect {
+  position: absolute;
+  border: 3px solid #000;
+  background: none;
+}
+
+.ema516_15_su_0002 .canvas-wrap,
+.ema516_15_su_0003 .canvas-wrap {
+  width: 870px;
+  height: 300px;
+  position: absolute;
+  left: 165px;
+  top: 65px;
+  overflow: hidden;
+}
+
+.ema516_15_su_0002 .draggable-rect.complete,
+.ema516_15_su_0003 .draggable-rect.complete {
+  border: 3px solid black;
+  background: var(--secondary-yellow);
+}
+/* ema516_15_su_0003 버튼 */
+.ema516_15_su_0003[data-current-page="page_1"] .btnSubmit,
+.ema516_15_su_0003[data-current-page="page_2"] .btnSubmit {
+  display: none;
+}
+.ema516_15_su_0003[data-current-page="page_2"] .btnType {
+  display: none;
+}
+.ema516_15_su_0003[data-current-page="page_3"] .btnCheck {
+  display: none;
+}
+
+.ema516_15_su_0003[data-current-page="page_4"] .btnSubmit {
+  display: none;
+}
+.ema516_15_su_0003[data-current-page="page_5"] .btnSubmit {
+  display: none;
+}
+
+.to_be .what_do {
+  width: 980px;
+}
+
+.main P:nth-child(1) {
+  color: #ee4f24;
+}
+
+.ema516_15_su_0002 .page_2 .question_box {
+  justify-content: center;
+}
+
+td.radius {
+  position: relative;
+  overflow: hidden;
+}
+
+td.radius::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-right: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border-radius: 0 0 20px 0;
+  z-index: -1;
+}
+
+td.radius {
+  border: 0;
+}
+
+td.right_table {
+  position: relative;
+  overflow: hidden;
+}
+
+td.right_table::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-right: 1px solid #d2d2d2;
+  border-top: 1px solid #d2d2d2;
+  border-radius: 0 20px 0 0;
+  z-index: -1;
+}
+
+td.right_table {
+  border: 0;
+}
+
+.ema516_15_su_0002 .page_2 .flex {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.ema516_15_su_0002 .page_2 .input_wrap math-field.textarea {
+  height: 302px;
+  margin-top: 20px;
+}
+
+.ema516_15_su_0002 .page_2 .input_wrap .example_box.on {
+  height: 108px;
+  padding: 18px 24px 24px 82px;
+}
+
+.ema516_15_su_0002 .page_3 .input_wrap math-field.hint + .text_hint {
+  left: -13px;
+  top: calc(100% + -6px);
+}
+
+.ema516_15_su_0003 .page_4 .input_wrap math-field.hint + .text_hint {
+  top: calc(100% + -5px);
+}
+.ema516_15_su_0003 .page_2 .input_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ema516_15_su_0003 .page_3 .input_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ema516_15_su_0003 .page_4 .input_area {
+  display: flex;
+  justify-content: center;
+}
+
+.ema516_15_su_0002 .page_3 .input_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ema516_15_su_0003 .answer1 math-field.hint + .text_hint {
+  left: -29px;
+}
+
+.ema516_15_su_0002 .page_1 .img_area {
+  width: 1200px;
+  height: 100%;
+  margin-top: 130px;
+}
+.ema516_15_su_0002 .page_1 .img_area img {
+  width: 100%;
+  height: 100%;
+}

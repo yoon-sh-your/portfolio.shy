@@ -1,0 +1,233 @@
+/* 기본 버튼 스타일 */
+button {
+  min-width: 110px;
+  height: 56px;
+  padding: 12px 20px;
+  background-color: var(--btn-default);
+  border: 1px solid transparent;
+  border-radius: 12px;
+  color: var(--font-main-reverse);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+button:disabled {
+  cursor: default;
+  pointer-events: none;
+  background-color: var(--btn-disabled-bg);
+  border-color: var(--stroke-default);
+  color: var(--font-disabled);
+}
+
+button:hover {
+  background-color: var(--btn-hover);
+}
+
+button[data-answer-single].disabled {
+  pointer-events: none;
+}
+
+/* Added Focus Styles */
+/* :focus (250424 삭제 요청) */
+/* button:focus, */
+button:focus-visible,
+/* *[role="button"]:focus, */
+*[role="button"]:focus-visible {
+  outline: 3px dashed black; /* 250415 수정 */
+  outline-offset: -3px; /* 250415 추가 */
+  border-color: transparent !important; /* 250415 추가 */
+  /* border: 3px dashed black !important; */ /* 3px 두께의 검정 dashed 테두리 */
+  border-radius: 8px; /* 둥근 모서리 */
+  box-sizing: border-box !important; /* 테두리 두께를 안쪽으로 포함 */
+  background-clip: padding-box !important;
+}
+
+/* 공통 버튼 스타일 */
+.btn_area {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 11;
+}
+
+.btn_area > button {
+  padding: 0;
+  transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+.btn_area > button:not(.btnType) {
+  width: 64px;
+  min-width: unset;
+  height: 64px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-blue-800);
+  background-color: var(--btn-default);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  font-size: 0;
+}
+
+.btn_area > button:hover {
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btn_area.relative {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 30px;
+}
+
+/* 개별 아이콘 적용 */
+.btn_area .btnType {
+  width: 128px;
+  height: 64px;
+  border-radius: 80px;
+  background-color: var(--primary-blue-800);
+  position: relative;
+  font-size: 0;
+}
+
+.btn_area .btnType::before {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 52px;
+  border-radius: 64px;
+  background: url(../img/icon_keyboard.svg) no-repeat center / 40px,
+    var(--bg-default);
+  border: 1px solid #d2d2d2;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 50%;
+  left: 4.5px;
+  transform: translateY(-50%);
+  transition: left 0.1s ease-in-out;
+}
+
+.btn_area .btnType.formula::before {
+  background: url(../img/icon_formula.svg) no-repeat center / 40px,
+    var(--bg-default);
+  left: 52.5px;
+}
+
+.btn_area .btnType.keypad::before {
+  background: url(../img/icon_keypad.svg) no-repeat center / 40px,
+    var(--bg-default);
+  left: 52.5px;
+}
+
+/* 버튼별 아이콘 */
+
+.btn_area > button:not(.btnType, .btnSample) {
+  pointer-events: none;
+  background-color: var(--btn-disabled-bg);
+  border-color: var(--stroke-default);
+}
+
+.btn_area > button:not(.btnType, .btnSample).active {
+  pointer-events: all;
+  background-color: var(--btn-default);
+  border-color: transparent;
+}
+
+.btn_area > button.btnReset {
+  background-image: url(../img/icon_reset_disabled.svg);
+}
+
+.btn_area > button.btnCheck {
+  background-image: url(../img/icon_check_disabled.svg);
+}
+
+.btn_area > button.btnErase {
+  background-image: url(../img/icon_eraser_grey.svg);
+}
+
+.btn_area > button.btnErase.active {
+  background-image: url(../img/erasure.svg);
+}
+
+.btn_area > button.btnSubmit, .btn_area > button.btnEvaluate {
+  background-image: url(../img/icon_submit_disabled.svg);
+}
+
+.btn_area > button.btnReset.active {
+  background-image: url(../img/icon_reset_white.svg);
+}
+
+.btn_area > button.btnCheck.active {
+  background-image: url(../img/icon_check_white.svg);
+}
+
+.btn_area > button.btnSubmit.active:not(.close), .btn_area > button.btnEvaluate.active {
+  background-image: url(../img/icon_submit_white.svg);
+}
+
+.btn_area > button[data-look="check"] {
+  background-image: url(../img/icon_check_disabled.svg);
+}
+
+.btn_area > button[data-look="submit"] {
+  background-image: url(../img/icon_submit_disabled.svg);
+} 
+
+.btn_area > button[data-look="check"].active{
+  background-image: url(../img/icon_check_white.svg);
+} 
+
+.btn_area > button[data-look="submit"].active{
+  background-image: url(../img/icon_submit_white.svg);  
+} 
+
+.btn_area > button.btnSubmit.active.close {
+  pointer-events: none;
+  background-color: var(--btn-disabled-bg);
+  border-color: var(--stroke-default);
+}
+
+.btn_area > button.btnSample {
+  pointer-events: none;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--font-disabled);
+  background-color: var(--btn-disabled-bg);
+  border: 1px solid var(--stroke-default);
+  white-space: nowrap;
+  text-align: center;
+  background-image: url(../img/icon_btn_sample_white.svg);
+}
+
+.btn_area > button.btnSample.close,
+.btn_area > button.btnCheck.active.close {
+  background-color: var(--secondary-red);
+  background-image: url(../img/icon_close_white.svg);
+  font-size: 0;
+  border: 2px solid var(--secondary-red-800);
+  pointer-events: all;
+}
+
+.btn_area > button.btnSample.active {
+  background-color: var(--bg-default);
+  color: var(--font-main-reverse);
+  background-image: url(../img/icon_btn_sample.svg);
+  pointer-events: all;
+}
+
+.btn_area > button.btnReset:hover,
+.btn_area > button.btnCheck:hover,
+.btn_area > button.btnSubmit:hover {
+  background-color: var(--btn-hover);
+}
+
+.btn_area > button.btnSample:hover {
+  background-color: var(--primary-blue-50);
+}
+
+.btn_area > button.btnSample.close:hover {
+  background-color: var(--secondary-coral);
+}

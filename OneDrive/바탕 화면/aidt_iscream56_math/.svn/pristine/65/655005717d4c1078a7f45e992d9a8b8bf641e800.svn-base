@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>EMA623_03_SU_0005_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css"/>
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_common.css"/>
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_03.css"/>
+    </head>
+    <body>
+        <div id="app_wrap" class="ema623_03_SU_0005">
+            <section class="title type2">
+                <h2 data-head="3_pink" lang="y">쌓기나무로 만든 모양과 위에서 본 모양을 보고 쌓기나무의 개수를 추측해 봅시다.</h2>
+            </section>
+
+            <section class="contents paging_layout">
+                <article class="page page_1">
+                    <div class="img_row building_blocks">
+                        <div class="img_wrap">
+                            <img src="../../common_contents/img/EMA623_03_SU/0004_img01.png" alt=""/>
+                            <p class="diagram_green_tag" lang="y">위에서 본 모양</p>
+                        </div>
+
+                        <div class="input_area">
+                            <div>
+                                <h3 lang="y">쌓기나무로 똑같이 만들어 보세요.</h3>
+                                <div class="gray_box">
+                                    <div class="box_title">
+                                        <button class="minus"></button>쌓기나무 개수<button class="plus"></button>
+                                    </div>
+                                    <div class="wood_box_area">
+                                        <button class="wood_box"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <div class="img_row">
+                        <div class="img_wrap">
+                            <img src="../../common_contents/img/EMA623_03_SU/0004_img01.png" alt=""/>
+                            <p class="diagram_green_tag" lang="y">위에서 본 모양</p>
+                        </div>
+                        <div class="input_area">
+                            <div>
+                                <h3 lang="y">내가 만든 모양과 친구가 만든 모양을 비교해 보세요.</h3>
+                                <div class="input_wrap">
+                                    <math-field class="textarea"></math-field>
+                                    <ol class="example_box">
+                                        <li lang="y">서로 같은 모양도 있고 다른 모양도 있습니다.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_3">
+                    <div class="img_row">
+                        <div class="img_wrap">
+                            <img src="../../common_contents/img/EMA623_03_SU/0004_img01.png" alt=""/>
+                            <p class="diagram_green_tag" lang="y">위에서 본 모양</p>
+                        </div>
+                        <div >
+                            <p class="speech_bubble">숨겨진 쌓기나무가<br />몇 개일지 생각해 봐.</p>
+                            
+                            <h3 lang="y">똑같은 모양으로 만드는 데 필요한 쌓기나무는 몇 개인가요?</h3>
+                            
+                            <div class="question_box gap_8 justify_center">
+                                <div class="input_wrap short_width">
+                                  <math-field data-answer-single="10" placeholder="​" contenteditable="true" tabindex="0" id="page_4-math-field-3" sound="false" math-mode-space="\:" smart-fence="off" smart-superscript="off"></math-field><div class="text_hint">10</div>
+                                </div>
+                                <span lang="y">개</span>
+                              </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_4">
+                    <div class="img_row">
+                        <div class="img_wrap">
+                            <img src="../../common_contents/img/ema623_03_SU/0005_img03.png" alt=""/>
+                            <p class="diagram_green_tag" lang="y">위에서 본 모양</p>
+                        </div>
+                        <div class="input_area">
+                            <div>
+                                <h3 lang="y">만든 모양과 쌓기나무의 개수가 여러 가지인 이유를 이야기해 보세요.</h3>
+                                <div class="input_wrap">
+                                    <math-field class="textarea"></math-field>
+                                    <ol class="example_box">
+                                        <li lang="y">숨겨진 쌓기나무가 1개일지 2개일지 알 수 없기 때문입니다.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="btn_area">
+                    <button class="btnType key">입력타입토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnCheck">확인</button>
+                    <button class="btnSubmit">제출</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

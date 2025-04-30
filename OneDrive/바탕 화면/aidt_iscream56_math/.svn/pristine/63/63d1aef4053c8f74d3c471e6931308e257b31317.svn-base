@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_05_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_05_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1">
+          <span lang="y">직선 ㅅㅇ을 대칭축으로 하는 선대칭도형입니다.</span>
+          <span class="empty_box nemo"></span></span>
+          <span lang="y">안에 알맞은 기호나 수를 써넣으세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA523_05_IH/0001_01.png" alt="" />
+            <span class="txt1">45°</span>
+            <span class="txt2">10 ㎝</span>
+          </div>
+          <div class="input_area">
+            <div class="text_bullet">
+              <span lang="y">변 ㄱㄴ의 대응변은 변</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="ㅁㄹ" data-answer-multi='{"values": ["ㅁㄹ", "ㄹㅁ"]}' text-align="center"></math-field>
+              </div>
+              <span lang="y">이므로</span>
+            </div>
+            <div class="pl16">
+              <span lang="y">변 ㄱㄴ의 길이는</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="10" text-align="center"></math-field>
+              </div>
+              <span lang="y">㎝입니다.</span>
+            </div>
+            <div class="text_bullet mt_60">
+              <span lang="y">각 ㅂㅁㄹ의 대응각은 각</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="ㅂㄱㄴ" data-answer-multi='{"values": ["ㅂㄱㄴ", "ㄴㄱㅂ"]}' text-align="center"></math-field>
+              </div>
+              <span lang="y">이므로</span>
+            </div>
+            <div class="pl16">
+              <span lang="y">각 ㅂㅁㄹ의 크기는</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="45" text-align="center"></math-field>
+              </div>
+              <span lang="y">°입니다.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">변 ㄱㄴ의 대응변은 변 ㅁㄹ이고 대응변의 길이는 같습니다.</p>
+                <p lang="y">➔ (변 ㄱㄴ)=(변 ㅁㄹ)=10 ㎝</p>
+                <p lang="y" class="text_bullet">각 ㅂㅁㄹ의 대응각은 각 ㅂㄱㄴ이고 대응각의 크기는 같습니다.</p>
+                <p lang="y">➔ (각 ㅂㅁㄹ)=(각 ㅂㄱㄴ)=45°</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

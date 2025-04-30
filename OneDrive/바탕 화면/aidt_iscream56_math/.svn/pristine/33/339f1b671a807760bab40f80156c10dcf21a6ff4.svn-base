@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema617_02_su_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema617_02_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema617_02_su_0002">
+    <section class="title type2">
+      <h2 data-head="1">
+        <span lang="y">기사의 잘못된 내용을 옳게 고치려고 합니다. 물음에 답해 봅시다.​​</span>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="input_area">
+        <article class="page page_1">       
+          <h3 lang="y">학교급별 전체 학생 수에 대한 부상자 수의 백분율을 구하여 표를 완성해 보세요.​</h3>
+          <div class="tables flex justify_center f24b text_center">   
+            <div>
+              <div class="mb_16 caption" lang="y">｜2018년 학교급별 전체 학생 수와 교통사고 부상자 수｜​​</div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th lang="y">학교급</th>
+                      <td lang="y">초등학교</td>
+                      <td lang="y">중·고등학교​</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">전체 학생 수(명)</th>
+                      <td lang="y">5200</td>
+                      <td lang="y">4800</td>
+                    </tr>                  
+                    <tr>
+                      <th lang="y">부상자 수(명)</th>
+                      <td lang="y">195</td>
+                      <td lang="y">120</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">백분율(%)​</th>
+                      <td><div class="input_wrap"><math-field data-answer-single="3.75"></math-field></div></td>
+                      <td><div class="input_wrap"><math-field data-answer-single="2.5"></math-field></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>         
+            <div>
+              <div class="mb_16 caption" lang="y">｜2023년 학교급별 전체 학생 수와 교통사고 부상자 수｜​</div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th lang="y">학교급</th>
+                      <td lang="y">초등학교</td>
+                      <td lang="y">중·고등학교​</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">전체 학생 수(명)</th>
+                      <td lang="y">4500</td>
+                      <td lang="y">4500</td>
+                    </tr>                  
+                    <tr>
+                      <th lang="y">부상자 수(명)</th>
+                      <td lang="y">180</td>
+                      <td lang="y">108</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">백분율(%)​</th>
+                      <td><div class="input_wrap"><math-field data-answer-single="4"></math-field></div></td>
+                      <td><div class="input_wrap"><math-field data-answer-single="2.4"></math-field></div></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">       
+          <h3 lang="y">완성한 표를 보고 알 수 있는 내용을 이야기해 보세요.​​</h3>
+          <div class="flex dir_col align_center gap_20">
+            <div class="tables small flex justify_center f14b text_center">   
+              <div>
+                <div class="mb_16 f20b caption" lang="y">｜2018년 학교급별 전체 학생 수와 교통사고 부상자 수｜​​</div>
+                <div class="table_wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th lang="y">학교급</th>
+                        <td lang="y">초등학교</td>
+                        <td lang="y">중·고등학교​</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y">전체 학생 수(명)</th>
+                        <td lang="y">5200</td>
+                        <td lang="y">4800</td>
+                      </tr>                  
+                      <tr>
+                        <th lang="y">부상자 수(명)</th>
+                        <td lang="y">195</td>
+                        <td lang="y">120</td>
+                      </tr>
+                      <tr>
+                        <th lang="y">백분율(%)​</th>
+                        <td lang="y">3.75</td>
+                        <td lang="y">2.5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>         
+              <div>
+                <div class="mb_16 f20b caption" lang="y">｜2023년 학교급별 전체 학생 수와 교통사고 부상자 수｜​</div>
+                <div class="table_wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th lang="y">학교급</th>
+                        <td lang="y">초등학교</td>
+                        <td lang="y">중·고등학교​</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y">전체 학생 수(명)</th>
+                        <td lang="y">4500</td>
+                        <td lang="y">4500</td>
+                      </tr>                  
+                      <tr>
+                        <th lang="y">부상자 수(명)</th>
+                        <td lang="y">180</td>
+                        <td lang="y">108</td>
+                      </tr>
+                      <tr>
+                        <th lang="y">백분율(%)​</th>
+                        <td lang="y">4</td>
+                        <td lang="y">2.4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">2018년에 비해 2023년에 전체 학생 수에 대한 부상자 수의 비율이 늘어난 것은 ‘초등학교’이고, 줄어든 것은 ‘중·고등학교’입니다.​​</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">       
+          <h3 lang="y">앞에서 이야기한 내용을 바탕으로 기사의 잘못된 내용을 어떻게 고쳐야 할지 이야기해 보세요.​​</h3>
+          <div class="flex dir_col align_center gap_20">
+            <div class="tables small flex justify_center f14b text_center">   
+              <div>
+                <div class="mb_16 f20b caption" lang="y">｜2018년 학교급별 전체 학생 수와 교통사고 부상자 수｜​​</div>
+                <div class="table_wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th lang="y">학교급</th>
+                        <td lang="y">초등학교</td>
+                        <td lang="y">중·고등학교​</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y">전체 학생 수(명)</th>
+                        <td lang="y">5200</td>
+                        <td lang="y">4800</td>
+                      </tr>                  
+                      <tr>
+                        <th lang="y">부상자 수(명)</th>
+                        <td lang="y">195</td>
+                        <td lang="y">120</td>
+                      </tr>
+                      <tr>
+                        <th lang="y">백분율(%)​</th>
+                        <td lang="y">3.75</td>
+                        <td lang="y">2.5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>         
+              <div>
+                <div class="mb_16 f20b caption" lang="y">｜2023년 학교급별 전체 학생 수와 교통사고 부상자 수｜​</div>
+                <div class="table_wrap">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th lang="y">학교급</th>
+                        <td lang="y">초등학교</td>
+                        <td lang="y">중·고등학교​</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y">전체 학생 수(명)</th>
+                        <td lang="y">4500</td>
+                        <td lang="y">4500</td>
+                      </tr>                  
+                      <tr>
+                        <th lang="y">부상자 수(명)</th>
+                        <td lang="y">180</td>
+                        <td lang="y">108</td>
+                      </tr>
+                      <tr>
+                        <th lang="y">백분율(%)​</th>
+                        <td lang="y">4</td>
+                        <td lang="y">2.4</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">초등학교의 전체 학생 수에 대한 부상자 수의 비율은 오히려 높아졌으므로 초등학생들의 교통사고 위험은 낮아지지 않았다고 고쳐야 합니다.​</p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+/* ema516_01_ih_0001 */
+.ema516_01_ih_0001 .select_line_wrap {
+  margin-top: 30px;
+}
+.ema516_01_ih_0001 .select_line_inner {
+  width: 820px;
+  height: 191px;
+  background: url(../img/EMA516_01_IH/0001_bg.png) no-repeat 50% /100% auto;
+  margin: 0 auto;
+  position: relative;
+}
+.ema516_01_ih_0001 .select_line_inner > button {
+  background: none;
+  font-size: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  border-radius: 0;
+  border-width: 0;
+  background-color: transparent !important;
+}
+
+.ema516_01_ih_0001 .select_line_inner .line1 {
+  left: 115px;
+  width: 119px;
+}
+.ema516_01_ih_0001 .select_line_inner .line2 {
+  left: 291px;
+  width: 119px;
+}
+.ema516_01_ih_0001 .select_line_inner .line3 {
+  left: 434px;
+  width: 119px;
+}
+.ema516_01_ih_0001 .select_line_inner .line4 {
+  width: 150px;
+  left: 597px;
+}
+
+.ema516_01_ih_0001 .select_line_inner > button p {
+  color: #000;
+  font-size: 32px;
+  position: absolute;
+  top: -35px;
+  font-weight: 700;
+}
+.ema516_01_ih_0001 .select_line_inner .line1 p {
+  left: 27px;
+}
+.ema516_01_ih_0001 .select_line_inner .line2 p {
+  left: 44px;
+}
+.ema516_01_ih_0001 .select_line_inner .line3 p {
+  left: 35px;
+}
+.ema516_01_ih_0001 .select_line_inner .line4 p {
+  left: 60px;
+}
+
+.ema516_01_ih_0001 .select_line_inner > button:before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  position: absolute;
+  mask: url(./../../common_practice/common/img/icon_checked_round.svg) no-repeat 50% / 100% auto;
+  background-color: #000;
+  top: -56px;
+  display: none;
+}
+.ema516_01_ih_0001 .select_line_inner .line1:before {
+  left: -23px;
+}
+.ema516_01_ih_0001 .select_line_inner .line2:before {
+  left: -5px;
+}
+.ema516_01_ih_0001 .select_line_inner .line3:before {
+  left: -10px;
+}
+.ema516_01_ih_0001 .select_line_inner .line4:before {
+  left: 10px;
+}
+
+.ema516_01_ih_0001 .select_line_inner > button.selected:before {
+  display: inline-block;
+}
+.ema516_01_ih_0001 .select_line_inner > button.hint:not(.selected):before {
+  background-color: var(--secondary-red);
+}
+.result .ema516_01_ih_0001 .select_line_wrap button[data-answer-single='true']:before {
+  display: inline-block;
+  filter: invert(49%) sepia(100%) saturate(3512%) hue-rotate(345deg) brightness(93%) contrast(101%);
+}
+.result .ema516_01_ih_0001 .select_line_wrap button.selected[data-answer-single='true']:before {
+  filter: invert(48%) sepia(46%) saturate(7213%) hue-rotate(214deg) brightness(101%) contrast(101%);
+}
+
+.ema516_01_ih_0001 .text1,
+.ema516_01_ih_0001 .text2 {
+  position: absolute;
+  font-size: 32px;
+  left: 400px;
+}
+.ema516_01_ih_0001 .text1 {
+  top: 54px;
+}
+.ema516_01_ih_0001 .text2 {
+  top: 207px;
+}
+
+/* 공통 css 제거 */
+/* .boolean_wrap button.selected {
+	border-color: transparent;
+	aspect-ratio: unset;
+}
+.boolean_wrap button.hint {
+	border-color: transparent;
+}
+.boolean_wrap button:hover {
+	border-color: transparent;
+} */
+
+/* ema516_01_ih_0002 */
+.ema516_01_ih_0002 .boolean_wrap button {
+  width: auto;
+  height: auto;
+  border-radius: 2px;
+  background: none;
+  padding: 0;
+  aspect-ratio: unset;
+}
+/* .ema516_01_ih_0002 .boolean_wrap button:hover {
+	border-color: unset;
+} */
+.ema516_01_ih_0002 .table_wrap th,
+.ema516_01_ih_0002 .table_wrap td {
+  height: 61px;
+}
+.ema516_01_ih_0002 .table_wrap th {
+  background: #fdece3;
+}
+.ema516_01_ih_0002 .contents_inner {
+  margin: 0 auto;
+  width: 956px;
+}
+/* .ema516_01_ih_0002 .boolean_wrap button.hint {
+	border-width: 2px;
+	border-color: var(--font-main-800);
+} */
+
+.ema516_01_ih_0002 .question_box {
+  position: relative;
+  background: url(./../img/EMA516_01_IH/0002_bg.png) no-repeat 50% / cover;
+  margin-bottom: 38px;
+  width: 956px;
+  height: 231px;
+}
+
+.ema516_01_ih_0002 .question_box p {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema516_01_ih_0002 .question_box p:first-of-type {
+  top: 92px;
+  left: 62.8px;
+}
+.ema516_01_ih_0002 .question_box p:nth-of-type(2) {
+  top: 92px;
+  left: 216px;
+}
+.ema516_01_ih_0002 .question_box p:nth-of-type(3) {
+  top: 92px;
+  left: 445px;
+}
+.ema516_01_ih_0002 .question_box p:nth-of-type(4) {
+  top: 112px;
+  left: 675px;
+}
+.ema516_01_ih_0002 .question_box p:nth-of-type(5) {
+  top: 92px;
+  left: 836px;
+}
+
+.ema516_01_ih_0002 .table_wrap td {
+  width: 25%;
+  font-size: 0;
+}
+.ema516_01_ih_0002 .table_wrap td button {
+  display: inline-block;
+  border: 2px solid var(--font-main-800);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+}
+.ema516_01_ih_0002 .table_wrap td button + button {
+  margin-left: 4px;
+}
+.ema516_01_ih_0002 .table_wrap td button.selected {
+  position: relative;
+}
+.ema516_01_ih_0002 .table_wrap td button.selected::after {
+  content: '';
+  position: absolute;
+  top: 54%;
+  left: -31px;
+  width: 80px;
+  height: 80px;
+  margin-top: -54px;
+  background: url(../../common_practice/common/img/icon_checked_round.svg) no-repeat center / auto 60px;
+}
+.ema516_01_ih_0002 .table_wrap td button.selected.correct {
+  color: var(--primary-blue);
+}
+.ema516_01_ih_0002 .table_wrap td button.selected.correct::after {
+  filter: invert(48%) sepia(46%) saturate(7213%) hue-rotate(214deg) brightness(101%) contrast(101%);
+}
+.ema516_01_ih_0002 .boolean_wrap.result [data-answer-single='true']:not(.selected) {
+  color: var(--secondary-red);
+  /* border-color: var(--primary-blue) !important;
+  color: var(--primary-blue) !important;
+  background: var(--primary-blue-50) !important; */
+}
+.ema516_01_ih_0002 .boolean_wrap.result [data-answer-single='false'] {
+  border-color: #ccc;
+  background: #fff;
+  color: var(--font-main);
+}
+
+/* ema516_01_ih_0003 */
+.ema516_01_ih_0003 .input_area {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.ema516_01_ih_0003 .input_area .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ema516_01_ih_0003 .input_area .img_box {
+  height: 226px;
+  margin-bottom: 30px;
+}
+.ema516_01_ih_0003 .input_wrap math-field {
+  width: 150px !important;
+}

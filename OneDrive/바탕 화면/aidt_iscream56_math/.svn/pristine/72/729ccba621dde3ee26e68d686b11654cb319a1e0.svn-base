@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA611_03_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema611_03.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema611_03_su_0005">
+    <section class="title type2">
+      <h2 data-type="3" data-text="창의+" lang="y">
+        <div>
+          <div class="flex align_center gap_4">
+            모양과 크기가 같은 쿠키 5개를 4명이 똑같이 나누어 먹으려고 합니다.
+            <img src="../../common_contents/img/EMA611_03_SU/0005_num1.svg" alt="">의
+            <img src="../../common_contents/img/EMA611_03_SU/0005_text1.svg" alt="">과
+            <img src="../../common_contents/img/EMA611_03_SU/0005_text2.svg" alt="">
+            중 하나를 고르고 그림을 선택하여
+          </div>
+          <div>
+            한 명이 먹을 수 있는 쿠키의 양은 얼마인지 분수로 나타내고, 친구에게 설명해 봅시다.
+          </div>
+        </div>
+      </h2>
+    </section>
+
+    <section class="contents">
+      <div class="top_box">
+        <div class="question_box">
+          <div class="boolean_count_wrap" data-answer-single="1">
+            <img src="../../common_contents/img/EMA611_03_SU/0005_answer1.svg" class="answer_img">
+            <button class="top left"></button>
+            <button class="top right"></button>
+            <button class="bottom left"></button>
+            <button class="bottom right"></button>
+          </div>
+
+          <div class="boolean_count_wrap" data-answer-single="1">
+            <img src="../../common_contents/img/EMA611_03_SU/0005_answer1.svg" class="answer_img">
+            <button class="top left"></button>
+            <button class="top right"></button>
+            <button class="bottom left"></button>
+            <button class="bottom right"></button>
+          </div>
+
+          <div class="boolean_count_wrap" data-answer-single="1">
+            <img src="../../common_contents/img/EMA611_03_SU/0005_answer1.svg" class="answer_img">
+            <button class="top left"></button>
+            <button class="top right"></button>
+            <button class="bottom left"></button>
+            <button class="bottom right"></button>
+          </div>
+
+          <div class="boolean_count_wrap" data-answer-single="1">
+            <img src="../../common_contents/img/EMA611_03_SU/0005_answer1.svg" class="answer_img">
+            <button class="top left"></button>
+            <button class="top right"></button>
+            <button class="bottom left"></button>
+            <button class="bottom right"></button>
+          </div>
+
+          <div class="boolean_count_wrap" data-answer-single="1">
+            <img src="../../common_contents/img/EMA611_03_SU/0005_answer1.svg" class="answer_img">
+            <button class="top left"></button>
+            <button class="top right"></button>
+            <button class="bottom left"></button>
+            <button class="bottom right"></button>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="input_wrap fraction_wrap">
+          <math-field data-answer-single="(5)/(4)" text-align="center"></math-field>
+        </div>
+      </div>
+
+      <div class="input_wrap">
+        <math-field class="textarea"></math-field>
+        <div class="example_box">
+          <p lang="y">쿠키 5개를 각각 똑같이 4로 나누어 구했습니다.</p>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit" data-submit="true" data-check="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

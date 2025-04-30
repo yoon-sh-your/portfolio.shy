@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA623_03_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema623_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema623_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema623_03_SU_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">쌓기나무로 발전소 모양을 만들려고 합니다. 똑같은 모양으로 만드는데 필요한 쌓기나무는 몇 개인지 생각해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align_start">
+          <div class="video_wrap">
+            <button class="play" onclick="navigate('../guide_sample/vedio_player')"></button>
+
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고, 발전소 사진을 쌓기나무로 똑같이 만들려면 쌓기나무가 몇 개 필요할지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">6개일 것 같습니다.</li>
+                <li lang="y">숨겨진 쌓기나무가 있다면 6개보다 더 필요할 것 같습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

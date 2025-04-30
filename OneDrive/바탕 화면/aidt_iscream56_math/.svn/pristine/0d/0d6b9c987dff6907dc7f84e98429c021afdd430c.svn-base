@@ -1,0 +1,191 @@
+.title h2[data-head] .fraction_box {
+  margin-left: 0;
+}
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+.fraction_box {
+  min-width: 40px;
+}
+.input_wrap.fraction_wrap,
+.fraction_box .input_wrap {
+  min-width: 0;
+  min-width: 80px;
+}
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap math-field {
+  width: 100%;
+}
+.fraction_box:has(.input_wrap) span {
+  line-height: 60px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.fraction_box_wrap .fraction_box {
+  min-width: 0;
+}
+.label_bogi {
+  width: 52px;
+  height: 32px;
+  border: 2px solid var(--secondary-red);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--secondary-red);
+  z-index: 1;
+}
+.solve_area .icon_arrow {
+  width: 32px;
+}
+
+.ema524_05_ih_0001 .img {
+  position: relative;
+}
+.ema524_05_ih_0001 .img span {
+  position: absolute;
+  bottom: -5px;
+  right: 38px;
+  transform: translateX(100%);
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.ema524_05_ih_0002 .bottom {
+  margin-top: 60px;
+}
+.ema524_05_ih_0002 .answer1 {
+  width: 160px;
+}
+.ema524_05_ih_0002 .answer2 {
+  width: 120px;
+}
+
+.ema524_05_ih_0003 .solve_area .calc_vertical {width:112px;}
+
+.ema524_05_ih_0004 .connect_wrap {
+  height: auto;
+}
+.ema524_05_ih_0004 .connect_line_box.start li {
+  border-color: #008a70;
+}
+.ema524_05_ih_0004 .connect_line_box.start li::after {
+  background-color: #ecf6f3;
+}
+
+.ema524_05_ih_0005.fail .title h2[data-head]:after {
+  background-image: url(../common/img/marking_failed-all.svg);
+}
+.ema524_05_ih_0005 .inner {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+.ema524_05_ih_0005 .inner span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 276px;
+  height: 131px;
+  background: url(../img/EMA524_05_IH/0005_img.svg) no-repeat center center / 100% 100%;
+}
+.ema524_05_ih_0005 .boolean_wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.ema524_05_ih_0005 .boolean_wrap button {
+  background: none;
+}
+.ema524_05_ih_0005 .boolean_wrap.result button.selected[data-answer-single='false'] {
+  border-color: #222;
+}
+.ema524_05_ih_0005 .boolean_wrap.result button.selected[data-answer-single='true'] {
+  border-color: var(--primary-blue);
+}
+
+.ema524_05_ih_0006 .label_gray {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.ema524_05_ih_0006 .input_wrap_underline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ema524_05_ih_0006 .answer1,
+.ema524_05_ih_0006 .answer1 math-field {
+  width: 180px;
+}
+.ema524_05_ih_0006 .dir_col > .flex:first-child .input_wrap .text_hint {
+  top: -36px;
+}
+
+.ema524_05_ih_0007 .question_box {
+  align-items: flex-start;
+  gap: 30px;
+}
+.ema524_05_ih_0007 .tabbox {
+  position: relative;
+  width: 1027px;
+  padding-top: 46px;
+  flex-shrink: 0;
+}
+.ema524_05_ih_0007 .tabbox .tit_tabbox {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+  border-radius: 16px 16px 0 0;
+  background: #fef6ed;
+  color: #c45938;
+  font-weight: bold;
+}
+.ema524_05_ih_0007 .tabbox .conts_tabbox {
+  border-radius: 40px;
+  background: #fef6ed;
+  padding: 20px;
+}
+.ema524_05_ih_0007 .tabbox .conts_tabbox .inner {
+  padding: 20px 60px 60px;
+  background: #fff;
+  border: 1px solid #facc9c;
+  border-radius: 30px;
+  font-weight: bold;
+}
+.ema524_05_ih_0007 .tabbox .conts_tabbox .inner p {
+  font-weight: bold;
+}
+.ema524_05_ih_0007 .tabbox .answer1 {
+  width: 100%;
+}
+.ema524_05_ih_0007 .tabbox .label_gray {
+  margin-top: 9px;
+  margin-right: 10px;
+  background: #fff;
+  color: #c0573d;
+  width: 48px;
+  height: 42px;
+}
+.ema524_05_ih_0007 .tabbox .input_wrap .example_box {
+  display:none;
+}
+.ema524_05_ih_0007 .tabbox .input_wrap .example_box.on {
+  display:block;
+}

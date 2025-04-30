@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema615_07_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema615_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema615_07.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema615_07_su_0005">
+    <section class="title type2">
+      <h2 data-type="14" data-text="창의+" lang="y">
+        <div class="flex align_center gap_4" lang="y">자료를 나타내기에 알맞은 그래프를 모두 찾아&nbsp;<span class="ico_round"></span>표 하고, 그 이유를
+          이야기해 봅시다.</div>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">자료를 나타내기에 알맞은 그래프를 모두 찾아 ○표 하세요.</h3>
+
+        <div class="question_box justify_center">
+
+          <div class="container_615-col">
+
+            <div class="d1">
+              <div class="c1" lang="y">우리나라 지역별 쌀 생산량</div>
+              <div class="c2">
+                <div class="input_wrap">
+                  <div class="question_box justify_center" lang="y">
+                    (
+                    <div class="boolean_wrap">
+                      <button data-answer-single="true" lang="y">그림</button>,
+                      <button data-answer-single="true" lang="y">막대</button>,
+                      <button data-answer-single="false" lang="y">꺾은선</button>,
+                      <button data-answer-single="false" lang="y">띠</button>,
+                      <button data-answer-single="false" lang="y">원</button>
+                    </div>
+                    ) 그래프
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d2">
+              <div class="c1" lang="y">전교 학생 회장 선거의 후보자별 득표 비율</div>
+              <div class="c2">
+                <div class="input_wrap">
+                  <div class="question_box justify_center" lang="y">
+                    (
+                    <div class="boolean_wrap">
+                      <button data-answer-single="false" lang="y">그림</button>,
+                      <button data-answer-single="false" lang="y">막대</button>,
+                      <button data-answer-single="false" lang="y">꺾은선</button>,
+                      <button data-answer-single="true" lang="y">띠</button>,
+                      <button data-answer-single="true" lang="y">원</button>
+                    </div>
+                    ) 그래프
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d3">
+              <div class="c1" lang="y">시각별 기온의 변화</div>
+              <div class="c2">
+                <div class="input_wrap">
+                  <div class="question_box justify_center" lang="y">
+                    (
+                    <div class="boolean_wrap">
+                      <button data-answer-single="false" lang="y">그림</button>,
+                      <button data-answer-single="false" lang="y">막대</button>,
+                      <button data-answer-single="true" lang="y">꺾은선</button>,
+                      <button data-answer-single="false" lang="y">띠</button>,
+                      <button data-answer-single="false" lang="y">원</button>
+                    </div>
+                    ) 그래프
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </article>
+
+      <article class="page page_2">
+        <div class="question_box justify_center">
+          <div class="input_area">
+          <div class="input_wrap">
+            <math-field class="textarea" id="inputElement01" type="text"></math-field>
+            <ol class="example_box">
+              <li lang="y">그림그래프: 그림의 크기와 수로 지역별 생산량의 많고 적음을 쉽게 파악할 수 있기 때문입니다.</li>
+              <li lang="y">막대그래프: 막대의 길이로 지역별 생산량의 많고 적음을 한눈에 비교할 수 있기 때문입니다.</li>
+              <li lang="y">띠그래프, 원그래프: 각 후보자의 득표 비율을 쉽게 비교할 수 있기 때문입니다.</li>
+              <li lang="y">꺾은선그래프: 기온은 시간이 지남에 따라 연속적으로 변화하기 때문입니다.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

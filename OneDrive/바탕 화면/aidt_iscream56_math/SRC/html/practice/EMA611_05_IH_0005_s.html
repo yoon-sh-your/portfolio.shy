@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_05_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_05_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">몫이 큰 것부터 차례대로 기호를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="question_inner flex dir_col">
+            <div class="text_area">
+              <div class="flex align_center gap_10">
+                ㉠
+                <div class="flex align_center gap_0">
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span>6</span>
+                  </div>÷4
+                </div>
+              </div>
+              <div class="flex align_center gap_10">
+                ㉡
+                <div class="flex align_center gap_0">
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>8</span>
+                  </div>÷9
+                </div>
+              </div>
+              <div class="flex align_center gap_10">
+                ㉢
+                <div class="flex align_center gap_0">
+                  <div class="fraction_box">
+                    <span>7</span>
+                    <span>12</span>
+                  </div>÷2
+                </div>
+              </div>
+            </div>
+            <div class="dropdown_area">
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="㉢">
+                  <option value=""></option>
+                  <option value="㉠" lang="y">㉠</option>
+                  <option value="㉡" lang="y">㉡</option>
+                  <option value="㉢" lang="y">㉢</option>
+                </select>
+              </div>
+              <span class="font_sans">></span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="㉠">
+                  <option value=""></option>
+                  <option value="㉠" lang="y">㉠</option>
+                  <option value="㉡" lang="y">㉡</option>
+                  <option value="㉢" lang="y">㉢</option>
+                </select>
+              </div>
+              <span class="font_sans">></span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="㉡">
+                  <option value=""></option>
+                  <option value="㉠" lang="y">㉠</option>
+                  <option value="㉡" lang="y">㉡</option>
+                  <option value="㉢" lang="y">㉢</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0">
+                  ㉠&nbsp;
+                  <div class="fraction_box"><span>5</span><span>6</span></div>
+                  ÷4=
+                  <div class="fraction_box"><span>5</span><span>6</span></div>
+                  ×
+                  <div class="fraction_box"><span>1</span><span>4</span></div>
+                  =
+                  <div class="fraction_box"><span>5</span><span>24</span></div>
+                </div>
+                <div class="flex align_center gap_0">
+                  ㉡&nbsp;
+                  <div class="fraction_box"><span>3</span><span>8</span></div>
+                  ÷9=
+                  <div class="fraction_box">
+                    <span class="mark_error right">3<i>1</i></span
+                    ><span>8</span>
+                  </div>
+                  ×
+                  <div class="fraction_box">
+                    <span>1</span><span class="mark_error right">9<i>3</i></span>
+                  </div>
+                  =
+                  <div class="fraction_box"><span>1</span><span>24</span></div>
+                </div>
+                <div class="flex align_center gap_0">
+                  ㉢&nbsp;
+                  <div class="fraction_box"><span>7</span><span>12</span></div>
+                  ÷2=
+                  <div class="fraction_box"><span>7</span><span>12</span></div>
+                  ×
+                  <div class="fraction_box"><span>1</span><span>2</span></div>
+                  =
+                  <div class="fraction_box"><span>7</span><span>24</span></div>
+                </div>
+                <div class="flex align_center gap_0">
+                  <div class="fraction_box"><span>7</span><span>24</span></div>
+                  &nbsp;&gt;&nbsp;
+                  <div class="fraction_box"><span>5</span><span>24</span></div>
+                  &nbsp;&gt;&nbsp;
+                  <div class="fraction_box"><span>1</span><span>24</span></div>
+                  <span lang="y">이므로 몫이 큰 것부터 차례대로 기호를 쓰면 ㉢, ㉠, ㉡입니다.</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

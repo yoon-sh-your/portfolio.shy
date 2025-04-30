@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema515_07_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_07.css">
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema515_07_su_0004">
+        <section class="title type2">
+            <h2 data-head="2" class="fraction_box_title">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <div class="operation_box ml_0">
+                        <div class="mixed_fraction">
+                            <span>4</span>
+                            <div class="fraction_box">
+                                <span>1</span>
+                                <span>2</span>
+                            </div>
+                        </div>
+                        -
+                        <div class="mixed_fraction">
+                            <span>1</span>
+                            <div class="fraction_box">
+                                <span>2</span>
+                                <span>3</span>
+                            </div>
+                        </div>
+                    </div>
+                    을 어떻게 계산하는지 알아봅시다.
+                  </div>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">자연수는 자연수끼리, 분수는 분수끼리 계산해 보세요.</h3>
+
+                    <div class="question_box justify_center">
+
+                        <div class="container_515">
+                            <div class="left_515">
+                                <div class="operations_column">
+                                    <div class="operations">
+                                        <div class="mixed_fraction">
+                                            <span>4</span>
+                                            <div class="fraction_box">
+                                                <span>1</span>
+                                                <span>2</span>
+                                            </div>
+                                        </div>
+                                        -
+                                        <div class="mixed_fraction">
+                                            <span>1</span>
+                                            <div class="fraction_box">
+                                                <span>2</span>
+                                                <span>3</span>
+                                            </div>
+                                        </div>
+                                        =
+                                        <div class="mixed_fraction">
+                                            <span>4</span>
+                                            <div class="fraction_box">
+                                                <span>3</span>
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                        -
+                                        <div class="mixed_fraction">
+                                            <span>1</span>
+                                            <div class="fraction_box">
+                                                <span>4</span>
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                        =
+                                        <div class="mixed_fraction">
+                                            <span>1</span>
+                                            <div class="fraction_box">
+                                                <span>4</span>
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                        =
+                                        <div class="pare_wrap">
+                                        3-1
+                                        </div>
+                                        +
+                                        <div class="pare_wrap">
+                                            <div class="fraction_box">
+                                                <span>
+                                                    <div class="input_wrap">
+                                                        <math-field data-answer-single="9"></math-field>
+                                                    </div>
+                                                </span>
+                                                <span>6</span>
+                                            </div>
+                                            -
+                                            <div class="fraction_box">
+                                                <span>4</span>
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="operations">
+                                        =
+                                        <div class="input_wrap">
+                                            <math-field data-answer-single="2"></math-field>
+                                        </div>
+                                        +
+                                        <div class="mixed_fraction">
+                                            <span></span>
+                                            <div class="fraction_box">
+                                                <span>
+                                                    <div class="input_wrap">
+                                                        <math-field data-answer-single="5"></math-field>
+                                                    </div>
+                                                </span>
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                        =
+                                        <div class="mixed_fraction">
+                                            <span>
+                                                <div class="input_wrap">
+                                                    <math-field data-answer-single="2"></math-field>
+                                                </div>
+                                            </span>
+                                            <div class="fraction_box">
+                                                <span>
+                                                    <div class="input_wrap">
+                                                        <math-field data-answer-single="5"></math-field>
+                                                    </div>
+                                                </span>
+                                                <span>6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="right_515">
+                                <div class="img_515">
+                                    <img src="../../common_contents/img/EMA515_07_SU/0004_img.png" alt="">
+                                    <div class="texts_515">
+                                        분수 부분끼리 뺄 수 없을<br>
+                                        때에는 자연수 부분의 1만큼을<br>
+                                        분수로 나타내어 계산해요.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="page page_2">
+                    <h3 lang="y">대분수를 가분수로 나타내어 계산해 보세요.</h3>
+                    <div class="question_box justify_center">
+
+                        <div class="operations">
+                            <div class="mixed_fraction">
+                                <span>4</span>
+                                <div class="fraction_box">
+                                    <span>1</span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            -
+                            <div class="mixed_fraction">
+                                <span>1</span>
+                                <div class="fraction_box">
+                                    <span>2</span>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            =
+                            <div class="mixed_fraction">
+                                <span></span>
+                                <div class="fraction_box">
+                                    <span>9</span>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            -
+                            <div class="mixed_fraction">
+                                <span></span>
+                                <div class="fraction_box">
+                                    <span>5</span>
+                                    <span>3</span>
+                                </div>
+                            </div>
+                            =
+                            <div class="mixed_fraction">
+                                <span></span>
+                                <div class="fraction_box">
+                                    <span>
+                                        <div class="input_wrap">
+                                            <math-field data-answer-single="27"></math-field>
+                                        </div>
+                                    </span>
+                                    <span>6</span>
+                                </div>
+                            </div>
+                            =
+                            <div class="mixed_fraction">
+                                <span></span>
+                                <div class="fraction_box">
+                                    <span>
+                                        <div class="input_wrap">
+                                            <math-field data-answer-single="10"></math-field>
+                                        </div>
+                                    </span>
+                                    <span>6</span>
+                                </div>
+                            </div>
+                            =
+                            <div class="mixed_fraction">
+                                <span></span>
+                                <div class="fraction_box">
+                                    <span>
+                                        <div class="input_wrap">
+                                            <math-field data-answer-single="17"></math-field>
+                                        </div>
+                                    </span>
+                                    <span>6</span>
+                                </div>
+                            </div>
+                            =
+                            <div class="mixed_fraction">
+                                <span>
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="2"></math-field>
+                                    </div>
+                                </span>
+                                <div class="fraction_box">
+                                    <span>
+                                        <div class="input_wrap">
+                                            <math-field data-answer-single="5"></math-field>
+                                        </div>
+                                    </span>
+                                    <span>6</span>
+                                </div>
+                            </div>
+
+                        </div>
+                </article>
+
+                <article class="page page_3">
+                    <h3 lang="y">앞의 두 방법을 비교하여 이야기해 보세요.</h3>
+                    <div class="question_box justify_center">
+                        <div class="input_wrap">
+                            <math-field class="textarea"></math-field>
+                            <div class="example_box">
+                                <p lang="y">두 대분수를 통분하여 자연수는 자연수끼리, 분수는 분수끼리 빼거나 대분수를 가분수로 나타내고 두 가분수를 통분하여 뺍니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

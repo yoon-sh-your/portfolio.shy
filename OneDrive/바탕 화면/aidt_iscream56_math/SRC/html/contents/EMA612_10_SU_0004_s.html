@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA612_10_SU_0004_s</title>
+        <link rel="stylesheet" href="https://unpkg.com/mathlive/dist/mathlive.core.css" />
+        <script src="https://unpkg.com/mathlive"></script>
+        <script src="../../common_contents/common/js/app.js"></script>
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+        <link rel="stylesheet" href="./../../common_contents/css/ema612_10.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="ema612_10_su_0004">
+            <section class="input-section">
+                <div class="range-inputs">
+                    <div class="label-wrap">
+                        <label><span>시작 수(8~10)</span> <input type="number" id="startNum" min="8" max="10" /></label>
+                        <label><span>끝 수(40~50)</span> <input type="number" id="endNum" min="40" max="50" /></label>
+                    </div>
+                    <button id="confirmBtn" disabled>✔️</button>
+                </div>
+                <button id="getCardBtn" disabled>카드 가져오기</button>
+            </section>
+            <p id="startNumber"></p>
+            <section class="card-section">
+                <div class="player">
+                    <div class="card-nav left">◀</div>
+                    <div class="card-wrap-section">
+                        <div class="card-wrap-container">
+                            <ul class="card-wrap"></ul>
+                        </div>
+                    </div>
+                    <div class="card-nav right">▶</div>
+                    <div class="pagination"></div>
+                    <div class="input-wrap">
+                        <input type="number" readonly />
+                        <button class="input-reset" disabled>리셋</button>
+                        <button class="input-check" disabled>확인</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="card-nav left">◀</div>
+                    <div class="card-wrap-section">
+                        <div class="card-wrap-container">
+                            <ul class="card-wrap"></ul>
+                        </div>
+                    </div>
+                    <div class="card-nav right">▶</div>
+                    <div class="pagination"></div>
+                    <div class="input-wrap">
+                        <input type="number" readonly />
+                        <button class="input-reset" disabled>리셋</button>
+                        <button class="input-check" disabled>확인</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="card-nav left">◀</div>
+                    <div class="card-wrap-section">
+                        <div class="card-wrap-container">
+                            <ul class="card-wrap"></ul>
+                        </div>
+                    </div>
+                    <div class="card-nav right">▶</div>
+                    <div class="pagination"></div>
+                    <div class="input-wrap">
+                        <input type="number" readonly />
+                        <button class="input-reset" disabled>리셋</button>
+                        <button class="input-check" disabled>확인</button>
+                    </div>
+                </div>
+                <div class="player">
+                    <div class="card-nav left">◀</div>
+                    <div class="card-wrap-section">
+                        <div class="card-wrap-container">
+                            <ul class="card-wrap"></ul>
+                        </div>
+                    </div>
+                    <div class="card-nav right">▶</div>
+                    <div class="pagination"></div>
+                    <div class="input-wrap">
+                        <input type="number" readonly />
+                        <button class="input-reset" disabled>리셋</button>
+                        <button class="input-check" disabled>확인</button>
+                    </div>
+                </div>
+            </section>
+            <div class="btn_area">
+                <div class="device_change_wrap">
+                    <button class="device_change" lang="y">대표 기기 변경하기</button>
+                </div>
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button class="btnReset btnBgDefault" lang="y">리셋</button>
+                <button class="btnSubmit btnBgDefault" lang="y">확인</button>
+            </div>
+
+            <script src="../../common_contents/js/ema612_10_0004.js"></script>
+        </div>
+    </body>
+</html>

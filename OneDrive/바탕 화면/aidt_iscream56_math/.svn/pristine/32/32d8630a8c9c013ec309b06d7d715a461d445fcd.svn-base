@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_08_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_08_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y"><span class="label_bogi">보기</span>를 이용하여 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="bogi_box">
+            <span class="label_bogi">보기</span>
+            <div class="conts_bogi justify_center gap_4">45×37=1665</div>
+          </div>
+          <div class="flex dir_col gap_40">
+            <div class="flex align_center">
+              <span>4.5×3.7=</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="16.65"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center">
+              <span>4.5×37=</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="166.5"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center">
+              <span>45×0.037=</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="1.665"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">4.5와 3.7은 45와 37에서 소수점이 왼쪽으로 각각 한 자리씩 옮겨졌으므로 1665에서 소수점을 왼쪽으로 두 자리 옮기면 16.65입니다.</p>
+                <p class="text_bullet" lang="y">4.5는 45에서 소수점이 왼쪽으로 한 자리 옮겨졌으므로 1665에서 소수점을 왼쪽으로 한 자리 옮기면 166.5입니다.</p>
+                <p class="text_bullet" lang="y">0.037은 37에서 소수점이 왼쪽으로 세 자리 옮겨졌으므로 1665에서 소수점을 왼쪽으로 세 자리 옮기면 1.665입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

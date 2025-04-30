@@ -1,0 +1,145 @@
+.input_area .fraction_box {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.input_wrap:has(.w_80) {
+  min-width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+  position: relative;
+}
+.input_wrap.input_sep {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+  left: calc(100% + 20px);
+  top: 12px;
+  width: auto;
+}
+.mark_error {
+  position: relative;
+}
+
+.mark_error:after {
+  content: '';
+  display: inline-block;
+  width: 55px;
+  height: 3px;
+  background: #ff0000;
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: rotate(-30deg) translateX(-50%);
+}
+.mark_error.blue:after {
+  background: var(--primary-blue);
+}
+.mark_error i {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff0000;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* .mark_error.up > i {
+	top: auto;
+	bottom: 50px;
+} */
+.fraction_wrap .hint_up .text_hint {
+  top: auto;
+  bottom: calc(100% + 4px);
+}
+
+/* ema611_01_ih_0001 */
+.ema611_01_ih_0001 .img_area {
+  position: relative;
+}
+.ema611_01_ih_0001 .input_position {
+  position: absolute;
+}
+.ema611_01_ih_0001 .box1 .input_position {
+  top: 60px;
+  left: 300px;
+}
+.ema611_01_ih_0001 .box2 .input_position {
+  top: 60px;
+  left: 520px;
+}
+
+/* ema611_01_ih_0002 */
+.ema611_01_ih_0002 .question_box {
+  padding: 0 127px;
+}
+.ema611_01_ih_0002 .input_area {
+  width: 50%;
+  background: #feefe7;
+  border-radius: 80px;
+  height: 236px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.ema611_01_ih_0002 .lines_img {
+  margin-left: 50px;
+}
+
+/* ema511_01_ih_0003 */
+.ema511_01_ih_0003 .question_box {
+  gap: 120px;
+  margin: 0 auto;
+}
+
+.ema511_01_ih_0003 .question_row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.ema511_01_ih_0003 .question_row > * {
+  /* flex: 1; */
+  text-align: center;
+}
+
+.ema511_01_ih_0003 .custom_select {
+  display: inline-flex;
+}
+
+/* ema511_01_ih_0004 */
+.ema511_01_ih_0004 .question_box {
+  gap: 180px;
+}
+.ema511_01_ih_0004 .question_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ema511_01_ih_0004 .input_wrap.hint_right .text_hint {
+  top: 22px;
+}
+.ema511_01_ih_0004 .solve_area .conts_solve > div:first-of-type {
+  margin-bottom: 50px;
+}
+.ema511_01_ih_0004 .solve_area .mark_error {
+  color: #e4007f;
+}
+.ema511_01_ih_0004 .solve_area .mark_error:after {
+  background-color: #e4007f;
+}
+.ema511_01_ih_0004 .solve_area .mark_error.up i {
+  bottom: 35px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_02_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_02_ih_0006">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="6_deep_green" class="is_star2" lang="y">비의 성질을 이용하여 30 : 10과 비율이 같은 비를 2개 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="flex align_center gap_10">
+            <div class="input_wrap">
+              <math-field></math-field>
+              <div class="example_box">
+                <p>60:20</p>
+              </div>
+            </div>
+            <span>,</span>
+            <div class="input_wrap">
+              <math-field></math-field>
+              <div class="example_box">
+                <p>3:1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>비의 전항과 후항에 0이 아닌 같은 수를 곱하여도 비율은 같습니다.</p>
+                <p>60 : 20, 90 : 30</p>
+                </div>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+          <!-- <button class="btnCheck">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

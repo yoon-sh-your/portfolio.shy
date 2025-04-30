@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_08_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_08.css" />    
+    <script src="./../../common_contents/js/ema613_08_su_0004.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_08_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">어림셈한 결과를 이용하여 몫의 소수점을 찍어 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="input_area">
+            <div class="items question_box" lang="y">
+              <div class="tag_1">식</div>
+              <span>15.2÷5</span>
+            </div>
+            <div class="items">
+              <div class="question_box">
+                <div class="tag_2" lang="y">어림셈</div>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="15"></math-field>
+                </div>
+                <span>÷</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="5"></math-field>
+                </div>
+              </div>
+              <div class="arr"></div>
+              <div class="question_box">
+                <span class="mr-8" lang="y">약</span>
+                <div class="input_wrap answer5">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="question_box boolean_wrap gap_0" lang="y">
+                <div class="tag_1">몫</div>
+                <span>3</span>
+                <button type="button" data-answer-single="true"><span>.</span></button>
+                <span>0</span>
+                <button type="button" data-answer-single="false"><span>.</span></button>
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+          <div class="input_area">
+            <div class="items question_box" lang="y">
+              <div class="tag_1">식</div>
+              <span>68.4÷6</span>
+            </div>
+            <div class="items">
+              <div class="question_box">
+                <div class="tag_2" lang="y">어림셈</div>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="66"></math-field>
+                </div>
+                <span>÷</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="6"></math-field>
+                </div>
+              </div>
+              <div class="arr"></div>
+              <div class="question_box">
+                <span class="mr-8" lang="y">약</span>
+                <div class="input_wrap answer5">
+                  <math-field data-answer-single="11"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="question_box boolean_wrap gap_0">
+                <div class="tag_1" lang="y">몫</div>
+                <span>1</span>
+                <button type="button" data-answer-single="false"><span>.</span></button>
+                <span>1</span>
+                <button type="button" data-answer-single="true"><span>.</span></button>
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+          <div class="input_area">
+            <div class="items question_box">
+              <div class="tag_1" lang="y">식</div>
+              <span>53.5÷5</span>
+            </div>
+            <div class="items">
+              <div class="question_box">
+                <div class="tag_2" lang="y">어림셈</div>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="55"></math-field>
+                </div>
+                <span>÷</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="5"></math-field>
+                </div>
+              </div>
+              <div class="arr"></div>
+              <div class="question_box">
+                <span class="mr-8" lang="y">약</span>
+                <div class="input_wrap answer5">
+                  <math-field data-answer-single="11"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="question_box boolean_wrap gap_0" lang="y">
+                <div class="tag_1">몫</div>
+                <span>1</span>
+                <button type="button" data-answer-single="false"><span>.</span></button>
+                <span>0</span>
+                <button type="button" data-answer-single="true"><span>.</span></button>
+                <span>7</span>
+              </div>
+            </div>
+          </div>
+          <div class="input_area">
+            <div class="items question_box">
+              <div class="tag_1">식</div>
+              <span>184.7÷7</span>
+            </div>
+            <div class="items">
+              <div class="question_box">
+                <div class="tag_2" lang="y">어림셈</div>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="84"></math-field>
+                </div>
+                <span>÷</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="7"></math-field>
+                </div>
+              </div>
+              <div class="arr"></div>
+              <div class="question_box">
+                <span class="mr-8" lang="y">약</span>
+                <div class="input_wrap answer5">
+                  <math-field data-answer-single="12"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="question_box boolean_wrap gap_0" lang="y">
+                <div class="tag_1">몫</div>
+                <span>1</span>
+                <button type="button" data-answer-single="false"><span>.</span></button>
+                <span>2</span>
+                <button type="button" data-answer-single="true"><span>.</span></button>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button lang="y" class="btnType key">입력타입토글</button>
+          <button lang="y" class="btnReset">리셋</button>
+          <!-- <button class="btnSubmit">확인</button> -->
+          <button lang="y" class="btnSample">예시</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

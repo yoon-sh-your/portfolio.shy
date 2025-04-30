@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema511_05_su_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema511_05_0006.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema511_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_05_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">
+          <div class="label_bogi" lang="y">보기</div>에 있는 문장의 순서를 정하여 문제를 만들고, 해결해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="problem_generator2">
+          <div class="top_box">
+            <div class="ex_box label_bogi_box">
+              <div class="label_bogi" lang="y">보기</div>
+              <ul class="ex_list">
+                <li lang="y">㉠ 색종이 24장이 있습니다.</li>
+                <li lang="y">㉡ 색종이 8장을 더 받았습니다.</li>
+                <li lang="y">㉢ 4명이 똑같이 나누어 가졌습니다.</li>
+                <li lang="y">㉣ 12장을 동생에게 주었습니다.</li>
+              </ul>
+            </div>
+  
+            <div class="make_box">
+              <div class="title" lang="y">문제 만들기</div>
+  
+              <div class="input_wrap answer1">
+                <math-field class="sentence_input" data-answer-single=""></math-field>
+              </div>
+  
+              <div class="flex align_start gap_20 mt_20">
+                <div class="equation_box">
+                  <div class="text" lang="y">식</div>
+                  <div class="input_wrap answer2">
+                    <math-field class="text_input" data-answer-single=""></math-field>
+                  </div>
+                </div>
+                <div class="answer_box">
+                  <div class="text" lang="y">답</div>
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field class="formula_input" data-answer-single=""></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="btm_box">
+            <span>㉠</span>
+            <div class="arrow"></div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown">
+                  <option value=""></option>
+                  <option value="㉡"></option>
+                  <option value="㉢"></option>
+                  <option value="㉣"></option>
+              </select>
+            </div>
+            <div class="arrow"></div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown">
+                <option value=""></option>
+                  <option value="㉡"></option>
+                  <option value="㉢"></option>
+                  <option value="㉣"></option>
+              </select>
+            </div>
+            <div class="arrow"></div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown">
+                <option value=""></option>
+                  <option value="㉡"></option>
+                  <option value="㉢"></option>
+                  <option value="㉣"></option>
+              </select>
+            </div>
+          </div>
+          
+  
+          <div class="combo_map" hidden>
+            <div data-combo="1-2-3" data-sentence="1" data-text="(24+8)÷4-12" data-formula="-4"></div>
+            <!-- ㄱ -> ㄴ -> ㄷ -> ㄹ -->
+            <div data-combo="1-3-2" data-sentence="2" data-text="(24+8-12)÷4" data-formula="5"></div>
+            <!-- ㄱ -> ㄴ -> ㄹ -> ㄷ -->
+            <div data-combo="2-1-3" data-sentence="3" data-text="24÷4+8-12" data-formula="2"></div>
+            <!-- ㄱ -> ㄷ -> ㄴ -> ㄹ -->
+            <div data-combo="2-3-1" data-sentence="4" data-text="24÷4-12+8" data-formula="2"></div>
+            <!-- ㄱ -> ㄷ -> ㄹ -> ㄴ -->
+            <div data-combo="3-1-2" data-sentence="5" data-text="(24-12+8)÷4" data-formula="5"></div>
+            <!-- ㄱ -> ㄹ -> ㄴ -> ㄷ -->
+            <div data-combo="3-2-1" data-sentence="6" data-text="(24-12)÷4+8" data-formula="11"></div>
+            <!-- ㄱ -> ㄹ -> ㄷ -> ㄴ -->
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

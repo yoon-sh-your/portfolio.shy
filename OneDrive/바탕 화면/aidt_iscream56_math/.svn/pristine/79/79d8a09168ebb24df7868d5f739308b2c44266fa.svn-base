@@ -1,0 +1,384 @@
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+	vertical-align: sub;
+}
+
+.ema611_07_ih_0001 .map_area {
+	width: 1436px;
+}
+.ema611_07_ih_0001 .map_area,
+.ema611_07_ih_0001 .img_wrap {
+	position: relative;
+}
+.ema611_07_ih_0001 .text_group span {
+	/* position: absolute; */
+	font-size: 32px;
+	font-weight: bold;
+	color: var(--font-main);
+	line-height: 1.3;
+	text-align: center;
+	word-break: keep-all;
+}
+.ema611_07_ih_0001 .text_group .txt1 {
+	top: 95px;
+	left: 545px;
+	width: 312px;
+	height: 136px;
+}
+.ema611_07_ih_0001 .text_group .txt2 {
+	top: 344px;
+	width: 277px;
+	left: 782px;
+}
+.ema611_07_ih_0001 .text_group .txt3 {
+	top: 604px;
+	left: 723px;
+	width: 356px;
+}
+.ema611_07_ih_0001 .text_group .txt4 {
+	width: 312px;
+	top: 700px;
+	left: 229px;
+}
+.ema611_07_ih_0001 .text_group .txt5 {
+	top: 948px;
+	left: 611px;
+	width: 375px;
+}
+.ema611_07_ih_0001 .text_group .txt6 {
+	font-size: 46px;
+	top: 86px;
+	left: 83px;
+	transform: rotate(-15deg);
+	color: #fff;
+	-webkit-text-stroke-color: #791212;
+	-webkit-text-stroke-width: 2px;
+}
+.ema611_07_ih_0001 .text_group .txt7 {
+	font-size: 30px;
+	top: 1230px;
+	right: 130px;
+	color: #fff;
+	-webkit-text-stroke-color: #791212;
+	-webkit-text-stroke-width: 2px;
+}
+
+.ema611_07_ih_0001 .map_area svg,
+.ema611_07_ih_0001 .map_area [class^="obj"] {
+	position: absolute;
+}
+.ema611_07_ih_0001 .map_area svg {
+	width: 750px;
+	height: 750px;
+	top: 443px;
+	left: 331px;
+}
+.ema611_07_ih_0001 .map_area .obj_move {
+	top: 10px;
+	left: 25px;
+	width: 90px;
+}
+.ema611_07_ih_0001 .map_area .obj_arrival {
+	bottom: 29px;
+	right: 18px;
+	width: 104px;
+	opacity: 0;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1635px;
+	height: 684px;
+	padding: 40px;
+	background-color: var(--bg-default);
+	border-radius: 20px;
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop button.close {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	min-width: unset;
+	width: 40px;
+	height: 40px;
+	background: url(../common/img/icon_times_blk.svg) no-repeat center / 40px;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .inner_pop {
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .txt_quiz {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 128px;
+	background: #eef9ff;
+	border-radius: 128px;
+	font-size: 32px;
+	font-weight: bold;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_box {
+	gap: 140px;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_box button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: none;
+	min-width: unset;
+	height: auto;
+	font-size: 32px;
+	color: #000;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_box button > span {
+	display: none;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_box .left:after {
+	width: 168px;
+	height: 168px;
+	content: "";
+	display: inline-block;
+	background: url(../img/EMA523_12_IH/0001_arrow_left.png) no-repeat;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_box .right:after {
+	width: 168px;
+	height: 168px;
+	content: "";
+	display: inline-block;
+	background: url(../img/EMA523_12_IH/0001_arrow_right.png) no-repeat;
+}
+.ema611_07_ih_0001 .pop_area .inner_pop.quiz5 button.left {
+	order: 2;
+}
+.ema611_07_ih_0001 .pop_area .inner_pop.quiz5 button.left:after {
+	background: url(../img/EMA523_12_IH/0001_arrow_right.png) no-repeat center center / contain;
+}
+.ema611_07_ih_0001 .pop_area .inner_pop.quiz5 button.right {
+	order: -1;
+}
+.ema611_07_ih_0001 .pop_area .inner_pop.quiz5 button.right:after {
+	background: url(../img/EMA523_12_IH/0001_arrow_left.png) no-repeat center center / contain;
+}
+@keyframes shake {
+	0% {
+		margin-left: 0;
+	}
+	20% {
+		margin-left: -30px;
+	}
+	40% {
+		margin-left: 30px;
+	}
+	60% {
+		margin-left: -15px;
+	}
+	80% {
+		margin-left: 15px;
+	}
+	100% {
+		margin-left: 0;
+	}
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop.error {
+	animation: shake 1s ease-in-out;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop button[data-answer-single="true"] {
+	position: relative;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop button[data-answer-single="true"]::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(../../common_practice/common/img/hint_marking.svg) no-repeat center center / contain;
+	z-index: 2;
+	opacity: 0;
+	transition: 0.2s 0.1s;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop.result button[data-answer-single="true"]::before {
+	opacity: 1;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_inner {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_inner .input_wrap {
+	min-width: auto;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_inner math-field {
+	width: 80px;
+}
+.ema611_07_ih_0001 .pop_area .quiz_pop .question_inner .arrow {
+	margin: 0 60px;
+}
+@keyframes arrival {
+	0% {
+		transform: translateY(0);
+	}
+	20% {
+		transform: translateY(-10px);
+	}
+	40% {
+		transform: translateY(10px);
+	}
+	60% {
+		transform: translateY(-5px);
+	}
+	80% {
+		transform: translateY(5px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.ema611_07_ih_0001 .map_area.result .obj_arrival {
+	opacity: 1;
+	animation: arrival 1s ease-in-out;
+}
+
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box img {
+	width: 500px;
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box [class^="txt"] {
+	left: 0;
+	font-size: 14px;
+	width: 150px;
+	height: 57px;
+	line-height: 1.1;
+	/* top: 0; */
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box .txt1 {
+	top: 31px;
+	left: 183px;
+	width: 125px;
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box .txt2 {
+	top: 119px;
+	left: 263px;
+	width: 114px;
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box .txt3 {
+	top: 245px;
+	left: 64px;
+	width: 140px;
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box .txt4 {
+	top: 208px;
+	left: 260px;
+	width: 132px;
+	text-align: left;
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box .txt5 {
+	top: 321px;
+	left: 202px;
+	width: 144px;
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box .txt6 {
+	-webkit-text-stroke-width: 0.6px;
+	font-size: 16px;
+	top: 30px;
+	left: 29px;
+	width: auto;
+	height: auto;
+}
+.ema611_07_ih_0001 .image_zoom_wrap .image_zoom .img_box .txt7 {
+	width: auto;
+	height: auto;
+	font-size: 16px;
+	top: 422px;
+	left: 432px;
+	-webkit-text-stroke-width: 0.6px;
+}
+.ema611_07_ih_0001 .title.puzzle h2 {
+	position: relative;
+	z-index: 10;
+}
+
+.ema611_07_ih_0001 .text_group .texts {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 32px;
+}
+.ema611_07_ih_0001 .text_group .texts > .num {
+	display: inline-block;
+	font-style: normal;
+	font-size: 24px;
+	font-weight: 700;
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	line-height: 26px;
+	background: #137aad;
+	border-radius: 50%;
+	color: #fff;
+}
+.ema611_07_ih_0001 .text_group .texts .nemo {
+	width: 70px;
+	height: 52px;
+	background: var(--bg-default);
+	border-radius: 12px;
+}
+.ema611_07_ih_0001 .text_group .texts .fraction_box span:first-child .nemo {
+	position: relative;
+	top: -10px;
+}
+.ema611_07_ih_0001 .text_group .texts .fraction_box span:nth-child(2) .nemo {
+	position: relative;
+	top: 10px;
+}
+.ema611_07_ih_0001 .text_group .text1 {
+	top: 86px;
+	left: 81px;
+}
+.ema611_07_ih_0001 .text_group .text2 {
+	top: 86px;
+	left: 743px;
+}
+.ema611_07_ih_0001 .text_group .text3 {
+	top: 232px;
+	left: 127px;
+}
+.ema611_07_ih_0001 .text_group .text4 {
+	top: 237px;
+	left: 793px;
+}
+
+.ema611_07_ih_0001 .text_group .text_direction {
+	font-size: 32px;
+	position: absolute;
+}
+.ema611_07_ih_0001 .text_group .up {
+	top: 412px;
+	left: 695px;
+}
+.ema611_07_ih_0001 .text_group .right {
+	top: 788px;
+	left: 1055px;
+}
+.ema611_07_ih_0001 .text_group .down {
+	top: 1162px;
+	left: 688px;
+}
+.ema611_07_ih_0001 .text_group .left {
+	top: 788px;
+	left: 287px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA626_03_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema626_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema626_03_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6_orange" class="is_star2">
+					<span class="label_bread" lang="y">조건</span>
+					<span lang="y">을 만족하는 원기둥의 높이는 몇 ㎝인지 구해 보세요.</span>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center align_center">
+					<dl class="condition_area">
+						<dt class="label_bread" lang="y">조건</dt>
+						<dd lang="y" class="text_bullet">
+							원기둥의 전개도에서 옆면의 가로와 세로의 합은 74.8 ㎝입니다.
+						</dd>
+						<dd lang="y" class="text_bullet">원기둥의 전개도에서 밑면의 반지름은 10 ㎝입니다.</dd>
+					</dl>
+					<div class="input_area">
+						<div class="input_wrap">
+							<math-field data-answer-single="12"></math-field>
+						</div>
+						㎝
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">해설 수급 필요</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

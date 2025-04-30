@@ -1,0 +1,119 @@
+.video_wrap {
+    .ema623_02_SU_0002 & {
+        background: url("../../common_contents/img/ema623_02_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_03_SU_0002 & {
+        background: url("../../common_contents/img/ema623_03_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_04_SU_0002 & {
+        background: url("../../common_contents/img/ema623_04_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_05_SU_0002 & {
+        background: url("../../common_contents/img/ema623_05_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_06_SU_0002 & {
+        background: url("../../common_contents/img/ema623_06_SU/0002_contents.png") no-repeat center center / cover;
+    }
+}
+.gray_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px 30px 50px;
+    background-color: #eef0f4;
+    width: 100%;
+    border-radius: 30px;
+    button {
+        position: relative;
+        padding: initial;
+        width: initial;
+        height: initial;
+        min-width: initial;
+        background-color: initial;
+        &::after,
+        &::before {
+            display: inline-block;
+            content: '';
+
+        }
+    }
+    .box_title {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+
+        .minus {
+            &::before {
+                padding-right: 30px;
+                width: 40px;
+                height: 40px;
+                background: url("../../common_contents/img/EMA623_03_SU/minus.png") no-repeat center center / contain;
+            }
+        }
+        .plus {
+            &::after {
+                padding-left: 30px;
+                width: 40px;
+                height: 40px;
+                background: url("../../common_contents/img/EMA623_03_SU/plus.png") no-repeat center center / contain;
+            }
+        }
+    }
+    .wood_box_area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        .wood_box {
+            &::before {
+                content: '';
+                width: 60px;
+                height: 60px;
+                background: url("../../common_contents/img/EMA623_03_SU/0003_img01.png") no-repeat center center / contain;
+
+            }
+        }
+    }
+}
+.paging_layout {
+    margin: 0 auto;
+    /* align-content: center; */
+}
+.paging_layout .page .input_wrap {
+    width: 100%;
+}
+.question_box span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.diagram_green_tag {
+    display: inline-block;
+    padding: 3px 40px;
+    background-color: #c7e3bf;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 10px;
+
+}
+.img_row.building_blocks {
+    justify-content: center;
+    align-items: center;
+}
+.img_row.building_blocks .input_area {
+    width: 705px;
+}
+
+.img_wrap:has(.diagram_green_tag) {
+    position: relative;
+}
+.img_wrap .diagram_green_tag {
+    position: absolute;
+    bottom: -60px;
+    right: 50px;
+}

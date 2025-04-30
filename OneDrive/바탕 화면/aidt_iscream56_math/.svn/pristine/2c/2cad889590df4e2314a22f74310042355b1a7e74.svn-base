@@ -1,0 +1,536 @@
+/* .ema514_05_su_0002 */
+.ema514_05_su_0002 .fraction_inn {
+  display: flex;
+  align-items: center;
+}
+.ema514_05_su_0002 .video_wrap {
+  background: url(../img/EMA514_05_SU/0002_content.png) no-repeat 100% 87% / 110%;
+}
+
+/* .ema514_05_su_0003 */
+.ema514_05_su_0003 .fraction_inn {
+  display: flex;
+  align-items: center;
+}
+.ema514_05_su_0003 .page_1 .count_wrap {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 360px;
+  background: url(../img/EMA514_05_SU/0003_bg.png) no-repeat center;
+}
+.ema514_05_su_0003 .page_1 .count_wrap .nm {
+  position: absolute;
+  top: -64px;
+  left: -9px;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 300;
+  transform: rotate(4deg);
+}
+.ema514_05_su_0003 .page_1 .count_wrap .count_col:nth-of-type(2) .nm {
+  left: -17px;
+  transform: rotate(-4deg);
+}
+
+.boolean_count_wrap button.selected {
+  background-color: var(--font-main-500);
+}
+.ema514_05_su_0003 .boolean_count_wrap.hint button.correct {
+  /* border: 5px solid var(--stroke-wrong);
+  background-color: var(--font-main-500); */
+  background-color: var(--stroke-wrong);
+}
+.ema514_05_su_0003 .boolean_count_wrap.correct button.selected {
+  /* border: 5px solid var(--primary-blue);
+  background-color: #C4D4FF; */
+  background-color: var(--primary-blue);
+}
+
+.ema514_05_su_0003 .page_1 .count_col {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  position: absolute;
+  height: 204px;
+}
+.ema514_05_su_0003 .page_1 .count_col:first-child {
+  top: 109px;
+  left: 240px;
+}
+.ema514_05_su_0003 .page_1 .count_col:nth-of-type(2) {
+  top: 109px;
+  left: 894px;
+}
+
+.ema514_05_su_0003 .page_1 .count_col button {
+  width: 170px;
+  height: 34.5px;
+}
+.ema514_05_su_0003 .input_wrap math-field{
+  width: 80px;
+}
+.ema514_05_su_0003 .page_1 .count_col .fraction_ipt {
+  position: absolute;
+  right: -120px;
+  top: 0;
+  width: 80px;
+  margin-top: 0;
+}
+
+/* .ema514_05_su_0003 */
+.ema514_05_su_0003 .page_2 h3 .fraction_box:nth-of-type(2) {
+  margin-left: 8px;
+}
+
+.ema514_05_su_0003 .page_2 .question_box {
+  gap: 100px;
+  margin-top: 60px;
+}
+.ema514_05_su_0003 .page_2 .fraction_col {
+  display: flex;
+  align-items: center;
+}
+.ema514_05_su_0003 .page_2 .fraction_col .fraction_box span {
+  display: flex;
+  align-items: center;
+}
+
+.ema514_05_su_0003 .page_2 .speech_bubble {
+  background: url(../img/EMA514_05_SU/0003_bg2.png) no-repeat 0 0;
+  background-size: contain;
+  height: 227px;
+  width: 207px;
+  position: absolute;
+  top: 150px;
+  right: 166px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+/* ema514_05_su_0004 */
+
+.ema514_05_su_0004[data-current-page='page_3'] .btn_area .btnType.key,
+.ema514_05_su_0004[data-current-page='page_3'] .title h2[data-head] {
+  display: none;
+}
+.ema514_05_su_0004 .count_wrap {
+  background: url(../img/EMA514_05_SU/0004_bg.png) no-repeat 50% 0;
+  height: 304px;
+  width: 100%;
+  position: relative;
+  margin-top: 48px;
+}
+.ema514_05_su_0004 .input_wrap,
+.ema514_05_su_0004 .input_wrap input,
+.ema514_05_su_0004 .input_wrap math-field {
+  min-width: 80px;
+  width: 80px;
+}
+.ema514_05_su_0004 .input_wrap math-field.textarea {
+  width: 100%;
+}
+.ema514_05_su_0004 .page_1 .fraction_row {
+  display: flex;
+  align-items: center;
+  gap: 215px;
+  position: absolute;
+  left: 242px;
+  top: 12px;
+}
+
+.ema514_05_su_0004 .page_1 .fraction_row .fra_inn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.ema514_05_su_0004 .page_1 .row2 {
+  top: 170px;
+}
+
+.ema514_05_su_0004 .page_1 .fraction_row .fra_ex {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ema514_05_su_0004 .page_2 .question_box {
+  flex-direction: column;
+  padding-top: 10px;
+}
+.ema514_05_su_0004 .page_2 .fraction_row {
+  display: flex;
+  gap: 140px;
+  align-items: center;
+}
+.ema514_05_su_0004 .page_2 .fraction_row .fraction_box span {
+  display: flex;
+  align-items: center;
+}
+.ema514_05_su_0004 .page_2 .fra_arr {
+  position: relative;
+  top: -15px;
+}
+.ema514_05_su_0004 .page_2 .fra_arr::before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg4.png) no-repeat 0 0;
+  height: 42px;
+  width: 48px;
+  position: absolute;
+  top: 13px;
+  left: 105px;
+}
+.ema514_05_su_0004 .page_2 .fraction_row .fra_arr .fra_parens:before {
+  top: -20px;
+}
+.ema514_05_su_0004 .page_2 .fraction_row .fra_arr .fra_parens:after {
+  top: -20px;
+}
+.ema514_05_su_0004 .page_2 .fra_ex .fra_parens {
+  display: flex;
+  gap: 14px;
+}
+.ema514_05_su_0004 .page_2 .fra_inn {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  position: relative;
+}
+.ema514_05_su_0004 .page_2 .fra_arr.fra_ex {
+  margin-top: -24px;
+}
+.ema514_05_su_0004 .page_2 .fra_inn.fra_arr::before {
+  left: 318px;
+  top: 40px;
+}
+.ema514_05_su_0004 .page_2 .fra_parens {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 24px;
+}
+.ema514_05_su_0004 .page_2 .col2 .fra_parens {
+  gap: 14px;
+}
+.ema514_05_su_0004 .page_2 .fra_parens .fraction_box:nth-of-type(2) {
+  margin-left: 6px;
+}
+
+.ema514_05_su_0004 .page_2 .fra_parens:before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg2.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: -2px;
+  left: -31px;
+}
+
+.ema514_05_su_0004 .page_2 .fra_parens:after {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg3.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: -2px;
+  right: -31px;
+}
+
+.ema514_05_su_0004 .page_2 .speech_bubble {
+  background: url(../img/EMA514_05_SU/0003_bg2.png) no-repeat 0 0;
+  background-size: contain;
+  height: 227px;
+  width: 207px;
+  position: absolute;
+  top: 115px;
+  right: 166px;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.ema514_05_su_0004 .page_2 .text_area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.ema514_05_su_0004 .page_2 .text_area .input_wrap {
+  width: 100%;
+}
+.ema514_05_su_0004 .page_2 .text_area math-field {
+  min-height: 128px;
+  height: 128px;
+}
+.ema514_05_su_0004 .page_2 .example_box .fra_ex {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1;
+}
+.ema514_05_su_0004 .page_2 .example_box .fra_ex .fraction_box + .fraction_box {
+  margin-left: 10px;
+}
+.ema514_05_su_0004 .page_2 .example_box .fra_ex:nth-of-type(2) {
+  margin-top: 16px;
+}
+.ema514_05_su_0004 .page_2 .comma {
+  font-size: 44px;
+}
+.ema514_05_su_0004 .page_2 .fra_arr.col1 .comma {
+  position: absolute;
+  top: 0px;
+  left: 23px;
+}
+.ema514_05_su_0004 .page_2 .col2 .fra_parens .comma {
+  position: absolute;
+  top: 29px;
+  left: 84px;
+}
+
+.ema514_05_su_0004 .page_3 .question_box {
+  flex-direction: column;
+  margin-top: 40px;
+}
+.ema514_05_su_0004 .page_3 .fraction_row {
+  display: flex;
+  gap: 140px;
+  align-items: center;
+}
+.ema514_05_su_0004 .page_3 .fra_ex {
+  position: relative;
+  margin-top: -12px;
+}
+.ema514_05_su_0004 .page_3 .fra_ex::before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg4.png) no-repeat 0 0;
+  height: 42px;
+  width: 48px;
+  position: absolute;
+  top: 35px;
+  left: 168px;
+}
+.ema514_05_su_0004 .page_3 .fra_ex .fra_parens {
+  display: flex;
+  gap: 14px;
+}
+.ema514_05_su_0004 .page_3 .fra_inn {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+.ema514_05_su_0004 .page_3 .fra_parens {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  position: relative;
+}
+
+.ema514_05_su_0004 .page_3 .fra_parens:before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg2.png) no-repeat 0 0;
+  height: 88px;
+  width: 9px;
+  position: absolute;
+  top: 12px;
+  left: -31px;
+}
+
+.ema514_05_su_0004 .page_3 .fra_parens:after {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg3.png) no-repeat 0 0;
+  height: 88px;
+  width: 9px;
+  position: absolute;
+  top: 12px;
+  right: -31px;
+}
+
+.ema514_05_su_0004 .page_3 .text_area {
+  width: 100%;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.ema514_05_su_0004 .page_3 .text_area .input_wrap {
+  width: 100%;
+}
+.ema514_05_su_0004 .page_3 .speech_bubble {
+  background: url(../img/EMA514_05_SU/0003_bg2.png) no-repeat 0 0;
+  background-size: contain;
+  height: 227px;
+  width: 207px;
+  position: absolute;
+  top: 160px;
+  right: 244px;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+/* ema514_04_su_0005 */
+.ema514_05_su_0005[data-current-page='page_1'] .btn_area .btnCheck,
+.ema514_05_su_0005[data-current-page='page_4'] .btn_area .btnCheck,
+.ema514_05_su_0005[data-current-page='page_2'] .btn_area .btnSubmit,
+.ema514_05_su_0005[data-current-page='page_3'] .btn_area .btnSubmit {
+  display: none;
+}
+
+.ema514_05_su_0005 .input_wrap,
+.ema514_05_su_0005 .input_wrap input,
+.ema514_05_su_0005 .input_wrap math-field{
+  min-width: 80px;
+  width: 80px;
+}
+.ema514_05_su_0005 .page_1 .input_wrap {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ema514_05_su_0005 .page_1 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 210px;
+}
+
+.ema514_05_su_0005 .page_2 .question_box {
+  margin-top: 40px;
+}
+.ema514_05_su_0005 .page_2 .fraction_row {
+  display: flex;
+  gap: 140px;
+  align-items: center;
+}
+.ema514_05_su_0005 .page_2 .fra_ex {
+  position: relative;
+  top: -2px;
+}
+.ema514_05_su_0005 .page_2 .fra_arr::before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg4.png) no-repeat 0 0;
+  height: 42px;
+  width: 48px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 136px;
+}
+.ema514_05_su_0005 .page_2 .fra_inn {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  position: relative;
+}
+.ema514_05_su_0005 .page_2 .fra_inn.fra_arr::before {
+  left: 338px;
+}
+.ema514_05_su_0005 .page_2 .fra_parens {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 8px;
+}
+.ema514_05_su_0005 .page_2 .fra_parens .fraction_box span {
+  display: flex;
+  align-items: center;
+}
+.ema514_05_su_0005 .page_2 .fra_parens:before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg2.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -31px;
+}
+
+.ema514_05_su_0005 .page_2 .fra_parens:after {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg3.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -31px;
+}
+
+.ema514_05_su_0005 .page_3 .question_box {
+  margin-top: 40px;
+}
+.ema514_05_su_0005 .page_3 .fraction_row {
+  display: flex;
+  gap: 140px;
+  align-items: center;
+}
+.ema514_05_su_0005 .page_3 .fra_parens .fraction_box span {
+  display: flex;
+  align-items: center;
+}
+.ema514_05_su_0005 .page_3 .fra_ex {
+  position: relative;
+}
+.ema514_05_su_0005 .page_3 .fra_arr::before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg4.png) no-repeat 0 0;
+  height: 42px;
+  width: 48px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 136px;
+}
+.ema514_05_su_0005 .page_3 .fra_ex .fra_parens {
+  display: flex;
+}
+.ema514_05_su_0005 .page_3 .fra_inn {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.ema514_05_su_0005 .page_3 .fra_inn.fra_arr::before {
+  left: 355px;
+}
+.ema514_05_su_0005 .page_3 .fra_parens {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
+.ema514_05_su_0005 .page_3 .fra_parens:before {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg2.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -31px;
+}
+
+.ema514_05_su_0005 .page_3 .fra_parens:after {
+  content: '';
+  background: url(../img/EMA514_05_SU/0004_bg3.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -31px;
+}
+
+.ema514_05_su_0005 .page_4 .input_wrap {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ema514_05_su_0005 .page_4 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 250px;
+}
+

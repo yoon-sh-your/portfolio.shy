@@ -1,0 +1,258 @@
+.boolean_wrap button:focus {
+  border: none !important;
+}
+
+.mr_70 {
+  margin-right: 70px !important;
+}
+
+.color_white {
+  color: #fff;
+}
+
+.font_20 {
+  font-size: 20px !important;
+  font-weight: 700;
+}
+
+/*EMA626_07_SU_0002_s*/
+.ema626_07_su_0002 .img_wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 1200px;
+}
+
+.ema626_07_su_0002 .img_wrap .text_box {
+  top: 23px;
+  left: 377px;
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span {
+  font-size: 24px;
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span.text01 {
+  font-weight: 700;
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span.text02 {
+  transform: translate(-167px, 47px);
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span.text03 {
+  transform: translate(294px, 4px);
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span.text04 {
+  transform: translate(10px, 35px);
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span.text05 {
+  transform: translate(10px, 75px);
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span.text06 {
+  transform: translate(10px, 105px);
+}
+
+.ema626_07_su_0002 .img_wrap .text_box span.text04, .ema626_07_su_0002 .img_wrap .text_box span.text05, .ema626_07_su_0002 .img_wrap .text_box span.text06 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/*EMA626_07_SU_0003_s*/
+.ema626_07_su_0003 .img_wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ema626_07_su_0003 .text_box {
+  top: 66px;
+  left: 92px;
+}
+
+.ema626_07_su_0003 .text_box.type2 {
+  top: 309px;
+  left: 179px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.ema626_07_su_0003 .text_box.type2 span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ema626_07_su_0003 .text_box span {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+}
+
+.ema626_07_su_0003 .text_box span .num {
+  font-size: 32px;
+  color: #285AA1;
+}
+
+.ema626_07_su_0003 .text_box span.text02 {
+  align-items: flex-start;
+  margin-top: 7px;
+}
+
+.ema626_07_su_0003 .text_box span.text02 .num {
+  margin-top: -7px;
+}
+
+.ema626_07_su_0003 .text_box span.text06 {
+  transform: translateX(-5px);
+}
+
+.ema626_07_su_0003 .text_box span.text07 {
+  transform: translateX(-13px);
+}
+
+.ema626_07_su_0003 .text_box span.text08 {
+  transform: translateX(-17px);
+}
+
+.ema626_07_su_0003 .text_noti {
+  text-align: center;
+  margin-top: -23px;
+  transform: translateX(0);
+}
+
+.ema626_07_su_0003 .input_wrap {
+  width: 100%;
+}
+
+.ema626_07_su_0003 .input_wrap math-field.textarea {
+  height: 225px;
+}
+
+.text_box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.text_noti {
+  width: 100%;
+  font-size: 16px;
+  text-align: right;
+  margin-top: 10px;
+  transform: translateX(-90px);
+}
+
+.ema626_07_su_0003[data-current-page="page_1"] .btnCheck,
+.ema626_07_su_0003[data-current-page="page_2"] .btnSubmit {
+  display: none;
+}
+
+.form_box {
+  width: 1194px;
+  height: 420px;
+}
+
+.form_box li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.form_box li:first-child .vertical1 {
+  border-radius: 20px 0 0 0;
+  height: 202px;
+}
+
+.form_box li:first-child .vertical {
+  padding: 10px 45px;
+}
+
+.form_box li:last-child .vertical1 {
+  border-radius: 0 0 0 20px;
+}
+
+.form_box li:first-child .vertical2 {
+  border-radius: 0 20px 0 0;
+}
+
+.form_box li:last-child .vertical2 {
+  border-radius: 0 0 20px 0;
+}
+
+.form_box .vertical {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 286px;
+  height: 100%;
+  padding: 5px 45px;
+  border: 1px solid #DADADA;
+  border-left: 0;
+  gap: 7px;
+}
+
+.form_box .vertical .input_wrap {
+  width: auto;
+  align-items: center;
+}
+
+.form_box .vertical1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 276px;
+  height: 100%;
+  background-color: #fdece3;
+  padding: 10px 15px;
+  border: 1px solid #fdece3;
+  border-color: #fdece3 #fff #fff #fdece3;
+  gap: 7px;
+}
+
+.form_box .txt_box {
+  position: absolute;
+  top: 10px;
+  left: 109px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 700;
+  gap: 50px;
+}
+
+.form_box .txt_box .txt02 {
+  transform: translate(83px, 11px);
+}
+
+.form_box .txt_box .txt03 {
+  transform: translate(-49px, 0px);
+}
+
+.form_box .item2 .txt_box {
+  left: 127px;
+}
+
+.form_box .item2 .txt_box .txt02 {
+  transform: translate(73px, 11px);
+}
+
+.form_box .item3 .txt_box {
+  top: 14px;
+  left: 126px;
+}
+
+.form_box .item3 .txt_box .txt02 {
+  transform: translate(84px, 8px);
+}
+
+.form_box .item3 .txt_box .txt03 {
+  transform: translate(-48px, -10px);
+}

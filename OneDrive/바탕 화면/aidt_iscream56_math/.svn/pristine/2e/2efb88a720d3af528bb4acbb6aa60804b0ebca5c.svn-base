@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_03_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_03.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema613_03_su_0002">
+        <section class="title type2">
+            <h2 data-type="2" data-text="생각 깨우기" lang="y">찹쌀밥 4.23 kg을 세 덩어리로 똑같이 나누어 떡메 치기 체험을 준비하였습니다. 찹쌀밥 한 덩어리의 무게는
+                몇 kg인지
+                알아봅시다.</h2>
+        </section>
+
+        <section class="contents">
+            <!-- <strong>떡메:</strong> -->
+            <div class="keyword" lang="y">떡메: 떡을 만들기 위해 찐 쌀을 치는 데 쓰는 큰 방망이.</div>
+            <div class="img_row">
+                <div class="video_wrap">
+                    <button class="play" data-video="1"></button>
+                </div>
+
+                <div class="input_area">
+                    <h3 lang="y">
+                        영상을 보고 찹쌀밥 한 덩어리의 무게를 어떻게 구할 수 있을지 이<br />야기해 보세요.
+                    </h3>
+                    <div class="input_wrap inputBox">
+                        <math-field class="textarea"></math-field>
+                        <div class="example_box">
+                            <p lang="y">전체 찹쌀밥의 무게를 덩어리 수로 나누면 될 것 같습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <!-- 예시 필드에서 사용 -->
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button class="btnReset" lang="y">리셋</button>
+                <button class="btnSubmit" lang="y">제출</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

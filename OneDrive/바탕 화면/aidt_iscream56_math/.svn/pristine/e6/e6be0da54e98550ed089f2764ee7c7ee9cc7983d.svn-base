@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA613_11_SU_0005</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+  <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <script src="./../../common_contents/js/ema613_08_su_0004.js"></script>
+  <link rel="stylesheet" href="./../../common_contents/css/ema613_11.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema613_11_su_0005">
+    <section class="title type2">
+      <h2 data-type="1" data-text="자기주도 3">
+        <span class="blue line" lang="y">내 힘으로 풀어요</span>
+        <span lang="y">공부한 내용을 확인해요</span>
+      </h2>
+    </section>
+
+    <section class="title type2 jgjd_3_sub_title">
+      <h2 data-head="4" lang="y">13.5÷2를 어림셈한 결과를 이용하여 옳은 식을 찾아 기호를 고르세요.</h2>
+    </section>
+    <section class="contents">
+      <div class="boolean_wrap justify_center mt_30">
+        <button type="button" data-answer-single="false" class="button1">㉠ 13.5÷2=67.5</button>
+        <button type="button" data-answer-single="true" class="button2">㉡ 13.5÷2=6.75</button>
+        <button type="button" data-answer-single="false" class="button3">㉢ 13.5÷2=0.675</button>
+      </div>
+      <div class="btn_area">
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck" data-submit="true">확인</button>
+        <!-- <button class="btnSubmit" data-submit="true">제출</button> -->
+
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

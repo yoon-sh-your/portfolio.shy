@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema513_03_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7_pink" class="is_star2" lang="y">어느 영화의 시작 시각과 끝나는 시각 사이의 대응 관계를 나타낸 표입니다. 영화가 오후 5시에 시작했을 때, 끝나는 시각은 오후 몇 시인지 구해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box dir_col">
+          <div class="table_wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="row" lang="y">시작 시각</th>
+                  <th scope="col" lang="y">오전 8시</th>
+                  <th scope="col" lang="y">오전 11시</th>
+                  <th scope="col" lang="y">오후 2시</th>
+                  <th scope="col">...</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">끝나는 시각</th>
+                  <td lang="y">오전 10시</td>
+                  <td lang="y">오후 1시</td>
+                  <td lang="y">오후 4시</td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="question_box justify_end gap_12">
+            <span lang="y">오후</span>
+            (
+            <div class="flex gap_4 align_center">
+              <div class="input_wrap"><math-field data-answer-single="7"></math-field></div>
+              )
+              <span lang="y">시</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">영화가 끝나는 시간은 시작 시각에 2시간을 더한 것과 같습니다.</p>
+                <p lang="y">따라서 영화가 오후 5시에 시작했을 때, 끝나는 시각은 오후 7시입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit">전송</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_04_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_ih_0003">
+      <section class="title type3">
+        <h2 data-head="2" lang="y">직육면체를 보고 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center align_center">
+          <div class="img"><img src="../../common_practice/img/EMA525_04_IH/0003_img.svg" alt="" /></div>
+          <div class="question_box dir_col gap_40">
+            <div class="text_bullet" lang="y">
+              면 ㄷㅅㅇㄹ이 한 밑면일 때 다른 밑면을 찾아 써 보세요.
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="정답">
+                  <option></option>
+                  <option value="면 ㄴㅂㅁㄱ">면 ㄴㅂㅁㄱ</option>
+                  <option value="면 ㄱㄴㄷㄹ">면 ㄱㄴㄷㄹ</option>
+                  <option value="면 ㄴㅂㅅㄷ">면 ㄴㅂㅅㄷ</option>
+                </select>
+              </div>
+            </div>
+            <div class="text_bullet" lang="y">
+              밑면은 모두 몇 쌍인지 구해 보세요.
+              <div class="input_area">
+                (
+                <div class="input_wrap">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+
+                )쌍
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">면 ㄷㅅㅇㄹ과 평행한 면은 면 ㄴㅂㅁㄱ입니다.</p>
+                <p class="text_bullet" lang="y">직육면체에서 서로 평행한 면은 모두 3쌍입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

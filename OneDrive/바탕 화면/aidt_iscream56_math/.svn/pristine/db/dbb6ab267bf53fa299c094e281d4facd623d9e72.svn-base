@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_03_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema523_su_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="dragndrop fraction drawline ema523_03_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_pink" lang="y">두 도형은 서로 합동입니다. 변의 길이와 각의 크기를 각각 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <div class="question_box dir_col mt_30">
+            <div class="flex align_center gap_12">
+              <div class="content_wrap">
+                <img src="../../common_contents/img/EMA523_03_SU/0005_01_content.png" alt="도형 이미지" />
+                <div class="content_box box1">
+                  <div class="length1">
+                    <span>100˚</span>
+                  </div>
+                  <div class="length2">
+                    <span>110˚</span>
+                  </div>
+                  <div class="input_form input1">
+                    <div class="input_wrap">
+                      <math-field data-answer-single="4"></math-field>
+                    </div>
+                    <span>㎝</span>
+                  </div>
+                </div>
+                <div class="content_box box2">
+                  <div class="length1">
+                    <span>4 ㎝</span>
+                  </div>
+                  <div class="length2">
+                    <span>5 ㎝</span>
+                  </div>
+                  <div class="input_form input2">
+                    <div class="input_wrap">
+                      <math-field data-answer-single="100"></math-field>
+                      <span>˚</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

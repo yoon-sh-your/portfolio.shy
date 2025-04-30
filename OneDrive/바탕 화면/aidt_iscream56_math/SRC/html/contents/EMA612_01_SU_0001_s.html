@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_01_SU_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_01_su_0001 intro_page">
+      <section class="title type2">
+        <h1 data-number="2" lang="y">각기둥과 각뿔</h1>
+        <button class="goal" onclick="openPop('.pop_goal_wrap')" lang="y">학습 목표</button>
+      </section>
+
+      <div class="pop_goal_wrap">
+        <div class="pop_goal">
+          <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+          <div class="pop_goal_inner">
+            <label lang="y">이번 시간에 공부할 내용</label>
+            <p lang="y">우리 주변에서 각기둥이나 각뿔 모양을 볼 수 있는 상황들을 통해 학습에 흥미를 가질 수 있어요.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="contents intro_page">
+        <div class="text_box">
+          <p class="f20b" lang="y">
+            주상 절리는 용암이 빠르게 <br>
+            식으면서 만들어진 기둥 모양의 암석이야. <br>
+            위에서 보면 다각형 모양을 찾을 수 있어.
+          </p>
+        </div>
+        <div class="input_area">
+          <label for="inputElement01" class="img" lang="y">그림은 어떤 상황을 나타내고 있나요?</label>
+          <div class="input_wrap">
+            <math-field class="textarea" id="inputElement01" type="text"></math-field>
+            <ol class="example_box">
+              <li lang="y">주상 절리라고 하는 기둥 모양의 암석이 보입니다.</li>
+              <li lang="y">주상 절리는 용암이 빠르게 식으면서 만들어진다고 합니다.</li>
+              <li lang="y">주상 절리를 위에서 보면 다각형 모양을 찾을 수 있다고 합니다.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSample">예시</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

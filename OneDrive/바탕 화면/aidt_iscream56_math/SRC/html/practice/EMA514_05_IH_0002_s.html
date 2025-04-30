@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_05_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_05_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <div class="fraction_box ml_0">
+                <span>1</span>
+                <span>6</span>
+              </div>
+              과
+              <div class="fraction_box">
+                <span>9</span>
+                <span>10</span>
+              </div>
+              를 두 가지 방법으로 통분하려고 합니다. 물음에 답해 보세요.
+            </div>
+          </div>          
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 class="title" lang="y">두 분모의 곱을 공통분모로 하여 통분해 보세요.</h3>
+          <div class="flex dir_col">
+            <div class="question_box">
+              <div class="item flex align_center gap_4">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>6</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <div class="flex align_center">
+                    <span>1 × </span>
+                    <div class="input_wrap"><math-field data-answer-single="10"></math-field></div>
+                  </div>
+                  <span>6 × 10</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="10"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="60"></math-field></div>
+                </div>
+                ,
+                <div class="fraction_box">
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+              </div>
+              =
+              <div class="item flex align_center gap_4">
+                <div class="fraction_box">
+                  <div class="flex align_center">
+                    <span>9 × </span>
+                    <div class="input_wrap"><math-field data-answer-single="6"></math-field></div>
+                  </div>
+                  <span>10 × 6</span>
+                </div>
+              </div>
+              =
+              <div class="item">
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="54"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="60"></math-field></div>
+                </div>
+              </div>
+            </div>
+            <div class="question_box bottom">
+              <div class="bracket">
+                <span class="bracket-l"></span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="10"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="60"></math-field></div>
+                </div>
+                <span class="comma">,</span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="54"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="60"></math-field></div>
+                </div>
+                <span class="bracket-r"></span>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box"><span>1</span><span>6</span></div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box"><span>9</span><span>10</span></div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box"><span>1×10</span><span>6×10</span></div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box"><span>9×6</span><span>10×6</span></div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box"><span>10</span><span>60</span></div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box"><span>54</span><span>60</span></div>
+                    <span class="bracket-r"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 class="title" lang="y">두 분모의 최소공배수를 공통분모로 하여 통분해 보세요.</h3>
+          <div class="flex dir_col">
+            <div class="question_box">
+              <div class="item flex align_center gap_4">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>6</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <div class="flex align_center">
+                    <span>1 × </span>
+                    <div class="input_wrap"><math-field data-answer-single="5"></math-field></div>
+                  </div>
+                  <span>6 × 5</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="5"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="30"></math-field></div>
+                </div>
+                ,
+                <div class="fraction_box">
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+              </div>
+              =
+              <div class="item flex align_center gap_4">
+                <div class="fraction_box">
+                  <div class="flex align_center">
+                    <span>9 × </span>
+                    <div class="input_wrap"><math-field data-answer-single="3"></math-field></div>
+                  </div>
+                  <span>10 × 3</span>
+                </div>
+              </div>
+              =
+              <div class="item flex align_center gap_4">
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="27"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="30"></math-field></div>
+                </div>
+              </div>
+            </div>
+            <div class="question_box bottom">
+              <div class="bracket">
+                <span class="bracket-l"></span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="5"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="30"></math-field></div>
+                </div>
+                <span class="comma">,</span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="27"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="30"></math-field></div>
+                </div>
+                <span class="bracket-r"></span>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box"><span>1</span><span>6</span></div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box"><span>9</span><span>10</span></div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box"><span>1×5</span><span>6×5</span></div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box"><span>9×3</span><span>10×3</span></div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box"><span>5</span><span>30</span></div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box"><span>27</span><span>30</span></div>
+                    <span class="bracket-r"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_08_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_08.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_08_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_pink">
+          <div>
+              <span lang="y">점 ㅇ을 대칭의 중심으로 하는 점대칭도형에서 대응변의 길이와 대응각의 크기를 알아봅시다.</span>
+              <button type="button" class="icon_supplies" lang="y" data-supplies="pop_supplies_area_1">준비물</button>
+              <button type="button" class="btn ruler">자</button>
+              <button type="button" class="btn protractor">각도기</button>
+          </div>
+      </h2>
+    </section>
+    <!--준비물 팝업-->
+    <div class="pop_area pop_supplies_area pop_supplies_area_1">
+      <div class="supplies_zoom_wrap">
+        <button type="button" class="close"></button>
+        <div class="supplies_zoom scrollable">
+          <div class="supplies_box_wrap">
+            <div class="supplies_box">
+              <div class="supplies_tit">삼각자, 각도기, 자</div>
+              <div class="supplies_contents">
+                <img src="../../common_contents/img/EMA523_02_SU/0004_supplies.png" alt="준비물 도형" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="controller">
+            <button class="supplies_scale_down" disabled></button>
+            <button class="supplies_scale_up"></button>
+        </div>
+      </div>
+    </div>
+    <!--//준비물 팝업-->
+    
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">변 ㄱㄴ, 변 ㄴㄷ, 변 ㄷㄹ의 대응변을 각각 찾고, 변의 길이를 재어 비교해 보세요.​</h3>
+        <div class="input_area">
+          <div class="figure_box">
+            <span>
+              <svg width="334" height="168" viewBox="0 0 334 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M140.317 175.741L21.8866 76.1306L1.95361 1.375" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+                <path d="M194.413 1.375L312.436 100.685L332.478 175.741" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+                <path d="M171.058 88.5714C171.047 89.3353 170.812 90.0789 170.382 90.7088C169.951 91.3386 169.346 91.8267 168.64 92.1116C167.935 92.3965 167.161 92.4654 166.417 92.3099C165.672 92.1543 164.99 91.781 164.456 91.2371C163.922 90.6932 163.56 90.0028 163.416 89.2528C163.271 88.5029 163.351 87.7267 163.644 87.022C163.938 86.3172 164.432 85.7153 165.065 85.292C165.698 84.8687 166.441 84.6428 167.202 84.6427C167.709 84.639 168.212 84.7368 168.682 84.9302C169.151 85.1236 169.578 85.4088 169.936 85.7693C170.295 86.1298 170.579 86.5583 170.772 87.03C170.964 87.5017 171.061 88.0071 171.058 88.5169" fill="#E6007E"/>
+                <path d="M1.95361 1.375H194.413" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+                <path d="M332.75 175.742H140.317" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="figure_triangle">
+              <span class="txt_1" lang="y">ㄱ</span>
+              <span class="txt_2" lang="y">ㄴ</span>
+              <span class="txt_3" lang="y">ㄷ</span>
+              <span class="txt_4" lang="y">ㄹ</span>
+              <span class="txt_5" lang="y">ㅁ</span>
+              <span class="txt_6" lang="y">ㅂ</span>
+              <span class="txt_7" lang="y">ㅇ</span>
+            </div>
+          </div>
+          <div class="question_box align_start mt_25">
+            <ul class="form_box">
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">변 ㄱㄴ</span>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2"  data-hint-position="up">
+                    <math-field data-answer-single="1"></math-field>
+                  </div>
+                  <span lang="y">㎝</span>
+                </div>
+              </li>
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">변</span>
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="ㄹㅁ"></math-field>
+                  </div>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="1"></math-field>
+                  </div>
+                  <span lang="y">㎝</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="form_box">
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">변 ㄴㄷ</span>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2"  data-hint-position="up">
+                    <math-field data-answer-single="2"></math-field>
+                  </div>
+                  <span lang="y">㎝</span>
+                </div>
+              </li>
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">변</span>
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="ㅁㅂ"></math-field>
+                  </div>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="2"></math-field>
+                  </div>
+                  <span lang="y">㎝</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="form_box">
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">변 ㄷㄹ</span>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2" data-hint-position="up">
+                    <math-field data-answer-single="2.5"></math-field>
+                  </div>
+                  <span lang="y">㎝</span>
+                </div>
+              </li>
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">변</span>
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="ㅂㄱ"></math-field>
+                  </div>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="2.5"></math-field>
+                  </div>
+                  <span lang="y">㎝</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">각 ㄱㄴㄷ, 각 ㄴㄷㄹ, 각 ㄷㄹㅁ의 대응각을 각각 찾고, 각의 크기를 재어 비교해 보세요.​</h3>
+        <div class="input_area">
+          <div class="figure_box">
+            <span>
+              <svg width="334" height="168" viewBox="0 0 334 177" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M140.317 175.741L21.8866 76.1306L1.95361 1.375" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+                <path d="M194.413 1.375L312.436 100.685L332.478 175.741" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+                <path d="M171.058 88.5714C171.047 89.3353 170.812 90.0789 170.382 90.7088C169.951 91.3386 169.346 91.8267 168.64 92.1116C167.935 92.3965 167.161 92.4654 166.417 92.3099C165.672 92.1543 164.99 91.781 164.456 91.2371C163.922 90.6932 163.56 90.0028 163.416 89.2528C163.271 88.5029 163.351 87.7267 163.644 87.022C163.938 86.3172 164.432 85.7153 165.065 85.292C165.698 84.8687 166.441 84.6428 167.202 84.6427C167.709 84.639 168.212 84.7368 168.682 84.9302C169.151 85.1236 169.578 85.4088 169.936 85.7693C170.295 86.1298 170.579 86.5583 170.772 87.03C170.964 87.5017 171.061 88.0071 171.058 88.5169" fill="#E6007E"/>
+                <path d="M1.95361 1.375H194.413" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+                <path d="M332.75 175.742H140.317" stroke="#1D1D1B" stroke-width="2.04143" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="figure_triangle">
+              <span class="txt_1" lang="y">ㄱ</span>
+              <span class="txt_2" lang="y">ㄴ</span>
+              <span class="txt_3" lang="y">ㄷ</span>
+              <span class="txt_4" lang="y">ㄹ</span>
+              <span class="txt_5" lang="y">ㅁ</span>
+              <span class="txt_6" lang="y">ㅂ</span>
+              <span class="txt_7" lang="y">ㅇ</span>
+            </div>
+          </div>
+          <div class="question_box align_start mt_20">
+            <ul class="form_box">
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">각 ㄱㄴㄷ</span>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2" data-hint-position="up">
+                    <math-field data-answer-single="145"></math-field>
+                  </div>
+                  <span lang="y">˚</span>
+                </div>
+              </li>
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">각</span>
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="ㄹㅁㅂ"></math-field>
+                  </div>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="145"></math-field>
+                  </div>
+                  <span lang="y">˚</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="form_box">
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">각 ㄴㄷㄹ</span>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2" data-hint-position="up">
+                    <math-field data-answer-single="140"></math-field>
+                  </div>
+                  <span lang="y">˚</span>
+                </div>
+              </li>
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">각</span>
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="ㅁㅂㄱ"></math-field>
+                  </div>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="140"></math-field>
+                  </div>
+                  <span lang="y">˚</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="form_box">
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">각 ㄷㄹㅁ</span>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2" data-hint-position="up">
+                    <math-field data-answer-single="75"></math-field>
+                  </div>
+                  <span lang="y">˚</span>
+                </div>
+              </li>
+              <li>
+                <div class="vertical1" lang="y">
+                  <span lang="y">각</span>
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="ㅂㄱㄴ"></math-field>
+                  </div>
+                </div>
+                <div class="vertical2">
+                  <div class="input_wrap input2">
+                    <math-field data-answer-single="75"></math-field>
+                  </div>
+                  <span lang="y">˚</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">점대칭도형에서 대응변의 길이와 대응각의 크기에 대해 알게 된 점을 이야기해 보세요.</h3>
+        <div class="question_box mt_20 justify_center">
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">점대칭도형은 대응변의 길이와 대응각의 크기가 각각 같습니다.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_4">
+        <div class="summarize_wrap">
+          <div class="summarize">
+            <label lang="y">정리해 볼까요</label>
+            <div>
+              <span lang="y">점대칭도형은 </span>
+              <button class="reveal_btn" lang="y">대응변</button>
+              <span lang="y" class="small-gap">의 길이와</span>
+              <button class="reveal_btn" lang="y">대응각</button>
+              <span lang="y" class="small-gap">의</span>
+            </div>
+            <div>
+              <span lang="y">크기가 각각 같습니다.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

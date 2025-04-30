@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" /> -->
+    <meta content="width=1715,height=764" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="../../common_finish/common/css/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <title>차시마무리 평가</title>
+    <script src="../../common_finish/common/js/jquery.min.js"></script>
+    <script src="../../common_finish/common/js/jquery-ui.min.js"></script>
+    <script src="../../common_finish/common/js/jquery.ui.touch-punch.min.js"></script>
+    <script id="MathJax-script" async src="../../common_finish/common/js/MathJax/tex-chtml.js"></script>
+    <script type="module" src="../../common_finish/common/js/main.js"></script>
+  </head>
+  <style>
+    #q1 .qe_area .item {
+      width: 450px;
+    }
+  </style>
+  <body>
+    <div id="scaleWrapper">
+      <div id="intro" class="intro_2">
+        <div class="inner">
+          <div class="top">
+            <span lang="y" class="danwon_num">2단원</span>
+            <span lang="y" class="danwon_name">평면도형</span>
+          </div>
+          <h1 lang="y" class="title">마무리 평가</h1>
+          <p lang="y" class="qe_num">문항수 : 5개</p>
+          <p lang="y" class="guide">
+            답안 제출 기회는 2번씩 있어요.<br />
+            준비가 되면 시작 버튼을 눌러 주세요.<br />
+            준비되었나요?
+          </p>
+          <button lang="y" type="button" class="intro_btn">시작하기</button>
+        </div>
+      </div>
+      <div id="quest">
+        <div class="nav">
+          <div class="pagination">
+            <button type="button" class="p1 on" aria-current="page" aria-label="현재 페이지1">
+              <span>1</span>
+            </button>
+            <button type="button" class="p2" aria-label="페이지2">
+              <span>2</span>
+            </button>
+            <button type="button" class="p3" aria-label="페이지3">
+              <span>3</span>
+            </button>
+            <button type="button" class="p4" aria-label="페이지4">
+              <span>4</span>
+            </button>
+            <button type="button" class="p5" aria-label="페이지5">
+              <span>5</span>
+            </button>
+          </div>
+          <div class="center">
+            <button type="button" class="submit disable"><img src="../../common_finish/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+          </div>
+        </div>
+
+        <div id="q1" class="page on">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">비율이 1보다 큰 것은 어느 것일까요?</span>
+            </div>
+            <div class="qe_area">
+              <fieldset class="item_wrap" role="group" aria-labelledby="q1-label">
+                <legend id="q1-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">5:6</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">9에 대한 4의 비</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">13 대 21</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">15와 8의 비</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">11의 13에 대한 비</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div id="q2" class="page">
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">다음 자동차의 걸린 시간에 대한 달린 거리의 비율을 구하세요.</span>
+              </div>
+              <div class="qe_area">
+                <table border="1">
+                  <thead>
+                    <tr>
+                      <th>항목</th>
+                      <th>값</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>달린 거리</td>
+                      <td>480 ㎞</td>
+                    </tr>
+                    <tr>
+                      <td>걸린 시간</td>
+                      <td>6시간</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="ans_wrap mt20">
+                  <div class="ans">
+                    <label for="answer2" class="sr-only">첫 번째 정답 입력</label>
+                    <input type="text" id="answer2" class="answer answer2 active" readonly />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="q3" class="page">
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">8:13을 보고 빈칸에 알맞은 수를 써 보세요. </span>
+              </div>
+              <div class="qe_area">
+                <div class="ans_row">
+                  <div class="ans_wrap">
+                    <span class="exp">기준량</span>
+                    <div class="ans">
+                      <label for="answer3-1" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer3-1" class="answer answer3-1 active" readonly />
+                    </div>
+                    <span class="exp">비교하는 양 </span>
+                    <div class="ans">
+                      <label for="answer3-2" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer3-2" class="answer answer3-2 active" readonly />
+                    </div>
+                    <span class="exp">비율(분수)</span>
+                    <div class="frac_ans">
+                      <div class="ans">
+                        <label for="answer3-3" class="sr-only">첫 번째 정답 입력</label>
+                        <input type="number" id="answer3-3" class="answer answer3-3 active" readonly />
+                      </div>
+                      <hr />
+                      <div class="ans">
+                        <label for="answer3-4" class="sr-only">첫 번째 정답 입력</label>
+                        <input type="number" id="answer3-4" class="answer answer3-4" readonly />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" readonly aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="q4" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">세 비를 보고 비율이 가장 높은 것을 골라 보세요.</span>
+            </div>
+            <div class="qe_area center">
+              <fieldset class="item_wrap vertical3" role="group" aria-labelledby="q2-label">
+                <legend id="q2-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">㉠ 24 : 30</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">㉡ 18 : 25</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">㉢ 15 : 20</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q5" class="page">
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">빈칸 안에 들어갈 알맞은 수를 써 보세요. </span>
+              </div>
+              <div class="qe_area">
+                <div class="ans_row">
+                  <div class="ans_wrap">
+                    <span class="exp">25에 대한 16의 비를 소수로 나타내면</span>
+                    <div class="ans">
+                      <label for="answer5" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer5" class="answer answer5 active" readonly />
+                    </div>
+                    <span class="exp ga">입니다.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="submitModal" class="modal">
+        <div class="modal-content">
+          <p lang="y" class="modal-message">이대로 제출하겠습니까?</p>
+          <div class="modal-buttons">
+            <button lang="y" type="button" class="modal-cancel">취소</button>
+            <button lang="y" type="button" class="modal-confirm">제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /* 
+    각 문항의 유형 + (답안 예시)
+    1. : 입력형           input.answer
+    2. : item 선택형      .answer.selected
+    3. : 선택지 선택형     .answer:checked
+    4. : D&D              .dropped-item
+    5. : 선긋기           
+    */
+      window.questionTypes = [3, 1, 1, 2, 1];
+      window.correctAnswers = {
+        1: ["item4"],
+        2: [80],
+        3: [13, 8, 8, 13],
+        4: ["item2"],
+        5: [0.64],
+      };
+    </script>
+  </body>
+</html>

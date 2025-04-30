@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_08_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema524_08_ih_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_08_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y"><span class="label_bogi" lang="y">보기</span>를 이용하여 식을 완성해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center gap_60">
+          <div class="bogi_box">
+            <span class="label_bogi" lang="y">보기</span>
+            <div class="conts_bogi justify_center">52×76=3952</div>
+          </div>
+          <div class="flex dir_col gap_20">
+            <div class="flex align_center">
+              5.2×
+              <div class="input_wrap">
+                <math-field data-answer-single="7.6"></math-field>
+              </div>
+              =39.52
+            </div>
+            <div class="flex align_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="0.052"></math-field>
+              </div>
+              ×7600=395.2
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet">5.2는 52에서 소수점이 왼쪽으로 한 자리, 39.52는 3952에서 소수점이 왼쪽으로 두 자리 옮겨졌으므로 <span class="empty_box nemo"></span> 안에 알맞은 수는 76에서 소수점이 왼쪽으로 한 자리 옮겨진 7.6입니다.</p>
+                <p class="text_bullet">7600은 76에서 0이 2개 늘어났고, 395.2는 3952에서 소수점이 왼쪽으로 한 자리 옮겨졌으므로 <span class="empty_box nemo"></span> 안에 알맞은 수는 52에서 소수점이 왼쪽으로 세 자리 옮겨진 0.052입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EMA613_10_SU_0003_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+        <!-- 개별별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css"/>
+    </head>
+    <body>
+        <div id="app_wrap" class="ema613_10_su_0003 play-howto-layout">
+            <section class="title">
+                <h2 data-text="놀이방법" lang="y">
+                    <span class="title-play">
+                        <span class="point"></span>놀이</span>
+                    방법</span>
+                <span class="howto num1">순서대로 원하는 땅을 향해 클립을 튕깁니다.</span>
+                <span class="howto num2">클립이 여러 땅에 걸친 경우 클립이 더 많이 걸친 땅이 도착한 땅이 됩니다. 또, 클립이 색칠된 땅에 도착하거나 놀이판 밖으로 나간 경우 클립을 <span class="shoot">발사</span>에 놓고 다시 한번 튕깁니다.</span>
+                <span class="howto num3">클립이 도착한 땅에 있는 나눗셈을 합니다. 이때<img src="../../common_contents/img/EMA613_10_SU/0003_icon_1.png" alt="계산기" class="icon_calculator">가 있으면 계산기로 계산할 수 있습니다. 상대방은 답이 맞는지 계산기로 확인합니다. <span class="item1"></span>, <span class="item2"></span>에 도착한 경우에는 각 땅에 적힌대로 수행합니다.
+                </span>
+                <span class="howto num4">옳게 계산했으면 색연필로 땅을 색칠하고, 잘못 계산했으면 색칠하지 않습니다. 클립을 다시 <span class="shoot">발사</span>에 놓습니다.</span>
+                <span class="howto num5">
+                    순서에 따라<img src="../../common_contents/common/img/icon_howto_num1_4.svg" alt="">의 순서대로 놀이를 반복합니다. 정해진 시간 동안 더 많은 땅을 색칠한 사람이 이깁니다.
+                </span>
+            </h2>
+
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <!-- flex dir_col -->
+
+                        <img src="../../common_contents/img/EMA613_10_SU/0003_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="../../common_contents/img/EMA613_10_SU/0003_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="../../common_contents/img/EMA613_10_SU/0003_img_3.png" alt="">
+                    </article>
+                    <article class="page page_4">
+                        <img src="../../common_contents/img/EMA613_10_SU/0003_img_4.png" alt="">
+                    </article>
+                    <article class="page page_5">
+
+                        <img src="../../common_contents/img/EMA613_10_SU/0003_img_5.png" alt="">
+                    </article>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="btnBgDefault" lang="y">활동 영상</button>
+                </div>
+                <div>
+                    <button class="btnBgDefault student" lang="y" disabled="disabled">내 모둠 확인하기</button>
+                </div>
+                <div>
+                    <button class="btnBgDefault teacher" lang="y">모둠 구성하기</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

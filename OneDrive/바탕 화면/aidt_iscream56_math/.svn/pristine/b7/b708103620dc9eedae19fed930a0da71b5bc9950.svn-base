@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_05_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema524_08_ih_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_05_su_0006"> 
+      <section class="title type2">
+        <h2 data-head="4_deep_green" lang="y">작품을 만드는 데 색점토를 더 많이 사용한 사람은 누구인지 어림셈하여 구하고, 어떻게 어림셈했는지 이야기해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box flex justify_center">
+          <div>
+            <p class="f20b" lang="y">
+              나는 색점토 50 g의<br />
+              0.75배만큼 사용하여<br />
+              고양이를 만들었어.
+            </p>
+            <p class="f20b" lang="y">
+              나는 색점토 50 g의<br />
+              1.25배만큼 사용하여<br />
+              강아지를 만들었어.
+            </p>
+          </div>
+          
+          <div class="top">
+            <div class="inr boolean_wrap">
+              <button type="button" data-answer-single="false" class="item">
+                <span class="f24b" lang="y">은찬</span>
+              </button>
+              <button type="button" data-answer-single="true" class="item">
+                <span class="f24b" lang="y">예린</span>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="text-align_center">
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">1보다 큰 수를 곱하면 계산 결과는 곱해지는 수보다 커지므로 색점토를 더 많이 사용한 사람은 예린입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

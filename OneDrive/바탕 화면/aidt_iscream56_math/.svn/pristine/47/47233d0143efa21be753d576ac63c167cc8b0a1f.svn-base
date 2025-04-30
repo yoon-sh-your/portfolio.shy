@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_07_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_07_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">
+          분수와 소수의 크기를 비교하여 <span class="circle_blank"></span>&nbsp;안에 <img src="./../../common_contents/common/img/icon_arrow_right.svg" alt="크다" /><span class="ml-14">,</span> <img src="./../../common_contents/common/img/icon_equal.svg" alt="같다" /><span class="ml-14">,</span>
+          <img src="./../../common_contents/common/img/icon_arrow_left.svg" alt="작다" />
+          중 알맞은 것을 고르세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_center justify_center">
+          <div class="question_box">
+            <div class="fraction_box">
+              <span>2</span>
+              <span>5</span>
+            </div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single="=">
+                <option></option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<"><</option>
+              </select>
+            </div>
+            <span>0.4</span>
+          </div>
+          <div class="question_box">
+            <span>0.7</span>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single="<">
+                <option></option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<"><</option>
+              </select>
+            </div>
+            <div class="fraction_box">
+              <span>18</span>
+              <span>25</span>
+            </div>
+          </div>
+          <div class="question_box">
+            <div class="flex align_center gap_4">
+              <span>5</span>
+              <div class="fraction_box">
+                <span>7</span>
+                <span>20</span>
+              </div>
+            </div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single=">">
+                <option></option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<"><</option>
+              </select>
+            </div>
+            <span>5.3</span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="text_bullet" lang="y">
+                  <div class="fraction_box">
+                    <span>2</span>
+                    <span>5</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>10</span>
+                  </div>
+                  =0.4이므로&nbsp;
+                  <div class="fraction_box">
+                    <span>2</span>
+                    <span>5</span>
+                  </div>
+                  =0.4입니다.
+                </div>
+                <div class="text_bullet" lang="y">
+                  0.7=
+                  <div class="fraction_box">
+                    <span>7</span>
+                    <span>10</span>
+                  </div>
+                  이고,
+                  <div class="fraction_box">
+                    <span>7</span>
+                    <span>10</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>35</span>
+                    <span>50</span>
+                  </div>
+                  ,
+
+                  <div class="fraction_box">
+                    <span>18</span>
+                    <span>25</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>36</span>
+                    <span>50</span>
+                  </div>
+                  이므로 0.7&lt;
+                  <div class="fraction_box">
+                    <span>18</span>
+                    <span>25</span>
+                  </div>
+                  입니다.
+                </div>
+                <div class="text_bullet" lang="y">
+                  <div class="fraction_box_wrap">
+                    <span>5</span>
+                    <div class="fraction_box">
+                      <span>7</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="fraction_box_wrap">
+                    <span>5</span>
+                    <div class="fraction_box">
+                      <span>35</span>
+                      <span>100</span>
+                    </div>
+                  </div>
+                  =5.35 이므로
+                  <div class="fraction_box_wrap">
+                    <span>5</span>
+                    <div class="fraction_box">
+                      <span>7</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                  &gt;5.3입니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

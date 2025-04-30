@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA622_02_IH_0005</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema622_02.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema622_02_ih_0005">
+			<section class="title type2">
+				<h2 data-head="5_green" lang="y">
+					몫을 찾아 이어 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="flex align_center gap_12">
+						<ul class="connect_line_box start">
+							<li>3.2 ÷ 0.4</li>
+							<li>14.7 ÷ 2.1</li>
+							<li>7.8 ÷ 1.3</li>
+						</ul>
+						<div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e2"],["s3","e1"]]'>
+							<div class="start_group">
+								<div class="connect_point" data-id="s1"></div>
+								<div class="connect_point" data-id="s2"></div>
+								<div class="connect_point" data-id="s3"></div>
+							</div>
+							<div class="end_group">
+								<div class="connect_point" data-id="e1"></div>
+								<div class="connect_point" data-id="e2"></div>
+								<div class="connect_point" data-id="e3"></div>
+							</div>
+							<svg class="connect_lines"></svg>
+						</div>
+						<ul class="connect_line_box end">
+							<li>6</li>
+							<li>7</li>
+							<li>8</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

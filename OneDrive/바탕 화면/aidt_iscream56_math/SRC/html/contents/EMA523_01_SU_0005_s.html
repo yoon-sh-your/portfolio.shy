@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_01_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema523_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_01_su_0005">
+      <section class="title type2">
+        <h2 data-icon="speech">그림을 보고 생활에서 똑같은 모양을 보았던 경험을 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="picture_wrap type2" data-head="" data-tit="그림을 보고 생활에서 똑같은 모양을 보았던 경험을 이야기해 봅시다.">
+            <!-- img태그의 src를 참조하므로 확대할 이미지를 이미지태그 대신 일반태그에 background로 설정해서 사용하는 형태는 안됩니다. -->
+            <img src="../../common_contents/img/EMA523_01_SU/0003_content.png" alt="활동 이미지" />
+            <button class="zoom"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">포장지에서 똑같은 무늬를 보았습니다.</li>
+                <li lang="y">벽지에서 똑같은 무늬를 보았습니다.</li>
+                <li lang="y">똑같은 모양으로 된 보도블록을 보았습니다.</li>
+                <li lang="y">미술 작품에서 같은 그림이 반복되는 것을 보았습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <!-- <button class="btnSample">예시</button> -->
+          <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

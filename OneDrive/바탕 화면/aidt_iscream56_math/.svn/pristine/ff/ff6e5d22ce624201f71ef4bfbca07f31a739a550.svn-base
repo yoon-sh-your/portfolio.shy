@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_01_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_01_su_0003">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 2">
+          <span class="blue line" lang="y">배운 내용을 떠올려요</span>
+          <span lang="y">카드를 선택하여 이전에 배운 내용을 확인해 봅시다.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <ul class="letCheck">
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">원의 구성 요소 알아보기</p>
+            </div>
+
+            <div class="back">
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA625_01_SU/0003_content_01.png" alt="원 이미지">
+
+                <p class="t01" lang="y">원의 지름</p>
+                <p class="t02" lang="y">원의 반지름</p>
+                <p class="t03" lang="y">원의 중심</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">다각형의 둘레와 넓이 구하기</p>
+            </div>
+            <div class="back">
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA625_01_SU/0003_content_02.png" alt="다각형">
+
+                <p class="t04" lang="y">4 ㎝</p>
+                <p class="t05" lang="y">둘레의 길이: 24 ㎝</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">소수의 곱셈하기</p>
+            </div>
+            <div class="back">
+              <p class="f32b" lang="y">7×0.7=4.9</p>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">소수의 나눗셈하기</p>
+            </div>
+            <div class="back">
+              <p class="f32b" lang="y">8.68÷2.17=4</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="bubble_charactor" data-charactor="1" style="display: none;">
+          <!-- 말풍선 영역 point-position 데이터 top legt, top right, bottom right, bottom left 중 하나 선택하면 말풍선 위치가 캐릭터 기준으로 변경됩니다.-->
+          <div class="bubble" data-point-position="bottom left">
+            <p lang="y">카드를 한 번 더 선택하면</p>
+            <p lang="y">내용을 볼 수 있어요.</p>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 불필요한 태그 제외 후 사용 -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

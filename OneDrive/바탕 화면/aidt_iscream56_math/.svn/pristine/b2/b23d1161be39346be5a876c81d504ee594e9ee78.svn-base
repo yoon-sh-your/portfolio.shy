@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_07_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <script src="./../../common_contents/js/ema526_07_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_07_su_0004">
+      <section class="title type2">
+        <h2 data-head="2_orange" lang="y">동전을 한 개 던질 때 일이 일어날 가능성을 수로 나타내어 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">그림면이 나올 가능성을 수로 나타내어 보세요.</h3>
+
+          <div class="flex">
+            <img src="../../common_contents/img/EMA526_07_SU/0004_content.png" alt="">
+
+            <div class="boolean_wrap">
+              <button data-answer-single="true">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </button>
+              <button data-answer-single="false">
+                <span>0</span>
+              </button>
+              <button data-answer-single="false">
+                <span>1</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">숫자면이 나올 가능성을 수로 나타내어 보세요.</h3>
+
+          <div class="flex">
+            <img src="../../common_contents/img/EMA526_07_SU/0004_content.png" alt="">
+
+            <div class="boolean_wrap">
+              <button data-answer-single="true">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </button>
+              <button data-answer-single="false">
+                <span>0</span>
+              </button>
+              <button data-answer-single="false">
+                <span>1</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

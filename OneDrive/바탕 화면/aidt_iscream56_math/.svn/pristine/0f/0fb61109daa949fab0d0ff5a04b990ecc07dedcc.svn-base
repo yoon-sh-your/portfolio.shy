@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema612_07_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_07.css" />
+    <script src="../../common_practice/js/ema612_07_ih_0005.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema612_07_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_green" class="is_star" lang="y">두 입체도형의 공통점과 차이점을 각각 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA612_07_IH/0005_01.png" alt="" />
+          </div>
+          <div class="input_area mt_20">
+            <span class="label_gray" lang="y">공통점</span>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">두 입체도형은 밑면의 모양이 모두 삼각형입니다.</p>
+              </div>
+            </div>
+          </div>
+          <div class="input_area mt_20">
+            <span class="label_gray" lang="y">차이점</span>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">각기둥은 밑면이 2개, 각뿔은 밑면이 1개입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">두 입체도형은 밑면의 모양이 모두 삼각형이지만 각기둥은 밑면이 2개, 각뿔은 밑면이 1개입니다. 각기둥의 옆면은 모두 직사각형이고, 각뿔의 옆 면은 모두 삼각형입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

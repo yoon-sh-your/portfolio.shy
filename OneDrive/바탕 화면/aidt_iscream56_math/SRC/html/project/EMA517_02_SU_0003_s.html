@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema517_02_su_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" />
+    <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema517_02_SU.css" />
+    <script src="../../common_project/js/ema517_02_su_0003.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema517_02_su_0003">
+      <section class="title">
+        <h2 data-head="2">
+          <span lang="y">밭을 나누어 채소밭 4개를 만들어 봅시다.​</span>
+        </h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="content">
+            <h3 lang="y">두 점을 선택하여 채소밭을 4개의 평행사변형, 삼각형, 사다리꼴 모양으로 나누고, 각각의 넓이가 몇 ㎡인지 구해 보세요.​​</h3>
+            <div class="main">
+              <div class="quiz_area">
+                <!-- <div class="image">
+                  <img src="./../../common_project/img/EMA517_02_SU/image_1.png" alt="" />
+                </div> -->
+                <div class="grid_guide">1 ㎠</div>
+                <!-- <div class="line"></div> -->
+                <div class="line_area" id="lineArea"></div>
+                <div class="drawline_grid">
+                  <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+                  <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+                  <div class="drawing_grid_area" id="drawingArea1" data-grid-size="21">
+                    <svg class="line_canvas"></svg>
+                  </div>
+                </div>
+                <button class="gridReset">리셋</button>
+              </div>
+              <div class="table_box">
+                <table>
+                  <thead>
+                    <th lang="y">밭의 모양</th>
+                    <th lang="y">밭의 넓이(㎡)</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="dropdown_wrap">
+                          <select class="custom_dropdown">
+                            <option></option>
+                            <!--최초선택데이터 생성 방지용-->
+                            <option value="평행사변형"></option>
+                            <option value="삼각형"></option>
+                            <option value="사다리꼴"></option>
+                          </select>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="input_wrap input2">
+                          <math-field></math-field>
+                          <ol class="example_box" style="display: none;">
+                              <li>더미</li>
+                          </ol>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown">
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="평행사변형"></option>
+                          <option value="삼각형"></option>
+                          <option value="사다리꼴"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="input_wrap input2">
+                          <math-field></math-field>
+                          <ol class="example_box" style="display: none;">
+                              <li>더미</li>
+                          </ol>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown">
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="평행사변형"></option>
+                          <option value="삼각형"></option>
+                          <option value="사다리꼴"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="input_wrap input2">
+                          <math-field></math-field>
+                          <ol class="example_box" style="display: none;">
+                              <li>더미</li>
+                          </ol>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <select class="custom_dropdown">
+                          <option></option>
+                          <!--최초선택데이터 생성 방지용-->
+                          <option value="평행사변형"></option>
+                          <option value="삼각형"></option>
+                          <option value="사다리꼴"></option>
+                        </select>
+                      </td>
+                      <td>
+                        <div class="input_wrap input2">
+                          <math-field></math-field>
+                          <ol class="example_box" style="display: none;">
+                              <li>더미</li>
+                          </ol>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="page_wrap">
+            <div class="quiz_area">
+              <!-- <div class="image">
+                  <img src="./../../common_project/img/EMA517_02_SU/image_1.png" alt="" />
+                </div> -->
+              <div class="grid_guide">1 ㎠</div>
+              <div class="line_area" id="lineArea2"></div>
+              <div class="drawline_grid">
+                <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+                <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+
+                <div class="drawing_grid_area" id="drawingArea1" data-grid-size="21">
+                  <svg class="line_canvas"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="input_section">
+              <h3 class="page_title">모둠 친구들이 만든 채소밭과 비교해 보세요.​</h3>
+
+              <div class="input_area">
+                <div class="input_wrap">
+                  <math-field class="textarea" id="inputElement01" type="text"></math-field>
+                  <div class="example_box">
+                    <p lang="y">모둠에 있는 친구들이 모두 다양하게 채소밭을 나누었습니다.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_03_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_03_su_0006">
+      <section class="title type2">
+        <h2 data-type="11" data-text="창의+">
+            <div>
+                <span lang="y">우리 모둠이 지난달에 읽은 책 수를 조사하고, 우리 모둠이 지난달에 읽은 책 수의 평균은 몇 권인지 구해 봅시다.</span>
+                <button type="button" class="btn calculator">계산기</button>
+            </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">우리 모둠이 지난달에 읽은 책 수를 조사하여 표로 나타내어 보세요.</h3>
+
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">학생별 지난달에 읽은 책 수</p>
+            </div>
+          </div>
+
+          <div class="table_box">
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">이름</th>
+                  <td>
+                    <div class="input_wrap" data-hint-position="up">
+                      <math-field data-answer-single="윤호" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="up">
+                      <math-field data-answer-single="주아" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="up">
+                      <math-field data-answer-single="은찬" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap" data-hint-position="up">
+                      <math-field data-answer-single="가은" text-align="center"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y">책 수(권)</th>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field type="number" data-answer-single="4" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field type="number" data-answer-single="8" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">우리 모둠이 지난달에 읽은 책 수의 평균은 몇 권인가요? 다른 모둠의 평균과 비교해 보세요.</h3>
+
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+            </div>
+            <span lang="y">권</span>
+          </div>
+
+          <div class="bubble_box">
+            <span lang="y">
+              우리 모둠이 책을<br>
+              가장 많이 읽었네.
+            </span>
+            <img src="../../common_contents/img/EMA526_03_SU/0006_content.svg" alt="">
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true" data-check="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

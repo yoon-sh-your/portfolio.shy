@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_02_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_02_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">각기둥을 찾아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">각기둥을 모두 고르세요.</h3>
+
+          <div class="boolean_wrap">
+            <button data-answer-single="true">
+              <span class="num">가</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_01.png" alt="사각기둥">
+            </button>
+            
+            <button data-answer-single="false">
+              <span class="num">나</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_02.png" alt="원기둥">
+            </button>
+
+            <button data-answer-single="true">
+              <span class="num">다</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_03.png" alt="육각기둥">
+            </button>
+
+            <button data-answer-single="false">
+              <span class="num">라</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_04.png" alt="삼각뿔">
+            </button>
+
+            <button data-answer-single="false">
+              <span class="num">마</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_05.png" alt="육각기둥">
+            </button> 
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">각기둥이 아닌 도형을 모두 고르고, 그 이유를 이야기해 보세요.</h3>
+
+          <div class="boolean_wrap">
+            <button data-answer-single="false">
+              <span class="num">가</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_01.png" alt="사각기둥">
+            </button>
+            
+            <button data-answer-single="true">
+              <span class="num">나</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_02.png" alt="원기둥">
+            </button>
+
+            <button data-answer-single="false">
+              <span class="num">다</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_03.png" alt="육각기둥">
+            </button>
+
+            <button data-answer-single="true">
+              <span class="num">라</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_04.png" alt="삼각뿔">
+            </button>
+
+            <button data-answer-single="true">
+              <span class="num">마</span>
+              <img src="../../common_contents/img/EMA612_02_SU/0004_diagram_05.png" alt="육각기둥">
+            </button> 
+          </div>
+
+          <div class="text_area">
+            <span class="f32b" lang="y">이유</span>
+            <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                    <p lang="y">나는 모든 면의 모양이 다각형이 아니므로 각기둥이 아닙니다. 라는 평행한 두 면이 없으므로 각기둥이 아닙니다. 마는 평행한 두 면이 합동이 아니므로 각기둥이 아닙니다.</p>
+                </div>
+            </div>
+        </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnCheck" data-look="submit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_07_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema525_06_0002.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_07_su_0002">
+      <section class="title type4 mt_20">
+        <h2 lang="y">직육면체를 이용하여 장난감을 만들어 봅시다.​</h2>
+      </section>
+        
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="contents_img">
+            <ul>
+              <li><span lang="y">머리</span></li>
+              <li><span lang="y">팔</span></li>
+              <li><span lang="y">몸통</span></li>
+              <li><span lang="y">다리</span></li>
+            </ul>
+            <img src="../../common_contents/img/EMA525_06_SU/0002_bg3.png" alt="육면체 장난감의 전개도 이미지"/>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">전개도를 그릴 때 생각할 점을 이야기해 보세요.</h3> 
+
+          <div class="input_area flex justify_center">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">전개도를 접었을 때 겹치는 면이 없도록 그립니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <h3 lang="y">각 부분의 전개도가 될 수 있는 면을 1개 더 찾아 색칠하여 전개도를 완성해 보세요.</h3> 
+          <div class="contents_img">
+            
+            <div class="character_img">
+              <p lang="y">색칠한 면에서 잘리지<br/>않는 모서리는 점선으로<br/>나타내야 해.</p>
+              <img src="../../common_contents/img/EMA525_06_SU/0002_image3.png" alt="색칠한 면을 설명해주는 캐릭터"/>
+            </div>
+            <div class="limit_btn_wrap">
+              <div class="boolean_wrap limit_btn_box box_1">
+                <button data-answer-single="false"></button>
+                <button data-answer-single="false"></button>
+                <button data-answer-single="true"></button>
+                <button data-answer-single="false"></button>
+                <button data-answer-single="false"></button>
+              </div>
+              <div class="boolean_wrap limit_btn_box box_2">
+                <button data-answer-single="false"></button>
+                <button data-answer-single="false"></button>
+                <button data-answer-single="false"></button>
+                <button data-answer-single="true"></button>
+                <button data-answer-single="false"></button>
+              </div>
+              <div class="boolean_wrap limit_btn_box box_3">
+                <button data-answer-single="false"></button>
+                <button data-answer-single="true"></button>
+                <button data-answer-single="false"></button>
+                <button data-answer-single="false"></button>
+              </div>
+              <div class="boolean_wrap limit_btn_box box_4">
+                <button data-answer-single="false"></button>
+                <button data-answer-single="false"></button>
+                <button data-answer-single="true"></button>
+                <button data-answer-single="false"></button>
+                <button data-answer-single="false"></button>
+              </div>
+            </div>
+            <ul>
+              <li><span lang="y">머리</span></li>
+              <li><span lang="y">팔</span></li>
+              <li><span lang="y">몸통</span></li>
+              <li><span lang="y">다리</span></li>
+            </ul>
+            <img src="../../common_contents/img/EMA525_06_SU/0002_bg3.png" alt="육면체 장난감의 전개도 이미지"/>
+          </div>
+        </article>
+        <article class="page page_4">
+          <h3 lang="y">전개도를 옳게 완성했는지 확인해 보세요.</h3> 
+          
+          <div class="contents_img">
+            <div class="boolean_wrap">
+              <button data-answer-single="true" class="cube_btn"><span class="f24b" lang="y">머리</span></button>
+              <button data-answer-single="true" class="cube_btn"><span class="f24b" lang="y">팔</span></button>
+              <button data-answer-single="true" class="cube_btn"><span class="f24b" lang="y">몸통</span></button>
+              <button data-answer-single="true" class="cube_btn"><span class="f24b" lang="y">다리</span></button>
+            </div>
+            <img src="../../common_contents/img/EMA525_06_SU/0002_bg2.png" alt="육면체 장난감의 전개도 이미지"/>
+            
+            <div class="cube_wrap _1">
+              <div class="cube_box">
+                <div class="cube">
+                  <div class="face front"></div>
+                  <div class="face back"></div>
+                  <div class="face left"><img src="../../common_contents/img/EMA525_06_SU/0002_image1.png" alt="전개도 이미지"/></div>
+                  <div class="face right"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cube_wrap _2">
+              <div class="cube_box">
+                <div class="cube">
+                  <div class="face front"></div>
+                  <div class="face back"></div>
+                  <div class="face left"></div>
+                  <div class="face right"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cube_wrap _3">
+              <div class="cube_box">
+                <div class="cube">
+                  <div class="face front"><img src="../../common_contents/img/EMA525_06_SU/0002_image2.png" alt="전개도 이미지"/></div>
+                  <div class="face back"></div>
+                  <div class="face left"></div>
+                  <div class="face right"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cube_wrap _4">
+              <div class="cube_box">
+                <div class="cube">
+                  <div class="face front"></div>
+                  <div class="face back"></div>
+                  <div class="face left"></div>
+                  <div class="face right"></div>
+                  <div class="face top"></div>
+                  <div class="face bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_5">
+          <h3 lang="y">장난감 설계도를 보고 장난감을 만들어 보세요.</h3> 
+          
+          <div class="contents_img">
+            <ul>
+              <li><span lang="y">장난감 설계도</span></li>
+              <li><span lang="y">머리</span></li>
+              <li><span lang="y">팔</span></li>
+              <li><span lang="y">몸통</span></li>
+              <li><span lang="y">다리</span></li>
+            </ul>
+            
+            <img src="../../common_contents/img/EMA525_06_SU/0002_bg4.png" alt="장난감 설계도를 보고 장난감 만드는 이미지"/>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

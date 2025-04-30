@@ -1,0 +1,194 @@
+.solve_area .bracket,
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+
+.input_wrap.fraction_wrap,
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+.fraction_box:has(.input_wrap) span {
+  line-height: 60px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+h3.title:before {
+  margin-top: 2px;
+}
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.ema514_07_ih_0001 .page_2 h3.title:before {
+  margin-top: 10px;
+}
+.ema514_07_ih_0001 .page_2 .question_box {
+  gap: 70px;
+  height: 230px;
+}
+
+.ema514_07_ih_0002 .obj_arrow {
+  width: 45px;
+}
+.ema514_07_ih_0002 .page_1 > .flex {
+  margin-top: 60px;
+}
+.ema514_07_ih_0002 .page_2 .question_box {
+  gap: 70px;
+  height: 230px;
+}
+
+.ema514_07_ih_0003 .contents > .flex {
+  gap: 100px;
+}
+.ema514_07_ih_0003 .question_box {
+  gap: 30px;
+}
+
+.ema514_07_ih_0004.failed .title h2[data-head]:after {background-image: url(../img/marking_failed-all.svg);}
+.ema514_07_ih_0004 .question_box {
+  width: 720px;
+  height: 146px;
+  margin: 0 auto;
+  justify-content: center;
+  background: url(../img/EMA514_07_IH/0004_bg.png) no-repeat center center;
+}
+
+.ema514_07_ih_0006 .img_box {
+  display: flex;
+  flex-direction: column;
+}
+.ema514_07_ih_0006 [class^='img_wrap'] {
+  position: relative;
+}
+.ema514_07_ih_0006 [class^='img_wrap'] > div {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: normal;
+}
+.ema514_07_ih_0006 [class^='img_wrap'] .name {
+  color: #fff;
+}
+.ema514_07_ih_0006 [class^='img_wrap'] .txt {
+  text-align: center;
+}
+.ema514_07_ih_0006 .img_wrap1 .name {
+  bottom: 26px;
+  left: 188px;
+}
+.ema514_07_ih_0006 .img_wrap1 .txt {
+  top: 22px;
+  left: 405px;
+  width: 550px;
+}
+.ema514_07_ih_0006 .img_wrap2 .name {
+  bottom: 25px;
+  right: 137px;
+}
+.ema514_07_ih_0006 .img_wrap2 .txt {
+  top: 54px;
+  left: 405px;
+  width: 550px;
+}
+
+.ema514_07_ih_0007 .img_wrap {
+  position: relative;
+}
+.ema514_07_ih_0007 .img_wrap .text_group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+}
+.ema514_07_ih_0007 .img_wrap .text_group .item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.ema514_07_ih_0007 .img_wrap .txt {
+  padding: 30px 0;
+}
+.ema514_07_ih_0007 .img_wrap .bottom {
+  display: flex;
+  align-items: center;
+  height: 188px;
+}
+.ema514_07_ih_0007 .page_2 .question_box {
+  justify-content: center;
+  padding-right: 400px;
+}
+.ema514_07_ih_0007 .tabbox {
+  position: relative;
+  width: 620px;
+  padding-top: 24px;
+}
+.ema514_07_ih_0007 .tabbox .tit_tabbox {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding: 0 20px;
+  border-radius: 16px;
+  background: #fef6ed;
+  line-height: 48px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #222222;
+}
+.ema514_07_ih_0007 .tabbox .conts_tabbox {
+  border-radius: 32px;
+  background: #fef6ed;
+  padding: 30px 20px 20px;
+}
+.ema514_07_ih_0007 .tabbox .dir_col > .input_wrap:first-child {
+  padding: 18px;
+  background: #fff;
+  border: 1px dashed #facc9c;
+  border-radius: 30px;
+}
+.ema514_07_ih_0007 .tabbox .input_wrap {
+  position: static;
+}
+.ema514_07_ih_0007 .tabbox .dir_col > div {
+  position: relative;
+}
+.ema514_07_ih_0007 .tabbox .input_wrap .textarea {
+  height: 284px;
+}
+.ema514_07_ih_0007 .tabbox .label_gray {
+  background-color: #fff;
+  color: #222;
+  padding: 0 10px;
+}
+.ema514_07_ih_0007 .tabbox .label_gray + .input_wrap math-field {
+  width: 232px;
+}
+.ema514_07_ih_0007 .tabbox .example_box {
+  position: absolute;
+  top: 0;
+  left: 612px;
+  margin: 0;
+  width: 470px;
+  max-height: none;
+}
+.ema514_07_ih_0007 .tabbox .example_box.e1 p {
+  display: block;
+}
+.ema514_07_ih_0007 .tabbox .example_box.e1 .fraction_box {
+  position: relative;
+  top: -7px;
+  margin: 0;
+}
+.ema514_07_ih_0007[data-current-page='page_1'] .btn_area {
+  display: none;
+}

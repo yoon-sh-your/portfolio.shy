@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_06_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_06.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_06_su_0004" data-current-page="page_1, page_2, page_3, page_4">
+        <section class="title type2">
+            <h2 data-head="2_green" lang="y">
+                톱니바퀴 장난감의 빨간색 톱니바퀴가 2바퀴 회전할 때 파란색 톱니바퀴는 5바퀴 회전합니다. 빨간색 톱니바퀴가 16바퀴 회전할 때 파란색 톱니바퀴는 몇 바퀴 회전하는지 구해 봅시다.
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">빨간색 톱니바퀴가 2바퀴 회전할 때 빨간색 톱니바퀴의 회전 수와 파란색 톱니바퀴의 회전 수의 비를 구해 보세요.</h3>
+                    <div class="flex_box justify_center">
+                        <div class="img_box">
+                            <img src="../../common_contents/img/EMA624_06_SU/624_06_0003.png" alt="">
+                        </div>
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="2:5" text-align="center"></math-field>
+                        </div>
+                    </div>
+                </article><!-- 1페이지 -->
+
+
+                <article class="page page_2">
+                    <h3 lang="y">
+                        <div class="flex flex_title">빨간색 톱니바퀴가 16바퀴 회전할 때 파란색 톱니바퀴의 회전 수를<span
+                                class="empty_box"></span>바퀴라
+                            하고, 앞에서 구한 비를 이용하여 비례식을
+                        </div>
+                        <div class="flex flex_title">
+                            세워 보세요.
+                        </div>
+                    </h3>
+                    <div class="flex_box justify_center">
+                        <div class="img_box">
+                            <img src="../../common_contents/img/EMA624_06_SU/624_06_0003.png" alt="">
+                        </div>
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="2:5" text-align="center"></math-field>
+                        </div>
+                    </div>
+                </article><!-- 2페이지 -->
+
+                <article class="page page_3">
+                    <h3 lang="y">비례식의 성질을 이용하여
+                        <span class="empty_box"></span>안에 알맞은 수를 구해 보세요.
+                    </h3>
+                    <div class="flex_box justify_center">
+                        <div class="img_box">
+                            <img src="../../common_contents/img/EMA624_06_SU/624_06_0003.png" alt="">
+                        </div>
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="2:5" text-align="center"></math-field>
+                        </div>
+                    </div>
+                </article> <!-- 3페이지 -->
+
+
+
+                <article class="page page_4">
+                    <h3 lang="y">빨간색 톱니바퀴가 16바퀴 회전할 때 파란색 톱니바퀴는 몇 바퀴 회전하나요?</h3>
+                    <div class="flex_box justify_center">
+                        <div class="img_box">
+                            <img src="../../common_contents/img/EMA624_06_SU/624_06_0003.png" alt="">
+                        </div>
+
+                        <div class="input_wrap">
+                            <math-field type="number" data-answer-single="40" text-align="center"></math-field>
+                            <span>바퀴</span>
+                        </div>
+                    </div>
+                </article> <!-- 4페이지 -->
+
+                <div class="btn_area">
+                    <button class="btnType">입력토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnSubmit" data-submit="true">확인</button>
+                    <button class="btnCheck">확인</button>
+                </div>
+        </section>
+    </div>
+</body>
+
+</html>

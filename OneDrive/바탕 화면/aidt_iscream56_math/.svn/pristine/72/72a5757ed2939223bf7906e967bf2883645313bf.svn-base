@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_08_SU_0008_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_08.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_08_su_0008">
+    <section class="title type2">
+      <!-- data-icon로 common/img폴더 내 icon_**.svg 형태 이미지 호출 **에 호출할 파일명 기입 시 해당 이미지 호출 가능-->
+      <h2 data-type="4" data-text="창의+" lang="y">점대칭도형을 완성하고, 완성한 점대칭도형을 이용하여 그림을 그려 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="cont_img_wrap">
+        <div class="input_area">
+          <div class="figure_box drawline_grid">
+            <div class="drawing_grid_area" data-grid-size='32'
+                     data-answer-single='[[{"x":224,"y":256},{"x":224,"y":416},{"x":416,"y":416},{"x":416,"y":352},{"x":288,"y":352},{"x":288,"y":256}]]' 
+                     data-sample-line='[[{"x":224,"y":256},{"x":224,"y":192},{"x":96,"y":192},{"x":96,"y":128},{"x":288,"y":128},{"x":288,"y":256}]]'>
+                <svg class="line_canvas"></svg>
+              </div>
+              
+              <!-- <div class="figure_triangle">
+                <div class="dot_wrap">
+                  <div class="dot dot1"></div>
+                  <div class="dot dot2"></div>
+                  <div class="dot dot3"></div>
+                  <div class="dot dot4"></div>
+                  <div class="dot dot5"></div>
+                  <div class="dot dot6"></div>
+                </div>
+              </div> -->
+          </div>
+          <div class="contImg_area">
+            <span><img src="../../common_contents/img/EMA523_08_SU/0008_content01.png" alt="이미지"></span>
+            <div class="text-box">
+              <span class="text" lang="y">바람개비를 완성하고<br>바람개비 공원의<br>모습을 그렸어.</span>
+              <img src="../../common_contents/img/EMA523_08_SU/0008_content02.svg" alt="이미지">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <!-- <button class="btnType key" lang="y">입력타입토글</button> -->
+        <button class="btnReset" lang="y">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

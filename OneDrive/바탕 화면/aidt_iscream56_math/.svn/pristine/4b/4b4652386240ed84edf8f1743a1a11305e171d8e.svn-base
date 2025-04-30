@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_03_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_03_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_orange">
+            <div>
+                <span lang="y">어느 박물관의 일주일 동안 관람객 수를 나타낸 표입니다. 박물관 관람객 수의 평균은 몇 명인지 구해 봅시다.</span>
+                <button type="button" class="btn calculator">계산기</button>
+            </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="table_box">
+          <div class="title" lang="y">요일별 박물관 관람객 수</div>
+          <table>
+            <tbody>
+              <tr>
+                <th lang="y">요일</th>
+                <td lang="y">월요일</td>
+                <td lang="y">화요일</td>
+                <td lang="y">수요일</td>
+                <td lang="y">목요일</td>
+                <td lang="y">금요일</td>
+                <td lang="y">토요일</td>
+                <td lang="y">일요일</td>
+              </tr>
+              <tr>
+                <th lang="y">기록 (회)</th>
+                <td>540</td>
+                <td>630</td>
+                <td>690</td>
+                <td>470</td>
+                <td>710</td>
+                <td>870</td>
+                <td>780</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="input_area">
+          <div class="input_wrap">
+            <math-field type="number" data-answer-single="670" text-align="center"></math-field>
+          </div>
+          <span lang="y">회</span>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_04_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_05.css" />
+  <script src="../../common_contents/js/ema523_04_0004.js"></script>
+
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_04_su_0004">
+    <section class="title type2">
+      <h2 data-head="2_pink">
+        <div>
+          <span lang="y">반으로 접었을 때 완전히 겹치는 도형을 알아봅시다.</span>
+          <button type="button" class="icon_supplies" lang="y" data-supplies="pop_supplies_area_1">준비물</button>
+        </div>
+      </h2>
+    </section>
+
+    <div class="pop_area pop_supplies_area pop_supplies_area_1">
+      <div class="supplies_zoom_wrap">
+        <button type="button" class="close"></button>
+        <div class="supplies_zoom scrollable">
+          <div class="supplies_box_wrap">
+            <div class="supplies_box">
+              <div class="supplies_tit">도형</div>
+              <div class="supplies_contents">
+                <img src="../../common_contents/img/EMA523_04_SU/0004_supplies.png" alt="준비물 도형" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="controller">
+            <button class="supplies_scale_down" disabled></button>
+            <button class="supplies_scale_up"></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">반으로 접었을 때 완전히 겹치는 도형은 어느 것일지 예상해 보세요.​</h3>
+        <div class="question_box justify_center">
+          <div class="figure_img_box example_box">
+            <span><img src="../../common_contents/img/EMA523_04_SU/0004_content01.svg" alt="도형이미지"></span>
+            <span><img src="../../common_contents/img/EMA523_04_SU/0004_content02.svg" alt="도형이미지"></span>
+            <span><img src="../../common_contents/img/EMA523_04_SU/0004_content03.svg" alt="도형이미지"></span>
+            <span><img src="../../common_contents/img/EMA523_04_SU/0004_content04.svg" alt="도형이미지"></span>
+            <span><img src="../../common_contents/img/EMA523_04_SU/0004_content05.svg" alt="도형이미지"></span>
+            <div class="boolean_wrap">
+              <button class="figure1" data-answer-single="false">
+                <span lang="y" class="text">가</span>
+              </button>
+              <button class="figure2" data-answer-single="true">
+                <span lang="y" class="text">나</span>
+              </button>
+              <button class="figure3" data-answer-single="false">
+                <span lang="y" class="text">다</span>
+              </button>
+              <button class="figure4" data-answer-single="true">
+                <span lang="y" class="text">라</span>
+              </button>
+              <button class="figure5" data-answer-single="true">
+                <span lang="y" class="text">마</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">도형을 반으로 접어 보고, 완전히 겹치는 도형을 모두 찾아보세요.​</h3>
+        <div class="question_box justify_center">
+          <div class="figure_img_box figure_img_ro">
+            <div class="figure figure1">
+              <svg width="224" height="180" viewBox="0 0 224 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M222.175 178.814H1.68213V2.01074L222.175 178.814Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>
+              <!-- <span lang="y" class="text">가</span> -->
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-mode="single">
+                    <div class="start_group">
+                        <div class="connect_point" data-id="s1"></div>
+                        <div class="connect_point" data-id="s2"></div>
+                    </div>
+                    <div class="end_group">
+                        <div class="connect_point" data-id="e1"></div>
+                        <div class="connect_point" data-id="e2"></div>
+                    </div>
+                    <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure2">
+              <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M178.384 134.621L1.95215 178.814V2.01074L178.384 46.2038V134.621Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>
+              <!-- <span lang="y" class="text">나</span> -->
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='[["s3","e3"]]' data-sample-line='[["s3","e3"]]' data-mode="single">
+                    <div class="start_group">
+                        <div class="connect_point" data-id="s3"></div>
+                        <div class="connect_point" data-id="s4"></div>
+                    </div>
+                    <div class="end_group">
+                        <div class="connect_point" data-id="e3"></div>
+                        <div class="connect_point" data-id="e4"></div>
+                    </div>
+                    <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure3">
+              <svg width="224" height="180" viewBox="0 0 224 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M134.302 178.814H1.99365L90.1784 2.01074H222.487L134.302 178.814Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>                
+              <!-- <span lang="y" class="text">다</span> -->
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]"  data-mode="single" >
+                    <div class="start_group">
+                        <div class="connect_point" data-id="s5"></div>
+                        <div class="connect_point" data-id="s6"></div>
+                    </div>
+                    <div class="end_group">
+                        <div class="connect_point" data-id="e5"></div>
+                        <div class="connect_point" data-id="e6"></div>
+                    </div>
+                    <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure4">
+              <svg width="224" height="188" viewBox="0 0 224 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.6525 186.815L1.51367 93.5014L111.76 1.18555L222.007 93.5014L166.899 186.815H56.6525Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>
+              <!-- <span lang="y" class="text">라</span> -->
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='[["s7","e8"]]' data-sample-line='[["s7","e8"]]' data-mode="single" >
+                  <div class="start_group">
+                      <div class="connect_point" data-id="s7"></div>
+                      <div class="connect_point" data-id="s8"></div>
+                  </div>
+                  <div class="end_group">
+                      <div class="connect_point" data-id="e7"></div>
+                      <div class="connect_point" data-id="e8"></div>
+                  </div>
+                  <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure5">
+              <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M178.321 178.814L90.1358 134.621L1.91992 178.814V46.2038L90.1358 2.01074L178.321 46.2038V178.814Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>                
+              <!-- <span lang="y" class="text">마</span> -->
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='[["s9","e10"]]' data-sample-line='[["s9","e10"]]' data-mode="single" >
+                  <div class="start_group">
+                      <div class="connect_point" data-id="s9"></div>
+                      <div class="connect_point" data-id="s10"></div>
+                  </div>
+                  <div class="end_group">
+                      <div class="connect_point" data-id="e9"></div>
+                      <div class="connect_point" data-id="e10"></div>
+                  </div>
+                  <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="boolean_wrap">
+              <button class="figure1" data-answer-single="false">
+                <span lang="y" class="text">가</span>
+              </button>
+              <button class="figure2" data-answer-single="true">
+                <span lang="y" class="text">나</span>
+              </button>
+              <button class="figure3" data-answer-single="false">
+                <span lang="y" class="text">다</span>
+              </button>
+              <button class="figure4" data-answer-single="true">
+                <span lang="y" class="text">라</span>
+              </button>
+              <button class="figure5" data-answer-single="true">
+                <span lang="y" class="text">마</span>
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">도형이 완전히 겹치도록 접을 수 있는 부분에 선을 그어 보세요.​</h3>
+        <div class="question_box justify_center">
+          <div class="figure_img_box">
+            <div class="figure figure1">
+              <svg width="224" height="180" viewBox="0 0 224 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M222.175 178.814H1.68213V2.01074L222.175 178.814Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>
+              <span lang="y" class="text">가</span>
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='empty_answer'  data-mode="single">
+                    <div class="start_group">
+                        <div class="connect_point" data-id="s1-1"></div>
+                        <div class="connect_point" data-id="s2-1"></div>
+                    </div>
+                    <div class="end_group">
+                        <div class="connect_point" data-id="e1-1"></div>
+                        <div class="connect_point" data-id="e2-1"></div>
+                    </div>
+                    <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure2">
+              <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M178.384 134.621L1.95215 178.814V2.01074L178.384 46.2038V134.621Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>
+              <span lang="y" class="text">나</span>
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='[["s3-1","e3-1"]]' data-sample-line='[["s3-1","e3-1"]]' data-mode="single">
+                    <div class="start_group">
+                        <div class="connect_point" data-id="s3-1"></div>
+                        <div class="connect_point" data-id="s4"></div>
+                    </div>
+                    <div class="end_group">
+                        <div class="connect_point" data-id="e3-1"></div>
+                        <div class="connect_point" data-id="e4-1"></div>
+                    </div>
+                    <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure3">
+              <svg width="224" height="180" viewBox="0 0 224 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M134.302 178.814H1.99365L90.1784 2.01074H222.487L134.302 178.814Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>                
+              <span lang="y" class="text">다</span>
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='empty_answer'  data-mode="single" >
+                    <div class="start_group">
+                        <div class="connect_point" data-id="s5-1"></div>
+                        <div class="connect_point" data-id="s6-1"></div>
+                    </div>
+                    <div class="end_group">
+                        <div class="connect_point" data-id="e5-1"></div>
+                        <div class="connect_point" data-id="e6-1"></div>
+                    </div>
+                    <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure4">
+              <svg width="224" height="188" viewBox="0 0 224 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M56.6525 186.815L1.51367 93.5014L111.76 1.18555L222.007 93.5014L166.899 186.815H56.6525Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>
+              <span lang="y" class="text">라</span>
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='[["s7-1","e8-1"]]' data-sample-line='[["s7-1","e8-1"]]' data-mode="single" >
+                  <div class="start_group">
+                      <div class="connect_point" data-id="s7-1"></div>
+                      <div class="connect_point" data-id="s8-1"></div>
+                  </div>
+                  <div class="end_group">
+                      <div class="connect_point" data-id="e7-1"></div>
+                      <div class="connect_point" data-id="e8-1"></div>
+                  </div>
+                  <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="figure figure5">
+              <svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M178.321 178.814L90.1358 134.621L1.91992 178.814V46.2038L90.1358 2.01074L178.321 46.2038V178.814Z" stroke="#1D1D1B" stroke-width="2.33375" stroke-linejoin="round"/>
+              </svg>                
+              <span lang="y" class="text">마</span>
+              <div class="connect_box_wrap">
+                <div class="connect_wrap_click connect_wrap" data-connections="[]" data-answer-single='[["s9-1","e10-1"]]' data-sample-line='[["s9-1","e10-1"]]' data-mode="single" >
+                  <div class="start_group">
+                      <div class="connect_point" data-id="s9-1"></div>
+                      <div class="connect_point" data-id="s10-1"></div>
+                  </div>
+                  <div class="end_group">
+                      <div class="connect_point" data-id="e9-1"></div>
+                      <div class="connect_point" data-id="e10-1"></div>
+                  </div>
+                  <svg class="connect_lines"></svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+      <article class="page page_4">
+        <div class="summarize_wrap">
+          <div class="summarize promise">
+            <label lang="y">약속해 볼까요</label>
+            <div class="img_box align_center">
+              <img src="../../common_contents/img/EMA523_04_SU/0004_content06.png" alt="도형 이미지">
+              <div class="img_txt">
+                <span lang="y" class="txt1">대응변</span>
+                <span lang="y" class="txt2">대칭축</span>
+                <span lang="y" class="txt3">대응각</span>
+                <span lang="y" class="txt4">대응점</span>
+              </div>
+            </div>
+            <div class="text_box">
+              <div lang="y">
+                <span>한 직선을 따라 접었을 때 완전히 겹치는 도형을</span>
+                <button class="reveal_btn" data-pair="1">선대칭도형</button>
+              </div>
+              <div lang="y">
+                <span>이라고 합니다. 이때 그 직선을</span>
+                <button class="reveal_btn" data-pair="2">대칭축</button>
+                <span class="small-gap">이라고 합니다.</span>
+              </div>
+              <div lang="y">
+                <span>대칭축을 따라 접었을 때 겹치는 점을</span>
+                <button class="reveal_btn" data-pair="3">대응점</button>
+                <span class="small-gap">, 겹치는 변을</span>
+              </div>
+              <div lang="y">
+                <button class="reveal_btn" data-pair="3">대응변</button>
+                <span class="small-gap">, 겹치는 각을</span>
+                <button class="reveal_btn" data-pair="4">대응각</button>
+                <span class="small-gap">이라고 합니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnReset" lang="y">리셋</button>
+        <button class="btnCheck" lang="y">확인</button>
+        <button class="btnSample">예시</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

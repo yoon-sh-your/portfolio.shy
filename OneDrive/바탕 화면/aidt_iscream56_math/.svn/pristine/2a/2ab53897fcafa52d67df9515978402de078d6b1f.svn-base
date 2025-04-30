@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_05_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_05.css" />
+    <script src="../../common_contents/js/ema612_05_0004.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_05_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">각기둥의 전개도가 될 수 있는 것을 찾아봅시다. </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">각기둥의 전개도가 될 수 있는 것을 예상해 보세요.</h3>
+
+          <div class="check_shape boolean_wrap">
+            <div class="c_item ex_box">
+              <span class="ex_txt">예</span>
+              <button data-answer-single="true" class="co01">
+                <span class="txt">가</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_01.png" alt="각기둥 전개도">
+              </button>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="true" class="co02">
+                <span class="txt">나</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_02.png" alt="각기둥 전개도"> 
+              </button>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="true" class="co03">
+                <span class="txt">다</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_03.png" alt="각기둥 전개도">
+              </button>
+            </div>
+            
+            <div class="c_item ex_box">
+              <span class="ex_txt">예</span>
+              <button data-answer-single="true" class="co04">
+                <span class="txt">라</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_04.png" alt="각기둥 전개도">
+              </button>
+            </div> 
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">각 전개도를 선택하여 각기둥이 되는지 확인해 보세요.</h3>
+
+          <div class="check_shape boolean_wrap">
+            <div class="c_item">
+              <button data-answer-single="true" class="co01">
+                <span class="txt">가</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_01.png" alt="각기둥 전개도">
+              </button>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="false" class="co02">
+                <span class="txt">나</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_02.png" alt="각기둥 전개도"> 
+              </button>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="false" class="co03">
+                <span class="txt">다</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_03.png" alt="각기둥 전개도">
+              </button>
+            </div>
+            
+            <div class="c_item">
+              <button data-answer-single="true" class="co04">
+                <span class="txt">라</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_04.png" alt="각기둥 전개도">
+              </button>
+            </div> 
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">각기둥의 전개도가 될 수 있는 것을 모두 선택하고, 전개도를 접었을 때 만들어지는 각기둥의 이름을 이야기해 보세요.</h3>
+
+          <div class="check_shape boolean_wrap textAnswer">
+            <div class="c_item ex_box">
+              <span class="ex_txt">예</span>
+              <button data-answer-single="true" class="co01">
+                <span class="txt">가</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_01.png" alt="각기둥 전개도">
+              </button>
+  
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="사각기둥"></math-field>
+              </div>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="false" class="co02">
+                <span class="txt">나</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_02.png" alt="각기둥 전개도"> 
+              </button>
+
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="각기둥의 전개도가 될 수 없어요."></math-field>
+              </div>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="false" class="co03">
+                <span class="txt">다</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_03.png" alt="각기둥 전개도">
+              </button>
+  
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="각기둥의 전개도가 될 수 없어요."></math-field>
+              </div>
+            </div>
+            
+            <div class="c_item ex_box">
+              <span class="ex_txt">예</span>
+              <button data-answer-single="true" class="co04">
+                <span class="txt">라</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_04.png" alt="각기둥 전개도">
+              </button>
+
+              <div class="input_wrap answer4">
+                <math-field data-answer-single="육각기둥"></math-field>
+              </div>
+            </div> 
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <h3 lang="y">각기둥의 전개도가 될 수 없는 것을 모두 선택하고, 그 이유를 이야기해 보세요.</h3>
+
+          <div class="check_shape boolean_wrap">
+            <div class="c_item">
+              <button data-answer-single="false" class="co01">
+                <span class="txt">가</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_01.png" alt="각기둥 전개도">
+              </button>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="true" class="co02">
+                <span class="txt">나</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_02.png" alt="각기둥 전개도"> 
+              </button>
+            </div>
+
+            <div class="c_item">
+              <button data-answer-single="true" class="co03">
+                <span class="txt">다</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_03.png" alt="각기둥 전개도">
+              </button>
+            </div>
+            
+            <div class="c_item">
+              <button data-answer-single="false" class="co04">
+                <span class="txt">라</span>
+                <img src="../../common_contents/img/EMA612_05_SU/0004_diagram_04.png" alt="각기둥 전개도">
+              </button>
+            </div> 
+          </div>
+
+          <div class="text_box input_area">
+            <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">나는 밑면 2개가 같은 방향에 있어 겹쳐지기 때문이고, 다는 밑면이 오각형이라서 옆면이 5개여야 하는데 4개만 있기 때문입니다
+                </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnCheck" data-look="submit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

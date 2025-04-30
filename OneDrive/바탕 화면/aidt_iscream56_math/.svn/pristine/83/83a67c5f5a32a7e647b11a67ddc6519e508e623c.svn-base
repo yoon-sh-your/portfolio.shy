@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema624_07_su_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_07.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_07_su_0005">
+        <section class="title type2">
+            <h2 data-head="3_green" lang="y">밀가루 420 g을 5 : 2로 나누어 국수와 수제비를 만들었습니다. 두 음식을 만드는 데 사용한 밀가루의 양은 각각 몇 g인지 구해
+                봅시다.</h2>
+        </section>
+
+        <section class="contents">
+            <div class="flex justify_center">
+                <div class="input_wrap">
+                    <span lang="y">국수를 만드는 데 사용한 밀가루의 양:</span>
+                    <math-field type="number" data-answer-single="300" text-align="center"></math-field>
+                    <span>g</span>
+                </div>
+                <div class="input_wrap">
+                    <span lang="y">수제비를 만드는 데 사용한 밀가루의 양:</span>
+                    <math-field type="number" data-answer-single="120" text-align="center"></math-field>
+                    <span>g</span>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <!-- <button class="btnCheck">확인</button> -->
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

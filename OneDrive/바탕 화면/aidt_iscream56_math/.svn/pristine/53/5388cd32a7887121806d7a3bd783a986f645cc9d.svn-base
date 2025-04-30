@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema627_01_su_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema627_01_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema627_01_su_0004">
+    <section class="title type2">
+      <h2 data-head="2">
+        <span lang="y">마을 공원에 생긴 문제를 해결하기 위해서 해야 할 일을 써 봅시다.​​​​​​</span>
+      </h2>
+    </section>
+
+    <section class="contents">
+      <div class="input_area text_center">
+        <div class="input_wrap">
+          <math-field class="textarea" type="text"></math-field>
+          <div class="example_box text_left">
+            <p lang="y">망가진 모래 놀이터와 바닥 분수를 복구하고 쓰러진 가로등을 다시 세워야 합니다.​</p>
+          </div>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section> 
+  </div>
+</body>
+
+</html>

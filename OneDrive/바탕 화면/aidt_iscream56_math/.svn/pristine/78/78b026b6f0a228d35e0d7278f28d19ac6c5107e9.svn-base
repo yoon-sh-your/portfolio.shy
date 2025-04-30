@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_08_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema524_08_ih_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_08_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">곱이 다른 하나를 찾아 기호를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="top">
+            <div class="inr boolean_wrap type_chk">
+              <button type="button" class="item" data-answer-single="true">
+                <span class="circle">ㄱ</span>
+                0.016×880
+              </button>
+              <button type="button" class="item" data-answer-single="false">
+                <span class="circle">ㄴ</span>
+                16×8.8
+              </button>
+              <button type="button" class="item" data-answer-single="false">
+                <span class="circle">ㄷ</span>
+                160×0.88
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="flex align_center gap_12">
+                  <span class="circle">ㄱ</span><span>0.016×880=<span class="emph">14.08</span></span>
+                </p>
+                <p class="flex align_center gap_12"><span class="circle">ㄴ</span>16×8.8=140.8</p>
+                <p class="flex align_center gap_12"><span class="circle">ㄷ</span>160×0.88=140.8</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

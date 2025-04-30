@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_03_IH_0004</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="./../../common_practice/js/ema624_02_ih_0005.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_03_ih_0004">
+			<section class="title type2">
+				<h2 data-head="4_deep_green" lang="y">간단한 자연수의 비로 옳게 나타낸 것을 찾아 기호를 써 보세요.</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA624_03_IH/0004_bg.png" alt="" />
+						<ul class="text_area">
+							<li>
+								<i class="num_sign">ㄱ</i>
+								0.8:2.7
+								<img
+									class="arrow"
+									src="./../../common_practice/common/img/icon_arrow_right_navy.svg"
+									alt=""
+								/>
+								80:27
+							</li>
+							<li>
+								<i class="num_sign">ㄴ</i>
+								<div class="mixed_fraction">
+									<div class="fraction_box">
+										<span>5</span>
+										<span>12</span>
+									</div>
+									<span>:1</span>
+									<div class="fraction_box">
+										<span>1</span>
+										<span>6</span>
+									</div>
+								</div>
+								<img
+									class="arrow"
+									src="./../../common_practice/common/img/icon_arrow_right_navy.svg"
+									alt=""
+								/>
+								5:7
+							</li>
+							<li>
+								<i class="num_sign">ㄷ</i>
+								<div class="mixed_fraction">
+									<span>3:</span>
+									<div class="fraction_box">
+										<span>2</span>
+										<span>5</span>
+									</div>
+								</div>
+								<img
+									class="arrow"
+									src="./../../common_practice/common/img/icon_arrow_right_navy.svg"
+									alt=""
+								/>
+								15:2
+							</li>
+						</ul>
+						<div class="boolean_wrap type_chk">
+							<div>
+								<button data-answer-single="false" class="button1"></button>
+								<button data-answer-single="false" class="button2"></button>
+								<button data-answer-single="true" class="button3"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>㉠ 0.8 : 2.7의 전항과 후항에 10을 곱하면 8 : 27이 됩니다.</p>
+								<p class="mixed_fraction mt_15">
+									㉡ 후항
+									<span>1</span>
+									<span class="fraction_box">
+									  <span>1</span>
+									  <span>6</span>
+									</span>을
+									<span class="fraction_box">
+									  <span>6</span>
+									  <span>7</span>
+									</span>로 바꾼 후
+									<span class="fraction_box">
+										<span>5</span>
+										<span>12</span>
+									  </span>
+									  <span>:</span>
+									  <span class="fraction_box">
+										<span>7</span>
+										<span>6</span>
+									  </span>
+									  <span>의 전항과 후항에 12를 곱하면 5 : 14가 됩니다.</span>
+								  </p>
+								  <p class="mixed_fraction mt_15">㉢
+									<span>3:</span>
+									<span class="fraction_box">
+										<span>2</span>
+										<span>5</span>
+									  </span>의 전항과 후항에 5를 곱하면 15 : 2가
+									  됩니다.
+								  </p>
+								  <p class="mt_15">따라서 간단한 자연수의 비로 옳게 나타낸 것은 ㉢입니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

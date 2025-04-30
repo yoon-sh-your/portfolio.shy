@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_04_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema612_04_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">각기둥을 보고 표를 완성해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="table_wrap">
+            <table>
+              <colgroup>
+                <col />
+                <col />
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th lang="y">각기둥</th>
+                  <td class="bg_gray">
+                    <img src="./../../common_practice/img/EMA612_04_IH/0003_01.png" alt="" />
+                  </td>
+                  <td class="bg_gray">
+                    <img src="./../../common_practice/img/EMA612_04_IH/0003_02.png" alt="" />
+                  </td>
+                  <td class="bg_gray">
+                    <img src="./../../common_practice/img/EMA612_04_IH/0003_03.png" alt="" />
+                  </td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th lang="y">각기둥의 이름</th>
+                  <td>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="삼각기둥">
+                        <option></option>
+                        <option value="삼각기둥"></option>
+                        <option value="사각기둥"></option>
+                        <option value="오각기둥"></option>
+                        <option value="육각기둥"></option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="오각기둥">
+                        <option></option>
+                        <option value="삼각기둥"></option>
+                        <option value="사각기둥"></option>
+                        <option value="오각기둥"></option>
+                        <option value="육각기둥"></option>
+                      </select>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="육각기둥">
+                        <option></option>
+                        <option value="삼각기둥"></option>
+                        <option value="사각기둥"></option>
+                        <option value="오각기둥"></option>
+                        <option value="육각기둥"></option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y">면의 수(개)</th>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="5" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="7" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="8" text-align="center"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y">모서리의 수(개)</th>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="9" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="15" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="18" text-align="center"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y">꼭짓점의 수(개)</th>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="6" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="10" text-align="center"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap hint_right">
+                      <math-field data-answer-single="12" text-align="center"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">각기둥을 보고 각기둥의 이름을 쓰고, 면의 수, 모서리의 수, 꼭짓점의 수를 각각 세어 씁니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

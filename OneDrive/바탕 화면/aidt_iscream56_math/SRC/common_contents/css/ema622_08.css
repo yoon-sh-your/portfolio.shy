@@ -1,0 +1,145 @@
+/* ema622_08_su_0002 */
+/* 페이지 수: ~ 6 페이지 */
+.ema622_08_su_0002 .question_box {
+    width: calc(1635px - 160px);
+
+    color: var(--Secondary-Text-Gray-900, #222);
+
+    /* Title/H_02_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+}
+
+.operation {
+    display: flex;
+    align-items: center;
+}
+
+/* page_1 */
+/* 이미지 */
+.ema622_08_su_0002 .page_1 .container {
+    width: 944px;
+    height: 502px;
+    flex-shrink: 0;
+
+    background-image: url(../img/EMA622_08_SU/0002_p1_content.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.ema622_08_su_0002[data-current-page='page_1'] .btn_area {
+    display: none;
+}
+
+/* page_2 */
+/* 이미지 */
+.ema622_08_su_0002 .page_2 .container {
+    width: 889px;
+    height: 502px;
+    aspect-ratio: 889/502;
+
+    background-image: url(../img/EMA622_08_SU/0002_p2_content.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.ema622_08_su_0002[data-current-page='page_2'] .btn_area {
+    display: none;
+}
+
+/* page_3 */
+/* 서술형 */
+/* 서술형 페이지 버튼 */
+.ema622_08_su_0002:not([data-current-page='page_3']) .btn_area .btnSubmit,
+.ema622_08_su_0002[data-current-page='page_3'] .btn_area .btnCheck {
+    display: none;
+}
+.ema622_08_su_0002 .input_wrap {
+    /* width: 1208px; */
+    width: 100%;
+}
+
+.ema622_08_su_0002 .input_wrap math-field.textarea {
+    height: calc(330px - 8px - 8px);
+}
+
+
+
+
+
+
+
+
+
+
+/* ema622_08_su_0003 */
+.ema622_08_su_0003 .question_box {
+    width: 100%;
+}
+
+.ema622_08_su_0003 .container {
+    width: 100%;
+    display: flex;
+    gap: 26px;
+    padding: 0 100px;
+
+    /* border: 1px solid black; */
+}
+
+.ema622_08_su_0003 .c1,
+.ema622_08_su_0003 .c2 {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    /* border: 1px solid blue; */
+}
+
+.ema622_08_su_0003 .c2 {
+    width: 700px;
+    height: 390px;
+    flex-shrink: 0;
+
+    background-image: url(../img/EMA622_08_SU/0003_content.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tspan[lang="y"] {
+    fill: red;
+    font-weight: bold;
+}
+
+*[lang="y"] {
+    color: green !important;
+    font-weight: bold;
+} */

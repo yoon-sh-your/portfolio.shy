@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_04_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_light_purple" lang="y">
+          <div>
+            <span lang="y">악기에서 볼 수 있는 원의 원주와 지름을 구해 봅시다.</span>
+            <button type="button" class="btn calculator">계산기</button>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="tb_area">
+          <table>
+            <tbody>
+              <tr>
+                <th scope="row" lang="y">악기</th>
+                <td>
+                  <div class="flex">
+                    <img src="../../common_contents/img/EMA625_04_SU/0005_item_01.png" alt="징">
+                    <span lang="y">징</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="flex">
+                    <img src="../../common_contents/img/EMA625_04_SU/0005_item_02.png" alt="탬버린">
+                    <span lang="y">탬버린</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="flex">
+                    <img src="../../common_contents/img/EMA625_04_SU/0005_item_03.png" alt="소고">
+                    <span lang="y">소고</span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" lang="y">원주 (㎝)</th>
+                <td>
+                  <div class="input_wrap answer1" data-hint-position="up">
+                    <math-field data-answer-single="113.04"></math-field>
+                  </div>
+                </td>
+                <td lang="y">84.78</td>
+                <td>
+                  <div class="input_wrap answer2" data-hint-position="up">
+                    <math-field data-answer-single="65.94"></math-field>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row" lang="y">지름 (㎝)</th>
+                <td lang="y">36</td>
+                <td>
+                  <div class="input_wrap answer3" data-hint-position="up">
+                    <math-field data-answer-single="27"></math-field>
+                  </div>
+                </td>
+                <td lang="y">21</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

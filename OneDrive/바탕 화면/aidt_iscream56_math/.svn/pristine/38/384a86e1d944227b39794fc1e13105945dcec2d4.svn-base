@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_04_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_contents/js/ema525_03_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_su_0004">
+      <section class="title type2">
+        <h2 data-head="2_light_purple" lang="y">직육면체에서 서로 만나는 면 사이의 관계를 알아봅시다.
+        </h2>
+      </section>
+        
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">직육면체의 한 면에 ○표 하고, ○표 한 면과 만나는 면을 모두 찾아보세요.</h3>
+          
+          <div class="scene2">
+            <div class="boolean_wrap cube">
+              <button data-answer-single="true" class="face back oblong" data-pair-id="1"></button>
+              <button data-answer-single="true" class="face left" data-pair-id="2"></button>
+              <button data-answer-single="true" class="face bottom oblong1" data-pair-id="3"></button>
+              <button data-answer-single="true" class="face front oblong" data-pair-id="1"></button>
+              <button data-answer-single="true" class="face right" data-pair-id="2"></button>
+              <button data-answer-single="true" class="face top oblong1" data-pair-id="3"></button>
+            </div>
+          </div>
+  
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">삼각자 3개의 직각 부분을 직육면체의 한 꼭짓점에서 만나도록 대어보고, 서로 만나는 면 사이의 관계를 이야기해 보세요.</h3>  
+          <div class="wrap flex dir_col gap_20">     
+            <div class="contents_img">
+              <img src="../../common_contents/img/EMA525_03_SU/0004_contents1.png" alt="직육면체,정육면체 이미지"/>    
+            </div>
+            <div class="input_area">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">면끼리 만나는 부분과 삼각자의 직각 부분이 완전히 겹치므로 서로 만나는 면은 수직으로 만납니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="summarize_wrap yellow">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+              <div class="flex dir_row gap_20">     
+                <div class="contents_img">
+                  <ul>
+                    <li lang="y">밑면</li>
+                    <li lang="y">옆면</li>
+                  </ul>
+                  <img src="../../common_contents/img/EMA525_03_SU/0004_contents2.png" alt="밑면 설명 이미지"/>
+                </div>
+                <div class="flex f32b dir_col align_center gap_20">
+                  <span lang="y">직육면체에서 밑면과 만나는 면을 직육면체의</span>
+                  <span class="flex gap_8 align_center">
+                    <button class="reveal_btn btn-show-character" data-pair="겨냥도" lang="y">옆면</button>
+                    <span lang="y" class="small-gap">이라고 합니다. </span>
+                  </span>
+                  <span lang="y">이때 밑면과 옆면은 수직으로 만납니다.</span>
+                </div>
+              </div>
+              <span class="character_img hidden_character">
+                <p lang="y">한 밑면에 대한<br/>옆면은 모두<br/>4개예요.</p>
+                <img src="../../common_contents/img/EMA525_03_SU/0004_contents3.png" alt="힌트를 주는 오리 캐릭터"/>
+              </span>
+            </div>
+          </div>
+        </article>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

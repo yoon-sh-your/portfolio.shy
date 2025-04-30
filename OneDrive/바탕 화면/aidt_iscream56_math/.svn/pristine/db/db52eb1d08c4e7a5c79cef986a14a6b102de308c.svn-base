@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614">
+      <section class="title type2 star_title">
+        <h2 data-head="5_green" lang="y" class="is_star">
+          <span lang="y"
+            >같은 시각에 두 건물의 그림자의 길이를 재었습니다. 두 건물의 높이에 대한 그림자 길이의 비율을 분수로 각각 나타내고,<br />
+            두 비율을 비교하여 알게 된 점을 써 보세요.</span
+          >
+        </h2>
+      </section>
+
+      <section class="contents p_bottom">
+        <div class="ema614_04_0005">
+          <div class="img_are">
+            <img src="../../common_practice/img/EMA614_04_IH/build.png" />
+          </div>
+
+          <div class="input_flex mt_12">
+            <div class="flex justify_center align_center gap_4">
+              <p>가</p>
+              <div class="input_wrap fraction_wrap right_hint">
+                <math-field data-answer-single="(48)/(60)(=(4)/(5))"
+                                        data-answer-multi='{"values": ["(48)/(60)", "(4)/(5)"]}' text-align="center"
+                                        placeholder=" "></math-field>
+              </div>
+            </div>
+            <div class="flex justify_center align_center gap_4">
+              <p>나</p>
+              <div class="input_wrap fraction_wrap right_hint">
+                <math-field data-answer-single="(32)/(40)(=(4)/(5))"
+                                        data-answer-multi='{"values": ["(32)/(40)", "(4)/(5)"]}' text-align="center"
+                                        placeholder=" "></math-field>
+              </div>
+            </div>
+          </div>
+
+          <div class="ema614_02_txt mt_40 flex gap_12">
+            <div class="ema614_02_txt_subject">
+              <p>알게 된 점</p>
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea input"></math-field>
+
+              <div class="example_box flex">
+                <p>같은 시각에 두 건물의 높이에 대한 그림자 길이의 비율은 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>가 건물의 높이에 대한 그림자 길이의 비율은</p>
+                  <div class="fraction_box">
+                    <span>48</span>
+                    <span>60</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                  <p>), 0.8입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>나 건물의 높이에 대한 그림자 길이의 비율은</p>
+                  <div class="fraction_box">
+                    <span>32</span>
+                    <span>40</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                  <p>), 0.8입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>따라서 같은 시각에 두 건물의 높이에 대한 그림자 길이의 비율은 같습니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

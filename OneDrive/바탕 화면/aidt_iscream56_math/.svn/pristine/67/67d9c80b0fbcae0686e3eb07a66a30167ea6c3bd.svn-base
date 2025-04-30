@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_07_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_07.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_07_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6_deep_green" class="is_star" lang="y">
+					학생 수가 1반은 21명, 2반은 14명일 때 색연필 105자루를 반별 학생 수의 비에 따라 나누어 가지려고
+					합니다. 두 반이 나누어 가지는 색연필은 각각 몇 자루인지 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center dir_col">
+					<div class="input_area">
+						<div class="flex align_center">
+							<span lang="y">1반</span>
+							<span class="input_wrap">
+								<math-field data-answer-single="63"></math-field>
+							</span>
+							<span lang="y">자루</span>
+						</div>
+						<div class="flex align_center">
+							<span lang="y">2반</span>
+							<span class="input_wrap">
+								<math-field data-answer-single="42"></math-field>
+							</span>
+							<span lang="y">자루</span>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>색연필 105자루를 1반의 학생 수와 2반의 학생수의 비 21 : 14로 나눕니다.</p>
+								<p class="flex align_center gap_0">
+									<span lang="y">1번: 105× </span>
+									<span class="fraction_box"> <span>21</span><span>21+14</span> </span>=105×
+									<span class="fraction_box"> <span>21</span><span>35</span> </span
+									><span lang="y">=63(자루)</span>
+								</p>
+
+								<p class="flex align_center gap_0 mt_15">
+									<span lang="y">2번: 105×</span>
+									<span class="fraction_box"> <span>14</span><span>21+14</span> </span>=105×
+									<span class="fraction_box"> <span>14</span><span>35</span> </span
+									><span lang="y">=42(자루)</span>
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

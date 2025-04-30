@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA516_15_SU_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema516_15.css" />
+  <script src="../../common_contents/js/ema516_15_0002.js"></script>
+
+
+
+</head>
+
+<body>
+  <div id="app_wrap" class="ema516_15_su_0002" data-current-page="page_1, page_2, page_3, page_4">
+    <section class="title type2 page-1-title">
+      <h2 lang="y" data-head="1">
+        윤서네 마을에 넓이가 120000 ㎡이면서 둘레가 가장 짧은 직사각형 모양의
+        공원을 만들려고 합니다. 만들 수 있는 가장 짧은 공원<br />의 둘레는 몇
+        m인지 구해 봅시다.(단, 변의 길이는 100 m씩 늘이거나 줄일 수 있습니다.)
+      </h2>
+    </section>
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <section class="title type2"></section>
+        <h3 lang="y">
+          넓이가 120000 ㎡인 서로 다른 직사각형을 3가지 그려 보세요.
+        </h3>
+        <div class="input_area po_absolute">
+          <div class="question_box dir_col align_start">
+            <div class="align_center ">
+              <div class="img_area">
+                <img src="../../common_contents/img/EMA516_15_SU/15_03_bg.png" alt="배경 이미지" />
+                <div class="length1">
+                  <span>100 m</span>
+                </div>
+                <div class="length2">
+                  <span>100 m</span>
+                </div>
+                <div class="length3">
+                  <span>10000 ㎠</span>
+                </div>
+                <div class="canvas-wrap">
+                  <div id="square">
+                    </di>
+                  </div>
+                </div>
+                <div class="example_box">
+                  <img src="../../common_contents/img/EMA516_15_SU/15_03_ex1.svg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+      <!-- 1page -->
+
+      <article class="page page_2 page2">
+        <h3 lang="y">
+          내가 그린 직사각형과 친구가 그린 직사각형의 둘레를 비교해 보세요.
+        </h3>
+        <div class="input_area">
+          <div class="flex align_center gap_12">
+            <div class="flex">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">내가 그린 직사각형의 둘레는 각각 2600 m, 1600 m, 1400 m이고, 친구가 그린 직사각형의
+                    둘레는 각각 2600 m, 1400 m, 1600 m입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </article>
+      <!-- 2page -->
+      <article class="page page_3 page3">
+        <h3 lang="y">
+          표를 완성하여 넓이가 120000 ㎡인 직사각형의 둘레를 모두 구해 보세요.
+        </h3>
+        <div class="input_area">
+          <table>
+            <tr>
+              <th class="top_table">가로 (m)</th>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="100"></math-field>
+                </div>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="200"></math-field>
+                </div>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="300"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="400"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="600"></math-field>
+              </td>
+              <td class="right_table">
+                <div class="input_wrap">
+                  <math-field data-answer-single="1200"></math-field>
+              </td>
+            </tr>
+            <tr>
+              <th>세로 (m)</th>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="1200"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="600"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="400"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="300"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="200"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="100"></math-field>
+              </td>
+            </tr>
+            <tr>
+              <th class="bottom_table">둘레 (m)</th>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="2600"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="1600"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="1400"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="1400"></math-field>
+              </td>
+              <td>
+                <div class="input_wrap">
+                  <math-field data-answer-single="1600"></math-field>
+              </td>
+              <td class="radius">
+                <div class="input_wrap">
+                  <math-field data-answer-single="2600"></math-field>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </article>
+      <!-- 2page -->
+      <article class="page page_3">
+        <h3 lang="y">만들 수 있는 가장 짧은 공원의 둘레는 몇 m인가요?</h3>
+        <div class="flex align_center gap_12 flex_wrap">
+          <div class="input_wrap answer1">
+            <math-field type="number" data-answer-single="1" text-align="center"></math-field>
+            <span>m</span>
+          </div>
+        </div>
+      </article><!-- 3page -->
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

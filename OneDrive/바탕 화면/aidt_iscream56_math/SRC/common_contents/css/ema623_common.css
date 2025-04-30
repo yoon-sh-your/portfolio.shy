@@ -1,0 +1,264 @@
+.video_wrap {
+    .ema623_02_SU_0002 & {
+        background: url("../../common_contents/img/EMA623_02_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_03_SU_0002 & {
+        background: url("../../common_contents/img/EMA623_03_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_04_SU_0002 & {
+        background: url("../../common_contents/img/EMA623_04_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_05_SU_0002 & {
+        background: url("../../common_contents/img/EMA623_05_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_06_SU_0002 & {
+        background: url("../../common_contents/img/EMA623_06_SU/0002_contents.png") no-repeat center center / cover;
+    }
+}
+.gray_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px 30px 50px;
+    background-color: #eef0f4;
+    width: 100%;
+    border-radius: 30px;
+    button {
+        position: relative;
+        padding: initial;
+        width: initial;
+        height: initial;
+        min-width: initial;
+        background-color: initial;
+        &::after,
+        &::before {
+            display: inline-block;
+            content: '';
+
+        }
+    }
+    .box_title {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+
+        .minus {
+            &::before {
+                padding-right: 30px;
+                width: 40px;
+                height: 40px;
+                background: url("../../common_contents/img/EMA623_03_SU/minus.png") no-repeat center center / contain;
+            }
+        }
+        .plus {
+            &::after {
+                padding-left: 30px;
+                width: 40px;
+                height: 40px;
+                background: url("../../common_contents/img/EMA623_03_SU/plus.png") no-repeat center center / contain;
+            }
+        }
+    }
+    .wood_box_area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        .wood_box {
+            &::before {
+                content: '';
+                width: 60px;
+                height: 60px;
+                background: url("../../common_contents/img/EMA623_03_SU/0003_img01.png") no-repeat center center / contain;
+
+            }
+        }
+    }
+}
+.paging_layout {
+    margin: 0 auto;
+    /* align-content: center; */
+}
+.paging_layout .page .input_wrap {
+    width: 100%;
+}
+.paging_layout .page .input_wrap.short_width {
+    width: min-content;
+}
+
+.question_box span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.diagram_green_tag {
+    display: inline-block;
+    padding: 3px 40px;
+    background-color: #c7e3bf;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    border-radius: 10px;
+
+}
+.img_row.building_blocks {
+    justify-content: center;
+    align-items: center;
+}
+.img_row.building_blocks .input_area {
+    width: 705px;
+}
+
+.img_wrap:has(.diagram_green_tag) {
+    position: relative;
+}
+.img_wrap .diagram_green_tag {
+    position: absolute;
+    bottom: -60px;
+    right: 50px;
+}
+
+.diagram_tag {
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.5px;
+    border-radius: 10px;
+}
+.diagram_tag.f16 {
+    font-size: 16px;
+    line-height: 36px;
+}
+.diagram_tag.f22 {
+    font-size: 22px;
+    line-height: 53px;
+}
+.diagram_tag.f24 {
+    font-size: 24px;
+    line-height: 42px;
+}
+.diagram_tag.green {
+    background-color: #C7E3BF;
+}
+.diagram_tag.yellow {
+    background-color: #F7E3AE;
+}
+.diagram_tag.blue {
+    background-color: #D1E6F7;
+}
+.diagram_tag.red {
+    background-color: #F8CED3;
+}
+.diagram_tag.purple {
+    background-color: #E0DEEF;
+}
+/* 말풍선 */
+.paging_layout .speech_bubble {
+    position: relative;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.paging_layout .speech_bubble::before {
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    content: '';
+}
+.ema623_03_SU_0004 .paging_layout .page_1 .speech_bubble {
+    width: 132px;
+    right: -126px;
+    text-align: center;
+}
+.ema623_03_SU_0004 .paging_layout .page_1 .speech_bubble::before {
+    top: -12px;
+    left: -6px;
+    width: 240px;
+    height: 174px;
+    background: url("../../common_contents/img/EMA623_03_SU/0004_img02.png") no-repeat center center / contain;
+}
+.ema623_03_SU_0005 .paging_layout .page_3 .speech_bubble {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    right: -126px;
+    text-align: center;
+
+}
+.ema623_03_SU_0005 .paging_layout .page_3 .speech_bubble::before {
+    top: 10px;
+    right: 202px;
+    width: 228px;
+    height: 171px;
+    background: url("../../common_contents/img/EMA623_03_SU/0005_img02.png") no-repeat center center / contain;
+}
+.ema623_05_SU_0005 .paging_layout .page_3 .speech_bubble {
+    text-align: center;
+
+}
+.ema623_05_SU_0005 .paging_layout .page_3 .speech_bubble::before {
+    top: -34px;
+    left: -22px;
+    width:352px;
+    height: 202px;
+    background: url("../../common_contents/img/EMA623_05_SU/0005_img04.png") no-repeat center center / contain;
+}
+
+.hangul_symbols {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+}
+.hangul_symbols2 {
+    padding: 0 6px;
+    font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px; /* 150% */
+letter-spacing: -1px;
+background-color: #B5CAE9;
+border-radius: 10px;
+border: 1px solid #fff;
+}
+.dropdown_text {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+}
+
+.ema623_05_SU_0005 .building_blocks .img_wrap, .ema623_06_SU_0003 .img_wrap {
+    width: 600px;
+    text-align: center;
+}
+.ema623_05_SU_0005 .building_blocks .img_wrap img, .ema623_06_SU_0003 .img_wrap img {
+    display: inline-block;
+}
+
+.blue_star {
+    color: var(--Primary-Primary_T_Blue-600, #3B71FE);
+
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+letter-spacing: -1px;
+}
+.ema623_07_SU_0002 section.type2 h2 {
+    display: flex;
+    align-items: center;
+}
+.ema623_07_SU_0002 section.type2 h2 {
+    display: flex;
+    align-items: center;
+}
+.ema623_07_SU_0002 section.type2 h2 span {
+    margin-top: 13px;
+}

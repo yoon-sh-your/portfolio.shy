@@ -1,0 +1,119 @@
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+
+/* EMA521_08_SU_0002_s */
+.ema521_08_su_0002 .contents > .img_row .video_wrap {
+  background: url(../../common_contents/img/EMA521_08_SU/0002_contents.png) no-repeat 0 -20px / 100% 560px;
+}
+
+
+/* EMA521_08_SU_0003_s */
+.talk_box {
+  display: flex;
+  gap: 26px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.talk_txt {
+  position: relative;
+  width: 660px;
+  min-height: 350px;
+} 
+.talk_txt > p {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400; 
+  line-height: 30px;
+}  
+.develope_box {
+  width: calc(100% - 716px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.develope_box .input_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.develope_box .input_area .input_wrap math-field:not(.textarea) {
+  width: 150px;
+}
+.develope_box_full {
+  display: flex;
+  justify-content: center;
+}
+.develope_box_full .input_wrap {
+  width: 1208px;
+}
+.develope_box_full .input_wrap math-field.textarea {
+  width: 100%;
+} 
+
+.ema521_08_su_0003 .talk_box {
+  flex-direction: row-reverse;
+}
+.ema521_08_su_0003 .page_1 .talk_txt {
+  background: url(../../common_contents/img/EMA521_08_SU/0003_bg_contents_01.png) no-repeat 50% 50% / contain
+}
+.ema521_08_su_0003 .page_1 .talk_txt > p {
+  top: 37px;
+  left: 240px;
+} 
+.ema521_08_su_0003 .page_1 .develope_box .custom_select {
+  width: 180px;
+}
+.ema521_08_su_0003 .page_2  .develope_box {
+  width: 100%;
+}
+.ema521_08_su_0003 .btnType {
+  display: none;
+}
+.ema521_08_su_0003[data-current-page='page_2'] .btnType {
+  display: block;
+}
+
+
+/* EMA521_08_SU_0004_s */
+.ema521_08_su_0004 .talk_box {
+  flex-direction: row-reverse;
+}
+.ema521_08_su_0004 .page_1 .talk_txt {
+  background: url(../../common_contents/img/EMA521_08_SU/0003_bg_contents_02.png) no-repeat 50% 50% / contain
+}
+.ema521_08_su_0004 .page_1 .talk_txt > p {
+  top: 25px;
+  left: 257px;
+} 
+.ema521_08_su_0004 .page_1 .develope_box .custom_select {
+  width: 180px;
+}
+.ema521_08_su_0004 .page_2  .develope_box {
+  width: 100%;
+}
+.ema521_08_su_0004 .btnType {
+  display: none;
+}
+.ema521_08_su_0004[data-current-page='page_2'] .btnType {
+  display: block;
+}
+
+
+
+/* EMA521_08_SU_0005_s */
+.ema521_08_su_0005 .develope_box {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.ema521_08_su_0005 .develope_box .input_wrap math-field:not(.textarea) {
+  width: 200px;
+}

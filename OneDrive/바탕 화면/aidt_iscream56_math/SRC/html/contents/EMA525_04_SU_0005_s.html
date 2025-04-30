@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA525_04_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema525_su_04.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema525_04_su_0005">
+    <section class="title type2">
+      <h2 data-head="3_light_purple" lang="y">직육면체에서 평행한 면과 수직인 면을 찾아봅시다.
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">면 ㄱㄴㄷㄹ과 평행한 면을 찾아 써 보세요.</h3>
+
+        <div class="wrap flex gap_20 align_center justify_center">
+          <div class="contents_img">
+            <ul>
+              <li lang="y">면 ㄱ</li>
+              <li lang="y">면 ㄴ</li>
+              <li lang="y">면 ㄷ</li>
+              <li lang="y">면 ㄹ</li>
+              <li lang="y">면 ㅁ</li>
+              <li lang="y">면 ㅂ</li>
+              <li lang="y">면 ㅅ</li>
+              <li lang="y">면 ㅇ</li>
+            </ul>
+            <img src="../../common_contents/img/EMA525_03_SU/0005_contents1.png" alt="평행한 면 예제 이미지" />
+          </div>
+          <div class="dropdown_wrap">
+            <span lang="y">면</span>
+            <select class="custom_dropdown" data-answer-single="ㅁㅂㅅㅇ">
+              <option></option><!--최초선택데이터 생성 방지용-->
+              <option value="ㅁㅂㅅㅇ"></option>
+              <option value="ㄹㄷㅅㅇ"></option>
+              <option value="ㄱㄴㅂㅁ"></option>
+              <option value="ㄴㅂㅅㄷ"></option>
+              <option value="ㄱㅁㅇㄹ"></option>
+            </select>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">면 ㄱㄴㄷㄹ과 수직인 면을 찾아 써 보세요.</h3>
+        <div class="wrap flex gap_40 align_center justify_center">
+          <div class="contents_img">
+            <ul>
+              <li lang="y">면 ㄱ</li>
+              <li lang="y">면 ㄴ</li>
+              <li lang="y">면 ㄷ</li>
+              <li lang="y">면 ㄹ</li>
+              <li lang="y">면 ㅁ</li>
+              <li lang="y">면 ㅂ</li>
+              <li lang="y">면 ㅅ</li>
+              <li lang="y">면 ㅇ</li>
+            </ul>
+            <img src="../../common_contents/img/EMA525_03_SU/0005_contents1.png" alt="평행한 면 예제 이미지" />
+          </div>
+
+          <div class="boolean_wrap span_type">
+            <button data-answer-single="false"><span class="f24b" lang="y">ㅁㅂㅅㅇ</span></button>
+            <button data-answer-single="true"><span class="f24b" lang="y">ㄱㄷㅇㄹ</span></button>
+            <button data-answer-single="true"><span class="f24b" lang="y">ㄷㄹㅅㅇ</span></button>
+            <button data-answer-single="true"><span class="f24b" lang="y">ㄴㅂㅅㄷ</span></button>
+            <button data-answer-single="true"><span class="f24b" lang="y">ㄴㅂㄱㅁ</span></button>
+          </div>
+        </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

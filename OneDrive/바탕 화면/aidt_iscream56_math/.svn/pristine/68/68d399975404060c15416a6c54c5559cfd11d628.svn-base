@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema513_08_su_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema513_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_08_su_0002">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="1_pink" lang="y">선풍기의 수와 선풍기 날개의 수 사이의 대응 관계를 찾아 안에 알맞은 수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_box">
+          <div class="e-fan">
+            <img src="../../common_contents/img/EMA513_08_SU/0002_e-fan.png" alt="" />
+          </div>
+          <img src="../../common_contents/img/EMA513_08_SU/0002_arrow.png" alt="" />
+          <div class="e-fan">
+            <img src="../../common_contents/img/EMA513_08_SU/0002_e-fan.png" alt="" />
+            <img src="../../common_contents/img/EMA513_08_SU/0002_e-fan.png" alt="" />
+          </div>
+          <img src="../../common_contents/img/EMA513_08_SU/0002_arrow.png" alt="" />
+          <div class="e-fan">
+            <img src="../../common_contents/img/EMA513_08_SU/0002_e-fan.png" alt="" />
+            <img src="../../common_contents/img/EMA513_08_SU/0002_e-fan.png" alt="" />
+            <img src="../../common_contents/img/EMA513_08_SU/0002_e-fan.png" alt="" />
+          </div>
+          <img src="../../common_contents/img/EMA513_08_SU/0002_arrow.png" alt="" />
+          <div>···</div>
+        </div>
+
+        <div class="question_box">
+          <div class="question_inner_box">
+            <span lang="y">선풍기 날개의 수는 선풍기의 수의</span>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="5" text-align="center"></math-field>
+          </div>
+            <span lang="y">배입니다.</span>
+          </div>
+        </div>
+
+      
+      </section>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </div>
+  </body>
+</html>

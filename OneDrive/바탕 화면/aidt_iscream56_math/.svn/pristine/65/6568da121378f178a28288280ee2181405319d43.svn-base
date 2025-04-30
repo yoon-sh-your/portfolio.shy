@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_04_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema525_04_ih_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_ih_0004">
+      <section class="title type4">
+        <h2 data-head="4" lang="y">직육면체에 대해 잘못 설명한 것을 찾아 기호를 찾아 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="boolean_wrap type_chk">
+            <button type="button" data-answer-single="true">
+              <span class="circle">ㄱ</span>
+              <span>한 면과 수직으로 만나는 면은 모두 2개입니다.</span>
+            </button>
+            <button type="button" data-answer-single="false">
+              <span class="circle">ㄴ</span>
+              <span>마주 보는 두 면은 서로 평행합니다.</span>
+            </button>
+            <button type="button" data-answer-single="false">
+              <span class="circle">ㄷ</span>
+              <span>한 꼭짓점에서 만나는 면은 모두 3개 입니다.</span>
+            </button>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">직육면체에서 한 면과 수직으로 만나는 면은 모두 4개이므로 잘못 설명한 것은 ㉠입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

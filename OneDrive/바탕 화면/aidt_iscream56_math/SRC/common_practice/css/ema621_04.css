@@ -1,0 +1,41 @@
+.input_wrap.fraction_wrap {width:80px;}
+.input_wrap.fraction_wrap math-field {width:100%;}
+.input_wrap {min-width:0; width:120px;}
+.input_wrap math-field:not(.textarea) {min-width:0; width:100%;}
+.fraction_box_wrap {display: inline-flex;  align-items: center;  gap: 4px;}
+.fraction_box_wrap .fraction_box {min-width: 0;}
+.fraction_box {vertical-align:middle;}
+.fraction_box .input_wrap {width:80px;}
+.bracket.gap_0 [class^="bracket-"] {margin:0;}
+.icon_arrow {margin-right:20px;}
+.boolean_wrap.type_chk button {position:relative; width:auto; border:none; border-radius:0; background:none !important; aspect-ratio:none; padding:0;}
+.boolean_wrap.type_chk button:after {content:''; display:inline-block; width:60px; height:60px; mask: url(./../../common_practice/common/img/icon_checked_round.svg) no-repeat 50% / 100% auto; background-color:transparent; position:absolute; top:50%; left:-47px; transform:translateY(-50%); margin-top:-8px;}
+.boolean_wrap.type_chk button.selected:after {background-color: var(--font-main);}
+.result .boolean_wrap.type_chk button[data-answer-single='true']:after {background-color: var(--secondary-red);}
+.result .boolean_wrap.type_chk button.selected[data-answer-single='true']:after {background-color: var(--primary-blue);}
+.boolean_wrap .num_sign {margin-right:10px;}
+.num_sign {flex-shrink:0;}
+.box_line {border:20px solid #C2E1EE; border-radius:90px;}
+.box_line .inner {margin:-12px; padding:0 80px; gap:40px; border:4px dashed #fff; border-radius:90px;}
+.box_dot {border:2px dashed #D2D2D2; border-radius:20px; background:#EEF9FF; padding:10px;}
+.box_dot .inner {display:flex; background:#fff; border:2px dashed #8CD6FF; border-radius:12px;}
+
+
+.ema621_04_ih_0002 .input_wrap.long {width:247px;}
+
+.ema621_04_ih_0003 .question_box {gap:200px;}
+
+.ema621_04_ih_0004 .box {display:flex; align-items:center; justify-content:center; width:457px; height:216px; background:url(../img/EMA621_04_IH/0004_img.svg);}
+.ema621_04_ih_0004 .input_wrap {width:247px;}
+
+.ema621_04_ih_0005 .inner {display:flex; justify-content:center; align-items:center; width:463px; height:480px; background:url(../img/EMA621_04_IH/0005_bg.svg);}
+.ema621_04_ih_0005 .boolean_wrap {flex-direction:column; align-items:flex-start;}
+
+.ema621_04_ih_0006 .img_box {position:relative;}
+.ema621_04_ih_0006 .img_box span {position:absolute; font-weight:normal;}
+.ema621_04_ih_0006 .txt1 {top:181px; right:432px;}
+.ema621_04_ih_0006 .txt2 {top:54px; left:498px; transform:translateX(-50%)}
+.ema621_04_ih_0006 .txt3 {top:320px; left:310px; transform:translateX(-50%)}
+.ema621_04_ih_0006 .input_wrap {width:247px;}
+
+.ema621_04_ih_0007 .input_wrap.fraction_wrap {width:247px;;}

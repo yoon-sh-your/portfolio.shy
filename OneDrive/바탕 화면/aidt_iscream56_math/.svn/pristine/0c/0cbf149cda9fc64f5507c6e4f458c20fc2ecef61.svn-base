@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_07_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_07.css" />
+  <script src="../../common_contents/js/ema523_07_0005.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_07_su_0005">
+    <section class="title type2">
+      <h2 data-head="3_pink" lang="y">점대칭도형을 찾아봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">점대칭도형은 어느 것일지 예상해 보세요.​</h3>
+        <div class="question_box justify_center po_relative">
+          <div class="figure_img_box">
+            <div class="boolean_wrap example_box">
+              <button class="figure1" data-answer-single="true" data-id="figure1">
+                <span class="text">가</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content01.png" alt="도형이미지"></span>
+              </button>
+              <button class="figure2" data-answer-single="false" data-id="figure2">
+                <span class="text">나</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content02.png" alt="도형이미지"></span>
+              </button>
+              <button class="figure3" data-answer-single="false" data-id="figure3">
+                <span class="text">다</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content03.png" alt="도형이미지"></span>
+              </button>
+              <button class="figure4" data-answer-single="true" data-id="figure4">
+                <span class="text">라</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content04.png" alt="도형이미지"></span>
+              </button>
+              <button class="figure5" data-answer-single="true" data-id="figure5">
+                <span class="text">마</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content05.png" alt="도형이미지"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">점대칭도형인지 알 수 있는 방법을 이야기해 보세요.</h3>
+        <div class="question_box mt_20 justify_center">
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">대칭의 중심을 중심으로 180˚ 돌렸을 때 처음 도형과 완전히 겹치는지 확인합니다.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">점대칭도형을 모두 찾아보세요.</h3>
+        <div class="question_box justify_center">
+          <div class="figure_img_box">
+            <!-- 회전 버튼 -->
+            <div class="rotation_buttons">
+              <button class="btn_rotation"><span>회전버튼</span></button>
+              <button class="btn_rotation"><span>회전버튼</span></button>
+              <button class="btn_rotation"><span>회전버튼</span></button>
+              <button class="btn_rotation"><span>회전버튼</span></button>
+              <button class="btn_rotation"><span>회전버튼</span></button>
+            </div>
+
+            <div class="boolean_wrap">
+              <button class="figure figure1" data-answer-single="true">
+                <span class="text">가</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content01.png" alt="도형 이미지"></span>
+                <span class="bg"><img src="../../common_contents/img/EMA523_07_SU/0005_bg01.svg" alt="도형 점선 이미지"></span>
+              </button>
+              
+
+              <button class="figure figure2" data-answer-single="false">
+                <span class="text">나</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content02.png" alt="도형이미지"></span>
+                <span class="bg"><img src="../../common_contents/img/EMA523_07_SU/0005_bg02.svg" alt="도형 점선 이미지"></span>
+              </button>
+              
+
+              <button class="figure figure3" data-answer-single="false">
+                <span class="text">다</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content03.png" alt="도형이미지"></span>
+                <span class="bg"><img src="../../common_contents/img/EMA523_07_SU/0005_bg03.svg" alt="도형 점선 이미지"></span>
+              </button>
+              
+
+              <button class="figure figure4" data-answer-single="true">
+                <span class="text">라</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content04.png" alt="도형이미지"></span>
+                <span class="bg"><img src="../../common_contents/img/EMA523_07_SU/0005_bg04.svg" alt="도형 점선 이미지"></span>
+              </button>
+              
+
+              <button class="figure figure5" data-answer-single="true">
+                <span class="text">마</span>
+                <span><img src="../../common_contents/img/EMA523_07_SU/0005_content05.png" alt="도형이미지"></span>
+                <span class="bg"><img src="../../common_contents/img/EMA523_07_SU/0005_bg05.svg" alt="도형 점선 이미지"></span>
+              </button>
+            </div>
+            
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key" lang="y">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSample">예시</button>
+        <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

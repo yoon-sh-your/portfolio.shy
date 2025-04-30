@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_04_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_04_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">
+          <div>
+            채은이는 쿠키를 만드는 데 우유
+            <div class="fraction_box_wrap">
+              <span>1</span>
+              <div class="fraction_box">
+                <span>3</span>
+                <span>10</span>
+              </div>
+            </div>
+            컵과 밀가루
+            <div class="fraction_box_wrap">
+              <span>3</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>15</span>
+              </div>
+            </div>
+            컵을 사용했습니다. 채은이가 사용한 우유와 밀가루는 모두 몇 컵인지 식을 쓰고 답을 구해 보세요.
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center gap_40">
+          <div class="img_box">
+            <img src="../../common_practice/img/EMA515_04_IH/0006_img.png" alt="" />
+          </div>
+          <div class="div flex dir_col gap-80">
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap_underline align_center">
+                <div class="mixed_fraction">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="1" class="w_80"></math-field>
+                  </div>
+                  <div class="fraction_box">
+                    <div class="input_wrap"><math-field data-answer-single="3"></math-field></div>
+                    <div class="input_wrap"><math-field data-answer-single="10"></math-field></div>
+                  </div>
+                </div>
+                +
+                <div class="mixed_fraction">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="3" class="w_80"></math-field>
+                  </div>
+                  <div class="fraction_box">
+                    <div class="input_wrap"><math-field data-answer-single="1"></math-field></div>
+                    <div class="input_wrap"><math-field data-answer-single="15"></math-field></div>
+                  </div>
+                </div>
+                =
+                <div class="mixed_fraction">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="4" class="w_80"></math-field>
+                  </div>
+                  <div class="fraction_box">
+                    <div class="input_wrap"><math-field data-answer-single="11"></math-field></div>
+                    <div class="input_wrap"><math-field data-answer-single="30"></math-field></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">답</span>
+              <div class="input_wrap_underline align_end">
+                <div class="mixed_fraction">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="4" class="w_80"></math-field>
+                  </div>
+                  <div class="fraction_box">
+                    <div class="input_wrap"><math-field data-answer-single="11"></math-field></div>
+                    <div class="input_wrap"><math-field data-answer-single="30"></math-field></div>
+                  </div>
+                </div>
+                <!-- <div class="input_wrap fraction_wrap answer3">
+                  <math-field
+                    data-answer-single="4(11)/(30)(=(131)/(30))"
+                    data-answer-multi='{"values": ["4(11)/(30)", "(131)/(30)""]}'
+                    text-align="center"></math-field>
+                </div> -->
+              </div>
+              <span lang="y" class="line_height_1">컵</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(채은이가 사용한 우유 양과 밀가루 양의 합)</p>
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">1</span>
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>10</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">3</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>15</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">1</span>
+                    <span class="fraction_box">
+                      <span>9</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">3</span>
+                    <span class="fraction_box">
+                      <span>2</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">4</span>
+                    <span class="fraction_box">
+                      <span>11</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span> (컵)</span>
+                </div>
+                <!--end solve-->
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

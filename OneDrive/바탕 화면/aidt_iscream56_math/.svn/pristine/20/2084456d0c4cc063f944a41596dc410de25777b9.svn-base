@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_07_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_07.css" />
+  <script src="../../common_contents/js/ema622_07_0005.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_07_su_0005">
+    <section class="title type2">
+      <h2 data-head="3_green" lang="y">계산해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="flex align_start">
+        <div class="question_box justify_center">
+
+
+          <div class="container">
+
+            <div class="c1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="436" height="434" viewBox="0 0 436 434" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="119.281" y="133.875">3</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="150.203" y="133.875">8</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="200" y="133.875">2</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="221" y="133.875">4</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="255" y="133.875">6</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                  font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="277" y="133.875">5</tspan>
+                </text>
+              </svg>
+              <!-- 첫 번째 그리기 영역 -->
+              <div class="drawing-container" id="drawing-instance-1">
+                <canvas class="draw-area" width="435" height="434" data-canvas-id="canvas_1"></canvas>
+                <!-- 그리기도구 팝업 -->
+                <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+                  <div class="draw-tool-wrap-header">
+                    <div class="draw-tool-wrap-title" id="dragMe" lang="y">그리기 도구</div>
+                    <div class="close_but add_cursor">
+                      <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+                    </div>
+                  </div>
+                  <div class="draw-tool-wrap-body">
+                    <div class="tool-row function-item">
+                      <button type="button" class="ic_pen active"></button>
+                      <button type="button" class="ic_txt "></button>
+                      <button type="button" class="ic_eraser"></button>
+                    </div>
+                    <div class="tool-row function-item">
+                      <button type="button" class="ic_triangle"></button>
+                      <button type="button" class="ic_square"></button>
+                      <button type="button" class="ic_circle"></button>
+                      <button type="button" class="ic_polygon"></button>
+                    </div>
+                    <div class="tool-row function-item">
+                      <button type="button" class="ic_line"></button>
+                      <button type="button" class="ic_dash"></button>
+                      <button type="button" class="ic_draw"></button>
+                      <button type="button" class="ic_pull"></button>
+                    </div>
+                    <div class="tool-row palette-item">
+                      <button type="button" class="p_red"></button>
+                      <button type="button" class="p_yellow"></button>
+                      <button type="button" class="p_green"></button>
+                      <button type="button" class="p_blue"></button>
+                      <button type="button" class="p_purple"></button>
+                      <button type="button" class="p_black active"></button>
+                    </div>
+                    <div class="tool-row range-item">
+                      <input type="range" name="thickness" class="draw-scale-range">
+                    </div>
+                    <div class="tool-row range-item">
+                      <input type="range" name="opacity" class="draw-trans-range">
+                    </div>
+                    <div class="tool-row function-item">
+                      <div class="arrow-item">
+                        <button type="button" class="ic_undo"></button>
+                        <button type="button" class="ic_redo"></button>
+                      </div>
+                      <button type="button" class="ic_del"></button>
+                    </div>
+
+                    <div class="ic_polygon_pop">
+                      <span>꼭지점</span>
+                      <button type="button" class="ipp_minus"></button>
+                      <div>
+                        <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                        <label for="ipp_num">개</label>
+                      </div>
+                      <button type="button" class="ipp_plus"></button>
+                    </div>
+                  </div>
+                </div>
+                <!-- //그리기도구 팝업 -->
+              </div>
+            </div>
+
+            <div class="c2">
+
+              <div class="operation">
+
+                <div lang="y">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="8"></math-field>
+                  </div>
+                  도막
+                </div>
+
+                <div>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="1.85 "></math-field>
+                  </div>
+                  &nbsp;m
+                </div>
+
+              </div>
+
+              <div class="answer">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197"
+                  height="184" viewBox="0 0 197 184" fill="none">
+                  <rect x="55.5" y="50" width="141.5" height="53.5" fill="url(#pattern0_10262_772085)" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="0.765625" y="91.375">3.8</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="142.719" y="41.375">6</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="90.5" y="126.375">2</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="113.5" y="126.375">2</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="113.5" y="171.375">1</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="143.5" y="126.375">8</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="90.5" y="91.375">2</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="110.5" y="91.375">4</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="133" y="91.375">.</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="133" y="171.375">.</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="142.5" y="91.375">6</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="143.5" y="171.375">8</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="164.5" y="91.375">5</tspan>
+                  </text>
+                  <text fill="#FF0000" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="32" font-weight="bold" letter-spacing="-1px">
+                    <tspan x="164.5" y="171.375">5</tspan>
+                  </text>
+                  <path d="M59.5 135.5C61.5 135.5 150.667 135.5 195 135.5" stroke="#FF0000" stroke-width="2" />
+                  <defs>
+                    <pattern id="pattern0_10262_772085" patternContentUnits="objectBoundingBox" width="1" height="1">
+                      <use xlink:href="#image0_10262_772085" transform="scale(0.00353357 0.00934579)" />
+                    </pattern>
+                    <image id="image0_10262_772085" width="283" height="107" preserveAspectRatio="none"
+                      xlink:href="data:image/png;base64,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" />
+                  </defs>
+                </svg>
+              </div>
+
+            </div>
+
+            <div class="c3">
+              <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="148" height="351" viewBox="0 0 148 351" fill="none">
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="20" letter-spacing="-0.5px">
+                    <tspan x="21.6348" y="35.1094" lang="y">계산이 맞는지
+                    </tspan>
+                    <tspan x="38.3906" y="67.1094" lang="y">확인해봐.</tspan>
+                  </text>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <button type="button" class="btn btn_draw"></button>
+      
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

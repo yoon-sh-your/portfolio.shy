@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_08_ih_0004</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_08_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4_green" class="is_star">
+          <span class="label_bread" lang="y">조건</span>
+          <span lang="y">을 만족하는 입체도형의 이름을 써 보세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="text_wrap">
+            <dl>
+              <dt class="label_bread" lang="y">조건</dt>
+              <dd class="text_bullet" lang="y">밑면은 다각형이고 1개입니다.</dd>
+              <dd class="text_bullet" lang="y">옆면은 모두 삼각형입니다.</dd>
+              <dd class="text_bullet" lang="y">모서리는 8개입니다.</dd>
+            </dl>
+          </div>
+          <div class="input_wrap mt_40">
+            <math-field data-answer-single="사각뿔"></math-field>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">밑면은 다각형이고 1개이면서 옆면이 모두 삼각형인 입체도형은 각뿔입니다. 모서리가 8개인 각뿔은 사각뿔입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

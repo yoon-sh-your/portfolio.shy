@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_07_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="../../common_practice/js/ema521_01_02_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_07_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">반올림하여 백의 자리까지 나타낸 수가 8200이 아닌 수를 찾아 써 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center align_end">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA521_07_IH/0003_01.png" alt="" />
+            <div class="texts">
+              <p lang="y">8154</p>
+              <p lang="y">8247</p>
+              <p lang="y">8346</p>
+              <p lang="y">8209</p>
+            </div>
+          </div>
+          <div class="input_area">
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="8346"></math-field>
+            </div>
+            <span lang="y">)</span>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">주어진 수를 반올림하여 백의 자리까지 나타내어 봅니다.</p>
+                <p>
+                  <span>81<span class="text_bg_red">5</span>1 ➔ 8200</span><span class="ml_40">82<span class="text_bg_red">4</span>7 ➔ 8200</span><br />
+                  <span>83<span class="text_bg_red">4</span>6 ➔ 8300</span><span class="ml_40">82<span class="text_bg_red">0</span>9 ➔ 8200</span>
+                </p>
+                <p lang="y">따라서 반올림하여 백의 자리까지 나타낸 수가 8200이 아닌 수는 8346입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

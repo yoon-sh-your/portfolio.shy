@@ -1,0 +1,343 @@
+/*  분수식 */
+.fraction_row {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.orange {
+    color: var(--secondary-red);
+}
+
+/*EMA522_08_SU_0002_s*/
+/* 이해해요 */
+h4.understand,
+.understand {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    width: 90px;
+    flex: 0 0 auto;
+}
+
+h4.understand::before,
+.understand::before {
+    content: '';
+    width: 57px;
+    height: 40px;
+    background: url(../img/EMA522_08_SU/understand_bg.png) no-repeat left top / 100%;
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    left: -14px;
+    top: -2px;
+    z-index: -1;
+}
+
+h4.understand .txt_bluelight,
+.understand .txt_bluelight {
+    color: #1454b9;
+}
+
+.ema522_09_su_0002 {
+    h2:before {
+        content: "";
+        display: inline-flex;
+        width: 21px;
+        height: 48px;
+        margin-right: 12px;
+        background: url(../../common_contents/img/EMA522_09_SU/0002_header_dot.png) no-repeat center;
+    }
+
+    .title_label {
+        white-space: nowrap;
+    }
+
+    .hide {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+    }
+
+    .img_area {
+        position: relative;
+        width: 1004px;
+        height: 560px;
+        margin: auto;
+
+        img {
+            margin: auto;
+        }
+
+        svg {
+            position: absolute;
+            top: 20px;
+            left: 400px;
+            ;
+        }
+
+        .abs_1 {
+            position: absolute;
+            top: 137px;
+            left: 62px;
+            z-index: 1;
+            width: 260px;
+            height: 250px;
+            padding: 20px 0;
+            text-align: center;
+            background: url(../../common_contents/img/EMA522_09_SU/0002_img01_1.png) no-repeat left top / 100%;
+        }
+
+        .abs_2 {
+            position: absolute;
+            top: 210px;
+            right: 24px;
+            z-index: 1;
+            width: 250px;
+            height: 100px;
+            padding: 20px 0;
+            text-align: center;
+            background: url(../../common_contents/img/EMA522_09_SU/0002_img01_2.png) no-repeat left top / 100%;
+        }
+    }
+
+}
+
+.ema522_09_su_0003 {
+    h3 {
+        margin-top: 0 !important;
+    }
+
+    .title_label {
+        white-space: nowrap;
+    }
+
+
+    .picture_wrap {
+        position: relative;
+        width: 1004px;
+        height: 560px;
+        margin: auto;
+        border: none;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+
+        svg {
+            position: absolute;
+            top: -17px;
+            left: 279px;
+            width: 31%;
+            transform: none;
+        }
+
+        .abs_1 {
+            position: absolute;
+            top: 35px;
+            left: 2px;
+            z-index: 1;
+            width: 252px;
+            height: 250px;
+            padding: 20px 0;
+            text-align: center;
+            background: url(../../common_contents/img/EMA522_09_SU/0002_img01_1.png) no-repeat left top / 100%;
+        }
+
+        .abs_2 {
+            position: absolute;
+            top: 153px;
+            right: 0px;
+            z-index: 1;
+            width: 227px;
+            height: 100px;
+            padding: 20px 0;
+            text-align: center;
+            background: url(../../common_contents/img/EMA522_09_SU/0002_img01_2.png) no-repeat left top / 100%;
+        }
+    }
+
+    /* 
+    .hide {
+        position: absolute;
+        opacity: 0;
+    } */
+
+    .page_1 {
+        .img_area {
+            position: relative;
+            width: 1004px;
+            height: 560px;
+            margin: auto;
+
+            .abs_1 {
+                position: absolute;
+                top: 37px;
+                left: 47px;
+                text-align: center;
+                z-index: 1;
+            }
+
+            .abs_2 {
+                position: absolute;
+                top: 110px;
+                right: 164px;
+                z-index: 1;
+            }
+        }
+    }
+
+    .page_9 {
+        .solve_box_wrap {
+            width: 95%;
+            margin: 30px auto 0;
+        }
+
+        .solve_box {
+            flex: 1;
+            height: 306px;
+            border: 3px dashed #c6c6c6;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+            border-bottom: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .draw_title {
+            background: url(../../common_contents/img/EMA522_08_SU/0002_titlebg.svg) no-repeat left top;
+            background-size: auto 100%;
+            height: 40px;
+            padding: 0 16px;
+        }
+
+        .draw_title.medium {
+            background-image: url(../../common_contents/img/EMA522_08_SU/0002_titlebg1.svg);
+        }
+
+        .draw_title span {
+            line-height: 40px;
+            color: var(--primary-blue-800);
+        }
+
+        .solve_box>p {
+            background: url(../../common_contents/img/EMA522_08_SU/0002_bg.png) no-repeat 52% 100% / 250px;
+
+            width: 100%;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .solve_box:last-child>p {
+            background: url(../../common_contents/img/EMA522_08_SU/0002_bg1.png) no-repeat 52% 100% / 300px;
+        }
+
+        .solve_box:first-child>ol {
+            margin-top: 40px;
+            font-size: 32px;
+        }
+
+        .solve_box:first-child>ol li {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .solve_box:first-child>ol li::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            position: relative;
+            left: -10px;
+            top: -8px;
+            border-radius: 50%;
+            background-color: var(--font-main);
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .solve_box:last-child>div:nth-child(2) {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .solve_box:last-child>div:nth-child(3) {
+            font-size: 32px;
+        }
+    }
+
+    &[data-current-page='page_8'] .btn_area button,
+    &:not([data-current-page='page_1'], [data-current-page='page_2'], [data-current-page='page_4'], [data-current-page='page_5']) .btn_area .btnSubmit,
+    &:not([data-current-page='page_3'], [data-current-page='page_6'], [data-current-page='page_7']) .btn_area .btnCheck {
+        display: none;
+    }
+
+
+}
+
+.ema522_09_su_0004 {
+    
+
+    .img_area {
+        position: relative;
+        width: 1004px;
+        height: 560px;
+        margin: 0 350px 0 auto;
+
+        img {
+            margin: auto;
+        }
+
+        svg {
+            position: absolute;
+            top: 20px;
+            left: 400px;
+        }
+        .question_box {
+            position: absolute;
+            right: -100px;
+            bottom: 100px;
+        }
+
+        .abs_1 {
+            position: absolute;
+            top: 137px;
+            left: 62px;
+            z-index: 1;
+            width: 260px;
+            height: 250px;
+            padding: 20px 0;
+            text-align: center;
+            background: url(../../common_contents/img/EMA522_09_SU/0002_img01_1.png) no-repeat left top / 100%;
+        }
+
+        .abs_2 {
+            position: absolute;
+            top: 210px;
+            right: 24px;
+            z-index: 1;
+            width: 250px;
+            height: 100px;
+            padding: 20px 0;
+            text-align: center;
+            background: url(../../common_contents/img/EMA522_09_SU/0002_img01_2.png) no-repeat left top / 100%;
+        }
+    }
+}
+
+
+
+
+
+/* 
+.ema522_07_su_0002:not([data-current-page='page_2'], [data-current-page='page_3'], [data-current-page='page_5'], [data-current-page='page_6']) .btn_area .btnSubmit,
+.ema522_07_su_0002:not([data-current-page='page_1'], [data-current-page='page_4'], [data-current-page='page_7'], [data-current-page='page_8'], [data-current-page='page_9']) .btn_area .btnCheck {
+  display: none;
+} */

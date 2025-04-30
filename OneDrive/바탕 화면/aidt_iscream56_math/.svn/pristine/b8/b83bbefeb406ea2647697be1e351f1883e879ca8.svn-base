@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema523_01_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema523_01_ih_0002.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_01.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema523_01_ih_0002">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 4-2』 수직과 수선 알아보기</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="2">
+          <span lang="y">두 직선이 만나서 이루는 각이 직각인 곳을 모두 찾아</span>
+          <img src="../../common_practice/img/EMA523_01_IH/0002_01.svg" alt="직각" />
+          <span lang="y">로 표시해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="quiz_area quiz_area1">
+            <div class="image image1">
+              <img src="../../common_practice/img/EMA523_01_IH/0002_02.svg" alt="선 3개" />
+            </div>
+            <div class="line_area" id="lineArea1"></div>
+            <div class="boolean_wrap">
+              <button type="button" class="select_btn select_btn_1" data-answer-single="true"></button>
+              <button type="button" class="select_btn select_btn_2" data-answer-single="true"></button>
+              <button type="button" class="select_btn select_btn_3" data-answer-single="true"></button>
+              <button type="button" class="select_btn select_btn_4" data-answer-single="true"></button>
+            </div>
+          </div>
+
+          <div class="quiz_area quiz_area2">
+            <div class="image image2">
+              <img src="../../common_practice/img/EMA523_01_IH/0002_03.svg" alt="선 3개" />
+            </div>
+            <div class="line_area" id="lineArea2"></div>
+
+            <div class="boolean_wrap">
+              <button type="button" class="select_btn select_btn_5" data-answer-single="true"></button>
+              <button type="button" class="select_btn select_btn_6" data-answer-single="true"></button>
+              <button type="button" class="select_btn select_btn_7" data-answer-single="true"></button>
+              <button type="button" class="select_btn select_btn_8" data-answer-single="true"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">직각인 곳을 빠뜨리지 않도록 주의합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

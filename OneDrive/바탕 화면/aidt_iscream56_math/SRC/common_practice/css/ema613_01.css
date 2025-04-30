@@ -1,0 +1,76 @@
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+
+.input_wrap:has(.w_80) {
+	min-width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+	bottom: calc(100% + 4px);
+	top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+	position: relative;
+}
+.input_wrap.input_sep {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+	left: calc(100% + 20px);
+	top: 12px;
+	width: auto;
+}
+
+.fraction_wrap .hint_up .text_hint {
+	top: auto;
+	bottom: calc(100% + 4px);
+}
+.fraction_wrap.hint_right .text_hint {
+	top: 18px;
+}
+
+math-field.has_ex_text + .text_hint:before {
+	content: "예";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 44px;
+	height: 44px;
+	background: var(--primary-blue);
+	border-radius: 12px;
+	color: #fff;
+	line-height: 42px;
+}
+.input_wrap math-field.large {
+	width: 300px !important;
+}
+.w_large {
+	width: 247px !important;
+}
+
+/* ema613_01_ih_0001 */
+.ema613_01_ih_0001 .question_box {
+	gap: 120px;
+}
+
+/* ema613_01_ih_0002 */
+.ema613_01_ih_0002 .question_box {
+	gap: 120px;
+}
+
+/* ema613_01_ih_0004 */
+.ema613_01_ih_0004 .question_box {
+	gap: 120px;
+}

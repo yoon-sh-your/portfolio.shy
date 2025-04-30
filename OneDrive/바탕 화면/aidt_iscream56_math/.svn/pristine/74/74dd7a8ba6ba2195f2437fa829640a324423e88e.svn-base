@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_05_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="../../common_practice/js/ema521_01_02_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_05_ih_0007 paging">
+      <section class="title type2 score">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="7" class="is_star2">
+          <span lang="y">수 카드</span>
+          <img src="./../../common_practice/img/EMA521_05_IH/0007_01.svg" alt="" class="card" />, <img src="./../../common_practice/img/EMA521_05_IH/0007_02.svg" alt="" class="card" />,
+          <img src="./../../common_practice/img/EMA521_05_IH/0007_03.svg" alt="" class="card" />
+          <span lang="y">을 한 번씩만 사용하여 소수 두 자리 수를 만들고, 만든 수를 올림하여 소수 첫째 자리까지 나타내려고 합니다. 물음에 답해 보세요.</span>
+        </h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">소수 두 자리 수를 만들어 보세요.</h3>
+          <div class="question_box justify_center mt_30">
+            <div class="input_area">
+              <span>(</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="7.64"></math-field>
+                <div class="example_box">
+                  <p>7.64</p>
+                </div>
+              </div>
+              <span lang="y">)</span>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">4, 6, 7을 한 번씩만 사용하여 소수 두 자리 수를 만들어 봅니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <!-- <button class="btnCheck">확인</button> -->
+            <button class="btnSample">예시</button>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">만든 수를 올림하여 소수 첫째 자리까지 나타내어 보세요.</h3>
+          <div class="question_box justify_center mt_30">
+            <div class="input_area">
+              <span>(</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="7.7"></math-field>
+                <div class="example_box">
+                  <p>7.7</p>
+                </div>
+              </div>
+              <span lang="y">)</span>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">만든 수의 소수 첫째 자리 아래 수를 0.1로 생각하여 소수 첫째 자리까지 나타내어 봅니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <!-- <button class="btnCheck">확인</button> -->
+            <button class="btnSample">예시</button>
+          </div>
+        </article>
+      </section>
+    </div>
+    <script>
+      // runAfterAppReady(() => {
+      // 	var pageIndex = 1;
+      // 	$(".btnSample").click(function () {
+      // 		pageIndex = $(this).parent().parent().index()+1;
+      // 		$(".page_"+pageIndex+" .solve_area").addClass("active");
+      // 	});
+      // 	$(".btnReset").click(function () {
+      // 		pageIndex = $(this).parent().parent().index()+1;
+      // 		$(".page_"+pageIndex+" .solve_area").removeClass("active");
+      // 	});
+      // });
+      runAfterAppReady(() => {
+        $('.btnSample').click(function () {
+          $(this).closest('.page').find('.solve_area').addClass('active');
+        });
+        $('.btnReset').click(function () {
+          $(this).closest('.page').find('.solve_area').removeClass('active');
+        });
+      });
+    </script>
+  </body>
+</html>

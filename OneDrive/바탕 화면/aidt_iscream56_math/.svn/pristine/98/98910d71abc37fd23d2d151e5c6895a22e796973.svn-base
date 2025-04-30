@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_02_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_02_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_02_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">준희네 모둠의 줄넘기 기록을 나타낸 표입니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">줄넘기 기록이 150회와 같거나 많은 학생의 기록을 모두 골라 보세요.</h3>
+          <h4 lang="y">학생별 줄넘기 기록</h4>
+          <div class="boolean_wrap justify_center mt_30">
+            <div class="table_wrap">
+              <table>
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th lang="y">이름</th>
+                    <td lang="y">준희</td>
+                    <td lang="y">다현</td>
+                    <td lang="y">은빈</td>
+                    <td lang="y">지현</td>
+                    <td lang="y">민정</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th lang="y">기록(회)</th>
+                    <td lang="y">153</td>
+                    <td lang="y">200</td>
+                    <td lang="y">121</td>
+                    <td lang="y">140</td>
+                    <td lang="y">150</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="button_box">
+                <button type="button" data-answer-single="true" class="button1"></button>
+                <button type="button" data-answer-single="true" class="button2"></button>
+                <button type="button" data-answer-single="false" class="button3"></button>
+                <button type="button" data-answer-single="false" class="button4"></button>
+                <button type="button" data-answer-single="true" class="button5"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">줄넘기 기록이 150회와 같거나 많은 학생은 줄넘기 기록이 153회인 준희, 200회인 다현, 150회인 민정입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">줄넘기 기록이 150회와 같거나 적은 학생의 기록을 모두 골라 보세요.</h3>
+          <h4 lang="y">학생별 줄넘기 기록</h4>
+          <div class="boolean_wrap justify_center mt_30">
+            <div class="table_wrap">
+              <table>
+                <colgroup>
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th lang="y">이름</th>
+                    <td lang="y">준희</td>
+                    <td lang="y">다현</td>
+                    <td lang="y">은빈</td>
+                    <td lang="y">지현</td>
+                    <td lang="y">민정</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th lang="y">기록(회)</th>
+                    <td lang="y">153</td>
+                    <td lang="y">200</td>
+                    <td lang="y">121</td>
+                    <td lang="y">140</td>
+                    <td lang="y">150</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="button_box">
+                <button type="button" data-answer-single="false" class="button1"></button>
+                <button type="button" data-answer-single="false" class="button2"></button>
+                <button type="button" data-answer-single="true" class="button3"></button>
+                <button type="button" data-answer-single="true" class="button4"></button>
+                <button type="button" data-answer-single="true" class="button5"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">줄넘기 기록이 150회와 같거나 적은 학생은 줄넘기 기록이 121회인 은빈, 140회인 지연, 150회인 민정입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3>
+            <span class="empty_box nemo"></span>
+            <span lang="y"> 안에 ‘이상’과 ‘이하’ 중 알맞은 말을 써넣으세요.</span>
+          </h3>
+
+          <div class="question_box justify_center">
+            <div class="input_area">
+              <div class="input_row">
+                <span lang="y">150과 같거나 큰 수를 150</span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="이상"></math-field>
+                </div>
+                <span lang="y" class="text_indent">인 수라고 합니다.</span>
+              </div>
+              <div class="input_row">
+                <span lang="y">150과 같거나 작은 수를 150</span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="이하"></math-field>
+                </div>
+                <span lang="y" class="text_indent">인 수라고 합니다.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">150과 같거나 큰 수를 150 이상인 수, 150과 같거나 작은 수를 150 이하인 수라고 합니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

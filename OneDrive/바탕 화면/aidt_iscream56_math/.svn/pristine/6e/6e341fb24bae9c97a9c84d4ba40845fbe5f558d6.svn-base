@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_07_IH_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+  <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+
+  <!-- <link rel="stylesheet" href="./../../common_practice/css/ema616_03_05.css" /> -->
+
+  <link rel="stylesheet" href="./../../common_practice/css/ema616_07.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_07_ih_0003">
+    <section class="title type2">
+      <h2 data-head="3_orange" lang="y">직육면체의 겉넓이는 몇 ㎠인가요?</h2>
+    </section>
+
+    <section class="contents">
+      <div class="question_box justify_center dir_col">
+        <img src="../../common_practice/img/EMA616_07_IH/616_07_03.png" />
+        <div>
+          <div class="input_wrap">
+            <math-field data-answer-single="120" text-align="center"></math-field>
+          </div>
+          <span>㎠</span>
+        </div>
+        <div class="text1">5 ㎝</div>
+        <div class="text2">4 ㎝</div>
+        <div class="text3">6 ㎝</div>
+      </div>
+
+      <div class="solve_area">
+        <div class="inner_solve">
+          <div class="flex">
+            <strong class="tit_solve" lang="y">해설</strong>
+            <div class="conts_solve">
+              <ul>
+                <li lang="y"> (직육면체의 겉넓이)=24&times;2+30&times;2+20&times;2=148 (㎠)</li>
+                <!-- <li class="tid">
+                      <span class="solve_img">다른 풀이</span>
+                      <p lang="y">새로 만든 직육면체의 가로는 3×3=9 (㎝), 세로는 4×3=12 (㎝), 높이는 2×3=6 (㎝)이므로 부피는 9×12×6=648 (㎤)입니다.</p>
+                    </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="buttons_solve"></div>
+        </div>
+      </div>
+
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

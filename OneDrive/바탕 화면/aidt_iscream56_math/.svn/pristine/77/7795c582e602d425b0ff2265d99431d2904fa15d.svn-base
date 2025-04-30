@@ -1,0 +1,21 @@
+/* 인트로 이미지 */
+.intro_wrap {
+  background-image: url("../../common_project/img/EMA627_SU/intro.png");
+}
+
+.img_row {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.img_box {
+  position: relative;
+}
+
+.img_box .text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

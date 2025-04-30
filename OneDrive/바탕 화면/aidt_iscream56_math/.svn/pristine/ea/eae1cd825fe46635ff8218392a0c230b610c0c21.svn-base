@@ -1,0 +1,226 @@
+.solve_area .bracket,
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+
+.fraction_wrap,
+.fraction_wrap math-field,
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+h3.title:before {
+  margin-top: 2px;
+}
+
+.ema514_06_ih_0001 .obj_arrow {
+  width: 45px;
+}
+
+.ema514_06_ih_0002 .contents {
+  font-size: 32px;
+  font-weight: bold;
+}
+.ema514_06_ih_0002 .dir_col {
+  background: url(../img/EMA514_06_IH/0002_bg.png) no-repeat center center / auto 100%;
+}
+
+.ema514_06_ih_0002 .question_box {
+  width: 970px;
+  height: 163px;
+  justify-content: center;
+  gap: 40px;
+}
+.ema514_06_ih_0002 .obj_arrow {
+  width: 45px;
+}
+.ema514_06_ih_0002 .bracket .input_wrap,
+.ema514_06_ih_0002 .bracket .input_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+
+.ema514_06_ih_0003 .question_box {
+  gap: 100px;
+}
+
+.ema514_06_ih_0004 .input_wrap.fraction_wrap,
+.ema514_06_ih_0004 .input_wrap.fraction_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+.ema514_06_ih_0004 .dir_col {
+  background: url(../img/EMA514_06_IH/0004_bg.png) no-repeat center 0;
+}
+.ema514_06_ih_0004 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 142px;
+  height: 142px;
+}
+.ema514_06_ih_0004 [class^='row'] {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: bold;
+}
+.ema514_06_ih_0004 .row2 {
+  width: 512px;
+  margin-top: 78px;
+}
+.ema514_06_ih_0004 .row3 {
+  width: 690px;
+  margin-top: 72px;
+}
+.ema514_06_ih_0004 .row3 .col {
+  display: flex;
+  gap: 36px;
+}
+.ema514_06_ih_0004 .input_wrap .text_hint {
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  left: 108px;
+  padding: 0 16px;
+}
+
+.ema514_06_ih_0005 .drag_checkout {display:flex; flex-direction:column; align-items:center; gap:40px; position:relative;}
+.result .ema514_06_ih_0005 .drag_checkout:after{position:absolute; top:0; left:0; right:0; bottom:0; content:'';}
+
+.ema514_06_ih_0005 .draggable_wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction:row-reverse;
+  align-items: center;
+  gap: 20px;
+  width: 268px;
+  height: 108px;
+  border: 1px solid #d2d2d2;
+  border-radius: 16px;
+  background: #f7f7f7;
+}
+.ema514_06_ih_0005 .draggable_wrap .single_draggable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 84px;
+  height: 84px;
+}
+
+.ema514_06_ih_0005 .ui-draggable {
+  display:block; width:84px; height:84px;;
+}
+.ema514_06_ih_0005 .circle {
+  background:url(../img/EMA514_06_IH/0005_mark1.svg) no-repeat center center;
+}
+.ema514_06_ih_0005 .triangle {
+  background:url(../img/EMA514_06_IH/0005_mark2.svg) no-repeat center center;
+}
+.ema514_06_ih_0005 .drag_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 720px;
+  height: 146px;
+  gap: 40px;
+  background: url(../img/EMA514_06_IH/0005_bg.png) no-repeat center center / auto 100%;
+}
+.ema514_06_ih_0005 .drag_group .droppable {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 84px;
+  height:84px;
+  position: relative;
+}
+.ema514_06_ih_0005 .drag_group .droppable .ui-draggable,
+.result .ema514_06_ih_0005 .drag_group .droppable .black {
+  position:absolute !important; top:50%; left:50%; transform:translate(-50%, -50%); width:84px; height:84px;
+
+}
+.result .ema514_06_ih_0005 .drag_group .droppable[data-correct="true"] .ui-draggable.circle {background-image:url(../img/EMA514_06_IH/0005_mark1_true.svg);}
+.result .ema514_06_ih_0005 .drag_group .droppable[data-correct="false"] .ui-draggable.circle {background-image:url(../img/EMA514_06_IH/0005_mark1_false.svg);}
+.result .ema514_06_ih_0005 .drag_group .droppable[data-correct="true"] .ui-draggable.triangle {background-image:url(../img/EMA514_06_IH/0005_mark2_true.svg);}
+.result .ema514_06_ih_0005 .drag_group .droppable[data-correct="false"] .ui-draggable.triangle {background-image:url(../img/EMA514_06_IH/0005_mark2_false.svg);}
+.result .ema514_06_ih_0005 .ui-state-hover {outline:none;}
+
+.ema514_06_ih_0006 .img_wrap {
+  position: relative;
+}
+.ema514_06_ih_0006 .img_wrap span {
+  position: absolute;
+  text-align: center;
+  font-size: 24px;
+  transform: translateX(-50%);
+  width: 132px;
+}
+.ema514_06_ih_0006 .img_wrap .txt0 {
+  top: 11px;
+  left: 284px;
+  font-size: 32px;
+  width: 220px;
+}
+.ema514_06_ih_0006 .img_wrap .txt1 {
+  top: 102px;
+  left: 244px;
+}
+.ema514_06_ih_0006 .img_wrap .txt2 {
+  top: 307px;
+  left: 171px;
+}
+.ema514_06_ih_0006 .img_wrap .txt3 {
+  top: 268px;
+  left: 417px;
+}
+.ema514_06_ih_0006 .fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.ema514_06_ih_0006 .input_wrap math-field {
+  width: 232px;
+}
+
+.ema514_06_ih_0007 .contents .empty_box {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 40px;
+}
+.ema514_06_ih_0007 .question_box .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 423px;
+  height: 231px;
+  background: url(../img/EMA514_06_IH/0007_bg.png) no-repeat center center;
+}
+.ema514_06_ih_0007 .question_box .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1218px;
+  height: 170px;
+  border: 4px solid #dadada;
+  border-radius: 40px;
+}
+.ema514_06_ih_0007 .question_box .bottom .boolean_wrap {
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+.ema514_06_ih_0007 .contents .fraction_box span {
+  display: flex;
+  align-items: center;
+  line-height: 40px;
+}
+.ema514_06_ih_0007 .solve_area:has(.conts_solve .fraction_box) .tit_solve {
+  top: 10px;
+}

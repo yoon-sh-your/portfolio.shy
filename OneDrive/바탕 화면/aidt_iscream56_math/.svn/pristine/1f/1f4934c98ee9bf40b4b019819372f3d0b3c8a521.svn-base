@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_04_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_04_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2">
+          <span lang="y">재윤이와 다른 방법으로 8×</span>
+          <div class="fraction_box ml_1">
+            <span>5</span>
+            <span>14</span>
+          </div>
+          <span lang="y">를 계산해 보세요.</span>
+          <!-- <span class="nemo"></span>
+					<span lang="y">안에 알맞은 수를 써넣으세요.</span> -->
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_04_IH/0002_01.png" alt="" />
+            <p class="name" lang="y">재윤</p>
+            <div class="text_fraction flex align_center gap_10">
+              <span>6 ×</span>
+              <div class="fraction_box">
+                <span>7</span>
+                <span>10</span>
+              </div>
+              <span>=</span>
+              <div class="fraction_box">
+                <span>6×7</span>
+                <span>10</span>
+              </div>
+              <span>=</span>
+              <div class="fraction_box">
+                <span class="mark_error up"
+                  >42
+                  <i>21</i>
+                </span>
+                <span class="mark_error"
+                  >10
+                  <i>5</i>
+                </span>
+              </div>
+              <span>=</span>
+              <div class="fraction_box">
+                <span>21</span>
+                <span>5</span>
+              </div>
+              <span>= 4</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+          <div class="text_area flex align_start">
+            <div class="flex align_center gap_10">
+              <span>8 ×</span>
+              <div class="fraction_box">
+                <span>5</span>
+                <span>14</span>
+              </div>
+              <span>=</span>
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea" placeholder=" "></math-field>
+              <div class="example_box">
+                <div>
+                  <span class="mark_error up">8<i>4</i></span>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span class="mark_error">14<i>7</i></span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span>4×5</span>
+                    <span>7</span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span>20</span>
+                    <span>7</span>
+                  </div>
+                  <span>= 2</span>
+                  <div class="fraction_box">
+                    <span>6</span>
+                    <span>7</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">재윤이는 자연수와 분자를 곱한 후 약분하여 계산했으므로 자연수와 분모를 약분한 후 계산합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSample">예시</button>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      runAfterAppReady(() => {
+        $('.btnSample').click(function () {
+          $('.solve_area').addClass('active');
+        });
+        $('.btnReset').click(function () {
+          $('.solve_area').removeClass('active');
+        });
+      });
+    </script>
+  </body>
+</html>

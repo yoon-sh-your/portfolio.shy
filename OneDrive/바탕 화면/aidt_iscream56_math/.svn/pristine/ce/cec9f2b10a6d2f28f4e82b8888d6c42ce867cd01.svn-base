@@ -1,0 +1,215 @@
+.title h2[data-head] .fraction_box {
+  margin-left: 0;
+}
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+.fraction_box {
+  min-width: 40px;
+}
+.input_wrap.fraction_wrap,
+.fraction_box .input_wrap {
+  min-width: 0;
+  min-width: 80px;
+}
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap math-field {
+  width: 100%;
+}
+.fraction_box:has(.input_wrap) span {
+  line-height: 60px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.fraction_box_wrap .fraction_box {
+  min-width: 0;
+}
+.label_bogi {
+  width: 52px;
+  height: 32px;
+  border: 2px solid var(--secondary-red);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--secondary-red);
+  z-index: 1;
+}
+.solve_area .icon_arrow {
+  width: 32px;
+}
+
+.ema524_02_ih_0001 .input_wrap {
+  margin-left: 8px;
+}
+
+.ema524_02_ih_0002 .bottom {
+  margin-top: 60px;
+}
+.ema524_02_ih_0002 .answer1 {
+  width: 160px;
+}
+.ema524_02_ih_0002 .answer2 {
+  width: 120px;
+}
+
+.ema524_02_ih_0003 .contents > .flex {
+  width: 488px;
+  margin: 0 auto;
+  border: 2px dashed #d2d2d2;
+  border-radius: 110px;
+  background: #eef9ff;
+  padding: 12px;
+}
+.ema524_02_ih_0003 .question_box {
+  justify-content: center;
+  width: 100%;
+  border: 2px dashed #8cd6ff;
+  border-radius: 100px;
+  height: 342px;
+  background: #fff;
+}
+.ema524_02_ih_0003 .question_box > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ema524_02_ih_0003 .question_box .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  gap: 15px;
+}
+.ema524_02_ih_0003 .question_box .row > span:first-child {
+  width: 50px;
+  text-align: center;
+}
+.ema524_02_ih_0003 .question_box .row2 {
+  gap: 0;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.ema524_02_ih_0003 .question_box .row2:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 112px;
+  margin-right: 12px;
+  background: url(../img/EMA524_02_IH/0003_arrow.svg) no-repeat 0 center / contain;
+}
+.ema524_02_ih_0003 .question_box .right {
+  margin-left: 24px;
+}
+.ema524_02_ih_0003 .question_box .right .row1 {
+  justify-content: flex-start;
+}
+.ema524_02_ih_0004 .solve_area .conts_solve .calc_vertical {
+  width: 88px;
+}
+.ema524_02_ih_0004 .solve_area .conts_solve .calc_vertical .bottom {
+  text-align: right;
+}
+.ema524_02_ih_0005 .question_box {
+  position: relative;
+  justify-content: center;
+  gap: 80px;
+  padding-top: 80px;
+}
+.ema524_02_ih_0005 .question_box .left,
+.ema524_02_ih_0005 .question_box .right {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #c6e5dd;
+  border-radius: 20px;
+}
+.ema524_02_ih_0005 .question_box .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 90px;
+}
+.ema524_02_ih_0005 .question_box .item + .item {
+  border-top: 3px solid #c6e5dd;
+}
+.ema524_02_ih_0005 .question_box .left {
+  background: #d7eee9;
+}
+.ema524_02_ih_0005 .question_box .input_wrap .text_hint {
+  top: 50%;
+  left: 100%;
+  width: auto;
+  padding: 0 20px;
+  transform: translateY(-50%);
+}
+.ema524_02_ih_0005 .question_box .center {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  width: 222px;
+  background: url(../img/EMA524_02_IH/0005_arrow.svg) no-repeat center bottom;
+}
+.ema524_02_ih_0005 .question_box .center span {
+  display: inline-block;
+  width: 80px;
+  line-height: 48px;
+  border-radius: 48px;
+  background: #d7eee9;
+  text-align: center;
+}
+
+.ema524_02_ih_0006 .label_gray {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.ema524_02_ih_0006 .input_wrap_underline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ema524_02_ih_0006 .answer1,
+.ema524_02_ih_0006 .answer1 math-field {
+  width: 180px;
+}
+.ema524_02_ih_0006 .dir_col > .flex:first-child .input_wrap .text_hint {
+  top: -36px;
+}
+.ema524_02_ih_0007 .img {
+  position: relative;
+}
+.ema524_02_ih_0007 .img .txt {
+  position: absolute;
+  top: 12px;
+  left: 500px;
+  font-size: 24px;
+}
+
+.ema524_02_ih_0007 .label_gray {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+}
+.ema524_02_ih_0007 .input_wrap_underline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ema524_02_ih_0007 .answer1,
+.ema524_02_ih_0007 .answer1 math-field {
+  width: 180px;
+}
+.ema524_02_ih_0007 .dir_col > .flex:first-child .input_wrap .text_hint {
+  top: -36px;
+}

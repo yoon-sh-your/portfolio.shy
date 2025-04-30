@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA522_09_su_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <script src="../../common_contents/js/ema611_07_0002.js"></script>
+  <link rel="stylesheet" href="./../../common_contents/css/ema522_09_su.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema522_09_su_0004">
+    <section class="title type2">
+      <h2 data-head="2" lang="y" class="fraction_box_title">6학년 환경 지킴이 회원은 63명입니다. 6학년 환경지킴이 회의에서 의견이 통과되려면 투표에서 찬성표를 최소
+        몇 표 받아야 하는지 구해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="img_area">
+        <img src="../../common_contents/img/EMA522_09_SU/0002_img01.png" alt="자치회 활동 이미지" />
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="275" height="435" viewBox="0 0 275 435" fill="none">
+          <text fill="#008A70" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14"
+            letter-spacing="-0.5px">
+            <tspan x="0" y="140.977">환경 지킴이는?</tspan>
+          </text>
+          <text fill="#008A70" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14"
+            letter-spacing="-0.5px">
+            <tspan x="0" y="190.977">주요 활동</tspan>
+          </text>
+          <text fill="#008A70" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14"
+            letter-spacing="-0.5px">
+            <tspan x="0" y="257.977">활동 혜택</tspan>
+          </text>
+          <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14"
+            letter-spacing="-0.5px">
+            <tspan x="0" y="160.977">지역 환경을 지키기 위해 여러 가지 활동을 해요.</tspan>
+          </text>
+          <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14"
+            letter-spacing="-0.5px">
+            <tspan x="21" y="210.977">환경 보호 활동에 참여해요
+            </tspan>
+            <tspan x="21" y="230.977">환경 보호와 관련된 캠페인이나 행사를 제안해요.</tspan>
+          </text>
+          <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14"
+            letter-spacing="-0.5px">
+            <tspan x="21" y="277.977">학년별 회의에서 제안한 의견이 투표를 통해 통과</tspan>
+            <tspan x="21" y="297.977">되면 지역 행사가 될 수 있어요.</tspan>
+          </text>
+          <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="14"
+            font-weight="bold" letter-spacing="-0.5px">
+            <tspan x="15" y="337.977">학년별 회의에서 의견이 통과되기 위한 조건</tspan>
+          </text>
+          <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+            letter-spacing="-0.5px">
+            <tspan x="17" y="373.266">학년 전체 회원 수의 1/2보다 많은 회원이 회의에 </tspan>
+            <tspan x="17" y="389.266">참석해야 해요.</tspan>
+          </text>
+          <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+            letter-spacing="-0.5px">
+            <tspan x="17" y="415.266">참석한 회원 수의 2/3보다 많은 회원의 찬성표를 </tspan>
+            <tspan x="17" y="431.266">받아야 해요.</tspan>
+          </text>
+          <text fill="#DA515D" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="44"
+            font-weight="bold" letter-spacing="-1px">
+            <tspan x="32.3613" y="47.6406">환경 지킴이</tspan>
+          </text>
+          <text fill="#00A0E9" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="44"
+            font-weight="bold" letter-spacing="-1px">
+            <tspan x="50.375" y="97.6406">회원 모집</tspan>
+          </text>
+        </svg>
+        <div class="f24r abs_1">
+          의견이 통과되기 위한<br />
+          조건을 만족하면 우리가<br />
+          제안한 의견이 지역 행사가<br />
+          될 수 있대.
+        </div>
+        <div class="f24r abs_2">우리도 한번 지원해 보자</div>
+
+        <div class="question_box justify_center align_center mt_20 gap_8">
+          <div class="input_wrap">
+            <math-field data-answer-single="22" text-align="center"></math-field>
+          </div>
+          <span lang="y" class="f32b">표</span>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

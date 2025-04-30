@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_04_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_04_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y"><span class="empty_box nemo head"></span> 안에 들어갈 수 있는 자연수는 모두 몇 개인지 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="question_box">
+            <div class="left">
+              <div class="mixed_fraction">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              +
+              <div class="mixed_fraction">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+              </div>
+              &gt;
+              <span class="empty_box"></span>
+            </div>
+            <div class="right">
+              <h3 class="title gap_4" lang="y">
+                <div class="mixed_fraction">
+                  <span>2</span>
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                +
+                <div class="mixed_fraction">
+                  <span>2</span>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                </div>
+                를 계산해 보세요.
+              </h3>
+              <div class="bracket">
+                <span class="bracket-l"></span>
+                <div class="mixed_fraction">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="5" class="w_80"></math-field>
+                  </div>
+                  <div class="fraction_box">
+                    <div class="input_wrap"><math-field data-answer-single="11"></math-field></div>
+                    <div class="input_wrap"><math-field data-answer-single="20"></math-field></div>
+                  </div>
+                </div>
+                <!-- <div class="input_wrap fraction_wrap">
+                  <math-field
+                    data-answer-single="5(11)/(20)(=(111)/(20))"
+                    data-answer-multi='{"values": ["5(11)/(20)", "(111)/(20)""]}'></math-field>
+                </div> -->
+                <span class="bracket-r"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <!--start solve-->
+                  <div class="flex align_center gap_4">
+                    <div class="mixed_fraction">
+                      <span class="whole">2</span>
+                      <span class="fraction_box">
+                        <span>3</span>
+                        <span>4</span>
+                      </span>
+                    </div>
+                    <span>+</span>
+                    <div class="mixed_fraction">
+                      <span class="whole">2</span>
+                      <span class="fraction_box">
+                        <span>4</span>
+                        <span>5</span>
+                      </span>
+                    </div>
+                    <span>=</span>
+                    <div class="mixed_fraction">
+                      <span class="whole">2</span>
+                      <span class="fraction_box">
+                        <span>15</span>
+                        <span>20</span>
+                      </span>
+                    </div>
+                    <span>+</span>
+                    <div class="mixed_fraction">
+                      <span class="whole">2</span>
+                      <span class="fraction_box">
+                        <span>16</span>
+                        <span>20</span>
+                      </span>
+                    </div>
+                    <span>=</span>
+                    <span class="whole">4</span>
+                    <span>+</span>
+                    <span class="fraction_box">
+                      <span>31</span>
+                      <span>20</span>
+                    </span>
+                    <span>=</span>
+                    <span class="whole">4</span>
+                    <span>+</span>
+                    <div class="mixed_fraction">
+                      <span class="whole">1</span>
+                      <span class="fraction_box">
+                        <span>11</span>
+                        <span>20</span>
+                      </span>
+                    </div>
+                    <span>=</span>
+                    <div class="mixed_fraction">
+                      <span class="whole">5</span>
+                      <span class="fraction_box">
+                        <span>11</span>
+                        <span>20</span>
+                      </span>
+                    </div>
+                  </div>
+                  <!--end solve-->
+                </div>
+              </div>
+              <!-- <div class="buttons_solve">
+                  
+              </div> -->
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="question_box">
+            <div class="left">
+              <div class="fraction_box_wrap">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              +
+              <div class="fraction_box_wrap">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+              </div>
+              &gt;
+              <span class="empty_box"></span>
+            </div>
+            <div class="right">
+              <h3 class="title" lang="y"><span class="empty_box nemo"></span>안에 들어갈 수 있는 자연수는 모두 몇 개인지 구해 보세요.</h3>
+              <div class="flex align_center justify_center gap_0">
+                (
+                <div class="input_wrap">
+                  <math-field data-answer-single="5"></math-field>
+                </div>
+                )개
+              </div>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <!--start solve-->
+                  <div class="flex align_center gap_4">
+                    <div class="mixed_fraction">
+                      <span class="whole">5</span>
+                      <span class="fraction_box">
+                        <span>11</span>
+                        <span>20</span>
+                      </span>
+                    </div>
+                    <span>&nbsp;&gt;&nbsp;</span>
+                    <span class="empty_box nemo head"></span>
+                    <span>이므로&nbsp;&nbsp;</span>
+                    <span class="empty_box nemo head"></span>
+                    <span>&nbsp;안에 들어갈 수 있는 자연수는 1, 2, 3, 4, 5로 모두 5개입니다.</span>
+                  </div>
+                  <!--end solve-->
+                </div>
+              </div>
+              <!-- <div class="buttons_solve">
+                  
+              </div> -->
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

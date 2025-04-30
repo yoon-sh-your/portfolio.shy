@@ -1,0 +1,128 @@
+/*EMA611_01_SU_0001_s*/
+.ema611_01_su_0001#app_wrap {
+  background: url(../img/EMA611_01_SU/0001_bg.png) no-repeat left bottom / 857px, #5cc2ee;
+}
+
+.ema611_01_su_0001 .text_box {
+  color: #1454b9;
+  top: 200px;
+  left: 235px;
+}
+
+.ema611_01_su_0001 .copyright {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 14px;
+  letter-spacing: -0.5px;
+  position: absolute;
+  bottom: 85px;
+  left: 500px;
+}
+
+/*EMA611_01_SU_0002_s*/
+.ema611_01_su_0002 section.title.type2 + section.contents {
+  padding: 30px 100px 0 100px;
+}
+
+/*EMA611_01_SU_0003_s*/
+.ema611_01_su_0003 .flip .back {
+  gap: 14.5px;
+}
+
+.ema611_01_su_0003 .flip:first-child .back {
+  gap: 22.5px;
+}
+
+.ema611_01_su_0003 .flip:nth-child(2) .back .arrow {
+  width: 62px;
+  height: 25px;
+  background: url(../../common_contents/img/EMA611_01_SU/0003_arrow.svg) no-repeat 0 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(228, 0, 127, 1);
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ema611_01_su_0003 .flip:nth-child(2) .back .arrow1 {
+  padding-top: 10px;
+  top: 47px;
+}
+
+.ema611_01_su_0003 .flip:nth-child(2) .back .arrow2 {
+  top: 135px;
+  background: url(../../common_contents/img/EMA611_01_SU/0003_arrow2.svg) no-repeat 0 5px;
+}
+
+.ema611_01_su_0003 .flip:nth-child(4) .back .wrong {
+  position: relative;
+}
+
+.ema611_01_su_0003 .flip:nth-child(4) .back .wrong::before {
+  content: "";
+  width: 2px;
+  height: 48px;
+  background-color: rgba(228, 0, 127, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ema611_01_su_0003 .flip:nth-child(4) .back .wrong::after {
+  content: "2";
+  font-weight: 700;
+  font-size: 24px;
+  color: rgba(228, 0, 127, 1);
+  /* line-height: 36px; */
+  letter-spacing: -0.5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+.ema611_01_su_0003 .flip:nth-child(4) .back .wrong2::after {
+  content: "1";
+  top: 0;
+  bottom: unset;
+  transform: translate(-50%, -100%);
+}
+
+.ema611_01_su_0003 .flip .back span {
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.ema611_01_su_0003 .flip .back .fraction_box::before {
+  /* width: 42px; */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*EMA611_01_SU_0004_s*/
+.ema611_01_su_0004 .contents .img_row .video_wrap img {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+/*EMA611_01_SU_0005_s*/
+.ema611_01_su_0005 .picture_wrap img {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+
+/*EMA611_01_SU_0006_s*/
+.ema611_01_su_0006 .to_be .what_do.non_dot li {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+
+.ema611_01_su_0006 .to_be .what_do.non_dot li::before {
+  content: none;
+}

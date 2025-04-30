@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_02_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_02_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              물 로켓을 꾸미는 데 색 테이프를 지훈이는
+              <div class="fraction_box">
+                <span>1</span>
+                <span>2</span>
+              </div>
+              &nbsp;m, 다연이는
+              <div class="fraction_box">
+                <span>1</span>
+                <span>3</span>
+              </div>
+              &nbsp;m 사용했습니다. 지훈이와 다연이가 사용한 색 테이프는 모두
+            </div>
+            <div class="fraction_txt" lang="y">
+              몇 m인지 구해 봅시다.
+            </div>
+          </div>
+
+          <!-- <div class="fraction-text-column">
+            <div class="fraction-text-align" lang="y">
+              물 로켓을 꾸미는 데 색 테이프를 지훈이는
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>7</span>
+                  <span>20</span>
+                </div>
+              </div>
+              &nbsp;m, 다연이는
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>5</span>
+                </div>
+              </div>
+              &nbsp;m 사용했습니다. 지훈이와 다연이가 사용한 색 테이프는 모두
+            </div>
+            <div class="fraction-text-align" lang="y">몇 m인지 구해 봅시다.</div>
+          </div> -->
+        </h2>
+      </section>
+
+      <section class="contents">
+        <!-- <h3>두 분모의 곱을 공통분모로 하여 통분한 후 계산해 보세요.</h3> -->
+
+        <div class="input_area">
+          <div class="question_box justify_center">
+            <div class="container_515">
+              <div class="left_515">
+                <img src="../../common_contents/img/EMA515_02_SU/0006_content.png" alt="" />
+              </div>
+              <div class="right_515">
+                <div class="operations">
+                  <div class="input_wrap fraction_wrap frac1">
+                    <math-field data-answer-single="(19)/(20)"></math-field>
+                  </div>
+                  &nbsp;m
+                </div>
+                <!-- <div class="operations">
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="19"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="20"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  &nbsp;m
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

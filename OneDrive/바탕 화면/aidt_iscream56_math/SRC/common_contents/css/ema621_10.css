@@ -1,0 +1,216 @@
+.ema621_10_SU_0002 h2 .label_bogi,
+.ema621_10_SU_0002 h2 .label_rule {
+    position: relative;
+    top: -5px;
+}
+
+.ema621_10_su_0003 .session_grid_row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .ema621_10_su_0003 .session_grid_col {
+    background-image: url('../../common_contents/img/EMA621_10_SU/621_card_button.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 120px;
+    height: 90px;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 4.267px 12.8px rgba(0, 0, 0, 0.12));
+  }
+  
+  .ema621_10_su_0003 .group_wrap {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .ema621_10_su_0003 .group_grid {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row {
+    display: grid;
+    grid-template-columns: 120px repeat(6, 1fr);
+    border-bottom: 1px solid white;
+  }
+  
+  .ema621_10_su_0003 .group_grid_col {
+    border: none;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ema621_10_su_0003 .group_grid_col::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: white;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:first-child .group_grid_col {
+    background-color: var(--primary-blue);
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row .group_grid_col:first-child {
+    min-width: 120px;
+    font-size: 24px;
+    font-weight: 700;
+    justify-content: center;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:nth-child(2) {
+    background-color: var(--primary-blue-100);
+  }
+  
+  .ema621_10_su_0003 .device_piece_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    padding: 0 5px;
+  }
+  
+  .ema621_10_su_0003 .device_piece {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #666;
+    border-radius: 5px;
+    background-color: white;
+    background-image: url('../../common_contents/images/keyboard_icon.png');
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .ema621_10_su_0003 .division_symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;  
+    height: 44px; 
+    line-height: 44px;
+    text-align: center;
+    margin: 0 5px;
+    font-size: 44px;
+  }
+  
+  .ema621_10_su_0003 .btn_area {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .ema621_10_su_0003 .device_change {
+    background-color: var(--secondary-red) !important;
+  }
+  
+  .ema621_10_su_0003 .btnType, .ema621_10_su_0003 .btnReset, .ema621_10_su_0003 .btnCheck {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4169e1;
+    color: white;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:nth-child(2) .device_piece_wrap::after {
+    display: none;
+  }
+  
+  .ema621_10_su_0003 .top_content {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .ema621_10_su_0003 .image_box {
+    display: flex;
+    width: 480px;
+    height: 178px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 30px;
+    border: 4px solid var(--Line-Gray-200, #E8E8E8);
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:nth-child(3) {
+    background-color: var(--primary-blue-50);
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:nth-child(4) {
+    background-color: var(--primary-blue-100);
+  }
+  
+  .ema621_10_su_0003 .fraction_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    margin: 0 5px;
+  }
+  
+  .ema621_10_su_0003 .fraction_wrap math-field {
+    width: 50px;
+    min-width: 50px;
+    height: 30px;
+    font-size: 16px;
+  }
+  
+  .ema621_10_su_0003 .fraction_line {
+    width: 130%; 
+    height: 1px;
+    background-color: #000;
+    margin: 8px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-38%); 
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:nth-child(2) .device_piece_wrap::after {
+    display: none;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:nth-child(2) .input_wrap {
+    width: auto; 
+    min-width: 0;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:nth-child(2) math-field {
+    width: 80px;
+    min-width: 80px;
+  }
+  
+  .ema621_10_su_0003 .group_grid_row:last-child {
+    border-bottom: none;
+  }
+  
+  .ema621_10_su_0003 .disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    pointer-events: none;
+  }

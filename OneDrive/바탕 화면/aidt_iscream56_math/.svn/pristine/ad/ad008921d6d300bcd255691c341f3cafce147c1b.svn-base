@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_11_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_11.css" />
+    <script src="../../common_practice/js/ema612_11_ih_0001.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_11_ih_0001">
+      <section class="title type2">
+        <h2 data-puzzle="green" class="flex align_center">
+          <span class="empty_box nemo"></span></span>
+          <span lang="y">안에 알맞은 말을 구해 → 방향, ↓방향, ↘방향, ↙방향에서 찾아 ○표 하세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA612_11_IH/0001_01.png" alt="" />
+            <div class="drag_area"></div>
+            <button class="btn_zoom" data-target="target1"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_row" data-index="1">
+              <i class="num">1</i>
+              <span lang="y">각기둥에서 두 밑면 사이의 거리를</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="높이" text-align="center" id="custom_target01" class="custom_target" readonly></math-field>
+              </div>
+              <span lang="y">(이)라고 합니다.</span>
+            </div>
+            <div class="input_row" data-index="2">
+              <i class="num">2</i>
+              <span lang="y">밑면의 모양이 칠각형인 각기둥을</span>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="칠각기둥" text-align="center" class="custom_target" id="custom_target02" readonly></math-field>
+              </div>
+              <span lang="y">(이)라고 합니다.</span>
+            </div>
+            <div class="input_row" data-index="3">
+              <i class="num">3</i>
+              <span lang="y">각기둥의 모서리를 잘라서 평면 위에 편쳐 놓은 그림을 각기둥의</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="전개도" text-align="center" class="custom_target" id="custom_target03" readonly></math-field>
+              </div>
+              <span lang="y">(이)라고 합니다.</span>
+            </div>
+            <div class="input_row" data-index="4">
+              <i class="num">4</i>
+              <span lang="y">각뿔의 옆면이 모두 만나는 점을 각뿔의</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="꼭짓점" text-align="center" class="custom_target" id="custom_target04" readonly></math-field>
+              </div>
+              <span lang="y">(이)라고 합니다.</span>
+            </div>
+            <div class="input_row" data-index="5">
+              <i class="num">5</i>
+              <span lang="y">밑면의 모양이 십각형인 각뿔을</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="십각뿔" text-align="center" class="custom_target" id="custom_target05" readonly></math-field>
+              </div>
+              <span lang="y">(이)라고 합니다.</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <ol>
+                  <li lang="y">각기둥에서 두 밑면 사이의 거리를 높이라고 합니다.</li>
+                  <li lang="y">밑면의 모양이 칠각형인 각기둥을 칠각기둥이라고 합니다.</li>
+                  <li lang="y">각기둥의 모서리를 잘라서 평면 위에 펼쳐 놓은 그림을 각기둥의 전개도라고 합니다.</li>
+                  <li lang="y">각뿔의 옆면이 모두 만나는 점을 각뿔의 꼭짓점이라고 합니다.</li>
+                  <li lang="y">밑면의 모양이 십각형인 각뿔을 십각뿔이라고 합니다.</li>
+                </ol>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+        <div class="picture_wrap target1">
+          <img src="./../../common_practice/img/EMA612_11_IH/0001_01.png" alt="" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

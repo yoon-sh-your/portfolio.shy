@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema527_01_su_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" />
+    <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema527_01_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema527_01_su_0004">
+      <section class="title">
+        <h2 data-head="2">
+          <span lang="y">택배 드론의 사고 원인이 배송 가능 무게의 문제인지 이동 가능 거리의 문제인지 알아봅시다.​</span>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="flex align-start gap_26">
+            <div class="img_wrap">
+              <div class="picture_wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="665" height="390" viewBox="0 0 665 390" fill="none">
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px"><tspan x="376" y="48.32">추락한 택배 드론 정보</tspan></text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="392" y="88.32">배송 가능 무게: 5 kg 이하</tspan>
+                    <tspan x="392" y="120.32">배터리 최대 충전 시 이동 가능</tspan>
+                    <tspan x="392" y="152.32">거리: 30 ㎞ 이하</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="382" y="239.109">배송 물품:</tspan>
+                    <tspan x="382" y="271.109">1.03 kg짜리 식료품 3개</tspan>
+                    <tspan x="382" y="303.109">0.3 kg짜리 의약품 4개</tspan>
+                    <tspan x="382" y="335.109">출발지에서 배송지까지의</tspan>
+                    <tspan x="382" y="367.109">거리:12.6 ㎞</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px"><tspan x="377" y="199.109">배송 상황</tspan></text>
+                </svg>
+                <img src="./../../common_project/img/EMA527_01_SU/ema527_01_SU_0002.png" alt="" class="img" />
+                <button class="zoom"></button>
+                <!-- <div class="img_txt f20b">
+                    <dl class="mb_15">
+                      <dt class="mb_7" lang="y">추락한 택배 드론 정보​</dt>
+                      <dd lang="y">배송 가능 무게: 5 kg 이하​</dd>
+                      <dd lang="y">배터리 최대 충전 시 이동 가능 거리: 30 ㎞ 이하</dd>
+                    </dl>
+                    <dl>
+                      <dt class="mb_7" lang="y">배송 상황</dt>
+                      <dd lang="y">배송 물품:​ <br>1.03 kg짜리 식료품 3개​<br>0.3 kg짜리 의약품 4개​</dd>
+                      <dd lang="y">출발지에서 배송지까지의 거리:​ <br>12.6 ㎞</dd>
+                    </dl>
+                  </div> -->
+              </div>
+              <!-- <img src="./../../common_project/img/EMA527_01_SU/ema527_01_SU_0004.png" alt="" class="img"/> -->
+            </div>
+            <div class="input_area">
+              <h3 lang="y">택배 드론의 배송 물품 무게는 모두 몇 kg인지 구해 보고, 배송 가능 무게인지 알아보세요.​</h3>
+              <div class="input_wrap">
+                <math-field class="textarea" type="text"></math-field>
+                <ol class="example_box">
+                  <li lang="y">식료품은 1.03×3=3.09 (kg). 의약품은 0.3×4=1.2 (kg)이므로 배송 물품 무게는 모두 3.09+1.2=4.29 (kg)입니다.</li>
+                  <li lang="y">​4.29 kg은 5 kg 이하이므로 배송 가능 무게입니다.​</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="flex align-start gap_26">
+            <div class="img_wrap">
+              <div class="picture_wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="665" height="390" viewBox="0 0 665 390" fill="none">
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px"><tspan x="376" y="48.32">추락한 택배 드론 정보</tspan></text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="392" y="88.32">배송 가능 무게: 5 kg 이하</tspan>
+                    <tspan x="392" y="120.32">배터리 최대 충전 시 이동 가능</tspan>
+                    <tspan x="392" y="152.32">거리: 30 ㎞ 이하</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="382" y="239.109">배송 물품:</tspan>
+                    <tspan x="382" y="271.109">1.03 kg짜리 식료품 3개</tspan>
+                    <tspan x="382" y="303.109">0.3 kg짜리 의약품 4개</tspan>
+                    <tspan x="382" y="335.109">출발지에서 배송지까지의</tspan>
+                    <tspan x="382" y="367.109">거리:12.6 ㎞</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px"><tspan x="377" y="199.109">배송 상황</tspan></text>
+                </svg>
+                <img src="./../../common_project/img/EMA527_01_SU/ema527_01_SU_0002.png" alt="" class="img" />
+                <button class="zoom"></button>
+                <!-- <div class="img_txt f20b">
+                    <dl class="mb_15">
+                      <dt class="mb_7" lang="y">추락한 택배 드론 정보​</dt>
+                      <dd lang="y">배송 가능 무게: 5 kg 이하​</dd>
+                      <dd lang="y">배터리 최대 충전 시 이동 가능 거리: 30 ㎞ 이하</dd>
+                    </dl>
+                    <dl>
+                      <dt class="mb_7" lang="y">배송 상황</dt>
+                      <dd lang="y">배송 물품:​ <br>1.03 kg짜리 식료품 3개​<br>0.3 kg짜리 의약품 4개​</dd>
+                      <dd lang="y">출발지에서 배송지까지의 거리:​ <br>12.6 ㎞</dd>
+                    </dl>
+                  </div> -->
+              </div>
+              <!-- <img src="./../../common_project/img/EMA527_01_SU/ema527_01_SU_0004.png" alt="" class="img"/> -->
+            </div>
+            <div class="input_area">
+              <h3 lang="y">택배 드론이 출발지에서 배송지까지 갔다가 돌아오는 거리는 몇 ㎞인지 구해 보고, 이동 가능 거리인지 알아보세요.​</h3>
+              <div class="input_wrap">
+                <math-field class="textarea" type="text"></math-field>
+                <ol class="example_box">
+                  <li lang="y">택배 드론이 출발지에서 배송지까지 갔다가 돌아오는 거리는 12.6×2=25.2 (㎞)입니다.​</li>
+                  <li lang="y">25.2 ㎞는 30 ㎞ 이하이므로 이동 가능 거리입니다.​</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

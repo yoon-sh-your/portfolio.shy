@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_08_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_08.css" />
+    <script src="./../../common_contents/js/ema613_08_su_0003.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_08_su_0003">
+      <section class="title type2">
+        <h2 data-head="1">
+          <div>
+            <span lang="y"
+              >시루떡 21.8 kg을 바구니 4개에 똑같이 나누어 담으려고 합니다.
+              바구니 한 개에 담을 수 있는 시루떡의 양은 몇 kg인지 어림셈하여
+              몫의 소수점 위치를 확인해 봅시다.</span
+            >
+            <button type="button" class="btn calculator">계산기</button>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="img_row">
+            <div
+              class="picture_wrap"
+              data-tit="시루떡 21.8 kg을 바구니 4개에 똑같이 나누어 담으려고 합니다. 바구니 한 개에 담을 수 있는 시루떡의 양은 몇 kg인지 어림셈하여 몫의 소수점 위치를 확인해 봅시다."
+            >
+              <img
+                src="../../common_contents/img/EMA613_08_SU/0002_img01.png"
+                alt="자치회 활동 이미지"
+              />
+              <button class="zoom"></button>
+            </div>
+            <div class="input_area">
+              <h3 lang="y">구하는 식을 써 보세요.​</h3>
+              <div class="question_box justify_center">
+                <!-- 단답형 분수식 -->
+                <div class="input_wrap fraction_wrap">
+                  <math-field
+                    data-answer-single="(21.8)/(4)"
+                    text-align="center"
+                    placeholder=" "
+                  ></math-field>
+                  <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                  <!-- (분자)/(분모) 형식으로 표시 -->
+                  <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                  <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="img_row">
+            <div
+              class="picture_wrap"
+              data-tit="시루떡 21.8 kg을 바구니 4개에 똑같이 나누어 담으려고 합니다. 바구니 한 개에 담을 수 있는 시루떡의 양은 몇 kg인지 어림셈하여 몫의 소수점 위치를 확인해 봅시다."
+            >
+              <img
+                src="../../common_contents/img/EMA613_08_SU/0002_img01.png"
+                alt="자치회 활동 이미지"
+              />
+              <button class="zoom"></button>
+            </div>
+
+            <div class="input_area">
+              <h3 lang="y">
+                바구니 한 개에 담을 수 있는 시루떡의 양은 몇 kg일지 어림<br />셈해
+                보고, 어떻게 어림셈했는지 이야기해 보세요.
+              </h3>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">
+                    21.8을 20으로 어림하여 20÷4를 계산하면 5입니다.<br />따라서
+                    한 바구니에 담을 수 있는 시루떡의 양은 약 5 kg입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <h3 lang="y">
+            어림셈한 결과를 이용하여 옳은 식을 찾아
+            <span class="ico_round"></span>표 하세요.
+          </h3>
+
+          <div class="boolean_wrap">
+            <button data-answer-single="false"><span>21.8÷4=545</span></button>
+            <button data-answer-single="false"><span>21.8÷4=54.5</span></button>
+            <button data-answer-single="true"><span>21.8÷4=5.45</span></button>
+          </div>
+
+          <div class="balloon_wrap">
+            몫의 소수점이 어디에<br />
+            있어야 할까?
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <div class="input_area">
+            <h3 lang="y">
+              계산기를 이용하여 21.8÷4의 몫을 구하고, 몫의 소수점 위치를 확인해
+              보세요.
+            </h3>
+            <div class="flex align_center gap_20 dir_col">
+              <p class="flex align_center f32b dir_row">
+                21.8÷4=<span class="input_wrap answer2"
+                  ><math-field data-answer-single="5.45"></math-field
+                ></span>
+              </p>
+              <div class="input_wrap answer1">
+                <math-field
+                  class="textarea"
+                  placeholder="​"
+                  contenteditable="true"
+                  tabindex="0"
+                ></math-field>
+                <div class="example_box">
+                  <p lang="y">
+                    어림셈한 결과를 이용하여 확인한 몫의 소수점 위치와 같습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

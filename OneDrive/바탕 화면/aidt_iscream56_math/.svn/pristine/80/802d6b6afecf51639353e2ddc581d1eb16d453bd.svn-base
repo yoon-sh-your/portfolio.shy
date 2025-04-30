@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA615_03_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <script src="./../../common_practice/js/ema615_02_ih_0006.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema615.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema615">
+      <section class="title group">
+        <h2 lang="y"><span class="puple">[1~3]</span> 시은이네 아파트에서 일주일 동안 배출한 재활용품의 종류를 조사하여 나타낸 표입니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_light_purple" lang="y">
+          <span lang="y">표를 보고 원그래프를 완성해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema615_03_0003 flex align_center justify_center gap_50">
+          <div class="flex dir_col gap_50">
+            <div class="flex align_center justify_center">
+              <div class="tit_title">
+                <span lang="y">재활용품의 종류별 배출량의 비율</span>
+              </div>
+            </div>
+
+            <div class="table_wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 160px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="row" lang="y">종류</th>
+                    <td class="bg">종이류</td>
+                    <td class="bg">플라스틱</td>
+                    <td class="bg">캔류</td>
+                    <td class="bg">병류</td>
+                    <td class="bg">합계</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr></tr>
+                  <tr>
+                    <th scope="row" lang="y">배출량(kg)</th>
+                    <td>80</td>
+                    <td>60</td>
+                    <td>40</td>
+                    <td>20</td>
+                    <td>200</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" lang="y">배분율(％)</th>
+                    <td>40</td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="30"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="20"></math-field>
+                      </div>
+                    </td>
+                    <td>10</td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="100"></math-field>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="flex align_center justify_center">
+              <div class="tit_title">
+                <span lang="y">재활용품의 종류별 배출량의 비율</span>
+              </div>
+            </div>
+
+            <div class="graf_flex">
+              <div class="in_graf">
+                <div class="input_are">
+                  <div class="tit tit01">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="병류">
+                        <option></option>
+                        <option value="플라스틱류"></option>
+                        <option value="캔류"></option>
+                        <option value="병류"></option>
+                      </select>
+                    </div>
+                    <div class="input_wrap up_hint">
+                      <math-field data-answer-single="10"></math-field>
+                    </div>
+                    <p>％</p>
+                  </div>
+                  <div class="tit tit02">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="캔류">
+                        <option></option>
+                        <option value="플라스틱류"></option>
+                        <option value="캔류"></option>
+                        <option value="병류"></option>
+                      </select>
+                    </div>
+                    <div class="flex gap_4 align_center">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="20"></math-field>
+                      </div>
+                      <p>％</p>
+                    </div>
+                  </div>
+                  <div class="tit tit03">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="플라스틱류">
+                        <option></option>
+                        <option value="플라스틱류"></option>
+                        <option value="캔류"></option>
+                        <option value="병류"></option>
+                      </select>
+                    </div>
+                    <div class="flex gap_4 align_center">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="30"></math-field>
+                      </div>
+                      <p>％</p>
+                    </div>
+                  </div>
+                </div>
+
+                <svg width="408" height="409" viewBox="0 0 408 409" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_13400_63188)">
+                    <path d="M372.522 203.487C372.522 110.434 297.06 35.0039 204 35.0039V203.513L303.375 339.578C345.281 308.931 372.522 259.419 372.522 203.513" fill="#FDE2D6" />
+                    <path d="M204 371.998V353.266" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M204 35.0039V203.487" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M43.5 256L204 203.487" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M204 53.7095V35.0039" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M256.079 363.753L250.292 345.945" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M157.707 61.0534L151.921 43.2461" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M303.057 339.815L292.039 324.676" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M340.339 302.538L325.173 291.547" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M82.8266 115.455L67.6602 104.438" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M364.278 255.56L346.47 249.773" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M61.5304 157.2L43.7217 151.414" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M372.523 203.488H353.789" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M54.2111 203.488H35.4775" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M364.279 151.438L346.443 157.197" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M340.339 104.465L325.173 115.456" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M82.8002 291.52L67.6602 302.537" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M303.057 67.1836L292.039 82.3225" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M115.934 324.676L104.942 339.815" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M256.079 43.2461L250.292 61.0534" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M157.707 345.945L151.921 363.753" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M372.522 203.487C372.522 296.539 297.06 371.996 204 371.996C110.94 371.996 35.5039 296.566 35.5039 203.487C35.5039 110.408 110.94 35.0039 204 35.0039C297.06 35.0039 372.522 110.461 372.522 203.513V203.487Z" stroke="#6D6E70" stroke-linejoin="bevel" />
+                    <path d="M105 67.5L303.031 339.816" stroke="#6D6E70" stroke-width="2" stroke-linejoin="bevel" />
+                    <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px">
+                      <tspan x="255.387" y="177.531">&#xc885;&#xc774;&#xb958;&#10;</tspan>
+                      <tspan x="253.836" y="213.531">(40％)</tspan>
+                    </text>
+                  </g>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="379.547" y="211.531">25</tspan></text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="189.941" y="399.531">50</tspan></text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="0.585938" y="211.531">75</tspan></text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="196.852" y="26.5312">0</tspan></text>
+                  <defs>
+                    <clipPath id="clip0_13400_63188">
+                      <rect width="339" height="339" fill="white" transform="translate(34.5 34)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="flex gap_4 align_center">
+                  <span>원그래프의 눈금 한 칸은 5％를 나타냅니다. ➔</span>
+                  <span>플라스틱류: 6칸, 캔류: 4칸, 병류: 2칸 각 항목의 </span>
+                </p>
+                <p lang="y">백분율만큼 선을 그어 원을 나눈 후 나눈 부분에 각 항목의 내용과 백분율을 씁니다.</p>
+                <p class="text_label">
+                  <span class="label caution">주의</span>
+                  <span lang="y"> 원을 나눌 때에는 원의 중심에서 눈금까지 선으로 이어야 합니다. </span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck" data-look="submit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

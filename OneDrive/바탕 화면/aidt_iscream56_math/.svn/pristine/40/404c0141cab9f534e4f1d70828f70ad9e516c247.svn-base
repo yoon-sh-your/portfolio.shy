@@ -1,0 +1,68 @@
+/* 질문 영역 */
+.question_box {
+  font-size: 32px;
+  font-weight: 700;
+}
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint,
+.dragndrop_fraction_wrap .drop_item::after {
+  font-size: 24px;
+}
+
+/* .contents h3::before {margin-top:20px;} */
+.contents h3:has(.fraction_box) {
+  margin-top: 20px;
+}
+
+/* zoom popup */
+.image_zoom_wrap .image_zoom:has(.img_box) {
+  text-align: center;
+}
+.image_zoom_wrap .image_zoom .img_box {
+  display: inline-block;
+  position: relative;
+}
+.image_zoom_wrap .image_zoom .img_box span {
+  position: absolute;
+}
+.image_zoom_wrap .image_zoom .img_box img {
+  width: auto;
+  height: auto;
+}
+
+/* 괄호 */
+.bracket {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.solve_area .bracket {
+  display: inline-flex;
+}
+.bracket-l {
+  background: url(../../common/img/bracket_left.png) no-repeat center / 100% auto;
+  height: 65px;
+  width: 14px;
+  margin-right: -8px;
+}
+.bracket-r {
+  background: url(../../common/img/bracket_right.png) no-repeat center / 100% auto;
+  height: 65px;
+  width: 14px;
+  margin-left: -8px;
+}
+.bracket:has(.input_wrap) .bracket-l,
+.bracket:has(.input_wrap) .bracket-r {
+  height: 107px;
+  width: 22px;
+}
+.bracket.sm .bracket-l,
+.bracket.sm .bracket-r {
+  height: 65px;
+  width: 14px;
+}
+.bracket.lg .bracket-l,
+.bracket.lg .bracket-r {
+  height: 107px;
+  width: 22px;
+}

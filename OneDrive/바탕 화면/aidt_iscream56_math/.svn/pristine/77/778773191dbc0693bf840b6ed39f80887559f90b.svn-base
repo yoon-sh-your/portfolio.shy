@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_03_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema613_04_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">몫이 다른 것을 찾아 기호를 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_04_IH/0005_01.png" alt="" />
+            <div class="texts">
+              <p><i class="num_sign">ㄱ</i> 3.24÷9</p>
+              <p><i class="num_sign">ㄴ</i> 1.95÷5</p>
+              <p><i class="num_sign">ㄷ</i> 1.44÷4</p>
+            </div>
+            <div class="boolean_wrap type_chk">
+              <div>
+                <button class="button1" data-answer-single="false"></button>
+                <button class="button2" data-answer-single="true"></button>
+                <button class="button3" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>㉠ 3.24÷9=0.36 &nbsp; ㉡ 1.95÷5=0.39 &nbsp; ㉢ 1.44÷4=0.36</p>
+                <p>따라서 몫이 다른 것은 ㉡입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

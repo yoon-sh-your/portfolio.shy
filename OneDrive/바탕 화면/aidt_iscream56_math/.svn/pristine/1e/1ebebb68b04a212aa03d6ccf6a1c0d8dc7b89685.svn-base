@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema513_03_ih_0006">
+      <section class="title group">
+        <h2 lang="y"><span class="pink">[4~6]</span> 주황색 사각형과 초록색 사각형을 이용하여 규칙적인 배열을 만들고 있습니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="img_box">
+        <img src="../../common_practice/img/EMA513_03_IH/0004_img.png" alt="" />
+      </section>
+      <section class="title type2">
+        <h2 data-head="6_pink" lang="y">주황색 사각형이 8개일 때, 초록색 사각형은 몇 개인지 구해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center gap_12">
+          (
+          <div class="flex gap_4 align_center">
+            <div class="input_wrap"><math-field data-answer-single="10"></math-field></div>
+            )
+            <span lang="y">개</span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">초록색 사각형의 수는 주황색 사각형의 수에 2를 더한 것과 같으므로 주황색 사각형이 8개일 때, 초록색 사각형은 10개입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit">전송</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

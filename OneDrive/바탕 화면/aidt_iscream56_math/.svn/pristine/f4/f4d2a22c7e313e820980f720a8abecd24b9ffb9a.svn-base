@@ -1,0 +1,169 @@
+/* ema621_01_su_0001 */
+
+.ema621_01_su_0001#app_wrap {
+    background: url(../img/EMA621_01_SU/0001_bg.png) no-repeat left 102% / 824px, #5CC2EE;
+}
+
+.ema621_01_su_0001 .text_box {
+    color: var(--primary-blue-800);
+    top: 200px;
+    left: 282px;
+}
+
+.ema621_01_su_0001 .input_area label.img {
+    background-color: #3B71FE;
+}
+
+.ema621_01_su_0001 .input_area label::after {
+    background-color: #3B71FE;
+}
+
+.ema621_01_su_0001 .fraction_row {
+    display: flex;
+    align-items: center;
+}
+
+/* .ema621_01_su_0002 */
+.ema621_01_su_0002 .btn_area>button.btnReset.reset_off.active {
+    pointer-events: none;
+    background-color: var(--btn-disabled-bg);
+    border-color: var(--stroke-default);
+    background-image: url(../../common_contents/common/img/icon_reset_disabled.svg);
+  }
+  .ema621_01_su_0002 .btn_area>button.btnReset.reset_on {
+    pointer-events: all;
+    background-color: var(--btn-default);
+    border-color: transparent;
+    background-image: url(../../common_contents/common/img/icon_reset_white.svg);
+  }
+
+  /* .ema621_01_su_0003 */
+  .ema621_01_su_0003 .letCheck li:first-child .back {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+.ema621_01_su_0003 .letCheck li:first-child .back  .fraction_row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+.ema621_01_su_0003 .letCheck li .back .arr:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50px, -42px);
+    width: 14px;
+    height: 112px;
+    background: url(../img/EMA621_01_SU/0003_bg1.svg) no-repeat 0 0;
+}
+.ema621_01_su_0003 .letCheck li .back .arr:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(40px, -42px);
+    width: 14px;
+    height: 112px;
+    background: url(../img/EMA621_01_SU/0003_bg2.svg) no-repeat 0 0;
+}
+.ema621_01_su_0003 .letCheck li:first-child .back  .arr:nth-of-type(2):before {
+    transform: translate(-63px, -42px);
+}
+.ema621_01_su_0003 .letCheck li:first-child .back  .arr:nth-of-type(2):after {
+    transform: translate(53px, -42px);
+}
+
+.ema621_01_su_0003 .letCheck li:last-child .back {
+    gap: 20px;
+}
+.ema621_01_su_0003 .letCheck li:last-child .back .fraction_row.arr::before {
+    left: 50%;
+    transform: translate(40px, -42px);
+}
+.ema621_01_su_0003 .letCheck li:last-child .back .fraction_row.arr::after {
+    left: 50%;
+    transform: translate(98px, -42px);
+}
+.ema621_01_su_0003 .letCheck  .fraction_row {
+    display: flex;
+    align-items: center;
+}
+
+/* .ema621_01_su_0004 */
+.ema621_01_su_0004 .contents > .flex {
+    gap: 26px;
+  }
+  
+/* .ema621_01_su_0004 .video_wrap {
+    background: url(../img/EMA621_01_SU/0004_content.png) no-repeat center / 100%;
+    height: 428px;
+} */
+
+.ema621_01_su_0004 .contents > .flex {
+gap: 26px;
+}
+.ema621_01_su_0004 .input_wrap {
+width: 100%;
+}
+.ema621_01_su_0004 .input_wrap > math-field.textarea {
+width: 797px;
+height: 250px;
+}
+
+/*ema621_01_su_0005 */
+.ema621_01_su_0005 .input_wrap > math-field.textarea {
+height: 250px;
+}
+
+.ema621_01_su_0006 .what_do_txt {
+    font-size: 32px;
+    color: var(--primary-gray-900);
+    line-height: 48px;
+    letter-spacing: -1px;
+}
+
+
+
+/* 공통 이미지 컨테이너 스타일 */
+.video_wrap,
+.picture_wrap {
+  margin: 0 auto; /* 좌우 중앙 정렬 */
+  position: relative;
+  width: 600px;
+  height: 428px;
+  overflow: hidden;
+}
+
+/* 이미지 크기 및 위치 통일 */
+.video_wrap img,
+.picture_wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 비율 유지하며 영역에 맞춤 */
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+}
+
+/* 이미지와 입력 영역 flex 정렬 및 간격 통일 */
+.contents > .flex {
+  display: flex;
+  gap: 26px;
+  align-items: flex-start;
+}
+
+/* 입력 영역 너비 통일 */
+.input_wrap {
+  width: 797px;
+  max-width: 100%;
+}
+
+.input_wrap > math-field.textarea {
+  width: 100%;
+  height: 250px;
+}

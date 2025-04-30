@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_03_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_03_su.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_03_su_0005">
+        <section class="title type2">
+            <h2 data-head="3_green" lang="y">계산해 봅시다.</h2>
+        </section>
+
+        <section class="contents">
+
+            <div class="question_box justify_center m_auto">
+                <div class="mixed_fraction f32b">
+                    <span>1</span>
+                    <div class="fraction_box">
+                        <span>1</span>
+                        <span>7</span>
+                    </div>
+                    <span>&times;4</span>
+                    <span>=</span>
+                    <!-- 단답형 분수식 -->
+                    <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="4(4)/(7)" data-answer-multi='{"values": ["4(4)/(7)", "(32)/(7)"]}' text-align="center" data-multi-hint="y"></math-field>
+                        <!-- 분수식 ex) 15(1)/(2) -->
+                        <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                        <!-- (분자)/(분모) 형식으로 표시 -->
+                        <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                        <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                    </div>
+                    
+                </div>
+
+                <div class="mixed_fraction f32b">
+                    <span>2</span>
+                    <div class="fraction_box">
+                        <span>5</span>
+                        <span>6</span>
+                    </div>
+                    <span>&times;8</span>
+                    <span>=</span>
+                    <!-- 단답형 분수식 -->
+                    <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="22(2)/(3)" data-answer-multi='{"values": ["22(2)/(3)", "(68)/(3)"]}' text-align="center" data-multi-hint="y"></math-field>
+                        <!-- 분수식 ex) 15(1)/(2) -->
+                        <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                        <!-- (분자)/(분모) 형식으로 표시 -->
+                        <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                        <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                    </div>
+                </div>
+
+                <div class="mixed_fraction f32b">
+                    <span>1</span>
+                    <div class="fraction_box">
+                        <span>3</span>
+                        <span>10</span>
+                    </div>
+                    <span>&times;5</span>
+                    <span>=</span>
+                    <!-- 단답형 분수식 -->
+                    <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="6(1)/(2)" data-answer-multi='{"values": ["6(1)/(2)", "(13)/(2)"]}' text-align="center" data-multi-hint="y"></math-field>
+                        <!-- 분수식 ex) 15(1)/(2) -->
+                        <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                        <!-- (분자)/(분모) 형식으로 표시 -->
+                        <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                        <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

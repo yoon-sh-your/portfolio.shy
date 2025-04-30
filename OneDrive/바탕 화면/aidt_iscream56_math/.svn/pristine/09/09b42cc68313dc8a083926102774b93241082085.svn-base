@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_10_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_10_su_0003">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="2" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <span class="fraction_box ml_0">
+                <span>24</span>
+                <span>30</span>
+              </span>
+              와 크기가 같은 분수를 모두 찾아<span class="ico_round"><i>동그라미</i></span>표 하세요.
+            </div>
+          </div>
+          
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="boolean_wrap">
+            <button data-answer-single="true">
+              <span class="fraction_box">
+                <span>4</span>
+                <span>5</span>
+              </span>
+            </button>
+            <button data-answer-single="false">
+              <span class="fraction_box">
+                <span>9</span>
+                <span>15</span>
+              </span>
+            </button>
+            <button data-answer-single="true">
+              <span class="fraction_box">
+                <span>48</span>
+                <span>60</span>
+              </span>
+            </button>
+            <button data-answer-single="true">
+              <span class="fraction_box">
+                <span>8</span>
+                <span>10</span>
+              </span>
+            </button>
+            <button data-answer-single="false">
+              <span class="fraction_box">
+                <span>60</span>
+                <span>90</span>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

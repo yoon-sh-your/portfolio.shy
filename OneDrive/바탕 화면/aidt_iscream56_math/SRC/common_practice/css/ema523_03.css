@@ -1,0 +1,197 @@
+.input_area .fraction_box {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.input_wrap:has(.w_80) {
+  min-width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+  position: relative;
+}
+.input_wrap.input_sep {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+.input_wrap.input_sep.hint_up {
+  top: -60px;
+  bottom: auto;
+}
+.input_wrap.hint_right .text_hint {
+  left: calc(100% + 20px);
+  top: 12px;
+  width: auto;
+}
+.mark_error {
+  position: relative;
+}
+
+.mark_error:after {
+  content: '';
+  display: inline-block;
+  width: 55px;
+  height: 3px;
+  background: #ff0000;
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  transform: rotate(-30deg) translateX(-50%);
+}
+.mark_error.blue:after {
+  background: var(--primary-blue);
+}
+.mark_error i {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff0000;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mark_error.up > i {
+  top: auto;
+  bottom: 50px;
+}
+.fraction_wrap .hint_up .text_hint {
+  top: auto;
+  bottom: calc(100% + 4px);
+}
+
+/* ema523_03_ih_0001 */
+.ema523_03_ih_0001 .table_wrap {
+  width: 1080px;
+  margin-top: 20px;
+}
+.ema523_03_ih_0001 table col {
+  width: 33.33%;
+}
+.ema523_03_ih_0001 table td span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ema523_03_ih_0002 */
+.ema523_03_ih_0002 .question_box {
+  gap: 71px;
+}
+.ema523_03_ih_0002 .input_area {
+  width: 883px;
+  height: 343px;
+  background: url(./../img/EMA523_02_IH/0001_02.png) no-repeat 50% / 100% auto;
+  padding: 100px 0 0 56px;
+}
+.ema523_03_ih_0002 .input_row + .input_row {
+  margin-top: 20px;
+}
+
+/* ema523_03_ih_0003 */
+.ema523_03_ih_0003 .img_area {
+  position: relative;
+}
+.ema523_03_ih_0003 .img_area .input_position,
+.ema523_03_ih_0003 .img_area [class^='text'] {
+  position: absolute;
+}
+.ema523_03_ih_0003 .input1 {
+  top: 34px;
+  left: 32px;
+}
+.ema523_03_ih_0003 .input2 {
+  top: 20px;
+  right: 58px;
+}
+.ema523_03_ih_0003 .text {
+  font-size: 24px;
+}
+.ema523_03_ih_0003 .text1 {
+  top: 167px;
+  left: 337px;
+}
+.ema523_03_ih_0003 .text2 {
+  top: 8px;
+  left: 635px;
+}
+.ema523_03_ih_0003 .text3 {
+  top: 139px;
+  left: 648px;
+}
+.ema523_03_ih_0003 .text4 {
+  top: -31px;
+  left: 298px;
+}
+.ema523_03_ih_0003 .text5 {
+  top: 198px;
+  left: -24px;
+}
+.ema523_03_ih_0003 .text6 {
+  top: 198px;
+  left: 426px;
+}
+.ema523_03_ih_0003 .text7 {
+  top: -15px;
+  left: 523px;
+}
+.ema523_03_ih_0003 .text8 {
+  top: 218px;
+  left: 852px;
+}
+.ema523_03_ih_0003 .text9 {
+  top: -15px;
+  left: 983px;
+}
+
+/* ema523_03_ih_0004 */
+.ml_60 {
+  margin-left: 60px;
+}
+.ema523_03_ih_0004 .img_area {
+  position: relative;
+}
+.ema523_03_ih_0004 .text {
+  position: absolute;
+  font-size: 24px;
+}
+.ema523_03_ih_0004 .text1 {
+  top: 42px;
+  left: 78px;
+}
+.ema523_03_ih_0004 .text2 {
+  top: 193px;
+  left: 162px;
+}
+.ema523_03_ih_0004 .text3 {
+  top: 193px;
+  left: 530px;
+}
+
+/* ema523_03_ih_0005 */
+.ema523_03_ih_0005 .img_area {
+  position: relative;
+}
+.ema523_03_ih_0005 .text {
+  position: absolute;
+  font-size: 24px;
+}
+.ema523_03_ih_0005 .text1 {
+  top: 124px;
+  left: 2px;
+}
+.ema523_03_ih_0005 .text2 {
+  top: 305px;
+  left: 586px;
+}
+.ema523_03_ih_0005 .text3 {
+  top: 146px;
+  left: 728px;
+}

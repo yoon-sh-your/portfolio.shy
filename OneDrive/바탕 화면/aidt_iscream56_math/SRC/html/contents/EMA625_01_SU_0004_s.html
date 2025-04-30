@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_01_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_01_su_0004">
+      <section class="title type2">
+        <h2 data-icon="speech" lang="y">영상을 보고 어떤 상황을 나타내고 있는지 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">채안이와 현준이가 수학 체험 마을에 도착하였습니다.</li>
+                <li lang="y">고대 그리스 수학자 복장을 한 선생님이 있습니다.</li>
+                <li lang="y">나무로 만든 집에 원 모양 창문이 보입니다.</li>
+                <li lang="y">원 모양 분수와 꽃밭이 보입니다.</li>
+                <li lang="y">원 모양 물레방아 바퀴가 있습니다.</li>
+                <li lang="y">수레에서 원 모양 나무 바퀴가 보입니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSample">예시</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

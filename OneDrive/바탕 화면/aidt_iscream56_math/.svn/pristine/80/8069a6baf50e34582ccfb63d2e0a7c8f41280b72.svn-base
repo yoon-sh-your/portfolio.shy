@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_04_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_04_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" class="is_star" lang="y">수빈이네 모둠과 하율이네 모둠의 타자 기록을 나타낸 표입니다. 두 모둠의 타자 기록의 평균이 같을 때 물음에 답해 보세요.</h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page">
+          <h3 class="title" lang="y">수빈이네 모둠의 타자 기록의 평균은 몇 타인가요?</h3>
+          <div class="question_box justify_center gap_60">
+            <div class="wrap_table">
+              <div class="tit_data">
+                <div class="inner"><span lang="y">수빈이네 모둠의 학생별 타자 기록</span></div>
+              </div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">이름</th>
+                      <th scope="col" lang="y">타자 기록(타)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">수빈</th>
+                      <td>212</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">지환</th>
+                      <td>273</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">다인</th>
+                      <td>290</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">민재</th>
+                      <td>257</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="wrap_table">
+              <div class="tit_data">
+                <div class="inner"><span lang="y">수빈이네 모둠의 학생별 타자 기록</span></div>
+              </div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">이름</th>
+                      <th scope="col" lang="y">타자 기록(타)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">하율</th>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">나연</th>
+                      <td>264</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">성현</th>
+                      <td>218</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">윤지</th>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th lang="y">태준</th>
+                      <td>297</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="flex align_center gap_4" lang="y">
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="258"></math-field>
+              </div>
+              )타
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(212+273+290+257)÷4=258(타)</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page">
+          <h3 class="title" lang="y">하율이네 모둠의 타자 기록의 합은 몇 타인가요?</h3>
+          <div class="question_box justify_center gap_60">
+            <div class="wrap_table">
+              <div class="tit_data">
+                <div class="inner"><span lang="y">수빈이네 모둠의 학생별 타자 기록</span></div>
+              </div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">이름</th>
+                      <th scope="col" lang="y">타자 기록(타)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">수빈</th>
+                      <td>212</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">지환</th>
+                      <td>273</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">다인</th>
+                      <td>290</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">민재</th>
+                      <td>257</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="wrap_table">
+              <div class="tit_data">
+                <div class="inner"><span lang="y">수빈이네 모둠의 학생별 타자 기록</span></div>
+              </div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">이름</th>
+                      <th scope="col" lang="y">타자 기록(타)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">하율</th>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">나연</th>
+                      <td>264</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">성현</th>
+                      <td>218</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">윤지</th>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th lang="y">태준</th>
+                      <td>297</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="flex align_center gap_4" lang="y">
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="1290"></math-field>
+              </div>
+              )타
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">두 모둠의 타자 기록의 평균이 같으므로 하율이네 모둠의 타자 기록의 평균도 258타입니다.</p>
+                  <p lang="y">(하율이네 모둠의 타자 기록의 합)=258×5=1290(타)</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page">
+          <h3 class="title" lang="y">윤지의 타자 기록은 몇 타인가요?</h3>
+          <div class="question_box justify_center gap_60">
+            <div class="wrap_table">
+              <div class="tit_data">
+                <div class="inner"><span lang="y">수빈이네 모둠의 학생별 타자 기록</span></div>
+              </div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">이름</th>
+                      <th scope="col" lang="y">타자 기록(타)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">수빈</th>
+                      <td>212</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">지환</th>
+                      <td>273</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">다인</th>
+                      <td>290</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">민재</th>
+                      <td>257</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="wrap_table">
+              <div class="tit_data">
+                <div class="inner"><span lang="y">수빈이네 모둠의 학생별 타자 기록</span></div>
+              </div>
+              <div class="table_wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col" lang="y">이름</th>
+                      <th scope="col" lang="y">타자 기록(타)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y">하율</th>
+                      <td>250</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">나연</th>
+                      <td>264</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">성현</th>
+                      <td>218</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">윤지</th>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th lang="y">태준</th>
+                      <td>297</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="flex align_center gap_4" lang="y">
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="261"></math-field>
+              </div>
+              )타
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(윤지의 타자 기록)</p>
+                  <p>=1290-(250+264+218+297)</p>
+                  <p lang="y">=261(타)</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

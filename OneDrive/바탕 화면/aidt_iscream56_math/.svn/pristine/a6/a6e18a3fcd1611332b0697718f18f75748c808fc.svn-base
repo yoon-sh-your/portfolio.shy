@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema522_10_su_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+     <link rel="stylesheet" href="./../../common_contents/css/ema522_02.css" />
+</head>
+<body>
+    <div id="app_wrap" class="ema524_su_0002 play-howto-layout">
+        <section class="title">
+            <h2 data-text="놀이방법" lang="y">
+                <span class="title-play"><span class="point">놀이</span> 방법</span>
+                <span class="howto num1">각자의 놀이 카드를 모두 모은 후 수 카드끼리, 조건 카드끼리 잘 섞어서 뒤집어 쌓아 둡니다.</span>
+                <span class="howto num2">가위바위보로 놀이 순서를 정합니다.</span>
+                <span class="howto num3">
+                    자신의 차례가 되면 쌓아 둔 조건 카드 중 한 장을 뒤집어 내려놓고, 조건에 맞게 각자 수 카드를 가져옵니다.
+                </span>
+                <span class="howto num4">가져온 수 카드를 한 번씩만 사용하여 조건에 맞는 식을 만들고 계산합니다.</span>
+                <span class="howto num5">
+                    곱이 맞으면 1점을 획득하고, 곱이 가장 큰 사람은 2점을 추가로 획득합니다. 곱이 틀리면 점수를 얻지 못합니다.
+                </span>
+                <span class="howto num6">
+                    사용한 카드를 쌓아 둔 카드와 잘 섞어 <img src="../../common_contents/common/img/icon_howto_num3_5.svg" alt="3~5">의 순서대로 놀이를 5회 반복합니다. 획득한 점수의 합이 가장 높은 사람이 이깁니다.
+                </span>
+            </h2>
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <img src="../../common_contents/img/EMA522_SU/0002_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="../../common_contents/img/EMA522_SU/0002_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="../../common_contents/img/EMA522_SU/0002_img_3.png" alt="">
+                    </article>
+                    <article class="page page_4">
+                        <img src="../../common_contents/img/EMA522_SU/0002_img_4.png" alt="">
+                    </article>
+                    <article class="page page_5">
+                        <img src="../../common_contents/img/EMA522_SU/0002_img_5.png" alt="">
+                    </article>
+                    <article class="page page_6">
+                        <img src="../../common_contents/img/EMA522_SU/0002_img_6.png" alt="">
+                    </article>
+                </div>
+            </div>
+            
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="play btnBgDefault" lang="y">활동 영상</button>
+                </div>
+                <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+                <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

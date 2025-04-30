@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_02_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_02_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">크기가 같은 종이 3장을 5명에게 똑같이 나누어 주려고 합니다. 한 명에게 줄 수 있는 종이의 양을 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">구하는 식을 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="3÷5"></math-field>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <h3 lang="y">한 명에게 줄 수 있는 종이의 양을 네모 칸을 선택하여 그림에 나타내어 보세요.</h3>
+            
+            <div class="question_box">
+              <div class="boolean_count_wrap" data-answer-single="1">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+              </div>
+  
+              <div class="boolean_count_wrap" data-answer-single="1">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+              </div>
+  
+              <div class="boolean_count_wrap" data-answer-single="1">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_3">
+            <h3 lang="y">한 명에게 줄 수 있는 종이의 양은 얼마인지 분수로 나타내어 보세요.</h3>
+            
+            <div class="input_area">
+              <div class="fraction_box">
+                <div class="input_wrap">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="5"></math-field>
+                </div>
+              </div>
+
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA611_02_SU/0004_content3.svg" alt="">
+
+                <div class="text">
+                  <span class="fraction_box"><span>1</span><span>5</span></span>
+                  <span lang="y">이 몇 개지?</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_4">
+            <h3 lang="y">1÷5의 몫을 이용하여 3÷5의 몫을 분수로 나타내는 방법을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">
+                  <span>1÷5=</span>
+                  <span class="fraction_box no_m"><span>1</span><span>5</span></span>
+                  <span>이고, 3은 1이 3개이므로 3÷5는</span>
+                  <span class="fraction_box"><span>1</span><span>5</span></span>
+                  <span>이 3개입니다. 따라서 3÷5는</span>
+                  <span class="fraction_box"><span>3</span><span>5</span></span>
+                  <span>입니다.</span>
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_5">
+            <h3 lang="y">(자연수)÷(자연수)의 몫을 분수로 나타내는 방법을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">(자연수)÷(자연수)의 몫은 나누어지는 수를 분자, 나누는 수를 분모로 하는 분수로 나타낼 수 있습니다.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <article class="page page_6">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">정리해 볼까요</label>
+
+              <div class="text_box">
+                <div>
+                  <span lang="y">(자연수)÷(자연수)의 몫은 나누어지는 수를</span>
+                  <button class="reveal_btn" data-pair="1" lang="y">분자</button>
+                  <span lang="y" class="small-gap">,</span>
+                </div>
+  
+                <div>
+                  <span lang="y">나누는 수를</span>
+                  <button class="reveal_btn" data-pair="2" lang="y">분모</button>
+                  <span lang="y" class="small-gap">로 하는 분수로 나타낼 수 있습니다.</span>
+                </div>
+              </div>
+
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA611_02_SU/0004_content6.png" alt="">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnCheck" data-look="submit">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

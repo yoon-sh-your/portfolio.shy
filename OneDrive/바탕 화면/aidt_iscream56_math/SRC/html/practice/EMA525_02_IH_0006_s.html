@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_02_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_02.css" />
+  </head>
+  <!-- <style>
+    math-field {
+      display: flex;
+      width: 100%;
+      --math-field-text-align: left;
+    }
+  </style> -->
+  <body>
+    <div id="app_wrap" class="ema525_02_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">주어진 도형이 직육면체가 아닌 이유를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box dir_col gap_40">
+          <div class="img"><img src="../../common_practice/img/EMA525_02_IH/0006_img.svg" alt="" /></div>
+          <div class="flex gap_10">
+            <span class="label_gray" lang="y">이유</span>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">직육면체는 직사각형 6개로 둘러싸인 도형인데 주어진 도형은 직사각형 2개, 사다리꼴 4개로 둘러싸여 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">직사각형 6개로 둘러싸인 도형인지 살펴봅니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+.input_wrap:has(.w_80) {
+	width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+math-field.w_large {
+	width: 247px !important;
+}
+.img_area {
+	position: relative;
+}
+
+/* ema625_04_ih_0001 */
+.ema625_04_ih_0001 .img_area p {
+	position: absolute;
+	top: 37px;
+	left: 51px;
+}
+.ema625_04_ih_0001 .question_box {
+	gap: 100px;
+}
+.ema625_04_ih_0001 .text_row {
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+.ema625_04_ih_0001 .text_row:first-of-type {
+	margin-bottom: 20px;
+}
+.ema625_04_ih_0001 .text_row:nth-of-type(2) {
+	margin-bottom: 50px;
+}
+.ema625_04_ih_0001 .solve_area .blank {
+	display: inline-block;
+	width: 76px;
+}
+/* ema625_04_ih_0002 */
+.ema625_04_ih_0002 .question_box {
+	gap: 100px;
+}
+.ema625_04_ih_0002 .text_row {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.ema625_04_ih_0002 .text_row:first-of-type {
+	margin-bottom: 20px;
+}
+.ema625_04_ih_0002 .text_row:nth-of-type(2) {
+	margin-bottom: 50px;
+}
+.ema625_04_ih_0002 .solve_area .blank {
+	display: inline-block;
+	width: 84px;
+}
+/* ema625_04_ih_0003 */
+.ema625_04_ih_0003 .question_box {
+	margin-top: 96px;
+	gap: 274px;
+}
+.ema625_04_ih_0003 .img_area ul {
+	display: flex;
+	position: absolute;
+	top: 166px;
+	left: 17px;
+	gap: 29px;
+}
+.ema625_04_ih_0003 .img_area ul li {
+	font-size: 21px;
+}
+
+/* ema625_04_ih_0004 */
+.ema625_04_ih_0004 .question_box {
+	margin-top: 105px;
+	gap: 277px;
+}
+
+/* ema625_04_ih_0005 */
+.ema625_04_ih_0005 .text_area {
+	position: absolute;
+	top: 55px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.ema625_04_ih_0005 .text_area li {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.ema625_04_ih_0005 .text_area li p {
+	font-weight: 700;
+}
+.ema625_04_ih_0005 .text_area li + li {
+	margin-top: 20px;
+}
+.ema625_04_ih_0005 .boolean_wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.ema625_04_ih_0005 .boolean_wrap > div {
+	width: 100%;
+	padding: 0 80px;
+}
+.ema625_04_ih_0005 .boolean_wrap button {
+	background-color: transparent;
+	width: 100%;
+	height: 75px;
+	border-color: transparent;
+	padding: 0;
+	position: relative;
+}
+.ema625_04_ih_0005 .boolean_wrap button:after {
+	content: "";
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	mask: url(./../common/img/icon_checked_round.svg) no-repeat 50% / 60px auto;
+	position: absolute;
+	left: -12px;
+	top: -2px;
+}
+.ema625_04_ih_0005 .boolean_wrap button.selected:after {
+	background-color: var(--font-main);
+}
+.ema625_04_ih_0005 .boolean_wrap button.hint[data-answer-single="true"]:after {
+	background-color: var(--secondary-red);
+}
+.ema625_04_ih_0005 .boolean_wrap button.correct[data-answer-single="true"]:after {
+	background-color: var(--primary-blue);
+}
+
+/* ema624_04_ih_0006 */
+.ema624_04_ih_0006 .question_box {
+	margin-top: 50px;
+}
+
+/* ema625_04_ih_0007 */
+.ema625_04_ih_0007 .question_box {
+	margin-bottom: 120px;
+}
+.ema625_04_ih_0007 .example_box {
+	position: absolute;
+	top: 100%;
+}
+.ema625_04_ih_0007 .table_wrap {
+	width: 897px;
+}
+.ema625_04_ih_0007 .table_wrap col {
+	width: 33.33%;
+}
+.ema625_04_ih_0007 .table_wrap th {
+	background-color: #e4e9f7;
+}
+.ema625_04_ih_0007 .table_wrap th + th {
+	border-color: #fff;
+}
+.ema625_04_ih_0007 .table_wrap tbody tr td:first-of-type {
+	background-color: #efeeee;
+}
+.ema625_04_ih_0007 .table_wrap tbody tr td:first-of-type math-field {
+	width: 190px;
+}

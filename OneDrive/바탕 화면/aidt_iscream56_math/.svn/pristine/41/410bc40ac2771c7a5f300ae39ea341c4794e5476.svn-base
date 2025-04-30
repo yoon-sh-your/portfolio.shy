@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_03_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_03_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="flex justify_center gap_120">
+            <div class="question_box dir_col">
+              <div class="flex align_start">
+                <span class="flex align_center mt_6">0.41×6=</span>
+                <div class="flex dir_col gap_40">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="2.46"></math-field>
+                  </div>
+                  <div class="calc_vertical mt_20">
+                    <div class="top">
+                      <span>0.88</span>
+                      <span class="operator">×</span>
+                      <span>9</span>
+                    </div>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="7.74"></math-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="question_box dir_col">
+              <div class="flex align_start">
+                <span class="flex align_center mt_6">3.27×2=</span>
+                <div class="flex dir_col gap_40">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="6.54"></math-field>
+                  </div>
+                  <div class="calc_vertical mt_20">
+                    <div class="top">
+                      <span>7.24</span>
+                      <span class="operator">×</span>
+                      <span>3</span>
+                    </div>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="21.72"></math-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0">
+                  0.41×6=
+                  <div class="fraction_box">
+                    <span>41</span>
+                    <span>100</span>
+                  </div>
+                  ×6=
+                  <div class="fraction_box">
+                    <span>246</span>
+                    <span>100</span>
+                  </div>
+                  =2.46
+                </div>
+                <div class="flex align_center gap_0 mt_20">
+                  3.27×2=
+                  <div class="fraction_box">
+                    <span>327</span>
+                    <span>100</span>
+                  </div>
+                  ×2=
+                  <div class="fraction_box">
+                    <span>654</span>
+                    <span>100</span>
+                  </div>
+                  =6.54
+                </div>
+                <div class="flex align_center gap_20 mt_20">
+                  <div class="calc_vertical">
+                    <div class="top">
+                      <span>86</span>
+                      <span class="operator">×</span>
+                      <span>9</span>
+                    </div>
+                    <span class="bottom">774</span>
+                  </div>
+                  →
+                  <div class="calc_vertical">
+                    <div class="top">
+                      <span>0.86</span>
+                      <span class="operator">×</span>
+                      <span>9</span>
+                    </div>
+                    <span class="bottom">7.74</span>
+                  </div>
+                </div>
+                <div class="flex align_center gap_20 mt_20">
+                  <div class="calc_vertical">
+                    <div class="top">
+                      <span>724</span>
+                      <span class="operator">×</span>
+                      <span>3</span>
+                    </div>
+                    <span class="bottom">2172</span>
+                  </div>
+                  →
+                  <div class="calc_vertical">
+                    <div class="top">
+                      <span>7.24</span>
+                      <span class="operator">×</span>
+                      <span>3</span>
+                    </div>
+                    <span class="bottom">21.72</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

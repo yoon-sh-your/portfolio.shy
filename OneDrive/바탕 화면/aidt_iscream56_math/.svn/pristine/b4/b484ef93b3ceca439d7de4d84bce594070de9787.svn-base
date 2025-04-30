@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_07_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_07.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_07_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">3÷4의 몫을 소수로 나타내는 방법을 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">300÷4=75를 이용하여 3÷4의 몫을 소수로 나타내는 방법을 알아보세요</h3>
+            <div class="question_box justify_center">
+              <p class="f32b abs_1"><span class="blue_txt">300</span>÷4=<span class="red_txt">75</span></p>
+              <p class="mixed_fraction f32b abs_2 gap_8">
+                <span class="fraction_box"><span>1</span><span>100</span></span
+                >배
+              </p>
+              <p class="f32b abs_3">
+                <span><span class="blue_txt">3</span>÷4=</span><span class="input_wrap answer2"><math-field data-answer-single="0.75"></math-field></span>
+              </p>
+              <div class="abs_4 gap_8">                
+                <!-- 단답형 분수식 -->
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(1)/(100)" text-align="center" placeholder=" "></math-field>
+                  <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                  <!-- (분자)/(분모) 형식으로 표시 -->
+                  <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                  <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                </div>
+                <span class="f32b">배</span>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">세로로 나타내어 계산하는 방법을 알아보세요.</h3>
+            <div class="reveal_wrap">
+              <button class="reveal_btn" data-pair="1" lang="y">3 뒤에 소수점이 있다고 생각하<br />고 그에 맞추어 점을 찍어요.</button>
+              <button class="reveal_btn" data-pair="2" lang="y">3.0=3.00이므로 <br />0을 내려요.</button>
+              <button class="reveal_btn" data-pair="3" lang="y">0.01의 개수인 20을 4로<br />나눈 몫을 써요.</button>
+            </div>
+          </article>
+          <article class="page page_3">
+            <h3 lang="y">3÷4의 몫을 분수로 나타낸 다음, 소수로 나타내어 보세요.</h3>
+            <div class="question_box justify_center">
+              <p class="f32b fraction_row">
+                3÷4<span>=</span>
+                <span class="fraction_box"
+                  ><span class="input_wrap answer1"><math-field data-answer-single="3"></math-field></span><span>4</span></span
+                ><span>=</span>
+                <span class="fraction_box"
+                  ><span
+                    ><span class="input_wrap answer2"><math-field data-answer-single="3"></math-field></span>&times;<span class="input_wrap answer2"><math-field data-answer-single="25"></math-field></span
+                  ></span>
+                  <span
+                    >4&times;<span class="input_wrap answer2"><math-field data-answer-single="25"></math-field></span></span></span
+                ><span>=</span>
+                <span class="fraction_box"
+                  ><span class="input_wrap answer3"><math-field data-answer-single="75"></math-field></span><span>100</span></span
+                ><span>=</span>
+                <span class="input_wrap answer3"><math-field data-answer-single="0.75"></math-field></span>
+              </p>
+            </div>
+          </article>
+          <article class="page page_4">
+            <h3 lang="y">(자연수)÷(자연수)의 몫을 소수로 나타내는 방법을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p>세로로 나타내어 계산하거나 몫을 분수로 나타낸 다음 소수로 나타냅니다.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

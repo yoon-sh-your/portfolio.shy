@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_04_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_04_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              리본
+              <div class="fraction_box">
+                <span>5</span>
+                <span>6</span>
+              </div>
+              &nbsp;m를 8도막으로 똑같이 잘랐습니다. 리본 한 도막은 몇 m인지 구해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="input_wrap fraction_wrap">
+            <math-field data-answer-single="(5)/(48)" text-align="center"></math-field>
+          </div>
+          <span>m</span>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

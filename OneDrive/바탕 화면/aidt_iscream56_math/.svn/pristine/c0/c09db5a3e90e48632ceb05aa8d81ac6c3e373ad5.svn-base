@@ -1,0 +1,63 @@
+/* EMA521_SU_0003_s  */
+/* -------------------------------- 놀이방법 페이지 -------------------------------- */
+  
+.play-howto-layout {
+  .title {
+    h2[data-type="2"] {
+      .howto {
+        /* &.num1 {
+          width: 95%;
+        }
+        &.num2 {
+          width: 95%;
+        }
+        &.num3 {
+          width: 95%;
+        }
+        &.num4 {
+          width: 95%;
+        }
+        &.num5 {
+          width: 95%;
+        } */
+        &.num6 {
+          /* width: 95%; */
+          li:first-child {
+            span:nth-of-type(2) {
+              padding: 0 50px 0 40px;
+            }
+          }
+        }
+        .small_num {
+          &.num_s2 {
+            &::before {
+              left: 10px;
+              background: url(../common/img/icon_howto_num_2.svg) no-repeat center/ contain;
+            }
+          }
+          &.num_s3 {
+            &::before {
+              left: -40px;
+              background: url(../common/img/icon_howto_num_s3.svg) no-repeat center/ contain;
+            }
+          }
+          &.num_s5 {
+            &::before {
+              left: -40px;
+              background: url(../common/img/icon_howto_num_5.svg) no-repeat center/ contain;
+            }
+          }
+        }
+      }
+      
+    }
+  }
+  &[data-current-page="page_3"] {
+    .title {
+
+      h2 {
+        width: calc(100% - 155px);
+      }
+    }
+  }
+}

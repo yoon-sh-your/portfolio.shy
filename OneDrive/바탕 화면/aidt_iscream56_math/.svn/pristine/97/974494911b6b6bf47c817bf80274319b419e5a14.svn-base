@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_05_IH_0001_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+  <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+  <!-- <link rel="stylesheet" href="./../../common_practice/css/ema511_01.css" /> -->
+  <link rel="stylesheet" href="./../../common_practice/css/ema616_05.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_05_ih_0001 paging">
+    <section class="title type2">
+      <h2 data-head="1_orange" lang="y"><span class="empty_box nemo"></span>안에 알맞게 써넣으세요.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <div class="question_box">
+          <h3>
+            한 모서리의 길이가 1 m인 정육면체의 부피를 &nbsp;
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="1㎥">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="1㎠">1㎠</option>
+                <option value="1㎤">1㎤</option>
+                <option value="1㎡">1㎡</option>
+                <option value="1㎥">1㎥</option>
+              </select>
+            </div>
+            (이)라 쓰고,&nbsp;
+            <div class="input_wrap">
+              <math-field data-answer-single="1세제곱미터" class="field_mid" text-align="center"></math-field>
+            </div>
+            (이)라 읽습니다.
+          </h3>
+          <!-- 한 모서리의 길이가 1 m인 정육면체의 부피를 ( 1 ㎠, 1 ㎤, 1 ㎡, 1 ㎥ )(이)라 쓰고, (입력창)(이)라고 읽습니다. -->
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <ul>
+                  <li>한 모서리의 길이가 1 m인 정육면체의 부피를 1 ㎥라 쓰고, 1 세제곱미터라고 읽습니다.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="page page_2">
+        <div class="question_box justify_center">
+          <div class="box_left">
+            <h3>부피가 1 ㎥인 정육면체를 만드는 데 부피가 1 ㎤인 쌓기나무는</h3>
+            <h2>
+              모두
+              <div class="input_wrap">
+                <math-field data-answer-single="1000000" class="field_mid"></math-field>
+              </div>
+              개 필요합니다.
+            </h2>
+            <h2>
+              따라서 1 ㎥ =
+              <div class="input_wrap"><math-field data-answer-single="1000000" class="field_mid"></math-field></div>
+              &nbsp;㎤ 입니다.
+            </h2>
+          </div>
+
+          <div class="box_right">
+            <img src="../../common_practice/img/EMA616_04_IH/616_04_01.png" alt="" />
+            <span class="txt t1">1 ㎝</span>
+            <span class="txt t2">1 ㎝</span>
+            <span class="txt t3">1 ㎝</span>
+            <span class="txt t4">1 m</span>
+            <span class="txt t5">1 m</span>
+            <span class="txt t6">1 m</span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <ul>
+                  <li lang="y">부피가 1 ㎥인 정육면체를 만드는 데 부피가 1 ㎤인 쌓기나무는 모두 1000000개 필요합니다. 따라서 1 ㎥=1000000 ㎤입니다.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+
+    <!--  ***************   -->
+    <!-- <section class="contents">
+       
+        <div class="question_box justify_center">
+            
+            <img src="../../common_practice/img/EMA616_03_IH/616_03_06.png" alt="">
+        </div>
+
+        <div class="flex  justify_center gap_120 align_center">
+            <div class="input_wrap">
+                <math-field data-answer-single="12" text-align="center"></math-field>
+            </div>
+            <h2><span>㎤</span></h2>
+           
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">     직육면체의 높이를 ㎝라고  <span class="empty_box nemo"></span> 하면 8X5  <span class="empty_box nemo"></span>= 480 , 40X  <span class="empty_box nemo"></span>= 480, </p>
+                <p lang="y">  <span class="empty_box nemo"></span> =480÷40=12 입니다. 따라서 직육면체의 높이는 12 ㎝입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve">
+              <div>
+                <button type="button" class="btnVideo"><span lang="y">해설 영상</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section> -->
+  </div>
+</body>
+
+</html>

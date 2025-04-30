@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_01_SU_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_01_su_0007"> 
+      <section class="title type2">
+          <h2 data-type="3" lang="y">우리 주변에서 직육면체 모양과 정육면체 모양을 찾아 친구와 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="wrap flex justify-conter col gap_20">          
+          <div class="contents_img">
+            <img src="../../common_contents/img/EMA525_01_SU/0007_contents.png" alt="우리 주변에서 직육면체 모양 이미지"/>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">직육면체 모양인 건물이 있고, 정육면체 모양인 설치 미술 작품이 있습니다.</li>
+                <li lang="y">옷장, 냉장고는 직육면체 모양입니다.</li>
+                <li lang="y">주사위는 정육면체 모양입니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

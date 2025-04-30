@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA626_03_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema626_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema626_03_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">원기둥의 전개도에서 옆면의 가로와 세로를 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">전개도에서 옆면의 가로와 세로는 각각 원기둥의 무엇과 같은지 선을 이어 보세요.</h3>
+
+          <div class="question_box justify_center dir_col">
+            <div class="img_wrap">
+              <img src="../../common_contents/img/EMA626_03_SU/0005_content.png" alt="원기둥 전개도 이미지" />
+              <div class="text_box">
+                <span class="text text01">3 ㎝</span>
+                <span class="text text02">5 ㎝</span>
+              </div>
+            </div>
+
+            <div class="connect_box_wrap">
+              <ul class="connect_text_box start">
+                <li>옆면의 가로</li>
+                <li>옆면의 세로</li>
+              </ul>
+              <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"]]'>
+                <div class="start_group">
+                  <div class="connect_point" data-id="s1"></div>
+                  <div class="connect_point" data-id="s2"></div>
+                </div>
+                <div class="end_group">
+                  <div class="connect_point" data-id="e1"></div>
+                  <div class="connect_point" data-id="e2"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+              </div>
+              <ul class="connect_text_box end">
+                <li>원기둥의 높이</li>
+                <li>원기둥의 밑면의 둘레</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">옆면의 가로를 구하는 방법을 이야기해 보세요.</h3>
+
+          <div class="question_box justify_center dir_col">
+            <div class="img_wrap">
+              <img src="../../common_contents/img/EMA626_03_SU/0005_content.png" alt="원기둥 전개도 이미지" />
+              <div class="text_box">
+                <span class="text text01" lang="y">3 ㎝</span>
+                <span class="text text02" lang="y">5 ㎝</span>
+              </div>
+            </div>
+
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">옆면의 가로는 원기둥의 밑면의 둘레와 같으므로 (밑면의 지름)×(원주율)로 구합니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">전개도에서 옆면의 가로와 세로는 각각 몇 ㎝인지 구해 보세요.</h3>
+
+          <div class="question_box justify_center dir_col">
+            <div class="img_wrap">
+              <img src="../../common_contents/img/EMA626_03_SU/0005_content.png" alt="원기둥 전개도 이미지" />
+              <div class="text_box">
+                <span class="text text01" lang="y">3 ㎝</span>
+                <span class="text text02" lang="y">5 ㎝</span>
+              </div>
+            </div>
+
+            <div class="input_form">
+              <span lang="y">옆면의 가로:</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="18.84"></math-field>
+              </div>
+              <span class="mr_40" lang="y">㎝</span>
+
+              <span lang="y">옆면의 세로:</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="5"></math-field>
+              </div>
+              <span lang="y">㎝</span>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

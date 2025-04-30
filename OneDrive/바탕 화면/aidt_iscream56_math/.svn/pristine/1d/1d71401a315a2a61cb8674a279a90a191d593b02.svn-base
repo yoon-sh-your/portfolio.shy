@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">12와 20을 어떤 수로 나누었더니 두 수 모두 나누어떨어졌습니다. 어떤 수 중에서 가장 큰 수를 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box gap_12 justify_center">
+          (
+          <div class="input_wrap"><math-field data-answer-single="4"></math-field></div>
+          )
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">두 수를 모두 나누어떨어지게 하는 수는 공약수이므로 어떤 수는 두 수의 공약수이고, 공약수 중에서 가장 큰 수는 최대공약수입니다.</p>
+                <div class="text_group mt_12">
+                  <div class="row">
+                    <span>2</span>
+                    <span>12</span>
+                    <span>20</span>
+                  </div>
+                  <div class="row">
+                    <span>2</span>
+                    <span>6</span>
+                    <span>10</span>
+                  </div>
+                  <div class="row">
+                    <span>3</span>
+                    <span>5</span>
+                  </div>
+                </div>
+                <p class="mt_12" lang="y">➔ 최대공약수: 2×2=4</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

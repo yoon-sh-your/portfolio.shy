@@ -1,0 +1,251 @@
+.nemo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--primary-blue);
+  border-radius: 4px;
+}
+
+.input_wrap:has(.w_80) {
+  width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+math-field.w_large {
+  width: 247px !important;
+}
+.img_area {
+  position: relative;
+}
+
+/* ema624_05_ih_0001 */
+.ema624_05_ih_0001 .img_area {
+  margin-bottom: 10px;
+}
+.ema624_05_ih_0001 .img_area p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ema624_05_ih_0001 .input_row {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+.ema624_05_ih_0001 .input_row .label_gray {
+  margin-right: 10px;
+}
+.ema624_05_ih_0001 .page_2 .text_area {
+  border: 2px solid #cbe6de;
+  padding: 20px 38px;
+  border-radius: 20px;
+  position: relative;
+}
+.ema624_05_ih_0001 .page_2 .text_area p {
+  font-weight: 700;
+}
+.ema624_05_ih_0001 .page_2 .text_area p > span {
+  margin: 0 5px;
+}
+.ema624_05_ih_0001 .page_2 .boolean_wrap {
+  position: absolute;
+  top: 0;
+  left: 501px;
+}
+.ema624_05_ih_0001 .page_2 .boolean_wrap > div {
+  display: flex;
+  gap: 45px;
+}
+.ema624_05_ih_0001 .page_2 .boolean_wrap button {
+  background-color: transparent;
+}
+.ema624_05_ih_0001 .page_2 .boolean_wrap button.correct[data-answer-single='true'] {
+  border-color: var(--primary-blue);
+  background-color: rgba(59, 113, 254, 0.5);
+}
+
+/* ema624_05_ih_0002 */
+.bg_yellow {
+  color: #f29739;
+}
+.ema624_05_ih_0002 .img_area {
+  margin-right: 60px;
+}
+.ema624_05_ih_0002 .img_area p {
+  position: absolute;
+}
+.ema624_05_ih_0002 .img_area .text1 {
+  top: 52px;
+  left: 180px;
+}
+.ema624_05_ih_0002 .img_area .text2 {
+  top: 128px;
+  left: 90px;
+}
+.ema624_05_ih_0002 .img_area .text3 {
+  top: 128px;
+  left: 317px;
+}
+.ema624_05_ih_0002 .img_area .text4 {
+  top: 200px;
+  left: 184px;
+}
+.ema624_05_ih_0002 .text_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* ema624_05_ih_0003 */
+.ema624_05_ih_0003 .text_area {
+  width: 815px;
+  height: 136px;
+  background: #d9d9d9;
+  border-radius: 24px;
+  position: relative;
+}
+.ema624_05_ih_0003 .text_area ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 80px;
+}
+.ema624_05_ih_0003 .text_area .boolean_wrap {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 23px;
+  justify-content: center;
+  gap: 162px;
+}
+.ema624_05_ih_0003 .text_area .boolean_wrap button {
+  background: transparent;
+}
+
+/* ema624_05_ih_0004 */
+.ema624_05_ih_0004 .input_row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+.ema624_05_ih_0004 .conts_solve .nemo {
+  margin: 0 !important;
+}
+/* ema624_05_ih_0005 */
+.ema624_05_ih_0005 .text_area {
+  width: 332px;
+  height: 194px;
+  border-radius: 20px;
+  border: 2px solid #d6d7d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.ema624_05_ih_0005 .text_area li {
+  display: flex;
+  align-items: center;
+}
+.ema624_05_ih_0005 .text_area li + li {
+  margin-top: 30px;
+}
+.ema624_05_ih_0005 .boolean_wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.ema624_05_ih_0005 .boolean_wrap > div {
+  width: 100%;
+}
+.ema624_05_ih_0005 .boolean_wrap button {
+  background-color: transparent;
+  width: 100%;
+  height: 80px;
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+}
+.ema624_05_ih_0005 .boolean_wrap button {
+  border-color: transparent !important;
+  background-color: transparent !important;
+}
+.ema624_05_ih_0005 .boolean_wrap button:after {
+  content: '';
+  width: 60px;
+  height: 60px;
+  mask: url(../common/img/icon_checked_round.svg) no-repeat 50% / 60px auto;
+  position: absolute;
+  left: -10px;
+  top: 0;
+}
+.ema624_05_ih_0005 .boolean_wrap button.selected:after {
+  background-color: var(--font-main);
+}
+.ema624_05_ih_0005 .boolean_wrap button.correct[data-answer-single='true']:after {
+  background-color: var(--primary-blue);
+}
+.ema624_05_ih_0005 .boolean_wrap button.hint[data-answer-single='false']:after {
+  background-color: var(--secondary-red);
+}
+
+/* ema624_05_ih_0006 */
+.ema624_05_ih_0006 .img_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 50px;
+}
+.ema624_05_ih_0006 .img_area p {
+  position: absolute;
+}
+.ema624_05_ih_0006 .page_1 .input_area > div {
+  margin-bottom: 50px;
+}
+
+/* ema624_05_ih_0007 */
+.ema624_05_ih_0007 .l_left {
+  margin-right: 60px;
+}
+.ema624_05_ih_0007 .img_area .cards_img,
+.ema624_05_ih_0007 .img_area .input_area {
+  position: absolute;
+}
+.ema624_05_ih_0007 .img_area .cards_img {
+  top: 70px;
+  left: 127px;
+}
+.ema624_05_ih_0007 .img_area .input_area {
+  top: 325px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.ema624_05_ih_0007 .img_area .input_area .example_box {
+  position: absolute;
+  top: 100%;
+}
+.ema624_05_ih_0007 math-field.textarea {
+  width: 643px;
+}
+.ema624_05_ih_0007 math-field.textarea + .example_box {
+  width: 643px;
+}
+.ema624_05_ih_0007 math-field.textarea + .example_box p {
+  white-space: normal;
+}
+.ema624_05_ih_0007 .solve_area .inner_solve {
+  margin-top: 120px;
+}
+
+.ema624_05_ih_0004 .nemo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--primary-blue);
+  border-radius: 4px;
+}

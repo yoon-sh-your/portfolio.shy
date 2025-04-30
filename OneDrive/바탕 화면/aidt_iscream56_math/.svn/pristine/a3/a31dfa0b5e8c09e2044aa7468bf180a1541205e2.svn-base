@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA514_06_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_07_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">
+          분수와 소수의 크기를 비교하여
+          <span class="empty_box ico_round"></span>
+          안에
+          <span class="flex align-center">
+            <img src="./../../common_contents//common/img/icon_arrow_right.svg" alt="크다">,
+            <img src="./../../common_contents//common/img/icon_equal.svg" alt="같다">,
+            <img src="./../../common_contents//common/img/icon_arrow_left.svg" alt="작다">
+          중 알맞은 것을 골라 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="fraction_col">
+            <div class="fra_drop_down">
+              <span class="fraction_box">
+                <span>1</span>
+                <span>2</span>
+              </span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="=">
+                  <option></option>
+                  <option value=">">></option>
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                </select>
+              </div>
+              <span>0.5</span>
+            </div>
+          </div>
+          <div class="fraction_col">
+            <div class="fra_drop_down">
+              <span class="fraction_box">
+                <span>13</span>
+                <span>20</span>
+              </span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single=">">
+                  <option></option>
+                  <option value=">">></option>
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                </select>
+              </div>
+              <span>0.41</span>
+            </div>
+          </div>
+          <div class="fraction_col">
+            <div class="fra_drop_down">
+              <span>1.07</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="<">
+                  <option></option>
+                  <option value=">">></option>
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                </select>
+              </div>
+              <div class="mixed_fraction">
+                <span class="whole">1</span>
+                <span class="fraction_box">
+                  <span>9</span>
+                  <span>50</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

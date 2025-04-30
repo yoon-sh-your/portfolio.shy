@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_05_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link
+      rel="stylesheet"
+      href="./../../common_contents/css/ema616_common.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../../common_contents/css/ema616_09 (2).css"
+    />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_05_su_0006">
+      <section class="title type2">
+        <h2 data-head="4">
+          <div class="title_row">
+            <span class="nemo_blank"></span>
+            <span lang="y">안에 알맞은 수를 써넣어 봅시다.</span>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="input_wrap answer2">
+            <span>5 ㎥=</span>
+            <math-field data-answer-single="5000000"></math-field>
+            <span>㎤</span>
+          </div>
+          <div class="input_wrap answer3">
+            <span>12000000 ㎤=</span>
+            <math-field data-answer-single="12"></math-field>
+            <span>㎥</span>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

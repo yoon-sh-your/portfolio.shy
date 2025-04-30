@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>간단한 자연수의 비로 나타내어 봅시다.</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_03.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_03_su_0006">
+        <section class="title type2">
+            <h2 data-head="4_green" lang="y">
+                간단한 자연수의 비로 나타내어 봅시다.
+            </h2>
+        </section>
+
+        <section class="contents">
+            <div class="flex justify_center">
+                <div class="top_a">
+                    <div class="flex flex_box">
+                        <div class="input_wrap">
+                            <span>07:0.5=</span>
+                            <math-field type="number" data-answer-single="7:5" text-align="center"></math-field>
+                        </div>
+                        <div class="input_wrap">
+                            <span>
+                                <div class="fraction_box f32b"><span>1</span><span>4</span></div>:
+                                <div class="fraction_box f32b"><span>1</span><span>4</span></div>
+                            </span>
+                            <span>=</span>
+                            <math-field type="number" data-answer-single="21:5" text-align="center"></math-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify_center">
+                <div class="bottom_a">
+                    <div class="flex flex_box">
+                        <div class="input_wrap">
+                            <span>1.5:</span>
+                            <div class="fraction_box f32b"><span>1</span><span>6</span></div>
+                            <span>=</span>
+                            <math-field type="number" data-answer-single="6:1" text-align="center"></math-field>
+                        </div>
+                        <div class="input_wrap">
+                            <div class="mixed_fraction">
+                                <span class="whole">1</span>
+                                <span class="fraction_box">
+                                    <span>1</span>
+                                    <span>2</span>
+                                </span>
+                            </div>
+                            <span>:</span>
+                            <div class="fraction_box f32b"><span>1</span><span>6</span></div>
+                            <span>=</span>
+                            <math-field type="number" data-answer-single="9:1" text-align="center"></math-field>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit" data-submit="true">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

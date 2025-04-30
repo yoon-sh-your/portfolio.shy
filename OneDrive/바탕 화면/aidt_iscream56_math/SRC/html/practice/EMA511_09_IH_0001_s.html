@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA511_09_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_09.css">
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema511_09_ih_0001">
+        <section class="title type2">
+            <h2 data-puzzle="blue" lang="y">
+                계산을 하여 계산 결과를 따라가면 친구를 만날 수 있어요.
+                <div class="picture_wrap" data-head="" data-tit=" ">
+                    <div class="img_box">
+                        <div class="img_wrap">
+                            <img src="../../common_practice/img/EMA511_09_IH/0001_map.png" alt="" />
+                            <div class="text_group">
+                                <span class="txt1" lang="y">출발</span>
+                                <span class="txt2" lang="y">도착</span>
+                                <span class="txt3" lang="y">공사중</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="zoom"></button>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents">
+            <div class="flex justify_center">
+                <div class="map_area">
+                    <img src="../../common_practice/img/EMA511_09_IH/0001_map.png" alt="">
+                    <div class="text_group">
+                        <span class="txt1" lang="y">출발</span>
+                        <span class="txt2" lang="y">도착</span>
+                        <span class="txt3" lang="y">공사중</span>
+                    </div>
+                    <svg width="540" height="495" viewBox="0 0 540 495" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="load1" data-quiz="14-(5+4)" data-left="13" data-right="5" data-true="5"
+                            d="M109.5 94C113.5 108.167 127.7 137.3 152.5 140.5C183.5 144.5 223.5 113 250 114.5"
+                            stroke="none" />
+                        <path class="load2" data-quiz="36÷9×2" data-left="2" data-right="8" data-true="8"
+                            d="M250.5 114C261.667 114 283.4 119.2 281 140C278.6 160.8 259.667 165.667 250.5 165.5C221.333 166 159.8 171.4 147 189"
+                            stroke="none" />
+                        <path class="load3" data-quiz="13-4×3+8" data-left="9" data-right="29" data-true="9"
+                            d="M147 190C141.5 199.666 139.4 216.5 175 206.5C210.6 196.5 227.833 195.333 232 196C254.333 198.333 301.8 193.8 313 157C327 111 328 102.5 297 101C272.2 99.7998 269 83.1665 270.5 74.9998C279.667 63.3331 312 43.4998 368 57.4998C383.5 64 391.5 76 372 104C352.5 132 346.5 155 372 153C397.5 151 397 115.5 438 150"
+                            stroke="none" />
+                        <path class="load4" data-quiz="24+12÷4-6" data-left="21" data-right="3" data-true="21"
+                            d="M438 150.5C439.333 159.667 432 183.5 392 205.5C368.4 215.9 337.833 228.5 331 231.5"
+                            stroke="none" />
+                        <path class="load5" data-quiz="15+(12-9)×4" data-left="72" data-right="27" data-true="27"
+                            d="M331.499 231C322.166 231 299.399 229.6 282.999 224C266.599 218.4 237.833 226.334 225.499 231C221.499 232.5 202.699 235.7 159.499 236.5C116.299 237.3 136.833 268.167 152.499 283.5C163.833 300.333 178.6 335.3 147 340.5C136.2 342.1 120.5 341.167 114 340.5"
+                            stroke="none" />
+                        <path class="load6" data-quiz="36-24÷4+3×7" data-left="24" data-right="51" data-true="51"
+                            d="M114 340.001C106.5 351.667 98.0005 377.401 124 387.001C150 396.601 182.833 363.334 196 345.501C208.333 328.334 245.3 298.801 294.5 318.001"
+                            stroke="none" />
+                        <path class="load7"
+                            d="M295.999 318.501C300.333 320.167 313.999 321.501 333.999 313.501C358.999 303.501 396.999 273.501 408.499 308.001C419.999 342.501 367.999 371.001 359.499 373.001C350.999 375.001 253.499 398.501 315.999 430.001C322.5 432.001 341.5 439.001 379.5 426.501C391 423.001 409 430.501 418.5 442.501"
+                            stroke="none" />
+                        <image id="obj_move" href="../../common_practice/img/EMA511_09_IH/0001_obj1.png" x="25" y="10" width="90" height="78" />
+                        <image id="obj_move_blink" href="../../common_practice/img/EMA511_09_IH/0001_obj1_dashed.png" x="25" y="10" width="90" height="78" />
+                    </svg>
+                    <span class="obj_arrival"><img src="../../common_practice/img/EMA511_09_IH/0001_obj2.png" alt="도착 이미지"></span>
+
+                </div>
+            </div>
+            <div class="btn_area">
+                <button class="btnReset">리셋</button>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const obj = document.getElementById("obj_move");
+                const objBlink = document.getElementById("obj_move_blink"); // 추가된 깜박이 이미지
+                const btnReset = document.querySelector(".btnReset"); //리셋 버튼 활성화를 위해 추가
+                const pathElements = document.querySelectorAll("svg path[class^='load']");
+                let currentPathIndex = 0;
+                let state = "ready"; // ready, moving, quiz
+
+                 // 처음엔 깜박이 이미지만 보이고, 기본 이미지는 숨긴다
+                obj.style.display = "block";
+                objBlink.style.display = "block";
+
+                function moveAlongPath(pathEl) {
+                    state = "moving";
+
+                    // 이동 시작하면 깜박이 이미지를 숨기고 정상 이미지를 보여준다
+                    objBlink.style.display = "none";
+                    obj.style.display = "block";
+
+                    // 이동 시작할 때 리셋 버튼 활성화
+                    btnReset.classList.add("active");
+
+                    const pathLength = pathEl.getTotalLength();
+                    const speed = 200;
+                    const duration = (pathLength / speed) * 1000;
+
+                    const fps = 60;
+                    const steps = Math.round(duration / (1000 / fps));
+                    let step = 0;
+
+                    const start = pathEl.getPointAtLength(0);
+                    obj.setAttribute("x", start.x - obj.width.baseVal.value / 2);
+                    obj.setAttribute("y", start.y - obj.height.baseVal.value / 2);
+                    obj.setAttribute("transform", "scale(0.9)");
+
+                    const interval = setInterval(() => {
+                        const progress = step / steps;
+                        const point = pathEl.getPointAtLength(progress * pathLength);
+
+                        obj.setAttribute("x", point.x - obj.width.baseVal.value / 2);
+                        obj.setAttribute("y", point.y - obj.height.baseVal.value / 2);
+
+                        step++;
+
+                        if (step > steps) {
+                            clearInterval(interval);
+                            state = "quiz"; // 이동 완료 후 퀴즈 대기
+
+                            if (pathEl.dataset.quiz) {
+                                showQuiz(pathEl); // 문제 있을 때만 showQuiz
+                            } else {
+                                // 마지막 도착 path는 문제 없이 바로 도착 처리
+                                document.querySelector(".map_area")?.classList.add("result");
+                                state = "done";
+
+                                obj.classList.add("bounce"); // 통통 뛰기
+                                obj.addEventListener("animationend", () => {
+                                    obj.classList.remove("bounce");
+                                }, { once: true });
+                            }
+                        }
+                    }, 1000 / fps);
+                }
+                
+                function renderFractionHTML(str) {
+                    return str
+                        .split("+")
+                        .map(part => {
+                            const mixedMatch = part.match(/^(\d+)\((\d+)\)\/\((\d+)\)$/);
+                            const fractionMatch = part.match(/^\((\d+)\)\/\((\d+)\)$/);
+
+                            if (mixedMatch) {
+                                return `
+                                    <div class="fraction_box_wrap">
+                                        <span>${mixedMatch[1]}</span>
+                                        <div class="fraction_box">
+                                            <span>${mixedMatch[2]}</span>
+                                            <span>${mixedMatch[3]}</span>
+                                        </div>
+                                    </div>
+                                `;
+                            } else if (fractionMatch) {
+                                return `
+                                    <div class="fraction_box">
+                                        <span>${fractionMatch[1]}</span>
+                                        <span>${fractionMatch[2]}</span>
+                                    </div>
+                                `;
+                            } else {
+                                return `<span>${part}</span>`;
+                            }
+                        })
+                        .join('<span class="operator">+</span>');
+                }
+
+                //문제 보여주기 팝업
+                function showQuiz(pathEl) {
+                    const quiz = pathEl.dataset.quiz;
+                    const left = pathEl.dataset.left;
+                    const right = pathEl.dataset.right;
+                    const correct = pathEl.dataset.true;
+
+                    const popArea = document.createElement("div");
+                    popArea.className = "pop_area";
+                    popArea.innerHTML = `
+                        <div class="quiz_pop">
+                            <button type="button" class="close" style="display: none;"></button>
+                            <div class="inner_pop quiz${currentPathIndex + 1}">
+                                <div class="quiz_instruction">
+                                    계산을 하여 계산 결과를 선택하세요.
+                                </div>
+                                <div class="txt_quiz">${renderFractionHTML(quiz)}</div>
+                                <div class="question_box">
+                                    <button type="button" class="left" data-answer-single="${left === correct}">
+                                        ${renderFractionHTML(left)}
+                                    </button>
+                                    <div class="center">
+                                        <img src="../../common_practice/img/EMA511_09_IH/0001_obj3.png" alt="">
+                                    </div>
+                                    <button type="button" class="right" data-answer-single="${right === correct}">
+                                        ${renderFractionHTML(right)}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+                    document.querySelector(".contents")?.after(popArea);
+
+                    const leftBtn = popArea.querySelector(".left");
+                    const rightBtn = popArea.querySelector(".right");
+
+                    leftBtn.addEventListener("click", checkAnswer);
+                    rightBtn.addEventListener("click", checkAnswer);
+                }
+
+                //정답 체크
+                function checkAnswer(e) {
+                    const selected = e.currentTarget;
+                    const isCorrect = selected.dataset.answerSingle === "true";
+
+                    const quizPop = document.querySelector(".quiz_pop");
+
+                    if (isCorrect) {
+                        audioManager.playSound("correct"); //정답 소리 재생
+
+                        quizPop.classList.remove("error");
+                        quizPop.classList.add("result");
+
+                        //팝업 자동으로 show 및 close 기능 추가로 팝업의 닫기 버튼 불필요
+                        //const closeBtn = quizPop.querySelector(".close");
+                        //closeBtn.style.display = "block";
+
+                    //     closeBtn.addEventListener("click", () => {
+                    //         document.querySelector(".pop_area")?.remove();
+                    //         currentPathIndex++;
+                    //         if (currentPathIndex < pathElements.length) {
+                    //             moveAlongPath(pathElements[currentPathIndex]);
+                    //         } else {
+                    //             document.querySelector(".map_area")?.classList.add("result");
+                    //             state = "done";
+                    //         }
+                    //     });
+                    // } else {
+                    //     quizPop.classList.remove("result");
+                    //     quizPop.classList.add("error");
+                    //     setTimeout(() => {
+                    //         quizPop.classList.remove("error");
+                    //     }, 1000);
+                    // }
+
+                    // 팝업 자동으로 Show & 정답 체크시 Close
+                        setTimeout(() => {
+                            document.querySelector(".pop_area")?.remove(); // 팝업 닫기
+                            currentPathIndex++;
+                            if (currentPathIndex < pathElements.length) {
+                                moveAlongPath(pathElements[currentPathIndex]); // 다음 이동
+                            } else {
+                                document.querySelector(".map_area")?.classList.add("result");
+                                state = "done";
+                                //도착했을 때 다람쥐 튀는 애니메이션 실행
+                                    obj.classList.add("bounce");
+
+                                //애니메이션이 끝나면 bounce 클래스 제거
+                                obj.addEventListener("animationend", () => {
+                                    obj.classList.remove("bounce");
+                                }, { once: true });
+                            }
+                        }, 500); // 약간의 지연으로 부드럽게
+                    } else {
+                        audioManager.playSound("incorrect"); // 오답 소리 재생
+
+                        quizPop.classList.remove("result");
+                        quizPop.classList.add("error");
+                        setTimeout(() => {
+                            quizPop.classList.remove("error");
+                        }, 1000);
+                    }
+                }
+
+                objBlink.addEventListener("click", () => {
+                    if (state === "ready" && currentPathIndex < pathElements.length) {
+                        moveAlongPath(pathElements[currentPathIndex]);
+                    }
+                });
+
+                obj.addEventListener("click", () => {
+                    if (state === "ready" && currentPathIndex < pathElements.length) {
+                        moveAlongPath(pathElements[currentPathIndex]);
+                    } else if (state === "quiz") {
+                        showQuiz(pathElements[currentPathIndex]);
+                    }
+                });
+
+                btnReset.addEventListener("click", () => {
+                    // state 초기화
+                    currentPathIndex = 0;
+                    state = "ready";
+
+                    // 이동용 드론(obj) 숨기고, 깜박이는 드론(objBlink) 다시 보여주기
+                    obj.style.display = "none";
+                    objBlink.style.display = "block";
+
+                    // 출발 위치로 이동 (x, y 좌표 초기화)
+                    const startX = 25;  // 처음 x 좌표 (너가 <image> 태그에 준 초기값)
+                    const startY = 10;  // 처음 y 좌표
+
+                    obj.setAttribute("x", startX);
+                    obj.setAttribute("y", startY);
+
+                    objBlink.setAttribute("x", startX);
+                    objBlink.setAttribute("y", startY);
+
+                    // 리셋 버튼 비활성화
+                    btnReset.classList.remove("active");
+
+                    // 열려있는 팝업이 있다면 삭제
+                    document.querySelector(".pop_area")?.remove();
+
+                    // 지도에 결과 표시된 것도 제거
+                    document.querySelector(".map_area")?.classList.remove("result");
+                });
+
+            });
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_05_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_05_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star fraction_box_title" lang="y">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <div class="fraction_box ml_0">
+                <span>4</span>
+                <span>9</span>
+              </div>
+              와
+              <div class="fraction_box">
+                <span>5</span>
+                <span>6</span>
+              </div>
+              를 잘못 통분했습니다. 잘못된 부분을 찾아 옳게 통분해 보세요.
+            </div>
+          </div>          
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="tabbox_wrap">
+            <div class="top">
+              <div class="flex align_center gap_20">
+                <div class="bracket">
+                  <span class="bracket-l"></span>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>9</span>
+                  </div>
+                  <span class="comma">,</span>
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span>6</span>
+                  </div>
+                  <span class="bracket-r"></span>
+                </div>
+                <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="obj_arrow" alt="" />
+                <div class="bracket">
+                  <span class="bracket-l"></span>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>9×2</span>
+                  </div>
+                  <span class="comma">,</span>
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span>6×3</span>
+                  </div>
+                  <span class="bracket-r"></span>
+                </div>
+                <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="obj_arrow" alt="" />
+                <div class="bracket">
+                  <span class="bracket-l"></span>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>18</span>
+                  </div>
+                  <span class="comma">,</span>
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span>18</span>
+                  </div>
+                  <span class="bracket-r"></span>
+                </div>
+              </div>
+            </div>
+            <div class="tabbox">
+              <span class="tit_box" lang="y">옮게 통분하기</span>
+              <div class="conts_box">
+                <div class="flex align_center gap_20">
+                  <div class="bracket lg">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box">
+                      <span>4</span>
+                      <span>9</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>6</span>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="obj_arrow" alt="" />
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(4×2)/(9×2)"></math-field>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(5×3)/(6×3)"></math-field>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="obj_arrow" alt="" />
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(8)/(18)"></math-field>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(5)/(18)"></math-field>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div lang="y">
+                  분모와 분자에 각각 0이 아닌 같은 수를 곱해야 하는데&nbsp;
+                  <div class="fraction_box"><span>4</span><span>9</span></div>
+                  의 분모에만 2를,
+                </div>
+                <div lang="y">
+                  <div class="fraction_box"><span>5</span><span>6</span></div>
+                  의 분모에만 3을 곱하였습니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,697 @@
+/* 계산기 */
+button.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0;
+  min-width: unset;
+  background-color: var(--bg-default);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  margin-left: 8px;
+  border: 1px solid #d2d2d2;
+}
+
+.btn.calculator {
+  background-image: url(../img/calculator_icon.svg);
+}
+
+button.btn:hover {
+  background-color: var(--primary-blue-50);
+}
+
+.cal_popup {
+  display: none;
+  position: absolute;
+  cursor: move;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  width: 290x;
+  height: 360px;
+  padding: 30px;
+  border: 4px solid #9fcef8;
+  border-radius: 20px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.cal_popup .img_close {
+  min-width: unset;
+  position: absolute;
+  padding: 0;
+  top: -20px;
+  right: -10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: url(../img/calculator_img_close.png) no-repeat center / contain;
+}
+
+.calculator_area {
+  position: relative;
+  width: 230px;
+  height: 300px;
+  background: url(../img/calculator_img.png) no-repeat center / 100% 100%;
+  padding: 26px 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cal_btn.clear_btn {
+  left: 193px;
+  top: 119px;
+  width: 45px;
+  height: 45px;
+}
+
+.cal_popup .cal_buttons {
+  width: 100%;
+  display: grid;
+  margin-top: 12px;
+  gap: 7.5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator_wrap .cal_btn {
+  min-width: unset;
+  width: 42px;
+  height: 32px;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  text-indent: -99999em;
+  background-color: unset;
+}
+
+.calculator_wrap .btn.on {
+  background-color: var(--btn-default);
+  box-shadow: 0 5px 0 rgba(54, 117, 174, 0.35);
+}
+
+.calculator_wrap .cal_btn.clear_btn {
+  position: absolute;
+  left: 17px;
+  top: 88px;
+}
+
+.calculator_wrap .cal_btn[data-value="+"] {
+  height: 72px;
+  grid-column: 4;
+  /* 3번째 열 */
+  grid-row: 4 / span 2;
+  /* 4번째 줄에서 시작해서 두 줄 차지 */
+}
+
+.calculator_wrap .cal_btn[data-value="C"] {
+  grid-column: 1 / span 3;
+  /* 3번째 열 */
+}
+
+.calculator_area .cal_display {
+  margin-left: unset;
+  font-size: 32px;
+  line-height: 50px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-align: right;
+  padding: 0 20px;
+}
+
+/* 삼각자 */
+.btn.triangle {
+  background-image: url(../img/svg_triangle.svg);
+}
+
+.obj_triangle {
+  position: absolute;
+  width: 500px;
+  height: 257px;
+  background-image: url(../img/triangle_ruler.png);
+  background-size: 100%;
+  z-index: 90;
+  pointer-events: none;
+  transform-origin: 33.33% 33.33%;  /* 왼쪽 삼각자의 무게중심 */
+}
+
+.obj_triangle::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: inherit;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  pointer-events: auto;
+  cursor: grab;
+}
+
+.obj_triangle.reverse {
+  background-image: url(../img/triangle_ruler_reverse.png);
+  transform-origin: 66.66% 33.33%;  /* 오른쪽 삼각자의 무게중심 */
+}
+
+.obj_triangle.reverse::after {
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.obj_triangle .handle {
+  position: absolute;
+  top: -56px;
+  left: calc(33% - 20px);
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-image: url(../img/protractor_rotate.svg);
+  background-color: transparent;
+  min-width: unset;
+  cursor: grab;
+  z-index: 91;
+  pointer-events: auto;
+}
+.obj_triangle.reverse .handle {
+  left: calc(66% - 20px);
+}
+
+.measure_desc {
+  position: absolute;
+  bottom: -15px;
+  display: none;
+  align-items: center;
+  font-size: 24px;
+  color: #ff0000;
+  user-select: none;
+}
+
+.on_compass .measure_desc,
+.on_measure .measure_desc,
+.on_measure_angle .measure_desc {
+  display: flex;
+}
+
+.on_compass .measure_desc {
+  height: 40px;
+}
+
+.obj_svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: transparent;
+}
+
+/* 일반자 */
+.btn.ruler {
+  background-image: url(../img/icon_ruler.svg);
+}
+
+.obj_ruler {
+  position: absolute;
+  width: 600px;
+  height: 96px;
+  background-image: url(../img/line_ruler.svg);
+  background-size: 100%;
+  z-index: 90;
+  pointer-events: none;
+  transform-origin: 50% 50%;  /* 일반자의 무게중심 */
+}
+
+.obj_ruler::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: inherit;
+  pointer-events: auto;
+  cursor: grab;
+}
+
+.obj_ruler .handle {
+  position: absolute;
+  top: -56px;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-image: url(../img/protractor_rotate.svg);
+  background-color: transparent;
+  min-width: unset;
+  cursor: grab;
+  z-index: 91;
+  pointer-events: auto;
+}
+
+/* 그리기도구 관련 */
+.btn_draw{
+  background-image: url(../img/icon_drawing.svg);
+}
+.draw-tool-wrap.show {
+  display: block;
+  z-index: 99;
+}
+
+.draw-tool-wrap {
+  display: none;
+  position: absolute;
+  bottom: 120px;
+  left: 300px;
+  width: 284px;
+  height: 464px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 8px 24px 0px #0000001F;
+}
+
+.draw-tool-wrap-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.draw-tool-wrap-title {
+  float: left;
+  width: 200px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  cursor: move;
+  user-select: none;
+}
+
+.draw-tool-wrap-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tool-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tool-row.hidden{
+  display: none;
+}
+
+.tool-row.function-item button[type='button'] {
+  width: 52px;
+  height: 52px;
+  min-width: unset;
+  border: 1px solid #d2d2d2;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+}
+
+.tool-row.function-item button[type='button'].active {
+  border: 2px solid #3B71FE;
+  background-color: #EEF9FF;
+}
+
+.tool-row.function-item button[type='button'].inactive {
+  background-color: #F2F4F7;
+  opacity: 0.4;
+}
+
+.ic_pen {
+  background-image: url('../img/tool_drawing/ic_pen.svg');
+}
+
+.ic_txt {
+  background-image: url('../img/tool_drawing/ic_txt.svg');
+}
+
+.ic_eraser {
+  background-image: url('../img/tool_drawing/ic_eraser.svg');
+}
+
+.ic_triangle {
+  background-image: url('../img/tool_drawing/ic_triangle.svg');
+}
+
+.ic_square {
+  background-image: url('../img/tool_drawing/ic_square.svg');
+}
+
+.ic_circle {
+  background-image: url('../img/tool_drawing/ic_circle.svg');
+}
+
+.ic_polygon {
+  background-image: url('../img/tool_drawing/ic_polygon.svg');
+}
+
+.ic_line {
+  background-image: url('../img/tool_drawing/ic_line.svg');
+}
+
+.ic_dash {
+  background-image: url('../img/tool_drawing/ic_dash.svg');
+}
+
+.ic_draw {
+  background-image: url('../img/tool_drawing/ic_draw.svg');
+}
+
+.ic_pull {
+  background-image: url('../img/tool_drawing/ic_pull.svg');
+}
+
+.ic_undo {
+  background-image: url('..//img/tool_drawing/ic_undo.svg');
+}
+
+.ic_redo {
+  background-image: url('../img/tool_drawing/ic_redo.svg');
+}
+
+.ic_del {
+  background-image: url('../img/tool_drawing/ic_del.svg');
+}
+
+.tool-row.palette-item button[type='button'] {
+  width: 32px;
+  height: 32px;
+  min-width: unset;
+  padding: 0;
+  border: 1px solid #d2d2d2;
+  border-radius: 999px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tool-row.palette-item button[type='button'].active {
+  background-image: url('../img/tool_drawing/ic_check.svg');
+}
+
+.p_red {
+  background-color: #EE4F24;
+}
+
+.p_yellow {
+  background-color: #FFDE6A;
+}
+
+.p_green {
+  background-color: #07BBA9;
+}
+
+.p_blue {
+  background-color: #3B71FE;
+}
+
+.p_purple {
+  background-color: #6247DC;
+}
+
+.p_black {
+  background-color: #000000;
+}
+
+.range-item {
+  margin: 11px 0;
+  justify-content: center;
+}
+
+.draw-scale-range {
+  position: relative;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 8px;
+  background: #9E9E9E;
+}
+
+.draw-scale-range.inactive {
+  background: #D2D2D2;
+}
+
+.draw-trans-range {
+  position: relative;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 8px;
+  background: url('../img/tool_drawing/range_bg.png') no-repeat center / cover;
+}
+
+.draw-trans-range.inactive {
+  background: url('../img/tool_drawing/range_bg_in.png') no-repeat center / cover;
+}
+
+.text-scale-range {
+  position: relative;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 8px;
+  background: #9E9E9E;
+}
+
+.text-scale-range.inactive {
+  background: #D2D2D2;
+}
+
+.draw-scale-range:focus,
+.draw-trans-range:focus,
+.text-scale-range:focus {
+  border: none;
+}
+
+.draw-scale-range::-webkit-slider-thumb,
+.draw-trans-range::-webkit-slider-thumb,
+.text-scale-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 2px solid #222222;
+  cursor: pointer;
+}
+
+.draw-scale-range.inactive::-webkit-slider-thumb,
+.draw-trans-range.inactive::-webkit-slider-thumb,
+.text-scale-range.inactive::-webkit-slider-thumb {
+  border-color: #D2D2D2;
+  background-color: #F2F4F7;
+}
+
+.draw-scale-range::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #222222;
+  border: 1px solid #D2D2D2;
+  border-radius: 999px;
+  position: absolute;
+  left: -15px;
+  top: -4px;
+}
+
+.draw-scale-range::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #222222;
+  border: 1px solid #D2D2D2;
+  border-radius: 999px;
+  position: absolute;
+  right: -23px;
+  top: -8px;
+}
+
+.draw-trans-range::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/tool_drawing/range_before.png') no-repeat center / cover;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  position: absolute;
+  left: -23px;
+  top: -8px;
+}
+
+.draw-trans-range::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/tool_drawing/range_after.png') no-repeat center / cover;
+  position: absolute;
+  right: -23px;
+  top: -8px;
+}
+
+.text-scale-range::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/tool_drawing/t_range_before.svg') no-repeat center / cover;
+  border: 1px solid transparent;
+  position: absolute;
+  left: -23px;
+  top: -8px;
+}
+
+.text-scale-range::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/tool_drawing/t_range_after.svg') no-repeat center / cover;
+  position: absolute;
+  right: -23px;
+  top: -8px;
+}
+
+.draw-scale-range.inactive::before,
+.draw-scale-range.inactive::after,
+.draw-trans-range.inactive::before {
+  background: #F2F4F7;
+  border-color: #D2D2D2;
+}
+
+.text-scale-range.inactive::before,
+.text-scale-range.inactive::after{
+  opacity: .5;
+}
+
+.arrow-item {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.ic_polygon_pop {
+  display: none;
+  position: absolute;
+  top: 202px;
+  left: 0px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+
+.ic_polygon_pop::before {
+  content: url("../img/tool_drawing/ic_polygon_label.png");
+  position: absolute;
+  top: -14px;
+  right: 33px;
+}
+
+.ic_polygon_pop.active {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ic_polygon_pop .ipp_minus {
+  background: #fff url("../images/icon/icon_polygon_minus.svg") no-repeat center;
+}
+
+.ic_polygon_pop .ipp_plus {
+  background: #fff url("../images/icon/icon_polygon_plus.svg") no-repeat center;
+}
+
+.ic_polygon_pop button {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #D2D2D2;
+  border-radius: 100%;
+}
+
+.ic_polygon_pop span,
+.ic_polygon_pop input,
+.ic_polygon_pop label {
+  font-family: "Pretendard";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+
+.ic_polygon_pop label {
+  position: relative;
+  top: 4px;
+  left: -14px;
+}
+
+.ic_polygon_pop input {
+  width: 100%;
+  min-width: unset;
+  height: unset;
+  background: none;
+  border: none;
+  padding: 0px !important;
+  display: inline;
+  margin-left: -10px;
+}
+
+.ic_polygon_pop div {
+  width: 40px;
+  white-space: nowrap;
+}
+
+.p_red.inactive,
+.p_yellow.inactive,
+.p_green.inactive,
+.p_blue.inactive,
+.p_purple.inactive,
+.p_black.inactive {
+  background-color: #808080;
+}
+
+/* 각도기 */
+.btn.protractor {
+  background-image: url(../img/icon_protractor.svg);
+}
+
+.obj_protractor {
+  cursor: grab;
+  position: absolute;
+  width: 500px;
+  height: 266px;
+  background-image: url(../img/protractor.svg);
+  background-size: 100%;
+  z-index: 90;
+  transform-origin: 250px 250px;
+}
+
+.obj_protractor .handle {
+  min-width: unset;
+  position: absolute;
+  top: -56px;
+  left: calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-image: url(../img/protractor_rotate.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+}

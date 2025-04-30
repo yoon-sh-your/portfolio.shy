@@ -1,0 +1,406 @@
+
+.boolean_wrap button:focus {
+  border: none !important;
+}
+
+.mr_70 {
+  margin-right: 70px !important;
+}
+
+/*EMA626_05_SU_0003_s*/
+.ema626_05_su_0003 .drag_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ema626_05_su_0003 .drag_group.figure_group .drag_item {
+  cursor: default;
+}
+
+.ema626_05_su_0003 .drag_group .drag_item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 172px;
+  height: 200px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.ema626_05_su_0003 .drag_group .drag_item.figure2, .ema626_05_su_0003 .drag_group .drag_item.figure4 {
+  justify-content: space-evenly;
+}
+
+.ema626_05_su_0003 .drag_group .text {
+  font-size: 32px;
+  font-weight: 700;
+  transform: translateY(-136px);
+}
+
+.ema626_05_su_0003[data-current-page="page_2"] .input_wrap {
+  width: 1208px;
+}
+
+.ema626_05_su_0003[data-current-page="page_2"] .input_wrap math-field.textarea {
+  height: 80px;
+  min-height: auto;
+}
+
+.ema626_05_su_0003 .summarize .summarize_text {
+  flex-direction: row;
+}
+
+.ema626_05_su_0003 .summarize > div, .ema626_05_su_0003 .summarize .summarize_text > div {
+  gap: 8px;
+}
+
+.form_box {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.form_box .row1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 77px;
+  background-color: #FDEBE3;
+  padding: 0 56px;
+}
+
+.form_box .row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 77px;
+  border: 1px #DADADA solid;
+  border-top: 0;
+  gap: 60px;
+}
+
+.form_box li:first-child .row1 {
+  border-right: 1px #fff solid;
+  border-radius: 20px 0 0 0;
+}
+
+.form_box li:first-child .row2 {
+  border-radius: 0 0 0 20px;
+}
+
+.form_box li:last-child .row1 {
+  border-radius: 0 20px 0 0;
+}
+
+.form_box li:last-child .row2 {
+  border-radius: 0 0 20px 0;
+}
+
+.form_box .drop_item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 86px;
+  height: 60px;
+  border: 2px #3B71FE solid;
+  border-radius: 12px;
+}
+
+.form_box .drop_item .drag_item .img {
+  display: none;
+}
+
+.ema626_05_su_0003[data-current-page="page_1"] .btnType,
+.ema626_05_su_0003[data-current-page="page_1"] .btnSubmit,
+.ema626_05_su_0003[data-current-page="page_2"] .btnCheck,
+.ema626_05_su_0003[data-current-page="page_3"] section.title,
+.ema626_05_su_0003[data-current-page="page_3"] .btnSubmit,
+.ema626_05_su_0003[data-current-page="page_3"] .btnType {
+  display: none;
+}
+
+/*EMA626_05_SU_0004_s*/
+.ema626_05_su_0004 .img_wrap {
+  position: relative;
+  margin-top: 25px;
+}
+
+.ema626_05_su_0004 .img_wrap button {
+  position: absolute;
+  /* width:248px;
+      height: 92px; */
+  background-color: transparent;
+}
+
+.ema626_05_su_0004 .img_wrap button:hover, .ema626_05_su_0004 .img_wrap button.selected, .ema626_05_su_0004 .img_wrap button.hint {
+  border-color: transparent;
+}
+
+.ema626_05_su_0004 .img_wrap button.btn1 {
+  width: 10px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  border-radius: 50%;
+  padding: 0;
+  transform: translate(-50%, 0);
+}
+
+.ema626_05_su_0004 .img_wrap button.btn1.selected, .ema626_05_su_0004 .img_wrap button.btn1.selected.correct.hint {
+  background-color: #3B71FE;
+}
+
+.ema626_05_su_0004 .img_wrap button.btn1.hint {
+  background-color: var(--secondary-red);
+}
+
+.ema626_05_su_0004 .img_wrap button.btn2 {
+  width: 268px;
+  height: 87px;
+  bottom: 2px;
+  left: 2px;
+  transform: rotate(0.1deg);
+  padding: 0;
+  border-width: 0;
+}
+
+.ema626_05_su_0004 .img_wrap button.btn2.selected {
+  background-image: url("data:image/svg+xml,%3Csvg width='270' height='88' viewBox='0 0 271 88' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='135.5' cy='44' rx='135.5' ry='44' fill='%23FF9999'/%3E%3C/svg%3E%0A");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.ema626_05_su_0004 .img_wrap button.btn2.selected.correct.hint {
+  background-image: url("data:image/svg+xml,%3Csvg width='270' height='88' viewBox='0 0 271 88' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='135.5' cy='44' rx='135.5' ry='44' fill='%233B71FE'/%3E%3C/svg%3E%0A");
+}
+
+.ema626_05_su_0004 .img_wrap button.btn2.hint {
+  background-image: url("data:image/svg+xml,%3Csvg width='270' height='88' viewBox='0 0 271 88' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='135.5' cy='44' rx='135.5' ry='44' fill='%23FF0000'/%3E%3C/svg%3E%0A");
+}
+
+.ema626_05_su_0004 .btnSubmit {
+  display: none;
+}
+
+.ema626_05_su_0004[data-current-page="page_2"] .question_box .img_wrap, .ema626_05_su_0004[data-current-page="page_3"] .question_box .img_wrap {
+  display: flex;
+  justify-content: center;
+  width: 700px;
+  margin-top: 0;
+}
+
+.ema626_05_su_0004[data-current-page="page_2"] .input_wrap math-field.textarea, .ema626_05_su_0004[data-current-page="page_3"] .input_wrap math-field.textarea {
+  width: 709px;
+  height: 235px;
+}
+
+.ema626_05_su_0004[data-current-page="page_2"] .btnSubmit, .ema626_05_su_0004[data-current-page="page_3"] .btnSubmit {
+  display: block;
+}
+
+.ema626_05_su_0004[data-current-page="page_2"] .btnCheck, .ema626_05_su_0004[data-current-page="page_3"] .btnCheck {
+  display: none;
+}
+
+.ema626_05_su_0004 .flex {
+  position: relative;
+}
+
+.ema626_05_su_0004 .flex .text {
+  position: absolute;
+  top: 11px;
+  left: 9px;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ema626_05_su_0004 .flex .text .txt02 {
+  transform: translate(-107px, 71px);
+}
+
+.ema626_05_su_0004 .flex .text .txt03 {
+  transform: translate(-68px, 134px);
+}
+
+.ema626_05_su_0004 .flex .text .txt04 {
+  transform: translate(7px, 69px);
+}
+
+.ema626_05_su_0004 .flex .text .txt05 {
+  transform: translate(90px, 83px);
+}
+
+.ema626_05_su_0004 .flex .text .txt06 {
+  transform: translate(247px, 70px);
+}
+
+.ema626_05_su_0004 .btnType,
+.ema626_05_su_0004[data-current-page="page_4"] section.title {
+  display: none;
+}
+
+.ema626_05_su_0004[data-current-page="page_2"] .btnType,
+.ema626_05_su_0004[data-current-page="page_3"] .btnType {
+  display: block;
+}
+
+/*EMA626_05_SU_0005_s*/
+.ema626_05_su_0005 .img_wrap {
+  display: flex;
+  gap: 100px;
+}
+
+.ema626_05_su_0005 .img_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  gap: 100px;
+}
+
+.ema626_05_su_0005 .img_box::after {
+  content: '';
+  display: flex;
+  width: 47px;
+  height: 42px;
+  background-image: url(../img/EMA626_02_SU/icon_arrow.svg);
+}
+
+.ema626_05_su_0005 .img_box:last-child::after {
+  display: none;
+}
+
+.ema626_05_su_0005 .img_box .text_box {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+.ema626_05_su_0005 .img_box .text_box span {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.ema626_05_su_0005 .img_box .text_box span.txt01 {
+  transform: translate(-10px, 107px);
+}
+
+.ema626_05_su_0005 .img_box .text_box span.txt02 {
+  transform: translate(50px, 136px);
+}
+
+.ema626_05_su_0005 .img_box .text_box span.txt03 {
+  transform: translate(-100px, 224px);
+}
+
+.ema626_05_su_0005 .img_box.rotation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 268px;
+  height: 268px;
+  background: url(../img/EMA626_02_SU/0005_box_bg.png) no-repeat 0 0;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.ema626_05_su_0005 .img_box.rotation .txt {
+  color: #1D1D1B;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.ema626_05_su_0005 .img_box.rotation .rotation_box {
+  position: relative;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 224px;
+  height: 259px;
+}
+
+.ema626_05_su_0005 .img_box.rotation .rotation_box.active {
+  display: flex;
+}
+
+.ema626_05_su_0005[data-current-page="page_1"] .input_wrap {
+  margin-left: -140px;
+}
+
+.ema626_05_su_0005[data-current-page="page_2"] .input_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32px;
+  gap: 5px;
+}
+
+.ema626_05_su_0005[data-current-page="page_2"] .input_wrap .input_form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+
+.rota1 {
+  position: relative;
+  transform-style: preserve-3d;
+  /* 자식 요소가 3D 변환을 받도록 설정 */
+  animation: rotateYaxis 1s linear forwards;
+  /* Y축 회전 애니메이션, 시간 짧게 설정 */
+}
+
+@keyframes rotateYaxis {
+  0% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(540deg);
+    /* 540도 회전 */
+  }
+  95% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: rotateY(1080deg);
+    /* 1080도 회전 */
+  }
+}
+
+.rota2 {
+  position: absolute;
+  top: 45px;
+  opacity: 0;
+  /* 처음에는 보이지 않게 설정 */
+  animation: fadeInCylinder 1s ease-in-out forwards;
+  /* 2초 동안 점진적으로 보이게 설정 */
+}
+
+@keyframes fadeInCylinder {
+  0% {
+    opacity: 0;
+    /* 처음에는 보이지 않음 */
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(540deg);
+    /* 540도 회전 */
+  }
+  95% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    /* 마지막에는 완전히 보이게 설정 */
+    transform: rotateY(1620deg);
+  }
+}

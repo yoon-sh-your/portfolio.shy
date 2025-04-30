@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_07_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/common/js/reference_popup.js"></script> <!-- 도움 자료 팝업 페이지네이션 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_07_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <span class="fraction_box ml_0"><span>8</span><span>25</span></span>과 0.48의 크기를 비교해 봅시다.
+            </div>
+          </div>
+          <button type="button" class="btn_reference" onclick="openPop('.pop_reference_wrap')">도움 자료</button>
+        </h2>
+      </section>
+
+      <div class="pop_reference_wrap">
+        <div class="pop_reference">
+            <button class="close" onclick="closePop('.pop_reference_wrap')">닫기</button>
+            <div class="pop_reference_inner">
+                <h3 lang="y" class="flex align_center gap_10"><label class="pop_tit">2에서 보기</label> 분수와 소수의 기 비교하기</h3>
+                <section class="contents paging_layout">
+                 <article class="popup_page popup_page_1"> 
+                  <h3 lang="y" class="h4">
+                    <span class="ico_ex">예</span>
+                    0.7과
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>5</span>
+                    </span>
+                    의 크기 비교하기
+                  </h3>
+                  <div class="question_box">
+                    <div class="pop_inn">
+                        <div class="method_tit">
+                          <div class="tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 115 40" fill="none">
+                              <path d="M12.4721 17C5.58587 17 0 22.1475 0 28.5C0 34.8495 5.58587 40 12.4721 40H84.5279C91.4174 40 97 34.8495 97 28.5C97 22.1475 91.4174 17 84.5279 17H12.4721Z" fill="#5BB8A1"/>
+                              <text fill="#5BB8A1" stroke="#5BB8A1" stroke-width="5" stroke-linejoin="round" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                              <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" font-weight="normal" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                              <path d="M105.5 19.9982C105.5 30.1971 97.1999 38.4966 87 38.4966C76.8001 38.4966 68.5 30.1971 68.5 19.9982C68.5 9.8027 76.8 1.50293 87 1.50293C97.2001 1.50293 105.5 9.8027 105.5 19.9982Z" fill="white" stroke="#5BB8A1" stroke-width="3"/>
+                              <text fill="#5BB8A1" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan x="81" y="27.9688">1</tspan></text>
+                            </svg>
+                          </div>
+                          분수를 소수로 나타내어 크기 비교하기</div>
+                        <div class="box1">
+                          <ol>
+                            <li>① 분수를 분모가 10, 100, ...인 분수로 나타낸 다음 소수로 나타냅니다.</li>
+                            <li>② 높은 자리부터 같은 자리 수끼리 비교합니다.</li>
+                            <li>③ 높은 자리 수가 큰 쪽이 더 큰 수입니다.</li>
+                          </ol>
+                        </div>
+                        <div class="box2">
+                          <div class="box2_inn fra_arr">
+                            <span class="fraction_box">
+                              <span>3</span>
+                              <span>2</span>
+                            </span>
+                            =
+                            <span class="fraction_box">
+                              <span>3&times;2</span>
+                              <span>5&times;2</span>
+                            </span>
+                            =
+                            <span class="fraction_box">
+                              <span>6</span>
+                              <span>10</span>
+                            </span>
+                            =
+                            <span>0.6</span>
+                          </div>
+                          <div class="fra_arr">
+                            <button class="reveal_btn" data-pair="1">
+                              <span>0.7 > 0.6</span>
+                            </button>
+                          </div>
+                          <button class="reveal_btn" data-pair="1">
+                              <span>0.7 > </span>
+                              <span class="fraction_box">
+                              <span>3</span>
+                              <span>5</span>
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                </article>
+                <article class="popup_page popup_page_2"> 
+                  <h3 lang="y" class="h4">
+                    <span class="ico_ex">예</span>
+                    0.7과
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>5</span>
+                    </span>
+                    의 크기 비교하기
+                  </h3>
+                  <div class="question_box">
+                    <div class="pop_inn">
+                      <div class="method_tit">
+                        <div class="tag">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 115 40" fill="none">
+                            <path d="M12.4721 17C5.58587 17 0 22.1475 0 28.5C0 34.8495 5.58587 40 12.4721 40H84.5279C91.4174 40 97 34.8495 97 28.5C97 22.1475 91.4174 17 84.5279 17H12.4721Z" fill="#5BB8A1"/>
+                            <text fill="#5BB8A1" stroke="#5BB8A1" stroke-width="5" stroke-linejoin="round" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" font-weight="normal" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                            <path d="M105.5 19.9982C105.5 30.1971 97.1999 38.4966 87 38.4966C76.8001 38.4966 68.5 30.1971 68.5 19.9982C68.5 9.8027 76.8 1.50293 87 1.50293C97.2001 1.50293 105.5 9.8027 105.5 19.9982Z" fill="white" stroke="#5BB8A1" stroke-width="3"/>
+                            <text fill="#5BB8A1" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan x="81" y="27.9688">2</tspan></text>
+                          </svg>
+                        </div>
+                        분수를 소수로 나타내어 크기 비교하기
+                      </div>
+                      <div class="box1">
+                        <ol>
+                          <li>① 소수를 분모가 10, 100, ...인 분수로 나타냅니다.</li>
+                          <li>② 통분 또는 약분을 하여 두 분수의 분모를 같게 만든 다음 분자를 비교합니다.</li>
+                          <li>③ 분자가 큰 쪽이 더 큰 수입니다.</li>
+                        </ol>
+                      </div>
+                      <div class="box2">
+                        <div class="box2_inn fra_arr">
+                          <span>0.7</span>
+                          =
+                          <span class="fraction_box">
+                            <span>7</span>
+                            <span>10</span>
+                          </span>
+                          ,
+                          <span class="fraction_box">
+                            <span>3</span>
+                            <span>5</span>
+                          </span>
+                          =
+                          <span class="fraction_box">
+                            <span>3&times;2</span>
+                            <span>5&times;2</span>
+                          </span>
+                          =
+                          <span class="fraction_box">
+                            <span>6</span>
+                            <span>10</span>
+                          </span>
+                        </div>
+                        <div class="fra_arr">
+                          <button class="reveal_btn" data-pair="1">
+                            <span class="fraction_box">
+                              <span>7</span>
+                              <span>10</span>
+                            </span>
+                            >
+                            <span class="fraction_box">
+                              <span>6</span>
+                              <span>10</span>
+                            </span>
+                          </button>
+                        </div>
+                        <button class="reveal_btn" data-pair="1">
+                            <span>0.7 > </span>
+                            <span class="fraction_box">
+                            <span>3</span>
+                            <span>5</span>
+                          </span>
+                        </button>
+                      </div>
+                    </div>  
+                  </div>
+                </article>
+              </section>
+            </div>
+        </div>
+      </div>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">
+              <div class="fraction_txt_wrap">
+                <div class="fraction_txt" lang="y">
+                  <span class="fraction_box ml_0"><span>8</span><span>25</span></span>을 소수로 나타내어 크기를 비교해 보세요.
+                </div>
+              </div>
+            </h3>
+            <div class="question_box justify_center">
+              <div class="fraction_row">
+                <div class="fra_col">
+                  <span class="fraction_box">
+                    <span>8</span>
+                    <span>25</span>
+                  </span>
+                  =
+                  <span class="fraction_box">
+                    <span>
+                      <span>8&times;</span>
+                      <span class="input_wrap">
+                        <math-field data-answer-single="4"></math-field>
+                      </span>
+                    </span>
+                    <span>
+                      <span>25&times;</span>
+                      <span>4</span>
+                    </span>
+                  </span>
+                  =
+                  <span class="fraction_box">
+                    <span class="input_wrap">
+                      <math-field data-answer-single="32"></math-field>
+                    </span>
+                    <span>100</span>
+                  </span>
+                  =
+                  <span class="input_wrap answer2">
+                    <math-field data-answer-single="0.32"></math-field>
+                  </span>
+                </div>
+                <div class="fra_col fra_ex">
+                  <div class="fra_ex_inn">
+                    <span class="fraction_box">
+                      <span>8</span>
+                      <span>25</span>
+                    </span>
+                  </div>
+                  <div class="dropdown_wrap">
+                    <select class="custom_dropdown math_symbol" data-answer-single="<">
+                      <option></option>
+                      <option value=">">></option>
+                      <option value="=">=</option>
+                      <option value="<"><</option>
+                    </select>
+                  </div>
+                  <span>0.48</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">0.48을 분수로 나타내어 크기를 비교해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="fraction_row">
+                <div class="fra_col col1">
+                  <div class="fra_inn">
+                    <span class="fraction_box">
+                      <span>8</span>
+                      <span>25</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="<">
+                    <option></option>
+                    <option value=">">></option>
+                    <option value="=">=</option>
+                    <option value="<"><</option>
+                  </select>
+                </div>
+                <div class="fra_col col2">
+                  <div class="fra_inn fra_ex">
+                    <span>0.48</span>
+                  </div>
+                  <div class="fra_inn">
+                    <span>0.48</span>
+                    =
+                    <span class="fraction_box">
+                      <span class="input_wrap">
+                        <math-field data-answer-single="48"></math-field>
+                      </span>
+                      <span>100</span>
+                    </span>
+                    =
+                    <span class="fraction_box">
+                      <span class="input_wrap">
+                        <math-field data-answer-single="12"></math-field>
+                      </span>
+                      <span>25</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA624_10_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+</head>
+<body>
+    <div id="app_wrap" class="EMA624_10_SU_0003 play-howto-layout">
+        <section class="title">
+            <h2 data-text="놀이방법" lang="y">
+                <span class="title-ready"><span class="point">놀이</span> 방법</span>
+                <span class="howto num1">카드를 들고 교실을 돌아다니다가 사람을 만나면 각자 자신이 가진 카드 중에서 한 장을 고릅니다. 고른 카드를 동시에 꺼내어 상대방에게 보여 줍니다.</span>
+                <span class="howto num2">두 비의 비율이 같으면 가위바위보를 하여 이긴 사람이 상대방의 카드를 가져옵니다. 두 비의 비율이 다르면 다른 사람을 만나러 다시 돌아다닙니다.</span>
+                <span class="howto num3">카드를 모두 잃은 경우 비율이 다른 카드 4장을 다시 골라 놀이에 참여합니다.</span>
+                <span class="howto num4"><img src="../../common_contents/common/img/icon_howto_num1_3.svg" alt="">을 반복하다가 정해진 시간이 끝나면 자리로 돌아와 모은 카드를 이용하여 비례식을 세웁니다.</span>
+                <span class="howto num5">자신이 세운 비례식을 발표하고 비례식이 맞는지 서로 확인합니다. 이때 가장 많은 비례식을 세운 사람이
+                    이깁니다.</span>
+
+            </h2>
+
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <!-- flex dir_col -->
+                        
+                        <img src="../../common_contents/img/EMA624_10_SU/0003_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="../../common_contents/img/EMA624_10_SU/0003_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="../../common_contents/img/EMA624_10_SU/0003_img_3.png" alt="">
+                    </article>
+                    <article class="page page_4">
+                        <img src="../../common_contents/img/EMA624_10_SU/0003_img_4.png" alt="">
+                    </article>
+                    <article class="page page_5">
+                        <img src="../../common_contents/img/EMA624_10_SU/0003_img_5.png" alt="">
+                    </article>
+
+
+                </div>
+            </div>
+            
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="btnBgDefault"  onclick="navigate('../guide_sample/vedio_player')"lang="y">활동 영상</button>
+                </div>
+                <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+                <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

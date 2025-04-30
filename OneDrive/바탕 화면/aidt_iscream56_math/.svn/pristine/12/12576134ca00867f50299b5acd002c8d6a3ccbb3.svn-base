@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_07_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_07.css" />
+  <script src="../../common_contents/js/ema622_07_0003.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_07_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_green" lang="y">식물 공장의 로봇이 흙 6.3 kg을 한 통에 2 kg씩 나누어 담고 있습니다. 흙을 2 kg씩 몇 통까지 나누어 담을 수 있고, 남는 흙은 몇
+        kg인지 구해 봅시다.​</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start">
+        <div class="picture_wrap">
+          <img src="../../common_contents/img/EMA622_07_SU/0002_content.png" alt="자치회 활동 이미지" /> <button
+            class="zoom"></button>
+        </div>
+
+        <article class="page page_1">
+          <div class="input_area">
+            <h3 lang="y">구하는 식을 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="6.3÷2"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="input_area">
+            <h3 lang="y">흙을 2 kg씩 몇 통까지 나누어 담을 수 있고, 남는 흙은 몇 kg인지 그림에 나타내어 알아보세요.​</h3>
+            <div class="question_box justify_center">
+
+              <div class="container">
+                <svg xmlns="http://www.w3.org/2000/svg" width="889" height="251" viewBox="0 0 889 251" fill="none">
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="0.078125" y="121.531">0</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="118.375" y="121.531">1</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="236.176" y="121.531">2</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="362.336" y="121.531">3</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="483.113" y="121.531">4</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="607.477" y="121.531">5</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="729.289" y="121.531">6</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="764" y="121.531">6.3 (kg)</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="440" y="189.531">6.3÷2=</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="138" y="189.531">6.3-2-2-2=</tspan>
+                  </text>
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="24" font-weight="bold" letter-spacing="-0.5px">
+                    <tspan x="648" y="185.531"> …</tspan>
+                  </text>
+                </svg>
+
+                <div class="input_wrap ip1">
+                  <math-field data-answer-single="0.3"></math-field>
+                </div>
+
+                <div class="input_wrap ip2">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+
+                <div class="input_wrap ip3">
+                  <math-field data-answer-single="0.3"></math-field>
+                </div>
+
+                <div class="clickBox one">
+                  <div class="box one"></div>
+                  <div class="box two"></div>
+                </div>
+
+                <div class="clickBox two">
+                  <div class="box one"></div>
+                  <div class="box two"></div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="input_area">
+            <h3 lang="y">흙을 2 kg씩 몇 통까지 나누어 담을 수 있고, 남는 흙은 몇 kg인가요?​</h3>
+            <div class="question_box justify_center">
+
+              <div class="input_wrap">
+                <math-field data-answer-single="3"></math-field>
+              </div>
+              통
+              
+              <div class="gap-80"></div>
+
+              <div class="input_wrap">
+                <math-field data-answer-single="0.3"></math-field>
+              </div>
+              kg
+
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

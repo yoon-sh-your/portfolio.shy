@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_02_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_02_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_pink">
+          <span lang="y">몫의 크기를 비교하여</span>
+          <span class="circle_blank"></span> <span lang="y">안에</span> <img src="./../../common_contents/common/img/icon_arrow_right.svg" alt="크다" /><span class="ml-10">,</span> <img src="./../../common_contents/common/img/icon_equal.svg" alt="같다" /><span class="ml-10">,</span>
+          <img src="./../../common_contents/common/img/icon_arrow_left.svg" alt="작다" />
+          <span lang="y"> 중 알맞은 것을 고르세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="question_row">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA613_02_IH/0005_01.png" alt="" />
+              <div class="question_inner">
+                <span>2.8÷2</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single=">">
+                    <option></option>
+                    <option value=">">></option>
+                    <option value="=">=</option>
+                    <option value="<"><</option>
+                  </select>
+                </div>
+                <span>5.5÷5</span>
+              </div>
+            </div>
+          </div>
+          <div class="question_row">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA613_02_IH/0005_02.png" alt="" />
+              <div class="question_inner">
+                <span>16.4÷4</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="<">
+                    <option></option>
+                    <option value=">">></option>
+                    <option value="=">=</option>
+                    <option value="<"><</option>
+                  </select>
+                </div>
+                <span>12.9÷3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>2.8÷2=1.4, 5.5÷5=1.1</p>
+                <p>➔ 1.4>1.1</p>
+                <p>16.4÷4=4.1, 12.9÷3=4.3</p>
+                <p>➔ 4.1<4.3</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

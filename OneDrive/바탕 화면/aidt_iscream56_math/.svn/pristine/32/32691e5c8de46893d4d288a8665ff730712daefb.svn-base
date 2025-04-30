@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_03_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_03.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_03_su_0005">
+        <section class="title type2">
+            <h2 data-head="3_green" lang="y">
+                <div class="fraction_box f32b"><span>2</span><span>5</span></div>:0.6을 간단한 자연수의 비로 나타내려고 합니다. 두 가지 방법으로
+                나타내어 봅시다.
+            </h2>
+        </section>
+
+        <section class="contents">
+            <div class="flex justify_center">
+                <div class="img_area">
+                    <img src="../../common_contents/img/EMA624_03_SU/624_03_0006bg.png" alt="">
+                    <div class="title_a">
+                        <img src="../../common_contents/img/EMA624_03_SU/item_mid title.svg" alt="">
+                        <p lang="y">전향을 소수로 바꾸어 나타내기</p>
+                    </div>
+                    <div class="main_txt">
+                        <div class="txt_a">
+                            <p>
+                            <div class="fraction_box f32b"><span>2</span><span>5</span></div>:0.6
+                            </p>
+                        </div>
+                        <span><img src="../../common_contents/img/EMA624_03_SU/Union.svg" alt=""></span>
+                        <div class="txt_b">
+                            <div class="input_wrap input_wrap1 answer_4">
+                                <span>0.</span>
+                                <math-field type="number" data-answer-single="4" text-align="center"></math-field>
+                                <span>:0.6</span>
+                            </div>
+                        </div>
+                        <span><img src="../../common_contents/img/EMA624_03_SU/Union.svg" alt=""></span>
+                        <div class="txt_c">
+                            <div class="input_wrap input_wrap1 answer_2">
+                                <math-field type="number" data-answer-single="2:3" text-align="center"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_area">
+                    <img src="../../common_contents/img/EMA624_03_SU/624_03_0006bg.png" alt="">
+                    <div class="title_a">
+                        <img src="../../common_contents/img/EMA624_03_SU/item_mid title_2.svg" alt="">
+                        <p lang="y">후항을 분수로 바꾸어 나타내기</p>
+                    </div>
+                    <div class="main_txt">
+                        <div class="txt_a">
+                            <p>
+                            <div class="fraction_box f32b"><span>2</span><span>5</span></div>:0.6
+                            </p>
+                        </div>
+                        <span><img src="../../common_contents/img/EMA624_03_SU/Union.svg" alt=""></span>
+                        <div class="txt_b">
+                            <div class="input_wrap input_wrap1 answer_1">
+                                <span class="f_span">
+                                    <div class="fraction_box f32b"><span>2</span><span>5</span></div>:
+                                </span>
+                                <div class="fraction_box">
+                                    <div class="input_wrap answer_3"><math-field data-answer-single="6"></math-field>
+                                    </div>
+                                    <span>10</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span><img src="../../common_contents/img/EMA624_03_SU/Union.svg" alt=""></span>
+                        <div class="txt_c">
+                            <div class="input_wrap input_wrap1 answer_2">
+                                <math-field type="number" data-answer-single="2:3" text-align="center"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

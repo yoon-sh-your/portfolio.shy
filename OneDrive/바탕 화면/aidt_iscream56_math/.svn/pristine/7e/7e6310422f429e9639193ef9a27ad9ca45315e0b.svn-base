@@ -1,0 +1,151 @@
+/* ema617_02_su_0002 */
+.ema617_02_su_0002 .tables {
+  gap:116px;
+}
+.ema617_02_su_0002 .tables .table_wrap {
+  overflow: hidden;
+  border-radius: 20px;
+}
+.ema617_02_su_0002 .tables .table_wrap table {
+  border-radius: 20px;
+  background-color: #fff;
+  border-style: hidden;
+}
+.ema617_02_su_0002 .tables .table_wrap table th,
+.ema617_02_su_0002 .tables .table_wrap table td {
+  width:182px;
+  height: 76px;
+  border:1px solid #D2D2D2;
+}
+.ema617_02_su_0002 .tables .table_wrap table th {
+  background-color: #D9F0FF;
+}
+.ema617_02_su_0002 .tables .table_wrap table thead td {
+  background-color: #EEF9FF;
+}
+.ema617_02_su_0002 .tables .table_wrap table td:has(.input_wrap) {
+  padding:0 16px;
+}
+.ema617_02_su_0002 .tables .table_wrap table td .input_wrap,
+.ema617_02_su_0002 .tables .table_wrap table td .input_wrap math-field:not(.textarea) {
+  max-width: 100%;
+}
+.ema617_02_su_0002 .tables .table_wrap table td .input_wrap .text_hint {
+  font-size: 24px;
+}
+.ema617_02_su_0002 .tables.small {
+  padding:16px;
+  gap:40px;
+  background-color: #EEF0F4;
+  border-radius: 20px;
+}
+.ema617_02_su_0002 .tables.small .table_wrap table th,
+.ema617_02_su_0002 .tables.small .table_wrap table td {
+  width:146px;
+  height: 32px;
+}
+.ema617_02_su_0002 .input_wrap math-field.textarea {
+  height: 100px;
+  min-height: 100px;
+}
+
+.ema617_02_su_0002 .page_1 .tables .table_wrap {
+  border-radius: 20px;
+  border:1px solid #D2D2D2;
+  background: url(../img/EMA617_02_SU/EMA617_02_SU_0002_tbl.svg) no-repeat;
+  background-size: cover;
+  overflow: visible;
+}
+.ema617_02_su_0002 .page_1 .tables .table_wrap table,
+.ema617_02_su_0002 .page_1 .tables .table_wrap table th,
+.ema617_02_su_0002 .page_1 .tables .table_wrap table td {
+  border:none;
+  border-radius: 20px;
+  background-color: transparent;
+}
+.ema617_02_su_0002[data-current-page='page_1'] .btnSubmit {
+  display: none;
+}
+.ema617_02_su_0002[data-current-page='page_2'] .btnCheck,
+.ema617_02_su_0002[data-current-page='page_3'] .btnCheck {
+  display: none;
+}
+
+
+/* ema617_02_su_0003 */
+.ema617_02_su_0003 .picture_wrap  {
+  position: relative;
+}
+.ema617_02_su_0003 .picture_wrap .text_group {
+  position: absolute;
+  top: 15px;
+  right: 154px;
+  z-index: 1;
+}
+.ema617_02_su_0003 .input_wrap math-field.textarea {
+  /* height: 360px; */
+}
+
+
+/* ema617_02_su_0004 */
+.ema617_02_su_0004 .table_wrap {  
+  border-radius: 20px;
+  border:1px solid #D2D2D2;
+  overflow: hidden;
+}
+.ema617_02_su_0004 .table_wrap table {
+  background-color: #fff;
+  border-style: hidden;
+}
+.ema617_02_su_0004 .table_wrap table th,
+.ema617_02_su_0004 .table_wrap table td {
+  height: 82px;
+  border: 1px solid #D2D2D2;
+}
+.ema617_02_su_0004 .table_wrap table th {
+  width:370px;
+  background-color: #EEF0F4;
+}
+.ema617_02_su_0004 .table_wrap table td {
+  width: 838px;
+  max-width: 838px;
+  padding:0 5px;
+}
+.ema617_02_su_0004 .table_wrap table td math-field.textarea  {
+  width: 100%;
+  min-height: 72px;
+  height: 72px;
+}
+
+/* ema617_02_su_0005 */
+.ema617_02_su_0005 .table_wrap {  
+  border-radius: 20px;
+  border:1px solid #D2D2D2;
+  overflow: hidden;
+}
+.ema617_02_su_0005 .table_wrap table {
+  background-color: #fff;
+  border-style: hidden;
+}
+.ema617_02_su_0005 .table_wrap table th,
+.ema617_02_su_0005 .table_wrap table td {
+  height: 100px;
+  padding: 0 16px;
+  border: 1px solid #D2D2D2;
+}
+.ema617_02_su_0005 .table_wrap table th {
+  background-color: #EEF0F4;
+}
+.ema617_02_su_0005 .table_wrap table td:first-child {
+  width: 960px;
+}
+.ema617_02_su_0005 .table_wrap table td:has(math-field) {
+  width: 281px;
+  max-width: 281px;
+}
+.ema617_02_su_0005 .table_wrap table td math-field.textarea  {
+  width: 100%;
+  min-width: 100%;
+  min-height: 72px;
+  height: 72px;
+}

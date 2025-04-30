@@ -1,0 +1,33 @@
+.nemo {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 4px;
+  }
+
+
+.fraction_box_wrap {display:inline-flex;  align-items:center;  gap:4px;}
+.fraction_box_wrap .fraction_box {min-width:0;}
+
+.ema622_11_ih_0001 .image_zoom_wrap .title h3 {align-items:center;}
+.ema622_11_ih_0001 .img_box {position:relative; max-width: 1391px;;}
+.ema622_11_ih_0001 .img_box [class^="item"] {position:absolute; display:flex; align-items:center; 
+    justify-content: center; bottom: 60px; left: 0; width: 100%; gap:10px}
+.ema622_11_ih_0001 .num {display:inline-flex; width:40px; height:40px;border-radius:100%; 
+    background:#3698D4; color:#fff; align-items:center; justify-content:center;}
+.ema622_11_ih_0001 .img_box [class^="item"] p{font-size: 32px; font-weight: bold;}
+
+.pop_area .picture_wrap{display: none;}
+
+
+.question_info{display: flex; gap:40px 60px; flex-wrap: wrap; width: 100%;  max-width: 1391px; padding-bottom: 150px;}
+.question_info .box{width: calc(50% - 30px);}
+.question_info .box h2{margin-bottom: 10px; display: flex;     white-space:normal; gap:4px}
+.question_info .box h2 span  + span{flex: 1;}
+.question_info .box h2 span.num{margin-top: 4px;}
+.question_info .box .table_wrap th{background: #E2EDD7;}
+
+
+
+.image_zoom_wrap .title h3>span{display: block; color: var(--font-main);}

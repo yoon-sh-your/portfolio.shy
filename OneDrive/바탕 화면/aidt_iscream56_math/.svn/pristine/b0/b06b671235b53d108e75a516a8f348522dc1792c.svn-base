@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_01_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_01_su.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_01_su_0005">
+        <section class="title type2">
+            <h2 data-icon="speech" lang="y">그림을 보고 생활 속에서 분수의 곱셈을 이용할 수 있는 상황을 이야기해 봅시다.</h2>
+        </section>
+
+        <section class="contents">
+            <div class="img_row">
+                <div class="picture_wrap type2" data-tit="그림을 보고 생활 속에서 분수의 곱셈을 이용할 수 있는 상황을 이야기해 봅시다.">
+                    <img src="../../common_contents/img/EMA522_01_SU/0005_content.png" alt="자치회 활동 이미지" />
+                    <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                    <div class="input_wrap">
+                        <math-field class="textarea" id="inputElement01" type="text" placeholder=" "></math-field>
+                        <div class="example_box">
+                          <p lang="y">
+                                <span class="fraction_txt_wrap">
+                                    <span class="fraction_txt" lang="y">
+                                        1인분을 만드는 데 물이
+                                        <span class="mixed_fraction gap_0">
+                                            <span>1</span>
+                                            <span class="fraction_box"><span>1</span><span>2</span></span>
+                                        </span>
+                                        컵이 필요한 음식을 8인분 만들 때 필요한 물은
+                                    </span>
+                                    <span class="fraction_txt">몇 컵인지 구하는 상황에서 분수의 곱셈을 이용할 수 있습니다.</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <!-- 예시 필드에서 사용 -->
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit">제출</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

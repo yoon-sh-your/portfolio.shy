@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_04_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_04.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_04_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6" class="is_star" lang="y">
+					은호네 집에서 도서관까지의 거리는 은호네 집에서 학교까지의 거리의 몇 배인지 식을 쓰고 답을 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center gap_120">
+					<div class="img_box">
+						<img src="../../common_practice/img/EMA621_04_IH/0006_img.svg" alt="">
+						<span class="txt1" lang="y">은호네집</span>
+						<span class="txt2" lang="y">도서관</span>
+						<span class="txt3" lang="y">학교</span>
+					</div>
+					<div class="flex dir_col gap_120">
+						<div class="flex gap_10">
+							<span class="label_gray" lang="y">식</span>
+							<div class="flex align_center gap_4">
+								<div class="input_wrap fraction_wrap">
+									<math-field data-answer-single="(3)/(7)-:(2)/(9)"></math-field>
+								</div>
+								=
+								<div class="input_wrap fraction_wrap">
+									<math-field data-answer-single="1(13)/(14)(=(27)/(14))" data-answer-multi='{"values": ["1(13)/(14)", "(27)/(14)"]}'></math-field>
+								</div>
+							</div>
+						</div>
+						<div class="flex gap_10">
+							<span class="label_gray" lang="y">답</span>
+							<div class="flex align_end gap_4">
+								<div class="input_wrap fraction_wrap">
+									<math-field data-answer-single="1(13)/(14)(=(27)/(14))" data-answer-multi='{"values": ["1(13)/(14)", "(27)/(14)"]}'></math-field>
+								</div>
+								<span lang="y">배</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>(은호네 집에서 도서관까지의 거리) ÷ (은호네 집에서 학교까지의 거리)</p>
+								<p class="gap_0 mt_20">
+								  = <span class="fraction_box"><span>3</span><span>7</span></span>
+								  ÷ <span class="fraction_box"><span>2</span><span>9</span></span>
+								  = <span class="fraction_box"><span>27</span><span>63</span></span>
+								  ÷ <span class="fraction_box"><span>14</span><span>63</span></span>
+								  = 27 ÷ 14
+								</p>
+								<p class="gap_0 mt_20">
+								  = <span class="fraction_box"><span>27</span><span>14</span></span>
+								  = 1<span class="fraction_box"><span>13</span><span>14</span></span>(배)
+								</p>
+							  </div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA626_10_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema626_10.css" />
+    <script src="../../common_contents/js/ema626_10_0006.js"></script>
+
+  </head>
+  <body>
+    <div id="app_wrap" class="ema626_10_su_0006">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="5_orange" class="is_star" lang="y">원기둥, 원뿔, 구에 대해 잘못 설명한 사람을 찾아 이름을 쓰고, 내용을 옳게 고쳐 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box">
+          <div class="img_box boolean_wrap">
+            <button class="boolean_item01" data-answer-single="false">
+              <img src="../../common_contents/img/EMA626_10_SU/0006_content01.png" alt="승우 이미지">
+              <span lang="y" class="txt">원기둥과 원뿔은<br>밑면이 있어.</span>
+              <span class="name" lang="y">승우</span>
+            </button>
+            <button class="boolean_item02" data-answer-single="false">
+              <img src="../../common_contents/img/EMA626_10_SU/0006_content02.png" alt="하윤 이미지">
+              <span lang="y" class="txt">원기둥, 원뿔, 구는 모두<br> 굽은 면이 있어.</span>
+              <span class="name" lang="y">하윤</span>
+            </button>
+            <button class="boolean_item03" data-answer-single="true">
+              <img src="../../common_contents/img/EMA626_10_SU/0006_content03.png" alt="재민 이미지">
+              <span lang="y" class="txt">원기둥과 원뿔은 꼭짓점이<br> 있지만 구는 없어.</span>
+              <span class="name" lang="y">재민</span>
+            </button>
+          </div>
+          <div class="input_area">
+            <span class="lab_right" lang="y">옳게 고치기</span>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field> 
+              <div class="example_box">
+                <p>원뿔은 꼭짓점이 있지만 원기둥과 구는 없어.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

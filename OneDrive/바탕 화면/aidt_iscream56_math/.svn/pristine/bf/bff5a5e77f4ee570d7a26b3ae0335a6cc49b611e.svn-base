@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_06_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="../../common_practice/js/ema521_01_02_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_06_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">준희와 은서가 나타낸 수의 차를 구해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA521_06_IH/0005_01.png" alt="" />
+            <ul>
+              <li>
+                <p lang="y" class="text">
+                  나는 1923을 버림하여<br />
+                  백의 자리까지 나타냈어.
+                </p>
+                <p lang="y" class="name name1">준희</p>
+              </li>
+              <li>
+                <p lang="y" class="text">
+                  나는 1792를 버림하여<br />
+                  백의 자리까지 나타냈어.
+                </p>
+                <p lang="y" class="name name2">은서</p>
+              </li>
+            </ul>
+          </div>
+          <div class="input_area">
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="110"></math-field>
+            </div>
+            <span>)</span>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">준희: 19<span class="text_bg_red">23</span>을 버림하여 백의 자리까지 나타내면 1900입니다.</p>
+                <p lang="y">은서: 179<span class="text_bg_red">2</span>를 버림하여 십의 자리까지 나타내면 1790입니다.</p>
+                <p lang="y">따라서 준희와 은서가 나타낸 수의 차는 1900-1790=110입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

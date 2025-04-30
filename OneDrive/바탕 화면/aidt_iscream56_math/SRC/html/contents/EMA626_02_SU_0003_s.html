@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA626_02_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema626_02.css" />
+  <!-- <script src="../../common_contents/js/ema626_04_0003.js"></script> -->
+
+</head>
+
+<body>
+  <div id="app_wrap" class="ema626_02_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_orange" lang="y">입체도형을 분류해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">평행한 두 면이 합동인 입체도형을 찾아보세요.​</h3>
+        <div class="question_box justify_center">
+          <div class="boolean_wrap">
+            <button class="figure1" data-answer-single="true">
+              <span lang="y" class="text">가</span>
+              <span><img src="../../common_contents/img/EMA626_02_SU/0003_content01.svg" alt="도형이미지"></span>
+            </button>
+            <button class="figure2" data-answer-single="true">
+              <span lang="y" class="text">나</span>
+              <span class="mt_30"><img src="../../common_contents/img/EMA626_02_SU/0003_content02.svg" alt="도형이미지"></span>
+            </button>
+            <button class="figure3" data-answer-single="true">
+              <span lang="y" class="text">다</span>
+              <span><img src="../../common_contents/img/EMA626_02_SU/0003_content03.svg" alt="도형이미지"></span>
+            </button>
+            <button class="figure4" data-answer-single="true">
+              <span lang="y" class="text">라</span>
+              <span><img src="../../common_contents/img/EMA626_02_SU/0003_content04.svg" alt="도형이미지"></span>
+            </button>
+            <button class="figure5" data-answer-single="false">
+              <span lang="y" class="text">마</span>
+              <span class="mt_30"><img src="../../common_contents/img/EMA626_02_SU/0003_content05.svg" alt="도형이미지"></span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">위에서 찾은 입체도형을 기준에 따라 분류해 보세요.​</h3>
+        <div class="question_box justify_center">
+          <div class="dragndrop_fraction_wrap">
+            <div class="drag_group">
+              <div class="drag_item figure1" data-pair="1" data-value="가">
+                <span lang="y" class="text">가</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_02_SU/0003_content01.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure2" data-pair="1" data-value="나">
+                <span lang="y" class="text">나</span>
+                <span class="img mt_30"><img src="../../common_contents/img/EMA626_02_SU/0003_content02.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure3" data-pair="1" data-value="다">
+                <span lang="y" class="text">다</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_02_SU/0003_content03.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure4" data-pair="1" data-value="라">
+                <span lang="y" class="text">라</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_02_SU/0003_content04.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure5" data-pair="1" data-value="마">
+                <span lang="y" class="text">마</span>
+                <span class="img mt_30"><img src="../../common_contents/img/EMA626_02_SU/0003_content05.svg" alt="도형이미지"></span>
+              </div>
+            </div>
+            <div class="drop_group">
+              <ul class="form_box">
+                <li>
+                  <div class="row1" lang="y">
+                    <span lang="y">평행하고 합동인 두 면이 원인 입체도형</span>
+                  </div>
+                  <div class="row2">
+                    <div class="drop_item" data-pair="1" data-answer-single="나"></div>
+                    <div class="drop_item" data-pair="1" data-answer-single="라"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row1" lang="y">
+                    <span lang="y">평행하고 합동인 두 면이 원이 아닌 입체도형</span>
+                  </div>
+                  <div class="row2">
+                    <div class="drop_item" data-pair="1" data-answer-single="가"></div>
+                    <div class="drop_item" data-pair="1" data-answer-single="다"></div>
+                  </div>
+                </li>
+              </ul>
+                
+            </div>
+          </div>
+        </div>
+      </article> 
+      <article class="page page_3">
+        <div class="summarize_wrap">
+          <div class="summarize promise">
+            <label lang="y">약속해 볼까요</label>
+            <div>
+              <img src="../../common_contents/img/EMA626_02_SU/0004_content.png" alt="도형 이미지">
+              <div class="summarize_text">
+                <div>
+                  <span lang="y">등과 같이 두 면이 평행하고 합동인 원으로 이루어진 입체도형을</span>
+                </div>
+                <div>
+                  <button class="reveal_btn" data-pair="1" lang="y">원기둥</button>
+                  <span class="small-gap" lang="y">이라고 합니다.</span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnReset" lang="y">리셋</button>
+        <button class="btnCheck" lang="y">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_04_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_04.css" />
+    <script src="../../common_contents/js/ema621_04_0006.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_04_su_0006">
+        <section class="title type2">
+          <h2 data-type="3" data-text="창의+" lang="y">
+            <span class="label_bogi">보기</span>에서 수 2개를 골라 <span class="nemo_blank"></span>안에 써넣어 문제를 완성하고, 답을 구해 봅시다.
+          </h2>
+        </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+            <div class="ex_box label_bogi_box">
+                <span class="label_bogi" lang="y">보기</span>
+                <div class="ex_inn">
+                    <span class="fraction_box"><span>1</span><span>3</span></span>
+                    <span class="fraction_box"><span>2</span><span>5</span></span>
+                    <span class="fraction_box"><span>4</span><span>7</span></span>
+                    <span class="fraction_box"><span>5</span><span>8</span></span>
+                </div>
+            </div>
+            <div class="col">
+                <span class="label_txt1" lang="y">문제</span>
+                <div class="col_inn">
+                  <div class="f32b" lang="y">
+                      포도주스가
+                      <div class="input_wrap fraction_wrap" data-hint-position="up">
+                          <math-field id="grape"></math-field>
+                      </div>
+                      L, 오렌지주스가
+                      <div class="input_wrap fraction_wrap" data-hint-position="up" >
+                          <math-field id="orange"></math-field>
+                      </div>
+                  </div>
+                  <div class="f32b" lang="y">
+                      포도주스의 양은 오렌지주스의 양의 몇 배인가요?
+                  </div>
+                </div>
+                <div class="answer_box">
+                  <span class="label_txt2" lang="y">답</span>
+                    <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="0" id="result"></math-field>
+                    </div>
+                    <span class="f32b">배</span>
+                </div>
+            </div>
+          </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </div>
+      </section>
+    </div>
+  </body>
+</html>

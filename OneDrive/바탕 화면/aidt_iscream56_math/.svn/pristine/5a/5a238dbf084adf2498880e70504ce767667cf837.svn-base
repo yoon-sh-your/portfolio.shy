@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_06_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_06_ih_0001 paging">
+			<section class="title type2 score">
+				<h2 data-head="1_light_purple">
+					<span lang="y"
+						>원을 한없이 잘라서 이어 붙이면 직사각형이 됩니다. 이 직사각형을 이용하여 원의 넓이를 구하는
+						방법을 알아보려고 합니다.</span
+					>
+					<span class="flex align_center"
+						><span class="label_bogi">보기</span><span lang="y">를 이용하여 물음에 답해 보세요.</span></span
+					>
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3 class="title">
+						<span class="empty_box nemo"></span>
+						<span lang="y" class="ml-10">안에 알맞은 말을 써넣으세요.</span>
+					</h3>
+
+					<div class="question_box justify_center align_center">
+						<div class="dragndrop_fraction_wrap">
+							<div class="bogi_area">
+								<dt class="label_bogi" lang="y">보기</dt>
+								<dd>
+									<ul class="drag_group">
+										<li class="drag_item" data-pair="1" data-value="원주">원주</li>
+										<li class="drag_item" data-pair="1" data-value="반지름">반지름</li>
+										<li class="drag_item" data-pair="1" data-value="지름">지름</li>
+										<li class="drag_item" data-pair="1" data-value="원주율">원주율</li>
+									</ul>
+								</dd>
+							</div>
+
+							<div class="drop_area">
+								<img src="./../../common_practice/img/EMA625_06_IH/0001_01.png" alt="" />
+								<div class="text_area">
+									<div class="text1"><span>(</span><span>)</span></div>
+									<div class="text2">
+										<span>(</span><span>)</span>×
+										<div class="fraction_box"><span>1</span><span>2</span></div>
+									</div>
+								</div>
+								<div class="drop_group">
+									<div class="drop_item drop1 hint_up" data-pair="1" data-answer-single="원주"></div>
+									<div class="drop_item drop2" data-pair="1" data-answer-single="반지름"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p lang="y" class="text_bullet">해설 수급 필요</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<!-- <div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div> -->
+				</article>
+
+				<article class="page page_2">
+					<h3 class="title">
+						<span lang="y"
+							>직사각형의 넓이를 구하는 방법을 이용하여 원의 넓이를 구하는 방법을 식으로 나타내려고
+							합니다.
+						</span>
+						<span class="empty_box nemo"></span>
+						<span lang="y" class="ml-10">안에 알맞은 말을 </span>
+						<span lang="y">써넣으세요.</span>
+					</h3>
+
+					<div class="question_box justify_center align_center">
+						<div class="dragndrop_fraction_wrap">
+							<div class="bogi_area">
+								<dt class="label_bogi" lang="y">보기</dt>
+								<dd>
+									<ul class="drag_group">
+										<li class="drag_item" data-pair="1" data-value="원주">원주</li>
+										<li class="drag_item" data-pair="1" data-value="반지름">반지름</li>
+										<li class="drag_item" data-pair="1" data-value="지름">지름</li>
+										<li class="drag_item" data-pair="1" data-value="원주율">원주율</li>
+									</ul>
+								</dd>
+							</div>
+
+							<div class="drop_area">
+								<div class="text_area">
+									<div class="text_row row1">
+										<span lang="y">(원의 넓이) =(반지름)×(<span class="blank"></span>)×</span>
+										<div class="fraction_box"><span>1</span><span> 2 </span></div>
+									</div>
+									<div class="text_row row2">
+										<span lang="y"> (반지름)×(<span class="blank"></span>)×(원주율)× </span>
+										<div class="fraction_box"><span>1</span><span>2</span></div>
+										<span lang="y"
+											>=( <span class="blank"></span>)×(
+											<span class="blank"></span>
+											)×(원주율)
+										</span>
+									</div>
+								</div>
+								<div class="drop_group">
+									<div class="drop_item drop1 hint_up" data-pair="1" data-answer-single="원주"></div>
+									<div class="drop_item drop2 hint_up" data-pair="1" data-answer-single="지름"></div>
+									<div
+										class="drop_item drop3 hint_up"
+										data-pair="1"
+										data-answer-single="반지름"
+									></div>
+									<div
+										class="drop_item drop4 hint_up"
+										data-pair="1"
+										data-answer-single="반지름"
+									></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p lang="y" class="text_bullet">해설 수급 필요</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+				</article>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

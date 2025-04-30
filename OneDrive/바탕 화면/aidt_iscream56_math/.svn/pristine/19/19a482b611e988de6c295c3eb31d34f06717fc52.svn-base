@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema512_11_su_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_11.css" />
+</head>
+<body>
+    <div id="app_wrap" class="ema521_11_su_0005">
+        <section class="title type2">
+            <h2 data-type="1" data-text="자기주도 3" lang="y">
+                <span class="blue line" lang="y">내 힘으로 풀어요</span>
+                <span lang="y">공부한 내용을 확인해요</span>
+            </h2>
+        </section>
+
+        <section class="title type2">
+            <h2 data-head="4" lang="y">가은이가 양말을 상자에 담아 기부하려고 합니다. 가은이에게 필요한 어림 방법을 찾아 <span class="ico_round ml_5"></span>표 하세요.</h2>
+        </section>
+
+        <section class="contents">
+            <div class="flex">
+                <div class="txt_box">
+                    <p class="f24b" lang="y">양말 357켤레를 상자 1개에 <br>100켤레씩 담아 기부하려면 <br>최대 몇 켤레까지 담을 수 있을까?</p>
+                </div>
+
+                <div class="boolean_wrap">
+                    <button data-answer-single="false">올림</button>
+                    <button data-answer-single="true">버림</button>
+                    <button data-answer-single="false">반올림</button>
+                </div>
+            </div>            
+            
+            <div class="btn_area"> 
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

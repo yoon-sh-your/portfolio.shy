@@ -1,0 +1,392 @@
+/**
+* 비디오 플레이어 ui
+*/
+.video_wrap {
+  flex: 1;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  border: 2px solid #f4f4f4;
+  overflow: hidden;
+  position: relative;
+
+  /* 임시 */
+  background: url(../../img/EMA511_03_SU/0002_content.png) no-repeat center right -35px / 100%;
+  /* 임시 */
+}
+
+.video_wrap button.play {
+  width: 120px;
+  height: 120px;
+  background: url(../../common/img/icon_play.svg) no-repeat center / 72px, var(--bg-default);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/**
+* 비디오 플레이어
+*/
+#app_wrap.video_player {
+  padding: 0;
+}
+.video_player_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: relative;
+}
+.video_player_wrap > video {
+  width: 100%;
+  height: calc(100% - 112px);
+}
+.video_player_wrap .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.video_player_wrap .controls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 112px;
+  gap: 20px;
+  background: #222;
+  padding: 24px 32px;
+  color: white;
+  position: relative;
+}
+.video_player_wrap .controls > button {
+  min-width: unset;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  background-color: #fff;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid var(--stroke-default);
+  box-shadow: 0px 2.133px 2.133px 0px rgba(0, 0, 0, 0.16), 0px 4.267px 12.8px 0px rgba(0, 0, 0, 0.12);
+}
+.video_player_wrap .volume_controller_wrap {
+  display: none;
+  width: 65px;
+  height: 196px;
+  background-color: rgb(34, 34, 34, 0.5);
+  border: 1px solid var(--font-main-800);
+  border-radius: 12px;
+  padding: 12px;
+  position: absolute;
+  bottom: 134px;
+  left: 203px;
+}
+.video_player_wrap .volume_controller_wrap.on {
+  display: block;
+}
+
+.volumebar {
+  width: 104px;
+  height: 8px;
+  border-radius: 4px;
+  background: grey;
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+}
+.volumebar input[type='range'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 104px;
+  height: 10px;
+  border-radius: 9px;
+  background: transparent;
+  touch-action: manipulation;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.volumebar input[type='range']:focus {
+  outline: none;
+}
+.volumebar input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.volumebar .gague {
+  width: 10px;
+  height: 8px;
+  background-color: var(--font-main-reverse);
+  border-radius: 4px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.video_player_wrap .time_wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.video_player_wrap .seekbar {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 8px;
+  background-color: #9e9e9e;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video_player_wrap .seekbar > input[type='range'] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.video_player_wrap .seekbar > input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.video_player_wrap .seekbar .gague {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: linear-gradient(270deg, var(--primary-blue) 0.01%, var(--secondary-green) 100%);
+}
+.video_player_wrap .controls > button.play {
+  background-image: url(../img/icon_play.svg);
+}
+.video_player_wrap .controls > button.pause {
+  background-image: url(../img/icon_pause.svg);
+}
+.video_player_wrap .controls > button.stop {
+  background-image: url(../img/icon_stop.svg);
+}
+.video_player_wrap .controls > button.volume {
+  background-image: url(../img/icon_speaker.svg);
+}
+.video_player_wrap .controls > button.cc {
+  background-image: url(../img/icon_subtitle.svg);
+}
+.video_player_wrap .controls > button.fullscreen {
+  background-image: url(../img/icon_full.svg);
+}
+.video_player_wrap button.mute {
+  min-width: unset;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon_speaker_white.svg) no-repeat center bottom / 100%;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.video_player_wrap button.mute.on {
+  opacity: 0.5;
+}
+.video_player_wrap button.close {
+  min-width: unset;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon_close_white.svg) no-repeat center / 100%;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+}
+
+/* 이미지 확대 */
+.picture_wrap {
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 16 / 9;
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.picture_wrap button.zoom {
+  width: 64px;
+  min-width: unset;
+  height: 64px;
+  background: url(../../common/img/icon_image_zoom.svg) no-repeat center / 40px, var(--bg-default);
+  border-radius: 16px;
+  border: 1px solid var(--stroke-default);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  z-index: 3;
+}
+
+.picture_wrap button.zoom:hover {
+  background-color: var(--primary-blue-50);
+}
+
+.picture_wrap img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.picture_wrap svg {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* 이미지 확대 팝업 */
+.image_zoom_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 1635px;
+  height: 684px;
+  padding: 40px;
+  background-color: var(--bg-default);
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image_zoom_wrap button {
+  min-width: unset;
+}
+
+.image_zoom_wrap .title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.image_zoom_wrap .title h3 {
+  display: flex;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+
+.image_zoom_wrap .title h3 > span {
+  color: var(--primary-blue);
+  margin-right: 12px;
+}
+
+.image_zoom_wrap button.close {
+  width: 40px;
+  height: 40px;
+  background: url(../../common/img/icon_times_blk.svg) no-repeat center / 40px;
+}
+
+.image_zoom_wrap .image-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.image_zoom_wrap .image_zoom {
+  overflow: auto;
+  position: relative;
+}
+
+.image_zoom_wrap .image_zoom.grab {
+  cursor: move;
+}
+
+.image_zoom_wrap .image_zoom img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+.image_zoom_wrap .image_zoom svg {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  max-width: none;
+  position: absolute;
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+  user-select: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* 이미지 확대 컨트롤러 */
+.image_zoom_wrap .controller {
+  display: inline-flex;
+  gap: 12px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 3;
+}
+
+.image_zoom_wrap .controller > button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--stroke-default);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.image_zoom_wrap .controller > button:hover {
+  background-color: var(--primary-blue-50);
+}
+
+.image_zoom_wrap .scale_up {
+  background: url(../img/icon_plus.svg) no-repeat center / 40px, var(--bg-default);
+}
+
+.image_zoom_wrap .scale_down {
+  background: url(../img/icon_minus.svg) no-repeat center / 40px, var(--bg-default);
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA516_06_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_06_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">
+          직사각형 모양의 거실 바닥을 만들었습니다. 거실 바닥의 넓이를 어떻게 나타낼 수 있을지 이야기해 보세요. 
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align_start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+            <div class="bubble">
+                <span>거실 바닥처럼 넓은 장소의 넓이는<br>
+                어떻게 나타내어야 할까?</span>
+            </div>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">
+              영상을 보고 거실 바닥의 넓이를 어떻게 나타낼 수 있을지 이야기해 보세요.
+            </h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">㎝보다 더 큰 길이의 단위로 m가 있으므로 ㎠보다 더 큰 넓이의 단위를 사용하여 나타낼 수 있을 것 같습니다.</p>
+            </div>
+            </div>
+          </div>
+        </div> 
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

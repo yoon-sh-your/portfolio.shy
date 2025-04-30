@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_06_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_06_su_0002">
+      <section class="title type2">
+        <h2 class="fraction_box_title" data-type="2" data-text="생각 깨우기" lang="y">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              길이가
+              <div class="mixed_fraction">
+                4
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </div>
+              &nbsp;㎞인 철망을 똑같이 나누어 유도울타리 4개를 만들었습니다. 유도울타리 한 개를 만드는 데 사용한 철망의
+            </div>
+            <div class="fraction_txt" lang="y">길이는 몇 ㎞인지 알아봅시다.</div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 713 594" fill="none">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.5px" lang="y">
+                <tspan x="182.912" y="477.109">유도울타리는 야생 동물이</tspan>
+                <tspan x="134.17" y="509.109">생태 통로로 안전하게 이동할 수 있도록</tspan>
+                <tspan x="191.275" y="541.109">설치하는 구조물이에요.</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA611_06_SU/0003_content.png" alt="" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">
+              영상을 보고 유도울타리 한 개를 만드는 데 사용한 철망의 길이를<br />
+              어떻게 구할 수 있을지 이야기해 보세요.
+            </h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">전체 철망의 길이를 유도울타리의 수로 나누면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

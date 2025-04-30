@@ -1,0 +1,287 @@
+/* ema624_02_su_0003 */
+
+.custom_select {
+    width: 200px;
+}
+
+.custom-table {
+    width: 700px;
+    height: 304px;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+  }
+  
+  .custom-table th,
+  .custom-table td {
+    font-size: 24px;
+    border: 1px solid #fff;
+    padding: 12px;
+    vertical-align: middle;
+  }
+  
+  .custom-table th {
+    font-size: 24px;
+    background-color: #F1F1F1;
+    font-weight: bold;
+  }
+
+  .custom-table th:first-child {
+    border-left: 1px solid #fff;
+  }
+  .custom-table td:nth-child(2) {
+    border-right: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+  }
+  .custom-table td:nth-child(3) {
+    border-right: 1px solid #F1F1F1;
+    border-bottom: 1px solid #F1F1F1;
+  }
+  .custom-table td:first-child {
+    background-color: #DCEFE9;
+  }
+
+  .ema624_02_su_0003 .page_1 .question_box {
+    justify-content: flex-start;
+    padding-left: 200px;
+  }
+
+  .ema624_02_su_0003 .page_1 .input_wrap.fraction_wrap math-field {
+    width: 80px;
+  }
+  .ema624_02_su_0003 .page_1 .answer2.fraction_wrap math-field {
+    width: 190px;
+  }
+
+  .br_1 {
+    border-top-left-radius: 15px;
+  }
+  .br_2 {
+    border-top-right-radius: 15px;
+  }
+  .br_3 {
+    border-bottom-left-radius: 15px;
+  }
+
+  .ema624_02_su_0003 .page_1 .answer1 math-field.hint + .text_hint {
+    top: calc(100% + -51px);
+    left: 87px;
+  }
+
+  .ema624_02_su_0003 .sub_img {
+    position: relative;
+    padding-left: 45px;
+  }
+
+  .ema624_02_su_0003 .txt_box {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    top: 31px;
+    left: 80px;
+  }
+
+  .ema624_02_su_0003 .txt_box .red {
+    color:#F00;
+  }
+
+  .ema624_02_su_0003 .page_2 .question_box {
+    font-size: 32px;
+    font-weight: 700;
+    align-items: center;
+  }
+
+  .ema624_02_su_0003 .page_2 .fraction_wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .ema624_02_su_0003 .page_2 .input_wrap.fraction_wrap math-field {
+    width: 80px;
+  }
+
+  .in_block {
+    display: inline-block;
+  }
+
+  .mini_r {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 4px;
+    vertical-align: sub;
+  }
+
+  .ema624_02_su_0003 .page_3 .question_box  {
+    position: relative;
+  }
+
+  .ema624_02_su_0003 .page_3 .answer_1 span,
+  .ema624_02_su_0003 .page_3 .answer_2 span {
+    font-size: 32px;
+    font-weight: 700px;
+  }
+
+  .ema624_02_su_0003 .page_3 .answer_1 {
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    left: 260px;
+  }
+  .ema624_02_su_0003 .page_3 .answer_2 {
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 311px;
+  }
+
+  .ema624_02_su_0003 .page_3 .flex_txt{
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    top: 83px;
+    left: 179px;
+    display: flex;
+    gap: 238px;
+    letter-spacing: 4px;
+  }
+
+  .ema624_02_su_0003 .page_3 .input_wrap math-field.hint + .text_hint {
+    left:15px
+  }
+
+  .ema624_02_su_0003 .page_4 .input_area .input_wrap math-field.textarea {
+    min-height: 230px;
+  }
+
+.input_area label::after {
+    display: none;
+  }
+
+/* ema624_02_su_0004 */
+
+  .ema624_02_su_0004 .page_1 .input_wrap.fraction_wrap math-field {
+    width: 80px;
+  }
+
+  .ema624_02_su_0004 .page_1 .answer2.fraction_wrap math-field {
+    width: 190px;
+  }
+
+  .ema624_02_su_0004 .page_1 .answer1 math-field.hint + .text_hint {
+    top: calc(100% + -51px);
+    left: 87px;
+  }
+
+  .ema624_02_su_0004 .page_2 .input_wrap.fraction_wrap math-field {
+    width: 80px;
+  }
+
+  .ema624_02_su_0004 .page_2 .question_box {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .ema624_02_su_0004 .page_3 .question_box {
+    position: relative;
+  }
+
+  .ema624_02_su_0004 .page_2 .fraction_wrap {
+    display: flex;
+    align-items: center;
+  }
+
+  .ema624_02_su_0004 .page_3 .flex_txt{
+    font-size: 32px;
+    font-weight: 700;
+    position: absolute;
+    top: 83px;
+    left: 556px;
+    display: flex;
+    gap: 238px;
+    letter-spacing: 4px;
+  }
+
+
+  .ema624_02_su_0004 .page_3 .answer_1 span,
+  .ema624_02_su_0004 .page_3 .answer_2 span {
+    font-size: 32px;
+    font-weight: 700px;
+  }
+
+  .ema624_02_su_0004 .page_3 .answer_1 {
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 4px;
+    left: 638px;
+  }
+  .ema624_02_su_0004 .page_3 .answer_2 {
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 688px;
+  }
+
+  .ema624_02_su_0004 .page_4 .input_wrap math-field.textarea {
+    width: 1208px;
+    min-height: 330px;
+  }
+
+  /*ema624_02_su_0005  */
+
+  .ema624_02_su_0005 .bg {
+    width: 220px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    background: url(../img/EMA624_02_SU/bg.png) no-repeat center;
+  }
+
+  .ema624_02_su_0005 .top_area {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .ema624_02_su_0005 .bottom_area {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+  }
+
+  .ema624_02_su_0005 .arrow {
+    padding: 0 40px;
+  }
+
+  .ema624_02_su_0005 .input_wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+
+
+  .ema624_02_su_0003[data-current-page="page_1"] .btnSubmit,
+  .ema624_02_su_0003[data-current-page="page_2"] .btnCheck,
+  .ema624_02_su_0003[data-current-page="page_3"] .btnSubmit,
+  .ema624_02_su_0003[data-current-page="page_4"] .btnCheck,
+  .ema624_02_su_0003[data-current-page="page_5"] .btnSubmit,
+  .ema624_02_su_0003[data-current-page="page_5"] .btnType{
+    display: none;
+  }
+  .ema624_02_su_0004[data-current-page="page_1"] .btnSubmit,
+  .ema624_02_su_0004[data-current-page="page_2"] .btnCheck,
+  .ema624_02_su_0004[data-current-page="page_3"] .btnSubmit,
+  .ema624_02_su_0004[data-current-page="page_4"] .btnCheck,
+  .ema624_02_su_0004[data-current-page="page_5"] .btnSubmit,
+  .ema624_02_su_0004[data-current-page="page_5"] .btnType{
+    display: none;
+  }

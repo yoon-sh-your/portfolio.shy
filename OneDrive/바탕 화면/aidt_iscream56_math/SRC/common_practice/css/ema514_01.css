@@ -1,0 +1,159 @@
+.ema514_01_ih_0001 .question_box {
+  justify-content: center;
+  position: relative;
+  width: 1350px;
+  margin: 0 auto;
+}
+.ema514_01_ih_0001 .question_box:before {
+  content: '';
+  position: absolute;
+  top: 180px;
+  left: 61px;
+  right: 61px;
+  height: 4px;
+  background: #231815;
+}
+.ema514_01_ih_0001 .question_box .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 90px;
+  width: 100%;
+  position: relative;
+}
+.ema514_01_ih_0001 .question_box .item:before {
+  content: '';
+  position: absolute;
+  top: 164px;
+  left: 50%;
+  width: 2px;
+  height: 36px;
+  transform: translateX(-50%);
+  background: #231815;
+}
+.ema514_01_ih_0001 .question_box .item .top {
+  display: flex;
+  align-items: flex-end;
+  height: 136px;
+}
+.ema514_01_ih_0001 .question_box .item .top .text_hint {
+  top: -55px;
+}
+.ema514_01_ih_0001 .question_box .item .bottom {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.ema514_01_ih_0001 .question_box .input_wrap.fraction_wrap,
+.ema514_01_ih_0001 .question_box .input_wrap.fraction_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+
+.ema514_01_ih_0002 .question_box {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.ema514_01_ih_0002 .question_box .block_group {
+  display: flex;
+  gap: 34px;
+}
+.ema514_01_ih_0002 .question_box .block_group .item {
+  display: flex;
+  gap: 20px;
+}
+.ema514_01_ih_0002 .boolean_count_wrap {
+  flex-wrap: wrap;
+  width: 136px;
+  gap: 0;
+}
+.ema514_01_ih_0002 .boolean_count_wrap button {
+  width: 44px;
+  height: 44px;
+}
+.ema514_01_ih_0002 .boolean_count_wrap button:only-child {display:flex; flex-wrap:wrap; width:100%; height:100%; border:none}
+.ema514_01_ih_0002 .boolean_count_wrap button:only-child span {display:block; position:relative; width:44px; height:44px;}
+.ema514_01_ih_0002 .boolean_count_wrap button:only-child span:not(:first-child):before {
+  content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-image: repeating-linear-gradient(to bottom, var(--font-main), var(--font-main) 4px, transparent 4px, transparent 8px);
+    position: absolute;
+    top: 0;
+    left: -1px;
+}
+.ema514_01_ih_0002 .boolean_count_wrap button:only-child span:nth-child(n + 4):after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -1px;
+  left: 0;
+  background-image: repeating-linear-gradient(to right, var(--font-main), var(--font-main) 4px, transparent 4px, transparent 8px);
+}
+.ema514_01_ih_0002 .boolean_count_wrap button:nth-child(4) {
+  border-left: none;
+}
+.ema514_01_ih_0002 .boolean_count_wrap button:nth-child(n + 4):after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -1px;
+  left: 0;
+  background-image: repeating-linear-gradient(to right, var(--font-main), var(--font-main) 4px, transparent 4px, transparent 8px);
+}
+.ema514_01_ih_0002 .boolean_count_wrap button.selected {background:#dcedd8}
+.ema514_01_ih_0002 .fraction_group {
+  display: flex;
+  align-items: center;
+}
+.ema514_01_ih_0002 .fraction_box_mixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.ema514_01_ih_0002 .question_box .fraction_box_mixed {
+  width: 258px;
+}
+
+.solve_area .text_group {
+  display: flex;
+  flex-direction: column;
+  width: 234px;
+  background: url(../img/EMA514_01_IH/0004_img.png) no-repeat 30px 0;
+  gap: 17px;
+  align-items: flex-end;
+  padding-right: 40px;
+}
+.solve_area .text_group .row {
+  display: flex;
+  gap: 30px;
+}
+.solve_area .text_group .row span {
+  width: 50px;
+  text-align: right;
+}
+.solve_area .text_group .row:not(:last-child) span:first-child {
+  width: auto;
+  margin-right: 20px;
+}
+
+.ema514_01_ih_0003 .question_box {
+  justify-content: center;
+  gap: 12px;
+}
+.ema514_01_ih_0003 .question_box .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 329px;
+  height: 110px;
+  background: url(../img/EMA514_01_IH/0003_img.png) no-repeat center center;
+}

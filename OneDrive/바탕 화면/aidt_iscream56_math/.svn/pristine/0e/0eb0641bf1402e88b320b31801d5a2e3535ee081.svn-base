@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_06_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_06_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">어항에 있는 물고기 25마리 중 구피가 14마리입니다. 구피 수는 전체 물고기 수의 몇 ％인지 두 가지 방법으로 나타내어 봅시다.​</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">백분율로 나타내는 방법을 알아보세요.</h3>
+
+            <div class="question_box">
+              <div class="col col1">
+                <div class="tit">
+                  <span class="label">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 107 40" fill="none">
+                      <path d="M12.4721 17C5.58587 17 0 22.1475 0 28.5C0 34.8495 5.58587 40 12.4721 40H84.5279C91.4174 40 97 34.8495 97 28.5C97 22.1475 91.4174 17 84.5279 17H12.4721Z" fill="#5BB8A1"/>
+                      <text fill="#5BB8A1" stroke="#5BB8A1" stroke-width="5" stroke-linejoin="round" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                      <path d="M105.5 19.9982C105.5 30.1971 97.1999 38.4966 87 38.4966C76.8001 38.4966 68.5 30.1971 68.5 19.9982C68.5 9.8027 76.8 1.50293 87 1.50293C97.2001 1.50293 105.5 9.8027 105.5 19.9982Z" fill="white" stroke="#5BB8A1" stroke-width="3"/>
+                      <text fill="#5BB8A1" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan x="81" y="27.9688">1</tspan></text>
+                    </svg>
+                  </span>
+                  <span class="tit_txt">기준량을 100으로 할 때의 비율로 바꾸어 나타내기​</span>
+                </div>
+                <div class="ex_box">
+                  <span class="n1">0</span>
+                  <span class="n2">14</span>
+                  <span class="n3">25 (마리)</span>
+                  <span class="n4">0</span>
+                  <span class="n5">
+                    <div class="input_wrap answer1" data-hint-position="right">
+                      <math-field type="number" data-answer-single="56"></math-field>
+                    </div>
+                  </span>
+                  <span class="n6">100 (마리)</span>
+                </div>
+                <div class="ex_box2">
+                  <span class="fraction_box">
+                    <span class="input_wrap answer2" data-hint-position="up">
+                      <math-field data-answer-single="14"></math-field>
+                    </span>
+                    <span class="f32b">25</span>
+                  </span>
+                  <span class="f32b">=</span>
+                  <span class="fraction_box">
+                    <span class="input_wrap answer3" data-hint-position="right">
+                      <math-field type="number" data-answer-single="56"></math-field>
+                    </span>
+                    <span class="f32b">100</span>
+                  </span>
+                  <span class="f32b">=</span>
+                  <div class="input_wrap answer4">
+                    <math-field type="number" data-answer-single="56"></math-field>
+                  </div>
+                  <span class="f32b">％</span>
+                </div>
+              </div>
+              <div class="col col2">
+                <div class="tit">
+                  <span class="label">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 107 40" fill="none">
+                      <path d="M12.4721 17C5.58587 17 0 22.1475 0 28.5C0 34.8495 5.58587 40 12.4721 40H84.5279C91.4174 40 97 34.8495 97 28.5C97 22.1475 91.4174 17 84.5279 17H12.4721Z" fill="#5BB8A1"/>
+                      <text fill="#5BB8A1" stroke="#5BB8A1" stroke-width="5" stroke-linejoin="round" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                      <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32" letter-spacing="-1px" lang="y"><tspan x="12" y="31.375">방법</tspan></text>
+                      <path d="M105.5 19.9982C105.5 30.1971 97.1999 38.4966 87 38.4966C76.8001 38.4966 68.5 30.1971 68.5 19.9982C68.5 9.8027 76.8 1.50293 87 1.50293C97.2001 1.50293 105.5 9.8027 105.5 19.9982Z" fill="white" stroke="#5BB8A1" stroke-width="3"/>
+                      <text fill="#5BB8A1" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan x="81" y="27.9688">2</tspan></text>
+                    </svg>
+                  </span>
+                  <span class="tit_txt">비율에 100을 곱해서 나온 값에 ％를 붙여 나타내기​</span>
+                </div>
+                <div class="ex_box">
+                  <span class="n1">비율</span>
+                  <span class="n2">0</span>
+                  <span class="n3">
+                    <span class="fraction_box">
+                      <span>14</span>
+                      <span>25</span>
+                    </span>
+                    <span class="f32b">=</span>
+                    <span>0.56</span>
+                  </span>
+                  <span class="n4">1</span>
+                  <span class="n5">백분율</span>
+                  <span class="n6">0</span>
+                  <div class="n7">
+                    <div class="input_wrap answer1" data-hint-position="right">
+                      <math-field type="number" data-answer-single="56"></math-field>
+                    </div>
+                  </div>
+                  <span class="n8 f32b">100 ％</span>
+                </div>
+                <div class="ex_box2">
+                  <div class="input_wrap fraction_wrap answer2">
+                    <math-field data-answer-single="(14)/(25)"></math-field>
+                  </div>
+                  <span class="f32b times">&times;</span>
+                  <span class="f32b">100</span>
+                  <span class="f32b">=</span>
+                  <div class="input_wrap answer3 arr">
+                    <math-field type="number" data-answer-single="56"></math-field>
+                  </div>
+                  <div class="input_wrap answer4">
+                    <math-field type="number" data-answer-single="56"></math-field>
+                  </div>
+                  <span class="f32b">％</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <h3 lang="y"><img src=".././../common_contents/common/img/title_mid_9.svg" alt="방법1" />과 <img src=".././../common_contents/common/img/title_mid_10.svg" alt="방법2" />를 비교하여 이야기해 보세요.</h3>
+
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p>
+                    방법 1은 기준량을 100으로 할 때의 비율로 바꾸어 나타냈고,<br />
+                    방법 2는 비율에 100을 곱해서 나온 값에 ％를 붙여 나타냈습니다.​
+                  </p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

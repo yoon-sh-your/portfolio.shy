@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_04_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_02_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star" lang="y">은서네 모둠의 훌라후프 돌리기 기록과 기록별 받는 상을 나타낸 표입니다. 은상을 받는 학생의 이름을 모두 골라 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="l_layout">
+          <div class="l_left">
+            <h4 class="has_bg" lang="y">학생별 훌라후프 돌리기 기록</h4>
+            <div class="flex gap_30">
+              <div class="table_wrap">
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th lang="y" scope="col">이름</th>
+                      <th lang="y" scope="col">기록(초)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y" scope="row">은서</th>
+                      <td lang="y">45</td>
+                    </tr>
+                    <tr>
+                      <th lang="y" scope="row">소정</th>
+                      <td lang="y">50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table_wrap">
+                <table>
+                  <colgroup>
+                    <col />
+                    <col />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th lang="y" scope="col">이름</th>
+                      <th lang="y" scope="col">기록(초)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th lang="y" scope="row">지효</th>
+                      <td lang="y">45</td>
+                    </tr>
+                    <tr>
+                      <th lang="y" scope="row">재한</th>
+                      <td lang="y">50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="boolean_wrap">
+              <div>
+                <button type="button" data-answer-single="false" class="button1"></button>
+                <button type="button" data-answer-single="false" class="button2"></button>
+                <button type="button" data-answer-single="true" class="button3"></button>
+                <button type="button" data-answer-single="true" class="button4"></button>
+              </div>
+            </div>
+          </div>
+          <div class="l_right">
+            <h4 class="has_bg" lang="y">훌라우프 돌리기 기록별 받는 상</h4>
+            <div class="table_wrap">
+              <table>
+                <colgroup>
+                  <col />
+                  <col />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th lang="y" scope="col">기록(초)</th>
+                    <th lang="y" scope="col">상</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th lang="y" scope="row">55 초과</th>
+                    <td lang="y">금상</td>
+                  </tr>
+                  <tr>
+                    <th lang="y" scope="row">45 초과 55 이하</th>
+                    <td lang="y">은상</td>
+                  </tr>
+                  <tr>
+                    <th lang="y" scope="row">35 초과 45 이하</th>
+                    <td lang="y">동상</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">훌라후프 돌리기 기록이 45초 초과 55초 이하일 때 은상을 받을 수 있으므로 은상을 받는 학생은 기록이 50초인 소정이와 55초인 재한입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

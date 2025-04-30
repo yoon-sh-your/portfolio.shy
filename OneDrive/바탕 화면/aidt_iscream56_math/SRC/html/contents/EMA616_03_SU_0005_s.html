@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_03_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <script src="../../common_contents/js/ema616_03_0005.js"></script>
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_03.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_03_su_0005" data-current-page="page_1, page_2, page_3">
+    <section class="title type2">
+      <h2 class="flex" data-head="3" lang="y">직육면체의 부피를 구하는 방법을 알아봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <!-- 드롭영역에 모형을 끌어다 놓으면 1층이 모두 완성됨, 1층이 완성되면 24개짜리 쌓기 나무가 나타나고 이것을 다시 끌면 전체 도형 모양이 완성 -->
+        <h3 lang="y">부피가 1 ㎤인 쌓기나무를 직육면체와 같은 크기가 되도록 쌓으려고 합니다. 필요한 쌓기나무는 모두 몇 개인가요?</h3>
+        <div class="po_absolute">
+          <div class="flex">
+            <div class="img1">
+              <img src="../../common_contents/img/EMA616_03_SU/616_03_0001.png" alt="" />
+              <div class="length_1">6 ㎝</div>
+              <div class="length_2">4 ㎝</div>
+              <div class="length_3">5 ㎝</div>
+            </div>
+            <div class="img2">
+              <div class="droppable_box" id="stackArea"></div>
+              <img src="../../common_contents/img/EMA616_03_SU/616_03_0002.png" alt="" />
+              <div class="length_1">6 ㎝</div>
+              <div class="length_2">4 ㎝</div>
+              <div class="length_3">5 ㎝</div>
+            </div>
+            <div class="drop_area">
+              <div class="peace_row">
+                <img src="../../common_contents/img/EMA616_03_SU/peace0501.png" class="draggable peace"
+                  data-type="single" draggable="true" />
+                <img src="../../common_contents/img/EMA616_03_SU/peace0501.png" class="draggable peace"
+                  data-type="single" draggable="true" />
+                <img src="../../common_contents/img/EMA616_03_SU/peace0501.png" class="draggable peace"
+                  data-type="single" draggable="true" />
+                <img src="../../common_contents/img/EMA616_03_SU/peace0501.png" class="draggable peace"
+                  data-type="single" draggable="true" />
+              </div>
+              <div class="peace_stack" style="display: none"></div>
+            </div>
+          </div>
+          <div class="flex_input">
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="6" data-cross-answer="g1"></math-field>
+            </div>
+            &nbsp;<span>×</span>&nbsp;
+            <div class="input_wrap answer2">
+              <math-field data-answer-single="4" data-cross-answer="g1"></math-field>
+            </div>
+            &nbsp;<span>×</span>&nbsp;
+            <div class="input_wrap answer3">
+              <math-field data-answer-single="5" data-cross-answer="g1"></math-field>
+            </div>
+            &nbsp;<span>=</span>&nbsp;
+            <div class="input_wrap answer4">
+              <math-field data-answer-single="120"></math-field>
+              <span>(개)</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 1page -->
+
+      <article class="page page_2">
+        <h3 lang="y">직육면체의 부피는 몇 ㎤인가요?</h3>
+        <div class="po_absolute">
+          <div class="flex">
+            <div class="left_img">
+              <img src="../../common_contents/img/EMA616_03_SU/616_03_0013.png" alt="" />
+              <!--       <div class="length_1">6 ㎝</div>
+                <div class="length_2">4 ㎝</div>
+                <div class="length_3">5 ㎝</div> -->
+            </div>
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="120"></math-field>
+              <span>&nbsp;㎤</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 2page -->
+      <article class="page page_3">
+        <h3 lang="y">‘가로’, ‘세로’, ‘높이’를 이용하여 직육면체의 부피를 구하는 방법을 식으로 나타내어 보세요.</h3>
+        <div class="flex">
+          <!-- <div class="left_img">
+              <img
+                src="../../common_contents/img/EMA616_03_SU/616_03_0001.png"
+                alt=""
+              />
+              <div class="length_1">6 ㎝</div>
+              <div class="length_2">4 ㎝</div>
+              <div class="length_3">5 ㎝</div>
+            </div> -->
+          <div class="right_img">
+            <img src="../../common_contents/img/EMA616_03_SU/616_03_0005_bg.png" alt="" />
+            <div class="top_sub_img">
+              <img src="../../common_contents/img/EMA616_03_SU/616_03_0008.png" alt="" />
+              <div class="width1">가로</div>
+              <div class="width2">가로</div>
+              <div class="width3">가로</div>
+              <div class="length1">세로</div>
+              <div class="length2">세로</div>
+              <div class="length3">세로</div>
+              <div class="height1">높이</div>
+              <div class="height2">높이</div>
+              <div class="height3">높이</div>
+            </div>
+            <div class="modify_wrap">
+              <div class="modify_box1">
+                <span class="bg1">(직육면체의 부피)</span><span>&nbsp;=&nbsp;</span><span class="bg2">(
+                  <!--  <div class="input_wrap answer1">
+                      <math-field data-answer-single="가로"></math-field>
+                    </div> -->
+                  <button class="reveal_btn" data-pair="가로">가로</button>
+                  )</span><span>×</span>
+                <span class="bg3">(
+                  <!--  <div class="input_wrap answer2">
+                      <math-field data-answer-single="세로"></math-field>
+                    </div> -->
+                  <button class="reveal_btn" data-pair="세로">세로</button>
+                  )</span>
+                <span>×</span>
+                <span class="bg3">(
+                  <!-- <div class="input_wrap answer3">
+                      <math-field data-answer-single="높이"></math-field>
+                    </div> -->
+                  <button class="reveal_btn" data-pair="높이">높이</button>
+                  )</span>
+              </div>
+              <div class="modify_box2">
+                <div class="line">
+                  <img src="../../common_contents/img/EMA616_03_SU/line.png" alt="" />
+                </div>
+                <span>&nbsp;=&nbsp;</span>
+                <span>(한 밑면의 넓이)</span><span>×</span><span class="bg4">(
+                  <!--  <div class="input_wrap answer1">
+                      <math-field data-answer-single="높이"></math-field>
+                    </div> -->
+                  <button class="reveal_btn" data-pair="높이">높이</button>
+                  )</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 3page -->
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

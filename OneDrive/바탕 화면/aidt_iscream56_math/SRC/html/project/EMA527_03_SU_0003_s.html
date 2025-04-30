@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema527_03_su_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+  <script src="../../common_project/common/js/project_common.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema527_03_SU.css" />
+  <script src="../../common_project/js/ema527_03_su_0003.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema527_03_su_0003">
+    <section class="title">
+      <h2 data-head="2">
+        <span lang="y">다른 모둠의 제안서를 살펴본 후 점수를 주고, 칭찬할 점이나 보완할 점을 써 봅시다.​</span>
+      </h2>
+      <h2 data-head="3">
+        <span lang="y">우리 모둠이 받은 점수를 표에 나타내고, 우리 모둠이 받은 점수의 평균을 구해 봅시다.​</span>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <div class="input_area">
+          <div class="input_wrap">
+            <div class="table_wrap">
+              <table>
+                <thead class="text_center">
+                  <tr>
+                    <th class="f32b" lang="y">모둠</th>
+                    <th class="f32b" lang="y">점수(5점 기준)</th>
+                    <th class="f32b" lang="y">칭찬할 점 또는 보완할 점​</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                  </tr>
+                  <tr>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                  </tr>
+                  <tr>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                  </tr>
+                  <tr>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                    <td><math-field class="textarea custom_check_target" type="text"></math-field></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <dl class="ref flex gap_12 align_start">
+              <dt lang="y" class="f24b">평가 기준</dt>
+              <dd>
+                <ul class="flex dir_col gap_12">
+                  <li lang="y" class="f24b">대칭이 되도록 잘 설계하였나요?</li>
+                  <li lang="y" class="f24b">택배 드론의 특징을 잘 설명하였나요?</li>
+                  <li lang="y" class="f24b">배운 내용을 잘 반영하였나요?</li>
+                </ul>
+              </dd>
+            </dl>
+            <ol class="example_box" style="display: none;">
+              <li lang="y">더미</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <div class="input_area">
+          <div class="label f32b" lang="y">
+            모둠별 우리 모둠이 받은 점수
+          </div>
+          <div class="input_wrap">
+            <div class="dl_wrap flex text_center">
+              <dl>
+                <dt class="f32b" lang="y">모둠</dt>
+                <dd class="f32b" lang="y">점수(점)</dd>
+              </dl>
+              <dl>
+                <dt class="f32b"><math-field type="text" class="input"></math-field></dt>
+                <dd><math-field type="text" class="input"></math-field></dd>
+              </dl>
+              <dl>
+                <dt class="f32b"><math-field type="text" class="input"></math-field></dt>
+                <dd><math-field type="text" class="input"></math-field></dd>
+              </dl>
+              <dl>
+                <dt class="f32b"><math-field type="text" class="input"></math-field></dt>
+                <dd><math-field type="text" class="input"></math-field></dd>
+              </dl>
+              <dl>
+                <dt class="f32b"><math-field type="text" class="input"></math-field></dt>
+                <dd><math-field type="text" class="input"></math-field></dd>
+              </dl>
+              <dl>
+                <dt class="f32b" lang="y">합계</dt>
+                <dd><math-field type="text" class="input"></math-field></dd>
+              </dl>
+            </div>
+            <dl class="ever_wrap flex justify_end align_center gap_16 mt_20">
+              <dt class="f32b" lang="y">우리 모둠이 받은 점수의 평균: </dt>
+              <dd><math-field type="text" class="input"></math-field></dd>
+            </dl>
+
+            <ol class="example_box" style="display: none;">
+              <li lang="y">더미</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

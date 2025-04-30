@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_03_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_03_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">유자청 1컵, 물 4컵을 넣어서 유자차 한 병을 만들었습니다. 유자차 병 수에 따른 유자청의 양과 물의 양을 비교해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1"> 
+          <h3 lang="y">유자차 병 수에 따른 유자청의 양과 물의 양을 살펴보고 표를 완성해 보세요.</h3>
+          <div class="question_box">
+            
+            <div class="input_area">
+              <div class="question_box justify_center">
+                 <div class="table_box">
+                  <table>
+                    <colgroup>
+                      <col style="width: 10%"/>
+                      <col style="width: auto"/>
+                      <col style="width: 10%">
+                      <col style="width: 10%">
+                    </colgroup>
+                    <thead>
+                      <th lang="y" scope="col">유자차​<br>병 수​</th>
+                      <th lang="y" scope="col">유자차를 만드는 데 필요한​ 유자청의 양과 물의 양</th>
+                      <th lang="y" scope="col">유자청의<br>양(컵)</th>
+                      <th lang="y" scope="col">물의 양<br>(컵)</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y" scope="row">한 병</th>
+                        <td lang="y">
+                          <img src="../../common_contents/img/EMA614_03_SU/0003_content1.png" alt="유자청 한 컵,물 4컵이 있다.">
+                        </td>
+                        <td lang="y">1</td>
+                        <td lang="y">4</td>
+                      </tr>
+                      <tr>
+                        <th lang="y" scope="row">두 병</th>
+                        <td lang="y">
+                          <img src="../../common_contents/img/EMA614_03_SU/0003_content2.png" alt="유자청 두 컵,물 8컵이 있다.">
+                        </td>
+                        <td>
+                          <div class="input_wrap">
+                            <math-field data-answer-single="2"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap">
+                            <math-field data-answer-single="8"></math-field>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th lang="y" scope="row">세 병</th>
+                        <td lang="y">
+                          <img src="../../common_contents/img/EMA614_03_SU/0003_content3.png" alt="유자청 세 컵,물 12컵이 있다.">
+                        </td>
+                        <td>
+                          <div class="input_wrap">
+                            <math-field data-answer-single="3"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap">
+                            <math-field data-answer-single="12"></math-field>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>                        
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="img_row flex align_start">
+            <div class="picture_wrap">
+              <img src="../../common_contents/img/EMA614_03_SU/0003_content4.png" alt="" />
+              <button class="zoom"></button>
+            </div>
+
+            <div class="input_area">
+              <h3 lang="y">유자차 병 수에 따른 유자청의 양과 물의 양을 비교해 보세요. ​</h3>
+            
+              <div class="question_box justify_center">
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                    <p lang="y">
+                      유자차 병 수에 따른 물의 양은 유자청의 양의 4배입니다.​
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="img_row flex align_start">
+            <div class="picture_wrap">
+              <img src="../../common_contents/img/EMA614_03_SU/0003_content4.png" alt="" />
+              <button class="zoom"></button>
+            </div>
+
+            <div class="input_area">
+              <h3 lang="y">앞에서 비교한 방법을 이야기해 보세요.</h3>
+            
+              <div class="question_box justify_center">
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                    <p lang="y">
+                      곱셈(나눗셈)을 이용하여 한 양이 다른 양의 몇 배인지 구했습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <div class="summarize_wrap">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+              <div>
+                <span lang="y">한 양을 기준으로 다른 양이 몇 배가 되는지 비교하기 위해 기호 :을 사용하여 나타낸 것을</span>
+              </div>
+              <div>
+                <button class="reveal_btn" data-pair="1">비</button>
+                <span lang="y" class="small-gap">라고 합니다.</span>
+              </div>
+              <div>
+                <span lang="y">두 양 1과 4를 비교할 때</span>
+                <button class="reveal_btn">1&nbsp;&nbsp;:&nbsp;&nbsp;4</button>
+                <span lang="y" class="small-gap">라 쓰고, 1 대 4라고 읽습니다.</span>
+              </div>
+              <div>
+                <span lang="y">1:4는 1과 4의 비, 1의 4에 대한 비, 4에 대한 1의 비라고도 읽습니다.</span>
+              </div>
+              <div class="summarize_ex">
+                <span lang="y">1:&nbsp;4</span>
+                <span lang="y">비교하는 양</span>
+                <span lang="y">기준량</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

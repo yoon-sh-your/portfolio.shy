@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_07_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_07_su_0004"> 
+      <section class="title type2">
+        <h2 data-head="2_deep_green" lang="y">4.32×1.8을 계산하는 방법을 알아봅시다.
+        </h2>
+      </section>
+        
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">4.32×1.8을 어림셈해 보고, 어떻게 어림셈했는지 이야기해 보세요.</h3>
+          <div class="wrap">
+            <div>
+              <span class="gray_Box f32b" lang="y">답</span>
+              <span class="input_wrap answer1 hint_right">
+                <math-field data-answer-single="8"></math-field>
+              </span>
+            </div>
+            <div>
+              <span class="gray_Box f32b" lang="y">이유</span>
+              <span class="input_wrap answer2">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">4.32를 4로, 1.8을 2로 어림하면 4×2=8이므로 약 8일 것 같습니다.</p>
+                </div>
+              </span>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">분수의 곱셈으로 나타내어 계산해 보세요.</h3>
+          <div class="fra_parens f32b">
+              <span>4.32</span>
+              <span>×</span>
+              <span>1.8</span>
+              <span>&equals;</span>
+              <span class="fraction_box">
+                <span class="input_wrap hint_top answer3">
+                  <math-field data-answer-single="432"></math-field>
+                </span>
+                <span class="answer2">
+                  100
+                </span>
+              </span> 
+              <span>×</span>
+              <span class="fraction_box">
+                <span class="input_wrap hint_top answer4">
+                  <math-field data-answer-single="18"></math-field>
+                </span>
+                <span class="answer2">
+                  10
+                </span>
+              </span> 
+              <span>&equals;</span>
+              <span class="fraction_box">
+                <span class="input_wrap hint_top answer5 medium">
+                  <math-field data-answer-single="7776"></math-field>
+                </span>
+                <span class="answer2">
+                  1000
+                </span>
+              </span> 
+              <span>&equals;</span>
+              <span class="input_wrap answer6 medium">
+                <math-field data-answer-single="7.776"></math-field>
+              </span>
+            </span>
+          </div>
+        </article>
+        <article class="page page_3">
+          <h3 lang="y">자연수의 곱셈으로 이용하여 계산해 보세요.</h3>
+          <div class="question_box _524">
+            <div class="wrapper flex f32b">
+              <div class="box flex dir_col align_center">
+                <div class="flex dir_row align_center">
+                  <span class="bg_coral">432</span><span>×</span><span class="bg_sky">18</span><span>&equals;</span><span class="bg_green">7776</span>
+                </div>
+                <div class="flex dir_row align_center f20b arrow-row">
+                  <div class="flex align_center">
+                    <div class="fraction_box"><span>1</span><span>100</span></div>
+                    <span lang="y">배</span>
+                    <span><img src="../../common_contents/img/EMA524_01_SU/0004_arrow1.svg"></span>
+                  </div>
+                  <div class="flex align_center">
+                    <span><img src="../../common_contents/img/EMA524_01_SU/0004_arrow1.svg"></span>
+                    <div class="fraction_box"><span>1</span><span>10</span></div>
+                    <span lang="y">배</span>
+                  </div>
+                  <div class="flex align_center">
+                    <span><img src="../../common_contents/img/EMA524_01_SU/0004_arrow1.svg"></span>
+                    <div class="fraction_box"><span>1</span><span>1000</span></div>
+                    <span lang="y">배</span>
+                  </div>
+                </div>
+                <div class="flex dir_row align_center">
+                  <span class="bg_coral">4.32</span><span>×</span><span class="bg_sky">1.8</span><span>&equals;</span>
+                  <span class="input_wrap answer7">
+                    <math-field data-answer-single="7.776"></math-field>
+                  </span>
+                </div>
+              </div>
+              <div class="box flex justify_center align_center dir_row">
+                <div class="fraction_box vertical-math">
+                    <span class="bg_coral">432</span>
+                    <span class="PM_0"><span>×</span><span class="bg_sky">18</span></span>
+                    <span class="bg_green">7776</span>
+                </div>
+                <div class="f20b flex dir_col align_center arrow-col">
+                  <div>
+                    <div class="flex align_center justify_center">
+                      <div class="fraction_box"><span>1</span><span>100</span></div>
+                      <span lang="y">배</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex align_center justify_center">
+                      <div class="fraction_box"><span>1</span><span>10</span></div>
+                      <span lang="y">배</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex align_center justify_center">
+                      <div class="fraction_box"><span>1</span><span>1000</span></div>
+                      <span lang="y">배</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fraction_box vertical-math">
+                  <span class="bg_coral">4.32</span>
+                  <span class="PM_0"><span>×</span><span class="bg_sky">1.8</span></span>
+                  <span class="input_wrap answer8">
+                    <math-field data-answer-single="7.776"></math-field>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <h3 lang="y">4.32×1.8의 계산 결과와 어림셈한 결과를 비교해 보고, (소수 두 자리 수)×(소수 한 자리 수)를 계산하는 방법을 이야기해 보세요.</h3>
+          <div class="wrap">
+            <div>
+              <span class="gray_Box f32b" lang="y">답</span>
+              <span class="input_wrap answer9 hint_right">
+                <math-field class="textarea" data-answer-single="어림셈한 결과와 비슷합니다."></math-field>
+              </span>
+            </div>
+            <div>
+              <span class="gray_Box f32b" lang="y">이유</span>
+              <span class="input_wrap answer10">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">분수의 곱셈으로 나타내어 계산하거나 자연수의 곱셈을 이용하여 계산합니다.</p>
+                </div>
+              </span>
+            </div>
+          </div>
+        </article>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

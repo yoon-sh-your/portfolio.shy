@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_06_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_06.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema512_06_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">8과 12의 공배수와 최소공배수를 구하려고 합니다. <span class="empty_box nemo"></span> 안에 알맞은 수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box">
+          <div class="table_box">
+            <div class="row">
+              <span class="th" lang="y">8의 배수</span>
+              <div class="numbers">
+                <div class="inner">
+                  <span> 8, 16, 24, 32, 40, 48, 56, 64, 72, …</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <span class="th" lang="y">12의 배수</span>
+              <div class="numbers">
+                <div class="inner">
+                  <span> 12, 24, 36, 48, 60, 72, 84, 96, …</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex dir_col gap_60">
+            <div class="text_bullet">
+              <div class="flex align_center gap_20">
+                <span lang="y">8과 12의 공배수는</span>
+                <div class="flex gap_4 align_end">
+                  <div class="input_wrap"><math-field data-answer-single="24"></math-field></div>
+                  ,
+                </div>
+                <div class="flex gap_4 align_end">
+                  <div class="input_wrap"><math-field data-answer-single="48"></math-field></div>
+                  ,
+                </div>
+                <div class="flex gap_4 align_end">
+                  <div class="input_wrap"><math-field data-answer-single="72"></math-field></div>
+                  ,
+                </div>
+                <div class="flex gap_4 align_end"><span>...</span> <span lang="y">입니다.</span></div>
+              </div>
+            </div>
+            <div class="text_bullet">
+              <div class="flex align_center gap_20">
+                <span lang="y">8과 12의 최소공배수는</span>
+                <div class="flex gap_4 align_center">
+                  <div class="input_wrap"><math-field data-answer-single="24"></math-field></div>
+                  <span lang="y">입니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">8 과 12의 공배수는 두 수의 공통된 배수이므로 24, 48, 72, ...입니다.</p>
+                <p class="text_bullet" lang="y">최소공배수는 공배수 중에서 가장 작은 수이므로 24입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

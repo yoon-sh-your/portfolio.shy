@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_07_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_07_ih_0007">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="7" class="is_star" lang="y">주어진 실의 길이를 사용하여 분수와 소수의 크기를 비교하는 문제를 만들고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col gap_20">
+          <div class="img_wrap">
+            <img src="../../common_practice/img/EMA514_07_IH/0007_img.png" alt="" />
+            <div class="text_group">
+              <div class="item">
+                <span lang="y" class="txt">분홍색 실</span>
+                <div class="bottom">
+                  <div class="fraction_box_wrap">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>20</span>
+                    </div>
+                    &nbsp;
+                    <span>m</span>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <span lang="y" class="txt">하늘색 실</span>
+                <div class="bottom">
+                  <span class="num">1.17 m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabbox">
+            <strong class="tit_tabbox" lang="y">문제 만들기</strong>
+            <div class="conts_tabbox">
+              <div class="flex dir_col">
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box e1">
+                    <p lang="y">
+                      분홍색 실
+                      <span class="fraction_box">
+                        <span>13</span>
+                        <span>20</span>
+                      </span>
+                      m, 하늘색 실 1.17 m 중 더 긴 실을 사용하여 선물을 포장하려고 합니다. 어느 색 실을 사용해야 할까요?
+                    </p>
+                  </div>
+                </div>
+                <div class="flex justify_end align_center gap_12 mt_12">
+                  <span class="label_gray" lang="y">답</span>
+                  <div class="input_wrap">
+                    <math-field></math-field>
+                    <div class="example_box">
+                      <p lang="y">하늘색 실</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve top0">
+                <p lang="y">분수와 소수의 크기를 비교하는 상황이 되도록 문제를 만듭니다.</p>
+                <div lang="y">
+                  ➔
+                  <div class="fraction_box_wrap">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="fraction_box_wrap">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>15</span>
+                      <span>100</span>
+                    </div>
+                  </div>
+                  =1.15이므로 1.15 &lt; 1.17입니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

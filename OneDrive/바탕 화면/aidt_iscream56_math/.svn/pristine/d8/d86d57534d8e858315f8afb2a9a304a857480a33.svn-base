@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_07_SU_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_07.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_07_su_0002">
+    <section class="title type2">
+      <h2 data-type="2" data-text="생각 깨우기" lang="y">
+        식료품을 담은 직육면체 모양 상자를 포장하려고 합니다. 상자의 겉면의
+        넓이를 어떻게 구할 수 있을지 생각해 봅시다.
+      </h2>
+    </section>
+
+    <section class="contents">
+      <div class="img_row flex align_start">
+        <div class="video_wrap">
+          <button class="play" data-video="1"></button>
+        </div>
+
+        <div class="input_area">
+          <h3 lang="y">
+            영상을 보고, 상자의 겉면의 넓이를 어떻게 구할 수 있을지 이야기해
+            보세요.
+          </h3>
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">상자의 각 면의 넓이를 더해서 구합니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <!-- 예시 필드에서 사용 -->
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

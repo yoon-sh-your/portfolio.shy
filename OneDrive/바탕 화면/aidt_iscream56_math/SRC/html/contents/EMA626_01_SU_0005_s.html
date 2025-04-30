@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA626_01_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema626_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema626_01_su_0005">
+      <section class="title type2">
+        <h2 data-icon="speech">그림을 보고 여러 가지 입체도형 모양의 물건을 보거나 사용한 경험이 있는지 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="picture_wrap" data-head="" data-tit="그림을 보고 여러 가지 입체도형 모양의 물건을 보거나 사용한 경험이 있는지 이야기해 봅시다.">
+            <!-- img태그의 src를 참조하므로 확대할 이미지를 이미지태그 대신 일반태그에 background로 설정해서 사용하는 형태는 안됩니다. -->
+            <img src="../../common_contents/img/EMA626_01_SU/0005_bg.png" alt="활동 이미지" />
+            <button class="zoom"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">축구공을 사용하여 축구 경기에 참여한 적이 있습니다.</li>
+                <li lang="y">농구공을 사용하여 농구 경기에 참여한 적이 있습니다.</li>
+                <li lang="y">배구공을 사용하여 배구 경기에 참여한 적이 있습니다.</li>
+                <li lang="y">달리기를 할 때 러버 콘을 본 적이 있습니다.</li>
+                <li lang="y">기둥 모양의 배턴을 가지고 이어달리기를 한 적이 있습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <!-- <button class="btnSample">예시</button> -->
+          <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema622_01_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_01.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_01_su_0003">
+    <section class="title type2">
+      <h2 data-type="1" data-text="자기주도 2">
+        <span class="blue line" lang="y">배운 내용을 떠올려요</span>
+        <span lang="y">카드를 선택하여 이전에 배운 내용을 확인해 봅시다.</span>
+      </h2>
+    </section>
+
+    <section class="contents">
+      <ul class="letCheck">
+        <li>
+          <div class="cover pointer large"></div>
+          <div class="front">
+            <p class="f32b" lang="y">반올림 알아보기​</p>
+          </div>
+          <div class="back">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="307" height="104" viewBox="0 0 307 104" fill="none">
+              <path d="M0.5 8C0.5 3.58172 4.08172 0 8.5 0H141.5C145.918 0 149.5 3.58172 149.5 8V52H0.5V8Z"
+                fill="#DEEDCF" />
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="8.99219" y="34.5312" lang="y">소수 첫째 자리</tspan>
+              </text>
+              <mask id="path-4-inside-1_9600_689038" fill="white">
+                <path d="M0.5 52H149.5V104H0.5V52Z" />
+              </mask>
+              <path
+                d="M149.5 104V105H150.5V104H149.5ZM0.5 104H-0.5V105H0.5V104ZM149.5 52H148.5V104H149.5H150.5V52H149.5ZM149.5 104V103H0.5V104V105H149.5V104ZM0.5 104H1.5V52H0.5H-0.5V104H0.5Z"
+                fill="#DEEDCF" mask="url(#path-4-inside-1_9600_689038)" />
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="57.3711" y="86.7773">3.2</tspan>
+              </text>
+              <path d="M157.5 8C157.5 3.58172 161.082 0 165.5 0H298.5C302.918 0 306.5 3.58172 306.5 8V52H157.5V8Z"
+                fill="#DEEDCF" />
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="165.992" y="34.5312" lang="y">소수 첫째 자리</tspan>
+              </text>
+              <mask id="path-9-inside-2_9600_689038" fill="white">
+                <path d="M157.5 52H306.5V104H157.5V52Z" />
+              </mask>
+              <path
+                d="M306.5 104V105H307.5V104H306.5ZM157.5 104H156.5V105H157.5V104ZM305.5 52V104H307.5V52H305.5ZM306.5 103H157.5V105H306.5V103ZM158.5 104V52H156.5V104H158.5Z"
+                fill="#DEEDCF" mask="url(#path-9-inside-2_9600_689038)" />
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="202.215" y="86.7773">3.154</tspan>
+              </text>
+            </svg>
+
+          </div>
+        </li>
+        <li>
+          <div class="cover pointer large"></div>
+          <div class="front">
+            <p class="f32b" lang="y">(소수)÷(자연수)​</p>
+          </div>
+          <div class="back">
+
+            <div class="operations">
+
+              28.6÷2=14.3​
+
+            </div>
+
+          </div>
+        </li>
+        <li>
+          <div class="cover pointer large"></div>
+          <div class="front">
+            <p class="f32b" lang="y">(분수)÷(분수)​</p>
+          </div>
+          <div class="back">
+
+            <div class="operations">
+
+              <span class="fraction_box">
+                <span>8</span>
+                <span>9</span>
+              </span>
+
+              ÷
+
+              <span class="fraction_box">
+                <span>2</span>
+                <span>9</span>
+              </span>
+
+              =
+
+              4
+
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+      <div class="bubble_charactor" data-charactor="1" style="display: none;">
+        <div class="bubble" data-point-position="bottom left">
+          <p lang="y">카드를 한 번 더 선택하면</p>
+          <p lang="y">내용을 볼 수 있어요.</p>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <!-- 불필요한 태그 제외 후 사용 -->
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

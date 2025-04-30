@@ -1,0 +1,349 @@
+runAfterAppReady(() => {
+    $(".btm_left_box .circle").draggable({
+        helper: "clone",
+        revert: "invalid",
+        zIndex: 100,
+        start: function (event, ui) {
+            $(this).addClass("dragging");
+        },
+        stop: function (event, ui) {
+            $(this).removeClass("dragging");
+        },
+    });
+
+    const $rightRows = $(".btm_right_box table tbody tr:not(:last-child)");
+
+    const colCount = $rightRows.first().find("td").length;
+    let tdMatrix = [];
+    for (let col = 0; col < colCount; col++) {
+        tdMatrix[col] = [];
+        $rightRows.each(function (idx, tr) {
+            tdMatrix[col].push($(tr).find("td").eq(col));
+        });
+    }
+
+    const originalLeftState = [];
+    $(".btm_left_box tr").each(function (trIdx, tr) {
+        const row = [];
+        $(tr)
+            .find("td")
+            .each(function (tdIdx, td) {
+                const circles = [];
+                $(td)
+                    .find(".circle")
+                    .each(function () {
+                        circles.push($(this).prop("outerHTML"));
+                    });
+                row.push(circles);
+            });
+        originalLeftState.push(row);
+    });
+
+    const initialRightState = [];
+    $rightRows.find("td").each(function (idx, td) {
+        initialRightState[idx] = $(td).find(".circle").length;
+    });
+
+    function resetAll() {
+        $rightRows.find("td").empty();
+
+        $(".btm_left_box tr").each(function (trIdx, tr) {
+            $(tr)
+                .find("td")
+                .each(function (tdIdx, td) {
+                    $(td).empty();
+                    (originalLeftState[trIdx][tdIdx] || []).forEach((html) => {
+                        $(td).append(html);
+                    });
+                });
+        });
+
+        $(".btm_left_box .circle").draggable({
+            helper: "clone",
+            revert: "invalid",
+            zIndex: 100,
+            start: function (event, ui) {
+                $(this).addClass("dragging");
+            },
+            stop: function (event, ui) {
+                $(this).removeClass("dragging");
+            },
+        });
+        $(".btm_right_box .circle").draggable({
+            helper: "original",
+            revert: "invalid",
+            zIndex: 100,
+            start: function (event, ui) {
+                $(this).addClass("dragging");
+            },
+            stop: function (event, ui) {
+                $(this).removeClass("dragging");
+            },
+        });
+
+        checkBtn.classList.remove("active");
+        resetBtn.classList.remove("active");
+        isEvenlyDistributed = false;
+        window.forceWatchEvaluation && window.forceWatchEvaluation();
+    }
+
+    $rightRows.find("td").droppable({
+        accept: ".btm_left_box .circle, .btm_right_box .circle",
+        tolerance: "pointer",
+        hoverClass: "droppable-hover",
+        drop: function (event, ui) {
+            const $td = $(this);
+            const colIdx = $td.index();
+
+            let targetTd = null;
+            for (let i = tdMatrix[colIdx].length - 1; i >= 0; i--) {
+                if (tdMatrix[colIdx][i].children(".circle").length === 0) {
+                    targetTd = tdMatrix[colIdx][i];
+                    break;
+                }
+            }
+
+            let $drag = $(ui.draggable);
+            let $circle;
+            if ($drag.closest(".btm_left_box").length) {
+                $circle = $drag.clone().removeClass("dragging");
+                targetTd.append($circle);
+                $drag.remove();
+                $circle.draggable({
+                    helper: "original",
+                    revert: "invalid",
+                    zIndex: 100,
+                    start: function (event, ui) {
+                        $(this).addClass("dragging");
+                    },
+                    stop: function (event, ui) {
+                        $(this).removeClass("dragging");
+                    },
+                });
+            } else {
+                $circle = $drag;
+                targetTd.append($circle);
+            }
+            checkEvenDistribution();
+        },
+    });
+
+    $(".btm_right_box").on("mouseenter", ".circle", function () {
+        if (!$(this).data("draggable")) {
+            $(this).draggable({
+                helper: "original",
+                revert: "invalid",
+                zIndex: 100,
+                start: function (event, ui) {
+                    $(this).addClass("dragging");
+                },
+                stop: function (event, ui) {
+                    $(this).removeClass("dragging");
+                },
+            });
+            $(this).data("draggable", true);
+        }
+    });
+
+    function checkEvenDistribution() {
+        let counts = [];
+        for (let col = 0; col < colCount; col++) {
+            let cnt = 0;
+            for (let i = 0; i < tdMatrix[col].length; i++) {
+                if (tdMatrix[col][i].children(".circle").length > 0) cnt++;
+            }
+            counts.push(cnt);
+        }
+        isEvenlyDistributed = counts.length > 0 && counts.every((count) => count === 3);
+        window.forceWatchEvaluation && window.forceWatchEvaluation();
+    }
+
+    const checkBtn = document.querySelector(".btnCheck");
+    const resetBtn = document.querySelector(".btnReset");
+    let isEvenlyDistributed = false;
+
+    resetBtn.addEventListener("click", function () {
+        resetAll();
+    });
+
+    // 버튼 활성화 조건 추가
+    function updateButtonClassRulesForCurrentSlide(slideIdx) {
+        console.log(slideIdx);
+        if (slideIdx === "page_2") {
+            defineButtonClassRules([
+                {
+                    selector: ".page_2 .input_wrap math-field",
+                    test: (el) => {
+                        const filled = (typeof el.getValue === "function" ? el.getValue() : el.value || "").trim() !== "";
+
+                        return filled;
+                    },
+                },
+            ]);
+        } else {
+            defineButtonClassRules([
+                {
+                    key: "textarea_with_example",
+                    selector: ".page_1 .btm_right_box table, .page_1 .input_wrap math-field.textarea",
+                    test: (el) => {
+                        // textarea 입력 감지
+                        if (el.matches("math-field.textarea")) {
+                            const filled = (typeof el.getValue === "function" ? el.getValue() : el.value || "").trim() !== "";
+                            const hasExample = !!el.closest(".input_wrap")?.querySelector(".example_box");
+                            return filled && hasExample;
+                        }
+                        // 테이블 이동 감지
+                        if (el.matches(".btm_right_box table")) {
+                            const tds = el.querySelectorAll("tr:not(:last-child) td");
+                            for (let i = 0; i < tds.length; i++) {
+                                if (tds[i].querySelectorAll(".circle").length !== initialRightState[i]) {
+                                    return true;
+                                }
+                            }
+                            return false;
+                        }
+                        // 기타 경우
+                        return false;
+                    },
+                },
+            ]);
+        }
+    }
+
+    $(".next, .prev, .pagenation button").on("click", function () {
+        let slideIdx = $("#app_wrap").attr("data-current-page");
+        console.log("click", slideIdx);
+        setTimeout(updateButtonClassRulesForCurrentSlide(slideIdx), 100);
+        if (slideIdx === "page_1" && !$(".page_1").hasClass("completed")) {
+            $(".page_1 .example_box").removeClass("on");
+        }
+    });
+
+    updateButtonClassRulesForCurrentSlide();
+
+    window.onCorrectCustom = function () {
+        $(".example_box").addClass("on");
+    };
+
+    window.onIncorrectTwiceCustom = function () {
+        let slideIdx = $("#app_wrap").attr("data-current-page");
+        if (slideIdx === "page_1") {
+            $rightRows.find("td").empty();
+
+            $(".btm_left_box tr").each(function (trIdx, tr) {
+                $(tr)
+                    .find("td")
+                    .each(function (tdIdx, td) {
+                        $(td).empty();
+                        (originalLeftState[trIdx][tdIdx] || []).forEach((html) => {
+                            $(td).append(html);
+                        });
+                    });
+            });
+
+            let leftCircles = [];
+            $(".btm_left_box .circle").each(function () {
+                leftCircles.push($(this).clone());
+                $(this).remove();
+            });
+
+            for (let col = 0; col < colCount; col++) {
+                let filled = 0;
+                for (let i = tdMatrix[col].length - 1; i >= 0; i--) {
+                    if (filled < 3 && leftCircles.length > 0) {
+                        let $circle = leftCircles.shift();
+                        tdMatrix[col][i].append($circle);
+                        $circle.draggable({
+                            helper: "original",
+                            revert: "invalid",
+                            zIndex: 100,
+                            start: function (event, ui) {
+                                $(this).addClass("dragging");
+                            },
+                            stop: function (event, ui) {
+                                $(this).removeClass("dragging");
+                            },
+                        });
+                        filled++;
+                    }
+                }
+            }
+            $(".btm_left_box tr td").empty();
+            let idx = 0;
+            $(".btm_left_box tr").each(function (trIdx, tr) {
+                $(tr)
+                    .find("td")
+                    .each(function (tdIdx, td) {
+                        if (leftCircles[idx]) {
+                            $(td).append(leftCircles[idx]);
+                            leftCircles[idx].draggable({
+                                helper: "clone",
+                                revert: "invalid",
+                                zIndex: 100,
+                                start: function (event, ui) {
+                                    $(this).addClass("dragging");
+                                },
+                                stop: function (event, ui) {
+                                    $(this).removeClass("dragging");
+                                },
+                            });
+                            idx++;
+                        }
+                    });
+            });
+
+            checkEvenDistribution();
+        } else {
+        }
+    };
+
+    $(".btm_left_box .circle").draggable({
+        helper: "clone",
+        revert: "invalid",
+        zIndex: 100,
+        start: function (event, ui) {
+            $(this).addClass("dragging");
+        },
+        stop: function (event, ui) {
+            $(this).removeClass("dragging");
+        },
+    });
+
+    checkEvenDistribution();
+
+    window.customCheckCondition = function () {
+        let slideIdx = $("#app_wrap").attr("data-current-page");
+        if (slideIdx === "page_2") {
+            const mathField = document.querySelector(".page_2 .input_wrap math-field");
+            const value = mathField && (typeof mathField.getValue === "function" ? mathField.getValue() : mathField?.value || "");
+
+            // \text{...} 제거 함수
+            function parseMathfieldValue(val) {
+                return val.replace(/\\text\{([^}]*)\}/g, "$1").trim();
+            }
+
+            const parsedValue = parseMathfieldValue(value);
+            const answer = mathField?.dataset?.answerSingle ?? mathField2.getAttribute("data-answer-single") ?? "";
+
+            return parsedValue === answer.trim();
+        } else {
+            const mathField = document.querySelector(".input_wrap math-field.textarea");
+            const value = mathField && (typeof mathField.getValue === "function" ? mathField.getValue() : mathField.value || "");
+            const isFilled = !!(value && value.trim() !== "");
+
+            let moved = false;
+            const tds = document.querySelectorAll(".btm_right_box table tr:not(:last-child) td");
+            for (let i = 0; i < tds.length; i++) {
+                if (tds[i].querySelectorAll(".circle").length !== initialRightState[i]) {
+                    moved = true;
+                    break;
+                }
+            }
+
+            if (!isFilled || !moved) {
+                return "empty";
+            }
+            return isEvenlyDistributed;
+        }
+    };
+});

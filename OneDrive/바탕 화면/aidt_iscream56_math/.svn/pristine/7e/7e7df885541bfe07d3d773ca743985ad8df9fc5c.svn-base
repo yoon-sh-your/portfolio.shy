@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_02_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_02_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">좁쌀 6.2 g을 똑같이 나누어 공깃돌 2개를 만들려고 합니다. 공깃돌 한 개에 넣을 수 있는 좁쌀의 양은 몇 g인지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">
+              영상을 보고 공깃돌 한 개에 넣을 수 있는 좁쌀의 양을 어떻게 구할<br />
+              수 있을지 이야기해 보세요.
+            </h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">전체 좁쌀의 양을 공깃돌의 수로 나누면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema515_06_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_06.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_06_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_light_purple" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <div class="operation_box ml_0">
+                <div class="mixed_fraction">
+                  <span>4</span>
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                -
+                <div class="mixed_fraction">
+                  <span>2</span>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>6</span>
+                  </div>
+                </div>
+              </div>
+              을 두 가지 방법으로 계산해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <div class="question_box justify_center">
+              <div class="container_515">
+                <h3 lang="y"><span class="method" circle-number="1">방법</span> 자연수는 자연수끼리, 분수는 분수끼리 계산하기</h3>
+
+                <div class="operations_column">
+                  <div class="operations">
+                    <div class="mixed_fraction">
+                      <span>4</span>
+                      <div class="fraction_box">
+                        <span>3</span>
+                        <span>4</span>
+                      </div>
+                    </div>
+                    -
+                    <div class="mixed_fraction">
+                      <span>2</span>
+                      <div class="fraction_box">
+                        <span>1</span>
+                        <span>6</span>
+                      </div>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac1">
+                      <math-field data-answer-single="4(9)/(12)-2(2)/(12)"></math-field>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac2">
+                      <math-field data-answer-single="(4-2)+((9)/(12)-(2)/(12))"></math-field>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac3">
+                      <math-field data-answer-single="2+(7)/(12)"></math-field>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac4">
+                      <math-field data-answer-single="2(7)/(12)"></math-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <div class="question_box justify_center">
+              <div class="container_515">
+                <h3 lang="y"><span class="method" circle-number="2">방법</span> 대분수를 가분수로 나타내어 계산하기</h3>
+
+                <div class="operations_column">
+                  <div class="operations">
+                    <div class="mixed_fraction">
+                      <span>4</span>
+                      <div class="fraction_box">
+                        <span>3</span>
+                        <span>4</span>
+                      </div>
+                    </div>
+                    -
+                    <div class="mixed_fraction">
+                      <span>2</span>
+                      <div class="fraction_box">
+                        <span>1</span>
+                        <span>6</span>
+                      </div>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac1">
+                      <math-field data-answer-single="(19)/(4)-(13)/(6)"></math-field>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac2">
+                      <math-field data-answer-single="(57)/(12)-(26)/(12)"></math-field>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac3">
+                      <math-field data-answer-single="(31)/(12)"></math-field>
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap frac4">
+                      <math-field data-answer-single="2(7)/(12)"></math-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

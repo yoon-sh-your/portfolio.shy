@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_08_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_08_ih_0001 paging">
+      <section class="title type2 score">
+        <h2 data-head="1">
+          <span lang="y">그림을 보고 1</span>
+          <div class="fraction_box"><span>4</span><span>5</span></div>
+          <span lang="y">×1</span>
+          <div class="fraction_box"><span>1</span><span>3</span></div>
+          <span>을 두 가지 방법으로 계산하려고 합니다.</span><span class="nemo"></span><span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="dashed_line_box">
+            <dt lang="y" class="label_method">방법1</dt>
+          </div>
+          <div class="question_box">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA522_08_IH/0001_01.png" alt="" />
+              <ul class="text_number1">
+                <li>1</li>
+                <li>2</li>
+              </ul>
+              <ul class="text_number2">
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+              </ul>
+              <div class="text1">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+              </div>
+              <div class="text2">
+                1
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+              </div>
+              <div class="text3">1</div>
+            </div>
+            <div class="input_area flex align_center dir_col">
+              <div class="input_row flex align_center gap_10 bracket">
+                1
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+                ×1
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+                =
+                <span class="bracket-l"></span>
+                <span>1</span>
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+                ×
+                <div class="input_wrap" data-hint-position="up">
+                  <math-field data-answer-single="1" text-align="center" class="w_80"></math-field>
+                </div>
+                <span class="bracket-r"></span>
+                <span>+(1</span>
+                <div class="fraction_box"><span>4</span><span>5</span></div>
+                ×
+                <div class="fraction_box">
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="1" text-align="center" class="w_80"></math-field>
+                  </div>
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="3" text-align="center" class="w_80"></math-field>
+                  </div>
+                </div>
+                )
+              </div>
+              <div class="input_row flex align_center gap_10">
+                <span>=1</span>
+                <div class="fraction_box"><span>4</span><span>5</span></div>
+
+                + (
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="9" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>5 </span>
+                </div>
+                ×
+                <div class="fraction_box">
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="1" text-align="center" class="w_80"></math-field>
+                  </div>
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="3" text-align="center" class="w_80"></math-field>
+                  </div>
+                </div>
+                )
+              </div>
+              <div class="input_row flex align_center gap_10">
+                =
+                <div class="fraction_box">
+                  <span>9</span>
+                  <span>5</span>
+                </div>
+                +
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="3" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>5</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="12" text-align="center" class="w_80"></math-field>
+                  </div>
+                  <span>5</span>
+                </div>
+                =
+                <div class="input_wrap">
+                  <math-field data-answer-single="2" text-align="center" class="w_80"></math-field>
+                </div>
+                <div class="fraction_box">
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="2" text-align="center" class="w_80"></math-field>
+                  </div>
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="5" text-align="center" class="w_80"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">
+                    <span class="label_method_num" lang="y"> 방법 <i>1</i> </span> 은 대분수를 자연수와 진분수의 합으로 나타내어 계산했습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="dashed_line_box">
+            <dt lang="y" class="label_method">방법2</dt>
+          </div>
+          <div class="question_box">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA522_08_IH/0001_02.png" alt="" />
+              <ul class="text_number1">
+                <li>1</li>
+                <li>2</li>
+              </ul>
+              <ul class="text_number2">
+                <li>0</li>
+                <li>1</li>
+                <li>2</li>
+              </ul>
+              <div class="text4">
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>3</span>
+                </div>
+              </div>
+              <div class="text2">
+                <div class="fraction_box">
+                  <span>9</span>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+            <div class="input_area flex align_center gap_30 dir_col">
+              <div class="input_row flex align_center gap_10">
+                <span>1</span>
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+                <span>×1</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+                <span>=</span>
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="9" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>5</span>
+                </div>
+                <span>×</span>
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="4" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>3</span>
+                </div>
+              </div>
+              <div class="input_row flex align_center gap_10">
+                =
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="12" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>5</span>
+                </div>
+                =
+                <div class="input_wrap hint_up">
+                  <math-field data-answer-single="2" text-align="center" class="w_80"></math-field>
+                </div>
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="2" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="5" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">
+                    <span class="label_method_num" lang="y"> 방법 <i>2</i> </span> 는 대분수를 가분수로 나타내어 계산했습니다
+                  </p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_06_IH_0002</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema625_06_ih_0002">
+			<section class="title type2">
+				<h2 data-head="2_light_purple" lang="y">
+					반지름이 3㎝인 원을 한없이 잘라서 이어 붙이면 직사각형이 됩니다. 안에 알맞은 수를 써넣고, 직사각형의
+					넓이를 이용하여 원의 넓이는 몇 ㎠인지 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA625_06_IH/0002_01.png" alt="" />
+						<p class="text1" lang="y">원주: 18.84 ㎝</p>
+						<p class="text2" lang="y">3 ㎝</p>
+						<div class="input_position input1">
+							<div class="input_wrap">
+								<math-field data-answer-single="9.42"></math-field>
+							</div>
+							㎝
+						</div>
+						<div class="input_position input2">
+							<div class="input_wrap">
+								<math-field data-answer-single="3"></math-field>
+							</div>
+							㎝
+						</div>
+						<div class="input_position input3">
+							<div class="input_wrap">
+								<math-field data-answer-single="28.26"></math-field>
+							</div>
+							㎠
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p class="flex align_center gap_0">
+									(직사각형의 가로)=18.84×<span class="fraction_box">
+										<span>1</span><span>2</span> </span
+									>=9.42 (㎝)
+								</p>
+								<p>(직사각형의 세로)=(원의 반지름)=3㎝</p>
+								<p>➔ (원의 넓이)=9.42×3=28.26 (㎠)</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

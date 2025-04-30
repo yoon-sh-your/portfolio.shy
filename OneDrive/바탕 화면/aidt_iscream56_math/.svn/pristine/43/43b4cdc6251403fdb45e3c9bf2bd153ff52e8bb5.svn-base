@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_01_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema523_01_ih_0001.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_01.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_01_ih_0003">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 5-2』 (소수)×(자연수)</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_pink" lang="y">3.2×4를 분수의 곱셈으로 나타내어 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="flex align_center gap_10">
+            3.2×4=
+            <div class="fraction_box">
+              <span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="32" text-align="center" class="w_80"></math-field>
+                </div>
+              </span>
+              <span>10</span>
+            </div>
+            ×4=
+            <div class="fraction_box">
+              <span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="32" text-align="center" class="w_80"></math-field>
+                </div>
+                ×4
+              </span>
+              <span>10</span>
+            </div>
+            =
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap">
+                  <math-field data-answer-single="128" text-align="center" class="w_80"></math-field></div
+              ></span>
+              <span>10</span>
+            </div>
+            =
+            <div class="input_wrap">
+              <math-field data-answer-single="12.8" text-align="center"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_10 align_center">
+                  3.2×4=
+                  <div class="fraction_box"><span>32</span><span>10</span></div>
+                  ×4=
+                  <div class="fraction_box"><span>32×4</span><span>10</span></div>
+                  =
+                  <div class="fraction_box"><span>128</span><span>10</span></div>
+                  = 12.8
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

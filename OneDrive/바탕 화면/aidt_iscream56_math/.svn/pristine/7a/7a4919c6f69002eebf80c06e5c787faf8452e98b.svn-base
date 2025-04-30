@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_02_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_02_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">관계있는 것끼리 이어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_center justify_center gap_12">
+          <ul class="connect_line_box start">
+            <li>17-8+12</li>
+            <li>32-(16+3)</li>
+            <li>8+19-11</li>
+          </ul>
+          <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"],["s3","e3"]]'>
+            <div class="start_group">
+              <div class="connect_point" data-id="s1"></div>
+              <div class="connect_point" data-id="s2"></div>
+              <div class="connect_point" data-id="s3"></div>
+            </div>
+            <div class="end_group">
+              <div class="connect_point" data-id="e1"></div>
+              <div class="connect_point" data-id="e2"></div>
+              <div class="connect_point" data-id="e3"></div>
+            </div>
+            <svg class="connect_lines"></svg>
+          </div>
+          <ul class="connect_line_box end">
+            <li>13</li>
+            <li>21</li>
+            <li>16</li>
+          </ul>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>17-8+12=9+12=21</p>
+                <p>32-(16+3)=32-19=13</p>
+                <p>8+19-11=27-11=16</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

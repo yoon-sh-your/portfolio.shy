@@ -1,0 +1,46 @@
+.ema524_11_ih_0001 .title.puzzle {
+    background-image: url(../img/EMA524_11_IH/title_puzzle.svg);
+}
+.ema524_11_ih_0001 .question_box {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 544px;
+    height: 386px;
+}
+.ema524_11_ih_0001 .list_quiz {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+}
+.ema524_11_ih_0001 .list_quiz .item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.ema524_11_ih_0001 .list_quiz .num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--primary-blue);
+    color: #fff;
+    font-size: 24px;
+}
+.ema524_11_ih_0001 .bottom .input_wrap {
+    min-width: 0;
+    width: 80px;
+}
+.ema524_11_ih_0001 .bottom .input_wrap math-field {
+    width: 100%;
+}
+
+#app_wrap.ema524_11_ih_0001 .contents {
+    overflow-y: auto;
+}
+.ema524_11_ih_0001 .btn_area {
+    position: sticky;
+}

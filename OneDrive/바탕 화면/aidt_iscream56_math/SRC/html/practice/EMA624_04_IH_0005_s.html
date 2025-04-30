@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_04_IH_0005</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_04.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_04_ih_0005 paging">
+			<section class="title type2 score">
+				<h2 data-head="5_deep_green" lang="y">
+					비율이 같은 두 비를 찾아 비례식을 세우려고 합니다. 물음에 답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3 lang="y">표를 완성해 보세요.</h3>
+					<div class="question_box justify_center">
+						<div class="table_wrap">
+							<table>
+								<colgroup>
+									<col />
+									<col />
+									<col />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" lang="y">비</th>
+										<td>8:10</td>
+										<td>16:12</td>
+										<td>4:5</td>
+									</tr>
+									<tr>
+										<th scope="row" lang="y">비율</th>
+										<td>
+											<div class="input_wrap fraction_wrap">
+												<math-field
+													data-answer-single="(8)/(10)"
+													data-answer-multi='{"values": ["(8)/(10)", "(4)/(5)"]}'
+													data-multi-hint="y"
+													class="w_large"
+												></math-field>
+											</div>
+										</td>
+										<td>
+											<div class="input_wrap fraction_wrap">
+												<math-field
+													data-answer-single="(16)/(12)"
+													data-answer-multi='{"values": ["(16)/(12)", "(4)/(3)"]}'
+													data-multi-hint="y"
+													class="w_large"
+												></math-field>
+											</div>
+										</td>
+										<td>
+											<div class="input_wrap fraction_wrap">
+												<math-field data-answer-single="(4)/(5)" class="w_80"></math-field>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex align_center gap_0">
+										<span lang="y">8:10을 비율로 나타내면</span>
+										<span class="fraction_box ml_5"> <span>8</span><span>10</span> </span>
+										=
+										<span class="fraction_box"> <span>4</span><span>5</span> </span>
+										,<span lang="y" class="ml_5">16:12를 비율로 나타내면</span>
+										<span class="fraction_box ml_5"> <span>16</span><span>12</span> </span>
+										=
+										<span class="fraction_box"> <span>4</span><span>13</span> </span>
+										,
+									</p>
+									<p class="flex align_center gap_0">
+										<span lang="y">4:5를 비율로 나타내면</span>
+										<span class="fraction_box ml_5"> <span>4</span><span>5</span> </span>
+										<span lang="y">입니다.</span>
+									</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+				<article class="page page_2">
+					<h3 lang="y">표를 완성해 보세요.</h3>
+					<div class="question_box justify_center">
+						<div class="table_wrap">
+							<table>
+								<colgroup>
+									<col />
+									<col />
+									<col />
+									<col />
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row" lang="y">비</th>
+										<td>8:10</td>
+										<td>16:12</td>
+										<td>4:5</td>
+									</tr>
+									<tr>
+										<th scope="row" lang="y">비율</th>
+										<td>
+											<div class="bracket">
+												<span class="fraction_box"><span>8</span><span>10</span></span>
+												<span class="bracket-l"></span>
+												=
+												<span class="fraction_box"><span>4</span><span>5</span></span>
+												<span class="bracket-r"></span>
+											</div>
+										</td>
+										<td>
+											<div class="bracket">
+												<span class="fraction_box"><span>16</span><span>12</span></span>
+												<span class="bracket-l"></span>
+												=
+												<span class="fraction_box"><span>4</span><span>3</span></span>
+												<span class="bracket-r"></span>
+											</div>
+										</td>
+										<td>
+											<span class="fraction_box"><span>4</span><span>5</span></span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="input_area">
+							<div class="input_wrap">
+								<math-field></math-field>
+								<div class="example_box">
+									<p>8</p>
+								</div>
+							</div>
+							:
+							<div class="input_wrap">
+								<math-field></math-field>
+								<div class="example_box">
+									<p>10</p>
+								</div>
+							</div>
+							=
+							<div class="input_wrap">
+								<math-field></math-field>
+								<div class="example_box">
+									<p>4</p>
+								</div>
+							</div>
+							:
+							<div class="input_wrap">
+								<math-field></math-field>
+								<div class="example_box">
+									<p>5</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex align_center gap_0">
+										<span lang="y">8:10을 비율로 나타내면</span>
+										<span class="fraction_box ml_5"> <span>8</span><span>10</span> </span>
+										=
+										<span class="fraction_box"> <span>4</span><span>5</span> </span>
+										,<span lang="y" class="ml_5">16:12를 비율로 나타내면</span>
+										<span class="fraction_box ml_5"> <span>16</span><span>12</span> </span>
+										=
+										<span class="fraction_box"> <span>4</span><span>13</span> </span>
+										,
+									</p>
+									<p class="flex align_center gap_0">
+										<span lang="y">4:5를 비율로 나타내면</span>
+										<span class="fraction_box ml_5"> <span>4</span><span>5</span> </span>
+										<span lang="y">입니다.</span>
+									</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnSubmit" data-submit="true">제출</button>
+					</div>
+				</article>
+			</section>
+		</div>
+		<!-- <script>
+			runAfterAppReady(() => {
+				$(".page_2 .btnSubmit").click(function () {
+					$(".page_2 .solve_area").addClass("active");
+				});
+				$(".page_2 .btnReset").click(function () {
+					$(".page_2 .solve_area").removeClass("active");
+				});
+			});
+		</script> -->
+	</body>
+</html>

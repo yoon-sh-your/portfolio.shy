@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_02_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_02_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">각기둥에서 평행한 두 면을 알아봅시다. </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="flex_cont_ty1">
+            <div class="picture_wrap">
+              <img src="../../common_contents/img/EMA612_02_SU/0005_content.png" alt="삼각기둥, 오각기둥, 육각기둥" />
+            </div>
+
+            <div class="input_area">
+              <h3 lang="y">색칠된 두 면의 공통점을 찾아 이야기해 보세요.</h3>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">두 면은 평행합니다. 두 면은 합동입니다. 두 면은 다각형입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="flex_cont_ty1">
+            <div class="picture_wrap">
+              <img src="../../common_contents/img/EMA612_02_SU/0005_content.png" alt="삼각기둥, 오각기둥, 육각기둥" />
+            </div>
+
+            <div class="input_area">
+              <h3 lang="y">색칠된 두 면은 나머지 면들과 어떻게 만나는지 이야기해 보세요.</h3>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">모두 수직으로 만납니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">약속해 볼까요</label>
+
+              <div>
+                <div class="diagram_set">
+                  <img src="../../common_contents/img/EMA612_02_SU/0005_diagram_check.png" alt="삼각기둥">
+                  <p class="t01" lang="y">ㄱ</p>
+                  <p class="t02" lang="y">밑면</p>
+                  <p class="t03" lang="y">ㄷ</p>
+                  <p class="t04" lang="y">ㄹ</p>
+                  <p class="t05" lang="y">ㅁ</p>
+                  <p class="t06" lang="y">ㅂ</p>
+                  <p class="t07" lang="y">밑면</p>
+                  <p class="t08" lang="y">ㄴ</p>
+                </div>
+
+                <div>
+                  <span lang="y">각기둥에서 면 ㄱㄴㄷ과 면 ㄹㅁㅂ과 같이</span>
+    
+                  <div>
+                    <span lang="y">평행하고 합동인 두 면을</span><button class="reveal_btn" data-pair="1" lang="y">밑면</button><span lang="y">이라고 합니다.</span>
+                  </div>
+
+                  <div>
+                    <span lang="y">이때 두 밑면은 나머지 면들과 모두</span><button class="reveal_btn" data-pair="2" lang="y">수직</button><span lang="y">으로 만납니다.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

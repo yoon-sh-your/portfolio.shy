@@ -1,0 +1,399 @@
+.ema525_03_ih_0001 .question_box {
+  align-items: flex-start;
+  white-space: normal;
+  width: 908px;
+  height: 206px;
+  padding: 0 60px;
+  background: url(../img/EMA525_03_IH/0001_bg.png) no-repeat center center / 100% 100%;
+}
+.ema525_03_ih_0001 .boolean_wrap {
+  display: inline-flex;
+}
+.ema525_03_ih_0001 .boolean_wrap button {
+  position: relative;
+  width: auto;
+  height: auto;
+  min-width: 68px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.ema525_03_ih_0001 .boolean_wrap button:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 68px;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border: 4px solid #222;
+}
+.ema525_03_ih_0001 .boolean_wrap button.selected:before {
+  content: '';
+}
+
+.ema525_03_ih_0001 .boolean_wrap button:not(.selected):hover:before {
+  content: '';
+  border-color: var(--primary-blue-300);
+}
+.ema525_03_ih_0001 .boolean_wrap.result button.hint[data-answer-single='true']:before {
+  content: '';
+  border-color: var(--font-negative);
+}
+.ema525_03_ih_0001 .boolean_wrap.result button.selected[data-answer-single='true']:before {
+  border-color: var(--primary-blue);
+  background: rgba(59, 113, 254, 0.3);
+}
+
+.ema525_03_ih_0002 .img {
+  position: relative;
+}
+.ema525_03_ih_0002 .boolean_wrap button {
+  position: absolute;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  top: 14px;
+}
+.ema525_03_ih_0002 .boolean_wrap button.selected {
+  border: 2px solid #222;
+}
+.ema525_03_ih_0002 .boolean_wrap button:nth-child(n + 4) {
+  top: auto;
+  bottom: 0;
+}
+.ema525_03_ih_0002 .boolean_wrap .button1 {
+  width: 190px;
+  height: 180px;
+  left: 14px;
+}
+.ema525_03_ih_0002 .boolean_wrap .button2 {
+  width: 241px;
+  height: 180px;
+  left: 340px;
+}
+.ema525_03_ih_0002 .boolean_wrap .button3 {
+  width: 164px;
+  height: 205px;
+  right: 0;
+}
+.ema525_03_ih_0002 .boolean_wrap .button4 {
+  width: 218px;
+  height: 186px;
+  left: 14px;
+}
+.ema525_03_ih_0002 .boolean_wrap .button5 {
+  width: 241px;
+  height: 186px;
+  left: 340px;
+}
+.ema525_03_ih_0002 .boolean_wrap .button6 {
+  width: 164px;
+  height: 186px;
+  right: 0;
+}
+.ema525_03_ih_0002 .boolean_wrap button {
+  background: none !important;
+  border: none !important;
+}
+.ema525_03_ih_0002 .boolean_wrap button:before {
+  position: absolute;
+  top: -19px;
+  left: -19px;
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  border: 4px solid transparent;
+}
+.ema525_03_ih_0002 .boolean_wrap button.selected:before {
+  content: '';
+}
+
+.ema525_03_ih_0002 .boolean_wrap button.selected:before {
+  border-color: #222;
+}
+.ema525_03_ih_0002 .boolean_wrap button:not(.selected):hover:before {
+  content: '';
+  border-color: var(--primary-blue-300);
+}
+
+.ema525_03_ih_0002 .boolean_wrap.result button.hint {
+  border: none;
+}
+.ema525_03_ih_0002 .boolean_wrap.result button.hint[data-answer-single='true']:before {
+  content: '';
+  border-color: var(--font-negative);
+  background: rgba(255, 67, 67, 0.3);
+}
+.ema525_03_ih_0002 .boolean_wrap.result button.selected[data-answer-single='true']:before {
+  border-color: var(--primary-blue);
+  background: rgba(59, 113, 254, 0.3);
+}
+
+.ema525_03_ih_0003 .question_box {
+  align-items: flex-start;
+}
+.ema525_03_ih_0003 .question_box .input_wrap {
+  display: inline-flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.ema525_03_ih_0003 .question_box .input_wrap math-field[data-correction='true'] + .text_hint {
+  display: none;
+}
+.ema525_03_ih_0004 .custom_select.math_symbol {
+  width: 164px;
+  height: 34px;
+}
+.ema525_03_ih_0004 .line_00 .custom_select.math_symbol .select_options {
+  top: 18px;
+  left: 44px;
+  transform: unset;
+}
+.ema525_03_ih_0004 .img_box {
+  position: relative;
+  margin: 0 auto;
+  width: 761px;
+}
+.ema525_03_ih_0004 .img_box img {
+  width: 100%;
+}
+.ema525_03_ih_0004 .flex_col_box2 .img_paper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.ema525_03_ih_0004 button:focus,
+.ema525_03_ih_0004 button:focus-visible,
+.ema525_03_ih_0004 *[role='button']:focus,
+.ema525_03_ih_0004 *[role='button']:focus-visible {
+  outline: 3px dashed transparent !important;
+  outline-offset: -3px;
+  border-color: transparent !important;
+  /* border: 3px dashed black !important; */
+  border-radius: 8px;
+  box-sizing: border-box !important;
+  background-clip: padding-box !important;
+}
+
+/* 기본설정 */
+.flex_col_box2 .img_paper .dropdown_wrap {
+  position: absolute;
+}
+.flex_col_box2 .img_paper .custom_select.math_symbol .select_options li[data-value='solid'] {
+  background-size: 42px;
+  background-image: url(../img/EMA525_03_IH/0005_ico_solid.png);
+}
+.flex_col_box2 .img_paper .custom_select.math_symbol .select_options li[data-value='dotted'] {
+  background-size: 42px;
+  background-image: url(../img/EMA525_03_IH/0005_ico_dotted.png);
+}
+.flex_col_box2 .img_paper .custom_select.math_symbol .select_trigger.completion[data-value='solid'] {
+  background-image: none;
+  background-color: var(--primary-blue);
+}
+.flex_col_box2 .img_paper .custom_select.math_symbol .select_trigger.completion[data-value='dotted'] {
+  background-image: none;
+  background: repeating-linear-gradient(90deg, var(--primary-blue) 0px, var(--primary-blue) 3px, white 3px, white 6px);
+}
+.flex_col_box2 .img_paper .custom_dropdown.hint[data-answer-single='solid'] + .custom_select.math_symbol .select_trigger {
+  background-color: var(--primary-blue);
+}
+.flex_col_box2 .img_paper .custom_dropdown.hint[data-answer-single='dotted'] + .custom_select.math_symbol .select_trigger {
+  background-image: none;
+  background: repeating-linear-gradient(90deg, var(--primary-blue) 0px, var(--primary-blue) 3px, white 3px, white 6px);
+}
+.flex_col_box2 .img_paper .custom_select.math_symbol .select_trigger {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0;
+  height: 2px;
+  transform-origin: left center;
+  z-index: 1;
+  position: absolute;
+}
+.flex_col_box2 .img_paper .direction2 .custom_select.math_symbol .select_options {
+  top: -12px;
+}
+.flex_col_box2 .img_paper .direction3 .custom_select.math_symbol .select_options {
+  left: 0;
+}
+
+.flex_col_box2 .img_paper .direction1 .custom_select.math_symbol .select_trigger {
+  transform: rotate(30deg);
+}
+.flex_col_box2 .img_paper .direction1 .custom_select .text_hint {
+  transform: rotate(30deg);
+  top: 10px;
+  left: 0;
+  opacity: 0;
+}
+.flex_col_box2 .img_paper .direction2 .custom_select.math_symbol .select_trigger {
+  transform: rotate(330deg);
+}
+.flex_col_box2 .img_paper .direction2 .custom_select .text_hint {
+  transform: rotate(330deg);
+  top: -50px;
+  left: 10px;
+  opacity: 0;
+}
+.flex_col_box2 .img_paper .direction3 .custom_select.math_symbol .select_trigger {
+  transform: rotate(90deg);
+}
+.flex_col_box2 .img_paper .direction3 .custom_select .text_hint {
+  transform: rotate(90deg);
+  left: -40%;
+  opacity: 0;
+}
+
+.completed .custom_dropdown[data-answer-single='solid']:not(.correct) + .custom_select .select_trigger {
+  background: var(--stroke-error) !important;
+}
+.completed .custom_dropdown[data-answer-single='dotted']:not(.correct) + .custom_select .select_trigger {
+  background: repeating-linear-gradient(90deg, var(--stroke-error) 0px, var(--stroke-error) 3px, white 3px, white 6px) !important;
+}
+
+.ema525_03_ih_0004 .img_paper .line_00 {
+  top: 62px;
+  left: 487px;
+}
+.ema525_03_ih_0004 .img_paper .line_00 .custom_select.math_symbol .select_trigger {
+  width: 218px;
+  transform: rotate(0deg);
+  background-color: rgba(0, 0, 0, 1);
+  display: none;
+}
+.ema525_03_ih_0004 .img_paper .line_01 {
+  top: 344px;
+  left: 217px;
+}
+.ema525_03_ih_0004 .img_paper .line_01 .custom_select.math_symbol .select_trigger {
+  width: 189px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ema525_03_ih_0004 .img_paper .line_02 {
+  top: 438px;
+  left: 381px;
+}
+.ema525_03_ih_0004 .img_paper .line_02 .custom_select.math_symbol .select_trigger {
+  width: 189px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ema525_03_ih_0004 .img_paper .line_03 {
+  top: 249px;
+  left: 380px;
+}
+.ema525_03_ih_0004 .img_paper .line_03 .custom_select.math_symbol .select_trigger {
+  width: 189px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ema525_03_ih_0004 .img_paper .line_04 {
+  top: 344px;
+  left: 217px;
+}
+.ema525_03_ih_0004 .img_paper .line_04 .custom_select.math_symbol .select_trigger {
+  width: 189px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ema525_03_ih_0004 .img_paper .line_05 {
+  top: 61px;
+  left: 381px;
+}
+.ema525_03_ih_0004 .img_paper .line_05 .custom_select.math_symbol .select_trigger {
+  width: 188px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.ema525_03_ih_0005 .img_box {
+  position: relative;
+}
+.ema525_03_ih_0005 .img_paper .direction1 .custom_select.math_symbol .select_trigger {
+  width: 93px;
+}
+.ema525_03_ih_0005 .img_paper .direction2 .custom_select.math_symbol .select_trigger {
+  width: 230px;
+}
+.ema525_03_ih_0005 .img_paper .direction3 .custom_select.math_symbol .select_trigger {
+  width: 138px;
+}
+.ema525_03_ih_0005 .img_paper .line_01 {
+  top: 46px;
+  left: 358px;
+}
+.ema525_03_ih_0005 .img_paper .line_02 {
+  top: 160px;
+  left: 160px;
+}
+.ema525_03_ih_0005 .img_paper .line_03 {
+  top: 160px;
+  left: 160px;
+}
+.ema525_03_ih_0005 .img_paper .line_04 {
+  top: 207px;
+  left: 239px;
+}
+.ema525_03_ih_0005 .img_paper .line_05 {
+  top: 160px;
+  left: 160px;
+}
+.ema525_03_ih_0005 .img_paper .line_06 {
+  top: 207px;
+  left: 239px;
+}
+.ema525_03_ih_0005 .img_paper .line_07 {
+  top: 92px;
+  left: 438px;
+}
+.ema525_03_ih_0005 .img_paper .line_08 {
+  top: 298px;
+  left: 160px;
+}
+.ema525_03_ih_0005 .img_paper .line_09 {
+  top: 344px;
+  left: 240px;
+}
+.ema525_03_ih_0005 .img_paper .line_10 {
+  top: 46px;
+  left: 358px;
+}
+.ema525_03_ih_0005 .img_paper .line_11 {
+  top: 183px;
+  left: 358px;
+}
+.ema525_03_ih_0005 .img_paper .line_12 {
+  top: 298px;
+  left: 160px;
+}
+
+/* .example_box {
+    opacity: 1 !important;
+  } */
+
+/* .input_wrap .text_hint,
+  .dropdown_wrap .text_hint,
+  .dragndrop_fraction_wrap .drop_item::after {
+    opacity: 1 !important;
+  } */
+.ema525_03_ih_0006 .img {
+  position: relative;
+}
+.ema525_03_ih_0006 .img .txt {
+  position: absolute;
+  top: 130px;
+  left: 506px;
+  font-size: 30px;
+}
+.ema525_03_ih_0006 .img .txt.t2 {
+  top: 300px;
+  left: 451px;
+}
+.ema525_03_ih_0006 .img .txt.t3 {
+  top: 342px;
+  left: 158px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>EMA623_03_SU_0005_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css"/>
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_common.css"/>
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_03.css"/>
+    </head>
+    <body>
+        <div id="app_wrap" class="ema623_03_SU_0006">
+            <section class="title type2">
+                <h2 data-head="4_pink" lang="y">쌓기나무로 만든 모양과 위에서 본 모양을 보고 똑같은 모양으로 만드는 데 필요한 쌓기나무는 몇 개인지 구해 봅시다.</h2>
+            </section>
+
+            <section class="contents">
+                
+                <article class="page">
+                    <div class="item ">
+                        
+                        <p class="diagram_green_tag" lang="y">위에서 본 모양</p>
+                        <div class="question_box gap_8 justify_center">
+                                <div class="input_wrap short_width">
+                                  <math-field data-answer-single="10" placeholder="​" contenteditable="true" tabindex="0" id="page_4-math-field-3" sound="false" math-mode-space="\:" smart-fence="off" smart-superscript="off"></math-field><div class="text_hint">10</div>
+                                </div>
+                                <span lang="y">개</span>
+                              </div>
+
+                    </div>
+                    <div class="item ">
+                        
+                        <p class="diagram_green_tag" lang="y">위에서 본 모양</p>
+                        <div class="question_box gap_8 justify_center">
+                                <div class="input_wrap short_width">
+                                  <math-field data-answer-single="10" placeholder="​" contenteditable="true" tabindex="0" id="page_4-math-field-3" sound="false" math-mode-space="\:" smart-fence="off" smart-superscript="off"></math-field><div class="text_hint">10</div>
+                                </div>
+                                <span lang="y">개</span>
+                              </div>
+                    </div>
+                </article>
+
+                <div class="btn_area">
+                    <button class="btnType key">입력타입토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnCheck">확인</button>
+                    <button class="btnSubmit">제출</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

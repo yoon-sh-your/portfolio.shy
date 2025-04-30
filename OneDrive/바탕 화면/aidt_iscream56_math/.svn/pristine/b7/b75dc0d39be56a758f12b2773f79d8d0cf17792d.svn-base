@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_06_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_06_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">온도를 나타내는 단위로 섭씨온도(℃)와 화씨온도(℉)가 있습니다. 현재 기온이 59 ℉일 때 현재 기온을 섭씨온도로 나타내면<br />몇 도(℃)인지 하나의 식으로 나타내어 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_50">
+          <div class="img_box">
+            <div class="img_wrap">
+              <img src="../../common_practice/img/EMA511_06_IH/0006_bg.png" alt="" />
+              <p lang="y">섭씨온도(℃)는 화씨온도(℉)에서<br />32를 뺀 수에 10을 곱하고 18로 나누면<br />됩니다.</p>
+            </div>
+          </div>
+          <div class="question_box dir_col align_start gap_60">
+            <div class="flex align_center gap_12">
+              <span lang="y">식:</span>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="(59-32)×10÷18"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="15"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center gap_12">
+              <span lang="y">답:</span>
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="15"></math-field>
+              </div>
+              <span>℃</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <table>
+                  <tr>
+                    <td lang="y">(현재 기온)</td>
+                    <td>=(59-32)×10÷18</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=27×10÷18</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=270÷18=15(℃)</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA613_08_SU_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema613_08.css" />
+  <script src="./../../common_contents/js/ema613_08_su_0004.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema613_08_SU_0006">
+    <section class="title type2">
+      <h2 data-type="3" data-text="창의+" lang="y">지원이가 35.7÷3을 어림셈한 결과를 이용하여 몫의 소수점을 찍었습니다. 지원이가 어림셈한 방법을 이야기해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="img_row flex align-start">
+        <div class="input_area">
+          <div class="input_wrap">
+            <math-field class="textarea" id="inputElement01" type="text"></math-field>
+            <div class="example_box">
+              <p lang="y">35.7÷3을 36÷3으로 어림셈하면 약 12이므로 몫은 11.9입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="img_box f32b" lang="y">
+          <p>
+            <span class="boolean_wrap">
+              몫은 1
+              <button type="button" data-answer-single="false"><span>.</span></button>
+              1
+              <button type="button" data-answer-single="true"><span>.</span></button>
+              9일 것
+            </span>
+            같아. 왜냐하면....
+          </p>
+          <span class="name" lang="y">지원</span>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

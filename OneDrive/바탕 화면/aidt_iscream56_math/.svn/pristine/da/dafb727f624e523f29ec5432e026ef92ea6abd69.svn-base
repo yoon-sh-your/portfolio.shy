@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_05_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_05.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_05_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <div class="fraction_box ml_0">
+                <span>5</span>
+                <span>8</span>
+              </div>
+              -
+              <div class="fraction_box ml_2">
+                <span>3</span>
+                <span>10</span>
+              </div>
+              을 유나와 다른 방법으로 계산해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <!-- <h3 lang="y">위의 두 방법을 비교하여 이야기해 보세요.</h3> -->
+        <div class="question_box justify_center">
+          <div class="container_515">
+            <div class="top_515">
+              <span class="other_method_name" lang="y">유나</span>
+              <!-- <img src="../../common_contents/img/EMA515_05_SU/0005_operation.png" alt="" /> -->
+              <div class="operations">
+                <div class="fraction_box">
+                  <span>5</span>
+                  <span>8</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>10</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span> 5×10 </span>
+                  <span> 8×10 </span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span> 3×8 </span>
+                  <span> 10×8 </span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span> 50 </span>
+                  <span> 80 </span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span> 24 </span>
+                  <span> 80 </span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span> 26 </span>
+                  <span> 80 </span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span> 13 </span>
+                  <span> 40 </span>
+                </div>
+              </div>
+
+              <div class="abs-1">
+                <div>13</div>
+                <div class="line_515"></div>
+              </div>
+
+              <div class="abs-2">
+                <div>40</div>
+                <div class="line_515"></div>
+              </div>
+            </div>
+            <div class="bottom_515">
+              <div class="operations">
+                <div class="fraction_box">
+                  <span>5</span>
+                  <span>8</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>10</span>
+                </div>
+                =
+                <div class="input_wrap fraction_wrap frac1">
+                  <math-field data-answer-single="(5×5)/(8×5)-(3)×(4)/(10)×(4)"></math-field>
+                </div>
+                =
+                <div class="input_wrap fraction_wrap frac2">
+                  <math-field data-answer-single="(25)+(9)/(12)-(2)/(12)"></math-field>
+                </div>
+                =
+                <div class="input_wrap fraction_wrap frac3">
+                  <math-field data-answer-single="2+(7)/(12)"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

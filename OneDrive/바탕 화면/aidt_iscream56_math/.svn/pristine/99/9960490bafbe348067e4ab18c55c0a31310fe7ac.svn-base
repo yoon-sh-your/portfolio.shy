@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_07_IH_0004</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_07.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_07_ih_0004">
+			<section class="title type2">
+				<h2 data-head="4_deep_green" lang="y">
+					3000원짜리 과자를 사는 데 이준이와 동생이 돈을 7 : 3으로 나누어 내려고 합니다. 두 사람은 각각 얼마씩
+					내야 하는지 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center dir_col">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA624_07_IH/0004_01_bg.png" alt="" />
+						<div class="text_area">
+							<p class="name" lang="y">이준</p>
+							<div class="input_area">
+								3000×
+								<div class="fraction_box">
+									<span>
+										<span class="input_wrap" data-hint-position="up">
+											<math-field data-answer-single="7" class="w_80"></math-field>
+										</span>
+									</span>
+									<span>
+										<span class="input_wrap">
+											<math-field data-answer-single="10" class="w_80"></math-field>
+										</span>
+									</span>
+								</div>
+								=<span class="input_wrap">
+									<math-field data-answer-single="2100"></math-field>
+								</span>
+								<span lang="y">(원)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA624_07_IH/0004_02_bg.png" alt="" />
+						<div class="text_area">
+							<p class="name" lang="y">동생</p>
+							<div class="input_area">
+								3000×
+								<div class="fraction_box">
+									<span>
+										<span class="input_wrap" data-hint-position="up">
+											<math-field data-answer-single="3" class="w_80"></math-field>
+										</span>
+									</span>
+									<span>
+										<span class="input_wrap">
+											<math-field data-answer-single="10" class="w_80"></math-field>
+										</span>
+									</span>
+								</div>
+								=<span class="input_wrap">
+									<math-field data-answer-single="900"></math-field>
+								</span>
+								<span lang="y">(원)</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">해설 차후 적용</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

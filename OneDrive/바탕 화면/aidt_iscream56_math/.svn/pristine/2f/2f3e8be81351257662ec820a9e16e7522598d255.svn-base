@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_07_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_07_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y"><span class="tit_think"><img src="../../common_contents/common/img/title_mid_2.svg" alt="생각 깨우기">생각깨우기</span>의 건물을 분류해 봅시다.</h2>
+      </section> 
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">기준에 따라 건물을 분류해 보세요.</h3>
+
+          <div class="flex_row_box">
+            <div class="f_item">
+              <span class="num">가</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_01.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">나</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_02.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">다</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_03.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">라</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_04.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">마</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_05.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">바</span>
+
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_06.png" alt="각기둥">
+            </div>
+          </div>
+
+          <div class="tb_area">
+            <dl class="t_item_01">
+              <dt class="f24b">옆으로 둘러싼 면이 모두 삼각형인 건물</dt>
+              <dd>
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="가"></math-field>
+                </div>,
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="나"></math-field>
+                </div>,
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="라"></math-field>
+                </div>
+              </dd>
+            </dl>
+            <dl class="t_item_02">
+              <dt class="f24b">옆으로 둘러싼 면이 모두 삼각형은 아닌 건물</dt>
+              <dd>
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="다"></math-field>
+                </div>,
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="마"></math-field>
+                </div>,
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="바"></math-field>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">옆으로 둘러싼 면이 모두 삼각형인 건물은 어떤 특징이 있는지 이야기해 보세요.</h3>
+
+          <div class="flex_row_box">
+            <div class="f_item">
+              <span class="num">가</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_01.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">나</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_02.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">다</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_03.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">라</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_04.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">마</span>
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_05.png" alt="각기둥">
+            </div>
+
+            <div class="f_item">
+              <span class="num">바</span>
+
+              <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_06.png" alt="각기둥">
+            </div>
+          </div>
+
+          <div class="text_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                  <p lang="y">모든 면이 다각형으로 이루어져 있습니다.</p>
+              </div>
+            </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">약속해 볼까요</label>
+
+              <div class="diagram_set">
+                  <img src="../../common_contents/img/EMA612_07_SU/0003_diagram_set_check.png" alt="삼각뿔, 사각뿔, 오각뿔">
+              </div>
+
+              <div>
+                <span lang="y">위의 그림과 같이 한 개의 다각형을 옆으로 둘러싼 면이</span>
+              </div>
+
+              <div>
+                <span lang="y">모두 삼각형인 입체도형을</span><button class="reveal_btn" data-pair="1" lang="y">각뿔</button><span lang="y">이라고 합니다.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

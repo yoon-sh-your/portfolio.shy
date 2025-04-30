@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_03_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_03_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              준서는 브라우니를 
+                <div class="fraction_box">
+                  <span>1</span><span>2</span>
+              </div>
+              만큼 먹었습니다. 크기가 같은 브라우니를 하은이와 유주도 준서와 같은 양만큼 먹으려면 각각 얼마만큼
+            </div>
+            <div class="fraction_txt" lang="y">먹어야 하는지 알아봅시다.</div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align_start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+            <div class="picture_wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1" viewBox="0 0 788 624">
+                <text transform="translate(358 209)" fill="#807F7F">
+                  <tspan x="0" y="0" lang="y">나는 똑같이</tspan>
+                  <tspan x="-31" y="25" lang="y">4 조각으로 나누었어.</tspan>
+                </text>
+                <text transform="translate(488 287)" fill="#807F7F">
+                  <tspan x="0" y="0" lang="y">나는 똑같이</tspan>
+                  <tspan x="-23" y="22" lang="y">8 조각으로 나누었어.</tspan>
+                </text>
+                <text transform="translate(190 480)" fill="#fff">
+                  <tspan x="0" y="0" lang="y">준서</tspan>
+                  <tspan x="94" y="0" lang="y">하은</tspan>
+                  <tspan x="186" y="0" lang="y">유주</tspan>
+                </text>
+              </svg>
+              <img src="../../common_contents/img/EMA514_03_SU/0002_content.png" alt="자치회 활동 이미지" />
+            </div>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고, 세 사람이 브라우니를 같은 양만큼 먹으려면 어떻게<br />해야 할지 이야기해 봅시다.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">준서의 브라우니를 똑같이 4조각, 8조각으로 나누어서 준서가 먹은 양만큼 하은이와 유주가 각각 먹으면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" lang="y" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

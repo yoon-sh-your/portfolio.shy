@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_02_IH_0004</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_02_ih_0004 drawline">
+      <section class="title type2">
+        <h2 data-head="4_deep_green" lang="y">비율이 같은 비를 찾아 이어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_center">
+          <div class="flex align_center gap_12">
+            <ul class="connect_line_box start">
+              <li>3 : 7</li>
+              <li>4 : 9</li>
+              <li>12 : 6</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e1"],["s3","e2"]]'>
+              <div class="start_group">
+                <div class="connect_point" data-id="s1"></div>
+                <div class="connect_point" data-id="s2"></div>
+                <div class="connect_point" data-id="s3"></div>
+              </div>
+              <div class="end_group">
+                <div class="connect_point" data-id="e1"></div>
+                <div class="connect_point" data-id="e2"></div>
+                <div class="connect_point" data-id="e3"></div>
+              </div>
+              <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_line_box end">
+              <li>8 : 18</li>
+              <li>2 : 1</li>
+              <li>12 : 28</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>3 : 7의 전항과 후항에 4를 곱하면 12 : 28이 됩니다.</p>
+                <p>4 : 9의 전항과 후항에 2를 곱하면 8 : 18이 됩니다.</p>
+                <p>12 : 6의 전항과 후항을 6으로 나누면 2 : 1이 됩니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>context</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <!-- 커스텀 js-->
+    <script src="custom_answer_check.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_contents/common/css/app.css">
+
+    <style>
+        input{
+            width: 100px;
+            border: 2px solid cornflowerblue;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p:nth-child(2){
+            font-size: 40px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app_wrap" class="context">
+        <section class="contents">
+
+            <h1>숫자 입력창 태그(공통 정오답 기능 없음)로 알아보는 커스텀 정오답 체크 방법</h1>
+            <p>스크립트 구현 예시는 custom_answer_check.js 참고</p>
+            <p class="f24b">정답조건 = 숫자 입력창 value 값이 1 이상인경우</p>
+            <div class="f32b">
+                <input class="custom_check_target" type="number" data-answer-custom="min-1"/>
+            </div>
+
+            <h3>아래는 공통 정오답 기능이있는 math-field 태그 입니다. 커스텀 정오답 체크 기능 과 함께도 조건 검사가 가능합니다.</h3>
+            <div class="input_wrap">
+                <math-field class="custom_check_target" type="number" data-answer-single="7"/>
+            </div>
+
+            <div class="btn_area">
+                <!-- 불필요한 태그 제외 후 사용 -->
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnType formula">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">확인</button>
+                <button class="btnSample">예시</button>
+            </div>
+        </section>
+    </div>
+</body> 
+</html>

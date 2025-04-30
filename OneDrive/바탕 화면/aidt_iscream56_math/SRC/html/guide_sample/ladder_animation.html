@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사다리 타기</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_contents/common/css/app.css">
+
+    <script src="./ladder_animation.js"></script>
+    <style>
+        .ladder-container {
+            width: 800px;
+            height: 600px;
+            margin: 0 auto;
+            position: relative;
+            background-color: #FFF8E7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .obj_box {
+            position: absolute;
+            width: 550px;
+            height: 463.5px;
+        }
+        .obj_box1{
+            top: 100px;
+            left: 100px;
+            background: url("data:image/svg+xml,%3Csvg%20width%3D%22547%22%20height%3D%22464%22%20viewBox%3D%220%200%20547%20464%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%200.5V103L179%2098V155.5L365%2049V93H546V179.5L365%20144.5V228H179V288L1%20201.5V399.5L179%20372.5V406.5L365%20442V464%22%20stroke%3D%22black%22/%3E%3C/svg%3E") no-repeat;
+        }
+        .obj_box2{
+            top: 100px;
+            left: 100px;
+            background: url("data:image/svg+xml,%3Csvg%20width%3D%22546%22%20height%3D%22469%22%20viewBox%3D%220%200%20546%20469%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M179.5%200V95L1%20102V202.5L179.5%20288V315H362V352.5L545.5%20315V396L362%20401V435L179.5%20405.5V469%22%20stroke%3D%22black%22/%3E%3C/svg%3E") no-repeat;
+        }
+        .obj_box3{
+            top: 100px;
+            left: 278px;
+            background: url("data:image/svg+xml,%3Csvg%20width%3D%22368%22%20height%3D%22461%22%20viewBox%3D%220%200%20368%20461%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M186%200V50L1%20154.5V229H186V253.5H367.5V312.5L186%20350V395H367.5V460.5%22%20stroke%3D%22black%22/%3E%3C/svg%3E") no-repeat left;
+        }
+        .obj_box4{
+            top: 110px;
+            left: 98px;
+            background: url("data:image/svg+xml,%3Csvg%20width%3D%22548%22%20height%3D%22464%22%20viewBox%3D%220%200%20548%20464%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M547.5%200V78.5H370V138L547.5%20171.5V249.5H370V307.5H182.5V367L1%20396.5V463.5%22%20stroke%3D%22black%22/%3E%3C/svg%3E") no-repeat;
+        }
+
+        .obj_box .obj {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            background: #f00;
+            offset-rotate: 0deg;
+            offset-anchor: 50% 50%;
+        }
+
+        .path-draw {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .path-draw path {
+            display: flex;
+            align-items: flex-end;
+            stroke: #ff6b6b;
+            stroke-width: 8;
+            stroke-linecap: round;
+            fill: none;
+            stroke-dasharray: 3000;
+            stroke-dashoffset: 3000;
+        }
+
+        .obj_box1 .obj {
+            offset-path: path("M1 0.5V103L179 98V155.5L365 49V93H546V179.5L365 144.5V228H179V288L1 201.5V399.5L179 372.5V406.5L365 442V464");
+        }
+        .obj_box2 .obj {
+            offset-path: path("M179.5 0V95L1 102V202.5L179.5 288V315H362V352.5L545.5 315V396L362 401V435L179.5 405.5V469");
+        }
+        .obj_box3 .obj {
+            offset-path: path("M186 0V50L1 154.5V229H186V253.5H367.5V312.5L186 350V395H367.5V460.5");
+        }
+        .obj_box4 .obj {
+            offset-path: path("M547.5 0V78.5H370V138L547.5 171.5V249.5H370V307.5H182.5V367L1 396.5V463.5");
+        }
+        .obj_box1.active .obj {
+            animation: move1 4s linear forwards;
+        }
+        .obj_box2.active .obj {
+            animation: move2 4s linear forwards;
+        }
+        .obj_box3.active .obj {
+            animation: move3 4s linear forwards;
+        }
+        .obj_box4.active .obj {
+            animation: move4 4s linear forwards;
+        }
+
+        .active .path-draw.path1 path {
+            animation: drawPath1 4.5s linear forwards;
+        }
+       .active .path-draw.path2 path {
+            animation: drawPath2 6.5s linear forwards;
+        }
+        .active .path-draw.path3 path {
+            animation: drawPath3 8.3s linear forwards;
+        }
+        .active .path-draw.path4 path {
+            animation: drawPath4 7.5s linear forwards;
+        }
+
+        @keyframes move1 {
+            from { offset-distance: 0%; }
+            to { offset-distance: 100%; }
+        }
+        @keyframes move2 {
+            from { offset-distance: 0%; }
+            to { offset-distance: 100%; }
+        }
+        @keyframes move3 {
+            from { offset-distance: 0%; }
+            to { offset-distance: 100%; }
+        }
+        @keyframes move4 {
+            from { offset-distance: 0%; }
+            to { offset-distance: 100%; }
+        }
+
+        @keyframes drawPath1 {
+            to { stroke-dashoffset: 100%; }
+        }
+        @keyframes drawPath2 {
+            to { stroke-dashoffset: 100%; }
+        }
+        @keyframes drawPath3 {
+            to { stroke-dashoffset: 100%; }
+        }
+        @keyframes drawPath4 {
+            to { stroke-dashoffset: 100%; }
+        }
+
+        .obj {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #ff6b6b;
+            box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .start-point {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #4CAF50;
+            position: absolute;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+            z-index: 10;
+        }
+
+        .start-point:hover {
+            transform: scale(1.1);
+            background: #45a049;
+        }
+
+        .start-point1 { top: 80px; left: 80px; }
+        .start-point2 { top: 80px; left: 260px; }
+        .start-point3 { top: 80px; left: 445px; }
+        .start-point4 { top: 80px; left: 620px; }
+    </style>
+</head>
+
+<body>
+    <div id="app_wrap" class="ladder_animation">
+        <section class="contents">
+            <div class="ladder-container">
+                <div class="start-point start-point1"></div>
+                <div class="start-point start-point2"></div>
+                <div class="start-point start-point3"></div>
+                <div class="start-point start-point4"></div>
+                <div class="obj_box obj_box1">
+                    <div class="path-draw path1">
+                        <svg width="547" height="464" viewBox="0 0 547 464">
+                            <path d="M1 0.5V103L179 98V155.5L365 49V93H546V179.5L365 144.5V228H179V288L1 201.5V399.5L179 372.5V406.5L365 442V464"/>
+                        </svg>
+                    </div>
+                    <div class="obj"></div>
+                </div>
+                <div class="obj_box obj_box2">
+                    <div class="path-draw path2">
+                        <svg width="546" height="469" viewBox="0 0 546 469">
+                            <path d="M179.5 0V95L1 102V202.5L179.5 288V315H362V352.5L545.5 315V396L362 401V435L179.5 405.5V469"/>
+                        </svg>
+                    </div>
+                    <div class="obj"></div>
+                </div>
+                <div class="obj_box obj_box3">
+                    <div class="path-draw path3">
+                        <svg width="368" height="461" viewBox="0 0 368 461">
+                            <path d="M186 0V50L1 154.5V229H186V253.5H367.5V312.5L186 350V395H367.5V460.5"/>
+                        </svg>
+                    </div>
+                    <div class="obj"></div>
+                </div>
+                <div class="obj_box obj_box4">
+                    <div class="path-draw path4">
+                        <svg width="548" height="464" viewBox="0 0 548 464">
+                            <path d="M547.5 0V78.5H370V138L547.5 171.5V249.5H370V307.5H182.5V367L1 396.5V463.5"/>
+                        </svg>
+                    </div>
+                    <div class="obj"></div>
+                </div>
+            </div>
+            <div class="flex align_center justify_center gap_40">
+                <!-- 단답형 -->
+                <div class="input_wrap input1">
+                    <math-field type="number" data-answer-single="1" text-align="center" placeholder="숫자만" disabled></math-field>
+                </div>
+                <!-- 단답형 -->
+                <div class="input_wrap input2">
+                    <math-field type="number" data-answer-single="2" text-align="center" placeholder="숫자만" disabled></math-field>
+                </div>
+                <!-- 단답형 -->
+                <div class="input_wrap input3">
+                    <math-field type="number" data-answer-single="3" text-align="center" placeholder="숫자만" disabled></math-field>
+                </div>
+                <!-- 단답형 -->
+                <div class="input_wrap input4">
+                    <math-field type="number" data-answer-single="4" text-align="center" placeholder="숫자만" disabled></math-field>
+                </div>
+            </div>
+        </section>
+        <div class="btn_area">
+            <!-- 불필요한 태그 제외 후 사용 -->
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

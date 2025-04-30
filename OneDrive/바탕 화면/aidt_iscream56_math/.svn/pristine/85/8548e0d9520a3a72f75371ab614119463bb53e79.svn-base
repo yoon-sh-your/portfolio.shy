@@ -1,0 +1,62 @@
+.title.group .pink {
+  color: #e05167;
+}
+
+.img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 60px;
+}
+
+.table_wrap {
+  width: 1442px;
+}
+.table_wrap th,
+.table_wrap td {
+  width: 16.666%;
+}
+
+.question_box.relation {
+  gap: 10px;
+  padding: 0 30px;
+}
+.question_box.relation + .question_box.relation {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px dashed #fceaec;
+}
+.question_box.relation .input_wrap_underline math-field {
+  width: 580px;
+}
+
+.ema513_02_ih_0002 .question_box {
+  position: relative;
+  height: 148px;
+  padding: 0 40px;
+  border: 20px solid #fceaec;
+  border-radius: 148px;
+}
+.ema513_02_ih_0002 .question_box:before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  right: -12px;
+  bottom: -12px;
+  border: 4px dashed #fff;
+  border-radius: 128px;
+}
+
+.ema513_02_ih_0005 .question_box.relation {
+  align-items: flex-start;
+}
+.ema513_02_ih_0005 .question_box.relation .label_gray {
+  margin-top: 13px;
+}
+
+.ema513_02_ih_0007 .question_box.justify_center {
+  margin-top: 60px;
+  gap: 70px;
+}

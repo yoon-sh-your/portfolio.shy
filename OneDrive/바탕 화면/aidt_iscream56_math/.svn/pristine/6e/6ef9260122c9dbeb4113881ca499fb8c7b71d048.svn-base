@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_03.css" />
+
+
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_03_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6_orange" class="is_star" lang="y"> 직육면체의 부피가 480 cm³일 때, 높이는 몇 cm인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+       
+        <div class="question_box justify_center">
+            <img src="../../common_practice/img/EMA616_03_IH/616_03_06.png" alt="">
+        </div>
+
+        <div class="box_cm">
+          <span class="cm1">2cm</span>
+          <span class="cm2">4cm</span>
+      
+        </div>
+        <div class="flex  justify_center  align_center">
+            <div class="input_wrap">
+                <math-field data-answer-single="12" text-align="center"><math-field>
+            </div>
+            <h2><span>배</span></h2>
+           
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">     직육면체의 높이를 cm라고  <span class="empty_box nemo"></span> 하면 8X5  <span class="empty_box nemo"></span>= 480 , 40X  <span class="empty_box nemo"></span>= 480, </p>
+                <p lang="y">  <span class="empty_box nemo"></span> =480÷40=12 입니다. 따라서 직육면체의 높이는 12 cm입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+              <div>
+                <button type="button" class="btnVideo"><span lang="y">해설 영상</span></button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+/*EMA611_04_SU_0002_s*/
+
+/*EMA614_02_SU_0003_s*/
+.ema614_02_su_0003 .page_1 .question_box {
+  flex-direction: column;
+  gap: 88px;
+}
+.ema614_02_su_0003 .page_1 .row {
+  display: flex;
+  align-items: center;
+}
+.ema614_02_su_0003 .page_1 .row .f32b + .input_wrap {
+  margin-left: 8px;
+}
+.ema614_02_su_0003 .page_3 .fraction_box .input_wrap {
+  min-width: 80px;
+}
+.ema614_02_su_0003 .page_3 math-field {
+  width: 80px;
+}
+
+.ema614_02_su_0003 .page_4 .speech_bubble {
+  background: url(../img/EMA614_02_SU/0003_bg.png) no-repeat 0 0;
+  background-size: contain;
+  height: 210px;
+  width: 494px;
+  position: absolute;
+  top: 400px;
+  right: 140px;
+  display: flex;
+  padding: 22px 36px;
+}
+.ema614_02_su_0003 .page_4 .speech_bubble .bubble_txt {
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+/* ema614_02_su_0004 */
+.ema614_02_su_0004:not([data-current-page="page_5"]) .btn_area .btnSubmit,
+.ema614_02_su_0004[data-current-page="page_5"] .btn_area .btnCheck{
+  display: none;
+}
+.ema614_02_su_0004 .page_1 .question_box {
+  flex-direction: column;
+  gap: 88px;
+}
+.ema614_02_su_0004 .page_1 .row {
+  display: flex;
+  align-items: center;
+}
+.ema614_02_su_0004 .page_1 .row .f32b + .input_wrap,
+.ema614_02_su_0004 .page_3 .row .f32b + .input_wrap {
+  margin-left: 8px;
+}
+.ema614_02_su_0004 .page_2 .question_box {
+  justify-content: center;
+}
+.ema614_02_su_0004 .page_2 .table_box {
+  background: url(../img/EMA614_02_SU/0004_bg.png) no-repeat 0 0;
+  width: 1240px;
+  height: 202px;
+}
+.ema614_02_su_0004 .page_2 .table_box th[scope="row"] {
+  width: 270px;
+  height: 66px;
+}
+.ema614_02_su_0004 .page_2 .table_box td {
+  width: 198px;
+  text-align: center;
+}
+.ema614_02_su_0004 .page_2 .table_box th,
+.ema614_02_su_0004 .page_2 .table_box td {
+  height: 67px;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+.ema614_02_su_0004 .page_3 .question_box {
+  flex-direction: column;
+  gap: 88px;
+}
+.ema614_02_su_0004 .page_3 .row {
+  display: flex;
+  align-items: center;
+}
+
+.ema614_02_su_0004 .page_4 .question_box {
+  display: flex;
+}
+
+.ema614_02_su_0004 .page_5 .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.ema614_02_su_0004 .page_5 .row:nth-of-type(2) {
+  margin-top: 10px;
+}
+.ema614_02_su_0004 .page_5 .row .col {
+  display: flex;
+  align-items: center;
+}
+
+.ema614_02_su_0004 .page_5 .speech_bubble {
+  background: url(../img/EMA614_02_SU/0004_bg2.png) no-repeat 0 0;
+  width: 286px;
+  height: 160px;
+  display: flex;
+  padding: 29px 40px;
+}
+.ema614_02_su_0004 .page_5 .speech_bubble .bubble_txt {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+
+.ema614_02_su_0004 .page_5 .row:nth-of-type(2) .input_wrap {
+  width: 100%;
+}
+.ema614_02_su_0004 .page_5 .row math-field.textarea {
+  min-height: 106px;
+}
+
+/* ema614_02_su_0005 */
+.ema614_02_su_0005:not([data-current-page="page_2"]) .btn_area .btnSubmit,
+.ema614_02_su_0005[data-current-page="page_2"] .btn_area .btnCheck{
+  display: none;
+}
+.ema614_02_su_0005 .page_1 .question_box {
+  justify-content: center;
+  background: url(../img/EMA614_02_SU/0005_bg.png) no-repeat 50% 20px;
+  padding-top: 230px;
+}
+.ema614_02_su_0005 .page_1 .table_box {
+  background: url(../img/EMA614_02_SU/0004_bg.png) no-repeat 0 0;
+  width: 1240px;
+  height: 202px;
+}
+.ema614_02_su_0005 .page_1 .table_box thead th {
+  height: 66px;
+}
+.ema614_02_su_0005 .page_1 .table_box th[scope="row"] {
+  width: 270px;
+  height: 66px;
+}
+.ema614_02_su_0005 .page_1 .table_box td {
+  width: 198px;
+  text-align: center;
+}
+.ema614_02_su_0005 .page_1 .table_box th,
+.ema614_02_su_0005 .page_1 .table_box td {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+.ema614_02_su_0005 .page_2 .question_box {
+  flex-direction: column;
+  gap: 20px;
+}
+.ema614_02_su_0005 .page_2 .row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ema614_02_su_0005 .page_2 .row:before {
+  content: "";
+  background: url(../img/EMA614_02_SU/0005_bg.png) no-repeat 50% 20px;
+  display: inline-block;
+  width: 325px;
+  height: 182px;
+  margin-right: 20px;
+}
+.ema614_02_su_0005 .page_2 .row + .input_wrap {
+  width: 100%;
+}
+.ema614_02_su_0005 .page_2 .row + .input_wrap math-field.textarea {
+  min-height: 106px;
+}

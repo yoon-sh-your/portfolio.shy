@@ -1,0 +1,105 @@
+document.addEventListener("DOMContentLoaded", () => {
+    //분수 계산
+    function gcd(a, b) {
+        return b === 0 ? a : gcd(b, a % b);
+    }
+
+    function cleanTextValue(str) {
+        const match = str.match(/\\text\{(.+?)\}/);
+        return match ? match[1] : str;
+    }
+
+    function updateAnswer() {
+        const result = document.getElementById('result');
+        result.setAttribute("data-answer-single", "");
+
+        const gRaw = document.getElementById('grape').value;
+        const oRaw = document.getElementById('orange').value;
+
+        const gClean = cleanTextValue(gRaw.replace(/[\s()]/g, ''));
+        const oClean = cleanTextValue(oRaw.replace(/[\s()]/g, ''));
+
+        let gN, gD, oN, oD;
+
+        if (gClean.includes('/')) {
+            [gN, gD] = gClean.split('/');
+        } else if (!isNaN(gClean) && gClean !== '') {
+            gN = gClean;
+            gD = "1";
+        } else {
+            return;
+        }
+
+        if (oClean.includes('/')) {
+            [oN, oD] = oClean.split('/');
+        } else if (!isNaN(oClean) && oClean !== '') {
+            oN = oClean;
+            oD = "1";
+        } else {
+            return;
+        }
+
+        if (
+            isNaN(Number(gN)) || isNaN(Number(gD)) ||
+            isNaN(Number(oN)) || isNaN(Number(oD)) ||
+            Number(oN) === 0
+        ) {
+            return;
+        }
+
+        const gNum = Number(gN);
+        const gDen = Number(gD);
+        const oNum = Number(oN);
+        const oDen = Number(oD);
+
+        const top = gNum * oDen;
+        const bottom = gDen * oNum;
+        const div = gcd(top, bottom);
+        const simpTop = top / div;
+        const simpBottom = bottom / div;
+
+        const answerStr = simpBottom === 1 ?
+            `${simpTop}` :
+            `(${simpTop})/(${simpBottom})`;
+
+        result.setAttribute("data-answer-single", answerStr);
+    }
+
+    function cleanMathInput(value) {
+        const match = value.match(/\\text\{(.+?)\}/);
+        return match ? match[1] : value;
+    }
+
+    function checkUserAnswer() {
+        const result = document.getElementById('result');
+        const userInput = cleanMathInput(result.getValue());
+        const correctAnswer = result.getAttribute("data-answer-single");
+
+        if (!correctAnswer || correctAnswer === "") {
+            result.setAttribute("data-correction", "false");
+            return;
+        }
+
+        if (userInput === correctAnswer) {
+            result.setAttribute("data-correction", "true");
+        } else {
+            result.setAttribute("data-correction", "false");
+        }
+    }
+
+    document.getElementById('grape').addEventListener('input', () => {
+        updateAnswer();
+        setTimeout(checkUserAnswer, 0);
+    });
+
+    document.getElementById('orange').addEventListener('input', () => {
+        updateAnswer();
+        setTimeout(checkUserAnswer, 0);
+    });
+
+    document.getElementById('result').addEventListener('input', () => {
+        checkUserAnswer();
+    });
+
+
+});

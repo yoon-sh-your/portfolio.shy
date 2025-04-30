@@ -1,0 +1,176 @@
+@charset "uft-8";
+/* .ema516_16_su_0004 */
+.ema516_16_su_0004#app_wrap {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.ema516_16_su_0004 .map {
+    width: 1100px;
+    height: 681px;
+    display: grid;
+    grid-template-columns: repeat(36, 29.6px);
+    grid-template-rows: repeat(24, 27.1px);
+    background: #ccc;
+    padding: 19px 15px 17px 17px;
+    position: relative;
+    background: url("../../common_contents/img/EMA516_16_SU/map.png") no-repeat center;
+}
+
+.tile {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.tile.marked {
+    border: none;
+}
+
+.tile.marked.border-top {
+    border-top: 2px solid;
+}
+.tile.marked.border-bottom {
+    border-bottom: 2px solid;
+}
+.tile.marked.border-left {
+    border-left: 2px solid;
+}
+.tile.marked.border-right {
+    border-right: 2px solid;
+}
+
+.tile .mini-treasure {
+    width: 29px;
+    height: 27px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 65px;
+}
+
+.dice-wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+    align-items: center;
+    border-radius: 30px;
+    background: #eef0f4;
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.dice {
+    width: 133px;
+    height: 138px;
+    background: url("../../common_contents/img/EMA516_16_SU/dice-1.png") no-repeat center;
+}
+.dice[data-value="1"] {
+    background: url("../../common_contents/img/EMA516_16_SU/dice-1.png") no-repeat center;
+}
+.dice[data-value="2"] {
+    background: url("../../common_contents/img/EMA516_16_SU/dice-2.png") no-repeat center;
+}
+.dice[data-value="3"] {
+    background: url("../../common_contents/img/EMA516_16_SU/dice-3.png") no-repeat center;
+}
+.dice[data-value="4"] {
+    background: url("../../common_contents/img/EMA516_16_SU/dice-4.png") no-repeat center;
+}
+.dice[data-value="5"] {
+    background: url("../../common_contents/img/EMA516_16_SU/dice-5.png") no-repeat center;
+}
+.dice[data-value="6"] {
+    background: url("../../common_contents/img/EMA516_16_SU/dice-6.png") no-repeat center;
+}
+
+.treasure-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    border: 4px solid #e8e8e8;
+}
+
+.treasure {
+    width: 168px;
+    height: 129px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: grab;
+}
+
+.treasure-1 {
+    background: url("../../common_contents/img/EMA516_16_SU/treasure-1.png") no-repeat center;
+}
+
+.treasure-2 {
+    background: url("../../common_contents/img/EMA516_16_SU/treasure-2.png") no-repeat center;
+}
+
+.color-popup {
+    position: absolute;
+    display: none;
+    width: 128px;
+    height: 83px;
+    background: url("../../common_contents/img/EMA516_16_SU/color-bg.png") no-repeat center;
+    z-index: 1000;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 8px;
+    padding-bottom: 9px;
+}
+
+.color-option {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+    display: inline-block;
+    cursor: pointer;
+}
+.color-option[data-color="#07BBA9"] {
+    background: #07bba9;
+}
+.color-option[data-color="#6247DC"] {
+    background: #6247dc;
+}
+
+#startBtn {
+    /* 놀더 보물상자 map에 들어가면 시작버튼 활성화 색상*/
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 12px 20px;
+    box-shadow: 0px 8px 24px 0px #0000001f;
+}
+
+.device_change {
+    background-color: var(--secondary-red);
+}
+.device_change {
+    display: none;
+}
+.teacher .device_change {
+    display: block;
+}

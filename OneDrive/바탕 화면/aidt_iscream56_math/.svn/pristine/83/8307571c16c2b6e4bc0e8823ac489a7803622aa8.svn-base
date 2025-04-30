@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_06_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_06_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1">
+          <span lang="y">버림하여 나타낸 수에 <span class="ico_round"></span></span>
+          <span lang="y" class="ml-6">표 하세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="boolean_wrap justify_center">
+          <div class="boolean_row">
+            <div class="text">
+              <p lang="y">472를 버림하여 십의 자리까지 나타낸 수</p>
+            </div>
+            <div class="boolean_box">
+              <span>(</span>
+              <button type="button" data-answer-single="false">460</button>
+              <button type="button" data-answer-single="true">470</button>
+              <button type="button" data-answer-single="false">480</button>
+              <span>)</span>
+            </div>
+          </div>
+        </div>
+        <div class="boolean_wrap justify_center">
+          <div class="boolean_row">
+            <div class="text">
+              <p lang="y">1209를 버림하여 백의 자리까지 나타낸 수</p>
+            </div>
+            <div class="boolean_box">
+              <span>(</span>
+              <button type="button" data-answer-single="true">1200</button>
+              <button type="button" data-answer-single="false">1300</button>
+              <button type="button" data-answer-single="false">1400</button>
+              <span>)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">472의 십의 자리 아래 수인 2를 0으로 생각하여 십의 자리까지 나타내면 470입니다.</p>
+                <p lang="y" class="text_bullet">1209의 백의 자리 아래 수인 9를 0으로 생각하여 백의 자리까지 나타내면 1200입니다.</p>
+                <p class="text_label">
+                  <span class="label important" lang="y">중요</span>
+                  <span lang="y">버림은 구하려는 자리의 아래 수를 버려서 나타내는 방법입니다.</span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

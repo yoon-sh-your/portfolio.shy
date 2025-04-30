@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA511_SU_0004_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema511_512_su_common.css" />
+        <link rel="stylesheet" href="./../../common_contents/css/ema511_su.css" />
+    </head>
+
+    <body>
+        <div id="app_wrap" class="ema511_su_0004">
+            <!-- S: tutorial  -->
+            <ol class="tutorial-steps" aria-label="게임 시작을 위한 순서 안내" lang="y">
+                <li class="step step-1" data-number="①">
+                    <div class="a11y-hidden">1단계</div>
+                    숫자를 입력합니다.
+                </li>
+                <li class="step step-2" data-number="②">
+                    <div class="a11y-hidden">2단계</div>
+                    숫자를 모두 입력하면 준비 완료를 누릅니다.
+                </li>
+                <li class="step step-3" data-number="③">
+                    <div class="a11y-hidden">3단계</div>
+                    카드를 뽑습니다.
+                </li>
+                <li class="step step-4" data-number="④">
+                    <div class="a11y-hidden">4단계</div>
+                    식을 완성합니다.
+                </li>
+                <li class="step step-5" data-number="⑤">
+                    <div class="a11y-hidden">5단계</div>
+                    식의 정답이 맞으면 해당 숫자를 선택하여 빙고를 완성합니다.
+                </li>
+            </ol>
+            <!-- E: tutorial  -->
+
+            <section class="title type2">
+                <h2 data-type="5" lang="y">각자 놀이판을 완성한 다음 순서를 정해 놀이를 시작해 봅시다.</h2>
+            </section>
+            <section class="contents">
+                <div class="flex gap_100">
+                    <div class="col left bingo_board">
+                        <div class="bingo_toggle">
+                            <span lang="y">높이판 보이기</span>
+                            <div class="toggle-wrapper">
+                                <input type="checkbox" id="toggleSwitch" class="toggle-input" role="switch" aria-checked="false" onchange="this.setAttribute('aria-checked', this.checked)" />
+                                <label for="toggleSwitch" class="toggle-label" aria-label="기능 켜기/끄기 토글"></label>
+                            </div>
+                            <span lang="y">높이판 가리기</span>
+                        </div>
+                        <ul class="btn_grid" aria-label="빙고 게임판">
+                            <li>
+                                <button class="reveal_btn" aria-label="1행 1열"></button>
+                                <!-- <div class="num">1</div> -->
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="1행 2열"></button> -->
+                                <div class="num">2</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="1행 3열"></button> -->
+                                <div class="num bingo">3</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="1행 4열"></button> -->
+                                <div class="num">4</div>
+                            </li>
+
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="2행 1열"></button> -->
+                                <div class="num">5</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="2행 2열"></button> -->
+                                <div class="num">6</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="2행 3열"></button> -->
+                                <div class="num">7</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="2행 4열"></button> -->
+                                <div class="num">8</div>
+                            </li>
+
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="3행 1열"></button> -->
+                                <div class="num">9</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="3행 2열"></button> -->
+                                <div class="num">10</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="3행 3열"></button> -->
+                                <div class="num">11</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="3행 4열"></button> -->
+                                <div class="num">12</div>
+                            </li>
+
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="4행 1열"></button> -->
+                                <div class="num">13</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="4행 2열"></button> -->
+                                <div class="num">14</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="4행 3열"></button> -->
+                                <div class="num">15</div>
+                            </li>
+                            <li>
+                                <!-- <button class="reveal_btn" aria-label="4행 4열"></button> -->
+                                <div class="num">16</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col right">
+                        <div class="card_group">
+                            <button type="button" class="card_back" lang="y" disabled>카드뽑기</button>
+                            <ul class="card_num_wrap"></ul>
+                        </div>
+                        <div class="calculation_wrap">
+                            <h3 lang="y">식을 만들어 보세요!</h3>
+                            <div class="input_area">
+                                <div class="input_wrap">
+                                    <input type="text" data-answer-single="15-(2+4)" />
+                                </div>
+                                <span class="equal">=</span>
+                                <div class="input_wrap">
+                                    <input type="text" data-answer-single="9" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device_change_wrap">
+                    <button class="device_change" lang="y">대표 기기 변경하기</button>
+                </div>
+                <div class="btn_area">
+                    <div class="ready_btn_wrap">
+                        <button class="ready" lang="y">준비 완료</button>
+                    </div>
+                    <button class="btnType key" lang="y">입력타입토글</button>
+                    <button class="btnReset btnBgDefault" lang="y">리셋</button>
+                    <button class="btnCheck btnBgDefault" lang="y">확인</button>
+                    <!-- <button class="btnSubmit btnBgDefault">확인</button> -->
+                </div>
+            </section>
+        </div>
+        <script src="../../common_contents/js/ema511_su.js"></script>
+    </body>
+</html>

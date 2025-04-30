@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA623_10_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <script src="./../../common_practice/js/ema623_10_ih_0001.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema623_10.css">
+  </head>
+  <body>
+
+    <!-- 창의 퍼즐 -->
+    <div id="app_wrap" class="ema622_10_ih_0001">
+        <section class="title type2">
+            <h2 data-puzzle="red" lang="y"> 
+                쌓기나무로 만든 모양을 보고 옳게 설명한 사람을 그림에서 모두 찾아 ◯표 하세요.
+            </h2>
+        </section>
+  
+        <section class="contents ">
+            <div class="question_box justify_center dir_col gap_30">
+                <div class="img_box">
+
+                    <div class="people_are">
+                        <div class="txt_are">
+                            <div class="txt txt01">
+                                <p lang="y">똑같은 모양으로<br>
+                                    만드는 데 필요한<br>
+                                    쌓기나무는 12개야.</p>
+                            </div>
+                            <div class="txt txt02">
+                                <p>
+                                    <span lang="y">옆에서 본 모양은 <br>
+                                        다음과 같아.</span><br>
+                                    <span class="point" lang="y">
+                                        옆에서 본 모양
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="txt txt03">
+                                <p>
+                                    <span lang="y">위에서 본 모양에<br>
+                                        수를 쓰면 다음과 같아.</span><br>
+                                    <span class="point" lang="y">
+                                        위에서 본 모양
+                                    </span>
+                                    <span class="num" lang="y">앞</span>
+                                </p>
+                            </div>
+                            <div class="txt txt04 on">
+                                <p lang="y">2층에 쌓여 있는<br>
+                                    쌓기나무는 2개야.</p>
+                            </div>
+                        </div>
+                        <div class="choice">
+                            <span class="choice01">
+                                <img src="../../common_practice/img/EMA623_10_IH/people01.png" alt="" />
+                            </span>
+                            <span class="choice02">
+                                <img src="../../common_practice/img/EMA623_10_IH/people02.png" alt="" />
+                            </span>
+                            <span class="choice03">
+                                <img src="../../common_practice/img/EMA623_10_IH/people03.png" alt="" />
+                            </span>
+                            <span class="choice04">
+                                <img src="../../common_practice/img/EMA623_10_IH/people04.png" alt="" />
+                            </span>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="img_select">
+                        <span class="boolean_wrap">
+                            <button data-answer-single="true"></button>
+                            <button data-answer-single="true"></button>
+                        </span>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="solve_area">
+                <div class="inner_solve">
+                  <div class="flex">
+                    <strong class="tit_solve" lang="y">해설</strong>
+                    <div class="conts_solve">
+                      <h3 lang="y">1층에 5개, 2층에 2개이므로 필요한 쌓기나무는
+                        7개입니다.</h3>
+                      <h3 lang="y">옆에서 본 모양은 가장 높은 층이 왼쪽에서부터
+                        1층, 2층입니다.</h3>
+                      <h3 lang="y" class="warp_flex">위에서 본 모양의 각 자리에 쌓여 있는 쌓기나무의 수를 세어 위에서 본 모양에 쓰면 다음과 같습니다.
+                        <span class="point">
+                            위에서 본 모양
+                        </span>
+                        <img src="../../common_practice/img/EMA623_10_IH/solve_img.png" alt="" />
+                      </h3>  
+                      <h3 lang="y">2층에 쌓여 있는 쌓기나무의 개수를 세어 보면
+                        2개입니다.</h3>
+                    </div>
+                  </div>
+                  <div class="buttons_solve"></div>
+                </div>
+              </div>
+
+
+
+
+           <div class="btn_area">
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+            </div>
+        </section>
+      </div>
+
+    
+  </body>
+</html>

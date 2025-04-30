@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_04_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_04_ih_0007">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="7" class="is_star2 fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <div class="operation_box ml_0">
+                <div class="fraction_box"><span>9</span><span>10</span></div>
+                <span>÷</span>
+                <span>4</span>
+              </div>
+              <span lang="y">에 알맞은 문제를 완성하고 답을 구해 보세요.</span>
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA611_04_IH/0007_01.png" alt="" />
+            <div class="text_area">
+              <dl>
+                <dt lang="y">문제 만들기</dt>
+                <dd class="flex align_center gap_10" lang="y">
+                  주스
+                  <div class="fraction_box"><span>9</span><span>10</span></div>
+                  L가 있습니다.
+                </dd>
+                <dd>
+                  <div class="input_wrap">
+                    <math-field class="textarea"></math-field>
+                    <div class="example_box">
+                      <p lang="y">주스를 병 4개에 똑같이 나누어 담을 때, 병 한 개에 담을 수 있는 주스의 양은 몇 L인지 구해 보세요.</p>
+                    </div>
+                  </div>
+                </dd>
+              </dl>
+              <div class="input_position">
+                <div class="input_wrap fraction_wrap">
+                  <math-field text-align="center" class="w_80"></math-field>
+                  <div class="example_box">
+                    <div class="fraction_box"><span>9</span><span>40</span></div>
+                  </div>
+                </div>
+                L
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">주어진 문장을 이용하여 나눗셈 상황이 되도록 문제를 만듭니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnSample">예시</button> -->
+          <!-- <button class="btnCheck"></button> -->
+          <button class="btnSubmit chk">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

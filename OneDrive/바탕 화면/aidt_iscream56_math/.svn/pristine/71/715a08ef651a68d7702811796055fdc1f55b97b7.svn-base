@@ -1,0 +1,190 @@
+.ema512_04_ih_0001 .question_box {
+  align-items: flex-start;
+}
+.ema512_04_ih_0001 .question_box .text_bullet {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ema512_04_ih_0002 .question_box {
+  justify-content: space-around;
+  position: relative;
+  max-width: 1424px;
+  margin: 0 auto 120px;;
+  gap: 0;
+  background: url(../img/EMA512_04_IH/0002_bg.png) no-repeat center center;
+}
+.ema512_04_ih_0002 .question_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  width: 450px;
+  height: 490px;
+}
+.ema512_04_ih_0002 .row {
+  display: flex;
+  align-items: center;
+}
+.ema512_04_ih_0002 .top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ema512_04_ih_0002 .question_block.left .top {
+  gap: 28px;
+}
+.ema512_04_ih_0002 .question_block.left .top .row {
+  gap: 12px;
+}
+.ema512_04_ih_0002 .question_block.right .top {
+  position: relative;
+  width: 250px;
+  padding-left: 32px;
+  padding-top: 2px;
+  background: url(../img/EMA512_04_IH/0002_img02.png) no-repeat right top;
+  gap: 2px;
+}
+.ema512_04_ih_0002 .question_block.right .top .num {
+  width: 35px;
+}
+.ema512_04_ih_0002 .question_block.right .top .left {
+  position: absolute;
+  right: 220px;
+}
+.ema512_04_ih_0002 .question_block.right .top .row {
+  height: 63px;
+  padding: 0 0 0 20px;
+  justify-content: space-around;
+}
+.ema512_04_ih_0002 .question_block.right .top .row:last-child {
+  padding-right: 98px;
+}
+.ema512_04_ih_0002 .question_block.right .top .right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.ema512_04_ih_0003 .question_box {
+  gap: 20px;
+}
+.ema512_04_ih_0003 .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 117px;
+  background: url(../img/EMA512_04_IH/0003_bg.png) no-repeat center center / auto 100%;
+  gap: 80px;
+}
+
+.solve_area .text_group {
+  display: flex;
+  flex-direction: column;
+  width: 234px;
+  background: url(../img/EMA512_04_IH/0003_solve.png) no-repeat 30px 0;
+  gap: 17px;
+  align-items: flex-end;
+  padding-right: 40px;
+}
+.solve_area .text_group .row {
+  display: flex;
+  gap: 30px;
+}
+.solve_area .text_group .row span {
+  width: 50px;
+  text-align: right;
+}
+.solve_area .text_group .row:not(:last-child) span:first-child {
+  width: auto;
+  margin-right: 20px;
+}
+
+.ema512_04_ih_0006 .img_wrap {
+  position: relative;
+}
+.ema512_04_ih_0006 .img_wrap .txt {
+  position: absolute;
+  top: 24px;
+  left: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+  height: 63px;
+  background-color: #fff;
+  font-size: 34px;
+  gap: 10px;
+  font-weight: bold;
+}
+.ema512_04_ih_0006 .img_wrap .color1 {
+  color: #444888;
+}
+.ema512_04_ih_0006 .img_wrap .color2 {
+  color: #62a058;
+}
+.ema512_04_ih_0006 .img_wrap .color3 {
+  color: #cd7073;
+}
+
+.ema512_04_ih_0007 .img_wrap {
+  position: relative;
+}
+.ema512_04_ih_0007 .img_wrap span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ema512_04_ih_0007 .img_wrap [class^='name'] {
+  width: 74px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: normal;
+}
+.ema512_04_ih_0007 .img_wrap [class^='text'] {
+  top: 20px;
+  width: 287px;
+  height: 165px;
+}
+.ema512_04_ih_0007 .img_wrap .name1 {
+  top: 209px;
+  left: 166px;
+  transform: rotate(-4deg);
+}
+.ema512_04_ih_0007 .img_wrap .name2 {
+  top: 213px;
+  left: 444px;
+  transform: rotate(3deg);
+}
+.ema512_04_ih_0007 .img_wrap .text1 {
+  left: 5px;
+}
+.ema512_04_ih_0007 .img_wrap .text2 {
+  left: 380px;
+}
+.ema512_04_ih_0007 .bottom {
+  width: 100%;
+  max-width: 1364px;
+  align-items: flex-start;
+}
+.ema512_04_ih_0007 .bottom .lab_right {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 14px;
+  background: #b5b5b6;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 48px 48px 0 48px;
+}
+.ema512_04_ih_0007 .bottom .input_wrap {
+  flex-grow: 1;
+}
+.ema512_04_ih_0007 .bottom .input_wrap math-field {
+  width: 100%;
+}

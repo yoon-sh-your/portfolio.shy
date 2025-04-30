@@ -1,0 +1,375 @@
+/* .title h2[data-head] .fraction_box {
+  margin-left: 0;
+} */
+.input_wrap:has(.w_80) {
+  width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.slash {
+  position: relative;
+}
+.slash:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 2px;
+  height: 48px;
+  background: #e4007f;
+}
+.slash .slash_txt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e4007f;
+  font-size: 24px;
+}
+.fraction_box.pos_custom > .input_wrap + span {
+  transform: translateY(-20px);
+}
+.fraction_box > span.slash:first-child .slash_txt {
+  top: -32px;
+}
+.fraction_box > span.slash:last-child .slash_txt {
+  bottom: -32px;
+}
+/* .fraction_box {
+  min-width: 40px;
+} */
+.input_wrap.fraction_wrap,
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+h3.title:before {
+  margin-top: 2px;
+}
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.fraction_box_wrap .fraction_box {
+  min-width: 0;
+}
+.label_bogi {
+  width: 52px;
+  height: 32px;
+  border: 2px solid var(--secondary-red);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--secondary-red);
+  z-index: 1;
+}
+
+.ema515_03_ih_0001 .img_box {
+  position: relative;
+  margin-top: 40px;
+}
+.ema515_03_ih_0001 .img_box [class^='item'] {
+  position: absolute;
+  top: -40px;
+}
+.ema515_03_ih_0001 .img_box .item1 {
+  left: -178px;
+}
+.ema515_03_ih_0001 .img_box .item2 {
+  right: -70px;
+  top: -14px;
+}
+.ema515_03_ih_0001 .img_box + .flex {
+  margin-top: 56px;
+}
+.ema515_03_ih_0001 .input_wrap,
+.ema515_03_ih_0001 .input_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+.ema515_03_ih_0002 .question_box {
+  gap: 55px;
+}
+.ema515_03_ih_0002 .input_wrap {
+  width: auto !important;
+}
+.ema515_03_ih_0002 .input_wrap.answer1 math-field {
+  width: 232px;
+}
+.ema515_03_ih_0002 .input_wrap.answer2 math-field {
+  width: 162px;
+}
+.ema515_03_ih_0002 .input_wrap.answer3 math-field {
+  width: 120px;
+}
+
+.ema515_03_ih_0003 .question_box {
+  gap: 200px;
+}
+/* .ema515_03_ih_0003 .input_wrap,
+.ema515_03_ih_0003 .input_wrap math-field {
+  width: 270px;
+} */
+
+.ema515_03_ih_0004 .img_box {
+  position: relative;
+  padding: 70px 0 120px;
+}
+.ema515_03_ih_0004 .img_box > div {
+  position: absolute;
+}
+.ema515_03_ih_0004 .img_box > .fraction_box {
+  top: 0;
+  left: 54px;
+  transform: translateX(-50%);
+}
+.ema515_03_ih_0004 .img_box > .flex {
+  top: 182px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -4px;
+}
+.ema515_03_ih_0004 .img_box > .mixed_fraction {
+  position: absolute;
+  bottom: -10;
+  right: 53px;
+  display: flex;
+  align-items: center;
+}
+.ema515_03_ih_0004 .img_box > .input_wrap {
+  bottom: 0;
+  right: 0;
+}
+.ema515_03_ih_0004 .img_box > .input_wrap,
+.ema515_03_ih_0004 .img_box > .input_wrap math-field {
+  width: 198px;
+}
+
+.ema515_03_ih_0005 .question_box > .flex {
+  background: #ecf6f3;
+  padding: 20px 50px;
+  border-radius: 50px;
+}
+
+.ema515_03_ih_0006 .question_box {
+  align-items: flex-start;
+  gap: 30px;
+}
+.ema515_03_ih_0006 .tabbox_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 0;
+  width: 800px;
+  padding: 10px;
+  border: 2px solid #fbcba1;
+  background: #fff4ea;
+  border-radius: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.ema515_03_ih_0006 .tabbox_wrap .top {
+  padding: 6px 40px;
+}
+.ema515_03_ih_0006 .tabbox {
+  position: relative;
+  width: 100%;
+  padding-top: 16px;
+}
+.ema515_03_ih_0006 .tabbox .tit_box {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 3px 24px 0;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  /* font-size: 20px; */
+  color: #c0573d;
+  font-weight: 700;
+}
+.ema515_03_ih_0006 .tabbox .conts_box {
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 40px;
+}
+.ema515_03_ih_0006 .tabbox .conts_box .input_wrap,
+.ema515_03_ih_0006 .tabbox .conts_box .input_wrap math-field {
+  width: 100%;
+}
+.ema515_03_ih_0006 .tabbox .conts_box .example_box {
+  font-size: 24px;
+  color: #1454b9;
+  white-space: normal;
+}
+.ema515_03_ih_0006 .tabbox .conts_box .example_box:before {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  border-radius: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ema515_03_ih_0006 .tabbox .conts_box .fraction_box {
+  vertical-align: middle;
+  gap: 8px;
+}
+.ema515_03_ih_0006 .tabbox .conts_box .fraction_box:before {
+  background-color: #1454b9;
+}
+.ema515_03_ih_0006 .tabbox .question_box {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+/* .ema515_03_ih_0006 .tabbox .input_wrap math-field {
+  width: 168px;
+} */
+.ema515_03_ih_0006 .tabbox .input_wrap.answer1 math-field {
+  width: 215px;
+}
+.ema515_03_ih_0006 .tabbox.right {
+  position: relative;
+  width: 700px;
+  padding-top: 16px;
+}
+.ema515_03_ih_0006 .tabbox.right .tit_tabbox {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding: 3px 20px 0;
+  border-radius: 16px;
+  background: #fef6ed;
+  line-height: 32px;
+  /* font-size: 20px; */
+  color: #c45938;
+  font-weight: bold;
+}
+.ema515_03_ih_0006 .tabbox.right .conts_tabbox {
+  border-radius: 48px;
+  background: #fef6ed;
+  padding: 30px 20px 20px;
+}
+.ema515_03_ih_0006 .tabbox.right .flex {
+  height: 190px;
+  background: #fff;
+  border: 1px dashed #facc9c;
+  border-radius: 40px;
+}
+.ema515_03_ih_0006 .tabbox.right .input_wrap {
+  width: auto;
+}
+.ema515_03_ih_0006 .tabbox.right .input_wrap.answer1 math-field {
+  width: 152px;
+}
+.ema515_03_ih_0006 .tabbox.right .input_wrap.answer3 math-field {
+  width: 100px;
+}
+
+.ema515_03_ih_0007 .question_box.gap_20 {
+  align-items: flex-start;
+}
+.ema515_03_ih_0007 .question_box .img_box {
+  position: relative;
+}
+.ema515_03_ih_0007 .question_box .img_box span,
+.ema515_03_ih_0007 .question_box .img_box button {
+  position: absolute;
+}
+.ema515_03_ih_0007 .question_box .img_box span {
+  font-size: 24px;
+  line-height: 30px;
+  background: #f3c9ca;
+  border-radius: 30px;
+  padding: 0 5px;
+}
+.ema515_03_ih_0007 .question_box .img_box .txt1 {
+  top: 172px;
+  left: 115px;
+  transform: translateX(-50%);
+}
+.ema515_03_ih_0007 .question_box .img_box .txt2 {
+  top: 22px;
+  left: 520px;
+}
+.ema515_03_ih_0007 .question_box .img_box .txt3 {
+  top: 161px;
+  left: 616px;
+  transform: translateX(-50%);
+}
+.ema515_03_ih_0007 .question_box .img_box .txt4 {
+  top: 330px;
+  left: 479px;
+}
+.ema515_03_ih_0007 .question_box .img_box button {
+  background: none;
+  border-radius: 12px;
+}
+.ema515_03_ih_0007 .question_box .img_box .button1 {
+  top: -3px;
+  left: 447px;
+  width: 146px;
+  height: 108px;
+}
+.ema515_03_ih_0007 .question_box .img_box .button2 {
+  top: 256px;
+  left: 392px;
+  width: 146px;
+  height: 108px;
+}
+.ema515_03_ih_0007 .question_box .right {
+  width: 500px;
+  flex-shrink: 0;
+}
+.ema515_03_ih_0007 .question_box .input_wrap,
+.ema515_03_ih_0007 .question_box .input_wrap math-field {
+  width: 243px;
+  line-height: 2;
+}
+
+.ema515_03_ih_0007 .question_box .img_box .txt5 span, .ema515_03_ih_0007 .question_box .img_box .txt6 span, .ema515_03_ih_0007 .question_box .img_box .txt7 span, .ema515_03_ih_0007 .question_box .img_box .txt8 span {
+  font-size: 24px;
+  font-weight: 700;
+  background: transparent;
+  position: relative;
+}
+
+.ema515_03_ih_0007 .question_box .img_box .txt5{
+  position: absolute;
+  top: 65px;
+  left: 305px;
+}
+
+.ema515_03_ih_0007 .question_box .img_box .txt6{
+  position: absolute;
+  bottom: 80px;
+  left: 260px;
+}
+
+.ema515_03_ih_0007 .question_box .img_box .txt7{
+  position: absolute;
+  top: 133px;
+  right: 290px;
+}
+
+.ema515_03_ih_0007 .question_box .img_box .txt8{
+  position: absolute;
+  bottom: 100px;
+  right: 200px;
+}
+
+.ema515_03_ih_0007 .page_3 .question_box{
+  padding-left: 350px;
+}

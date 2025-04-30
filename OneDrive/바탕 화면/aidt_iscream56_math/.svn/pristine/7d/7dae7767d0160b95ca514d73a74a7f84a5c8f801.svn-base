@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA626_02_IH_0004</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema626_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema626_05_ih_0004">
+			<section class="title type2">
+				<h2 data-head="4_orange" lang="y">원뿔의 어느 부분의 길이를 재는 것인지 찾아 이어 보세요.</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center align_center dir_col">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA626_05_IH/0004_01.png" alt="" />
+					</div>
+					<div
+						class="connect_wrap"
+						data-connections="[]"
+						data-answer-single='[["s1","e2"],["s2","e1"]]'
+						data-answer-multi=""
+					>
+						<div class="start_group">
+							<div class="connect_point" data-id="s1"></div>
+							<div class="connect_point" data-id="s2"></div>
+						</div>
+						<div class="end_group">
+							<div class="connect_point" data-id="e1"></div>
+							<div class="connect_point" data-id="e2"></div>
+						</div>
+						<svg class="connect_lines"></svg>
+					</div>
+					<ul class="text_area">
+						<li><span lang="y">높이</span></li>
+						<li><span lang="y">모선</span></li>
+					</ul>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">해설 수급 필요</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<!-- <button class="btnType key">입력타입토글</button> -->
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

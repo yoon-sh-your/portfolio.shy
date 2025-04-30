@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_02_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_02.css" />
+  <script src="../../common_contents/js/ema523_02_0004.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_02_su_0004">
+    <section class="title type2">
+      <h2 data-head="2_pink">
+        <div>
+          <span lang="y">완전히 겹치는 도형을 찾아봅시다.</span>
+          <button type="button" class="icon_supplies" lang="y" data-supplies="pop_supplies_area_1">준비물</button>
+        </div>
+      </h2>
+    </section>
+
+    <div class="pop_area pop_supplies_area pop_supplies_area_1">
+      <div class="supplies_zoom_wrap">
+        <button type="button" class="close"></button>
+        <div class="pop_supplies_contents">
+          <span lang="y" style="font-size: 60px; font-weight: 700; color: red;">준비물 이미지 추후 삽입 예정</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start gap_26">
+        <article class="page page_1">
+          <h3 lang="y">도형 가와 완전히 겹치는 도형은 어느 것일지 예상해 보세요.​</h3>
+          <div class="cont_box">
+            <div class="figure_wrap">
+              <div class="figure_triangle figure_group1">
+                <svg width="232" height="176" viewBox="0 0 232 176" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg1">
+                  <path d="M230.15 173.898H1.72314L151.276 2.02393L230.15 173.898Z"/>
+                </svg>
+                <span lang="y" class="txt txt-1">가</span>
+              </div>
+              
+              <div class="figure_box figure_group2 boolean_wrap">
+                <button class="figure_triangle" data-answer-single="false">
+                  <svg width="166" height="212" viewBox="0 0 166 212" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg2">
+                    <path d="M164.504 210.307L1.90527 34.7479L155.902 1.7085L164.504 210.307Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-2">나</span>
+                </button>
+                <button class="figure_triangle"  data-answer-single="false">
+                  <svg width="222" height="155" viewBox="0 0 222 155" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg3">
+                    <path d="M220.823 1.72363V153.44H1.59814L220.823 1.72363Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-3">다</span>
+                </button>
+                <button class="figure_triangle" data-answer-single="true">
+                  <svg width="232" height="175" viewBox="0 0 232 175" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg4">
+                    <path d="M2.08203 1.646H230.477L80.9552 173.52L2.08203 1.646Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-4">라</span>
+                </button>
+                <button class="figure_triangle" data-answer-single="false">
+                  <svg width="231" height="175" viewBox="0 0 231 175" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg5">
+                    <path d="M1.6543 173.52L115.411 2.11816L229.167 173.52H1.6543Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-5">마</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">도형 가와 도형 나, 다, 라, 마를 각각 포개어 보세요.</h3>
+          <div class="cont_box">
+            <div class="dragndrop_fraction_wrap figure_wrap">
+              <div class="drag_group figure_group1">
+                  <div class="drag_item figure_triangle dragpable" data-pair="1" data-value="true">
+                    <svg width="232" height="176" viewBox="0 0 232 176" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg1" id="draggable">
+                      <path d="M230.15 173.898H1.72314L151.276 2.02393L230.15 173.898Z" />
+                    </svg>
+                    <span lang="y" class="txt txt-1">가</span>
+                    <button class="btn_rotation" id="rotateBtn"><span>회전버튼</span></button>
+                  </div>
+              </div>
+              <div class="drop_group figure_group2">
+                  <div class="drop_item figure_triangle droppable drop_item1" data-pair="1"></div>
+                  <div class="drop_item figure_triangle droppable drop_item2" data-pair="1"></div>
+                  <div class="drop_item figure_triangle droppable drop_item3" data-pair="1" data-answer-single="true"></div>
+                  <div class="drop_item figure_triangle droppable drop_item4" data-pair="1"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <h3 lang="y">도형 가와 완전히 겹치는 도형을 찾아보세요.​</h3>
+          <div class="cont_box">
+            <div class="figure_wrap">
+              <div class="figure_triangle figure_group1">
+                <svg width="232" height="176" viewBox="0 0 232 176" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg1">
+                  <path d="M230.15 173.898H1.72314L151.276 2.02393L230.15 173.898Z"/>
+                </svg>
+                <span lang="y" class="txt txt-1">가</span>
+              </div>
+              
+              <div class="figure_box figure_group2 boolean_wrap">
+                <button class="figure_triangle" data-answer-single="false">
+                  <svg width="166" height="212" viewBox="0 0 166 212" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg2">
+                    <path d="M164.504 210.307L1.90527 34.7479L155.902 1.7085L164.504 210.307Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-2">나</span>
+                </button>
+                <button class="figure_triangle"  data-answer-single="false">
+                  <svg width="222" height="155" viewBox="0 0 222 155" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg3">
+                    <path d="M220.823 1.72363V153.44H1.59814L220.823 1.72363Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-3">다</span>
+                </button>
+                <button class="figure_triangle" data-answer-single="true">
+                  <svg width="232" height="175" viewBox="0 0 232 175" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg4">
+                    <path d="M2.08203 1.646H230.477L80.9552 173.52L2.08203 1.646Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-4">라</span>
+                </button>
+                <button class="figure_triangle" data-answer-single="false">
+                  <svg width="231" height="175" viewBox="0 0 231 175" fill="#fff" xmlns="http://www.w3.org/2000/svg" stroke-linejoin="round" class="img_svg svg5">
+                    <path d="M1.6543 173.52L115.411 2.11816L229.167 173.52H1.6543Z" />
+                  </svg>
+                  <span lang="y" class="txt txt-5">마</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <div class="summarize_wrap">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+
+              <div class="text_box">
+                <div>
+                  <span lang="y">모양과 크기가 같아서 포개었을 때 완전히 겹치는</span>
+                </div>
+                <div>
+                  <span lang="y">두 도형을 서로</span>
+                  <button class="reveal_btn" data-pair="1" lang="y">합동</button>
+                  <span lang="y" class="small-gap">이라고 합니다.</span>
+                </div>
+              </div>
+
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA523_02_SU/0004_04_content.png" alt="도형 이미지">
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="btn_area">
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

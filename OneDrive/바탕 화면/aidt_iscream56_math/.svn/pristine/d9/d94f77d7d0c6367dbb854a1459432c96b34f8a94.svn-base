@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_07_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <!-- <link rel="stylesheet" href="./../../common_practice/css/ema616_03_05.css" /> -->
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_07_ih_0006 paging">
+      <section class="title type2">
+        <h2 data-head="6_orange" class="is_star2" lang="y">모든 모서리의 길이의 합이 84 cm인 정육면체의 겉넓이는 몇 cm²인지 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3>정육면체의 한 모서리의 길이는 몇 cm인지 구해 보세요.</h3>
+          <div class="question_box justify_center mt_20">
+            <div class="input_wrap">
+              <math-field data-answer-single="7" text-align="center"></math-field>
+            </div>
+            <span>cm</span>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">정육면체의 모서리는 모두 12개입니다.</p>
+                  <p lang="y" class="pl_40">➔ (한 모서리의 길이)=84÷12=7 (cm)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <!-- 2 page -->
+        <article class="page page_2">
+          <h3>정육면체의 겉넓이는 몇 cm²인지 구해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="input_wrap">
+              <math-field data-answer-single="294" text-align="center"></math-field>
+            </div>
+            <span>cm²</span>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(정육면체의 겉넓이)=7×7×6=294 (cm²)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

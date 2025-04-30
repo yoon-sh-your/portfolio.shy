@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_10_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_10_su_0004">
+        <section class="title type2">
+            <h2 data-type="1" data-text="자기주도 3">
+              <span class="blue line" lang="y">내 힘으로 풀어요</span>
+              <span lang="y">공부한 내용을 확인해요</span>
+            </h2>
+          </section>
+          <section class="title type2 jgjd_3_sub_title">
+            <h2 data-head="3" lang="y">
+                비율이 같은 것끼리 이어 보세요.
+            </h2>
+          </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+            <div class="question_box justify_center">
+                <div class="question_box justify_center gap_12">
+                    <ul class="connect_line_box start">
+                      <li>6:20</li>
+                      <li>9:12</li>
+                      <li>5:25</li>
+                    </ul>
+                    <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","m3"],["s2","m1"],["s3","m2"]]'>
+                        <div class="start_group">
+                            <div class="connect_point" data-id="s1"></div>
+                            <div class="connect_point" data-id="s2"></div>
+                            <div class="connect_point" data-id="s3"></div>
+                        </div>
+                        <div class="end_group">
+                            <div class="connect_point" data-id="m1"></div>
+                            <div class="connect_point" data-id="m2"></div>
+                            <div class="connect_point" data-id="m3"></div>
+                        </div>
+                        <svg class="connect_lines"></svg>
+                    </div>
+                    <ul class="connect_line_box mid1">
+                        <li>
+                            <span class="fraction_box">
+                                <span>3</span>
+                                <span>4</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fraction_box">
+                                <span>1</span>
+                                <span>5</span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="fraction_box">
+                                <span>3</span>
+                                <span>10</span>
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="connect_wrap" data-connections="[]" data-answer-single='[["ms1","me2"],["ms2","me3"],["ms3","me1"]]'>
+                        <div class="start_group">
+                            <div class="connect_point" data-id="ms1"></div>
+                            <div class="connect_point" data-id="ms2"></div>
+                            <div class="connect_point" data-id="ms3"></div>
+                        </div>
+                        <div class="end_group">
+                            <div class="connect_point" data-id="me1"></div>
+                            <div class="connect_point" data-id="me2"></div>
+                            <div class="connect_point" data-id="me3"></div>
+                        </div>
+                        <svg class="connect_lines"></svg>
+                    </div>
+                    <ul class="connect_line_box mid2">
+                        <li>0.3</li>
+                        <li>0.75</li>
+                        <li>0.2</li>
+                    </ul>
+                    <div class="connect_wrap" data-connections="[]" data-answer-single='[["mee1","e3"],["mee2","e1"],["mee3","e2"]]'>
+                        <div class="start_group">
+                            <div class="connect_point" data-id="mee1"></div>
+                            <div class="connect_point" data-id="mee2"></div>
+                            <div class="connect_point" data-id="mee3"></div>
+                        </div>
+                        <div class="end_group">
+                            <div class="connect_point" data-id="e1"></div>
+                            <div class="connect_point" data-id="e2"></div>
+                            <div class="connect_point" data-id="e3"></div>
+                        </div>
+                        <svg class="connect_lines"></svg>
+                    </div>
+                    <ul class="connect_line_box end">
+                        <li>75％</li>
+                        <li>20％</li>
+                        <li>30％</li>
+                    </ul>
+                  </div>
+            </div>    
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

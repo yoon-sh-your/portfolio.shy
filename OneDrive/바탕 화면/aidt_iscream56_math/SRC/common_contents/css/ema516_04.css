@@ -1,0 +1,1086 @@
+/*EMA516_03_SU_0002_s*/
+
+/* .ema516_04_su_0003 .paging_layout {
+  padding: 0 0;
+} */
+
+/* .ema516_04_su_0003 .contents h3 {
+  padding-left: 80px;
+} */
+
+.video_wrap {
+  flex: 1;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  border: 2px solid #f4f4f4;
+  overflow: hidden;
+  position: relative;
+  background: url(../../common_contents/img/EMA516_04_SU/03_002img.png)
+    no-repeat center right 0 / 100%;
+}
+/* .ema516_04_su_0002 .contents > .flex {
+  gap: 26px;
+} */
+/* .ema516_04_su_0002 .input_wrap {
+  width: 817px;
+} */
+/* .ema516_04_su_0002 .input_wrap > math-field.textarea {
+  height: 314px;
+} */
+
+.ema516_04_su_0002 .bubble1,
+.ema516_04_su_0002 .bubble2 p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ema516_04_su_0002 .page_2 .txt1 .bubble,
+.ema516_04_su_0002 .page_2 .txt3 .bubble {
+  letter-spacing: -2px;
+}
+
+.ema516_04_su_0002 .bubble1 {
+  position: absolute;
+  top: 249px;
+  left: 86px;
+}
+.ema516_04_su_0002 .bubble2 {
+  position: absolute;
+  top: 271px;
+  left: 634px;
+}
+/* EMA516_04_SU_0003_s */
+.line1 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+.line2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+.contents h3 {
+  align-items: center;
+}
+
+.line1::after {
+  content: "가";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+  line-height: 36px;
+}
+.line2::after {
+  content: "나";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+  line-height: 36px;
+}
+
+/* .ractangleWrap {
+  position: relative;
+  width: 350px;
+  height: 314px;
+  display: flex;
+}
+ */
+.ema516_04_su_0003 .page_1 .ractangleBox1 {
+  position: absolute;
+  width: 100px;
+  height: 250px;
+  background-color: #d9f0ff;
+  border: 1px solid #8cd6ff;
+  cursor: grab;
+  box-sizing: border-box;
+  transition: none !important;
+  will-change: transform;
+}
+.ema516_04_su_0003 .page_1 .ractangleBox2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #d9f0ff;
+  border: 1px solid #8cd6ff;
+  cursor: grab;
+  box-sizing: border-box;
+  transition: none !important;
+  will-change: transform;
+}
+
+/* .txt span::before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 12px;
+  border: 2px solid #3b71fe;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.ractangleBox2 {
+  width: 150px;
+  height: 150px;
+  background-color: #d9f0ff;
+  border: 1px solid #8cd6ff;
+}
+ */
+
+.Area {
+  position: relative;
+  order: 2;
+  width: 100%;
+}
+
+.draggable_wrap {
+  display: flex;
+  width: 327px;
+  height: 110px;
+  padding: 10px 50px;
+  background-color: #f7f7f7;
+  border-radius: 30px;
+}
+
+.draggable_wrap .draggable1 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/EMA516_04_SU/oblong.png) no-repeat center;
+}
+.draggable_wrap .draggable2 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/EMA516_04_SU/square.png) no-repeat center;
+}
+.draggable_wrap .draggable3 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/EMA516_04_SU/circle.png) no-repeat center;
+}
+
+/* Start shape for dran and drop */
+.draggable.disabled {
+  filter: gray; /* IE용 흑백 필터 */
+  filter: grayscale(100%); /* 크롬, 사파리, 엣지 */
+  opacity: 0.9;
+  pointer-events: none;
+}
+.droppable {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  box-sizing: border-box;
+  box-sizing: content-box;
+  /* font-size: 0;
+  line-height: 0; */
+}
+/* .draggable {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border: none;
+  cursor: move;
+  vertical-align: top;
+} */
+.droppable .draggable {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.droppable .draggable {
+  flex: 0 0 auto;
+  font-size: 0;
+  line-height: 0;
+}
+.droppable .draggable1 {
+  width: 67px;
+  height: 50px;
+  background: url(../img/EMA516_04_SU/oblong.png) no-repeat center;
+}
+.droppable .draggable2 {
+  width: 50px;
+  height: 50px;
+  background: url(../img/EMA516_04_SU/square.png) no-repeat center;
+}
+.droppable .draggable3 {
+  width: 50px;
+  height: 50px;
+  background: url(../img/EMA516_04_SU/circle.png) no-repeat center;
+}
+.droppable .disabled {
+  width: 50px;
+  height: 50px;
+  background: url(../img/EMA516_04_SU/circle.png) no-repeat center;
+}
+/* End shape for dran and drop */
+
+.drag_group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 95px;
+}
+
+.droppable1 {
+  width: 100px;
+  height: 250px;
+  border: 1px solid #8cd6ff;
+  position: relative;
+  background-color: #d9f0ff;
+}
+
+.droppable2 {
+  width: 150px;
+  height: 153px;
+  border: 1px solid #8cd6ff;
+  position: relative;
+  background-color: #d9f0ff;
+}
+
+.droppable1::before {
+  content: "가";
+  position: absolute;
+  top: -65px;
+  left: 25px;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+}
+.droppable2::before {
+  content: "나";
+  position: absolute;
+  top: -65px;
+  left: 49px;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+}
+
+.txt1 {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.text1 span,
+.text2 span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+.text1 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+}
+
+.text2 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+}
+.text3 span,
+.text4 span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+.text3 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+}
+
+.text4 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+}
+
+.text1 {
+  position: absolute;
+  top: -59px;
+  left: 25px;
+}
+.text2 {
+  position: absolute;
+  top: -59px;
+  left: 52px;
+}
+.text3 {
+  position: absolute;
+  top: -58px;
+  left: 24px;
+}
+.text4 {
+  position: absolute;
+  top: -57px;
+  left: 53px;
+}
+
+td.radius {
+  position: relative;
+  overflow: hidden;
+}
+
+td.radius::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-right: 1px solid #d2d2d2;
+  border-bottom: 1px solid #d2d2d2;
+  border-radius: 0 0 20px 0;
+  z-index: -1;
+}
+
+td.radius {
+  border: 0;
+}
+
+/* .page2 .input_wrap math-field.textarea {
+  width: 797px;
+  height: 250px;
+}
+ */
+
+.ema516_04_su_0003 .page_1 .ractangleWrap {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 1000px;
+  height: 700px;
+  gap: 100px;
+  padding: 20px;
+  /* border: 1px dashed #aaa; /* 테스트용으로 경계 확인 */
+}
+
+.ema516_04_su_0003 .page_1 .btn_area > button.is-disabled {
+  pointer-events: none;
+  cursor: default;
+  background-color: var(--btn-disabled-bg);
+  border-color: var(--stroke-default);
+}
+
+/* 활성화 상태 */
+.ema516_04_su_0003 .page_1 .btn_area > .btnReset.is-active {
+  background-image: url(../common/img/icon_reset_white.svg);
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+
+.ema516_04_su_0003 .page_2 .input_area {
+  margin-top: 0;
+}
+
+/* .page_2 .input_wrap {
+  margin-top: 20px;
+} */
+
+.page_2 .input_area {
+  margin-top: 20px;
+}
+
+.ema516_04_su_0003 .input_wrap math-field.textarea {
+  width: 1208px;
+  height: 250px;
+}
+.ema516_04_su_0004 .input_wrap math-field.textarea {
+  width: 1208px;
+  min-height: 100px;
+  height: 80px;
+}
+
+.ema516_04_su_0004 .page_3 .flex {
+  align-items: flex-start;
+}
+
+/*  */
+/* .title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+} */
+
+h3 span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+}
+
+h3 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 2px solid #222;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.miniRactangle {
+  width: 53px;
+  height: 35px;
+  background-color: #fbd8dc;
+  border: 1px solid #333;
+}
+.ractangle {
+  width: 32px;
+  height: 32px;
+  background-color: #d4ead4;
+  border: 1px solid #333;
+}
+.circle {
+  width: 32px;
+  height: 32px;
+  background-color: #e1dfef;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+.ractangle1 {
+  display: inline-block;
+  width: 43px;
+  height: 32px;
+  background-color: #fbd8dc;
+  border: 1px solid #333;
+}
+.ractangle2 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #d4ead4;
+  border: 1px solid #333;
+}
+.circle1 {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: #e1dfef;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+.ema561_03_su_0004 .question_box {
+  width: 752px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 24px;
+}
+th,
+td {
+  text-align: center;
+  padding: 8px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+th {
+  border: 1px solid #fff;
+}
+td {
+  width: 100%;
+  border: 1px solid #d2d2d2;
+  border-left: 0;
+}
+
+td:nth-child(1) {
+  border: 1px solid #fff;
+}
+
+.row1,
+.row2 {
+  background-color: #fdece3;
+  border-radius: 0 20px 0 0;
+}
+
+.row1 {
+  border-radius: 20px 0 0 0;
+}
+
+.vertical1,
+.vertical2,
+.vertical3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdece3;
+  padding: 20px 15px;
+}
+
+.vertical1 {
+  width: 240px;
+  border-radius: 20px 0 0 0;
+}
+.vertical3 {
+  border-radius: 0 0 0 20px;
+}
+
+table .miniRactangle {
+  width: 43px;
+  height: 32px;
+  background-color: #fbd8dc;
+  border: 1px solid #333;
+}
+table .ractangle {
+  width: 40px;
+  height: 40px;
+  background-color: #d4ead4;
+  border: 1px solid #333;
+}
+table .circle {
+  width: 40px;
+  height: 40px;
+  background-color: #e1dfef;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+.input2 .text_hint {
+  width: 100%;
+  font-weight: 700;
+  color: var(--font-negative);
+  text-align: center;
+  /* line-height: 64px; */
+  letter-spacing: -1px;
+  border-radius: 12px;
+  background: transparent;
+  opacity: 0;
+  backdrop-filter: none !important;
+  position: absolute;
+  top: calc(100% + -48px);
+  left: 83px;
+  z-index: 10;
+  pointer-events: none;
+  font-size: 24px;
+}
+
+.ema561_03_su_0005 .page_2 .gap_12 {
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.input2 {
+  width: 200px;
+  align-items: center;
+}
+
+.Area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottomBox {
+  display: flex;
+  gap: 30px;
+  margin-top: 90px;
+}
+
+.flexList {
+  width: 1300px;
+  height: 310px;
+  margin-left: 125px;
+  gap: 100px;
+}
+
+/* .input_wrap math-field.textarea {
+  width: 797px;
+  height: 250px;
+} */
+
+.flex {
+  justify-content: center;
+}
+
+/* EMA516_04_SU_0005_s */
+.dotted {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  font-size: 16px;
+  color: #1454b9;
+  text-align: center;
+  z-index: 1;
+}
+
+.dotted::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #00a0e9;
+  border-radius: 3px;
+  background: #eef9ff;
+  z-index: -1;
+}
+
+.dotted img {
+  width: 33px;
+  height: 21px;
+}
+
+.page_1 .flex span {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+
+.flex {
+  justify-content: center;
+}
+
+.flex span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.input_wrap .text_hint {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.box1 {
+  position: relative;
+  margin-top: 95px;
+}
+
+.txt1,
+.txt2,
+.txt3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ema516_04_su_0004 .page_2 .txt1 {
+  position: absolute;
+  top: 45px;
+  left: 153px;
+}
+
+.txt2 {
+  position: absolute;
+  top: 45px;
+  left: 592px;
+}
+
+.txt3 {
+  position: absolute;
+  top: 43px;
+  left: 935px;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+}
+
+.page_4:is(:target, .active) ~ .title.type2 {
+  display: none;
+}
+
+.page_1 .imgArea {
+  position: relative;
+}
+.page_2 .imgArea {
+  position: relative;
+}
+
+.ema516_04_su_0004 .input_area {
+  position: relative;
+}
+.ema516_04_su_0004 .imgBox {
+  display: flex;
+  justify-content: center;
+}
+
+.ema516_04_su_0004 .img_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #f7f7f7;
+  width: 327px;
+  height: 110px;
+  padding: 10px 50px;
+}
+.ema516_04_su_0004 .img_wrap > div {
+  position: relative;
+}
+.ema516_04_su_0004 .img_wrap > div:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.ema516_04_su_0004 .img_wrap > div + div {
+  margin-left: 30px;
+}
+.ema516_04_su_0004 .img_wrap div.active:after {
+  border: 6px solid #222222;
+}
+.ema516_04_su_0004 .img_wrap .circle_1.active:after {
+  border-radius: 50%;
+}
+.ema516_04_su_0004 .answer_img {
+  /* position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%); */
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.ema516_04_su_0004 .answer_img img {
+  max-width: none;
+  width: 50px;
+  height: auto;
+}
+
+/* .ractangle_1 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/EMA516_04_SU/oblong.png) no-repeat center;
+}
+.ractangle_2 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/EMA516_04_SU/square.png) no-repeat center;
+}
+.circle_1 {
+  width: 100%;
+  height: 100%;
+  background: url(../img/EMA516_04_SU/circle.png) no-repeat center;
+} */
+
+.ractangle_1 img,
+.ractangle_2 img,
+.circle_1 img {
+  /* width: 100%;
+  height: 100%;
+  max-height: 90px;
+  object-fit: contain; */
+}
+
+.ema516_04_su_0005 .diagram {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+
+.ema516_04_su_0005 .unit {
+  top: 35px;
+  left: 18px;
+}
+.ema516_04_su_0005 .unit span {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1454b9;
+  line-height: 0;
+}
+
+.ema516_04_su_0005 .number1 span {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema516_04_su_0005 .number {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 70px;
+}
+
+.ema516_04_su_0005 .number1 {
+  top: 70px;
+  left: 70px;
+}
+.ema516_04_su_0005 .number2 {
+  top: 70px;
+  left: 140px;
+}
+.ema516_04_su_0005 .number3 {
+  top: 140px;
+  left: 140px;
+}
+.ema516_04_su_0005 .number4 {
+  top: 210px;
+  left: 140px;
+}
+
+.page_1 .input_wrap.hint .text_hint {
+  font-size: 24px;
+}
+
+.unit {
+  position: absolute;
+  top: 32px;
+  left: 14px;
+}
+.number1 {
+  position: absolute;
+  top: 83px;
+  left: 100px;
+}
+
+/* 약속해볼까요 */
+.summarize > div {
+  width: 920px;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  position: relative;
+}
+
+.sub_area {
+  position: absolute;
+  bottom: -67px;
+  right: 0;
+}
+
+.sub_img {
+  position: relative;
+}
+
+.length1 {
+  position: absolute;
+  top: -15px;
+  left: 64px;
+}
+.length2 {
+  position: absolute;
+  top: 66px;
+  left: -26px;
+}
+
+.length_img {
+  position: absolute;
+  top: 79px;
+  left: 61px;
+}
+
+/* 새로운 스타일 추가 */
+.ema561_03_su_0002 .input_wrap > math-field.textarea {
+  height: 250px;
+}
+
+/* .page2 .input_wrap math-field.textarea {
+  width: 797px;
+  height: 250px;
+} */
+
+/* .input_wrap math-field.textarea {
+  width: 797px;
+  height: 250px;
+} */
+
+.ema516_04_su_0004 .page_2 .inputBox {
+  margin-top: 30px;
+}
+.ema561_03_su_0004 .inputBox math-field.textarea {
+  width: 1208px;
+  height: 80px;
+}
+
+.ema516_04_su_0003[data-current-page="page_1"] .btnType,
+.ema516_04_su_0003[data-current-page="page_1"] .btnSubmit,
+.ema516_04_su_0003[data-current-page="page_1"] .btnCheck,
+.ema516_04_su_0003[data-current-page="page_1"] .btnReset-page2 {
+  display: none;
+}
+
+.ema516_04_su_0003[data-current-page="page_2"] .btnCheck,
+.ema516_04_su_0003[data-current-page="page_2"] .btnReset-page1 {
+  display: none;
+}
+
+.ema516_04_su_0004[data-current-page="page_1"] .btnSubmit,
+.ema516_04_su_0004[data-current-page="page_1"] .btn_draw,
+.ema516_04_su_0004[data-current-page="page_1"] .btnErase {
+  display: none;
+}
+.ema516_04_su_0004[data-current-page="page_2"] .btnCheck,
+.ema516_04_su_0004[data-current-page="page_2"] .btn_draw,
+.ema516_04_su_0004[data-current-page="page_2"] .btnErase {
+  display: none;
+}
+
+.ema516_04_su_0004[data-current-page="page_3"] .btnSubmit,
+.ema516_04_su_0004[data-current-page="page_3"] .btn_draw,
+.ema516_04_su_0004[data-current-page="page_3"] .btnErase {
+  display: none;
+}
+.ema516_04_su_0004[data-current-page="page_4"] .btnSubmit {
+  display: none;
+}
+.ema516_04_su_0004[data-current-page="page_4"] .btnType {
+  display: none;
+}
+.ema516_04_su_0005[data-current-page="page_1"] .btnSubmit {
+  display: none;
+}
+.ema516_04_su_0005[data-current-page="page_2"] .btnSubmit {
+  display: none;
+}
+
+.ema516_04_su_0004 .page_4 .btn_draw {
+  position: absolute;
+  bottom: 39px;
+  left: 63px;
+}
+
+.ema516_04_su_0004 .page_2 .box1 {
+  margin-top: 0;
+}
+
+.ema516_04_su_0002 .input_wrap .example_box {
+  padding: 19px 24px 24px 82px;
+}
+
+.ema516_04_su_0004 .page_2 .input_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  z-index: 10;
+}
+
+.ema516_04_su_0004 .page_4 .btn_1 {
+  /* width: 120px; */
+  /*  height: 80px;
+  font-size: 32px;
+  white-space: nowrap; */
+}
+.ema516_04_su_0004 .page_4 .btn_2 {
+  /* width: 222px; */
+  /*   height: 80px;
+  font-size: 32px;
+  white-space: nowrap; */
+}
+
+.ema516_04_su_0005 .input_wrap math-field.hint + .text_hint {
+  font-size: 24px;
+}
+
+.ema516_04_su_0005 .input_wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

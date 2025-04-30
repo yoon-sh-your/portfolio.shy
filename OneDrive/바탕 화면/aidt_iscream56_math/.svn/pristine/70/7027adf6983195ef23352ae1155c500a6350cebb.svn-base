@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_02_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_02_su.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_02_su_0005">
+        <section class="title type2">
+            <h2 data-head="3" lang="y" class="fraction_box_title">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <div class="operation_box ml_0">
+                        <div class="fraction_box">
+                            <span>3</span>
+                            <span>10</span>
+                        </div>
+                        &times;8
+                    </div>
+                    을 윤호와 예린이의 방법으로 각각 계산하고, 두 방법을 비교해 봅시다.
+                  </div>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents">
+            <!-- <section class="contents paging_layout">
+            <article class="page page_1"> -->
+            <div class="question_box justify_center dir_col gap_16">
+
+                <div class="mixed_fraction f32b mt_20">
+                    <div class="abs_1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="19" viewBox="0 0 35 19" fill="none">
+                            <text transform="translate(1.31445 -7.20996) rotate(2)" fill="white" xml:space="preserve"
+                                style="white-space: pre" font-family="Pretendard" font-size="20" font-weight="bold"
+                                letter-spacing="-0.5px">
+                                <tspan x="0" y="23.1094">윤호</tspan>
+                            </text>
+                        </svg>
+                    </div>
+
+                    <span class="fraction_box">
+                        <span>3</span>
+                        <span>10</span>
+                    </span>
+                    <span>&times;8</span>
+                    <span>=</span>
+                    <span class="fraction_box">
+                        <span>3&times;8</span>
+                        <span>10</span>
+                    </span>
+                    <span>=</span>
+                    <span class="fraction_box">
+                        <span>24</span>
+                        <span>10</span>
+
+                        <span class="division_1">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="12"></math-field>
+                            </span>
+                        </span>
+                        <span class="division_2">
+                            <span>5</span>
+                        </span>
+                    </span>
+                    <span>=</span>
+                    <span class="fraction_box">
+                        <span class="input_wrap">
+                            <math-field data-answer-single="12"></math-field>
+                        </span>
+                        <span>5</span>
+                    </span>
+                    <span>=</span>
+                    <!-- <div class="group_box"> -->
+                    <span class="input_wrap">
+                        <math-field data-answer-single="2"></math-field>
+                    </span>
+                    <span class="fraction_box">
+                        <span class="input_wrap">
+                            <math-field data-answer-single="2"></math-field>
+                        </span>
+                        <span>5</span>
+                    </span>
+                    <!-- </div> -->
+
+                </div>
+
+                <hr>
+
+                <div class="mixed_fraction f32b mt_14">
+                    <div class="abs_2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="19" viewBox="0 0 35 19" fill="none">
+                            <text transform="translate(1.31445 -7.20996) rotate(2)" fill="white" xml:space="preserve"
+                                style="white-space: pre" font-family="Pretendard" font-size="20" font-weight="bold"
+                                letter-spacing="-0.5px">
+                                <tspan x="0" y="23.1094">예린</tspan>
+                            </text>
+                        </svg>
+                    </div>
+                    <span class="fraction_box">
+                        <span>3</span>
+                        <span>10</span>
+
+                        <span class="division_2">
+                            <span>5</span>
+                        </span>
+                    </span>
+                    <span>&times;</span>
+                    <span class="relative">8
+                        <span class="division_1">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="4"></math-field>
+                            </span>
+                        </span>
+                    </span>
+                    <span>=</span>
+                    <span class="fraction_box">
+                        <span>
+                            <span>3&times;</span>
+                            <span class="input_wrap">
+                                <math-field data-answer-single="4"></math-field>
+                            </span>
+                        </span>
+                        <span>5</span>
+                    </span>
+                    <span>=</span>
+                    <span class="fraction_box">
+                        <span class="input_wrap">
+                            <math-field data-answer-single="12"></math-field>
+                        </span>
+                        <span>5</span>
+                    </span>
+                    <span>=</span>
+                    <!-- <div class="group_box"> -->
+                    <span class="input_wrap">
+                        <math-field data-answer-single="2"></math-field>
+                    </span>
+                    <span class="fraction_box">
+                        <span class="input_wrap">
+                            <math-field data-answer-single="2"></math-field>
+                        </span>
+                        <span>5</span>
+                    </span>
+                    <!-- </div> -->
+
+                </div>
+
+                <div class="input_area m_auto">
+                    <div class="input_wrap">
+                        <math-field class="textarea" id="inputElement01" type="text"></math-field>
+                        <ol class="example_box">
+                            <li lang="y">윤호는 분자와 자연수를 곱한 후 약분하여 계산했고, 예린이는 분모와 자연수를 약분한 후 계산했습니다.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="balloon_wrap">
+                    약분을 언제 했는지 <br>살펴봐.
+                </div>
+            </div>
+            <!-- </article>
+            <article class="page page_2">
+
+                <div class="input_area m_auto">
+                    <div class="input_wrap">
+                        <math-field class="textarea" id="inputElement01" type="text"></math-field>
+                        <ol class="example_box">
+                            <li lang="y">윤호는 분자와 자연수를 곱한 후 약분하여 계산했고, 예린이는 분모와 자연수를 약분한 후 계산했습니다.</li>
+                        </ol>
+                    </div>
+                </div>
+            </article> -->
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <!-- <button class="btnCheck">확인</button> -->
+                <button class="btnSubmit">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_02_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_05.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_05_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6_pink" class="is_star" lang="y">민하와 이준이는 종이를 모아 분리배출하려고 합니다. 민하가 모은 종이의 무게는 이준이가 모은 종이의 무게의 몇 배인지 식을 쓰고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_05_IH/0006_01.png" alt="" />
+            <p lang="y" class="text1">나는 5.8 ㎏을 모았어.</p>
+            <p lang="y" class="text2">나는 4 ㎏을 모았어.</p>
+            <p lang="y" class="name1">민하</p>
+            <p lang="y" class="name2">이준</p>
+          </div>
+          <div class="input_area flex align_end dir_col">
+            <div class="input_row">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap input1">
+                <math-field data-answer-single="5.8÷4"></math-field>
+              </div>
+              =
+              <div class="input_wrap input2">
+                <math-field data-answer-single="1.45"></math-field>
+              </div>
+            </div>
+            <div class="input_row">
+              <span class="label_gray" lang="y">답</span>
+              <div class="input_wrap input2">
+                <math-field data-answer-single="1.45"></math-field>
+              </div>
+              배
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>(민하가 모은 종이의 무게)÷(이준이가 모은 종이의 무게)<br />
+                  =5.8÷4=1.45(배)</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

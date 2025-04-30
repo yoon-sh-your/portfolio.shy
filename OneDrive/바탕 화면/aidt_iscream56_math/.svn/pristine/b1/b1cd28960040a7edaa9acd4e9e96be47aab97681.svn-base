@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema527_01_su_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema527_01_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema527_01_su_0006">
+      <section class="title">
+        <h2 data-head="4">
+          <span lang="y">택배 드론을 어떻게 수정해야 할지 이야기해 봅시다.​​​​</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        
+        <div class="img_row">
+          <div class="picture_wrap">
+            <img src="./../../common_project/img/EMA527_01_SU/ema527_01_SU_0005.png" alt="" class="img"/>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea" type="text"></math-field>
+              <div class="example_box ex">
+                <p lang="y">택배 드론의 사고 원인이 불균형 문제이므로 대칭이 되도록 수정해야 합니다.​</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

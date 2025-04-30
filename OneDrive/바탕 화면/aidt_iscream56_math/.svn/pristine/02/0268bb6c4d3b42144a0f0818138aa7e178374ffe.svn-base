@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_01_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_01.css" />
+  </head> 
+  <body>
+    <div id="app_wrap" class="ema524_01_su_0004">
+      <section class="title type2">
+          <!-- data-icon로 common/img폴더 내 icon_**.svg 형태 이미지 호출 **에 호출할 파일명 기입 시 해당 이미지 호출 가능-->
+          <h2 data-icon="speech" lang="y">영상을 보고 어떤 상황을 나타내고 있는지 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row"> 
+          <div class="video_wrap">
+            <button class="play" onclick="navigate('../guide_sample/vedio_player')"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">은성이네 모둠 학생들이 문화 예술 체험 센터를 방문하고 있습니다.</li>
+                <li lang="y">주스도 마시고 기념품도 받고 다양한 체험도 합니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

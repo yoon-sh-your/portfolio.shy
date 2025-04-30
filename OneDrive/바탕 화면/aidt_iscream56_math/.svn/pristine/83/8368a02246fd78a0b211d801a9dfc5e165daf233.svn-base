@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_04_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_02.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+    <script src="../../common_contents/js/ema512_04_0004.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_04_su_0004" data-current-page="page_3, page_4">
+      <section class="title type2">
+        <h2 data-head="2_green" lang="y">8과 12의 공통된 약수를 찾아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class=" conts_cover">
+          <div class="input_area conts_cover">
+            <article class="page page_1">
+              <h3 lang="y">8의 약수에 모두 O표, 12의 약수에 모두 &#9651;표 하세요.</h3>
+              <div class="page_1_cont">
+
+                <div class="drag_checkout margin_center">
+                  <div class="draggable_wrap">
+                    <div class="single_draggable draggable circle"></div>
+                    <div class="single_draggable draggable triangle"></div>
+                  </div>
+        
+                  <div class="drag_group g1" data-group-limit="11" data-answer-single="[[true, true], [true, true], [true, false], [true, true], [false, false], [true, false], [false, false], [false, true], [false, false], [false, false], [false, false], [true, false]]">
+                    <div class="droppable" data-value="false false">1</div>
+                    <div class="droppable" data-value="false false">2</div>
+                    <div class="droppable" data-value="false false">3</div>
+                    <div class="droppable" data-value="false false">4</div>
+                    <div class="droppable" data-value="false false">5</div>
+                    <div class="droppable" data-value="false false">6</div>
+                    <div class="droppable" data-value="false false">7</div>
+                    <div class="droppable" data-value="false false">8</div>
+                    <div class="droppable" data-value="false false">9</div>
+                    <div class="droppable" data-value="false false">10</div>
+                    <div class="droppable" data-value="false false">11</div>
+                    <div class="droppable" data-value="false false">12</div>
+                  </div>
+                  
+                </div>
+
+              </div>
+            </article>
+            <article class="page page_2">
+              <h3 lang="y">8과 12의 공통된 약수를 모두 선택해 보세요.</h3>
+              <div class="flex justify_center">
+                <div class="boolean_wrap">
+                  <button data-answer-single="true">1</button>
+                  <button data-answer-single="true">2</button>
+                  <button data-answer-single="false">3</button>
+                  <button data-answer-single="true">4</button>
+                  <button data-answer-single="false">5</button>
+                  <button data-answer-single="false">6</button>
+                  <button data-answer-single="false">7</button>
+                  <button data-answer-single="false">8</button>
+                  <button data-answer-single="false">9</button>
+                  <button data-answer-single="false">10</button>
+                  <button data-answer-single="false">11</button>
+                  <button data-answer-single="false">12</button>
+                </div>
+              </div>
+            </article>
+            <article class="page page_3">
+              <h3 lang="y">8과 12의 공통된 약수 중에서 가장 큰 수를 써 보세요.</h3>
+              <div class="question_box flex justify_center">
+                <div class="flex">
+                  <div class="input_wrap answer1">
+                    <math-field data-answer-single="4"></math-field>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="page page_4">
+              <div class="summarize_wrap">
+                <div class="summarize promise">
+                  <label lang="y">약속해 볼까요</label>
+
+                  <div>
+                    <span lang="y">1, 2, 4는 8의 약수도 되고, 12의 약수도 됩니다. </span>
+                  </div>
+                  <div>
+                    <span lang="y">8과 12의 공통된 약수인 1, 2, 4를 8과 12의 </span>
+                    <button class="reveal_btn" data-pair="1" lang="y">공약수</button>
+                    <span lang="y" class="small-gap">라고 합니다.</span>
+                  </div>
+                  <div>
+                    <span lang="y">공약수 중에서 가장 큰 수인 4를 8과 12의</span>
+                    <button class="reveal_btn" data-pair="2" lang="y">최대공약수</button>
+                    <span lang="y" class="small-gap">라고 합니다.</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+          <!-- <button class="btnSubmit">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

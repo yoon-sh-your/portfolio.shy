@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMA515_04_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema515_04.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema515_04_su_0005">
+    <section class="title type3 fraction_title">
+      <h2 data-head="3">
+        <div class="operations" lang="y">
+          <div class="mixed_fraction">
+            <span>2</span>
+            <div class="fraction_box">
+              <span>3</span>
+              <span>5</span>
+            </div>
+          </div>
+          +
+          <div class="mixed_fraction">
+            <span>3</span>
+            <div class="fraction_box">
+              <span>5</span>
+              <span>6</span>
+            </div>
+          </div>
+          을 어떻게 계산하는지 알아봅시다.
+        </div>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="input_area">
+        <article class="page page_1">
+          <div class="question_box justify_center">
+
+            <div class="container_515">
+              <h3 lang="y"><span class="method" circle-number="1">방법</span> 자연수는 자연수끼리, 분수는 분수끼리 계산하기</h3>
+
+              <div class="operations_column">
+
+                <div class="operations">
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>5</span>
+                    </div>
+                  </div>
+                  +
+                  <div class="mixed_fraction">
+                    <span>3</span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>6</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac1">
+                    <math-field data-answer-single="2(18)/(30)+3(25)/(30)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac2">
+                    <math-field data-answer-single="(2+3)+((18)/(30)+(25)/(30))" data-custom-hint="y"></math-field>
+                    <div class="text_hint fraction">
+                      <div class="pare_wrap">2+3</div>
+                      <span>+</span>
+                      <div class="pare_wrap">
+                        <div class="fraction_box" style="--child-height: 24px;">
+                          <span>18</span>
+                          <span>30</span>
+                        </div>
+                        <span>+</span>
+                        <div class="fraction_box" style="--child-height: 24px;">
+                          <span>25</span>
+                          <span>30</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac3">
+                    <math-field data-answer-single="5+(40)/(30)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac4">
+                    <math-field data-answer-single="5+1(13)/(30)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac5">
+                    <math-field data-answer-single="6(13)/(30)"></math-field>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="question_box justify_center">
+
+            <div class="container_515">
+              <h3 lang="y"><span class="method" circle-number="2">방법</span> 대분수를 가분수로 나타내어 계산하기</h3>
+
+              <div class="operations_column">
+
+                <div class="operations">
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>5</span>
+                    </div>
+                  </div>
+                  +
+                  <div class="mixed_fraction">
+                    <span>3</span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>6</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac1">
+                    <math-field data-answer-single="(13)/(5)+(23)/(6)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac2">
+                    <math-field data-answer-single="(78)/(30)+(115)/(30)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac3">
+                    <math-field data-answer-single="(193)/(30)"></math-field>
+                  </div>
+                  =
+                  <div class="input_wrap fraction_wrap frac4">
+                    <math-field data-answer-single="6(13)/(30)"></math-field>
+                  </div>
+                </div>
+
+                <!-- <div class="operations">
+
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>5</span>
+                    </div>
+                  </div>
+                  +
+                  <div class="mixed_fraction">
+                    <span>3</span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>6</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="13"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="5"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  +
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="23"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="6"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="78"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="30"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  +
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="115"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="30"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="193"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="30"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="6"></math-field>
+                      </div>
+                    </span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="13"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="30"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+
+                </div> -->
+
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

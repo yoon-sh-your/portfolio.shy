@@ -1,0 +1,476 @@
+/* 분수 */
+.input_wrap math-field:not(.textarea) {
+  width: 80px;
+  height: 60px;
+}
+
+.ema515_05_su_0003 .page_1 .frac1 math-field{
+  width: 111px;
+}
+
+.ema515_05_su_0003 .page_3 .frac1 math-field{
+  width: 173px;
+}
+
+.ema515_05_su_0005 .frac1 math-field{
+  width: 294px;
+}
+.ema515_05_su_0005 .frac2 math-field{
+  width: 175px;
+}
+.ema515_05_su_0005 .frac3 math-field{
+  width: 80px;
+}
+
+.fraction_inn {
+  display: flex;
+  align-items: center;
+}
+
+.operations {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  /* gap: 4px; */
+}
+
+.operations .input_wrap {
+  align-items: center;
+  min-width: 80px;
+}
+
+/* 비디오, 사진 페이지 공통 */
+.contents>.flex {
+  gap: 26px;
+}
+
+.video_wrap {
+  width: 812px;
+  height: 428px;
+}
+
+.video_wrap .play {
+  z-index: 999;
+}
+
+.video_wrap {
+  background: none;
+}
+
+.flex.align_start .input_area,
+.flex.align_start math-field.textarea {
+  width: 797px;
+}
+
+/* container */
+.container_515 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  background-repeat: no-repeat;
+}
+
+/* 슬라이드 페이지 공통 */
+.page math-field.textarea {
+  width: 100%;
+}
+
+.page>.question_box {
+  width: calc(1635px - 160px - 40px);
+  height: calc(578px - 48px - 20px - 64px - 12px);
+  position: relative;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.page.fraction_title .question_box {
+  height: 418px;
+  /* 434 - 16*/
+}
+
+/* 유나 예준이와 다른 방법으로 */
+.other_method_name {
+  color: #fff;
+  /* Title/H_04_BOLD */
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* 150% */
+  letter-spacing: -0.5px;
+  transform: rotate(4.002deg);
+  position: absolute;
+  top: 132px;
+  left: 140px;
+}
+
+/* 분수 색칠 */
+.boolean_count_wrap button.selected {
+  background-color: #D2D2D2;
+}
+
+.boolean_count_wrap button.selected.correct,
+.boolean_count_wrap button.correct {
+  background-color: #D2D2D2;
+  background-color: #666;
+}
+
+/* 연산자 - 괄호 컴포넌트 */
+.bracket-left {
+  background: url(../img/EMA514_06_SU/0003_bg2.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+}
+
+.bracket-right {
+  background: url(../img/EMA514_06_SU/0003_bg3.png) no-repeat 0 0;
+  margin-left: 8px;
+  height: 107px;
+  width: 22px;
+}
+
+/* 정리해 볼까요 페이지 */
+.summarize_wrap span {
+  /* font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: -1px; */
+  display: flex;
+  gap: 12px;
+}
+
+.abs-1,
+.abs-2 {
+  /* border: 1px solid red; */
+  position: absolute;
+
+  color: #FF29B4;
+
+  /* Title/H_02_BOLD */
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  /* 150% */
+  letter-spacing: -1px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.abs-1{
+  top: 20px;
+  right: 447px;
+}
+
+.abs-2{
+  top: 120px;
+  right: 447px;
+}
+
+.abs-1 .line_515 {
+  width: 50px;
+  height: 2px;
+  background-color: #FF29B4;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: -10px;
+  transform: rotate(-45deg);
+}
+
+.abs-2 .line_515 {
+  width: 50px;
+  height: 2px;
+  background-color: #FF29B4;
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: -10px;
+  transform: rotate(-45deg);
+}
+
+/* ==============================================
+   🎨 차시 스타일
+   ============================================== */
+/* 0002 */
+.ema515_05_su_0002 .picture_wrap {
+  transform: scale(1.05) translate(40px, 10px);
+}
+
+.ema515_05_su_0002 .flex.align_start math-field.textarea {
+  height: 250px;
+}
+
+/* 0003 */
+.ema515_05_su_0003 .page_4 math-field.textarea {
+  width: 100%;
+}
+
+/* 확인 버튼 가리기 */
+.ema515_05_su_0003:not([data-current-page='page_4']) .btn_area .btnSubmit,
+.ema515_05_su_0003[data-current-page='page_4'] .btn_area .btnCheck {
+  display: none;
+}
+
+/* 특정 페이지 picture_wrap 가리기 */
+.ema515_05_su_0003:not([data-current-page='page_1']) .contents div.flex,
+.ema515_05_su_0003:not([data-current-page='page_1']) .contents .picture_wrap {
+  display: none;
+}
+
+/* 정리해 볼까요 */
+.ema515_05_su_0003[data-current-page='page_5'] section.title,
+.ema515_05_su_0003[data-current-page='page_5'] .contents>div.flex,
+.ema515_05_su_0003[data-current-page='page_5'] .btn_area .btnType {
+  display: none;
+}
+
+.container_515 {
+  /* padding: 20px; */
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: row;
+  /* min-height: 348px; */
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1635px;
+  /* height: 448px; */
+  gap: 40px;
+}
+
+.container_515.col_515 {
+  flex-direction: column;
+  gap: 0;
+}
+
+.top_515 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom_515 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.left_515 {
+  /* padding: 20px; */
+  /* background-color: antiquewhite; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.right_515 {
+  /* padding: 20px; */
+  /* background-color: beige; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.row_515-1,
+.row_515-2,
+.row_515-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.row_515-1 {
+  /* padding: 10px; */
+  /* background-color: orange; */
+  justify-content: center;
+  align-items: center;
+}
+
+.row_515-2 {
+  /* padding: 10px; */
+  /* background-color: yellow; */
+}
+
+.row_515-3 {
+  /* padding: 10px; */
+  /* background-color: green; */
+}
+
+
+/* 0003 page2 */
+
+.ema515_05_su_0003 .page.page_2 .container_515 {
+  width: 900px;
+}
+
+.ema515_05_su_0003 .page.page_2 .left_515 {
+  gap: 60px;
+}
+
+.ema515_05_su_0003 .page.page_2 .img_515 {
+  position: absolute;
+  top: 220px;
+  right: 160px;
+}
+
+.ema515_05_su_0003 .page.page_2 .texts_515 {
+  font-family: Pretendard;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  vertical-align: middle;
+  color: #222222;
+  border-radius: 20px;
+  position: absolute;
+  top: 7px;
+  left: 37px;
+}
+
+.ema515_05_su_0003 .page.page_2 .text-515 {
+  color: #ff0000;
+}
+
+.ema515_05_su_0003 .page.page_2 .img_515 .fraction-text-column .fraction-text-align:nth-child(2) {
+  margin-top: -25px;
+}
+
+.ema515_05_su_0003 .page.page_2 .img_515 .fraction-text-align {
+  font-weight: unset;
+}
+
+.ema515_05_su_0003 .page.page_2 .boolean_count_wrap button {
+  width: 180px;
+  --base-height: 36px;
+  height: var(--base-height);
+}
+
+.ema515_05_su_0003 .page.page_2 .boolean_count_wrap button.count-5 {
+  height: calc(var(--base-height) * 5);
+}
+
+.ema515_05_su_0003 .page.page_2 .drag_item {
+  display: flex;
+  width: 180px;
+  height: 180px;
+  align-items: center;
+  gap: 18px;
+  border: 2.7px solid #000;
+  background: #FFF;
+}
+
+.ema515_05_su_0003 .page.page_4 math-field.textarea {
+  height: 60%;
+}
+
+/* 0004 */
+/* 확인 버튼 가리기 */
+.ema515_05_su_0004:not([data-current-page='page_3']) .btn_area .btnSubmit,
+.ema515_05_su_0004[data-current-page='page_3'] .btn_area .btnCheck {
+  display: none;
+}
+
+.ema515_05_su_0004 .container {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.ema515_05_su_0004 .page.page_3 math-field.textarea {
+  height: 60%;
+}
+
+/* 0005 */
+.ema515_05_su_0005 .container_515 {
+  flex-direction: column;
+  width: 1308.91px;
+  height: 400px;
+  background-image: url(../img/EMA515_05_SU/0005_bg.png);
+  gap: 20px;
+}
+
+.ema515_05_su_0005 .top_515 {
+  position: relative;
+}
+
+.ema515_05_su_0005 .other_method_name {
+  left: 16px;
+}
+
+.ema515_05_su_0005 .contents h3 {
+  margin-left: 35px;
+}
+
+/* 0006 */
+.ema515_05_su_0006 .container_515 {
+  display: flex;
+  margin-top: 20px;
+  height: 380.22px;
+}
+
+.ema515_05_su_0006 .left_515 {
+  flex: 2;
+  /* background: pink; */
+  display: flex;
+  justify-content: right;
+}
+
+.ema515_05_su_0006 .img_515 {
+  position: relative;
+}
+
+.ema515_05_su_0006 .texts_515 {
+  width: 790px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 40px;
+  padding-right: 20px;
+  font-size: 22px;
+}
+
+.ema515_05_su_0006 .right_515 {
+  flex: 1;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.ema515_05_su_0006 .dayeon {
+  left: 205px;
+  top: 173px;
+}
+
+.ema515_05_su_0006 .seewoo {
+  left: 568px;
+  top: 160px;
+  transform: rotate(-4.002deg);
+}

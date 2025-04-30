@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA622_06_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema622_06.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema622_06_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">가상 현실 체험관에서 우주 탐험을 하는 데 7분, 바다 탐험을 하는 데 3분이 걸립니다. 우주 탐험 시간은 바다 탐험 시간의 약 몇 배인지 알아봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_start">
+          <div class="video_wrap">
+            <img src="../../common_contents/img/EMA622_06_SU/0002_content.png" alt="자치회 활동 이미지" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">가상 현실 체험관에서 우주 탐험을 하는 데 7분, 바다 탐험을 하는 데 3분이 걸립니다. 우주 탐험 시간은 바다 탐험 시간의 약 몇 배인지 알아봅시다.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">우주 탐험 시간을 바다 탐험 시간으로 나눕니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_05_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_05.css" />
+    <script src="../../common_contents/js/ema612_05_0003.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_05_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">보물 지도를 보기 위해 각기둥 모양 상자의 모서리를 잘라서 펼치려고 합니다. 각기둥의 모서리를 잘라서 펼친 모양을 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">각기둥의 모서리를 잘라서 펼친 그림에서 각기둥의 밑면을 모두 찾아 &#9651;표, 옆면을 모두 찾아 &#9675;표 하세요.</h3>
+
+          <div class="check_shape">
+            <div class="s_item">
+              <img src="../../common_contents/img/EMA612_05_SU/0003_diagram_01.png" alt="삼각기둥">
+            </div>
+
+            <img src="../../common_contents/img/EMA612_05_SU/0003_arrow.png" alt="화살표">
+
+            <div class="s_item_expend">
+              <img src="../../common_contents/img/EMA612_05_SU/0003_diagram_02.png" alt="삼각기둥 전개도">
+
+              <div class="dropdown_wrap ps01">
+                <select class="custom_dropdown math_symbol" data-answer-single="&#9651;">
+                  <option></option>
+                  <option value="&#9675;">&#9675;</option>
+                  <option value="&#9651;">&#9651;</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap ps02">
+                <select class="custom_dropdown math_symbol" data-answer-single="&#9675;">
+                  <option></option>
+                  <option value="&#9675;">&#9675;</option>
+                  <option value="&#9651;">&#9651;</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap ps03">
+                <select class="custom_dropdown math_symbol" data-answer-single="&#9675;">
+                  <option></option>
+                  <option value="&#9675;">&#9675;</option>
+                  <option value="&#9651;">&#9651;</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap ps04">
+                <select class="custom_dropdown math_symbol" data-answer-single="&#9675;">
+                  <option></option>
+                  <option value="&#9675;">&#9675;</option>
+                  <option value="&#9651;">&#9651;</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap ps05">
+                <select class="custom_dropdown math_symbol" data-answer-single="&#9651;">
+                  <option></option>
+                  <option value="&#9675;">&#9675;</option>
+                  <option value="&#9651;">&#9651;</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">펼친 그림을 접어 보고 서로 맞닿는 선분끼리 같은 색으로 표시해 보세요.</h3>
+
+          <div class="check_shape">
+            <div class="s_item">
+              <img src="../../common_contents/img/EMA612_05_SU/0003_diagram_01.png" alt="삼각기둥">
+            </div>
+
+            <img src="../../common_contents/img/EMA612_05_SU/0003_arrow.png" alt="화살표">
+
+            <div class="s_item_color">
+              <img src="../../common_contents/img/EMA612_05_SU/0003_diagram_02.png" alt="삼각기둥 전개도">
+
+              <div class="dropdown_wrap pc01">
+                <select class="custom_dropdown math_symbol" data-answer-single="yellow" data-color-pair="leftTop">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc02">
+                <select class="custom_dropdown math_symbol" data-answer-single="yellow" data-color-pair="leftTop">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc03">
+                <select class="custom_dropdown math_symbol" data-answer-single="green" data-color-pair="rightTop">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc04">
+                <select class="custom_dropdown math_symbol" data-answer-single="green" data-color-pair="rightTop">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc05">
+                <select class="custom_dropdown math_symbol" data-answer-single="red" data-color-pair="leftRight">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc06">
+                <select class="custom_dropdown math_symbol" data-answer-single="red" data-color-pair="leftRight">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc07">
+                <select class="custom_dropdown math_symbol" data-answer-single="purple" data-color-pair="leftBottom">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc08">
+                <select class="custom_dropdown math_symbol" data-answer-single="purple" data-color-pair="leftBottom">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc09">
+                <select class="custom_dropdown math_symbol" data-answer-single="blue" data-color-pair="rightBottom">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap pc10">
+                <select class="custom_dropdown math_symbol" data-answer-single="blue" data-correction="rightBottom">
+                  <option></option>
+                  <option value="red">red</option>
+                  <option value="yellow">yellow</option>
+                  <option value="green">green</option>
+                  <option value="blue">blue</option>
+                  <option value="purple">purple</option>
+                </select>
+              </div> 
+            </div>
+
+            <div class="answer_img">
+              <img src="../../common_contents/img/EMA612_05_SU/0003_check_diagram_03.png" alt="삼각기둥 전개도 정답">
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">약속해 볼까요</label>
+
+              <div>
+                <span lang="y">각기둥의 모서리를 잘라서 평면 위에 펼쳐 놓은 그림을 각기둥의</span>
+                <button class="reveal_btn" data-pair="전개도" lang="y">전개도</button><span lang="y">라고 합니다.</span>
+              </div>
+
+              <div class="flex justify_between">
+                <div class="check_shape">
+                  <div class="s_item">
+                    <img src="../../common_contents/img/EMA612_05_SU/0003_check_diagram_01.png" alt="삼각기둥">
+                  </div>
+      
+                  <img src="../../common_contents/img/EMA612_05_SU/0003_arrow.png" alt="화살표">
+  
+                  <div class="s_item">
+                    <img src="../../common_contents/img/EMA612_05_SU/0003_check_diagram_02.png" alt="삼각기둥">
+                  </div>
+      
+                  <img src="../../common_contents/img/EMA612_05_SU/0003_arrow.png" alt="화살표">
+      
+                  <div class="s_item_color">
+                    <img src="../../common_contents/img/EMA612_05_SU/0003_check_diagram_03.png" alt="삼각기둥 전개도">
+                  </div>
+                </div>
+
+                <div class="hint_box">
+                  <div class="txt" lang="y">
+                    어느 모서리를 자르는지에 따라 <br>다양한 전개도가 나올 수 있어.
+                  </div>
+                </div>
+              </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSample">예시</button> 
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

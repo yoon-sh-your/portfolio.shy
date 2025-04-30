@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_01_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_01_ih_0003">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+
+        <span class="title_sub_me" lang="y">『수학 5-2』 직육면체의 전개도 알아보기</span>
+      </section>
+
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">
+          직육면체의 겨냥도를 보고
+          <span class="empty_box nemo"></span>
+          안에 알맞은 수를 써넣으세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="flex justify_center gap_120">
+            <div class="question_box">
+              <div class="inout_box">
+                <img src="../../common_practice/img/EMA616_01_IH/616_01_03.png" alt="" />
+
+                <span class="to_out text1">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="2"></math-field>
+                  </div>
+                  ㎠
+                </span>
+                <span class="to_out text2">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="4"></math-field>
+                  </div>
+                  ㎠
+                </span>
+
+                <span class="cm1">4 ㎝</span>
+                <span class="cm2">2 ㎝</span>
+                <span class="cm3">6 ㎝</span>
+                <span class="cm4">6 ㎝</span>
+                <span class="cm5">2 ㎝</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">전개도를 접었을 때 맞닿는 모서리의 길이는 서로 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_06_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+  
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_02_ih_03">
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">
+            두 직육면체 모양의 상자에 크기가 같은 직육면체 모양의 지우개를 빈틈없이 넣었더니 지우개가  가 상자에는 16개, 나 상자에는 12개 들어갔습니다. 부피가 더 큰 상자를 써 보세요.
+
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="flex justify_center gap_120">
+           
+            <div class="question_box">
+              <div class="input_wrap">
+                <math-field data-answer-single="가" text-align="center"><math-field>
+            </div>
+             
+                상자
+            </div> 
+          </div>
+        </div>
+
+    
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

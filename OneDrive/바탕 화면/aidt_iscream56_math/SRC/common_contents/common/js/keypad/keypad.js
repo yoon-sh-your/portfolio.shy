@@ -1,0 +1,284 @@
+// initKeypad 함수를 전역으로 노출
+window.initKeypad = function() {
+  // 페이지 초기화
+  const backspace_icon = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="36px" height="36px" fill="#fff"><path d="M360-200q-22 0-40-11.5T289-241L120-480l169-239q13-18 31-29.5t40-11.5h420q24.75 0 42.38 17.62Q840-724.75 840-700v440q0 24.75-17.62 42.37Q804.75-200 780-200H360Zm420-60v-440 440Zm-431 0h431v-440H349L195-480l154 220Zm99-66 112-112 112 112 43-43-113-111 111-111-43-43-110 112-112-112-43 43 113 111-113 111 43 43Z"/></svg>';
+  const return_icon = '<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="36px" fill="#fff"><path d="M359-240 120-479l239-239 43 43-167 167h545v-172h60v231H236l166 166-43 43Z"/></svg>';
+
+  const layout_basic_with_enter = [
+    {
+      label: '숫자/연산 기호',
+      rows: [
+        ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],
+        ['\\frac{#0}\\placeholder{}', { latex: '\\placeholder{}\\frac{#0}\\placeholder{}', width: 2, height: 2 }, '+', '-', '\\times', '\\div', '=', { class: 'action', label: return_icon, width: 2, command: ['performWithFeedback', 'addRowAfter'] }],
+        [{ class: 'separator w10',  }, '.', '\\cdots', ':', '<', '>', '(', ')', { class: 'action', label: backspace_icon, width: 2, command: ['performWithFeedback', 'deleteBackward'] }]
+      ]
+    },
+    {
+      label: '도형/단위',
+      rows: [
+        ['\\triangledown', '\\square', '\\triangle', '○', '☆', '\\heartsuit', '\\diamond', '˚', { class: 'separator w20' }],
+        ['㎜', '㎝', 'm', '㎞', 'g', '㎏', 't', '℃', { class: 'action', label: return_icon, width: 2, command: ['performWithFeedback', 'addRowAfter'] }],
+        ['㎠', '㎡', '㎢', '㎤', '㎥', 'mL', 'L', { label: '%' }, { class: 'action', label: backspace_icon, width: 2, command: ['performWithFeedback', 'deleteBackward'] }]
+      ]
+    }
+  ];
+
+  const mathFields = document.getElementsByTagName('math-field');
+  const latex = document.getElementById("latex");
+
+  let mathFieldCounter = 0;  // 카운터 변수 추가
+  [...mathFields].forEach((mathField) => {
+    // ID 자동 생성 로직 추가
+    if (!mathField.id) {
+      mathFieldCounter++;
+      // 상위 페이지 요소에서 page_숫자 클래스 찾기
+      const parentPage = mathField.closest('.page');
+      let pageNumber = 'page';
+      
+      if (parentPage) {
+        const pageClass = Array.from(parentPage.classList)
+          .find(className => className.match(/page_\d+/));
+        if (pageClass) {
+          pageNumber = pageClass;
+        }
+      }
+      
+      mathField.id = `${pageNumber}-math-field-${mathFieldCounter}`;
+  }
+
+    // 사운드 비활성화
+    mathField.sound = false;
+    mathField.setAttribute('sound', 'false');
+    
+    if (mathField.classList.contains('textarea')) {
+      SelvyPenMathKeyboard.enableSoftwrap(mathField);
+    }
+    else {
+      SelvyPenMathKeyboard.disableSoftwrap(mathField);
+    }
+
+    if (isConnectedPlaform() === false) {
+      // 플랫폼이 아닌 경우 개발용: 키패드 모드가 활성화된 상태에서만 키보드 표시
+      if (window.self !== window.top) {
+        // iframe 안에 있는 경우
+        mathField.mathVirtualKeyboardPolicy = "sandboxed";
+        console.log("keypad sandbox");
+      }
+      else {
+        mathField.mathVirtualKeyboardPolicy = 'auto';
+      }
+    }
+    
+    // 숫자와 기호만 입력 가능하도록 설정
+    if (mathField.getAttribute('type') === 'number') {
+      mathField.addEventListener('input', function(event) {
+        const value = event.target.getValue('plain-text');
+        // 숫자, 기호, 특수문자, 분수식, 빈칸 표기용 네모 기호 허용
+        if (!/^[\d+\-*\/=.,:<>()%\\frac{}\\placeholder{}]*$/.test(value)) {
+          event.target.value = value.replace(/[^\d+\-*\/=.,:<>()%\\frac{}\\placeholder{}]/g, '');
+        }
+      });
+    }
+
+    ['input', 'change', 'paste'].forEach(eventType => {
+      mathField.addEventListener(eventType, () => {
+        if (!mathField.getValue().includes('\\frac')) {
+          mathField.mode = "text";
+          console.log("change textmode");
+        }
+      });
+    });
+    
+    // textarea 클래스 추가
+    if (mathField.classList.contains('textarea')) {
+      mathField.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+          mathField.executeCommand('performWithFeedback', 'addRowAfter');
+        }
+        else if (event.key === "Backspace") {
+          if (mathField.getValue('plain-text').length == 0) {
+            // 값 초기화
+            if (typeof mathField.setValue === "function") {
+                mathField.setValue(""); // MathLive 메서드 사용
+            } else {
+                mathField.value = ""; // 일반 속성 사용
+            }
+          }
+        }
+      });
+    }
+
+    // 전역 상태 변수
+    let isUsingKeyboard = false;
+
+    // Tab 키 감지
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Tab') {
+        isUsingKeyboard = true;
+      }
+    });
+
+    ['mousedown', 'click', 'keydown'].forEach(eventType => {
+      mathField.addEventListener(eventType, () => {
+        if (eventType === 'keydown' && event.key === 'Tab') {
+          isUsingKeyboard = true;
+        } else if (eventType !== 'keydown') {
+          isUsingKeyboard = false;
+        }
+      });
+    });
+
+    mathField.addEventListener("focus", (e) => {
+      let mathFields = document.querySelectorAll('math-field');
+      mathFields.forEach((field) => {
+        if (field !== e.target) {
+          field.classList.remove('focus-visible');
+        }
+      });
+      if (isUsingKeyboard) {
+        // 포커스된 math-field에만 focus-visible 클래스 추가
+        e.target.classList.add('focus-visible');
+      } else {
+        e.target.classList.remove('focus-visible');
+      }
+      if (isConnectedPlaform() === false) {
+        // 플랫폼이 아닌 경우 개발용: 키패드 모드가 활성화된 상태에서만 키보드 표시
+        if (keypadModeState.isKeypadMode && !mathField.classList.contains('hint')) {
+          mathVirtualKeyboard.show();
+        } else {
+          mathVirtualKeyboard.hide();
+        }
+      }
+      else {
+        sendHandwriting(mathField);
+      }
+    }, true);  // 캡처링 페이즈에서 이벤트 처리
+    
+    // 포커스 해제 시 키보드 숨김
+    mathField.addEventListener("blur", (e) => {
+      e.target.classList.remove('focus-visible');
+      if (mathVirtualKeyboard.visible) {
+        // 짧은 지연 후 확인 (blur와 focus 이벤트 순서 보장)
+        setTimeout(() => {
+          const mathFields = document.getElementsByTagName('math-field');
+          const hasFocusedMathField = [...mathFields].some(field => 
+            document.activeElement === field
+          );
+          
+          if (!hasFocusedMathField) {
+            mathVirtualKeyboard.hide();
+          }
+        }, 0);
+      }      
+    });
+      
+    MathfieldElement.soundsDirectory = null; // 소리 제거
+    MathfieldElement.fontsDirectory = null; // 폰트 제거
+    
+    mathField.textContent = '';  // 초기 내용 지우기
+    mathField.mathModeSpace = '\\:' // 수학 모드에서 공백을 넣기 위한 설정
+    mathField.mode = "text"; // 기본 모드 설정
+    mathField.editToolbar = "none"; // hide toolbar
+    mathField.inlineShortcuts = false; // 인라인 단축키 사용 안함  
+    mathField.smartFence = false; // 스마트 펜스 비활성화
+    mathField.smartFenceColor = "transparent"; // 스마트 펜스 색상 투명으로 설정
+    mathField.smartSuperscript = false; // 스마트 위첨자 비활성화
+
+    mathVirtualKeyboard.editToolbar = "none"; // hide toolbar
+    mathVirtualKeyboard.plonkSound = null; // 사운드 비활성화
+    mathVirtualKeyboard.keypressSound = null; // 키 입력 사운드 비활성화
+    
+    mathVirtualKeyboard.layouts = layout_basic_with_enter;
+
+    let style = document.createElement('style');
+    if (typeof dev !== "undefined" && dev === true) {
+      /* 업데이트된 lib 받기 전까지 입력 영역 넘치는 문제 임시 수정 */    
+      const computedStyle = window.getComputedStyle(mathField);
+      if (computedStyle.height && computedStyle.height !== 'auto') {
+        console.log(`CSS height for mathField is set to: ${computedStyle.height}`);
+        if (mathField.style.height !== computedStyle.height) {
+        console.warn(`Mismatch: mathField.style.height (${mathField.style.height}) does not match computedStyle.height (${computedStyle.height}).`);
+        }
+      } else {
+        console.log('No CSS height is explicitly set for mathField.');
+      }
+      let width = height = '';
+      
+      
+      if (mathField.classList.contains("textarea")) {
+        height = `height: ${parseInt(computedStyle.height)}px;`;
+      }
+      
+      width = `width: ${parseInt(computedStyle.width)}px;`;
+      if (!mathField.style.width) {
+        if (mathField.parentNode?.style.width) {
+          const parentStyle = window.getComputedStyle(mathField.parentNode);
+          width = `width: ${parseInt(parentStyle.width)}px;`;
+        }
+      }
+      
+      mathField.setAttribute('style', `${height} ${width}`);
+    }
+        
+    style.innerHTML = `
+            * {
+                font-family: 'Pretendard' !important;
+            }
+            :lang(ko), :lang(ko-kr), :lang(ko-kr-std) {
+                --ui-font-family: 'Pretendard';
+                --smart-fence-color: transparent;
+                --composition-background-color: transparent;
+                
+            }
+            .ML__content {
+                align-items: flex-start !important;
+            }
+            .ML__cmr {
+                font-weight: bold !important;
+            }
+            .ML__mathit {
+                font-style: normal !important;
+            }
+    `;
+    mathField.shadowRoot.appendChild(style);
+  });
+  console.log("keypad init");
+}
+
+// LaTeX에서 텍스트 추출하기
+function extractTextFromLatex(latex) {
+  // LaTeX 명령어들을 일반 텍스트로 변환하는 함수
+  const convertLatexCommands = (text) => {
+    return text
+      .replace(/\\textasteriskcentered/g, '*')  // \textasteriskcentered -> *
+      .replace(/\\times/g, '×')                 // \times -> ×
+      .replace(/\\div/g, '÷')                   // \div -> ÷
+      .replace(/\\cdot/g, '·')                  // \cdot -> ·
+      .replace(/\\pm/g, '±')                    // \pm -> ±
+      .replace(/\\infty/g, '∞')                 // \infty -> ∞
+      .replace(/\\le/g, '≤')                    // \le -> ≤
+      .replace(/\\ge/g, '≥')                    // \ge -> ≥
+      .replace(/\\neq/g, '≠');                  // \neq -> ≠
+  };
+
+  // \text{...} 내부의 텍스트 추출 및 LaTeX 명령어 변환
+  const processText = (text) => {
+    // \text{} 안의 내용을 추출
+    const textMatches = text.match(/\\text\{([^}]*)\}|([^\\{}]+)/g);
+    if (!textMatches) return text;
+
+    return textMatches
+      .map(match => {
+        const textMatch = match.match(/\\text\{([^}]*)\}/);
+        const content = textMatch ? textMatch[1] : match;
+        // LaTeX 명령어를 변환
+        return convertLatexCommands(content);
+      })
+      .join('')
+      .trim();
+  };
+
+  // 전체 LaTeX 문자열 처리
+  const processed = processText(latex);
+  return processed;
+}

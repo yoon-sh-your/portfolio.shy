@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA622_04_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema622_04.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema622_04_ih_0001">
+			<div class="scroll_page">
+				<section class="title type2">
+					<h2 data-head="1_green" lang="y">
+						6.27÷1.9를 은호와 시은이의 방법으로 계산하려고 합니다. <span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.
+					</h2>
+				</section>
+
+				<section class="contents">
+
+					<div class="item1">
+						<div class="img_box">
+							<img src="../../common_practice/img/EMA622_04_IH/0001_img1.png" alt="">
+							<span class="name" lang="y">은호</span>
+							<p lang="y">자연수의<br>나눗셈을 이용하여<br>계산할 거야.</p>
+						</div>
+						<div class="question_box">
+							<div class="left">
+								<div class="times top">
+									<div class="flex align_center gap_4">
+										<div class="input_wrap">
+											<math-field data-answer-single="100"></math-field>
+										</div>
+										<span lang="y">배</span>
+									</div>
+								</div>
+								<div class="middle">
+									<div class="flex align_center gap_12">
+										<span class="pink">6.27</span>
+										÷
+										<span class="green">1.9</span>
+									</div>
+									<div class="flex align_center gap_12">
+										<span class="pink">627</span>
+										÷
+										<span class="green">190</span>
+										=
+										<div class="input_wrap">
+											<math-field data-answer-single="3.3"></math-field>
+										</div>
+									</div>
+								</div>
+								<div class="times bottom">
+									<div class="flex align_center gap_4">
+										<div class="input_wrap">
+											<math-field data-answer-single="100"></math-field>
+										</div>
+										<span lang="y">배</span>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="flex align_center gap_4">
+									6.27÷1.9=
+									<div class="input_wrap">
+										<math-field data-answer-single="3.3"></math-field>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item2">
+						<div class="img_box">
+							<img src="../../common_practice/img/EMA622_04_IH/0001_img2.png" alt="">
+							<span class="name" lang="y">시은</span>
+							<p lang="y">(소수)÷(자연수)<br>를 이용하여<br>계산해야지.</p>
+						</div>
+						<div class="question_box">
+							<div class="left">
+								<div class="times top">
+									<div class="flex align_center gap_4">
+										<div class="input_wrap">
+											<math-field data-answer-single="10"></math-field>
+										</div>
+										<span lang="y">배</span>
+									</div>
+								</div>
+								<div class="middle">
+									<div class="flex align_center gap_12">
+										<span class="pink">6.27</span>
+										÷
+										<span class="green">1.9</span>
+									</div>
+									<div class="flex align_center gap_12">
+										<span class="pink">62.7</span>
+										÷
+										<span class="green">19</span>
+										=
+										<div class="input_wrap">
+											<math-field data-answer-single="3.3"></math-field>
+										</div>
+									</div>
+								</div>
+								<div class="times bottom">
+									<div class="flex align_center gap_4">
+										<div class="input_wrap">
+											<math-field data-answer-single="10"></math-field>
+										</div>
+										<span lang="y">배</span>
+									</div>
+								</div>
+							</div>
+							<div class="right">
+								<div class="flex align_center gap_4">
+									6.27÷1.9=
+									<div class="input_wrap">
+										<math-field data-answer-single="3.3"></math-field>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<!-- <div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+								</div>
+							</div>
+							<div class="buttons_solve">
+							</div>
+						</div>
+					</div> -->
+					<div class="btn_area relative mt_30">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_02_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_02_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y"><span class="label_bread">조건</span>을 만족하는 수를 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="question_box justify_center">
+            <div class="bogi_box">
+              <span class="label_bread">조건</span>
+              <div class="conts_bogi justify_start">
+                <ul class="flex dir_col gap_12">
+                  <li class="text_bullet">30의 약수입니다.</li>
+                  <li class="text_bullet">6보다 큰 수입니다.</li>
+                  <li class="text_bullet">홀수입니다.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <h3 lang="y">30의 약수를 모두 써 보세요.</h3>
+              <div class="flex align_center">
+                <div class="input_wrap"><math-field data-answer-single="1" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="2" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="3" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="5" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="6" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="10" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="15" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+                ,
+                <div class="input_wrap"><math-field data-answer-single="30" data-cross-answer="g1" data-answer-multi='{"values": ["1", "2", "3", "5", "6", "10", "15", "30"]}'></math-field></div>
+              </div>
+              <div class="error-message"></div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">30의 약수는 1, 2, 3, 5, 6, 10, 15, 30입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="question_box justify_center">
+            <div class="bogi_box">
+              <span class="label_bread" lang="y">조건</span>
+              <div class="conts_bogi justify_start">
+                <ul class="flex dir_col gap_12">
+                  <li class="text_bullet">30의 약수입니다.</li>
+                  <li class="text_bullet">6보다 큰 수입니다.</li>
+                  <li class="text_bullet">홀수입니다.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="right">
+              <h3 lang="y">30의 약수 중에서 6보다 큰 홀수를 써 보세요.</h3>
+              <div class="flex align_center gap_12">
+                <div class="input_wrap"><math-field data-answer-single="15"></math-field></div>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">1, 2, 3, 5, 6, 10, 15, 30 중에서 6보다 큰 홀수는 15입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mathFields = document.querySelectorAll('math-field');
+    
+        const getEnteredValues = () =>
+          Array.from(mathFields)
+            .map(f => f.getValue().trim())
+            .filter(v => v !== '');
+    
+        mathFields.forEach(field => {
+          const correctValue = field.dataset.answerSingle;
+          const allCorrectValues = JSON.parse(field.dataset.answerMulti).values;
+    
+          const errorDiv = document.createElement('div');
+          errorDiv.className = 'error-message';
+          field.parentElement.appendChild(errorDiv);
+    
+          field.addEventListener('input', () => {
+            const currentValue = field.getValue().trim();
+            const allValues = getEnteredValues();
+    
+            // 중복 체크
+            const isDuplicate = allValues.filter(v => v === currentValue).length > 1;
+    
+            // 정답 체크
+            const isCorrect = currentValue === correctValue;
+    
+            if (isDuplicate) {
+              field.classList.add('error');
+              field.classList.remove('correct');
+              errorDiv.textContent = '이미 입력된 약수입니다.';
+            } else if (allCorrectValues.includes(currentValue)) {
+              if (isCorrect) {
+                field.classList.add('correct');
+                field.classList.remove('error');
+                errorDiv.textContent = '';
+              } else {
+                // field.classList.add('error');
+                // field.classList.remove('correct');
+                // errorDiv.textContent = '정답이 아닙니다. 다시 입력해주세요.';
+              }
+            } else {
+              // field.classList.add('error');
+              // field.classList.remove('correct');
+              // errorDiv.textContent = '유효하지 않은 값입니다.';
+            }
+    
+            // 입력 비우면 초기화
+            if (currentValue === '') {
+              field.classList.remove('correct', 'error');
+              errorDiv.textContent = '';
+            }
+          });
+        });
+      });
+    </script>
+    
+  </body>
+</html>

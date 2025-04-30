@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema625_11_su_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_11.css">
+
+</head>
+<body>
+    <div id="app_wrap" class="ema625_11_su_0008">
+		<div class="scroll_page">
+			<section class="title type2">
+				<h2 data-type="1" data-text="자기주도 4">
+					<span class="blue line" lang="y">확인하고 정리해요</span>
+					<span lang="y">공부한 내용을 확인해요</span>
+				</h2>
+			</section>
+
+			<section class="title type2 jgjd_4_sub_title">
+				<h2 lang="y">
+					<div class="title_row">
+						<span class="nemo_blank"></span>
+						<span lang="y">안에 알맞은 수를 써넣으세요.</span>
+					</div>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="scroll_area">
+					<img src="../../common_contents/img/EMA625_11_SU/0008_bg_contents.png" alt="배경이미지">
+		
+					<div class="question_box q01">
+						<div class="input_wrap">
+							<span lang="y">원의 둘레를</span>
+							<div class="dropdown_wrap ml_8">
+								<select class="custom_dropdown" data-answer-single="원주">
+									<option></option>
+									<option value="원주">원주</option>
+									<option value="원주율">원주율</option>
+									<option value="지름">지름</option>
+									<option value="반지름">반지름</option>
+								</select>
+							</div>
+							<span lang="y">(이)라고 합니다.</span>
+						</div>
+					</div>
+					
+					<div class="question_box q02">
+						<div>
+							<span lang="y">원의 지름에 대한 원주의</span>
+						</div>
+						<div class="input_wrap" data-hint-position="right">
+							<span lang="y">비율을</span>
+							<div class="dropdown_wrap ml_8">
+								<select class="custom_dropdown" data-answer-single="원주율">
+									<option></option>
+									<option value="원주">원주</option>
+									<option value="원주율">원주율</option>
+									<option value="지름">지름</option>
+									<option value="반지름">반지름</option>
+								</select>
+							</div>
+							<span lang="y">(이)라고</span>
+						</div>
+						<div>
+							<span lang="y">하고, 3.14로 어림하여</span>
+						</div>
+						<div>
+							<span lang="y">사용합니다.</span>
+						</div>
+					</div>
+		
+					<div class="question_box q03">
+						<div class="input_wrap" data-hint-position="up">
+							<span lang="y">(원주)=(</span>
+							<div class="dropdown_wrap">
+								<select class="custom_dropdown" data-answer-single="지름">
+									<option></option>
+									<option value="원주">원주</option>
+									<option value="원주율">원주율</option>
+									<option value="지름">지름</option>
+									<option value="반지름">반지름</option>
+								</select>
+							</div>
+							<span lang="y">)×(원주율)</span>
+						</div>
+						<div>
+							<span lang="y">(지름)=(원주)÷(원주율)</span>
+						</div>
+					</div>           	
+	
+					<div class="question_box q04">
+						<div>
+							<span lang="y">(원의 넓이)</span>
+						</div>
+						<div class="input_wrap">
+							<span lang="y">=(반지름)×(</span>
+							<div class="dropdown_wrap">
+								<select class="custom_dropdown" data-answer-single="반지름">
+									<option></option>
+									<option value="원주">원주</option>
+									<option value="원주율">원주율</option>
+									<option value="지름">지름</option>
+									<option value="반지름">반지름</option>
+								</select>
+							</div>
+							<span lang="y">)×(원주율)</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn_area relative">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+    </div>
+</body>
+</html>

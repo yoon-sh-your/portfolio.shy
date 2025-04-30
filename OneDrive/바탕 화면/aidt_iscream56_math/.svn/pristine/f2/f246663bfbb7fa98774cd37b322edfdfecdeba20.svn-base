@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_03_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_03_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">배수를 가장 작은 수부터 차례대로 5개 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex gap_40">
+          <span class="tit" lang="y">9의 배수</span>
+          <div class="question_box">
+            <span>(</span>
+            <div class="input_wrap"><math-field data-answer-single="9"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="18"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="27"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="36"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="45"></math-field></div>
+            )
+          </div>
+        </div>
+        <div class="flex gap_40 mt_40">
+          <span class="tit" lang="y">13의 배수</span>
+          <div class="question_box">
+            <span>(</span>
+            <div class="input_wrap"><math-field data-answer-single="13"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="26"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="39"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="52"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="65"></math-field></div>
+            )
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet">9×1=9, 9×2=18, 9×3=27, 9×4=36, 9×5=45, ...</p>
+                <p lang="y" class="ml_16">➔ 9의 배수: 9, 18, 27, 36, 45, ...</p>
+                <p class="text_bullet">13×1=13, 13×2=26, 13×3=39, 13×4=52, 13×5=65, ...</p>
+                <p lang="y" class="ml_16">➔ 13의 배수: 13, 26, 39, 52, 65, ...</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

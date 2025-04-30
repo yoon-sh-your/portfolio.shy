@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_02_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_02_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">어떤 수의 약수를 모두 쓴 것입니다. 어떤 수를 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align_center gap_20">
+          <div class="list_num">
+            <span>1</span>
+            <span>,</span>
+            <span>2</span>
+            <span>,</span>
+            <span>3</span>
+            <span>,</span>
+            <span>6</span>
+            <span>,</span>
+            <span>9</span>
+            <span>,</span>
+            <span>18</span>
+          </div>
+          <div class="question_box gap_12">
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="18"></math-field>
+            </div>
+            <span>)</span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">어떤 수의 약수 중에서 가장 큰 수는 자기 자신입니다. 따라서 주어진 약수 중에서 가장 큰 수가 18이므로 어떤 수는 18입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

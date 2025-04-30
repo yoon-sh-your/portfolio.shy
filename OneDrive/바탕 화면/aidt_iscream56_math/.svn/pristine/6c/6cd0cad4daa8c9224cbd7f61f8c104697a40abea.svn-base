@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA626_05_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema626_05.css" />
+
+</head>
+
+<body>
+  <div id="app_wrap" class="ema626_05_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_orange" lang="y">여러 가지 모양의 물건을 찾는 놀이를 하고 있습니다. 입체도형을 분류해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">기준에 따라 입체도형을 분류해 보세요.​</h3>
+        <div class="question_box justify_center">
+          <div class="dragndrop_fraction_wrap">
+            <div class="drag_group">
+              <div class="drag_item figure1" data-pair="1" data-value="가">
+                <span lang="y" class="text">가</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_05_SU/0003_content01.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure2" data-pair="1" data-value="나">
+                <span lang="y" class="text">나</span>
+                <span class="img mt_30"><img src="../../common_contents/img/EMA626_05_SU/0003_content02.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure3" data-pair="1" data-value="다">
+                <span lang="y" class="text">다</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_05_SU/0003_content03.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure4" data-pair="1" data-value="라">
+                <span lang="y" class="text">라</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_05_SU/0003_content04.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure5" data-pair="1" data-value="마">
+                <span lang="y" class="text">마</span>
+                <span class="img mt_30"><img src="../../common_contents/img/EMA626_05_SU/0003_content05.svg" alt="도형이미지"></span>
+              </div>
+            </div>
+            <div class="drop_group">
+              <ul class="form_box">
+                <li>
+                  <div class="row1" lang="y">
+                    <span lang="y">평평한 면이 원이고 1개인 입체도형</span>
+                  </div>
+                  <div class="row2">
+                    <div class="drop_item" data-pair="1" data-answer-single="가"></div>
+                    <div class="drop_item" data-pair="1" data-answer-single="다"></div>
+                    <div class="drop_item" data-pair="1" data-answer-single="마"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="row1" lang="y">
+                    <span lang="y">평평한 면이 원이고 1개가 아닌 입체도형</span>
+                  </div>
+                  <div class="row2">
+                    <div class="drop_item" data-pair="1" data-answer-single="나"></div>
+                    <div class="drop_item" data-pair="1" data-answer-single="라"></div>
+                  </div>
+                </li>
+              </ul>
+                
+            </div>
+          </div>
+        </div>
+      </article> 
+      <article class="page page_2">
+        <h3 lang="y">평평한 면이 원이고 1개인 입체도형은 어떤 특징이 있는지 이야기해 보세요.​</h3>
+        <div class="question_box justify_center">
+          <div class="dragndrop_fraction_wrap">
+            <div class="drag_group figure_group">
+              <div class="drag_item figure1" data-pair="1" data-value="가">
+                <span lang="y" class="text">가</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_05_SU/0003_content01.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure2" data-pair="1" data-value="나">
+                <span lang="y" class="text">나</span>
+                <span class="img mt_30"><img src="../../common_contents/img/EMA626_05_SU/0003_content02.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure3" data-pair="1" data-value="다">
+                <span lang="y" class="text">다</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_05_SU/0003_content03.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure4" data-pair="1" data-value="라">
+                <span lang="y" class="text">라</span>
+                <span class="img"><img src="../../common_contents/img/EMA626_05_SU/0003_content04.svg" alt="도형이미지"></span>
+              </div>
+              <div class="drag_item figure5" data-pair="1" data-value="마">
+                <span lang="y" class="text">마</span>
+                <span class="img mt_30"><img src="../../common_contents/img/EMA626_05_SU/0003_content05.svg" alt="도형이미지"></span>
+              </div>
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">평평한 면이 원이고 1개입니다.</li>
+                <li lang="y">뾰족한 부분과 굽은 면이 있습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article> 
+      <article class="page page_3">
+        <div class="summarize_wrap">
+          <div class="summarize promise">
+            <label lang="y">약속해 볼까요</label>
+            <div class="summarize_text">
+              <div><img src="../../common_contents/img/EMA626_05_SU/0003_content06.png" alt="도형 이미지"></div>
+              <div class="mt_40">
+                <span lang="y">등과 같이 평평한 면이 원이고 1개인 입체도형을</span>
+              </div>
+              <div class="mt_40">
+                <button class="reveal_btn" data-pair="1" lang="y">원뿔</button>
+                <span class="small-gap" lang="y">이라고 합니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset" lang="y">리셋</button>
+        <button class="btnCheck" lang="y">확인</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

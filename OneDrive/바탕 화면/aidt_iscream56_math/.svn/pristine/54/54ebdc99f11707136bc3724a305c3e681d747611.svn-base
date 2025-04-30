@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_02_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_02.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_02_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6" class="is_star" lang="y">
+					실 
+					<div class="fraction_box">
+						<span>4</span>
+						<span>21</span>
+					</div>
+					m로 독도 기념 팔찌를 한 개 만들 수 있습니다. 실 
+					<div class="fraction_box">
+						<span>16</span>
+						<span>21</span>
+					</div>
+					m로 독도 기념 팔찌를 몇 개 만들 수 있는지 식을 쓰고 답을 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="flex justify_center">
+					<img src="../../common_practice/img/EMA621_02_IH/0006_img.png" alt="">
+				</div>
+				<div class="question_box justify_center gap_120">
+					<div class="flex align_center gap_4">
+						<div class="flex gap_10">
+							<span class="label_gray" lang="y">식</span>
+							<div class="input_wrap fraction_wrap answer1">
+								<math-field data-answer-single="(16)/(21)-:(4)/(21)"></math-field>
+							</div>
+						</div>
+						=
+						<div class="input_wrap">
+							<math-field data-answer-single="4"></math-field>
+						</div>
+					</div>
+
+					<div class="flex gap_10">
+						<span class="label_gray" lang="y">답</span>
+						<div class="flex align_center gap_4">
+							<div class="input_wrap">
+								<math-field data-answer-single="4"></math-field>
+							</div>
+							<span lang="y">개</span>
+						</div>
+					</div>
+						
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+ㄴ						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

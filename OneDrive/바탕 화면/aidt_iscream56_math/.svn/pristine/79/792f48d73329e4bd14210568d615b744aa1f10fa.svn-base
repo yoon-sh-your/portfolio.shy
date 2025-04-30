@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_04_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema511_04_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">가게에서 서하는 사과 4개와 배 1개를 샀고, 재윤이는 귤 1상자를 샀습니다. 서하는 재윤이보다 얼마를 더 내야 하는지 하나의 식으로 나타내어 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_26">
+          <div class="img_box">
+            <div class="img_wrap">
+              <img src="../../common_practice/img/EMA511_04_IH/0006_img.png" alt="" />
+              <span class="txt1" lang="y">사과 1개<br />1800원</span>
+              <span class="txt2" lang="y">배 1개<br />3000원</span>
+              <span class="txt3" lang="y">귤 1상자<br />9000원</span>
+            </div>
+          </div>
+          <div class="question_box dir_col align_start gap_60">
+            <div class="flex align_center gap_12">
+              <span lang="y">식:</span>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="1800×4+3000-9000"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="1200"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center">
+              <span lang="y">답:</span>
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="1200"></math-field>
+              </div>
+              <span lang="y">원</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(서하가 내야 하는 값)-(재윤이가 내야 하는 값)</p>
+                <p>=1800×4+3000-9000</p>
+                <p>=7200+3000-9000</p>
+                <p>=10200-9000=1200(원)</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

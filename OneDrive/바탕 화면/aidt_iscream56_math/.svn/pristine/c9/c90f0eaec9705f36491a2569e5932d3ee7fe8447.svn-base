@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_05_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_05_su_0004">
+      <section class="title type2">
+        <h2 data-head="2_orange" lang="y">일이 일어날 가능성을 알맞게 표현한 곳에 <div class="circle"></div>표 해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="table_box">
+            <img src="../../common_contents/img/EMA526_05_SU/0004_table.svg" alt="">
+
+            <div class="row">
+              <div class="txt txt1" lang="y">가능성</div>
+              <div class="txt txt2" lang="y">불가능<br>하다</div>
+              <div class="txt txt3" lang="y">~아닐 것<br>같다</div>
+              <div class="txt txt4" lang="y">반반이다</div>
+              <div class="txt txt5" lang="y">~일 것<br>같다</div>
+              <div class="txt txt6" lang="y">확실하다</div>
+            </div>
+
+            <div class="column">
+              <div class="txt txt1" lang="y">일</div>
+              <div class="txt txt2" lang="y">
+                내일 하루는<br>
+                25시간일 것입니다.
+              </div>
+              <div class="txt txt3" lang="y">
+                윷놀이에서 8번 연속으로<br>
+                모가 나올 것입니다.
+              </div>
+              <div class="txt txt4" lang="y">
+                우리 반에는 오른손잡이가<br>
+                많을 것입니다.
+              </div>
+              <div class="txt txt5" lang="y">
+                내일 아침에 해가 동쪽에서<br>
+                뜰 것입니다.
+              </div>
+              <div class="txt txt6" lang="y">
+                우체국에서 뽑은 대기표의<br>
+                번호는 짝수일 것입니다.
+              </div>
+            </div>
+
+            <div class="boolean_wrap">
+              <button data-answer-single="true"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+
+              <button data-answer-single="false"></button>
+              <button data-answer-single="true"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="true"></button>
+              <button data-answer-single="false"></button>
+              
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="true"></button>
+
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="true"></button>
+              <button data-answer-single="false"></button>
+              <button data-answer-single="false"></button>
+            </div>
+          </div> 
+        </article>
+
+        <article class="page page_2">
+          <div class="summarize_wrap">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+              <div lang="y">어떠한 상황에서 특정한 일이 일어나길 기대할 수 있는 정도를</div>
+              <div lang="y">
+                <button class="reveal_btn">가능성</button>
+                <span class="small-gap">이라고 합니다. 가능성은 불가능하다, ~아닐 것 같다,</span>
+              </div>
+              <div lang="y">반반이다, ~일 것 같다, 확실하다 등으로 표현할 수 있습니다.</div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

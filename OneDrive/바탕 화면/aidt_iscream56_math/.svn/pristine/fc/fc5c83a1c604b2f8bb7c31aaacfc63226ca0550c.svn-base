@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_04_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_04_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">28과 42의 최대공약수를 두 가지 방법으로 구해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box">
+          <div class="question_block left">
+            <div class="top">
+              <div class="row">
+                28=2×2×
+                <div class="input_wrap"><math-field data-answer-single="7"></math-field></div>
+              </div>
+              <div class="row">
+                42=2×3×
+                <div class="input_wrap"><math-field data-answer-single="7"></math-field></div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="row gap_20">
+                <img src="../../common_practice/img/EMA512_04_IH/0002_img01.png" alt="" width="40" />
+                <span lang="y">28과 42의 최대공약수:</span>
+              </div>
+              <div class="row mt_25 gap_10">
+                <div class="input_wrap"><math-field data-answer-single="2" data-cross-answer="g1"></math-field></div>
+                ×
+                <div class="input_wrap"><math-field data-answer-single="7" data-cross-answer="g1"></math-field></div>
+                =
+                <div class="input_wrap"><math-field data-answer-single="14"></math-field></div>
+              </div>
+            </div>
+          </div>
+          <div class="question_block right">
+            <div class="top">
+              <div class="row">
+                <span class="num left">2</span>
+                <span class="num">28</span>
+                <span class="num">4</span>
+              </div>
+              <div class="row">
+                <div class="input_wrap left"><math-field data-answer-single="7"></math-field></div>
+                <span class="num">14</span>
+                <span class="num">21</span>
+              </div>
+              <div class="row">
+                <span class="num">2</span>
+                <div class="input_wrap right"><math-field data-answer-single="3"></math-field></div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="row gap_20">
+                <img src="../../common_practice/img/EMA512_04_IH/0002_img01.png" alt="" width="40" />
+                <span lang="y">28과 42의 최대공약수:</span>
+              </div>
+              <div class="row mt_25 gap_10">
+                <div class="input_wrap"><math-field data-answer-single="2" data-cross-answer="g2"></math-field></div>
+                ×
+                <div class="input_wrap"><math-field data-answer-single="7" data-cross-answer="g2"></math-field></div>
+                =
+                <div class="input_wrap"><math-field data-answer-single="14"></math-field></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">식에 공통으로 들어 있는 수를 모두 곱하면 되므로 두 수의 최대공약수는 2×7=14입니다.</p>
+                <p class="text_bullet" lang="y">28과 42의 최대공약수는 두 수를 나눈 공약수들의 곱이므로 2×7=14입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_03_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_03_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">직육면체의 겨냥도를 보고 <span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center align_center gap_120">
+          <div class="img"><img src="../../common_practice/img/EMA525_03_IH/0003_img.svg" alt="" /></div>
+          <div class="question_box dir_col gap_40">
+            <div class="text_bullet" lang="y">
+              보이는 면은
+              <span class="input_wrap"> <math-field data-answer-single="3"></math-field> </span>개입니다.
+            </div>
+            <div class="text_bullet" lang="y">
+              보이지 않는 면은
+              <span class="input_wrap"> <math-field data-answer-single="3"></math-field> </span>개입니다.
+            </div>
+            <div class="text_bullet" lang="y">
+              보이는 모서리는
+              <span class="input_wrap"> <math-field data-answer-single="9"></math-field> </span>개입니다.
+            </div>
+            <div class="text_bullet" lang="y">
+              보이지 않는 모서리는
+              <span class="input_wrap"> <math-field data-answer-single="3"></math-field> </span>개입니다.
+            </div>
+            <div class="text_bullet" lang="y">
+              보이는 꼭짓점은
+              <span class="input_wrap"> <math-field data-answer-single="7"></math-field> </span>개입니다.
+            </div>
+            <div class="text_bullet" lang="y">
+              보이지 않는 꼭짓점은
+              <span class="input_wrap"> <math-field data-answer-single="1"></math-field> </span>개입니다.
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">직육면체의 겨냥도에서 보이는 면은 3개, 보이지 않는 면은 3개, 보이는 모서리는 9개, 보이지 않는 모서리는 3개, 보이는 꼭짓점은 7개, 보이지 않는 꼭짓점은 1개입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

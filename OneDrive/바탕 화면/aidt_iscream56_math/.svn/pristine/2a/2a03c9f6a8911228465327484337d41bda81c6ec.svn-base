@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_03_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_03">
+      <section class="title type2">
+        <h2 data-head="1_green" lang="y"><span class="nemo"></span><span lang="y">안에 알맞은 말이나 수를 써넣으세요.</span></h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1 on">
+          <div class="flex justify_center">
+            <h3 lang="y">
+              <span>한 양을 기준으로 다른 양이 몇 배가 되는지 비교하기 위해 기호 :을 사용하여 나타낸 것을</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="비"></math-field>
+              </div>
+              <span>(이)라고 합니다.</span>
+            </h3>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve"></div>
+                <h3>한 양을 기준으로 다른 양이 몇 배가 되는지 비 교하기 위해 기호 :을 사용하여 나타낸 것을 비 라고 합니다.</h3>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="flex justify_center">
+            <h3 lang="y">
+              <span>비 2 : 7에서 기준량은</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="7"></math-field>
+              </div>
+              <span>이고, 비교하는 양은</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="2"></math-field>
+              </div>
+              <span>입니다.</span>
+            </h3>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve"></div>
+                <h3>비 2:7에서 기준량은 7이고, 비교하는 양은 2입니다.</h3>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

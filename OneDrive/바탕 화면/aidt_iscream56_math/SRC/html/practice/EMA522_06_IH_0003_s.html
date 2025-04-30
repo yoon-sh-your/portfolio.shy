@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_06_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_06_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box dir_col justify_center">
+          <div class="flex gap_60 dir_col">
+            <div class="flex align_center gap_10">
+              <div class="fraction_box">
+                <span>1</span>
+                <span>4</span>
+              </div>
+              <span>×</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>6</span>
+              </div>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap" data-hint-position="right">
+                <math-field data-answer-single="(1)/(24)" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center gap_10">
+              <div class="fraction_box">
+                <span>3</span>
+                <span>8</span>
+              </div>
+              <span>×</span>
+              <div class="fraction_box">
+                <span>6</span>
+                <span>7</span>
+              </div>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap" data-hint-position="right">
+                <math-field data-answer-single="(9)/(28)" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center gap_10">
+              <div class="fraction_box">
+                <span>9</span>
+                <span>10</span>
+              </div>
+              <span>×</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>3</span>
+              </div>
+              <span>×</span>
+              <div class="fraction_box">
+                <span>4</span>
+                <span>5</span>
+              </div>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap" data-hint-position="right">
+                <math-field data-answer-single="(6)/(25)" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <div class="fraction_box"><span>1</span><span>4</span></div>
+                  <span>×</span>
+                  <div class="fraction_box"><span>1</span><span>6</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>1</span><span>4×6</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>1</span><span>24</span></div>
+                </div>
+                <div class="flex align_center gap_10 mt_36">
+                  <div class="fraction_box">
+                    <span>3</span><span class="mark_error">8<i>4</i></span>
+                  </div>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">6<i>3</i></span
+                    ><span>7</span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>3×3</span><span>4×7</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>1</span><span>24</span></div>
+                </div>
+                <div class="flex align_center gap_10 mt_36">
+                  <div class="fraction_box">
+                    <span class="mark_error up">9<i>3</i></span
+                    ><span class="mark_error">10<i>5</i></span>
+                  </div>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>1</span><span class="mark_error">3<i>1</i></span>
+                  </div>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">4<i>2</i></span
+                    ><span>5</span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>3×1×2</span><span>5×1×5</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>6</span><span>25</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

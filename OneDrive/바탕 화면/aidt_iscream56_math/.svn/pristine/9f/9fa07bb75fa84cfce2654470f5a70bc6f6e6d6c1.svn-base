@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_12_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema523_su_12.css" />
+    <script src="../../common_contents/js/ema523_02_0004.js"></script>
+
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_12_su_0002">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="1_pink" lang="y">도형 가와 합동인 도형을 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center col align_center gap_20">
+          <div class="figure_wrap">
+            <div class="figure_triangle figure_group1">
+              <img src="../../common_contents/img/EMA523_12_SU/0002_content01.svg" alt="삼각형 이미지">
+              <span lang="y" class="txt txt-1">가</span>
+            </div>
+            
+            <div class="figure_box figure_group2 boolean_wrap">
+              <button class="figure_triangle" data-answer-single="false">
+                <img src="../../common_contents/img/EMA523_12_SU/0002_content02.svg" alt="삼각형 이미지">
+                <span lang="y" class="txt txt-2">나</span>
+              </button>
+              <button class="figure_triangle"  data-answer-single="true">
+                <img src="../../common_contents/img/EMA523_12_SU/0002_content03.svg" alt="삼각형 이미지">
+                <span lang="y" class="txt txt-3">다</span>
+              </button>
+              <button class="figure_triangle" data-answer-single="false">
+                <img src="../../common_contents/img/EMA523_12_SU/0002_content04.svg" alt="삼각형 이미지">
+                <span lang="y" class="txt txt-4">라</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

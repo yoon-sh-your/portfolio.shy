@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_03_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_04.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="dragndrop fraction drawline ema523_03_su_0004">
+    <section class="title type2">
+      <h2 data-head="2_pink">
+        <div>
+          <span lang="y">서로 합동인 두 도형에서 대응변의 길이와 대응각의 크기를 각각 비교해 봅시다.</span>
+          <button type="button" class="icon_supplies" lang="y" data-supplies="pop_supplies_area_1">준비물</button>
+        </div>
+      </h2>
+    </section>
+
+    <div class="pop_area pop_supplies_area pop_supplies_area_1">
+      <div class="supplies_zoom_wrap">
+        <button type="button" class="close"></button>
+        <div class="supplies_zoom scrollable">
+          <div class="supplies_box_wrap">
+            <div class="supplies_box">
+              <div class="supplies_tit">삼각자, 각도기, 자</div>
+              <div class="supplies_contents">
+                <img src="../../common_contents/img/EMA523_02_SU/0004_supplies.png" alt="준비물 도형" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="controller">
+            <button class="supplies_scale_down" disabled></button>
+            <button class="supplies_scale_up"></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">두 사각형에서 대응변을 모두 찾아 각각의 길이를 비교해 보세요.​</h3>
+        <div class="figure_wrap">
+          <div class="figure_box">
+              <div class="figure_triangle"><span class="txt_1" lang="y">ㄱ</span><span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span><span class="txt_4" lang="y">ㄹ</span></div>
+              <div class="figure_triangle"><span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span><span class="txt_7" lang="y">ㅇ</span><span class="txt_8" lang="y">ㅅ</span></div>
+          </div>
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>변 ㄱㄴ</li>
+              <li>변 ㄴㄷ</li>
+              <li>변 ㄹㄷ</li>
+              <li>변 ㄱㄹ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e3"],["s3","e1"],["s4","e4"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s1"></div>
+                    <div class="connect_point" data-id="s2"></div>
+                    <div class="connect_point" data-id="s3"></div>
+                    <div class="connect_point" data-id="s4"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e1"></div>
+                    <div class="connect_point" data-id="e2"></div>
+                    <div class="connect_point" data-id="e3"></div>
+                    <div class="connect_point" data-id="e4"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+                <li>변 ㅁㅂ</li>
+                <li>변 ㅇㅅ</li>
+                <li>변 ㅅㅂ</li>
+                <li>변 ㅇㅁ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="question_box">
+          <div class="flex align_center gap_12 mt_20 f32b">
+            <span lang="y">각각의 대응변의 길이는 서로</span>
+
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="같습니다.">
+                <option value="같습니다."></option>
+                <option value="다릅니다."></option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">두 사각형에서 대응각을 모두 찾아 각각의 크기를 비교해 보세요.​</h3>
+        <div class="figure_wrap">
+          <div class="figure_box">
+              <div class="figure_triangle"><span class="txt_1" lang="y">ㄱ</span><span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span><span class="txt_4" lang="y">ㄹ</span></div>
+              <div class="figure_triangle"><span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span><span class="txt_7" lang="y">ㅇ</span><span class="txt_8" lang="y">ㅅ</span></div>
+          </div>
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>각 ㄱㄴㄷ</li>
+              <li>각 ㄴㄷㄹ</li>
+              <li>각 ㄱㄹㄷ</li>
+              <li>각 ㄴㄱㄹ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s5","e5"],["s6","e7"],["s7","e6"],["s8","e8"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s5"></div>
+                    <div class="connect_point" data-id="s6"></div>
+                    <div class="connect_point" data-id="s7"></div>
+                    <div class="connect_point" data-id="s8"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e5"></div>
+                    <div class="connect_point" data-id="e6"></div>
+                    <div class="connect_point" data-id="e7"></div>
+                    <div class="connect_point" data-id="e8"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+                <li>각 ㅇㅅㅂ</li>
+                <li>각 ㅇㅁㅂ</li>
+                <li>각 ㅅㅂㅁ</li>
+                <li>각 ㅅㅇㅁ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="question_box">
+          <div class="flex align_center gap_12 mt_20 f32b">
+            <span lang="y">각각의 대응각의 길이는 서로</span>
+
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="같습니다.">
+                <option value="같습니다."></option>
+                <option value="다릅니다."></option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">서로 합동인 두 도형의 성질을 이야기해 보세요.</h3>
+        <div class="question_box mt_20 justify_center">
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">서로 합동인 두 도형은 대응변의 길이와 대응각의 크기가 각각 같습니다.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_4">
+        <div class="summarize_wrap">
+          <div class="summarize">
+            <label lang="y">정리해 볼까요</label>
+            <div>
+              <span lang="y">서로 합동인 두 도형은</span>
+              <button class="reveal_btn" lang="y">대응변</button>
+              <span lang="y" class="small-gap">의 길이와</span>
+            </div>
+            <div>
+              <button class="reveal_btn margin" lang="y">대응각</button>
+              <span lang="y" class="small-gap">의 크기가 각각 같습니다.</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key" lang="y">입력타입토글</button>
+        <button class="btnReset" lang="y">리셋</button>
+        <button class="btnCheck" lang="y">확인</button>
+        <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

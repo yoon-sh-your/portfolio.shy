@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_05_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_05.css" />
+    <script src="../../common_contents/js/ema626_02_0003.js"></script>
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_05_su_0003" data-current-page="page_1, page_2, page_3, page_4">
+        <section class="title type2">
+            <h2 data-head="1_green" lang="y">
+                새 크레파스 1개를 만드는 데 헌 크레파스 4 g이 필요하고, 새 크레파스 6개를 만드는 데 헌 크레파스 24 g이 필요합니다. 새 크레파스를 1개 만들 때와 6개 만들 때의 새 크레파스
+                수와 헌 크레파스 양의 비를 이용하여 비례식을 세우고 살펴봅시다.
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">빨간색 물감의 양과 파란색 물감의 양의 비를 써 보세요.</h3>
+                    <div class="img_row flex align_start">
+                        <div class="picture_wrap">
+                            <img src="../../common_contents/img/EMA624_05_SU/624_05_0003.png" alt="">
+                            <div class="txt1">
+                                <span>×6</span>
+                            </div>
+                            <div class="txt2">
+                                <span>1:4</span>
+                                <span>6:24</span>
+                            </div>
+                            <div class="txt3">
+                                <div class="input_wrap answer1">
+                                    <span>×</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <div class="example_box">
+                                    <p>소수 한 자리 수이므로 비의 전항과 후항에 10을 곱해야 합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 1페이지 -->
+
+
+                <article class="page page_2">
+                    <h3 lang="y">빨간색 물감의 양과 파란색 물감의 양의 비를 써 보세요.</h3>
+                    <div class="flex justify_center">
+                        <div class="flex modification_wrap">
+                            <div class="modification">
+                                <div class="input_wrap answer1">
+                                    <span>1:4=</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                                <div class="input_wrap answer3">
+                                    <span>:</span>
+                                    <math-field type="number" data-answer-single="24" text-align="center"></math-field>
+                                </div>
+                            </div>
+                            <div class="modification">
+                                <div class="input_wrap answer2">
+                                    <span>1:4=1×</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                                <div class="input_wrap answer4">
+                                    <span>:4×</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 2페이지 -->
+
+                <article class="page page_3">
+                    <h3 lang="y">
+                        앞의 비례식에서 외항의 곱과 내항의 곱은 각각 얼마인가요?
+                    </h3>
+                    <div class="flex justify_center">
+                        <div class="flex modification_wrap">
+                            <div class="modification">
+                                <span class="bg">외항의 곱</span>
+                                <div class="input_wrap answer1">
+                                    <span>1×</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                                <div class="input_wrap answer3">
+                                    <span class="bg2">=1×4×6=</span>
+                                    <math-field type="number" data-answer-single="24" text-align="center"></math-field>
+                                </div>
+                            </div>
+                            <div class="modification">
+                                <span class="bg">내항의 곱</span>
+                                <div class="input_wrap answer2">
+                                    <span>4×</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                                <div class="input_wrap answer4">
+                                    <span class="bg2">=1×4×6=</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article> <!-- 3페이지 -->
+
+
+
+                <article class="page page_4">
+                    <h3 lang="y">
+                        외항의 곱과 내항의 곱을 비교해 보고 알게 된 점을 이야기해 보세요.
+                    </h3>
+                    <div class="flex justify_center">
+                        <div class="drop_down">
+                            <span>비례식에서의 외항의 곱과 내항의 곱은</span>
+                            <div class="dropdown_wrap">
+                                <select class="custom_dropdown" data-answer-single="">
+                                    <option></option><!--최초선택데이터 생성 방지용-->
+                                    <option value="같습니다."></option>
+                                    <option value="다릅니다."></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </article> <!-- 4페이지 -->
+                <article class="page page_5">
+                    <div class="summarize_wrap">
+                        <div class="summarize">
+                            <label lang="y">정리해 볼까요</label>
+                            <div>
+                                <span lang="y">비례식에서</span>
+                                <button class="reveal_btn" data-pair="외항의 곱" lang="y">외항의 곱</button>
+                                <span lang="y">과</span>
+                                <button class="reveal_btn" data-pair="내항의 곱" lang="y">내항의 곱</button>
+                                <span lang="y">은 <span class=red>같습니다.</span></span>
+                            </div>
+                            <div>
+                                <span lang="y">1:4=1×<span class="star">★</span>:4×<span class="star m_bg1">★</span>의
+                                    외항의
+                                    곱은
+                                    1x4×<span class="star">★</span>이고,</span>
+                            </div>
+
+                            <div>
+                                <span lang="y">내항의 곱은 4×1×<span class="star m_bg2">★</span>이므로 두 곱은 같습니다.</span>
+                            </div>
+                            <div class="sub_img">
+                                <img src="../../common_contents/img/EMA624_05_SU/624_05_0004.png" alt="">
+                                <div class="txt_1">
+                                    <span>1×24=</span>
+                                    <span>24</span>
+                                </div>
+                                <div class="txt_2">
+                                    <span>1:4</span>
+                                    <span>=</span>
+                                    <span>6:24</span>
+                                </div>
+                                <div class="txt_3">
+                                    <span>4x6=</span>
+                                    <span>24</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 5페이지 -->
+            </div>
+            <div class="btn_area">
+                <button class="btnType">입력토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit" data-submit="true">확인</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

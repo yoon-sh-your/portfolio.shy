@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_03_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_03_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star" lang="y">잘못 계산한 부분을 찾아 이유를 쓰고, 옳게 계산해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box">
+          <div class="l_left">
+            <div class="text_area flex gap_8 justify_center align_center">
+              <span>1</span>
+              <div class="fraction_box">
+                <span>5</span>
+                <span class="mark_error"
+                  >12
+                  <i>6</i>
+                </span>
+              </div>
+              <span>× </span>
+              <span class="mark_error up"
+                >10
+                <i> 5 </i>
+              </span>
+              <span> = 1</span>
+              <div class="fraction_box">
+                <span>5</span>
+                <span>6</span>
+              </div>
+              <span>× 5 = </span>
+              <div class="fraction_box">
+                <span>11</span>
+                <span>6</span>
+              </div>
+              <span>× 5 = </span>
+              <div class="fraction_box">
+                <span>55</span>
+                <span>6</span>
+              </div>
+              <span>= 9</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>6</span>
+              </div>
+            </div>
+            <div class="input_area">
+              <dl class="input_wrap">
+                <dt lang="y">이유</dt>
+                <dd>
+                  <math-field class="textarea" placeholder="&nbsp;"></math-field>
+                  <div class="example_box">
+                    <p lang="y">대분수를 가분수로 먼저 나타내지 않고 약분했습니다.</p>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="l_right mt_20">
+            <dl>
+              <dt lang="y">옳은 계산</dt>
+              <dd>
+                <div class="calc_row flex gap_10">
+                  <div class="flex align_center">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>12</span>
+                    </div>
+                    <span>× 10 =</span>
+                  </div>
+                  <div class="input_wrap">
+                    <math-field class="textarea" placeholder="&nbsp;"></math-field>
+                    <div class="example_box">
+                      <div class="flex align_center">
+                        <span>1</span>
+                        <div class="fraction_box">
+                          <span>5</span>
+                          <span>12</span>
+                        </div>
+                        <span>× 10 = </span>
+                        <div class="fraction_box">
+                          <span>17</span>
+                          <span class="mark_error"
+                            >12
+                            <i>6</i>
+                          </span>
+                        </div>
+                        <span
+                          >×
+                          <span class="mark_error up"
+                            >10
+                            <i>5</i>
+                          </span>
+                          =
+                        </span>
+                        <div class="fraction_box">
+                          <span>17×5</span>
+                          <span>6</span>
+                        </div>
+                        <span>=</span>
+                        <div class="fraction_box">
+                          <span>85</span>
+                          <span>6</span>
+                        </div>
+                        <span>= 14</span>
+                        <div class="fraction_box">
+                          <span>1</span>
+                          <span>6</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(대분수)×(자연수)를 계산할 때에는 먼저 대분 수를 가분수로 나타내어 분자와 자연수를 곱한 후에 약분하거나 분자와 자연수를 곱하기 전에 분모와 자연수를 약분하여 계산합니다.</p>
+                <span class="label_other mt_12 mb_12">다른 풀이</span>
+
+                <table>
+                  <tr>
+                    <td>
+                      <div class="flex align_center gap_10" lang="y">
+                        <div class="fraction_box_wrap">
+                          <span>1</span>
+                          <div class="fraction_box">
+                            <span>5</span>
+                            <span>12</span>
+                          </div>
+                        </div>
+                        ×10
+                      </div>
+                    </td>
+                    <td>
+                      <div class="flex align_center gap_10" lang="y">
+                        =(1×10)+
+                        <div class="bracket">
+                          <span class="bracket-l"></span>
+                          <div class="fraction_box">
+                            <span>5</span>
+                            <span>12</span>
+                          </div>
+                          ×10
+                          <span class="bracket-r"></span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex align_center gap_10 mt_30" lang="y">
+                        =10 +
+                        <div class="fraction_box">
+                          <span class="mark_error up">50 <i>25</i></span>
+                          <span class="mark_error">12 <i>6</i></span>
+                        </div>
+                        =10 +
+                        <div class="fraction_box">
+                          <span>25</span>
+                          <span>6</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td></td>
+                    <td>
+                      <div class="flex align_center gap_10 mt_30" lang="y">
+                        =10 +
+                        <div class="fraction_box_wrap">
+                          4
+                          <div class="fraction_box">
+                            <span>1</span>
+                            <span>6</span>
+                          </div>
+                        </div>
+                        =
+                        <div class="fraction_box_wrap">
+                          14
+                          <div class="fraction_box">
+                            <span>1</span>
+                            <span>6</span>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSample">예시</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      runAfterAppReady(() => {
+        $('.btnSample').click(function () {
+          $('.solve_area').addClass('active');
+        });
+        $('.btnReset').click(function () {
+          $('.solve_area').removeClass('active');
+        });
+      });
+    </script>
+  </body>
+</html>

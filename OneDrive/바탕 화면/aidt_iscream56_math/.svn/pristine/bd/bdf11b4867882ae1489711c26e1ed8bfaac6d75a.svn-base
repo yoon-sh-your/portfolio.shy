@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_06_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_06_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">두 수의 공배수 중에서 70보다 작은 수는 모두 몇 개인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box dir_col">
+          <div class="numbers">
+            <span>4</span>
+            <span>5</span>
+          </div>
+          <div class="flex align_center justify_center">
+            (
+            <div class="input_wrap ml_12 mr_12"><math-field data-answer-single="3"></math-field></div>
+            )
+            <span lang="y">개</span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">4와 5의 공배수는 20, 40, 60, 80, ...이므로 4와 5의 공배수 중에서 70보다 작은 수는 20, 40, 60으로 모두 3개입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

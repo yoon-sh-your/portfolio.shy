@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dragndrop_diagram_multicase</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- -----!! js내용 가져가세요 !!----- -->
+    <script src="../../common_contents/js/ema512_04_0004.js"></script>
+
+    <style>
+      .conts_cover {
+        width: 100%;
+      }
+
+      /* -----아래는 필요한----- css */
+      /* 상단 예시 칸 */
+      .draggable_wrap {
+        margin: 0 auto;
+      }
+      .draggable_wrap {
+        display: flex;
+        gap: 10px;
+        width: 300px;
+        height: 108px;
+        padding: 10px 50px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        border-radius: 16px;
+        border: 0.797px solid var(--Line-Gray-300, #d2d2d2);
+        background: var(--BG-Gray-50, #f7f7f7);
+        position: relative;
+      }
+      .draggable_wrap .triangle{
+        transform: translateY(5px);
+      }
+
+      /* 움직일 도형 */
+      .triangle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_triangle_.svg) no-repeat center center / 100%;
+        width: 70px;
+        height: 70px;
+      }
+      .circle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_circle_.svg) no-repeat center center / 100%;
+        width: 70px;
+        height: 70px;
+      }
+
+      /* 매칭 박스 wrap */
+      .drag_group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 50px;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
+      .drag_group.g1 {
+        background-image: url(../../common_contents/img/EMA512_04_SU/0006_contents.png);
+        background-size: contain;
+        height: 120px;
+        margin-top: 20px;
+      }
+
+      /* 매칭 숫자들 */
+      .droppable {
+        font-size: 32px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 70px;
+        background-image: none;
+        width: 70px;
+        height: 70px;
+        position: relative;
+      }
+
+      /* 드래그 후 매칭숫자 하위에 생기는 div */
+      .droppable .ui-draggable-handle {
+        top: -100%;
+      }
+
+      /* 제출전 하위div */
+      .droppable[data-value="true true"] .ui-draggable-handle {
+        position: absolute !important;
+        top: 0;
+      }
+
+      /* 제출후 상태 */
+      /* 힌트 */
+      /* 삼각형 단일 */
+      .drag_group.hint .droppable[data-value="true,false"].triangle,
+      .drag_group.hint .droppable[data-value="true,false"] .ui-draggable-handle.triangle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_triangle_hint.svg) no-repeat center center / 100%;
+      }
+      /* 원형단일 */
+      .drag_group.hint .droppable[data-value="false,true"].circle,
+      .drag_group.hint .droppable[data-value="false,true"] .ui-draggable-handle.circle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_circle_hint.svg) no-repeat center center / 100%;
+      }
+      /* 삼각형+원형 */
+      .drag_group.hint .droppable[data-value="true,true"].circle.triangle,
+      .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.circle,
+      .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.triangle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_together_hint.svg) no-repeat center center / 100%;
+      }
+
+      /* 하위 div */
+      .droppable[data-value="true,true"] .ui-draggable-handle,
+      .droppable[data-value="false,true"] .ui-draggable-handle,
+      .droppable[data-value="true,false"] .ui-draggable-handle,
+      .droppable[data-value="false,false"] .ui-draggable-handle {
+        position: absolute !important;
+        top: 0;
+      }
+      /* 하위div 힌트*/
+      .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.circle,
+      .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.triangle,
+      .drag_group.hint .droppable[data-value="false,true"] .ui-draggable-handle.circle.drag_group.hint .droppable[data-value="true,false"] .ui-draggable-handle.triangle {
+        position: absolute !important;
+        top: 0;
+      }
+
+      /* 정답 */
+      .drag_group.correct .triangle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_triangle_correct.svg) no-repeat center center / 100%;
+      }
+      .drag_group.correct .circle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_circle_correct.svg) no-repeat center center / 100%;
+      }
+      .drag_group.correct .circle.triangle {
+        background: url(../../common_contents/img/EMA512_04_SU/0004_drag_together_correct.svg) no-repeat center center / 100%;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div id="app_wrap" >
+      <section class="title type2">
+        <h2 data-head="2" lang="y">8과 12의 공통된 약수를 찾아봅시다.</h2>
+      </section>
+      <section class="contents">
+        <div class="flex align_start conts_cover">
+          <div class="input_area conts_cover">
+          
+              <!-- 관련내용 -->
+                <div class="drag_checkout">
+                  <div class="draggable_wrap">
+                    <div class="single_draggable draggable triangle"></div>
+                    <div class="single_draggable draggable circle"></div>
+                  </div>
+        
+                  <div class="drag_group g1" data-group-limit="11" data-answer-single="[[true, true], [true, true], [true, false], [true, true], [false, false], [true, true], [false, false], [false, true], [false, false], [false, false], [false, false], [true, false]]">
+                    <div class="droppable" data-value="false false">1</div>
+                    <div class="droppable" data-value="false false">2</div>
+                    <div class="droppable" data-value="false false">3</div>
+                    <div class="droppable" data-value="false false">4</div>
+                    <div class="droppable" data-value="false false">5</div>
+                    <div class="droppable" data-value="false false">6</div>
+                    <div class="droppable" data-value="false false">7</div>
+                    <div class="droppable" data-value="false false">8</div>
+                    <div class="droppable" data-value="false false">9</div>
+                    <div class="droppable" data-value="false false">10</div>
+                    <div class="droppable" data-value="false false">11</div>
+                    <div class="droppable" data-value="false false">12</div>
+                  </div>
+                </div>
+            
+          </div>
+        </div>
+
+        <h2>설명</h2>
+        <h3>검정 : 선택</h3>
+        <h3>빨강 : 힌트</h3>
+        <h3>파랑 : 정답</h3>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+          <!-- <button class="btnSubmit">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

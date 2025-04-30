@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_04_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">윤호네 가족과 예린이네 가족이 일주일 동안 운동한 시간을 나타낸 표입니다. 두 가족의 운동 시간의 평균이 같을 때 예린이가 운동한 시간은 몇 시간인지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">예린이가 운동한 시간을 구하기 위해 먼저 구해야 하는 것은 무엇인가요?</h3>
+
+          <div class="table_box table_box1">
+            <div class="title" lang="y">윤호네 가족의 가족별 운동 시간</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">가족</th>
+                  <td lang="y">아버지</td>
+                  <td lang="y">어머니</td>
+                  <td lang="y">누나</td>
+                  <td lang="y">윤호</td>
+                </tr>
+                <tr>
+                  <th lang="y">운동 시간 (시간)</th>
+                  <td>9</td>
+                  <td>8</td>
+                  <td>6</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table_box table_box2">
+            <div class="title" lang="y">예린이네 가족의 가족별 운동 시간</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">가족</th>
+                  <td lang="y">할머니</td>
+                  <td lang="y">아버지</td>
+                  <td lang="y">어머니</td>
+                  <td lang="y">예린</td>
+                  <td lang="y">동생</td>
+                </tr>
+                <tr>
+                  <th lang="y">운동 시간 (시간)</th>
+                  <td>7</td>
+                  <td>9</td>
+                  <td>7</td>
+                  <td></td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">윤호네 가족의 운동 시간의 평균을 구해야 합니다.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">윤호네 가족의 운동 시간의 평균은 몇 시간인가요?</h3>
+
+          <div class="table_box table_box1">
+            <div class="title" lang="y">윤호네 가족의 가족별 운동 시간</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">가족</th>
+                  <td lang="y">아버지</td>
+                  <td lang="y">어머니</td>
+                  <td lang="y">누나</td>
+                  <td lang="y">윤호</td>
+                </tr>
+                <tr>
+                  <th lang="y">운동 시간 (시간)</th>
+                  <td>9</td>
+                  <td>8</td>
+                  <td>6</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table_box table_box2">
+            <div class="title" lang="y">예린이네 가족의 가족별 운동 시간</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">가족</th>
+                  <td lang="y">할머니</td>
+                  <td lang="y">아버지</td>
+                  <td lang="y">어머니</td>
+                  <td lang="y">예린</td>
+                  <td lang="y">동생</td>
+                </tr>
+                <tr>
+                  <th lang="y">운동 시간 (시간)</th>
+                  <td>7</td>
+                  <td>9</td>
+                  <td>7</td>
+                  <td></td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="39" text-align="center"></math-field>
+            </div>
+            <span>명</span>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">예린이네 가족의 운동 시간은 모두 몇 시간인지 구하고, 어떻게 구했는지 이야기해 보세요.</h3>
+
+          <div class="flex">
+            <div>
+              <div class="table_box table_box1">
+                <div class="title" lang="y">윤호네 가족의 가족별 운동 시간</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th lang="y">가족</th>
+                      <td lang="y">아버지</td>
+                      <td lang="y">어머니</td>
+                      <td lang="y">누나</td>
+                      <td lang="y">윤호</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">운동 시간 (시간)</th>
+                      <td>9</td>
+                      <td>8</td>
+                      <td>6</td>
+                      <td>9</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+    
+              <div class="table_box table_box2">
+                <div class="title" lang="y">예린이네 가족의 가족별 운동 시간</div>
+                <table>
+                  <tbody>
+                    <tr>
+                      <th lang="y">가족</th>
+                      <td lang="y">할머니</td>
+                      <td lang="y">아버지</td>
+                      <td lang="y">어머니</td>
+                      <td lang="y">예린</td>
+                      <td lang="y">동생</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">운동 시간 (시간)</th>
+                      <td>7</td>
+                      <td>9</td>
+                      <td>7</td>
+                      <td></td>
+                      <td>8</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="flex align_center gap_8">
+                <div class="input_wrap">
+                  <math-field type="number" data-answer-single="40" text-align="center"></math-field>
+                </div>
+                <span>시간</span>
+              </div>
+    
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">예린이네 가족의 운동 시간의 평균이 8시간이고, 8시간에 자료의 수인 5를 곱하여 구했습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <h3 lang="y">예린이가 운동한 시간은 몇 시간인가요?</h3>
+
+          <div class="table_box table_box1">
+            <div class="title" lang="y">윤호네 가족의 가족별 운동 시간</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">가족</th>
+                  <td lang="y">아버지</td>
+                  <td lang="y">어머니</td>
+                  <td lang="y">누나</td>
+                  <td lang="y">윤호</td>
+                </tr>
+                <tr>
+                  <th lang="y">운동 시간 (시간)</th>
+                  <td>9</td>
+                  <td>8</td>
+                  <td>6</td>
+                  <td>9</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="table_box table_box2">
+            <div class="title" lang="y">예린이네 가족의 가족별 운동 시간</div>
+            <table>
+              <tbody>
+                <tr>
+                  <th lang="y">가족</th>
+                  <td lang="y">할머니</td>
+                  <td lang="y">아버지</td>
+                  <td lang="y">어머니</td>
+                  <td lang="y">예린</td>
+                  <td lang="y">동생</td>
+                </tr>
+                <tr>
+                  <th lang="y">운동 시간 (시간)</th>
+                  <td>7</td>
+                  <td>9</td>
+                  <td>7</td>
+                  <td></td>
+                  <td>8</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="9" text-align="center"></math-field>
+            </div>
+            <span>시간</span>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+          <button class="btnSubmit" data-submit="true" data-check="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

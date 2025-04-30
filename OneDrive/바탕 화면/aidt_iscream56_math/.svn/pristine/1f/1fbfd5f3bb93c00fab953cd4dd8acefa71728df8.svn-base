@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA614_05_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_05.css">
+
+</head>
+<body>
+    <div id="app_wrap" class="ema614_05_su_0006">
+        <section class="title type2">
+                <h2 data-type="8" lang="y">우리 주변에서 비율이 사용되는 경우를 찾아 이야기해 봅시다.</h2>
+            <div class="search_wrap">
+                <input type="text" class="search_input" placeholder="검색">
+                <button type="button" class="btn_search"><i>검색</i></button>
+            </div>
+        </section>
+
+        <section class="contents">
+                 
+            <div class="question_box">
+                <div class="input_wrap">
+                    <math-field class="textarea"></math-field>
+                    <div class="example_box">
+                        <p lang="y">설탕물의 진하기, 야구 선수의 타율, 자동차의 속력​</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <!-- 예시 필드에서 사용 -->
+                <button class="btnType key">입력타입토글</button>                       
+                <button class="btnReset">리셋</button>
+                <button class="btnSample">예시</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

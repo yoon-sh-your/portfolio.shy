@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema513_08_su_0010_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema513_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_08_su_0010">
+      <div class="scroll_page">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 4">
+            <span class="blue line" lang="y">확인하고 정리해요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+        </section>
+
+        <section class="title type2 jgjd_4_sub_title">
+          <h2>
+            <div class="title_row">
+              <span class="nemo_blank"></span>
+              <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+            </div>
+          </h2>
+        </section>
+
+        <section class="contents">
+          <div class="scroll_area">
+            <img src="../../common_contents/img/EMA513_08_SU/0010_contents.svg" alt="" />
+
+            <div class="question_box question_box01">
+              <div class="title" lang="y">대응 관계 1</div>
+
+              <div class="text_box">
+                <span lang="y">기린 다리의 수는 기린의 수의</span>
+                <div class="input_wrap answer1 up">
+                  <math-field data-answer-single="4"></math-field>
+                </div>
+                <span lang="y">배입니다.</span>
+              </div>
+
+              <div class="equation_box">
+                <img src="../../common_contents/img/EMA513_08_SU/0010_arrow.svg" alt="" />
+                <div class="equation" lang="y">식</div>
+                <span lang="y">(기린 다리의 수)=(기린의 수)×</span>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="4"></math-field>
+                </div>
+              </div>
+            </div>
+
+            <div class="question_box question_box02">
+              <div class="title" lang="y">대응 관계 2</div>
+
+              <div class="text_box">
+                <span lang="y">기린의 수는 기린 다리의 수를 4로 나눈 것과 같습니다.</span>
+              </div>
+
+              <div class="equation_box">
+                <img src="../../common_contents/img/EMA513_08_SU/0010_arrow.svg" alt="" />
+                <div class="equation" lang="y">식</div>
+                <span lang="y">(기린의 수)=(기린 다리의 수)÷4</span>
+              </div>
+            </div>
+
+            <div class="question_box question_box03">
+              <div class="title" lang="y">대응 관계 1</div>
+
+              <div class="text_box">
+                <span lang="y">기둥의 수는 줄의 수에 1을 더한 것과 같습니다.</span>
+              </div>
+
+              <div class="equation_box">
+                <img src="../../common_contents/img/EMA513_08_SU/0010_arrow.svg" alt="" />
+                <div class="equation" lang="y">식</div>
+                <span lang="y">(기둥의 수)=(줄의 수)+1</span>
+              </div>
+            </div>
+
+            <div class="question_box question_box04">
+              <div class="title" lang="y">대응 관계 2</div>
+
+              <div class="text_box">
+                <span lang="y">줄의 수는 기둥의 수에서</span>
+                <div class="input_wrap answer3 up">
+                  <math-field data-answer-single="1"></math-field>
+                </div>
+                <span lang="y">을/를 뺀 것과 같습니다.</span>
+              </div>
+
+              <div class="equation_box">
+                <img src="../../common_contents/img/EMA513_08_SU/0010_arrow.svg" alt="" />
+                <div class="equation" lang="y">식</div>
+                <span lang="y">(줄의 수)=(기둥의 수)-</span>
+                <div class="input_wrap answer4">
+                  <math-field data-answer-single="1"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_area relative">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>  
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

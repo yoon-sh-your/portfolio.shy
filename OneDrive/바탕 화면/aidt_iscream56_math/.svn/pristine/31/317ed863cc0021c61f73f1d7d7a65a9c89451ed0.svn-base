@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_05_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_05_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">옳게 설명한 사람의 이름을 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_05_IH/0004_01.png" alt="" />
+            <div class="text1 flex align_center gap_10">
+              <span lang="y">4의 2</span>
+              <div class="fraction_box"><span>2</span><span>7</span></div>
+              <span lang="y">배는 9야.</span>
+            </div>
+            <div class="text2 flex align_center gap_10">
+              <span lang="y">8의 1</span>
+              <div class="fraction_box"><span>5</span><span>8</span></div>
+              <span lang="y">배는 13야.</span>
+            </div>
+            <p class="name1">서하</p>
+            <p class="name2">재윤</p>
+          </div>
+          <div class="input_area">
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="재윤" text-align="center"></math-field>
+            </div>
+            <span>)</span>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <span>서하: 4</span>
+                  <span>×</span>
+                  <span>2</span>
+                  <div class="fraction_box"><span>2</span><span>7</span></div>
+                  <span>=</span>
+                  <span>4×</span>
+                  <div class="fraction_box"><span>16</span><span>7</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>4×16</span><span>7</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>64</span><span>7</span></div>
+                  <span>=</span>
+                  <span>9</span>
+                  <div class="fraction_box"><span>1</span><span>7</span></div>
+                </div>
+                <div class="flex align_center gap_10 mt_20">
+                  <span>재윤: 8</span>
+                  <span>×</span>
+                  <span>1</span>
+                  <div class="fraction_box"><span>5</span><span>8</span></div>
+                  <span>=</span>
+                  <span class="mark_error up">8<i>1</i></span>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>13</span><span class="mark_error">8<i>1</i></span>
+                  </div>
+                  <span>=</span>
+                  <span>13</span>
+                </div>
+
+                <div class="flex align_center gap_10 mt_12">
+                  <span>따라서 옳게 설명한 사람은 재윤입니다.</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

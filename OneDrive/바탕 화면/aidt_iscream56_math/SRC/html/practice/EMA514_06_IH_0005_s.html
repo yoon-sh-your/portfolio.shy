@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_06_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema514_06_0005.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_06_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">가장 큰 분수에 ○표, 가장 작은 분수에 △표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="drag_checkout">
+            <div class="draggable_wrap">
+              <div class="single_draggable draggable triangle"></div>
+              <div class="single_draggable draggable circle"></div>
+            </div>
+
+            <div class="drag_group g1" data-group-limit="3" data-answer-single="[[false, true], [true, false], [false, false]]">
+              <div class="droppable" data-value="false false">
+                <span class="fraction_box">
+                  <span>3</span>
+                  <span>7</span>
+                </span>
+              </div>
+              <div class="droppable" data-value="false false">
+                <span class="fraction_box">
+                  <span>5</span>
+                  <span>14</span>
+                </span>
+              </div>
+              <div class="droppable" data-value="false false">
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>5</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="text_bullet flex align_center gap_12">
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>7</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>14</span>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box">
+                      <span>6</span>
+                      <span>14</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>14</span>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>7</span>
+                  </div>
+                  &lt;
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span>14</span>
+                  </div>
+                </div>
+                <div class="text_bullet flex align_center gap_12">
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>14</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>2</span>
+                      <span>5</span>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box">
+                      <span>25</span>
+                      <span>70</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>28</span>
+                      <span>70</span>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span>14</span>
+                  </div>
+                  &lt;
+                  <div class="fraction_box">
+                    <span>2</span>
+                    <span>5</span>
+                  </div>
+                </div>
+                <div class="text_bullet flex align_center gap_12">
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>7</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>2</span>
+                      <span>5</span>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="fraction_box">
+                      <span>15</span>
+                      <span>35</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>14</span>
+                      <span>35</span>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                  ➔
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>7</span>
+                  </div>
+                  &lt;
+                  <div class="fraction_box">
+                    <span>2</span>
+                    <span>5</span>
+                  </div>
+                </div>
+                <div lang="y">
+                  따라서 가장 큰 분수는
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>7</span>
+                  </div>
+                  , 가장 작은 분수는
+                  <div class="fraction_box">
+                    <span>5</span>
+                    <span>14</span>
+                  </div>
+                  입니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

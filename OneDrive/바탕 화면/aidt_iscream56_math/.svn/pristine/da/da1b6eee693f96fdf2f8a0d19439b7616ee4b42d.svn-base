@@ -1,0 +1,630 @@
+/* ema514_08_su_0001 */
+
+.ema514_08_su_0001 .to_be .main {
+  margin-top: 8px;
+}
+.ema514_08_su_0001 .to_be .main .blue {
+  color: #3B71FE;
+}
+.ema514_08_su_0001 .to_be .main > p {
+  line-height: 0.8;
+}
+.ema514_08_su_0001 .fraction_tit {
+  margin-top: 10px;
+}
+.ema514_08_su_0001 .fraction_tit,
+.ema514_08_su_0001 .fraction_box span {
+  display: flex;
+  align-items: center;
+  font-size: 64px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.ema514_08_su_0001 .fraction_box {
+  display: inline-block;
+  margin: 0 8px;
+}
+.ema514_08_su_0002 .title h2[data-head] > div {
+  display: flex;
+  align-items: center;
+}
+
+/* ema514_08_su_0002 */
+.ema514_08_su_0002[data-current-page='page_1'] .btn_area,
+.ema514_08_su_0002[data-current-page='page_2'] .btn_area .btnSubmit,
+.ema514_08_su_0002[data-current-page='page_3'] .btn_area .btnSubmit,
+.ema514_08_su_0002[data-current-page='page_4'] .btn_area .btnCheck,
+.ema514_08_su_0002[data-current-page='page_5'] .btn_area .btnCheck,
+.ema514_08_su_0002[data-current-page='page_6'] .btn_area .btnCheck {
+  display: none;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap {
+  width: 655px;
+  margin: 0 auto;
+  height: 492px;
+  border: 0;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt p,
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt span {
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #000;
+  z-index: 10;
+}
+
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .tit {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 97px);
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt_wrap {
+  position: absolute;
+  top: 89px;
+  left: calc(50% - 207px);
+  display: flex;
+  width: 39%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt_wrap p {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .bubble_txt {
+  position: absolute;
+  z-index: 10;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .bubble_txt.txt1 {
+  top: 18px;
+  left: calc(50% + 80px);
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .bubble_txt.txt2 {
+  top: 60px;
+  left: calc(50% + 229px);
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .bubble_txt.txt3 {
+  top: 235px;
+  left: calc(50% - 146px);
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .bubble_txt .bubble_txt3_1 {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-top: -2px;
+  margin-left: -3px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .bubble_txt .bubble_txt3_2 {
+  margin-top: -2px;
+  margin-left: -4px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt {
+  position: absolute;
+  z-index: 10;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt.txt1 {
+  top: 326px;
+  left: calc(50% - 170px);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt.txt2 {
+    top: 378px;
+    left: calc(50% - 169px);
+    display: flex;
+    gap: 10px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt.txt3 {
+  top: 338px;
+  left: calc(50% + 10px);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt.txt3 span {
+  font-size: 20px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt.txt4 {
+  top: 323px;
+    left: calc(50% + 111px);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.ema514_08_su_0002 .page_1 .picture_wrap .overlay_txt .txt.txt5 {
+  top: 373px;
+  left: calc(50% + 106px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ema514_08_su_0002 .question_box {
+  flex-direction: column;
+}
+.ema514_08_su_0002 .page_2 .count_wrap {
+  position: relative;
+}
+.ema514_08_su_0002 .page_2 .count_row {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 30px;
+  height: 94px;
+}
+.ema514_08_su_0002 .page_2 .boolean_count_wrap button.selected {
+  background-color: var(--font-main-500);
+}
+.ema514_08_su_0002 .page_2 .boolean_count_wrap.hint button.correct {
+  /* border: 5px solid var(--stroke-wrong);
+  background-color: var(--font-main-500); */
+  background-color: var(--stroke-wrong);
+}
+.ema514_08_su_0002 .page_2 .boolean_count_wrap.correct button.selected {
+    /* border: 5px solid var(--primary-blue);
+  background-color: #C4D4FF; */
+  background-color: var(--primary-blue);
+}
+
+.ema514_08_su_0002 .page_2 .count_row:nth-of-type(1) button {
+  height: 34px;
+  width: 70px;
+}
+.ema514_08_su_0002 .page_2 .count_row:nth-of-type(2) button {
+  height: 34px;
+  width: 283px;
+}
+
+.ema514_08_su_0002 .page_2 .count_row:nth-of-type(3) button {
+  height: 34px;
+  width: 142px;
+}
+
+.ema514_08_su_0002 .page_2 .count_row:nth-of-type(4) button {
+  height: 55px;
+  width: 407px;
+}
+
+.ema514_08_su_0002 .page_2 .count_wrap .fraction_num {
+  position: relative;
+  width: 63px;
+  height: 68px;
+}
+.ema514_08_su_0002 .page_2 .count_wrap .fraction_box {
+  position: absolute;
+  top: 12px;
+  left: 22px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.ema514_08_su_0002 .page_2 .count_wrap .fraction_num::before {
+  content: '';
+  display: flex;
+  background: url(../img/EMA514_08_SU/0002_bg.png) 0 0 no-repeat;
+  width: 63px;
+  height: 68px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.ema514_08_su_0002 .page_2 .fraction_row {
+  position: relative;
+  display: flex;
+  gap: 100px;
+}
+.ema514_08_su_0002 .page_2 .fraction_col {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ema514_08_su_0002 .page_2 .fraction_box {
+  font-size: 32px;
+}
+
+.ema514_08_su_0002 .page_3 .question_box {
+  gap: 148px;
+  padding-top: 20px;
+}
+.ema514_08_su_0002 .page_3 .fraction_row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ema514_08_su_0002 .page_3 .fraction_row:first-child .input_wrap,
+.ema514_08_su_0002 .page_3 .fraction_row:first-child .input_wrap input,
+.ema514_08_su_0002 .page_3 .fraction_row:first-child .input_wrap math-field {
+  min-width: 80px;
+  width: 80px;
+}
+
+.ema514_08_su_0002 .page_4 .input_wrap {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 130px;
+}
+.ema514_08_su_0002 .page_4 .input_wrap math-field.textarea {
+  width: 100%;
+  min-height: 120px;
+}
+.ema514_08_su_0002 .page_4 .speech_bubble {
+  background: url(../img/EMA514_08_SU/0002_bg2.png) no-repeat 0 0;
+  background-size: contain;
+  height: 190px;
+  width: 285px;
+  position: absolute;
+  top: 150px;
+  right: 249px;
+}
+.ema514_08_su_0002 .page_4 .speech_bubble,
+.ema514_08_su_0002 .page_4 .speech_bubble span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+}
+.ema514_08_su_0002 .page_4 .speech_bubble .bubble_txt {
+  position: absolute;
+  top: 22px;
+  left: 38px;
+  font-size: 20px;
+  line-height: 32px;
+}
+.ema514_08_su_0002 .page_4 .speech_bubble .bubble_txt > div {
+  display: flex;
+  align-items: center;
+}
+
+.ema514_08_su_0002 .page_4 .example_box,
+.ema514_08_su_0002 .page_5 .example_box {
+  padding-top: 30px;
+  height:96px;
+}
+
+.ema514_08_su_0002 .page_6 .example_box {
+  padding-top: 36px;
+  height: 116px;
+}
+
+.ema514_08_su_0002 .page_5 .input_wrap {
+  display: block;
+  width: 1208px;
+  margin: 0 auto;
+}
+.ema514_08_su_0002 .page_5 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 120px;
+}
+.ema514_08_su_0002 .page_6 .input_wrap {
+  display: block;
+  width: 1208px;
+  margin: 0 auto;
+}
+.ema514_08_su_0002 .page_6 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 120px;
+}
+.ema514_08_su_0002 .page_6 .example_box:before {
+  top: 36px;
+}
+
+/* .ema514_08_su_0003 */
+
+/* 상단 예시 칸 */
+.ema514_08_su_0003 .page_1 .draggable_wrap {
+  margin: 0 auto;
+}
+.ema514_08_su_0003 .page_1 .draggable_wrap {
+  display: flex;
+  gap: 10px;
+  width: 268px;
+  height: 108px;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 0.797px solid var(--Line-Gray-300, #d2d2d2);
+  background: var(--BG-Gray-50, #f7f7f7);
+  position: relative;
+}
+.ema514_08_su_0003 .page_1 .triangle{
+  transform: translateY(5px);
+}
+
+/* 움직일 도형 */
+.ema514_08_su_0003 .page_1 .triangle {
+  background: url(../../common_contents/img/EMA512_04_SU/0004_drag_triangle_.svg) no-repeat center center / 100%;
+  width: 80px;
+  height: 80px;
+}
+.ema514_08_su_0003 .page_1 .circle {
+  background: url(../../common_contents/img/EMA514_08_SU/0003_mark1.svg) no-repeat center center / 100%;
+  width: 80px;
+  height: 80px;
+}
+
+/* 매칭 박스 wrap */
+.ema514_08_su_0003 .page_1 .drag_group {
+    display: flex;
+    border: 2px solid #DADADA;
+    border-radius: 20px;
+    padding: 28px;
+    width: 1218px;
+    align-items: center;
+    justify-content: center;
+    gap: 59px;
+}
+
+.ema514_08_su_0003 .page_1 .drag_group.g1 {
+  background-size: contain;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/* 매칭 숫자들 */
+.ema514_08_su_0003 .page_1 .droppable {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  min-width: 80px;
+  position: relative;
+}
+.ema514_08_su_0003 .page_1 .droppable .fraction_box {
+  justify-content: center;
+}
+
+
+/* 제출후 상태 */
+/* 힌트 */
+/* 삼각형 단일 */
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="true,false"].triangle,
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="true,false"] .ui-draggable-handle.triangle {
+  background: url(../../common_contents/img/EMA512_04_SU/0004_drag_triangle_hint.svg) no-repeat center center / 100%;
+}
+/* 원형단일 */
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="false,true"].circle,
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="false,true"] .ui-draggable-handle.circle {
+  background: url(../../common_contents/img/EMA512_04_SU/0004_drag_circle_hint.svg) no-repeat center center / 100%;
+}
+/* 삼각형+원형 */
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="true,true"].circle.triangle,
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.circle,
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.triangle {
+  background: url(../../common_contents/img/EMA512_04_SU/0004_drag_together_hint.svg) no-repeat center center / 100%;
+}
+
+/* 하위 div */
+.ema514_08_su_0003 .page_1 .droppable .ui-draggable-handle {
+  position: absolute !important;
+  top: 0;
+}
+/* 하위div 힌트*/
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.circle,
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.triangle,
+.ema514_08_su_0003 .page_1 .drag_group.hint .droppable[data-value="false,true"] .ui-draggable-handle.circle.drag_group.hint .droppable[data-value="true,false"] .ui-draggable-handle.triangle {
+  position: absolute !important;
+  top: 0;
+}
+
+/* 정답 */
+.ema514_08_su_0003 .page_1 .drag_group.correct .triangle {
+  background: url(../../common_contents/img/EMA512_04_SU/0004_drag_triangle_correct.svg) no-repeat center center / 100%;
+}
+.ema514_08_su_0003 .page_1 .drag_group.correct .circle {
+  background: url(../../common_contents/img/EMA512_04_SU/0004_drag_circle_correct.svg) no-repeat center center / 100%;
+}
+.ema514_08_su_0003 .page_1 .drag_group.correct .circle.triangle {
+  background: url(../../common_contents/img/EMA512_04_SU/0004_drag_together_correct.svg) no-repeat center center / 100%;
+}
+
+.ema514_08_su_0003 .title h2[data-head] div {
+  display: flex;
+  align-items: center;
+}
+
+.ema514_08_su_0003 h3 {
+  display: flex;
+  align-items: center;
+}
+.ema514_08_su_0003 h3 .fraction_box,
+.ema514_08_su_0003 h3 .ico_round,
+.ema514_08_su_0003 h3 .ico_triangle {
+  margin-left: 8px;
+}
+
+.ema514_08_su_0003 .ico_round {
+  padding: 0;
+  font-size: 0;
+  border-width: 4px;
+}
+.ema514_08_su_0003 .ico_triangle {
+  position: relative;
+  border: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../../common_contents/img/EMA514_08_SU/0003_bg2.svg) no-repeat center center / 100%;
+  border-radius: 0;
+  font-size: 0;
+}
+
+.ema514_08_su_0003 .imgwrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.ema514_08_su_0003 .drop_group {
+  display: flex;
+  border: 2px solid #DADADA;
+  border-radius: 20px;
+  padding: 28px;
+  width: 1218px;
+  align-items: center;
+  justify-content: center;
+  gap: 59px;
+}
+
+.ema514_08_su_0003 .drop_item {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  min-width: 80px;
+}
+
+.ema514_08_su_0003 .ex_box {
+  position: relative;
+}
+.ema514_08_su_0003 .ex_box {
+  content: '';
+  display: block;
+  background: url(../img/EMA514_08_SU/0003_bg3.png) 100% 0 no-repeat;
+  width: 475px;
+  height: 360px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.ema514_08_su_0003 .ex_box:before {
+  content: '';
+  display: block;
+  background: url(../img/EMA514_08_SU/0003_bg4.png) 100% 100% no-repeat;
+  width: 384px;
+  height: 260px;
+  position: absolute;
+  z-index: -1;
+  top: 117px;
+  left: 90px;
+}
+
+.ema514_08_su_0003 .ex_box .ex_txt {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #941E15;
+  gap: 8px;
+  position: absolute;
+}
+
+.ema514_08_su_0003 .ex_box .ex_txt.txt1 {
+  top: 112px;
+  left: 98px;
+  transform: rotate(8deg);
+}
+.ema514_08_su_0003 .ex_box .ex_txt.txt2 {
+  top: 168px;
+  left: 93px;
+  transform: rotate(8deg);
+}
+.ema514_08_su_0003 .ex_box .ex_txt.txt3 {
+  top: 230px;
+  left: 90px;
+  transform: rotate(8deg);
+}
+.ema514_08_su_0003 .ex_box .ex_txt.txt4 {
+  top: 171px;
+  left: 266px;
+  transform: rotate(7deg);
+}
+.ema514_08_su_0003 .ex_box .ex_txt.txt5 {
+  top: 232px;
+  left: 255px;
+  transform: rotate(7deg);
+}
+.ema514_08_su_0003 .ex_box .ex_txt.txt6 {
+  top: 292px;
+  left: 260px;
+  transform: rotate(7deg);
+}
+.ema514_08_su_0003 .ex_box .ex_txt .fraction_box {
+  font-size: 16px;
+}
+.ema514_08_su_0003 .ex_box .ex_txt .fraction_box:before {
+  background-color: #941E15;
+}
+
+.dragndrop_fraction_wrap .drop_item.hint::after {
+  display: none;
+} 
+
+.ema514_08_su_0003 .page_2 .tb_area {
+  display: flex;
+  background: url(../img/EMA514_08_SU/0003_bg5.png) no-repeat 0 0;
+  width: 800px;
+  height: 140px;
+}
+
+
+.ema514_08_su_0003 .page_2 .tb_area .drop_group {
+  border: 0;
+  padding:0;
+  width: auto;
+  height: 68px;
+  gap: 20px;
+}
+
+.ema514_08_su_0003 .page_2 .drag_item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+  min-width: 80px;
+  cursor: pointer;
+}
+
+.ema514_08_su_0003 .page_2 .tb_area dl dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 398px;
+  height: 64px;
+  font-size: 20px;
+}
+.ema514_08_su_0003 .page_2 .tb_area dl dt .fraction_box {
+  line-height: 1;
+}
+
+.ema514_08_su_0003 .page_2 .tb_area dl dd {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.ema514_08_su_0003 .page_2 .tb_area .drop_item {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ema514_08_su_0003 .page_2 .tb_area .drop_item.hint {
+  color: var(--font-negative);
+}
+
+.ema514_08_su_0003 .page_2 .tb_area .fraction_box {
+  margin-right: 4px;
+}

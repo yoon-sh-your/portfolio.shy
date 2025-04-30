@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema527_03_su_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema527_03_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema527_03_su_0004">
+      <section class="title">
+        <h2 data-head="3">
+          <span lang="y">우리 모둠 제안서의 칭찬할 점과 보완할 점을 바탕으로 택배 드론 제안서에 추가로 반영하고 싶은 내용을 정리해 봅시다.​</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_wrap">
+          <math-field class="textarea" type="text"></math-field>
+          <ol class="example_box">
+            <li lang="y">배송 가능한 무게가 더 무겁도록 보완하면 좋을 것 같습니다.​</li>
+            <li lang="y">선대칭도형이면서 점대칭도형으로 만들면 좋을 것 같습니다.​</li>
+          </ol>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema521_11_su_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_11.css" />
+</head>
+<body>
+    <div id="app_wrap" class="ema521_11_su_0006">
+        <section class="title type2">
+            <h2 data-type="1" data-text="자기주도 3">
+                <span class="blue line" lang="y">내 힘으로 풀어요</span>
+                <span lang="y">공부한 내용을 확인해요</span>
+            </h2>
+        </section>
+
+        <section class="title type2 jgjd_3_sub_title">
+            <h2 data-head="5" class="is_star" lang="y">수현이는 가족과 함께 미술 전시회에 갔습니다. 수현이네 가족이 내야 할 입장료는 모두 얼마인지 구해 보세요.</h2>
+        </section>
+
+        <section class="contents">
+
+            <div class="flex">
+                <div class="info_tb_box">
+                    <p class="tit f24b">나이별 입장료</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th lang="y" scope="col">나이</th>
+                                <th lang="y" scope="col">입장료</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row" lang="y">8세 미만</th>
+                                <td lang="y">무료</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" lang="y">8세 이상 14세 미만</th>
+                                <td lang="y">2000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" lang="y">14세 이상 20세 미만</th>
+                                <td lang="y">4000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" lang="y">20세 이상 65세 미만</th>
+                                <td lang="y">7000원</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" lang="y">65세 이상</th>
+                                <td lang="y">무료</td>
+                            </tr>
+                        </tbody>
+                    </table>
+    
+                    <p class="t01" lang="y">나는 11세이고, <br>아버지는 47세, 어머니는 <br>45세, 동생은 8세이니까....</p>
+                    <p class="t02" lang="y">수현</p>
+                </div>
+
+                <div class="input_area">
+                    <span class="f24b" lang="y">(</span>
+                    <div class="input_wrap answer1">
+                        <math-field data-answer-single="18000"></math-field>
+                    </div> 
+                    <span class="f24b" lang="y">)</span>
+                    <span class="f24b" lang="y">원</span>
+                </div>
+            </div>
+
+            <div class="btn_area"> 
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

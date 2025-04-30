@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA615_01_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema615.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema615">
+      <section class="title type2 flex">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 4-1』 막대그래프 알아보기</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_light_purple" lang="y">
+          <span lang="y">비율</span>
+          <span class="fraction_box">
+            <span>1</span>
+            <span>5</span>
+          </span>
+          <span lang="y">을 백분율로 나타내어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema615_01 flex align_center justify_center gap_4">
+          <div class="fraction_box">
+            <span>5</span>
+            <span>20</span>
+          </div>
+          <p>×</p>
+          <p>100</p>
+
+          <div class="input_wrap">
+            <math-field data-answer-single="20"></math-field>
+          </div>
+
+          <img src="../../common_practice/img/EMA614_03_IH/arrow.svg" />
+
+          <div class="input_wrap">
+            <math-field data-answer-single="20"></math-field>
+          </div>
+
+          <p>％</p>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>비율</p>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>5</span>
+                  </div>
+                  <p>을 백분율로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>5</span>
+                  </div>
+                  <p>×100=20</p>
+                  <img src="../../common_practice/img/EMA614_06_IH/arrow.svg" />
+                  <p>20％입니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

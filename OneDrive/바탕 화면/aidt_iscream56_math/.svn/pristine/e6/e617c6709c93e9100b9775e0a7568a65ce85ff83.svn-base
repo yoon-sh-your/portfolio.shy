@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_01_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_01_su_0005">
+      <section class="title type2">
+        <h2 data-icon="speech" lang="y">그림을 보고 고리 던지기, 콩 주머니 던지기를 해 본 경험을 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="picture_wrap" data-tit="그림을 보고 고리 던지기, 콩 주머니 던지기를 해 본 경험을 이야기해 봅시다.">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 921 1184" fill="none">
+              <text transform="translate(805.571 820.066) rotate(6.74881)" fill="#E94693" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" font-weight="500" letter-spacing="2px" lang="y">
+                <tspan x="0" y="25.1094">특별 행사</tspan>
+              </text>
+              <text fill="#C85D22" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18" font-weight="600" letter-spacing="2px" lang="y">
+                <tspan x="316" y="924.398">초대장</tspan>
+              </text>
+              <text transform="translate(607 1132.83) rotate(-21.9971)" fill="#2BAEE2" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="23" font-weight="600" letter-spacing="2px" lang="y">
+                <tspan x="0" y="26.1758">건강 체조</tspan>
+              </text>
+              <text transform="translate(533.689 910.36) rotate(-26.1051)" fill="#E43C11" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18" font-weight="600" letter-spacing="2px" lang="y">
+                <tspan x="0" y="24.3984">경품 뽑기</tspan>
+              </text>
+              <text transform="translate(533.689 910.36) rotate(-26.1051)" fill="#EF9303" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18" font-weight="600" letter-spacing="2px" lang="y">
+                <tspan x="82.7695" y="24.3984">행사</tspan>
+              </text>
+              <text transform="translate(355.388 976) rotate(7)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="500" letter-spacing="2px" lang="y">
+                <tspan x="0" y="26.5312">송년</tspan>
+              </text>
+              <text transform="translate(411.312 985) rotate(20)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="500" letter-spacing="2px" lang="y">
+                <tspan x="0" y="26.5312">잔치</tspan>
+              </text>
+              <text transform="translate(298 981.362) rotate(-7)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="500" letter-spacing="2px" lang="y">
+                <tspan x="0" y="26.5312">연합</tspan>
+              </text>
+              <text transform="translate(244 1002.05) rotate(-20)" fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" font-weight="500" letter-spacing="2px" lang="y">
+                <tspan x="0" y="26.5312">마을</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA526_01_SU/0005_content.png" alt="" />
+            <button class="zoom"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">체육 시간에 콩 주머니 던지기를 했습니다.</li>
+                <li lang="y">민속놀이 체험을 할 때 고리 던지기를 해 본 경험이 있습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

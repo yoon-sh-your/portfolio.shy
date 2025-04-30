@@ -1,0 +1,179 @@
+/* ema622_02_su_0002 */
+.ema622_02_su_0002 .video_wrap {
+  width: 812px;
+  height: 428px;
+}
+
+.ema622_02_su_0002 .flex.align_start {
+  gap: 26px;
+}
+
+.ema622_02_su_0002 .input_area {
+  width: 797px;
+  height: calc(502px - 96px);
+}
+
+.ema622_02_su_0002 .input_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.ema622_02_su_0002 .input_wrap math-field.textarea {
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ema622_02_su_0003 */
+section.title.type2+section.contents {
+  /* background-color: aqua; */
+}
+
+section.contents.paging_layout {
+  /* background-color: aquamarine; */
+}
+
+.ema622_02_su_0003 .flex.align_start {
+  gap: 26px;
+}
+
+.page {
+  /* background-color: orange; */
+}
+
+.ema622_02_su_0003 .picture_wrap {
+  width: 700px;
+  height: 390px;
+}
+
+.ema622_02_su_0003 .input_area {
+  width: 709px;
+  height: calc(502px - 96px - 20px);
+}
+
+.ema622_02_su_0003 .page_1 .input_wrap math-field:not(.textarea) {
+  width: 166px;
+}
+
+.ema622_02_su_0003 .input_wrap {}
+
+.ema622_02_su_0003 .page_2 .input_wrap math-field.textarea {
+  min-height: unset;
+  height: 134px;
+}
+
+.ema622_02_su_0003[data-current-page='page_3'] .contents>div.flex,
+.ema622_02_su_0003[data-current-page='page_3'] .contents>div.flex>.picture_wrap {
+  display: none;
+  /* border: 1px solid red; */
+}
+
+.ema622_02_su_0003:not([data-current-page='page_2']) .btn_area .btnSubmit,
+.ema622_02_su_0003[data-current-page='page_2'] .btn_area .btnCheck {
+    display: none;
+}
+
+.ema622_02_su_0003[data-current-page='page_3'] .picture_wrap {
+  width: 146px;
+  height: 187px;
+}
+
+.question_box.justify_center {
+  color: var(--Secondary-Text-Gray-900, #222);
+
+  /* Title/H_02_BOLD */
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  /* 150% */
+  letter-spacing: -1px;
+}
+
+.ema622_02_su_0003 .page_5 .question_box {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ema622_02_su_0003 .page_5 .question_box div:nth-child(1) {
+display: flex;
+align-items: center;
+}
+
+.ema622_02_su_0003 .page_5 .input_wrap math-field.textarea {
+  width: 709px;
+  /* min-height: unset; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.operation {
+  display: flex;
+  align-items: center;
+}
+
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field:not(.textarea)  {
+  width: 80px;
+}
+
+
+
+
+
+
+
+
+
+.ema622_02_su_0004 .question_box {
+  width: calc(1635px - 160px);
+  height: 288px;
+}
+
+.ema622_02_su_0004:not([data-current-page='page_3']) .btn_area .btnSubmit,
+.ema622_02_su_0004[data-current-page='page_3'] .btn_area .btnCheck {
+    display: none;
+}
+
+.ema622_02_su_0004 .page_3 .input_wrap math-field.textarea {
+  width: 1208px;
+}
+
+
+
+
+
+
+
+.ema622_02_su_0005 .question_box.justify_center {
+  width: 100%;
+  padding-top: 18px;
+}
+
+.ema622_02_su_0005 .container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.ema622_02_su_0005 .container .r1,
+.ema622_02_su_0005 .container .r2 {
+  display: flex;
+  gap: 240px;
+}

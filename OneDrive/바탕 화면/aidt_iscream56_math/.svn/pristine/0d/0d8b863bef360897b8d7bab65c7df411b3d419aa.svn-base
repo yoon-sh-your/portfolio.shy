@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_06_IH_0002</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_06_ih_0002">
+			<section class="title type2">
+				<h2 data-head="2" lang="y">
+					(분수)÷(분수)를 분수의 곱셈으로 나타내어 계산해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="flex align_center gap_4">
+						<div class="fraction_box">
+							<span>6</span>
+							<span>11</span>
+						</div>
+						÷
+						<div class="fraction_box">
+							<span>3</span>
+							<span>4</span>
+						</div>
+						=
+						<div class="input_wrap fraction_wrap">
+							<math-field data-answer-single="(8)/(11)"></math-field>
+						</div>
+					</div>
+
+					<div class="flex align_center gap_4">
+						<div class="fraction_box">
+							<span>7</span>
+							<span>8</span>
+						</div>
+						÷
+						<div class="fraction_box">
+							<span>3</span>
+							<span>10</span>
+						</div>
+						=
+						<div class="input_wrap fraction_wrap long">
+							<math-field data-answer-single="2(11)/(12)(=(35)/(12))" data-answer-multi='{"values": ["2(11)/(12)", "(35)/(12)"]}'></math-field>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+ㄴ						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

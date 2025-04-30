@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_01_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_01_ih_0003">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 4-1』 큰 수의 크기 비교하기</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3">
+          <span lang="y">두 수의 크기를 비교하여</span> <span class="circle_blank"></span>
+          <span lang="y">안에</span>
+          <img class="mr-12" src="./../../common_contents//common/img/icon_arrow_right.svg" alt="크다" />, <img class="mr-8" src="./../../common_contents//common/img/icon_equal.svg" alt="같다" />,
+          <img src="./../../common_contents//common/img/icon_arrow_left.svg" alt="작다" />
+          <span lang="y"> 중 알맞은 것을 고르세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center mt_30">
+          <div class="question_row">
+            <span>805230</span>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single=">">
+                <option></option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<"><</option>
+              </select>
+            </div>
+            <span>804230</span>
+          </div>
+          <div class="question_row">
+            <span>12만 3456</span>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single="<">
+                <option></option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<"><</option>
+              </select>
+            </div>
+            <span>1215260</span>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">
+                  여섯 자리 수로 같으므로 높은 자리 수부터 차례대로 비교합니다.<br />
+                  높은 자리 수가 큰 쪽이 더 큰 수이므로 80<span class="underline_red">5</span>230 > 80<span class="underline_red">4</span>230입니다.
+                </p>
+                <p lang="y" class="text_bullet">
+                  12만 3456을 수로 나타내면 123456입니다. <br />
+                  자리 수가 다른 경우 자리 수가 많은 쪽이 더 큰 수이므로 <br />
+                  <span class="underline_red">12만 3456<i>여섯 자리 수</i></span> < <span class="underline_red">1215260<i>일곱 자리 수</i></span
+                  >입니다.
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

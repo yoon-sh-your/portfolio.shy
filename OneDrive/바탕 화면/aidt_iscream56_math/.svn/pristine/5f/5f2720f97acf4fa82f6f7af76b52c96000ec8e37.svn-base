@@ -1,0 +1,102 @@
+runAfterAppReady(() => {
+
+  $('.drag_item').draggable({
+    helper: 'clone',         // 복제본 사용
+    revert: 'invalid',       // 잘못 놓으면 원위치
+    cursor: 'move',
+    zIndex: 100,
+    containment: '.contents' // 또는 원하는 영역
+  });
+  
+  $('.drop_item').droppable({
+    accept: '.drag_item',
+    drop: function (event, ui) {
+      const $dropTarget = $(this);
+      const $clone = ui.helper.clone();
+  
+      // 위치 초기화
+      $clone.css({
+        position: 'relative',
+        left: '0',
+        top: '0',
+        zIndex: '1'
+      });
+  
+      // 기존 내용 제거 후 복제 추가
+      $dropTarget.empty().append($clone);
+  
+      // 드래그된 값과 정답 비교
+      const dragValue = $clone.attr('data-value');
+      const correctAnswer = $dropTarget.attr('data-answer-single');
+  
+      if (dragValue === correctAnswer) {
+        $dropTarget.attr('data-correction', 'true');
+      } else {
+        $dropTarget.attr('data-correction', 'false');
+      }
+  
+      // ✅ hover 클래스 제거
+      $dropTarget.removeClass('ui-state-hover');
+  
+      // drop_group 전체 정답 체크
+      checkDropGroup1Correction();
+    }
+  });
+  
+  function checkDropGroup1Correction() {
+    const requiredAnswers = ['가', '나', '마'];
+    const answersFound = new Set();
+  
+    const $dropGroup = $('.drop_group1');
+  
+    $dropGroup.find('.drop_item').each(function () {
+      const answer = $(this).attr('data-answer-single');
+      if (requiredAnswers.includes(answer)) {
+        answersFound.add(answer);
+      }
+    });
+  
+    if (requiredAnswers.every(ans => answersFound.has(ans))) {
+      $dropGroup.attr('data-correction', 'true');
+      // drop_item에도 속성 부여
+      $dropGroup.find('.drop_item').attr('data-correction', 'true');
+    } else {
+      $dropGroup.removeAttr('data-correction');
+      // drop_item에서도 속성 제거
+      $dropGroup.find('.drop_item').removeAttr('data-correction');
+    }
+  }
+  
+
+  const targetNode = document.querySelector('.drop_group1');
+  const config = {
+    childList: true,
+    subtree: true,
+    attributes: true,
+    attributeFilter: ['data-answer-single']
+  };
+
+  const observer = new MutationObserver(() => {
+    checkDropGroup1Correction();
+  });
+
+  if (targetNode) {
+    observer.observe(targetNode, config);
+  }
+
+  // 로딩 시 1회 실행
+  checkDropGroup1Correction();
+
+  $('.btnReset').on('click', function () {
+    // drop_group1에서 data-correction 제거
+    $('.drop_group1').removeAttr('data-correction');
+  
+    // drop_item에서 data-correction 및 내용 제거
+    $('.drop_group1 .drop_item').each(function () {
+      $(this).removeAttr('data-correction');
+      $(this).removeAttr('data-answer-single'); // 정답 연결 초기화 (필요 시)
+      $(this).empty(); // 드롭된 복제 drag_item 제거
+    });
+  });
+  
+});

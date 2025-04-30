@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_02_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <!-- <link rel="stylesheet" href="./../../common_practice/css/ema511_01.css" /> -->
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_02_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2_orange" lang="y">
+          크기가 같은 쌓기나무를 쌓아 만든 두 직육면체의 부피를 비교하려고 합니다.
+          <span class="circle_blank"></span>
+          안에
+          <img src="./../../common_contents//common/img/icon_arrow_right.svg" alt="크다" /><span class="ml-10">,</span> <img src="./../../common_contents//common/img/icon_equal.svg" alt="같다" /><span class="ml-10">,</span>
+          <img src="./../../common_contents//common/img/icon_arrow_left.svg" alt="작다" />
+
+          중 알맞은 것을 고르세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area flex dir_col">
+          <div class="question_box img_box">
+            <div class="inout_box">
+              <img src="../../common_practice/img/EMA616_02_IH/616_02_02.png" alt="" />
+            </div>
+            <span class="letter1">가</span>
+            <span class="letter2">나</span>
+          </div>
+
+          <div class="question_box">
+            <div class="inout_box">
+              <div class="text">
+                <span> 가의 부피</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single=">">
+                    <option></option>
+                    <option value=">">></option>
+                    <option value="=">=</option>
+                    <option value="<"><</option>
+                  </select>
+                </div>
+                <span> 나의 부피</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

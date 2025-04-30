@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_02_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_02_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y">직육면체와 정육면체에 대해 잘못 설명한 사람의 이름을 쓰고, 내용을 옳게 고쳐 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img">
+            <img src="../../common_practice/img/EMA525_02_IH/0007_img.png" alt="" />
+            <span class="name1" lang="y">채은</span>
+            <span class="txt1" lang="y">직육면체와 정육면체는<br />면, 모서리, 꼭짓점의 수가<br />각각 같아.</span>
+            <span class="name2" lang="y">승민</span>
+            <span class="txt2" lang="y">직육면체는 정육면체라고 할 수 있어.</span>
+          </div>
+          <div class="flex dir_col">
+            <div class="flex align_center gap_8">
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="승민"></math-field>
+              </div>
+              )
+            </div>
+            <div class="flex gap_10 input_area">
+              <span class="label_gray" lang="y">옳게 고치기</span>
+              <div class="input_wrap">
+                <math-field></math-field>
+                <div class="example_box">
+                  <p lang="y">직육면체는 정육면체라고 할 수 없어.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">직사각형은 정사각형이라고 할 수 없으므로 직육면체는 정육면체라고 할 수 없습니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

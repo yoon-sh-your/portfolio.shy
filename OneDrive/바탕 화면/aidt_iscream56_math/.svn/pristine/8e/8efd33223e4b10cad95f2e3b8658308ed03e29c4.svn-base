@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_01_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_01_ih_0001">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 3-2』 분수 알아보기</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="1_brown" lang="y">색칠한 부분을 분수로 나타내어 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center gap_30">
+          <div class="img_area box1">
+            <img src="./../../common_practice/img/EMA611_01_IH/0001_01.png" alt="" />
+            <div class="input_position">
+              <div class="fraction_box">
+                <div class="input_wrap " data-hint-position="right">
+                  <math-field data-answer-single="3" text-align="center" class="w_80"></math-field>
+                </div>
+                <div class="input_wrap" data-hint-position="right">
+                  <math-field data-answer-single="8" text-align="center" class="w_80"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="img_area box2">
+            <img src="./../../common_practice/img/EMA611_01_IH/0001_02.png" alt="" />
+            <div class="input_position flex align_center gap_10">
+              <div class="mixed_fraction">
+                <div class="input_wrap" data-hint-position="up">
+                  <math-field data-answer-single="1" text-align="center" class="w_80"></math-field>
+                </div>
+                <div class="fraction_box">
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="5" text-align="center" class="w_80"></math-field>
+                  </div>
+                  <div class="input_wrap" data-hint-position="right">
+                    <math-field data-answer-single="6" text-align="center" class="w_80"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div lang="y" class="fraction_text">
+                  색칠한 부분은 전체를 똑같이 8로 나눈 것 중의 3이므로
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>8</span> </span
+                  >입니다.
+                </div>
+                <div lang="y" class="fraction_text">
+                  색칠한 부분은 1과 전체를 똑같이 6으로 나눈 것중의 5이므로 
+                  <span class="mixed_fraction">
+                    <span>1</span>
+                    <span class="fraction_box ml_0">
+                      <span>5</span>
+                      <span>6</span>
+                    </span>
+                  </span>입니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_07_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_07.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_07_su_0004">
+      <section class="title type2">
+        <h2 data-head="2_green" lang="y">하윤이와 승우가 종이띠 600 ㎝를 1 : 3으로 나누어 가지려고 합니다. 두 사람이 나누어 가지는 종이띠는 각각 몇 ㎝인지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">두 사람이 나누어 가지는 종이띠의 길이는 각각 전체의 몇 분의 몇인지 알아보세요.</h3>
+
+            <div class="flex justify_center">
+              <div class="item_box1">
+                <div class="name">
+                  <p lang="y">하윤</p>
+                </div>
+                <img src="../../common_contents/img/EMA624_07_SU/624_07_0004.png" alt="" />
+                <span class="mixed_fraction1">
+                  <span class="fraction_box">
+                    <div class="input_wrap answer1"><math-field data-answer-single="1"></math-field></div>
+                    <span>
+                      <div class="input_wrap"><math-field data-answer-single="1"></math-field></div>
+                      +
+                      <div class="input_wrap"><math-field data-answer-single="3"></math-field></div>
+                    </span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <div class="input_wrap"><math-field data-answer-single="1"></math-field></div>
+                    <div class="input_wrap"><math-field data-answer-single="4"></math-field></div>
+                  </span>
+                </span>
+              </div>
+              <div class="item_box2">
+                <div class="name">
+                  <p lang="y">승우</p>
+                </div>
+                <img src="../../common_contents/img/EMA624_07_SU/624_07_0005.png" alt="" />
+                <span class="mixed_fraction1">
+                  <span class="fraction_box">
+                    <div class="input_wrap answer1"><math-field type="number" data-answer-single="3" text-align="center"></math-field></div>
+                    <span>
+                      <div class="input_wrap"><math-field type="number" data-answer-single="1" text-align="center"></math-field></div>
+                      +
+                      <div class="input_wrap"><math-field type="number" data-answer-single="3" text-align="center"></math-field></div>
+                    </span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <div class="input_wrap"><math-field type="number" data-answer-single="3" text-align="center"></math-field></div>
+                    <div class="input_wrap"><math-field type="number" data-answer-single="4" text-align="center"></math-field></div>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">두 사람이 나누어 가지는 종이띠는 각각 몇 ㎝인가요?</h3>
+            <div class="flex justify_center">
+              <div class="item_box1">
+                <div class="name">
+                  <p lang="y">하윤</p>
+                </div>
+                <img src="../../common_contents/img/EMA624_07_SU/624_07_0004.png" alt="" />
+                <span class="mixed_fraction1">
+                  <span>600×</span>
+                  <span class="fraction_box">
+                    <div class="input_wrap answer1"><math-field data-answer-single="1"></math-field></div>
+                    <span>
+                      <div class="input_wrap"><math-field data-answer-single="4"></math-field></div>
+                    </span>
+                  </span>
+                  <span>=</span>
+                  <div class="input_wrap answer2">
+                    <math-field type="number" data-answer-single="150" text-align="center"></math-field>
+                    <span>&nbsp;(㎝)</span>
+                  </div>
+                </span>
+              </div>
+              <div class="item_box2">
+                <div class="name">
+                  <p lang="y">승우</p>
+                </div>
+                <img src="../../common_contents/img/EMA624_07_SU/624_07_0005.png" alt="" />
+                <span class="mixed_fraction1">
+                  <span>600×</span>
+                  <span class="fraction_box">
+                    <div class="input_wrap answer1"><math-field data-answer-single="3"></math-field></div>
+                    <span>
+                      <div class="input_wrap"><math-field data-answer-single="4"></math-field></div>
+                    </span>
+                  </span>
+                  <span>=</span>
+                  <div class="input_wrap answer2">
+                    <math-field type="number" data-answer-single="450" text-align="center"></math-field>
+                    <span>&nbsp;(㎝)</span>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

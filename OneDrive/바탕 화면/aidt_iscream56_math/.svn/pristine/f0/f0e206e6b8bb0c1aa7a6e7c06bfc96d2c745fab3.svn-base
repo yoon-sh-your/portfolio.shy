@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_05_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema526_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_05_ih_0004">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="4" class="is_star" lang="y">일이 일어날 가능성에 알맞은 일을 주변에서 한 가지씩 찾아 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="table_wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th lang="y">가능성</th>
+                  <th lang="y">일</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th lang="y">~일 것 같다</th>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field></math-field>
+                      <div class="example_box">
+                        <p lang="y">주사위 한 개를 던졌을 때 나온 주사위 눈의 수는 2 이상일 것입니다.</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y">확실하다</th>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field></math-field>
+                      <div class="example_box">
+                        <p lang="y">11월의 다음 달은 12월일 것입니다.</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve"></div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">전송</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

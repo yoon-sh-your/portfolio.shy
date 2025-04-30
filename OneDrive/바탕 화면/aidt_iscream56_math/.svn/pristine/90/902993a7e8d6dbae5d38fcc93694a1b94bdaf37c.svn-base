@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_06_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_06_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7_pink" class="is_star2" lang="y">은호는 넓이가 24.2 ㎡인 벽을 칠하는데 페인트 4 L를 사용했습니다. 페인트 1 L로 벽을 몇 ㎡ 칠한셈인지 식을 쓰고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_06_IH/0007_01.png" alt="" />
+          </div>
+          <div class="input_area flex dir_col align_end">
+            <div class="input_row">
+              <span lang="y" class="label_gray">식</span>
+              <div class="input_wrap input1">
+                <math-field data-answer-single="24.2÷4"></math-field>
+              </div>
+              =
+              <div class="input_wrap input2">
+                <math-field data-answer-single="6.05"></math-field>
+              </div>
+            </div>
+            <div class="input_row">
+              <span lang="y" class="label_gray">답</span>
+              <div class="input_wrap input2">
+                <math-field data-answer-single="6.05"></math-field>
+              </div>
+              ㎡
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">해설 미수급</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

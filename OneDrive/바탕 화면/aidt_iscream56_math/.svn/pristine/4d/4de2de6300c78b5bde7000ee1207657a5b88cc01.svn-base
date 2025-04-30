@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_01_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_01_su_0005">
+      <section class="title type2">
+        <h2 data-icon="speech" lang="y">그림에서 볼 수 있는 입체도형을 찾아 이야기해 봅시다.​</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align_start">
+          <div class="picture_wrap" data-tit="그림에서 볼 수 있는 입체도형을 찾아 이야기해 봅시다.​">
+            <img src="../../common_contents/img/EMA612_01_SU/0004_content.png" alt="입체도형 찾아보기">
+            <button class="zoom"></button>
+          </div>
+          
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">여러 가지 기둥 모양의 보물 상자, 건물이 보입니다.</li>
+                <li lang="y">여러 가지 뿔 모양의 보물 상자, 건물이 보입니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

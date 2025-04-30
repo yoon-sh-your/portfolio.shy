@@ -1,0 +1,118 @@
+.question_box {
+  white-space: normal;
+}
+.title.group {
+  padding-bottom: 0;
+  padding-left: 0;
+}
+.tit_data {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.tit_data .inner {
+  position: relative;
+  padding: 0 6px;
+}
+.tit_data .inner:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  transform: translateY(-50%);
+  border-radius: 22px;
+  background: #fdddce;
+}
+.tit_data span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 0 16px;
+  border: 2px solid #fdddce;
+  border-radius: 32px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #911c1a;
+  background-color: #fff;
+}
+.table_wrap {
+  width: 100%;
+  max-width: 960px;
+}
+.table_wrap th,
+.table_wrap td {
+  font-weight: normal;
+  height: 46px;
+  padding: 12px;
+  font-size: 24px;
+}
+.table_wrap thead th {
+  background-color: #fde6db;
+}
+.table_wrap tbody th {
+  background-color: #eaebec;
+}
+.table_wrap.row th,
+.table_wrap.row td {
+  height: 52px;
+}
+.table_wrap.row thead td {
+  background-color: #eaebec;
+}
+.table_wrap.row thead tr:first-child td:last-child {
+  border-radius: 0 19px 0 0;
+}
+.table_wrap.row tbody th {
+  background-color: #fde6db;
+}
+.table_wrap.row thead td {
+  border-left: 2px solid #fff;
+}
+.example_box.small {
+  position: absolute;
+  top: 100%;
+  min-height: 45px;
+  padding: 0 0 0 50px;
+  background: none;
+  border-radius: 0;
+}
+.example_box.small:before {
+  top: 0;
+  left: 0;
+}
+.example_box.small p {
+  color: var(--font-negative);
+}
+.ema526_04_ih_0002 .conts_solve > p > img {
+  display: inline-block;
+}
+
+.ema526_04_ih_0003 .table_wrap {
+  width: 950px;
+}
+.ema526_04_ih_0003 .table_wrap th {
+  width: auto;
+}
+.ema526_04_ih_0003 .table_wrap td {
+  width: 190px;
+}
+
+.ema526_04_ih_0004 .question_box {
+  align-items: normal;
+}
+.ema526_04_ih_0004 .wrap_table {
+  width: 440px;
+}
+
+.ema526_04_ih_0005 .btn.calculator {
+  display: inline-flex;
+  vertical-align: top;
+  margin-top: -6px;
+}
+.ema526_04_ih_0005 .question_box {
+  margin-top: 66px;
+}

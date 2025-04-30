@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_02_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_02_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">두 수 중에서 약수의 개수가 더 많은 수를 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="question_box">
+            <span>12</span>
+            <span>16</span>
+            <div class="boolean_wrap">
+              <button class="button1" data-answer-single="true"></button>
+              <button class="button2" data-answer-single="false"></button>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">12의 약수: 1, 2, 3, 4, 6, 12 ➔ 6개</p>
+                <p lang="y">16의 약수: 1, 2, 4, 8, 16 ➔ 5개</p>
+                <p lang="y">따라서 약수의 개수가 더 많은 수는 12입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

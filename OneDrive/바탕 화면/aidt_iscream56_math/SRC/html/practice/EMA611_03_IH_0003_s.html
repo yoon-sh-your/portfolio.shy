@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_03_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_03_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">몫이 1보다 큰 나눗셈을 모두 찾아 기호를 선택해 보세요.  </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA611_03_IH/0003_01.png" alt="" />
+            <p><span>㉠</span> 10÷9</p>
+            <p><span>㉡</span> 11÷14</p>
+            <p><span>㉢</span> 7÷6</p>
+            <p><span>㉣</span> 12÷13</p>
+
+            <div class="boolean_wrap type_chk">
+              <button data-answer-single="true" class="button1"></button>
+              <button data-answer-single="false" class="button2"></button>
+              <button data-answer-single="true" class="button3"></button>
+              <button data-answer-single="false" class="button4"></button>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_0 align_center">
+                  ㉠ 10÷9=
+                  <div class="fraction_box">
+                    <span>10</span>
+                    <span>9</span>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>1</span>
+                    <div class="fraction_box"><span>1</span><span>9</span></div>
+                  </div>
+                  ➔
+                  <div class="mixed_fraction">
+                    <span>1</span>
+                    <div class="fraction_box"><span>1</span><span>9</span></div>
+                  </div>
+                  &nbsp;&gt;&nbsp;1
+                </div>
+                <div class="flex gap_0 align_center">
+                  ㉡ 11÷14=
+                  <div class="fraction_box"><span>11</span><span>14</span></div>
+                  ➔
+                  <div class="fraction_box"><span>11</span><span>14</span></div>
+                  &nbsp;&lt;&nbsp;1
+                </div>
+                <div class="flex gap_0 align_center">
+                  ㉢ 7÷6=
+                  <div class="fraction_box"><span>7</span><span>6</span></div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>1</span>
+                    <div class="fraction_box"><span>1</span><span>6</span></div>
+                  </div>
+                  ➔
+                  <div class="mixed_fraction">
+                    <span>1</span>
+                    <div class="fraction_box"><span>1</span><span>6</span></div>
+                  </div>
+                  &nbsp;&gt;&nbsp;1
+                </div>
+                <div class="flex gap_0 align_center">
+                  ㉣ 12÷13=
+                  <div class="fraction_box"><span>12</span><span>13</span></div>
+                  ➔
+                  <div class="fraction_box"><span>12</span><span>13</span></div>
+                  &nbsp;&lt;&nbsp;1
+                </div>
+                <p lang="y">따라서 몫이 1보다 큰 나눗셈은 ㉠, ㉢입니다.</p>
+                <p>
+                  <span class="label_refer" lang="y">참고</span>
+                  <span lang="y">나누어지는 수가 나누는 수보다 크면 몫은 1보다 큽니다.</span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA612_10_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+     <link rel="stylesheet" href="./../../common_contents/css/ema611_09_SU.css" />
+     <script src="../../common_contents/js/EMA611_09_SU.js"></script>
+</head>
+<body>
+    <div id="app_wrap" class="ema612_10_su_0003 play-howto-layout">
+        <section class="title">
+            <h2 data-text="놀이방법" lang="y">
+                <span class="title-ready"><span class="point">놀이</span> 방법</span>
+                <span class="howto num1">‘시작 수’는 8, 9, 10 중에서, ‘끝 수‘는 40부터 50까지의 자연수 중에서 정합니다.</span>
+                <span class="howto num2">순서대로 가지고 있는 카드 한 장을 내려놓으면서 첫 번째 사람은 시작 수에, 그 다음 차례부터는 이전 사람이 계산한 값에 카드에 적힌 구성 요소의  수만큼 더하거나 뺀 값을 외칩니다. 이때 <img src="../../common_contents/img/EMA612_10_SU/0003_icon_plus.svg" alt="플러스">가 있으면 더하고, <img src="../../common_contents/img/EMA612_10_SU/0003_icon_minus.svg" alt="마이너스">가 있으면 뺍니다.</span>
+                <span class="howto num3">계산한 값이 끝 수 미만이면 쌓아 둔 카드 중 맨 위에 있는 카드 한 장을 가져오고, 계산한 값이 끝 수 이상이면 카드를 모두 내려놓습니다.</span>
+                <span class="howto num4">카드를 모두 내려놓은 사람을 제외하고<img src="../../common_contents/common/img/icon_howto_num1_3.svg" alt="">의 순서대로 놀이를 반복합니다. 마지막까지 남은 사람이 이깁니다.</span>
+               
+            </h2>
+
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <!-- flex dir_col -->
+                        
+                        <img src="../../common_contents/img/EMA612_10_SU/0003_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="../../common_contents/img/EMA612_10_SU/0003_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="../../common_contents/img/EMA612_10_SU/0003_img_3.png" alt="">
+                    </article>
+                    <article class="page page_4">
+                        <img src="../../common_contents/img/EMA612_10_SU/0003_img_4.png" alt="">
+                    </article>
+
+                </div>
+            </div>
+            
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="btnBgDefault"  onclick="navigate('../guide_sample/vedio_player')"lang="y">활동 영상</button>
+                </div>
+                <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+                <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+.input_wrap:has(.w_80) {
+	width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+math-field.w_large {
+	width: 247px !important;
+}
+.img_area {
+	position: relative;
+}
+
+/* ema624_07_ih_0001 */
+.ema624_07_ih_0001 .text_area {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.ema624_07_ih_0001 .text_area p {
+	font-weight: 700;
+}
+.ema624_07_ih_0001 .input_wrap {
+	margin-left: 10px;
+}
+
+/* ema624_07_ih_0002 */
+.ema624_07_ih_0002 .question_box {
+	gap: 120px;
+}
+.ema624_07_ih_0002 .img_area .text_area {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 125px;
+}
+.ema624_07_ih_0002 .img_area .name {
+	position: absolute;
+	font-size: 24px;
+	top: 21px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 700;
+	color: #fff;
+}
+.ema624_07_ih_0002 .img_area .input_area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ema624_07_ih_0003 */
+.ema624_07_ih_0003 .input_area > div:not(:first-of-type) {
+	margin-top: 120px;
+}
+
+/* ema624_07_ih_0004 */
+.ema624_07_ih_0004 .question_box {
+	gap: 42px;
+}
+.ema624_07_ih_0004 .img_area .text_area {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 100px;
+}
+.ema624_07_ih_0004 .img_area .name {
+	position: absolute;
+	font-size: 24px;
+	top: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-weight: 700;
+	color: #fff;
+}
+.ema624_07_ih_0004 .img_area .input_area {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* ema624_07_ih_0005 */
+.ema624_07_ih_0005 .input_area > div:first-of-type {
+	margin-bottom: 60px;
+}
+.ema624_07_ih_0005 .input_area > div .input_wrap {
+	margin: 0 10px 0 5px;
+}
+
+/* ema624_07_ih_0006 */
+.ema624_07_ih_0006 .input_area > div:first-of-type {
+	margin-bottom: 60px;
+}
+.ema624_07_ih_0006 .input_area > div .input_wrap {
+	margin: 0 10px 0 5px;
+}
+
+/* ema624_07_ih_0007 */
+.ema624_07_ih_0007 .input_area {
+	margin-left: 60px;
+	display: flex;
+	align-items: center;
+}
+.ema624_07_ih_0007 .solve_area .conts_solve .nemo {
+	margin: 0;
+}
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}

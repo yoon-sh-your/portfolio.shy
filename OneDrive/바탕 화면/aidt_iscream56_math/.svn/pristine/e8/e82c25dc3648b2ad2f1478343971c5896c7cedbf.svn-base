@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_08_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_08_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star">
+          <span lang="y">서하는 자전거를 타고 한 시간에 21</span>
+          <div class="fraction_box"><span>3</span><span>4</span></div>
+          <span lang="y" class="ml_10">㎞ 를 갔습니다. 서하가 같은 빠르기로 자전거를 탈 때, 1시간 20분 동안 갈 수 있는 거리는</span>
+          <span lang="y">몇 ㎞인지 식을 쓰고 답을 구해보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center dir_col">
+          <div class="input_area">
+            <div class="input_row flex align_center gap_10">
+              <span class="label_gray">식</span>
+              <div class="input_wrap fraction_wrap fraction1 hint_up">
+                <math-field data-answer-single="21(3)/(4)×1(1)/(3)" text-align="center" placeholder="&nbsp;"></math-field>
+              </div>
+              <span>=</span>
+              <!-- <div class="input_wrap fraction_wrap fraction2 hint_up">
+								<math-field
+									data-answer-single="29"
+									text-align="center"
+									placeholder="&nbsp;"
+								></math-field>
+							</div> -->
+              <div class="input_wrap">
+                <math-field data-answer-single="29"></math-field>
+              </div>
+            </div>
+            <div class="input_row flex align_center gap_10">
+              <span class="label_gray">답</span>
+              <!-- <div class="input_wrap fraction_wrap fraction3">
+								<math-field
+									data-answer-single="29"
+									text-align="center"
+									placeholder="&nbsp;"
+								></math-field>
+							</div> -->
+              <div class="input_wrap">
+                <math-field data-answer-single="29"></math-field>
+              </div>
+              <span>㎞</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <span>1시간 20분=1</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">20<i>1</i></span
+                    ><span class="mark_error">60<i>3</i></span>
+                  </div>
+                  <span>시간=1</span>
+                  <div class="fraction_box"><span>1</span><span>3</span></div>
+                  <span>시간입니다.</span>
+                </div>
+                <div class="flex align_center gap_10 mt_36">
+                  <span>(서하가 1시간 20분 동안 갈 수 있는 거리)</span>
+                </div>
+                <div class="flex align_center gap_10 mt_36">
+                  <span>=21</span>
+                  <div class="fraction_box"><span>3</span><span>4</span></div>
+                  <span>×</span>
+                  <span>1</span>
+                  <div class="fraction_box"><span>1</span><span>3</span></div>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">87<i>29</i></span
+                    ><span class="mark_error">4<i>1</i></span>
+                  </div>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span class="mark_error up">4<i>1</i></span
+                    ><span class="mark_error">3<i>1</i></span>
+                  </div>
+                  <span>=</span>
+                  <span>29(㎞)</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

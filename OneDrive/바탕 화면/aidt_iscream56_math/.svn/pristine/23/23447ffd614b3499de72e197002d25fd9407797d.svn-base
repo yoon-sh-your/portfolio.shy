@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_11_SU_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_11.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_11_su_0007">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="6">
+          <div class="flex align_center gap_4" lang="y">그림에서 찾을 수 있는 수를 이용하여 (소수)÷(자연수)의 나눗셈에 알맞은 문제를 만들고 해결하려고 합니다. 물음에 답해 보세요.</div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">그림에서 찾을 수 있는 수를 이용하여 (소수)÷(자연수)의 나눗셈을 만들어 보세요.</h3>
+          <div class="img_row">
+            <div class="picture_wrap" data-tit="수연이가 4일 동안 한 운동과 운동별 소모한 열량, 운동 시간을 기록한 표입니다. 수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 구해 봅시다.">
+              <img src="../../common_contents/img/EMA613_11_SU/0007_img01.png" alt="자치회 활동 이미지" />
+
+              <div class="txt_box abs_1" lang="y">
+                찰흙의 무게가<br />
+                1.62 Kg 이네
+              </div>
+              <div class="txt_box abs_2" lang="y">
+                <span class="name" lang="y">민찬</span>
+                길이가 2.88 m인<br />철사를 자르려고 해.
+              </div>
+            </div>
+
+            <div class="input_area">
+              <div class="flex dir_row gap_26">
+                <div class="input_wrap">
+                  <math-field class="text_input" data-answer-single=""></math-field>
+                  <div class="example_box">
+                    <p lang="y">1.62</p>
+                  </div>
+                </div>
+                <div class="input_wrap">
+                  <!-- <math-field class="textarea" placeholder="​" contenteditable="true" tabindex="0"></math-field> -->
+                  <math-field class="text_input" data-answer-single=""></math-field>
+                  <div class="example_box">
+                    <p lang="y">3</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">앞에서 만든 나눗셈에 알맞은 문제를 만들고 답을 구해보세요.</h3>
+          <div class="img_row">
+            <div class="picture_wrap" data-tit="수연이가 4일 동안 한 운동과 운동별 소모한 열량, 운동 시간을 기록한 표입니다. 수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 구해 봅시다.">
+              <img src="../../common_contents/img/EMA613_11_SU/0007_img01.png" alt="자치회 활동 이미지" />
+
+              <div class="txt_box abs_1" lang="y">
+                찰흙의 무게가가<br />
+                1.62 Kg 이네
+              </div>
+              <div class="txt_box abs_2" lang="y">
+                <span class="name" lang="y">민찬</span>
+                길이가 2.88 m 인<br />철사를 자르려고 해.
+              </div>
+            </div>
+
+            <div class="input_area">
+              <div class="tit f32b">문제 만들기</div>
+              <div class="flex dir_row gap_26">
+                <div class="input_wrap">
+                  <math-field class="text_input" data-answer-single=""></math-field>
+                  <div class="example_box">
+                    <p lang="y">찰흙 1.62 kg 을 학생 3명에게 똑같이 나누어 주려고 합니다. 한 명에게 줄 수 있는 찰흙의 양은 몇 kg인가요?</p>
+                  </div>
+                </div>
+                <div class="input_wrap">
+                  <div class="hin f32b" lang="y">답</div>
+                  <math-field class="text_input" data-answer-single=""></math-field>
+                  <div class="example_box">
+                    <p lang="y">0.54 kg</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_05_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema614_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_05">
+      <section class="title type2 star_title">
+        <h2 data-head="5" lang="y" class="is_star">
+          <span lang="y">두 도시의 인구와 넓이를 나타낸 표입니다. 넓이에 대한 인구의 비율이 더 높은 도시를 고르세요.</span>
+          <button type="button" class="btn calculator">계산기</button>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ena614_05_0004">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th>도시</th>
+                  <td class="bg">가</td>
+                  <td class="bg">나</td>
+                </tr>
+                <tr>
+                  <th>인구(명)</th>
+                  <td>70000</td>
+                  <td>120000</td>
+                </tr>
+                <tr>
+                  <th>넓이(k㎡)</th>
+                  <td>140</td>
+                  <td>200</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="boolean_wrap">
+            <button data-answer-single="false"></button>
+            <button data-answer-single="true"></button>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>가 도시는 인구가 70000명이고 넓이가 140 k㎡이므로 넓이에 대한 인구의 비율은</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <div class="fraction_box">
+                    <span>70000</span>
+                    <span>140</span>
+                  </div>
+                  <p>(=500)입니다. 나 도시는 인구가 120000명이고 넓이가 200 k㎡이므로 넓이에 대한</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>인구의 비율은</p>
+                  <div class="fraction_box">
+                    <span>120000</span>
+                    <span>200</span>
+                  </div>
+
+                  <p>(=600)입니다. 500 < 600이므로 넓이에 대한 인구의 비율이 </p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>더 높은 도시는 나 도시입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,361 @@
+.ema511_01_ih_0002 .question_box {
+  padding: 0 38px;
+}
+.ema511_01_ih_0002 .inout_box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 32px;
+}
+.ema511_01_ih_0002 .inout_box .in_box {
+  padding: 8px;
+  border: 4px solid var(--secondary-coral);
+  border-radius: 20px;
+}
+.ema511_01_ih_0002 .inout_box .in_box .in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  min-height: 128px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #ffe6e2;
+}
+.ema511_01_ih_0002 .inout_box .to_in {
+  position: relative;
+  width: 104px;
+  padding-bottom: 40px;
+  background: url(../img/EMA511_01_IH/0002_arrow.svg) no-repeat center bottom;
+}
+.ema511_01_ih_0002 .inout_box .to_in:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 104px;
+  height: 40px;
+  background: url(../img/EMA511_01_IH/0002_line.svg) no-repeat center bottom / contain;
+}
+.ema511_01_ih_0002 .inout_box .in_box {
+  margin: 20px 0 6px;
+}
+.ema511_01_ih_0002 .inout_box .to_out {
+  text-align: right;
+}
+.ema511_01_ih_0002 .inout_box .to_out .input_wrap {
+  position: relative;
+  padding-top: 52px;
+  background: url(../img/EMA511_01_IH/0002_arrow.svg) no-repeat center top;
+}
+.ema511_01_ih_0002 .inout_box .to_out .input_wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 104px;
+  height: 40px;
+  margin-left: -52px;
+  background: url(../img/EMA511_01_IH/0002_line.svg) no-repeat center top / contain;
+  transform: rotate(180deg);
+}
+/* _layout.css 공통사항 수정 "이전에 배웠어요 수정내용 */
+
+.ema616_01_ih_0001 .title h2 .recap {
+  display: inline-block;
+  width: 202px;
+  line-height: 48px;
+  margin-right: 8px;
+  padding-right: 14px;
+  background: url(../common/img/title_recap.svg) no-repeat 0 0 / contain;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.ema616_01_ih_0001 .title h2 .recap span {
+  color: #8e3a00;
+}
+
+/* .ema616_01_ih_0001 .question_box .inout_box {
+  position: relative;
+} */
+.ema616_01_ih_0001 .question_box {
+  position: relative;
+}
+
+/* .ema616_01_ih_0001 .question_box .inout_box .to_out {
+  position: absolute;
+  width: 200px;
+} */
+
+/* .ema616_01_ih_0001 .question_box .inout_box span.to_out.firstbox {
+  top: 286px;
+  left: 10px;
+} */
+
+/* .ema616_01_ih_0001  .question_box .inout_box div.input_wrap{
+  border:1px solid;
+} */
+/* .ema616_01_ih_0001 .question_box .inout_box span.to_out.firstbox span {
+  padding-left: 12px;
+} */
+/* .ema616_01_ih_0001 .question_box .inout_box .to_out.secondbox {
+  top: 286px;
+  right: 50px;
+} */
+
+/* .ema616_01_ih_0001 .question_box .inout_box span.to_out.secondbox span {
+  padding-left: 12px;
+} */
+
+.ema616_01_ih_0001 .box_cm .cm1,
+.ema616_01_ih_0001 .box_cm .cm2,
+.ema616_01_ih_0001 .box_cm .cm3,
+.ema616_01_ih_0001 .box_cm .cm4 {
+  position: absolute;
+  font-size: 24px;
+  color: #000;
+}
+
+.ema616_01_ih_0001 .box_cm .cm1 {
+  top: 80px;
+  /* left: 86px; */
+  left: calc(50% - 247px);
+}
+
+.ema616_01_ih_0001 .box_cm .cm2 {
+  top: 180px;
+  /* left: 250px; */
+  left: calc(50% - 90px);
+}
+.ema616_01_ih_0001 .box_cm .cm3 {
+  top: 25px;
+  right: calc(50% - 200px);
+}
+
+.ema616_01_ih_0001 .box_cm .cm4 {
+  top: 155px;
+  right: calc(50% - 325px);
+}
+.ema616_01_ih_0001 .input_field_wrap {
+  width: 45%;
+  margin: auto;
+}
+.ema616_01_ih_0001 .input_field_wrap > div {
+  column-gap: 12px;
+}
+.ema616_01_ih_0001 .input_field_wrap .in_flex:nth-child(2) {
+  position: relative;
+  left: 13px;
+}
+
+.ema616_01_ih_0001 section span.title_sub_me {
+  width: 50%;
+  color: var(--font-main-700);
+  font-size: 24px;
+  color: #6a6a6a;
+  font-weight: bold;
+}
+
+/* _layout.css 공통사항 수정 "이전에 배웠어요 수정내용 */
+
+/* .ema616_01_ih_0002 h2 span.empty_box.nemo {
+  position:relative;
+}
+.ema616_01_ih_0002 h2 span.empty_box.nemo::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background-color: var(--font-main);
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: absolute;
+  left: -20px;
+  top: 10px;
+} */
+
+.ema616_01_ih_0002 .question_box {
+  width: 100%;
+  /* height: 700px; */
+  height: auto;
+  display: block;
+}
+.ema616_01_ih_0002 .question_box .inout_box {
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 270px; */
+  height: 350px;
+  width: 700px;
+  background: url(../img/EMA616_01_IH/616_01_02.png) no-repeat;
+  position: relative;
+}
+
+.ema616_01_ih_0002 .question_box .inout_box .to_out {
+  position: absolute;
+  top: 310px;
+  left: calc(50% - 120px);
+  padding: 0;
+}
+
+.ema616_01_ih_0002 .question_box .inout_box .cm1,
+.ema616_01_ih_0002 .question_box .inout_box .cm2,
+.ema616_01_ih_0002 .question_box .inout_box .cm3,
+.ema616_01_ih_0002 .question_box .inout_box .cm4 {
+  position: absolute;
+}
+
+.ema616_01_ih_0002 .question_box .inout_box .cm1 {
+  top: 10px;
+  left: 150px;
+}
+
+.ema616_01_ih_0002 .question_box .inout_box .cm2 {
+  top: 140px;
+  left: 10px;
+}
+.ema616_01_ih_0002 .question_box .inout_box .cm3 {
+  top: 10px;
+  left: 450px;
+}
+
+.ema616_01_ih_0002 .question_box .inout_box .cm4 {
+  top: 140px;
+  right: 10px;
+}
+
+.ema616_01_ih_0002 .title h2 .recap {
+  display: inline-block;
+  width: 202px;
+  line-height: 48px;
+  margin-right: 8px;
+  padding-right: 14px;
+  background: url(../common/img/title_recap.svg) no-repeat 0 0 / contain;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.ema616_01_ih_0002 .title h2 .recap span {
+  color: #8e3a00;
+}
+
+.ema616_01_ih_0002 section span.title_sub_me {
+  width: 50%;
+  color: var(--font-main-700);
+  font-size: 24px;
+  color: #6a6a6a;
+  font-weight: bold;
+}
+
+.ema616_01_ih_0003 .title h2 .recap {
+  display: inline-block;
+  width: 202px;
+  line-height: 48px;
+  margin-right: 8px;
+  padding-right: 14px;
+  background: url(../common/img/title_recap.svg) no-repeat 0 0 / contain;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.ema616_01_ih_0003 .title h2 .recap span {
+  color: #8e3a00;
+}
+
+.ema616_01_ih_0003 section span.title_sub_me {
+  width: 50%;
+  color: var(--font-main-700);
+  font-size: 24px;
+  color: #6a6a6a;
+  font-weight: bold;
+}
+
+/* ### ema616_01_ih_01 수정 */
+.ema616_01_ih_0001 .input_area {
+  margin-bottom: 20px;
+}
+
+.ema616_01_ih_0001 .question_box {
+  font-weight: 700;
+  gap: 60px;
+}
+
+/* .ema616_01_ih_0001 .inout_box .to_out {
+  text-align: left;
+}
+.ema616_01_ih_0001 .question_box .to_out {
+  position: absolute;
+  width: 250px;
+  padding-top: 20px;
+}
+.ema616_01_ih_0001 .question_box .to_out span {
+  padding-left: 10px;
+} */
+
+/* ### ema616_01_ih_02 수정 */
+
+.ema616_01_ih_0002 .question_box .to_out {
+  position: absolute;
+  padding-left: 10%;
+}
+
+.ema616_01_ih_0002 .question_box .to_out .input_wrap {
+  padding-top: 20px;
+}
+
+/*  ### ema616_01_ih_03 */
+
+.ema616_01_ih_0003 .question_box {
+  position: relative;
+}
+
+.ema616_01_ih_0003 .question_box .text1,
+.ema616_01_ih_0003 .question_box .text2 {
+  position: absolute;
+}
+
+.ema616_01_ih_0003 .question_box .text1 {
+  top: 5px;
+  right: 120px;
+}
+
+.ema616_01_ih_0003 .question_box .text2 {
+  top: 100px;
+  right: -160px;
+  /* background:red; */
+}
+
+.ema616_01_ih_0003 .inout_box .cm1,
+.ema616_01_ih_0003 .inout_box .cm2,
+.ema616_01_ih_0003 .inout_box .cm3,
+.ema616_01_ih_0003 .inout_box .cm4,
+.ema616_01_ih_0003 .inout_box .cm5 {
+  /* background:red;  */
+  position: absolute;
+}
+
+.ema616_01_ih_0003 .inout_box .cm1 {
+  top: 100px;
+  left: 220px;
+}
+.ema616_01_ih_0003 .inout_box .cm2 {
+  top: 188px;
+  left: 200px;
+}
+.ema616_01_ih_0003 .inout_box .cm3 {
+  top: 208px;
+  left: 50px;
+}
+.ema616_01_ih_0003 .inout_box .cm4 {
+  top: 180px;
+  right: 370px;
+}
+.ema616_01_ih_0003 .inout_box .cm5 {
+  top: 10px;
+  right: 24px;
+}

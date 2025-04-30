@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" /> -->
+    <meta content="width=1715,height=764" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="../../common_finish/common/css/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <title>차시마무리 평가</title>
+    <script src="../../common_finish/common/js/jquery.min.js"></script>
+    <script src="../../common_finish/common/js/jquery-ui.min.js"></script>
+    <script src="../../common_finish/common/js/jquery.ui.touch-punch.min.js"></script>
+    <script id="MathJax-script" async src="../../common_finish/common/js/MathJax/tex-chtml.js"></script>
+    <script type="module" src="../../common_finish/common/js/main.js"></script>
+  </head>
+  <style>
+    #q1 .qe_area .ans {
+      width: 250px;
+    }
+  </style>
+  <body>
+    <div id="scaleWrapper">
+      <div id="intro" class="intro_2">
+        <div class="inner">
+          <div class="top">
+            <span lang="y" class="danwon_num">2단원</span>
+            <span lang="y" class="danwon_name">평면도형</span>
+          </div>
+          <h1 lang="y" class="title">마무리 평가</h1>
+          <p lang="y" class="qe_num">문항수 : 5개</p>
+          <p lang="y" class="guide">
+            답안 제출 기회는 2번씩 있어요.<br />
+            준비가 되면 시작 버튼을 눌러 주세요.<br />
+            준비되었나요?
+          </p>
+          <button lang="y" type="button" class="intro_btn">시작하기</button>
+        </div>
+      </div>
+      <div id="quest">
+        <div class="nav">
+          <div class="pagination">
+            <button type="button" class="p1 on" aria-current="page" aria-label="현재 페이지1">
+              <span>1</span>
+            </button>
+            <button type="button" class="p2" aria-label="페이지2">
+              <span>2</span>
+            </button>
+            <button type="button" class="p3" aria-label="페이지3">
+              <span>3</span>
+            </button>
+            <button type="button" class="p4" aria-label="페이지4">
+              <span>4</span>
+            </button>
+            <button type="button" class="p5" aria-label="페이지5">
+              <span>5</span>
+            </button>
+          </div>
+          <div class="center">
+            <button type="button" class="submit disable"><img src="../../common_finish/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+          </div>
+        </div>
+
+        <div id="q1" class="page on">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">비커에 소금 12 g을 녹여 소금물 200 g을 만들었습니다. 이 소금물에서 소금물 양에 대한 소금의 비율을 구한 것을 고르세요.</span>
+            </div>
+            <div class="qe_area">
+              <fieldset class="item_wrap vertical5" role="group" aria-labelledby="q1-label">
+                <legend id="q1-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">① 0.03</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">② 0.04</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">③ 0.05</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">④ 0.06</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">⑤ 0.07</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div id="q2" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">규원이네 마을의 넓이는 12 ㎢이고 인구는 45600명입니다. 마을의 넓이에 대한 인구의 비율은 얼마인가요?</span>
+            </div>
+            <div class="qe_area">
+              <fieldset class="item_wrap vertical5" role="group" aria-labelledby="q2-label">
+                <legend id="q2-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">① 3500</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">② 3600</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">③ 3700</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">④ 3800</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">⑤ 3900</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div id="q3" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">표를 보고 오토바이와 자동차 중 어느 것이 더 빨리 달렸는지 구해 보세요.</span>
+            </div>
+            <div class="qe_area center">
+              <div class="qe">
+                <img src="../../common_finish/common/img/mamuri/qe/EMA614_05_SU_0100(3).png" alt="" />
+              </div>
+              <fieldset class="item_wrap" role="group" aria-labelledby="q3-label">
+                <legend id="q3-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">오토바이</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">자동차</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q4" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt"
+                >초록 버스는 180 ㎞를 가는 데 2시간이 걸렸고, 노랑 버스는 279 ㎞를 가는 데 3시간이 걸렸습니다.<br />
+                두 버스의 걸린 시간에 대한 간 거리의 비율을 비교하여 어느 버스가 더 빠른지 구해 보세요.
+              </span>
+            </div>
+            <div class="qe_area center">
+              <fieldset class="item_wrap" role="group" aria-labelledby="q4-label">
+                <legend id="q4-label" class="sr-only">다음 중 알맞은 수를 모두 선택하세요</legend>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">초록 버스</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">노랑 버스</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q5" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">민지와 슬기가 야구 연습을 했습니다. 두 친구 중 타율이 더 높은 친구의 이름을 써 보세요. </span>
+            </div>
+            <div class="qe_area center">
+              <div class="qe">
+                <img src="../../common_finish/common/img/mamuri/qe/EMA614_05_SU_0100(5).png" alt="" />
+              </div>
+              <fieldset class="item_wrap vertical" role="group" aria-labelledby="q5-label">
+                <legend id="q5-label" class="sr-only">다음 중 알맞은 수를 모두 선택하세요</legend>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">민지</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">슬기</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="submitModal" class="modal">
+        <div class="modal-content">
+          <p lang="y" class="modal-message">이대로 제출하겠습니까?</p>
+          <div class="modal-buttons">
+            <button lang="y" type="button" class="modal-cancel">취소</button>
+            <button lang="y" type="button" class="modal-confirm">제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /* 
+    각 문항의 유형 + (답안 예시)
+    1. : 입력형           input.answer
+    2. : item 선택형      .answer.selected
+    3. : 선택지 선택형     .answer:checked
+    4. : D&D              .dropped-item
+    5. : 선긋기           
+    */
+      window.questionTypes = [3, 3, 2, 2, 2];
+      window.correctAnswers = {
+        1: ['item4'],
+        2: ['item4'],
+        3: ['item1'],
+        4: ['item2'],
+        5: ['item1'],
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_06_IH_0004</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_06_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">몫이 다른 나눗셈을 들고 있는 사람의 이름을 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_end">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA611_06_IH/0004_01.png" alt="" />
+            <div class="fraction1">
+              <div class="flex align_center">
+                <div class="mixed_fraction">
+                  <span>2</span>
+                  <div class="fraction_box"><span>3</span><span>10</span></div>
+                </div>
+                ÷3
+              </div>
+            </div>
+            <div class="fraction2">
+              <div class="flex align_center">
+                <div class="mixed_fraction">
+                  <span>2</span>
+                  <div class="fraction_box"><span>3</span><span>5</span></div>
+                </div>
+                ÷6
+              </div>
+            </div>
+            <div class="fraction3">
+              <div class="flex align_center">
+                <div class="mixed_fraction">
+                  <span>1</span>
+                  <div class="fraction_box"><span>8</span><span>15</span></div>
+                </div>
+                ÷2
+              </div>
+            </div>
+            <p class="name1" lang="y">시은</p>
+            <p class="name2" lang="y">민하</p>
+            <p class="name3" lang="y">은호</p>
+          </div>
+          <div class="dropdown_area">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="민하">
+                <option value=""></option>
+                <option value="시은" lang="y">시은</option>
+                <option value="은호" lang="y">은호</option>
+                <option value="민하" lang="y">민하</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0" lang="y">
+                  시은: &nbsp;
+                  <span class="mixed_fraction">
+                    <span>2</span>
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>10</span>
+                    </span> </span
+                  >÷3=
+                  <span class="fraction_box">
+                    <span>23</span>
+                    <span>10</span> </span
+                  >÷3=
+                  <span class="fraction_box">
+                    <span>23</span>
+                    <span>10</span> </span
+                  >×
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>3</span> </span
+                  >=
+                  <span class="fraction_box">
+                    <span>23</span>
+                    <span>30</span>
+                  </span>
+                </div>
+                <div class="flex align_center gap_0" lang="y">
+                  민하: &nbsp;
+                  <span class="mixed_fraction">
+                    <span>2</span>
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>5</span>
+                    </span> </span
+                  >÷6=
+                  <span class="fraction_box">
+                    <span>13</span>
+                    <span>5</span> </span
+                  >÷6=
+                  <span class="fraction_box">
+                    <span>13</span>
+                    <span>5</span> </span
+                  >×
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>6</span> </span
+                  >=
+                  <span class="fraction_box">
+                    <span>13</span>
+                    <span>30</span>
+                  </span>
+                </div>
+                <div class="flex align_center gap_0" lang="y">
+                  은호: &nbsp;
+                  <span class="mixed_fraction">
+                    <span>1</span>
+                    <span class="fraction_box">
+                      <span>8</span>
+                      <span>15</span>
+                    </span> </span
+                  >÷2=
+                  <span class="fraction_box">
+                    <span>23</span>
+                    <span>15</span> </span
+                  >÷2=
+                  <span class="fraction_box">
+                    <span>23</span>
+                    <span>15</span> </span
+                  >×
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>2</span> </span
+                  >=
+                  <span class="fraction_box">
+                    <span>23</span>
+                    <span>30</span>
+                  </span>
+                </div>
+                <p lang="y">따라서 몫이 다른 나눗셈을 들고 있는 사람은 민하입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

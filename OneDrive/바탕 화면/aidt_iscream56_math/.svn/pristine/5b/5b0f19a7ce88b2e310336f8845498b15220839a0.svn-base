@@ -1,0 +1,194 @@
+.ema525_02_ih_0001 .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1103px;
+  height: 209px;
+  padding-left: 278px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.ema525_02_ih_0001 .item:first-child {
+  background-image: url(../img/EMA525_02_IH/0001_bg1.png);
+}
+.ema525_02_ih_0001 .item:last-child {
+  background-image: url(../img/EMA525_02_IH/0001_bg2.png);
+}
+.ema525_02_ih_0001 .item > div {
+  padding: 0 50px;
+  white-space: normal;
+  word-break: keep-all;
+}
+.ema525_02_ih_0001 .item .input_wrap {
+  display: inline-flex;
+  width: 165px;
+  vertical-align: middle;
+}
+.ema525_02_ih_0001 .item .input_wrap math-field {
+  width: 100%;
+}
+
+.ema525_02_ih_0002 .text_bullet:before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ema525_02_ih_0002 .boolean_wrap {
+  display: inline-flex;
+}
+.ema525_02_ih_0002 .boolean_wrap button {
+  position: relative;
+  width: auto;
+  height: 68px;
+  min-width: 68px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+.ema525_02_ih_0002 .boolean_wrap button:not(.sm) {
+  min-width: 120px;
+}
+.ema525_02_ih_0002 .boolean_wrap button:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68px;
+  height: 68px;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  border: 4px solid #222;
+}
+.ema525_02_ih_0002 .boolean_wrap button:hover:before  {
+  content: '';
+  border: 6px solid var(--primary-blue);
+}
+.ema525_02_ih_0002 .boolean_wrap button.selected:before {
+  content: '';
+}
+.ema525_02_ih_0002 .boolean_wrap.result button.hint[data-answer-single='true'],
+.ema525_02_ih_0002 .result.boolean_wrap button.selected[data-answer-single='true'] {
+  background: none !important ;
+}
+.ema525_02_ih_0002 .boolean_wrap.result button.hint[data-answer-single='true']:before {
+  background-color: rgba(255, 67, 67, 0.3);
+  border-color: var(--secondary-red);
+}
+
+.ema525_02_ih_0002 .boolean_wrap.result button.hint[data-answer-single='true']:before {
+  content: '';
+  border-color: var(--font-negative);
+}
+.ema525_02_ih_0002 .boolean_wrap.result button.selected[data-answer-single='true']:before {
+  border-color: var(--primary-blue);
+  background: rgba(59, 113, 254, 0.3);
+}
+
+.ema525_02_ih_0003 .question_box {
+  width: 1201px;
+  margin: 40px auto 0;
+  justify-content: space-between;
+  gap: 80px;
+}
+.ema525_02_ih_0003 .question_box .flex {
+  width: 240px;
+  justify-content: center;
+}
+
+.ema525_02_ih_0004 .img {
+  margin-right: 120px;
+}
+.ema525_02_ih_0004 .table_wrap {
+  margin: 0;
+}
+.ema525_02_ih_0004 .table_wrap th {
+  background-color: #ffe5d7;
+  padding: 0 24px;
+}
+.ema525_02_ih_0004 .table_wrap td {
+  padding: 12px;
+}
+.ema525_02_ih_0004 .table_wrap td .input_wrap .text_hint {
+  top: 50%;
+  left: 120px;
+  width: auto;
+  padding: 0 16px;
+  transform: translateY(-50%);
+}
+
+.ema525_02_ih_0005 .img {
+  position: relative;
+}
+.ema525_02_ih_0005 .img .txt {
+  position: absolute;
+  top: 6px;
+  left: 262px;
+  font-size: 28px;
+}
+.ema525_02_ih_0005 .img .flex {
+  position: absolute;
+}
+.ema525_02_ih_0005 .img .item1 {
+  top: 254px;
+  left: -142px;
+}
+.ema525_02_ih_0005 .img .item2 {
+  top: 370px;
+  left: 332px;
+}
+
+.ema525_02_ih_0006 .input_wrap {
+  width: 940px;
+  white-space: normal;
+}
+.ema525_02_ih_0006 .input_wrap math-field {
+  width: 100%;
+}
+.ema525_02_ih_0006 .label_reason {
+  margin-top: 12px;
+}
+
+.ema525_02_ih_0007 .img {
+  position: relative;
+  white-space: normal;
+  word-break: keep-all;
+  margin-right: 55px;
+}
+.ema525_02_ih_0007 .img span {
+  position: absolute;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 1.25;
+}
+.ema525_02_ih_0007 .img [class^='name'] {
+  color: #fff;
+}
+.ema525_02_ih_0007 .img [class^='txt'] {
+  top: 98px;
+  transform: translateY(-50%);
+}
+.ema525_02_ih_0007 .img .name1 {
+  left: 41px;
+  top: 345px;
+}
+.ema525_02_ih_0007 .img .txt1 {
+  left: 10px;
+  width: 233px;
+}
+.ema525_02_ih_0007 .img .name2 {
+  left: 417px;
+  top: 340px;
+}
+.ema525_02_ih_0007 .img .txt2 {
+  left: 325px;
+  width: 166px;
+}
+.ema525_02_ih_0007 .dir_col {
+  gap: 75px;
+}
+.ema525_02_ih_0007 .dir_col .input_area .input_wrap {
+  flex-grow: 1;
+}
+.ema525_02_ih_0007 .dir_col .input_area .input_wrap math-field {
+  width: 100%;
+}

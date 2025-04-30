@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema612_02_IH_0004</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema612_02_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">각기둥에 대해 옳게 설명한 것에 ○표, 잘못 설명한 것에 ×표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA612_02_IH/0004_01.png" alt="" />
+            <div class="text_row">
+              <p lang="y">옆면은 모두 직사각형입니다.</p>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="○">
+                  <option></option>
+                  <option value="○">○</option>
+                  <option value="×">×</option>
+                </select>
+              </div>
+            </div>
+            <div class="text_row">
+              <p lang="y">밑변과 옆면은 평행합니다.</p>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="×">
+                  <option></option>
+                  <option value="○">○</option>
+                  <option value="×">×</option>
+                </select>
+              </div>
+            </div>
+            <div class="text_row">
+              <p lang="y">밑면은 1개입니다.</p>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="×">
+                  <option></option>
+                  <option value="○">○</option>
+                  <option value="×">×</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">각기둥에서 밑면과 옆면은 수직으로 만납니다. 각기둥의 밑면은 2개입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

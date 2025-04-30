@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_06_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_06_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" class="fraction_box_title" lang="y">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <div class="mixed_fraction ml_0">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+              </div>
+              ÷5를 두 가지 방법으로 계산하고, 비교해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">대분수를 가분수로 바꾸어 지원이와 도훈이의 방법으로 계산해 보세요.</h3>
+
+          <div class="input_area">
+            <img src="../../common_contents/img/EMA611_06_SU/0004_content1.png" alt="">
+
+            <div class="txt" lang="y">
+              분자가 자연수의<br>
+              배수인 분수로 바꾸어<br> 
+              계산해 볼까?
+            </div>
+
+            <div class="name" lang="y">지원</div>
+
+            <div class="equation">
+              <div class="mixed_fraction ml_0">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+              </div>
+              <span>÷5=</span>
+              <span class="fraction_box">
+                <span>
+                  <div class="input_wrap up">
+                    <math-field data-answer-single="7"></math-field>
+                  </div>
+                </span>
+                <span>3</span>
+              </span>
+              <span>÷5=</span>
+              <span class="fraction_box">
+                <span>
+                  <div class="input_wrap up">
+                    <math-field data-answer-single="35"></math-field>
+                  </div>
+                </span>
+                <span>15</span>
+              </span>
+              <span>÷5=</span>
+              <span class="fraction_box">
+                <span>
+                  <div class="input_wrap up">
+                    <math-field data-answer-single="35"></math-field>
+                  </div>
+                  <span>÷5</span>
+                </span>
+                <span>15</span>
+              </span>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(7)/(15)" text-align="center"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">대분수를 가분수로 바꾸어 지원이와 도훈이의 방법으로 계산해 보세요.</h3>
+
+          <div class="input_area">
+            <img src="../../common_contents/img/EMA611_06_SU/0004_content2.png" alt="">
+
+            <div class="txt" lang="y">
+              분수의 곱셈으로<br>
+              나타내어 계산해 볼까?
+            </div>
+
+            <div class="name" lang="y">도훈</div>
+
+            <div class="equation">
+              <div class="mixed_fraction ml_0">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+              </div>
+              <span>÷5=</span>
+              <span class="fraction_box">
+                <span>
+                  <div class="input_wrap up">
+                    <math-field data-answer-single="7"></math-field>
+                  </div>
+                </span>
+                <span>3</span>
+              </span>
+              <span>÷5=</span>
+              <span class="fraction_box">
+                <span>7</span>
+                <span>3</span>
+              </span>
+              <span>×</span>
+              <span class="fraction_box">
+                <span>
+                  <div class="input_wrap up">
+                    <math-field data-answer-single="1"></math-field>
+                  </div>
+                </span>
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="5"></math-field>
+                  </div>
+                </span>
+              </span>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(7)/(15)" text-align="center"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">
+            <div class="fraction_txt_wrap">
+              <div class="fraction_txt" lang="y">
+                <div class="mixed_fraction ml_0">
+                  <span>2</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>3</span>
+                  </span>
+                </div>
+                ÷5를 계산한 방법을 비교하여 이야기해 보세요.
+              </div>
+            </div>
+          </h3>
+
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">둘 다 대분수를 가분수로 바꾼 후 계산하였지만 지원이는 분자가 자연수의 배수인 분수로 바꾸어 계산했고, 도훈이는 분수의 곱셈으로 나타내어 계산했습니다.</p>
+            </div>
+          </div>
+        </article>
+      
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

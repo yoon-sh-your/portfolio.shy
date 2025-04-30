@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_11_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_10_su_0003 play-howto-layout">
+      <section class="title">
+        <h2 data-text="놀이방법" lang="y">
+          <span class="title-ready"><span class="point">놀이</span> 방법</span>
+          <span class="howto num1">순서대로 한 모둠은 책상 위에 엎드려 눈을 가리고, 다른 모둠은 각자 적은 붙임쪽지 3장을 교실 곳곳에 붙입니다.</span>
+          <span class="howto num2">붙임쪽지를 모두 붙이면 책상 위에 엎드려 있던 모둠은 일어나 3분 동안 붙임쪽지를 찾습니다. 붙임쪽지는 한 사람당 최대 3장까지 찾을 수 있습니다.</span>
+          <span class="howto num3">자리에 돌아와 붙임쪽지에 적힌 직육면체의 부피를 구하여 붙임쪽지의 빈 곳에 적습니다.</span>
+          <span class="howto num4">붙임쪽지에 적힌 이름을 보고 그 사람을 찾아가 답을 확인합니다. 부피를 정확하게 구한 붙임쪽지의 수만큼 점수를 얻습니다.</span>
+          <span class="howto num5"> 두 모둠이 역할을 바꾸어<img src="../../common_contents/common/img/icon_howto_num1_4.svg" alt="" />를 반복합니다. 점수를 더 많이 얻은 모둠이 이깁니다. </span>
+        </h2>
+      </section>
+      <section class="contents paging_layout">
+        <div class="flex align_start conts_cover">
+          <div class="input_area conts_cover">
+            <article class="page page_1">
+              <!-- flex dir_col -->
+
+              <img src="../../common_contents/img/EMA616_10_SU/0003_img_1.png" alt="" />
+            </article>
+            <article class="page page_2">
+              <img src="../../common_contents/img/EMA616_10_SU/0003_img_2.png" alt="" />
+            </article>
+            <article class="page page_3">
+              <img src="../../common_contents/img/EMA616_10_SU/0003_img_3.png" alt="" />
+            </article>
+            <article class="page page_4">
+              <img src="../../common_contents/img/EMA616_10_SU/0003_img_4.png" alt="" />
+            </article>
+            <article class="page page_5">
+              <img src="../../common_contents/img/EMA616_10_SU/0003_img_5.png" alt="" />
+            </article>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <div class="btn-play-video">
+            <button class="btnBgDefault" lang="y">활동 영상</button>
+          </div>
+          <div>
+            <button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button>
+          </div>
+          <div>
+            <button class="btnBgDefault teacher" lang="y">모둠 구성하기</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

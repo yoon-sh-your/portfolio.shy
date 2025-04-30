@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA622_10_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema622_10.css" />
+    <script src="../../common_contents/js/ema622_10_0003.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema622_10_su_0003">
+      <section class="contents">
+        <div class="form_wrap">
+          <div class="map_wrap">
+            <div class="image_box">
+              <img src="../../common_contents/img/EMA622_10_SU/622_background.png" alt="배경 이미지">
+              <div class="board_cells">
+                <div class="cell cell-start pos-start" lang="y">출발</div>
+                <div class="cell pos-2">2.8 ÷ 0.4</div>
+                <div class="cell pos-3">36 ÷ 2.4</div>
+                <div class="cell pos-4">
+                  <span class="long-division-front">3.4</span>
+                  <span class="long-division-back">7.82</span>
+                </div>
+                <div class="cell pos-5">
+                  <span class="long-division-front">0.26</span>
+                  <span class="long-division-back">0.52</span>
+                </div>
+                <div class="cell pos-6">
+                  <span class="long-division-front">0.7</span>
+                  <span class="long-division-back">3.92</span>
+                </div>
+                <div class="cell pos-7">
+                  <span class="long-division-front">1.34</span>
+                  <span class="long-division-back">4.02</span>
+                </div>
+                <div class="cell pos-8">19.2 ÷ 3.2</div>
+                <div class="cell pos-9">
+                  <span class="long-division-front">0.45</span>
+                  <span class="long-division-back">18</span>
+                </div>
+                <div class="cell pos-10">
+                  <span class="long-division-front">0.28</span>
+                  <span class="long-division-back">2.52</span>
+                </div>
+                <div class="cell pos-11 cell-text" lang="y">
+                  <span>19 ÷ 6의 몫을<br>반올림하여<br>소수 첫째 자리까지<br>나타내어 보세요.</span>
+                </div>
+                <div class="cell pos-12">3 ÷ 0.5</div>
+                <div class="cell pos-13">
+                  <span class="long-division-front">0.8</span>
+                  <span class="long-division-back">7.2</span>
+                </div>
+                <div class="cell pos-14">3.56 ÷ 0.4</div>
+                <div class="cell pos-15">13.08 ÷ 3.27</div>
+                <div class="cell pos-16 cell-text" lang="y">8.25 ÷ 3.7의 몫을<br>반올림하여<br>일의 자리까지<br>나타내어 보세요.</div>
+                <div class="cell cell-title pos-title" lang="y">놀이판</div>
+                <div class="cell pos-17">
+                  <span class="long-division-front">2.3</span>
+                  <span class="long-division-back">11.5</span>
+                </div>
+                <div class="cell pos-18">
+                  <span class="long-division-front">3.21</span>
+                  <span class="long-division-back">19.26</span>
+                </div>
+                <div class="cell pos-19">8.28 ÷ 4.6</div>
+                <div class="cell pos-20">18 ÷ 2.25</div>
+                <div class="cell cell-end pos-end" lang="y">도착</div>
+
+              </div>
+              <div class="chess_pieces">
+                <div class="piece piece1" data-position="1">
+                  <img src="../../common_contents/img/EMA622_10_SU/622_piece1.svg" alt="말1">
+                </div>
+                <div class="piece piece2" data-position="1">
+                  <img src="../../common_contents/img/EMA622_10_SU/622_piece2.svg" alt="말2">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="submit_wrap">
+            <div class="dice_wrap">
+              <div class="dice_box">
+                <img src="../../common_contents/img/EMA622_10_SU/622_dice_1.svg" alt="주사위" class="dice_img">
+              </div>
+              <button>주사위 굴리기</button>
+            </div>
+
+            <div class="input_area">
+                <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답" id="dice_answer"></math-field>
+                </div>
+                <button class="dice_btn btnReset disabled"></button>
+                <button class="dice_btn btnCheck disabled"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <div class="device_change_wrap">
+            <button class="device_change teacher" lang="y">대표 기기 변경하기</button>
+          </div>
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

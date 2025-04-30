@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema612_05_IH_0008</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_05.css" />
+    <script src="../../common_practice/js/ema612_05_ih_0008.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema612_05_ih_0008">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="8_green" class="is_star2">
+          <span lang="y">사각기둥의 전개도를 서로 다른 모양으로 2개 그려 보세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA612_05_IH/0008_01.png" alt="" />
+            <p class="text1">3㎝</p>
+            <p class="text2">5㎝</p>
+            <p class="text3">4㎝</p>
+            <p class="text4">6㎝</p>
+            <p class="text5">4㎝</p>
+          </div>
+          <div class="canvas_area">
+            <p class="text1">1㎝</p>
+            <p class="text2">1㎝</p>
+            <canvas id="gridCanvas" width="384" height="456"></canvas>
+            <!-- 스타일 선택 팝업 -->
+            <div id="lineSelectLayer">
+              <button class="to_solid" title="실선"></button>
+              <button class="to_dotted" title="점선"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">밑면을 기준으로 옆면을 다른 방향으로 만나게 그리면 각기둥의 전개도를 서로 다른 모양으로 그릴 수 있습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

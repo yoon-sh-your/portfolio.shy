@@ -1,0 +1,53 @@
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+.input_wrap:has(.w_80) {
+	width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+
+/* ema624_01_ih_0001 */
+.ema624_01_ih_0001 .question_box {
+	gap: 60px;
+}
+
+/* ema624_01_ih_0002 */
+.ema624_01_ih_0002 .table_wrap table {
+	width: 921px;
+}
+.ema624_01_ih_0002 .table_wrap colgroup col:first-of-type {
+	width: 260px;
+}
+.ema624_01_ih_0002 .table_wrap colgroup col:not(:first-of-type) {
+	width: 164px;
+}
+.ema624_01_ih_0002 .table_wrap th[rowspan="2"] {
+	height: 98px;
+}
+.ema624_01_ih_0002 .table_wrap th[colspan="2"] {
+	height: 49px;
+}
+.ema624_01_ih_0002 .table_wrap thead tr:last-of-type th {
+	height: 49px;
+	border-width: 2px 0 0 2px;
+	border-style: solid;
+	border-color: #fff;
+}
+.ema624_01_ih_0002 .table_wrap th + th {
+	border-color: #fff;
+}
+.ema624_01_ih_0002 .table_wrap thead th {
+	background-color: #dcefe9;
+}
+.ema624_01_ih_0002 .table_wrap tbody th {
+	background-color: #f2f2f3;
+}
+.ema624_01_ih_0002 .table_wrap tbody td {
+	padding: 10px 0;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_06_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_06.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_06_su_0005">
+    <section class="title type2">
+      <h2 data-head="3_green" lang="y">계산해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="flex align_start">
+        <div class="question_box justify_center">
+
+
+          <div class="container">
+
+            <div class="c1">
+  
+              <div class="operation">
+                3÷9=
+                <div class="input_wrap">
+                  <math-field data-answer-single="0.33"></math-field>
+                </div>
+              </div>
+  
+              <div class="operation">
+                6.1÷0.9=
+                <div class="input_wrap">
+                  <math-field data-answer-single="6.78"></math-field>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="c2">
+
+              <div class="operation">
+                8.2÷6=
+                <div class="input_wrap">
+                  <math-field data-answer-single="1.37"></math-field>
+                </div>
+              </div>
+  
+              <div class="operation">
+                1.58÷10.2=
+                <div class="input_wrap">
+                  <math-field data-answer-single="0.15"></math-field>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

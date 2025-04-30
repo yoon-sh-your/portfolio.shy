@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema625_11_su_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_11.css" />
+</head>
+<body>
+    <div id="app_wrap" class="ema625_11_su_0005">
+        <section class="title type2">
+            <h2 data-type="1" data-text="자기주도 3">
+                <span class="blue line" lang="y">내 힘으로 풀어요</span>
+                <span lang="y">공부한 내용을 확인해요</span>
+            </h2>
+        </section>
+    
+        <section class="title type2 jgjd_3_sub_title">
+            <h2 data-head="4">
+                <div>
+                    <span lang="y">색칠한 부분의 넓이는 몇 ㎠인지 구해 보세요.</span>
+                    <button type="button" class="btn calculator">계산기</button>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents">
+            <div class="flex_col_box">
+                <dl>
+                    <dt class="img_box">
+                        <img src="../../common_contents/img/EMA625_11_SU/0005_item_01.png" alt="원 이미지">
+
+                        <p class="t01" lang="y">2 ㎝</p>
+                        <p class="t02" lang="y">3 ㎝</p>
+                    </dt>
+                    <dd class="flex">
+                        <div class="input_wrap answer1">
+                            <math-field data-answer-single="65.94"></math-field>
+                        </div>
+                        <span lang="y">㎠</span>
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt class="img_box">
+                        <img src="../../common_contents/img/EMA625_11_SU/0005_item_02.png" alt="원 이미지">
+
+                        <p class="t03" lang="y">7 ㎝</p>
+                        <p class="t04" lang="y">6 ㎝</p>
+                    </dt>
+                    <dd class="flex">
+                        <div class="input_wrap answer2">
+                            <math-field data-answer-single="70.26"></math-field>
+                        </div>
+                        <span lang="y">㎠</span>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

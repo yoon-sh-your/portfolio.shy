@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA513_06_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema513_06.css">
+    <link rel="stylesheet" href="./../../common_contents/js/ema513_06_0004.js">
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema513_06_su_0004">
+
+
+        <section class="title type2">
+            <h2 data-head="2_pink">
+                <div>
+                    <span lang="y">식용유, 콜라, 라면 국물 중에서 한 가지를 골라 음식물의 양(mL)과 음식물을 깨끗한 물로 만드는 데 필요한 물의 양(L) 사이의 대응 관계를 식으로 나타내고,
+                        주어진 양의 음식물을 깨끗한 물로 만드는 데 필요한 물은 몇 L인지 구해 봅시다.</span>
+                    <button type="button" class="btn calculator">계산기</button>
+                </div>
+            </h2>
+        </section>
+
+
+        <section class="contents">
+            <section class="contents">
+                <div class="img_row">
+                    <div class="picture_wrap">
+                        <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                        <div class="texture">
+                            <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                            <div class="drink">
+                                <p lang="y">콜라</p>
+                                <p lang="y">우유</p>
+                                <p lang="y">식용유</p>
+                                <p lang="y">라면국물</p>
+                            </div>
+
+                            <div class="liter">
+                                <p lang="y">24 L</p>
+                                <p lang="y">54 L</p>
+                                <p lang="y">37 L</p>
+                                <p lang="y">7 L</p>
+                            </div>
+                            <p class="y" lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                        </div>
+                    </div>
+                    <div class="input_area">
+                        <div class="titleimg">
+                            <img src="../../common_contents/img/EMA513_06_SU/item_수학_mini box.png" alt="">
+                            <img src="../../common_contents/img/EMA513_06_SU/item_수학_mini box (1).png" alt="">
+                            <img src="../../common_contents/img/EMA513_06_SU/item_수학_mini box (3).png" alt="">
+                        </div>
+                        <div class="text">
+                            <p lang="y">식용유 <br>15 mL</p>
+                            <p lang="y">콜라 <br>200 mL</p>
+                            <p lang="y">라면 국물 <br>500 mL</p>
+                        </div>
+        
+                        <ul class="in_box">
+                            <li>
+                                <div class="dropdown_wrap">
+                                    <select class="custom_dropdown" onchange="handleOnChange(this)">
+                                        <option></option><!--최초선택데이터 생성 방지용-->
+                                        <option value="식용유">식용유</option>
+                                        <option value="콜라">콜라</option>
+                                        <option value="라면 국물">라면 국물</option>
+                                    </select>
+                                    <div id="resulte"></div>
+                                </div>
+                                <h2 lang="y">을/를 깨끗한 물로 만드는데 필요한</h2>
+                            </li>
+        
+                            <li>
+                                <h2 lang="y">물의 양 = </h2>
+                                <div class="input_wrap input2">
+                                    <math-field data-answer-single="(콜라의 양)×24"></math-field>
+                                </div>
+                            </li>
+        
+                            <li>
+                                <h2 lang="y">답 : </h2>
+        
+                                <div class="input_wrap input2">
+                                    <math-field data-answer-single="4800"></math-field>
+                                </div>
+                                <h2 lang="y">L</h2>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="btn_area">
+            <!-- 예시 필드에서 사용 -->
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+        </div>
+</body>
+
+</html>

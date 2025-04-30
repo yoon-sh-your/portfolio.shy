@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_07_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_07_ih_0002">
+        <section class="title type2">
+          <h2 data-head="2_orange" lang="y"> 전개도를 접었을 때 만들어지는 정육면체의 겉넓이는 몇 ㎠인지 구해 보세요.</h2>
+        </section>
+  
+        <section class="contents">
+          <div class="flex dir_col" >
+            
+            <table>
+                <tr>
+                    <td class="exImgArea">  
+                      <img src="../../common_practice/img/EMA616_05_IH/616_07_02.png">
+
+                      <p class="txt1">①</p>
+                      <p class="txt2">②</p>
+                      <p class="txt3">③</p>
+                      <p class="txt4">④</p>
+                      <p class="txt5">⑤</p>
+                      <p class="txt6">⑥</p>
+       
+                      <p class="txt7">5 ㎝</p>
+                      <p class="txt8">5 ㎝</p>
+                      <p class="txt9">5 ㎝</p>
+                    </td>
+                    <td  class="col2">
+                        <h2 lang="y">(정육면체의 겉넓이)</h2>
+                        
+                        <h2 class="flex align_center gap_0 mt_20 mb_20">
+                          = 
+                          <img src="../../common_practice/img/EMA616_05_IH/n1y.png" alt="">
+                          <span>+</span>
+                          <img src="../../common_practice/img/EMA616_05_IH/n2y.png" alt="">
+                          <span>+</span>
+                          <img src="../../common_practice/img/EMA616_05_IH/n3y.png" alt="">
+                          <span>+</span>
+                          <img src="../../common_practice/img/EMA616_05_IH/n4y.png" alt="">
+                          <span>+</span>
+                          <img src="../../common_practice/img/EMA616_05_IH/n5y.png" alt="">
+                          <span>+</span>
+                          <img src="../../common_practice/img/EMA616_05_IH/n6y.png" alt="">
+                          
+                        </h2>
+                        <h2 class="table_h1">
+                            = 
+                        <img src="../../common_practice/img/EMA616_05_IH/n1y.png"> ×6 = 
+                        <div class="input_wrap">
+                            <math-field data-answer-single="150"></math-field>
+                          </div>
+                          <span class="ml_8"> (㎠)</span>
+                      </h2>
+                    
+                    </td>
+                </tr>
+            </table>
+
+
+            <div class="solve_area">
+              <div class="inner_solve">
+                <div class="flex">
+                  <strong class="tit_solve" lang="y">해설</strong>
+                  <div class="conts_solve">
+                    <p lang="y">정육면체는 여섯 면의 넓이가 모두 같으므로 한 면의 넓이를 6배 하면 정육면체의 겉넓이를 구할 수 있습니다.</p>
+                    <p lang="y">➔ 25×6=150 (㎠)</p>
+                  </div>
+                </div>
+                <div class="buttons_solve">
+                  <div>
+                    <button type="button" class="btnVideo"><span lang="y">해설 영상</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="btn_area">
+              <button class="btnType key">입력타입토글</button>
+              <button class="btnReset">리셋</button>
+              <button class="btnCheck">확인</button>
+            </div>
+      </section>
+    </div>
+  </body>
+</html>

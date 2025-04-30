@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ema516_17_su_0005_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema516_17.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="drawline ema516_17_0005" data-current-page="page_1, page_2">
+            <section class="title type2">
+                <h2 data-type="1" data-text="자기주도 3">
+                    <span class="blue line" lang="y">내 힘으로 풀어요</span>
+                    <span lang="y">공부한 내용을 확인해요</span>
+                </h2>
+            </section>
+
+            <section class="title type2 jgjd_3_sub_title">
+                <h2 data-head="4" class="is_star" lang="y">주아의 수학 일기입니다.<span class="nemo_blank ml_6"></span> 안에 알맞은 수를 써넣고, 주아가 그린 평행사변형과 삼각형을 각각 그려 보세요.</h2>
+            </section>
+
+            <section class="contents paging_layout">
+                <article class="page page_1">
+                    <div class="margin_center">
+                        <h4 lang="y">7월 20일 날씨:맑음</h4>
+                        <div class="answer_wrap">
+                            <div lang="y">
+                                넓이가 10 ㎠인 평행사변형과 삼각형을 그렸다. 평행사변형은 밑변의 길이를
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="5"></math-field>
+                                    <span>㎠</span>
+                                </div>
+                                ,
+                            </div>
+                            <div lang="y">
+                                높이를
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="2"></math-field>
+                                    <span>㎝</span>
+                                </div>
+                                로 그렸고, 삼각형은 밑변의 길이를
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="4"></math-field>
+                                    <span>㎝</span>
+                                </div>
+                                , 높이를
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="5"></math-field>
+                                    <span>㎝</span>
+                                </div>
+                                로 그렸다.
+                            </div>
+                            <div lang="y">친구들과 그린 도형을 비교해 보니 넓이가 같아도 모양은 다를 수 있다는 것을 알게 되었다.</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <div class="question_box justify_center align_end">
+                        <div class="click_area">
+                            <div class="drawline_grid">
+                                <div class="drawing_grid_area" id="drawingArea1" data-grid-size="35">
+                                    <svg class="line_canvas"></svg>
+                                </div>
+                            </div>
+                            <div class="answer_area">
+                                <div class="example_box">예</div>
+                                <!-- 
+                                해당 이미지 태그에 제출 버튼 클릭 시 출력되는 예시 이미지 넣어주시면 됩니다.
+                                <img src="" alt="" /> 
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="btn_area">
+                    <button class="btnType">입력타입토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnCheck">확인</button>
+                    <button class="btnSample">예시</button>
+                    <button class="btnSubmit">제출</button>
+                </div>
+            </section>
+        </div>
+        <script>
+            runAfterAppReady(() => {
+                $(".btnSubmit").click(function () {
+                    $(".answer_area").addClass("show");
+                });
+                $(".btnReset").click(function () {
+                    $(".answer_area").removeClass("show");
+                });
+
+                // 버튼 활성화 규칙 정의
+                defineButtonClassRules([
+                    {
+                        selector: ".drawing_grid_area:not([data-answer-single])",
+                        key: "custom_submit_btn_active",
+                        test: (el) => {
+                            return el.dataset.connection !== undefined && el.dataset.connection !== "[]";
+                        },
+                    },
+                ]);
+            });
+        </script>
+    </body>
+</html>

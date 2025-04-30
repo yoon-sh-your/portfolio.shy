@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_04_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_04_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">1.24÷2를 어떻게 계산하는지 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">세로로 나타내어 계산하는 방법을 알아보세요.</h3>
+            <div class="reveal_wrap">
+              <button class="reveal_btn" data-pair="1" lang="y">1을 2로 나눌 수 없으므로 몫에 <br />0을 쓰고, 1.24의 소수점에 <br />맞추어 점을 찍어요.</button>
+              <button class="reveal_btn" data-pair="2" lang="y">0.1의 개수인 12를 2로 <br />나눈 몫을 써요.</button>
+              <button class="reveal_btn" data-pair="3" lang="y">0.01의 개수인 4를 2로 <br />나눈 몫을 써요.</button>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">분수의 나눗셈으로 나타내어 계산하는 방법을 알아보세요.</h3>
+            <div class="question_box justify_center">
+              <p class="f32b fraction_row">
+                1.24÷2=<span class="fraction_box"
+                  ><span class="input_wrap answer1"><math-field data-answer-single="124"></math-field></span><span>100</span></span
+                >÷2=<span class="fraction_box"
+                  ><span
+                    ><span class="input_wrap answer2"><math-field data-answer-single="124"></math-field></span>÷2</span
+                  ><span>100</span></span
+                ><span>=</span
+                ><span class="fraction_box"
+                  ><span class="input_wrap answer3"><math-field data-answer-single="62"></math-field></span><span>100</span></span
+                ><span>=</span><span class="input_wrap answer3"><math-field data-answer-single="0.62"></math-field></span>
+              </p>
+            </div>
+          </article>
+          <article class="page page_3">
+            <h3 lang="y">몫이 1보다 작은 (소수)÷(자연수)를 계산하는 방법을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p>세로로 나타내어 계산하거나 분수의 나눗셈으로 나타내어 계산합니다.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star" lang="y">직육면체에서 색칠한 면과 평행한 면의 모서리의 길이의 합은 몇 ㎝인지 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page">
+          <h3 lang="y" class="title" lang="y">색칠한 면과 평행한 면을 찾아 고르세요.</h3>
+          <div class="flex justify_center align_center gap_120">
+            <div class="img">
+              <img src="../../common_practice/img/EMA525_04_IH/0005_img.png" alt="" />
+              <span class="txt t1">4 ㎝</span>
+              <span class="txt t2">8 ㎝</span>
+              <span class="txt t3">15 ㎝</span>
+            </div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="면 ㄱㅁㅇㄹ">
+                <option></option>
+                <option value="면 ㄱㅁㅇㄹ"></option>
+                <option value="면 ㄱㄴㄷㄹ"></option>
+                <option value="면 ㅂㅅㅇㅁ"></option>
+              </select>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">색칠한 면과 마주 보는 면을 찾습니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page">
+          <h3 lang="y" class="title" lang="y">색칠한 면과 평행한 면의 모서리의 길이의 합은 몇 ㎝인지 구해 보세요.</h3>
+          <div class="flex justify_center gap_120">
+            <div class="img">
+              <img src="../../common_practice/img/EMA525_04_IH/0005_img.png" alt="" />
+              <span class="txt t1">4 ㎝</span>
+              <span class="txt t2">8 ㎝</span>
+              <span class="txt t3">15 ㎝</span>
+            </div>
+            <div class="question_box gap_8">
+              (
+              <div class="input_wrap"><math-field data-answer-single="38"></math-field></div>
+              ) ㎝
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">색칠한 면과 평행한 면인 면 ㄱㅁㅇㄹ은 가로가 15 ㎝, 세로가 4 ㎝인 직사각형이므로 모서리의 길이의 합은 (15+4)×2=38 (㎝)입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

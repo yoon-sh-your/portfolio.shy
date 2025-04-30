@@ -1,0 +1,170 @@
+/* ema516_12_su_0002  */
+.video_wrap {
+  flex: 1;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  border: 2px solid #f4f4f4;
+  overflow: hidden;
+  position: relative;
+  background: url(../../common_contents/img/EMA516_09_SU/08_002.png) no-repeat
+    center right 0 / 100%;
+}
+
+.ema516_12_su_0002 .input_wrap {
+  width: 817px;
+}
+
+/* .ema516_12_su_0002 .contents > .flex {
+  gap: 26px;
+} */
+/* .ema516_12_su_0002 .input_wrap > math-field.textarea {
+  width: 797px;
+  height: 302px;
+} */
+
+.ema516_12_su_0002 .input_wrap .example_box > p {
+  display: inline-block;
+  line-height: 1.7;
+}
+
+.mini_dotted {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2px 2px 0px 0px;
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 24px;
+  color: #1454b9;
+  text-align: center;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.mini_dotted::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #00a0e9;
+  border-radius: 3px;
+  background: #eef9ff;
+  z-index: -1;
+}
+
+.po_absolute {
+  width: 100%;
+}
+
+.page_1 .flex {
+  position: relative;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.imgBox {
+  position: absolute;
+  top: 20px;
+  left: 280px;
+}
+
+.imgBox img {
+  position: relative;
+}
+
+.draw_line {
+  width: 880px;
+  align-items: flex-end;
+  right: -176px;
+}
+
+.number1 {
+  width: 100%;
+  position: absolute;
+  top: 14px;
+  left: 4px;
+}
+
+.connect_line_box.start li,
+.connect_line_box.end li {
+  width: 317px;
+  height: 144px;
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.img_area {
+  position: relative;
+}
+
+.page_2 .gap_14 {
+  justify-content: center;
+}
+
+/* .input_wrap math-field.textarea {
+  width: 1208px;
+} */
+
+.length1 span,
+.length2 span,
+.length3 span,
+.length4 span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.length1 {
+  position: absolute;
+  top: 93px;
+  right: 298px;
+}
+.length2 {
+  position: absolute;
+  top: 155px;
+  right: 377px;
+}
+.length3 {
+  position: absolute;
+  top: 76px;
+  right: 376px;
+}
+.length4 {
+  position: absolute;
+  top: 177px;
+  right: 341px;
+}
+
+.page4 {
+  top: 220px;
+  left: 348px;
+}
+
+.page5 {
+  top: 220px;
+  left: 348px;
+}
+
+.ema516_12_su_0002 .input_wrap .example_box.on {
+  padding: 18px 24px 24px 82px;
+}
+
+.ema561_12_su_0005 .input_area {
+  display: flex;
+  justify-content: center;
+}
+
+.ema561_12_su_0005 .page5 math-field.hint + .text_hint {
+  top: calc(100% + -6px);
+  font-size: 24px;
+}
+.ema561_12_su_0005 .page4 math-field.hint + .text_hint {
+  top: calc(100% + -6px);
+  font-size: 24px;
+}

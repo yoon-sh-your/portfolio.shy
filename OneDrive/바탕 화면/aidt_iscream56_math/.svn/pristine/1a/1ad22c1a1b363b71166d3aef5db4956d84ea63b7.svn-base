@@ -1,0 +1,805 @@
+/* ----------------------------------- 접근성 ---------------------------------- */
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* --------------------------------- 인트로, 아웃트로 페이지 -------------------------------- */
+.intro {
+  .title-intro {
+    display: flex;
+    gap: 10px;
+    .group {
+      span {
+        font-family: 'Pretendard';
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: -2px;
+      }
+      .bluegreen {
+        font-size: 32px;
+        color: #04646b;
+      }
+      .brown {
+        color: #b04425;
+      }
+    }
+  }
+}
+.intro,
+.outro {
+  width: 100%;
+  height: 100%;
+  padding: 40px 55px 40px 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.intro::before {
+  position: absolute;
+  top: 122px;
+  left: 198px;
+  z-index: 10;
+  content: '';
+  width: 200px;
+  height: 90px;
+  background: url('../common/img/bg_intro_cloud1.svg') no-repeat center / 100%;
+}
+.intro::after {
+  position: absolute;
+  bottom: 112.18px;
+  left: 578px;
+  z-index: 10;
+  content: '';
+  width: 193.24px;
+  height: 79.82px;
+  background: url('../common/img/bg_intro_cloud2.svg') no-repeat center / 100%;
+}
+.intro,
+.outro {
+  .inwrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 56px;
+    width: 100%;
+    height: 100%;
+    padding-top: 170px;
+    padding-left: 130px;
+    border-radius: 12px;
+    position: relative;
+  }
+}
+.intro {
+  .inwrap {
+    position: relative;
+    background-color: #ffe693;
+    .title-intro {
+      position: absolute;
+      top: 100px;
+      left: 155px;
+      z-index: 10;
+    }
+    &::before {
+      content: '';
+      width: 100px;
+      height: 524px;
+      background: url('../common/img/bg_intro_string.svg') no-repeat center / 100%;
+      position: absolute;
+      top: 50%;
+      left: -35px;
+      transform: translateY(-50%);
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 411.3px;
+      height: 531.01px;
+      background: url('../common/img/charactor_math_cloud.svg') no-repeat center / 100%;
+      position: absolute;
+      bottom: -110px;
+      right: 50px;
+      z-index: 20;
+    }
+  }
+}
+
+.outro {
+  .inwrap {
+    background-color: #f7dad5;
+    .context {
+      & > label {
+        margin-bottom: 16px;
+        padding: 8px 20px;
+        display: inline-flex;
+        min-height: initial;
+        border-radius: 12px;
+        background: var(--Color-Secondary-Red, #ee4f24);
+        color: var(--bg-disabled);
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        font-weight: 700;
+        align-items: center;
+      }
+    }
+
+    &::before {
+      content: '';
+      width: 100px;
+      height: 524px;
+      background: url('../common/img/bg_outro_string.svg') no-repeat center / 100%;
+      position: absolute;
+      top: 50%;
+      left: -35px;
+      transform: translateY(-50%);
+    }
+    &::after {
+      content: '';
+      display: block;
+      width: 480px;
+      height: 480px;
+      background: url('../common/img/charactor_math_02.svg') no-repeat center / 100%;
+      position: absolute;
+      bottom: -136px;
+      right: -15px;
+      z-index: 20;
+    }
+  }
+}
+.intro,
+.outro {
+  .page {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    & > div {
+      display: inline-flex;
+      align-items: center;
+      height: 40px;
+      padding-left: 52px;
+      font-size: 20px;
+      /* line-height: 32px; */
+      position: relative;
+      &::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url('../common/img/icon_book_3.svg') no-repeat center left / 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.intro,
+.outro {
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    letter-spacing: -1px;
+    p,
+    ul > li {
+      font-size: 32px;
+      line-height: 48px;
+    }
+    p:first-child {
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 88px;
+    }
+  }
+}
+.intro {
+  ul {
+    margin-top: 10px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    white-space: nowrap;
+    li {
+      padding-right: 10px;
+      &:nth-of-type(1) {
+        padding-right: 60px;
+      }
+      &:nth-of-type(2) {
+        padding-right: 150px;
+      }
+    }
+    li:nth-child(odd) {
+      position: relative;
+      /* display: block;
+          width: min-content;
+          height: 72px; */
+      z-index: 10;
+      &::before {
+        content: '';
+        display: block;
+        width: 152.02px;
+        height: 72px;
+        background: url('../common/img/bg_intro_tag.svg') no-repeat center/ contain;
+        position: absolute;
+        top: -10px;
+        left: -50px;
+        z-index: -1;
+      }
+    }
+    li:nth-child(even) {
+    }
+  }
+}
+
+/* ------------------------------ 준비하기, 놀이방법 공통 ----------------------------- */
+
+.play-howto-layout,
+.play-ready-layout {
+  h2 {
+    position: relative;
+    margin-left: 20px;
+    font-family: 'Pretendard' !important;
+    font-size: 32px;
+    font-weight: 700 !important;
+    letter-spacing: -1px;
+    line-height: 48px;
+    .title-play,
+    .title-ready {
+      text-shadow: 2px 2px 0 white, 1px 2px 0 white, 2px 1px 0 white, 1px 1px 0 white, 0 2px 0 white, 0 1px 0 white, 2px 0 0 white, 1px 0 0 white;
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 70px;
+      /* border:1px solid red; */
+      background: white url('../common/img/title_mid_6.svg') no-repeat center/ contain;
+      position: absolute;
+      top: -10px;
+      left: -20px;
+      z-index: -1;
+    }
+    .point {
+      color: #00646b;
+    }
+  }
+}
+/* -------------------------------- 준비하기 페이지 -------------------------------- */
+
+.play-ready-layout {
+  & > section.title {
+    margin-bottom: 30px;
+  }
+  .contents {
+    .dp_grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      li {
+        justify-self: start;
+        vertical-align: top;
+        p {
+          position: relative;
+          margin-top: 20px;
+          padding-left: 60px;
+          font-size: 24px;
+          line-height: 36px;
+          letter-spacing: -0.5px;
+          &::before {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 33px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+          }
+        }
+        &:nth-of-type(1) {
+          p {
+            &::before {
+              background: url('../common/img/icon_ready_num_1.svg') no-repeat center/ contain;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          p {
+            &::before {
+              background: url('../common/img/icon_ready_num_2.svg') no-repeat center/ contain;
+            }
+          }
+        }
+      }
+    }
+    .page_2.on {
+      li {
+        &:nth-of-type(1) {
+          p {
+            &::before {
+              background: url('../common/img/icon_ready_num_3.svg') no-repeat center/ contain;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          p {
+            &::before {
+              background: url('../common/img/icon_ready_num_4.svg') no-repeat center/ contain;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.ema516_09_su_0002 {
+    img {
+      padding: 0 370px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      letter-spacing: -0.5px;
+    }
+  }
+  &.ema521_10_su_0002 {
+    .btn_area {
+      display: none;
+    }
+  }
+  &.ema515_09_su_0002 {
+    &[data-current-page='page_1'] {
+      .paging_layout {
+        padding: 0 95px;
+      }
+      .dp_grid {
+        gap: 0;
+        li:last-child {
+          p {
+            letter-spacing: -1px;
+            padding-left: 40px;
+            &::before {
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+    &[data-current-page='page_2'] {
+      h2 {
+        display: none;
+      }
+    }
+  }
+
+  &.ema615_10_su_0002 {
+    .tag {
+      font-size: 20px;
+      font-weight: 700;
+      padding: 0 10px 0 25px;
+      position: relative;
+      height: 8px;
+      &::before {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        content: '';
+        width: 106px;
+        height: 38px;
+        background: url('../../common_contents/img/EMA615_10_SU/0002_icon.svg') no-repeat center/ contain;
+      }
+    }
+  }
+  .example {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    padding: 10px 13px 10px 10px;
+    /* margin: 10px 10px 0 0; */
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: 3px;
+      z-index: -1;
+      content: '';
+      /* margin: -30px; */
+      background-color: #888;
+      color: white;
+      border-radius: 50%;
+      width: 33px;
+      height: 33px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+  }
+}
+.shoot {
+  /* margin: 0 5px; */
+  padding: 1px 10px 3px 10px;
+  font-size: 24px;
+  border: 2px solid #a2562a;
+  vertical-align: top;
+  border-radius: 12px;
+  color: #5fd1fd;
+  font-weight: 600;
+  background-color: #98cf8e;
+  text-shadow: 2px 2px 0 #5b6f8b, 1px 2px 0 #5b6f8b, 2px 1px 0 #5b6f8b, 1px 1px 0 #5b6f8b, 0 2px 0 #5b6f8b, 0 1px 0 #5b6f8b, 2px 0 0 #5b6f8b, 1px 0 0 #5b6f8b;
+}
+
+/* -------------------------------- 놀이방법 페이지 -------------------------------- */
+
+.play-howto-layout {
+  .title {
+    /* position: absolute; */
+    h2 {
+      position: relative;
+      width: calc(100% - 132px);
+      font-size: 32px !important;
+
+      .howto {
+        position: relative;
+        width: inherit;
+        padding-left: 70px;
+        word-break: break-all;
+        font-weight: 700;
+        img {
+          display: inline-block;
+        }
+        &::before {
+          position: absolute;
+          left: 20px;
+          top: 5px;
+          content: '';
+          display: block;
+          width: 41.14px;
+          height: 41.14px;
+        }
+        &.num1 {
+          &::before {
+            background: url('../common/img/icon_howto_num_1.svg') no-repeat center/ contain;
+          }
+        }
+        &.num2 {
+          &::before {
+            background: url('../common/img/icon_howto_num_2.svg') no-repeat center/ contain;
+          }
+        }
+        &.num3 {
+          &::before {
+            background: url('../common/img/icon_howto_num_3.svg') no-repeat center/ contain;
+          }
+        }
+        &.num4 {
+          &::before {
+            background: url('../common/img/icon_howto_num_4.svg') no-repeat center/ contain;
+          }
+        }
+        &.num5 {
+          &::before {
+            background: url('../common/img/icon_howto_num_5.svg') no-repeat center/ contain;
+          }
+        }
+        &.num6 {
+          &::before {
+            background: url('../common/img/icon_howto_num_6.svg') no-repeat center/ contain;
+          }
+        }
+        &:has(img) {
+          img {
+            vertical-align: top;
+            padding: 0 2px 0 8px;
+            /* &.single_num_s {
+                            padding:  0 0 0 8px;
+                        } */
+          }
+        }
+        .small_num {
+          position: relative;
+          padding-left: 10px;
+          &::before {
+            position: absolute;
+            left: 0;
+            top: 2px;
+            content: '';
+            display: block;
+            width: 34px;
+            height: 34px;
+          }
+          &.num_s1 {
+            &::before {
+              /* left: 10px; */
+              background: url('../common/img/icon_howto_num_s1.svg') no-repeat center/ contain;
+            }
+          }
+          &.num_s2 {
+            &::before {
+              /* left: 10px; */
+              background: url('../common/img/icon_howto_num_s2.svg') no-repeat center/ contain;
+            }
+          }
+          &.num_s3 {
+            &::before {
+              /* left: 10px; */
+              background: url('../common/img/icon_howto_num_s3.svg') no-repeat center/ contain;
+            }
+          }
+          &.num_s4 {
+            /* left: -40px; */
+            &::before {
+              background: url('../common/img/icon_howto_num_s4.svg') no-repeat center/ contain;
+            }
+          }
+          &.num_s5 {
+            /* left: -40px; */
+            &::before {
+              background: url('../common/img/icon_howto_num_s5.svg') no-repeat center/ contain;
+            }
+          }
+        }
+        .after_small_num {
+          margin-left: -10px;
+        }
+        &:has(.small_num) {
+          span:nth-of-type(2) {
+            padding: 0 50px 0 40px;
+          }
+        }
+
+        .tag {
+          margin: 0 0 0 8px;
+          padding: 0 5px;
+          letter-spacing: -1px;
+          border-radius: 18px 18px 6px 6px;
+          border: 3px solid #e0a9cd;
+          background: #fff;
+          text-align: center;
+          font-size: 26px;
+          &.view {
+            color: #ad5a8f;
+            border-color: #e0a9cd;
+          }
+          &.rule {
+            color: #be5840;
+            border-color: #fbb785;
+          }
+        }
+        &.include_icon {
+          display: flex;
+        }
+      }
+    }
+  }
+  .contents.paging_layout {
+    /* border:1px solid red; */
+    /* background-color: yellow; */
+    article.page {
+      position: absolute;
+      bottom: 100px;
+      /* border:1px solid red; */
+
+      img {
+        width: 754px;
+        height: 460px;
+        margin-left: 350px;
+        margin-top: 50px;
+      }
+    }
+  }
+  &.ema511_08_su_0003 {
+    .title {
+      & h2 {
+        & .howto {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  &.ema516_09_su_0003 {
+    .contents.paging_layout {
+      article.page {
+        &.page_5 {
+          img {
+            width: 1380px;
+            height: initial;
+            margin-left: 47.5px;
+          }
+        }
+      }
+    }
+    &[data-current-page='page_5'] h2::before {
+      display: none;
+    }
+  }
+  &.ema513_07_su_0002 {
+    &[data-current-page='page_6'] {
+      .title {
+        h2 {
+          letter-spacing: -1.5px;
+          width: calc(100% - 130px);
+        }
+      }
+    }
+  }
+  &.ema516_09_su_0003 {
+    &[data-current-page='page_5'] {
+      h2 {
+        .title-play {
+          font-size: 0;
+        }
+      }
+    }
+  }
+  &.ema516_09_su_0003 {
+    .num_s3 {
+      &::before {
+        left: -42px !important;
+      }
+    }
+  }
+  &.ema613_10_su_0003 {
+    .item1,
+    .item2 {
+      position: relative;
+      padding: 14px 10px;
+      top: -2px;
+      display: inline-flex;
+      border: 1.5px solid #a2562a;
+      border-radius: 12px;
+      &:before {
+        padding: 0 5px;
+        display: inline-block;
+        padding: 0;
+        font-size: 25px;
+        line-height: 0;
+      }
+    }
+    .item1 {
+      background-color: #c8d96c;
+      &:before {
+        /* display: inline-block; */
+        content: '한 번 쉬기';
+        color: #336d40;
+      }
+    }
+    .item2 {
+      background-color: #f4c3be;
+      &:before {
+        content: '원하는 땅 한 칸 색칠하기';
+        color: #a03a33;
+      }
+    }
+  }
+}
+.btn_area {
+  .btn-play-video {
+    position: absolute;
+    top: -645px;
+    right: 0;
+    .red {
+      background: var(--Secondary-Red, #ee4f24);
+    }
+  }
+  .gray,
+  button:disabled {
+    background-color: var(--bg-disabled);
+    color: var(--btn-disabled);
+  }
+}
+
+button.teacher {
+  display: none;
+}
+body:has(#app_wrap.teacher) {
+  button.student {
+    display: none;
+  }
+  button.teacher {
+    display: block;
+  }
+}
+.btnBgDefault {
+  box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.icon-x {
+  position: relative;
+  margin: 0 5px 0 4px;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  &::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url('../../common_contents/img/EMA512_09_SU/0002_icon_x.svg') no-repeat center/ contain;
+    position: absolute;
+    top: 2px;
+    left: 0;
+  }
+}
+.icon_calculator {
+  /* padding: 0 8px; */
+}
+
+/* ---------------------------------- 기타 유틸 --------------------------------- */
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+.vertical-center {
+  align-content: center;
+}
+
+html {
+  -webkit-text-size-adjust: none !important;
+  text-size-adjust: none !important;
+}
+
+.speech-bubble {
+  position: absolute;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  z-index: 10;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.speech-bubble.left {
+  left: 170px;
+  top: 300px;
+}
+
+.speech-bubble.left::after {
+  left: 100%;
+  border-left-color: #fff;
+  top: 20px;
+}
+
+.speech-bubble.right {
+  right: -170px;
+  top: 300px;
+}
+
+.speech-bubble.right::after {
+  right: 100%;
+  border-right-color: #fff;
+  top: 20px;
+}
+
+.page_3 > div {
+  position: absolute;
+  top: 195px;
+  left: 430px;
+  background: #fff;
+  font-size: 36px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 600px;
+  height: 200px;
+}

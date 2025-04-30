@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_04_SU_0009_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_01.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_02.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_03.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_04_su_0009">
+      <section class="title type2">
+        <h2 data-head="7_green" lang="y">긴 변의 길이가 15 ㎝, 짧은 변의 길이가 9 ㎝인 직사각형 모양의 사진을 크기가 같은 정사각형 모양으로 남는 부분 없이 나누어 그림 맞추기 퍼즐을 만들려고 합니다. 가장 큰 정사각형 모양으로 나누려면 정사각형의 한 변의 길이는 몇 ㎝로 해야 하는지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents flex gap_12">
+        <div class="picture_wrap" data-head="1" data-tit="그림을 보고 물건을 똑같이 나누어 보거나 물건을 묶음으로 산 경험을 이야기해 봅시다.">
+          <img src="../../common_contents/img/EMA512_04_SU/0023_contents.png" alt="물건 구매 활동 이미지" />
+          <!-- <button class="zoom"></button> -->
+          <p class="example_comment">15 ㎝</p>
+          <p class="example_comment">9 ㎝</p>
+        </div>
+
+        <div class="leftside input_area">
+          <div class="question_box flex justify_evenly">
+            <div class="flex">
+              <div class="input_wrap answer1 flex">
+                <math-field data-answer-single="3"></math-field>
+              </div>
+              <span>㎝</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+          <!-- <button class="btnSubmit">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

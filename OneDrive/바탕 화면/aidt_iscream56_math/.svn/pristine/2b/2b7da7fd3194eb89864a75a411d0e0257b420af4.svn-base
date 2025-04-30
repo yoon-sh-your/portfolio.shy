@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_04_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_04_su_0002"> 
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">은성이는 작품을 만들기 위해 철사를 2 m의 0.9 배만큼 사용하였습니다. 은성이가 사용한 철사는 몇 m인지 알아봅시다.</h2>
+      </section>
+
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <p lang="y">사용한 철사의<br>길이를 어떻게<br>구할 수 있을까?</p>
+            <button class="play" onclick="navigate('../guide_sample/vedio_player')"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <h3 lang="y">영상을 보고, 은성이가 사용한 철사의 길이를 어떻게 구해야 할지<br/>이야기해 봅시다.</h3>
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">2의 0.9 배이므로 2와 0.9를 곱하면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+    </section>
+    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_06_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema526_06_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_06_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">수 카드 8장 중에서 한 장을 뽑을 때 일이 일어날 가능성이 1 더 높은 것에 ○표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <img src="../../common_practice/img/EMA526_06_IH/0001_img.svg" alt="" />
+        </div>
+        <div class="question_box justify_center">
+          <div class="flex dir_col align_center">
+            <div class="row">
+              <span class="txt1" lang="y">8의 약수가 나올 가능성</span>
+              <div class="flex align_center">
+                <span>(</span>
+                <span>)</span>
+              </div>
+            </div>
+            <div class="row">
+              <span class="txt2" lang="y">5 이상 7 이하인 수가 나올 가능성</span>
+              <div class="flex align_center">
+                <span>(</span>
+                <span>)</span>
+              </div>
+            </div>
+            <div class="boolean_wrap">
+              <button type="button" data-answer-single="true"></button>
+              <button type="button" data-answer-single="false"></button>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">8의 약수는 1, 2, 4, 8로 4개이고, 5 이상 7 이하인 수는 5, 6, 7로 3개이므로 8의 약수가 나올 가능성이 5 이상 7 이하인 수가 나올 가능성보다 높습니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

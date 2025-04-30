@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema627_02_su_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema627_02_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema627_02_su_0003">
+    <section class="title">
+      <h2 data-head="2">
+        <span lang="y">가로등은 어떤 모양이 좋을지 조사하고, 정해 봅시다.​​​</span>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">   
+      <article class="page page_1">            
+        <h3 lang="y">원기둥과 각기둥의 다른 점을 생각해 보세요.​​</h3>
+        <div class="input_area text_center">
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <ol class="example_box text_left">
+              <li lang="y">밑면은 원이고 각기둥의 밑면은 다각형입니다.​</li>
+              <li lang="y">옆면이 굽은 면이고, 각기둥은 옆면이 평평한 면입니다.​</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">              
+        <h3 lang="y">주변에서 볼 수 있는 기둥은 어떤 모양이 많은지 조사해 보세요.​​​</h3>
+        <div class="input_area text_center">
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <ol class="example_box text_left">
+              <li lang="y">각기둥 모양은 건물 기둥 등에서 볼 수 있습니다.​</li>
+              <li lang="y">원기둥 모양은 전봇대, 가로등, 건물 기둥 등에서 볼 수 있습니다.​</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">              
+        <h3 lang="y">가로등을 어떤 모양으로 만들지 정하고, 그 이유를 이야기해 보세요.​​​​</h3>
+        <div class="input_area text_center">
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <div class="example_box text_left">
+              <p lang="y">원기둥 모양이 좋을 것 같습니다. 원기둥 모양을 사용하면 비용을 절약할 수 있고, 센 바람이 불 때에도 각기둥 모양보다 쉽게 부러지지 않을 것 같기 때문입니다.​​</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

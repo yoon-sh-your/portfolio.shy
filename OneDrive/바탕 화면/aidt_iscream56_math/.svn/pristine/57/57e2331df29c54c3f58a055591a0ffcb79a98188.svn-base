@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema517_03_su_0002</title>
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" />
+    <!-- 창의 프로젝트 공통 -->
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema517_03_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema517_03_su_0002">
+      <section class="title">
+        <h2 data-head="1">
+          <span lang="y">탐구한 내용에 따라 농부에게 보낼 편지를 쓰고, 모둠별로 소개해 봅시다.</span>
+        </h2>
+        <!----선생님용 버튼---->
+        <div class="teacher">
+          <button class="btnRed">대표 기기 변경하기</button>
+        </div>
+        <!----//선생님용 버튼---->
+      </section>
+      <section class="contents">
+        <div class="main">
+          <div class="flex justify_center align_center">
+            <div class="draw_wrap">
+              <img src="./../../common_project/img/EMA517_02_SU/image_2.svg" alt="">
+              <div class="txt_overlay">
+                <span>1 ㎡</span>
+              </div>
+              <div class="drawline_grid">
+                <div class="drawing_grid_area" id="drawingArea1" data-grid-size="20">
+                  <svg class="line_canvas"></svg>
+                </div>
+              </div>
+            </div>
+            <div class="input_area">
+              <h2 lang="y"> 농부님께​ <br>
+                안녕하세요. 저희 모둠이 만든 채소밭이에요. 
+              </h2>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <ol class="example_box" style="display: none;">
+                  <li>더미</li>
+                </ol>
+              </div>
+              <h2 lang="y"> 농부님이 올해 많은 채소를 수확하는 데 도움이 되면 좋겠어요. 그럼 안녕히 계세요. </h2>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="input_area">
+              <div class="input_wrap input3">
+                <math-field></math-field>
+                <ol class="example_box" style="display: none;">
+                  <li>더미</li>
+                </ol>
+              </div>
+              <h2 lang="y">월 </h2>
+              <div class="input_wrap input3">
+                <math-field></math-field>
+                <ol class="example_box" style="display: none;">
+                  <li>더미</li>
+                </ol>
+              </div>
+              <h2 lang="y">일 </h2>
+              <div class="input_wrap input2">
+                <math-field></math-field>
+                <ol class="example_box" style="display: none;">
+                  <li>더미</li>
+                </ol>
+              </div>
+              <h2 lang="y">&nbsp;올림</h2>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+    </div>
+  </body>
+</html>

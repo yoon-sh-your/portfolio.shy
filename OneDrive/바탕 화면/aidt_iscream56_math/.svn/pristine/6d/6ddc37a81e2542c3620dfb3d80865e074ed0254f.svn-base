@@ -1,0 +1,356 @@
+#app_wrap {
+  max-height: 100vh;
+  overflow-y: auto;
+}
+#app_wrap:has(.pop_area) {
+  max-height: unset;
+}
+section.contents {
+  position: relative;
+}
+
+.empty_box.nemo {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 4px;
+}
+.empty_box.nemo.green {
+  background-color: #79c366;
+  border-color: #79c366;
+  border-radius: 0;
+}
+.title.flex_wrap {
+  flex-wrap: wrap;
+}
+.title_sub {
+  width: 100%;
+  padding-left: 40px;
+  color: var(--font-main-700);
+  font-size: 24px;
+}
+.title.group .green {
+  color: #00b050;
+}
+.title.group .puple {
+  color: #8f659d;
+}
+
+.title h2:has(.recap) + .title_sub {
+  width: auto;
+  padding-left: 0;
+  font-weight: bold;
+}
+/* .title h2 .heading {
+  position: relative;
+  flex-shrink: 0;
+} */
+.title h2 .heading + .heading {
+  height: 50px;
+  min-width: 0;
+  margin: 0 -3px 0 3px;
+}
+/* .title h2[data-head] {
+  padding-left: 0;
+} */
+.title h2[data-head].is_star::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 45px;
+  height: 45px;
+  background: url(../../../common_practice/common/img/title_number_star.svg);
+}
+.title h2[data-head].is_star2::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 45px;
+  height: 45px;
+  background: url(../../../common_practice/common/img/title_number_star1.svg);
+}
+.title h2[data-head='4'].is_star::before,
+.title h2[data-head='4_green'].is_star::before,
+.title h2[data-head='4'].is_star2::before,
+.title h2[data-head='4_green'].is_star2::before {
+  left: 0px;
+}
+.title h2[data-head] .nemo {
+  margin: 0 2px 0 8px;
+}
+.title h2[data-head] .nemo.head {
+  margin: 0 8px 0 0;
+}
+
+.title h2[data-star] .heading:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -22px;
+  transform: translateX(-50%);
+  height: 26px;
+  background: url(../img/icon_star.svg) repeat-x left top;
+}
+.title h2[data-star='1'] .heading:after {
+  width: 32px;
+}
+.title h2[data-star='2'] .heading:after {
+  width: 64px;
+}
+.title h2[data-star='3'] .heading:after {
+  width: 96px;
+}
+.title h2 .circle_blank,
+.title h2 .ico_round {
+  margin-left: 4px;
+}
+.title .circle_blank {
+  display: inline-block;
+  width: 64px;
+  aspect-ratio: 1/1;
+  background-color: rgba(238, 249, 255, 1);
+  border: 2px solid rgba(59, 113, 254, 1);
+  border-radius: 50%;
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.12);
+}
+
+.title h2.creative {
+  position: relative;
+  padding-left: 43px;
+}
+.title h2.creative .icon_creative {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 34px;
+  background: url(../img/title_mid_3_2.svg) no-repeat center center / contain;
+  font-size: 0;
+}
+.title .icon_creative {
+  position: relative;
+  width: 82px;
+  height: 48px;
+  background: url(../img/title_mid_3_2.svg) no-repeat center center / contain;
+  color: #fff;
+  font-style: normal;
+}
+.title .icon_creative span {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  left: 11px;
+  top: 2px;
+  font-size: 28px;
+  transform: rotate(-8deg);
+  z-index: 1;
+}
+.title .icon_creative span:nth-child(2) {
+  left: 39px;
+  top: 13px;
+  font-size: 23px;
+  transform: rotate(15deg);
+}
+.title h2 .recap {
+  display: inline-block;
+  width: 202px;
+  line-height: 48px;
+  margin-right: 8px;
+  padding-right: 14px;
+  background: url(../img/title_recap.svg) no-repeat 0 0 / contain;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.title h2 .recap span {
+  color: #8e3a00;
+}
+.title h2 .num_small {
+  font-family: 'Pretendard HeadNum';
+  padding-top: 3px;
+  font-weight: 900;
+  -webkit-text-stroke: 2px var(--primary-blue);
+  color: transparent;
+}
+.title h2:has(.title_text) {
+  align-items: center;
+}
+.title h2 .title_text {
+  font-size: 24px;
+  color: var(--font-main-700);
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+}
+.title h2 .title.group {
+  padding-left: 40px;
+  padding-bottom: 30px;
+}
+
+.title.puzzle {
+  position: relative;
+  margin: -30px -40px 0;
+  padding-top: 110px;
+  background-repeat: no-repeat;
+  background-size: 400px auto;
+}
+.title.puzzle.blue {
+  background-image: url(../img/title_puzzle_blue.svg);
+}
+.title.puzzle.green {
+  background-image: url(../img/title_puzzle_green.svg);
+}
+.title.puzzle.pink {
+  background-image: url(../img/title_puzzle_pink.svg);
+}
+.title.puzzle.orange {
+  background-image: url(../img/title_puzzle_orange.svg);
+}
+.title.puzzle.purple {
+  background-image: url(../img/title_puzzle_purple.svg);
+}
+
+.title.puzzle.purple_light {
+  background-image: url(../img/title_puzzle_purple_light.svg);
+}
+
+.title.puzzle.jade {
+  background-image: url(../img/title_puzzle_jade.svg);
+}
+
+.title.puzzle .tag {
+  position: absolute;
+  top: 59px;
+  left: 14px;
+  color: #6d4015;
+  font-weight: bold;
+  transform: rotate(333deg);
+  font-size: 20px;
+}
+.title.puzzle .tit {
+  font-weight: bold;
+}
+.title.puzzle .tit .emph {
+  position: absolute;
+  top: 82px;
+  left: 45px;
+  color: #ffdb3f;
+  font-size: 30px;
+  transform: rotate(335deg);
+}
+.title.puzzle .tit [class^='txt'] {
+  position: absolute;
+  color: #fff;
+}
+.title.puzzle .tit .txt1 {
+  top: 77px;
+  left: 96px;
+  font-size: 20px;
+  transform: rotate(346deg);
+}
+.title.puzzle .tit .txt2 {
+  top: 66px;
+  left: 118px;
+  font-size: 24px;
+  transform: rotate(354deg);
+}
+.title.puzzle h2 {
+  display: inline-block;
+  padding-left: 140px;
+  padding-top: 8px;
+}
+.title.puzzle h2:has(.picture_wrap) {
+  padding-top: 0;
+}
+
+.title .picture_wrap {
+  display: inline-block;
+  overflow: visible;
+  vertical-align: top;
+  margin-left: 12px;
+  vertical-align: -8px;
+}
+.title .picture_wrap .img_box {
+  display: none;
+}
+.title .picture_wrap .zoom {
+  position: relative;
+  bottom: auto;
+  right: auto;
+}
+
+/* 이 단원에서 기억에 남는 나용 */
+.review_box {
+  max-width: 1208px;
+  margin: 67px auto 0;
+}
+.review_box .title_review {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding-left: 212px;
+  background-repeat: no-repeat;
+  background-size: auto 72px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.review_box.blue .title_review {
+  background-image: url(../../common/img/title_review_blue.svg);
+}
+.review_box.green .title_review {
+  background-image: url(../../common/img/title_review_green.svg);
+}
+.review_box.pink .title_review {
+  background-image: url(../../common/img/title_review_pink.svg);
+}
+.review_box.orange .title_review {
+  background-image: url(../../common/img/title_review_orange.svg);
+}
+.review_box.jade .title_review {
+  background-image: url(../../common/img/title_review_jade.svg);
+}
+.review_box.purple_light .title_review {
+  background-image: url(../../common/img/title_review_purple_light.svg);
+}
+.review_box.deep_green .title_review {
+  background-image: url(../../common/img/title_review_deep_green.svg);
+}
+
+.review_box .input_wrap {
+  width: 100%;
+}
+.review_box .input_wrap math-field.textarea {
+  height: 400px;
+}
+
+/* 슬라이드 영역 */
+body:has(article.completed) #app_wrap.of_h:has(.solve_area) {
+  display: block;
+  overflow-y: auto;
+}
+body:has(article.completed) section.contents.paging_layout:has(.solve_area) {
+  height: auto;
+  min-height: calc(100% - 112px);
+}
+body:has(article.completed) #app_wrap.of_h:has(.solve_area) .paging_controller .pagenation {
+  position: relative;
+  left: auto;
+  transform: unset;
+  justify-content: center;
+}
+
+.contents:has(.solve_area.active) {
+  padding-bottom: 60px;
+}
+.contents:has(.solve_area.active) .btn_area {
+  bottom: 70px;
+}
+
+/* 250420 김성미 - 익힘 수정 사항 "가로선과 답칸이 너무 붙어 보임." 피드백으로 추가 */
+/* 250424 권선진 - 진도 학습과 통일 */
+/* .fraction_box:has(.input_wrap) {
+  gap: 16px;
+} */

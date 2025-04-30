@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_02_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema614_02_ih_0005.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614">
+      <section class="title type2 star_title">
+        <h2 data-head="6" lang="y" class="is_star">
+          <span lang="y">꽃병 수에 따른 노란색 꽃 수와 빨간색 꽃 수를 잘못 비교한 사람을 찾아 선택하고, 내용을 옳게 고쳐 보세요. </span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema614_02 ema614_02_0006">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">꽃병 수</th>
+                  <td>한 개</td>
+                  <td>두 개</td>
+                  <td>세 개</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">노란색 꽃 수(송이)</th>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">빨간색 꽃 수(송이)</th>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="ena614_02_ck_img">
+            <div class="boolean_wrap">
+              <button data-answer-single="false">나현</button>
+              <button data-answer-single="true">규현</button>
+            </div>
+
+            <div class="ena614_02_ck_txt">
+              <p>
+                꽃병이 다섯 개일 때<br />
+                노란색 꽃 수는<br />
+                빨간색 꽃 수의 2배야.
+              </p>
+              <p>
+                꽃병이 열 개일 때<br />
+                빨간색 꽃 수는<br />
+                노란색 꽃 수의 2배야.
+              </p>
+            </div>
+          </div>
+
+          <div class="ema614_02_txt mt_40 flex gap_12">
+            <div class="ema614_02_txt_subject">
+              <p>옮게 고치기</p>
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea input"></math-field>
+
+              <div class="example_box flex">
+                <p> 꽃병이 열 개일 때, 빨간색 꽃 수는 노란색 꽃 수의</p>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+                <p>배야.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>2÷1=2, 4÷2=2, 6÷3=2, ...이므로 꽃병 수에 따른 노란색 꽃 수는 빨간색 꽃 수의 2배입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>1÷2=</p>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                  <p>, 2÷4=</p>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                  <p>, 3÷6=</p>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                  <p>...이므로 꽃병 수에 따른 빨간색 꽃 수는 노란색 꽃 수의</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                  <p>배입니다. 따라서 잘못 비교한 사람은 규민입니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnSample">예시</button> -->
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

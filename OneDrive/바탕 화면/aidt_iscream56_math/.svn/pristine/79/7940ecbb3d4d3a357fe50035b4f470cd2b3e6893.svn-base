@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_03_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_03_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1_orange" lang="y">
+          <span class="nemo head"></span>
+          안에 알맞은 수를 써 넣으세요.
+        </h2>
+      </section>
+      <section class="contents ema616_03_ih_0001">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <!-- <img src="../../common_practice/img/EMA616_03_IH/616_03_01.png"> -->
+
+            <div class="alltext">
+              <div class="text1">부피 1 cm³인 쌓기나무가 모두</div>
+              <div class="text2 input_wrap">
+                <math-field data-answer-single="6" text-align="center"></math-field>
+              </div>
+              <div class="text3">개이므로 부피는</div>
+              <div class="text4 input_wrap">
+                <math-field data-answer-single="6" text-align="center"></math-field>
+              </div>
+
+              <div class="text5">cm³입니다.</div>
+              <div class="text6">부피 1 cm³</div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_05_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_05_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">차가 가장 작은 것을 찾아 기호를 골라 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="boolean_wrap type_chk">
+            <button type="button" class="flex align_center gap_12" data-answer-single="false">
+              <span class="num">ㄱ</span>
+              <div class="flex align_center gap_4">
+                <div class="fraction_box">
+                  <span>11</span>
+                  <span>15</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>2</span>
+                  <span>3</span>
+                </div>
+              </div>
+            </button>
+            <button type="button" class="flex align_center gap_12" data-answer-single="false">
+              <span class="num">ㄴ</span>
+              <div class="flex align_center gap_4">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>4</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>6</span>
+                </div>
+              </div>
+            </button>
+            <button type="button" class="flex align_center gap_12" data-answer-single="false">
+              <span class="num">ㄷ</span>
+              <div class="flex align_center gap_4">
+                <div class="fraction_box">
+                  <span>5</span>
+                  <span>6</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>7</span>
+                  <span>9</span>
+                </div>
+              </div>
+            </button>
+            <button type="button" class="flex align_center gap_12" data-answer-single="true">
+              <span class="num">ㄹ</span>
+              <div class="flex align_center gap_4">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>2</span>
+                  <span>7</span>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  <span>㉠</span>
+                  <span class="fraction_box">
+                    <span>11</span>
+                    <span>15</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>3</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>11</span>
+                    <span>15</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>10</span>
+                    <span>15</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>15</span>
+                  </span>
+                </div>
+                <!--end solve-->
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  <span>㉡</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>4</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>6</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>12</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>12</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>12</span>
+                  </span>
+                </div>
+                <!--end solve-->
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  <span>㉢</span>
+                  <span class="fraction_box">
+                    <span>5</span>
+                    <span>6</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>9</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>15</span>
+                    <span>18</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>14</span>
+                    <span>18</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>18</span>
+                  </span>
+                </div>
+                <!--end solve-->
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  <span>㉣</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>3</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>7</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>21</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>6</span>
+                    <span>21</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>21</span>
+                  </span>
+                </div>
+                <!--end solve-->
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  <span>➔</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>12</span>
+                  </span>
+                  <span>&gt;</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>15</span>
+                  </span>
+                  <span>&gt;</span>
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>18</span>
+                  </span>
+                  <span>&gt;</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>21</span>
+                  </span>
+                  <span>이므로 차가 가장 작은 것은 ㉣입니다</span>
+                </div>
+                <!--end solve-->
+                <p>참고 : 단위분수는 분모가 작을수록 더 큰 분수입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

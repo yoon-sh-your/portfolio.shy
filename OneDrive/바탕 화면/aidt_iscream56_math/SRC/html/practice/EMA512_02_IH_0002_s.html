@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_02_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_02_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">약수를 모두 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex gap_40">
+          <span class="tit" lang="y">20의 약수</span>
+          <div class="question_box">            
+            <div class="input_wrap"><math-field data-answer-single="1" data-cross-answer="g1"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="2" data-cross-answer="g1"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="4" data-cross-answer="g1"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="5" data-cross-answer="g1"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="10" data-cross-answer="g1"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="20" data-cross-answer="g1"></math-field></div>
+          </div>
+        </div>
+        <div class="flex gap_40 mt_40">
+          <span class="tit" lang="y">36의 약수</span>
+          <div class="question_box">
+            <div class="input_wrap"><math-field data-answer-single="1" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="2" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="3" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="4" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="6" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="9" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="12" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="18" data-cross-answer="g2"></math-field></div>
+            ,
+            <div class="input_wrap"><math-field data-answer-single="36" data-cross-answer="g2"></math-field></div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>20÷1=20, 20÷2=10, 20÷4=5, 20÷5=4, 20÷10=2, 20÷20=1</p>
+                <p lang="y">➔ 20의 약수: 1, 2, 4, 5, 10, 20</p>
+                <br />
+                <p>36÷1=36, 36÷2=18, 36÷3=12, 36÷4=9, 36÷6=6, 36÷9=4, 36÷12=3, 36÷18=2, 36÷36=1</p>
+                <p lang="y">➔ 36의 약수: 1, 2, 3, 4, 6, 9, 12, 18, 36</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

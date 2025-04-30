@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_07_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_07_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">              
+              0.21과
+              <div class="fraction_box">
+                <span>1</span>
+                <span>4</span>
+              </div>
+              의 크기를 비교하려고 합니다. 물음에 답해 보세요.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 class="title" lang="y">0.21을 분수로 나타내고, 두 분수를 통분해 보세요.</h3>
+          <div class="flex justify_center">
+            <div class="question_box gap_12">
+              <div class="bracket lg">
+                <span class="bracket-l"></span>
+                <span>0.21</span>
+                <span class="comma">,</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>4</span>
+                </div>
+                <span class="bracket-r"></span>
+              </div>
+              <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="obj_arrow" alt="" />
+              <div class="bracket">
+                <span class="bracket-l"></span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="21"></math-field></div>
+                  <span>100</span>
+                </div>
+                <span class="comma">,</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>4</span>
+                </div>
+                <span class="bracket-r"></span>
+              </div>
+              <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="obj_arrow" alt="" />
+              <div class="bracket">
+                <span class="bracket-l"></span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="21"></math-field></div>
+                  <span>100</span>
+                </div>
+                <span class="comma">,</span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="25"></math-field></div>
+                  <span>100</span>
+                </div>
+                <span class="bracket-r"></span>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div lang="y">
+                    0.21은 소수 두 자리 수이므로 분모가 100인 분수로 나타내면 0.21=
+                    <div class="fraction_box">
+                      <span>21</span>
+                      <span>100</span>
+                    </div>
+                    입니다.
+                  </div>
+
+                  <div lang="y">
+                    4×25=100이므로 분모와 분자에 각각 25를 곱하면
+                    <div class="fraction_box">
+                      <span>1</span>
+                      <span>4</span>
+                    </div>
+                    =
+                    <div class="fraction_box">
+                      <span>1×25</span>
+                      <span>4×25</span>
+                    </div>
+                    =
+                    <div class="fraction_box">
+                      <span>25</span>
+                      <span>100</span>
+                    </div>
+                    입니다.
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 class="title" lang="y">
+            두 수의 크기를 비교하여 <span class="circle_blank"></span> 안에 <img src="./../../common_contents/common/img/icon_arrow_right.svg" alt="크다" /><span class="ml-14">,</span> <img src="./../../common_contents/common/img/icon_equal.svg" alt="같다" /><span class="ml-14">,</span>
+            <img src="./../../common_contents/common/img/icon_arrow_left.svg" alt="작다" />
+            중 알맞은 것을 고르세요.
+          </h3>
+          <div class="flex justify_center">
+            <div class="question_box">
+              <span>0.21</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="<">
+                  <option></option>
+                  <option value=">">></option>
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                </select>
+              </div>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="fraction_box">
+                    <span>21</span>
+                    <span>100</span>
+                  </div>
+                  &lt;
+                  <div class="fraction_box">
+                    <span>25</span>
+                    <span>100</span>
+                  </div>
+                  ➔ 0.21 &lt;
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>4</span>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_06_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_06.css" />
+    <script src="../../common_contents/js/ema514_06_0006.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_06_su_0006">
+      <section class="title type2">
+        <h2 data-type="8" data-text="창의+" lang="y">
+          수 카드 3장을 한 번씩만 옮겨 분수를 3개 만들고, 만든 세 분수의 크기를 비교해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="drag_share">
+            <div class="draggable_wrap">
+              <div class="card draggable obj1">
+                <img src="../../common_contents/img/EMA514_06_SU/0006_obj1.png" alt="" />
+              </div>
+              <div class="card draggable obj2">
+                <img src="../../common_contents/img/EMA514_06_SU/0006_obj2.png" alt="" />
+              </div>
+              <div class="card draggable obj3">
+                <img src="../../common_contents/img/EMA514_06_SU/0006_obj3.png" alt="" />
+              </div>
+            </div>
+
+            <div class="drag_group_box">
+              <div class="fraction_box f32b">
+                <span>1</span>
+                <div class="drag_group g1" data-answer-card="1">
+                  <div class="card droppable"></div>
+                </div>
+              </div>
+              <div class="fraction_box f32b">
+                <span>2</span>
+                <div class="drag_group g2" data-answer-card="2">
+                  <div class="card droppable"></div>
+                </div>
+              </div>
+              <div class="fraction_box f32b">
+                <span>4</span>
+                <div class="drag_group g3" data-answer-card="3">
+                  <div class="card droppable"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(1)/(5)"></math-field>
+            </div>
+            &lt;
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(2)/(7)"></math-field>
+            </div>
+            &lt;
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(4)/(9)"></math-field>
+            </div>
+          </div>
+
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">제출</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema627_01_su_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema627_01_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema627_01_su_0006">
+    <section class="title type2">
+      <h2 data-head="4">
+        <span lang="y">마을 공원을 복구하기 위해 무엇을 계획해야 할지 생각해 봅시다.​​​​​​​​</span>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="input_area text_center">
+        <div class="input_wrap">
+          <math-field class="textarea" type="text"></math-field>
+          <ol class="example_box text_left">
+            <li lang="y">태풍으로 마을 공원에 어떤 일이 생겼는지 써야 할 것 같습니다.​</li>
+            <li lang="y">망가지기 전의 모래 놀이터와 바닥 분수의 원주, 지름 또는 반지름을 구해 써야 할 것 같습니다.​</li>
+            <li lang="y">가로등을 한 가지 모양으로 만든다면 어떤 모양이 좋을지 쓰고, 그 이유도 써야 할 것 같습니다.​</li>
+          </ol>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section> 
+  </div>
+</body>
+
+</html>

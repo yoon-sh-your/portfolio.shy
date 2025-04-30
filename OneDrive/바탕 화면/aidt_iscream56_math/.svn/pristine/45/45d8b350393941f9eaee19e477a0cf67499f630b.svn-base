@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_08_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_08.css" />
+    <script src="./../../common_contents/js/ema613_08_su_0004.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_08_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">어림셈한 결과를 이용하여 몫의 소수점을 잘못 찍은 사람을 찾고, 그 이유를 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="scroll_wrap">
+          <div class="inwrap">
+            <div class="items">
+              <div class="txt_box">
+                일주일 동안 13.72 ㎞를 걸었다면 하루에<br />
+                평균 몇 ㎞를 걸었는지 구해 보세요.
+              </div>
+              <span class="name" lang="y">서희</span>
+
+              <div class="txt_box">
+                13.72÷7을 어림셈한 결과를<br />
+                이용하면 하루에 평균<br />
+
+                <div class="boolean_wrap">
+                  1
+                  <button type="button" data-answer-single="true"><span>.</span></button>
+                  9
+                  <button type="button" data-answer-single="false"><span>.</span></button>
+                  6 ㎞를 걸은 거야.
+                </div>
+              </div>
+            </div>
+
+            <div class="items">
+              <div class="txt_box">
+                당근주스 3.56 L를 컵 2개에 똑같이<br />
+                나누어 담았다면 컵 한 개에 담은 양은<br />
+                몇 L 인지 구해 보세요.
+              </div>
+              <span class="name" lang="y">연우</span>
+
+              <div class="txt_box">
+                3.56÷2를 어림셈한 결과를<br />
+                이용하면 컵 한 개에 담은 양은<br />
+
+                <div class="boolean_wrap">
+                  17
+                  <button type="button" data-answer-single="false"><span>.</span></button>
+                  8
+                  <button type="button" data-answer-single="true"><span>.</span></button>
+                  L야.
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap_28">
+              <div class="flex dir_col align_center gap_20">
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown" data-answer-single="연우">
+                    <option></option>
+                    <!--최초선택데이터 생성 방지용-->
+                    <option value="서희"></option>
+                    <option value="연우"></option>
+                  </select>
+                </div>
+                <div class="hint_area f24b">연우</div>
+              </div>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">3.56÷2를 4÷2로 어림셈하면 약 2이므로 컵 한 개에 담은 양은 1.78 L입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button lang="y" class="btnSample">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

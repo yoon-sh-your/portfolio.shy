@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_07_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema616_02_ih_05.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_07_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_orange" class="is_star" lang="y">나현이와 은호가 각각 직육면체 모양의 상자를 만들었습니다. 겉넓이가 더 넓은 상자를 만든 사람의 이름을 골라 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="boolean_wrap">
+          <div>
+            <button type="button" data-answer-single="false">
+              <p class="name">나현</p>
+            </button>
+            <button type="button" class="" data-answer-single="true">
+              <p class="name">은호</p>
+            </button>
+          </div>
+          <div class="talkbox">
+            <p>
+              난 가로가 11 ㎝ <br />
+              세로가 8㎝, 높이가 <br />6 ㎝ 인 직육면체 모양의 상자를 만들었어.
+            </p>
+            <p>난 한 모서리의 길이가 <br />9 ㎝인 정육면체 모양의 상자를 만들었어.</p>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(나현이가 만든 상자의 겉넓이) =88×2+66×2+48×2=404 (㎠)</p>
+                <p lang="y">(은호가 만든 상자의 겉넓이) =9×9×6=486 (㎠)</p>
+                <p lang="y">404<486이므로 겉넓이가 더 넓은 상자를 만든 사람은 은호입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve">
+              <div>
+                <button type="button" class="btnVideo"><span lang="y">해설 영상</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

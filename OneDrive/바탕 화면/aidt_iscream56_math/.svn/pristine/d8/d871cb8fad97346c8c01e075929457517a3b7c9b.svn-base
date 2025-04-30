@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_02_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_02_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y"><span class="label_bogi">보기</span>와 같은 방법으로 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align_center">
+          <div class="question_box top">
+            <div class="bogi_box">
+              <span class="label_bogi">보기</span>
+              <div class="conts_bogi justify_center gap_4">
+                1.8×2=
+                <div class="fraction_box">
+                  <span>18</span>
+                  <span>10</span>
+                </div>
+                ×2=
+                <div class="fraction_box">
+                  <span>18×2</span>
+                  <span>10</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span>36</span>
+                  <span>10</span>
+                </div>
+                =3.6
+              </div>
+            </div>
+          </div>
+          <div class="question_box gap_4 bottom">
+            3.5×3=
+            <div class="fraction_box">
+              <span>1</span>
+              <span>3</span>
+            </div>
+            =
+            <div class="input_wrap fraction_wrap answer1">
+              <math-field data-answer-single="(35)/(10)×3"></math-field>
+            </div>
+            =
+            <div class="input_wrap fraction_wrap answer1">
+              <math-field data-answer-single="(35xx3)/(10)"></math-field>
+            </div>
+            =
+            <div class="input_wrap fraction_wrap answer2">
+              <math-field data-answer-single="(105)/(10)"></math-field>
+            </div>
+            =
+            <div class="input_wrap">
+              <math-field data-answer-single="10.5"></math-field>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div lang="y">
+                  3.5를
+                  <div class="fraction_box">
+                    <span>35</span>
+                    <span>10</span>
+                  </div>
+                  로 나타내어 계산합니다.
+                </div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_04_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_04_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+             <div class="operation_box ml_0">
+            <span class="fraction_box">
+              <span>3</span>
+              <span>4</span>
+            </span>
+            &divide;
+            <span class="fraction_box">
+              <span>4</span>
+              <span>7</span>
+            </span>
+          </div>
+          를 어떻게 계산하는지 알아봅시다.
+          </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">
+              <div class="fraction_txt_wrap">
+                <div class="fraction_txt">
+                  <div class="operation_box ml_0">
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>4</span>
+                    </span>
+                    &divide;
+                    <span class="fraction_box">
+                      <span>4</span>
+                      <span>7</span>
+                    </span>
+                    를 계산하려면 먼저 무엇을 해야 할지 생각해 보세요.      
+                  </div>
+                </div>
+              </div>
+            </h3>
+            <div class="speech_bubble">
+              <div class="bubble_txt">
+                분모가 다를 때에는<br>어떻게 하지?
+              </div>
+            </div>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                    <p>통분하여 분모를 같게 만들어야 합니다.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3>
+              <div class="fraction_txt_wrap">
+                <div class="fraction_txt" lang="y">
+                  <div class="operation_box ml_0">
+                    <span class="fraction_box ml_0">
+                      <span>3</span>
+                      <span>4</span>
+                    </span>
+                    &divide;
+                    <span class="fraction_box">
+                      <span>4</span>
+                      <span>7</span>
+                    </span>      
+                  </div>
+                  를 계산하는 방법을 알아보세요.
+                </div>
+              </div>              
+            </h3>
+            <div class="question_box justify_center">
+              <span class="fraction_box f32b">
+                <span>3</span>
+                <span>4</span>
+              </span>
+              <span class="f32b">&divide;</span>
+              <span class="fraction_box f32b">
+                <div class="input_wrap">
+                  <math-field type="number" data-answer-single="21"></math-field>
+                </div>
+                <span class="f32b">28</span>
+              </span>
+              <span class="f32b">&divide;</span>
+              <span class="fraction_box">
+                <div class="input_wrap">
+                  <math-field type="number" data-answer-single="16"></math-field>
+                </div>
+                <span class="f32b">28</span>
+              </span>
+              <span>=</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="21"></math-field>
+              </div>
+              <span class="f32b">&divide;</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="16"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(21)/(16)"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="1(5)/(16)"></math-field>
+              </div>
+            </div>
+          </article>
+          <article class="page page_3">
+            <h3 lang="y">분모가 다른 (분수)&divide;(분수)를 계산하는 방법을 이야기해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                    <p>통분한 다음 분자끼리 나누어 계산합니다.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

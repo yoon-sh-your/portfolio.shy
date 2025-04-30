@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_02_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema516_03_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_02_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6_orange" class="is_star" lang="y">두 직육면체 가와 나의 부피를 비교할 수 있는지, 없는지 쓰고, 그 이유를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_120">
+          <div class="question_row">
+            <h2>가: 크기가 같은 정육면체 모양의 주사위 15개를 쌓아 만든 직육면체</h2>
+            <h2>나: 크기가 같은 직육면체 모양의 지우개 24개를 쌓아 만든 직육면체</h2>
+          </div>
+        </div>
+
+        <div class="flex twocols_box">
+          <div class="box1">
+            <span> 비교할 수 </span>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="없습니다">
+                <option></option>
+                <option value="있습니다"></option>
+                <option value="없습니다"></option>
+              </select>
+            </div>
+          </div>
+          <div class="box2">
+            <div class="img_box">
+              <img src="../../common_practice/img/EMA616_02_IH/why_label.png" alt="" />
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea twoline"></math-field>
+              <span class="example_box">
+                <p lang="y">주사위와 지우개의 모양과 크기가 다를 수 있으므로 주사위와 지우개의 수로 직육면체의 부피를 비교할 수 없습니다.</p>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

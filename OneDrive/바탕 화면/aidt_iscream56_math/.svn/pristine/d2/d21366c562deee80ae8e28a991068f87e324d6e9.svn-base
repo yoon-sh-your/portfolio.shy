@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_07_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_07.css" />
+    <script src="../../common_contents/js/ema624_07_0003.js"></script>
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_07_su_0003" data-current-page="page_1, page_2, page_3, page_4, page_5">
+        <section class="title type2">
+            <h2 data-head="1_green" lang="y">서영이는 우유갑을 이용하여 만든 지갑 10개를 행복 새 활용 센터와 나눔 새 활용 센터에 2 : 3으로 나누어 기부하려고 합니다. 두 센터에 기부할 지갑은 각각 몇 개인지 구해 봅시다.</h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">지갑 5개를 2:3으로 나누어 보세요.</h3>
+
+                    <div class="drag_share">
+                        <div class="draggable_wrap">
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                        </div>
+                        <div class="drag_group g1" data-group-limit="6" data-answer-single="[2,3]">
+                            <div class="droppable"></div>
+                            <div class="droppable"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <h3 lang="y">지갑 10개를 2:3으로 나누어 보세요.</h3>
+
+                    <div class="drag_share">
+                        <div class="draggable_wrap">
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                            <div class="single_draggable draggable"></div>
+                        </div>
+                        <div class="drag_group g1" data-group-limit="6" data-answer-single="[2,3]">
+                            <div class="droppable"></div>
+                            <div class="droppable"></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_3">
+                    <h3 lang="y">두 센터에 기부할 지갑 수는 각각 전체의 몇 분의 몇인지 알아보세요.</h3>
+                    <div class="flex justify_center">
+                        <div class="title_text">
+                            <div class="txt_1">
+                                <p lang="y">행복 새 활용 센터</p>
+                            </div>
+                            <div class="txt_2">
+                                <p lang="y">나눔 새 활용 센터</p>
+                            </div>
+                        </div>
+                        <div class="img_box_a">
+                            <img src="../../common_contents/img/EMA624_07_SU/milk_group.png" alt="" />
+                        </div>
+                        <div class="img_box_b">
+                            <img src="../../common_contents/img/EMA624_07_SU/624_07_0001.png" alt="" />
+                            <div class="ex_box1">
+                                <span class="fraction_box">
+                                    <span class="input_wrap answer2" data-hint-position="left">
+                                        <math-field data-answer-single="2"></math-field>
+                                    </span>
+                                    <span class="f32b">2+3</span>
+                                </span>
+                                <span class="f32b">=</span>
+                                <span class="fraction_box">
+                                    <span class="input_wrap answer3" data-hint-position="right">
+                                        <math-field type="number" data-answer-single="2"></math-field>
+                                    </span>
+                                    <span class="f32b">5</span>
+                                </span>
+                            </div>
+                            <div class="ex_box2">
+                                <span class="fraction_box">
+                                    <span class="input_wrap answer2" data-hint-position="left">
+                                        <math-field data-answer-single="3"></math-field>
+                                    </span>
+                                    <span class="f32b">2+3</span>
+                                </span>
+                                <span class="f32b">=</span>
+                                <span class="fraction_box">
+                                    <span class="input_wrap answer3" data-hint-position="right">
+                                        <math-field type="number" data-answer-single="3"></math-field>
+                                    </span>
+                                    <span class="f32b">5</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="sub_wrap">
+                            <div class="sub_img">
+                                <img src="../../common_contents/img/EMA624_07_SU/duck_img.png" alt="" />
+                                <div class="txt">
+                                    <p lang="y">전체를 1로 생각하고<br />2:3으로 나누려면<br />전체를 (2+3)만큼<br />등분해야 해.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_4">
+                    <h3 lang="y">두 센터에 기부할 지갑은 각각 몇 개인가요?</h3>
+                    <div class="flex justify_center">
+                        <div class="img1">
+                            <div class="title1">
+                                <p lang="y">행복<br />새 활용 센터</p>
+                            </div>
+                            <img src="../../common_contents/img/EMA624_07_SU/624_07_0002.png" alt="" />
+                            <span class="mixed_fraction1">
+                                <span>10×</span>
+                                <span class="fraction_box">
+                                    <div class="input_wrap answer1"><math-field data-answer-single="2"></math-field></div>
+                                    <span>5</span>
+                                </span>
+                                <span>=</span>
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="4"></math-field>
+                                    <span>(개)</span>
+                                </div>
+                            </span>
+                        </div>
+
+                        <div class="img2">
+                            <div class="title1">
+                                <p lang="y">나눔<br />새 활용 센터</p>
+                            </div>
+                            <img src="../../common_contents/img/EMA624_07_SU/624_07_0003.png" alt="" />
+                            <span class="mixed_fraction2">
+                                <span>10×</span>
+                                <span class="fraction_box">
+                                    <div class="input_wrap answer1"><math-field data-answer-single="3"></math-field></div>
+                                    <span>5</span>
+                                </span>
+                                <span>=</span>
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="6"></math-field>
+                                    <span>(개)</span>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="page page_5">
+                    <div class="summarize_wrap">
+                        <div class="summarize promise">
+                            <label lang="y">약속해 볼까요</label>
+
+                            <div>
+                                <span lang="y">전체를 주어진 비로 나누는 것을</span>
+                                <button class="reveal_btn" data-pair="비례배분" lang="y" onclick="countClick();">비례배분</button>
+                                <span lang="y">이라고 합니다.</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType" lang="y">입력타입토글</button>
+                <button class="btnReset" lang="y">리셋</button>
+                <button class="btnCheck" lang="y">확인</button>
+                <button class="btnSubmit" lang="y" data-submit="true">제출</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

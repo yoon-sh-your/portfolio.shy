@@ -1,0 +1,66 @@
+.box_line {border:20px solid #C2E1EE; border-radius:90px;}
+.box_line .inner {display:flex; align-items:center; margin:-12px; padding:0 80px; gap:40px; border:4px dashed #fff; border-radius:90px;}
+.box_dot {border:2px dashed #D2D2D2; border-radius:20px; background:#EEF9FF; padding:10px;}
+.box_dot .inner {display:flex; align-items:center; background:#fff; border:2px dashed #8CD6FF; border-radius:12px;}
+.input_wrap {width:120px;}
+.fraction_box .input_wrap {width:80px;}
+.fraction_box .input_wrap math-field {width:100%; min-width:0;}
+.fraction_box .input_wrap + span {line-height:60px;}
+.gap_200 {gap:200px;}
+.long_division .top {display:flex; justify-content:center;}
+.long_division .top > span {display:block; width:100%; padding:0 20px; text-align:right;}
+.long_division .top:has(.input_wrap) {margin-bottom:8px;;}
+.long_division .top .text_hint {top:-36px;}
+.long_division .row {position:relative;}
+.long_division .row .left {position:absolute; top:0; left:0; transform:translateX(-101%)}
+.long_division .row .right {display:flex; justify-content:center; align-items:center; border-top:1px solid #222; background:url(../img/EMA622_02_IH/long_divi.svg) no-repeat left top / auto 100%;}
+.long_division .row .right,
+.long_division .under,
+.long_division .bottom {padding:0 20px; text-align:right;}
+.long_division .bottom {border-top:1px solid #222;}
+.boolean_wrap.type_chk button {position:relative; width:auto; border:none; border-radius:0; background:none !important; aspect-ratio:none; padding:0;}
+.boolean_wrap.type_chk button:after {content:''; display:inline-block; width:60px; height:60px; mask: url(./../../common_practice/common/img/icon_checked_round.svg) no-repeat 50% / 100% auto; background-color:transparent; position:absolute; top:50%; left:-47px; transform:translateY(-50%); margin-top:-8px;}
+.boolean_wrap.type_chk button.selected:after {background-color: var(--font-main);}
+.result .boolean_wrap.type_chk button[data-answer-single='true']:after {background-color: var(--secondary-red);}
+.result .boolean_wrap.type_chk button.selected[data-answer-single='true']:after {background-color: var(--primary-blue);}
+.boolean_wrap .num_sign {margin-right:10px;}
+.num_sign {flex-shrink:0;}
+
+.ema622_03_ih_0001 .question_box {width:1062px; margin:0 auto; gap:100px;}
+.ema622_03_ih_0001 .question_box .left {position:relative; padding:76px 0;}
+.ema622_03_ih_0001 .question_box .times {position:absolute;}
+.ema622_03_ih_0001 .question_box .times:before,
+.ema622_03_ih_0001 .question_box .times:after {content:''; position:absolute; width:50%; height:30px;}
+.ema622_03_ih_0001 .question_box .times .flex {position:relative; background:#fff; z-index:2;;}
+.ema622_03_ih_0001 .question_box .times .flex span {margin-right:8px;}
+.ema622_03_ih_0001 .question_box .top {top:0;}
+.ema622_03_ih_0001 .question_box .top:before {bottom:0; left:0; background:url(../img/EMA622_02_IH/0001_arrow_top.svg) no-repeat 0 bottom }
+.ema622_03_ih_0001 .question_box .top:after {bottom:0; right:0; background:url(../img/EMA622_02_IH/0001_arrow_top.svg) no-repeat right bottom}
+.ema622_03_ih_0001 .question_box .top .text_hint {top:-36px}
+.ema622_03_ih_0001 .question_box .bottom {bottom:0;}
+.ema622_03_ih_0001 .question_box .bottom:before {top:0; left:0; background:url(../img/EMA622_02_IH/0001_arrow_bottom.svg) no-repeat 0 top }
+.ema622_03_ih_0001 .question_box .bottom:after {top:0; right:0; background:url(../img/EMA622_02_IH/0001_arrow_bottom.svg) no-repeat right top}
+.ema622_03_ih_0001 .question_box .middle {display:flex; align-items:center; gap:100px;}
+.ema622_03_ih_0001 .question_box .pink,
+.ema622_03_ih_0001 .question_box .green {display:inline-flex; justify-content:center; align-items:center; min-width:45px; height:56px; border-radius:12px; padding:0 12px;}
+.ema622_03_ih_0001 .question_box .pink {background-color:#FFE6E2;}
+.ema622_03_ih_0001 .question_box .green {background-color:#E2EDD7;}
+.ema622_03_ih_0001 .question_box .right .flex {padding:12px 24px; border-radius:12px; background:#FFEDCF;}
+.ema622_03_ih_0001 .row1 .top {left:42px; padding:0 80px;}
+.ema622_03_ih_0001 .row1 .bottom {left:177px; padding:0 73px;}
+.ema622_03_ih_0001 .row2 {margin-top:50px; padding-top:50px; border-top:2px dashed #d2d2d2}
+.ema622_03_ih_0001 .row2 .top {left:42px; padding:0 80px;}
+.ema622_03_ih_0001 .row2 .bottom {left:177px; padding:0 70px;}
+
+.ema622_03_ih_0004 .top {width:196px; margin:0 auto; padding-bottom:8px; background:url(../img/EMA622_03_IH/0004_img.svg) no-repeat center bottom; text-align:center;}
+.ema622_03_ih_0004 .top span {display:inline-flex; justify-content:center; align-items:center; width:146px; height:58px; border-radius:100%; background:#FDDDCE;}
+.ema622_03_ih_0004 .left {display:flex; justify-content:center; align-items:center; width:120px; height:60px; border:1px solid #FDDDCE; border-radius:12px; background:#FEE9DF}
+
+.ema622_03_ih_0005 .box_line .inner {height:290px}
+.ema622_03_ih_0005 .boolean_wrap {gap:0;}
+
+.ema622_03_ih_0006 .input_wrap.long {width:200px;}
+.ema622_03_ih_0006 .input_wrap math-field {width:100%;}
+
+.ema622_03_ih_0007 .question_box {gap:60px;}
+.ema622_03_ih_0007 .question_box .box_line .inner {height:116px;}

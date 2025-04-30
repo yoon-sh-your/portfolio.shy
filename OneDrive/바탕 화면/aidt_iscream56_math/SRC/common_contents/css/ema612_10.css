@@ -1,0 +1,381 @@
+/*EMA612_10_SU_0004_s*/
+#app_wrap.ema612_10_su_0004 {
+    gap: 50px;
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.card-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.player {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 370px;
+    height: 446px;
+    padding: 20px;
+    border-radius: 20px;
+    &.off-turn::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 20px;
+        z-index: 1;
+    }
+    .input-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    input {
+        width: 182px;
+        height: 60px;
+        text-align: center;
+        font-size: 32px;
+        border-radius: 12px;
+        border: 2px solid #3b71fe;
+        background: #fff;
+    }
+}
+.player:nth-of-type(1) {
+    background: #fff2cc;
+}
+.player:nth-of-type(2) {
+    background: #e2f0d9;
+}
+.player:nth-of-type(3) {
+    background: #dee7f7;
+}
+.player:nth-of-type(4) {
+    background: #ecdef7;
+}
+
+.label-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label-wrap label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    font-size: 32px;
+    font-weight: 400;
+    span {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    span::before {
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #222;
+    }
+}
+
+.range-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 804px;
+    height: 104px;
+    gap: 20px;
+    background: rgba(238, 240, 244, 1);
+    padding: 20px;
+    border-radius: 20px;
+}
+.range-inputs input {
+    width: 80px;
+    height: 60px;
+    border: 2px solid #3b71fe;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 32px;
+    background: #fff;
+}
+.range-inputs button {
+    padding: 6px 12px;
+    border: none;
+    background-color: #3461f2;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.range-inputs button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.card-wrap-container {
+    position: relative;
+    overflow: hidden;
+    width: 212px;
+    height: 288px;
+    border-radius: 20px;
+    border: 10px solid #9dc7ea;
+    background: #fff;
+}
+.card-wrap-section {
+    position: relative;
+}
+.card-wrap-section:has(.card.select)::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #ff0000;
+    border-radius: 25px;
+}
+.card-wrap {
+    display: flex;
+    transition: transform 0.3s;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.card {
+    min-width: 100%;
+    height: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 20px 0;
+    background: #f0f0f0;
+    border-radius: 12px;
+    font-size: 0;
+    cursor: pointer;
+}
+.card::after {
+    content: "";
+    font-size: 24px;
+    margin-top: auto;
+}
+.card[data-index="0"] {
+    background: url("../img/EMA612_10_SU/cards/card-01.png") no-repeat center 20px;
+}
+.card[data-index="0"]::after {
+    content: "꼭짓점의 수";
+}
+.card[data-index="1"] {
+    background: url("../img/EMA612_10_SU/cards/card-02.png") no-repeat center 20px;
+}
+.card[data-index="1"]::after {
+    content: "옆면의 수";
+}
+.card[data-index="2"] {
+    background: url("../img/EMA612_10_SU/cards/card-03.png") no-repeat center 20px;
+}
+.card[data-index="2"]::after {
+    content: "밑면의 수";
+}
+.card[data-index="3"] {
+    background: url("../img/EMA612_10_SU/cards/card-04.png") no-repeat center 20px;
+}
+.card[data-index="3"]::after {
+    content: "면의 수";
+}
+.card[data-index="4"] {
+    background: url("../img/EMA612_10_SU/cards/card-05.png") no-repeat center 20px;
+}
+.card[data-index="4"]::after {
+    content: "모서리의 수";
+}
+.card[data-index="5"] {
+    background: url("../img/EMA612_10_SU/cards/card-06.png") no-repeat center 20px;
+}
+.card[data-index="5"]::after {
+    content: "꼭짓점의 수";
+}
+.card[data-index="6"] {
+    background: url("../img/EMA612_10_SU/cards/card-07.png") no-repeat center 20px;
+}
+.card[data-index="6"]::after {
+    content: "모서리의 수";
+}
+.card[data-index="7"] {
+    background: url("../img/EMA612_10_SU/cards/card-08.png") no-repeat center 20px;
+}
+.card[data-index="7"]::after {
+    content: "옆면의 수";
+}
+.card[data-index="8"] {
+    background: url("../img/EMA612_10_SU/cards/card-09.png") no-repeat center 20px;
+}
+.card[data-index="8"]::after {
+    content: "모서리의 수";
+}
+.card[data-index="9"] {
+    background: url("../img/EMA612_10_SU/cards/card-10.png") no-repeat center 20px;
+}
+.card[data-index="9"]::after {
+    content: "옆면의 수";
+}
+.card[data-index="10"] {
+    background: url("../img/EMA612_10_SU/cards/card-11.png") no-repeat center 20px;
+}
+.card[data-index="10"]::after {
+    content: "밑면의 수";
+}
+.card[data-index="11"] {
+    background: url("../img/EMA612_10_SU/cards/card-12.png") no-repeat center 20px;
+}
+.card[data-index="11"]::after {
+    content: "꼭짓점의 수";
+}
+.card[data-index="12"] {
+    background: url("../img/EMA612_10_SU/cards/card-13.png") no-repeat center 20px;
+}
+.card[data-index="12"]::after {
+    content: "꼭짓점의 수";
+}
+.card[data-index="13"] {
+    background: url("../img/EMA612_10_SU/cards/card-14.png") no-repeat center 20px;
+}
+.card[data-index="13"]::after {
+    content: "각뿔의 꼭짓점의 수";
+}
+.card[data-index="14"] {
+    background: url("../img/EMA612_10_SU/cards/card-15.png") no-repeat center 20px;
+}
+.card[data-index="14"]::after {
+    content: "모서리의 수";
+}
+.card[data-index="15"] {
+    background: url("../img/EMA612_10_SU/cards/card-16.png") no-repeat center 20px;
+}
+.card[data-index="15"]::after {
+    content: "면의 수";
+}
+
+.card-nav {
+    display: none;
+    position: absolute;
+    top: 164px;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+.card-nav.left {
+    left: 20px;
+    background: url("../img/EMA612_10_SU/left-btn.png") center / contain no-repeat;
+}
+.card-nav.right {
+    right: 20px;
+    background: url("../img/EMA612_10_SU/right-btn.png") center / contain no-repeat;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #808080;
+    border-radius: 50%;
+}
+.dot.active {
+    background: #3b71fe;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.device_change {
+    background-color: var(--secondary-red);
+}
+.device_change {
+    display: none;
+}
+.teacher .device_change {
+    display: block;
+}
+#startNumber {
+    display: none;
+}
+#confirmBtn,
+.input-check {
+    background-image: url(../..//common_contents/common/img/icon_check_disabled.svg);
+    pointer-events: none;
+    background-color: var(--btn-disabled-bg);
+    border-color: var(--stroke-default);
+    width: 64px;
+    min-width: unset;
+    height: 64px;
+    border-radius: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    font-size: 0;
+    padding: 0;
+    transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+#confirmBtn:not(:disabled),
+.input-check:not(:disabled) {
+    background-image: url(../..//common_contents/common/img/icon_check_white.svg);
+    pointer-events: all;
+    background-color: var(--btn-default);
+    border-color: transparent;
+}
+
+.input-reset {
+    background-image: url(../..//common_contents/common/img/icon_reset_disabled.svg);
+    pointer-events: none;
+    background-color: var(--btn-disabled-bg);
+    border-color: var(--stroke-default);
+    width: 64px;
+    min-width: unset;
+    height: 64px;
+    border-radius: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+    font-size: 0;
+    padding: 0;
+    transition: box-shadow 0.1s ease-in-out, background-color 0.1s ease-in-out;
+    box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.12);
+}
+.input-reset:not(:disabled) {
+    background-image: url(../..//common_contents/common/img/icon_reset_white.svg);
+    pointer-events: all;
+    background-color: var(--btn-default);
+    border-color: transparent;
+}

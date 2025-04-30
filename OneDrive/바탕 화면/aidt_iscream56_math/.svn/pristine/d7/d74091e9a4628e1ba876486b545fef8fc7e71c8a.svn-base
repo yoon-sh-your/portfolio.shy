@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema611_10_su_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_10_su_0006">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="5" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              우유
+              <div class="mixed_fraction">
+                1
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>5</span>
+                </div>
+              </div>
+              &nbsp;L를 4명이 똑같이 나누어 마시려고 합니다. 한 명이 마실 수 있는 우유의 양은 몇 L인지 구해 보세요.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="equation_box">
+          <div class="title" lang="y">식</div>
+
+          <div class="input_area">
+            <div class="input_wrap fraction_wrap custom">
+              <math-field data-answer-single="1(4)/(5)-:4" text-align="center"></math-field>
+            </div>
+            <span>=</span>
+            <div class="input_wrap fraction_wrap custom">
+              <math-field data-answer-single="(28-:4)/(32)" text-align="center"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <div class="answer_box">
+          <div class="title" lang="y">답</div>
+
+          <div class="input_area">
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(3)/(10)" text-align="center"></math-field>
+            </div>
+            <span>L</span>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

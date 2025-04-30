@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_04_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema525_03_ih_0001.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">직육면체를 보고 알맞은 것에 모두 ○표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center align_center">
+          <div class="img"><img src="../../common_practice/img/EMA525_04_IH/0002_img.svg" alt="" /></div>
+          <div class="question_box dir_col gap_40">
+            <div class="text_bullet" lang="y">
+              직육면체에서 면 ㄱㄴㄷㄹ이 밑면일 때 옆면은<br />(
+              <div class="boolean_wrap">
+                <button type="button" data-answer-single="true"><span lang="y">면 ㄴㅂㅅㄷ</span></button>, <button type="button" data-answer-single="false"><span lang="y">면 ㄷㅅㅇㄹ</span></button>, <button type="button" data-answer-single="false"><span lang="y">면 ㄱㅁㅇㄹ</span></button>,
+                <button type="button" data-answer-single="false"><span lang="y">면 ㄴㅂㅁㄱ</span></button>
+              </div>
+              )입니다.
+            </div>
+            <div class="text_bullet" lang="y">
+              직육면체에서 한 밑면에 대한 옆면은 모두 (
+              <div class="boolean_wrap">
+                <button type="button" data-answer-single="false"><span lang="y">3개</span></button>, <button type="button" data-answer-single="true"><span lang="y">4개</span></button>,
+                <button type="button" data-answer-single="false"><span lang="y">5개</span></button>
+              </div>
+              )입니다.
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">면 ㄱㄴㄷㄹ과 만나는 면은 면 ㄴㅂㅅㄷ, 면 ㄷㅅㅇㄹ, 면 ㄱㅁㅇㄹ, 면 ㄴㅂㅁㄱ입니다.</p>
+                <p class="text_bullet" lang="y">직육면체에서 한 밑면에 대한 옆면은 모두 4개입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

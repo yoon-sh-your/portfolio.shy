@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_08_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_08_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">버섯 매장의 어제 판매액은 4836200원이었고, 오늘 예상 판매액은 5370000원입니다. 어제 판매액과 오늘 예상 판매액을 각각 반올림하여 봅시다.</h2>
+      </section> 
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">어제 판매액과 오늘 예상 판매액을 각각 반올림하여 십만의 자리까지 나타내면 얼마인가요?</h3>
+
+          <div class="develope_box">
+            <div class="input_area">
+              <span class="f32b" lang="y">어제 판매액</span>
+
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="4800000"></math-field>
+              </div>
+
+              <span class="f32b" lang="y">원</span>
+            </div>
+          </div>
+
+          <div class="develope_box">
+            <div class="input_area">
+              <span class="f32b" lang="y">오늘 예상 판매액</span>
+
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="5400000"></math-field>
+              </div>
+
+              <span class="f32b" lang="y">원</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">어제 판매액과 오늘 예상 판매액을 각각 반올림하여 백만의 자리까지 나타내면 얼마인가요?</h3>
+
+          <div class="develope_box">
+            <div class="input_area">
+              <span class="f32b" lang="y">어제 판매액</span>
+
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="5000000"></math-field>
+              </div>
+
+              <span class="f32b" lang="y">원</span>
+            </div>
+          </div>
+
+          <div class="develope_box">
+            <div class="input_area">
+              <span class="f32b" lang="y">오늘 예상 판매액</span>
+
+              <div class="input_wrap answer4">
+                <math-field data-answer-single="5000000"></math-field>
+              </div>
+
+              <span class="f32b" lang="y">원</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

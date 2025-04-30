@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_02_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_02_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" class="is_star" lang="y">분수 막대를 이용하여 물음에 답해 보세요.</h2>
+        <button class="btn_zoom" data-target="target1"></button>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="question_box type_table">
+            <div class="row1">
+              <div class="item">1</div>
+            </div>
+            <div class="row2">
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>3</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>3</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>3</span></div>
+              </div>
+            </div>
+            <div class="row3">
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>4</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>4</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>4</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>4</span></div>
+              </div>
+            </div>
+            <div class="row4">
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>8</span></div>
+              </div>
+            </div>
+            <div class="row5">
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+              <div class="item">
+                <div class="fraction_box"><span>1</span><span>12</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 class="title" lang="y">
+            <div class="fraction_txt_wrap">
+              <div class="fraction_txt" lang="y">
+                <div class="fraction_box ml_0">
+                  <span>4</span>
+                  <span>8</span>
+                </div>
+                와 크기가 같은 분수를 모두 구해 보세요.
+              </div>
+            </div>
+          </h3>
+          <div class="question_box bracket type_quiz">
+            <span class="bracket-l"></span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(2)/(4)" text-align="center"></math-field>
+            </div>
+            <span class="comma">,</span>
+
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(6)/(12)" text-align="center"></math-field>
+            </div>
+            <span class="bracket-r"></span>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve" lang="y">
+                  <p lang="y">분수 막대에서 나타내는 부분의 크기가 같은 분수를 찾습니다.</p>
+                  <div lang="y">
+                    <div class="fraction_box">
+                      <span>4</span>
+                      <span>8</span>
+                    </div>
+                    와 크기가 같은 분수는
+                    <div class="fraction_box">
+                      <span>2</span>
+                      <span>4</span>
+                    </div>
+                    ,
+                    <div class="fraction_box">
+                      <span>6</span>
+                      <span>12</span>
+                    </div>
+                    입니다.
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 class="title" lang="y">
+            <div class="fraction_txt_wrap">
+              <div class="fraction_txt" lang="y">
+                <div class="fraction_box ml_0">
+                  <span>9</span>
+                  <span>12</span>
+                </div>
+                와 크기가 같은 분수를 모두 구해 보세요.
+              </div>
+            </div>
+            
+          </h3>
+          <div class="question_box bracket type_quiz">
+            <span class="bracket-l"></span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(3)/(4)" text-align="center"></math-field>
+            </div>
+            <span class="comma">,</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(6)/(8)" text-align="center"></math-field>
+            </div>
+            <span class="bracket-r"></span>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve" lang="y">
+                  <p lang="y">분수 막대에서 나타내는 부분의 크기가 같은 분수를 찾습니다.</p>
+                  <div lang="y">
+                    <div class="fraction_box">
+                      <span>9</span>
+                      <span>12</span>
+                    </div>
+                    와 크기가 같은 분수는
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>4</span>
+                    </div>
+                    ,
+                    <div class="fraction_box">
+                      <span>6</span>
+                      <span>8</span>
+                    </div>
+                    입니다.
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+        <div class="picture_wrap target1">
+          <img src="../../common_practice/img/EMA514_02_IH/0004_img.png" alt="" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_05_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_05_ih_0007 paging">
+      <section class="title type2 score">
+        <h2 data-head="7" class="is_star2" lang="y">둘레가 48 ㎝이고 가로가 18 ㎝인 직사각형의 넓이는 몇 ㎠인지 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">직사각형의 세로는 몇 ㎝인지 구해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="input_area">
+              <span>&#40;</span>
+              <div class="input_wrap answer1">
+                <math-field type="number" data-answer-single="6"></math-field>
+              </div>
+              <span>&#41; ㎝</span>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p>
+                    <span lang="y">직사각형의 세로를</span>
+                    <span class="nemo"></span>
+                    <span lang="y">㎝라고 하면 (18+</span>
+                    <span class="nemo"></span>
+                    <span lang="y">)×2=48, 18+</span>
+                    <span class="nemo"></span>
+                    <span lang="y">=24,</span>
+                    <span class="nemo"></span>
+                    <span lang="y">=6입니다.</span><br />
+                    <span lang="y">따라서 직사각형의 세로는 6 ㎝입니다.</span>
+                  </p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">직사각형의 넓이는 몇 ㎠ 인지 구해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="input_area">
+              <span>&#40;</span>
+              <div class="input_wrap answer1">
+                <math-field type="number" data-answer-single="108"></math-field>
+              </div>
+              <span>&#41; ㎠</span>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(직사각형의 넓이)=18×6=108 (㎠)</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

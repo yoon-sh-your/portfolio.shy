@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_03_SU_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema616_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_03_su_0007">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">직육면체의 부피는 몇 ㎤인지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="box_a">
+            <img src="../../common_contents/img/EMA616_03_SU/616_03_0011.png" alt="" />
+            <div class="unit_a">7 ㎝</div>
+            <div class="unit_b">9 ㎝</div>
+            <div class="unit_c">10 ㎝</div>
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="630"></math-field>
+              <span>㎤</span>
+            </div>
+          </div>
+          <div class="box_b">
+            <img src="../../common_contents/img/EMA616_03_SU/616_03_0012.png" alt="" />
+            <div class="unit_a">8 ㎝</div>
+            <div class="unit_b">8 ㎝</div>
+            <div class="unit_c">8 ㎝</div>
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="512"></math-field>
+              <span>㎤</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema527_03_su_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+  <script src="../../common_project/common/js/project_common.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema527_03_SU.css" />
+  <script src="../../common_project/js/ema527_03_su_0002.js"></script>
+
+  <style>
+    /* 선생님용 버튼 */
+    .t_hide {
+      display: none;
+    }
+
+    .teacher .t_hide {
+      display: block;
+    }
+
+    .teacher .btnRed {
+      background-color: var(--secondary-red);
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema527_03_su_0002">
+    <section class="title">
+      <h2 data-head="1">
+        <span lang="y">우리 모둠의 택배 드론 제안서를 만들고, 소개해 봅시다.​</span>
+      </h2>
+      <div class="title_btns">
+        <!----선생님용 버튼---->
+        <div class="t_hide">
+          <button class="btnRed">대표 기기 변경하기</button>
+        </div>
+        <!----//선생님용 버튼---->
+        <button class="btn_popup" data-target="popChkSelf">확인하기</button>
+      </div>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex gap_26">
+        <div class="draw_wrap flex dir_col align_start gap_12 quiz_area">
+          <span class="label f32b" lang="y">택배 드론 설계도</span>
+          <div class="drawline_grid">
+            <div class="drawing_grid_area" id="drawingArea1" data-grid-size="13">
+              <svg class="line_canvas"></svg>
+            </div>
+          </div>
+          <button class="gridReset">리셋</button>
+        </div>
+        <div class="input_area">
+          <div class="input_wrap flex dir_col gap_12">
+            <dl class="flex align_center gap_16">
+              <dt class="label f32b" lang="y">모둠원</dt>
+              <dd>
+                <math-field class="textarea" type="text"></math-field>
+              </dd>
+            </dl>
+            <dl class="flex align_center gap_16">
+              <dt class="label f32b" lang="y">택배 드론의 이름</dt>
+              <dd>
+                <math-field class="textarea" type="text"></math-field>
+              </dd>
+            </dl>
+            <dl class="flex dir_col align_start gap_16">
+              <dt class="label f32b" lang="y">택배 드론 설명서</dt>
+              <dd>
+                <math-field class="textarea" type="text"></math-field>
+              </dd>
+            </dl>
+            <ol class="example_box" style="display:none;">
+              <li>더미</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+
+    <div id="popChkSelf" class="popup pop_area">
+      <div class="pop_inner">
+        <div class="title ">
+          <h3 class="f32b" lang="y">내용을 잘 이해하고 택배 드론 제안서를 만들었는지 확인해 보세요.</h3>
+          <button class="close"></button>
+        </div>
+        <div class="cont flex dir_col justify_center align_start gap_12 f32b">
+          <label class="item flex align_center gap_16">
+            <span lang="y" class="txt">배송 가능한 무게인지 확인했나요?</span>
+            <input type="checkbox" class="sr-only" />
+            <span class="chk"></span>
+          </label>
+          <label class="item flex align_center gap_16">
+            <span lang="y" class="txt">이동 가능한 거리인지 확인했나요?</span>
+            <input type="checkbox" class="sr-only" />
+            <span class="chk"></span>
+          </label>
+          <label class="item flex align_center gap_16">
+            <span lang="y" class="txt">균형이 맞게 잘 설계되었나요?</span>
+            <input type="checkbox" class="sr-only" />
+            <span class="chk"></span>
+          </label>
+        </div>
+        <!-- <div class="btn_area">
+            <button class="btnReset">리셋</button>
+            <button class="btnSubmit" data-submit="true">제출</button>
+          </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

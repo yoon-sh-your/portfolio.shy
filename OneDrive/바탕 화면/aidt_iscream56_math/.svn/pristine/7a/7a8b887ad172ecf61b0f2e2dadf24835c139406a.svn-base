@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_05_SU_0007_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_06.css" />
+  <script src="../../common_contents/js/ema523_05_0007.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_05_su_0007">
+    <section class="title type2">
+      <h2 data-head="5_pink">
+        <div>
+          <span lang="y">선대칭도형을 완성해 봅시다.</span>
+          <button type="button" class="icon_supplies" lang="y" data-supplies="pop_supplies_area_1">준비물</button>
+        </div>
+      </h2>
+    </section>
+
+    <div class="pop_area pop_supplies_area pop_supplies_area_1">
+      <div class="supplies_zoom_wrap">
+        <button type="button" class="close"></button>
+        <div class="supplies_zoom scrollable">
+          <div class="supplies_box_wrap">
+            <div class="supplies_box">
+              <div class="supplies_tit">삼각자, 각도기, 자</div>
+              <div class="supplies_contents">
+                <img src="../../common_contents/img/EMA523_02_SU/0004_supplies.png" alt="준비물 도형" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="controller">
+            <button class="supplies_scale_down" disabled></button>
+            <button class="supplies_scale_up"></button>
+        </div>
+      </div>
+    </div>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">선대칭도형을 완성해 보세요.</h3>
+        <div class="input_area">
+          <div class="figure_box">
+            <div class="img_area img_area1 drawline_grid">
+                <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+                <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+                <div class="drawing_grid_area"
+                    data-grid-size='32'
+                     data-answer-single='[[{"x":224,"y":32},{"x":320,"y":96},{"x":288,"y":128},{"x":384,"y":192},{"x":224,"y":256}]]' 
+                     data-sample-line='[]'>
+                     <span class="img"><img src="../../common_contents/img/EMA523_05_SU/0007_content01.svg" alt="도형이미지"></span>
+                     <svg class="line_canvas"></svg>
+                </div>
+                <div class="dot_wrap">
+                  <div class="dot dot1"></div> 
+                  <div class="dot dot2"></div>
+                  <div class="dot dot3"></div>
+                  <div class="dot dot4"></div>
+                  <div class="dot dot5"></div>
+                </div>
+            </div>
+            <div class="img_area img_area2 drawline_grid">
+              <div class="drawing_grid_area"
+                    data-grid-size='32'
+                     data-answer-single='[[{"x":128,"y":32},{"x":224,"y":32},{"x":320,"y":128},{"x":352,"y":128},{"x":288,"y":192}]]' 
+                     data-sample-line='[]'>
+                     <span class="img"><img src="../../common_contents/img/EMA523_05_SU/0007_content02.svg" alt="도형이미지"></span>
+                     <svg class="line_canvas"></svg>
+                </div>
+                <div class="dot_wrap">
+                  <div class="dot dot1"></div>
+                  <div class="dot dot2"></div>
+                  <div class="dot dot3"></div>
+                  <div class="dot dot4"></div>
+                  <div class="dot dot5"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y" class="align_center">완성한 도형이 선대칭도형인지 확인해 보세요.​</h3>
+        <div class="input_area">
+          <div class="figure_box">
+            <div class="img_area img_area1">
+              <span class="img flex">
+                <svg width="161" height="286" viewBox="0 0 161 286" fill="none" xmlns="http://www.w3.org/2000/svg" class="img01">
+                  <path d="M159.565 32.0449L64.8015 95.3499L96.382 126.991L1.64062 190.296L159.565 253.601" stroke="#1D1D1B" stroke-width="1.67347" stroke-linejoin="round"/>
+                  <path d="M159.668 285.397V0.558594" stroke="#E6007E" stroke-width="1.67347" stroke-linejoin="round" class="line" />
+                </svg>
+                  
+                <svg width="161" height="223" viewBox="0 0 161 223" fill="none" xmlns="http://www.w3.org/2000/svg" class="img02">
+                  <path d="M0.742188 1.44531L95.6031 64.3333L63.9828 96.3781L158.844 159.667L0.742188 222.154" stroke="#222222" stroke-width="1.67307"/>
+                </svg>                  
+              </span>
+              <div class="dot_wrap">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+              </div>
+            </div>
+            <div class="img_area img_area2">
+              <span class="img flex">
+                <svg width="286" height="286" viewBox="0 0 286 286" fill="none" xmlns="http://www.w3.org/2000/svg"  class="img01">
+                  <path d="M32.5469 32.2461V127.192L127.311 222.116V253.78L190.494 190.475" stroke="#222222" stroke-width="1.67347" stroke-linejoin="round"/>
+                  <path d="M285.236 285.42L0.966797 0.603516" stroke="#E6007E" stroke-width="1.67347" stroke-linejoin="round" class="line" />
+                </svg>
+                <svg width="224" height="160" viewBox="0 0 224 160" fill="none" xmlns="http://www.w3.org/2000/svg" class="img02">
+                  <path d="M0.396484 1.04492H95.2574L190.118 95.9777H221.739L158.498 159.266" stroke="#222222" stroke-width="1.67307"/>
+                </svg>
+              </span>
+              <div class="dot_wrap">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+                <div class="dot dot5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="question_box justify_center">
+          <div class="flex align_center gap_12 mt_20 f32b">
+            <span lang="y">도형은 선대칭도형이</span>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="맞습니다.">
+                <option value=""></option>
+                <option value="맞습니다."></option>
+                <option value="아닙니다."></option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <!-- <button class="btnType key">입력타입토글</button> -->
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <!-- <button class="btnSubmit">확인</button> -->
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

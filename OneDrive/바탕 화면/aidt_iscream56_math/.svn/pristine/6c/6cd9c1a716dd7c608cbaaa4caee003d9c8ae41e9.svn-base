@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_01_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_01_ih_0001">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 3-1』 분수를 소수로, 소수를 분수로 나타내기</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="1" lang="y"><span class="empty_box nemo head"></span>안에 알맞은 분수 또는 소수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box">
+          <div class="item">
+            <div class="top">0</div>
+            <div class="bottom">0</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="fraction_box">
+                <span>1</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="bottom">0.1</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(2)/(10)" text-align="center"></math-field>
+              </div>
+            </div>
+            <div class="bottom">0.2</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="fraction_box">
+                <span>3</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="bottom">0.3</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="fraction_box">
+                <span>4</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="bottom">0.4</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="fraction_box">
+                <span>5</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="input_wrap"><math-field data-answer-single="0.5"></math-field></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="fraction_box">
+                <span>6</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="bottom">0.6</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(7)/(10)" text-align="center"></math-field>
+              </div>
+            </div>
+            <div class="bottom">0.7</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="fraction_box">
+                <span>8</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="bottom">0.8</div>
+          </div>
+          <div class="item">
+            <div class="top">
+              <div class="fraction_box">
+                <span>9</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="input_wrap"><math-field data-answer-single="0.9"></math-field></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="top">1</div>
+            <div class="bottom">1</div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">분모가 10인 분수는 소수 한 자리 수로 나타낼 수 있고, 소수 한 자리 수는 분모가 10인 분수로 나타낼 수 있습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

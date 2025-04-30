@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema617_02_su_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+  <script src="../../common_project/js/ema617_02_SU.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema617_02_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema617_02_su_0005">
+    <section class="title">
+      <h2 data-head="4">
+        <span lang="y">계획을 잘 세웠는지 확인해 봅시다.​​​</span>
+      </h2>
+    </section>
+
+    <section class="contents">   
+      <div class="input_area text_center">
+        <div class="input_wrap ">
+          <div class="table_wrap text_left">
+            <table>
+              <thead>
+                <tr>
+                  <th class="f32b text_center" lang="y">확인할 내용​</th>
+                  <th class="f32b text_center" lang="y">확인</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="f32b" lang="y">· 기사를 고쳐 쓰는 목적이 분명한가요?​​</td>
+                  <td>
+                    <label class="item">
+                      <input type="checkbox" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">· 주어진 기사의 잘못된 내용을 어떻게 고쳐 쓸지 정하였나요?​​</td>
+                  <td>
+                    <label class="item">
+                      <input type="checkbox" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">​· 그래프로 나타낼 수 있는 자료를 찾고, 어떤 그래프로 나타낼지 정하였나요?​</td>
+                  <td>
+                    <label class="item">
+                      <input type="checkbox" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">· 활동을 위한 역할을 잘 정하였나요?​​</td>
+                  <td>
+                    <label class="item">
+                      <input type="checkbox" class="sr-only custom_check_target" />
+                      <span class="chk"></span>
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table> 
+            <ol class="example_box" style="display: none;">
+              <li>더미</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+  <script>
+    runAfterAppReady(() => {
+      window.resetCustom = function () {
+        $(".custom_check_target").prop("checked", false);
+        $(".custom_check_target").each(function () {
+          $(this).trigger("change"); // 상태 바뀜 알리기
+          $(this).trigger("click");  // 클릭 이벤트까지 강제 발생
+        });
+        window.forceWatchEvaluation();
+      };
+  
+      defineButtonClassRules([
+        {
+          selector: ".custom_check_target",
+          key: "custom_submit_btn_active",
+          test: () => {
+            const $all = $(".custom_check_target");
+            const $checked = $(".custom_check_target:checked");
+            return $all.length > 0 && $all.length === $checked.length;
+          }
+        },
+        {
+          selector: ".custom_check_target",
+          key: "custom_reset_btn_active",
+          test: () => {
+            const $checked = $(".custom_check_target:checked");
+            return $checked.length > 0; // 하나라도 체크되면 리셋 버튼 활성화
+          }
+        },
+      ]);
+  
+      window.forceWatchEvaluation();
+  
+      window.customValidateBeforeSubmit = function ({ hasEmpty, isSelfCheckMissing, rules }) {
+        console.log("🔍 커스텀 제출 전 검증 로직 실행됨");
+        console.log("빈 항목 존재 여부:", hasEmpty);
+        console.log("자기 점검 미선택 여부:", isSelfCheckMissing);
+        console.log("검사 규칙:", rules);
+  
+        if (hasEmpty) {
+          alert("⚠️ 빈 항목이 존재합니다. 제출을 중단합니다.");
+          return false;
+        }
+  
+        return true;
+      };
+    });
+  </script>
+  
+  
+</body>
+
+
+</html>

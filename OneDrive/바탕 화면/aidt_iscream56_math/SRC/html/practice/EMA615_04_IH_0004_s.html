@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA615_04_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema615.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema615">
+      <section class="title group">
+        <h2 lang="y"><span class="puple">[1~6]</span>우리 반 학생들이 배우고 싶어 하는 외국어를 조사하여 띠그래프와 원그래프로 나타내려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="4_light_purple" lang="y">
+          <span lang="y"><span class="color">3</span>의 표를 보고 띠그래프로 나타내어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema615_03_0004 ema615_04_0003 pb100 flex align_center justify_center gap_50">
+          <div class="flex dir_col gap_50">
+            <div class="flex align_center justify_center">
+              <div class="tit_title">
+                <span lang="y">배우고 싶어 하는 외국여별 학생 수의 비율</span>
+              </div>
+            </div>
+
+            <div class="table_wrap">
+              <table>
+                <colgroup>
+                  <col style="width: 160px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                  <col style="width: 150px" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="row" lang="y">종류</th>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="영어"></math-field>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="스페인어"></math-field>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="베트남어"></math-field>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="중국어"></math-field>
+                      </div>
+                    </td>
+                    <td class="bg">
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="독일어"></math-field>
+                      </div>
+                    </td>
+                    <td class="bg">합계</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr></tr>
+                  <tr>
+                    <th scope="row" lang="y">학생 수(명)</th>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="8"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="6"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="5"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="4"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="2"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="25"></math-field>
+                      </div>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row" lang="y">백분율(%)</th>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="32"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="24"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="20"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="16"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="8"></math-field>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="input_wrap">
+                        <math-field class="correct" disabled value="100"></math-field>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+
+            <div class="graf_flex">
+              <div class="flex dir_col gap_50">
+              
+                <div class="flex align_center justify_center">
+                  <div class="tit_title_input">
+                    <div class="input_wrap">
+                      <math-field data-answer-single="배우고 싶어 하는 외국어별 학생 수의 비율"></math-field>
+                    </div>
+                  </div>
+                </div>
+
+
+              <div class="in_graf">
+                <svg width="1047" height="146" viewBox="0 0 1047 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="path-1-inside-1_11088_172271" fill="white">
+                    <path d="M6 0H1006V56H6V0Z" />
+                  </mask>
+                  <path d="M1006 55H6V57H1006V55Z" fill="#222222" mask="url(#path-1-inside-1_11088_172271)" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="-0.648438" y="26.5312">0</tspan></text>
+                  <path d="M6.5 36V56" stroke="black" />
+                  <path d="M56.4502 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="94.2397" y="26.5312">10</tspan></text>
+                  <path d="M106.4 36V56" stroke="black" />
+                  <path d="M156.35 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="192.358" y="26.5312">20</tspan></text>
+                  <path d="M206.3 36V56" stroke="black" />
+                  <path d="M256.25 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="291.896" y="26.5312">30</tspan></text>
+                  <path d="M306.2 36V56" stroke="black" />
+                  <path d="M356.15 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="391.713" y="26.5312">40</tspan></text>
+                  <path d="M406.1 36V56" stroke="black" />
+                  <path d="M456.05 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="491.941" y="26.5312">50</tspan></text>
+                  <path d="M506 36V56" stroke="black" />
+                  <path d="M555.95 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="591.642" y="26.5312">60</tspan></text>
+                  <path d="M605.9 36V56" stroke="black" />
+                  <path d="M655.85 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="692.468" y="26.5312">70</tspan></text>
+                  <path d="M705.8 36V56" stroke="black" />
+                  <path d="M755.75 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="791.524" y="26.5312">80</tspan></text>
+                  <path d="M805.7 36V56" stroke="black" />
+                  <path d="M855.65 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="891.342" y="26.5312">90</tspan></text>
+                  <path d="M905.6 36V56" stroke="black" />
+                  <path d="M955.55 46V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="980.441" y="26.5312">100</tspan></text>
+                  <path d="M1005.5 36V56" stroke="black" />
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="24" letter-spacing="-0.5px"><tspan x="1022.15" y="26.5312">％</tspan></text>
+                  <mask id="path-36-inside-2_11088_172271" fill="white">
+                    <path d="M6 66H366V146H6V66Z" />
+                  </mask>
+                  <path d="M6 66H366V146H6V66Z" fill="white" />
+                  <path d="M6 66V65H5V66H6ZM6 146H5V147H6V146ZM6 67H366V65H6V67ZM366 145H6V147H366V145ZM7 146V66H5V146H7Z" fill="#222222" mask="url(#path-36-inside-2_11088_172271)" />
+                  <mask id="path-38-inside-3_11088_172271" fill="white">
+                    <path d="M366 66H606V146H366V66Z" />
+                  </mask>
+                  <path d="M366 66H606V146H366V66Z" fill="white" />
+                  <path d="M366 66V65H365V66H366ZM366 146H365V147H366V146ZM366 67H606V65H366V67ZM606 145H366V147H606V145ZM367 146V66H365V146H367Z" fill="#222222" mask="url(#path-38-inside-3_11088_172271)" />
+                  <mask id="path-40-inside-4_11088_172271" fill="white">
+                    <path d="M606 66H806V146H606V66Z" />
+                  </mask>
+                  <path d="M606 66H806V146H606V66Z" fill="white" />
+                  <path d="M606 66V65H605V66H606ZM606 146H605V147H606V146ZM606 67H806V65H606V67ZM806 145H606V147H806V145ZM607 146V66H605V146H607Z" fill="#222222" mask="url(#path-40-inside-4_11088_172271)" />
+                  <mask id="path-42-inside-5_11088_172271" fill="white">
+                    <path d="M806 66H926V146H806V66Z" />
+                  </mask>
+                  <path d="M806 66H926V146H806V66Z" fill="white" />
+                  <path d="M806 66V65H805V66H806ZM806 146H805V147H806V146ZM806 67H926V65H806V67ZM926 145H806V147H926V145ZM807 146V66H805V146H807Z" fill="#222222" mask="url(#path-42-inside-5_11088_172271)" />
+                  <rect x="926.5" y="66.5" width="79" height="79" fill="white" />
+                  <rect x="926.5" y="66.5" width="79" height="79" stroke="#222222" />
+                </svg>
+
+                <div class="input_are">
+                  <div class="tit tit01">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="영어">
+                        <option></option>
+                        <option value="영어"></option>
+                        <option value="스페인어"></option>
+                        <option value="베트남어"></option>
+                        <option value="중국어"></option>
+                        <option value="독일어"></option>
+                      </select>
+                    </div>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="32"></math-field>
+                    </div>
+                    <p>％</p>
+                  </div>
+
+                  <div class="tit tit02">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="스페인어">
+                        <option></option>
+                        <option value="영어"></option>
+                        <option value="스페인어"></option>
+                        <option value="베트남어"></option>
+                        <option value="중국어"></option>
+                        <option value="독일어"></option>
+                      </select>
+                    </div>
+                    <div class="flex gap_4 align_center">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="24"></math-field>
+                      </div>
+                      <p>％</p>
+                    </div>
+                  </div>
+
+                  <div class="tit tit03">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="독일어">
+                        <option></option>
+                        <option value="영어"></option>
+                        <option value="스페인어"></option>
+                        <option value="베트남어"></option>
+                        <option value="중국어"></option>
+                        <option value="독일어"></option>
+                      </select>
+                    </div>
+                    <div class="flex gap_4 align_center">
+                      <div class="input_wrap up_hint">
+                        <math-field data-answer-single="8"></math-field>
+                      </div>
+                      <p>％</p>
+                    </div>
+                  </div>
+
+                  <div class="tit tit04">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="베트남어">
+                        <option></option>
+                        <option value="영어"></option>
+                        <option value="스페인어"></option>
+                        <option value="베트남어"></option>
+                        <option value="중국어"></option>
+                        <option value="독일어"></option>
+                      </select>
+                    </div>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="20"></math-field>
+                    </div>
+                    <p>％</p>
+                  </div>
+
+                  <div class="tit tit05">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="중국어">
+                        <option></option>
+                        <option value="영어"></option>
+                        <option value="스페인어"></option>
+                        <option value="베트남어"></option>
+                        <option value="중국어"></option>
+                        <option value="독일어"></option>
+                      </select>
+                    </div>
+                    <div class="flex gap_4 align_center">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="16"></math-field>
+                      </div>
+                      <p>％</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>각 항목의 백분율만큼 선을 그어 띠를 나눈 후 나눈 부분에 각 항목의 내용과 백분율을 씁니다. 띠그래프에 알맞은 제목을 씁니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck" data-look="submit">채점</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

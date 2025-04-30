@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_05_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_05_ih_0001">
+			<section class="title type2">
+				<h2 data-head="1" class="fraction_box_title">
+					<div lang="y">
+						딸기 3kg을 수확하는 데
+						<div class="fraction_box">
+							<span>3</span>
+							<span>4</span>
+						</div>
+						시간이 걸렸습니다. 1시간 동안 수확할 수 있는 딸기는 몇 kg인지 구하려고 합니다. <span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.
+					</div>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box dir_col gap_20">
+					<div class="img">
+						<img src="../../common_practice/img/EMA621_05_IH/0001_img.svg" alt="">
+						<span class="txt1" lang="y">(시간)</span>
+						<span class="txt2" lang="y">(시간)</span>
+						<span class="txt3" lang="y">(시간)</span>
+					</div>
+					<div class="middle flex justify_end align_center">
+						<div class="flex align_center">
+							3÷
+							<div class="input_wrap">
+								<math-field data-answer-single="3"></math-field>
+							</div>
+						</div>
+						<div class="flex align_center">
+							(3÷
+							<div class="input_wrap">
+								<math-field data-answer-single="3"></math-field>
+							</div>
+							)×
+							<div class="input_wrap">
+								<math-field data-answer-single="4"></math-field>
+							</div>
+						</div>
+					</div>
+					<div class="box_line">
+						<div class="inner flex align_center">
+							3÷
+							<div class="fraction_box">
+								<span>3</span>
+								<span>4</span>
+							</div>
+							=(3÷3)×
+							<div class="input_wrap">
+								<math-field data-answer-single="4"></math-field>
+							</div>
+							=
+							<div class="input_wrap">
+								<math-field data-answer-single="4"></math-field>
+							</div>
+							(kg)
+						</div>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

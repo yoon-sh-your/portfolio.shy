@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_08_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_08_su_0006"> 
+      <section class="title type2">
+        <h2 data-head="4_deep_green">
+            <div>
+                <span lang="y"><span class="label_bogi">보기</span>를 이용하여 계산하고, 계산기로 확인해 봅시다.</span>
+                <button type="button" class="btn calculator">계산기</button>
+            </div>
+        </h2>
+      </section>
+      
+      <section class="contents">
+        <div class="wrap"> 
+          <div class="flex justify_center align_center">
+            <div class="example_box label_bogi_box">
+              <span class="label_bogi" lang="y">보기</span>
+              <div>
+                <div class="fra_parens f32b flex align_center">
+                  <span>57</span>
+                  <span>×</span>
+                  <span>39</span>
+                  <span>&equals;</span>
+                  <span>2223</span>
+                </div>
+              </div>
+            </div>
+            <div class="answer_box flex">
+              <div class="flex align_center dir_col">
+                <!-- 1-1번박스 -->
+                <div class="fra_parens f32b flex align_center">
+                  <span>5.7</span>
+                  <span>×</span>
+                  <span>39</span>
+                  <span>&equals;</span>
+                  <span class="input_wrap answer1 medium">
+                    <math-field data-answer-single="222.3"></math-field>
+                  </span>
+                </div>
+                <!-- 1-2번박스 -->
+                <div class="fra_parens f32b flex align_center">
+                  <span>5.7</span>
+                  <span>×</span>
+                  <span>3.9</span>
+                  <span>&equals;</span>
+                  <span class="input_wrap answer2 medium">
+                    <math-field data-answer-single="22.23"></math-field>
+                  </span>
+                </div>
+              </div>
+              <div class="flex align_center dir_col">
+                <!-- 2-1번박스 -->
+                <div class="fra_parens f32b flex align_center">
+                  <span>5.7</span>
+                  <span>×</span>
+                  <span>0.39</span>
+                  <span>&equals;</span>
+                  <span class="input_wrap answer3 medium">
+                    <math-field data-answer-single="2.223"></math-field>
+                  </span>
+                </div>
+                <!-- 2-2번박스 -->
+                <div class="fra_parens f32b flex align_center">
+                  <span>0.57</span>
+                  <span>×</span>
+                  <span>0.39</span>
+                  <span>&equals;</span>
+                  <span class="input_wrap answer4 medium">
+                    <math-field data-answer-single="0.2223"></math-field>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section> 
+        
+    </div>
+  </body>
+</html>

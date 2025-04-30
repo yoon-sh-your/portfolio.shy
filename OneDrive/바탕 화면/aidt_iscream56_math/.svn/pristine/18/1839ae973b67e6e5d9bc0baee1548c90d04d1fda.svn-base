@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA516_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema516_04_0005.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_04.css">
+
+</head>
+<body>
+    <div id="app_wrap" class="ema516_04_su_0005" data-current-page="page_1, page_2">
+        <section class="title type2">
+            <h2 lang="y" data-head="3"><span class="dotted "><img src="../../common_contents/img/EMA516_04_SU/1㎠.png" alt=""></span>의 개수를 세어 도형의 넓이를 구해 봅시다.</h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <article class="page page_1">
+                <section class="title type2">
+                </section>
+                    <h3 lang="y"><span class="dotted"><img src="../../common_contents/img/EMA516_04_SU/1㎠.png" alt=""></span>의 개수를 세어 도형의 넓이는 <span class="dotted"><img src="../../common_contents/img/EMA516_04_SU/1㎠.png" alt=""></span> 의 몇 배인지 알아보세요.</h3>
+                        <div class="flex flexList">
+                                <div class="imgArea">
+                                    <img src="../../common_contents/img/EMA516_04_SU/05_bg.png" alt="">
+                                    <div class="diagram">
+                                        <img src="../../common_contents/img/EMA516_04_SU/sample1.png" alt="">
+                                    </div>
+                                    <div class="unit"><span>1 ㎠</span></div>
+                                    <div class="number1 number" style="display: none;"></div>
+                                    <div class="number2 number" style="display: none;"></div>
+                                    <div class="number3 number" style="display: none;"></div>
+                                    <div class="number4 number" style="display: none;"></div>
+                                </div>
+
+                                <div class="flex align_center">
+                                    <div class="input_wrap answer1">
+                                        <math-field data-answer-single="4"></math-field>
+                                        <span>배</span>
+                                    </div>
+                                </div>
+            </article><!-- 1page -->
+            
+            <article class="page page_2">
+                    <h3 lang="y">도형의 넓이는 몇 ㎠인지 구해 보세요.</h3>
+                        <div class="flex flexList">
+                                <div class="imgArea">
+                                    <img src="../../common_contents/img/EMA516_04_SU/sample.png" alt="">
+                                    <div class="unit"><span>1 ㎠</span></div>
+                                    <div class="number1"></div>
+                                </div> 
+
+                                    <div class="input_wrap answer2">
+                                        <math-field data-answer-single="4"></math-field>
+                                        <span>㎠</span>
+                                    </div>
+                                </div>
+            </article><!-- 2page -->
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

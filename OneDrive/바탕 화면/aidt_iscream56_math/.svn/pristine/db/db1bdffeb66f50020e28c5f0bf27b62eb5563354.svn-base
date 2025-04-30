@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_02_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema621_02_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_02_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              과학 기지의 식물 공장에서 비료
+              <span class="fraction_box"><span>7</span><span>10</span></span
+              >㎏을 화분 한 개에 <span class="fraction_box"><span>1</span><span>10</span></span
+              >㎏씩 나누어 주려고 합니다. 비료를 화분 몇 개에 나누어 줄 수 있는지 알아
+            </div>
+            <div class="fraction_txt" lang="y">봅시다.</div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="img_row flex align_start">
+          <div class="picture_wrap">
+            <img src="../../common_contents/img/EMA621_02_SU/0003_content.png" alt="자치회 활동 이미지" />
+            <button class="zoom"></button>
+          </div>
+
+          <div class="input_area">
+            <article class="page page_1">
+              <h3 lang="y">구하는 식을 써 보세요.</h3>
+              <div class="question_box justify_center">
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(7)/(10)÷(1)/(10)"></math-field>
+                </div>
+            </article>
+            <article class="page page_2">
+              <h3 lang="y">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <span class="fraction_box ml_0"><span>7</span><span>10</span></span
+                    >㎏ 을 그림에 나타내고, <span class="fraction_box"><span>7</span><span>10</span></span>㎏ 은 <span class="fraction_box"><span>1</span><span>10</span></span>
+                    이 몇 개인지 알아
+                  </div>
+                  <div class="fraction_txt" lang="y">보세요.</div>
+                </div>
+              </h3>
+              <div class="question_box justify_center">
+                <div class="box box1">
+                  <span class="tag">예</span>
+                  <div class="txt txt1">
+                    <span class="fraction_box"><span>1</span><span>10</span></span>
+                    <span lang="y">㎏</span>
+                  </div>
+                  <div class="boolean_count_wrap col" data-answer-single="7">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                  </div>
+                  <span class="txt txt2" lang="y">1(㎏)</span>
+                  <span class="txt txt3" lang="y">0</span>
+                </div>
+                <div class="box box2">
+                  <div class="input_wrap">
+                    <math-field type="number" data-answer-single="7"></math-field>
+                  </div>
+                  <span lang="y" class="f32b">개</span>
+                </div>
+              </div>
+            </article>
+            <article class="page page_3">
+              <h3 lang="y">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <span class="fraction_box ml_0"><span>7</span><span>10</span></span
+                    >㎏ 에서 <span class="fraction_box"><span>1</span><span>10</span></span>㎏ 을 몇 번 덜어 낼 수 있나요?
+                  </div>
+                </div>
+              </h3>
+              <div class="question_box justify_center">
+                <div class="input_wrap">
+                    <math-field type="number" data-answer-single="7"></math-field>
+                </div>
+                <span lang="y" class="f32b">번</span>
+              </div>
+            </article>
+            <article class="page page_4">
+                <h3 lang="y">                
+                    <div class="fraction_txt_wrap">
+                      <div class="fraction_txt">
+                          <span class="fraction_box ml_0"><span>7</span><span>10</span></span
+                          >&divide;<span class="fraction_box ml_0"><span>1</span><span>10</span></span> 은 얼마인가요?
+                        </div>
+                      </div>
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                        <math-field type="number" data-answer-single="7"></math-field>
+                    </div>
+                  </div>
+            </article>
+            <article class="page page_5">
+                <h3 lang="y">비료를 화분 몇 개에 나누어 줄 수 있나요?</h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                        <math-field type="number" data-answer-single="7"></math-field>
+                    </div>
+                    <span lang="y" class="f32b">개</span>
+                  </div>
+            </article>
+          </div>
+        </div>
+        
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <!-- <button class="btnSubmit">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

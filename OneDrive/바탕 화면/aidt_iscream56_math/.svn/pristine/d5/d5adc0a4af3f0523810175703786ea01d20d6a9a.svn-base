@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema524_11_su_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_11.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_11_su_0008">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3" lang="y">
+          <span class="blue line" lang="y">공부한 내용을 확인해요</span>
+          <span lang="y">내 힘으로 풀어요.</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="7_deep_green"  class="is_star" lang="y">어느 가게에서는 빈 세제 통을 가져오면 세제를 1 L당 3500원에 판매합니다. <br/>
+          세제를 은찬이는 2 L 샀고, 주아는 은찬이가 산 양의 1.4배만큼 샀습니다.<br/>
+          주아가 산 세제의 가격은 얼마인지 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align-start">
+          <h3 lang="y">지훈이와 서윤이가 만든 대분수를 각각 구해 보세요.</h3>
+          <span class="input_wrap answer1 f32b hint_170">
+            <span lang="y">(</span><math-field data-answer-single="2.8"></math-field><span>) L</span>
+          </span>
+          <h3 lang="y">주아가 산 세제의 가격은 얼마인가요?</h3>
+          <span class="input_wrap answer2 f32b hint_170">
+            <span lang="y">(</span><math-field data-answer-single="9800"></math-field><span>) 원</span>
+          </span>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

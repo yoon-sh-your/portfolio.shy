@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_03_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_03_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y"><span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.  </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_box">
+            <img src="../../common_practice/img/EMA515_03_IH/0004_img.svg" alt="" />
+            <div class="flex align_center gap_4">
+              +
+              <div class="fraction_box">
+                <span>9</span>
+                <span>10</span>
+              </div>
+            </div>
+            <div class="fraction_box">
+              <span>4</span>
+              <span>15</span>
+            </div>
+            <div class="mixed_fraction">
+              <div class="input_wrap">
+                <math-field data-answer-single="1" class="w_80"></math-field>
+              </div>
+              <div class="fraction_box">
+                <div class="input_wrap"><math-field data-answer-single="1"></math-field></div>
+                <div class="input_wrap"><math-field data-answer-single="6"></math-field></div>
+              </div>
+            </div>
+            <!-- <div class="input_wrap fraction_wrap">
+              <math-field
+                data-answer-single="1(1)/(6)"
+                data-answer-multi='{"values": ["1(1)/(6)", "(7)/(6)"]}'
+                data-multi-hint="y"></math-field>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex align_center">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <!--start solve-->
+                <div class="flex align_center gap_4 mt_20 mb_20">
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>15</span>
+                  </div>
+                  <span>+</span>
+                  <div class="fraction_box">
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span>8</span>
+                    <span>30</span>
+                  </div>
+                  <span>+</span>
+                  <div class="fraction_box">
+                    <span>27</span>
+                    <span>30</span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span class="slash">35<span class="slash_txt">7</span></span>
+                    <span class="slash">30<span class="slash_txt">6</span></span>
+                  </div>
+                  <span>=</span>
+                  <span class="fraction_box f32b">
+                    <span>7</span>
+                    <span>6</span>
+                  </span>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">1</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>6</span>
+                    </span>
+                  </div>
+                </div>
+                <!--end solve-->
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

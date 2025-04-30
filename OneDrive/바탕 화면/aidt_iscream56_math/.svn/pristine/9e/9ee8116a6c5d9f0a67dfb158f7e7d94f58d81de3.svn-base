@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_07_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_07_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y">수 카드 3장을 한 번씩만 사용하여 만들 수 있는 가장 큰 대분수와 가장 작은 대분수의 차를 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="question_box">
+            <div class="left">
+              <div class="img_box">
+                <img src="../../common_practice/img/EMA515_07_IH/0007_img.png" alt="" />
+              </div>
+            </div>
+            <div class="right">
+              <h3 class="title" lang="y">만들 수 있는 가장 큰 대분수와 가장 작은 대분수를<br />각각 구해 보세요.</h3>
+              <div class="flex justify_center">
+                <div class="flex dir_col align_end gap_20">
+                  <div class="flex align_center gap_12">
+                    <span lang="y">가장 큰 대분수:</span>
+                    <div class="mixed_fraction">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="7" class="w_80"></math-field>
+                      </div>
+                      <div class="fraction_box">
+                        <div class="input_wrap">
+                          <math-field data-answer-single="1"></math-field>
+                        </div>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="4"></math-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex align_center gap_12">
+                    <span lang="y">가장 작은 대분수:</span>
+                    <div class="mixed_fraction">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="1" class="w_80"></math-field>
+                      </div>
+                      <div class="fraction_box">
+                        <div class="input_wrap">
+                          <math-field data-answer-single="4"></math-field>
+                        </div>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="7"></math-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <!--start solve-->
+                  <div class="flex align_center gap_4">
+                    만들 수 있는 가장 큰 대분수는&nbsp;
+                    <div class="mixed_fraction">
+                      <span>7</span>
+                      <div class="fraction_box">
+                        <span>1</span>
+                        <span>4</span>
+                      </div>
+                    </div>
+                    이고, 가장 작은 대분수는
+                    <div class="mixed_fraction">
+                      <span>1</span>
+                      <div class="fraction_box">
+                        <span>4</span>
+                        <span>7</span>
+                      </div>
+                    </div>
+                    입니다.
+                  </div>
+                  <!--end solve-->
+                </div>
+              </div>
+              <!-- <div class="buttons_solve">
+                  
+              </div> -->
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="question_box">
+            <div class="left">
+              <div class="img_box">
+                <img src="../../common_practice/img/EMA515_07_IH/0007_img.png" alt="" />
+              </div>
+            </div>
+            <div class="right">
+              <h3 class="title" lang="y">앞에서 구한 두 분수의 차를 구해 보세요.</h3>
+              <div class="flex justify_center">
+                <div class="flex align_center">
+                  <div class="bracket">
+                    <span class="bracket-l"></span>
+                    <div class="mixed_fraction">
+                      <div class="input_wrap">
+                        <math-field data-answer-single="5" class="w_80"></math-field>
+                      </div>
+                      <div class="fraction_box">
+                        <div class="input_wrap">
+                          <math-field data-answer-single="19"></math-field>
+                        </div>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="28"></math-field>
+                        </div>
+                      </div>
+                    </div>
+                    <span class="bracket-r"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <!--start solve-->
+                  <div class="flex align_center gap_4">
+                    <div class="mixed_fraction">
+                      <span>7</span>
+                      <div class="fraction_box">
+                        <span>1</span>
+                        <span>4</span>
+                      </div>
+                    </div>
+                    <span>-</span>
+                    <div class="mixed_fraction">
+                      <span>1</span>
+                      <div class="fraction_box">
+                        <span>4</span>
+                        <span>7</span>
+                      </div>
+                    </div>
+                    <span>=</span>
+                    <div class="mixed_fraction">
+                      <span>7</span>
+                      <div class="fraction_box">
+                        <span>7</span>
+                        <span>28</span>
+                      </div>
+                    </div>
+                    <span>-</span>
+                    <div class="mixed_fraction">
+                      <span>1</span>
+                      <div class="fraction_box">
+                        <span>16</span>
+                        <span>28</span>
+                      </div>
+                    </div>
+                    <span>=</span>
+                    <div class="mixed_fraction">
+                      <span>6</span>
+                      <div class="fraction_box">
+                        <span>35</span>
+                        <span>28</span>
+                      </div>
+                    </div>
+                    <span>-</span>
+                    <div class="mixed_fraction">
+                      <span>1</span>
+                      <div class="fraction_box">
+                        <span>16</span>
+                        <span>28</span>
+                      </div>
+                    </div>
+                    <span>=</span>
+                    <div class="mixed_fraction">
+                      <span>5</span>
+                      <div class="fraction_box">
+                        <span>19</span>
+                        <span>28</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!--end solve-->
+                </div>
+              </div>
+              <!-- <div class="buttons_solve">
+                  
+              </div> -->
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

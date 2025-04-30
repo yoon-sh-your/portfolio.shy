@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_05_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="../../common_practice/js/ema511_ih.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_05_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6" class="is_star" lang="y">다음 요리법대로 소금빵을 만들려고 합니다. 소금 10 g으로 소금빵을 몇 개 만들 수 있는지 식을 쓰고 답을 구해 보세요.</h2>
+			</section>
+
+			<section class="contents">
+				<div class="flex dir_col align_center gap_40">
+					<div class="img_box">
+						<img src="../../common_practice/img/EMA621_05_IH/0006_img.png" alt="">
+						<span class="txt1" lang="y">소금빵 만들기(&nbsp;&nbsp;&nbsp;개)</span>
+						<span class="txt2" lang="y">*재료</span>
+						<div class="txt3" lang="y">
+							소금
+							<div class="fraction_box">
+								<span>2</span>
+								<span>3</span>
+							</div>
+							g
+						</div>
+					</div>
+					<div class="question_box gap_120">
+						<div class="flex gap_12">
+							<span class="label_gray" lang="y">식</span>
+							<div class="flex align_center gap_4">
+								<div class="input_wrap fraction_wrap">
+									<math-field data-answer-single="10-:(2)/(3)"></math-field>
+								</div>
+								=
+								<div class="input_wrap">
+									<math-field data-answer-single="15"></math-field>
+								</div>
+							</div>
+						</div>
+						<div class="flex gap_10">
+							<span class="label_gray" lang="y">답</span>
+							<div class="flex align_end gap_4">
+								<div class="input_wrap">
+									<math-field data-answer-single="15"></math-field>
+								</div>
+								<span lang="y">개</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+ㄴ						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_06_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_06.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_06_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y">
+          수 카드 3장을 한 번씩만 사용하여 다음과 같은 식을 만들려고 합니다. 계산 결과가 가장 크게 되도록  안에 알맞은 수를 써넣고,
+          만든 식을 계산해 보세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center flex_column gap_80">
+          <div class="img_box">
+            <div class="img_wrap">
+              <img src="../../common_practice/img/EMA511_06_IH/0007_img.png" alt="" />
+            </div>
+          </div>
+          <div class="question_box dir_col align_end gap_20">
+            <div class="flex align_center gap_12">
+              <span lang="y" class="hidden">식:</span>
+              <span>(</span>
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="2 또는 4" data-answer-multi='{"values": ["2", "4"]}'></math-field>
+              </div>
+              <span>+</span>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="4 또는 2" data-answer-multi='{"values": ["2", "4"]}'></math-field>
+              </div>
+              <span>) ×</span>
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="7"></math-field>
+              </div>
+              <span> - 20 ÷ 4</span>
+            </div>
+            <div class="flex align_center gap_12">
+              <span>(</span>
+              <span lang="y" class="hidden">답:</span>
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="37"></math-field>
+              </div>
+              <span>)</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">계산 결과가 가장 크려면 곱하는 수에 가장 큰 수를 써넣어야 합니다.</p>
+                <p lang="y">따라서 계산 결과가 가장 큰 식은 (2+4)×7-20÷4 또는 (4+2)×7-20÷4입니다.</p>
+
+                <table>
+                  <tr>
+                    <td>➔ (2+4)×7-20÷4</td>
+                    <td>=6×7-20÷4</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=42-20÷4</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=42-5</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=37</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

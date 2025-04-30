@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_06_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_06_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">잘못 계산한 곳을 찾아 이유를 쓰고, 옳게 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA611_06_IH/0006_01.png" alt="" />
+            <div class="overlay">
+              <div class="l_left">
+                <div class="text_box">
+                  1
+                  <div class="fraction_box"><span>5</span><span>12</span></div>
+                  ÷5=
+                  <div class="fraction_box"><span>5÷5</span><span>12</span></div>
+                  =1
+                  <div class="fraction_box"><span>5</span><span>12</span></div>
+                </div>
+                <dl>
+                  <dt lang="y">이유</dt>
+                  <dd>
+                    <div class="input_wrap">
+                      <math-field class="textarea"></math-field>
+                      <div class="example_box">
+                        <p lang="y">대분수를 가분수로 바꾸어 계산하지 않았습니다.</p>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="l_right">
+                <dl>
+                  <dt lang="y">옳은 계산</dt>
+                  <dd>
+                    1
+                    <div class="fraction_box"><span>5</span><span>12</span></div>
+                    ÷5=
+                    <div class="input_wrap fraction_wrap">
+                      <math-field text-align="center" class="w_80" data-answer-single="(17)/(12)÷5"></math-field>
+                      <!-- <div class="example_box">
+												<div class="mixed_fraction">
+													<div class="fraction_box">
+														<span>17</span>
+														<span>12</span>
+													</div>
+													<span>÷5</span>
+												</div>
+											</div> -->
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap">
+                      <math-field text-align="center" data-answer-single="(17)/(15)×(1)/(5)" class="w_80"></math-field>
+                      <!-- <div class="example_box">
+												<div class="mixed_fraction">
+													<div class="fraction_box">
+														<span>17</span>
+														<span>12</span>
+													</div>
+													<span>×</span>
+													<div class="fraction_box">
+														<span>1</span>
+														<span>5</span>
+													</div>
+												</div>
+											</div> -->
+                    </div>
+                    =
+                    <div class="input_wrap fraction_wrap">
+                      <math-field text-align="center" data-answer-single="(17)/(60)" class="w_80"></math-field>
+                      <!-- <div class="example_box">
+												<div class="mixed_fraction">
+													<div class="fraction_box">
+														<span>17</span>
+														<span>60</span>
+													</div>
+												</div>
+											</div> -->
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(대분수)÷(자연수)는 대분수를 자연수 부분과 진분수 부분으로 나누어 계산하거나 대분수를 가분수로 바꾸어 계산해야 하는데 주어진 계산 에서는 대분수의 진분수 부분 중 분자만 자연수로 나누어 잘못 계산했습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

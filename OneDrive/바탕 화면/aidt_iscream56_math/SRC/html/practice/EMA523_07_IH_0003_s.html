@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_07_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_07_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">점 ㅇ을 대칭의 중심으로 하는 점대칭도형입니다. 대응점, 대응변, 대응각을 각각 찾아 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA523_07_IH/0003_01.png" alt="" />
+          </div>
+          <div class="table_wrap">
+            <table>
+              <colgroup>
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th lang="y" scope="row" rowspan="2">대응점</th>
+                  <td>
+                    <span lang="y">점 ㄱ과 점</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㄹ" text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span lang="y">점 ㄷ과 점</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅂ" text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y" scope="row" rowspan="2">대응변</th>
+                  <td>
+                    <span lang="y">변 ㄱㄴ과 변</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㄹㅁ" data-answer-multi='{"values": ["ㄹㅁ", "ㅁㄹ"]}' text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span lang="y">변 ㄷㄹ과 변</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅂㄱ" data-answer-multi='{"values": ["ㅂㄱ", "ㄱㅂ"]}' text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y" scope="row" rowspan="2">대응각</th>
+                  <td>
+                    <span lang="y">각 ㄴㄷㄹ과 각</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅁㅂㄱ" data-answer-multi='{"values": ["ㅁㅂㄱ", "ㄱㅂㅁ"]}' text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span lang="y">각 ㄷㄹㅁ과 각</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅂㄱㄴ" text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">점 ㅇ을 중심으로 180° 돌리면 점 ㄱ과 점 ㄹ이 겹치고, 점 ㄷ과 점 ㅂ이 겹칩니다.</p>
+                <p lang="y" class="text_bullet">점 ㅇ을 중심으로 180° 돌리면 변 ㄱㄴ과 변 ㄹㅁ이 겹치고, 변 ㄷㄹ과 변 ㅂㄱ이 겹칩니다.</p>
+                <p lang="y" class="text_bullet">점 ㅇ을 중심으로 180° 돌리면 각 ㄴㄷㄹ과 각 ㅁㅂㄱ이 겹치고, 각 ㄷㄹㅁ과 각 ㅂㄱㄴ이 겹칩니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

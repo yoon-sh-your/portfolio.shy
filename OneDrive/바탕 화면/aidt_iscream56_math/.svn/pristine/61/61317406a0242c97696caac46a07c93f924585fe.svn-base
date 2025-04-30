@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_05_SU_0008_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_06.css" />
+  <script src="../../common_contents/js/ema523_05_0008.js"></script>
+  
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_05_su_0008">
+    <section class="title type2">
+      <h2 data-type="4" data-text="창의+" lang="y">도형판에 선대칭도형을 만들어 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">대칭축으로 할 선분을 나타내고, 선분의 한쪽에 나만의 도형을 만들어 보세요.​</h3>
+        <div class="input_area flex align_center justify_center">
+          <span><img src="../../common_contents/img/EMA523_05_SU/0008_content.png" alt="이미지"></span>
+          <div class="figure_box">
+            <div class="drawline_grid">
+                <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+                <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+                <div class="drawing_grid_area"
+                  data-grid-size='32'
+                  data-answer-single='[]' data-sample-line='[]'>
+                  <svg class="line_canvas"></svg>
+                </div>
+                <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">친구가 만든 도형을 선대칭도형이 되도록 완성해 보세요.​</h3>
+        <div class="input_area flex align_center justify_center">
+          <span><img src="../../common_contents/img/EMA523_05_SU/0008_content.png" alt="이미지"></span>
+          <div class="figure_box">
+            <div class="drawline_grid">
+                <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+                <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+                <div class="drawing_grid_area"
+                  data-grid-size='32'
+                  data-answer-single='[]' data-sample-line='[]'>
+                  <svg class="line_canvas"></svg>
+                </div>
+                <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">완성한 도형이 선대칭도형인지 확인해 보세요.​</h3>
+        <div class="text_area">
+          <div class="input_wrap mt_20 align_center justify_center">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">대응변의 길이와 대응각의 크기가 같고, 대응점끼리 이은 선분이 대칭축과 수직으로 만나며 대응점에서 대칭축까지의 거리가 같으므로 완성한 도형은 선대칭도형입니다.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

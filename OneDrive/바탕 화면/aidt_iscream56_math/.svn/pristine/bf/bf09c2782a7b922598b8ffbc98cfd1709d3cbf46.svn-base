@@ -1,0 +1,53 @@
+/* EMA525_SU_0002_s  */
+/* -------------------------------- 놀이방법 페이지 -------------------------------- */
+  
+.play-howto-layout {
+  .title {
+    h2[data-type="2"] {
+      .howto {
+        /* &.num1 {
+          width: 95%;
+        }
+        &.num2 {
+          width: 95%;
+        } */
+        &.num3 {
+          /* width: 95%; */
+          padding-left: 135px;
+          &::before {
+            width: 82px;
+            background: url("../../common_contents/img/EMA525_SU/3-1.png") no-repeat center/ contain;
+          }
+        }
+        &.num4 {
+          /* width: 95%; */
+          padding-left: 135px;
+          &::before {
+            width: 82px;
+            background: url("../../common_contents/img/EMA525_SU/3-2.png") no-repeat center/ contain;
+          }
+        }
+        &.num5 {
+          /* width: 95%; */
+          &::before {
+            background: url("../common/img/icon_howto_num_4.svg") no-repeat center/ contain;
+          }
+        }
+        .small_num {
+          &.num_s1 {
+            &::before {
+              left: 10px;
+              background: url(../common/img/icon_howto_num_1.svg) no-repeat center/ contain;
+            }
+          }
+          &.num_s3 {
+            &::before {
+              left: -40px;
+              background: url(../common/img/icon_howto_num_s3.svg) no-repeat center/ contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}

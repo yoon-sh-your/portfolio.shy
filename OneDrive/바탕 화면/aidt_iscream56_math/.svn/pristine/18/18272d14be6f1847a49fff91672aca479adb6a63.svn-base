@@ -1,0 +1,588 @@
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+
+/* EMA521_03_SU_0002_s */
+.ema521_03_su_0002 .contents > .img_row .video_wrap {
+  background: url(../../common_contents/img/EMA521_03_SU/0002_content.png) no-repeat -2px -10px;
+  background-size: 115%;
+}
+
+
+/* EMA521_03_SU_0003_s */
+.ema521_03_su_0003 .student_tall {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+.ema521_03_su_0003 .student_tall > .item {
+  position: relative;
+  width: 152px;
+  height: 235px;
+  border-radius: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ema521_03_su_0003 .student_tall > .item:not(button){
+  display: flex;
+  align-items: center;
+  border: 4px solid transparent;
+  aspect-ratio: 1 / 1;
+}
+.ema521_03_su_0003 .student_tall > .item:nth-child(1) {
+  background: url(../../common_contents/img/EMA521_03_SU/0003_bg_content_01.png) left bottom no-repeat;
+  background-size: 145px;
+}
+.ema521_03_su_0003 .student_tall > .item:nth-child(2) {
+  background: url(../../common_contents/img/EMA521_03_SU/0003_bg_content_02.png) left bottom no-repeat;
+  background-size: 145px;
+}
+.ema521_03_su_0003 .student_tall > .item:nth-child(3) {
+  background: url(../../common_contents/img/EMA521_03_SU/0003_bg_content_03.png) left bottom no-repeat;
+  background-size: 145px;
+}
+.ema521_03_su_0003 .student_tall > .item:nth-child(4) {
+  background: url(../../common_contents/img/EMA521_03_SU/0003_bg_content_04.png) left bottom no-repeat;
+  background-size: 145px;
+}
+.ema521_03_su_0003 .student_tall > .item:nth-child(5) {
+  background: url(../../common_contents/img/EMA521_03_SU/0003_bg_content_05.png) left bottom no-repeat;
+  background-size: 145px;
+}
+.ema521_03_su_0003 .student_tall > .item .s_name {
+  color: #FFF;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  position: absolute;
+  bottom: 0px;
+  right: 7px;
+}
+.ema521_03_su_0003 .student_tall > .item .num {
+  color: #000;
+  text-align: left;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+.ema521_03_su_0003 .student_tall > button:focus .s_name,
+.ema521_03_su_0003 .student_tall > button.selected .s_name {
+  right: 8px;
+}
+.ema521_03_su_0003 .student_tall > button.selected,
+.ema521_03_su_0003 .student_tall > button.hint {
+  border-color:transparent;
+}
+.ema521_03_su_0003 .student_tall > button.selected::after,
+.ema521_03_su_0003 .student_tall > button.hint::after {
+  content:"";
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+  border-color: var(--font-main);
+  border: 4px solid;
+}
+.ema521_03_su_0003 .student_tall > button[data-answer-single="true"].correct::after, 
+.ema521_03_su_0003 .student_tall > button[data-answer-single="true"].correct.selected::after{
+  border-color: var(--primary-blue);
+  background: rgba(59, 113, 254, 0.30);
+  border-width: 6px;
+}
+.ema521_03_su_0003 .student_tall > button[data-answer-single="false"].selected::after {
+  border: 4px solid var(--font-main);
+  background-color: transparent;
+}
+.ema521_03_su_0003 .student_tall > button[data-answer-single="true"].hint::after {
+  border: 6px solid var(--secondary-red);
+  background: rgb(238, 79, 36, 0.30);
+}
+
+
+.ema521_03_su_0003 .student_tall + .flex {
+  margin: 12px auto 0 auto;
+  width: 1208px;
+}
+.ema521_03_su_0003 .student_tall + .flex > .input_wrap {
+  width: 100%;
+}
+.ema521_03_su_0003 .student_tall + .flex > .input_wrap math-field.textarea {
+  min-height: 70px;
+}
+.ema521_03_su_0003 .summarize .cont_set {
+  gap: 32px;
+}
+.ema521_03_su_0003 .summarize .cont_set .left-side {
+  position: relative;
+  width: 700px;
+}
+.ema521_03_su_0003 .summarize .cont_set .left-side > p {
+  position: absolute;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+.ema521_03_su_0003 .summarize .cont_set .left-side > p.t01 {
+  top: 30px;
+  left: 40px;
+}
+.ema521_03_su_0003 .summarize .cont_set .left-side > p.t02 {
+  top: 30px;
+  left: 184px;
+}
+.ema521_03_su_0003 .summarize .cont_set .left-side > p.t03 {
+  top: 30px;
+  left: 331px;
+}
+.ema521_03_su_0003 .summarize .cont_set .left-side > p.t04 {
+  top: 30px;
+  left: 478px;
+}
+.ema521_03_su_0003 .summarize .cont_set .left-side > p.t05 {
+  top: 30px;
+  right: 40px;
+}
+.ema521_03_su_0003 .summarize .cont_set .right-side {
+  position: relative;
+  width: 385px;
+  height: 166px;
+  background: url(../../common_contents/img/EMA521_03_SU/0003_bg_check_02.png) left center no-repeat;
+  background-size: 100%;
+}
+.ema521_03_su_0003 .summarize .cont_set .right-side > p.t06 {
+  position: absolute;
+  top: 42px;
+  left: 17px;
+  color: #6A6A6A;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+}
+.ema521_03_su_0003 .summarize .cont_set .right-side .red-dot {
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #d02e25;
+  position: relative;
+  top: 3px;
+}
+.ema521_03_su_0003 .btnType, 
+.ema521_03_su_0003 .btnSample {
+  display: none;
+}
+.ema521_03_su_0003[data-current-page='page_2'] .btnType, 
+.ema521_03_su_0003[data-current-page='page_2'] .btnSample {
+  display: block;
+}
+.ema521_03_su_0003[data-current-page='page_2'] .btnCheck {
+  display: none;
+}
+.ema521_03_su_0003[data-current-page='page_3'] .title {
+  display: none;
+}
+
+
+/* EMA521_03_SU_0004_s */
+.ema521_03_su_0004 .long_run {
+  position: relative;
+  margin: 0 auto;
+  width: 1281px;
+  height: 205px;
+  background: url(../../common_contents/img/EMA521_03_SU/0004_bg_content.png) left center no-repeat;
+  background-size: 100%;
+}
+.ema521_03_su_0004 .long_run .tit {
+  margin-bottom: 15px;
+  text-align: center;
+  color: #222;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+.ema521_03_su_0004 .boolean_wrap {
+  display: flex;
+}
+.ema521_03_su_0004 .boolean_wrap .item {
+  position: relative;
+  width: 200px;
+  height: 140px;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.ema521_03_su_0004 .boolean_wrap .item:first-child {
+  width: 252px;
+  text-align: center;
+}
+.ema521_03_su_0004 .boolean_wrap .item > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+.ema521_03_su_0004 .boolean_wrap > button.selected,
+.ema521_03_su_0004 .boolean_wrap > button.hint {
+  border-color: transparent;
+}
+.ema521_03_su_0004 .boolean_wrap > button.selected::after,
+.ema521_03_su_0004 .boolean_wrap > button.hint::after {
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+  border-radius: 100px;
+  border-color: var(--font-main);
+  border: 4px solid;
+}
+.ema521_03_su_0004 .boolean_wrap > button[data-answer-single="true"].correct::after, 
+.ema521_03_su_0004 .boolean_wrap > button[data-answer-single="true"].correct.selected::after{
+  border-color: var(--primary-blue);
+  background: rgba(59, 113, 254, 0.30);
+  border-width: 6px;
+}
+.ema521_03_su_0004 .boolean_wrap > button[data-answer-single="false"].selected::after {
+  border: 4px solid var(--font-main);
+  background-color: transparent;
+}
+.ema521_03_su_0004 .boolean_wrap > button[data-answer-single="true"].hint::after {
+  border: 6px solid var(--secondary-red);
+  background: rgb(238, 79, 36, 0.30);
+}
+
+
+.ema521_03_su_0004 .long_run + .flex {
+  margin: 12px auto 0 auto;
+  width: 1281px;
+}
+.ema521_03_su_0004 .long_run + .flex > .input_wrap {
+  width: 100%;
+  max-width: 100%;
+}
+.ema521_03_su_0004 .long_run + .flex > .input_wrap math-field.textarea {
+  min-height: 80px;
+}
+
+.ema521_03_su_0004 .summarize .cont_set {
+  margin-top: 30px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side {
+  position: relative;
+  width: 1059px;
+  height: 94px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p {
+  position: absolute;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p.t01 {
+  top: 40px;
+  left: 45px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p.t02 {
+  top: 40px;
+  left: 201px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p.t03 {
+  top: 40px;
+  left: 360px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p.t04 {
+  top: 40px;
+  left: 518px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p.t05 {
+  top: 40px;
+  right: 360px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p.t06 {
+  top: 40px;
+  right: 202px;
+}
+.ema521_03_su_0004 .summarize .cont_set .left-side > p.t07 {
+  top: 40px;
+  right: 45px;
+}
+.ema521_03_su_0004 .btnType, 
+.ema521_03_su_0004 .btnSubmit {
+  display: none;
+}
+.ema521_03_su_0004[data-current-page='page_2'] .btnType, 
+.ema521_03_su_0004[data-current-page='page_2'] .btnSubmit {
+  display: block;
+}
+.ema521_03_su_0004[data-current-page='page_2'] .btnCheck {
+  display: none;
+}
+.ema521_03_su_0004[data-current-page='page_3'] .title {
+  display: none;
+}
+
+
+/* EMA521_03_SU_0005_s */
+.ema521_03_su_0005 .compare_number {
+  position: relative;
+  margin: 0 auto;
+  width: 1175px;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.ema521_03_su_0005 .compare_number + .compare_number {
+  margin-top: 95px;
+} 
+.ema521_03_su_0005 .compare_number .ruler-img {
+  position: relative;
+  width: 786px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p {
+  position: absolute;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -0.5px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t01 {
+  top: 38px;
+  left: 55px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t02 {
+  top: 38px;
+  left: 216px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img> p.t03 {
+  top: 38px;
+  left: 380px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t04 {
+  top: 38px;
+  left: 545px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t05 {
+  top: 38px;
+  left: 710px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t06 {
+  top: 38px;
+  left: 49px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t07 {
+  top: 38px;
+  left: 215px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img> p.t08 {
+  top: 38px;
+  left: 380px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t09 {
+  top: 38px;
+  left: 545px;
+}
+.ema521_03_su_0005 .compare_number .ruler-img > p.t10 {
+  top: 38px;
+  left: 712px;
+}
+.ema521_03_su_0005 .compare_number .boolean_wrap {
+  justify-content: center;
+  gap: 5px;
+  width: 353px;
+  height: 102px;
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px; 
+  letter-spacing: -1px;
+  background: url(../../common_contents/img/EMA521_03_SU/0005_bg_txt.png) left center no-repeat;
+  background-size: 100%;
+}
+.ema521_03_su_0005 .compare_number .boolean_wrap > button {
+  width: 62px;
+  height: 62px;
+  padding: 0;
+  background-color: transparent;
+  letter-spacing: -1px;
+}
+.ema521_03_su_0005 .compare_number .boolean_wrap > button.hint {
+  border-width: 4px;
+}
+.ema521_03_su_0005 .compare_number .boolean_wrap > button.hint[data-answer-single="true"] {
+  border-width: 4px;
+  border-color: #3B71FE;
+  background: rgba(59, 113, 254, 0.30);
+}
+
+
+/* EMA521_03_SU_0006_s */
+.ema521_03_su_0006 .ico_circle {
+  width: 32px;
+  height: 32px;
+  background: url(../../common_contents/img/EMA521_03_SU/ico_circle.svg) left center no-repeat;
+  background-size: 100%;
+  margin-right: -5px;
+}
+.ema521_03_su_0006 .ico_triangle {
+  width: 32px;
+  height: 32px;
+  background: url(../../common_contents/img/EMA521_03_SU/ico_triangle.svg) left center no-repeat;
+  background-size: 100%;
+  margin-right: -5px;
+}
+.draggable_wrap {
+  margin: 0 auto;
+}
+.draggable_wrap {
+  display: flex;
+  gap: 20px;
+  width: 300px;
+  height: 108px;
+  padding: 10px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 0.797px solid var(--Line-Gray-300, #d2d2d2);
+  background: var(--BG-Gray-50, #f7f7f7);
+  position: relative;
+}
+.draggable_wrap .triangle{
+  transform: translateY(5px);
+}
+/* 움직일 도형 */
+.triangle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_triangle_.svg) no-repeat center center / 100%;
+  width: 70px;
+  height: 70px;
+}
+.circle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_circle_.svg) no-repeat center center / 100%;
+  width: 70px;
+  height: 70px;
+}
+/* 매칭 박스 wrap */
+.drag_group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  padding: 10px 50px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.drag_group.g1 {
+  background-image: url(../../common_contents/img/EMA521_02_SU/0006_bg_contents.png);
+  background-size: contain;
+  height: 120px;
+  margin-top: 40px;
+}
+/* 매칭 숫자들 */
+.droppable {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 70px;
+  background-image: none;
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+/* 드래그 후 매칭숫자 하위에 생기는 div */
+.droppable .ui-draggable-handle {
+  top: -100%;
+}
+/* 제출전 하위div */
+.droppable[data-value="true true"] .ui-draggable-handle {
+  position: absolute !important;
+  top: 0;
+}
+/* 제출후 상태 */
+/* 힌트 */
+/* 삼각형 단일 */
+.drag_group.hint .droppable[data-value="true,false"].triangle,
+.drag_group.hint .droppable[data-value="true,false"] .ui-draggable-handle.triangle,
+.drag_group.hint .droppable[data-value="true,false"].incorrect .ui-draggable-handle.circle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_triangle_hint.svg) no-repeat center center / 100%;
+}
+/* 원형단일 */
+.drag_group.hint .droppable[data-value="false,true"].circle,
+.drag_group.hint .droppable[data-value="false,true"] .ui-draggable-handle.circle, 
+.drag_group.hint .droppable[data-value="false,true"].incorrect .ui-draggable-handle.triangle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_circle_hint.svg) no-repeat center center / 100%;
+}
+/* 삼각형+원형 */
+.drag_group.hint .droppable[data-value="true,true"].circle.triangle,
+.drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.circle,
+.drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.triangle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_together_hint.svg) no-repeat center center / 100%;
+}
+/* 하위 div */
+.droppable[data-value="true,true"] .ui-draggable-handle,
+.droppable[data-value="false,true"] .ui-draggable-handle,
+.droppable[data-value="true,false"] .ui-draggable-handle,
+.droppable[data-value="false,false"] .ui-draggable-handle {
+  position: absolute !important;
+  top: 0;
+}
+
+.droppable[data-value="false,false"] .ui-draggable-handle {
+  background:none;
+}
+/* 하위div 힌트*/
+.drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.circle,
+.drag_group.hint .droppable[data-value="true,true"] .ui-draggable-handle.triangle,
+.drag_group.hint .droppable[data-value="false,true"] .ui-draggable-handle.circle.drag_group.hint .droppable[data-value="true,false"] .ui-draggable-handle.triangle {
+  position: absolute !important;
+  top: 0;
+}
+/* 정답 */
+.drag_group.correct .triangle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_triangle_correct.svg) no-repeat center center / 100%;
+}
+.drag_group.correct .circle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_circle_correct.svg) no-repeat center center / 100%;
+}
+.drag_group.correct .circle.triangle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_together_correct.svg) no-repeat center center / 100%;
+}
+
+/* 원형단일 */
+.drag_group.hint .droppable[data-value="false,true"].correct .ui-draggable-handle.circle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_circle_correct.svg) no-repeat center center / 100%;
+}
+.drag_group.hint .droppable[data-value="true,false"].correct .ui-draggable-handle.triangle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_triangle_correct.svg) no-repeat center center / 100%;
+}
+.drag_group.hint .droppable[data-value="false,true"].correct .ui-draggable-handle.circle {
+  background: url(../../common_contents/img/EMA521_02_SU/ico_drag_circle_correct.svg) no-repeat center center / 100%;
+}

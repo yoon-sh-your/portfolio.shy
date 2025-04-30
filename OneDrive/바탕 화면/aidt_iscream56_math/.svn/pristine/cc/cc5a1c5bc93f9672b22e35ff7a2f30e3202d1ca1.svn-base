@@ -1,0 +1,253 @@
+
+
+.ema523_03_su_0004 .custom_select {
+  width:190px;
+}
+.ema523_03_su_0004 .figure_wrap {
+  display: flex;
+  align-items: center;
+  width: 1385px;
+  margin: 0 auto;
+  gap:130px;
+}
+
+.ema523_03_su_0004 .figure_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:826px;
+  height: 226px;
+  background: url(../img/EMA523_03_SU/0004_01_content.png) no-repeat 0 0;
+  gap:150px;
+
+  .figure_triangle {
+    position:relative;
+    width: 262px;
+    height: 100%;
+
+    > span {
+      position:absolute;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .txt_1 {
+      top: 5px;
+      left: 116px;
+    }
+    .txt_2 {
+      bottom:13px;
+      left: -27px;
+    }
+    .txt_3 {
+      bottom:13px;
+      right: -27px;
+    }
+    .txt_4 {
+      top:5px;
+      right: -27px;
+    }
+    .txt_5 {
+      top:5px;
+      left: -27px;
+    }
+    .txt_6 {
+      bottom:13px;
+      left: -27px;
+    }
+    .txt_7 {
+      top: 5px;
+      right: 118px;
+    }
+    .txt_8 {
+      bottom:13px;
+      right: -27px;
+    }
+  }
+}
+
+.ema523_03_su_0004 .connect_box_wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ema523_03_su_0004 .connect_wrap {
+  width:165px
+}
+.ema523_03_su_0004 .connect_text_box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.ema523_03_su_0004 .connect_text_box li{
+  font-size:32px;
+  font-weight: 700;
+}
+.ema523_03_su_0004 .start_group, .ema523_03_su_0004 .end_group {
+  gap: 67px;
+}
+
+.ema523_03_su_0004[data-current-page='page_1'] .question_box,
+.ema523_03_su_0004[data-current-page='page_2'] .question_box {
+  padding-left:82px;
+}
+
+
+
+.ema523_03_su_0004 .btnType,
+.ema523_03_su_0004 .btnSubmit,
+.ema523_03_su_0004[data-current-page='page_4'] section.title,
+.ema523_03_su_0004[data-current-page='page_4'] .btnType,
+.ema523_03_su_0004[data-current-page='page_4'] .btnSubmit {
+  display: none;
+}
+.ema523_03_su_0004[data-current-page='page_3'] .btnType.key,
+.ema523_03_su_0004[data-current-page='page_3'] .btnSubmit,
+.ema523_03_su_0004.ema523_03_su_0006[data-current-page='page_3'] .btnCheck {
+  display: block;
+}
+.ema523_03_su_0004[data-current-page='page_3'] .btnCheck {
+  display: none;
+}
+
+.ema523_03_su_0004 .input_wrap {
+  width: 1208px;
+}
+.ema523_03_su_0004 .input_wrap math-field:not(.textarea) {
+  width: 80px;
+  height: 40px;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+}
+.ema523_03_su_0004 .input_wrap math-field.textarea {
+  height: 313px;
+}
+
+/*EMA523_03_SU_0005_s*/
+ .ema523_03_su_0005 .content_wrap {
+  position: relative;
+
+  .content_box {
+    position: absolute;
+    width:400px;
+    height: 316px;
+    top:0;
+
+    > div {
+      position: absolute;
+      font-size:32px;
+      font-weight: 700;
+    }
+
+    &.box1 {
+      .length1 {
+        top: 113px;
+        right: 40px;
+      }
+      .length2 {
+        bottom: 10px;
+        right: 90px;
+      }
+    }
+
+    &.box2 {
+      right: 0;
+
+      .length1 {
+        top: 23px;
+        left: 10px;
+      }
+      .length2 {
+        bottom: 60px;
+        left: -37px;
+      }
+    }
+    .input_form {
+      display: flex;
+      align-items: center;
+      &.input1 {
+        top: 20px;
+        right: -113px;
+        align-items: center;
+  
+        span {
+          margin-left: 4px;
+        }
+      }
+      &.input2 {
+        top: 120px;
+        left: 40px;
+        align-items: flex-start;
+      }
+    }
+    
+    .input_wrap {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+ }
+
+ /*EMA523_03_SU_0006_s*/
+ .ema523_03_su_0006 .figure_wrap {
+  width:1220px;
+  gap:100px;
+
+  .figure_box {
+    width:688px;
+    height: 441px;
+    justify-content: space-evenly;
+    background-image: url(../img/EMA523_03_SU/0006_01_content.png);
+    gap:20px;
+
+    .figure_triangle:nth-child(1) {
+      width:200px;
+      .txt_1 {
+        top: auto;
+        bottom: 203px;
+        left: 116px;
+      }
+      .txt_2 {
+        bottom: 104px;
+        left: -23px;
+      }
+      .txt_3 {
+        bottom: 104px;
+        right: -30px
+      }
+    }
+    .figure_triangle:nth-child(2) {
+      width:363px;
+      .txt_4 {
+        top: 205px;
+        left: 60px;
+        right: auto;
+      }
+      .txt_5 {
+        top: 205px;
+        left: 298px;
+      }
+      .txt_6 {
+        bottom: 87px;
+        left: 151px;
+      }
+    }
+   }
+ }
+
+ /*준비물 아이콘*/
+.icon_badge {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  padding: 0 20px;
+  min-width: 90px;
+  margin-left: 12px;
+  background: var(--primary-blue);
+  border-radius: 12px;
+  line-height: 65px;
+  height: 56px;
+}

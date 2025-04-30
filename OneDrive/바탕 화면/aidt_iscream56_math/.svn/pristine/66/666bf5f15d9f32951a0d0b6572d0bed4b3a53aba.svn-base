@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema516_17_su_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema511_08_0002.js"></script>
+
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_17.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="drawline ema516_17_0007">
+      <div class="scroll_page">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 4">
+            <span class="blue line" lang="y">확인하고 정리해요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+        </section>
+
+        <section class="title type2 jgjd_4_sub_title">
+          <h2>
+            <div class="title_row">
+              <span class="nemo_blank"></span>
+              <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+            </div>
+          </h2>
+        </section>
+
+        <section class="contents">
+          <div class="scroll_area">
+            <div class="margin_center">
+              <ul>
+                <li lang="y">(정다각형의 둘레)=(한 변의 길이)×(변의 수)</li>
+                <li lang="y">(직사각형의 둘레)=(가로&divide;세로)×2</li>
+                <li lang="y">(평행사변형의 둘레)=(한 변의 길이+이웃한 변의 길이)×2</li>
+                <li lang="y">
+                  (마름모의 둘레)=(한 변의 길이)×
+                  <div class="input_wrap">
+                    <math-field data-answer-single="5"></math-field>
+                  </div>
+                </li>
+              </ul>
+              <div class="problem_wrap">
+                <div class="flex gap_20">
+                  <div class="p" lang="y">(직사각형의 넓이)<br />=(가로)×(세로)<br />=5×4=20 (㎠)</div>
+                  <img src="../../common_contents/img/EMA516_17_SU/11_010.png" alt="" />
+                  <span class="example_number">5 ㎝</span>
+                  <span class="example_number">4 ㎝</span>
+                </div>
+              </div>
+              <div class="problem_wrap">
+                <div class="flex gap_10">
+                  <div class="p" lang="y">(평행사변형의 넓이)<br />=(밑변의 길이)×(높이)<br />=8×4=32 (㎠)</div>
+                  <img src="../../common_contents/img/EMA516_17_SU/11_011.png" alt="" />
+                  <span class="example_number">4 ㎝</span>
+                  <span class="example_number">8 ㎝</span>
+                </div>
+              </div>
+              <div class="problem_wrap">
+                <div class="flex">
+                  <div class="p" lang="y">
+                    (삼각형의 넓이)<br />=(밑변의 길이)×(높이)&divide;
+                    <div class="input_wrap">
+                      <math-field data-answer-single="21"></math-field>
+                    </div>
+                    <br />=6×5&divide;2=15 (㎠)
+                  </div>
+                  <img src="../../common_contents/img/EMA516_17_SU/11_012.png" alt="" class="mt_20" />
+                  <span class="example_number">5 ㎝</span>
+                  <span class="example_number">6 ㎝</span>
+                </div>
+              </div>
+              <div class="problem_wrap">
+                <div class="flex">
+                  <div class="p" lang="y">
+                    (사다리꼴의 넓이)<br />=(윗변의 길이)&divide;(아랫변의 길이)<br />&nbsp;&nbsp;&nbsp;&nbsp;×(높이)&divide;2 (㎠)<br />=(3+6)×
+                    <div class="input_wrap">
+                      <math-field data-answer-single="21"></math-field>
+                    </div>
+                    &divide;2=18
+                  </div>
+                  <img src="../../common_contents/img/EMA516_17_SU/11_014.png" alt="" class="mt_20" />
+                  <span class="example_number">3 ㎝</span>
+                  <span class="example_number">6 ㎝</span>
+                  <span class="example_number">4 ㎝</span>
+                </div>
+              </div>
+              <div class="problem_wrap">
+                <div class="flex gap_20">
+                  <div class="p" lang="y">(마름모의 넓이)<br />=(한 대각선의 길이)<br />×(다른 대각선의 길이)&divide;2<br />=8×6&divide;2=24 (㎠)</div>
+                  <img src="../../common_contents/img/EMA516_17_SU/11_013.png" alt="" />
+                  <span class="example_number">6 ㎝</span>
+                  <span class="example_number">8 ㎝</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn_area relative">
+              <button class="btnReset">리셋</button>
+              <button class="btnCheck">확인</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

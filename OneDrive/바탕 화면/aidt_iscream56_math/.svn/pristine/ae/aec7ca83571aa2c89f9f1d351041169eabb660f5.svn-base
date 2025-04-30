@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA626_03_IH_0004</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema626_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema626_03_ih_0004">
+			<section class="title type2">
+				<h2 data-head="4_orange" lang="y">
+					원기둥의 전개도를 완성해 보고, 전개도에 옆면의 가로와 세로는 각각 몇 ㎝인지 나타내어 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center align_center">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA626_03_IH/0004_01.png" alt="" />
+						<p class="text1">2.5 ㎝</p>
+						<p class="text2">3 ㎝</p>
+					</div>
+					<div class="canvas_area">
+						<canvas class="draw-area" width="348" height="455" data-canvas-id="canvas_1"></canvas>
+						<div class="example_box">
+							<img src="./../../common_practice/img/EMA626_03_IH/0004_ans.png" alt="" />
+							<p class="ex_text">예</p>
+							<p class="text1">15.7 ㎝</p>
+							<p class="text2">3 ㎝</p>
+						</div>
+						<p class="text1">1 ㎝</p>
+						<p class="text2">1 ㎝</p>
+						<p class="text3">2.5 ㎝</p>
+					</div>
+				</div>
+
+				<!-- 그리기도구 팝업 -->
+				<div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+					<div class="draw-tool-wrap-header">
+						<div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+						<div class="close_but add_cursor">
+							<img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+						</div>
+					</div>
+					<div class="draw-tool-wrap-body">
+						<div class="tool-row function-item">
+							<button type="button" class="ic_pen active"></button>
+							<button type="button" class="ic_txt"></button>
+							<button type="button" class="ic_eraser"></button>
+						</div>
+						<div class="tool-row function-item">
+							<button type="button" class="ic_triangle"></button>
+							<button type="button" class="ic_square"></button>
+							<button type="button" class="ic_circle"></button>
+							<button type="button" class="ic_polygon"></button>
+						</div>
+						<div class="tool-row function-item">
+							<button type="button" class="ic_line"></button>
+							<button type="button" class="ic_dash"></button>
+							<button type="button" class="ic_draw"></button>
+							<button type="button" class="ic_pull"></button>
+						</div>
+						<div class="tool-row palette-item">
+							<button type="button" class="p_red"></button>
+							<button type="button" class="p_yellow"></button>
+							<button type="button" class="p_green"></button>
+							<button type="button" class="p_blue"></button>
+							<button type="button" class="p_purple"></button>
+							<button type="button" class="p_black active"></button>
+						</div>
+						<div class="tool-row range-item">
+							<input type="range" name="thickness" class="draw-scale-range" />
+						</div>
+						<div class="tool-row range-item">
+							<input type="range" name="opacity" class="draw-trans-range" />
+						</div>
+						<div class="tool-row function-item">
+							<div class="arrow-item">
+								<button type="button" class="ic_undo"></button>
+								<button type="button" class="ic_redo"></button>
+							</div>
+							<button type="button" class="ic_del"></button>
+						</div>
+
+						<div class="ic_polygon_pop">
+							<span>꼭지점</span>
+							<button type="button" class="ipp_minus"></button>
+							<div>
+								<input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+								<label for="ipp_num">개</label>
+							</div>
+							<button type="button" class="ipp_plus"></button>
+						</div>
+					</div>
+				</div>
+				<!-- //그리기도구 팝업 -->
+
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">(옆면의 세로)=(밑면의 둘레)</p>
+								<p><span class="blank"></span>=2.5×2×3.14=15.7 (㎝)</p>
+								<p lang="y">(옆면의 가로)=(원기둥의 높이)=3㎝</p>
+								<p lang="y">밑면의 모양은 합동인 원으로 그리고, 옆면의 모양은 직사각형으로 그립니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<!-- 그리기도구 팝업 버튼 -->
+				<button type="button" class="btn btn_draw"></button>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnSubmit" data-submit="true">제출</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

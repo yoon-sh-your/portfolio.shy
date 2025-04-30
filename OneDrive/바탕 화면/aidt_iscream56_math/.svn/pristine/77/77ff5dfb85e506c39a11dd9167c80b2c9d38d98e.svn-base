@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema524_11_su_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema524_08_ih_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_11.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_11_su_0007">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3" lang="y">
+          <span class="blue line" lang="y">공부한 내용을 확인해요</span>
+          <span lang="y">내 힘으로 풀어요.</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="6_deep_green" lang="y">가로가 3.04 m, 세로가 2 m인 직사각형 모양의 돗자리가 있습니다. 이 돗자리의 넓이는 몇 ㎡인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box flex justify_center">
+          <div>
+            <p class="f20b" lang="y">
+              나는 물 4 L를<br />가지고 있어.
+            </p>
+            <p class="f20b" lang="y">
+              나는 예린이가 가지고<br />있는 물의 0.89배만큼<br />가지고 있어.
+            </p>
+            <p class="f20b" lang="y">
+              나는 예린이가 가지고<br />있는 물의 1.01배만큼<br />가지고 있어.
+            </p>
+          </div>
+          
+          <div class="top">
+            <div class="inr boolean_wrap">
+              <button type="button" data-answer-single="false" class="item">
+                <span class="f24b" lang="y">예린</span>
+              </button>
+              <button type="button" data-answer-single="true" class="item">
+                <span class="f24b" lang="y">윤호</span>
+              </button>
+              <button type="button" data-answer-single="false" class="item">
+                <span class="f24b" lang="y">가은</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="text_center">
+          <span class="gray_Box f24b" lang="y">이유</span>
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">1보다 큰 수를 곱하면 계산 결과는 곱해지는 수보다 커지므로 색점토를 더 많이 사용한 사람은 예린입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

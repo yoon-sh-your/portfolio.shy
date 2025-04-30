@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_08_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="./../../common_practice/js/ema613_04_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_08_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_pink" lang="y">민하는 물 6.34 L를 병 2개에 똑같이 나누어 담고, 은호는 물 5.73 L를 병 3개에 똑같이 나누어 담았을 때 병 한 개에 담은 물의 양을 구하려고 합니다. 몫의 소수점을 잘못 찍은 사람의 이름을 쓰고, 내용을 옳게 고쳐 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_08_IH/0005_01.png" alt="" />
+            <p class="text1">
+              <span lang="y"
+                >6.34÷2 를<br />
+                어림셈한 결과를 이용하면<br />
+                병 한 개에 담은 물의 양은<br />
+                3</span
+              >
+              <i class="nemo">.</i>1<i class="nemo"></i>
+              <span lang="y">7 L야.</span>
+            </p>
+            <p class="text2">
+              <span lang="y"
+                >5.73÷3 을<br />
+                어림셈한 결과를 이용하면<br />
+                병 한 개에 담은 물의 양은<br />
+                1</span
+              >
+              <i class="nemo"></i>9<i class="nemo">.</i>
+              <span lang="y">1 L야.</span>
+            </p>
+            <p lang="y" class="name1">민하</p>
+            <p lang="y" class="name2">은호</p>
+          </div>
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="은호">
+              <option value=""></option>
+              <option value="민하">민하</option>
+              <option value="은호">은호</option>
+            </select>
+          </div>
+          <div class="input_area">
+            <span lang="y" class="label_gray">옳게 고치기</span>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">5.73÷3을 어림셈한 결과를 이용하면 병 한 개에 담은 물의 양은 1.91 L야.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">5.73÷3을 6÷3으로 어림셈하면 약 2이므로 은호가 병 한 개에 담은 물의 양은<br />
+                1.91 L여야 합니다. 따라서 몫의 소수점을 잘못 찍은 사람은 은호입니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>EMA623_05_SU_0004_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css"/>
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_common.css"/>
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_05.css"/>
+    </head>
+    <body>
+        <div id="app_wrap" class="ema623_05_SU_0005">
+            <section class="title type2">
+                <h2 data-head="2_pink" lang="y">쌓기나무로 만든 모양을 보고 위에서 본 모양에 수를 쓴 것입니다. 쌓기나무의 개수와 앞, 옆에서 본 모양을 알아봅시다.</h2>
+            </section>
+
+            <section class="contents paging_layout">
+                <article class="page page_1">
+                    <div class="img_row">
+                        <div class="img_wrap"><img src="../../common_contents/img/EMA623_05_SU/0005_img01.png" alt=""/></div>
+
+                        <div class="input_area">
+                            <div>
+                                <h3 lang="y">똑같은 모양으로 만드는 데 필요한 쌓기나무는 몇 개인가요?</h3>
+                                <!-- 단답형 -->
+                                <div class="question_box gap_8 justify_center">
+                                    <div class="input_wrap short_width">
+                                        <math-field
+                                            data-answer-single="10"
+                                            placeholder="​"
+                                            contenteditable="true"
+                                            tabindex="0"
+                                            id="page_4-math-field-3"
+                                            sound="false"
+                                            math-mode-space="\:"
+                                            smart-fence="off"
+                                            smart-superscript="off"></math-field>
+                                        <div class="text_hint">10
+                                        </div>
+                                    </div>
+                                    <span lang="y">개</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <div class="img_row building_blocks">
+                        <div class="img_wrap"><img src="../../common_contents/img/EMA623_05_SU/0005_img01.png" alt=""/></div>
+
+                        <div class="input_area">
+                            <div>
+                                <h3 lang="y">쌓기나무로 만들면 어떤 모양이 될지 예상해 보고, 만들어 보세요</h3>
+                                <div class="gray_box">
+                                    <div class="box_title">
+                                        <button class="minus"></button>쌓기나무 개수<button class="plus"></button>
+                                    </div>
+                                    <div class="wood_box_area">
+                                        <button class="wood_box"></button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_3">
+                    <div class="img_row">
+                        <div class="img_wrap"><img src="../../common_contents/img/EMA623_05_SU/0005_img01.png" alt=""/></div>
+
+                        <ul>
+                            <li class="gap_16">
+                                <p class="diagram_tag f24 yellow" lang="y">앞에서 본 모양</p>
+                                <p class="diagram_tag f24 red" lang="y">앞에서 본 모양</p>
+                              </li>
+                              <li>
+                                <div class="img_wrap"><img src="../../common_contents/img/EMA623_05_SU/0005_img03.png" alt=""/>
+                              </li>
+                              <li>
+                                <p class="speech_bubble">위에서 본 모양에 수를 쓴<br /> 것만 보고도 앞과 옆에서<br />본 모양을 각각 그릴 수 <br />
+                                  있을까?</p>
+                              </li>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">제출</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

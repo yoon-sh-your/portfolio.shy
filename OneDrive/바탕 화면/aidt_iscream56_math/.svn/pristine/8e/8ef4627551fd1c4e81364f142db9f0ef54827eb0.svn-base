@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema627_02_su_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema627_02_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema627_02_su_0002">
+    <section class="title">
+      <h2 data-head="1">
+        <span lang="y">모래 놀이터와 바닥 분수의 지름을 각각 구해 봅시다.​​</span>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">   
+      <article class="page page_1">            
+        <h3 lang="y">​모래 놀이터의 원주와 지름은 각각 몇 m인지 구해 보세요.​</h3>
+        <div class="input_area text_center">
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <ol class="example_box text_left">
+              <li lang="y">모래 놀이터의 원주는 18.84 m입니다.​</li>
+              <li lang="y">모래 놀이터의 지름은 6 m입니다.​</li>
+            </ol>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">              
+        <h3 lang="y">바닥 분수의 지름은 몇 m인지 구해 보세요.​​</h3>
+        <div class="input_area text_center">
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <div class="example_box text_left">
+              <p lang="y">바닥 분수의 지름은 10 m입니다.​</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

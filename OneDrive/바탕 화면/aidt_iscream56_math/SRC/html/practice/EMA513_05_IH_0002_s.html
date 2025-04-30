@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_05_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_05_ih_0002">
+      <section class="title group">
+        <h2 lang="y"><span class="pink">[1~2]</span> 그림에서 대응 관계를 찾아 식으로 나타내려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="img_box mt_20 mb_20">
+        <img src="../../common_practice/img/EMA513_05_IH/0001_img.png" alt="" />
+      </section>
+      <section class="title type2">
+        <h2 data-head="2_pink" lang="y"><img src="../../common_contents/common/img/title_heading_num_1_pink.svg" class="heading" />에서 찾은 두 양을 각각 기호로 나타내고, 두 양 사이의 대응 관계를 기호를 사용하여 식으로 나타내어 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box">
+          <div class="table_wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col" lang="y">서로 대응하는 두 양</th>
+                  <th scope="col" lang="y">기호</th>
+                  <th scope="col" lang="y">대응 관계를 나타낸 식</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field></math-field>
+                      <div class="example_box">
+                        <p lang="y">케이크의 수</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field></math-field>
+                      <div class="example_box">
+                        <p>□</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td rowspan="2">
+                    <div class="flex align_center justify_center gap_10">
+                      <div class="input_wrap">
+                        <math-field></math-field>
+                        <div class="example_box">
+                          <p>☆</p>
+                        </div>
+                      </div>
+                      =
+                      <div class="input_wrap">
+                        <math-field></math-field>
+                        <div class="example_box">
+                          <p>□×4</p>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field></math-field>
+                      <div class="example_box">
+                        <p lang="y">체리의 수</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field></math-field>
+                      <div class="example_box">
+                        <p>☆</p>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">케이크의 수를 □, 체리의 수를 ☆이라고 할 때,<br />☆=□×4 또는 □=☆÷4입니다.</p>
+                <p lang="y" class="text_bullet">케이크의 수를 ◇, 과자의 수를 ◎이라고 할 때,<br />◇=◎×2 또는 ◎=◇÷2입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit chk">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

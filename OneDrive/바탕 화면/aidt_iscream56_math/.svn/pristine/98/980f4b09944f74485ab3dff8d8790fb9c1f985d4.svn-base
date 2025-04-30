@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_03_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_03_su_0002">
+      <section class="title type2 fraction_title">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">
+          <div class="fraction_row">
+            <div class="fraction_inn">
+              유기견들에게 사료를 소윤이는
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              &nbsp;kg, 지후는
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>5</span>
+                  <span>8</span>
+                </div>
+              </div>
+              &nbsp;kg 나누어 주었습니다. 소윤이와 지후가 나누어 준 사료는 모두 몇 kg인지
+            </div>
+            알아봅시다.
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_start">
+          <div class="video_wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1" viewBox="0 0 566 266">
+                <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+                <defs>
+                  <style>
+                    .st0 {
+                      fill: #575756;
+                      font-family: Pretendard-Regular-KSCpc-EUC-H, Pretendard;
+                      font-size: 9px;
+                    }
+                  </style>
+                </defs>
+                <text class="st0" transform="translate(376 22.8)">
+                  <tspan x="0" y="0">우리가 나누어 준 사료는</tspan>
+                  <tspan x="2.8" y="10.8">모두 몇 kg인지 어떻게</tspan>
+                  <tspan x="14.5" y="21.6">구할 수 있을까?</tspan>
+                </text>
+              </svg>
+              <img src="../../common_contents/img/EMA515_03_SU/0002_content.png" alt="자치회 활동 이미지" />
+              <button class="play" data-video="1"></button>
+            </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고 소윤이와 지후가 나누어 준 사료의 양을 어떻게 구할 <br />수 있을지 이야기해 봅시다.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea" type="text"></math-field>
+              <div class="example_box">
+                <p lang="y">소윤이와 지후가 나누어 준 사료의 양을 더하면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

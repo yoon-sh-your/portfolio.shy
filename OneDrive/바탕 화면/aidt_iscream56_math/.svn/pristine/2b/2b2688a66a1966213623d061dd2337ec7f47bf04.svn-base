@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_11_su_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_11_su.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema522_11_su_0007">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="4" lang="y">태극기는 크기에 따라 각 부분의 길이가 정해집니다. 가로를 72 ㎝로 하여 태극기를 그린다면 태극 문양의 지름을 몇 ㎝로 그려야 하는지 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">태극기의 세로는 몇 ㎝인지 구해 보세요.</h3>
+            <div class="question_box align_center dir_col gap_30">
+              <div class="img_area">
+                <img src="./../../common_contents/img/EMA522_11_SU/0007_img01_1.png" alt="" />
+
+                <span class="f24b abs_1">(가로)</span>
+                <span class="flex align_center f24b abs_2">
+                  <span>(세로)=(가로)&times;</span>
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>3</span>
+                  </span>
+                </span>
+                <!-- <span class="f24r abs_3">
+                  <span>태극 문양의 지름은</span>
+                  <span class="flex align_center justify_center gap_4">
+                    <span>세로의</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>3</span>
+                    </span>
+                    <span>이야.</span>
+                  </span>
+                </span> -->
+              </div>
+              <div class="flex align_center justify_center gap_4 m_auto f32b">
+                <span>(</span>
+                <span class="input_wrap">
+                  <math-field data-answer-single="48"></math-field>
+                </span>
+                <span>)</span>
+                <span>㎝</span>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">태극 문양의 지름은 몇 ㎝인지 구해 보세요.</h3>
+            <div class="question_box align_center dir_col gap_30">
+              <div class="img_area">
+                <img src="./../../common_contents/img/EMA522_11_SU/0007_img01.png" alt="" />
+
+                <span class="f24b abs_1">(가로)</span>
+                <span class="flex align_center f24b abs_2">
+                  <span>(세로)=(가로)&times;</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </span>
+                </span>
+                <span class="f24r abs_3">
+                  <span>태극 문양의 지름은</span>
+                  <span class="flex align_center justify_center gap_4">
+                    <span>세로의</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>2</span>
+                    </span>
+                    <span>이야.</span>
+                  </span>
+                </span>
+              </div>
+              <div class="flex align_center justify_center gap_4 m_auto f32b">
+                <span>(</span>
+                <span class="input_wrap">
+                  <math-field data-answer-single="24"></math-field>
+                </span>
+                <span>)</span>
+                <span>㎝</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

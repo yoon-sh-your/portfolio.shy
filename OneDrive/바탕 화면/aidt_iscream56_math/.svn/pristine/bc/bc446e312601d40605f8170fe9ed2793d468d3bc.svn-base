@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_04_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_04_su_0006"> 
+      <section class="title type2">
+        <h2 data-head="4_deep_green" lang="y">계산해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="wrap">
+          <div class="flex dir_row">          
+            <div class="fra_parens f32b flex justify_center align_center">
+              <span>7</span>
+              <span>×</span>
+              <span>0.8</span>
+              <span>&equals;</span>
+              <span class="input_wrap answer1">
+                <math-field data-answer-single="5.6"></math-field>
+              </span>
+            </div> 
+            <div class="fra_parens f32b flex dir_col justify_center align_center">
+                <span class="fraction_box three">
+                  <div class="flex dir_col align_end">
+                    <span class="flex dir_row">
+                      <span>4</span>
+                    </span>
+                    <span class="flex dir_row">
+                      <span>×</span>
+                      <span>2.</span>
+                      <span>6</span>
+                    </span>
+                  </div>
+                  <span class="input_wrap answer2">
+                    <math-field data-answer-single="10.4"></math-field>
+                  </span>
+                </span> 
+            </div> 
+            <div class="fra_parens f32b flex dir_col justify_center align_center">
+                <span class="fraction_box three">
+                  <div class="flex dir_col align_end">
+                    <span class="flex dir_row">
+                      <span>13</span>
+                    </span>
+                    <span class="flex dir_row">
+                      <span>×</span>
+                      <span>3.</span>
+                      <span>4</span>
+                    </span>
+                  </div>
+                  <span class="input_wrap answer3">
+                    <math-field data-answer-single="44.2"></math-field>
+                  </span>
+                </span> 
+            </div> 
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

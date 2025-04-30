@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema611_10_su_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_10_su_0008">
+      <div class="scroll_page">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 4">
+            <span class="blue line" lang="y">확인하고 정리해요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+        </section>
+
+        <section class="title type2 jgjd_4_sub_title">
+          <h2 lang="y">
+            <div class="title_row">
+              <span class="nemo_blank"></span>
+              <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+            </div>
+          </h2>
+        </section>
+
+        <section class="contents">
+          <div class="scroll_area">
+            <img src="../../common_contents/img/EMA611_10_SU/0008_content.png" alt="" />
+            
+            <div class="question_box question_box1">
+              <div class="title" lang="y">(자연수)÷(자연수)</div>
+
+              <div class="text" lang="y">
+                나누어지는 수를 분자, 나누는 수를<br>
+                분모로 하는 분수로 나타냅니다.
+              </div>
+
+              <div class="equation">
+                <span>5÷7=</span>
+                <span class="fraction_box line">
+                  <span>
+                    <div class="input_wrap answer1" data-hint-position ="right">
+                      <math-field data-answer-single="5"></math-field>
+                    </div>
+                  </span>
+                  <span>7</span>
+                </span>
+                <span>=</span>
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>55</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="question_box question_box2">
+              <div class="title" lang="y">(분수)÷(자연수)</div>
+
+              <div class="text" lang="y">
+                <span class="method" circle-number="1">방법</span>
+                분자를 자연수로 나누어 계산합니다.
+              </div>
+
+              <div class="equation">
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>11</span>
+                </span>
+                <span>÷5=</span>
+                <span class="fraction_box">
+                  <span>
+                    <div class="input_wrap answer2" data-hint-position ="right">
+                      <math-field data-answer-single="10"></math-field>
+                    </div>
+                  </span>
+                  <span>55</span>
+                </span>
+                <span>÷5=</span>
+                <span class="fraction_box">
+                  <span>10÷5</span>
+                  <span>55</span>
+                </span>
+                <span>=</span>
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>55</span>
+                </span>
+              </div>
+              
+              <div class="text" lang="y">
+                <span class="method" circle-number="2">방법</span>
+                분수의 곱셈으로 나타내어 계산합니다.
+              </div>
+
+              <div class="equation">
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>11</span>
+                </span>
+                <span>÷5=</span>
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>11</span>
+                </span>
+                <span>×</span>
+                <span class="fraction_box line">
+                  <span>1</span>
+                  <span>
+                    <div class="input_wrap answer3">
+                      <math-field data-answer-single="5"></math-field>
+                    </div>
+                  </span>
+                </span>
+                <span>=</span>
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>55</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="question_box question_box3">
+              <div class="title" lang="y">(대분수)÷(자연수)</div>
+
+              <div class="text" lang="y">
+                대분수를 자연수 부분과 진분수 부분으로 나누어 계산하거나<br>
+                대분수를
+                <div class="input_wrap answer4">
+                  <math-field data-answer-single="가분수"></math-field>
+                </div>(으)로​ 바꾸어 계산합니다.
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_area relative">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </section>        
+      </div>
+    </div>
+  </body>
+</html>

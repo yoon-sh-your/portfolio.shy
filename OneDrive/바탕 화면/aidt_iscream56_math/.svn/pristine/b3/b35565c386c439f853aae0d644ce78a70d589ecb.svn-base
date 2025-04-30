@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema617_02_su_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema617_02_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema617_02_su_0005">
+    <section class="title">
+      <h2 data-head="4">
+        <span lang="y">계획을 잘 세웠는지 확인해 봅시다.​​​</span>
+      </h2>
+    </section>
+
+    <section class="contents">   
+      <div class="input_area text_center">
+        <div class="input_wrap ">
+          <div class="table_wrap text_left">
+            <table>
+              <thead>
+                <tr>
+                  <th class="f32b text_center" lang="y">확인할 내용​</th>
+                  <th class="f32b text_center" lang="y">확인</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="f32b" lang="y">· 기사를 고쳐 쓰는 목적이 분명한가요?​​</td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">· 주어진 기사의 잘못된 내용을 어떻게 고쳐 쓸지 정하였나요?​​</td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">​· 그래프로 나타낼 수 있는 자료를 찾고, 어떤 그래프로 나타낼지 정하였나요?​</td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+                <tr>
+                  <td class="f32b" lang="y">· 활동을 위한 역할을 잘 정하였나요?​​</td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+              </tbody>
+            </table> 
+            <ol class="example_box" style="display: none;">
+              <li>더미</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

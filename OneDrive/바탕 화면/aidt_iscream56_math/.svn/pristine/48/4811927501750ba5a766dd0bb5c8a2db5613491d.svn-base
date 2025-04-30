@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>drawline</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="drawline">
+            <section class="title type2">
+                <h2 data-head="3">두 식의 계산 순서를 각각 나타내어 계산하고, 계산 결과를 비교해 봅시다.</h2>
+            </section>
+
+            <section class="contents">
+                <div class="flex align_center gap_12">
+                    <ul class="connect_line_box start">
+                        <li>8×5-35÷5+13</li>
+                        <li>17+2×(41-27)÷7</li>
+                    </ul>
+                    <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e1"]]'>
+                        <div class="start_group">
+                            <div class="connect_point" data-id="s1"></div>
+                            <div class="connect_point" data-id="s2"></div>
+                        </div>
+                        <div class="end_group">
+                            <div class="connect_point" data-id="e1"></div>
+                            <div class="connect_point" data-id="e2"></div>
+                            <div class="connect_point" data-id="e3"></div>
+                        </div>
+                        <svg class="connect_lines"></svg>
+                    </div>
+                    <ul class="connect_line_box end">
+                        <li>21</li>
+                        <li>14</li>
+                        <li>46</li>
+                    </ul>
+                </div>
+                <br />
+                <br />
+                <div class="flex align_center gap_12">
+                    <ul class="connect_line_box start">
+                        <li>8×5-35÷5+13</li>
+                        <li>17+2×(41-27)÷7</li>
+                    </ul>
+                    <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e1"]]' data-answer-multi='{"values":[[["s1","e3"],["s2","e1"]], [["s1","e1"],["s2","e3"]]]}'>
+                        <div class="start_group">
+                            <div class="connect_point" data-id="s1"></div>
+                            <div class="connect_point" data-id="s2"></div>
+                        </div>
+                        <div class="end_group">
+                            <div class="connect_point" data-id="e1"></div>
+                            <div class="connect_point" data-id="e2"></div>
+                            <div class="connect_point" data-id="e3"></div>
+                        </div>
+                        <svg class="connect_lines"></svg>
+                    </div>
+                    <ul class="connect_line_box end">
+                        <li>21</li>
+                        <li>14</li>
+                        <li>46</li>
+                    </ul>
+                </div>
+                <br />
+                <br />
+                <div class="flex align_center gap_12">
+                    <ul class="connect_line_box start">
+                        <li>8×5-35÷5+13</li>
+                        <li>17+2×(41-27)÷7</li>
+                    </ul>
+                    <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e1"]]' data-mode="multi">
+                        <div class="start_group">
+                            <div class="connect_point" data-id="s1"></div>
+                            <div class="connect_point" data-id="s2"></div>
+                        </div>
+                        <div class="end_group">
+                            <div class="connect_point" data-id="e1"></div>
+                            <div class="connect_point" data-id="e2"></div>
+                            <div class="connect_point" data-id="e3"></div>
+                        </div>
+                        <svg class="connect_lines"></svg>
+                    </div>
+                    <ul class="connect_line_box end">
+                        <li>21</li>
+                        <li>14</li>
+                        <li>46</li>
+                    </ul>
+                </div>
+
+                <div class="btn_area">
+                    <button class="btnType key">입력타입토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnCheck">확인</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

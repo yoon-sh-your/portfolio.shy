@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_07_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <script src="./../../common_contents/js/ema526_07_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_07_su_0006">
+      <section class="title type2">
+        <h2 data-head="4_orange" lang="y">주사위를 한 번 던질 때 일이 일어날 가능성을 말과 수로 나타내어 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">주사위 눈의 수를 홀수와 짝수로 분류해 보세요.</h3>
+
+          <div class="dragndrop_fraction_wrap">
+            <div class="drag_group">
+              <div class="drag_item" data-pair="1" data-value="1">
+                <img src="../../common_contents/img/EMA526_07_SU/0006_content1.svg" alt="">
+              </div>
+              <div class="drag_item" data-pair="1" data-value="2">
+                <img src="../../common_contents/img/EMA526_07_SU/0006_content2.svg" alt="">
+              </div>
+              <div class="drag_item" data-pair="1" data-value="3">
+                <img src="../../common_contents/img/EMA526_07_SU/0006_content3.svg" alt="">
+              </div>
+              <div class="drag_item" data-pair="1" data-value="4">
+                <img src="../../common_contents/img/EMA526_07_SU/0006_content4.svg" alt="">
+              </div>
+              <div class="drag_item" data-pair="1" data-value="5">
+                <img src="../../common_contents/img/EMA526_07_SU/0006_content5.svg" alt="">
+              </div>
+              <div class="drag_item" data-pair="1" data-value="6">
+                <img src="../../common_contents/img/EMA526_07_SU/0006_content6.svg" alt="">
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="drop_group" data-answer-multi='[["1", "3", "5"], ["1", "5", "3"], ["3", "1", "5"], ["3", "5", "1"], ["5", "1", "3"], ["5", "3", "1"]]'>
+                <div class="title" lang="y">홀수</div>
+                <div class="flex">
+                  <div class="drop_item" data-pair="1" data-answer-single="1"></div>
+                  <div class="drop_item" data-pair="1" data-answer-single="3"></div>
+                  <div class="drop_item" data-pair="1" data-answer-single="5"></div>
+                </div>
+              </div>
+  
+              <div class="drop_group" data-answer-multi='[["2", "4", "6"], ["2", "6", "4"], ["4", "2", "6"], ["4", "6", "2"], ["6", "2", "4"], ["6", "4", "2"]]'>
+                <div class="title" lang="y">짝수</div>
+                <div class="flex">
+                  <div class="drop_item" data-pair="1" data-answer-single="2"></div>
+                  <div class="drop_item" data-pair="1" data-answer-single="4"></div>
+                  <div class="drop_item" data-pair="1" data-answer-single="6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">주사위 눈의 수가 짝수가 나올 가능성을 말과 수로 각각 나타내어 보세요.</h3>
+
+          <ul class="img_box">
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content1.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content2.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content3.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content4.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content5.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content6.svg" alt="">
+            </li>
+          </ul>
+
+          <div class="input_area">
+            <div class="boolean_wrap">
+              <button data-answer-single="true">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </button>
+              <button data-answer-single="false">
+                <span>0</span>
+              </button>
+              <button data-answer-single="false">
+                <span>1</span>
+              </button>
+            </div>
+
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="반반이다">
+                <option></option>
+                <option value="반반이다"></option>
+                <option value="확실하다"></option>
+                <option value="불가능하다"></option>
+              </select>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">주사위 눈의 수가 7이 나올 가능성을 말과 수로 각각 나타내어 보세요.</h3>
+
+          <ul class="img_box">
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content1.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content2.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content3.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content4.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content5.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content6.svg" alt="">
+            </li>
+          </ul>
+
+          <div class="input_area">
+            <div class="boolean_wrap">
+              <button data-answer-single="false">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </button>
+              <button data-answer-single="true">
+                <span>0</span>
+              </button>
+              <button data-answer-single="false">
+                <span>1</span>
+              </button>
+            </div>
+
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="불가능하다">
+                <option></option>
+                <option value="반반이다"></option>
+                <option value="확실하다"></option>
+                <option value="불가능하다"></option>
+              </select>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_4">
+          <h3 lang="y">주사위 눈의 수가 6 이하로 나올 가능성을 말과 수로 각각 나타내어 보세요.</h3>
+
+          <ul class="img_box">
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content1.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content2.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content3.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content4.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content5.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_07_SU/0006_content6.svg" alt="">
+            </li>
+          </ul>
+
+          <div class="input_area">
+            <div class="boolean_wrap">
+              <button data-answer-single="false">
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </button>
+              <button data-answer-single="false">
+                <span>0</span>
+              </button>
+              <button data-answer-single="true">
+                <span>1</span>
+              </button>
+            </div>
+
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="확실하다">
+                <option></option>
+                <option value="반반이다"></option>
+                <option value="확실하다"></option>
+                <option value="불가능하다"></option>
+              </select>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

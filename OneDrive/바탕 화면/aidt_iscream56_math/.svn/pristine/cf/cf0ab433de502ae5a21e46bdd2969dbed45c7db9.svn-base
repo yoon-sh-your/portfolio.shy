@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_06_SU_0009_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_01.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_02.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_03.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_06.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema512_06_su_0009">
+      <section class="title type2">
+        <h2 data-head="7_green" lang="y">놀이공원에서 코끼리 열차는 6분마다, 호랑이 열차는 10분마다 출발합니다. 두 열차가 오후 2시 20분에 동시에 출발하였다면 다음번에 두 열차가 동시에 출발하는 시각은 오후 몇 시 몇 분인지 구해 봅시다.</h2>
+      </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <div class="page_1_cont flex img_row">
+                        <div class="picture_wrap" data-head="1"
+                            data-tit="그림을 보고 물건을 똑같이 나누어 보거나 물건을 묶음으로 산 경험을 이야기해 봅시다."></div>
+
+                        <div class="leftside input_area">
+                            <h3 lang="y">두 열차는 몇 분마다 동시에 출발하는지 구해 보세요.</h3>
+                            <div class="question_box flex justify_evenly">
+                                <div class="flex align_center">
+                                    <div class="input_wrap answer1 flex ">
+                                        <math-field data-answer-single="30"></math-field>
+                                    </div>
+                                    <span lang="y">분</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <div class="page_2_cont flex img_row">
+                        <div class="picture_wrap" data-head="1"
+                            data-tit="그림을 보고 물건을 똑같이 나누어 보거나 물건을 묶음으로 산 경험을 이야기해 봅시다."></div>
+
+                        <div class="leftside input_area">
+                            <h3 lang="y">다음번에 두 열차가 동시에 출발하는 시각은 오후 몇 시 몇 분인지 구해 보세요.</h3>
+                            <div class="question_box flex justify_evenly">
+                                <div class="flex align_center">
+                                    <span lang="y">오후</span>
+                                    <div class="input_wrap answer1 flex ml_12">
+                                        <math-field data-answer-single="2"></math-field>
+                                    </div>
+                                    <span lang="y">시</span>
+                                    <div class="input_wrap answer1 flex ml_12">
+                                        <math-field data-answer-single="50"></math-field>
+                                    </div>
+                                    <span lang="y">분</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button class="btnReset" lang="y">리셋</button>
+                <button class="btnCheck" lang="y">확인</button>
+                <!-- <button class="btnSubmit">확인</button> -->
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

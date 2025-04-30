@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema523_12_su_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema523_su_12.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_12_su_0008">
+      <div class="scroll_page">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 4">
+            <span class="blue line" lang="y">확인하고 정리해요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+        </section>
+  
+        <section class="title type2 jgjd_4_sub_title">
+          <h2 lang="y">
+            <div class="title_row">
+              <span class="nemo_blank"></span>
+              <span lang="y">안에 알맞은 수나 말을 써넣으세요.</span>
+            </div>
+          </h2>
+        </section>
+  
+        <section class="contents">
+          <div class="scroll_area">
+            <img src="../../common_contents/img/EMA523_12_SU/0009_bg.png" alt="" />
+  
+            <div class="question_box question_box01">
+              <div class="input_wrap answer1 and" data-hint-position="up">
+                <math-field data-answer-single="합동" placeholder=" "></math-field>
+              </div>
+              <div class="text1" lang="y">: 포개었을 때 완전히 겹치는 두 도형</div>
+              <div class="text2" lang="y">6 ㎝</div>
+              <div class="answer2 and">
+                <div class="input_wrap" data-hint-position="up">
+                  <math-field data-answer-single="6" placeholder=" "></math-field>
+                </div>
+                <span>㎝</span>
+              </div>
+              <div class="text3" lang="y">25˚</div>
+              <div class="text4" lang="y">25˚</div>
+            </div>
+  
+            <div class="question_box question_box02">
+              <div class="input_wrap answer3 and" data-hint-position="up">
+                <math-field data-answer-single="선대칭도형" placeholder=" "></math-field>
+              </div>
+              <div class="text1" lang="y">: 한 직선을 따라 접었을 때 완전히 겹치는 도형</div>
+  
+              <div class="answer4 and">
+                <div class="input_wrap">
+                  <math-field data-answer-single="60" placeholder=" "></math-field>
+                </div>
+                <span>˚</span>
+              </div>
+              <div class="text2" lang="y">대칭축</div>
+              <div class="text3" lang="y">60˚</div>
+              <div class="text4" lang="y">4 ㎝</div>
+              <div class="text5" lang="y">4 ㎝</div>
+            </div>
+  
+            <div class="question_box question_box03">
+              <div class="input_wrap answer5 and" data-hint-position="up">
+                <math-field data-answer-single="점대칭도형"></math-field>
+              </div>
+              <div class="text1" lang="y">: 어떤 점을 중심으로 180˚ 돌렸을 때<br>&nbsp;&nbsp;&nbsp;처음 도형과 완전히 겹치는 도형</div>
+              <div class="text2" lang="y">2 ㎝</div>
+              <div class="answer6 and">
+                <div class="input_wrap">
+                  <math-field data-answer-single="2"></math-field>
+                </div>
+                <span>㎝</span>
+              </div>
+              <div class="text3" lang="y">대칭의 중심</div>
+            </div>
+          </div>  
+          <div class="btn_area relative">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>        
+        </section> 
+      </div>
+    </div>
+  </body>
+</html>
+

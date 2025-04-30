@@ -1,0 +1,89 @@
+.input_area > span,
+.input_area .text_row > span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.input_area .text_row + .text_row {
+  margin-top: 50px;
+}
+.text_square_bg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 47px;
+  height: 46px;
+  background: #d8e9f8;
+  text-align: center;
+  line-height: 45px;
+  font-size: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.input_area .text_square_bg {
+  position: static;
+}
+.img_area {
+  position: relative;
+}
+.solve_area .text_square_bg {
+  position: static;
+  vertical-align: middle;
+  border: 1px solid var(--font-main);
+  position: relative;
+  top: -4px;
+}
+
+.input_area .fraction_box {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+.input_wrap:has(.w_80) {
+  min-width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+
+.ema522_01_ih_0001 .input_area {
+  position: relative;
+}
+.ema522_01_ih_0001 .input_area::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--font-main);
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  position: absolute;
+  left: -20px;
+  top: 26px;
+}
+/* ema522_01_ih_0002 */
+.ema522_01_ih_0002 .input_area {
+  gap: 120px;
+}
+
+/* .ema522_01_ih_0004  */
+.ema522_01_ih_0004 .fraction_wrap {
+  margin: 0 15px;
+}
+.ema522_01_ih_0004 .dot {
+  display: inline-flex;
+  align-items: flex-end;
+}
+.ema522_01_ih_0004 .box-icon {
+  line-height: 123px;
+  margin: 0 12px;
+}
+
+/* ema522_01_ih_0003 */
+.ema522_01_ih_0003 .input_area {
+  margin-top: 60px;
+}

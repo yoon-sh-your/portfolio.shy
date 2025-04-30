@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_08_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="../../common_practice/js/ema521_01_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_06_ih_0007 paging">
+      <section class="title type2 score">
+        <h2 data-head="7" class="is_star2 fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">          
+              <span lang="y">어떤 수에</span>
+              <div class="fraction_box"><span>1</span><span>3</span></div>
+              <span lang="y">을 곱해야 하는데 잘못하여 더했더니</span>
+              <div class="fraction_box"><span>8</span><span>9</span></div>
+              <span lang="y">이 되었습니다. 옳게 계산한 값을 구하려고 합니다. 물음에 답해 보세요.</span>
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">어떤 수를 구해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="input_area flex align_center gap_10">
+              <span>(</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(5)/(9)" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+              </div>
+              <span>)</span>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div>
+                    <span>어떤 수를 <span class="nemo"></span>라고 하면 <span class="nemo"></span>+</span>
+                    <div class="fraction_box"><span>1</span><span>3</span></div>
+                    <span>=</span>
+                    <div class="fraction_box"><span>8</span><span>9</span></div>
+                    <span>입니다.</span>
+                  </div>
+                  <div class="flex align_center gap_10">
+                    <span><span class="nemo"></span> =</span>
+                    <div class="fraction_box"><span>8</span><span>9</span></div>
+                    <span>-</span>
+                    <div class="fraction_box"><span>1</span><span>3</span></div>
+                    <span>=</span>
+                    <div class="fraction_box"><span>8</span><span>9</span></div>
+                    <span>-</span>
+                    <div class="fraction_box"><span>3</span><span>9</span></div>
+                    <span>=</span>
+                    <div class="fraction_box"><span>8-3</span><span>9</span></div>
+                    <span>=</span>
+                    <div class="fraction_box"><span>5</span><span>9</span></div>
+                  </div>
+                  <div>
+                    <span>따라서 어떤 수는 </span>
+                    <div class="fraction_box"><span>5</span><span>9</span></div>
+                    <span>입니다.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">옳게 계산한 값을 구해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="input_area flex align_center gap_10">
+              <span>(</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(5)/(27)" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+              </div>
+              <span>)</span>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex align_center gap_10">
+                    <span>옳게 계산한 값은 </span>
+                    <div class="fraction_box"><span>5</span><span>9</span></div>
+                    <span>×</span>
+                    <div class="fraction_box"><span>1</span><span>3</span></div>
+                    <span>=</span>
+                    <div class="fraction_box"><span>5</span><span>9×3</span></div>
+                    <span>=</span>
+                    <div class="fraction_box"><span>5</span><span>27</span></div>
+                    <span>입니다.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

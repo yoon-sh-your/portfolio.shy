@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_02_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_02_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">기념 도장을 찍을 수 있게 종이 1장을 5명에게 똑같이 나누어 주려고 합니다. 한 명에게 줄 수 있는 종이의 양을 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="flex align_start">
+          <div class="picture_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1006 693" fill="none">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="25.2656" letter-spacing="-0.902344px" lang="y">
+                <tspan x="567" y="247.028">방문지마다</tspan>
+                <tspan x="567" y="283.122">기념 도장을</tspan>
+                <tspan x="567" y="319.216">찍어보세요</tspan>
+              </text>
+              <text transform="translate(691.264 83.5542) rotate(-3.70985)" fill="#FEDA75" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18.0469" letter-spacing="-0.902344px" lang="y">
+                <tspan x="0.142593" y="19.0479">생태 도시</tspan>
+                <tspan x="110.26" y="19.0479">에</tspan>
+              </text>
+              <text transform="translate(691.264 83.5542) rotate(-3.70985)" fill="#98CD7D" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18.0469" letter-spacing="-0.902344px" lang="y">
+                <tspan x="66.1758" y="19.0479">푸름시</tspan>
+              </text>
+              <text transform="translate(684.128 112.953) rotate(-3.70985)" fill="#F7DE7E" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="18.0469" letter-spacing="-0.902344px" lang="y">
+                <tspan x="0.455254" y="19.0479">오신 것을 환영합니다.</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA611_02_SU/0002_content.png" alt="" />
+            <button class="zoom"></button>
+          </div>
+
+          <div class="input_area">
+            <article class="page page_1">
+              <h3 lang="y">구하는 식을 써 보세요.</h3>
+              <div class="question_box justify_center">
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="1÷5"></math-field>
+                </div>
+              </div>
+            </article>
+
+            <article class="page page_2">
+              <h3 lang="y">
+                한 명에게 줄 수 있는 종이의 양을 구하는 방법을 생각해보고<br>
+                네모 칸을 선택하여 그림에 나타내어 보세요.
+              </h3>
+
+              <div class="boolean_count_wrap" data-answer-single="1">
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+              </div>
+            </article>
+            
+            <article class="page page_3">
+              <h3 lang="y">
+                한 명에게 줄 수 있는 종이의 양은 얼마인지 분수로 나타내어<br>
+                보세요.
+              </h3>
+
+              <div class="fraction_box">
+                <div class="input_wrap">
+                  <math-field data-answer-single="1"></math-field>
+                </div>
+                <div class="input_wrap answer2">
+                  <math-field data-answer-single="5"></math-field>
+                </div>
+              </div>
+            </article>
+
+            <article class="page page_4">
+              <h3 lang="y">
+                1÷(자연수)의 몫을 분수로 나타내는 방법을 이야기해 보세요.
+              </h3>
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">1÷(자연수)의 몫은 나누어지는 수인 1을 분자, 나누는 수인 자연수를 분모로 하는 분수로 나타낼 수 있습니다.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_04_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_04_ih_0001">
+      <section class="title group">
+        <h2 lang="y"><span class="blue">[1~2]</span> 시윤이네 반의 모둠별 학생 수와 알뜰 바자회에 가져 온 물건 수를 나타낸 표입니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="1" lang="y">모둠별로 알뜰 바자회에 가져 온 물건 수의 평균을 각각 구하여 표를 완성해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="tit_data">
+          <div class="inner">
+            <span lang="y">모둠별 학생 수와 가져 온 물건 수, 물건 수의 평균</span>
+          </div>
+        </div>
+        <div class="table_wrap row">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" lang="y">모둠</th>
+                <td lang="y">1모둠</td>
+                <td lang="y">2모둠</td>
+                <td lang="y">3모둠</td>
+                <td lang="y">4모둠</td>
+                <td lang="y">5모둠</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" lang="y">학생 수(명)</th>
+                <td>4</td>
+                <td>5</td>
+                <td>5</td>
+                <td>6</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row" lang="y">물건 수(개)</th>
+                <td>24</td>
+                <td>20</td>
+                <td>35</td>
+                <td>48</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <th scope="row" lang="y">물건 수의 평균(개)</th>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="6"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="4"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="7"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="8"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="7"></math-field>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">가져 온 물건 수를 모둠 학생 수로 나누어 가져 온 물건 수의 평균을 각각 구합니다.</p>
+                <p lang="y">1모둠 : 24÷4=6(개)</p>
+                <p lang="y">2모둠 : 20÷5=4(개)</p>
+                <p lang="y">3모둠 : 35÷5=7(개)</p>
+                <p lang="y">4모둠 : 48÷6=8(개)</p>
+                <p lang="y">5모둠 : 28÷4=7(개)</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

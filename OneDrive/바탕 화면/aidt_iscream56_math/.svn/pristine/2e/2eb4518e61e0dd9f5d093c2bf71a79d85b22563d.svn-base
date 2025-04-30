@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_06_IH_0003</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_06_ih_0003">
+			<section class="title type2">
+				<h2 data-head="3" lang="y">
+					관계있는 것끼리 이어 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					 <ul class="connect_line_box start">
+						<li>
+							<div class="fraction_box">
+								<span>2</span>
+								<span>7</span>
+							</div>
+							÷
+							<div class="fraction_box">
+								<span>4</span>
+								<span>5</span>
+							</div>
+						</li>
+						<li>
+							<div class="fraction_box">
+								<span>8</span>
+								<span>11</span>
+							</div>
+							÷
+							<div class="fraction_box">
+								<span>8</span>
+								<span>9</span>
+							</div>
+						</li>
+						<li>
+							<div class="fraction_box">
+								<span>5</span>
+								<span>12</span>
+							</div>
+							÷
+							<div class="fraction_box">
+								<span>5</span>
+								<span>8</span>
+							</div>
+						</li>
+					</ul>
+					<div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"],["s3","e3"]]'>
+						<div class="start_group">
+						<div class="connect_point" data-id="s1"></div>
+						<div class="connect_point" data-id="s2"></div>
+						<div class="connect_point" data-id="s3"></div>
+						</div>
+						<div class="end_group">
+						<div class="connect_point" data-id="e1"></div>
+						<div class="connect_point" data-id="e2"></div>
+						<div class="connect_point" data-id="e3"></div>
+						</div>
+						<svg class="connect_lines"></svg>
+					</div>
+					<ul class="connect_line_box end">
+						<li>
+							<div class="fraction_box">
+								<span>8</span>
+								<span>11</span>
+							</div>
+							×
+							<div class="fraction_box">
+								<span>9</span>
+								<span>8</span>
+							</div>
+						</li>
+						<li>
+							<div class="fraction_box">
+								<span>2</span>
+								<span>7</span>
+							</div>
+							×
+							<div class="fraction_box">
+								<span>5</span>
+								<span>5</span>
+							</div>
+						</li>
+						<li>
+							<div class="fraction_box">
+								<span>5</span>
+								<span>12</span>
+							</div>
+							×
+							<div class="fraction_box">
+								<span>8</span>
+								<span>5</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+ㄴ						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

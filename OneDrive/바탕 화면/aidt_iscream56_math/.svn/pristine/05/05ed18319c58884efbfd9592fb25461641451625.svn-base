@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA626_06_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema626_06.css" />
+    <script src="../../common_contents/js/ema626_02_0005.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema626_06_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">반원 모양의 종이를 붙인 막대를 돌리면 어떤 입체도형이 만들어지는지 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">종이를 막대에 붙여 돌려 보고 어떤 입체도형이 만들어지는지 이야기해 보세요.</h3>
+
+          <div class="question_box justify_center dir_col">
+            <div class="img_wrap">
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA626_06_SU/0005_content01.svg" alt="직삼각형 이미지" />
+                <div class="text_box">
+                  <span class="txt01" lang="y">10 ㎝</span>
+                </div>
+              </div>
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA626_06_SU/0005_content02.svg" alt="도형 이미지" />
+              </div>
+              <div class="img_box rotation">
+                <span lang="y" class="txt">?</span>
+                <div class="rotation_box">
+                  <svg width="204" height="204" viewBox="0 0 184 184" fill="none" xmlns="http://www.w3.org/2000/svg" class="rota1">
+                    <path d="M91.5604 183.279C41.3784 183.279 0.689453 142.62 0.689453 92.4381C0.689453 42.2561 41.3784 1.59766 91.5604 1.59766" fill="#DDEDD9" />
+                    <path d="M91.5604 183.279C41.3784 183.279 0.689453 142.62 0.689453 92.4381C0.689453 42.2561 41.3784 1.59766 91.5604 1.59766" stroke="#1D1D1B" stroke-width="1.35" stroke-miterlimit="10" stroke-linejoin="round" />
+                    <path d="M91.584 1.56738C141.766 1.56738 182.424 42.2563 182.424 92.4383C182.424 142.62 141.735 183.279 91.584 183.279" stroke="#1D1D1B" stroke-width="1.35" stroke-miterlimit="10" stroke-linejoin="round" />
+                    <path d="M152.132 92.4381C152.132 142.62 125.027 183.279 91.572 183.279C58.1173 183.279 31.0117 142.59 31.0117 92.4381C31.0117 42.2561 58.1173 1.59767 91.572 1.59767C125.027 1.56715 152.132 42.2561 152.132 92.4381Z" stroke="#1D1D1B" stroke-width="1.35" stroke-miterlimit="10" stroke-linejoin="round" />
+                    <path d="M121.84 92.4381C121.84 142.62 108.287 183.279 91.5594 183.279C74.8321 183.279 61.2793 142.59 61.2793 92.4381C61.2793 42.2561 74.8321 1.59767 91.5594 1.59767C108.287 1.56715 121.84 42.2561 121.84 92.4381Z" stroke="#1D1D1B" stroke-width="1.35" stroke-miterlimit="10" stroke-linejoin="round" />
+                  </svg>
+                  <img src="../../common_contents/img/EMA626_06_SU/0005_content03.svg" class="rota2" alt="도형 이미지" />
+                </div>
+              </div>
+            </div>
+            <div class="input_wrap mt_25">
+              <math-field data-answer-single="구"></math-field>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">만들어진 입체도형의 반지름은 몇 ㎝인가요?</h3>
+          <div class="question_box justify_center dir_col">
+            <div class="img_wrap">
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA626_06_SU/0005_content01.svg" alt="직사각형 이미지" />
+                <div class="text_box">
+                  <span class="txt01" lang="y">10 ㎝</span>
+                </div>
+              </div>
+              <div class="img_box">
+                <img src="../../common_contents/img/EMA626_06_SU/0005_content02.svg" alt="도형 이미지" />
+              </div>
+              <div class="img_box rotation">
+                <img src="../../common_contents/img/EMA626_06_SU/0005_content03.svg" alt="도형 이미지" />
+              </div>
+            </div>
+            <div class="input_wrap mt_25">
+              <div class="input_form">
+                <math-field data-answer-single="5"></math-field>
+              </div>
+              <span lang="y">㎝</span>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

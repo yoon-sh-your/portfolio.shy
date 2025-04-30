@@ -1,0 +1,109 @@
+.solve_area .bracket,
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+
+.question_box .input_wrap.fraction_wrap,
+.question_box .input_wrap.fraction_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+h3.title:before {
+  margin-top: 2px;
+}
+
+.ema514_05_ih_0001 .question_box {
+  border: 20px solid #e7f4ef;
+  border-radius: 40px;
+}
+.ema514_05_ih_0001 .question_box > div {
+  border: 4px dashed #bedecd;
+  border-radius: 34px;
+  margin: -12px;
+  padding: 52px;
+}
+
+.ema514_05_ih_0002 .flex.dir_col {
+  gap: 80px;
+  align-items: center;
+  padding-top: 30px;
+}
+.ema514_05_ih_0002 .question_box {
+  gap: 12px;
+}
+.ema514_05_ih_0002 .question_box.bottom {
+  gap: 20px;
+}
+.ema514_05_ih_0002 .question_box.bottom:before {
+  content: '';
+  display: block;
+  width: 52px;
+  height: 52px;
+  background: url(../../common_practice/common/img/icon_arrow_right_navy.svg) no-repeat center center;
+}
+.ema514_05_ih_0002 .solve_area .text_bullet {
+  padding-left: 20px;
+}
+
+.ema514_05_ih_0004 .question_box {
+  background: url(../img/EMA514_05_IH/0004_bg.png) no-repeat center center;
+  height: 202px;
+}
+.ema514_05_ih_0004 .boolean_wrap button {
+  background: none;
+}
+.result .ema514_05_ih_0004 .boolean_wrap button.selected[data-answer-single='false'] {
+  border: 4px solid #6a6a6a;
+}
+.result .ema514_05_ih_0004 .boolean_wrap button.selected[data-answer-single='true'] {
+  background: url(../../common_practice/common/img/hint_marking.svg) no-repeat center center / 110%;
+}
+
+.ema514_05_ih_0006 .tabbox_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  padding: 10px;
+  border: 2px solid #fbcba1;
+  background: #fff4ea;
+  border-radius: 30px;
+  font-size: 32px;
+  font-weight: bold;
+}
+.ema514_05_ih_0006 .tabbox_wrap .top {
+  padding: 30px 40px;
+}
+.ema514_05_ih_0006 .tabbox {
+  position: relative;
+  padding-top: 46px;
+}
+.ema514_05_ih_0006 .tabbox .tit_box {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  font-size: 32px;
+  color: #c0573d;
+  font-weight: 700;
+}
+.ema514_05_ih_0006 .tabbox .conts_box {
+  height: 224px;
+  padding: 18px 40px;
+  background: #fff;
+  border-radius: 40px;
+}
+.ema514_05_ih_0006 .question_box .input_wrap.fraction_wrap,
+.ema514_05_ih_0006 .question_box .input_wrap.fraction_wrap math-field {
+  width: 120px;
+}

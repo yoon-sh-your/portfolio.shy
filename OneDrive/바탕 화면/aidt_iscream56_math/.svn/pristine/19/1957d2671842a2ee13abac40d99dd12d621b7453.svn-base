@@ -1,0 +1,245 @@
+.input_wrap:has(.w_80) {
+  min-width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+  position: relative;
+}
+.input_wrap.input_sep {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+  left: calc(100% + 20px);
+  top: 12px;
+  width: auto;
+}
+
+.fraction_wrap .hint_up .text_hint {
+  top: auto;
+  bottom: calc(100% + 4px);
+}
+.fraction_wrap.hint_right .text_hint {
+  top: 18px;
+}
+.label_method {
+  display: inline-block;
+  color: #a1d08f;
+  background: #fff;
+  border: 3px solid #a1d08f;
+  font-size: 16px;
+  width: 52px;
+  height: 32px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  line-height: 32px;
+  text-align: center;
+}
+math-field.has_ex_text + .text_hint:before {
+  content: '예';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background: var(--primary-blue);
+  border-radius: 12px;
+  color: #fff;
+  line-height: 42px;
+}
+.input_wrap math-field.large {
+  width: 300px !important;
+}
+
+/* ema612_08_ih_0001 */
+.ema612_08_ih_0001 .img_area {
+  position: relative;
+}
+.ema612_08_ih_0001 .text_area {
+  width: 100%;
+  position: absolute;
+  top: 277px;
+  display: flex;
+  gap: 20px;
+}
+.ema612_08_ih_0001 .text_area .col {
+  flex: 1;
+}
+.ema612_08_ih_0001 .text_area .col > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ema612_08_ih_0001 .text_area .col > div + div {
+  margin-top: 5px;
+}
+.ema612_08_ih_0001 .text_area .col > div > span {
+  font-size: 24px;
+}
+.ema612_08_ih_0001 .text_area .col .custom_select {
+  width: 170px;
+}
+.ema612_08_ih_0001 .text_area .col span.large {
+  font-size: 44px;
+  /* font-family: sans-serif; */
+}
+.ema612_08_ih_0001 .text_area .col > div:first-child .custom_dropdown.hint~.custom_select .text_hint{
+  top: -38px;
+}
+/* ema612_08_ih_0002 */
+.ema612_08_ih_0002 .text_area {
+  width: 434px;
+  height: 244px;
+  border: 2px solid #e5b0d0;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.ema612_08_ih_0002 .text_area .label_bogi {
+  position: absolute;
+  top: -15px;
+  left: 40px;
+}
+.ema612_08_ih_0002 .img_area {
+  position: relative;
+  margin-left: 150px;
+}
+.ema612_08_ih_0002 .input_wrap {
+  position: absolute;
+}
+.ema612_08_ih_0002 .input_wrap math-field {
+  width: 200px;
+}
+.ema612_08_ih_0002 .input1 {
+  top: 127px;
+}
+.ema612_08_ih_0002 .input2 {
+  top: 251px;
+}
+.ema612_08_ih_0002 .input3 {
+  left: 469px;
+  top: 0;
+}
+.ema612_08_ih_0002 .input4 {
+  left: 469px;
+  top: 133px;
+}
+
+/* ema612_08_ih_0003 */
+.ema612_08_ih_0003 .contents {
+  padding-top: 10px !important;
+}
+.ema612_08_ih_0003 .table_wrap th,
+.ema612_08_ih_0003 .table_wrap td {
+  border-radius: 0 !important;
+  height: 62px;
+  font-size: 24px;
+}
+.ema612_08_ih_0003 .table_wrap col:first-of-type {
+  width: 340px;
+}
+.ema612_08_ih_0003 .table_wrap col:nth-of-type(2),
+.ema612_08_ih_0003 .table_wrap col:nth-of-type(3),
+.ema612_08_ih_0003 .table_wrap col:nth-of-type(4) {
+  width: 280px;
+}
+.ema612_08_ih_0003 .table_wrap .bg_gray {
+  background-color: #f2f2f3;
+  text-align: center;
+  padding: 5px 0;
+}
+.ema612_08_ih_0003 .table_wrap .bg_gray > img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ema612_08_ih_0003 .table_wrap .dropdown_wrap {
+  width: 230px;
+  margin: 0 auto;
+}
+.ema612_08_ih_0003 .table_wrap .custom_select {
+  width: 230px;
+}
+.ema612_08_ih_0003 .table_wrap thead tr:first-of-type th {
+  border-radius: 19px 0 0 0 !important;
+}
+.ema612_08_ih_0003 .table_wrap thead tr:first-of-type td:last-of-type {
+  border-radius: 0 19px 0 0 !important;
+}
+.ema612_08_ih_0003 .table_wrap tbody tr:last-of-type th {
+  border-radius: 0 0 0 19px !important;
+}
+.ema612_08_ih_0003 .custom_select .text_hint {
+  top: auto;
+  bottom: calc(100% + 6px);
+  left: 247px;
+}
+.ema612_08_ih_0003 .table_wrap th {
+  background-color: #e8f1d9;
+}
+.ema612_08_ih_0003 .btn_area {
+  bottom: 20px;
+}
+
+/* ema612_08_ih_0004 */
+
+.ema612_08_ih_0004 .question_box {
+  padding: 0 157px;
+}
+.ema612_08_ih_0004 .text_wrap {
+  width: auto;
+  padding: 45px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #f9bd88;
+  border-radius: 20px;
+  position: relative;
+}
+.ema612_08_ih_0004 .text_wrap dt {
+  position: absolute;
+  top: -18px;
+}
+.ema612_08_ih_0004 .text_wrap dd + dd {
+  margin-top: 10px;
+}
+.ema612_08_ih_0004 .text_wrap .label_condition {
+  top: -16px;
+  left: 40px;
+}
+.ema612_08_ih_0004 math-field {
+  width: 300px !important;
+}
+
+/* ema612_08_ih_0005 */
+.ema612_08_ih_0005 .img_area {
+  position: relative;
+}
+.ema612_08_ih_0005 .img_area p {
+  position: absolute;
+}
+.ema612_08_ih_0005 .text1 {
+  top: 81px;
+  left: 363px;
+}
+.ema612_08_ih_0005 .text2 {
+  top: 252px;
+  left: 351px;
+}

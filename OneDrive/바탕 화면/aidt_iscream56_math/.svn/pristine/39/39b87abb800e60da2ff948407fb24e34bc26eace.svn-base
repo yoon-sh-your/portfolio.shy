@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema525_su_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_03.css" />
+    <script src="../../common_contents/js/ema525_SU_0003.js"></script>
+</head>
+<body>
+    <div id="app_wrap" class="ema525_su_0003">
+        <form id="form">
+            <section class="contents">
+                <div class="form_wrap flex align_start justify_center">
+                    <div class="form_row form_row_1">
+                        <div class="player_area player_area_1">
+                            <div class="card_wrap">
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                            </div>
+                            <div class="player_area_bottom">
+                                <div class="btn_wrap">
+                                    <button lang="y" type="button" class="btn btnComplete" id="btn_complete_1">모두 같은 도형이다!</button>
+                                </div>
+                                <div lang="y" class="complete_info">
+                                    옳게 모은 횟수: <input type="text" class="complete_count" id="complete_count_1" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player_area player_area_2">
+                            <div class="card_wrap">
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                            </div>
+                            <div class="player_area_bottom">
+                                <div class="btn_wrap">
+                                    <button lang="y" type="button" class="btn btnComplete" id="btn_complete_2">모두 같은 도형이다!</button>
+                                </div>
+                                <div lang="y" class="complete_info">
+                                    옳게 모은 횟수: <input type="text" class="complete_count" id="complete_count_2" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form_row form_row_2">
+                        <button lang="y" type="button" class="btnShuffle" id="btnShuffleNext">넘겨!</button>
+                        <button lang="y" type="button" class="btnShuffle btnShuffleMore" id="btnShuffleMore">한번 더!</button>
+                    </div>
+                    <div class="form_row form_row_3">
+                        <div class="player_area player_area_3">
+                            <div class="card_wrap">
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                            </div>
+                            <div class="player_area_bottom">
+                                <div class="btn_wrap">
+                                    <button lang="y" type="button" class="btn btnComplete" id="btn_complete_3">모두 같은 도형이다!</button>
+                                </div>
+                                <div lang="y" class="complete_info">
+                                    옳게 모은 횟수: <input type="text" class="complete_count" id="complete_count_3" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player_area player_area_4">
+                            <div class="card_wrap">
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                                <div class="card" data-card="" data-type=""></div>
+                            </div>
+                            <div class="player_area_bottom">
+                                <div class="btn_wrap">
+                                    <button lang="y" type="button" class="btn btnComplete" id="btn_complete_4">모두 같은 도형이다!</button>
+                                </div>
+                                <div lang="y" class="complete_info">
+                                    옳게 모은 횟수: <input type="text" class="complete_count" id="complete_count_4" value="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="btn_line">
+                    <div class="btn_area">
+                        <button lang="y" type="button" class="btnType key">입력타입토글</button>
+                    </div>
+                    <div class="form_btn_area">
+                        <button lang="y" type="button" class="btn btn_reset btn_reset_form" id="btn_reset_form">리셋</button>
+                        <button lang="y" class="btn btn_submit btn_submit_form" id="btn_submit_form">확인</button>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </div>
+</body>
+</html>

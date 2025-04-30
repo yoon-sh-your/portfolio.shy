@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" /> -->
+    <meta content="width=1715,height=764" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="../../common_finish/common/css/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <title>차시마무리 평가</title>
+    <script src="../../common_finish/common/js/jquery.min.js"></script>
+    <script src="../../common_finish/common/js/jquery-ui.min.js"></script>
+    <script src="../../common_finish/common/js/jquery.ui.touch-punch.min.js"></script>
+    <script id="MathJax-script" async src="../../common_finish/common/js/MathJax/tex-chtml.js"></script>
+    <script type="module" src="../../common_finish/common/js/main.js"></script>
+  </head>
+  <style>
+    #q1 .qe_area .ans {
+      width: 250px;
+    }
+    #q1 .qe_area .t-box .blank {
+      border: 3px solid #7f7f7f;
+    }
+
+    #q5 .qe_area .t-box {
+      display: flex !important;
+    }
+  </style>
+  <body>
+    <div id="scaleWrapper">
+      <div id="intro" class="intro_2">
+        <div class="inner">
+          <div class="top">
+            <span lang="y" class="danwon_num">2단원</span>
+            <span lang="y" class="danwon_name">평면도형</span>
+          </div>
+          <h1 lang="y" class="title">마무리 평가</h1>
+          <p lang="y" class="qe_num">문항수 : 5개</p>
+          <p lang="y" class="guide">
+            답안 제출 기회는 2번씩 있어요.<br />
+            준비가 되면 시작 버튼을 눌러 주세요.<br />
+            준비되었나요?
+          </p>
+          <button lang="y" type="button" class="intro_btn">시작하기</button>
+        </div>
+      </div>
+      <div id="quest">
+        <div class="nav">
+          <div class="pagination">
+            <button type="button" class="p1 on" aria-current="page" aria-label="현재 페이지1">
+              <span>1</span>
+            </button>
+            <button type="button" class="p2" aria-label="페이지2">
+              <span>2</span>
+            </button>
+            <button type="button" class="p3" aria-label="페이지3">
+              <span>3</span>
+            </button>
+            <button type="button" class="p4" aria-label="페이지4">
+              <span>4</span>
+            </button>
+            <button type="button" class="p5" aria-label="페이지5">
+              <span>5</span>
+            </button>
+          </div>
+          <div class="center">
+            <button type="button" class="submit disable"><img src="../../common_finish/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+          </div>
+        </div>
+
+        <div id="q1" class="page on">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">빈칸 안에 들어갈 수 있는 자연수는 모두 몇 개인가요?</span>
+            </div>
+            <div class="qe_area">
+              <div class="t-box center"><span class="blank w80"></span><span> < $$\frac{3}{5} × 12$$</span></div>
+              <fieldset class="item_wrap vertical5" role="group" aria-labelledby="q1-label">
+                <legend id="q1-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">3개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">4개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">5개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">6개</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">7개</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div id="q2" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">계산 결과가 자연수인 식을 찾아보세요.</span>
+            </div>
+            <div class="qe_area">
+              <fieldset class="item_wrap" role="group" aria-labelledby="q2-label">
+                <legend id="q2-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">$$\frac{7}{3} × 3$$</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">$$\frac{2}{7} × 12$$</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">$$\frac{8}{9} × 12$$</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">$$\frac{4}{5} × 15$$</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">$$\frac{1}{9} × 21$$</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div id="q3" class="page">
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit frac">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">한 변의 길이가 $$\frac{7}{10}$$ ㎝인 정육각형의 둘레의 길이를 구해 보세요.</span>
+              </div>
+              <div class="qe_area center">
+                <div class="ans_wrap">
+                  <div class="frac_ans">
+                    <div class="ans">
+                      <label for="answer3-1" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer3-1" class="answer answer3-1" readonly />
+                    </div>
+                  </div>
+<<<<<<< .mine
+                  <div class="frac_ans">
+                    <div class="ans">
+                      <label for="answer3-2" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer3-2" class="answer answer3-2" readonly />
+                    </div>
+                    <hr />
+                    <div class="ans">
+                      <label for="answer3-3" class="sr-only">첫 번째 정답 입력</label>
+                      <input type="number" id="answer3-3" class="answer answer3-3" readonly />
+                    </div>
+||||||| .r3330
+                  <span class="exp">cm</span>&nbsp;
+                  <div class="ans">
+                    <label for="answer3-2" class="sr-only">두 번째 정답 입력</label>
+                    <input type="number" id="answer3-2" class="answer answer3-2 active" readonly />
+=======
+                  <span class="exp">㎝</span>&nbsp;
+                  <div class="ans">
+                    <label for="answer3-2" class="sr-only">두 번째 정답 입력</label>
+                    <input type="number" id="answer3-2" class="answer answer3-2 active" readonly />
+>>>>>>> .r3333
+                  </div>
+<<<<<<< .mine
+||||||| .r3330
+                  <span class="exp">cm</span>&nbsp;
+                  <div class="ans">
+                    <label for="answer3-3" class="sr-only">세 번째 정답 입력</label>
+                    <input type="number" id="answer3-3" class="answer answer3-3 active" readonly />
+                  </div>
+=======
+                  <span class="exp">㎝</span>&nbsp;
+                  <div class="ans">
+                    <label for="answer3-3" class="sr-only">세 번째 정답 입력</label>
+                    <input type="number" id="answer3-3" class="answer answer3-3 active" readonly />
+                  </div>
+>>>>>>> .r3333
+                  <span class="exp">㎝</span>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" readonly aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="q4" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">도형의 둘레가 가장 긴 것을 찾아 기호를 골라 보세요.</span>
+            </div>
+            <div class="qe_area center">
+              <div class="t-box">
+                ㉠ 한 변의 길이가 $$\frac{5}{6}$$ m인 정삼각형<br />
+                ㉡ 한 변의 길이가 $$\frac{3}{4}$$ m 인 정사각형<br />
+                ㉢ 한 변의 길이가 $$\frac{11}{15}$$ m인 정오각형
+              </div>
+              <fieldset class="item_wrap vertical" role="group" aria-labelledby="q4-label">
+                <legend id="q4-label" class="sr-only">다음 중 알맞은 수를 모두 선택하세요</legend>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">㉠</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">㉡</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">㉢</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q5" class="page">
+          <div class="bg withKeypad">
+            <div class="area_l">
+              <div class="mid_tit frac">
+                <span lang="y" class="q-num">문제</span>
+                <span lang="y" class="txt">우유가 $$\frac{9}{14}$$ L씩 들어 있는 병이 5개 있습니다. 우유는 모두 몇 L인지 빈칸에 알맞은 수를 써넣어 보세요.</span>
+              </div>
+              <div class="qe_area">
+                <div class="t-box">
+                  $$\frac{9}{4}$$ × 5 = &nbsp;
+                  <div class="ans">
+                    <label for="answer5-1" class="sr-only">첫 번째 정답 입력</label>
+                    <input type="number" id="answer5-1" class="answer answer5-1" readonly />
+                  </div>
+
+                  &nbsp; × &nbsp;
+                  <div class="ans">
+                    <label for="answer5-2" class="sr-only">두 번째 정답 입력</label>
+                    <input type="number" id="answer5-2" class="answer answer5-2" readonly />
+                  </div>
+                  &nbsp; = &nbsp;
+                  <div class="frac_ans">
+                    <div class="ans">
+                      <label for="answer5-3" class="sr-only">세 번째 정답 입력</label>
+                      <input type="number" id="answer5-3" class="answer answer5-3" readonly />
+                    </div>
+                    <hr />
+                    14
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="area_r">
+              <div class="keypad">
+                <p lang="y" class="calc_tit">정답</p>
+                <div class="calc_result">
+                  <img src="../../common_finish/common/img/mamuri/ic_calc_gr.svg" alt="" aria-hidden="true" />
+                  <input type="text" class="calc_result_input" inputmode="decimal" readonly aria-live="polite" aria-label="계산기 입력 필드" />
+                </div>
+                <div class="calc_option">
+                  <button type="button" class="calc_reset" aria-label="결과 지우기">
+                    <span class="sr-only">리셋 버튼</span>
+                  </button>
+                  <button type="button" class="calc_check" aria-label="답안 입력">
+                    <span class="sr-only">답안 입력 버튼</span>
+                  </button>
+                </div>
+                <div class="calc_num">
+                  <button type="button" aria-label="숫자 1">1</button>
+                  <button type="button" aria-label="숫자 2">2</button>
+                  <button type="button" aria-label="숫자 3">3</button>
+                  <button type="button" aria-label="숫자 4">4</button>
+                  <button type="button" aria-label="숫자 5">5</button>
+                  <button type="button" aria-label="숫자 6">6</button>
+                  <button type="button" aria-label="숫자 7">7</button>
+                  <button type="button" aria-label="숫자 8">8</button>
+                  <button type="button" aria-label="숫자 9">9</button>
+                  <button type="button" aria-label="소수점">.</button>
+                  <button type="button" aria-label="숫자 0">0</button>
+                  <button type="button" class="del" aria-label="마지막 숫자 삭제">
+                    <span class="sr-only">지우기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="submitModal" class="modal">
+        <div class="modal-content">
+          <p lang="y" class="modal-message">이대로 제출하겠습니까?</p>
+          <div class="modal-buttons">
+            <button lang="y" type="button" class="modal-cancel">취소</button>
+            <button lang="y" type="button" class="modal-confirm">제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /* 
+    각 문항의 유형 + (답안 예시)
+    1. : 입력형           input.answer
+    2. : item 선택형      .answer.selected
+    3. : 선택지 선택형     .answer:checked
+    4. : D&D              .dropped-item
+    5. : 선긋기           
+    */
+      window.questionTypes = [3, 3, 1, 2, 1];
+      window.correctAnswers = {
+        1: ["item5"],
+        2: ["item4"],
+        3: [4, 1, 5],
+        4: ["item3"],
+        5: [9, 5, 45],
+      };
+    </script>
+  </body>
+</html>

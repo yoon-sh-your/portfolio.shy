@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema561_02_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_02_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">정다각형의 둘레를 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area po_absolute">
+          <div class="question_box dir_col align_start">
+            <div class="flex align_center gap_12">
+              <div class="contentBox1">
+                <img src="../../common_contents/img/EMA516_02_SU/004background.png" alt="배경 이미지" />
+                <div class="imgTitle">
+                  <p lang="y">정육각형</p>
+                </div>
+                <div class="length1">
+                  <span>4 ㎝</span>
+                </div>
+                <div class="answer_wrap">
+                  <div class="input_wrap page4">
+                    <math-field data-answer-single="24"></math-field>
+                    <span>㎝</span>
+                  </div>
+                </div>
+              </div>
+              <div class="contentBox2">
+                <img src="../../common_contents/img/EMA516_02_SU/004background2.png" alt="배경 이미지" />
+                <div class="imgTitle2">
+                  <p lang="y">정팔각형</p>
+                </div>
+                <div class="length2">
+                  <span>2 ㎝</span>
+                </div>
+                <div class="answer_wrap">
+                  <div class="input_wrap page5">
+                    <math-field data-answer-single="16"></math-field>
+                    <span>㎝</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1085 @@
+/*  분수식 */
+.fraction_row {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+/* .title .empty_box {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+    padding: 0;
+    border-radius: 4px;
+    border: 1px solid var(--primary-blue);
+} */
+
+/* ema522_09_su_0002 */
+.ema522_11_su_0002 {
+  .empty_box {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--primary-blue);
+    border-radius: 4px;
+  }
+
+  .input_wrap math-field:not(.textarea) {
+    width: 80px;
+  }
+
+  .container {
+    width: 725px;
+    height: 200px;
+    background-image: url(../img/EMA522_11_SU/0002_img02.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* .ema522_09_su_0003 */
+.ema522_11_su_0003 {
+  .sign_start {
+    position: relative;
+    top: -10px;
+    font-size: 100px;
+    font-weight: 100;
+    line-height: normal;
+  }
+
+  .question_box {
+    padding: 40px 50px;
+    margin: 0 20px;
+    border: 5px solid #a0d1c0;
+    border-radius: 30px;
+    height: 292px;
+    gap: 20px;
+
+    .tit {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      line-height: 32px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  .input_wrap,
+  .input_wrap input,
+  .input_wrap math-field {
+    width: 80px;
+    min-width: 80px;
+  }
+
+  .page_1 {
+    .label {
+      display: inline-flex;
+      width: 107px;
+      height: 52px;
+      background: url(../../common_contents/common/img/title_mid_9.svg) no-repeat center;
+    }
+
+    .label i {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  }
+
+  .page_2 {
+    .label {
+      display: inline-flex;
+      width: 107px;
+      height: 52px;
+      background: url(../../common_contents/common/img/title_mid_10.svg) no-repeat center;
+    }
+
+    .label i {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  }
+
+  .question_box {
+    /* flex-wrap: wrap;
+        width: 1000px;
+        gap: 100px 200px; */
+
+    .flex {
+
+      &:nth-child(1),
+      &:nth-child(2) {
+
+        .input_wrap,
+        .input_wrap input,
+        .input_wrap math-field {
+          width: 80px;
+          min-width: 80px;
+        }
+      }
+    }
+
+    &>.flex {
+      flex: 1;
+    }
+  }
+}
+
+/* .ema522_09_su_0004 */
+.ema522_11_su_0004 {
+  .question_box {
+    flex-wrap: wrap;
+    width: 1100px;
+    gap: 100px 200px;
+
+    .flex {
+
+      &:nth-child(1),
+      &:nth-child(2) {
+
+        .input_wrap,
+        .input_wrap input,
+        .input_wrap math-field {
+          width: 247px;
+          min-width: 80px;
+        }
+      }
+    }
+
+    &>.flex {
+      flex: 1;
+    }
+  }
+}
+
+/* ema522_09_su_0005 */
+.ema522_11_su_0005 {
+  .question_box {
+    gap: 100px;
+  }
+
+  .container {
+    width: 420px;
+    height: 160px;
+    background-image: url(../img/EMA522_11_SU/0005_img01.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+/* .ema522_09_su_0007 */
+.ema522_09_su_0007 {
+  .img_area {
+    position: relative;
+    width: 900px;
+    height: 243px;
+    /* background-image: url(../img/EMA522_11_SU/0007_img01.png); */
+
+    .abs_1 {
+      position: absolute;
+      top: 10px;
+      left: 116px;
+    }
+
+    .abs_2 {
+      position: absolute;
+      top: 120px;
+      left: 300px;
+    }
+
+    .abs_3 {
+      position: absolute;
+      top: 90px;
+      left: 600px;
+    }
+  }
+}
+
+/* ema522_09_su_0006 */
+/* ema514_10_su_0002 copy */
+.ema522_09_su_0006 {
+  span {
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: -1px;
+  }
+
+  .input_wrap .text_hint,
+  .dropdown_wrap .text_hint {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .dropdown_wrap .text_hint {
+    font-weight: 800;
+  }
+
+  .input_wrap,
+  .input_wrap input {
+    min-width: 80px;
+    width: 80px;
+  }
+
+  .input_wrap math-field:not(.textarea) {
+    width: 80px;
+  }
+}
+
+.ema522_09_su_0006 .boolean_box {
+  display: flex;
+  gap: 85px;
+  position: relative;
+}
+
+.ema522_09_su_0006 .boolean_row {
+  display: flex;
+  gap: 156px;
+}
+
+.ema522_09_su_0006 .boolean_row:first-child {
+  background: url(../img/EMA514_10_SU/0002_bg.png) no-repeat 50% 50%;
+  height: 380px;
+  width: 988px;
+}
+
+.ema522_09_su_0006 .boolean_row:nth-of-type(2) {
+  align-items: center;
+}
+
+.ema522_09_su_0006 .fraction_wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.ema522_09_su_0006 .boolean_col {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.ema522_09_su_0006 .boolean_count_wrap {
+  display: block;
+  border: 0;
+  width: 225px;
+  height: 235px;
+}
+
+.ema522_09_su_0006 .boolean_count_wrap button:not(:first-child)::before {
+  display: none;
+}
+
+.ema522_09_su_0006 .boolean_col button {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  background: transparent;
+}
+
+.ema522_09_su_0006 .boolean_col button:focus {
+  border: 1px dashed black !important;
+}
+
+.ema522_09_su_0006 .boolean_col button.selected {
+  background-color: var(--font-main-700);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button {
+  width: 154px;
+  height: 101px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(1) {
+  transform: translate(-69%, 27%) rotate(315deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(2) {
+  transform: translate(-69%, 102%) rotate(225deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(3) {
+  transform: translate(-31%, 102%) rotate(-225deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(4) {
+  transform: translate(-31%, 27%) rotate(-315deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button.selected {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg2.svg) 0 0 no-repeat;
+  width: 116px;
+  height: 116px;
+  clip-path: none;
+}
+
+.ema522_09_su_0006 .boolean_col.col1 .boolean_count_wrap.hint button.correct {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg2_1.svg) 0 0 no-repeat;
+  clip-path: none;
+  height: 116px;
+}
+
+.ema522_09_su_0006 .boolean_col.col1 .boolean_count_wrap.correct button.selected {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg2_2.svg) 0 0 no-repeat;
+  clip-path: none;
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(1).selected {
+  transform: translate(-96%, 3%) rotate(0);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(2).selected {
+  transform: translate(-96%, 98%) rotate(-90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(3).selected {
+  transform: translate(-1%, 98%) rotate(-180deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 button:nth-of-type(4).selected {
+  transform: translate(-1%, 3%) rotate(90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col1 .hint button:nth-of-type(1).correct {
+  transform: translate(-98%, 3%) rotate(360deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button {
+  width: 78px;
+  height: 116px;
+  /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(1) {
+  transform: translate(-81%, 3%) rotate(-23deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(2) {
+  transform: translate(-117%, 26%) rotate(-77deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(3) {
+  transform: translate(-117%, 67%) rotate(-115deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(4) {
+  transform: translate(-79%, 96%) rotate(-161deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(5) {
+  transform: translate(-22%, 97%) rotate(-203deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(6) {
+  transform: translate(17%, 73%) rotate(-253deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(7) {
+  transform: translate(18%, 30%) rotate(-290deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(8) {
+  transform: translate(-16%, 7%) rotate(-347deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button.selected {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg3.svg) 0 0 no-repeat;
+  width: 78px;
+  height: 116px;
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .boolean_count_wrap.hint button.correct {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg3_1.svg) 0 0 no-repeat;
+  width: 88px;
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .boolean_count_wrap.correct button.selected {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg3_2.svg) 0 0 no-repeat;
+  width: 88px;
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(1).selected {
+  transform: translate(-100%, 2%) rotate(0);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(1).correct {
+  transform: translate(-94%, 0%) rotate(0);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(1).selected {
+  transform: translate(-92%, 2%) rotate(0);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(2).selected {
+  transform: translate(-136%, 40%) rotate(-45deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(2).correct {
+  transform: translate(-127%, 38%) rotate(-45deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(2).selected {
+  transform: translate(-126%, 40%) rotate(-45deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(3).selected {
+  transform: translate(-122%, 84%) rotate(-90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(3).correct {
+  transform: translate(-115%, 83%) rotate(-90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(3).selected {
+  transform: translate(-111%, 84%) rotate(-90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(4).selected {
+  transform: translate(-64%, 108%) rotate(-135deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(4).correct {
+  transform: translate(-54%, 108%) rotate(-135deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(4).selected {
+  transform: translate(-62%, 108%) rotate(-135deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(5).selected {
+  transform: translate(2%, 99%) rotate(180deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(5).correct {
+  transform: translate(12%, 99%) rotate(180deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(5).selected {
+  transform: translate(-6%, 99%) rotate(180deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(6).selected {
+  transform: translate(37%, 60%) rotate(135deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(6).correct {
+  transform: translate(27%, 60%) rotate(135deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(6).selected {
+  transform: translate(26%, 60%) rotate(135deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(7).selected {
+  transform: translate(23%, 16%) rotate(90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(7).correct {
+  transform: translate(23%, 16%) rotate(90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(7).selected {
+  transform: translate(15%, 16%) rotate(90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 button:nth-of-type(8).selected {
+  transform: translate(-34%, -9%) rotate(45deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .hint button:nth-of-type(8).correct {
+  transform: translate(-34%, -9%) rotate(45deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col2 .correct button:nth-of-type(8).selected {
+  transform: translate(-34%, -7%) rotate(45deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button {
+  width: 56px;
+  height: 112px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(1) {
+  transform: translate(-81%, 3%) rotate(-14deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(1).correct {
+  transform: translate(-101%, 1%) rotate(-14deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(1).selected {
+  transform: translate(-81%, 3%) rotate(-14deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(2) {
+  transform: translate(-127%, 17%) rotate(-45deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(3) {
+  transform: translate(-148%, 37%) rotate(-79deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(4) {
+  transform: translate(-154%, 68%) rotate(-105deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(5) {
+  transform: translate(-129%, 91%) rotate(-135deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(6) {
+  transform: translate(-86%, 104%) rotate(-169deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(7) {
+  transform: translate(-25%, 104%) rotate(165deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(8) {
+  transform: translate(17%, 91%) rotate(132deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(9) {
+  transform: translate(45%, 71%) rotate(100deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(10) {
+  transform: translate(48%, 39%) rotate(77deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(11) {
+  transform: translate(25%, 18%) rotate(43deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(12) {
+  transform: translate(-19%, 3%) rotate(10deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button.selected {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg4.svg) 0 0 no-repeat;
+  width: 58px;
+  height: 108px;
+  clip-path: none;
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .boolean_count_wrap.hint button.correct {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg4_1.svg) 0 0 no-repeat;
+  clip-path: none;
+  width: 60px;
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .boolean_count_wrap.correct button.selected {
+  background: url(../../common_contents/img/EMA514_10_SU/0002_bg4_2.svg) 0 0 no-repeat;
+  width: 60px;
+  clip-path: none;
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(1).selected {
+  transform: translate(-98%, 3%) rotate(0);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(1).correct {
+  transform: translate(-100%, 1%) rotate(0deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(1).selected {
+  transform: translate(-98%, 3%) rotate(0);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(2).selected {
+  transform: translate(-142%, 23%) rotate(-30deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(2).correct {
+  transform: translate(-143%, 22%) rotate(-30deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(2).selected {
+  transform: translate(-142%, 23%) rotate(-30deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(3).selected {
+  transform: translate(-162%, 52%) rotate(-60deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(3).correct {
+  transform: translate(-161%, 50%) rotate(-60deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(3).selected {
+  transform: translate(-162%, 52%) rotate(-60deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(4).selected {
+  transform: translate(-153%, 82%) rotate(-90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(4).correct {
+  transform: translate(-153%, 82%) rotate(-90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(4).selected {
+  transform: translate(-153%, 82%) rotate(-90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(5).selected {
+  transform: translate(-119%, 107%) rotate(-120deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(5).correct {
+  transform: translate(-119%, 107%) rotate(-120deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(5).selected {
+  transform: translate(-119%, 107%) rotate(-120deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(6).selected {
+  transform: translate(-63%, 117%) rotate(-150deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(6).correct {
+  transform: translate(-63%, 117%) rotate(-150deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(6).selected {
+  transform: translate(-63%, 117%) rotate(-150deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(7).selected {
+  transform: translate(-5%, 113%) rotate(180deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(7).correct {
+  transform: translate(-5%, 113%) rotate(180deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(7).selected {
+  transform: translate(-5%, 113%) rotate(180deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(8).selected {
+  transform: translate(39%, 93%) rotate(150deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(8).correct {
+  transform: translate(39%, 93%) rotate(150deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(8).selected {
+  transform: translate(39%, 93%) rotate(150deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(9).selected {
+  transform: translate(59%, 64%) rotate(120deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(9).correct {
+  transform: translate(59%, 64%) rotate(120deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(9).selected {
+  transform: translate(59%, 64%) rotate(120deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(10).selected {
+  transform: translate(49%, 33%) rotate(90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(10).correct {
+  transform: translate(49%, 33%) rotate(90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(10).selected {
+  transform: translate(49%, 33%) rotate(90deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(11).selected {
+  transform: translate(15%, 8%) rotate(60deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(11).correct {
+  transform: translate(15%, 8%) rotate(60deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(11).selected {
+  transform: translate(15%, 8%) rotate(60deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 button:nth-of-type(12).selected {
+  transform: translate(-41%, -2%) rotate(30deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .hint button:nth-of-type(12).correct {
+  transform: translate(-41%, -2%) rotate(30deg);
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .correct button:nth-of-type(12).selected {
+  transform: translate(-41%, -2%) rotate(30deg);
+}
+
+.ema522_09_su_0006 .boolean_col .fraction_box {
+  position: absolute;
+}
+
+.ema522_09_su_0006 .boolean_col .fraction_box {
+  bottom: 31px;
+  left: 103px;
+}
+
+.ema522_09_su_0006 .boolean_col.col3 .fraction_box {
+  left: 94px;
+}
+
+.ema522_09_su_0006 .input_wrap .text_hint span {
+  font-size: 24px;
+}
+
+.ema522_09_su_0006 .input_wrap.answer2 .text_hint {
+  top: calc(100% + 6px);
+}
+
+.ema522_11_su_0006 {
+  .question_box {
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .canvas-container {
+    position: absolute !important;
+    top: -1px;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid var(--stroke-default);
+    border-radius: 12px;
+  }
+
+  .tabbox_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    gap: 0;
+    width: 800px;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .tabbox_wrap .top {
+    padding: 64px 40px;
+    width: 788px;
+    height: 196px;
+    background: url(../../common_contents/img/EMA522_11_SU/0006_img01.png) no-repeat center / 100%;
+  }
+
+  .tabbox {
+    position: relative;
+    width: 100%;
+    padding-top: 16px;
+    display: flex;
+    gap: 10px;
+  }
+
+  .tabbox .tit_box {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    border-radius: 25px 25px 0 25px;
+    background: #689fd7;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    font-weight: 700;
+  }
+
+  .tabbox .conts_box {
+    width: 100%;
+    background: #fff;
+    border-radius: 40px;
+  }
+
+  .tabbox .conts_box .input_wrap {
+    width: 100%;
+    height: 290px;
+  }
+
+  .tabbox .conts_box .input_wrap math-field {
+    min-width: 100%;
+    height: 290px;
+  }
+
+  .tabbox .conts_box .example_box {
+    font-size: 24px;
+    color: #1454b9;
+    white-space: normal;
+  }
+
+  /* .tabbox .conts_box .example_box:before {
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    border-radius: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  } */
+
+  .tabbox .conts_box .fraction_box {
+    vertical-align: middle;
+    gap: 8px;
+  }
+
+  .tabbox .conts_box .fraction_box:before {
+    background-color: #1454b9;
+  }
+
+  .tabbox .question_box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .tabbox .input_wrap math-field {
+    width: 580px;
+    height: 60px !important;
+    min-height: auto;
+  }
+
+  .tabbox .text_hint {
+    top: 50%;
+    left: 168px;
+    width: auto;
+    transform: translateY(-50%);
+    padding: 0 16px;
+  }
+
+  .tabbox .input_wrap.answer1 .text_hint {
+    top: 50%;
+    left: 215px;
+  }
+
+  .tabbox.type1 {
+    position: relative;
+    width: 790px;
+    border: 2px solid #a9b9de;
+    border-radius: 20px;
+    height: 160px;
+  }
+
+  .tabbox.type1 .tit_tabbox {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+    padding: 14px 20px;
+    border-radius: 25px 25px 0 25px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #689fd7;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .tabbox.type1 .conts_tabbox {
+    padding-top: 60px;
+  }
+
+  .tabbox.type1 .flex {
+    /* height: 190px; */
+  }
+
+  .tabbox.type1 .input_wrap {
+    width: auto;
+  }
+
+  .tabbox.type1 .input_wrap.answer1 math-field {
+    width: 152px;
+  }
+
+  .tabbox.type1 .input_wrap.answer3 math-field {
+    width: 100px;
+  }
+
+  .fraction_box:has([class^='division_']) {
+    position: relative;
+
+    .division_1 {
+      position: absolute;
+      top: -40px;
+      left: 8px;
+      color: #e4007f;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 41px;
+        left: -8px;
+        width: 22px;
+        height: 26px;
+        background: url(../img/EMA522_02_SU/0005_line.png) no-repeat 0 / 100%;
+      }
+    }
+
+    .division_2 {
+      position: absolute;
+      top: 67px;
+      left: 6px;
+      color: #e4007f;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -32px;
+        left: -4px;
+        width: 22px;
+        height: 26px;
+        background: url(../img/EMA522_02_SU/0005_line.png) no-repeat 0 / 100%;
+      }
+    }
+  }
+
+  *:has([class^='division_']) {
+    position: relative;
+
+    .division_1 {
+      position: absolute;
+      top: -32px;
+      left: 35px;
+      color: #e4007f;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 41px;
+        left: -8px;
+        width: 26px;
+        height: 26px;
+        background: url(../img/EMA522_02_SU/0005_line.png) no-repeat 0 / 100%;
+      }
+    }
+
+    .division_2 {
+      position: absolute;
+      top: 67px;
+      left: 10px;
+      color: #e4007f;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -32px;
+        left: -4px;
+        width: 26px;
+        height: 26px;
+        background: url(../img/EMA522_02_SU/0005_line.png) no-repeat 0 / 100%;
+      }
+    }
+  }
+}
+
+/* .ema522_09_su_0007 */
+.ema522_11_su_0007 {
+  .img_area {
+    position: relative;
+    /* width: 900px; */
+    height: 243px;
+    /* background-image: url(../img/EMA522_11_SU/0007_img01.png); */
+
+    .abs_1 {
+      position: absolute;
+      top: -18px;
+      left: 116px;
+    }
+
+    .abs_2 {
+      position: absolute;
+      top: 96px;
+      left: 304px;
+    }
+
+    .abs_3 {
+      position: absolute;
+      top: 93px;
+      left: 600px;
+    }
+  }
+}
+
+
+/* .ema522_09_su_0008 */
+.ema522_11_su_0008 {
+
+  .input_wrap,
+  .input_wrap input,
+  .input_wrap math-field {
+    width: 80px;
+    min-width: 80px;
+  }
+
+  .container {
+    width: 1280px;
+    height: 1272px;
+    background: url(../img/EMA522_11_SU/0008_img01.png) no-repeat 0 0 / 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 136px 0 215px 95px;
+
+    .box {
+      width: 532px;
+      /* height: 528px; */
+      padding: 90px 30px 0;
+      gap: 30px;
+
+      &:nth-child(1) {
+        margin-top: 30px;
+      }
+
+      &:nth-child(3) {
+        padding: 90px 70px 0 0px;
+      }
+
+      .bg {
+        width: 326px;
+        height: 124px;
+        background: url(../img/EMA522_11_SU/0008_img02.png) no-repeat 3px 0 / 100%;
+        padding-bottom: 26px;
+        gap: 7px !important;
+      }
+
+      &:nth-child(2) {
+        margin-top: 80px;
+        margin-left: 30px;
+      }
+    }
+  }
+
+  section.contents {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_03_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema525_06_0002.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_03_su_0003">
+      <section class="title type2">
+        <h2 data-head="1_light_purple" lang="y">직육면체를 여러 방향에서 관찰한 것입니다. 직육면체 모양을 잘 알 수 있도록 나타내는 방법을 알아봅시다.
+        </h2>
+      </section>
+        
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">가, 나, 다 모양에서 보이는 면은 각각 몇 개인가요?</h3>
+          <div class="wrap flex dir_col" >          
+            <div class="contents_img">
+              <ul class="example_num">
+                <li lang="y" class="f24b"><span>가</span></li>
+                <li lang="y" class="f24b"><span>나</span></li>
+                <li lang="y" class="f24b"><span>다</span></li>
+              </ul>
+              <img src="../../common_contents/img/EMA525_02_SU/0003_contents1.png" alt="직육면체,정육면체 예시 이미지"/>
+            </div>
+            <div class="multiply-box">
+              <div class="flex justify_center gap_36">
+                <div class="f32b flex justify_center gap_10 align_center">
+                  <span lang="y">가</span>
+                  <div class="input_wrap answer1"><math-field type="number" data-answer-single="3"></math-field></div>
+                  <span lang="y">개</span>
+                </div>
+                <div class="f32b flex justify_center gap_10 align_center">
+                  <span lang="y">나</span>
+                  <div class="input_wrap answer2"><math-field type="number" data-answer-single="2"></math-field></div>
+                  <span lang="y">개</span>
+                </div>
+                <div class="f32b flex justify_center gap_10 align_center">
+                  <span lang="y">다</span>
+                  <div class="input_wrap answer3"><math-field type="number" data-answer-single="1"></math-field></div>
+                  <span lang="y">개</span>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">위의 모양 중 직육면체 모양을 가장 잘 알 수 있는 것을 찾아 기호를 찾아 보세요.</h3>     
+          <div class="wrap flex dir_col">          
+              <div class="contents_img">
+                <div class="limit_btn_wrap">
+                  <div class="boolean_wrap limit_btn_box span_type">
+                    <button data-answer-single="true"><span lang="y" class="f24b">가</span></button>
+                    <button data-answer-single="false"><span lang="y" class="f24b">나</span></button>
+                    <button data-answer-single="false"><span lang="y" class="f24b">다</span></button>
+                  </div>
+                </div>
+                <img src="../../common_contents/img/EMA525_02_SU/0003_contents1.png" alt="직육면체,정육면체 예시 이미지"/>
+              </div>
+            </div>
+        </article>
+        <article class="page page_3">
+          <h3 lang="y">정사각형으로 둘러싸인 상자를 모두 찾아 기호를 찾아 보세요.</h3>   
+          <div class="flex dir_col">         
+            <div class="contents_img">
+              <ul class="example_num">
+                <li lang="y" class="f24b"><span>가</span></li>
+                <li lang="y" class="f24b"><span>나</span></li>
+                <li lang="y" class="f24b"><span>다</span></li>
+              </ul>
+              <img src="../../common_contents/img/EMA525_02_SU/0003_contents1.png" alt="직육면체,정육면체 예시 이미지"/>
+            </div>
+            <div class="text_center">
+              <div class="input_wrap answer5">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">보이지 않는 모서리를 점선으로 나타내면 좋을 것 같습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <div class="summarize_wrap yellow">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+
+              <div>
+                <span lang="y">직육면체 모양을 잘 알 수 있도록 나타낸 그림을 직육면체의 </span>
+                <button class="reveal_btn" data-pair="겨냥도" lang="y">겨냥도</button>
+                <span lang="y" class="small-gap">라고 합니다.</span>
+              </div>
+              <div>
+                <img src="../../common_contents/img/EMA525_02_SU/0003_contents2.png" alt="겨냥도 설명 이미지"/>
+              </div>
+              <p lang="y">직육면체의 겨냥도에서​<br/>보이는 모서리는 실선으로,<br/>보이지 않는 모서리는​<br/>점선으로 나타내요.</p>
+            </div>
+          </div>
+        </article>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_02_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_02.css" />
+  <script src="../../common_contents/js/ema622_02_0003.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_02_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_green" lang="y">로봇이 모래 3.6 kg을 한 번에 0.9 kg씩 실어 나르고 있습니다. 모래를 몇 번 실어 날라야 하는지 구해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start">
+        <div class="picture_wrap">
+          <img src="../../common_contents/img/EMA622_02_SU/0002_content.png" alt="자치회 활동 이미지" />
+          <button class="zoom"></button>
+        </div>
+
+        <article class="page page_1">
+          <div class="input_area">
+            <h3 lang="y">구하는 식을 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="3.6÷0.9"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="input_area">
+            <h3 lang="y">모래를 몇 번 실어 날라야 할지 어림셈해 보고, 어떻게 어림셈했는지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">3.6을 4로, 0.9를 1로 어림하면 4÷1=4이므로 4번쯤 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <h3 lang="y">모래를 몇 번 실어 날라야 할지 어림셈해 보고, 어떻게 어림셈했는지 이야기해 보세요.​<span class="click_on_the_image"></span></h3>
+          <div class="question_box justify_center">
+ 
+            <div class="container">
+                <div class="box_container">
+
+                  <div class="r1"> </div>
+
+                  <div class="r2"></div>
+
+                </div>
+
+                <div class="arrow"></div>
+            </div>
+
+            <div class="bubble">
+                <svg xmlns="http://www.w3.org/2000/svg" width="146" height="187" viewBox="0 0 146 187" fill="none">
+                  <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                    font-size="20" letter-spacing="-0.5px">
+                    <tspan x="36.2559" y="36.1094" lang="y">3은 0.1이
+                    </tspan>
+                    <tspan x="41.5469" y="68.1094" lang="y">30개야.</tspan>
+                  </text>
+                </svg>
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_4">
+          <div class="input_area">
+            <h3 lang="y">36÷9를 이용하여 3.6÷0.9를 계산할 수 있을지 이야기해 보세요.</h3>
+            <div class="question_box justify_center" lang="y">
+              계산할 수&nbsp;
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="있습니다." lang="y">
+                  <option></option>
+                  <option value="있습니다." lang="y"></option>
+                  <option value="없습니다." lang="y"></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_5"> 
+          <div class="input_area">
+            <h3 lang="y">모래를 몇 번 실어 날라야 하는지 구하고, 어림셈한 결과와 비교해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div lang="y">
+                <div class="question_box justify_center">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="4"></math-field>
+                  </div>
+                </div>
+                번
+              </div>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">어림셈한 결과인 4번과 같습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

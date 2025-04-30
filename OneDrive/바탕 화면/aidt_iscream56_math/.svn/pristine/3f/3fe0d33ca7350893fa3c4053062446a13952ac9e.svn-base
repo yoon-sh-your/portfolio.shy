@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_04_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_04_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">직선 ㅈㅊ을 대칭축으로 하는 선대칭도형입니다. 대응점, 대응변, 대응각을 각각 찾아 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA523_04_IH/0003_01.png" alt="" />
+          </div>
+          <div class="table_wrap">
+            <table>
+              <colgroup>
+                <col />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th lang="y" scope="row" rowspan="2">대응점</th>
+                  <td>
+                    <span lang="y">점 ㄴ과 점</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅇ" text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span lang="y">점 ㄷ과 점</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅅ" text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y" scope="row" rowspan="2">대응변</th>
+                  <td>
+                    <span lang="y">변 ㄱㄴ과 변</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㄱㅇ" data-answer-multi='{"values": ["ㄱㅇ", "ㅇㄱ"]}' text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span lang="y">변 ㄷㄹ과 변</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅅㅂ" data-answer-multi='{"values": ["ㅅㅂ", "ㅂㅅ"]}' text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th lang="y" scope="row" rowspan="2">대응각</th>
+                  <td>
+                    <span lang="y">각 ㄱㄴㄷ과 각</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㄱㅇㅅ" data-answer-multi='{"values": ["ㄱㅇㅅ", "ㅅㅇㄱ"]}' text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span lang="y">각 ㄷㄹㅁ과 각</span>
+                    <div>
+                      <span>(</span>
+                      <div class="input_wrap hint_right">
+                        <math-field data-answer-single="ㅅㅂㅁ" data-answer-multi='{"values": ["ㅅㅂㅁ", "ㅁㅂㅅ"]}' text-align="center"></math-field>
+                      </div>
+                      <span>)</span>
+                    </div>
+                  </td>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">직선 ㅈㅊ을 따라 접으면 점 ㄴ과 점 ㅇ이 겹치고, 점 ㄷ과 점 ㅅ이 겹칩니다.</p>
+                <p lang="y" class="text_bullet">직선 ㅈㅊ을 따라 접으면 변 ㄱㄴ과 변 ㄱㅇ이 겹치고, 변 ㄷㄹ과 변 ㅅㅂ이 겹칩니다.</p>
+                <p lang="y" class="text_bullet">직선 ㅈㅊ을 따라 접으면 각 ㄱㄴㄷ과 각 ㄱㅇㅅ이 겹치고, 각 ㄷㄹㅁ과 각 ㅅㅂㅁ이 겹칩니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

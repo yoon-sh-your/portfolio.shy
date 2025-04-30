@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_05_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_05_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">서하가 말한 일이 일어날 가능성을 말로 표현해 보고, 그 이유를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center gap_60">
+          <div class="img">
+            <img src="../../common_practice/img/EMA526_05_IH/0002_img.png" alt="" />
+            <span class="name" lang="y">서하</span>
+            <span class="txt" lang="y">청군과 백군으로 나누어 경기를 할 때 청군과 백군 중 청군이 이길 거야!</span>
+          </div>
+          <div class="input_area">
+            <div class="flex gap_12">
+              <span class="label_gray" lang="y">가능성을 말로 표현하기</span>
+              <div class="dropdown_wrap" lang="y">
+                <select class="custom_dropdown" data-answer-single="반반이다">
+                  <option></option>
+                  <option value="불가능하다"></option>
+                  <option value="반반이다"></option>
+                  <option value="확실하다"></option>
+                </select>
+              </div>
+            </div>
+            <div class="flex gap_12 mt_40">
+              <span class="label_reason" lang="y">이유</span>
+              <div class="input_wrap">
+                <math-field></math-field>
+                <div class="example_box">
+                  <p lang="y">경기를 할 때 청군이 이기거나 백군이 이기기 때문입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">경기를 할 때 청군과 백군으로 나누었으므로 청군이 이길 가능성은 ‘반반이다’입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

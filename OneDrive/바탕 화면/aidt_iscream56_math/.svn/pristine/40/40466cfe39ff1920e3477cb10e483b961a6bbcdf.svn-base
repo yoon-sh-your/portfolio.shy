@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_05_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_05_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2">
+          <span lang="y">직선 ㄱㄴ을 대칭축으로 하는 선대칭도형입니다.</span>
+          <span class="empty_box nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA523_05_IH/0002_01.png" alt="" />
+            <span class="txt1">8 ㎝</span>
+            <span class="txt2">10 ㎝</span>
+
+            <div class="input_position input1">
+              <div class="input_wrap">
+                <math-field data-answer-single="8" text-align="center"></math-field>
+              </div>
+              <span>㎝</span>
+            </div>
+            <div class="input_position input2">
+              <div class="input_wrap">
+                <math-field data-answer-single="5" text-align="center"></math-field>
+              </div>
+              <span>㎝</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">선대칭도형은 대응변의 길이가 같고, 대응점에서 대칭축까지의 거리가 같습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

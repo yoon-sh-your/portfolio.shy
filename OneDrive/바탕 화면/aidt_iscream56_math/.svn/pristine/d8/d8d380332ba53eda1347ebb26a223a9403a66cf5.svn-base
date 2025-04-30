@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_07_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_07_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          <div class="fraction_row">
+            <div class="fraction_inn">
+              바닷물
+              <div class="mixed_fraction">
+                <span class="whole f32b">4</span>
+                <span class="fraction_box f32b">
+                  <span>1</span>
+                  <span>2</span>
+                </span>
+              </div>
+              g을 페트리 접시 한 개에
+              <span class="fraction_box"><span>3</span><span>4</span></span>
+              씩 나누어 담으려고 합니다. 필요한 페트리 접시는 몇 개인지 구해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+            <article class="page page_1">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                <img src="../../common_contents/img/EMA621_07_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <h3 lang="y">구하는 식을 써 보세요.</h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="4(1)/(2)÷(3)/(4)"></math-field>
+                    </div>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_2">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                <img src="../../common_contents/img/EMA621_07_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <h3 lang="y">
+                    <div class="mixed_fraction">
+                      <span class="whole f32b">4</span>
+                      <span class="fraction_box f32b">
+                        <span>1</span>
+                        <span>2</span>
+                      </span>
+                    </div>
+                    &divide;
+                    <span class="fraction_box"><span>3</span><span>4</span></span>
+                    을 어떻게 계산할 수 있을지 이야기해<br>보세요.
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                      <math-field class="textarea"></math-field>
+                      <div class="example_box">
+                          <p>대분수를 가분수로 바꾼 다음 통분하여 계산하거나 분수의 곱셈<br>으로 나타내어 계산할 수 있습니다.</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_3">
+              <h3 lang="y">
+                대분수를 가분수로 바꾼 다음 하윤이와 재민이의 방법으로 계산해 보세요.
+              </h3>
+              
+              <div class="question_box">
+                  <div class="col1">
+                    <p class="nm">하윤</p>
+                    <div class="bubble_txt">
+                      통분하여<br>계산해 볼까?
+                    </div>
+                    <div class="col1_inn">
+                      <span class="mixed_fraction f32b">
+                        <span class="whole">4</span>
+                        <span class="fraction_box">
+                          <span>1</span>
+                          <span>4</span>
+                        </span>
+                      </span>
+                      <span class="f32b">&divide;</span>
+                      <span class="fraction_box f32b"><span>3</span><span>4</span></span>
+                      <span class="f32b">=</span>
+                      <span class="fraction_box f32b">
+                        <span class="input_wrap ipt1">
+                          <math-field type="number" data-answer-single="9"></math-field>
+                        </span>
+                        <span>2</span>
+                      </span>
+                      <span class="f32b">&divide;</span>
+                      <span class="fraction_box f32b"><span>3</span><span>4</span></span>
+                      <span class="f32b">=</span>
+                      <span class="fraction_box f32b">
+                        <span class="input_wrap ipt1">
+                          <math-field type="number" data-answer-single="18"></math-field>
+                        </span>
+                        <span class="f32b">4</span>
+                      </span>
+                      <span class="f32b">&divide;</span>
+                      <span class="fraction_box f32b">
+                        <span class="input_wrap ipt1">
+                          <math-field type="number" data-answer-single="3"></math-field>
+                        </span>
+                        <span>4</span>
+                      </span>
+                      <span class="f32b">=</span>
+                      <span class="input_wrap">
+                        <math-field type="number" data-answer-single="18"></math-field>
+                      </span> 
+                      <span class="f32b">&divide;</span>
+                      <span class="input_wrap">
+                        <math-field type="number" data-answer-single="3"></math-field>
+                      </span> 
+                      <span class="f32b">=</span>
+                      <span class="input_wrap">
+                        <math-field type="number" data-answer-single="6"></math-field>
+                      </span> 
+                    </div>
+                  </div>
+                  <div class="col2">
+                    <p class="nm">재민</p>
+                    <div class="bubble_txt">
+                      분수의 곱셈으로<br>나타내어<br>계산해 볼까?
+                    </div>
+                    <div class="col1_inn">
+                      <span class="mixed_fraction f32b">
+                        <span class="whole">4</span>
+                        <span class="fraction_box">
+                          <span>1</span>
+                          <span>4</span>
+                        </span>
+                      </span>
+                      <span class="f32b">&divide;</span>
+                      <span class="fraction_box f32b"><span>3</span><span>4</span></span>
+                      <span class="f32b">=</span>
+                      <span class="fraction_box f32b">
+                        <span class="input_wrap ipt1">
+                          <math-field type="number" data-answer-single="9"></math-field>
+                        </span>
+                        <span>2</span>
+                      </span>
+                      <span class="f32b">&divide;</span>
+                      <span class="fraction_box f32b"><span>3</span><span>4</span></span>
+                      <span class="f32b">=</span>
+                      <span class="fraction_box f32b">
+                        <span>9</span>
+                        <span>2</span>
+                      </span>
+                      <span class="f32b">&times;</span>
+                      <span class="fraction_box f32b">
+                        <span class="input_wrap ipt1">
+                          <math-field type="number" data-answer-single="4"></math-field>
+                        </span>
+                        <span class="input_wrap ipt1">
+                          <math-field type="number" data-answer-single="3"></math-field>
+                        </span>
+                      </span>
+                      <span class="f32b">=</span>
+                      <span class="input_wrap">
+                        <math-field type="number" data-answer-single="6"></math-field>
+                      </span> 
+                    </div>
+                  </div>
+                   
+                </div>
+            </article>
+            <article class="page page_4">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                <img src="../../common_contents/img/EMA621_07_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <h3 lang="y">필요한 페트리 접시는 몇 개인가요?</h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                      <math-field data-answer-single="6"></math-field>
+                    </div>
+                    <span class="f32b">개</span>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_5">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                <img src="../../common_contents/img/EMA621_07_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <h3 lang="y">(대분수)&divide;(진분수)를 계산하는 방법을 이야기해 보세요.</h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                      <math-field class="textarea"></math-field>
+                      <div class="example_box">
+                          <p>대분수를 가분수로 바꾼 다음 통분하여 계산하거나 분수의 곱셈<br>으로 나타내어 계산합니다.</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+            </article>
+            
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

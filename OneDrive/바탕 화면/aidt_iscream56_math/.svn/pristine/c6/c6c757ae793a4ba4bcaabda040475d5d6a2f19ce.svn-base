@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_11_IH_0001_s</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="../../common_practice/common/js/puzzle.js"></script>
+		<script src="../../common_practice/common/js/practice_zoom.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_11.css" />
+	</head>
+	<body>
+		<div id="app_wrap" class="ema624_11_ih_0001">
+			<section class="title type2">
+				<h2 data-puzzle="green" class="flex align_center">
+					<span lang="y">문제를 풀어 도착한 곳에 있는 채소에 ○표 하세요.</span>
+					<div class="picture_wrap" data-head="" data-tit="문제를 풀어 도착한 곳에 있는 채소에 ○표 하세요 ">
+						<div class="img_box">
+							<div class="img_wrap">
+								<img src="../../common_practice/img/EMA624_11_IH/0001_img.png" alt="" />
+								<div class="text_group">
+									<div class="text_start" lang="y">출발</div>
+									<ul class="questions">
+										<li class="question1">
+											<div class="flex align_center">
+												<i class="num">1</i>
+												<div class="fraction_box"><span>1</span><span>4</span></div>
+												:
+												<div class="fraction_box"><span>2</span><span>5</span></div>
+												<span lang="y">를 간단한</span>
+											</div>
+
+											<div>
+												<span lang="y">자연수의 비로</span>
+											</div>
+											<div>
+												<span lang="y">나타내면 </span>
+												<span class="blank">?</span>
+												<span lang="y">입니다.</span>
+											</div>
+										</li>
+										<li class="question2">
+											<div class="flex align_center">
+												<i class="num">2</i>
+												5:3=40:<span class="blank">?</span>
+											</div>
+										</li>
+										<li class="question3">
+											<div class="flex align_center">
+												<i class="num">3</i>
+												<span lang="y">1.8:1.5=6:5에서</span>
+											</div>
+											<div class="flex align_center">
+												<span lang="y">1.8과 5는</span><span class="blank">?</span
+												><span lang="y">입니다.</span>
+											</div>
+										</li>
+										<li class="question4">
+											<div class="flex align_center">
+												<i class="num">4</i>
+												<span lang="y">36을 2:7로 나누면</span>
+											</div>
+											<div class="flex align_center">
+												<span class="blank">?</span>
+												<span lang="y">과/와</span>
+												<span class="blank">?</span>
+												<span lang="y">입니다.</span>
+											</div>
+										</li>
+									</ul>
+									<ul class="answers">
+										<li class="answer1">2:4</li>
+										<li class="answer2">5:8</li>
+										<li class="answer3">24</li>
+										<li class="answer4">28</li>
+										<li lang="y" class="answer5">내항</li>
+										<li lang="y" class="answer6">외항</li>
+										<li class="answer7">4.32</li>
+										<li class="answer8">8.28</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<button class="zoom"></button>
+					</div>
+				</h2>
+			</section>
+			<!-- <section class="title puzzle type2">
+				<div class="puzzle_tit">
+					<span class="tag" lang="y">창의</span>
+					<span class="tit" lang="y">
+						<span class="emph">퍼즐</span>
+						<span class="txt1">로</span>
+						<span class="txt2">정리해요</span>
+					</span>
+				</div>
+				<h2 lang="y">
+					문제를 풀어 도착한 곳에 있는 채소에 ○표 하세요.
+					<div class="picture_wrap" data-head="" data-tit="문제를 풀어 도착한 곳에 있는 채소에 ○표 하세요 ">
+						<div class="img_box">
+							<div class="img_wrap">
+								<img src="../../common_practice/img/EMA624_11_IH/0001_img.png" alt="" />
+							</div>
+						</div>
+						<button class="zoom"></button>
+					</div>
+				</h2>
+			</section> -->
+
+			<section class="contents">
+				<div class="flex justify_center">
+					<div class="map_area">
+						<img src="../../common_practice/img/EMA624_11_IH/0001_map.png" class="map" alt="" />
+						<div class="text_group">
+							<div class="text_start" lang="y">출발</div>
+							<ul class="questions">
+								<li class="question1">
+									<div class="flex align_center">
+										<i class="num">1</i>
+										<div class="fraction_box"><span>1</span><span>4</span></div>
+										:
+										<div class="fraction_box"><span>2</span><span>5</span></div>
+										<span lang="y">를 간단한</span>
+									</div>
+
+									<div>
+										<span lang="y">자연수의 비로</span>
+									</div>
+									<div>
+										<span lang="y">나타내면 </span>
+										<span class="blank">?</span>
+										<span lang="y">입니다.</span>
+									</div>
+								</li>
+								<li class="question2">
+									<div class="flex align_center">
+										<i class="num">2</i>
+										5:3=40:<span class="blank">?</span>
+									</div>
+								</li>
+								<li class="question3">
+									<div class="flex align_center">
+										<i class="num">3</i>
+										<span lang="y">1.8:1.5=6:5에서</span>
+									</div>
+									<div class="flex align_center">
+										<span lang="y">1.8과 5는</span><span class="blank">?</span
+										><span lang="y">입니다.</span>
+									</div>
+								</li>
+								<li class="question4">
+									<div class="flex align_center">
+										<i class="num">4</i>
+										<span lang="y">36을 2:7로 나누면</span>
+									</div>
+									<div class="flex align_center">
+										<span class="blank">?</span>
+										<span lang="y">과/와</span>
+										<span class="blank">?</span>
+										<span lang="y">입니다.</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="answers">
+								<li class="answer1">2:4</li>
+								<li class="answer2">5:8</li>
+								<li class="answer3">24</li>
+								<li class="answer4">28</li>
+								<li lang="y" class="answer5">내항</li>
+								<li lang="y" class="answer6">외항</li>
+								<li class="answer7">4.32</li>
+								<li class="answer8">8.28</li>
+							</ul>
+						</div>
+						<svg
+							width="689"
+							height="650"
+							viewBox="0 0 680 650"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="load1"
+								data-left="5:8"
+								data-right="2:4"
+								data-true="5:8"
+								d="M124.3,123.7c65.4,0,130.8,0,196.2,0"
+								stroke="transparent"
+							/>
+							<path
+								class="load2"
+								data-left="24"
+								data-right="28"
+								data-true="24"
+								d="M334,121.9c64.8,0,129.6,0,194.4,0"
+								stroke="transparent"
+							/>
+							<path
+								class="load3"
+								data-left="내항"
+								data-right="외항"
+								data-true="외항"
+								d="M541.9,121.9c-70.3,72.4-134.8,108.7-182.1,128.6c-37.3,15.7-104.8,38.3-161.7,102.7c-9.3,10.5,4.5-6.3,0,0"
+								stroke="transparent"
+							/>
+							<path
+								class="load4"
+								data-left="4.32"
+								data-right="8.28"
+								data-true="8.28"
+								d="M210.7,355.9c84.6,0,202.8,0,287.4,0"
+								stroke="transparent"
+							/>
+							<path
+								class="load5"
+								data-left="(1)/(2)"
+								data-right="(1)/(4)"
+								data-true="(1)/(4)"
+								d="M511.3,353.2c6.3,68.4,12.6,136.8,18.9,205.2"
+								stroke="transparent"
+							/>
+							<image
+								id="obj_move"
+								href="../../common_practice/img/EMA624_11_IH/0001_obj1.png"
+								x="75"
+								y="65"
+								width="106"
+								height="106"
+							/>
+						</svg>
+
+						<span class="obj_arrival"
+							><img src="../../common_practice/img/EMA624_11_IH/0001_obj1.png" alt="도착 이미지"
+						/></span>
+					</div>
+				</div>
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p class="flex align_center gap_0">
+									<i class="label_num mr_10">1</i>
+									<span class="fraction_box">
+										<span>1</span>
+										<span>4</span> </span
+									>:<span class="fraction_box">
+										<span>2</span>
+										<span>5</span>
+									</span>
+									<span lang="y">의 전항과 후항에 20을 곱하면 5:8이 됩니다.</span>
+								</p>
+								<p class="flex align_center gap_0">
+									<i class="label_num mr_10">2</i>
+									5×<span class="nemo empty_box"></span>=3×40, 5×<span class="nemo empty_box"></span
+									>=120,<span class="nemo empty_box"></span>=24
+								</p>
+								<p class="flex align_center gap_0" lang="y">
+									<i class="label_num mr_10">3</i>
+									1.8:1.5=6:5에서 1.8과 5는 외항이고, 1.5와 6은 내항입니다.
+								</p>
+								<p class="flex align_center gap_0">
+									<i class="label_num mr_10">4</i>
+									36×<span class="fraction_box">
+										<span>2</span>
+										<span>2+7</span>
+									</span>
+									=36×<span class="fraction_box">
+										<span>2</span>
+										<span>9</span>
+									</span>
+									=8
+									<span class="ml_35">36×</span>36×<span class="fraction_box">
+										<span>7</span>
+										<span>2+7</span>
+									</span>
+									=36×<span class="fraction_box">
+										<span>7</span>
+										<span>9</span>
+									</span>
+									=28
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn_area all">
+					<button class="btnReset">리셋</button>
+				</div>
+			</section>
+
+			<script>
+				document.addEventListener("DOMContentLoaded", () => {
+					const obj = document.getElementById("obj_move");
+					const pathElements = document.querySelectorAll("svg path[class^='load']");
+					let currentPathIndex = 0;
+					let state = "ready"; // ready, moving, quiz
+
+					const data = [
+						{
+							id: 1,
+							html: `
+							<div class="fraction_box">
+								<span>1</span>
+								<span>4</span>
+							</div>
+							:
+							<div class="fraction_box">
+								<span>2</span>
+								<span>5</span>
+							</div>를 간단한 자연수의 비로 나타내면
+							<span class="empty_box nemo"></span>
+							입니다.
+							`,
+						},
+						{
+							id: 2,
+							html: `
+							5:3=40:<span class="empty_box nemo"></span>
+							`,
+						},
+						{
+							id: 3,
+							html: `
+							1.8:1.5=6:5에서 1.8과 5는<span class="empty_box nemo"></span>입니다.
+							`,
+						},
+						{
+							id: 4,
+							html: `
+							36을 2:7로 나누면<span class="empty_box nemo"></span>과/와<span class="empty_box nemo"></span>입니다.
+							`,
+						},
+					];
+
+					function moveAlongPath(pathEl) {
+						state = "moving";
+
+						const pathLength = pathEl.getTotalLength();
+						const speed = 200;
+						const duration = (pathLength / speed) * 1000;
+
+						const fps = 60;
+						const steps = Math.round(duration / (1000 / fps));
+						let step = 0;
+
+						const start = pathEl.getPointAtLength(0);
+						obj.setAttribute("x", start.x - obj.width.baseVal.value / 2);
+						obj.setAttribute("y", start.y - obj.height.baseVal.value / 2);
+						// obj.setAttribute("transform", "scale(0.9)");
+
+						const interval = setInterval(() => {
+							const progress = step / steps;
+							const point = pathEl.getPointAtLength(progress * pathLength);
+
+							obj.setAttribute("x", point.x - obj.width.baseVal.value / 2);
+							obj.setAttribute("y", point.y - obj.height.baseVal.value / 2);
+
+							step++;
+
+							if (step > steps) {
+								clearInterval(interval);
+								state = "quiz"; // 이동 완료 후 퀴즈 대기
+							}
+						}, 1000 / fps);
+						document.querySelector(".btn_area .btnReset").classList.add("active");
+					}
+
+					function showQuiz(pathEl) {
+						// const quiz = pathEl.dataset.quiz;
+						const left = pathEl.dataset.left;
+						const right = pathEl.dataset.right;
+						const correct = pathEl.dataset.true;
+
+						const popArea = document.createElement("div");
+						popArea.className = "pop_area";
+						popArea.innerHTML = `
+                        <div class="quiz_pop">
+                            <button type="button" class="close" style="display: none;"></button>
+                            <div class="inner_pop quiz${currentPathIndex + 1}">
+                                <div class="txt_quiz">
+									<i>${currentPathIndex + 1}</i>
+									<div>
+										${data[currentPathIndex].html}
+									</div>
+								</div>
+                                <div class="question_box">
+                                    <button type="button" class="left" data-answer-single="${left === correct}">
+                                        ${left}
+                                    </button>
+                                    <div class="center">
+                                        <img src="../../common_practice/img/EMA624_11_IH/0001_pop_obj.png" alt="">
+                                    </div>
+                                    <button type="button" class="right" data-answer-single="${right === correct}">
+                                        ${right}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+
+						document.querySelector(".contents")?.after(popArea);
+
+						const leftBtn = popArea.querySelector(".left");
+						const rightBtn = popArea.querySelector(".right");
+						const solveArea = document.querySelector(".solve_area");
+
+						leftBtn.addEventListener("click", checkAnswer);
+						rightBtn.addEventListener("click", checkAnswer);
+
+						if (popArea.querySelector(".quiz4")) {
+							console.log("quiz4");
+							popArea.querySelector("button.close").addEventListener("click", () => {
+								solveArea.classList.add("active");
+							});
+						}
+					}
+
+					function checkAnswer(e) {
+						const selected = e.currentTarget;
+						const isCorrect = selected.dataset.answerSingle === "true";
+
+						const quizPop = document.querySelector(".quiz_pop");
+
+						if (isCorrect) {
+							quizPop.classList.remove("error");
+							quizPop.classList.add("result");
+
+							const closeBtn = quizPop.querySelector(".close");
+							closeBtn.style.display = "block";
+
+							closeBtn.addEventListener("click", () => {
+								document.querySelector(".pop_area")?.remove();
+								currentPathIndex++;
+								if (currentPathIndex < pathElements.length) {
+									moveAlongPath(pathElements[currentPathIndex]);
+								} else {
+									document.querySelector(".map_area")?.classList.add("result");
+									state = "done";
+								}
+							});
+						} else {
+							quizPop.classList.remove("result");
+							quizPop.classList.add("error");
+							setTimeout(() => {
+								quizPop.classList.remove("error");
+							}, 1000);
+						}
+					}
+
+					obj.addEventListener("click", () => {
+						if (state === "ready" && currentPathIndex < pathElements.length) {
+							moveAlongPath(pathElements[currentPathIndex]);
+						} else if (state === "quiz") {
+							showQuiz(pathElements[currentPathIndex]);
+						}
+					});
+
+					// 전체 리셋 버튼 클릭
+					const allResetBtn = document.querySelector(".all .btnReset");
+
+					allResetBtn?.addEventListener("click", () => {
+						// 1. 달팽이 처음 위치로
+						const obj = document.getElementById("obj_move");
+						if (obj) {
+							obj.setAttribute("x", 75);
+							obj.setAttribute("y", 65);
+						}
+
+						// 2. 현재 경로 인덱스 초기화
+						currentPathIndex = 0;
+
+						// 3. 상태 초기화
+						state = "ready";
+
+						// 4. 열린 팝업이 있다면 닫기
+						const pop = document.querySelector(".pop_area");
+						if (pop) pop.remove();
+
+						// 5. 리셋 버튼 비활성화
+						const contentResetBtn = document.querySelector(".contents .btn_area .btnReset");
+						if (contentResetBtn) {
+							contentResetBtn.classList.remove("active");
+						}
+
+						console.log("전체 리셋 완료!");
+					});
+				});
+			</script>
+		</div>
+	</body>
+</html>

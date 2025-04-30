@@ -1,0 +1,90 @@
+.ema516_12_su_0004[data-current-page="page_2"] .btn_draw,
+.ema516_12_su_0004[data-current-page="page_3"] .btn_draw,
+.ema516_12_su_0004[data-current-page="page_4"] .btn_draw,
+.ema516_12_su_0004[data-current-page="page_5"] .btn_draw {
+  display: none;
+}
+
+.ema516_12_su_0004[data-current-page="page_1"] .btnSubmit:not([data-submit="true"]),
+.ema516_12_su_0004[data-current-page="page_2"] .btnSubmit:not([data-submit="true"]) {
+  display: none;
+}
+
+.ema516_12_su_0004[data-current-page="page_4"] .btnSubmit[data-submit="true"] {
+  display: none;
+}
+
+.ema516_12_su_0004 .canvas_wrap {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+}
+.ema516_12_su_0004 .canvas_wrap canvas {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.peace_img {
+  position: absolute;
+  cursor: pointer;
+}
+.peace_img.dropped {
+  filter: grayscale(1);
+}
+
+.ema516_12_su_0004 .page_1 .unit {
+  position: absolute;
+  top: 48px;
+  left: 39px;
+}
+.ema516_12_su_0004 .page_2 .unit {
+  position: absolute;
+  top: 60px;
+  left: 43px;
+}
+.ema516_12_su_0004 .peace_orgrhombus {
+  position: absolute;
+  top: 94px;
+  left: 167px;
+}
+.ema516_12_su_0004 .peace_img1 {
+  top: 105px;
+  left: 141px;
+  z-index: 1;
+}
+.ema516_12_su_0004 .peace_img2 {
+  top: 199px;
+  left: 94px;
+  z-index: 1;
+}
+.ema516_12_su_0004 .peace_img1.cutting {
+  top: 85px;
+  left: 110px;
+}
+.ema516_12_su_0004 .peace_img2.cutting {
+  top: 220px;
+  left: 110px;
+}
+
+.ema516_12_su_0004 .page_2 .answer_img {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+.ema516_12_su_0004 .page_1 .answer_img,
+.ema516_12_su_0004 .diagram {
+  position: absolute;
+  top: 94px;
+  left: 164px;
+}
+.answer_img.active {
+  display: block;
+}
+.ema516_12_su_0004 .page_1 .answer_img::before {
+  top: -80px;
+  left: -180px;
+}

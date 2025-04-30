@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_03_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_03_ih_0007 paging">
+      <section class="title type2 score">
+        <h2 data-head="7_pink" class="is_star2">
+          <span class="nemo"></span>
+          <span lang="y">안에 들어갈 수 있는 자연수 중 가장 큰 수를 구하려고 합니다. 물음에 답해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">25.38 ÷3을 계산해 보세요.</h3>
+          <div class="question_box justify_center dir_col">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA613_03_IH/0007_01.png" alt="" />
+              <p class="flex align_center">
+                25.38÷3
+                <span class="font_sans">></span>
+                <span class="nemo"></span>
+              </p>
+            </div>
+            <div class="flex gap_10 align_start">
+              <span lang="y" class="label_gray">답</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="8.46"></math-field>
+              </div>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p>• 25.38÷3=8.46</p>
+                  <p>• 8.46><span class="nemo"></span> 이므로 <span class="nemo"></span> 안에 들어갈 수 있는 자연수 중 가장 큰 수는 8입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3>
+            <span class="nemo"></span>
+            <span lang="y">안에 들어갈 수 있는 자연수 중 가장 큰 수를 구해 보세요.</span>
+          </h3>
+          <div class="question_box justify_center dir_col">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA613_03_IH/0007_01.png" alt="" />
+              <p class="flex align_center">
+                25.38÷3
+                <span class="font_sans">></span>
+                <span class="nemo"></span>
+              </p>
+            </div>
+            <div class="flex gap_10 align_start">
+              <span lang="y" class="label_gray">답</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="8"></math-field>
+              </div>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p>• 25.38÷3=8.46</p>
+                  <p>• 8.46&lt;<span class="nemo"></span> 이므로 <span class="nemo"></span> 안에 들어갈 수 있는 자연수 중 가장 큰 수는 8입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

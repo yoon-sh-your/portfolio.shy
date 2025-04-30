@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_05_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema511_05_ih_0007.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_05.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_05_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star" lang="y">계산 결과가 9가 되도록 (<span class="gh"></span>)로 묶어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="question_box">
+            <div class="question_box_inwrap">
+              <div class="flex align_center gap_4">
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>20</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>-</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="(">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>16</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>+</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>6</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single=")">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>÷</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>2</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown math_symbol" data-answer-single="empty_answer">
+                    <option></option>
+                    <option value="(">(</option>
+                    <option value=")">)</option>
+                  </select>
+                </div>
+                <span>=</span>
+                <span>9</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">덧셈 또는 뺄셈 부분을 (<span class="gh"></span>&nbsp;)로 묶어 보고 계산 결과가 9인지 확인합니다.</p>
+                <table>
+                  <tr>
+                    <td>➔ 20-(16+6)÷2</td>
+                    <td>=20-22÷2</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=20-11=9</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+      <script></script>
+    </div>
+  </body>
+</html>

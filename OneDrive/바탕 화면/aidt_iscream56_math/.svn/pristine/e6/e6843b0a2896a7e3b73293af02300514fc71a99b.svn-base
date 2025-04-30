@@ -1,0 +1,252 @@
+.title h2[data-head] .fraction_box {
+  margin-left: 0;
+}
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+.fraction_box {
+  min-width: 40px;
+}
+.input_wrap.fraction_wrap,
+.fraction_box .input_wrap {
+  min-width: 0;
+  min-width: 80px;
+}
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap math-field {
+  width: 100%;
+}
+.fraction_box:has(.input_wrap) span {
+  line-height: 60px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.fraction_box_wrap .fraction_box {
+  min-width: 0;
+}
+.label_bogi {
+  width: 52px;
+  height: 32px;
+  border: 2px solid var(--secondary-red);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--secondary-red);
+  z-index: 1;
+}
+.solve_area .icon_arrow {
+  width: 32px;
+}
+
+.ema524_08_ih_0001 .question_box {
+  width: 1212px;
+  height: 460px;
+  margin: 0 auto;
+  background: url(../img/EMA524_08_IH/0001_bg.png) no-repeat center center / 100% 100%;
+}
+.ema524_08_ih_0001 .question_box .flex.dir_col {
+  padding: 0 140px;
+}
+.ema524_08_ih_0001 .question_box .align_center > span {
+  width: 182px;
+}
+
+.ema524_08_ih_0002 .question_box {
+  gap: 100px;
+}
+.ema524_08_ih_0002 .question_box .bogi_box {
+  width: 420px;
+}
+.ema524_08_ih_0002 .question_box .dir_col span {
+  width: 170px;
+}
+
+.ema524_08_ih_0003.fail .title h2[data-head]:after {
+  background-image: url(../common/img/marking_failed-all.svg);
+}
+.ema524_08_ih_0003 .question_box {
+  width: 558px;
+  height: 148px;
+  justify-content: center;
+  background: url(../img/EMA524_08_IH/0003_bg.svg) no-repeat center center/ 100% 100%;
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap {
+  gap: 4px;
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap button {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 2px solid var(--primary-blue);
+  border-radius: 4px;
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap button span {
+  display: none;
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap button.selected span {
+  display: block;
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap.result button {
+  border-color: #d2d2d2;
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap.result button.selected[data-answer-single='true'] {
+  border-color: var(--primary-blue);
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap.result button.selected[data-answer-single='false'] {
+  border-color: #222;
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap.result button.hint[data-answer-single='true'] {
+  border-color: var(--font-negative);
+}
+.ema524_08_ih_0003 .question_box .boolean_wrap.result button.hint[data-answer-single='true'] span {
+  display: block;
+}
+
+.ema524_08_ih_0004.fail .title h2[data-head]:after {
+  background-image: url(../common/img/marking_failed-all.svg);
+}
+.ema524_08_ih_0004 .circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  font-size: 24px;
+}
+.ema524_08_ih_0004 .question_box {
+  width: 536px;
+  height: 383px;
+  margin: 0 auto;
+  background: url(../img/EMA524_08_IH/0004_bg.svg) no-repeat center center / 100% 100%;
+}
+.ema524_08_ih_0004 .top .item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.ema524_08_ih_0004 .top .circle {
+  position: relative;
+  z-index: 2;
+}
+.ema524_08_ih_0004 .boolean_wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+.ema524_08_ih_0004 .boolean_wrap button {
+  position: relative;
+  background: none;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  justify-content: flex-start;
+}
+.ema524_08_ih_0004 .boolean_wrap button .circle {
+  flex-shrink: 0;
+}
+.ema524_08_ih_0004 .boolean_wrap button:after {
+  position: absolute;
+  top: -5px;
+  left: -40px;
+  width: 60px;
+  height: 60px;
+  background: url(../../common_practice/common/img/icon_checked_round.svg) no-repeat center center / contain;
+}
+.ema524_08_ih_0004 .boolean_wrap button.selected:after {
+  content: '';
+}
+.ema524_08_ih_0004 .boolean_wrap.result button.selected[data-answer-single='true']:after {
+  content: '';
+  filter: invert(35%) sepia(57%) saturate(3152%) hue-rotate(215deg) brightness(103%) contrast(99%);
+}
+.ema524_08_ih_0004 .boolean_wrap.result button.hint[data-answer-single='true']:after {
+  content: '';
+  filter: invert(17%) sepia(79%) saturate(3636%) hue-rotate(354deg) brightness(104%) contrast(135%);
+}
+.ema524_08_ih_0004 .solve_area .conts_solve p + p {
+  margin-top: 24px;
+}
+
+.ema524_08_ih_0005 .question_box {
+  gap: 60px;
+}
+.ema524_08_ih_0005 .bogi_box {
+  width: 430px;
+}
+.ema524_08_ih_0005 .question_box > .dir_col > .flex:first-child .input_wrap .text_hint {
+  top: -36px;
+}
+.ema524_08_ih_0005 .solve_area .conts_solve .empty_box {
+  display: inline-block;
+}
+
+.ema524_08_ih_0006 .img {
+  position: relative;
+}
+.ema524_08_ih_0006 .img .txt {
+  position: absolute;
+  top: 48px;
+  left: 269px;
+  color: #f3e09c;
+  font-weight: normal;
+  transform: rotate(353deg) skewX(6deg) translateX(-50%);
+}
+.ema524_08_ih_0006 .flex.dir_col {
+  gap: 50px;
+}
+
+.ema524_08_ih_0007 .img {
+  position: relative;
+}
+.ema524_08_ih_0007 .img span {
+  position: absolute;
+  text-align: center;
+  word-break: keep-all;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.24;
+}
+.ema524_08_ih_0007 .img [class^='name'] {
+  color: #fff;
+}
+.ema524_08_ih_0007 .img [class^='txt'] {
+  top: 62px;
+  transform: translateY(-50%);
+  white-space: normal;
+}
+.ema524_08_ih_0007 .img .name1 {
+  top: 330px;
+  right: 476px;
+  transform: rotate(6deg);
+}
+.ema524_08_ih_0007 .img .name2 {
+  top: 332px;
+  left: 478px;
+  transform: rotate(-6deg);
+}
+.ema524_08_ih_0007 .img .txt1 {
+  left: 9px;
+  width: 290px;
+}
+.ema524_08_ih_0007 .img .txt2 {
+  left: 345px;
+  width: 218px;
+}
+.ema524_08_ih_0007 .label_gray {
+  margin-top: 28px;
+}
+.ema524_08_ih_0007 .input_wrap math-field {
+  width: 208px;
+}

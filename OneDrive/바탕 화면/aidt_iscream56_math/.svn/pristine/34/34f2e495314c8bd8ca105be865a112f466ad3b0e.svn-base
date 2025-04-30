@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_11_SU_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 --> 
+    <script src="./../../common_contents/js/ema613_11_0008.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_11.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_11_su_0008">
+      <div class="scroll_page">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 4">
+            <span class="blue line" lang="y">확인하고 정리해요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+        </section>
+
+        <section class="title type2 jgjd_4_sub_title">
+          <h2 lang="y">
+            <div class="title_row">
+              <span class="nemo_blank"></span>
+              <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+            </div>
+          </h2>
+        </section>
+
+        <section class="contents">
+          <div class="inner_wrap">
+            <div class="h3" lang="y">소수의 나눗셈</div>
+
+            <div class="flex">
+              <div class="items">
+                <div class="flex dir_row align_center gap_12">
+                  <img src="../../common_contents/img/EMA613_11_SU/0008_img04.png" alt="방법 1" />
+                  <div class="f32b" lang="y">세로로 나타내어 <br />계산하기</div>
+                </div>
+                <div class="question_box">
+                  <span>2.6</span>
+                  <span>2</span>
+                  <span>1.</span>
+                  <span>2</span>
+                  <span>6</span>
+                  <span>6</span>
+                  <span>0</span>
+                  <div class="input_wrap way1">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                </div>
+              </div>
+              <div class="items">
+                <div class="flex dir_row align_center gap_12">
+                  <img src="../../common_contents/img/EMA613_11_SU/0008_img05.png" alt="방법 2" />
+                  <div class="f32b" lang="y">분수의 나눗셈으로 <br />나타내어 계산하기</div>
+                </div>
+
+                <p class="f32b flex align_center gap_4" lang="y">
+                  2.6÷2=
+                  <span class="fraction_box"
+                    ><span class="input_wrap"><math-field data-answer-single="26"></math-field></span><span>10</span></span
+                  >÷2
+                </p>
+                <p class="f32b flex align_center gap_4">
+                  =
+                  <span class="fraction_box"><span>2.6÷2</span><span>10</span></span>
+                </p>
+                <p class="f32b flex align_center gap_4">
+                  =<span class="fraction_box"><span>13</span><span>10</span></span
+                  >=<span>1.3</span>
+                </p>
+              </div>
+              <div class="items">
+                <div class="flex dir_row align_center gap_12">
+                  <img src="../../common_contents/img/EMA613_11_SU/0008_img06.png" alt="방법 3" />
+                  <div class="f32b" lang="y">자연수의 나눗셈을 <br />이용하여 계산하기</div>
+                </div>
+                <div class="flex dir_row align_center gap_70">
+                  <div class="item">
+                    <p class="f32b flex align_center gap_4" lang="y">
+                      <span class="fraction_box"><span>1</span><span>10</span></span
+                      >배
+                    </p>
+                  </div>
+                  <div class="item">
+                    <div class="f32b flex align_center gap_4" lang="y">26÷2=13</div>
+                    <p class="f32b flex align_center gap_4" lang="y">
+                      2.6÷2=<span class="input_wrap"><math-field data-answer-single="1.3"></math-field></span>
+                    </p>
+                  </div>
+                  <div class="item">
+                    <p class="f32b flex align_center gap_4" lang="y">
+                      <span class="fraction_box"><span>1</span><span>10</span></span
+                      >배
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex gap_12 dir_col question_box box_wrap">
+              <div class="f32b" lang="y">몫의 소수점 위치<br />어림셈한 결과를 이용하여 몫의 소수점을 찍습니다.</div>
+
+              <div class="items_wrap flex dir_row align_center bag">
+                <div class="items flex gap_20 align_center">
+                  <div class="tag1 f24b" lang="y">식</div>
+                  <div lang="y">23.8÷2</div>
+                </div>
+
+                <div class="items flex dir_col gap_12">
+                  <div class="item flex gap_20 align_center">
+                    <div class="tag2 f24b" lang="y">어림셈</div>
+                    <div lang="y">24÷2</div>
+                    <div class="f32b flex gap_8 align_center">
+                      <span class="arr"></span>
+                      <span lang="y">약</span>
+                      <span class="input_wrap"><math-field data-answer-single="12"></math-field></span>
+                    </div>
+                  </div>
+
+                  <div class="item flex gap_20 align_center">
+                    <div class="tag1 f24b" lang="y">몫</div>
+                    <div class="flex gap_4 align_center boolean_wrap">
+                      <span lang="y">1</span>
+                      <button type="button" data-answer-single="false"><span>.</span></button>
+                      <span lang="y">1</span>
+                      <button type="button" data-answer-single="false"><span>.</span></button>
+                      <span lang="y">9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="btn_area relative">
+            <button lang="y" class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </section>        
+      </div>
+    </div>
+  </body>
+</html>

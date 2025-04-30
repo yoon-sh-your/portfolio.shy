@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_03_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema521_03_0006.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_03_su_0006">
+        <section class="title type2">
+            <h2 data-head="3" lang="y">수 카드 5장 중 1장을 골라 <span class="empty_box"></span> 안에 써넣어 몫이 가장 큰 나눗셈을 만들고, 계산해 봅시다.</h2>
+        </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+            <div class="drag_share">
+            <div class="draggable_wrap">
+                <div class="card draggable obj1">
+                    <img src="../../common_contents/img/EMA621_03_SU/0006_obj1.png" alt="" />
+                </div>
+                <div class="card draggable obj2">
+                    <img src="../../common_contents/img/EMA621_03_SU/0006_obj2.png" alt="" />
+                </div>
+                <div class="card draggable obj3">
+                    <img src="../../common_contents/img/EMA621_03_SU/0006_obj3.png" alt="" />
+                </div>
+                <div class="card draggable obj4">
+                    <img src="../../common_contents/img/EMA621_03_SU/0006_obj4.png" alt="" />
+                </div>
+                <div class="card draggable obj5">
+                    <img src="../../common_contents/img/EMA621_03_SU/0006_obj5.png" alt="" />
+                </div>
+            </div>
+
+            <div class="drag_group_box">
+                <div class="fraction_box">
+                    <span>3</span>
+                    <span>5</span>
+                </div>
+                <span>&divide;</span>
+                <div class="fraction_box">
+                    <div class="drag_group g1" data-answer-card="1">
+                    <div class="card droppable"></div>
+                    </div>
+                    <span>13</span>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="2(1)/(2)" data-answer-multi='{"values": ["2(1)/(2)", "(9)/(4)"]}' data-multi-hint="y"></math-field>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

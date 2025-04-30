@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" /> -->
+    <meta content="width=1715,height=764" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="../../common_finish/common/css/common.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+    <title>차시마무리 평가</title>
+    <script src="../../common_finish/common/js/jquery.min.js"></script>
+    <script src="../../common_finish/common/js/jquery-ui.min.js"></script>
+    <script src="../../common_finish/common/js/jquery.ui.touch-punch.min.js"></script>
+    <script id="MathJax-script" async src="../../common_finish/common/js/MathJax/tex-chtml.js"></script>
+    <script type="module" src="../../common_finish/common/js/main.js"></script>
+  </head>
+  <style>
+    #q1 .qe_area .ans {
+      width: 250px;
+    }
+  </style>
+  <body>
+    <div id="scaleWrapper">
+      <div id="intro" class="intro_2">
+        <div class="inner">
+          <div class="top">
+            <span lang="y" class="danwon_num">2단원</span>
+            <span lang="y" class="danwon_name">평면도형</span>
+          </div>
+          <h1 lang="y" class="title">마무리 평가</h1>
+          <p lang="y" class="qe_num">문항수 : 5개</p>
+          <p lang="y" class="guide">
+            답안 제출 기회는 2번씩 있어요.<br />
+            준비가 되면 시작 버튼을 눌러 주세요.<br />
+            준비되었나요?
+          </p>
+          <button lang="y" type="button" class="intro_btn">시작하기</button>
+        </div>
+      </div>
+      <div id="quest">
+        <div class="nav">
+          <div class="pagination">
+            <button type="button" class="p1 on" aria-current="page" aria-label="현재 페이지1">
+              <span>1</span>
+            </button>
+            <button type="button" class="p2" aria-label="페이지2">
+              <span>2</span>
+            </button>
+            <button type="button" class="p3" aria-label="페이지3">
+              <span>3</span>
+            </button>
+            <button type="button" class="p4" aria-label="페이지4">
+              <span>4</span>
+            </button>
+            <button type="button" class="p5" aria-label="페이지5">
+              <span>5</span>
+            </button>
+          </div>
+          <div class="center">
+            <button type="button" class="submit disable"><img src="../../common_finish/common/img/mamuri/ic_check.svg" alt="" aria-hidden="true" />제출</button>
+          </div>
+        </div>
+
+        <div id="q1" class="page on">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">공약수가 가장 많은 것을 찾아 기호를 골라 보세요. </span>
+            </div>
+            <div class="qe_area">
+              <div class="t-box">
+                ㉠ 30, 36<br />
+                ㉡ 7, 35<br />
+                ㉢ 14, 25<br />
+                ㉣ 45, 90
+              </div>
+              <fieldset class="item_wrap vertical" role="group" aria-labelledby="q1-label">
+                <legend id="q1-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">㉠</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">㉡</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">㉢</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q1" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">㉣</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q2" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">두 수의 최대공약수를 바르게 구한 쪽을 골라 보세요.</span>
+            </div>
+            <div class="qe_area center">
+              <fieldset class="item_wrap" role="group" aria-labelledby="q2-label">
+                <legend id="q2-label" class="sr-only">다음 중 알맞은 수를 모두 선택하세요</legend>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item1" class="sr-only" />
+                  <span lang="y" class="txt"><img src="../../common_finish/common/img/mamuri/qe/EMA512_04_SU_0100(2-1).png" alt="" /></span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q2" value="item2" class="sr-only" />
+                  <span lang="y" class="txt"><img src="../../common_finish/common/img/mamuri/qe/EMA512_04_SU_0100(2-2).png" alt="" /></span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q3" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">두 수의 공약수를 이용하여 최대공약수를 바르게 구한 사람은 누구인지 이름을 골라 보세요.</span>
+            </div>
+            <div class="qe_area">
+              <div class="qe">
+                <img src="../../common_finish/common/img/mamuri/qe/EMA512_04_SU_0100(3).png" alt="" />
+              </div>
+              <fieldset class="item_wrap vertical" role="group" aria-labelledby="q3-label">
+                <legend id="q3-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">보라</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q3" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">연지</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q4" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">어떤 두 수의 최대공약수가 24일 때, 두 수의 공약수가 아닌 수를 찾아보세요.</span>
+            </div>
+            <div class="qe_area center">
+              <fieldset class="item_wrap vertical" role="group" aria-labelledby="q4-label">
+                <legend id="q4-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">1</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">2</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item3" class="sr-only" />
+                  <span lang="y" class="txt">4</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item4" class="sr-only" />
+                  <span lang="y" class="txt">5</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q4" value="item5" class="sr-only" />
+                  <span lang="y" class="txt">8</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <div id="q5" class="page">
+          <div class="bg">
+            <div class="mid_tit">
+              <span lang="y" class="q-num">문제</span>
+              <span lang="y" class="txt">바르게 설명한 것을 골라 보세요.</span>
+            </div>
+            <div class="qe_area">
+              <div class="t-box">
+                ㉠ 6은 1, 2, 3, 6으로 나누어떨어집니다.<br />
+                ㉡ 6의 약수 중 가장 작은 수는 2입니다.
+              </div>
+              <div class="qe">
+                <img src="../../common_finish/common/img/mamuri/qe/EMA512_04_SU_0100(5).png" alt="" />
+              </div>
+              <fieldset class="item_wrap vertical" role="group" aria-labelledby="q5-label">
+                <legend id="q5-label" class="sr-only"></legend>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item1" class="sr-only" />
+                  <span lang="y" class="txt">㉠</span>
+                </label>
+                <label class="item">
+                  <input type="checkbox" name="q5" value="item2" class="sr-only" />
+                  <span lang="y" class="txt">㉡</span>
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="submitModal" class="modal">
+        <div class="modal-content">
+          <p lang="y" class="modal-message">이대로 제출하겠습니까?</p>
+          <div class="modal-buttons">
+            <button lang="y" type="button" class="modal-cancel">취소</button>
+            <button lang="y" type="button" class="modal-confirm">제출</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      /* 
+    각 문항의 유형 + (답안 예시)
+    1. : 입력형           input.answer
+    2. : item 선택형      .answer.selected
+    3. : 선택지 선택형     .answer:checked
+    4. : D&D              .dropped-item
+    5. : 선긋기           
+    */
+      window.questionTypes = [2, 2, 2, 2, 2];
+      window.correctAnswers = {
+        1: ["item4"],
+        2: ["item2"],
+        3: ["item1"],
+        4: ["item4"],
+        5: ["item1"],
+      };
+    </script>
+  </body>
+</html>

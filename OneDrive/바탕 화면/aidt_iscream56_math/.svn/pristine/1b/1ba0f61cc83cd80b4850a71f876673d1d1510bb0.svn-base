@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_06_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_06_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y" class="fraction_box_title">
+            <span class="fraction_box ml_0">
+              <span>4</span>
+              <span>5</span>
+            </span>
+            <span class="f32b">&divide;</span>
+            <span class="fraction_box ml_0">
+              <span>2</span>
+              <span>3</span>
+            </span>
+          를 분수의 곱셈으로 나타내어 계산하는 방법을 알아봅시다.
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">
+              그림을 보고
+              <span class="fraction_box">
+                <span>3</span>
+                <span>5</span>
+              </span>
+              <span class="f32b">&divide;</span>
+              <span class="fraction_box ml_0">
+                <span>2</span>
+                <span>3</span>
+              </span>
+              를 분수의 곱셈으로 나타내어 계산하는 방법을 알아보세요.
+            </h3> 
+            <div class="question_box justify_center">
+              <div class="box">
+                <div class="col1">
+                  <div class="row1">
+                    <span class="txt1">
+                      <span class="fraction_box"><span>4</span><span>5</span></span>
+                    </span>
+                    <span class="txt2">0</span>
+                    <span class="txt3">
+                      <span class="fraction_box"><span>1</span><span>3</span></span>
+                    </span>
+                    <span class="txt4">
+                      <span class="fraction_box"><span>2</span><span>3</span></span>
+                    </span>
+                    <span class="txt5">1</span>
+                    <span class="txt6">&divide;2</span>
+                  </div>
+                  <div class="row2">
+                    <span class="fraction_box f32b"><span>4</span><span>5</span></span>
+                  </div>
+                </div>
+                <div class="col2">
+                  <div class="row1">
+                    <span class="txt1">
+                      <span class="fraction_box"><span>2</span><span>5</span></span>
+                    </span>
+                    <span class="txt2">0</span>
+                    <span class="txt3">
+                      <span class="fraction_box"><span>1</span><span>3</span></span>
+                    </span>
+                    <span class="txt4">
+                      <span class="fraction_box"><span>2</span><span>3</span></span>
+                    </span>
+                    <span class="txt5">1</span>
+                    <span class="txt6">&times;3</span>
+                  </div>
+                  <div class="row2">
+                    <span class="fraction_box f32b"><span>4</span><span>5</span></span>
+                    <span class="f32b">&divide;</span>
+                    <span class="input_wrap">
+                      <math-field type="txtber" data-answer-single="2"></math-field>
+                    </span>
+                    <span class="f32b">=</span>
+                    <span class="fraction_box f32b"><span>4</span><span>5</span></span>
+                    <span class="f32b">&times;</span>
+                    <span class="fraction_box f32b">
+                      <span>1</span>
+                      <span class="input_wrap">
+                        <math-field type="txtber" data-answer-single="2"></math-field>
+                      </span>
+                    </span>
+                    <span class="f32b">=</span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(2)/(5)"></math-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="col3">
+                  <div class="row1">
+                    <span class="txt1">
+                      <span class="fraction_box"><span>2</span><span>5</span></span>
+                    </span>
+                    <span class="txt1_2">
+                      <span class="fraction_box"><span>2</span><span>5</span></span>
+                    </span>
+                    <span class="txt1_3">
+                      <span class="fraction_box"><span>2</span><span>5</span></span>
+                    </span>
+                    <span class="txt2">0</span>
+                    <span class="txt3">
+                      <span class="fraction_box"><span>1</span><span>3</span></span>
+                    </span>
+                    <span class="txt4">
+                      <span class="fraction_box"><span>2</span><span>3</span></span>
+                    </span>
+                    <span class="txt5">1</span>
+                  </div>
+                  <div class="row2">
+                    <span class="fraction_box f32b"><span>2</span><span>5</span></span>
+                    <span class="f32b">&times;</span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="2"></math-field>
+                    </div>
+                    <span class="f32b">=</span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="1(1)/(5)" data-answer-multi='{"values": ["1(1)/(5)", "(6)/(5)"]}' data-multi-hint="y"></math-field>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">
+              <span class="fraction_box ml_0">
+                <span>3</span>
+                <span>5</span>
+              </span>
+              <span class="f32b">&divide;</span>
+              <span class="fraction_box ml_0">
+                <span>2</span>
+                <span>3</span>
+              </span>
+              를
+              <span class="fraction_box">
+                <span>4</span>
+                <span>5</span>
+              </span>
+              <span class="f32b">&times;</span>
+              <span class="fraction_box ml_0">
+                <span>3</span>
+                <span>2</span>
+              </span>
+              으로 나타낼 수 있나요?
+            </h3> 
+            <div class="question_box justify_center">
+              <span class="f32b" lang="y">나타낼 수</span>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="있습니다.">
+                    <option></option>
+                    <option value="있습니다."></option>
+                    <option value="없습니다."></option>
+                </select>
+            </div>
+            </div>
+          </article>
+          <article class="page page_3">
+            <h3 lang="y">(분수)&divide;(분수)를 분수의 곱셈으로 나타내어 계산하는 방법을 이야기해 보세요.</h3>
+            <div c lass="question_box justify_center">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p>나눗셈을 곱셈으로 바꾸고 나누는 분수의 분자와 분모를 바꾸어 계산합니다.</p>
+              </div>
+              </div>
+            </div>
+          </article>
+          
+          
+        </div>
+        <article class="page page_4">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">정리해 볼까요</label>              
+              <div class="summarize_box">
+                <div class="row row1">
+                <span lang="y">(분수)&divide;(분수)를 분수의 곱셈으로 나타내어 계산할 때에는</span>
+              </div>
+              <div class="row row2">
+                <span lang="y">나눗셈을 곱셈으로 바꾸고 나누는 분수의</span>
+                <button class="reveal_btn" lang="y">분자</button>
+                <span lang="y">와</span>
+                <button class="reveal_btn" lang="y">분모</button>
+                <span lang="y" class="small-gap">를 바꾸어 계산합니다.</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

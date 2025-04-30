@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_12_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema516_12_ih_0006.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_12.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema516_12_ih_0006">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="6" class="is_star2">
+          <span lang="y">넓이가 8 ㎠인 마름모를 서로 다른 모양으로 2개 그려 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box">
+          <div class="line_area" id="lineArea"></div>
+          <div class="drawline_grid">
+            <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+            <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+
+            <div class="drawing_grid_area" id="drawingArea1" data-grid-size="46">
+              <svg class="line_canvas"></svg>
+            </div>
+            <p class="text">1 ㎝</p>
+            <div class="line"></div>
+          </div>
+
+          <div class="answer_area">
+            <div class="example_box">예</div>
+            <img src="./../../common_practice/img/EMA516_12_IH/0006_ans.png" alt="" />
+            <p class="text">1 ㎝</p>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">두 대각선의 길이의 곱이 8×2=16이 되도록 마름모를 그립니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

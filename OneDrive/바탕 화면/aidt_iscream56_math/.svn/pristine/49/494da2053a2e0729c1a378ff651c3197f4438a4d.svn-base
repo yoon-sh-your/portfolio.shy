@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema515_07_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_07.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_07_su_0006">
+      <section class="title type2">
+        <h2 data-type="3" data-text="창의+" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <span class="label_bogi" lang="y">보기 </span>
+              에서 하나를 골라
+              <div class="operation_box">
+                <div class="mixed_fraction">
+                  <span>5</span>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>6</span>
+                  </div>
+                </div>
+                -
+                <div class="mixed_fraction">
+                  <span>2</span>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>9</span>
+                  </div>
+                </div>
+              </div>
+              을 어떻게 계산하는지 알아봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="container_515">
+            <div class="label_bogi_box left_515" lang="y">
+              <span class="label_bogi" lang="y">보기 </span>
+              리본의 길이(m)<br />
+              책가방의 무게(kg)<br />
+              주스의 양(L)<br />
+            </div>
+            <div class="right_515">
+              <div class="absol_515-1">
+                <div class="makeing_problem" lang="y">문제 만들기</div>
+              </div>
+              <div class="col_515-1">
+                <div class="fraction_container">
+                  <div class="input_wrap">
+                    <math-field class="textarea"></math-field>
+                    <div class="example_box">
+                      <div class="fraction_row">
+                        <div class="fraction_inn">
+                          민규의 리본의 길이는
+                          <div class="mixed_fraction">
+                            <span>5</span>
+                            <div class="fraction_box">
+                              <span>1</span>
+                              <span>6</span>
+                            </div>
+                          </div>
+                          &nbsp;m이고, 유진이의
+                        </div>
+                        <div class="fraction_inn">
+                          리본의 길이는
+                          <div class="mixed_fraction">
+                            <span>2</span>
+                            <div class="fraction_box">
+                              <span>4</span>
+                              <span>9</span>
+                            </div>
+                          </div>
+                          &nbsp;m입니다. 민규의 리본의
+                        </div>
+                        길이는 유진이보다 몇 m 더 긴가요?
+                      </div>
+
+                      <!-- <p>
+                                        <div class="fraction-text-column">
+                                            <div class="fraction-text-align" lang="y">
+                                                민규의 리본의 길이는
+                                                <div class="mixed_fraction">
+                                                    <span>5</span>
+                                                    <div class="fraction_box">
+                                                        <span>1</span>
+                                                        <span>6</span>
+                                                    </div>
+                                                </div>
+                                                m이고, 유진이의
+                                            </div>
+                                            <div class="fraction-text-align" lang="y">
+                                                리본의 길이는
+                                                <div class="mixed_fraction">
+                                                    <span>2</span>
+                                                    <div class="fraction_box">
+                                                        <span>4</span>
+                                                        <span>9</span>
+                                                    </div>
+                                                </div>
+                                                m입니다. 민규의 리본의
+                                            </div>
+                                            <div class="fraction-text-align" lang="y">
+                                            길이는 유진이보다 몇 m 더 긴가요?
+                                        </div>
+                                        </div>
+                                        </p> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="absol_515-2">
+                <div class="left_515-2">
+                  <div class="answer_515" lang="y">답</div>
+                </div>
+                <div class="right_515-2">
+                  <div class="fraction_container">
+                    <div class="input_wrap">
+                      <math-field class="textarea"></math-field>
+                      <div class="example_box">
+                        <div class="fraction">
+                          <div class="mixed_fraction">
+                            <span>2</span>
+                            <div class="fraction_box">
+                              <span>13</span>
+                              <span>18</span>
+                            </div>
+                          </div>
+                          (=
+                          <div class="mixed_fraction">
+                            <span></span>
+                            <div class="fraction_box">
+                              <span>49</span>
+                              <span>18</span>
+                            </div>
+                          </div>
+                          )
+                        </div>
+                        <!-- <p>
+                                                <div class="fraction-text-column">
+                                                <div class="fraction-text-align">
+                                                    <div class="mixed_fraction">
+                                                        <span>2</span>
+                                                        <div class="fraction_box">
+                                                            <span>13</span>
+                                                            <span>18</span>
+                                                        </div>
+                                                    </div>
+                                                    (=
+                                                    <div class="mixed_fraction">
+                                                        <span></span>
+                                                        <div class="fraction_box">
+                                                            <span>49</span>
+                                                            <span>18</span>
+                                                        </div>
+                                                    </div>
+                                                    )
+                                                </div>
+                                            </div>
+                                            </p> -->
+                      </div>
+                    </div>
+                  </div>
+                  <span class="absol_515">m</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

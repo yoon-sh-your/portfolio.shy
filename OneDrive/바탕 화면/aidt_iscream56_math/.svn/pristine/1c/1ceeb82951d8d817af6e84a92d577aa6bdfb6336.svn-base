@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+/*EMA613_01_SU_0001_s*/
+.ema613_01_su_0001#app_wrap {
+  background: url(../img/EMA613_01_SU/0001_bg.png) no-repeat left bottom / 857px, #f4a0a1;
+}
+
+.ema613_01_su_0001 .input_area label.img,
+.ema613_01_su_0001 .input_area label::after {
+  background-color: #da515d;
+}
+
+.ema613_01_su_0001 .text_box {
+  color: #9c1006;
+  top: 152px;
+  left: 247px;
+}
+
+.ema613_01_su_0001 {
+  .info {
+    position: absolute;
+    bottom: 23PX;
+    left: 346px;
+    font-size: 16px;
+  }
+}
+
+/*EMA613_01_SU_0003_s*/
+.mr_56 {
+  margin-right: 63px !important;
+}
+
+/*EMA613_01_SU_0004_s*/
+.ema613_01_su_0004 .video_wrap {
+  background: url(../img/EMA613_01_SU/0004_content.png) no-repeat left top / 107%;
+}
+
+/*EMA613_01SU_0006_s*/
+.ema613_01_su_0006 .input_wrap math-field.textarea {
+  height: 366px;
+}
+
+.input_wrap math-field:not(.textarea) {
+  margin-top: 12px;
+}
+
+/*EMA613_01_SU_0007_s*/
+.ema613_01_su_0007 .to_be .inwrap {
+  gap: 16px;
+}
+
+.ema613_01_su_0007 .to_be .what_do li {
+  font-size: 32px;
+  /* line-height: 48px; */
+  letter-spacing: -1px;
+}
+
+.ema613_01_su_0007 .to_be .what_do li::before {
+  content: '-';
+  width: 16px;
+  margin-top: unset;
+  background-color: transparent;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_05_IH_0007</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="../../common_practice/js/ema511_ih.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_05_ih_0007">
+			<section class="title type2">
+				<h2 data-head="7" class="is_star2" lang="y">나눗셈의 몫이 자연수일 때, 7보다 작은 자연수 중 <span class="empty_box nemo"></span>안에 들어갈 수 있는 수를 모두 구해 보세요.</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box dir_col gap_60">
+					<div class="box_line">
+						<div class="inner">
+							8÷
+							<div class="fraction_box">
+								<span class="empty_box"></span>
+								<span>7</span>
+							</div>
+						</div>
+					</div>
+					<div class="question_box gap_12">
+						<div class="input_wrap">
+							<math-field data-answer-single="1"></math-field>
+						</div>
+						<span class="comma">,</span>
+						<div class="input_wrap">
+							<math-field data-answer-single="2"></math-field>
+						</div>
+						<span class="comma">,</span>
+						<div class="input_wrap">
+							<math-field data-answer-single="4"></math-field>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p class="gap_0" lang="y">
+									8 ÷
+									<span class="fraction_box">
+										<span class="empty_box nemo"></span><span>7</span>
+									</span>
+									= (8 ÷ <span class="empty_box nemo"></span>) × 7이고, 몫은 자연수여야 합니다.
+								</p>
+								<p class="gap_0 mt_15" lang="y">
+								7보다 작은 자연수 중 <span class="empty_box nemo"></span> 안에 들어갈 수 있는 수는 8을 나누어
+								</p>
+								<p class="gap_0 mt_15" lang="y">떨어지게 하는 수이므로 1, 2, 4입니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

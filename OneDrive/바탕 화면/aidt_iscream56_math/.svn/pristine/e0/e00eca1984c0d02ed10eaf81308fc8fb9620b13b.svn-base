@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_06_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_06_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">서하는 승민이보다 고무찰흙을 몇 통 더 많이 사용했는지 식을 쓰고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center gap_40">
+          <div class="img_box">
+            <img src="../../common_practice/img/EMA515_06_IH/0006_img.png" alt="" />
+            <span class="name1" lang="y">서하</span>
+            <div class="txt1" lang="y">
+              난 고무찰흙을<br />
+              <div class="fraction_box_wrap">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+              </div>
+              통 사용했어.
+            </div>
+            <span class="name2" lang="y">승민</span>
+            <div class="txt2" lang="y">
+              난
+              <div class="fraction_box_wrap">
+                <span>1</span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              통<br />
+              사용했어.
+            </div>
+          </div>
+          <div class="div flex dir_col gap_20">
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap_underline align_center">
+                <div class="input_wrap fraction_wrap answer1">
+                  <math-field data-answer-single="2(9)/(10)-1(3)/(4)"></math-field>
+                </div>
+                =
+                <div class="input_wrap fraction_wrap answer2">
+                  <math-field data-answer-single="1(3)/(20)"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">답</span>
+              <div class="input_wrap_underline align_end">
+                <div class="input_wrap fraction_wrap answer3">
+                  <math-field data-answer-single="1(3)/(20)(=(23)/(20))" data-answer-multi='{"values": ["1(3)/(20)", "(23)/(20)""]}' text-align="center"></math-field>
+                </div>
+              </div>
+              <span lang="y" class="line_height_1">통</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>9</span>
+                      <span>10</span>
+                    </div>
+                  </div>
+                  <span>-</span>
+                  <div class="mixed_fraction">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>4</span>
+                    </div>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>18</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                  <span>-</span>
+                  <div class="mixed_fraction">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>15</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span>3</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                  (통)
+                </div>
+                <!--end solve-->
+                <div class="flex align_center gap_4">
+                  따라서 서하는 승민이보다 고무찰흙을&nbsp;
+                  <div class="mixed_fraction">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>20</span>
+                    </div>
+                  </div>
+                  통 더 많이 사용했습니다.
+                </div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

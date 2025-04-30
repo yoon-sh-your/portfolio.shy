@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_02_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_02_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">
+          <span lang="y">나눗셈의 몫을 분수로 옳게 나타낸 사람의 이름을 고르세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="text_wrap">
+            <div class="img_box">
+              <img src="./../../common_practice/img/EMA611_02_IH/0005_01.png" alt="" />
+              <p lang="y">나현</p>
+              <div class="fraction">
+                6÷13=
+                <div class="fraction_box"><span>6</span><span>13</span></div>
+              </div>
+            </div>
+            <div class="img_box">
+              <img src="./../../common_practice/img/EMA611_02_IH/0005_02.png" alt="" />
+              <p lang="y">규민</p>
+              <div class="fraction">
+                3÷10=
+                <div class="fraction_box"><span>10</span><span>3</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown_wrap mt_20">
+            <select class="custom_dropdown" data-answer-single="나현">
+              <option value=""></option>
+              <option value="나현" lang="y">나현</option>
+              <option value="규민" lang="y">규민</option>
+            </select>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0">
+                  6÷13=<span class="fraction_box">
+                    <span>6</span>
+                    <span>13</span> </span
+                  >, 3÷10=<span class="fraction_box">
+                    <span>3</span>
+                    <span>10</span>
+                  </span>
+                </div>
+                <p lang="y">따라서 나눗셈의 몫을 분수로 옳게 나타낸 사람은 나현입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_08_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_08_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">어림셈한 결과를 이용하여 몫의 소수점을 찍어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_08_IH/0001_01.png" alt="" />
+            <div class="input_area">
+              <div class="input_row">
+                <p lang="y">14.8÷5를</p>
+                <div class="input_wrap hint_up ml_10">
+                  <math-field data-answer-single="15"></math-field>
+                </div>
+                <p lang="y">÷5로 어림셈하면 약</p>
+                <div class="input_wrap hint_up ml_10">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+                <p lang="y">이므로</p>
+              </div>
+              <div class="input_row">
+                <p lang="y">14.8÷5=</p>
+                <span>2</span>                
+                <div class="input_wrap small">
+                  <math-field id="customField1" data-answer-single="."></math-field>
+                </div>
+                <span>9</span>
+                <div class="input_wrap small">
+                  <math-field id="customField2" data-answer-single="empty_answer"></math-field>
+                </div>
+                <p lang="y">6입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">14.8÷5를 15÷5로 어림셈하면 약 3이므로 14.8÷5=2.96입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      function latexToText(val) {
+        return val.replace(/^\\text{(.+)}$/, '$1');
+      }
+      window.customCheckCondition = function () {
+        const $field1 = $('#customField1');
+        const $field2 = $('#customField2');
+
+        const val1 = latexToText($field1.prop('value')?.trim() || '');
+        const val2 = latexToText($field2.prop('value')?.trim() || '');
+
+        const rule1 = ($field1.attr('data-answer-single') || '').trim();
+        const rule2 = ($field2.attr('data-answer-single') || '').trim();
+
+        if (val1 === '' && val2 === '') {
+          return 'empty';
+        }
+        if (val1 !== '') {
+          console.log(val1, rule1);
+          return val1 === rule1;
+        }
+        if (rule2 === 'empty_answer') {
+          if (val2 === '') return true;
+          return false;
+        }
+
+        if (val2 !== '') {
+          return val2 === rule2;
+        }
+
+        return false;
+      };
+    </script>
+  </body>
+</html>

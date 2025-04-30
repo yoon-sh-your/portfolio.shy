@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA626_02_IH_0007</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="./../../common_practice/js/ema626_02_ih_0001.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema626_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema626_05_ih_0007">
+			<section class="title type2">
+				<h2 data-head="7_orange" class="is_star2" lang="y">
+					원뿔에 대해 잘못 설명한 것을 찾아 기호를 쓰고, 내용을 옳게 고쳐 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center align_center dir_col">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA626_05_IH/0007_01.png" alt="" />
+						<ul class="text_area">
+							<li>
+								<i class="num_sign">ㄱ</i>
+								<p lang="y">밑면은 평평한 면이고, 옆면은 굽은 면입니다.</p>
+							</li>
+							<li>
+								<i class="num_sign">ㄴ</i>
+								<p lang="y">밑면은 2개입니다.</p>
+							</li>
+							<li>
+								<i class="num_sign">ㄷ</i>
+								<p lang="y">꼭짓점은 1개입니다.</p>
+							</li>
+						</ul>
+						<div class="boolean_wrap type_chk">
+							<div>
+								<button type="button" class="button1" data-answer-single="false"></button>
+								<button type="button" class="button2" data-answer-single="true"></button>
+								<button type="button" class="button3" data-answer-single="false"></button>
+							</div>
+						</div>
+					</div>
+					<div class="input_area mt_20">
+						<span lang="y" class="label_gray">옳게 고치기</span>
+						<div class="input_wrap">
+							<math-field class="textarea"></math-field>
+							<div class="example_box">
+								<p lang="y">밑면은 1개입니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">㉠ 원뿔에서 밑면은 평평한 면이고, 옆면은 굽은 면입니다.</p>
+								<p lang="y">㉡ 원뿔은 밑면이 1개입니다.</p>
+								<p lang="y">㉢ 원뿔은 꼭짓점이 1개입니다.</p>
+								<p lang="y">따라서 잘못 설명한 것은 ㉡입니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

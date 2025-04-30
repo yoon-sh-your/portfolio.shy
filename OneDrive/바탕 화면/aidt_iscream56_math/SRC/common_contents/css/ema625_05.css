@@ -1,0 +1,213 @@
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+.flex_col_box {
+  width: 1435px;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.flex_col_box .input_area {
+  width: 709px;
+}
+
+
+/* EMA625_05_SU_0002_s */
+.ema625_05_su_0002 .contents > .img_row .video_wrap {
+  background: url(../../common_contents/img/EMA625_05_SU/0002_content.png) no-repeat right -110px;
+  background-size: 140%;
+}
+
+
+/* EMA625_05_SU_0003_s */
+.ema625_05_su_0003 .img_box {
+  position: relative;
+  width: 385px;
+  height: 385px;
+  margin: 0 auto;
+}
+.ema625_05_su_0003 .img_box > p {
+  position: absolute;
+  font-size: 32px;
+  font-weight: 700; 
+}
+.ema625_05_su_0003 .img_box > .t01 {
+  top: 75px;
+  left: 136px;
+}
+.ema625_05_su_0003 .img_box > .t02 {
+  top: 139px;
+  left: 259px;
+}
+.ema625_05_su_0003 .input_area {
+  width: 770px;
+}
+.ema625_05_su_0003 .develope_box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 15px;
+}
+.ema625_05_su_0003 .develope_box .custom_select {
+  width: 180px;
+}
+.ema625_05_su_0003 .page_5 .flex {
+  margin: 70px auto;
+  width: 1091px;
+  height: 222px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background: url(../../common_contents/img/EMA625_05_SU/0003_bg_contents.png) no-repeat 0 0;
+}
+.ema625_05_su_0003 .page_5 .flex > div {
+  margin: 0px auto;
+  width: 815px;
+  font-size: 32px; 
+  font-weight: 700;
+}
+
+
+/* EMA625_05_SU_0004_s */
+.ema625_05_su_0004  .flex_col_box {
+  position: relative;
+}
+.ema625_05_su_0004 .img_box {
+  position: relative;
+  width: 386px;
+  height: 369px;
+  margin: 0 auto;
+}
+.ema625_05_su_0004 .img_box > p {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+}
+.ema625_05_su_0004 .img_box > .t01 {
+  top: -1px;
+  left: -39px;
+}
+.ema625_05_su_0004 .img_box + .input_area .input_wrap math-field.textarea {
+  height: 280px;
+}
+.ema625_05_su_0004 .develope_box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 15px;
+}
+.ema625_05_su_0004 .info_box {
+  width: 428px;
+  height: 203px;
+  position: absolute;
+  bottom: -100px;
+  right: 0;
+  background: url(../../common_contents/img/EMA625_05_SU/0004_content_txt.png) no-repeat 0 0;
+  background-size: 100%;
+}
+.ema625_05_su_0004 .info_box > p {
+  position: absolute;
+  top: 40px;
+  left: 137px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.ema625_05_su_0004 .page_4 .flex {
+  margin: 70px auto;
+  width: 1091px;
+  height: 222px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background: url(../../common_contents/img/EMA625_05_SU/0003_bg_contents.png) no-repeat 0 0;
+}
+.ema625_05_su_0004 .page_4 .flex > div {
+  margin: 0px auto;
+  width: 690px;
+  font-size: 32px; 
+  font-weight: 700;
+}
+
+.ema625_05_su_0004 .btnSubmit {
+  display:none
+}
+.ema625_05_su_0004[data-current-page='page_1'] .btnSubmit {
+  display: block;
+}
+.ema625_05_su_0004[data-current-page='page_1'] .btnCheck {
+  display: none;
+}
+
+
+
+/* EMA625_05_SU_0005_s */
+.ema625_05_su_0005 .contents h3 {
+  margin-left: 80px
+}
+.ema625_05_su_0005 .check_snack {
+  position: relative;
+  width: 1208px;
+  height: 325px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.ema625_05_su_0005 .check_snack::after {
+  content:'';
+  width: 2px;
+  height: 120%;
+  position: absolute;
+  top: -32px;
+  left: 50%;
+  border-left: 2px dashed #DCDDDD;
+}
+.ema625_05_su_0005 .check_snack > dl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 0px; */
+  height: 100%;
+}
+.ema625_05_su_0005 .check_snack dt {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+.ema625_05_su_0005 .check_snack dt > span {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 700;
+}
+.ema625_05_su_0005 .check_snack dt > .t01 {
+  left: 41px;
+  top: 37px;
+}
+.ema625_05_su_0005 .check_snack dt > .t02 {
+  left: 93px;
+  top: 49px;
+}
+.ema625_05_su_0005 .check_snack dt > .t03 {
+  left: -31px;
+  top: 0px;
+}
+.ema625_05_su_0005 dd.flex {
+  flex-direction: column;
+  justify-content: center;
+}
+.ema625_05_su_0005 dd.flex > div {
+  margin: 0px auto;
+  width: 520px;
+  font-size: 32px;
+  font-weight: 700;
+}

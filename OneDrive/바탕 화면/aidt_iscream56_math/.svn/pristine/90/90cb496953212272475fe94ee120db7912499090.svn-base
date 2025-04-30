@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema627_03_SU_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema627_03_SU.css" />
+
+  <style>
+    /* 선생님용 버튼 */      
+    .t_hide {
+      display: none;
+    }
+    .teacher .t_hide {
+      position: absolute;
+      right:100px;
+      display: block;
+    }
+    .teacher .btnRed {    
+        background-color: var(--secondary-red);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema627_03_SU_0002">
+    <section class="title">
+      <h2 data-head="notice">
+        <span lang="y">마을 공원 복구 계획서를 만들어 봅시다.​</span>
+      </h2>
+      <!----선생님용 버튼---->
+      <div class="t_hide">
+        <button class="btnRed">대표 기기 변경하기</button>
+      </div>
+      <!----//선생님용 버튼---->
+    </section>
+
+    <section class="contents">
+      <div class="flex justify_center gap_26">
+        <div class="input_area">
+          <div class="input_wrap flex dir_col gap_12">
+            <dl class="flex gap_16">
+              <dt class="label f32b text_center" lang="y">모둠원</dt>
+              <dd>
+                <math-field class="textarea" type="text"></math-field>
+              </dd>
+            </dl>
+            <dl class="flex gap_16">
+              <dt class="label f32b text_center" lang="y">문제 상황</dt>
+              <dd class="h_cst1">
+                <math-field class="textarea" type="text"></math-field>
+              </dd>
+            </dl>
+            <dl class="flex gap_16">
+              <dt class="label f32b text_center" lang="y">복구 계획</dt>
+              <dd class="flex gap_16 h_cst2">
+                <math-field class="textarea" type="text"></math-field>
+                <math-field class="textarea" type="text"></math-field>
+              </dd>
+            </dl>
+            <ol class="example_box" style="display: none;">
+              <li>더미</li>
+            </ol> 
+          </div>
+        </div>     
+        <div class="canvas_wrap">
+          <canvas
+              class="draw-area"
+              id="canvas"
+              width="503"
+              height="502"
+              data-canvas-id="canvas_1">
+          </canvas>
+        </div>
+      </div> 
+
+      <!-- 그리기도구 팝업 -->
+      <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+        <div class="draw-tool-wrap-header">
+            <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+            <div class="close_but add_cursor">
+            <img
+                src="../../common_contents/common/img/tool_drawing/tools_close.svg"
+                alt="ic_cancel" />
+            </div>
+        </div>
+        <div class="draw-tool-wrap-body">
+        <div class="tool-row function-item">
+          <button type="button" class="ic_pen active"></button>
+          <button type="button" class="ic_txt"></button>
+          <button type="button" class="ic_eraser"></button>
+          </div>
+          <div class="tool-row function-item">
+          <button type="button" class="ic_triangle"></button>
+          <button type="button" class="ic_square"></button>
+          <button type="button" class="ic_circle"></button>
+          <button type="button" class="ic_polygon"></button>
+          </div>
+          <div class="tool-row function-item">
+          <button type="button" class="ic_line"></button>
+          <button type="button" class="ic_dash"></button>
+          <button type="button" class="ic_draw"></button>
+          <button type="button" class="ic_pull"></button>
+          </div>
+          <div class="tool-row palette-item">
+          <button type="button" class="p_red"></button>
+          <button type="button" class="p_yellow"></button>
+          <button type="button" class="p_green"></button>
+          <button type="button" class="p_blue"></button>
+          <button type="button" class="p_purple"></button>
+          <button type="button" class="p_black active"></button>
+          </div>
+          <div class="tool-row range-item">
+          <input type="range" name="thickness" class="draw-scale-range" />
+          </div>
+          <div class="tool-row range-item">
+          <input type="range" name="opacity" class="draw-trans-range" />
+          </div>
+          <div class="tool-row function-item">
+          <div class="arrow-item">
+              <button type="button" class="ic_undo"></button>
+              <button type="button" class="ic_redo"></button>
+          </div>
+          <button type="button" class="ic_del"></button>
+          </div>
+
+          <div class="ic_polygon_pop">
+          <span>꼭지점</span>
+          <button type="button" class="ipp_minus"></button>
+          <div>
+              <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+              <label for="ipp_num">개</label>
+          </div>
+          <button type="button" class="ipp_plus"></button>
+          </div>
+        </div>
+      </div>
+      <!-- //그리기도구 팝업 -->   
+      <button type="button" class="btn btn_draw"></button>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

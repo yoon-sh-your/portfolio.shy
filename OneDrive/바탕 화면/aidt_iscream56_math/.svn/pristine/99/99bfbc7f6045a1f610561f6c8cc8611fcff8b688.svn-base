@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema622_01_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema622_01_su_0004">
+      <section class="title type2">
+        <h2 data-icon="speech" lang="y">영상을 보고 어떤 상황을 나타내고 있는지 이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="1037" height="1340" viewBox="0 0 1037 1340" fill="none">
+                <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                  font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="717" y="804.688" lang="y">스마트 신호등
+                  </tspan>
+                  <tspan x="717" y="828.688" lang="y">만들기 체험실</tspan>
+                </text>
+                <text fill="#005F45" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+                  font-weight="bold" letter-spacing="-1px">
+                  <tspan x="736" y="129.375" lang="y">가상 현실</tspan>
+                </text>
+                <text transform="translate(863.051 97) rotate(6.04002)" fill="#DF8040" xml:space="preserve"
+                  style="white-space: pre" font-family="Pretendard" font-size="32" font-weight="bold" letter-spacing="-1px">
+                  <tspan x="0" y="35.375" lang="y">체험관</tspan>
+                </text>
+              </svg>
+              <img src="../../common_contents/img/EMA622_01_SU/0004_content.png" alt="자치회 활동 이미지" />
+            <button class="play" data-video="1"></button>
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">지윤이와 은우가 과학 기술 체험관을 방문한 모습입니다.</li>
+                <li lang="y">네 발로 서 있는 빨간색 로봇이 보입니다.</li>
+                <li lang="y">첨단 과학 기술에 활용되는 종이접기 체험을 할 수 있는 공간이 있습니다.</li>
+                <li lang="y">가상 현실 체험을 하는 모습이 보입니다.</li>
+                <li lang="y">스마트 신호등 만들기 체험실이 있습니다.</li>
+                <li lang="y">로봇이 모래를 실어 나르고 있습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

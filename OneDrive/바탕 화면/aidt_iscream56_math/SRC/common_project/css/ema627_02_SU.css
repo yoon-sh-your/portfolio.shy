@@ -1,0 +1,101 @@
+/* ema627_02 common */
+.input_wrap:has(math-field.textarea) {
+  width: 100%;
+}
+.input_wrap math-field.textarea {
+  width: 100%;
+  height: 250px;
+}
+
+/* ema627_02_su_0002 */
+.ema627_02_su_0002 .img_wrap {
+  position: relative;
+}
+.ema627_02_su_0002 .img_wrap img {
+  width: 100%;
+}
+.ema627_02_su_0002 .img_wrap svg {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ema627_02_su_0003 */
+.ema627_02_su_0003 .picture_wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ema627_02_su_0004 */
+.ema627_02_su_0004 .picture_wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ema627_02_su_0005 */
+.ema627_02_su_0005 .table_wrap {  
+  border-radius: 20px;
+  border:1px solid #D2D2D2;
+  overflow: hidden;
+}
+.ema627_02_su_0005 .table_wrap table {
+  background-color: #fff;
+  border-style: hidden;
+}
+.ema627_02_su_0005 .table_wrap table th,
+.ema627_02_su_0005 .table_wrap table td {
+  height: 100px;
+  padding: 0 16px;
+  border: 1px solid #D2D2D2;
+}
+.ema627_02_su_0005 .table_wrap table th {
+  background-color: #EEF0F4;
+}
+.ema627_02_su_0005 .table_wrap table td {
+  width: 927px;
+}
+.ema627_02_su_0005 .table_wrap table td:has(input) {
+  width: 90px;
+  max-width: 90px;
+  text-align: center;
+}
+.ema627_02_su_0005 .table_wrap table td .item {
+  cursor: pointer;
+  min-height: auto;
+  padding:0;
+}
+.ema627_02_su_0005 .table_wrap table td .item::after {
+  display: none;
+}
+.ema627_02_su_0005 .table_wrap table td .item input.sr-only {    
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.ema627_02_su_0005 .table_wrap table td .item .chk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #3B71FE;
+  font-weight: 700;
+  font-size: 24px;
+  background:var(--btn-disabled-bg) url(../../common_project/common/img/icon_check_disabled.svg) no-repeat center;
+  border: 1px solid var(--stroke-default);
+  border-radius: 12px;
+}
+.ema627_02_su_0005 .table_wrap table td .item input:checked + .chk {
+  border: 1px solid var(--btn-default);
+  background:var(--btn-default) url(../../common_project/common/img/icon_check_white.svg) no-repeat center;
+}

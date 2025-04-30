@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_03_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_03_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4_orange" lang="y">정육면체의 부피는 몇 ㎤ 인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <img src="../../common_practice/img/EMA616_03_IH/616_03_04_S.png" alt="" />
+          <img src="../../common_practice/img/EMA616_03_IH/616_03_04_L.png" alt="" />
+        </div>
+
+        <!-- ㎝ 들어가는 박스들 -->
+        <div class="box_cm">
+          <span class="cm1">6 ㎝</span>
+          <span class="cm2">9 ㎝</span>
+        </div>
+
+        <div class="flex justify_center align_center">
+          <div class="input_wrap">
+            <math-field data-answer-single="10" text-align="center"></math-field>
+          </div>
+          <h2><span>㎤</span></h2>
+          <div class="input_wrap">
+            <math-field data-answer-single="10" text-align="center"></math-field>
+          </div>
+          <h2><span>㎤</span></h2>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>한 모서리의 길이가 6 ㎝인 정육면체의 부피는 6×6×6=216 (㎤)입니다.</p>
+                <p>한 모서리의 길이가 9 ㎝인 정육면체의 부피는 9×9×9=729 (㎤)입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve">
+              <div>
+                <button type="button" class="btnVideo"><span lang="y">해설 영상</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_04_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_04_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y"><span class="label_bread" lang="y">조건</span>을 만족하는 분수를 모두 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="bogi_box">
+            <span class="label_bread" lang="y">조건</span>
+            <div class="conts_bogi justify_start">
+              <ul class="flex dir_col gap_12">
+                <li class="text_bullet">분모가 16인 진분수입니다.</li>
+                <li class="text_bullet">분모와 분자의 차가 6보다 작습니다.</li>
+                <li class="text_bullet">기약분수입니다.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bracket">
+            <span class="bracket-l"></span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(11)/(16)"></math-field>
+            </div>
+            <span class="comma">,</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(13)/(16)"></math-field>
+            </div>
+            <span class="comma">,</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(15)/(16)"></math-field>
+            </div>
+            <span class="bracket-r"></span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">분모가 16인 진분수 중에서 분모와 분자의 차가 6보다 작은 분수는</p>
+                <div lang="y">
+                  <div class="fraction_box">
+                    <span>11</span>
+                    <span>16</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>12</span>
+                    <span>16</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>13</span>
+                    <span>16</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>14</span>
+                    <span>16</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>15</span>
+                    <span>16</span>
+                  </div>
+                  입니다.
+                </div>
+                <div lang="y">
+                  이 중에서 기약분수는
+                  <div class="fraction_box">
+                    <span>11</span>
+                    <span>16</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>13</span>
+                    <span>16</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>15</span>
+                    <span>16</span>
+                  </div>
+                  입니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA622_06_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema622_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema622_06_ih_0001">
+			<section class="title type2">
+				<h2 data-head="1_green" lang="y">
+					10÷7의 몫을 소수 셋째 자리까지 계산해 보고, <span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center gap_120">
+					<div class="box">
+						<div class="long_division">
+							<div class="top"><span class="hidden"><em>1</em><em class="dot">.</em><em>4</em><em>2</em><em>8</em></span></div>
+							<div class="row">
+								<div class="left">7</div>
+								<div class="right">
+									<span class="red">
+										<em>1</em><em>0</em>
+										<span class="hidden"><em class="dot">.</em><em>0</em><em>0</em><em>0</em></span>
+									</span>
+								</div>
+							</div>
+							<div class="hidden under"><span class="red"><em></em><em>7</em></span></div>
+							<div class="hidden bottom"><span class="red"><em></em><em>3</em><em class="dot"></em><em>0</em></span></div>
+							<div class="hidden under"><span class="red"><em></em><em>2</em><em class="dot"></em><em>8</em></span></div>
+							<div class="hidden bottom"><span class="red"><em></em><em></em><em>2</em><em>0</em></span></div>
+							<div class="hidden under"><span class="red"><em></em><em></em><em>1</em><em>4</em></span></div>
+							<div class="hidden bottom"><span class="red"><em></em><em></em><em></em><em>6</em><em>0</em></span></div>
+							<div class="hidden under"><span class="red"><em></em><em></em><em></em><em>5</em><em>6</em></span></div>
+							<div class="hidden bottom"><span class="red"><em></em><em></em><em></em><em></em><em>4</em></span></div>
+						</div>
+						<canvas class="draw-area" width="314" height="520" data-canvas-id="canvas_1"></canvas>
+					</div>
+					<div class="flex dir_col gap_40">
+						<div class="row" lang="y">몫을 반올림하여</div>
+						<div class="row" lang="y">
+							일의 자리까지 나타내면
+							<div class="input_wrap">
+								<math-field data-answer-single="1"></math-field>
+							</div> ,
+						</div>
+						<div class="row" lang="y">
+							소수 첫째 자리까지 나타내면
+							<div class="input_wrap">
+								<math-field data-answer-single="1.4"></math-field>
+							</div> ,
+						</div>
+						<div class="row" lang="y">
+							소수 둘째 자리까지 나타내면
+							<div class="input_wrap">
+								<math-field data-answer-single="1.43"></math-field>
+							</div>
+							입니다.
+						</div>
+					</div>
+
+				</div>
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<!-- 그리기도구 팝업 -->
+				<div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+					<div class="draw-tool-wrap-header">
+						 <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+						 <div class="close_but add_cursor">
+							  <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+						 </div>
+					</div>
+					<div class="draw-tool-wrap-body">
+						 <div class="tool-row function-item">
+							  <button type="button" class="ic_pen active"></button>
+							  <button type="button" class="ic_txt "></button>
+							  <button type="button" class="ic_eraser"></button>
+						 </div>
+						 <div class="tool-row function-item">
+							  <button type="button" class="ic_triangle"></button>
+							  <button type="button" class="ic_square"></button>
+							  <button type="button" class="ic_circle"></button>
+							  <button type="button" class="ic_polygon"></button>
+						 </div>
+						 <div class="tool-row function-item">
+							  <button type="button" class="ic_line"></button>
+							  <button type="button" class="ic_dash"></button>
+							  <button type="button" class="ic_draw"></button>
+							  <button type="button" class="ic_pull"></button>
+						 </div>
+						 <div class="tool-row palette-item">
+							  <button type="button" class="p_red"></button>
+							  <button type="button" class="p_yellow"></button>
+							  <button type="button" class="p_green"></button>
+							  <button type="button" class="p_blue"></button>
+							  <button type="button" class="p_purple"></button>
+							  <button type="button" class="p_black active"></button>
+						 </div>
+						 <div class="tool-row range-item">
+							  <input type="range" name="thickness" class="draw-scale-range">
+						 </div>
+						 <div class="tool-row range-item">
+							  <input type="range" name="opacity" class="draw-trans-range">
+						 </div>
+						 <div class="tool-row function-item">
+							  <div class="arrow-item">
+									<button type="button" class="ic_undo"></button>
+									<button type="button" class="ic_redo"></button>
+							  </div>
+							  <button type="button" class="ic_del"></button>
+						 </div>
+
+						 <div class="ic_polygon_pop">
+							  <span>꼭지점</span>
+							  <button type="button" class="ipp_minus"></button>
+							  <div>
+									<input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+									<label for="ipp_num">개</label>
+							  </div>
+							  <button type="button" class="ipp_plus"></button>
+						 </div>
+					</div>
+			  </div>
+			  <!-- //그리기도구 팝업 -->
+        <button type="button" class="btn btn_draw"></button>
+		  <div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

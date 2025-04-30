@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_05_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema526_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_05_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">일이 일어날 가능성을 잘못 표현한 것을 고르고, 내용을 옳게 고쳐 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="boolean_wrap type_chk">
+          <button type="button" data-answer-single="false">
+            <span class="circle">ㄱ</span>
+            <span lang="y">강당에 모인 학생 360명 중 생일이 같은 사람이 있을 가능성은 ‘~일 것 같다’입니다.</span>
+          </button>
+          <button type="button" data-answer-single="true">
+            <span class="circle">ㄴ</span>
+            <span lang="y">10개의 막대 중 당첨 막대가 2개 들어 있는 통에서 막대 1개를 뽑을 때 당첨 막대일 가능성은 ‘불가능하다’입니다.</span>
+          </button>
+        </div>
+        <div class="question_box justify_center gap_12 align_start">
+          <span class="label_gray" lang="y">옳게 고치기</span>
+          <div class="input_wrap">
+            <math-field></math-field>
+            <div class="example_box">
+              <p lang="y">10개의 막대 중 당첨 막대가 2개 들어 있는 통에서 막대 1개를 뽑을 때 당첨막대일 가능성은 ‘~아닐 것 같다’입니다.</p>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">㉡ 10개의 막대 중 당첨 막대가 2개 들어 있으므로 가능성은 ‘~아닐 것 같다’입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

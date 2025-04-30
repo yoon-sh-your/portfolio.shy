@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_03_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_03_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3_deep_green" lang="y">간단한 자연수의 비로 나타내어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_start">
+          <div>
+            <div class="input_row">
+              <div>
+                <div class="has_bg">1.5 : 6.2</div>
+                <img src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <div class="input_wrap">
+                  <math-field></math-field>
+                  <div class="example_box">
+                    <p>15 : 62</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="has_bg flex align_center">
+                  <div class="fraction_box"><span>3</span><span>7</span></div>
+                  :
+                  <div class="fraction_box"><span>2</span><span>3</span></div>
+                </div>
+                <img src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <div class="input_wrap">
+                  <math-field></math-field>
+                  <div class="example_box">
+                    <p>9 : 14</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="input_row">
+              <div>
+                <div class="has_bg">48 : 32</div>
+                <img src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <div class="input_wrap">
+                  <math-field></math-field>
+                  <div class="example_box">
+                    <p>3 : 2</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="has_bg flex align_center">
+                  <div class="fraction_box"><span>1</span><span>4</span></div>
+                  : 0.3
+                </div>
+                <img src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <div class="input_wrap">
+                  <math-field></math-field>
+                  <div class="example_box">
+                    <p>5 : 6</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>1.5 : 6.2의 전항과 후항에 10을 곱하면 15 : 62가 됩니다.</p>
+                <p class="mixed_fraction">
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>7</span>
+                  </span>
+                  <span>:</span>
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>3</span>
+                  </span>
+                  <span>의 전항과 후항에 21을 곱하면 9 : 14가 됩니다.</span>                
+              </p>
+              <p>48 : 32의 전항과 후항을 16으로 나누면 3 : 2가 됩니다.</p>
+              <p class="mixed_fraction">
+                후항 0.3을
+                <span class="fraction_box">
+                  <span>3</span>
+                  <span>10</span>
+                </span>으로 바꾼 후
+                <span class="fraction_box">
+                  <span>1</span>
+                  <span>4</span>
+                </span>
+                <span>:</span>
+                <span class="fraction_box">
+                  <span>3</span>
+                  <span>10</span>
+                </span>
+                <span>의 전항과 후항에 20을 곱하면 5 : 6이 됩니다.</span>
+              </p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

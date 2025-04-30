@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_03_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_03_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">초콜릿 10개 중 4개를 먹었습니다. 처음에 있던 초콜릿 수, 먹은 초콜릿 수, 남은 초콜릿 수를 비교해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">처음에 있던 초콜릿 수에 대한 먹은 초콜릿 수의 비를 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="4 : 10"></math-field>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <h3 lang="y">처음에 있던 초콜릿 수에 대한 남은 초콜릿 수의 비를 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="6 : 10"></math-field>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_3">
+            <h3 lang="y">남은 초콜릿 수에 대한 먹은 초콜릿 수의 비를 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="4 : 6"></math-field>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_4">
+            <h3 lang="y">먹은 초콜릿 수에 대한 남은 초콜릿 수의 비를 써 보세요.​</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="6 : 4"></math-field>
+              </div>
+            </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

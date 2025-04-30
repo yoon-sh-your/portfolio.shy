@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_04_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_04">
+      <section class="title type2">
+        <h2 data-head="2_green" lang="y">
+          <span lang="y">비에서 기준량과 비교하는 양을 찾아 쓰고, 비율을 분수와 소수로 각각 나타내어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents p_bottom">
+        <div class="table_wrap">
+          <table>
+            <tbody>
+              <tr>
+                <th rowspan="2">비</th>
+                <th rowspan="2">기준량</th>
+                <th rowspan="2">비교하는 양</th>
+                <th colspan="2">비율</th>
+              </tr>
+              <tr>
+                <th class="left">분수</th>
+                <th>소수</th>
+              </tr>
+              <tr>
+                <td class="bg">3:5</td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="5"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap fraction_wrap right_hint">
+                    <math-field data-answer-single="(3)/(5)"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="0.6"></math-field>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="bg">4대8</td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="8"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="4"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap fraction_wrap right_hint">
+                    <math-field data-answer-single="(4)/(8)(=(1)/(2))"
+                                        data-answer-multi='{"values": ["(4)/(8)", "(1)/(2)"]}' text-align="center"
+                                        placeholder=" "></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="0.5"></math-field>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="bg">8과 25의 비</td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="25"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="9"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap fraction_wrap right_hint">
+                    <math-field data-answer-single="(9)/(25)"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="0.36"></math-field>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="bg">
+                  20에 대한<br />
+                  14의비
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="20"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="14"></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap fraction_wrap">
+                    <math-field data-answer-single="(14)/(20)(=(7)/(10))"
+                                        data-answer-multi='{"values": ["(14)/(20)", "(7)/(10)"]}' text-align="center"
+                                        placeholder=" "></math-field>
+                  </div>
+                </td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="0.7"></math-field>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4">
+                  <p>비 3 : 5에서 기준량은 5, 비교하는 양은 3이므 로 비율은</p>
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>5</span>
+                  </div>
+                  <p>, 0.6입니다.</p>
+                </div>
+                <div class="flex gap_4">
+                  <p>4 대 8에서 기준량은 8, 비교하는 양은 4이므로 비율은</p>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>8</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                  <p>), 0.5입니다.</p>
+                </div>
+                <div class="flex gap_4">
+                  <p>9와 25의 비에서 기준량은 25, 비교하는 양은 9이므로 비율은</p>
+                  <div class="fraction_box">
+                    <span>9</span>
+                    <span>25</span>
+                  </div>
+                  <p>, 0.36입니다.</p>
+                </div>
+                <div class="flex gap_4">
+                  <p>20에 대한 14의 비에서 기준량은 20, 비교하는 양 은 14이므로 비율은</p>
+                  <div class="fraction_box">
+                    <span>14</span>
+                    <span>20</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>7</span>
+                    <span>10</span>
+                  </div>
+                  <p>), 0.7입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

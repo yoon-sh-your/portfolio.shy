@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_03_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_03_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_orange" lang="y">부피가 가장 작은 것을 찾아 기호를 찾아 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="top">
+            <div class="inr boolean_wrap type_chk">
+              <button type="button" class="item" data-answer-single="false"><span class="circle">ㄱ</span>&nbsp;가로가 5 cm, 세로가 3 cm, 높이가 5 cm인 직육면체의 부피</button>
+              <button type="button" class="item" data-answer-single="false"><span class="circle">ㄴ</span>&nbsp;한 밑면의 넓이가 14 cm²이고 높이가 5 cm인 직육면체의 부피</button>
+              <button type="button" class="item" data-answer-single="true"><span class="circle">ㄷ</span>&nbsp;한 모서리의 길이가 4 cm인 정육면체의 부피</button>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">㉠ 5×3×5=75 (cm³)</p>
+                <p lang="y">㉡ 14×5=70 (cm³)</p>
+                <p lang="y">㉢ 4×4×4=64 (cm³) 64 &lt;70&lt;75이므로 부피가 가장 작은 것은 ㉢입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+              <div>
+                <button type="button" class="btnVideo"><span lang="y">해설 영상</span></button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA615_02_SU_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema615_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema615_02.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema615_02_su_0002">
+    <section class="title type2">
+      <h2 data-type="2" data-text="생각 깨우기" lang="y">승아네 학교 학생들의 고민거리를 조사하여 나타낸 표입니다. 표가 아닌 다른 방법으로 어떻게 나타낼 수 있을지 이야기해
+        봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="flex align_start">
+
+        <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="812" height="428" viewBox="0 0 812 428" fill="none">
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="294.172" y="301.688" lang="y">고민거리별 학생 수의 비율</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="139.094" y="348.688" lang="y">고민거리</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="213.336" y="347.688" lang="y">친구 관계</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="233.148" y="381.688">29</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="299.422" y="347.688" lang="y">성적</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="304.148" y="381.688">26</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="371.422" y="348.688" lang="y">외모</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="377.391" y="381.688">18</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="442.422" y="348.688" lang="y">진로</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="448.336" y="381.688">16</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="514.422" y="348.688" lang="y">건강</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="521.234" y="381.688">11</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="584.422" y="348.688" lang="y">합계</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="585.461" y="381.688">100</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16"
+                letter-spacing="-0.5px">
+                <tspan x="134.156" y="381.688" lang="y">백분율(％)</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA615_02_SU/0002_content.png" alt="자치회 활동 이미지" />
+            <button class="play" data-video="1"></button>
+        </div>
+
+        <div class="input_area">
+          <h3 lang="y">영상을 보고, 조사한 내용을 표가 아닌 다른 방법으로 어떻게 나타낼 수 있을지 이야기해 보세요.</h3>
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">그래프로 나타내면 될 것 같습니다.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="btn_area">
+        <!-- 예시 필드에서 사용 -->
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

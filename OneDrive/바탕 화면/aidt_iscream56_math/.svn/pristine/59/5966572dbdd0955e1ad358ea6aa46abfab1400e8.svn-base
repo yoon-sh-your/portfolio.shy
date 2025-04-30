@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema611_10_su_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_10_su_0004">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="2" lang="y">(분수)÷(자연수)를 분수의 곱셈으로 나타내어 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="question_box">
+            <div class="quiz quiz1">
+              <span class="fraction_box">
+                <span>5</span>
+                <span>8</span>
+              </span>
+              <span>÷5=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(1)/(8)" text-align="center"></math-field>
+              </div>
+            </div>
+    
+            <div class="quiz quiz2">
+              <span class="fraction_box">
+                <span>5</span>
+                <span>7</span>
+              </span>
+              <span>÷4=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(5)/(28)" text-align="center"></math-field>
+              </div>
+            </div>
+          </div>
+          
+          <div class="question_box">
+            <div class="quiz quiz3">
+              <span class="fraction_box">
+                <span>6</span>
+                <span>11</span>
+              </span>
+              <span>÷8=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(3)/(44)" text-align="center"></math-field>
+              </div>
+            </div>
+    
+            <div class="quiz quiz4">
+              <span>2</span>
+              <span class="fraction_box">
+                <span>1</span>
+                <span>5</span>
+              </span>
+              <span>÷3=</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(11)/(15)" text-align="center"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

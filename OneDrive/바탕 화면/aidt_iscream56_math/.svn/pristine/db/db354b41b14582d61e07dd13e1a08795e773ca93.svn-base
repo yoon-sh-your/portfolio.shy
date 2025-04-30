@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_06_IH_0002</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_06_ih_0002 paging">
+			<section class="title type2 score">
+				<h2 data-head="2_deep_green" lang="y">
+					나현이가 과수원에서 수확한 배의 무게와 사과의 무게의 비는 3 : 7입니다. 수확한 배의 무게가 6 ㎏일 때
+					수확한 사과의 무게는 몇 ㎏인지 구하려고 합니다. 물음에 답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3>
+						<span lang="y">수확한 사과의 무게를</span>
+						<span class="empty_box nemo"></span>
+						<span lang="y">㎏이라 하고, 비례식을 세워 보세요.</span>
+					</h3>
+					<div class="question_box justify_center mt_30">
+						<div class="input_area flex gap_10 align_start">
+							<span class="label_gray" lang="y">비례식</span>
+							<div class="input_wrap">
+								<math-field></math-field>
+								<div class="example_box">
+									<p>3:7=6:□</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p>• 수확한 배의 무게가 6 kg일 때 수확한 사과의 무게를 <span class="nemo"></span>kg이라 하고 비례식을 세우면</p>
+									<p>3 : 7 = 6 : <span class="nemo"></span>입니다.</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+				<article class="page page_2">
+					<h3 lang="y">수확한 사과의 무게는 몇 ㎏인지 구해 보세요.</h3>
+					<div class="question_box justify_center mt_30">
+						<div class="input_area flex align_center gap_10">
+							<div class="input_wrap">
+								<math-field data-answer-single="14"></math-field>
+							</div>
+							㎏
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p>• 3 × <span class="nemo"></span> = 7 × 6, 3 × <span class="nemo"></span> = 42, <span class="nemo"></span> = 14이므로</p>
+									<p>수확한 사과의 무게는 14 kg입니다.</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,514 @@
+/**
+ * 전역변수
+ */
+let globalScale = 1;
+let globalFaultCount = 0;
+let keypadModeState = {
+    isKeypadMode: false
+};
+let isPaging = false;
+const cardFlip = {
+    cards: []
+};
+const isTeacher = location.pathname.endsWith('_t.html');
+
+// 콘솔 객체 백업
+window.originalConsole = {
+    log: console.log,
+    warn: console.warn,
+    error: console.error,
+    info: console.info
+};
+
+/**
+ * 외부 CDN 및 내부 스크립트 경로
+ */
+// 외부 CDN (버전 명시)
+const externalScriptPaths = [
+    "https://code.jquery.com/jquery-3.6.4.min.js",
+    "https://code.jquery.com/ui/1.13.2/jquery-ui.min.js",
+    "https://cdn.jsdelivr.net/gh/furf/jquery-ui-touch-punch@latest/jquery.ui.touch-punch.min.js"
+];
+
+// 스크립트 로드 헬퍼 함수
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = () => {
+            resolve();
+        };
+        script.onerror = (error) => {
+            console.error(`스크립트 로드 실패: ${src}`, error);
+            reject(error);
+        };
+        document.head.appendChild(script);
+    });
+}
+
+// 스크립트 로드 후 콘솔 복원
+async function loadScripts() {
+    try {
+        // 기본 스크립트들 로드
+        for (const scriptPath of externalScriptPaths) {
+            await loadScript(scriptPath);
+        }
+
+        // Fabric.js 로드
+        await loadScript("../../common_project/common/js/fabricModule/fabric.js");
+        // fabric.brushes.min.js 로드
+        await loadScript("../../common_project/common/js/fabricModule/fabric.brushes.min.js");
+
+        // tex-chtml.js 로드
+        // await loadScript("../../common_project/common/js/tex-chtml.js");
+        // console.log('tex-chtml.js 로드 완료');
+
+        // 모든 스크립트 로드 완료 후 콘솔 복원
+        console.log = window.originalConsole.log;
+        console.warn = window.originalConsole.warn;
+        console.error = window.originalConsole.error;
+        console.info = window.originalConsole.info;
+
+    } catch (error) {
+        console.error('스크립트 로드 중 오류 발생:', error);
+        throw error;
+    }
+}
+
+// 스크립트 로드 시작
+loadScripts().catch(error => {
+    console.error('스크립트 로드 중 오류 발생:', error);
+});
+
+// 전역 실행 대기 큐
+window.afterAppReadyQueue = [];
+
+// 내부 공통 스크립트
+const scriptPaths = [    
+    // 통신 규약 필요한 스크립트
+    "../../common_project/common/js/receiver.js",
+    "../../common_project/common/js/serviceFuncs.js",
+
+    "../../common_project/common/js/htmlparser.js",
+    "../../common_project/common/js/html2json.js",
+    "../../common_project/common/js/html2canvas.min.js",
+
+    // 고객사 금칙어 스크립트
+    "https://cdn.smart-aidt.com/common/aidtBlockWordsV1.js",
+    // 고객사 번역
+    "https://cdn.smart-aidt.com/common/axios.min.js",
+    "https://cdn.smart-aidt.com/common/transfer-v22.js",
+    "https://cdn.smart-aidt.com/common/core.min.js",
+    "https://cdn.smart-aidt.com/common/sha256.min.js",
+
+    "../../common_project/common/js/audio.js",
+    "../../common_project/common/js/dynamic_tag.js",
+    // "../../common_project/common/js/scrollbar.js",
+    "../../common_project/common/js/dropdown.js",
+    "../../common_project/common/js/pagenation.js",
+    "../../common_project/common/js/toast_message.js",
+    "../../common_project/common/js/video_player.js",
+    "../../common_project/common/js/btn_act.js",
+    "../../common_project/common/js/score.js",
+    "../../common_project/common/js/write.js",
+    "../../common_project/common/js/drawline.js",
+    "../../common_project/common/js/drag_drop.js",
+    "../../common_project/common/js/image_zoom.js",
+    "../../common_project/common/js/problem_generator.js",
+    "../../common_project/common/js/badwords.js",
+    "../../common_project/common/js/tools.js",
+    "../../common_project/common/js/fabricModule/drawPopup.js",
+    "../../common_project/common/js/fabricModule/canvas_init.js",
+    //키패드기능
+    "../../common_project/common/js/keypad/selvypen-math-keyboard.min.js",
+    "../../common_project/common/js/keypad/keypad.js",
+];
+
+// 전체 스크립트 리스트
+const allScripts = [...externalScriptPaths, ...scriptPaths];
+
+/**
+ * 화면 크기 조절 이벤트 처리
+ */
+window.addEventListener("DOMContentLoaded", scaleScreen);
+
+let resizeScheduled = false;
+
+function onResize() {
+    if (!resizeScheduled) {
+        resizeScheduled = true;
+        requestAnimationFrame(() => {
+            scaleScreen();
+            resizeScheduled = false;
+        });
+    }
+}
+// 이벤트 바인딩
+window.addEventListener("resize", onResize);
+if (window.visualViewport) {
+    window.visualViewport.addEventListener("resize", onResize);
+}
+
+/**
+ * 스크립트 비동기 로딩
+ */
+function loadScriptAsync(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement("script");
+        script.src = src;
+        script.type = "text/javascript";
+        script.onload = () => resolve(src);
+        script.onerror = () => reject(new Error(`Script load error: ${src}`));
+        document.head.append(script);
+    });
+}
+
+/**
+ * 초기화 및 스크립트 로딩
+ */
+document.addEventListener("DOMContentLoaded", async () => {
+    try {
+        for (const script of allScripts) {
+            await loadScriptAsync(script);
+        }
+
+        console.log("모든 스크립트가 순차적으로 로드되었습니다.");
+        initKeypad();
+
+        if (isTeacher) {
+            document.getElementById("app_wrap").classList.add("teacher");
+        }
+
+       
+        if (window.afterAppReadyQueue) {
+            window.afterAppReadyQueue.forEach(fn => {
+                try {
+                    fn();
+                } catch (e) {
+                    console.error("afterAppReadyQueue 함수 실행 중 오류:", e);
+                }
+            });
+        }
+
+        initializeCardFlip();
+
+    } catch (error) {
+        console.error("스크립트 로드 실패:", error);
+    }
+});
+
+/**
+ * 화면 스케일링
+ */
+function scaleScreen() {
+    const container = document.getElementById("app_wrap");
+    if (!container) return;
+
+    const currentWidth = window.visualViewport ? window.visualViewport.width : window.innerWidth;
+    const scaleX = currentWidth / 1715;
+    globalScale = scaleX;
+
+    container.style.transform = `scale(${globalScale})`;
+
+    // 페이징 레이아웃 감지 및 클래스 추가
+    const hasPagingLayout = container.querySelector('section.paging_layout');
+    if (hasPagingLayout) {
+        container.classList.add('of_h');
+    } else {
+        container.classList.remove('of_h');
+    }
+}
+
+/**
+ * 전역 오답 수 업데이트
+ */
+function updateGlobalFaultCount(newCount) {
+    globalFaultCount = newCount;
+    document.dispatchEvent(new CustomEvent("globalFaultUpdated", {
+        detail: globalFaultCount
+    }));
+}
+
+// 오답 횟수 감지 처리
+document.addEventListener("globalFaultUpdated", function (e) {
+    const count = e.detail;
+
+    if (count === 1) {
+        typeof onIncorrect === "function" && onIncorrect();
+    } else if (count > 1) {
+        typeof onIncorrectTwice === "function" && onIncorrectTwice();
+    }
+
+    if (typeof window.onCustomIncorrect === "function") {
+        window.onCustomIncorrect(count);
+    }
+});
+
+/**
+ * 카드 플립 기능
+ */
+function initializeCardFlip() {
+    cardFlip.cards = Array.from(document.querySelectorAll(".letCheck li"));
+    cardFlip.cards.forEach(card => {
+        card.addEventListener("click", () => handleCardClick(card));
+    });
+}
+
+function resetCardFlip() {
+    const page = pagenation.activePage;
+    if (!page) return;
+
+    const cards = Array.from(page.querySelectorAll(".letCheck li"));
+    cards.forEach(card => {
+        if (!card.querySelector(".cover")) {
+            const newCover = document.createElement("div");
+            newCover.className = "cover pointer large";
+            card.prepend(newCover);
+        }
+        card.classList.remove("flip");
+    });
+
+    const bubble = page.querySelector(".bubble_charactor");
+    if (bubble) bubble.style.display = "none";
+}
+
+function handleCardClick(card) {
+    const cover = card.querySelector(".cover");
+
+    if (cover && !cover.classList.contains("removed")) {
+        cover.classList.add("removed"); // 커버 제거 플래그 추가
+        cover.remove(); // 첫 클릭 시 cover 제거
+    } else {
+        if (card.querySelector(".back")) {
+            card.classList.toggle("flip"); // 두 번째 클릭부터 카드 뒤집기
+        }
+    }
+
+    // 카드가 하나라도 열린 상태인지 확인
+    const anyOpened = cardFlip.cards.some(card => !card.querySelector(".cover"));
+    const bubble = document.querySelector(".bubble_charactor");
+    if (bubble) {
+        bubble.style.display = anyOpened ? "block" : "none";
+    }
+
+    audioManager.playSound("click");
+}
+
+/**
+ * 네비게이션 기능
+ */
+async function navigate(dir) {
+    const clickAudio = audioManager.audioElements['click'];
+
+    if (clickAudio) { //버튼 클릭 오디오 실행 후 기능 실행
+        await new Promise(resolve => {
+            clickAudio.onended = resolve;
+            clickAudio.play().catch(resolve);
+        });
+    }
+
+    if (dir === 'back') {
+        window.history.back();
+    } else {
+        window.location.href = `${dir}.html`;
+    }
+}
+
+/**
+ * 팝업 제어 기능
+ */
+function openPop(selector) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.style.display = 'block';
+    }
+}
+
+function closePop(selector) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.style.display = 'none';
+    }
+}
+
+/**
+ * 공통js 호출후 실행 helper 함수
+ */
+function runAfterAppReady(fn) {
+    window.afterAppReadyQueue = window.afterAppReadyQueue || [];
+    if (typeof fn === "function") {
+        window.afterAppReadyQueue.push(fn);
+    } else {
+        console.warn("runAfterAppReady에 함수가 전달되지 않았습니다.");
+    }
+}
+
+/**
+ * 페이지 이동 기능
+ */
+
+
+async function movePage(dir) {
+    const hasPagingLayout = document.querySelector('section.paging_layout');
+
+    if (hasPagingLayout) {
+        // 페이지 네이션이 있는 경우
+        if (dir === 'next') {
+            if (pagenation.currentPage < pagenation.totalPages) {
+                document.querySelector('.next').click();
+            } else {
+                console.log("마지막 페이지입니다. 다음 파일로 이동합니다.");
+                const currentPage = window.location.pathname.split('/').pop();
+                
+                // 파일명 패턴 매칭
+                const match = currentPage.match(/EMA(\d{3})_(\d{2})_(.*?)_(\d{4})_s\.html$/);
+                if (match) {
+                    const grade = match[1];
+                    const unit = match[2];
+                    const middlePart = match[3];
+                    const currentNum = parseInt(match[4]);
+                    const nextNum = currentNum + 1;
+                    const formattedNum = String(nextNum).padStart(4, '0');
+                    const nextPage = `EMA${grade}_${unit}_${middlePart}_${formattedNum}_s.html`;
+                    
+                    const response = await fetch(nextPage, { method: 'HEAD' });
+                    if (response.ok) {
+                        window.location.href = nextPage;
+                    } else {
+                        console.log("다음 파일이 존재하지 않습니다.");
+                    }
+                }
+            }
+        } else {
+            if (pagenation.currentPage > 1) {
+                document.querySelector('.prev').click();
+            } else {
+                console.log("첫 페이지입니다. 이전 파일로 이동합니다.");
+                const currentPage = window.location.pathname.split('/').pop();
+                
+                // 파일명 패턴 매칭
+                const match = currentPage.match(/EMA(\d{3})_(\d{2})_(.*?)_(\d{4})_s\.html$/);
+                if (match) {
+                    const grade = match[1];
+                    const unit = match[2];
+                    const middlePart = match[3];
+                    const currentNum = parseInt(match[4]);
+                    const prevNum = Math.max(1, currentNum - 1);
+                    const formattedNum = String(prevNum).padStart(4, '0');
+                    const prevPage = `EMA${grade}_${unit}_${middlePart}_${formattedNum}_s.html`;
+                    
+                    const response = await fetch(prevPage, { method: 'HEAD' });
+                    if (response.ok) {
+                        window.location.href = prevPage;
+                    } else {
+                        console.log("이전 파일이 존재하지 않습니다.");
+                    }
+                }
+            }
+        }
+    } else {
+        // 페이지 네이션이 없는 경우
+        const currentPage = window.location.pathname.split('/').pop();
+        console.log(`현재 페이지: ${currentPage}`);
+
+        const match = currentPage.match(/EMA(\d{3})_(\d{2})_(.*?)_(\d{4})_s\.html$/);
+        if (match) {
+            const grade = match[1];
+            const unit = match[2];
+            const middlePart = match[3];
+            const currentNum = parseInt(match[4]);
+            
+            let nextNum;
+            if (dir === 'next') {
+                nextNum = currentNum + 1;
+            } else {
+                nextNum = Math.max(1, currentNum - 1);
+            }
+            
+            const formattedNum = String(nextNum).padStart(4, '0');
+            const nextPage = `EMA${grade}_${unit}_${middlePart}_${formattedNum}_s.html`;
+            console.log(`${dir === 'next' ? '다음' : '이전'} 페이지: ${nextPage}`);
+
+            const response = await fetch(nextPage, { method: 'HEAD' });
+            if (response.ok) {
+                window.location.href = nextPage;
+            } else {
+                console.log("페이지 끝");
+            }
+        } else {
+            console.log("현재 페이지에 숫자가 없습니다.");
+        }
+    }
+}
+
+// 전역 변수로 네비게이션 기능 활성화 상태 관리
+let navigationEnabled = true;
+
+// 키보드 이벤트 리스너 추가
+document.addEventListener('keydown', async (event) => {
+    if (!navigationEnabled) return; // 네비게이션 기능이 비활성화된 경우 종료
+
+    const currentPage = window.location.pathname.split('/').pop();
+    const match = currentPage.match(/EMA(\d{3})_(\d{2})_(.*?)_(\d{4})_s\.html$/);
+    
+    if (!match) return; // 파일명 패턴이 맞지 않으면 종료
+
+    const grade = match[1];
+    const unit = match[2];
+    const middlePart = match[3]; // _SU_ 부분을 포함한 중간 부분
+    const currentNum = match[4];
+
+    // 그레이드 변경 (Shift + Ctrl + PageUp/Down)
+    if ((event.key === 'PageUp' || event.key === 'PageDown') && 
+        event.shiftKey && event.ctrlKey) {
+        event.preventDefault();
+        let newGrade = parseInt(grade);
+        
+        if (event.key === 'PageDown') {
+            newGrade++;
+        } else {
+            newGrade = Math.max(1, newGrade - 1);
+        }
+        
+        // 그레이드 변경 시 유닛 번호 초기화 (01) 및 페이지 번호 초기화 (0001)
+        const nextPage = `EMA${String(newGrade).padStart(3, '0')}_01_${middlePart}_0001_s.html`;
+        console.log('그레이드 변경 시도:', nextPage);
+        const response = await fetch(nextPage, { method: 'HEAD' });
+        if (response.ok) {
+            window.location.href = nextPage;
+        } else {
+            console.log("해당 그레이드가 존재하지 않습니다.");
+        }
+    }
+    // 유닛 변경 (Shift + PageUp/Down)
+    else if ((event.key === 'PageUp' || event.key === 'PageDown') && 
+        event.shiftKey && !event.ctrlKey) {
+        event.preventDefault();
+        let newUnit = parseInt(unit);
+        
+        if (event.key === 'PageDown') {
+            newUnit++;
+        } else {
+            newUnit = Math.max(1, newUnit - 1);
+        }
+        
+        // 유닛 변경 시 페이지 번호 초기화 (0001)
+        const nextPage = `EMA${grade}_${String(newUnit).padStart(2, '0')}_${middlePart}_0001_s.html`;
+        console.log('유닛 변경 시도:', nextPage);
+        const response = await fetch(nextPage, { method: 'HEAD' });
+        if (response.ok) {
+            window.location.href = nextPage;
+        } else {
+            console.log("해당 유닛이 존재하지 않습니다.");
+        }
+    }
+    // 일반 페이지 네비게이션 (PageUp/Down)
+    else if (event.key === 'PageUp' || event.key === 'PageDown') {
+        event.preventDefault();
+        if (event.key === 'PageUp') {
+            movePage('prev');
+        } else if (event.key === 'PageDown') {
+            movePage('next');
+        }
+    }
+});

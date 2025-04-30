@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_08_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_08_su_0002">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          <div class="fraction_row">
+            <div class="fraction_inn">
+              초록 가게에서는 당근
+              <span class="fra ction_box"><span>2</span><span>5</span></span>
+              ㎏을 1200원에, 싱싱 가게에서는 당근<span class="fraction_box"><span>5</span><span>8</span></span>
+              ㎏을 2000원에 판매하고 있습니다. 어느 가게에서 당근을 
+            </div>
+            사는 것이 더 저렴한지 구해 봅시다.
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+            <article class="page page_1">
+              <div class="question_box justify-center">
+                <div class="img_box">
+                  <img src="../../common_contents/img/EMA621_08_SU/0002_content.png" alt="" />
+                  <div class="overlay_txt">
+                    <p class="ctxt1" lang="y">초록 가게</p>
+                    <p class="ctxt2" lang="y">싱싱 가게</p>
+                    <p class="ctxt3" lang="y">어느 가게가</p>
+                    <p class="ctxt4" lang="y">더 저렴할까?</p>
+                    <p class="ctxt5" lang="y">1 ㎏의 가격을</p>
+                    <p class="ctxt6" lang="y">비교해 볼까?</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="page page_2">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 812 452" fill="none">
+                    <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">                  
+                      <tspan x="111" y="56">초록 가게</tspan>
+                      <tspan x="545" y="56">싱싱 가게</tspan>
+                    </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">                  
+                        <tspan x="158" y="272">어느 가게가</tspan>
+                        <tspan x="156" y="300">더 저렴할까?</tspan>
+                      </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">
+                        <tspan x="633" y="272">1 ㎏의 가격을</tspan>
+                        <tspan x="638" y="300">비교해 볼까?</tspan>
+                      </text>
+                  </svg>
+                  <img src="../../common_contents/img/EMA621_08_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <h3 lang="y">
+                    구하려고 하는 것은 무엇인가요?
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                      <math-field class="textarea"></math-field>
+                      <div class="example_box">
+                          <p>어느 가게에서 당근을 사는 것이 더 저렴한지 구하려고 합니다.</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_3">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 812 452" fill="none">
+                    <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">                  
+                      <tspan x="111" y="56">초록 가게</tspan>
+                      <tspan x="545" y="56">싱싱 가게</tspan>
+                    </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">                  
+                        <tspan x="158" y="272">어느 가게가</tspan>
+                        <tspan x="156" y="300">더 저렴할까?</tspan>
+                      </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">
+                        <tspan x="633" y="272">1 ㎏의 가격을</tspan>
+                        <tspan x="638" y="300">비교해 볼까?</tspan>
+                      </text>
+                  </svg>
+                  <img src="../../common_contents/img/EMA621_08_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <h3 lang="y">
+                    초록 가게와 싱싱 가게에서는 각각 당근 몇 ㎏을 얼마에 판매하고 있나요?
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="row1">
+                      <span class="nm">초록 가게</span>
+                      <div class="col1">
+                        <span class="f32b">당근:</span>
+                        <div class="input_wrap fraction_wrap" data-hint-position="up">
+                          <math-field data-answer-single="(2)/(5)"></math-field>
+                        </div>
+                        <span class="f32b">㎏</span>
+                      </div>
+                      <div class="col2">
+                        <div class="input_wrap">
+                          <math-field data-answer-single="1200"></math-field>
+                        </div>
+                        <span class="f32b">명</span>
+                      </div>
+                    </div>
+                    <div class="row2">
+                      <span class="nm">싱싱 가게</span>
+                      <div class="col1">
+                        <span class="f32b">당근:</span>
+                        <div class="input_wrap fraction_wrap">
+                          <math-field data-answer-single="(5)/(8)"></math-field>
+                        </div>
+                        <span class="f32b">㎏</span>
+                      </div>
+                      <div class="col2">
+                        <div class="input_wrap">
+                          <math-field data-answer-single="2000"></math-field>
+                        </div>
+                        <span class="f32b">명</span>
+                      </div>
+                    </div>
+
+                    
+                  </div>
+                </div>
+            </article>
+            <article class="page page_4">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 812 452" fill="none">
+                    <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">                  
+                      <tspan x="111" y="56">초록 가게</tspan>
+                      <tspan x="545" y="56">싱싱 가게</tspan>
+                    </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">                  
+                        <tspan x="158" y="272">어느 가게가</tspan>
+                        <tspan x="156" y="300">더 저렴할까?</tspan>
+                      </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">
+                        <tspan x="633" y="272">1 ㎏의 가격을</tspan>
+                        <tspan x="638" y="300">비교해 볼까?</tspan>
+                      </text>
+                  </svg>
+                  <img src="../../common_contents/img/EMA621_08_SU/0003_content.png" alt="" /> 
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <h3 lang="y">
+                    문제를 해결하기 위해서는 무엇을 비교해야 할까요?
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                      <math-field class="textarea"></math-field>
+                      <div class="example_box">
+                          <p>두 가게에서 판매하고 있는 당근 1 ㎏의 가격을 비교해야 합니다.</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_5">
+              <div class="title_box">
+                <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+                <h3 lang="y">
+                  두 가게에서 판매하고 있는 당근 1 ㎏의 가격을 구하는 식을 각각 써 보세요.
+                </h3>
+              </div>
+              <div class="img_row">
+                <div class="picture_wrap">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 803 424" fill="none">
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">                  
+                        <tspan x="40" y="121">당근 5 ㎏이 1000원</tspan>
+                        <tspan x="42" y="158">이라면 당근 1 ㎏의</tspan>
+                        <tspan x="48" y="194">가격은 얼마일까?</tspan>
+                      </text> 
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                        <tspan x="590" y="133">당근 1 ㎏의 가격은</tspan>
+                        <tspan x="569" y="170">1000÷5=200(원)이야.</tspan>
+                      </text>
+                  </svg>
+                  <img src="../../common_contents/img/EMA621_08_SU/0002_content2.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  
+                  <div class="question_box justify_center">
+                    <div class="row1">
+                      <span class="nm">초록 가게</span>
+                      <div class="col1">
+                        <div class="input_wrap fraction_wrap" data-hint-position="up">
+                          <math-field data-answer-single="1200÷(2)/(5)"></math-field>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row2">
+                      <span class="nm">싱싱 가게</span>
+                      <div class="col1">
+                        <div class="input_wrap fraction_wrap">
+                          <math-field data-answer-single="2000÷(5)/(8)"></math-field>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_6">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 812 452" fill="none">
+                    <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">                  
+                      <tspan x="111" y="56">초록 가게</tspan>
+                      <tspan x="545" y="56">싱싱 가게</tspan>
+                    </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">                  
+                        <tspan x="158" y="272">어느 가게가</tspan>
+                        <tspan x="156" y="300">더 저렴할까?</tspan>
+                      </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">
+                        <tspan x="633" y="272">1 ㎏의 가격을</tspan>
+                        <tspan x="638" y="300">비교해 볼까?</tspan>
+                      </text>
+                  </svg>
+                  <img src="../../common_contents/img/EMA621_08_SU/0003_content.png" alt="" /> 
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <h3 lang="y">
+                    초록 가게에서 판매하고 있는 당근 1 ㎏의 가격은 얼마인가요?
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                      <math-field data-answer-single="3000"></math-field>
+                    </div>
+                    <span class="f32b">원</span>
+                    
+                  </div>
+                </div>
+            </article>
+            <article class="page page_7">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 812 452" fill="none">
+                    <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">                  
+                      <tspan x="111" y="56">초록 가게</tspan>
+                      <tspan x="545" y="56">싱싱 가게</tspan>
+                    </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">                  
+                        <tspan x="158" y="272">어느 가게가</tspan>
+                        <tspan x="156" y="300">더 저렴할까?</tspan>
+                      </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">
+                        <tspan x="633" y="272">1 ㎏의 가격을</tspan>
+                        <tspan x="638" y="300">비교해 볼까?</tspan>
+                      </text>
+                  </svg>
+                  <img src="../../common_contents/img/EMA621_08_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <h3 lang="y">
+                    싱싱 가게에서 판매하고 있는 당근 1 ㎏의 가격은 얼마인가요?
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="input_wrap">
+                      <math-field data-answer-single="3200"></math-field>
+                    </div>
+                    <span class="f32b">원</span>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_8">
+              <div class="img_row">
+                <div class="picture_wrap type2">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 812 452" fill="none">
+                    <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">                  
+                      <tspan x="111" y="56">초록 가게</tspan>
+                      <tspan x="545" y="56">싱싱 가게</tspan>
+                    </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">                  
+                        <tspan x="158" y="272">어느 가게가</tspan>
+                        <tspan x="156" y="300">더 저렴할까?</tspan>
+                      </text>
+                      <text fill="#000" xml:space="preserve" style="white-space: pre" font-size="16" letter-spacing="-0.5px" lang="y">
+                        <tspan x="633" y="272">1 ㎏의 가격을</tspan>
+                        <tspan x="638" y="300">비교해 볼까?</tspan>
+                      </text>
+                  </svg>
+                  <img src="../../common_contents/img/EMA621_08_SU/0003_content.png" alt="" />
+                  <button class="zoom"></button>
+                </div>
+                <div class="input_area">
+                  <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                  <h3 lang="y">
+                    어느 가게에서 당근을 사는 것이 더 저렴한지 구하고, 그 이유를 이야기해 보세요.
+                  </h3>
+                  <div class="question_box justify_center">
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown" data-answer-single="초록가게">
+                          <option></option>
+                          <option value="초록가게"></option>
+                          <option value="싱싱가게"></option>
+                      </select>
+                  </div>
+                    <div class="input_wrap">
+                      <math-field class="textarea"></math-field>
+                      <div class="example_box">
+                          <p lang="y">당근 1 ㎏의 가격이 싱싱 가게보다 더 저렴하기 때문입니다.</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+            </article>
+            <article class="page page_9 lookbackon">
+              <div class="title_box">
+                <div class="title_label title_label_3" lang="y"><span class="point">되돌아</span>봐요</div>
+                <h3 lang="y">문제를 잘 해결했나요?</h3>
+              </div>
+
+              <div class="lookbackon_contents">
+                  <div class="leftbox">
+                      <h4 class="tit" lang="y">잘 해결한 경우</h4>
+                      <div class="cont">
+                          <ul class="lookbackon_list">
+                              <li>문제를 해결한 방법을 설명해 보세요.</li>
+                              <li>문제를 해결할 수 있는 다른 방법을 찾아보세요.</li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="rightbox">
+                      <h4 class="tit" lang="y">해결하지 못한 경우</h4>
+                      <div class="cont">
+                          <div class="title_label_wrap">
+                              <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                              <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+                              <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+                          </div>
+                          <p class="lookbackon_txt" lang="y">단계를 다시 확인해 보세요.</p>
+                      </div>
+                  </div>
+              </div>
+            </article>
+            
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_04_ih_0005">
+      <section class="title group">
+        <h2 lang="y"><span class="pink">[4~5]</span> 철봉 기둥의 수와 철봉 대의 수 사이의 대응 관계를 식으로 나타내려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="img_box">
+        <div class="iron_bar">
+          <img src="../../common_practice/img/EMA513_04_IH/0004_img.png" alt="" />
+          <span class="txt1" lang="y">철봉 대</span>
+          <span class="txt2" lang="y">철봉 기둥</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="5_pink" lang="y">철봉 기둥의 수를 □, 철봉 대의 수를 ▽라고 할 때, 두 양 사이의 대응 관계를 식으로 나타내어 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="dragndrop_fraction_wrap">
+          <div class="drag_group">
+            <div class="drag_item type1" data-pair="1" data-value="□"><span>□</span></div>
+            <div class="drag_item type2" data-pair="1" data-value="="><span>=</span></div>
+            <div class="drag_item type2" data-pair="1" data-value="+"><span>+</span></div>
+            <div class="drag_item type2" data-pair="1" data-value="-"><span>-</span></div>
+            <div class="drag_item type1" data-pair="1" data-value="▽"><span>▽</span></div>
+            <div class="drag_item type3" data-pair="1" data-value="1"><span>1</span></div>
+            <div class="drag_item type3" data-pair="1" data-value="2"><span>2</span></div>
+            <div class="drag_item type3" data-pair="1" data-value="3"><span>3</span></div>
+          </div>
+          <div class="flex align_center justify_center gap_10 mt_30">
+            <span class="label_gray">식</span>
+            <div class="input_wrap_underline">
+              <div class="drop_group" data-answer-multi='[["▽", "=", "□", "-", "1"], ["□", "=", "▽", "+", "1"]]'>
+                <div class="drop_item" data-pair="1" data-answer-single="▽"></div>
+                <div class="drop_item" data-pair="1" data-answer-single="="></div>
+                <div class="drop_item" data-pair="1" data-answer-single="□"></div>
+                <div class="drop_item" data-pair="1" data-answer-single="-"></div>
+                <div class="drop_item" data-pair="1" data-answer-single="1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">철봉 대의 수(▽)는 철봉 기둥의 수(□)보다 1개 더 적으므로<br />▽=□-1입니다.</p>
+                <p lang="y">또는 철봉 기둥의 수(□)는 철봉 대의 수(▽)보다 1개 더 많으므로<br />□=▽+1입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

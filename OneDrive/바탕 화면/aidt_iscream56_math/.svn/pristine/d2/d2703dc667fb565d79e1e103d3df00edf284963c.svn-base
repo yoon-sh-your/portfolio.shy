@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_06_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_06_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">두 나눗셈의 몫의 차를 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="flex justify_center align_center">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA611_06_IH/0005_01.png" alt="" />
+              <div class="flex align_center gap_10">
+                2
+                <div class="fraction_box"><span>5</span><span>6</span></div>
+                ÷2
+              </div>
+            </div>
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA611_06_IH/0005_01.png" alt="" />
+              <div class="flex align_center gap_10">
+                3
+                <div class="fraction_box"><span>1</span><span>3</span></div>
+                ÷4
+              </div>
+            </div>
+          </div>
+          <div class="input_area mt_20">
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(7)/(12)" text-align="center" class="w_80"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y"></p>
+                <!-- 1 -->
+                <div class="flex align_center gap_0" lang="y">
+                  <span class="mixed_fraction">
+                    <span>2</span>
+                    <span class="fraction_box">
+                      <span>5</span>
+                      <span>6</span>
+                    </span> </span
+                  >÷2=
+                  <span class="fraction_box">
+                    <span>17</span>
+                    <span>6</span> </span
+                  >÷2=
+                  <span class="fraction_box">
+                    <span>17</span>
+                    <span>6</span> </span
+                  >×
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>2</span> </span
+                  >=
+                  <span class="fraction_box">
+                    <span>17</span>
+                    <span>12</span> </span
+                  >=
+                  <span class="mixed_fraction">
+                    <span>1</span>
+                    <span class="fraction_box">
+                      <span>5</span>
+                      <span>12</span>
+                    </span>
+                  </span>
+                </div>
+                <!-- 2 -->
+                <div class="flex align_center gap_0 mt_30" lang="y">
+                  <span class="mixed_fraction">
+                    <span>3</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>3</span>
+                    </span> </span
+                  >÷4=
+                  <span class="fraction_box">
+                    <span>10</span>
+                    <span>3</span> </span
+                  >÷4=
+                  <span class="fraction_box">
+                    <span class="mark_error up">10 <i class="bt35">5</i></span>
+                    <span>3</span> </span
+                  >×
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span class="mark_error">4 <i>2</i></span> </span
+                  >=
+                  <span class="fraction_box">
+                    <span>5</span>
+                    <span>6</span>
+                  </span>
+                </div>
+                <!-- 3 -->
+                <div class="flex align_center gap_0 mt_30" lang="y">
+                  ➔&nbsp;
+                  <span class="mixed_fraction">
+                    <span>1</span>
+                    <span class="fraction_box">
+                      <span>5</span>
+                      <span>12</span>
+                    </span> </span
+                  >-
+                  <span class="fraction_box">
+                    <span>5</span>
+                    <span>6</span> </span
+                  >=
+                  <span class="fraction_box">
+                    <span>17</span>
+                    <span>12</span> </span
+                  >-
+                  <span class="fraction_box">
+                    <span>10</span>
+                    <span>12</span> </span
+                  >=
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>12</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema516_08_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema516_08_IH_0007.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_08.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema516_08_ih_0007">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="7" class="is_star">
+          <span lang="y">주어진 평행사변형과 넓이가 같고 모양이 다른 평행사변형을 1개 그려 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="quiz_wrap flex justify_center gap_40">
+          <div class="quiz_area">
+            <div class="image">
+              <img src="../../common_practice/img/EMA516_08_IH/0007_01.png" alt="평행사변형" />
+            </div>
+            <div class="grid_guide">1 ㎠</div>
+            <div class="line_area" id="lineArea"></div>
+            <div class="drawline_grid">
+              <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+              <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+
+              <div class="drawing_grid_area" id="drawingArea1" data-grid-size="44">
+                <svg class="line_canvas"></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz_area hint">
+            <div class="image">
+              <img src="../../common_practice/img/EMA516_08_IH/0007_02.png" alt="평행사변형" />
+            </div>
+            <p lang="y">예</p>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(주어진 평행사변형의 넓이)=6×2=12 (㎠) <br />따라서 넓이가 12 ㎠이면서 주어진 평행사변형과 모양이 다른 평행사변형을 그립니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset" onclick="HideQuizHint();">리셋</button>
+          <button class="btnCheck" onclick="showQuizHint();">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

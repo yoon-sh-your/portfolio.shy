@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_07_IH_0007</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_07.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_07_ih_0007">
+			<section class="title type2">
+				<h2 data-head="6" class="fraction_box_title is_star2">
+					어떤 수를 
+					<div class="fraction_box">
+						<span>3</span>
+						<span>5</span>
+					</div>
+					으로 나누어야 할 것을 잘못하여 곱했더니
+					<div class="in_flex fraction_box_wrap ml_10">
+						<span>2</span>
+						<div class="fraction_box">
+							<span>7</span>
+							<span>10</span>
+						</div>
+					</div>
+					이 되었습니다. 옳게 계산한 값을 구하려고 합니다. 물음에 답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page">
+					<h3 class="title" lang="y">어떤 수를 구해 보세요.</h3>
+					<div class="question_box justify_center">
+						<div class="input_wrap fraction_wrap">
+							<math-field data-answer-single="4(1)/(2)(=(9)/(2))" data-answer-multi='{"values": ["4(1)/(2)", "(9)/(2)"]}'></math-field>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<div lang="y">
+										어떤 수를 <span class="empty_box nemo"></span>라 하면 <span class="empty_box nemo"></span>×
+										<div class="fraction_box">
+											<span>3</span>
+											<span>5</span>
+										</div>
+										=
+										<div class="fraction_box_wrap">
+											<span>2</span>
+											<div class="fraction_box">
+												<span>7</span>
+												<span>10</span>
+											</div>
+										</div>
+										입니다.
+									</div>
+									<div class="flex gap_8">
+										<div class="mt_5">
+											➔ <span class="empty_box nemo"></span>
+										</div>
+										<div>
+											<div>
+												=
+												<div class="fraction_box_wrap">
+													<span>2</span>
+													<div class="fraction_box">
+														<span>7</span>
+														<span>10</span>
+													</div>
+												</div>
+												÷
+												<div class="fraction_box">
+													<span>3</span>
+													<span>5</span>
+												</div>
+												=
+												<div class="fraction_box">
+													<span>27</span>
+													<span>10</span>
+												</div>
+												÷
+												<div class="fraction_box">
+													<span>3</span>
+													<span>5</span>
+												</div>
+											</div>
+											<div class="mt_30">
+												=
+												<div class="fraction_box">
+													<span class="slash">27<em class="sup">9</em></span>
+													<span class="slash">10<em class="sub">2</em></span>
+												</div>
+												×
+												<div class="fraction_box">
+													<span class="slash">5<em class="sup">1</em></span>
+													<span class="slash">3<em class="sub">1</em></span>
+												</div>
+												=
+												<div class="fraction_box">
+													<span>9</span>
+													<span>2</span>
+												</div>
+												=
+												<div class="fraction_box_wrap">
+													<span>4</span>
+													<div class="fraction_box">
+														<span>1</span>
+														<span>2</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="buttons_solve">
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="page">
+					<h3 class="title" lang="y">옳게 계산한 값을 구해 보세요.</h3>
+					<div class="question_box justify_center">
+						<div class="input_wrap fraction_wrap">
+							<math-field data-answer-single="7(1)/(2)(=(15)/(2))" data-answer-multi='{"values": ["7(1)/(2)", "(15)/(2)"]}'></math-field>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<div class="flex gap_4">
+										<div>
+											<div class="fraction_box_wrap">
+												<span>4</span>
+												<div class="fraction_box">
+													<span>1</span>
+													<span>2</span>
+												</div>
+											</div>
+											÷
+											<div class="fraction_box">
+												<span>3</span>
+												<span>5</span>
+											</div>
+										</div>
+										<div>
+											<div>
+												=
+												<div class="fraction_box">
+													<span>9</span>
+													<span>2</span>
+												</div>
+												÷
+												<div class="fraction_box">
+													<span>3</span>
+													<span>5</span>
+												</div>
+											</div>
+											<div class="mt_30">
+												=
+												<div class="fraction_box">
+													<span class="slash">9<em class="sup">3</em></span>
+													<span>2</span>
+												</div>
+												×
+												<div class="fraction_box">
+													<span>5</span>
+													<span class="slash">3<em class="sub">1</em></span>
+												</div>
+												=
+												<div class="fraction_box">
+													<span>15</span>
+													<span>2</span>
+												</div>
+												=
+												<div class="fraction_box_wrap">
+													<span>7</span>
+													<div class="fraction_box">
+														<span>1</span>
+														<span>2</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										
+										
+									</div>
+								</div>
+							</div>
+							<div class="buttons_solve">
+							</div>
+						</div>
+					</div>
+				</article>
+				
+				
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

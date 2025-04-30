@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_06_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_06_su_0005"> 
+      <section class="title type2">
+        <h2 data-head="3" lang="y">5.9×2.4를 두 가지 방법으로 계산해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="wrap flex dir_col">
+          <div>          
+            <h3 lang="y"><span class="method" circle-number="1">방법</span> 분수의 곱셈 이용하기</h3>
+            <div class="fra_parens f32b">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="5.9x2.4" text-align="center"></math-field>
+              </div>
+              <span>&equals;</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(59)/(10)x(24)/(10)" text-align="center"></math-field>
+              </div>
+              <span>&equals;</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(1416)/(100)" text-align="center"></math-field>
+              </div>
+              <span>&equals;</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="14.16" text-align="center"></math-field>
+              </div>
+            </span>
+            </div>
+          </div>
+          <div>          
+            <h3 lang="y"><span class="method" circle-number="2">방법</span> 자연수의 곱셈 이용하기</h3>
+            <div class="fra_parens f32b">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="59x24" text-align="center"></math-field>
+              </div>
+              <span>&equals;</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="1416" text-align="center"></math-field>
+              </div>
+              <span>&rarr;</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="5.9x2.4" text-align="center"></math-field>
+              </div>
+              <span>&equals;</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="14.16" text-align="center"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

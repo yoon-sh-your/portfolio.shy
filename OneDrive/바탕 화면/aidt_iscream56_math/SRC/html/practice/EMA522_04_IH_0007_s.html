@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_04_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_04_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star" lang="y">
+          <span lang="y">채은이는 컴퓨터를 지난주에 12시간 사용했고, 이번 주는 지난주의 </span>
+          <span class="fraction_box"><span>3</span><span>4</span></span>
+          <span lang="y">만큼 사용했습니다. 채은이가 이번 주에 컴퓨터를 사용한 </span><span lang="y">시간은 몇 시간인지 구해 보세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center align_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_04_IH/0007_01.png" alt="" />
+          </div>
+          <div class="input_area flex gap_10 align_center ml_20">
+            <!-- 단답형 -->
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="9" text-align="center"></math-field>
+            </div>
+
+            <span>)시간</span>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve top0">
+                <div class="flex align_center gap_10">
+                  <span> (채은이가 이번 주에 컴퓨터를 사용한 시간)</span>
+                </div>
+                <div class="flex align_center gap_10 mt_12">
+                  <span>=</span>
+                  <span class="mark_error up">12<i>3</i></span>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>3</span><span class="mark_error">4<i>1</i></span>
+                  </div>
+                  <span>=</span>
+                  <span>3×3</span>
+                  <span>=</span>
+                  <span>9(시간)</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

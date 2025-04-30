@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA626_10_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="./../../common_practice/js/ema626_10_ih_0001.js"></script>
+		<script src="../../common_practice/common/js/puzzle.js"></script>
+		<script src="../../common_practice/common/js/practice_zoom.js"></script>
+
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema626_10.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema626_10_ih_0001">
+			<section class="title type2">
+				<h2 data-puzzle="orange" class="flex align_center">
+					<span lang="y">옳게 설명한 번호를 찾아 색칠해 보세요. 어떤 그림이 보이나요?</span>
+				</h2>
+			</section>
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<div class="flex gap_20 justify_center align_center">
+						<div class="img_are"></div>
+
+						<div class="flex dir_col gap_40 justify_center align_center">
+							<p lang="y">구의 중심은 셀 수 없이 많습니다.</p>
+
+							<div class="boolean_wrap">
+								<button data-answer-single="true">
+									<img src="../../common_practice/img/EMA615_11_IH/o.svg" />
+								</button>
+								<button data-answer-single="false">
+									<img src="../../common_practice/img/EMA615_11_IH/x.svg" />
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex gap_4">
+										<span class="num" lang="y">①</span>
+										<span lang="y"
+											>정육면체는 정사각형 6개로 둘러싸인 도형이므로 모서리의 길이는 모두
+											같습니다.</span
+										>
+										<span lang="y">(</span>
+										<img src="../../common_practice/img/EMA626_10_IH/o.svg" />
+										<span lang="y">)</span>
+									</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+
+					<div class="btn_area">
+						<!-- <button class="btnType key">입력타입토글</button> -->
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+
+				<article class="page page_2">
+					<div class="flex gap_20 justify_center align_center">
+						<div class="img_are"></div>
+
+						<div class="flex dir_col gap_40 justify_center align_center">
+							<p lang="y">원기둥의 옆면은 굽은 면입니다.</p>
+
+							<div class="boolean_wrap">
+								<button data-answer-single="true">
+									<img src="../../common_practice/img/EMA615_11_IH/o.svg" />
+								</button>
+								<button data-answer-single="false">
+									<img src="../../common_practice/img/EMA615_11_IH/x.svg" />
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex gap_4">
+										<span class="num" lang="y">②</span>
+										<span lang="y"
+											>직육면체 모양을 잘 알 수 있도록 나타낸 그림을 직육면체의 겨냥도라고
+											합니다.</span
+										>
+										<span lang="y">(</span>
+										<img src="../../common_practice/img/EMA626_10_IH/o.svg" />
+										<span lang="y">)</span>
+									</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+
+					<div class="btn_area">
+						<!-- <button class="btnType key">입력타입토글</button> -->
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+
+				<article class="page page_3">
+					<div class="flex gap_20 justify_center align_center">
+						<div class="img_are"></div>
+
+						<div class="flex dir_col gap_40 justify_center align_center">
+							<p lang="y">원뿔의 꼭짓점은 2개입니다.</p>
+
+							<div class="boolean_wrap">
+								<button data-answer-single="false">
+									<img src="../../common_practice/img/EMA615_11_IH/o.svg" />
+								</button>
+								<button data-answer-single="true">
+									<img src="../../common_practice/img/EMA615_11_IH/x.svg" />
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex gap_4">
+										<span class="num" lang="y">③</span>
+										<span lang="y">정육면체의 꼭짓점은 모두 8개입니다.</span>
+										<span lang="y">(</span>
+										<img src="../../common_practice/img/EMA626_10_IH/x.svg" />
+										<span lang="y">)</span>
+									</p>
+									<p>➔ 원뿔의 꼭짓점은 1개입니다.</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+
+					<div class="btn_area">
+						<!-- <button class="btnType key">입력타입토글</button> -->
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+
+				<article class="page page_4">
+					<div class="flex gap_20 justify_center align_center">
+						<div class="img_are"></div>
+
+						<div class="flex dir_col gap_40 justify_center align_center">
+							<p lang="y">
+								반원 모양의 종이를 지름을 기준으로 한 바퀴 <br />
+								돌렸을 때 만들어지는 입체도형은 구입니다.
+							</p>
+
+							<div class="boolean_wrap">
+								<button data-answer-single="true">
+									<img src="../../common_practice/img/EMA615_11_IH/o.svg" />
+								</button>
+								<button data-answer-single="false">
+									<img src="../../common_practice/img/EMA615_11_IH/x.svg" />
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex gap_4">
+										<span class="num" lang="y">④</span>
+										<span lang="y">직육면체에서 밑면과 옆면은 수직으로 만납니다. ➔</span>
+										<img src="../../common_practice/img/EMA626_10_IH/o.svg" />
+									</p>
+									<p>➔ 원뿔의 꼭짓점은 1개입니다.</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+
+					<div class="btn_area">
+						<!-- <button class="btnType key">입력타입토글</button> -->
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+
+				<article class="page page_5">
+					<div class="flex gap_20 justify_center align_center">
+						<div class="img_are"></div>
+
+						<div class="flex dir_col gap_40 justify_center align_center">
+							<p lang="y">
+								구의 중심과 구의 겉면의 한 점을 이은 선분을 <br />
+								구의 지름이라고 합니다.
+							</p>
+
+							<div class="boolean_wrap">
+								<button data-answer-single="false">
+									<img src="../../common_practice/img/EMA615_11_IH/o.svg" />
+								</button>
+								<button data-answer-single="true">
+									<img src="../../common_practice/img/EMA615_11_IH/x.svg" />
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex gap_4">
+										<span class="num" lang="y">⑤</span>
+										<span lang="y"
+											>구의 중심과 구의 겉면의 한 점을 이은 선분을 구의 지름이라고 합니다.</span
+										>
+										<span lang="y">(</span>
+										<img src="../../common_practice/img/EMA626_10_IH/x.svg" />
+										<span lang="y">)</span>
+									</p>
+									<p lang="y">
+										➔ 구의 중심과 구의 겉면의 한 점을 이은 선분 을 구의 반지름이라고 합니다.
+									</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+
+					<div class="btn_area">
+						<!-- <button class="btnType key">입력타입토글</button> -->
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_08_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_08.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_08_su_0005">
+    <section class="title type2">
+      <h2 data-head="3_pink" lang="y">점 ㅇ을 대칭의 중심으로 하는 점대칭도형에서 선분의 길이와 각의 크기를 각각 구해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="input_area">
+        <div class="question_box">
+          <div class="figure_box">
+            <span><img src="../../common_contents/img/EMA523_08_SU/0005_content01.png" alt="도형이미지"></span>
+            <div class="figure_triangle">
+              <span class="txt_1" lang="y">ㄱ</span>
+              <span class="txt_2" lang="y">ㄴ</span>
+              <span class="txt_3" lang="y">ㄷ</span>
+              <span class="txt_4" lang="y">ㄹ</span>
+              <span class="txt_5" lang="y">ㅁ</span>
+              <span class="txt_6" lang="y">ㅂ</span>
+              <span class="txt_7" lang="y">ㅇ</span>
+              <span class="txt_8" lang="y">8 ㎝</span>
+              <span class="txt_9" lang="y">14 ㎝</span>
+              <span class="txt_10" lang="y">100˚</span>
+            </div>
+          </div>
+          <ul class="form_box">
+            <li>
+              <div class="vertical1" lang="y">
+                <span lang="y">선분 ㄹㅁ</span>
+              </div>
+              <div class="vertical2">
+                <div class="input_wrap input2" data-hint-position="up">
+                  <math-field data-answer-single="14"></math-field>
+                </div>
+                <span lang="y">㎝</span>
+              </div>
+            </li>
+            <li>
+              <div class="vertical1" lang="y">
+                <span lang="y">각 ㄷㄹㅁ</span>
+              </div>
+              <div class="vertical2">
+                <div class="input_wrap input2">
+                  <math-field data-answer-single="100"></math-field>
+                </div>
+                <span lang="y">˚</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="question_box">
+          <div class="figure_box">
+            <span><img src="../../common_contents/img/EMA523_08_SU/0005_content02.png" alt="도형이미지"></span>
+            <div class="figure_triangle">
+              <span class="txt_1" lang="y">ㄱ</span>
+              <span class="txt_2" lang="y">ㄴ</span>
+              <span class="txt_3" lang="y">ㄷ</span>
+              <span class="txt_4" lang="y">ㄹ</span>
+              <span class="txt_5" lang="y">ㅁ</span>
+              <span class="txt_6" lang="y">ㅂ</span>
+              <span class="txt_7" lang="y">ㅇ</span>
+              <span class="txt_8" lang="y">10 ㎝</span>
+              <span class="txt_9" lang="y">26 ㎝</span>
+            </div>
+          </div>
+          <ul class="form_box">
+            <li>
+              <div class="vertical1" lang="y">
+                <span lang="y">선분 ㄴㅇ</span>
+              </div>
+              <div class="vertical2">
+                <div class="input_wrap input2" data-hint-position="up">
+                  <math-field data-answer-single="13"></math-field>
+                </div>
+                <span lang="y">㎝</span>
+              </div>
+            </li>
+            <li>
+              <div class="vertical1" lang="y">
+                <span lang="y">선분 ㄷㅂ</span>
+              </div>
+              <div class="vertical2">
+                <div class="input_wrap input2">
+                  <math-field data-answer-single="20"></math-field>
+                </div>
+                <span lang="y">㎝</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <!-- <button class="btnSubmit">확인</button> -->
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

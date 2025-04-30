@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_05_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+   <link rel="stylesheet" href="./../../common_practice/css/ema616_05.css" />
+
+  </head>
+  <body>
+
+    <div id="app_wrap" class="ema616_05_ih_0006">
+      <section class="title type2 mt_12">
+        <h2 data-head="6_orange"  data-text="창의+" lang="y"> 우리 주변에서 볼 수 있는 직육면체 모양의 물건 중에서 부피를 m³ 단위로 나타내기에 알맞은 물건을 찾아 부피를 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+       
+
+        <div class="question_box dir_col">
+            <div class="table_wrap">
+              <table>
+                <thead class="row_color">
+                  <tr>
+                    <th scope="row" lang="y">물건</th>
+                    <th scope="col" lang="y">  <div class="input_wrap">
+                        <math-field data-answer-single="서랍장" text-align="center" class="field_mid"><math-field>
+                           
+                    </div></th>
+                
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr>
+                    <th class="col_color" lang="y">가로(m)</th>
+                    <td lang="y">   <div class="input_wrap">
+                        <math-field data-answer-single="1.5" text-align="center"><math-field>
+                           
+                    </div> </td>
+
+                  </tr>
+                  <tr>
+                    <th class="col_color" lang="y">세로(m)</th>
+                    <td lang="y">   <div class="input_wrap">
+                        <math-field data-answer-single="0.8" text-align="center"><math-field>
+                           
+                    </div> </td>
+
+                  </tr>
+                  <tr>
+                    <th class="col_color" lang="y">높이(m)</th>
+                    <td lang="y">   <div class="input_wrap">
+                        <math-field data-answer-single="1" text-align="center"><math-field>
+                           
+                    </div> </td>
+
+                  </tr>
+
+                  <tr>
+                    <th class="col_color" lang="y">부피(m³)</th>
+                    <td lang="y">   <div class="input_wrap">
+                        <math-field data-answer-single="1.2" text-align="center"><math-field>
+                           
+                    </div> </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>   
+</div>
+            
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

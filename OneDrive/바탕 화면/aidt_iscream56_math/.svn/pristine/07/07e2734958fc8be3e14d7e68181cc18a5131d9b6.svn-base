@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema512_10_su_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_10_su_0004">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="3_green" lang="y">
+          두 수의 곱으로 나타낸 식을 보고
+          <div class="empty_box ml_8"></div>
+          안에 ‘약수’와 ‘배수’ 중 알맞은 말을 고르세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ex_box">
+          <span>35=1×35</span>
+          <span>35=5×7</span>
+        </div>
+        <!--  -->
+        <div class="flex justify_center
+        ">
+          <div class="dropdown_wrap">
+            <span lang="y">1, 5, 7, 35는 35의</span>
+            <select class="custom_dropdown" data-answer-single="약수">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="약수"></option>
+                <option value="배수"></option>
+            </select>
+          </div>
+
+          <div class="dropdown_wrap">
+            <span lang="y" class="mr_12">이고, 35는 1, 5, 7, 35의</span>
+            <select class="custom_dropdown" data-answer-single="배수">
+                <option></option><!--최초선택데이터 생성 방지용-->
+                <option value="약수"></option>
+                <option value="배수"></option>
+            </select>
+            <span lang="y">입니다.</span>
+          </div>
+
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

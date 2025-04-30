@@ -1,0 +1,360 @@
+/**
+ * 다양한 수학 표현식을 정규화하고 비교하는 함수 모음
+ */
+
+/**
+ * 표현식을 정규화하여 비교 가능한 형태로 변환하는 함수
+ * @param {string} expression - 입력 수학 표현식
+ * @return {string} - 정규화된 표현식
+ */
+function normalizeExpression(expression) {
+    // 입력값이 문자열이 아닌 경우 처리
+    if (typeof expression !== 'string') {
+        console.warn('문자열이 아닌 입력:', expression);
+        return '';
+    }
+
+    // 공백 제거
+    let normalized = expression.replace(/\s+/g, '');
+    
+    // × 연산자를 * 로 통일
+    normalized = normalized.replace(/[×xX]/g, '*');
+    
+    // ÷ 연산자를 / 로 통일
+    normalized = normalized.replace(/÷|:-/g, '/');
+
+    // ＋ 연산자를 + 로 통일
+    normalized = normalized.replace(/\＋/g, "+");
+
+    // － 연산자를 - 로 통일
+    normalized = normalized.replace(/－/g, "-");    
+
+    // 혼합분수를 가분수로 변환하는 여러 패턴 처리 (먼저 실행)
+    const patterns = [
+        // 1(4)/(40) 형태 - 분자만 괄호 (수정된 패턴)
+        /(\d+)\((\d+)\)\/\((\d+)\)/g,
+        // 1(4/40) 형태 - 괄호 안에 분수
+        /(\d+)\((\d+)\/(\d+)\)/g,
+        // 1\frac{4}{40} 형태 - LaTeX 혼합분수
+        /(\d+)\\frac\{(\d+)\}\{(\d+)\}/g
+    ];
+
+    patterns.forEach(pattern => {
+        while (pattern.test(normalized)) {
+            normalized = normalized.replace(pattern, (match, whole, num, denom) => {
+                // 디버깅을 위한 로그
+                console.log('Match:', match, 'Whole:', whole, 'Num:', num, 'Denom:', denom);
+                const wholeNum = parseInt(whole);
+                const numerator = parseInt(num);
+                const denominator = parseInt(denom);
+                // 전체 * 분모 + 분자
+                return `(${wholeNum * denominator + numerator})/${denominator}`;
+            });
+        }
+    });
+
+    // 그 다음 괄호 단순화 처리
+    normalized = normalized.replace(/\((\d+)\)\/\((\d+)\)/g, '$1/$2');
+    normalized = normalized.replace(/\((\d+)\)\*\((\d+)\)/g, '$1*$2');
+    normalized = normalized.replace(/\((\d+)\)\/(\d+)/g, '$1/$2');
+    normalized = normalized.replace(/(\d+)\/\((\d+)\)/g, '$1/$2');
+    normalized = normalized.replace(/\((\d+[\+\-\*\/]\d+)\)/g, '$1');
+
+    // 마지막으로 LaTeX 분수 정규화
+    normalized = normalized.replace(/\\frac\{(\d+)\}\{(\d+)\}/g, '$1/$2');
+    normalized = normalized.replace(/\\frac(\d)(\d)/g, '$1/$2');
+    
+    return normalized;
+}
+
+/**
+ * 표현식의 수학적 값을 계산하는 함수
+ * @param {string} expression - 정규화된 표현식
+ * @return {number} - 계산된 값
+ */
+function evaluateExpression(expression) {
+  try {
+    // 복잡한 표현식은 String -> Function으로 평가
+    // 보안 주의: 실제 프로덕션 환경에서는 사용자 입력을 직접 eval하는 것을 피해야 함
+    return Function(`"use strict"; return ${expression}`)();
+  } catch (error) {
+    console.error('표현식 평가 오류:', error);
+    return NaN;
+  }
+}
+
+/**
+ * 두 수학 표현식이 수학적으로 같은지 비교하는 함수
+ * @param {string} expr1 - 첫 번째 수학 표현식
+ * @param {string} expr2 - 두 번째 수학 표현식
+ * @param {number} [tolerance=1e-10] - 부동소수점 비교 허용 오차
+ * @return {object} - 비교 결과 객체
+ */
+function compareMathExpressions(expr1, expr2, tolerance = 1e-10) {
+  const result = {
+    original1: expr1,
+    original2: expr2,
+    normalized1: '',
+    normalized2: '',
+    value1: null,
+    value2: null,
+    areEqual: false,
+    error: null
+  };
+  
+  try {
+    // 표현식 정규화
+    result.normalized1 = normalizeExpression(expr1);
+    result.normalized2 = normalizeExpression(expr2);
+    
+    // 정규화된 표현식이 동일하면 즉시 true 반환
+    if (result.normalized1 === result.normalized2) {
+      result.areEqual = true;
+      return result;
+    }
+    
+    // 수치적으로 계산하여 비교
+    result.value1 = evaluateExpression(result.normalized1);
+    result.value2 = evaluateExpression(result.normalized2);
+    
+    // NaN 처리
+    if (isNaN(result.value1) || isNaN(result.value2)) {
+      result.error = '하나 이상의 표현식을 수치적으로 평가할 수 없습니다';
+      return result;
+    }
+    
+    // 부동소수점 비교
+    result.areEqual = Math.abs(result.value1 - result.value2) < tolerance;
+    
+  } catch (error) {
+    result.error = `비교 오류: ${error.message}`;
+  }
+  
+  return result;
+}
+
+/**
+ * 여러 수학 표현식이 모두 같은지 비교하는 함수
+ * @param {string[]} expressions - 비교할 수학 표현식 배열
+ * @param {number} [tolerance=1e-10] - 부동소수점 비교 허용 오차
+ * @return {object} - 비교 결과 객체
+ */
+function compareMultipleMathExpressions(expressions, tolerance = 1e-10) {
+  const result = {
+    originals: expressions,
+    normalized: [],
+    values: [],
+    areAllEqual: false,
+    error: null
+  };
+
+  try {
+    // 모든 표현식이 빈 문자열이면 true 반환
+    if (expressions.every(expr => !expr.trim())) {
+      result.areAllEqual = true;
+      return result;
+    }
+
+    // 배열이 비어있거나 요소가 1개 이하면 에러
+    if (!Array.isArray(expressions) || expressions.length <= 1) {
+      result.error = '비교할 표현식이 2개 이상 필요합니다';
+      return result;
+    }
+
+    // 모든 표현식 정규화
+    result.normalized = expressions.map(expr => normalizeExpression(expr));
+
+    // 정규화된 표현식이 모두 같은지 확인
+    if (result.normalized.every(norm => norm === result.normalized[0])) {
+      result.areAllEqual = true;
+      return result;
+    }
+
+    // 수치적으로 계산하여 비교
+    result.values = result.normalized.map(norm => evaluateExpression(norm));
+
+    // NaN 체크
+    if (result.values.some(val => isNaN(val))) {
+      result.error = '하나 이상의 표현식을 수치적으로 평가할 수 없습니다';
+      return result;
+    }
+
+    // 모든 값이 허용 오차 내에서 같은지 확인
+    result.areAllEqual = result.values.every((val, i) => 
+      i === 0 || Math.abs(val - result.values[0]) < tolerance
+    );
+
+  } catch (error) {
+    result.error = `비교 오류: ${error.message}`;
+  }
+
+  return result;
+}
+
+/**
+ * MathLive 라이브러리가 있는 경우, 표현식을 LaTeX로 변환하는 함수
+ * @param {string} expression - 입력 표현식
+ * @return {string} - LaTeX 형식으로 변환된 표현식
+ */
+function convertToLatex(expression) {
+  // MathLive 사용이 가능한 경우
+  if (typeof window !== 'undefined' && window.MathLive) {
+    try {
+      // 최신 API 확인
+      if (window.MathLive.MathField) {
+        const element = document.createElement('div');
+        document.body.appendChild(element);
+        const mathField = new window.MathLive.MathField(element);
+        mathField.setValue(expression);
+        const latex = mathField.getValue();
+        document.body.removeChild(element);
+        return latex;
+      }
+      // 레거시 API 확인
+      else if (window.mathlive && window.mathlive.makeMathField) {
+        const element = document.createElement('div');
+        document.body.appendChild(element);
+        const mathField = window.mathlive.makeMathField(element);
+        mathField.setValue(expression);
+        const latex = mathField.getValue('latex');
+        document.body.removeChild(element);
+        return latex;
+      }
+    } catch (error) {
+      console.error('LaTeX 변환 오류:', error);
+    }
+  }
+  
+  // MathLive 사용 불가 시 기본 변환 로직으로 대체
+  let latex = expression;
+  
+  // × 또는 x를 \times로 변환
+  latex = latex.replace(/[×xX]/g, '\\times ');
+  
+  // 분수 변환 (a/b -> \frac{a}{b})
+  latex = latex.replace(/(\d+)\/(\d+)/g, '\\frac{$1}{$2}');
+  
+  // 혼합 분수 변환 (a(b/c) -> a\frac{b}{c})
+  latex = latex.replace(/(\d+)\((\d+)\/(\d+)\)/g, '$1\\frac{$2}{$3}');
+  
+  return latex;
+}
+
+/**
+ * 주어진 예제를 테스트하는 함수
+ */
+function testExamples() {
+  const examples = [
+    {
+      expr1: "2(2)/(3)+(1)/(2)",
+      expr2: "2(2/3)+(1/2)",
+      expr3: "2\\frac{2}{3}+\\frac{1}{2}"
+    },
+    {
+      expr1: "1(47)/(63)",
+      expr2: "(110)/(63)",
+      expr3: "110/63",
+      expr4: "1(47/63)"
+    },
+    {
+      expr1: "(3)/(4)+(5)/(8)",
+      expr2: "(3/4)+(5/8)",
+      expr3: "3/4+5/8"
+    },
+    {
+      expr1: "(2+3)+((18)/(30)+(25)/(30))",
+      expr2: "2+3+(18/30)+(25/30)"
+    },
+    {
+      expr1: "(5)/(6)-(1)/(2)",
+      expr2: "5/6-1/2",
+      expr3: "(5/6)-(1/2)"
+    },
+    {
+      expr1: "(5×5)/(8×5)-(3)×(4)/(10)×(4)",
+      expr2: "(5*5)/(8X5)-3×(4/10)x4"
+    },
+    {
+      expr1: "(28-:4)/(32)",
+      expr2: "(28÷4)/32"
+    },
+    {
+      expr1: "1(4)/(5)-:4",
+      expr2: "1(4/5)÷4"
+    },
+    {
+      expr1: "(4×2)/(9×2)",
+      expr2: "(4*2)/(9*2)",
+      expr3: "(4X2)/(9X2)"
+    },
+    {
+      expr1: "5×4",
+      expr2: "5*4",
+      expr3: "5X4",
+      expr4: "5x4",
+      expr5: "5×4"
+    }
+  ];
+  
+  const results = [];
+  
+  // 각 예제 그룹 테스트
+  examples.forEach((group, groupIndex) => {
+    console.log(`=== 예제 ${groupIndex + 1} 테스트 ===`);
+    
+    // 그룹 내 모든 표현식 쌍 비교
+    const expressions = Object.values(group);
+    const groupResult = { group: groupIndex + 1, comparisons: [] };
+    
+    for (let i = 0; i < expressions.length; i++) {
+      for (let j = i + 1; j < expressions.length; j++) {
+        const result = compareMathExpressions(expressions[i], expressions[j]);
+        console.log(`"${expressions[i]}" vs "${expressions[j]}": ${result.areEqual ? '같음' : '다름'}`);
+        if (result.normalized1 && result.normalized2) {
+          console.log(`정규화: "${result.normalized1}" vs "${result.normalized2}"`);
+        }
+        if (result.value1 !== null && result.value2 !== null) {
+          console.log(`값: ${result.value1} vs ${result.value2}`);
+        }
+        
+        groupResult.comparisons.push({
+          expr1: expressions[i],
+          expr2: expressions[j],
+          areEqual: result.areEqual,
+          normalized1: result.normalized1,
+          normalized2: result.normalized2,
+          value1: result.value1,
+          value2: result.value2
+        });
+      }
+    }
+    
+    // LaTeX로 변환 시도
+    if (typeof convertToLatex === 'function') {
+      expressions.forEach(expr => {
+        try {
+          const latex = convertToLatex(expr);
+          console.log(`"${expr}" -> LaTeX: "${latex}"`);
+        } catch (e) {
+          console.error(`LaTeX 변환 실패: ${e.message}`);
+        }
+      });
+    }
+    
+    results.push(groupResult);
+    console.log('\n');
+  });
+  
+  return results;
+}
+
+// 브라우저 환경에서 테스트 실행
+if (typeof window !== 'undefined') {
+  // window.runTests = testExamples;
+  window.compareMathExpressions = compareMathExpressions;
+  window.compareMultipleMathExpressions = compareMultipleMathExpressions;
+  window.normalizeExpression = normalizeExpression;
+  window.convertToLatex = convertToLatex;
+  // console.log('테스트를 실행하려면 runTests()를 호출하세요.');
+}
+

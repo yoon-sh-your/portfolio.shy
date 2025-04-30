@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_07_IH_0003</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_07.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_07_ih_0003">
+			<section class="title type2">
+				<h2 data-head="3_deep_green">
+					<span lang="y">63을 4 : 5로 나누려고 합니다.</span>
+					<span class="empty_box nemo"></span><span lang="y" class="ml-6">안에 알맞은 수를 써넣으세요.</span>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="input_area">
+						<div class="flex align_center">
+							63×
+							<div class="fraction_box">
+								<span>4</span>
+								<span>
+									<span class="input_wrap">
+										<math-field class="w_80" data-answer-single="4"></math-field>
+									</span>
+									+
+									<span class="input_wrap">
+										<math-field class="w_80" data-answer-single="5"></math-field>
+									</span>
+								</span>
+							</div>
+							=63×
+							<div class="fraction_box">
+								<span>
+									<span class="input_wrap" data-hint-position="top">
+										<math-field class="w_80" data-answer-single="4"></math-field>
+									</span>
+								</span>
+								<span>
+									<span class="input_wrap">
+										<math-field class="w_80" data-answer-single="9"></math-field>
+									</span>
+								</span>
+							</div>
+							=
+							<span class="input_wrap">
+								<math-field data-answer-single="28"></math-field>
+							</span>
+						</div>
+
+						<div class="flex align_center">
+							63×
+							<div class="fraction_box">
+								<span>5</span>
+								<span>
+									<span class="input_wrap">
+										<math-field class="w_80" data-answer-single="4"></math-field>
+									</span>
+									+
+									<span class="input_wrap">
+										<math-field class="w_80" data-answer-single="5"></math-field>
+									</span>
+								</span>
+							</div>
+							=63×
+							<div class="fraction_box">
+								<span>
+									<span class="input_wrap" data-hint-position="top">
+										<math-field class="w_80" data-answer-single="5"></math-field>
+									</span>
+								</span>
+								<span>
+									<span class="input_wrap">
+										<math-field class="w_80" data-answer-single="9"></math-field>
+									</span>
+								</span>
+							</div>
+							=
+							<span class="input_wrap">
+								<math-field data-answer-single="35"></math-field>
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>63을 4:5로 나누는다.</p>
+								<p class="in_flex align_center">
+									63×<span class="fraction_box"> <span>4</span><span>4+5</span></span
+									>=63×<span class="fraction_box"> <span>4</span><span>9</span> </span>=28
+								</p>
+								<br />
+								<p class="in_flex align_center mt_15">
+									63×<span class="fraction_box"> <span>5</span><span>4+5</span> </span>=63×<span
+										class="fraction_box"
+									>
+										<span>5</span><span>9</span>
+									</span>
+									=35
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

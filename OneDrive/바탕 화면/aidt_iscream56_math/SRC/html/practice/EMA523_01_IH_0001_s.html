@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema523_01_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema523_01_ih_0001.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_01.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema523_01_ih_0001">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 4-1』 평면도형 뒤집기, 평면도형 돌리기</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="1">
+          <span lang="y">도형을 오른쪽으로 뒤집었을 때의 도형과 시계 반대 방향으로 180° 만큼 돌렸을 때의 도형을 각각 그려 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="quiz_area">
+            <div class="image image1">
+              <img src="../../common_practice/img/EMA523_01_IH/0001_01.svg" alt="사다리꼴" />
+            </div>
+            <div class="image image2">
+              <img src="../../common_practice/img/EMA523_01_IH/0001_02.svg" alt="오른쪽으로 뒤집기" />
+            </div>
+            <div class="line_area" id="lineArea1"></div>
+            <div class="line_area" id="lineArea2"></div>
+            <div class="drawline_grid">
+              <div class="drawing_grid_area" id="drawingArea1" data-grid-size="60" data-answer-single='[[{"x":0,"y":0},{"x":0,"y":240},{"x":240,"y":240},{"x":240,"y":180}]]'>
+                <svg class="line_canvas"></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz_area">
+            <div class="image image3">
+              <img src="../../common_practice/img/EMA523_01_IH/0001_01.svg" alt="사다리꼴" />
+            </div>
+            <div class="image image4">
+              <img src="../../common_practice/img/EMA523_01_IH/0001_03.svg" alt="시계 반대 방향으로 180도 만큼 돌리기" />
+            </div>
+            <div class="line_area" id="lineArea3"></div>
+            <div class="line_area" id="lineArea4"></div>
+            <div class="drawline_grid">
+              <div class="drawing_grid_area" id="drawingArea2" data-grid-size="60" data-answer-single='[[{"x":0,"y":0},{"x":0,"y":240},{"x":240,"y":60},{"x":240,"y":0}]]'>
+                <svg class="line_canvas"></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet">도형을 오른쪽으로 뒤집으면 도형의 왼쪽과 오른쪽이 서로 바뀝니다.</p>
+                <p lang="y" class="text_bullet">도형을 시계 반대 방향으로 180°만큼 돌리면 도형의 위쪽 부분이 아래쪽으로 이동합니다.</p>
+
+                <p lang="y" class="text_label">
+                  <span class="label reference">참고</span>
+                  도형을 뒤집거나 돌리면 도형의 방향만 바뀌고 모양은 변하지 않습니다.
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

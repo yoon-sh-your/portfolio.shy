@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_03_SU_0008_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_03.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_03_su_0008">
+    <section class="title type2">
+      <h2 data-type="3" data-text="창의+">
+        <div>
+          <span lang="y">우리 주변에서 직육면체 모양의 물건을 찾아 부피를 구해 봅시다.</span>
+          <button type="button" class="btn calculator">계산기</button>
+        </div>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">직육면체 모양의 물건을 찾아 가로, 세로, 높이를 재어 부피를 구해 보세요.</h3>
+        <div class="flex">
+          <!--                     <div class="left">
+
+                  </div> -->
+          <div class="right">
+            <div class="input_wrap answer_1">
+              <span>물건:&nbsp;</span>
+              <math-field type="text" data-answer-single="필통"></math-field>
+            </div>
+            <span><img src="../../common_contents/img/EMA616_03_SU/Union.svg" alt=""></span>
+            <div class="input_wrap answer_2">
+              <span>가로&nbsp;</span>
+              <math-field type="number" data-answer-single="20" text-align="center"></math-field>
+              <span>&nbsp;㎝,</span>
+            </div>
+            <div class="input_wrap answer_2">
+              <span>세로&nbsp;</span>
+              <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+              <span>&nbsp;㎝,</span>
+            </div>
+            <div class="input_wrap answer_2">
+              <span>높이&nbsp;</span>
+              <math-field type="number" data-answer-single="5" text-align="center"></math-field>
+              <span>&nbsp;㎝,</span>
+            </div>
+            <div class="input_wrap answer_2">
+              <span>부피&nbsp;</span>
+              <math-field type="number" data-answer-single="600" text-align="center"></math-field>
+              <span>&nbsp;㎝</span>
+            </div>
+
+          </div>
+      </article>
+      <!-- 2페이지 -->
+      <article class="page page_2">
+        <h3 lang="y">부피를 옳게 구했는지 친구와 서로 확인해 보세요.</h3>
+        <div class="input_area">
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">20×6×5=600 (㎤)이므로 옳게 구했습니다.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 2페이지 -->
+
+      <div class="btn_area">
+        <!-- 예시 필드에서 사용 -->
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit" data-submit="true">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

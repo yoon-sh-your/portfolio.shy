@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_03_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">잘못 계산한 부분을 찾아 이유를 쓰고, 옳게 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="tabbox_wrap align_center left">
+            <div class="top">
+              <div class="flex justify_center align_center gap_4">
+                <div class="fraction_box">
+                  <span>8</span>
+                  <span>9</span>
+                </div>
+                +
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>6</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span>16</span>
+                  <span>18</span>
+                </div>
+                +
+                <div class="fraction_box">
+                  <span>2</span>
+                  <span>18</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span>18</span>
+                  <span>18</span>
+                </div>
+                = 1
+              </div>
+            </div>
+            <div class="tabbox">
+              <span class="tit_box" lang="y">이유</span>
+              <div class="conts_box">
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                    <div lang="y">
+                      <span class="fraction_box ml_0">
+                        <span>1</span>
+                        <span>6</span>
+                      </span>
+                      의 분모와 분자에 3을 곱하여 통분해야 하는데 분모에는 3, 분자에는 2를 곱하여 잘못 계산했습니다.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabbox right">
+            <strong class="tit_tabbox" lang="y">옳은 계산</strong>
+            <div class="conts_tabbox">
+              <div class="flex align_center justify_center gap_4">
+                <div class="fraction_box">
+                  <span>8</span>
+                  <span>9</span>
+                </div>
+                +
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>6</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="16"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="18"></math-field></div>
+                </div>
+                <span>+</span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="3"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="18"></math-field></div>
+                </div>
+                <span>=</span>
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="19"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="18"></math-field></div>
+                </div>
+                <span>=</span>
+                <div class="mixed_fraction">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="1" class="w_80"></math-field>
+                  </div>
+                  <div class="fraction_box">
+                    <div class="input_wrap"><math-field data-answer-single="1"></math-field></div>
+                    <div class="input_wrap"><math-field data-answer-single="18"></math-field></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">분수를 통분할 때에는 분수의 분모와 분자에 같 은 수를 곱해야 합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve">
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

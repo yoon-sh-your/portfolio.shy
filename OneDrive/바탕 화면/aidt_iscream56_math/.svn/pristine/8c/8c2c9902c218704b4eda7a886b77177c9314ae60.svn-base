@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_03_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_03_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6" class="fraction_box_title is_star">
+					<div lang="y">
+						시은이가 일정한 빠르기로 
+					<div class="fraction_box">
+						<span>11</span>
+						<span>15</span>
+					</div>
+					km를 걷는 데 
+					<div class="fraction_box">
+						<span>4</span>
+						<span>15</span>
+					</div>
+					시간이 걸렸습니다. 같은 빠르기로 1시간 동안 걸을 수 있는 거리는 몇 km인지 식을 쓰고 답을 구해 보세요.
+					</div>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="flex dir_col gap_120">
+						<div class="flex gap_10">
+							<span class="label_gray" lang="y">식</span>
+							<div class="input_wrap fraction_wrap answer1">
+								<math-field data-answer-single="(11)/(15)-:(4)/(15)"></math-field>
+							</div>
+						</div>
+						<div class="flex gap_10">
+							<span class="label_gray" lang="y">답</span>
+							<div class="flex align_end gap_4">
+								<div class="input_wrap fraction_wrap answer2">
+									<math-field data-answer-single="2(3)/(4)(=(11)/(4))" data-answer-multi='{"values": ["2(3)/(4)", "(11)/(4)"]}'></math-field>
+								</div>
+								km
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve ml_20">
+								<p>(1시간 동안 걸을 수 있는 거리)</p>
+								<p class="in_flex mt_5">
+								  =
+								  <span class="fraction_box"><span>11</span><span>15</span></span>
+								  ÷
+								  <span class="fraction_box"><span>4</span><span>15</span></span>
+								  = 11 ÷ 4 =
+								  <span class="fraction_box"><span>11</span><span>4</span></span>
+								  = 2
+								  <span class="fraction_box"><span>3</span><span>4</span></span>
+								  (km)
+								</p>
+							  </div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,177 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+    // 드롭다운 상태 변경 감지
+document.querySelectorAll(".custom_check_target").forEach(dropdown => {
+    dropdown.addEventListener("change", () => {
+        const answerValue = dropdown.dataset.answerSingle;
+        const userValue = dropdown.value;
+        
+        if (answerValue === "empty_answer") {
+            dropdown.dataset.correction = !userValue ? "true" : "false";
+            return;
+        }
+        
+        if (!userValue) {
+            delete dropdown.dataset.correction;
+            return;
+        }
+        
+        dropdown.dataset.correction = (userValue === answerValue) ? "true" : "false";
+    });
+});
+
+    const group1 = {
+      "브로콜리": ["△", "○", "×", 6],
+      "배추": ["△", "○", "×", 6],
+      "무": ["△", "○", "×", 6],
+      "파": ["△", "○", "×", 6],
+      "부추": ["△", "○", "×", 2],
+      "호박": ["△", "○", "×", 2]
+    };
+  
+    const group2 = {
+      "브로콜리": ["○", "△", "÷", 6],
+      "배추": ["○", "△", "÷", 6],
+      "무": ["○", "△", "÷", 6],
+      "파": ["○", "△", "÷", 6],
+      "부추": ["○", "△", "÷", 2],
+      "호박": ["○", "△", "÷", 2]
+    };
+  
+    const rows = document.querySelectorAll(".answer_row");
+  
+    rows.forEach(row => {
+        const select1 = row.querySelector('.answer1');
+        const select2 = row.querySelector('.answer2'); // ❗ 이 줄이 row 안에서 실행돼야 함
+        const targets = row.querySelectorAll('.custom_check_target');
+      
+        const resetAll = () => {
+          if (select2) select2.value = "";
+          targets.forEach(target => {
+            target.value = "";
+            target.removeAttribute("data-answer-single");
+          });
+        };
+      
+        const updateAnswer = () => {
+          const veg = select1?.value;
+          const symbol = select2?.value;
+          if (!veg || !symbol) return;
+      
+          let ref = null;
+          if (group1[veg]?.[0] === symbol) {
+            ref = group1[veg];
+          } else if (group2[veg]?.[0] === symbol) {
+            ref = group2[veg];
+          }
+      
+          if (ref && targets.length >= 3) {
+            const [, b, op, result] = ref;
+            targets[0].setAttribute('data-answer-single', b);
+            targets[1].setAttribute('data-answer-single', op);
+            targets[2].setAttribute('data-answer-single', String(result));
+            console.log("✅ data-answer-single set", b, op, result);
+          }
+        };
+      
+        // ✅ 이벤트 바인딩
+        if (select1) {
+          select1.addEventListener('change', () => {
+            resetAll();
+          });
+        }
+      
+        if (select2) {
+          select2.addEventListener('change', updateAnswer);
+        } else {
+          console.warn("⚠️ select2(.answer2) not found in row:", row);
+        }
+      });
+
+  // 커스텀 채점 대상 추가
+//   window.getCustomTargets = function (page) {
+   
+//     return $(page).find(".target");
+//   };
+function isCurrentPage(pageClass) {
+    const currentPage = pagenation?.activePage;
+    return currentPage && currentPage.classList.contains(pageClass) ? currentPage : null;
+  }
+  
+
+      	//정오답 처리 커스텁
+	window.customCheckCondition = function (el) {
+        const currentPage = isCurrentPage("page_1");
+        if (!currentPage) return false;
+
+		const $el = $(el)
+		const rule = $el.data("answerSingle");
+        const correction = $el.attr("data-correction");
+		const val = $el.val();
+        const input = $("math-field.custom_check_target").val();
+		let num = val.match(/\d+/);
+		let number = parseInt(num, 10);
+        const tagName = $el.prop("tagName").toLowerCase(); 
+        let inputVal;
+
+        if (tagName === "math-field") {
+            const match = String(val).match(/\d+/);
+            userVal = match ? match[0] : "";
+          } else {
+            userVal = val;
+          }
+          
+
+        if (val === "" || val === null) {
+            console.log("빈값");
+            console.log(userVal, rule);
+       
+            return "empty"
+        }
+		 if (userVal !== "" || userVal !== null || userVal !==  rule) {
+            console.log(userVal, rule);
+             return false;
+    
+         }
+       if(userVal === rule)  {
+        correction === true;
+            console.log("정답");
+       return true;}
+		
+
+
+	};
+
+	// 두 번째 오답 시
+	// window.onIncorrectTwiceCustom = function () {
+	// 	$(".custom_check_target[data-correction='false']").addClass("hint");
+	// };
+      
+  });
+  
+  
+
+
+runAfterAppReady(() => {
+
+     $('.custom_dropdown.target').on('change', function () {
+        const selectedValue = $(this).find('option:selected').data('value');
+        const $row = $(this).closest('tr');
+        $row.find('.value').text(selectedValue);
+
+        // math-field 값과 곱해서 result 출력
+        const mathFieldEl = $row.find('math-field')[0];
+        if (mathFieldEl) {
+          // 수식의 텍스트 값이 <span class="ML__text">에 들어가 있으므로 이 값들 가져오기
+          const mathText = $(mathFieldEl).find('.ML__text').toArray().map(span => $(span).text()).join('');
+          
+          // 텍스트 값이 숫자인지 확인 후 계산
+          const mathValue = parseFloat(mathText);
+          if (!isNaN(mathValue)) {
+            $row.find('.result').text(mathValue * selectedValue);
+          } else {
+            $row.find('.result').text('');
+          }
+        }
+      });
+});

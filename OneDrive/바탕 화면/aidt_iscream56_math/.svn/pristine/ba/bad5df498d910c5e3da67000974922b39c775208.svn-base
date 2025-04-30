@@ -1,0 +1,12 @@
+.title.type2:has(.mini_box) {
+  h2 {
+    gap: 10px;
+  }
+}
+.title.type2 {
+  h2 {
+    .empty_box {
+      margin-right: 5px;
+    }
+  }
+}

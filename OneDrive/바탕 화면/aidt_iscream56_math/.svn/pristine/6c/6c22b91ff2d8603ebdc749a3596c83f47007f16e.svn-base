@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema617_01_su_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema617_01_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema617_01_su_0004">
+      <section class="title">
+        <h2 data-head="notice">
+          <span lang="y">주어진 기사와 민지, 희준이의 대화를 살펴보고 물음에 답해 봅시다.​</span>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">            
+          <h3 lang="y">잘못되었다고 생각하는 이유를 써 보세요.​​​​</h3>
+          <div class="input_area">
+            <div class="input_wrap align_center">
+              <math-field class="textarea" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">햇빛 마을의 전체 학생 수가 2018넌에 비해 2023년에 줄었는데 이 점을 고려하지 않고, 햇빛 마을 학생들의 교통사고로 인한 부상자 수만 보고 교통사고 위험이 낮아졌다고 하였습니다.​</li>
+                <li lang="y">부상자 수만 비교하면 전체 학생 수에 대한 부상자 수의 비율이 어떻게 달라졌는지 알 수 없으므로 기사의 내용처럼 햇빛 마을 학생들의 교통사고 위험이 낮아졌는지 알 수 없습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">            
+          <h3 lang="y">햇빛 마을 학생들의 교통사고 위험이 정말 낮아졌는지 확인하기 위해 무엇을 비교해야 할지 이야기해 보세요.​​</h3>
+          <div class="input_area">
+            <div class="input_wrap align_center">
+              <math-field class="textarea" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">전체 학생 수의 변화를 고려하여 교통사고 부상자 수가 어떻게 달라졌는지 비교해야 합니다.​</li>
+                <li lang="y">2018년에 비해 2023년에 초등학교와 중·고등학교의 전체 학생 수에 대한 교통사고 부상자 수의 비율이 어떻게 달라졌는지 비교해야 합니다.​</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">            
+          <h3 lang="y">기사의 내용을 효과적으로 전달하기 위해 자료를 나타낼 수 있는 방법을 이야기해 보세요.​​​</h3>
+          <div class="input_area">
+            <div class="input_wrap align_center">
+              <math-field class="textarea" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">항목별 수를 정확하게 알아보기 위해 자료를 표로 나타낼 수 있습니다.​</li>
+                <li lang="y">그림의 크기와 수로 수량의 많고 적음을 쉽게 알아보기 위해 자료를 그림그래프로 나타낼 수 있습니다.​</li>
+                <li lang="y">막대의 길이로 수량의 많고 적음을 한눈에 비교하기 위해 자료를 막대그래프로 나타낼 수 있습니다.​</li>
+                <li lang="y">시간의 흐름에 따른 수량의 변화하는 모습과 정도를 쉽게 알아보기 위해 자료를 꺾은선그래프로 나타낼 수 있습니다.​</li> 
+                <li lang="y">전체에 대한 각 부분의 비율을 쉽게 비교하기 위해 자료를 띠그래프 또는 원그래프로 나타낼 수 있습니다.​</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

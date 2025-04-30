@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_02_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_02_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">마을별로 송년 잔치에 참여한 인원수입니다. 한 마을당 참여한 인원수를 대표하는 값을 어떻게 정하면 좋을지 생각해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 807 525" fill="none">
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="13.75" letter-spacing="-0.572917px" lang="y">
+                <tspan x="12.3374" y="361.054">마을별로 참여한 인원수가 다르네.</tspan>
+                <tspan x="30.7491" y="379.388">한 마을당 참여한 인원수를</tspan>
+                <tspan x="34.8333" y="397.721">대표하는 값은 몇 명일까?</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="13.75" letter-spacing="-0.572917px" lang="y">
+                <tspan x="326.153" y="361.054">행복 마을</tspan>
+                <tspan x="340.675" y="379.388">8명</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="13.75" letter-spacing="-0.572917px" lang="y">
+                <tspan x="429.153" y="361.054">사랑 마을</tspan>
+                <tspan x="443.628" y="379.388">9명</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="13.75" letter-spacing="-0.572917px" lang="y">
+                <tspan x="534.153" y="361.054">솔잎 마을</tspan>
+                <tspan x="548.675" y="379.388">8명</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="13.75" letter-spacing="-0.572917px" lang="y">
+                <tspan x="486.153" y="218.054">가온 마을</tspan>
+                <tspan x="501.051" y="236.388">7명</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="13.75" letter-spacing="-0.572917px" lang="y">
+                <tspan x="585.153" y="218.054">누리 마을</tspan>
+                <tspan x="599.675" y="236.388">8명</tspan>
+              </text>
+              <text fill="#B64F98" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="29" font-weight="500" letter-spacing="3px" lang="y">
+                <tspan x="568.54" y="124.475">송년 잔치</tspan>
+              </text>
+              <text fill="#1156A4" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="29" font-weight="500" letter-spacing="3px" lang="y">
+                <tspan x="436.126" y="124.475">마을 연합</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA526_02_SU/0002_content.png" alt="" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고, 한 마을당 참여한 인원수를 대표하는 값을 어떻게 정하면 좋을지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">마을별로 참여한 인원수가 8명이 가장 많으므로 8명으로 정하면 좋을 것 같습니다.</li>
+                <li lang="y">마을별로 참여한 인원수가 모두 다르므로 고르게 하여 정하면 좋을 것 같습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

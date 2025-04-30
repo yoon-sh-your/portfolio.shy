@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_08_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_08_ih_0006 paging">
+      <section class="title type2 score">
+        <h2 data-head="6" class="is_star2" lang="y">
+          <span class="nemo"></span>
+          <span class="">안에 들어갈 수 있는 자연수 중에서 가장 큰 수를 구하려고 합니다. 물음에 답해 보세요.</span>
+        </h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_08_IH/0006_01.png" alt="" />
+            <div class="flex align_center gap_10">
+              1
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              × 1
+              <div class="fraction_box"><span>6</span><span>7</span></div>
+              >
+              <span class="nemo"></span>
+            </div>
+          </div>
+
+          <div class="question_box justify_center">
+            <h3 class="flex align_center mr_40">
+              1
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              × 1
+              <div class="fraction_box"><span>6</span><span>7</span></div>
+              <span lang="y"> 을 계산해 보세요. </span>
+            </h3>
+            <div class="input_area flex align_center gap_10">
+              <span>(</span>
+              <div class="input_wrap fraction_wrap fraction1">
+                <math-field data-answer-single="3(1)/(4)(=(13)/(4))" text-align="center" placeholder="&nbsp;"></math-field>
+              </div>
+              <span>)</span>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex align_center gap_10">
+                    <span>1</span>
+                    <div class="fraction_box"><span>3</span><span>4</span></div>
+                    <span>×</span>
+                    <span>1</span>
+                    <div class="fraction_box"><span>6</span><span>7</span></div>
+                    <span>=</span>
+                    <div class="fraction_box">
+                      <span class="mark_error up">7<i>1</i></span
+                      ><span>4</span>
+                    </div>
+                    <span>×</span>
+                    <div class="fraction_box">
+                      <span>13</span><span class="mark_error">7<i>1</i></span>
+                    </div>
+                    <span>=</span>
+                    <div class="fraction_box"><span>13</span><span>4</span></div>
+                    <span>=</span>
+                    <span>3</span>
+                    <div class="fraction_box"><span>1</span><span>4</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_08_IH/0006_01.png" alt="" />
+            <div class="flex align_center gap_10">
+              1
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              × 1
+              <div class="fraction_box"><span>6</span><span>7</span></div>
+              >
+              <span class="nemo"></span>
+            </div>
+          </div>
+          <div class="question_box justify_center">
+            <h3 class="flex align_center mr_40 mb_1">
+              <span class="nemo"></span>
+              <span lang="y">안에 들어갈 수 있는 자연수 중에서 가장 큰 수를 구해 보세요.</span>
+            </h3>
+            <div class="input_area flex align_center gap_10">
+              <span>(</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="3" text-align="center"></math-field>
+              </div>
+              <span>)</span>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex align_center gap_10">
+                    <span>3</span>
+                    <div class="fraction_box"><span>1</span><span>4</span></div>
+                    <span>></span>
+                    <span><span class="nemo"></span>이므로 <span class="nemo"></span>안에 들어갈 수 있는 자연수는 1, 2, 3입니다.</span>
+                  </div>
+                  <div class="flex align_center gap_10">
+                    <span>따라서 <span class="nemo"></span>안에 들어갈 수 있는 자연수 중에서 가장 큰 수는 3입니다.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

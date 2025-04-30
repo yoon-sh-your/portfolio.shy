@@ -1,0 +1,385 @@
+.title h2[data-head] .fraction_box {
+  margin-left: 0;
+}
+.solve_area .bracket,
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+.solve_area .bracket {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* .fraction_box {
+  min-width: 40px;
+} */
+.fraction_box.pos_custom > .input_wrap + span {
+  transform: translateY(-20px);
+}
+.line_height_1 {
+  line-height: 1;
+}
+.input_wrap:has(.w_80) {
+  width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.slash {
+  position: relative;
+}
+.slash:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 2px;
+  height: 48px;
+  background: #e4007f;
+}
+.slash .slash_txt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e4007f;
+  font-size: 24px;
+}
+.fraction_box > span.slash:first-child .slash_txt {
+  top: -32px;
+}
+.fraction_box > span.slash:last-child .slash_txt {
+  bottom: -32px;
+}
+.fraction_box_wrap .input_wrap,
+.fraction_box_wrap .input_wrap math-field,
+.input_wrap.fraction_wrap,
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+.fraction_box_wrap .input_wrap math-field,
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap math-field {
+  /* min-width: 0; */
+  /* width: 100%; */
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+h3.title:before {
+  margin-top: 2px;
+}
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  /* gap: 4px; */
+}
+.fraction_box_wrap .fraction_box {
+  min-width: 0;
+}
+.label_bogi {
+  width: 52px;
+  height: 32px;
+  border: 2px solid var(--secondary-red);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--secondary-red);
+  z-index: 1;
+}
+
+.ema515_04_ih_0001 .top {
+  gap: 134px;
+}
+.ema515_04_ih_0001 .item {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.ema515_04_ih_0001 .img {
+  position: relative;
+}
+/* .ema515_04_ih_0001 .img:before, */
+.ema515_04_ih_0001 .img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 226px;
+  background: url(../img/EMA515_04_IH/0001_line3.svg) no-repeat;
+  z-index: 2;
+}
+.ema515_04_ih_0001 .img:before {
+  left: 113px;
+}
+.ema515_04_ih_0001 .img:after {
+  right: 111px;
+}
+.ema515_04_ih_0001 .boolean_count_wrap {
+  position: relative;
+  width: 226px;
+  height: 226px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.ema515_04_ih_0001 .boolean_count_wrap::before,
+.ema515_04_ih_0001 .boolean_count_wrap::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background: url(../img/EMA515_04_IH/0001_line4.svg) no-repeat;
+  z-index: 2;
+}
+
+.ema515_04_ih_0001 .boolean_count_wrap:before {
+  transform: rotate(330deg);
+}
+.ema515_04_ih_0001 .boolean_count_wrap:after {
+  transform: rotate(210deg);
+}
+.ema515_04_ih_0001 .boolean_count_wrap button {
+  position: absolute;
+  width: 112px;
+  height: 112px;
+  background: #f9d5e5;
+  top: 0;
+  left: 0;
+  transform-origin: bottom right;
+  opacity: 0;
+  clip-path: path('M100 0 C57 0 20 22 0 56 L100 115 Z');
+  outline: none;
+}
+.ema515_04_ih_0001 .img > .boolean_count_wrap:first-child::before,
+.ema515_04_ih_0001 .img > .boolean_count_wrap:first-child::after {
+  display: none;
+}
+
+.ema515_04_ih_0001 .boolean_count_wrap button:before {
+  display: none;
+}
+.ema515_04_ih_0001 .boolean_count_wrap button:focus,
+.ema515_04_ih_0001 .boolean_count_wrap button:focus-visible,
+.ema515_04_ih_0001 .boolean_count_wrap button.selected {
+  border: none !important;
+}
+.ema515_04_ih_0001 .boolean_count_wrap button.selected {
+  opacity: 1;
+}
+.ema515_04_ih_0001 .boolean_count_wrap .button1 {
+  transform: rotate(0);
+  margin-left: 13px;
+}
+.ema515_04_ih_0001 .boolean_count_wrap .button2 {
+  transform: rotate(60deg);
+  margin: 11px 0px 0 5px;
+}
+.ema515_04_ih_0001 .boolean_count_wrap .button3 {
+  transform: rotate(120deg);
+  margin: 10px 0 0 -7px;
+}
+.ema515_04_ih_0001 .boolean_count_wrap .button4 {
+  transform: rotate(180deg);
+  margin: 0px 0 0 -14px;
+}
+.ema515_04_ih_0001 .boolean_count_wrap .button5 {
+  transform: rotate(240deg);
+  margin: -13px 0 0 -8px;
+}
+.ema515_04_ih_0001 .boolean_count_wrap .button6 {
+  transform: rotate(300deg);
+  margin: -13px 0 0 3px;
+}
+.ema515_04_ih_0001 .bottom {
+  margin-top: 50px;
+  width: 703px;
+  height: 238px;
+  background: url(../img/EMA515_04_IH/0001_bg.svg) no-repeat;
+  justify-content: center;
+}
+
+.ema515_04_ih_0002 .bogi_box {
+  width: 660px;
+}
+.ema515_04_ih_0002 .bottom {
+  margin-top: 60px;
+}
+.ema515_04_ih_0002 .answer1 {
+  width: 136px;
+}
+.ema515_04_ih_0002 .answer3 {
+  width: 120px;
+}
+
+.ema515_04_ih_0003 .question_box {
+  justify-content: center;
+  gap: 200px;
+}
+/* .ema515_04_ih_0003 .input_wrap {
+  width: 230px;
+} */
+
+.ema515_04_ih_0004 .question_box > div {
+  padding-top: 62px;
+}
+.ema515_04_ih_0004 .question_box .left {
+  display: flex;
+  background: url(../img/EMA515_04_IH/0004_img.svg) 0 0 no-repeat;
+  background-size: contain;
+}
+.ema515_04_ih_0004 .question_box .box {
+  padding: 10px;
+  background: #eef9ff;
+  border-radius: 20px;
+  border: 2px dashed #d2d2d2;
+}
+.ema515_04_ih_0004 .question_box .right,
+.ema515_04_ih_0004 .question_box .box + .box {
+  margin-left: -2px;
+}
+.ema515_04_ih_0004 .question_box .box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 143px;
+  height: 143px;
+  padding: 15px;
+  border: 2px dashed #8cd6ff;
+  border-radius: 12px;
+  background: #fff;
+}
+/* .ema515_04_ih_0004 .question_box .input_wrap {
+  width: auto;
+}
+.ema515_04_ih_0004 .question_box .input_wrap math-field {
+  width: 250px;
+} */
+
+.ema515_04_ih_0005 .dir_col {
+  position: relative;
+  width: 354px;
+  margin: 0 auto;
+}
+.ema515_04_ih_0005 .question_box {
+  justify-content: center;
+  width: 354px;
+  height: 142px;
+  background: url(../img/EMA515_04_IH/0005_img.svg) no-repeat;
+}
+.ema515_04_ih_0005 .question_box .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #222;
+  border-radius: 50%;
+  font-size: 24px;
+}
+.ema515_04_ih_0005 .question_box .fraction_box {
+  /* min-width: 40px; */
+}
+.ema515_04_ih_0005 .boolean_wrap button {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  width: auto;
+  height: 142px;
+  aspect-ratio: unset;
+  background: none;
+  border-radius: 0;
+  opacity: 0;
+}
+.ema515_04_ih_0005 .boolean_wrap button.selected {
+  opacity: 1;
+}
+.ema515_04_ih_0005 .boolean_wrap .button1 {
+  top: 0;
+}
+.ema515_04_ih_0005 .boolean_wrap .button2 {
+  top: 33.333%;
+}
+.ema515_04_ih_0005 .boolean_wrap .button3 {
+  bottom: 0;
+}
+.ema515_04_ih_0005 .boolean_wrap button img {
+  position: relative;
+  top: -8px;
+  left: -120px;
+}
+.ema515_04_ih_0005 .bg_red_round{
+  position: relative;
+}
+.ema515_04_ih_0005 .bg_red_round::before{
+  content: '';
+  width: 80px;
+  height: 80px;
+  background-color: #FAD5E5;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  left: -8px;
+}
+
+.ema515_04_ih_0006 .gap-80{
+  gap: 80px !important;
+}
+.ema515_04_ih_0006 .title h2 {
+  line-height: 1;
+}
+.ema515_04_ih_0006 .label_gray {
+  width: 50px;
+  height: 48px;
+  padding: 0;
+}
+.ema515_04_ih_0006 .input_wrap_underline {
+  display: flex;
+  gap: 4px;
+}
+.ema515_04_ih_0006 .answer1 {
+  width: 210px;
+}
+.ema515_04_ih_0006 .answer3 {
+  width: 286px;
+}
+
+.ema515_04_ih_0007 .contents .mixed_fraction{
+  margin: 0 2px 0 2px;
+}
+.ema515_04_ih_0007 .question_box {
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+}
+.ema515_04_ih_0007 .fraction_box_wrap .fraction_box {
+  /* min-width: 40px; */
+}
+.ema515_04_ih_0007 .left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  width: 498px;
+  height: 235px;
+  background: url(../img/EMA515_04_IH/0007_bg.svg) no-repeat center center;
+}
+.ema515_04_ih_0007 .left .empty_box {
+  width: 60px;
+}
+.ema515_04_ih_0007 .right .bracket {
+  width: 286px;
+}
+/* .ema515_04_ih_0007 .right .bracket .input_wrap {
+  width: 100%;
+} */
+.gap_100 {
+  gap: 100px !important;
+}

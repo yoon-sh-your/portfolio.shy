@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_07_SU_0008_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_07.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_07_su_0008">
+    <section class="title type2">
+      <h2 data-head="6">
+        <div>
+          <span lang="y">두 직육면체 모양 상자 중 어느 상자의 겉넓이가 몇 ㎠ 더 넓은지 구해 봅시다.</span>
+          <button type="button" class="btn calculator">계산기</button>
+        </div>
+      </h2>
+    </section>
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">두 상자 가와 나의 겉넓이는 각각 몇 ㎠인가요?</h3>
+        <div class="flex">
+          <div class="box_a">
+            <img src="../../common_contents/img/EMA616_07_SU/box_1.png" alt="" />
+            <div class="unit_a">12 ㎝</div>
+            <div class="unit_b">25 ㎝</div>
+            <div class="unit_c">15 ㎝</div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="1710" text-align="center"></math-field>
+              <span>&nbsp;㎠</span>
+            </div>
+          </div>
+          <div class="box_b">
+            <img src="../../common_contents/img/EMA616_07_SU/box_2.png" alt="" />
+            <div class="unit_a">30 ㎝</div>
+            <div class="unit_b">30 ㎝</div>
+            <div class="unit_c">6 ㎝</div>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="2520" text-align="center"></math-field>
+              <span>&nbsp;㎠</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">어느 상자의 겉넓이가 몇 ㎠ 더 넓은지 구해 보세요.</h3>
+        <div class="flex">
+          <div class="box_a">
+            <img src="../../common_contents/img/EMA616_07_SU/box_1.png" alt="" />
+            <div class="unit_a">12 ㎝</div>
+            <div class="unit_b">25 ㎝</div>
+            <div class="unit_c">15 ㎝</div>
+          </div>
+          <div class="box_b">
+            <img src="../../common_contents/img/EMA616_07_SU/box_2.png" alt="" />
+            <div class="unit_a">30 ㎝</div>
+            <div class="unit_b">30 ㎝</div>
+            <div class="unit_c">6 ㎝</div>
+          </div>
+        </div>
+        <div class="answer_area">
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="나">
+              <option></option>
+              <!--최초선택데이터 생성 방지용-->
+              <option value="가"></option>
+              <option value="나"></option>
+            </select>
+            <span>상자의 겉넓이가</span>
+            <div class="input_wrap">
+              <math-field type="number" data-answer-single="810" text-align="center"></math-field>
+            </div>
+            <span>㎠ 더 넓습니다.</span>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ema613_03_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema613_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema613_03_ih_0006">
+			<section class="title type2">
+				<h2 data-head="6" class="is_star" lang="y">
+					넓이가 7.38 ㎠이고 밑변의 길이가 3 ㎝인 평행사변형이 있습니다. 이 평행사변형의 높이는 몇 ㎝인지 식을
+					쓰고 답을 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center dir_col mt_30">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA613_03_IH/0006_01.png" alt="" />
+						<p class="text1" lang="y">넓이: 7.38 ㎠</p>
+						<p class="text2">3 ㎝</p>
+					</div>
+					<div class="input_area">
+						<div class="flex gap_10 align_start">
+							<span lang="y" class="label_gray">식</span>
+							<div class="input_wrap input1">
+								<math-field data-answer-single="7.38÷3"></math-field>
+							</div>
+							=
+							<div class="input_wrap input2">
+								<math-field data-answer-single="2.46"></math-field>
+							</div>
+						</div>
+						<div class="flex gap_10 align_start">
+							<span lang="y" class="label_gray">답</span>
+							<div class="input_wrap input2">
+								<math-field data-answer-single="2.46"></math-field>
+							</div>
+							㎏
+						</div>
+					</div>
+				</div>
+
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>(평행사변형의 높이)</p>
+								<p>=(평행사변형의 넓이)÷(밑변의 길이)</p>
+								<p>=7.38÷3=2.46 (㎝)</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

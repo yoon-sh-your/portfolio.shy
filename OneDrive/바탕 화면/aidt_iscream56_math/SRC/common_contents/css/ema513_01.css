@@ -1,0 +1,97 @@
+/*EMA513_01_SU_0001_s*/
+.ema513_01_su_0001#app_wrap {
+  background: url(../img/EMA513_01_SU/Intersect.png) no-repeat left bottom / 857px, #f4a0a1;
+}
+
+.ema513_01_su_0001 .text_box {
+  color: #9c1006;
+  top: 200px;
+  left: 211px;
+}
+.ema513_01_su_0001 .source_noti {
+  position: absolute;
+  top: 734px;
+  left: 402px;
+  font-size: 10px;
+}
+
+.input_area label.img {
+  background-color: #da515d;
+}
+
+.input_area label::after {
+  background-color: #da515d;
+}
+
+/* EMA513_01_SU_0003_s */
+.ema513_01_su_0003 .imo>li:nth-child(1) {
+  position: relative;
+  transform: translate(1500px, 40%);
+  background-image: url(../common/img/charactor_math_01.svg);
+  background-repeat: no-repeat;
+  background-size: 150px 150px;
+  z-index: 99;
+  width: 150px;
+  height: 150px;
+}
+
+.letCheck .back>.f32b {
+  text-align: right;
+}
+
+.ema513_01_su_0003 .help {
+  position: absolute;
+  right: 140px;
+  bottom: 30px;
+  z-index: 99;
+  display: flex;
+  align-items: end;
+}
+
+.ema513_01_su_0003 .help p {
+  background: url(../img/EMA512_01_SU/0003_contents.png) no-repeat left top / 391px 76px;
+  font-size: 24px;
+  width: 391px;
+  height: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ema513_01_su_0003 .help img {
+  width: 240px;
+  height: 240px;
+}
+
+/*EMA513_01_SU_0004_s*/
+.ema513_01_su_0004 .video_wrap {
+  background: url(../img/EMA513_01_SU/img\ box.png) no-repeat center / 112%;
+  flex: 0px;
+}
+
+/*EMA513_01_SU_0005_s*/
+.ema513_01_su_0005 .picture_wrap > img,
+.ema513_01_su_0005 .picture_wrap > svg {
+  top: 90%;
+}
+
+.text {
+  position: relative;
+  top: 337px;
+  z-index: 100;
+  left: 637px;
+  font-size: 12px;
+  width: 80px;
+  transform: rotate(12deg);
+}
+
+.text>p:nth-child(2) {
+  position: relative;
+  left: 10px;
+
+}
+
+.text>p:nth-child(4) {
+  position: relative;
+  left: 25px;
+
+}

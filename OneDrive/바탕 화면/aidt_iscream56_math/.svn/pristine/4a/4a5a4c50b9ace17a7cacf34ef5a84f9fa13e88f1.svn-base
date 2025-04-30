@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ema524_su_0003_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <script src="../../common_contents/js/ema524_SU_0003.js"></script>
+        <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+        <link rel="stylesheet" href="./../../common_contents/css/ema524_su_10_0003.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="ema524_su_0003">
+            <section class="contents">
+                <div class="form_wrap flex align_start justify_start">
+                    <div class="map_wrap">
+                        <div class="map_grid">
+                            <div class="map_grid_row">
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                            </div>
+                            <div class="map_grid_row">
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                            </div>
+                            <div class="map_grid_row">
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                            </div>
+                            <div class="map_grid_row">
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                            </div>
+                            <div class="map_grid_row">
+                                <div class="map_grid_col map_grid_col_start01">
+                                    <div class="go_piece_wrap white">
+                                        <div class="go_piece"></div>
+                                        <div class="piece_switch_wrap">
+                                            <button class="btn btn_switch btn_switch_yellow"></button>
+                                            <button class="btn btn_switch btn_switch_red"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col"></div>
+                                <div class="map_grid_col map_grid_col_start02">
+                                    <div class="go_piece_wrap">
+                                        <div class="go_piece"></div>
+                                        <div class="piece_switch_wrap">
+                                            <button class="btn btn_switch btn_switch_yellow"></button>
+                                            <button class="btn btn_switch btn_switch_red"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit_wrap">
+                        <div class="input_line btn_area">
+                            <div class="input_wrap input_answer_wrap">
+                                <math-field class="input_answer" type="number" placeholder=" " data-answer-single="정답" id="top_reset_target"></math-field>
+                            </div>
+                            <button lang="y" class="btnReset">리셋</button>
+                        </div>
+                        <div class="input_line">
+                            <div class="calculator-group">
+                                <!-- 계산기 팝업 -->
+                                <div class="calculator cal-popup" tabindex="-1">
+                                    <div class="calculator-area">
+                                        <input type="text" class="cal-display" disabled value="0" />
+                                        <div class="calculator-buttons">
+                                            <button type="button" class="btn-calculator" data-value="AC">AC</button>
+                                            <button type="button" class="btn-calculator" data-value="CE">CE</button>
+                                            <button type="button" class="btn-calculator" data-value="%">%</button>
+                                            <button type="button" class="btn-calculator" data-value="/">/</button>
+                                            <button type="button" class="btn-calculator" data-value="7">7</button>
+                                            <button type="button" class="btn-calculator" data-value="8">8</button>
+                                            <button type="button" class="btn-calculator" data-value="9">9</button>
+                                            <button type="button" class="btn-calculator" data-value="*">*</button>
+                                            <button type="button" class="btn-calculator" data-value="4">4</button>
+                                            <button type="button" class="btn-calculator" data-value="5">5</button>
+                                            <button type="button" class="btn-calculator" data-value="6">6</button>
+                                            <button type="button" class="btn-calculator" data-value="-">-</button>
+                                            <button type="button" class="btn-calculator" data-value="1">1</button>
+                                            <button type="button" class="btn-calculator" data-value="2">2</button>
+                                            <button type="button" class="btn-calculator" data-value="3">3</button>
+                                            <button type="button" class="btn-calculator btn-calculator-zero" data-value="0">0</button>
+                                            <button type="button" class="btn-calculator" data-value=".">.</button>
+                                            <button type="button" class="btn-calculator btn-calculator-result" data-value="=">=</button>
+                                            <button type="button" class="btn-calculator btn-calculator-plus" data-value="+">+</button>
+                                        </div>
+                                    </div>
+                                    <button lang="y" type="button" class="btn btn-close-calculator" tabindex="0" aria-label="계산기 닫기">닫기</button>
+                                    <div class="calculator-tail"></div>
+                                </div>
+                                <!-- ./계산기 팝업 -->
+                                <button type="button" class="btnFormula btn-toggle-calculator"></button>
+                            </div>
+                            <button lang="y" class="btn btn_check_ok" id="btn_check_ok">답이 맞았어요!</button>
+                            <button lang="y" class="btn btn_check_error" id="btn_check_error">답이 틀렸어요!</button>
+                        </div>
+                        <div class="input_line">
+                            <div class="input_wrap">
+                                <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                            </div>
+                            <span lang="y" class="label">점수:</span>
+                            <div class="input_wrap">
+                                <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                            </div>
+                            <span lang="y" class="label">점</span>
+                        </div>
+                        <div class="input_line">
+                            <div class="input_wrap">
+                                <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                            </div>
+                            <span lang="y" class="label">점수:</span>
+                            <div class="input_wrap">
+                                <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                            </div>
+                            <span lang="y" class="label">점</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="device_change_wrap">
+                    <button class="device_change" lang="y">대표 기기 변경하기</button>
+                </div>
+
+                <div class="btn_area">
+                    <button lang="y" class="btnType key">입력타입토글</button>
+                    <button lang="y" class="btnReset">리셋</button>
+                    <button lang="y" class="btnCheck">확인</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

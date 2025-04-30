@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_02_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_02_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              유기견 보호 센터 입구에서 운동장까지의 거리는
+              <span class="fraction_box">
+                <span>1</span>
+                <span>2</span>
+              </span>㎞ 이고, 운동장에서 상담소까지의 거리는
+              <span class="fraction_box">
+                <span>1</span>
+                <span>3</span>
+              </span>㎞입니다. 입구에서 
+            </div>
+            <div class="fraction_txt" lang="y">
+              운동장을 지나 상담소까지의 거리는 몇 ㎞인지 알아봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" version="1.1" viewBox="0 0 427 315">
+              <defs>
+                <style>
+                  .st0 {
+                    fill: #575756;
+                    font-size: 9px;
+                  }
+
+                  .st0,
+                  .st1,
+                  .st2 {
+                    font-family: Pretendard-Regular-KSCpc-EUC-H, Pretendard;
+                  }
+
+                  .st1 {
+                    font-size: 8px;
+                  }
+
+                  .st1,
+                  .st2 {
+                    fill: #6e4a3f;
+                  }
+
+                  .st2 {
+                    font-size: 7px;
+                  }
+                </style>
+              </defs>
+              <text class="st1" transform="translate(186.3 106.1) rotate(-3.8)">
+                <tspan x="0" y="0" lang="y">입구</tspan>
+              </text>
+              <text class="st2" transform="translate(256.5 100.6) rotate(-1.6)">
+                <tspan x="0" y="0" lang="y">상담소</tspan>
+              </text>
+              <text class="st2" transform="translate(235.2 122.9)">
+                <tspan x="0" y="0" lang="y">운동장</tspan>
+              </text>
+              <text class="st0" transform="translate(152.4 188.6)">
+                <tspan x="0" y="0" lang="y">입구에서 운동장을 지나</tspan>
+                <tspan x="-15" y="10.8" lang="y">상담소까지의 거리는 몇 ㎞인지</tspan>
+                <tspan x=".6" y="21.6" lang="y">어떻게 구할 수 있을까?</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA515_02_SU/0002_content.png" alt="자치회 활동 이미지" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고 유기견 보호 센터 입구에서 운동장을 지나 상담소까지의 거리를 어떻게 구할 수 있을지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">입구에서 운동장까지의 거리와 운동장에서 상담소까지의 거리를 더하면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

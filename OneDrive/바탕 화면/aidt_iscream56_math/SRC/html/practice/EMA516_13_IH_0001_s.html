@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_13_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_13.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_13.css" />
+    <script src="./../../common_practice/js/ema516_13_ih_0001.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema516_13_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1">
+          <span class="label_bogi" lang="y">보기</span>
+          <span lang="y">와 같이 사다리꼴의 윗변과 아랫변을 고르고, 높이를 표시해 보세요. </span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center mt_20">
+          <div class="l_left">
+            <div class="bogi_box">
+              <span class="label_bogi" lang="y">보기</span>
+              <div class="conts_bogi">
+                <div class="img_box">
+                  <img src="./../../common_practice/img/EMA516_13_IH/0001_01.png" alt="" />
+                  <p lang="y" class="text1">윗변</p>
+                  <p lang="y" class="text2">아랫변</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="l_right">
+            <div class="img_box">
+              <img src="./../../common_practice/img/EMA516_13_IH/0001_02.png" alt="" />
+              <!-- 그리기 svg -->
+              <svg id="theboard" class="svg_obj svg_obj1">
+                <circle class="thapoint" cx="175" cy="12" r="10"></circle>
+                <circle class="thapoint" cx="175" cy="175" r="10"></circle>
+              </svg>
+              <span class="answer_line"></span>
+            </div>
+
+            <div class="dropdown_wrap dropdown1">
+              <select class="custom_dropdown" data-answer-single="아랫변">
+                <option value=""></option>
+                <option value="윗변" lang="y">윗변</option>
+                <option value="아랫변" lang="y">아랫변</option>
+              </select>
+            </div>
+            <div class="dropdown_wrap dropdown2">
+              <select class="custom_dropdown" data-answer-single="윗변">
+                <option value=""></option>
+                <option value="윗변" lang="y">윗변</option>
+                <option value="아랫변" lang="y">아랫변</option>
+              </select>
+            </div>
+            <div class="img_box">
+              <img src="./../../common_practice/img/EMA516_13_IH/0001_03.png" alt="" />
+              <!-- 그리기 svg -->
+              <svg id="theboard" class="svg_obj svg_obj2">
+                <circle class="thapoint" cx="155" cy="12" r="10"></circle>
+                <circle class="thapoint" cx="155" cy="175" r="10"></circle>
+              </svg>
+              <span class="answer_line"></span>
+            </div>
+
+            <div class="dropdown_wrap dropdown3">
+              <select class="custom_dropdown" data-answer-single="아랫변">
+                <option value=""></option>
+                <option value="윗변" lang="y">윗변</option>
+                <option value="아랫변" lang="y">아랫변</option>
+              </select>
+            </div>
+            <div class="dropdown_wrap dropdown4">
+              <select class="custom_dropdown" data-answer-single="윗변">
+                <option value=""></option>
+                <option value="윗변" lang="y">윗변</option>
+                <option value="아랫변" lang="y">아랫변</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="canvas_wrap flex">
+          <!-- 그리기모듈 -->
+          <canvas class="draw-area" width="250" height="165" data-canvas-id="canvas_1"></canvas>
+
+          <!-- 그리기모듈 -->
+          <canvas class="draw-area" width="285" height="165" data-canvas-id="canvas_2"></canvas>
+        </div>
+
+        <!-- 도형예시부분 -->
+        <div class="etc_area">
+          <img src="../../common_practice/img/EMA516_13_IH/0001_04.png" alt="" />
+          <p class="leftDiagram">윗변</p>
+          <p class="leftDiagram">아랫변</p>
+          <p class="rightDiagram">윗변</p>
+          <p class="rightDiagram">아랫변</p>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">사다리꼴에서 평행한 두 변을 밑변이라 하고, 한 밑변을 윗변, 다른 밑변을 아랫변이라고 합니다. 높이는 두 밑변 사이의 거리입니다.</p>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 그리기도구 아이콘 -->
+        <div class="drawing-container" id="drawing-instance-1">
+          <button type="button" class="btn btn_draw" data-canvas-target></button>
+        </div>
+
+        <!-- 그리기도구 팝업 -->
+        <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+          <div class="draw-tool-wrap-header">
+            <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+            <div class="close_but add_cursor">
+              <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+            </div>
+          </div>
+          <div class="draw-tool-wrap-body">
+            <div class="tool-row function-item">
+              <button type="button" class="ic_pen active"></button>
+              <button type="button" class="ic_txt"></button>
+              <button type="button" class="ic_eraser"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_triangle"></button>
+              <button type="button" class="ic_square"></button>
+              <button type="button" class="ic_circle"></button>
+              <button type="button" class="ic_polygon"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_line"></button>
+              <button type="button" class="ic_dash"></button>
+              <button type="button" class="ic_draw"></button>
+              <button type="button" class="ic_pull"></button>
+            </div>
+            <div class="tool-row palette-item">
+              <button type="button" class="p_red"></button>
+              <button type="button" class="p_yellow"></button>
+              <button type="button" class="p_green"></button>
+              <button type="button" class="p_blue"></button>
+              <button type="button" class="p_purple"></button>
+              <button type="button" class="p_black active"></button>
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="thickness" class="draw-scale-range" />
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="opacity" class="draw-trans-range" />
+            </div>
+            <div class="tool-row function-item">
+              <div class="arrow-item">
+                <button type="button" class="ic_undo"></button>
+                <button type="button" class="ic_redo"></button>
+              </div>
+              <button type="button" class="ic_del"></button>
+            </div>
+
+            <div class="ic_polygon_pop">
+              <span>꼭지점</span>
+              <button type="button" class="ipp_minus"></button>
+              <div>
+                <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                <label for="ipp_num">개</label>
+              </div>
+              <button type="button" class="ipp_plus"></button>
+            </div>
+          </div>
+        </div>
+        <!-- //그리기도구 팝업 -->
+
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset" onclick="hideEtcArea();">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit" data-submit="true" onclick="showEtcArea();">제출</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.querySelector('.btnReset').addEventListener('click', function () {
+        resetAll();
+      });
+
+      let startPoint = null;
+      let line = null;
+      let snapped = false;
+      let selectedPoint = null;
+
+      function resetAll() {
+        // 활성화된 점 해제
+        document.querySelectorAll('.thapoint.active').forEach((point) => {
+          point.classList.remove('active');
+        });
+        selectedPoint = null;
+
+        // 그려진 선 삭제
+        document.querySelectorAll('line.line').forEach((line) => {
+          line.remove();
+        });
+
+        // svg reset
+        document.querySelectorAll('.svg_obj').forEach((svg) => {
+          svg.classList.remove('pointer_none');
+        });
+      }
+
+      function getPointCoordinates(point) {
+        return {
+          x: parseFloat(point.getAttribute('cx')),
+          y: parseFloat(point.getAttribute('cy')),
+        };
+      }
+
+      function createLine(svg, x1, y1, x2, y2) {
+        const newLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+        newLine.setAttribute('x1', x1);
+        newLine.setAttribute('y1', y1);
+        newLine.setAttribute('x2', x2);
+        newLine.setAttribute('y2', y2);
+        newLine.classList.add('line');
+        newLine.style.pointerEvents = 'auto';
+        newLine.style.cursor = 'pointer';
+        svg.appendChild(newLine);
+        return newLine;
+      }
+
+      function getSVGCoordinates(event, svg) {
+        const point = svg.createSVGPoint();
+        point.x = event.clientX;
+        point.y = event.clientY;
+        const transformedPoint = point.matrixTransform(svg.getScreenCTM().inverse());
+        return { x: transformedPoint.x, y: transformedPoint.y };
+      }
+
+      function completeLine(endPoint) {
+        if (!startPoint || !line) return;
+
+        const endCoords = getPointCoordinates(endPoint);
+        line.setAttribute('x2', endCoords.x);
+        line.setAttribute('y2', endCoords.y);
+
+        startPoint = null;
+        line = null;
+        snapped = false;
+        event.target.classList.add('pointer_none');
+
+        document.querySelector('.btn_area .btnReset').classList.add('active');
+        document.querySelector('.btn_area .btnCheck').classList.add('active');
+      }
+
+      function drawLineBetweenPoints(svg, pointA, pointB) {
+        const coordsA = getPointCoordinates(pointA);
+        const coordsB = getPointCoordinates(pointB);
+        createLine(svg, coordsA.x, coordsA.y, coordsB.x, coordsB.y);
+      }
+
+      document.querySelectorAll('.svg_obj').forEach((svg) => {
+        // 점 이벤트
+        svg.querySelectorAll('.thapoint').forEach((point) => {
+          point.addEventListener('mousedown', (event) => {
+            startPoint = event.target;
+            const coords = getPointCoordinates(startPoint);
+            line = createLine(svg, coords.x, coords.y, coords.x, coords.y);
+            event.preventDefault();
+          });
+
+          point.addEventListener('click', (event) => {
+            if (!selectedPoint) {
+              selectedPoint = event.target;
+              selectedPoint.classList.add('active');
+            } else {
+              if (selectedPoint !== event.target) {
+                drawLineBetweenPoints(svg, selectedPoint, event.target);
+              }
+              selectedPoint.classList.remove('active');
+              selectedPoint = null;
+            }
+          });
+        });
+
+        // 캔버스(각 svg)에 마우스 이동
+        svg.addEventListener('mousemove', (event) => {
+          if (!line || !startPoint) return;
+
+          const { x, y } = getSVGCoordinates(event, svg);
+          let snapPoint = null;
+          snapped = false;
+
+          svg.querySelectorAll('.thapoint').forEach((targetPoint) => {
+            if (targetPoint === startPoint) return;
+            const targetCoords = getPointCoordinates(targetPoint);
+            const distance = Math.sqrt((targetCoords.x - x) ** 2 + (targetCoords.y - y) ** 2);
+            if (distance < 20) {
+              snapPoint = targetPoint;
+              snapped = true;
+            }
+          });
+
+          if (snapped && snapPoint) {
+            completeLine(snapPoint);
+          } else {
+            line.setAttribute('x2', x);
+            line.setAttribute('y2', y);
+          }
+
+          event.preventDefault();
+        });
+
+        svg.addEventListener('mouseup', (event) => {
+          if (line && !snapped) {
+            line.remove();
+          }
+          startPoint = null;
+          line = null;
+        });
+      });
+    </script>
+  </body>
+</html>

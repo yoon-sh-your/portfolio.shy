@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_02_SU_0003_s</title>
+
+    <!-- jQuery와 jQuery UI CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema616_02_SU_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema616_02.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <div
+      id="app_wrap"
+      class="ema616_02_su_0003"
+      data-current-page="page_1, page_2, page_3"
+    >
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          직육면체 모양 상자에 생필품을 담아 도움이 필요한 이웃에게 전달하려고
+          합니다. 직육면체 모양 상자의 면끼리 맞대어 부피를 비교해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">직육면체 모양의 상자를 만들어 보세요.</h3>
+          <div class="flex justify_center">
+            <div class="left_box">
+              <img
+                src="../../common_contents/img/EMA616_02_SU/folding_img1.png"
+                alt=""
+              />
+            </div>
+            <div class="right_box">
+              <img
+                src="../../common_contents/img/EMA616_02_SU/folding_img2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </article>
+        <!-- 1page -->
+
+        <article class="page page_2">
+          <div class="flex">
+            <div class="drag_area">
+              <div class="drop_item1">
+                <img
+                  src="../../common_contents/img/EMA616_02_SU/drop_item1.png"
+                  alt=""
+                />
+              </div>
+              <div class="drop_item2">
+                <img
+                  src="../../common_contents/img/EMA616_02_SU/drop_item2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="input_area">
+              <h3 lang="y">
+                상자를 직접 움직여 면끼리 맞대어 보고 부피를 비교해 보세요.
+              </h3>
+              <!--  <div class="text_box">
+                두 상자
+                <span class="border1">가</span>&nbsp;&nbsp;&nbsp;와&nbsp;<span
+                  class="border2"
+                  >나</span
+                >&nbsp;&nbsp; 맞대었을 때 가로, 세로,<br />
+                <div class="selectbox_wrap">
+                  높이 중에서 하나의 길이만
+                  <select class="custom_dropdown" data-answer-single="같으므로">
+                    <option></option>
+                    <option value="다르므로"></option>
+                    <option value="같으므로"></option>
+                  </select>
+                </div>
+                부피를 비교하기 어렵습니다.
+              </div> -->
+              <div class="input_wrap">
+                <math-field
+                  class="textarea"
+                  id="inputElement01"
+                  type="text"
+                ></math-field>
+                <div class="example_box">
+                  <p lang="y">
+                    두 상자 <span class="badge">가</span>와
+                    <span class="badge">나</span>를 면끼리 맞대었을 때 가로,
+                    세로, 높이 중에서 하나의 길이만 같으므로 부피를 비교하기
+                    어렵습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- 2page -->
+
+        <article class="page page_3">
+          <div class="flex">
+            <div class="drag_area">
+              <div class="drop_item1">
+                <img
+                  src="../../common_contents/img/EMA616_02_SU/drop_item1.png"
+                  alt=""
+                />
+              </div>
+              <div class="drop_item2">
+                <img
+                  src="../../common_contents/img/EMA616_02_SU/drop_item2.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="input_area">
+              <h3 lang="y">
+                면끼리 맞대어 비교하기 어려운 상자의 부피를 어떻게 비교하면
+                좋을지 이야기해 보세요.
+              </h3>
+              <div class="input_wrap">
+                <math-field
+                  class="textarea"
+                  id="inputElement01"
+                  type="text"
+                ></math-field>
+                <div class="example_box">
+                  <p lang="y">
+                    모양과 크기가 같은 물건으로 상자와 똑같이 쌓아 그 수를 세어
+                    비교하면 좋을 것 같습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- 3page -->
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset btnReset-page1">리셋</button>
+          <button class="btnReset btnReset-page2">리셋</button>
+          <button class="btnReset btnReset-page3">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

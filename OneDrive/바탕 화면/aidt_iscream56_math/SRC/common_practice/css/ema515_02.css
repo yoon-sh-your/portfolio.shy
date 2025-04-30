@@ -1,0 +1,292 @@
+/* .title h2[data-head] .fraction_box {
+  margin-left: 0;
+} */
+.input_wrap:has(.w_80) {
+  width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.solve_area .bracket,
+.solve_area .fraction_box {
+  vertical-align: middle;
+}
+.solve_area .bracket {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.fraction_box.pos_custom > .input_wrap + span {
+  transform: translateY(-20px);
+}
+.input_wrap.fraction_wrap,
+.input_wrap.fraction_wrap math-field,
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field {
+  min-width: 0;
+  width: 80px;
+}
+.fraction_box > .flex:first-child .input_wrap .text_hint,
+.fraction_box > .input_wrap:first-child .text_hint {
+  top: -36px;
+}
+
+h3.title:before {
+  margin-top: 2px;
+}
+.fraction_box_wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.fraction_box_wrap .fraction_box {
+  min-width: 0;
+}
+.label_bogi {
+  width: 52px;
+  height: 32px;
+  border: 2px solid var(--secondary-red);
+  border-radius: 4px;
+  background: #fff;
+  color: var(--secondary-red);
+  z-index: 1;
+}
+.slash {
+  position: relative;
+}
+.slash:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 2px;
+  height: 48px;
+  background: #e4007f;
+}
+.slash .slash_txt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #e4007f;
+  font-size: 24px;
+}
+.fraction_box > span.slash:first-child .slash_txt {
+  top: -32px;
+}
+.fraction_box > span.slash:last-child .slash_txt {
+  bottom: -32px;
+}
+
+.ema515_02_ih_0001 .question_box {
+  justify-content: center;
+  gap: 90px;
+}
+.ema515_02_ih_0001 .question_box.top {
+  padding: 40px 0;
+}
+.ema515_02_ih_0001 .question_box.bottom > .flex {
+  width: 547px;
+  height: 238px;
+  background: url(../img/EMA515_02_IH/0001_img3.png) no-repeat center center;
+  justify-content: center;
+}
+.ema515_02_ih_0001 .hint .correct{
+  background-color: var(--secondary-red);
+}
+.ema515_02_ih_0001 .correct .selected{
+  background-color: #C5D5FF;
+}
+
+
+.ema515_02_ih_0002 .question_box {
+  justify-content: center;
+  gap: 80px;
+}
+/* .ema515_02_ih_0002 .label_bogi {
+  color: #ad598f;
+  border-color: #e0a8cc;
+} */
+.ema515_02_ih_0002 .conts_bogi {
+  position: relative;
+  width: 660px;
+  height: 312px;
+  justify-content: center;
+  /* border-color: #e0a8cc; */
+}
+.ema515_02_ih_0002 .canvas-container {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: white;
+  border: 1px solid var(--stroke-default);
+  border-radius: 12px;
+}
+.ema515_02_ih_0002 .right > .flex {
+  height: 160px;
+}
+.ema515_02_ih_0002 .example_box {
+  color: var(--primary-blue);
+}
+.ema515_02_ih_0002 .example_box .fraction_box:before {
+  background-color: var(--primary-blue);
+}
+.ema515_02_ih_0002 .input_wrap .example_box::before {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ema515_02_ih_0002 math-field{
+  z-index: -1;
+}
+.ema515_02_ih_0002 .drawing-container{
+  bottom: 30px;
+  left: 40px;
+  position: absolute;
+}
+
+.ema515_02_ih_0003 .question_box {
+  justify-content: center;
+  gap: 280px;
+}
+
+.ema515_02_ih_0004 .connect_wrap {
+  height: 556px;
+}
+.ema515_02_ih_0004 .connect_wrap .start_group,
+.ema515_02_ih_0004 .connect_wrap .end_group {
+  gap: 135px;
+}
+.ema515_02_ih_0004 .connect_line_box li {
+  padding: 12px 30px;
+}
+
+.ema515_02_ih_0005 .question_box {
+  gap: 80px;
+}
+.ema515_02_ih_0005 .question_box .left {
+  display: flex;
+  justify-content: center;
+  width: 645px;
+  height: 232px;
+  align-items: center;
+  gap: 60px;
+  background: url(../img/EMA515_02_IH/0005_bg.png) no-repeat;
+}
+
+.ema515_02_ih_0006 .title h2 {
+  line-height: 1;
+}
+.ema515_02_ih_0006 .title h2 .fraction_box {
+  vertical-align: middle;
+}
+.ema515_02_ih_0006 .img_box {
+  position: relative;
+}
+.ema515_02_ih_0006 .img_box div {
+  position: absolute;
+  top: 46px;
+  left: 488px;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #59537e;
+}
+.ema515_02_ih_0006 .img_box .color1 {
+  color: #59b24b;
+}
+.ema515_02_ih_0006 .img_box .color2 {
+  color: #804a93;
+}
+.ema515_02_ih_0006 .img_box .color3 {
+  color: #ce5f39;
+}
+.ema515_02_ih_0006 .label_gray {
+  padding: 0 10px;
+}
+.ema515_02_ih_0006 .input_wrap_underline {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ema515_02_ih_0006 .input_wrap.answer1,
+.ema515_02_ih_0006 .input_wrap.answer1 math-field {
+  width: 198px;
+}
+.ema515_02_ih_0006 .dir_col > div:first-child .input_wrap_underline .text_hint {
+  /* top: -75px; */
+}
+.ema515_02_ih_0006 .gap_80{
+  gap: 80px;
+}
+
+.ema515_02_ih_0007 .question_box {
+  gap: 130px;
+}
+.ema515_02_ih_0007 .question_box .img_box {
+  position: relative;
+}
+.ema515_02_ih_0007 .question_box .img_box [class^="name"],
+.ema515_02_ih_0007 .question_box .img_box [class^="txt"] {
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  /* font-size: 25px; */
+}
+.ema515_02_ih_0007 .question_box .img_box [class^="name"] {
+  /* font-size: 20px; */
+  font-weight: normal;
+  color: #fff;
+}
+.ema515_02_ih_0007 .question_box .img_box .name1 {
+  top: 154px;
+  left: 170px;
+  transform: rotate(-4deg) translateX(-50%);
+}
+.ema515_02_ih_0007 .question_box .img_box .name2 {
+  top: 160px;
+  left: 384px;
+  transform: rotate(4deg) translateX(-50%);
+}
+.ema515_02_ih_0007 .question_box .img_box .txt1 {
+  top: 52px;
+  left: 126px;
+  font-size: 24px;
+}
+.ema515_02_ih_0007 .question_box .img_box .txt2 {
+  top: 52px;
+  left: 430px;
+  font-size: 24px;
+}
+.ema515_02_ih_0007 .question_box .img_box .fraction_box {
+  vertical-align: middle;
+  gap: 3px;
+  min-width: 0;
+}
+
+
+/* box 칼라*/
+
+.ema515_02_001_box{width: 124px;}
+.ema515_02_001_box .boolean_count_wrap{
+  flex-wrap: wrap; gap:0}
+
+.ema515_02_001_box .boolean_count_wrap button{width: 40px; height: 40px; border: 0;}
+.ema515_02_001_box .boolean_count_wrap button:not(:first-child)::after{
+  content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-image: repeating-linear-gradient(to left, var(--font-main), var(--font-main) 4px, transparent 4px, transparent 8px);
+    position: absolute;
+    top: -1px;
+    left: 0px;
+} 
+
+
+
+
+
+
+
+

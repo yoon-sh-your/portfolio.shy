@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_10_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_10.css" />
+    <script src="../../common_contents/js/ema624_10_0004.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema624_10_su_0004">
+      <section class="contents">
+        <div class="form_wrap">
+          <div class="card_area">
+            <div class="card_grid">
+            </div>
+          </div>
+          
+          <div class="table_area">
+            <div class="table_title">비례식을 세워 보아요!</div>
+            <table class="proportion_table">
+              <tr>
+                <td>=</td>
+                <td>=</td>
+              </tr>
+              <tr>
+                <td>=</td>
+                <td>=</td>
+              </tr>
+              <tr>
+                <td>=</td>
+                <td>=</td>
+              </tr>
+              <tr>
+                <td>=</td>
+                <td>=</td>
+              </tr>
+              <tr>
+                <td>=</td>
+                <td>=</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <div class="device_change_wrap">
+            <button class="device_change teacher" lang="y">대표 기기 변경하기</button>
+          </div>
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

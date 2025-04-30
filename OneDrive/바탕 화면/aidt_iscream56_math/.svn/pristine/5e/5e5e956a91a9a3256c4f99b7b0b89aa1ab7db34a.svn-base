@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA614_02_SU_0004_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <script src="./../../common_contents/js/ema614_02_su_0004.js"></script>
+        <link rel="stylesheet" href="./../../common_contents/css/ema614_02.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="ema614_02_su_0004">
+            <section class="title type2">
+                <h2 data-head="2" lang="y">물 1컵과 밀가루 3컵을 이용하여 수제비 반죽 한 개를 만들 수 있습니다. 반죽 수에 따른 물의 양과 밀가루의 양을 비교해 봅시다.​</h2>
+            </section>
+
+            <section class="contents paging_layout">
+                <div class="input_area">
+                    <article class="page page_1">
+                        <h3 lang="y">반죽 한 개를 만들 때 필요한 물의 양과 밀가루의 양은 각각 몇 컵인가요?​</h3>
+                        <div class="question_box justify_center">
+                            <div class="row">
+                                <span class="f32b">물: </span>
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="1"></math-field>
+                                </div>
+                                <span class="f32b">컵</span>
+                            </div>
+                            <div class="row">
+                                <span class="f32b">밀가루: </span>
+                                <div class="input_wrap answer1">
+                                    <math-field data-answer-single="3"></math-field>
+                                </div>
+                                <span class="f32b">컵</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page_2">
+                        <h3 lang="y">반죽 수에 따른 필요한 물의 양과 밀가루의 양을 각각 구하여 표를 완성해 보세요.​</h3>
+
+                        <div class="question_box">
+                            <div class="table_box">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th lang="y" scope="col">반죽 수</th>
+                                            <th lang="y" scope="col">한 개</th>
+                                            <th lang="y" scope="col">두 개</th>
+                                            <th lang="y" scope="col">세 개</th>
+                                            <th lang="y" scope="col">네 개</th>
+                                            <th lang="y" scope="col">...</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th lang="y" scope="row">물의 양(컵)</th>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                            <td>
+                                                <div class="input_wrap" data-hint-position="right">
+                                                    <math-field data-answer-single="4"></math-field>
+                                                </div>
+                                            </td>
+                                            <td>...</td>
+                                        </tr>
+                                        <tr>
+                                            <th lang="y" scope="row">밀가루의 양(컵)</th>
+                                            <td>3</td>
+                                            <td>6</td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <math-field data-answer-single="9"></math-field>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input_wrap">
+                                                    <math-field data-answer-single="12"></math-field>
+                                                </div>
+                                            </td>
+                                            <td>...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page_3">
+                        <h3 lang="y">반죽 두 개를 만들 때 필요한 물의 양과 밀가루의 양은 각각 몇 컵인가요?​</h3>
+                        <div class="question_box justify_center">
+                            <div class="row">
+                                <span class="f32b">물: </span>
+                                <div class="input_wrap">
+                                    <math-field data-answer-single="2"></math-field>
+                                </div>
+                                <span class="f32b">컵</span>
+                            </div>
+                            <div class="row">
+                                <span class="f32b">밀가루: </span>
+                                <div class="input_wrap answer1">
+                                    <math-field data-answer-single="6"></math-field>
+                                </div>
+                                <span class="f32b">컵</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="page page_4">
+                        <h3 lang="y">반죽 두 개를 만들 때 필요한 밀가루의 양은 물의 양의 몇 배인지 알아보세요.​</h3>
+                        <div class="question_box justify_center">
+                            <div class="input_wrap">
+                                <math-field data-answer-single="3"></math-field>
+                            </div>
+                            <span class="f32b">배</span>
+                        </div>
+                    </article>
+
+                    <article class="page page_5">
+                        <h3 lang="y">반죽 다섯 개를 만들 때 필요한 밀가루의 양은 물의 양의 몇 배인지 구하고, 그 이유를 이야기해 보세요.​</h3>
+                        <div class="row">
+                            <div class="col">
+                                <div class="input_wrap">
+                                    <math-field class="answer-field" data-answer-single="3"></math-field>
+                                </div>
+                                <span class="f32b">배</span>
+                            </div>
+                            <div class="speech_bubble">
+                                <div class="bubble_txt">
+                                    두 양 사이의<br />
+                                    관계를<br />
+                                    생각해 보세요.<br />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <div class="example_box">
+                                    <p lang="y">반죽 수가 계속 늘어나도 반죽 수에 따른 밀가루의 양은 항상 물의 양의 3배이기 때문입니다​.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="btn_area">
+                    <button class="btnType key">입력타입토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnCheck">확인</button>
+                    <!-- <button class="btnSubmit">제출</button> -->
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

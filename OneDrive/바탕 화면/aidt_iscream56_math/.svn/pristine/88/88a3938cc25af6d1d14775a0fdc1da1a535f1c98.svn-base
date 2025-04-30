@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_07_IH_0002</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_07.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_07_ih_0002 paging">
+			<section class="title type2 score">
+				<h2 data-head="2_deep_green" lang="y">
+					스티커 10개를 민하와 규민이가 1 : 4로 나누어 가지려고 합니다. 두 사람이 나누어 가지는 스티커는 각각
+					몇 개인지 구하려고 합니다. 물음에 답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3 lang="y">두 사람이 나누어 가지는 스티커의 수는 각각 전체의 몇 분의 몇인지 구해 보세요.</h3>
+					<div class="question_box justify_center">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA624_07_IH/0002_01_bg.png" alt="" />
+							<div class="text_area">
+								<p class="name" lang="y">민하</p>
+								<div class="input_area">
+									<div class="fraction_box">
+										<span>
+											<span class="input_wrap" data-hint-position="up">
+												<math-field data-answer-single="1" class="w_80"></math-field>
+											</span>
+										</span>
+										<span>
+											<span class="input_wrap">
+												<math-field data-answer-single="1" class="w_80"></math-field>
+											</span>
+											+
+											<span class="input_wrap">
+												<math-field data-answer-single="4" class="w_80"></math-field>
+											</span>
+										</span>
+									</div>
+									=
+									<div class="fraction_box">
+										<span>
+											<span class="input_wrap" data-hint-position="up">
+												<math-field data-answer-single="1" class="w_80"></math-field>
+											</span>
+										</span>
+										<span>
+											<span class="input_wrap">
+												<math-field data-answer-single="5" class="w_80"></math-field>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA624_07_IH/0002_02_bg.png" alt="" />
+							<div class="text_area">
+								<p class="name" lang="y">규민</p>
+								<div class="input_area">
+									<div class="fraction_box">
+										<span>
+											<span class="input_wrap" data-hint-position="up">
+												<math-field data-answer-single="4" class="w_80"></math-field>
+											</span>
+										</span>
+										<span>
+											<span class="input_wrap">
+												<math-field data-answer-single="1" class="w_80"></math-field>
+											</span>
+											+
+											<span class="input_wrap">
+												<math-field data-answer-single="4" class="w_80"></math-field>
+											</span>
+										</span>
+									</div>
+									=
+									<div class="fraction_box">
+										<span>
+											<span class="input_wrap" data-hint-position="up">
+												<math-field data-answer-single="4" class="w_80"></math-field>
+											</span>
+										</span>
+										<span>
+											<span class="input_wrap">
+												<math-field data-answer-single="5" class="w_80"></math-field>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p class="flex align_center gap_0">
+										<span lang="y">민하가 나누어 가지는 스티커의 수는 전체의</span>
+										<span class="fraction_box ml_10">
+											<span>1</span>
+											<span>1+4</span>
+										</span>
+										=
+										<span class="fraction_box">
+											<span>1</span>
+											<span>5</span>
+										</span>
+										<span lang="y">이며, </span>
+									</p>
+									<p class="flex align_center gap_0">
+										<span lang="y">규민이가 나누어 가지는 스티커의 수는 전체의</span>
+										<span class="fraction_box ml_10">
+											<span>4</span>
+											<span>1+4</span>
+										</span>
+										=
+										<span class="fraction_box">
+											<span>4</span>
+											<span>5</span>
+										</span>
+										<span lang="y">입니다.</span>
+									</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+				<article class="page page_2">
+					<h3 lang="y">두 사람이 나누어 가지는 스티커는 각각 몇 개인지 구해 보세요.</h3>
+
+					<div class="question_box justify_center">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA624_07_IH/0002_01_bg.png" alt="" />
+							<div class="text_area">
+								<p class="name" lang="y">민하</p>
+								<div class="input_area">
+									10×
+									<div class="fraction_box">
+										<span>
+											<span class="input_wrap" data-hint-position="up">
+												<math-field data-answer-single="1" class="w_80"></math-field>
+											</span>
+										</span>
+										<span> 5 </span>
+									</div>
+									=
+									<span class="input_wrap">
+										<math-field data-answer-single="2"></math-field>
+									</span>
+									<span lang="y">(개)</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA624_07_IH/0002_02_bg.png" alt="" />
+							<div class="text_area">
+								<p class="name" lang="y">규민</p>
+								<div class="input_area">
+									10×
+									<div class="fraction_box">
+										<span>
+											<span class="input_wrap" data-hint-position="up">
+												<math-field data-answer-single="4" class="w_80"></math-field>
+											</span>
+										</span>
+										<span> 5 </span>
+									</div>
+									=
+									<span class="input_wrap">
+										<math-field data-answer-single="8"></math-field>
+									</span>
+									<span lang="y">(개)</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p>• 스티커 10개를 1 : 4로 나눕니다.</p>
+
+									<p>
+										민하: 10 ×
+										<span class="fraction_box align-middle">
+											<span>1</span>
+											<span>5</span>
+										</span>
+										= 2(개)
+									</p>
+
+									<p>
+										규민: 10 ×
+										<span class="fraction_box align-middle">
+											<span>4</span>
+											<span>5</span>
+										</span>
+										= 8(개)
+									</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+			</section>
+		</div>
+	</body>
+</html>

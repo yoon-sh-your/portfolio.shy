@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_10_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/js/ema512_10_ih.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_10_ih_0001">
+      <section class="title type2">
+        <h2 data-puzzle="green" lang="y">약수와 배수에 대해 옳게 설명한 번호를 찾아 주어진 색으로 칠해 보세요. 어떤 모양이 보이나요?</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="question_box">
+            <div class="img">
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img01.png" alt="" />
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img02.png" class="fill" alt="" />
+            </div>
+            <div class="conts">
+              <h3 lang="y"><span class="round-num">1</span> 1은 모든 수의 약수입니다. <span class="color sky"></span></h3>
+              <div class="boolean_wrap">
+                <button data-answer-single="true"><img src="../../common_practice/img/EMA512_10_IH/0001_o.svg" alt="O" /></button>
+                <button data-answer-single="false"><img src="../../common_practice/img/EMA512_10_IH/0001_x.svg" alt="X" /></button>
+              </div>
+              <div class="text_hint" lang="y">1은 모든 수의 약수입니다.</div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="question_box">
+            <div class="img">
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img02.png" alt="" />
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img03.png" class="fill" alt="" />
+            </div>
+            <div class="conts">
+              <h3 lang="y"><span class="round-num">2</span> 배수는 셀 수 없이 많습니다. <span class="color blue"></span></h3>
+              <div class="boolean_wrap">
+                <button data-answer-single="true"><img src="../../common_practice/img/EMA512_10_IH/0001_o.svg" alt="O" /></button>
+                <button data-answer-single="false"><img src="../../common_practice/img/EMA512_10_IH/0001_x.svg" alt="X" /></button>
+              </div>
+              <div class="text_hint" lang="y">배수는 셀 수 없이 많습니다.</div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="question_box">
+            <div class="img">
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img03.png" alt="" />
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img04.png" class="fill" alt="" />
+            </div>
+            <div class="conts">
+              <h3 lang="y"><span class="round-num">3</span> 두 수의 최대공약수의 약수와<br />두 수의 공약수는 다릅니다. <span class="color yellow"></span></h3>
+              <div class="boolean_wrap">
+                <button data-answer-single="false"><img src="../../common_practice/img/EMA512_10_IH/0001_o.svg" alt="O" /></button>
+                <button data-answer-single="true"><img src="../../common_practice/img/EMA512_10_IH/0001_x.svg" alt="X" /></button>
+              </div>
+              <div class="text_hint" lang="y">두 수의 최대공약수의 약수와<br />두 수의 공약수는 같습니다.</div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <div class="question_box">
+            <div class="img">
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img04.png" alt="" />
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img05.png" class="fill" alt="" />
+            </div>
+            <div class="conts">
+              <h3 lang="y"><span class="round-num">4</span> 10은 4와 10의 공배수입니다. <span class="color pink"></span></h3>
+              <div class="boolean_wrap">
+                <button data-answer-single="false"><img src="../../common_practice/img/EMA512_10_IH/0001_o.svg" alt="O" /></button>
+                <button data-answer-single="true"><img src="../../common_practice/img/EMA512_10_IH/0001_x.svg" alt="X" /></button>
+              </div>
+              <div class="text_hint" lang="y">4와 10의 공배수는<br />20, 40, 60, … 이므로 10은<br />4와 10의 공배수가 아닙니다.</div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_5">
+          <div class="question_box">
+            <div class="img">
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img05.png" alt="" />
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img06.png" class="fill" alt="" />
+            </div>
+            <div class="conts">
+              <h3 lang="y"><span class="round-num">5</span> 20과 24는 최대공약수는 4입니다. <span class="color black"></span></h3>
+              <div class="boolean_wrap">
+                <button data-answer-single="true"><img src="../../common_practice/img/EMA512_10_IH/0001_o.svg" alt="O" /></button>
+                <button data-answer-single="false"><img src="../../common_practice/img/EMA512_10_IH/0001_x.svg" alt="X" /></button>
+              </div>
+              <div class="text_hint" lang="y">20과 24의 최대공약수는 4입니다.</div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_6">
+          <div class="question_box">
+            <div class="img">
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img06.png" alt="" />
+            </div>
+            <div class="conts">
+              <h3 lang="y"><span class="round-num">6</span> 5와 6의 최소공배수는 1입니다.  <span class="color green"></span></h3>
+              <div class="boolean_wrap">
+                <button data-answer-single="false"><img src="../../common_practice/img/EMA512_10_IH/0001_o.svg" alt="O" /></button>
+                <button data-answer-single="true"><img src="../../common_practice/img/EMA512_10_IH/0001_x.svg" alt="X" /></button>
+              </div>
+              <div class="text_hint" lang="y">5와 6의 최대공약수는 1이고,<br />최소공배수는 30입니다.</div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_7">
+          <div class="question_box">
+            <div class="img">
+              <img src="../../common_practice/img/EMA512_10_IH/0001_img06.png" alt="" />
+            </div>
+            <div class="conts">
+              <div class="input_wrap">
+                <math-field data-answer-single="고래"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

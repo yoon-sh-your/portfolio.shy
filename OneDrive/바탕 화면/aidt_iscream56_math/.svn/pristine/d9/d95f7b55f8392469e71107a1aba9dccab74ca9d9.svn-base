@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_05_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema614_05_0005.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_05_su_0005">
+      <section class="title type2">
+        <h2 data-head="3">
+            <div>
+                <span lang="y">하늘시와 바다시의 인구와 넓이를 나타낸 표입니다. 두 도시의 넓이에 대한 인구의 비율을 비교해 봅시다.</span>
+                <button type="button" class="btn calculator">계산기</button>
+            </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+            <article class="page page_1">
+              <h3 lang="y">
+                기준량과 비교하는 양은 각각 무엇인지 이야기해 보세요.
+              </h3>
+              <div class="question_box justify_center">
+                <div class="table_box">
+                  <table>
+                    <colgroup>
+                      <col style="width: 276px;">
+                      <col style="width: 276px;">
+                      <col style="width: 276px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th lang="y" scope="col">도시</th>
+                        <th lang="y" scope="col">하늘시</th>
+                        <th lang="y" scope="col">바다시</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y" scope="row">인구 (명)</th>
+                        <td>2500000​</td>
+                        <td>1740000​</td>
+                      </tr>
+                      <tr>
+                        <th lang="y" scope="row">넓이 (㎢)</th>
+                        <td>1600</td>
+                        <td>1200</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="f32b">기준량: </span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="넓이"></math-field>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span class="f32b">비교하는 양: </span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="인구"></math-field>
+                    </div>
+                  </div>
+              </div>
+            </article>
+
+            <article class="page page_2">
+              <h3 lang="y">
+                두 도시의 넓이에 대한 인구의 비율을 각각 구해 보세요.
+              </h3>
+              <div class="question_box justify_center">
+                <div class="table_box">
+                  <table>
+                    <colgroup>
+                      <col style="width: 276px;">
+                      <col style="width: 276px;">
+                      <col style="width: 276px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th lang="y" scope="col">도시</th>
+                        <th lang="y" scope="col">하늘시</th>
+                        <th lang="y" scope="col">바다시</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y" scope="row">인구 (명)</th>
+                        <td>2500000​</td>
+                        <td>1740000​</td>
+                      </tr>
+                      <tr>
+                        <th lang="y" scope="row">넓이 (㎢)</th>
+                        <td>1600</td>
+                        <td>1200</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <span class="f32b">하늘시: </span>
+                    <div class="input_wrap">
+                      <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="(2500000)/(1600)" data-answer-multi='{"values": ["(2500000)/(1600)", "(3125)/(2)", "1562.5"]}' data-multi-hint="y" ></math-field>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <span class="f32b">바다시: </span>
+                    <div class="input_wrap">
+                      <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="(1740000)/(1200)" data-answer-multi='{"values": ["(1740000)/(1200)", "1450"]}' data-multi-hint="y" ></math-field>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </article>
+            <article class="page page_3">
+              <h3 lang="y">
+                도시의 넓이에 대한 인구의 비율이 낮아질수록 같은 넓이에 대한 인구는 어떻게 달라질지 이야기해 보세요.​
+              </h3>
+              <div class="question_box justify_center">
+                <div class="table_box">
+                  <table>
+                    <colgroup>
+                      <col style="width: 276px;">
+                      <col style="width: 276px;">
+                      <col style="width: 276px;">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th lang="y" scope="col">도시</th>
+                        <th lang="y" scope="col">하늘시</th>
+                        <th lang="y" scope="col">바다시</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y" scope="row">인구 (명)</th>
+                        <td>2500000​</td>
+                        <td>1740000​</td>
+                      </tr>
+                      <tr>
+                        <th lang="y" scope="row">넓이 (㎢)</th>
+                        <td>1600</td>
+                        <td>1200</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                      <p>도시의 넓이에 대한 인구의 비율이 낮아질수록 같은 넓이에 대한 인구는 더 적어집니다.</p>
+                  </div>
+              </div>
+              </div>
+            </article>
+
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

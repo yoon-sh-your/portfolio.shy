@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_06_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_06_ih_0001">
+			<section class="title type2">
+				<h2 data-head="1" class="fraction_box_title">
+					<div lang="y">
+						물 
+						<div class="fraction_box">
+							<span>7</span>
+							<span>8</span>
+						</div>
+						L를 빈 꽃병에 옮겨 담았더니 꽃병의 
+						<div class="fraction_box">
+							<span>3</span>
+							<span>5</span>
+						</div>
+						만큼 찼습니다. 꽃병을 가득 채울 수 있는 물의 양은 몇 L인지 구하려고 합니다. <span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.
+					</div>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box dir_col gap_20">
+					<div class="img">
+						<img src="../../common_practice/img/EMA621_06_IH/0001_img.svg" alt="">
+						<span class="txt1" lang="y">(병)</span>
+						<span class="txt2" lang="y">(병)</span>
+						<span class="txt3" lang="y">(병)</span>
+					</div>
+					<div class="middle flex justify_end align_center">
+						<div class="item1 flex justify_center align_center">
+							<div class="fraction_box">
+								<span>7</span>
+								<span>8</span>
+							</div>
+						</div>
+						<div class="item2 flex align_center">
+							<div class="fraction_box">
+								<span>7</span>
+								<span>8</span>
+							</div>
+							÷
+							<div class="input_wrap">
+								<math-field data-answer-single="3"></math-field>
+							</div>
+							=
+							<div class="fraction_box">
+								<span>7</span>
+								<span>8</span>
+							</div>
+							×
+							<div class="fraction_box">
+								<span>1</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="3"></math-field>
+								</div>
+							</div>
+						</div>
+						<div class="item3 flex align_center">
+							<div class="fraction_box">
+								<span>7</span>
+								<span>8</span>
+							</div>
+							×
+							<div class="fraction_box">
+								<span>1</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="3"></math-field>
+								</div>
+							</div>
+							×
+							<div class="input_wrap">
+								<math-field data-answer-single="5"></math-field>
+							</div>
+						</div>
+					</div>
+					<div class="box_line">
+						<div class="inner">
+							<div class="flex dir_col gap_30">
+								<div class="flex align_center">
+									<div class="left flex align_center">
+										<div class="fraction_box">
+											<span>7</span>
+											<span>8</span>
+										</div>
+										÷
+										<div class="fraction_box">
+											<span>3</span>
+											<span>5</span>
+										</div>
+									</div>
+									=
+									<div class="fraction_box">
+										<span>7</span>
+										<span>8</span>
+									</div>
+									÷
+									<div class="input_wrap">
+										<math-field data-answer-single="3"></math-field>
+									</div>
+									×
+									<div class="input_wrap">
+										<math-field data-answer-single="5"></math-field>
+									</div>
+								</div>
+								<div class="flex align_center">
+									<div class="left"></div>
+									=
+									<div class="fraction_box">
+										<span>7</span>
+										<span>8</span>
+									</div>
+									×
+									<div class="fraction_box">
+										<span>1</span>
+										<div class="input_wrap">
+											<math-field data-answer-single="3"></math-field>
+										</div> 
+									</div>
+									×
+									<div class="input_wrap">
+										<math-field data-answer-single="5"></math-field>
+									</div>
+								</div>
+								<div class="flex align_center">
+									<div class="left"></div>
+									=
+									<div class="fraction_box">
+										<span>7</span>
+										<span>8</span>
+									</div>
+									×
+									<div class="fraction_box">
+										<div class="input_wrap">
+											<math-field data-answer-single="5"></math-field>
+										</div> 
+										<div class="input_wrap">
+											<math-field data-answer-single="3"></math-field>
+										</div> 
+									</div>
+									×
+									<div class="flex align_end gap_4">
+										<div class="input_wrap fraction_wrap">
+											<math-field data-answer-single="1(11)/(24)(=(35)/(24))"></math-field>
+										</div>
+										(L)
+	
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_02_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_02_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4_orange" lang="y">
+          세 직육면체 모양의 상자 중 부피를 비교할 수 있는 두 상자를 찾아 부피를 비교하려고 합니다.
+
+          <span class="empty_box nemo"></span></span>안에 알맞은 기호를 써넣으세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_60">
+          <!-- <div class="bogi_box"> -->
+
+          <div class="question_box">
+            <img src="../../common_practice/img/EMA616_02_IH/616_02_04.png" alt="" />
+          </div>
+          <!-- </div> -->
+
+          <div class="flex gap_60">
+            <div class="question_box bogi_box">
+              <div class="flex dir_col conts_bogi">
+                <span>세 상자 가, 나, 다 중 부피를 비교할 수 있는</span>
+                <div>
+                  두 상자는
+                  <div class="input_wrap">
+                    <math-field data-answer-single="가" text-align="center"></math-field>
+                  </div>
+                  상자와
+                  <div class="input_wrap">
+                    <math-field data-answer-single="다" text-align="center"></math-field>
+                  </div>
+                  상자이고,
+                </div>
+
+                <div>
+                  이 중 부피가 더 큰 상자는
+                  <div class="input_wrap">
+                    <math-field data-answer-single="다" text-align="center"></math-field>
+                  </div>
+                  상자입니다.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

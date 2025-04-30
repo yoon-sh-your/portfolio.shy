@@ -1,0 +1,265 @@
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+
+.input_wrap:has(.w_80) {
+	min-width: 80px !important;
+}
+math-field.w_80 {
+	width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+	bottom: calc(100% + 4px);
+	top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+	position: relative;
+}
+.input_wrap.input_sep {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+	left: calc(100% + 20px);
+	top: 6px;
+	width: auto;
+}
+.input_wrap.hint_left .text_hint {
+	right: calc(100% + 20px);
+	left: auto;
+	top: 6px;
+	width: auto;
+}
+
+.fraction_wrap .hint_up .text_hint {
+	top: auto;
+	bottom: calc(100% + 4px);
+}
+.fraction_wrap.hint_right .text_hint {
+	top: 18px;
+}
+
+math-field.has_ex_text + .text_hint:before {
+	content: "예";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	width: 44px;
+	height: 44px;
+	background: var(--primary-blue);
+	border-radius: 12px;
+	color: #fff;
+	line-height: 42px;
+}
+
+/* ema613_08_ih_0001 */
+.ema613_08_ih_0001 .img_area {
+	position: relative;
+}
+.ema613_08_ih_0001 .input_area {
+	position: absolute;
+	top: 40px;
+	left: 94px;
+}
+.ema613_08_ih_0001 .input_row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 38px;
+}
+.input_wrap.small {
+	min-width: unset;
+	margin: 0 3px;
+}
+.input_wrap.small math-field {
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	padding: 0;
+}
+.input_wrap.small math-field::part(placeholder) {
+	display: none;
+}
+
+/* ema613_08_ih_0002 */
+.ema613_08_ih_0002 .img_area {
+	position: relative;
+}
+.ema613_08_ih_0002 .input_area {
+	position: absolute;
+	top: 52px;
+	display: flex;
+	width: 100%;
+	gap: 38px;
+}
+.ema613_08_ih_0002 .input_col {
+	flex: 1;
+	padding-left: 40px;
+}
+.ema613_08_ih_0002 .input_col:first-of-type {
+	padding-left: 43px;
+}
+.ema613_08_ih_0002 .input_row {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 12px;
+}
+.ema613_08_ih_0002 .input_row .arrow {
+	margin: 0 28px;
+}
+
+/* ema613_08_ih_0003 */
+.ema613_08_ih_0003 .img_area {
+	position: relative;
+}
+.ema613_08_ih_0003 .boolean_area {
+	position: absolute;
+	top: 34px;
+	display: flex;
+	width: 100%;
+	gap: 30px;
+}
+.ema613_08_ih_0003 .boolean_wrap {
+	flex: 1;
+	text-align: center;
+}
+.ema613_08_ih_0003 .boolean_wrap > dl {
+	width: 100%;
+}
+.ema613_08_ih_0003 .boolean_wrap dd {
+	text-align: center;
+}
+.ema613_08_ih_0003 .boolean_wrap button {
+	/* background: transparent; */
+	padding: 0;
+	height: 50px;
+	display: inline-block;
+	/* border-width: 0; */
+}
+/* .ema613_08_ih_0003 .boolean_wrap button.hint {
+	border-color: transparent;
+} */
+.ema613_08_ih_0003 .boolean_wrap dt {
+	margin-bottom: 21px;
+}
+.ema613_08_ih_0003 .boolean_wrap button[data-answer-single="true"].correct {
+	border-color: var(--primary-blue);
+	background-color: rgba(59, 113, 254, 0.3);
+}
+/* .result .ema613_08_ih_0003 .boolean_wrap button[data-answer-single="true"].selected {
+	border-color: transparent;
+	background-color: rgba(59, 113, 254, 0.4);
+} */
+/* .result .ema613_08_ih_0003 .boolean_wrap button[data-answer-single="false"].selected {
+	border-color: transparent;
+	background: rgba(246, 156, 156, 0.6);
+} */
+
+/* ema613_08_ih_0004 */
+.ema613_08_ih_0004 .img_area {
+	position: relative;
+}
+.ema613_08_ih_0004 .boolean_wrap {
+	position: absolute;
+	top: 38px;
+	justify-content: center;
+	gap: 66px 180px;
+	flex-wrap: wrap;
+}
+.ema613_08_ih_0004 .boolean_wrap > button {
+	width: 129px;
+	height: 48px;
+	border-radius: 0;
+	border: 0;
+	background-color: transparent;
+}
+.ema613_08_ih_0004 .boolean_wrap > button.selected {
+	background-color: rgba(246, 156, 156, 0.4);
+}
+.result .ema613_08_ih_0004 .boolean_wrap > button[data-answer-single="true"] {
+	position: relative;
+}
+.result .ema613_08_ih_0004 .boolean_wrap > button[data-answer-single="true"]:after {
+	content: "";
+	width: 126px;
+	height: 126px;
+	background: url(./../img/EMA613_08_IH/icon_boolean_mark.svg) no-repeat 50% / 104px auto;
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* ema613_08_ih_0005 */
+.ema613_08_ih_0005 .img_area {
+	position: relative;
+}
+.ema613_08_ih_0005 .img_area .nemo {
+	width: 22px;
+	height: 22px;
+	vertical-align: middle;
+	line-height: 17px;
+	position: relative;
+	top: -2px;
+	margin: 0 2px;
+}
+.ema613_08_ih_0005 .img_area > p {
+	position: absolute;
+}
+.ema613_08_ih_0005 .img_area [class^="text"] {
+	word-break: keep-all;
+	text-align: center;
+	white-space: normal;
+	line-height: 1.4;
+	font-size: 22px;
+}
+.ema613_08_ih_0005 .img_area [class^="name"] {
+	font-size: 24px;
+	font-weight: 700;
+	color: #fff;
+}
+.ema613_08_ih_0005 .img_area .text1 {
+	top: 17px;
+	left: 246px;
+	width: 214px;
+}
+.ema613_08_ih_0005 .img_area .text2 {
+	width: 222px;
+	top: 17px;
+	left: 540px;
+}
+.ema613_08_ih_0005 .img_area .name1 {
+	top: 124px;
+	left: 5px;
+}
+.ema613_08_ih_0005 .img_area .name2 {
+	top: 109px;
+	right: 6px;
+}
+.ema613_08_ih_0005 .custom_select {
+	width: 167px;
+}
+.ema613_08_ih_0005 .input_area {
+	margin-top: 60px;
+	display: flex;
+	gap: 10px;
+}
+.ema613_08_ih_0005 .input_wrap {
+	width: 100%;
+	margin-bottom: 115px;
+}
+.ema613_08_ih_0005 .input_wrap math-field {
+	width: 1208px;
+	height: 80px;
+	min-height: unset;
+}

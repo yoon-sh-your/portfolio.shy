@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_08_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_01.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_02.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_03.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_08_su_0003">
+      <section class="title type2">
+        <h2 data-head="2_green" lang="y">민서네 학교 5학년 학생들은 봄맞이 마을 축제 입장 준비를 하고 있습니다. 5학년은 5개의 반이 있고 각 반의 여학생은 14명, 5학년 남학생은 모두 80명입니다. 여학생과 남학생이 따로 입장할 때 여학생과 남학생이 줄을 서는 방법은 각각 몇 가지인지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents flex img_row">
+        <div class="picture_wrap" data-head="1" data-tit="그림을 보고 물건을 똑같이 나누어 보거나 물건을 묶음으로 산 경험을 이야기해 봅시다.">
+          <img src="../../common_contents/img/EMA512_08_SU/0014_contents.png" alt="물건 구매 활동 이미지" />
+          <!-- <button class="zoom"></button> -->
+          <p class="example_comment" lang="y">여학생과 남학생이 몇 명씩 몇 줄로 줄을 서는 방법은 각각 몇 가지일까?</p>
+          <p class="example_img">
+            <span lang="y">봄</span>
+            <span lang="y">맞</span>
+            <span lang="y">이</span>
+            <span lang="y">축</span>
+            <span lang="y">제</span>
+          </p>
+        </div>
+
+        <div class="leftside input_area">
+          <div class="question_box flex justify_evenly">
+            <div class="flex align_center">
+              <span lang="y">여학생 : </span>
+              <div class="input_wrap answer1 flex">
+                <math-field data-answer-single="8"></math-field>
+              </div>
+              <span lang="y">가지</span>
+            </div>
+          </div>
+          <div class="question_box flex justify_evenly">
+            <div class="flex align_center">
+              <span lang="y">남학생 : </span>
+              <div class="input_wrap answer1 flex">
+                <math-field data-answer-single="10"></math-field>
+              </div>
+              <span lang="y">가지</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset btnBgGray" lang="y">리셋</button>
+          <button class="btnCheck btnBgGray" lang="y">확인</button>
+          <!-- <button class="btnSubmit btnBgDefault">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

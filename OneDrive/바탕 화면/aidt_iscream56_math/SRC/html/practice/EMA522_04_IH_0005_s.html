@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">곱이 다른 사람을 찾아 이름을 써 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center align_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_04_IH/0005_01.png" alt="" />
+            <div class="fraction1">
+              <span>9×</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>6</span>
+              </div>
+            </div>
+            <div class="fraction2">
+              <div class="fraction_box">
+                <span>1</span>
+                <span>6</span>
+              </div>
+              <span>×9</span>
+            </div>
+            <div class="fraction3">
+              <span>6×</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>9</span>
+              </div>
+            </div>
+            <p class="name1" lang="y">승민</p>
+            <p class="name2" lang="y">서하</p>
+            <p class="name3" lang="y">준희</p>
+          </div>
+          <div class="input_area flex gap_10 align_center">
+            <!-- 단답형 -->
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="준희" text-align="center"></math-field>
+            </div>
+
+            <span>)</span>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <span>승민: </span>
+                  <span
+                    ><span class="mark_error up">9<i>3</i></span></span
+                  >
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>1</span><span class="mark_error">6<i>2</i></span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>3</span><span>2</span></div>
+                  <span>=</span>
+                  <span class="text_bg_red">
+                    <span>1</span>
+                    <div class="fraction_box"><span>1</span><span>2</span></div>
+                  </span>
+                </div>
+                <div class="flex align_center gap_10 mt_20">
+                  <span>서하: </span>
+                  <div class="fraction_box">
+                    <span>1</span><span class="mark_error">6<i>2</i></span>
+                  </div>
+                  <span>×</span>
+                  <span
+                    ><span class="mark_error up">9<i>3</i></span></span
+                  >
+                  <span>=</span>
+                  <div class="fraction_box"><span>3</span><span>2</span></div>
+                  <span>=</span>
+                  <span class="text_bg_red">
+                    <span>1</span>
+                    <div class="fraction_box"><span>1</span><span>2</span></div>
+                  </span>
+                </div>
+                <div class="flex align_center gap_10 mt_20">
+                  <span>준희: </span>
+                  <span
+                    ><span class="mark_error up">6<i>2</i></span></span
+                  >
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>1</span><span class="mark_error">9<i>3</i></span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>2</span><span>3</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

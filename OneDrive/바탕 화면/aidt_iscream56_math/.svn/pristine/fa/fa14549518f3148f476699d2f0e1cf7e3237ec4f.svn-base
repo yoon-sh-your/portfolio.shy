@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_02_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_02_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <span class="fraction_box ml_0"><span>1</span><span>3</span></span
+              >, <span class="fraction_box"><span>2</span><span>6</span></span
+              >,
+              <span class="fraction_box"><span>3</span><span>9</span></span>
+              의 크기를 비교해 보세요.
+            </div>
+          </div>          
+        </h2>
+      </section>
+
+    <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">분수만큼 색칠해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="count_wrap">
+              <div class="count_row">
+                <div class="fraction_box f32b" lang="y"><span>1</span><span>3</span></div>
+                <span class="num">0</span>
+                <div class="boolean_count_wrap" data-answer-single="1">
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                </div>
+                <span class="num">1</span>
+              </div>
+              <div class="count_row">
+                <div class="fraction_box f32b" lang="y"><span>2</span><span>6</span></div>
+                <span class="num">0</span>
+                <div class="boolean_count_wrap" data-answer-single="2">
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                </div>
+                <span class="num">1</span>
+              </div>
+              <div class="count_row">
+                <div class="fraction_box f32b" lang="y"><span>3</span><span>9</span></div>
+                <span class="num">0</span>
+                <div class="boolean_count_wrap" data-answer-single="3">
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                </div>
+                <span class="num">1</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">
+            <div class="fraction_txt_wrap">
+              <div class="fraction_txt" lang="y">
+                <span class="fraction_box ml_0"><span>1</span><span>3</span></span>, <span class="fraction_box"><span>2</span><span>6</span></span>,
+                <span class="fraction_box"><span>3</span><span>9</span></span>의 크기를 비교해 보세요.
+              </div>
+            </div>
+            
+          </h3>
+          <div class="question_box">
+            <div class="box box1">
+              <div class="count_wrap">
+                <img src="./../../common_contents/img/EMA514_02_SU/0004_content.png" alt="">
+                <div class="count_row">
+                  <div class="fraction_box f32b" lang="y"><span>1</span><span>3</span></div>
+                  <span class="num">0</span>
+                  <span class="num1">1</span>
+                </div>
+                <div class="count_row">
+                  <div class="fraction_box f32b" lang="y"><span>2</span><span>6</span></div>
+                  <span class="num">0</span>
+                  <span class="num1">1</span>
+                </div>
+                <div class="count_row">
+                  <div class="fraction_box f32b" lang="y"><span>3</span><span>9</span></div>
+                  <span class="num">0</span>
+                  <span class="num1">1</span>
+                </div>
+              </div>
+            </div>
+            <div class="box box2">
+              <div class="group_box">
+                <div class="fraction_box"><span>1</span><span>3</span></div>
+              </div>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="=">
+                  <option></option>
+                  <option value=">">></option>
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                </select>
+              </div>
+              <div class="group_box">
+                <div class="fraction_box"><span>2</span><span>6</span></div>
+              </div>
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown math_symbol" data-answer-single="=">
+                  <option></option>
+                  <option value=">">></option>
+                  <option value="=">=</option>
+                  <option value="<"><</option>
+                </select>
+              </div>
+              <div class="group_box">
+                <div class="fraction_box"><span>3</span><span>9</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">정리해 볼까요</label>
+              <div class="row row1">
+                <div class="fraction_box"><span>1</span><span>3</span></div>
+                <div class="fraction_box"><span>2</span><span>6</span></div>
+                <div class="fraction_box"><span>3</span><span>9</span></div>
+                <div class="fraction_box"><span>4</span><span>12</span></div>
+              </div>
+              <div class="row row2">
+                <div>
+                  <div class="fraction_box"><span>1</span><span>3</span></div>
+                  ,
+                  <div class="fraction_box"><span>2</span><span>6</span></div>
+                  ,
+                  <div class="fraction_box"><span>3</span><span>9</span></div>
+                  ,
+                  <div class="fraction_box"><span>4</span><span>12</span></div>
+                  <span>...는</span>
+                </div>
+                <button class="reveal_btn" data-pair="1">크기가 같은 분수</button>
+                <span class="small-gap">입니다.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

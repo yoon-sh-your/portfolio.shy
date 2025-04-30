@@ -1,0 +1,111 @@
+/* ema527_01_su_0002 */
+.ema527_01_su_0002 .img_wrap {
+    position: relative;
+    flex-shrink: 0;
+    width: 665px;
+    height: 390px;
+}
+.ema527_01_su_0002 .img_wrap .img {
+    width: 665px;
+    height: 390px;
+}
+.ema527_01_su_0002 .img_wrap .img_txt {
+    position: absolute;
+    top: 27px;
+    right: 21px;
+    width: 264px;
+    line-height: 32px;
+}
+.ema527_01_su_0002 .img_wrap .img_txt dd {
+    position: relative;
+    padding-left: 2ex;
+}
+.ema527_01_su_0002 .img_wrap .img_txt dd::before {
+    content:"";
+    position:absolute;
+    left: 0.5ex;
+    top:13px;
+    display: inline-block;
+    width: 5px; 
+    height: 5px;
+    background-color: #222;
+    border-radius: 50em;
+}
+.ema527_01_su_0002 .txt_wrap {
+    width: 46em;
+} 
+.ema527_01_su_0002 .t_indt {
+    text-indent: 1ex;
+    word-break: keep-all;
+}
+
+
+/* ema527_01_su_0003 */
+.ema527_01_su_0003 .contents {
+
+}
+.ema527_01_su_0003 .img_wrap {
+    position: relative;
+}
+.ema527_01_su_0003 .img_wrap svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ema527_01_su_0003 .input_wrap {
+    width:100%;
+}
+.ema527_01_su_0003 .input_wrap math-field.textarea {
+    width:100%;
+    min-height: 122px;
+}
+
+/* ema527_01_su_0004 */
+.ema527_01_su_0004 .img_wrap {
+    flex-shrink: 0;
+    width:665px;
+    height:390px;
+}
+.ema527_01_su_0004 .input_wrap math-field.textarea {
+    height: 186px;
+}
+.ema527_01_su_0004 .image_zoom_wrap .title {
+    margin-bottom:0;
+}
+
+/* ema527_01_su_0005 */
+.ema527_01_su_0005 .img_wrap {
+    position: relative;
+    flex-shrink: 0;
+}
+.ema527_01_su_0005 .img_wrap svg {
+    position: absolute;
+    top:0; left:0;
+}
+.ema527_01_su_0005 .input_area {
+    width:100%;
+}
+.ema527_01_su_0005 article:not(.page_3) .input_wrap {
+    width:100%;
+    display: block;
+    margin:0 auto;
+}
+.ema527_01_su_0005 article:not(.page_3) .input_wrap math-field.textarea {
+    width:100%;
+    min-height: 106px;
+    height: 106px;
+}
+.ema527_01_su_0005 .page_3 .picture_wrap {
+}
+
+
+/* ema527_01_su_0006 */
+.ema527_01_su_0006 .input_wrap {
+    width:100%;
+    display: block;
+    margin: 0 auto;
+}
+.ema527_01_su_0006 .input_wrap math-field.textarea {
+    width:100%;
+    height: 302px;
+}

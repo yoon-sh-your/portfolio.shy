@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">합이 다른 하나를 찾아 기호를 골라 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align_center">
+          <div class="question_box gap_12">
+            <span class="num">ㄱ</span>
+            <div class="flex align_center gap_4">
+              <div class="mixed_fraction">
+                <span>3</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+              </div>
+              +
+              <div class="mixed_fraction">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>9</span>
+                  <span>10</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="question_box gap_12">
+            <span class="num">ㄴ</span>
+            <div class="flex align_center gap_4">
+              <div class="fraction_box_wrap">
+                <span>4</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </div>
+              +
+              <div class="fraction_box_wrap">
+                <span>1</span>
+                <div class="fraction_box">
+                  <span>2</span>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="question_box gap_12">
+            <span class="num">ㄷ</span>
+            <div class="flex align_center gap_4">
+              <div class="fraction_box_wrap">
+                <span>2</span>
+                <div class="fraction_box">
+                  <span>11</span>
+                  <span>15</span>
+                </div>
+              </div>
+              +
+              <div class="fraction_box_wrap">
+                <span>3</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="boolean_wrap type_chk">
+            <button type="button" class="button1" data-answer-single="true"><img src="../../common_practice/common/img/icon_checked_round.svg" alt="" /></button>
+            <button type="button" class="button2" data-answer-single="false"><img src="../../common_practice/common/img/icon_checked_round.svg" alt="" /></button>
+            <button type="button" class="button3" data-answer-single="false"><img src="../../common_practice/common/img/icon_checked_round.svg" alt="" /></button>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <!--start solve-->
+                <div class="flex align_center gap_4">
+                  ㉠
+                  <div class="mixed_fraction">
+                    <span class="whole">3</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>3</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">2</span>
+                    <span class="fraction_box">
+                      <span>9</span>
+                      <span>10</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">3</span>
+                    <span class="fraction_box">
+                      <span>10</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">2</span>
+                    <span class="fraction_box">
+                      <span>27</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <span>5</span>
+                  <span>+</span>
+                  <span class="fraction_box">
+                    <span>37</span>
+                    <span>30</span>
+                  </span>
+                  <!-- <div class="fraction_box">
+                    <span class="slash">14<span class="slash_txt">7</span></span>
+                    <span class="slash">12<span class="slash_txt">6</span></span>
+                  </div> -->
+                  <span>=</span>
+                  <span>5</span>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">1</span>
+                    <span class="fraction_box">
+                      <span>7</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">6</span>
+                    <span class="fraction_box">
+                      <span>7</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                </div>
+                <!--end solve-->
+                <!--start solve-->
+                <div class="flex align_center gap_4 mt_30">
+                  ㉡
+                  <div class="mixed_fraction">
+                    <span class="whole">4</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>2</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">1</span>
+                    <span class="fraction_box">
+                      <span>2</span>
+                      <span>5</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">4</span>
+                    <span class="fraction_box">
+                      <span>5</span>
+                      <span>10</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">1</span>
+                    <span class="fraction_box">
+                      <span>4</span>
+                      <span>10</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction bg_red_round">
+                    <span class="whole">5</span>
+                    <span class="fraction_box">
+                      <span>9</span>
+                      <span>10</span>
+                    </span>
+                  </div>
+                </div>
+                <!--end solve-->
+                <!--start solve-->
+                <div class="flex align_center gap_4 mt_40 mb_30">
+                  ㉢
+                  <div class="mixed_fraction">
+                    <span class="whole">2</span>
+                    <span class="fraction_box">
+                      <span>11</span>
+                      <span>15</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">3</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>6</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">2</span>
+                    <span class="fraction_box">
+                      <span>22</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span>+</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">3</span>
+                    <span class="fraction_box">
+                      <span>5</span>
+                      <span>30</span>
+                    </span>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction">
+                    <span class="whole">5</span>
+                    <div class="fraction_box">
+                      <span class="slash">27<span class="slash_txt">9</span></span>
+                      <span class="slash">30<span class="slash_txt">10</span></span>
+                    </div>
+                  </div>
+                  <span>=</span>
+                  <div class="mixed_fraction bg_red_round">
+                    <span class="whole">5</span>
+                    <span class="fraction_box">
+                      <span>9</span>
+                      <span>10</span>
+                    </span>
+                  </div>
+                </div>
+                <!--end solve-->
+                <p lang="y">따라서 합이 다른 하나는 ㉠입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ema515_09_su_0004_s</title>
+        <link rel="stylesheet" href="https://unpkg.com/mathlive/dist/mathlive.core.css" />
+        <script src="https://unpkg.com/mathlive"></script>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+        <link rel="stylesheet" href="./../../common_contents/css/ema515_09.css" />
+        <script src="https://unpkg.com/@cortex-js/compute-engine"></script>
+    </head>
+    <body>
+        <div id="app_wrap" class="ema515_09_su_0004">
+            <section>
+                <div class="controls">
+                    <div>
+                        <p id="diceResult"></p>
+                        <button id="rollDiceBtn" class="dice-rolling" lang="y">주사위 굴리기</button>
+                    </div>
+                    <div>
+                        <div id="operatorDiceNumber"></div>
+                        <button id="rollOperatorBtn" class="dice-rolling" lang="y">주사위 굴리기</button>
+                    </div>
+                </div>
+            </section>
+            <section class="center">
+                <div class="board" id="board"></div>
+                <div class="route-choice" id="routeChoice">
+                    <button id="shortcutBtn"></button>
+                    <button id="normalBtn"></button>
+                </div>
+                <div class="bench" id="bench">
+                    <div id="black1" class="stone black" data-index="0"></div>
+                    <div id="black2" class="stone black" data-index="0"></div>
+                    <div id="white1" class="stone white" data-index="0"></div>
+                    <div id="white2" class="stone white" data-index="0"></div>
+                </div>
+            </section>
+            <section class="right">
+                <div id="diceNumber" class="number-input input_wrap">
+                    <math-field readonly></math-field>
+                </div>
+                <div id="operator" class="number-input operator-input"></div>
+                <div id="operatorNumber" class="number-input input_wrap">
+                    <math-field readonly></math-field>
+                </div>
+                <p>=</p>
+                <div class="number-input">
+                    <div id="answer" class="input_wrap">
+                        <math-field></math-field>
+                    </div>
+                </div>
+            </section>
+            <div class="btn_area">
+                <div class="device_change_wrap">
+                    <button class="device_change" lang="y">대표 기기 변경하기</button>
+                </div>
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button class="btnReset btnBgDefault" lang="y">리셋</button>
+                <button class="btnCheck btnBgDefault" lang="y">확인</button>
+                <button class="btnSubmit btnBgDefault" lang="y">제출</button>
+            </div>
+        </div>
+        <script src="../../common_contents/js/ema515_09_0004.js"></script>
+    </body>
+</html>

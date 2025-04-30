@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema515_10_su_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema515_10_0002.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_10.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_10_su_0002">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="1_light_purple" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              분수만큼 색칠하고
+              <div class="operation_box">
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5 </span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+              </div>
+              을 계산해 보세요.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="container_515 col_515">
+            <div class="top_515">
+              <div class="left_515">
+                <div class="boolean_count_wrap grid_515 c5r3" data-answer-single="12">
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                </div>
+
+                <div class="operations">
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="12"></math-field>
+                      </div>
+                    </span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="right_515">
+                <div class="boolean_count_wrap grid_515 c5r3-2" data-answer-single="5">
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                  <button></button>
+                </div>
+
+                <div class="operation_box">
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>3</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="5"></math-field>
+                      </div>
+                    </span>
+                    <span>15</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bottom_515">
+              <div class="operation_box">
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>5</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>3</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="12"></math-field>
+                    </div>
+                  </span>
+                  <span>15</span>
+                </div>
+                -
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="5"></math-field>
+                    </div>
+                  </span>
+                  <span>15</span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="7"></math-field>
+                    </div>
+                  </span>
+                  <span>15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

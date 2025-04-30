@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema526_10_su_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_10_su_0005">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="4_orange" lang="y">빨간색, 노란색, 파란색으로 이루어진 회전판과 회전판을 50회 돌려 화살이 멈춘 횟수를 나타낸 표입니다. 관계있는 것끼리 이어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box">
+          <ul class="connect_line_box_c start">
+            <li>
+              <img src="../../common_contents/img/EMA526_10_SU/0005_content1.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_10_SU/0005_content2.svg" alt="">
+            </li>
+            <li>
+              <img src="../../common_contents/img/EMA526_10_SU/0005_content3.svg" alt="">
+            </li>
+          </ul>
+          <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e2"],["s3","e1"]]'>
+              <div class="start_group">
+                  <div class="connect_point" data-id="s1"></div>
+                  <div class="connect_point" data-id="s2"></div>
+                  <div class="connect_point" data-id="s3"></div>
+              </div>
+              <div class="end_group">
+                  <div class="connect_point" data-id="e1"></div>
+                  <div class="connect_point" data-id="e2"></div>
+                  <div class="connect_point" data-id="e3"></div>
+              </div>
+              <svg class="connect_lines"></svg>
+          </div>
+          <ul class="connect_line_box_c end">
+            <li>
+              <div class="table_box">
+                <div class="title" lang="y">색별 화살이 멈춘 횟수</div>
+
+                <table>
+                  <tbody>
+                    <tr>
+                      <th lang="y">색</th>
+                      <td lang="y">빨간색</td>
+                      <td lang="y">노란색</td>
+                      <td lang="y">파란색</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">횟수(회)</th>
+                      <td lang="y">16</td>
+                      <td lang="y">17</td>
+                      <td lang="y">17</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <div class="table_box">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th lang="y">색</th>
+                      <td lang="y">빨간색</td>
+                      <td lang="y">노란색</td>
+                      <td lang="y">파란색</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">횟수(회)</th>
+                      <td lang="y">13</td>
+                      <td lang="y">12</td>
+                      <td lang="y">25</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <div class="table_box">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th lang="y">색</th>
+                      <td lang="y">빨간색</td>
+                      <td lang="y">노란색</td>
+                      <td lang="y">파란색</td>
+                    </tr>
+                    <tr>
+                      <th lang="y">횟수(회)</th>
+                      <td lang="y">37</td>
+                      <td lang="y">7</td>
+                      <td lang="y">6</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

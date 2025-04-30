@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_02_IH_0007</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_02.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_02_ih_0007">
+			<section class="title type2">
+				<h2 data-head="7" class="is_star2" lang="y">
+					<span class="empty_box nemo"></span>
+					안에 들어갈 수 있는 가장 작은 자연수를 구하려고 합니다. 물음에 답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3 class="title" lang="y">
+						<div class="fraction_box">
+							<span>8</span>
+							<span>13</span>
+						</div>
+						÷
+						<div class="fraction_box">
+							<span>2</span>
+							<span>13</span>
+						</div>
+						를 계산해 보세요.
+					</h3>
+					<div class="question_box justify_center">
+						<div class="box_line">
+							<div class="inner flex align_center gap_40">
+								<div class="flex align_center">
+									<div class="fraction_box">
+										<span>8</span>
+										<span>13</span>
+									</div>
+									÷
+									<div class="fraction_box">
+										<span>2</span>
+										<span>13</span>
+									</div>
+								</div>
+								<img src="../../common_practice/img/EMA621_02_IH/0007_less.png" alt="">
+								<div class="input_wrap">
+									<math-field data-answer-single="4"></math-field>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<article class="page page_2">
+					<h3 class="title" lang="y"><span class="empty_box nemo"></span>안에 들어갈 수 있는 가장 작은 자연수를 구해 보세요.</h3>
+					<div class="question_box justify_center">
+						<div class="box_line">
+							<div class="inner flex align_center gap_40">
+								<div class="flex align_center">
+									<div class="fraction_box">
+										<span>8</span>
+										<span>13</span>
+									</div>
+									÷
+									<div class="fraction_box">
+										<span>2</span>
+										<span>13</span>
+									</div>
+								</div>
+								<img src="../../common_practice/img/EMA621_02_IH/0007_less.png" alt="">
+								<div class="input_wrap">
+									<math-field data-answer-single="5"></math-field>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+ㄴ						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

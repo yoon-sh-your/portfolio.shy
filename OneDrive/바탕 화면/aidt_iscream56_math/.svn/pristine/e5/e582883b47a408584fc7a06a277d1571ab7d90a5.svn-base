@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_03_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_03 ena614_06">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="5_green" class="is_star" lang="y">
+          <span>그림에서 두 물건을 골라 가격을 비교하여</span>
+          <span class="ex_tag">보기</span>
+          <span>와 같이 써 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col p_bottom">
+          <div class="ema614_03_0005">
+            <img src=".././../common_practice/img/EMA614_03_IH/0005.png" alt="문제" />
+            <div class="box mt_40 gap_12 flex dir_col">
+              <div class="look_q">
+                <span class="ex_tag">보기</span>
+                <h2>쿠키 가격에 대한 사탕 가격의 비는 300:1000입니다.</h2>
+              </div>
+
+              <div class="input_wrap">
+                <math-field></math-field>
+
+                <div class="example_box flex">
+                  <p>컵케이크 가격에 대한 초콜릿 가격의 비는 700 : 2500입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="flex align_center gap_4">
+                  <label class="jun">이준이의 방법</label>
+                  <span>전체 자동차 수에 대한 전기차 수의 비율은</span>
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>20</span>
+                  </span>
+                  <span>이므로 기준량을 100으로 바꾸면</span>
+                </p>
+                <p lang="y" class="flex align_center gap_4">
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>20</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>35</span>
+                    <span>100</span>
+                  </span>
+                  <span>=35%입니다.</span>
+                </p>
+                <p lang="y" class="flex align_center gap_4">
+                  <label class="sen">시은이의 방법</label>
+                  <span>전체 자동차 수에 대한 전기차 수의 비율은</span>
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>20</span>
+                  </span>
+                  <span>이므로 비율에 100을 곱하면</span>
+                </p>
+                <p lang="y" class="flex align_center gap_4">
+                  <span class="fraction_box">
+                    <span>7</span>
+                    <span>20</span>
+                  </span>
+                  <span>×100=35</span>
+                  <span>➔</span>
+                  <span>35%입니다.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+/* .ema621_07_su_0002 */
+.ema621_07_su_0002 .fraction_row,
+.ema621_07_su_0003 .fraction_row,
+.ema621_07_su_0006 .fraction_row {
+    line-height: 1;
+}
+.ema621_07_su_0002 .fraction_inn,
+.ema621_07_su_0003 .fraction_inn,
+.ema621_07_su_0006 .fraction_inn {
+    display: flex;
+    align-items: center;
+}
+.ema621_07_su_0002 .video_wrap {
+    background: url(../img/EMA621_07_SU/0002_content.png) no-repeat center / 100%;
+}
+
+/* .ema621_07_su_0003 */
+.ema621_07_su_0003[data-current-page="page_2"] .btn_area .btnCheck,
+.ema621_07_su_0003[data-current-page="page_5"] .btn_area .btnCheck,
+.ema621_07_su_0003[data-current-page="page_1"] .btn_area .btnSubmit,
+.ema621_07_su_0003[data-current-page="page_3"] .btn_area .btnSubmit,
+.ema621_07_su_0003[data-current-page="page_4"] .btn_area .btnSubmit {
+    display: none;
+}
+.ema621_07_su_0003 .page_1 .input_wrap math-field {
+  width: 203px;
+  
+}
+
+.ema621_07_su_0003 .page_4 .question_box {
+    gap: 8px;
+}
+.ema621_07_su_0003 .page_3 .question_box {
+    flex-direction: column; 
+    gap: 20px;
+}
+.ema621_07_su_0003 .page_3 [class^=col] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 0 140px;
+}
+
+.ema621_07_su_0003 .page_3 .col2 {
+    margin-top: -6px;
+    padding: 0 0 0 270px;
+}
+.ema621_07_su_0003 .page_3 .col1 {
+    background: url(../img/EMA621_07_SU/0003_bg1.png) no-repeat;
+    width: 1238px;
+    height: 180px;
+}
+.ema621_07_su_0003 .page_3 .col2 {
+    background: url(../img/EMA621_07_SU/0003_bg2.png) no-repeat;
+    width: 1238px;
+    height: 180px;
+}
+
+.ema621_07_su_0003 .page_3 [class^=col] .nm {
+    position: absolute;
+    left: 136px;
+    top: 8px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    transform: rotate(-22deg);
+}
+.ema621_07_su_0003 .page_3 [class^=col] .bubble_txt {
+    position: absolute;
+    left: 28px;
+    top: 58px;
+    font-size: 16px;
+    text-align: center;
+}
+.ema621_07_su_0003 .page_3 .col2 .bubble_txt {
+    left: 19px;
+    top: 63px;
+}
+
+.ema621_07_su_0003 .page_3 .col1 .input_wrap.ipt1 math-field,
+.ema621_07_su_0003 .page_3 .col2 .input_wrap.ipt1 math-field {
+    width: 80px;
+}
+.ema621_07_su_0003 .page_3 [class^=col] .mixed_fraction {
+    display: inline-flex;
+}
+
+/* ema621_07_su_0004 */
+.ema621_07_su_0004:not([data-current-page="page_3"]) .btn_area .btnSubmit,
+.ema621_07_su_0004[data-current-page="page_3"] .btn_area .btnCheck {
+    display: none;
+}
+.ema621_07_su_0004 .question_box {
+    position: relative;
+    flex-direction: column;
+    border-radius: 30px;
+    border: 5px solid #A0D1C0;
+    padding: 30px 50px;
+    height: 394px
+}
+.ema621_07_su_0004 .question_box .row {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.ema621_07_su_0004 .question_box .tit {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.ema621_07_su_0004 .question_box .tit .tag {
+    width: 115px;
+}
+.ema621_07_su_0004 .question_box .tit .txt {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.ema621_07_su_0004 .question_box .input_wrap.ipt1 math-field {
+    width: 80px;
+}
+.ema621_07_su_0004 .question_box .input_wrap.fraction_wrap math-field {
+    width: 247px;
+    
+}
+
+.ema621_07_su_0004 .page_3 .input_wrap {
+    display: block; 
+    width: 100%;
+    margin: 0 auto;
+}
+.ema621_07_su_0004 .page_3 .input_wrap math-field {
+    height: 270px;
+}
+
+/* ema621_07_su_0005 */
+.ema621_07_su_0005 .question_box {
+    flex-wrap: wrap;
+    gap: 120px 350px;
+  }
+  .ema621_07_su_0005 .col {
+    display: flex;
+    align-items: center;
+    width: 360px;
+  }
+  
+  .ema621_07_su_0005 .col:nth-child(1) .input_wrap math-field,
+  .ema621_07_su_0005 .col:nth-child(2) .input_wrap math-field,
+  .ema621_07_su_0005 .col:nth-child(3) .input_wrap math-field {
+    width: 247px;
+    
+  }
+  .ema621_07_su_0005 .col:nth-child(4) .input_wrap math-field {
+    width: 80px;
+  }
+  /* .ema621_07_su_0006 */
+  .ema621_07_su_0006 .question_box {
+    flex-direction: column;
+    gap: 42px;
+  }
+  .ema621_07_su_0006 .row1 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .ema621_07_su_0006 .row2 {
+    width: 100%;
+  }
+  .ema621_07_su_0006 .row2 .input_wrap {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ema621_07_su_0006 .row2 .input_wrap math-field {
+    height: 270px;
+  }
+  

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema623_02_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema623_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema623_02_SU_0005">
+      <section class="title type2">
+        <h2 data-head="3_pink" lang="y">놀이터의 각 모습은 어느 방향에서 본 것인지 친구에게 설명해 봅시다.</h2>
+      </section>
+
+      <section class="contents ">
+        <article class="page flex">
+          <div class="img_contents">
+            <img src="../../common_contents/img/ema623_02_SU/0005_contents.png" alt="" />
+          </div>
+          <div class="flex align_center justify_center gap_12">
+            <ul class="connect_line_box start">
+                <li><img src="../../common_contents/img/ema623_02_SU/0005_img01.png" alt="" /></li>
+                <li><img src="../../common_contents/img/ema623_02_SU/0005_img02.png" alt="" /></li>
+                <li><img src="../../common_contents/img/ema623_02_SU/0005_img03.png" alt="" /></li>
+                <li><img src="../../common_contents/img/ema623_02_SU/0005_img04.png" alt="" /></li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e3"],["s3","e1"],["s4","e4"]]'>
+              <div class="start_group">
+                  <div class="connect_point" data-id="s1"></div>
+                  <div class="connect_point" data-id="s2"></div>
+                  <div class="connect_point" data-id="s3"></div>
+                  <div class="connect_point" data-id="s4"></div>
+              </div>
+              <div class="end_group">
+                  <div class="connect_point" data-id="e1"></div>
+                  <div class="connect_point" data-id="e2"></div>
+                  <div class="connect_point" data-id="e3"></div>
+                  <div class="connect_point" data-id="e4"></div>
+              </div>
+              <svg class="connect_lines"></svg>
+          </div>
+            <ul class="connect_line_box end">
+              <li><img src="../../common_contents/img/ema623_02_SU/0005_img01_01.svg" alt="" /></li>
+              <li><img src="../../common_contents/img/ema623_02_SU/0005_img02_02.svg" alt="" /></li>
+              <li><img src="../../common_contents/img/ema623_02_SU/0005_img03_03.svg" alt="" /></li>
+              <li><img src="../../common_contents/img/ema623_02_SU/0005_img04_04.svg" alt="" /></li>
+            </ul>
+        </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

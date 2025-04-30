@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_06_IH_0003</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_06_ih_0003">
+			<section class="title type2">
+				<h2 data-head="3_deep_green" lang="y">
+					밀가루와 식초를 2 : 5로 섞어서 친환경 주방 세제를 만들려고 합니다. 식초를 20큰술 넣는다면 밀가루는
+					몇 큰술을 넣어야 하는지 비례식을 세우고 답을 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="flex align_start gap_10">
+						<span lang="y" class="label_gray">비례식</span>
+						<div class="input_wrap input1">
+							<math-field></math-field>
+							<div class="example_box">
+								<p>2:5=□:20</p>
+							</div>
+						</div>
+					</div>
+					<div class="flex align_start gap_10">
+						<span lang="y" class="label_gray">답</span>
+						<div class="input_wrap">
+							<math-field></math-field>
+							<div class="example_box">
+								<p>8</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>식초를 20큰술 넣을 때 넣어야 하는 밀가루의 양을 <span class="empty_box nemo"></span></span>큰술이라 하고<br/> 비례식을 세우면
+								   2 : 5 = <span class="empty_box nemo"></span></span> : 20 입니다.</p>
+								<p>2 × 20 = 5 × <span class="empty_box nemo"></span></span>, 5 × <span class="empty_box nemo"></span></span> = 40, <span class="empty_box nemo"></span></span> = 8이므로
+								   식초를 20큰술 넣는다면<br/> 밀가루는 8큰술을 넣어야 합니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

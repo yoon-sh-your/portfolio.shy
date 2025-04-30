@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema525_02_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_01_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">물건이 들어 있는 상자를 모양에 따라 분류하고 있습니다. 여러 가지 모양의 상자를 살펴보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align-start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+          <div class="leftside input_area">
+            <div class="input_wrap">
+              <h3 lang="y">여러 가지 모양의 상자에서 사각형을 찾아 이야기해 보세요.</h3>
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">각각의 상자를 둘러싸고 있는 것에서 사각형을 찾을 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

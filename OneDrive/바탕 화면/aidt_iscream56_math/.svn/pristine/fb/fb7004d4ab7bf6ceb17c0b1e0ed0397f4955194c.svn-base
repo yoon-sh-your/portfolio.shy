@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema517_03_su_0004</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema517_03_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema517_03_su_0004">
+      <section class="title">
+        <h2 data-head="3">
+          <span lang="y">다른 모둠이 쓴 편지를 보고 새롭게 알게 된 점을 이야기해 봅시다.​​</span>
+        </h2>
+      </section> 
+
+      <section class="contents">
+        <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <ol class="example_box" style="display: none;">
+            </ol>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

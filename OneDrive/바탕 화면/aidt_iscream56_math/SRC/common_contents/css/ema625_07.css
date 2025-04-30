@@ -1,0 +1,193 @@
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+.flex_col_box {
+  position: relative;
+  width: 1435px;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.flex_col_box .input_area {
+  width: 709px;
+}
+
+
+/* EMA625_07_SU_0002_s */
+.ema625_07_su_0002 .contents > .img_row .video_wrap {
+  background: url(../../common_contents/img/EMA625_07_SU/0002_contents.png) no-repeat right top;
+  background-size: 100%;
+}
+
+
+/* EMA625_07_SU_0003_s */
+.ema625_07_su_0003 .img_box {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+}
+.ema625_07_su_0003 .img_box img {
+  width: 300px;
+  height: 300px;
+}
+.ema625_07_su_0003 .img_box > p {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700; 
+}
+.ema625_07_su_0003 .img_box > .t01 {
+  top: 105px;
+  left: 206px;
+}
+.ema625_07_su_0003 .img_box > .t02 {
+  top: 149px;
+  left: 117px;
+}
+.ema625_07_su_0003 .page_1 .flex_col_box .input_area .input_wrap {
+  width: 100%;
+}
+.ema625_07_su_0003 .page_1 .flex_col_box .input_area .input_wrap math-field.textarea{
+  height: 260px;
+}
+.ema625_07_su_0003 .develope_box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 15px;
+}
+.ema625_07_su_0003 .develope_box .input_wrap math-field:not(.textarea) {
+  width: 140px;
+}
+.ema625_07_su_0003 .btnSubmit {
+  display:none
+}
+.ema625_07_su_0003[data-current-page='page_1'] .btnSubmit {
+  display: block;
+}
+.ema625_07_su_0003[data-current-page='page_1'] .btnCheck {
+  display: none;
+}
+
+
+/* EMA625_07_SU_0004_s */
+.ema625_07_su_0004 .img_box {
+  position: relative;
+  width: 274px;
+  height: 267px;
+  margin: 60px auto;
+}
+.ema625_07_su_0004 .img_box > p {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700; 
+}
+.ema625_07_su_0004 .img_box > .t01 {
+  top: 90px;
+  left: 56px;
+}
+.ema625_07_su_0004 .info_box {
+  width: 356px;
+  height: 148px;
+  position: absolute;
+  left: 0px;
+  bottom: 13px;
+  background: url(../../common_contents/img/EMA625_07_SU/0004_contents_txt.png) no-repeat 0 0;
+  background-size: 100%;
+}
+.ema625_07_su_0004 .info_box > p {
+  position: absolute;
+  top: 38px;
+  left: 126px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -1px;
+}
+.ema625_07_su_0004 .page_1 .flex_col_box .input_area .input_wrap, 
+.ema625_07_su_0004 .page_2 .flex_col_box .input_area .input_wrap {
+  width: 100%;
+}
+.ema625_07_su_0004 .flex_col_box .input_area .input_wrap math-field.textarea{
+  height: 230px;
+}
+.ema625_07_su_0004 .develope_box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 15px;
+}
+.ema625_07_su_0004 .develope_box .input_wrap math-field:not(.textarea) {
+  width: 140px;
+}
+.ema625_07_su_0004 .btnCheck,
+.ema625_07_su_0004 .btnSubmit {
+  display:none
+}
+.ema625_07_su_0004[data-current-page='page_1'] .btnSubmit,
+.ema625_07_su_0004[data-current-page='page_2'] .btnSubmit {
+  display: block;
+}
+.ema625_07_su_0004[data-current-page='page_3'] .btnCheck,
+.ema625_07_su_0004[data-current-page='page_4'] .btnCheck {
+  display: block;
+}
+
+
+/* EMA625_07_SU_0005_s */
+.ema625_07_su_0005 .check_diagram {
+  position: relative;
+  width: 700px;
+  height: 345px;
+  margin: 60px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.ema625_07_su_0005 .check_diagram > dl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.ema625_07_su_0005 .check_diagram dt {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+}
+.ema625_07_su_0005 .check_diagram dt > span {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.ema625_07_su_0005 .check_diagram dt > .t01 {
+  left: 46px;
+  top: 128px;
+}
+.ema625_07_su_0005 .check_diagram dt > .t02 {
+  left: 118px;
+  top: -8px;
+}
+.ema625_07_su_0005 .check_diagram dt > .t03 {
+  left: 254px;
+  top: 125px;
+}
+.ema625_07_su_0005 .check_diagram dd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 25px;
+}
+.ema625_07_su_0005 .check_diagram dd .input_wrap math-field:not(.textarea) {
+  width: 140px;
+}

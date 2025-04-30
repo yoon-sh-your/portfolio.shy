@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_07_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema526_07_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_07_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" class="is_star" lang="y">빨간색 공 2개와 초록색 공 2개가 들어 있는 주머니에서 공을 한 개 꺼내려고 합니다. 두 사람의 대화를 읽고 ㉠, ㉡에 알맞은 수를 각각 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center gap_120">
+          <div class="img">
+            <img src="../../common_practice/img/EMA526_07_IH/0004_img.png" alt="" />
+            <span class="name1" lang="y">재윤</span>
+            <span class="txt1" lang="y">초록색 공을 꺼낼 가능성을 수로 나타내면 ㉠이야.</span>
+            <span class="name2" lang="y">은서</span>
+            <span class="txt2" lang="y">노란색 공을 꺼낼 가능성을 수로 나타내면 ㉡이야.</span>
+          </div>
+          <div class="flex dir_col gap_60">
+            <div class="flex align_center gap_4">
+              <span>㉠</span>
+              (
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(1)/(2)"></math-field>
+              </div>
+              )
+            </div>
+            <div class="flex align_center gap_4">
+              <span>㉡</span>
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="0"></math-field>
+              </div>
+              )
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">㉠ 빨간색 공과 초록색 공의 수가 같으므로 초록색 공을 꺼낼 가능성은 ‘반반이다’이고, 가능성을</p>
+                <p lang="y" class="flex align_center gap_0">
+                  수로 나타내면&nbsp;
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>2</span> </span
+                  >입니다.
+                </p>
+                <p lang="y">㉡ 노란색 공은 주머니에 없으므로 노란색 공을 꺼낼 가능성은 ‘불가능하다’이고, 가능성을 수로 나타내면 0입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

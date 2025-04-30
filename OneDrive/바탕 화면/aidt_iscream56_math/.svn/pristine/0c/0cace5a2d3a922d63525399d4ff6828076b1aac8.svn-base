@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema527_01_su_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" />
+    <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema527_01_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema527_01_su_0002">
+      <section class="title">
+        <h2 data-head="notice">
+          <span lang="y">글을 읽어봅시다.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_26">
+          <div class="img_wrap">
+            <div class="picture_wrap">
+              <svg xmlns="http://www.w3.org/2000/svg" width="665" height="390" viewBox="0 0 665 390" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px"><tspan x="376" y="48.32">추락한 택배 드론 정보</tspan></text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="392" y="88.32">배송 가능 무게: 5 kg 이하</tspan>
+                  <tspan x="392" y="120.32">배터리 최대 충전 시 이동 가능</tspan>
+                  <tspan x="392" y="152.32">거리: 30 ㎞ 이하</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                  <tspan x="382" y="239.109">배송 물품:</tspan>
+                  <tspan x="382" y="271.109">1.03 kg짜리 식료품 3개</tspan>
+                  <tspan x="382" y="303.109">0.3 kg짜리 의약품 4개</tspan>
+                  <tspan x="382" y="335.109">출발지에서 배송지까지의</tspan>
+                  <tspan x="382" y="367.109">거리:12.6 ㎞</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="20" font-weight="bold" letter-spacing="-0.5px"><tspan x="377" y="199.109">배송 상황</tspan></text>
+              </svg>
+              <img src="./../../common_project/img/EMA527_01_SU/ema527_01_SU_0002.png" alt="" class="img" />
+              <button class="zoom"></button>
+              <!-- <div class="img_txt f20b">
+                <dl class="mb_15">
+                  <dt class="mb_7" lang="y">추락한 택배 드론 정보​</dt>
+                  <dd lang="y">배송 가능 무게: 5 kg 이하​</dd>
+                  <dd lang="y">배터리 최대 충전 시 이동 가능 거리: 30 ㎞ 이하</dd>
+                </dl>
+                <dl>
+                  <dt class="mb_7" lang="y">배송 상황</dt>
+                  <dd lang="y">배송 물품:​ <br>1.03 kg짜리 식료품 3개​<br>0.3 kg짜리 의약품 4개​</dd>
+                  <dd lang="y">출발지에서 배송지까지의 거리:​ <br>12.6 ㎞</dd>
+                </dl>
+              </div> -->
+            </div>
+          </div>
+          <div class="txt_wrap">
+            <p class="f32b t_indt" lang="y">안녕하십니까, 행복 TV 10시 뉴스입니다.​</p>
+            <p class="f32b t_indt" lang="y">오늘 택배 배송을 하던 드론이 추락했습니다. 여러 차례 택배 드론의 사고 소식이 들려오고 있는 상황에서 택배 드론 사고의 원인을 밝히기 위해 경찰이 조사를 시작했습니다. 경찰은 택배 드론 사고의 원인으로 배송 가능 무게 초과, 이동 가능 거리 문제, 드론의 불균형 등을 살펴보고 있다고 합니다.​</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

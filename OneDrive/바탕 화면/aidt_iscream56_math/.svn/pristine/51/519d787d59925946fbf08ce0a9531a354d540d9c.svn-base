@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA513_06_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema513_06.css">
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema513_06_su_0003"
+        data-current-page="page_1,page_2,page_3,page_4,page_5,page_6,page_7,page_8,,page_9">
+
+        <section class="title type2">
+            <h2 data-head="1_pink">
+                <div>
+                    <span lang="y">우유의 양(mL)과 우유를 깨끗한 물로 만드는 데 필요한 물의 양(L) 사이의 대응 관계를 식으로 나타내고, 우유 200 mL를 깨끗한 물로 만드는 데
+                        필요한 물은 몇 L인지 구해 봅시다.</span>
+                    <button type="button" class="btn calculator">계산기</button>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <article class="page page_1">
+                <section class="contents">
+                    <div class="img_row">
+                        <div class="picture_wrap">
+                            <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                            <div class="texture">
+                                <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                                <div class="drink">
+                                    <p lang="y">콜라</p>
+                                    <p lang="y">우유</p>
+                                    <p lang="y">식용유</p>
+                                    <p lang="y">라면국물</p>
+                                </div>
+
+                                <div class="liter">
+                                    <p lang="y">24 L</p>
+                                    <p lang="y">54 L</p>
+                                    <p lang="y">37 L</p>
+                                    <p lang="y">7 L</p>
+                                </div>
+                                <p class="y" , lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                            <h3 lang="y">구하려고 하는 것은 무엇인가요?</h3>
+
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <ol class="example_box">
+                                    <li lang="y"> 우유 200 mL를 깨끗한 물로 만드는 데 필요한 물의 양 </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <article class="page page_2">
+                <section class="contents">
+                    <div class="img_row">
+                        <div class="picture_wrap">
+                            <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                            <div class="texture">
+                                <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                                <div class="drink">
+                                    <p lang="y">콜라</p>
+                                    <p lang="y">우유</p>
+                                    <p lang="y">식용유</p>
+                                    <p lang="y">라면국물</p>
+                                </div>
+
+                                <div class="liter">
+                                    <p lang="y">24 L</p>
+                                    <p lang="y">54 L</p>
+                                    <p lang="y">37 L</p>
+                                    <p lang="y">7 L</p>
+                                </div>
+                                <p class="y" , lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                            <h3 lang="y"> 우유 1 mL를 깨끗한 물로 만드는 데 필요한 물은 몇 L인가요?</h3>
+                            <div class="input_wrap input2">
+                                <math-field data-answer-single="54"></math-field>
+                                <h2 lang="y">L</h2>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="page page_3">
+                <section class="contents">
+                    <div class="img_row">
+                        <div class="picture_wrap">
+                            <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                            <div class="texture">
+                                <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                                <div class="drink">
+                                    <p lang="y">콜라</p>
+                                    <p lang="y">우유</p>
+                                    <p lang="y">식용유</p>
+                                    <p lang="y">라면국물</p>
+                                </div>
+
+                                <div class="liter">
+                                    <p lang="y">24 L</p>
+                                    <p lang="y">54 L</p>
+                                    <p lang="y">37 L</p>
+                                    <p lang="y">7 L</p>
+                                </div>
+                                <p class="y" , lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+                            <h3 lang="y">우유의 양(mL)과 우유를 깨끗한 물로 만드는 데 필요한 물의 양(L) 사이의 대응 관계를 어떻게 알 수 있나요?</h3>
+
+
+                            <div class="input_area">
+                                <div class="input_wrap">
+                                    <math-field class="textarea"></math-field>
+                                    <ol class="example_box">
+                                        <li lang="y"> 우유가 1 mL씩 늘어날 때마다 우유를 깨끗한 물로 만드는 데 필요한 물은 몇 L씩 늘어나는지 알아봅니다. </li>
+
+                                    </ol>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="page page_4">
+                <section class="contents">
+                    <div class="img_row">
+                        <div class="picture_wrap">
+                            <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                            <div class="texture">
+                                <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                                <div class="drink">
+                                    <p lang="y">콜라</p>
+                                    <p lang="y">우유</p>
+                                    <p lang="y">식용유</p>
+                                    <p lang="y">라면국물</p>
+                                </div>
+
+                                <div class="liter">
+                                    <p lang="y">24 L</p>
+                                    <p lang="y">54 L</p>
+                                    <p lang="y">37 L</p>
+                                    <p lang="y">7 L</p>
+                                </div>
+                                <p class="y" , lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+                            <h3 lang="y">우유 200 mL를 깨끗한 물로 만드는 데 필요한 물의 양은 어떻게 구할 수 있나요?</h3>
+
+
+                            <div class="input_area">
+                                <div class="input_wrap">
+                                    <math-field class="textarea"></math-field>
+                                    <ol class="example_box">
+                                        <li lang="y">우유의 양(mL)과 우유를 깨끗한 물로 만드는 데 필요한 물의 양(L) 사이의 대응 관계를 이용하여 구할 수 있습니다.
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom_box">
+                        <div class="img1">
+                            <img src="../../common_contents/img/EMA513_06_SU/Group 11.png" alt="">
+                        </div>
+
+                        <p lang="y">
+                            우유가 1 mL, 2 mL, 3 mL, ... <br>
+                            일 때, 우유를 깨끗한 물로 만드는 데 <br>
+                            필요한 물은 각각 몇 L인지 <br>
+                            생각해 볼까?
+                        </p>
+                    </div>
+                </section>
+            </article>
+            <article class="page page_5">
+                <section class="contents">
+                    <div class="content">
+                        <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                        <div class="texture">
+                            <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                            <div class="drink">
+                                <p lang="y">콜라</p>
+                                <p lang="y">우유</p>
+                                <p lang="y">식용유</p>
+                                <p lang="y">라면국물</p>
+                            </div>
+
+                            <div class="liter">
+                                <p lang="y">24 L</p>
+                                <p lang="y">54 L</p>
+                                <p lang="y">37 L</p>
+                                <p lang="y">7 L</p>
+                            </div>
+                            <p class="y" , lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <article class="page page_6">
+                <section class="contents">
+                    <div class="title_box">
+                        <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+                        <h3 lang="y">표를 완성하고 우유의 양(mL)과 우유를 깨끗한 물로 만드는 데 필요한 물의 양(L) 사이의 대응 관계를 이야기해 보세요. </h3>
+
+                    </div>
+
+                    <div class="table_box">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th lang="y"> 우유의 양 (mL) </th>
+                                    <th lang="y">우유를 깨끗한 물로 만드는 데 필요한 물의 양(L)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+
+                                    <td>54</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <div class="input_wrap input2">
+                                            <math-field data-answer-single="108"></math-field>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <div class="input_wrap input2">
+                                            <math-field data-answer-single="162"></math-field>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <div class="input_wrap input2">
+                                            <math-field data-answer-single="216"></math-field>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>···</td>
+                                    <td>···</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="inputs">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <ol class="example_box">
+                                    <li lang="y">우유를 깨끗한 물로 만드는 데 필요한 물의 양(L)은 우유의 양(mL)의 54배입니다.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+
+            <article class="page page_7">
+                <section class="contents">
+                    <div class="img_row">
+                        <div class="picture_wrap">
+                            <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                            <div class="texture">
+                                <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                                <div class="drink">
+                                    <p lang="y">콜라</p>
+                                    <p lang="y">우유</p>
+                                    <p lang="y">식용유</p>
+                                    <p lang="y">라면국물</p>
+                                </div>
+
+                                <div class="liter">
+                                    <p lang="y">24 L</p>
+                                    <p lang="y">54 L</p>
+                                    <p lang="y">37 L</p>
+                                    <p lang="y">7 L</p>
+                                </div>
+                                <p class="y" , lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+                            <h3 lang="y">우유의 양(mL)을 □, 우유를 깨끗한 물로 만드는 데 필요한 물의 양(L)을 △라고 할 때, 알맞은 것을 옮겨 두 양 사이의 대응 관계를 식으로
+                                나타내어 보세요.</h3>
+    
+                            <div class="dragndrop_fraction_wrap">
+                                <div class="drag_group">
+                                    <div class="drag_item" data-pair="2" data-value="=">=</div>
+                                    <div class="drag_item" data-pair="2" data-value="-">-</div>
+                                    <div class="drag_item" data-pair="2" data-value="+">+</div>
+                                    <div class="drag_item" data-pair="2" data-value="×">×</div>
+                                    <div class="drag_item" data-pair="2" data-value="÷">÷</div>
+                                    <div class="drag_item" data-pair="1" data-value="△">△</div>
+                                    <div class="drag_item" data-pair="1" data-value="□">□</div>
+                                    <div class="drag_item" data-pair="3" data-value="54">54</div>
+                                </div>
+                                <div class="drop_group"
+                                    data-answer-multi='[["△", "=", "□", "×", "54"], ["□", "=", "△", "÷", "54"]]'>
+                                    <div class="drop_item" data-pair="1" data-answer-single="△"></div>
+                                    <div class="drop_item" data-pair="2" data-answer-single="="></div>
+                                    <div class="drop_item" data-pair="1" data-answer-single="□"></div>
+                                    <div class="drop_item" data-pair="2" data-answer-single="×"></div>
+                                    <div class="drop_item" data-pair="3" data-answer-single="54"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+            <article class="page page_8">
+                <section class="contents">
+                    <div class="img_row">
+                        <div class="picture_wrap">
+                            <img src="../../common_contents/img/EMA513_06_SU/img box (9).png" alt="">
+                            <div class="texture">
+                                <h5 lang="y">음식물 1mL를 깨끗한 물로 만드는데 필요한 물의 양</h5>
+                                <div class="drink">
+                                    <p lang="y">콜라</p>
+                                    <p lang="y">우유</p>
+                                    <p lang="y">식용유</p>
+                                    <p lang="y">라면국물</p>
+                                </div>
+
+                                <div class="liter">
+                                    <p lang="y">24 L</p>
+                                    <p lang="y">54 L</p>
+                                    <p lang="y">37 L</p>
+                                    <p lang="y">7 L</p>
+                                </div>
+                                <p class="y" , lang="y">(출처:국립환경과학원 물환경연구부 물환경공학연구과,『우리가 남긴 음식물, 물을 얼마나 오염시킬까요?』)</p>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+                            <h3 lang="y">우유 200 mL를 깨끗한 물로 만드는 데 필요한 물은 몇 L인지 구해 보세요.</h3>
+                            <div class="input_wrap input2">
+                                <math-field data-answer-single="10800"></math-field>
+                                <h2 lang="y">L</h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <article class="page page_9">
+                <section class="contents lookbackon">
+                    <div class="title_box">
+                        <div class="title_label title_label_3" lang="y"><span class="point">되돌아</span>봐요</div>
+                        <h3 lang="y">문제를 잘 해결했나요?</h3>
+                    </div>
+
+                    <div class="lookbackon_contents">
+                        <div class="leftbox">
+                            <h4 class="tit" lang="y">잘 해결한 경우</h4>
+                            <div class="cont">
+                                <ul class="lookbackon_list">
+                                    <li>문제를 해결한 방법을 설명해 보세요.</li>
+                                    <li>문제를 해결할 수 있는 다른 방법을 찾아보세요.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+                            <h4 class="tit" lang="y">해결하지 못한 경우</h4>
+                            <div class="cont">
+                                <div class="title_label_wrap">
+                                    <div class="title_label" lang="y"><span class="point">이해</span>해요</div>
+                                    <div class="title_label" lang="y"><span class="point">계획</span>해요</div>
+                                    <div class="title_label" lang="y"><span class="point">해결</span>해요</div>
+                                </div>
+                                <p class="lookbackon_txt" lang="y">단계를 다시 확인해 보세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <div class="btn_area">
+                <!-- 예시 필드에서 사용 -->
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">제출</button>
+            </div>
+
+        </section>
+
+
+
+    </div>
+</body>
+
+</html>

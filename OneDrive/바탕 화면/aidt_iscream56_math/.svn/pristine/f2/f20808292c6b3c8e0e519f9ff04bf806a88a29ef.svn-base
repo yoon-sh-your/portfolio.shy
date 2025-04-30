@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA621_10_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema621_10.css" />
+    <script src="../../common_contents/js/ema621_10_0003.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema621_10_su_0003">
+      <section class="contents">
+        <div class="top_content">
+            <div class="session_grid_row" lang="y">
+              <div class="session_grid_col" data-session="1">1회</div>
+              <div class="session_grid_col" data-session="2">2회</div>
+              <div class="session_grid_col" data-session="3">3회</div>
+              <div class="session_grid_col" data-session="4">4회</div>
+              <div class="session_grid_col" data-session="5">5회</div>
+              <div class="session_grid_col" data-session="6">6회</div>
+            </div>
+          <div class="image_box">
+          </div>
+        </div>
+
+        <div class="form_wrap flex align_start justify_start">
+          <div class="group_wrap">
+            <div class="group_grid">
+              <div class="group_grid_row" lang="y">
+                <div class="group_grid_col"></div>
+                <div class="group_grid_col">1회</div>
+                <div class="group_grid_col">2회</div>
+                <div class="group_grid_col">3회</div>
+                <div class="group_grid_col">4회</div>
+                <div class="group_grid_col">5회</div>
+                <div class="group_grid_col">6회</div>
+              </div>
+              
+              <div class="group_grid_row">
+                <div class="group_grid_col" lang="y">나눗셈식</div>
+                <div class="group_grid_col">
+                  <div class="device_piece_wrap">
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                    <span class="division_symbol">÷</span>
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="device_piece_wrap">
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                    <span class="division_symbol">÷</span>
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="device_piece_wrap">
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                    <span class="division_symbol">÷</span>
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="device_piece_wrap">
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                    <span class="division_symbol">÷</span>
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="device_piece_wrap">
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                    <span class="division_symbol">÷</span>
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="device_piece_wrap">
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                    <span class="division_symbol">÷</span>
+                    <div class="fraction_wrap">
+                      <div class="input_wrap numerator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                      <div class="fraction_line"></div>
+                      <div class="input_wrap denominator">
+                        <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="group_grid_row">
+                <div class="group_grid_col" lang="y">몫</div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+              </div>
+              <div class="group_grid_row">
+                <div class="group_grid_col" lang="y">점수</div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+                <div class="group_grid_col">
+                  <div class="input_wrap">
+                    <math-field type="number" placeholder=" " data-answer-single="정답"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <div class="device_change_wrap">
+            <button class="device_change teacher" lang="y">대표 기기 변경하기</button>
+          </div>
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

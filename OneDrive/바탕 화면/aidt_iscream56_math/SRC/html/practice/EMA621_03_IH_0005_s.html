@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_03_IH_0005</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_03_ih_0005">
+			<section class="title type2">
+				<h2 data-head="5" lang="y">두 나눗셈의 몫의 합을 구해 보세요.</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center gap_60">
+					<div class="box_line">
+						<div class="inner flex align_center justify_center gap_0">
+							<div class="fraction_box">
+								<span>7</span>
+								<span>9</span>
+							</div>
+							÷
+							<div class="fraction_box">
+								<span>5</span>
+								<span>9</span>
+							</div>
+						</div>
+					</div>
+					<div class="box_line">
+						<div class="inner flex align_center justify_center gap_0">
+							<div class="fraction_box">
+								<span>2</span>
+								<span>7</span>
+							</div>
+							÷
+							<div class="fraction_box">
+								<span>5</span>
+								<span>7</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="flex justify_center">
+					<div class="input_wrap fraction_wrap">
+						<math-field data-answer-single="1(4)/(5)(=(9)/(5))" data-answer-multi='{"values": ["1(4)/(5)", "(9)/(5)"]}'></math-field>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>
+								  <span class="fraction_box"><span>7</span><span>9</span></span>
+								  ÷
+								  <span class="fraction_box"><span>5</span><span>9</span></span>
+								  = 7 ÷ 5 =
+								  <span class="fraction_box"><span>7</span><span>5</span></span>
+								  = 1
+								  <span class="fraction_box"><span>2</span><span>5</span></span>
+								</p>
+								<p class="mt_15">
+								  <span class="fraction_box"><span>2</span><span>7</span></span>
+								  ÷	
+								  <span class="fraction_box"><span>5</span><span>7</span></span>
+								  = 2 ÷ 5 =
+								  <span class="fraction_box"><span>2</span><span>5</span></span>
+								</p>
+								<p class="mt_15">
+								  ➜ 1
+								  <span class="fraction_box"><span>2</span><span>5</span></span>
+								  +
+								  <span class="fraction_box"><span>2</span><span>5</span></span>
+								  = 1
+								  <span class="fraction_box"><span>4</span><span>5</span></span>
+								</p>
+							  </div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

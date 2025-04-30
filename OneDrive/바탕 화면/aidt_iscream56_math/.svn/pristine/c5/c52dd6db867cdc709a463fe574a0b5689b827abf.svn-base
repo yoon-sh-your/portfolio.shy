@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_04_IH_0006</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_04.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_04_ih_0006 paging">
+			<section class="title type2 score">
+				<h2 data-head="6_light_purple" class="is_star" lang="y">
+					반지름이 25 m인 원 모양의 공원 둘레를 5바퀴 달렸을 때 달린 거리는 몇 m인지 구하려고 합니다. 물음에
+					답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3 class="title" lang="y">공원 둘레를 한 바퀴 달렸을 때 달린 거리는 몇 m인지 구해 보세요.</h3>
+
+					<div class="question_box justify_center">
+						<div class="flex align_center gap_10">
+							<div class="input_wrap">
+								<math-field data-answer-single="157"></math-field>
+							</div>
+							m
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p lang="y" class="text_bullet">해설 수급 필요</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+				<article class="page page_2">
+					<h3 class="title" lang="y">공원 둘레를 5바퀴 달렸을 때 달린 거리는 몇 m인지 구해 보세요.</h3>
+
+					<div class="question_box justify_center">
+						<div class="flex align_center gap_10">
+							<div class="input_wrap">
+								<math-field data-answer-single="785"></math-field>
+							</div>
+							m
+						</div>
+					</div>
+
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p lang="y" class="text_bullet">해설 수급 필요</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+			</section>
+		</div>
+	</body>
+</html>

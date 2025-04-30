@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_02_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_02.css" />
+  <script src="../../common_contents/js/ema616_02_0004.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_02_su_0004" data-current-page="page_1, page_2, page_3, page_4">
+    <section class="title type2">
+      <h2 class="flex" data-head="2" lang="y"><img src="../../common_contents/img/EMA616_02_SU/num_1.svg" alt="1아이콘" />의
+        두 상자&nbsp;<span class="border1">가</span>&nbsp;&nbsp;&nbsp;와&nbsp;<span class="border2">나</span>&nbsp;&nbsp;의 부피와
+        똑같이 물건을 쌓아 부피를 비교해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <div class="flex">
+          <div class="area_wrap">
+            <div class="left_area">
+              <span class="border3"></span>
+              <span class="border4"></span>
+              <div class="top_name">
+                <p lang="y"><span class="name_1">채</span><span class="name_2">린</span></p>
+              </div>
+              <div class="bubble1_wrap">
+                <p lang="y"><span class="border_bubble1"></span>&nbsp;는 지우개로,<br /></p>
+                <p lang="y"><span class="border_bubble2"></span>&nbsp;는 쌓기나무로<br /></p>
+                <p lang="y">똑같이 쌓아 비교했어.</p>
+              </div>
+              <img src="../../common_contents/img/EMA616_02_SU/616_02_bg.png" alt="" />
+            </div>
+            <div class="right_area">
+              <span class="border5"></span>
+              <span class="border6"></span>
+              <div class="bottom_name">
+                <p lang="y"><span class="name_1">하</span><span class="name_2">진</span></p>
+              </div>
+              <div class="bubble1_wrap2">
+                <p class="flex_text" lang="y">
+                  <span class="border_bubble1"></span>&nbsp;와&nbsp;<br />
+                  <span class="border_bubble2"></span>&nbsp;모두
+                </p>
+                <p lang="y">쌓기나무로</p>
+                <p lang="y">똑같이 쌓아 비교했어.</p>
+              </div>
+              <img src="../../common_contents/img/EMA616_02_SU/06_02_bg2.png" alt="" />
+            </div>
+            <div class="boolean_wrap">
+              <button class="boolean1" data-answer-single="false" data-correction="false"></button>
+              <button class="boolean2" data-answer-single="true" data-correction="true"></button>
+            </div>
+          </div>
+          <div class="input_area">
+            <h3 lang="y">부피를 비교할 수 있는 방법은 누구의 방법인지 고르고, 그 이유를 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <div class="example_box">
+                <p lang="y">모양과 크기가 같은 물건으로 쌓았기 때문에 그 수를 세어 비교할 수 있습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 1page -->
+
+      <article class="page page_2">
+        <div class="flex">
+          <div class="area_wrap">
+            <div class="left_area">
+              <span class="border3"></span>
+              <span class="border4"></span>
+              <div class="top_name">
+                <p lang="y"><span class="name_1">채</span><span class="name_2">린</span></p>
+              </div>
+              <div class="bubble1_wrap">
+                <p lang="y"><span class="border_bubble1"></span>&nbsp;는 지우개로,<br /></p>
+                <p lang="y"><span class="border_bubble2"></span>&nbsp;는 쌓기나무로<br /></p>
+                <p lang="y">똑같이 쌓아 비교했어.</p>
+              </div>
+              <img src="../../common_contents/img/EMA616_02_SU/616_02_bg.png" alt="" />
+            </div>
+            <div class="right_area">
+              <span class="border5"></span>
+              <span class="border6"></span>
+              <div class="bottom_name">
+                <p lang="y"><span class="name_1">하</span><span class="name_2">진</span></p>
+              </div>
+              <div class="bubble1_wrap2">
+                <p class="flex_text" lang="y">
+                  <span class="border_bubble1"></span>&nbsp;와&nbsp;<br />
+                  <span class="border_bubble2"></span>&nbsp;모두
+                </p>
+                <p lang="y">쌓기나무로</p>
+                <p lang="y">똑같이 쌓아 비교했어.</p>
+              </div>
+              <img src="../../common_contents/img/EMA616_02_SU/06_02_bg2.png" alt="" />
+            </div>
+          </div>
+          <div class="input_area">
+            <h3 lang="y">여러 가지 물건을 사용하여 부피를 비교할 때 불편한 점을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <div class="example_box">
+                <p lang="y">부피가 같은 상자여도 사용하는 물건에 따라 부피를 나타내는 개수가 달라집니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 2page -->
+
+      <article class="page page_3">
+        <div class="flex">
+          <div class="area_wrap">
+            <div class="left_area">
+              <span class="border3"></span>
+              <span class="border4"></span>
+              <div class="top_name">
+                <p lang="y"><span class="name_1">채</span><span class="name_2">린</span></p>
+              </div>
+              <div class="bubble1_wrap">
+                <p lang="y"><span class="border_bubble1"></span>&nbsp;는 지우개로,<br /></p>
+                <p lang="y"><span class="border_bubble2"></span>&nbsp;는 쌓기나무로<br /></p>
+                <p lang="y">똑같이 쌓아 비교했어.</p>
+              </div>
+              <img src="../../common_contents/img/EMA616_02_SU/616_02_bg.png" alt="" />
+            </div>
+            <div class="right_area">
+              <span class="border5"></span>
+              <span class="border6"></span>
+              <div class="bottom_name">
+                <p lang="y"><span class="name_1">하</span><span class="name_2">진</span></p>
+              </div>
+              <div class="bubble1_wrap2">
+                <p class="flex_text" lang="y">
+                  <span class="border_bubble1"></span>&nbsp;와&nbsp;<br />
+                  <span class="border_bubble2"></span>&nbsp;모두
+                </p>
+                <p lang="y">쌓기나무로</p>
+                <p lang="y">똑같이 쌓아 비교했어.</p>
+              </div>
+              <img src="../../common_contents/img/EMA616_02_SU/06_02_bg2.png" alt="" />
+            </div>
+          </div>
+          <div class="input_area">
+            <h3 lang="y">불편한 점을 해결하려면 어떻게 해야 할지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <div class="example_box">
+                <p lang="y">한 가지 단위를 사용하여 부피를 비교해야 합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 3page -->
+
+      <article class="page page_4">
+        <div class="summarize_wrap">
+          <div class="summarize promise">
+            <label lang="y">약속해 볼까요</label>
+
+            <div class="text_area">
+              <span lang="y">부피의 단위로 한 모서리의 길이가 1 ㎝인 정육면체의 부피를 사용할 수 있습니다.</span>
+            </div>
+            <div class="text_area">
+              <span lang="y">한 모서리의 길이가 1 ㎝인 정육면체의 부피를</span>
+              <button class="reveal_btn" data-pair="1 ㎤">1 ㎤</button>
+              <span lang="y" class="small-gap">라 쓰고,</span>
+            </div>
+            <div class="text_area">
+              <button class="reveal_btn" data-pair="1 세제곱센티미터">1 세제곱센티미터</button>
+              <span lang="y" class="small-gap">라고 읽습니다. </span>
+            </div>
+            <div class="draw_area">
+              <div class="left_area">
+                <img src="../../common_contents/img/EMA616_02_SU/616_04_draw_img1.png" alt="" />
+              </div>
+              <div class="right_area">
+                <img src="../../common_contents/img/EMA616_02_SU/616_04_draw_img2.png" alt="" />
+              </div>
+              <div class="sub_area">
+                <div class="sub_img">
+                  <img src="../../common_contents/img/EMA616_02_SU/616_02_0004img.png" alt="" />
+                </div>
+                <div class="length1">1 ㎝</div>
+                <div class="length2">1 ㎝</div>
+                <div class="length3">1 ㎝</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <canvas class="draw-area" width="1600" height="800" data-canvas-id="canvas_1"></canvas>
+
+        <!-- 그리기도구 팝업 -->
+        <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+          <div class="draw-tool-wrap-header">
+            <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+            <div class="close_but add_cursor">
+              <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+            </div>
+          </div>
+          <div class="draw-tool-wrap-body">
+            <div class="tool-row function-item">
+              <button type="button" class="ic_pen active"></button>
+              <button type="button" class="ic_txt"></button>
+              <button type="button" class="ic_eraser"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_triangle"></button>
+              <button type="button" class="ic_square"></button>
+              <button type="button" class="ic_circle"></button>
+              <button type="button" class="ic_polygon"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_line"></button>
+              <button type="button" class="ic_dash"></button>
+              <button type="button" class="ic_draw"></button>
+              <button type="button" class="ic_pull"></button>
+            </div>
+            <div class="tool-row palette-item">
+              <button type="button" class="p_red"></button>
+              <button type="button" class="p_yellow"></button>
+              <button type="button" class="p_green"></button>
+              <button type="button" class="p_blue"></button>
+              <button type="button" class="p_purple"></button>
+              <button type="button" class="p_black active"></button>
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="thickness" class="draw-scale-range" />
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="opacity" class="draw-trans-range" />
+            </div>
+            <div class="tool-row function-item">
+              <div class="arrow-item">
+                <button type="button" class="ic_undo"></button>
+                <button type="button" class="ic_redo"></button>
+              </div>
+              <button type="button" class="ic_del"></button>
+            </div>
+
+            <div class="ic_polygon_pop">
+              <span>꼭지점</span>
+              <button type="button" class="ipp_minus"></button>
+              <div>
+                <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                <label for="ipp_num">개</label>
+              </div>
+              <button type="button" class="ipp_plus"></button>
+            </div>
+          </div>
+        </div>
+        <!-- //그리기도구 팝업 -->
+      </article>
+      <button type="button" class="btn btn_draw"></button>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

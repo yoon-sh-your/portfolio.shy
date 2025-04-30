@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_04_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_04_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">축제가 열린 날 오후 2시에 축제 장소의 초미세 먼지 농도는 25 마이크로그램입니다. 오후 2시에 축제 장소의 초미세 먼지 농도는 어느 등급인지 알아봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align_start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+
+            <p class="t01" lang="y">*마이크로그램: 무게의 단위 중 하나. <br>1 마이크로그램은 1 g의 백만분의 1임.</p>
+            <p class="t02" lang="y">(마이크로그램)</p>
+            <div class="t03">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col" lang="y">등급</th>
+                    <th scope="col" lang="y">초미세 먼지 농도(마이크로그램)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" lang="y">좋음</th>
+                    <td lang="y">0 이상 16 미만</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" lang="y">보통</th>
+                    <td lang="y">16 이상 36 미만</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" lang="y">나쁨</th>
+                    <td lang="y">36 이상 76 미만</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" lang="y">매우 나쁨</th>
+                    <td lang="y">76 이상</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고, 등급별 초미세 먼지 농도의 범위를 이야기해 봅시다.</h3>
+
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">‘좋음’ 등급은 0 이상 16 미만, ‘보통’ 등급은 16 이상 36 미만, ‘나쁨’ 등급은 36 이상 76 미만, ‘매우 나쁨’ 등급은 76 이상입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

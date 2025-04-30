@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA623_05_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema623_05.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema623_05_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">쌓기나무로 만든 모양을 보고 위에서 본 모양에 수를 쓴 것입니다. 관계있는 것끼리 이어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <ul class="connect_line_box start">
+            <li lang="y">
+              <img src="./../../common_practice/img/EMA623_05_IH/0003_01_bg.png" alt="" />
+              <span class="text text1">위에서 본 모양</span>
+              <div class="view_grid view_grid1">
+                <div class="cell text">2</div>
+                <div class="cell text">2</div>
+                <div class="cell text">3</div>
+                <div class="cell text cell4">1</div>
+                <div class="cell text cell5">2</div>
+                <div class="cell text cell6">1</div>
+              </div>
+              <span class="text text2">앞</span>
+            </li>
+            <li lang="y">
+              <img src="./../../common_practice/img/EMA623_05_IH/0003_02_bg.png" alt="" />
+              <span class="text text1">위에서 본 모양</span>
+              <div class="view_grid view_grid2">
+                <div class="cell text">2</div>
+                <div class="cell text">2</div>
+                <div class="cell text">3</div>
+                <div class="cell text cell4">1</div>
+                <div class="cell text cell5">1</div>
+                <div class="cell text cell6">2</div>
+                <div class="cell text cell">1</div>
+              </div>
+              <span class="text text2">앞</span>
+            </li>
+            <li lang="y">
+              <img src="./../../common_practice/img/EMA623_05_IH/0003_02_bg.png" alt="" />
+              <span class="text text1">위에서 본 모양</span>
+              <div class="view_grid view_grid3">
+                <div class="cell text">2</div>
+                <div class="cell text">2</div>
+                <div class="cell text">3</div>
+                <div class="cell text cell4">1</div>
+                <div class="cell text cell5">1</div>
+                <div class="cell text cell6">1</div>
+                <div class="cell text cell">1</div>
+              </div>
+              <span class="text text2">앞</span>
+            </li>
+          </ul>
+          <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"],["s3","e3"]]'>
+            <div class="start_group">
+              <div class="connect_point" data-id="s1"></div>
+              <div class="connect_point" data-id="s2"></div>
+              <div class="connect_point" data-id="s3"></div>
+            </div>
+            <div class="end_group">
+              <div class="connect_point" data-id="e1"></div>
+              <div class="connect_point" data-id="e2"></div>
+              <div class="connect_point" data-id="e3"></div>
+            </div>
+            <svg class="connect_lines"></svg>
+          </div>
+
+          <ul class="connect_line_box end">
+            <li>
+              <div class="img_area">
+                <img src="./../../common_practice/img/EMA623_05_IH/0003_03.png" alt="" />
+                <span class="text text1" lang="y">앞</span>
+              </div>
+            </li>
+            <li>
+              <div class="img_area">
+                <img src="./../../common_practice/img/EMA623_05_IH/0003_04.png" alt="" />
+                <span class="text text2" lang="y">앞</span>
+              </div>
+            </li>
+            <li>
+              <div class="img_area">
+                <img src="./../../common_practice/img/EMA623_05_IH/0003_05.png" alt="" />
+                <span class="text text3" lang="y">앞</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet"></p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

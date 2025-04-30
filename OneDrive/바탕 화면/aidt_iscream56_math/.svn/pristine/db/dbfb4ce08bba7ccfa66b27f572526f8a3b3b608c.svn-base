@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_04_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema612_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema612_04_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4_green" class="is_star" lang="y">은호와 시은이가 만들려고 하는 입체도형의 이름을 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA612_04_IH/0004_01.png" alt="" />
+            <p class="text1" lang="y">두 면이 평행하고 합동인 다각형으로 이루어진 입체도형을 만들어 보자.</p>
+            <p class="text2" lang="y">
+              옆면이 모두 직사각형이고,<br />
+              꼭짓점이 8개인<br />
+              입체도형을 만들자.
+            </p>
+            <p class="name1" lang="y">은호</p>
+            <p class="name2" lang="y">시은</p>
+          </div>
+          <div class="dropdown_wrap">
+            <select class="custom_dropdown" data-answer-single="사각기둥">
+              <option></option>
+              <option value="삼각기둥"></option>
+              <option value="사각기둥"></option>
+              <option value="오각기둥"></option>
+              <option value="육각기둥"></option>
+            </select>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">두 면이 평행하고 합동인 다각형으로 이루어져 있고 옆면이 모두 직사각형인 입체도형은 각기둥입니다. 꼭짓점이 8개인 각기둥은 사각기둥입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

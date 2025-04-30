@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_02_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema613_02_07_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_02_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star" lang="y">25.5÷5를 두 가지 방법으로 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_02_IH/0007_01.png" alt="" />
+
+            <div>
+              <div class="l_left">
+                <dl>
+                  <dt>
+                    <span class="label_method" lang="y">방법1</span>
+                    <p lang="y">세로로 나타내어 계산하기</p>
+                  </dt>
+                  <dd>
+                    <canvas class="draw-area" width="350" height="300" data-canvas-id="canvas_1"></canvas>
+                  </dd>
+                </dl>
+              </div>
+              <div class="l_right">
+                <dl>
+                  <dt>
+                    <span class="label_method" lang="y">방법2</span>
+                    <p lang="y">분수의 나눗셈으로 나타내어 계산하기</p>
+                  </dt>
+                  <dd>
+                    <canvas class="draw-area" width="700" height="300" data-canvas-id="canvas_1"></canvas>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="example_box mt_20">
+            <img src="./../../common_practice/img/EMA613_02_IH/0007_02.png" alt="" />
+          </div>
+        </div>
+        <!-- 그리기도구 팝업 -->
+        <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+          <div class="draw-tool-wrap-header">
+            <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+            <div class="close_but add_cursor">
+              <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+            </div>
+          </div>
+          <div class="draw-tool-wrap-body">
+            <div class="tool-row function-item">
+              <button type="button" class="ic_pen active"></button>
+              <button type="button" class="ic_txt"></button>
+              <button type="button" class="ic_eraser"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_triangle"></button>
+              <button type="button" class="ic_square"></button>
+              <button type="button" class="ic_circle"></button>
+              <button type="button" class="ic_polygon"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_line"></button>
+              <button type="button" class="ic_dash"></button>
+              <button type="button" class="ic_draw"></button>
+              <button type="button" class="ic_pull"></button>
+            </div>
+            <div class="tool-row palette-item">
+              <button type="button" class="p_red"></button>
+              <button type="button" class="p_yellow"></button>
+              <button type="button" class="p_green"></button>
+              <button type="button" class="p_blue"></button>
+              <button type="button" class="p_purple"></button>
+              <button type="button" class="p_black active"></button>
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="thickness" class="draw-scale-range" />
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="opacity" class="draw-trans-range" />
+            </div>
+            <div class="tool-row function-item">
+              <div class="arrow-item">
+                <button type="button" class="ic_undo"></button>
+                <button type="button" class="ic_redo"></button>
+              </div>
+              <button type="button" class="ic_del"></button>
+            </div>
+
+            <div class="ic_polygon_pop">
+              <span>꼭지점</span>
+              <button type="button" class="ipp_minus"></button>
+              <div>
+                <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                <label for="ipp_num">개</label>
+              </div>
+              <button type="button" class="ipp_plus"></button>
+            </div>
+          </div>
+        </div>
+        <!-- //그리기도구 팝업 -->
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>세로로 나타내어 계산하고, (분수)÷(자연수)로 나타내어 계산합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <button type="button" class="btn btn_draw"></button>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

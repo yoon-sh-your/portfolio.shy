@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_13_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_13.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_13_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5">
+          <span lang="y">사다리꼴의 넓이가 42 ㎡일 때,</span>
+          <span class="nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center mt_40 dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA516_13_IH/0005_01.png" alt="" />
+            <p class="text1">12 ㎝</p>
+            <p class="text2">9 ㎝</p>
+            <div class="input_position">
+              <div class="input_wrap answer01">
+                <math-field data-answer-single="4"></math-field>
+              </div>
+              <span>㎝</span>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p><span lang="y">(12+9)×</span><span class="nemo"></span><span lang="y">÷2=42, (12+9)×</span><span class="nemo"></span><span lang="y">=84, 21×</span><span class="nemo"></span><span lang="y">=84,</span> <span class="nemo"></span><span lang="y">=4</span></p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

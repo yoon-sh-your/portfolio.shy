@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_01_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_01_ih_0003">
+      <section class="title type2 flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 4-2』 평행</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3" lang="y">직사각형과 정사각형에서 서로 평행한 변은 각각 몇 쌍인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center gap_60">
+          <div class="flex align_end gap_24">
+            <div class="obj_box1"></div>
+            <div class="question_box gap_4">
+              <div class="input_wrap">
+                <math-field data-answer-single="2"></math-field>
+              </div>
+              <span lang="y">쌍</span>
+            </div>
+          </div>
+          <div class="flex align_end gap_24">
+            <div class="obj_box2"></div>
+            <div class="question_box gap_4">
+              <div class="input_wrap">
+                <math-field data-answer-single="2"></math-field>
+              </div>
+              <span lang="y">쌍</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">직사각형과 정사각형에서 마주 보는 두 변은 서로 평행하므로 서로 평행한 변은 각각 2쌍입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve">
+              <!--  -->
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

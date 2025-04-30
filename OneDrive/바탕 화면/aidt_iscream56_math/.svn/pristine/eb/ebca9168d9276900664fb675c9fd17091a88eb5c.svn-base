@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_03_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_03_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_03_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">수의 범위를 그림에 나타내어 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center align_end"></div>
+        <div class="tit t1" lang="y">67 초과인 수</div>
+        <div class="tit t2" lang="y">10.5 미만인 수</div>
+        <div class="draws-input-wrap diw1 reverse" data-gap="87">
+          <div class="input-wrap">
+            <input type="text" class="user-input draws draws_active" data-fn="입력" data-value="1" readonly />
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single="1">
+                <option></option>
+                <option value="1"><span></span></option>
+                <option value="2"><span></span></option>
+              </select>
+            </div>
+          </div>
+          <div class="range">
+            <span>65</span>
+            <span>66</span>
+            <span>67</span>
+            <span>68</span>
+            <span>69</span>
+            <span>70</span>
+            <span>71</span>
+          </div>
+        </div>
+
+        <div class="draws-input-wrap diw2" data-gap="52" style="margin-top: 100px">
+          <div class="input-wrap">
+            <input type="text" class="user-input draws draws_active" data-fn="입력" data-value="1" readonly />
+            <div class="dot"></div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single="1">
+                <option></option>
+                <option value="1"><span></span></option>
+                <option value="2"><span></span></option>
+              </select>
+            </div>
+          </div>
+          <div class="range">
+            <span>10</span>
+            <span>11</span>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">67 초과인 수는 67을 포함하지 않으므로 67을 ○으로 나타내고 오른쪽으로 선을 긋습니다.</p>
+                <p class="text_bullet" lang="y">10.5 미만인 수는 10.5를 포함하지 않으므로 10.5를 ○으로 나타내고 왼쪽으로 선을 긋습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

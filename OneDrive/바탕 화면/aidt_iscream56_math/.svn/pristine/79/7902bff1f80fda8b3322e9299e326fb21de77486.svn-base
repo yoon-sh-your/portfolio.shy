@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_10_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema614_10_ih_0001.js"></script>
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema614_10">
+      <section class="title type2">
+        <h2 data-puzzle="jade" class="flex align_center" lang="y">비율이 0.2인 비를 모두 찾아 ◯표 하고, ◯표 한 비에 해당하는 모양을 이용하여 나만의 얼굴을 그려 보세요.</h2>
+      </section>
+      <section class="contents p_bottom">
+        <div class="flex justify_center align_start">
+          <div class="canva">
+            <canvas class="draw-area" width="1017" height="694" data-canvas-id="canvas_1"></canvas>
+          </div>
+
+          <div>
+            <div class="table_are flex gap_20 align_center">
+              <div class="table_point">1</div>
+
+              <div class="table_wrap">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">얼굴형</th>
+                      <td class="bg">2:10</td>
+                      <td class="bg">5:20</td>
+                    </tr>
+                    <tr>
+                      <td>사각형</td>
+                      <td>원</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="boolean_wrap">
+                  <button data-answer-single="true"></button>
+                  <button data-answer-single="false"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="table_are flex gap_20 align_center">
+              <div class="table_point">2</div>
+
+              <div class="table_wrap">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">눈</th>
+                      <td class="bg">15:45</td>
+                      <td class="bg">12:60</td>
+                    </tr>
+                    <tr>
+                      <td>삼각형</td>
+                      <td>원</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="boolean_wrap">
+                  <button data-answer-single="false"></button>
+                  <button data-answer-single="true"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="table_are flex gap_20 align_center">
+              <div class="table_point">3</div>
+
+              <div class="table_wrap">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">코</th>
+                      <td class="bg">1:5</td>
+                      <td class="bg">4:25</td>
+                    </tr>
+                    <tr>
+                      <td>삼각형</td>
+                      <td>원</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="boolean_wrap">
+                  <button data-answer-single="true"></button>
+                  <button data-answer-single="false"></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="table_are flex gap_20 align_center">
+              <div class="table_point">4</div>
+
+              <div class="table_wrap">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th rowspan="2">입</th>
+                      <td class="bg">30:5</td>
+                      <td class="bg">7:35</td>
+                    </tr>
+                    <tr>
+                      <td>사각형</td>
+                      <td>반원</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <div class="boolean_wrap">
+                  <button data-answer-single="false"></button>
+                  <button data-answer-single="true"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <ul>
+                  <li class="flex gap_4 align_center">
+                    <div class="table_point">1</div>
+                    <p>비 2 : 10을 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>2</span>
+                      <span>10</span>
+                    </div>
+
+                    <div class="bracket">
+                      <span class="bracket-l"></span>
+                      =
+                      <span class="fraction_box ml-10">
+                        <span>1</span>
+                        <span>5</span>
+                      </span>
+                      <span class="bracket-r"></span>
+                    </div>
+                    <p>, 0.2이고, 비 5 : 20을 비율로 나타내면</p>
+                  </li>
+                  <li class="flex gap_4 align_center pl_48">
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>20</span>
+                    </div>
+
+                    <div class="bracket">
+                      <span class="bracket-l"></span>
+                      =
+                      <span class="fraction_box ml-10">
+                        <span>1</span>
+                        <span>4</span>
+                      </span>
+                      <span class="bracket-r"></span>
+                    </div>
+
+                    <p>, 0.25입니다. 따라서 얼굴형은 사각형 모양으로 그립니다.</p>
+                  </li>
+                  <li class="flex gap_4 align_center">
+                    <div class="table_point">2</div>
+                    <p>비 15 : 45를 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>15</span>
+                      <span>42</span>
+                    </div>
+
+                    <div class="bracket">
+                      <span class="bracket-l"></span>
+                      =
+                      <span class="fraction_box ml-10">
+                        <span>1</span>
+                        <span>3</span>
+                      </span>
+                      <span class="bracket-r"></span>
+                    </div>
+
+                    <p>이고, 비12 : 60을 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>12</span>
+                      <span>60</span>
+                    </div>
+
+                    <div class="bracket">
+                      <span class="bracket-l"></span>
+                      =
+                      <span class="fraction_box ml-10">
+                        <span>1</span>
+                        <span>5</span>
+                      </span>
+                      <span class="bracket-r"></span>
+                    </div>
+
+                    <p>,</p>
+                  </li>
+                  <li class="flex gap_4 align_center pl_48">
+                    <p>0.2입니다. 따라서 눈은 원 모양으로 그립니다.</p>
+                  </li>
+                  <li class="flex gap_4 align_center">
+                    <div class="table_point">3</div>
+                    <p>비 1 : 5를 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>1</span>
+                      <span>5</span>
+                    </div>
+                    <p>, 0.2이고, 비 4 : 25를 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>4</span>
+                      <span>25</span>
+                    </div>
+                    <p>, 0.16입니다.</p>
+                  </li>
+                  <li class="flex gap_4 align_center pl_48">
+                    <p>따라서 코는 삼각형 모양으로 그립니다.</p>
+                  </li>
+                  <li class="flex gap_4 align_center">
+                    <div class="table_point">4</div>
+                    <p>비 30 : 5를 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>30</span>
+                      <span>5</span>
+                    </div>
+                    <p>(=6)이고, 비 7 : 35를 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>7</span>
+                      <span>35</span>
+                    </div>
+
+                    <div class="bracket">
+                      <span class="bracket-l"></span>
+                      =
+                      <span class="fraction_box ml-10">
+                        <span>1</span>
+                        <span>5</span>
+                      </span>
+                      <span class="bracket-r"></span>
+                    </div>
+
+                    <p>,</p>
+                  </li>
+                  <li class="flex gap_4 align_center pl_48">
+                    <p>0.2입니다. 따라서 입은 반원 모양으로 그립니다.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn_draw left"></button>
+
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+
+        <!-- 그리기도구 팝업 -->
+        <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+          <div class="draw-tool-wrap-header">
+            <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+            <div class="close_but add_cursor">
+              <img src="../../common_contents/common/img/tool_drawing/tools_close.svg" alt="ic_cancel" />
+            </div>
+          </div>
+          <div class="draw-tool-wrap-body">
+            <div class="tool-row function-item">
+              <button type="button" class="ic_pen active"></button>
+              <button type="button" class="ic_txt"></button>
+              <button type="button" class="ic_eraser"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_triangle"></button>
+              <button type="button" class="ic_square"></button>
+              <button type="button" class="ic_circle"></button>
+              <button type="button" class="ic_polygon"></button>
+            </div>
+            <div class="tool-row function-item">
+              <button type="button" class="ic_line"></button>
+              <button type="button" class="ic_dash"></button>
+              <button type="button" class="ic_draw"></button>
+              <button type="button" class="ic_pull"></button>
+            </div>
+            <div class="tool-row palette-item">
+              <button type="button" class="p_red"></button>
+              <button type="button" class="p_yellow"></button>
+              <button type="button" class="p_green"></button>
+              <button type="button" class="p_blue"></button>
+              <button type="button" class="p_purple"></button>
+              <button type="button" class="p_black active"></button>
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="thickness" class="draw-scale-range" />
+            </div>
+            <div class="tool-row range-item">
+              <input type="range" name="opacity" class="draw-trans-range" />
+            </div>
+            <div class="tool-row function-item">
+              <div class="arrow-item">
+                <button type="button" class="ic_undo"></button>
+                <button type="button" class="ic_redo"></button>
+              </div>
+              <button type="button" class="ic_del"></button>
+            </div>
+
+            <div class="ic_polygon_pop">
+              <span>꼭지점</span>
+              <button type="button" class="ipp_minus"></button>
+              <div>
+                <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                <label for="ipp_num">개</label>
+              </div>
+              <button type="button" class="ipp_plus"></button>
+            </div>
+          </div>
+        </div>
+        <!-- //그리기도구 팝업 -->
+      </section>
+    </div>
+  </body>
+</html>

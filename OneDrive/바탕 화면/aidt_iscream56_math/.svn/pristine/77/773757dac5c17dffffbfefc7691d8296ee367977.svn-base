@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_06_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema524_06_ih_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_06_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">2.6×4.3을 옳게 계산한 것을 찾아 기호를 찾아 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="top">
+            <div class="inr boolean_wrap type_chk">
+              <button type="button" class="item" data-answer-single="false">
+                <span class="circle">ㄱ</span>
+                111.8
+              </button>
+              <button type="button" class="item" data-answer-single="true">
+                <span class="circle">ㄴ</span>
+                11.18
+              </button>
+              <button type="button" class="item" data-answer-single="false">
+                <span class="circle">ㄷ</span>
+                1.118
+              </button>
+              <button type="button" class="item" data-answer-single="false">
+                <span class="circle">ㄹ</span>
+                0.1118
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>2.6×4.3=11.18</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

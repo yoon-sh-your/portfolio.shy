@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_06_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema614_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_06">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">
+          <span lang="y">그림을 보고 전체에 대한 색칠한 부분의 비율을 백분율로 나타내어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ena614_06_0003">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th>분수</th>
+                  <th>소수</th>
+                  <th>백분율(％)</th>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="fraction_box">
+                      <span>18</span>
+                      <span>25</span>
+                    </div>
+                  </td>
+                  <td>0.72</td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="72"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="fraction_box">
+                      <span>9</span>
+                      <span>10</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="0.9"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="90"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="fraction_box">
+                      <span>21</span>
+                      <span>50</span>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="0.24"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="42"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>비율</p>
+                  <div class="fraction_box">
+                    <span>18</span>
+                    <span>25</span>
+                  </div>
+                  <p>(=0.27)을 백분율로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>18</span>
+                    <span>25</span>
+                  </div>
+                  <p>×100=72 ➔</p>
+                  <p>42％입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>비율</p>
+                  <div class="fraction_box">
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <p>를 소수로 나타내면 0.9이고, 백분율로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <p>×100=90 ➔</p>
+                  <p>90％입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>비율</p>
+                  <div class="fraction_box">
+                    <span>21</span>
+                    <span>50</span>
+                  </div>
+                  <p>을 소수로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>21</span>
+                    <span>50</span>
+                  </div>
+                  <p>=</p>
+                  <div class="fraction_box">
+                    <span>42</span>
+                    <span>100</span>
+                  </div>
+                  <p>=0.42이고, 백분율로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>21</span>
+                    <span>50</span>
+                  </div>
+                  <p>×100=42</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>➔ 42％입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

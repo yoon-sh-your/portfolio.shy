@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_01_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_01.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_01_ih_0001">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 6-1』 비 구하기</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="1_deep_green" lang="y">복숭아 3개와 딸기 5개가 있습니다. 복숭아 수와 딸기 수의 비를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_start">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA624_01_IH/0001_01.png" alt="" />
+          </div>
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field data-answer-single="3:5" text-align="center"></math-field>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">
+									도형을 오른쪽으로 뒤집으면 도형의 왼쪽과 오른쪽이 서로 바뀝니다.
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div> -->
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

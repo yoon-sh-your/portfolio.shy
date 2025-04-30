@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.toastSubmit{
+  border-radius: 20px;
+  width: 500px;
+  height: 330px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 0 10px #22222290;
+  position: absolute;
+  z-index: 99;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.btn_area>button:not(.btnType, .btnSample).active.unactiveBtn{
+  pointer-events: none;
+  background-color: var(--btn-disabled-bg);
+  border-color: var(--stroke-default);
+  background-image: url(../../common_contents/common/img/icon_submit_disabled.svg);
+}
+
+.multi_input_wrap math-field.hint:disabled.duplicate.correct, .multi_input_wrap math-field.hint:disabled.duplicate{
+  background-color: var(--secondary-coral-300);
+  opacity: 1;
+  color: black;
+}
+.input_wrap math-field.hint.duplicate + .text_hint{
+  opacity: 0;
+}
+/* .ema512_01_su_0001 */
+.ema512_01_su_0001#app_wrap {
+  background: url(../img/EMA512_01_SU/0001_bg.png) no-repeat left bottom / 857px #91c14a;
+}
+
+.ema512_01_su_0001 .input_area label.img,
+.ema512_01_su_0001 .input_area label::after {
+  background-color: #008834;
+}
+.ema512_01_su_0001 .contents .text_box {
+  color: #008834;
+}
+.ema512_01_su_0001 .contents .text_box p {
+  width: 400px;
+}
+/* EMA512_01_SU_0003 */
+
+
+/* EMA512_01_SU_0004 */
+.ema512_01_su_0004 .video_wrap {
+  background: url(../img/EMA512_01_SU/0004_video.png) no-repeat left top / 100%;
+}
+.ema512_01_su_0004 .input_wrap {
+  /* width: 100%; */
+}
+.ema512_01_su_0004 .input_wrap math-field.textarea {
+  /* padding: 20px;
+  height: 428px;
+  width: 100%; */
+}
+
+/* EMA512_01_SU_0005 */
+.ema512_01_su_0005 .picture_wrap img {
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+}
+.ema512_01_su_0005 .input_wrap math-field.textarea {
+  /* padding: 20px;
+  min-height: 428px;
+  height: 428px; */
+}
+

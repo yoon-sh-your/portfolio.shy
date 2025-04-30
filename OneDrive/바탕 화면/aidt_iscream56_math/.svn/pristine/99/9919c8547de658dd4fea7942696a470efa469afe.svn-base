@@ -1,0 +1,261 @@
+/* EMA521_SU_0004_s  */
+.form_wrap {
+    padding-top: 110px;
+    width: 1635px;
+    height: 628px;
+    gap: 100px;
+}
+
+.form_wrap .board_area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 1635px;
+    height: 300px;
+}
+
+.form_wrap .board_area .start_wrap {
+    flex: 0 0 151px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+}
+
+.form_wrap .board_area .start_wrap .btn_start {
+    margin-left: 0;
+    border-radius: 12px;
+    padding: 0;
+    width: 151px;
+    font-size: 20px;
+    background-color: var(--btn-default);
+}
+
+.form_wrap .board_area .start_wrap .btn_start:hover {
+    background-color: var(--btn-hover);
+}
+
+.form_wrap .board_area .start_wrap .btn_start.hide {
+    display: none;
+}
+
+.form_wrap .board_area .board_wrap {
+    width: 633px;
+    height: 300px;
+}
+
+.form_wrap .board_area .board_wrap .board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A4C1D4;
+    border-radius: 20px;
+    width: 633px;
+    height: 300px;
+    font-size: 32px;
+    color: #000000;
+    background: #DFF0FB;
+}
+
+.form_wrap .board_area .submit_wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 388px;
+    height: 300px;
+}
+
+.form_wrap .board_area .submit_wrap .input_wrap,
+.form_wrap .board_area .submit_wrap .input_wrap math-field {
+    min-width: 240px;
+    width: 240px;
+}
+
+.form_wrap .board_area .submit_wrap .btn {
+    padding: 0;
+    min-width: 64px;
+    width: 64px;
+    height: 64px;
+    font-size: 0;
+}
+
+.form_wrap .board_area .submit_wrap .btn_reset {
+    border: 1px solid var(--stroke-default);
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_reset_disabled.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-disabled-bg);
+    pointer-events: none;
+}
+
+.form_wrap .board_area .submit_wrap .btn_reset.active {
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_reset_white.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-default);
+    pointer-events: all;
+}
+
+.form_wrap .board_area .submit_wrap .btn_check {
+    border: 1px solid var(--stroke-default);
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_check_disabled.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-disabled-bg);
+    pointer-events: none;
+}
+
+.form_wrap .board_area .submit_wrap .btn_check.active {
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_check_white.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-default);
+    pointer-events: all;
+}
+
+.form_wrap .board_area .submit_wrap .btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.form_wrap .result_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 1635px;
+    height: 118px;
+}
+
+.form_wrap .result_wrap .result_label_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 1635px;
+    height: 36px;
+}
+
+.form_wrap .result_wrap .result_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 1635px;
+    height: 80px;
+}
+
+.form_wrap .result_wrap .result_label_row .result_label_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 79.85px;
+    height: 36px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+    background: #D2D2D2;
+}
+
+.form_wrap .result_wrap .result_row .result_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 79.85px;
+    height: 80px;
+    background: #F4F4F4;
+    font-size: 0;
+}
+
+.form_wrap .result_wrap .result_row .result_col:has(.result_input[value="1"]) {
+    background: url(../../common_contents/img/EMA521_SU/0004_img_icon_ok.png) no-repeat center center;
+    background-size: 51px;
+    background-color: #F4F4F4;
+}
+
+.form_wrap .result_wrap .result_row .result_col:has(.result_input[value="0"]) {
+    background: url(../../common_contents/img/EMA521_SU/0004_img_icon_no.png) no-repeat center center;
+    background-size: 40px;
+    background-color: #F4F4F4;
+}
+
+.form_wrap .result_wrap .result_row .result_col .result_input {
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.btn_line {
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn_line .btn_area {
+    position: unset;
+    bottom: unset;
+    right: unset;
+}
+
+.btn_line .form_btn_area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+.btn_line .form_btn_area .btn {
+    padding: 0;
+    min-width: 64px;
+    width: 64px;
+    height: 64px;
+    font-size: 0;
+}
+
+.btn_line .form_btn_area .btn_reset {
+    border: 1px solid var(--stroke-default);
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_reset_disabled.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-disabled-bg);
+    pointer-events: none;
+}
+
+.btn_line .form_btn_area .btn_reset.active {
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_reset_white.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-default);
+    pointer-events: all;
+}
+
+.btn_line .form_btn_area .btn_submit {
+    border: 1px solid var(--stroke-default);
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_submit_disabled.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-disabled-bg);
+    pointer-events: none;
+}
+
+.btn_line .form_btn_area .btn_submit.active {
+    border: 1px solid transparent;
+    border-radius: 16px;
+    background: url(../../common_contents/common/img/icon_submit_white.svg) no-repeat center center;
+    background-size: 40px;
+    background-color: var(--btn-default);
+    pointer-events: all;
+}
+
+.btn_line .form_btn_area .btn:hover {
+    background-color: var(--btn-hover);
+}

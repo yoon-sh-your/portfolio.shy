@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_04_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_04_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">각기둥의 이름을 알아봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">각기둥의 밑면을 찾아 둘레를 초록색으로 표시하고, 밑면의 모양은 어떤 다각형인지 써 보세요.</h3>
+
+          <div class="flex_col_box">
+            <p class="f_tit">각기둥</p>
+
+            <div class="check_shape boolean_wrap">
+              <div class="s_item">
+                <span class="num">가</span>
+                <img src="../../common_contents/img/EMA612_04_SU/0003_diagram_01.png" alt="삼각기둥">
+              </div>
+  
+              <div class="s_item">
+                <span class="num">나</span>
+                <img src="../../common_contents/img/EMA612_04_SU/0003_diagram_02.png" alt="사각기둥">
+              </div>
+  
+              <div class="s_item">
+                <span class="num">다</span>
+                <img src="../../common_contents/img/EMA612_04_SU/0003_diagram_03.png" alt="오각기둥">
+              </div>
+  
+              <button data-answer-single="true" class="co01"></button>
+              <button data-answer-single="true" class="co02"></button>
+              <button data-answer-single="true" class="co03"></button>
+              <button data-answer-single="true" class="co04"></button>
+              <button data-answer-single="true" class="co05"></button>
+              <button data-answer-single="true" class="co06"></button>
+            </div>
+          </div>
+
+          <div class="flex_col_box">
+            <p class="f_tit">밑면의 모양</p>
+
+            <div class="input_area">
+              <div class="input_wrap answer1">
+                <math-field data-answer-single="삼각형"></math-field>
+              </div>
+
+              <div class="input_wrap answer2">
+                <math-field data-answer-single="사각형"></math-field>
+              </div>
+
+              <div class="input_wrap answer3">
+                <math-field data-answer-single="오각형"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="flex_col_box">
+            <div class="diagram_img">
+              <img src="../../common_contents/img/EMA612_04_SU/0003_diagram_04.png" alt="각기둥">
+            </div>
+
+            <div class="input_area">
+              <h3 lang="y">밑면의 모양에 따라 각기둥의 이름을 각각 무엇이라고 하면 좋을지 이야기해 보세요.</h3>
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">밑면의 모양이 각각 삼각형, 사각형, 오각형이므로 삼각형 기둥, 사각형 기둥, 오각형 기둥이라고 하면 좋을 것 같습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">약속해 볼까요</label>
+
+              <div class="flex">
+                <div class="sum_txt">
+                  <div>
+                    <span lang="y">각기둥은 밑면의 모양에 따라 삼각형이면</span>
+                  </div>
+    
+                  <div>
+                    <button class="reveal_btn" data-pair="1" lang="y">삼각기둥</button><span lang="y">, 사각형이면</span> <button class="reveal_btn" data-pair="2" lang="y">사각기둥</button><span>,</span>
+                  </div>
+
+                  <div>
+                    <span lang="y">오각형이면</span><button class="reveal_btn" data-pair="3" lang="y">오각기둥</button> <span lang="y">...이라고 합니다.</span>
+                  </div>
+                </div>
+  
+                <div class="diagram_set">
+                  <img src="../../common_contents/img/EMA612_04_SU/0003_diagram_check.png" alt="각기둥">
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

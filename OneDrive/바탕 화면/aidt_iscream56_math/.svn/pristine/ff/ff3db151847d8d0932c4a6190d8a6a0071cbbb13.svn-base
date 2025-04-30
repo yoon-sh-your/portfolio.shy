@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_02_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_02_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">
+          <div class="fraction_box ml_0">
+            <span>6</span>
+            <span>9</span>
+          </div>
+          과 같은 크기만큼 그림에 <span class="bar"></span>로 나타내고, □ 안에 알맞은 수를 써넣으세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box dir_col">
+          <div class="item">
+            <div class="left">
+              <div class="boolean_count_wrap">
+                <button type="button" class="on" disabled></button>
+                <button type="button" class="on" disabled></button>
+                <button type="button" class="on" disabled></button>
+                <button type="button" class="on" disabled></button>
+                <button type="button" class="on" disabled></button>
+                <button type="button" class="on" disabled></button>
+                <button type="button" disabled></button>
+                <button type="button" disabled></button>
+                <button type="button" disabled></button>
+              </div>
+            </div>
+            <div class="right">
+              <div class="fraction_box">
+                <span>6</span>
+                <span>9</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="left">
+              <div class="boolean_count_wrap" data-answer-single="4">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+            </div>
+            <div class="right">
+              <div class="fraction_box">
+                <div class="input_wrap"><math-field data-answer-single="4"></math-field></div>
+                <div class="input_wrap"><math-field data-answer-single="6"></math-field></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="left">
+              <div class="boolean_count_wrap" data-answer-single="2">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+            </div>
+            <div class="right">
+              <div class="fraction_box">
+                <div class="input_wrap"><math-field data-answer-single="2"></math-field></div>
+                <div class="input_wrap"><math-field data-answer-single="3"></math-field></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="fraction_box">
+                  <span>6</span>
+                  <span>9</span>
+                </div>
+                과 같은 크기만큼 나타내면 전체를 똑같이 6으로 나눈 것 중의 4만큼이므로&nbsp;
+                <div class="fraction_box">
+                  <span>4</span>
+                  <span>6</span>
+                </div>
+                , 전체를 똑같이 3으로 나눈 것 중의 2만큼이므로&nbsp;
+                <div class="fraction_box">
+                  <span>2</span>
+                  <span>3</span>
+                </div>
+                입니다.
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

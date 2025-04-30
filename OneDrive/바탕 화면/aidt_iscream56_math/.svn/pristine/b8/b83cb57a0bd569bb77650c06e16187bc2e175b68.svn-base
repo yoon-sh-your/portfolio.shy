@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema521_su_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+     <link rel="stylesheet" href="./../../common_contents/css/ema521_03.css" />
+</head>
+<body>
+    <div id="app_wrap" class="ema521_su_0003 play-howto-layout">
+        <section class="title">
+            <h2 data-text="놀이방법" lang="y">
+                <span lang="y" class="title-play"><span class="point">놀이</span> 방법</span>
+                <span lang="y" class="howto num1">모둠별로 첫 번째 순서인 사람이 한 명씩 나와 교실 뒤 출발선에 섭니다.</span>
+                <span lang="y" class="howto num2">두 번째 순서인 사람들이 바구니에서 문제 한 장을 뽑아 큰 소리로 문제를 함께 읽습니다.</span>
+                <ul class="howto num3">
+                    <li lang="y">출발선에 서 있는 사람은 칠판으로 걸어가서 답을 찾습니다. 답이 맞으면 1점을 얻고, 틀리면 점수를 얻지 못합니다.</li>
+                </ul>
+                <ul class="howto num4">
+                    <li lang="y">모든 모둠원들이 문제를 풀 때까지 놀이를 계속 합니다. 점수를 더 많이 얻은 모둠이 이깁니다.</li>
+                </ul>
+            </h2>
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <img src="../../common_contents/img/EMA521_SU/0003_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="../../common_contents/img/EMA521_SU/0003_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="../../common_contents/img/EMA521_SU/0003_img_3.png" alt="">
+                    </article>
+                    <article class="page page_4">
+                        <img src="../../common_contents/img/EMA521_SU/0003_img_4.png" alt="">
+                    </article>
+                </div>
+            </div>
+            
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="play btnBgDefault" lang="y">활동 영상</button>
+                </div>
+                <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+                <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

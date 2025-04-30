@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA624_04_SU_0004_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema624_04.css" />
+
+        <!-- -----!! js내용 가져가세요 !!----- -->
+        <script src="../../common_contents/js/ema512_04_0004.js"></script>
+
+        <style></style>
+    </head>
+
+    <body>
+        <div id="app_wrap" class="ema614_04_su_0004">
+            <section class="title type2">
+                <h2 data-head="2_green" lang="y">비례식에서 외항에 ◯표, 내항에 △표 해 봅시다.</h2>
+            </section>
+            <section class="contents">
+                <div class="flex align_start conts_cover">
+                    <div class="input_area conts_cover">
+                        <div class="drag_checkout">
+                            <div class="draggable_wrap">
+                                <div class="single_draggable draggable circle"></div>
+                                <div class="single_draggable draggable triangle"></div>
+                            </div>
+
+                            <div class="flex justify_center">
+                                <div class="drag_group g1" data-group-limit="8" data-answer-single="[[true,false],[false,true],[false,true],[true,false],[true,false],[false,true],[false,true],[true,false]]">
+                                    <div class="flex_box">
+                                        <div class="droppable" data-value="false false">3</div>
+                                        <span>:</span>
+                                        <div class="droppable" data-value="false false">8</div>
+                                        <span>=</span>
+                                        <div class="droppable" data-value="false false">12</div>
+                                        <span>:</span>
+                                        <div class="droppable" data-value="false false">32</div>
+                                    </div>
+
+                                    <div class="flex_box">
+                                        <div class="droppable" data-value="false false">24</div>
+                                        <span>:</span>
+                                        <div class="droppable" data-value="false false">16</div>
+                                        <span>=</span>
+                                        <div class="droppable" data-value="false false">3</div>
+                                        <span>:</span>
+                                        <div class="droppable" data-value="false false">2</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_area">
+                    <button class="btnType key" lang="y">입력타입토글</button>
+                    <button class="btnReset" lang="y">리셋</button>
+                    <button class="btnCheck" lang="y">확인</button>
+                    <!-- <button class="btnSubmit">확인</button> -->
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_03_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">재윤이와 은서가 설명하는 수를 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center align_center dir_col">
+          <div class="img_box">
+            <div class="img_wrap">
+              <img src="../../common_practice/img/EMA512_03_IH/0006_img.png" alt="" />
+              <span class="lab1" lang="y">재윤</span>
+              <span class="txt1" lang="y">11의 배수야.</span>
+              <span class="lab2" lang="y">은서</span>
+              <span class="txt2" lang="y">그중 100에 가장 가까운 수야.</span>
+            </div>
+          </div>
+          <div class="question_box gap_12">
+            <div class="input_wrap">
+              <math-field data-answer-single="99"></math-field>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">11의 배수는 11, 22, 33, 44, 55, 66, 77, 88, 99, 110, ...입니다.<br />11의 배수 중에서 100에 가장 가까운 수는 99입니다.<br />따라서 재윤이와 은서가 설명하는 수는 99입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

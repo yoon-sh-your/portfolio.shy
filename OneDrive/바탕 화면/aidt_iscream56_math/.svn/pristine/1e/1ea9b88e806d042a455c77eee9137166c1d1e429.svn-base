@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_06_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_06_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y"><span class="empty_box nemo"></span> 안에 알맞은 수를 써넣으세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="question_box">
+            <div class="left">
+              <div class="row row1">
+                <span>3</span>
+                <span>×</span>
+                <span>14</span>
+                <span>=</span>
+              </div>
+              <div class="row row2">
+                <div class="middle">
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>10</span>
+                  </div>
+                  <span lang="y">배</span>
+                </div>
+                <div class="middle">
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>10</span>
+                  </div>
+                  <span lang="y">배</span>
+                </div>
+              </div>
+              <div class="row row3">
+                <span>0.3</span>
+                <span>×</span>
+                <span>1.4</span>
+                <span>=</span>
+              </div>
+            </div>
+            <div class="right">
+              <div class="row row1">
+                <span>42</span>
+              </div>
+              <div class="row row2">
+                <div class="middle">
+                  <div class="input_wrap fraction_wrap">
+                    <math-field data-answer-single="(1)/(100)"></math-field>
+                  </div>
+                  <span lang="y">배</span>
+                </div>
+              </div>
+              <div class="row row3">
+                <div class="input_wrap">
+                  <math-field data-answer-single="0.42"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_0 align_center" lang="y">
+                  곱해지는 수와 곱하는 수가 각각
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>10</span>
+                  </div>
+                  배가 되면 곱은
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>100</span>
+                  </div>
+                  배가 되므로
+                </div>
+                <div class="flex gap_0 align_center" lang="y">
+                  0.3×1.4의 계산 결과는 42의
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>100</span>
+                  </div>
+                  배인 0.42입니다.
+                </div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

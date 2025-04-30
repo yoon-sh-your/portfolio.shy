@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA623_09_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema623_09.css" />
+    <script src="../../common_contents/js/ema623_09_0004.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema622_10_su_0003">
+      <section class="contents">
+        <div class="form_wrap">
+          <div class="left_area">
+            <div class="card_wrap">
+              <div>
+                <button class="card_btn" lang="y">카드 뽑기</button>
+                <button class="card_btn disabled" lang="y">카드 보기</button>
+              </div>
+              
+              <div class="card_preview_frame">
+              </div>
+              
+              <div class="card_preview">
+                <span lang="y">위에서 본 모양</span>
+                <div class="card_preview_img">
+                  <img src="../../common_contents/img/EMA623_09_SU/623_boxs_4.png" alt="boxs">
+                </div>
+                <div>
+                  <img src="../../common_contents/img/EMA623_09_SU/623_arrow.png" alt="arrow">
+                  <div lang="y">앞</div>
+                </div>
+              </div>
+            </div>
+            <div class="answer_wrap">
+              <div>
+                <span lang="y">1층</span>
+                <div class="grid-container">
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                  <div class="grid-item" data-layer="1"></div>
+                </div>
+                <div>
+                  <img src="../../common_contents/img/EMA623_09_SU/623_arrow.png" alt="arrow">
+                  <div lang="y">앞</div>
+                </div>
+              </div>
+              
+              <div>
+                <span lang="y">2층</span>
+                <div class="grid-container">
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                  <div class="grid-item" data-layer="2"></div>
+                </div>
+                <div>
+                  <img src="../../common_contents/img/EMA623_09_SU/623_arrow.png" alt="arrow">
+                  <div lang="y">앞</div>
+                </div>
+              </div>
+
+              <div>
+                <span lang="y">3층</span>
+                <div class="grid-container">
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                  <div class="grid-item" data-layer="3"></div>
+                </div>
+                <div>
+                  <img src="../../common_contents/img/EMA623_09_SU/623_arrow.png" alt="arrow">
+                  <div lang="y">앞</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right_area">
+            <div class="control_wrap">
+              <div>
+                <img src="../../common_contents/common/img/icon_minus.svg" alt="minus">
+              </div>
+              <span lang="y">쌓기나무 개수</span>
+              <div>
+               <img src="../../common_contents/common/img/icon_plus.svg" alt="plus">
+              </div>
+            </div>
+            <div class="action_wrap">
+              <div class="box">
+                <div class="face front"></div>
+                <div class="face top"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face back"></div>
+                <div class="face bottom"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <div class="device_change_wrap">
+            <button class="device_change teacher" lang="y">대표 기기 변경하기</button>
+          </div>
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

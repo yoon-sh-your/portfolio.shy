@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_04_IH_0007</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_04.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_04_ih_0007">
+			<section class="title type2">
+				<h2 data-head="7" class="is_star2">
+					수 카드 4장 중 1장을 골라 <span class="empty_box nemo"></span>안에 써넣어 몫이 가장 작은 (진분수)÷(진분수)의 나눗셈을 만들고 계산해 보세요.
+
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box dir_col gap_60">
+					<div class="img_box">
+						<img src="../../common_practice/img/EMA621_04_IH/0007_img.svg" alt="">
+					</div>
+					<div class="flex gap_120">
+						<div class="flex align_center">
+							<div class="fraction_box">
+								<span>9</span>
+								<span>10</span>
+							</div>
+							÷
+							<div class="fraction_box">
+								<div class="input_wrap">
+									<math-field data-answer-single="7"></math-field>
+								</div>
+								<span>8</span>
+							</div>
+						</div>
+						<div class="input_wrap fraction_wrap">
+							<math-field data-answer-single="1(1)/(35)(=(36)/(35))" data-answer-multi='{"values": ["1(1)/(35)", "(36)/(35)"]}'></math-field>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+ㄴ						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

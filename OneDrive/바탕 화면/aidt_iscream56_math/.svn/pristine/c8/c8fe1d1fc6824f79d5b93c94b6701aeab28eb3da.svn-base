@@ -1,0 +1,134 @@
+@charset "uft-8";
+/* .ema512_09_su_0003 */
+@font-face {
+    font-family: "BMJUA";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "KCCMurukmuruk";
+    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCMurukmuruk.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ema512_09_su_0003 #board {
+    position: relative;
+    font-family: "KCCMurukmuruk";
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 723px;
+    height: 616px;
+    margin: 0 auto;
+    background: url("../../common_contents/img/EMA512_09_SU/0003_bg.png") no-repeat center/ contain;
+    padding: 120px 22px 25px 25px;
+}
+.ema512_09_su_0003 .cell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.ema512_09_su_0003 h3 {
+    position: absolute;
+    top: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 4px;
+    font-family: "BMJUA";
+    font-size: 32px;
+}
+
+.ema512_09_su_0003 .cell.marked-red::after,
+.ema512_09_su_0003 .cell.marked-purple::after,
+.ema512_09_su_0003 .cell.marked-green::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 49px;
+}
+
+.ema512_09_su_0003 .cell.marked-red::after {
+    background: url("../../common_contents/img/EMA512_09_SU/0003_cell_red.png") no-repeat center;
+}
+.ema512_09_su_0003 .cell.marked-purple::after {
+    background: url("../../common_contents/img/EMA512_09_SU/0003_cell_purple.png") no-repeat center;
+}
+.ema512_09_su_0003 .cell.marked-green::after {
+    background: url("../../common_contents/img/EMA512_09_SU/0003_cell_green.png") no-repeat center;
+}
+
+.ema512_09_su_0003 ~ .popup {
+    position: absolute;
+    display: flex;
+    width: 189px;
+    height: 82px;
+    background: url("../../common_contents/img/EMA512_09_SU/0003_popup_bg.png") no-repeat center;
+    gap: 4px;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    z-index: 100;
+}
+
+.ema512_09_su_0003 ~ .popup button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 2px solid #e8e8e8;
+    background: #fff;
+    cursor: pointer;
+    min-width: auto;
+    padding: 0;
+}
+
+.ema512_09_su_0003 ~ .popup button.red::after {
+    content: "";
+    width: 29px;
+    height: 28px;
+    background: url("../../common_contents/img/EMA512_09_SU/0003_sel_red.png") no-repeat center;
+}
+.ema512_09_su_0003 ~ .popup button.purple::after {
+    content: "";
+    width: 29px;
+    height: 28px;
+    background: url("../../common_contents/img/EMA512_09_SU/0003_sel_purple.png") no-repeat center;
+}
+.ema512_09_su_0003 ~ .popup button.green::after {
+    content: "";
+    width: 29px;
+    height: 28px;
+    background: url("../../common_contents/img/EMA512_09_SU/0003_sel_green.png") no-repeat center;
+}
+
+.ema512_09_su_0003 ~ .popup:has(.delete-btn) {
+    background: none;
+    width: 67px;
+    height: 81px;
+    background: url("../../common_contents/img/EMA512_09_SU/0003_del_bg.png") no-repeat center;
+}
+
+.ema512_09_su_0003 ~ .popup .delete-btn {
+    background: url("../../common_contents/img/EMA512_09_SU/0003_del_btn.png") no-repeat center !important;
+    border: none !important;
+    font-size: 0;
+}
+
+.device_change {
+    background-color: var(--secondary-red);
+}
+
+.device_change {
+    display: none;
+}
+.teacher .device_change {
+    display: block;
+}

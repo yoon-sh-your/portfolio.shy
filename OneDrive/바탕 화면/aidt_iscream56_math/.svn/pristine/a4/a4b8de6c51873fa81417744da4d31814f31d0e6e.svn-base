@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_02_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_02_su_0003">
+      <section class="title type2">
+        <h2 data-head="1_light_purple"  lang="y">채안이와 현준이는 원 모양인 나무 바퀴가 구를 때 땅에 닿는 부분에 철판을 꼭 맞게 덧대려고 합니다. 나무 바퀴에서 찾을 수 있는 가장 큰 원의 구성 요소를 살펴봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">나무 바퀴에서 찾을 수 있는 가장 큰 원의 중심, 지름, 둘레를 표시해 보세요.</h3>
+
+          <div class="boolean_wrap check_circle">
+            <img src="../../common_contents/img/EMA625_02_SU/0003_circle_cont.png" alt="나무바퀴">
+
+            <button data-answer-single="true" class="c_01"></button>
+            <button data-answer-single="true" class="c_02"></button>
+            <button data-answer-single="true" class="c_03"></button>
+          </div>
+        </article>
+
+        <article class="page page_2"> 
+          <h3 lang="y">나무 바퀴에서 철판을 덧댈 부분에 대해 이야기해 보세요.</h3>
+          
+          <div class="flex_col_box">
+            <div class="check_circle">
+              <img src="../../common_contents/img/EMA625_02_SU/0003_circle_cont.png" alt="나무바퀴">
+            </div>
+
+            <div class="input_area">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">나무 바퀴에서 찾을 수 있는 가장 큰 원의 둘레입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="summarize_wrap">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+
+              <div class="flex">
+                <div>
+                  <span lang="y">원의 둘레를</span>
+                  <button class="reveal_btn" data-pair="1" lang="y">원주</button><span lang="y">라고 합니다.</span>
+                </div>
+
+                <div class="img_box">
+                  <img src="../../common_contents/img/EMA625_02_SU/0003_check_circle.png" alt="원 이미지">
+
+                  <p class="t01" lang="y">원의 중심</p>
+                  <p class="t02" lang="y">원의 지름</p>
+                  <p class="t03" lang="y">원주</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

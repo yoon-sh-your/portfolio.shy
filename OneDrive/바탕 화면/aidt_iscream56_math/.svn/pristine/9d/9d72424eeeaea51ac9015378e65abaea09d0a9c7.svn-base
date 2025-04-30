@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_04_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_04_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3_deep_green" lang="y">비례식에서 외항과 내항을 찾아 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA624_04_IH/0003_01.png" alt="" />
+            <p class="text">3:10=12:40</p>
+          </div>
+          <div class="text_area">
+            <div class="text_row">
+              <span class="label_gray" lang="y">외항</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="3"></math-field>
+              </div>
+              <span>,</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="40"></math-field>
+              </div>
+            </div>
+            <div class="text_row">
+              <span class="label_gray" lang="y">내항</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="10"></math-field>
+              </div>
+              <span>,</span>
+              <div class="input_wrap">
+                <math-field data-answer-single="12"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>비례식에서 바깥쪽에 있는 두 수를 외항, 안쪽에 있는 두 수를 내항이라고 합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

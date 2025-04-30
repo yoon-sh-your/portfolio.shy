@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA623_01_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema623_01.css" />
+    <script src="../../common_practice/js/ema623_01_ih_0003.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema623_03_ih_0003">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 4-1』 평면도형 돌리기</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">도형을 시계 반대 방향으로 90°만큼 돌렸을 때의 도형을 그려 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="quiz_area">
+            <div class="image image1">
+              <img src="../../common_practice/img/EMA623_01_IH/0003_01.svg" alt="도형" />
+            </div>
+            <div class="image image2">
+              <img src="./../../common_practice/img/EMA623_01_IH/0003_02.png" alt="시계 반대 방향으로 90도 만큼 돌리기" /> 
+            </div>
+            <div class="line_area" id="lineArea1"></div>
+            <div class="line_area" id="lineArea2"></div>
+            <div class="drawline_grid">
+              <div class="drawing_grid_area" id="drawingArea1" data-grid-size="78">
+                <svg class="line_canvas"></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet"></p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

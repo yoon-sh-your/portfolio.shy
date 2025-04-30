@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_05_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_05_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">올림하여 백의 자리까지 나타내었을 때 3800이 되는 수를 모두 찾아 <span class="ico_round"></span>표 하고, 그 이유를
+          이야기해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="boolean_wrap select_number">
+            <button data-answer-single="true">3760</button>
+            <button data-answer-single="false">3695</button>
+            <button data-answer-single="false">3700</button>
+            <button data-answer-single="false">3801</button>
+            <button data-answer-single="true">3724</button>
+          </div>
+
+          <div class="develope_box_full">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">올림하여 백의 자리까지 나타내면 3760과 3724는 3800이 됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="develope_box_full">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">올림하여 백의 자리까지 나타내면 3760과 3724는 3800이 됩니다.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

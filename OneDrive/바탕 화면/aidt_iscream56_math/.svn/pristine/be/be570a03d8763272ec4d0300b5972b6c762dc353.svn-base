@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_02_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_02_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">집라인 체험장으로 가는 모노레일 한 대에는 어른이 6명, 어린이가 3명 탈 수 있습니다. 모노레일에 탈 수 있는 어른 수와 어린이 수를<br>비교해 봅시다.​</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="img_row flex align_start">
+          <div class="picture_wrap type2">
+            <img src="../../common_contents/img/EMA614_02_SU/0003_content.png" alt="" />
+            <button class="zoom"></button>
+          </div>
+
+          <div class="input_area">
+            <article class="page page_1">
+              <h3 lang="y">모노레일 한 대에 탈 수 있는 어른 수와 어린이 수는 각각<br> 몇 명인가요?​</h3>
+              <div class="question_box justify_center">
+                <div class="row">
+                  <span class="f32b">어른: </span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="6"></math-field>
+                  </div>
+                  <span class="f32b">명</span>
+                </div>
+                <div class="row">
+                  <span class="f32b">어린이: </span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                  <span class="f32b">명</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="page page_2">
+              <h3 lang="y">모노레일 한 대에 탈 수 있는 어른 수는 어린이 수의 몇 배<br>인지 알아보세요.​​</h3>
+              <div class="question_box justify_center">
+                <div class="input_wrap">
+                  <math-field data-answer-single="2"></math-field>
+                </div>
+                <span class="f32b">배</span>
+              </div>
+            </article>
+            
+            <article class="page page_3">
+              <h3 lang="y">모노레일 한 대에 탈 수 있는 어린이 수는 어른 수의 몇 배인지 알아보세요.​​​</h3>
+              <div class="question_box justify_center">
+                  <div class="input_wrap fraction_wrap">
+                    <math-field data-answer-single="(1)/(2)"></math-field>
+                </div>
+                <span class="f32b">배</span>
+              </div>
+            </article>
+
+            <article class="page page_4">
+              <h3 lang="y">모노레일 두 대에 탈 수 있는 어린이가 여섯 명일 때 어른은<br>몇 명까지 탈 수 있는지 이야기해 보세요.​</h3>
+              <div class="question_box justify_center">
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="12"></math-field>
+                </div>
+                <span class="f32b">명</span>
+              </div>
+              <div class="speech_bubble">
+                <div class="bubble_txt">
+                  모노레일 한 대에 탈 수 있는<br>어른 수와 어린이 수는<br>일정하니까....
+                </div>
+              </div>
+            </article>
+            
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

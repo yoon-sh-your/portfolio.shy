@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_04_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_04_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">낚시 도구 한 세트에는 통발 2개와 미끼통 5개가 들어 있습니다. 통발의 수는 미끼통의 수의 몇 배인지 구해 봅시다.​</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <div class="img_row flex align_start">
+              <div class="picture_wrap">
+                <img src="../../common_contents/img/EMA614_04_SU/0002_content.png" alt="" />
+                <button class="zoom"></button>
+              </div>
+
+              <div class="input_area">
+                <h3 lang="y">미끼통의 수에 대한 통발의 수의 비를 써 보세요.​</h3>
+
+                <div class="question_box justify_center">
+                  <div class="input_wrap">
+                    <math-field data-answer-single="2 : 5"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <div class="img_row flex align_start">
+              <div class="picture_wrap">
+                <img src="../../common_contents/img/EMA614_04_SU/0002_content.png" alt="" />
+                <button class="zoom"></button>
+              </div>
+
+              <div class="input_area">
+                <h3 lang="y">앞의 비에서 기준량과 비교하는 양은 각각 얼마인지 써 보세요.​</h3>
+
+                <div class="question_box justify_center">
+                  <div class="row">
+                    <span class="f32b">기준량: </span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="5"></math-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <span class="f32b">비교하는 양: </span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="2"></math-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_3">
+            <div class="img_row flex align_start">
+              <div class="picture_wrap">
+                <img src="../../common_contents/img/EMA614_04_SU/0002_content.png" alt="" />
+                <button class="zoom"></button>
+              </div>
+
+              <div class="input_area">
+                <h3 lang="y">통발의 수는 미끼통의 수의 몇 배인지 분수와 소수로 각각<br />나타내어 보세요.​</h3>
+
+                <div class="question_box justify_center">
+                  <div class="col col1">
+                    <span class="f32b">분수: </span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(2)/(5)"></math-field>
+                    </div>
+                    <span class="f32b">배</span>
+                    <span class="comma">,</span>
+                  </div>
+                  <div class="col col2">
+                    <span class="f32b">소수: </span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="0.4"></math-field>
+                    </div>
+                    <span class="f32b">배</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <article class="page page_4">
+          <div class="summarize_wrap">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+              <div><span lang="y">기준량에 대한 비교하는 양의 크기를</span> <button class="reveal_btn" data-pair="1">비율</button><span lang="y" class="small-gap">이라고 합니다.</span></div>
+              <div class="summarize_ex">
+                <div lang="y" class="summarize_ex_1">
+                  <div>(<span class="txt1">비율</span>)=(<span class="txt2">비교하는 양</span>)&divide;(<span class="txt3">기준량</span>)=</div>
+                  <span class="fraction_box">
+                    <span>(<span class="txt2">비교하는 양</span>)</span>
+                    <span>(<span class="txt3">기준량</span>)</span>
+                  </span>
+                </div>
+              </div>
+              <div lang="y">
+                <span>비 2:&nbsp;5를 비율로 나타내면</span>
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>5</span>
+                </span>
+                <span>또는 0.4입니다.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_03_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_03">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">
+          <span lang="y">오리너구리는 하루에 14시간 동안 잠을 잔다고 합니다. 물음에 답해 보세요.</span>
+        </h2>
+      </section>
+      <section class="title type2 justify_end">
+        <p class="right_p">(출처: 어린이조선일보, 2024)</p>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1 on">
+          <h3 lang="y" class="gap_30">
+            <span>하루 전체 시간에 대한 오리너구리가 깨어 있는 시간의 비를 써 보세요.</span>
+          </h3>
+
+          <div class="flex align_center justify_center mt_40 gap_10">
+            <div class="input_wrap">
+              <math-field data-answer-single="10"></math-field>
+            </div>
+            <span class="fs_32">:</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="24"></math-field>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p>하루는 24시간입니다.<br/>(오리너구리가 깨어 있는 시간)=24-14=10(시간)</p>
+                  <p>하루 전체 시간에 대한 오리너구리가 깨어 있는 시간의 비는 10 : 24입니다.</p>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y" class="gap_30">
+            <span>오리너구리가 하루 중 잠을 자는 시간과 깨어 있는 시간의 비를 써 보세요.</span>
+          </h3>
+
+          <div class="flex align_center justify_center mt_40 gap_10">
+            <div class="input_wrap">
+              <math-field data-answer-single="14"></math-field>
+            </div>
+            <span class="fs_32">:</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="10"></math-field>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p>하루는 24시간입니다.<br>(오리너구리가 깨어 있는 시간)=24-14=10(시간)</p>
+                  <p>오리너구리가 하루 중 잠을 자는 시간과 깨어 있는 시간의 비는 14 : 10입니다.</p>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

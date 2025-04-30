@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_04.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_04_su_0005" data-current-page="page_1, page_2">
+        <section class="title type2">
+            <h2 data-head="3_green" lang="y">
+                비의 성질을 이용하여 비례식을 세워 봅시다.
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <div class="flex justify_center">
+                        <div class="img_area">
+                            <img src="../../common_contents/img/EMA624_04_SU/624_04_0005.png" alt="">
+
+                            <div class="txt_b1">
+                                <span>2:9</span>
+                                <div class="input_wrap answer1">
+                                    <span>12:</span>
+                                    <math-field type="number" data-answer-single="54" text-align="center"></math-field>
+                                </div>
+                            </div>
+                            <div class="txt_b2">
+                                <div class="input_wrap">
+                                    <span>×</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                            </div>
+                            <div class="txt_b3">
+                                <div class="input_wrap">
+                                    <span>×</span>
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                </div>
+                            </div>
+
+                            <div class="text_wrap">
+                                <div>
+                                    <span>2:9는 전항과 후항에</span>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="6"
+                                            text-align="center"></math-field>
+                                    </div>
+                                    <span>을/를 곱한 12:</span>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="54"
+                                            text-align="center"></math-field>
+                                    </div>
+                                    <span>과/와 그 비율이 같습니다.</span>
+                                </div>
+                                <div>
+                                    <span>위의 두 비를 이용하여 비례식을 세우면 2:9=12:</span>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="6"
+                                            text-align="center"></math-field>
+                                    </div>
+                                    <span>입니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 1페이지 -->
+                <article class="page page_2">
+                    <div class="flex justify_center">
+                        <div class="img_area">
+                            <img src="../../common_contents/img/EMA624_04_SU/624_04_0006.png" alt="">
+
+                            <div class="txt_b1">
+                                <span>10:6</span>
+                                <div class="input_wrap answer1">
+                                    <math-field type="number" data-answer-single="5" text-align="center"></math-field>
+                                    <span>:3</span>
+                                </div>
+                            </div>
+                            <div class="txt_b2">
+                                <div class="input_wrap">
+                                    <span>÷</span>
+                                    <math-field type="number" data-answer-single="2" text-align="center"></math-field>
+                                </div>
+                            </div>
+                            <div class="txt_b3">
+                                <div class="input_wrap answer2">
+                                    <span>÷</span>
+                                    <math-field type="number" data-answer-single="2" text-align="center"></math-field>
+                                </div>
+                            </div>
+
+                            <div class="text_wrap">
+                                <div>
+                                    <span>10:6은 전항과 후항에</span>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="2"
+                                            text-align="center"></math-field>
+                                    </div>
+                                    <span>(으)로 나눈</span>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="5"
+                                            text-align="center"></math-field>
+                                    </div>
+                                    <span>:3과/와 그 비율이 같습니다.</span>
+                                </div>
+                                <div>
+                                    <span>위의 두 비를 이용하여 비례식을 세우면 10:6=</span>
+                                    <div class="input_wrap">
+                                        <math-field type="number" data-answer-single="5"
+                                            text-align="center"></math-field>
+                                    </div>
+                                    <span>:3입니다.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 2페이지 -->
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType">입력토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

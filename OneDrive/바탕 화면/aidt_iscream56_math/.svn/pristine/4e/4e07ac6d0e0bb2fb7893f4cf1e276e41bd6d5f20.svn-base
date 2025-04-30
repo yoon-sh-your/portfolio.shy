@@ -1,0 +1,42 @@
+/* ema627_02 common */
+.input_wrap:has(math-field.textarea) {
+  width: 100%;
+}
+.input_wrap math-field.textarea {
+  width: 100%;
+  height: 250px;
+}
+
+/* ema627_02_su_0004 */
+.ema627_02_su_0004 .table_wrap {  
+  border-radius: 20px;
+  border:1px solid #D2D2D2;
+  overflow: hidden;
+}
+.ema627_02_su_0004 .table_wrap table {
+  background-color: #fff;
+  border-style: hidden;
+}
+.ema627_02_su_0004 .table_wrap table th,
+.ema627_02_su_0004 .table_wrap table td {
+  height: 100px;
+  padding: 0 16px;
+  border: 1px solid #D2D2D2;
+}
+.ema627_02_su_0004 .table_wrap table th {
+  background-color: #EEF0F4;
+}
+.ema627_02_su_0004 .table_wrap table td {
+  width: 927px;
+}
+.ema627_02_su_0004 .table_wrap table td:has(math-field) {
+  width: 281px;
+  max-width: 281px;;
+}
+.ema627_02_su_0004 .table_wrap table td math-field.textarea  {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 72px;
+  height: 72px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_11_SU_0005_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_11.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_11_su_0005">
+    <section class="title type2">
+      <h2 data-type="1" data-text="자기주도 3">
+        <span class="blue line" lang="y">내 힘으로 풀어요</span>
+        <span lang="y">공부한 내용을 확인해요</span>
+      </h2>
+    </section>
+    <section class="title type2 jgjd_3_sub_title">
+      <h2 data-head="4" lang="y">직육면체 모양의 선물 상자를 포장하는 데 사용한 포장지의 넓이를 잘못 구한 것입니다. 내용을 옳게 고쳐 보세요. (단, 겹치는 부분 없이 포장합니다.)
+      </h2>
+    </section>
+    <section class="contents">
+      <div class="flex">
+        <div class="top_area">
+          <img src="../../common_contents/img/EMA616_11_SU/row_bg.png" alt="" />
+          <div class="unit_1">2 ㎝</div>
+          <div class="unit_2">3 ㎝</div>
+          <div class="unit_3">10 ㎝</div>
+          <div class="text">
+            <p>선물 상자의 한 밑면의 넓이는 30 ㎠이고 옆면의 넓이의 합은 52 ㎠이므로 사용한 포장지의 넓이는 30+52=82 (㎠)입니다.</p>
+          </div>
+        </div>
+        <div class="input_wrap">
+          <math-field class="textarea"></math-field>
+          <div class="example_box">
+            <p lang="y">한 밑면의 넓이는 30 ㎠이고 옆면의 넓이의 합은 52 ㎠이므로 필요한 포장지의 넓이는 30&times;2+52=112</p>
+          </div>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset btnReset">리셋</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

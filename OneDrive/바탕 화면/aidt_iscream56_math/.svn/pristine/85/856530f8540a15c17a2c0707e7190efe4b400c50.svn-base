@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_04_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_su_0003">
+      <section class="title type2">
+        <h2 data-head="1_light_purple" lang="y">직육면체에서 마주 보는 면 사이의 관계를 알아봅시다.
+        </h2>
+      </section>
+        
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">직육면체에서 마주 보는 면을 모두 찾아보세요.</h3>
+          <div class="flex gap_40 wrap align_center">
+            <div class="contents_img">
+              <ul class="example_num">
+                <li lang="y" class="f24b type1"><span>가</span></li>
+                <li lang="y" class="f24b type2"><span>나</span></li>
+                <li lang="y" class="f24b type1"><span>다</span></li>
+                <li lang="y" class="f24b type2"><span>라</span></li>
+                <li lang="y" class="f24b"><span>마</span></li>
+                <li lang="y" class="f24b"><span>바</span></li>
+              </ul>
+              <img src="../../common_contents/img/EMA525_03_SU/0003_contents1.png" alt="직육면체 면 구분 예시 이미지"/>
+            </div>
+            <div class="flex align_center gap_12">
+              <ul class="connect_line_box start">
+                <li>가</li>
+                <li>나</li>
+                <li>바</li>
+              </ul>
+              <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e1"],["s2","e3"],["s3","e2"]]'>
+                  <div class="start_group">
+                      <div class="connect_point" data-id="s1"></div>
+                      <div class="connect_point" data-id="s2"></div>
+                      <div class="connect_point" data-id="s3"></div>
+                  </div>
+                  <div class="end_group">
+                      <div class="connect_point" data-id="e1"></div>
+                      <div class="connect_point" data-id="e2"></div>
+                      <div class="connect_point" data-id="e3"></div>
+                  </div>
+                  <svg class="connect_lines"></svg>
+              </div>
+              <ul class="connect_line_box end">
+                  <li>다</li>
+                  <li>마</li>
+                  <li>라</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">직육면체에서 마주 보는 면에 각각 자를 대어 보고, 마주 보는 면 사이의 관계를 이야기해 보세요.</h3>  
+          <div class="wrap flex justify-conter dir_col gap_20">     
+            <div class="contents_img">
+              <img src="../../common_contents/img/EMA525_03_SU/0003_contents2.png" alt="직육면체,정육면체 이미지"/>    
+              <div class="character_img">
+                <p lang="y">자를 계속 늘이면<br/>어떻게 될까?</p>
+                <img src="../../common_contents/img/EMA525_03_SU/0003_contents3.png" alt="힌트를 주는 오리 캐릭터"/>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <ol class="example_box">
+                  <li lang="y">마주 보는 면은 서로 만나지 않습니다.</li>
+                  <li lang="y">마주 보는 면은 서로 평행합니다.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="summarize_wrap yellow">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+
+              <div class="contents_img">
+                <ul>
+                  <li lang="y">밑면</li>
+                  <li lang="y">밑면</li>
+                  <li lang="y">밑면</li>
+                </ul>
+                <img src="../../common_contents/img/EMA525_03_SU/0003_contents4.png" alt="밑면 설명 이미지"/>
+              </div>
+              <div class="flex dir_col f32b gap_30">
+                <span lang="y">직육면체에서 색칠한 두 면처럼 계속 늘여도</span>
+                <span lang="y">만나지 않는 두 면을 서로 평행하다고 합니다. </span>
+                <span class="flex gap_8 align_center">
+                  <span lang="y">이 두 면을 직육면체의</span>
+                  <button class="reveal_btn" data-pair="밑면" lang="y">밑면</button>
+                  <span lang="y" class="small-gap"> 이라고 합니다.</span>
+                </span>
+              </div>
+              <div class="character_img">
+                <p lang="y">직육면체에는 서로​<br/>평행한 면이 3쌍 있고,<br/>서로 평행한 면은 각각​<br/>밑면이 될 수 있어요.</p>
+                <img src="../../common_contents/img/EMA525_03_SU/0003_contents5.png" alt="직육면체의 겨냥도를 설명해주는 캐릭터"/>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA513_07_SU_0003_s</title>
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+        <link rel="stylesheet" href="./../../common_contents/css/ema513_07.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="ema513_07_su_0003">
+            <section>
+                <div class="top-wrap">
+                    <div class="card-area">
+                        <button id="drawCard" lang="y" disabled>랜덤 카드</button>
+                    </div>
+
+                    <div class="input-area">
+                        <div class="left">
+                            <p lang="y"><span></span>식을 나타내 보세요!</p>
+                            <div class="input-wrap">
+                                <span>△ = □</span>
+                                <button class="symbol-button" id="chooseOp1" disabled></button>
+                                <div class="input_wrap">
+                                    <math-field id="rightInput1" readonly style="min-width: 100px"></math-field>
+                                </div>
+                            </div>
+                            <div class="input-wrap">
+                                <span>□ = △</span>
+                                <button class="symbol-button" id="chooseOp2" disabled></button>
+                                <div class="input_wrap">
+                                    <math-field id="rightInput2" readonly style="min-width: 100px"></math-field>
+                                </div>
+                            </div>
+                            <div class="operator-list" id="opSelector">
+                                <button data-op="+">+</button>
+                                <button data-op="-">-</button>
+                                <button data-op="*">×</button>
+                                <button data-op="/">÷</button>
+                            </div>
+                        </div>
+                        <div class="btn_area right">
+                            <button id="checkBtn" class="btnCheck btnBgDefault">✔</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="score-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>모둠원</th>
+                                <td>
+                                    <div class="input_wrap name">
+                                        <math-field></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap name">
+                                        <math-field></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap name">
+                                        <math-field></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap name">
+                                        <math-field></math-field>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>1회</th>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>2회</th>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>3회</th>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="input_wrap">
+                                        <math-field readonly></math-field>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section>
+                <div class="dice-area">
+                    <div id="diceResult"></div>
+                    <button id="rollDice" lang="y" disabled>주사위 굴리기</button>
+                </div>
+            </section>
+            <div class="btn_area">
+                <div class="device_change_wrap">
+                    <button class="device_change" lang="y">대표 기기 변경하기</button>
+                </div>
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button id="resetBtn" class="btnReset btnBgDefault" lang="y">리셋</button>
+                <!-- <button id="btnCheck" class="btnCheck btnBgDefault" lang="y">확인</button> -->
+                <button id="btnCheck" class="btnSubmit btnBgDefault" lang="y">확인</button>
+            </div>
+        </div>
+        <button id="resetBtn">리셋</button>
+        <script src="../../common_contents/js/ema513_07_0003.js"></script>
+    </body>
+</html>

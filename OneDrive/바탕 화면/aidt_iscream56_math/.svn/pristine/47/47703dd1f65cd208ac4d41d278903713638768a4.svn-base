@@ -1,0 +1,32 @@
+/* EMA526_SU_09_0002_s  */
+/* -------------------------------- 놀이방법 페이지 -------------------------------- */
+  
+.play-howto-layout {
+  .title {
+    h2[data-type="2"] {
+      .howto {
+        .small_num {
+          &.num_s1 {
+            padding-left: 50px;
+            &::before {
+              background: url(../common/img/icon_howto_num_1.svg) no-repeat center/ contain;
+            }
+          }
+          &.num_s2 {
+            &::before {
+              left:10px;
+              background: url(../common/img/icon_howto_num_2.svg) no-repeat center/ contain;
+            }
+          }
+        }
+      }
+    }
+  }
+  &[data-current-page="page_4"] {
+    .title {
+      h2[data-type="2"] {
+        width: calc(100% - 134px);
+      }
+    }
+  }
+}

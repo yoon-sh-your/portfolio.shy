@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA516_05_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema561_05_su_0003.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_05.css">
+
+</head>
+<body>
+    <div id="app_wrap" class="ema516_05_su_0003">
+        <section class="title type2 page-1-title">
+            <h2 lang="y" data-head="1">
+            <span class="dotted"><img src="../../common_contents/img/EMA516_05_SU/unit.png" alt="1㎠이미지"></span>의 개수를 세어 직사각형의 넓이를 구해 봅시다.</h2>
+        </section> 
+        <section class="contents paging_layout">
+            <article class="page page_1" id="page1">
+                <section class="title type2">
+                </section>
+                    <h3 lang="y"><span class="dotted"><img src="../../common_contents/img/EMA516_05_SU/unit.png" alt="1㎠이미지"></span>&nbsp;의 개수를 세어 직사각형의 넓이는 <span class="dotted"><img src="../../common_contents/img/EMA516_05_SU/unit.png" alt="1㎠이미지"></span>&nbsp;의 몇 배인지 알아보세요.</h3>
+                    <div class="input_area po_absolute">     
+                            <div class="flex">
+                                <div class="container">
+                                    <!-- <div class="answer_img"><img src="../../common_contents/img/EMA516_05_SU/answer_img.png" alt="정답시 변경되는 이미지"></div> -->
+                                    <div class="grid-item highlight">1 ㎠</div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                    <div class="grid-item"><!-- 1㎠ --></div>
+                                </div>
+                                <div class="flex align_center gap_13">
+                                    <div class="input_wrap answer2">
+                                        <math-field data-answer-single="12"></math-field>
+                                        <span lang="y">배</span>
+                                    </div>
+                                </div>
+                            </div>
+            </article><!-- 1page -->
+            
+            <article class="page page_2 page2">
+                <h3 lang="y">직사각형의 넓이는 몇 ㎠인지 구해 보세요.</h3>
+                <div class="input_area po_absolute">     
+                        <div class="flex">
+                            <div class="gridArea">
+                                <div class="item">1 ㎠</div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                                <div class="grid-item"></div>
+                            </div>
+                            <div class="flex align_center">
+                                <div class="input_wrap answer3">
+                                    <math-field data-answer-single="12"></math-field>
+                                    <span style>㎠</span>
+                                </div>
+                            </div>
+                        </div>
+            </article><!-- 2page -->
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button onclick="resetCustom('page_1')" class="btnReset">리셋</button>
+                <button onclick="checkAnswer('page1')" class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+

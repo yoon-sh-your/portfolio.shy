@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_04_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_04_su_0003">
+      <section class="title type2">
+        <h2 data-head="1_light_purple" lang="y">채안이와 현준이는 물레방아에서 원 모양 바퀴를 보았습니다. 지름이 6 m인 물레방아 바퀴의 원주는 몇 m인지 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="img_row">
+            <div class="picture_wrap" data-tit="채안이와 현준이는 물레방아에서 원 모양 바퀴를 보았습니다. 지름이 6 m인 물레방아 바퀴의 원주는 몇 m인지 구해 봅시다.">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 760" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                  <tspan x="242.266" y="383.64">물레방아 바퀴의</tspan>
+                  <tspan x="226.594" y="418.64">원주를 구하기 위해</tspan>
+                  <tspan x="224.594" y="454.64">무엇을 알아야 할까?</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                  <tspan x="730.25" y="298.64">지름에 대한 원주의</tspan>
+                  <tspan x="743.03" y="331.64">비율을 이용할 수</tspan>
+                  <tspan x="782.03" y="362.64">있을까?</tspan>
+                </text>
+              </svg>
+              <img src="../../common_contents/img/EMA625_04_SU/0002_content.png" alt="물레방에 대해 이야기 하는 이미지">
+              <button class="zoom"></button>
+            </div>
+  
+            <div class="input_area">
+              <h3 lang="y">지름에 대한 원주의 비율에 대해 이야기해 보세요.</h3>
+
+              <div class="input_wrap">
+                <math-field class="textarea" id="inputElement01" type="text"></math-field>
+                <ol class="example_box">
+                  <li lang="y">원주율입니다.</li>
+                  <li lang="y">3.14로 사용합니다</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2"> 
+          <div class="img_row">
+            <div class="picture_wrap" data-tit="그채안이와 현준이는 물레방아에서 원 모양 바퀴를 보았습니다. 지름이 6 m인 물레방아 바퀴의 원주는 몇 m인지 구해 봅시다.">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 760" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                  <tspan x="242.266" y="383.64">물레방아 바퀴의</tspan>
+                  <tspan x="226.594" y="418.64">원주를 구하기 위해</tspan>
+                  <tspan x="224.594" y="454.64">무엇을 알아야 할까?</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                  <tspan x="730.25" y="298.64">지름에 대한 원주의</tspan>
+                  <tspan x="743.03" y="331.64">비율을 이용할 수</tspan>
+                  <tspan x="782.03" y="362.64">있을까?</tspan>
+                </text>
+              </svg>
+              <img src="../../common_contents/img/EMA625_04_SU/0002_content.png" alt="물레방에 대해 이야기 하는 이미지">
+              <button class="zoom"></button>
+            </div>
+  
+            <div class="right_range">
+              <h3 lang="y">‘지름’, ‘원주율’을 이용하여 원주를 구하는 방법을 식으로 나타내어 보세요.</h3>
+
+              <div class="dragndrop_fraction_wrap">
+                <div class="drag_group">
+                    <div class="drag_item" data-pair="1" data-value="지름">지름</div>
+                    <div class="drag_item" data-pair="1" data-value="원주율">원주율</div>
+                </div>
+
+                <div class="drop_group">
+                    <span class="f32b">(원주)=</span>
+                    <div class="drop_item" data-pair="1" data-answer-single="지름"></div>
+                    <span class="f32b multiple_unit">×</span>
+                    <div class="drop_item" data-pair="1" data-answer-single="원주율"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="img_row">
+            <div class="picture_wrap" data-tit="그채안이와 현준이는 물레방아에서 원 모양 바퀴를 보았습니다. 지름이 6 m인 물레방아 바퀴의 원주는 몇 m인지 구해 봅시다.">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 760" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                  <tspan x="242.266" y="383.64">물레방아 바퀴의</tspan>
+                  <tspan x="226.594" y="418.64">원주를 구하기 위해</tspan>
+                  <tspan x="224.594" y="454.64">무엇을 알아야 할까?</tspan>
+                </text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                  <tspan x="730.25" y="298.64">지름에 대한 원주의</tspan>
+                  <tspan x="743.03" y="331.64">비율을 이용할 수</tspan>
+                  <tspan x="782.03" y="362.64">있을까?</tspan>
+                </text>
+              </svg>
+              <img src="../../common_contents/img/EMA625_04_SU/0002_content.png" alt="물레방에 대해 이야기 하는 이미지">
+              <button class="zoom"></button>
+            </div>
+  
+            <div class="right_range">
+              <h3 lang="y">물레방아 바퀴의 원주는 몇 m인지 구해 보세요.</h3>
+
+              <div class="text_box">
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="18.84"></math-field>
+                </div>
+                <span lang="y" class="f32b">m</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+.input_wrap .text_hint,
+.dropdown_wrap .text_hint {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+
+/* EMA521_06_SU_0002_s */
+.ema521_06_su_0002 .contents > .img_row .video_wrap {
+  width: 812px;
+  height: 428px;
+  aspect-ratio: unset;
+  background: url(../../common_contents/img/EMA521_06_SU/0002_contents.png) no-repeat right top / 100%;
+}
+
+
+/* EMA521_06_SU_0003_s */
+.talk_box {
+  display: flex;
+  gap: 26px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.talk_txt {
+  position: relative;
+  width: 660px;
+  min-height: 305px;
+} 
+.talk_txt > p {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+} 
+.develope_box {
+  width: calc(100% - 716px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.develope_box .input_area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.develope_box .input_area .input_wrap math-field:not(.textarea) {
+  width: 150px;
+}
+.develope_box_full {
+  display: flex;
+  justify-content: center;
+}
+.develope_box_full .input_wrap {
+  width: 1208px;
+}
+.develope_box_full .input_wrap math-field.textarea {
+  width: 100%;
+} 
+
+.summarize > .check_up {
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.summarize > .check_up > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.summarize > .check_up .right_range::before {
+  content:"";
+  position: absolute;
+  left: -50px;
+  top: 10%;
+  width: 2px;
+  height: 80%;
+  background-color: #9E9E9E;
+}
+.summarize > .check_up [class*="num_txt_"]:not(:disabled):after{
+  bottom: 16px;
+}
+.summarize > .check_up .reveal_btn[class*="num_txt_"] > span {
+  display: flex;
+  align-items: center;
+  width: 212px;
+  height: 106px;
+}
+.ema521_06_su_0003 .num_txt_01 > span {
+  background: url(../../common_contents/img/EMA521_06_SU/0003_check_answer_01.png) no-repeat 50% 50% / 212px;
+}
+.ema521_06_su_0003 .num_txt_02 > span {
+  background: url(../../common_contents/img/EMA521_06_SU/0003_check_answer_02.png) no-repeat 50% 50% / 212px;
+}
+
+
+.ema521_06_su_0003 .page_1 .talk_txt {
+  background: url(../../common_contents/img/EMA521_06_SU/0003_bg_content_01.png) no-repeat left top / 100%;
+}
+.ema521_06_su_0003 .page_1 .talk_txt > p {
+  top: 95px;
+  left: 165px;
+}
+.ema521_06_su_0003 .page_2 .talk_txt {
+  background: url(../../common_contents/img/EMA521_06_SU/0003_bg_content_02.png) no-repeat left top / 100%;
+}
+.ema521_06_su_0003 .page_2 .talk_txt > p {
+  top: 96px;
+  left: 305px;
+} 
+.ema521_06_su_0003 .page_3 .develope_box_full .input_wrap math-field.textarea {
+  height: 180px;
+} 
+
+.ema521_06_su_0003 .btnSubmit {
+  display: none;
+}
+.ema521_06_su_0003[data-current-page='page_3'] .btnCheck {
+  display: none;
+}
+.ema521_06_su_0003[data-current-page='page_3'] .btnSubmit {
+  display: block;
+}
+.ema521_06_su_0003[data-current-page='page_4'] .btnType,
+.ema521_06_su_0003[data-current-page='page_4'] .title {
+  display: none;
+}
+
+
+
+/* EMA521_06_SU_0004_s */
+.ema521_06_su_0004 .develope_box {
+  width: 100%;
+}
+.ema521_06_su_0004 .develope_box .input_area .input_wrap math-field:not(.textarea) {
+  width: 200px;
+}
+.ema521_06_su_0004 .develope_box_full {
+  margin-top: 60px;
+}
+.ema521_06_su_0004  .develope_box_full .input_wrap math-field.textarea {
+  height: 180px;
+} 
+
+
+
+/* EMA521_06_SU_0005_s */
+.ex_tag {
+  width: 52px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(238, 79, 36, 1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(238, 79, 36, 1);
+  line-height: 24px;
+  letter-spacing: -0.5px;
+}
+.ex_box {
+  position: relative;
+  width: 840px;
+  margin: 40px auto 20px auto;
+  padding: 24px 40px;
+  border: 3px solid rgba(238, 79, 36, 1);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.ex_box .ex_tag {
+  position: absolute;
+  top: -18px;
+  left: 34px;
+}
+.ex_box > p {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.ex_box > p::before {
+  content:""; 
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: #222;
+}
+.character-box {
+  position: absolute;
+  top: 62px;
+  right: 150px;
+  width: 400px;
+  background: url(../../common_contents/img/EMA521_06_SU/ico_white_bird.png) no-repeat center right / 140px;
+}
+.character-box > p {
+  width: 285px;
+  text-align: center;
+}
+.ema521_06_su_0005 .develope_box {
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+/* EMA521_06_SU_0006_s */
+.ema521_06_su_0006 .img_box {
+  position: relative;
+  width: 1117px;
+  height: 418px;
+  margin: 0 auto;
+}
+.ema521_06_su_0006 .img_box > p {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -1px;
+}
+.ema521_06_su_0006 .img_box > .t01 {
+  top: 48px;
+  left: 280px;
+}
+.ema521_06_su_0006 .img_box > .t02 {
+  top: 51px;
+  left: 518px;
+}
+.ema521_06_su_0006 .img_box > .t03 {
+  top: 170px;
+  right: 67px;
+}
+.ema521_06_su_0006 .develope_box {
+  margin-top: 30px;
+  width: 100%;
+}

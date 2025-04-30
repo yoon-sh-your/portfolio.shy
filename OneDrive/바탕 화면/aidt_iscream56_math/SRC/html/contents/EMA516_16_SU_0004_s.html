@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EMA516_16_SU_0004_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema516_16.css" />
+    </head>
+    <body>
+        <div id="app_wrap" class="ema516_16_su_0004">
+            <ul class="map" id="map"></ul>
+            <div class="right-panel">
+                <div class="treasure-boxes" id="treasureList">
+                    <div class="treasure treasure-1" draggable="true" data-type="treasure-1"></div>
+                    <div class="treasure treasure-2" draggable="true" data-type="treasure-2"></div>
+                </div>
+                <div class="dice-wrap">
+                    <ul>
+                        <li class="dice" id="dice1"></li>
+                        <li class="dice" id="dice2"></li>
+                    </ul>
+                    <button id="startBtn" lang="y" disabled>주사위 굴리기</button>
+                </div>
+            </div>
+            <div class="color-popup" id="colorPopup">
+                <div class="color-option" data-color="#07BBA9"></div>
+                <div class="color-option" data-color="#6247DC"></div>
+            </div>
+            <div class="btn_area">
+                <div class="device_change_wrap">
+                    <button class="device_change" lang="y">대표 기기 변경하기</button>
+                </div>
+                <!-- <button class="btnType key" lang="y">입력타입토글</button> -->
+                <button id="resetBtn" class="btnReset btnBgDefault" lang="y">리셋</button>
+                <!-- <button id="btnCheck" class="btnCheck btnBgDefault" lang="y">확인</button> -->
+                <button class="btnSubmit btnBgDefault" lang="y">확인</button>
+            </div>
+        </div>
+        <script src="../../common_contents/js/ema516_16_0004.js"></script>
+    </body>
+</html>

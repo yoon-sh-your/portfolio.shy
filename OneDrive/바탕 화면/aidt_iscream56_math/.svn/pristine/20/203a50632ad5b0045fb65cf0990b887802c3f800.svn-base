@@ -1,0 +1,216 @@
+.input_wrap:has(.w_80) {
+  min-width: 80px !important;
+}
+math-field.w_80 {
+  width: 80px !important;
+}
+.input_wrap.hint_up .text_hint {
+  bottom: calc(100% + 4px);
+  top: auto;
+}
+
+.input_area:has(.input_sep) > span {
+  position: relative;
+}
+.input_wrap.input_sep {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -60px;
+}
+
+.input_wrap.hint_right .text_hint {
+  left: calc(100% + 20px);
+  top: 12px;
+  width: auto;
+}
+.mark_error {
+  position: relative;
+}
+
+.mark_error:after {
+  background: #e4007f;
+}
+.mark_error.blue:after {
+  background: var(--primary-blue);
+}
+.mark_error i {
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e4007f;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.mark_error.up > i {
+  top: auto;
+  bottom: 50px;
+}
+.fraction_wrap .hint_up .text_hint {
+  top: auto;
+  bottom: calc(100% + 4px);
+}
+.fraction_wrap.hint_right .text_hint {
+  top: 18px;
+}
+.label_method {
+  display: inline-block;
+  color: #a1d08f;
+  background: #fff;
+  border: 3px solid #a1d08f;
+  font-size: 16px;
+  width: 52px;
+  height: 32px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  line-height: 32px;
+  text-align: center;
+}
+math-field.has_ex_text + .text_hint:before {
+  content: '예';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background: var(--primary-blue);
+  border-radius: 12px;
+  color: #fff;
+  line-height: 42px;
+}
+.input_wrap math-field.large {
+  width: 300px !important;
+}
+
+/* ema612_01_ih_0001 */
+.ema612_01_ih_0001 .question_box {
+  gap: 100px;
+}
+.ema612_01_ih_0001 .question_box > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ema612_01_ih_0002 */
+.ema612_01_ih_0002 .question_box {
+  gap: 100px;
+}
+.ema612_01_ih_0002 .text_area {
+  width: 434px;
+  height: 244px;
+  border: 3px solid #e4b4d3;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  padding-top: 45px;
+}
+.ema612_01_ih_0002 .text_area .label_bogi {
+  position: absolute;
+  top: -15px;
+  left: 40px;
+}
+.ema612_01_ih_0002 .input_area {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/* ema612_01_ih_0003 */
+.ema612_01_ih_0003 .question_box {
+  gap: 36px;
+  padding-right: 60px;
+}
+.ema612_01_ih_0003 .canvas_area {
+  position: relative;
+  background: url(./../../common_practice/img/EMA612_01_IH/0003_02.png) no-repeat right bottom / 569px 406px;
+  width: 569px;
+  height: 406px;
+}
+.ema612_01_ih_0003 .canvas_area p {
+  position: absolute;
+}
+.ema612_01_ih_0003 .canvas_area .text1 {
+  top: -45px;
+  left: 5px;
+}
+.ema612_01_ih_0003 .canvas_area .text2 {
+  left: -56px;
+  top: 3px;
+}
+.ema612_01_ih_0003 .img_area {
+  position: relative;
+}
+.ema612_01_ih_0003 .img_area p {
+  position: absolute;
+}
+.ema612_01_ih_0003 .text1 {
+  top: 32px;
+  left: 228px;
+}
+.ema612_01_ih_0003 .text2 {
+  top: 135px;
+  left: 174px;
+}
+.ema612_01_ih_0003 .text3 {
+  top: 176px;
+  left: 31px;
+}
+.ema612_01_ih_0003 canvas {
+  background-color: #fff;
+  touch-action: none;
+  width: 553px;
+  height: 394px;
+  position: absolute;
+  right: 0;
+  top: 11px;
+}
+/* .ema612_01_ih_0003.answered #gridCanvas {
+	opacity: 0;
+} */
+.ema612_01_ih_0003.answered #lineSelectLayer {
+  opacity: 0;
+}
+#lineSelectLayer {
+  display: none;
+  position: absolute;
+  height: 70px;
+  padding: 8px;
+  background-color: var(--primary-blue-800);
+  white-space: nowrap;
+  border-radius: 70px;
+}
+#lineSelectLayer:after {
+  content: '';
+  width: 29px;
+  height: 15px;
+  background: url(../../common_contents/common/img/icon_bubble_tail.svg) no-repeat top center / 100%;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#lineSelectLayer > button {
+  display: inline-block;
+  width: 52px;
+  height: 52px;
+  padding: 0;
+  background: var(--bg-default);
+  background-size: 32px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: 1px solid var(--stroke-default);
+  border-radius: 50%;
+  vertical-align: top;
+  min-width: unset;
+}
+#lineSelectLayer .to_solid {
+  background: #fff url(../../common_practice/img/EMA612_01_IH/icon_solid_line.svg) no-repeat 50% / 30px 30px;
+}
+#lineSelectLayer .to_dotted {
+  background: #fff url(../../common_practice/img/EMA612_01_IH/icon_dashed_line.svg) no-repeat 50% / 30px 30px;
+}

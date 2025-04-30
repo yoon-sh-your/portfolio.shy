@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_05_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema523_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_05_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3">
+          <span lang="y">직선 ㄱㄴ을 대칭축으로 하는 선대칭도형을 완성해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="quiz_area quiz_area1" data-answer-single="['1,2', '2,3', '3,4', '4,5', '5,6']">
+            <div class="connect_point cp1" data-id="1"></div>
+            <div class="connect_point cp2" data-id="2"></div>
+            <div class="connect_point cp3" data-id="3"></div>
+            <div class="connect_point cp4" data-id="4"></div>
+            <div class="connect_point cp5" data-id="5"></div>
+            <div class="connect_point cp6" data-id="6"></div>
+            <img src="./../../common_practice/img/EMA523_05_IH/0003_01.png" alt="" class="img" />
+            <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none"></svg>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">대응점을 각각 표시하고 각 점을 차례대로 이어서 선대칭도형을 완성합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key" lang="y">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      document.querySelector('.btnCheck').addEventListener('click', () => {
+        placedLetters.forEach((p) => {
+          const answer = answers.find((a) => a.x === p.x && a.y === p.y);
+          if (answer && answer.letter === p.letter) {
+            p.element.classList.add('correct');
+            p.element.classList.remove('wrong');
+          } else {
+            p.element.classList.add('wrong');
+            p.element.classList.remove('correct');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_03_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_03_su.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_03_su_0004">
+        <section class="title type2">
+            <h2 data-head="2" lang="y">
+
+                <div class="mixed_fraction ml_0">
+                    <span>2</span>
+                    <div class="fraction_box">
+                        <span>2</span>
+                        <span>9</span>
+                    </div>
+                    <span>&times;6</span>
+                    을 대분수를 가분수로 나타내어 계산하려고 합니다. 주아와 수현이의 방법으로 각각 계산하고, 두 방법을 비교해 봅
+                </div>
+                <div>시다.</div>
+
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+                <div class="question_box justify_center dir_col gap_50">
+
+                    <div class="mixed_fraction f32b m_auto mt_40">
+                        <div class="abs_1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="20" viewBox="0 0 35 20"
+                                fill="none">
+                                <text transform="translate(0.814453 -6.20996) rotate(2)" fill="white"
+                                    xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                                    font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                                    <tspan x="0" y="23.3145">주아</tspan>
+                                </text>
+                            </svg>
+                        </div>
+
+                        <span>2</span>
+                        <span class="fraction_box">
+                            <span>3</span>
+                            <span>10</span>
+                        </span>
+                        <span>&times;6</span>
+                        <span>=</span>
+                        <span class="fraction_box">
+                            <span>20</span>
+                            <span>9</span>
+                        </span>
+                        <span>&times;6</span>
+                        <span>=</span>
+                        
+                        <span class="fraction_box">
+                            <span>20&times;6</span>
+                            <span>9</span>
+                        </span>
+                        <span>=</span>
+                        <span class="fraction_box">
+                            <span>120</span>
+                            <span>9</span>
+                            
+                            <span class="division_1">
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="40"></math-field>
+                                </span>
+                            </span>
+                            <span class="division_2">
+                                <span>3</span>
+                            </span>
+                        </span>
+                        <span>=</span>
+                        <span class="fraction_box">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="40"></math-field>
+                            </span>
+                            <span>3</span>
+                        </span>
+                        <span>=</span>
+                        <span class="input_wrap">
+                            <math-field data-answer-single="13"></math-field>
+                        </span>
+                        <span class="fraction_box">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="1"></math-field>
+                            </span>
+                            <span class="input_wrap">
+                                <math-field data-answer-single="3"></math-field>
+                            </span>
+                        </span>
+                    </div>
+
+                    <hr>
+
+                    <div class="mixed_fraction f32b m_auto">
+                        <div class="abs_2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="20" viewBox="0 0 34 20"
+                                fill="none">
+                                <text transform="translate(0.814453 -6.20996) rotate(2)" fill="white"
+                                    xml:space="preserve" style="white-space: pre" font-family="Pretendard"
+                                    font-size="20" font-weight="bold" letter-spacing="-0.5px">
+                                    <tspan x="0" y="23.3145">수현</tspan>
+                                </text>
+                            </svg>
+                        </div>
+                            <span>2</span>
+                        <span class="fraction_box">
+                            <span>2</span>
+                            <span>9</span>
+                        </span>
+                        <span>&times;6</span>
+                        <span>=</span>
+                        <span class="fraction_box">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="20"></math-field>
+                            </span>
+                            <span>9</span>
+                            
+                            <span class="division_2">
+                                <span>5</span>
+                            </span>
+                        </span>
+                        <span>&times;6</span>
+                        <span>=</span>
+                        <span class="fraction_box">
+                            <span>
+                                <span>20&times;</span>
+                                <span class="input_wrap">
+                                    <math-field data-answer-single="2"></math-field>
+                                </span>
+                            </span>
+                            <span>5</span>
+                        </span>
+                        <span>=</span>
+                        <span class="fraction_box">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="40"></math-field>
+                            </span>
+                            <span>3</span>
+                        </span>
+                        <span>=</span>
+                        <span class="input_wrap">
+                            <math-field data-answer-single="13"></math-field>
+                        </span>
+                        <span class="fraction_box">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="1"></math-field>
+                            </span>
+                            <span class="input_wrap">
+                                <math-field data-answer-single="3"></math-field>
+                            </span>
+                        </span>                            
+                    </div>
+                </div>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <!-- <button class="btnSubmit">확인</button> -->
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

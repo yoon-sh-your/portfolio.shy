@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA613_09_SU_0002_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema613_09.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema613_09_su_0002">
+    <section class="title type2">
+      <h2 data-head="1">
+        <div>
+          <span lang="y">수연이가 4일 동안 한 운동과 운동별 소모한 열량, 운동 시간을 기록한 표입니다. 수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 구해
+            봅시다.</span>
+          <button type="button" class="btn calculator">계산기</button>
+        </div>
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <div class="flex align_start">
+          <div class="img_box" data-tit="">
+            <img src="../../common_contents/img/EMA613_09_SU/0002_img01.png" alt="자치회 활동 이미지" />
+            <div class="txt_box abs_1" lang="y">
+              <span class="name" lang="y">수연</span>
+              민찬아! 내 운동 기록 한번 볼래?<br />
+              앞으로는 이 중에서 같은 시간<br />동안 가장 많은 열량을 소모하는 <br />운동을 하고 싶은데 어떤 운동이 <br />좋을까?
+            </div>
+            <div class="txt_box abs_2" lang="y">
+              <span class="name" lang="y">민찬</span>
+              1 분 동안 가장 많은 열량을 소모한 <br />운동을 어림셈하여 찾아본<br />다음 직접 계산하여 확인해 보자.
+            </div>
+            <table lang="y">
+              <caption>
+                수연이의 운동 기록
+              </caption>
+              <colgroup>
+                <col style="width: 63px">
+                <col style="width: 93px">
+                <col style="width: 125px;">
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">날짜</th>
+                  <th scope="col">운동</th>
+                  <th scope="col">소모한 열량(킬로칼로리)</th>
+                  <th scope="col">운동 시간(분)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td headers="column1">5/1</td>
+                  <td headers="column2">테니스</td>
+                  <td headers="column3">95</td>
+                  <td headers="column4">20</td>
+                </tr>
+                <tr>
+                  <td headers="column1">5/2</td>
+                  <td headers="column2">줄넘기</td>
+                  <td headers="column3">64.35</td>
+                  <td headers="column4">11</td>
+                </tr>
+                <tr>
+                  <td headers="column1">5/3</td>
+                  <td headers="column2">자전거 타기</td>
+                  <td headers="column3">32.5</td>
+                  <td headers="column4">13</td>
+                </tr>
+                <tr>
+                  <td headers="column1">5/4</td>
+                  <td headers="column2">등산</td>
+                  <td headers="column3">218.5</td>
+                  <td headers="column4">46</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4">(출처: 황경순, 2011)</td>
+                </tr>
+              </tfoot>
+            </table>
+            <div class="notice">열량: 음식을 먹었을 때 낼 수 있는 에너지의 양을 킬로칼로리 단위로 나타낸 것.</div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <div class="img_row">
+          <div class="picture_wrap"
+            data-tit="수연이가 4일 동안 한 운동과 운동별 소모한 열량, 운동 시간을 기록한 표입니다. 수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 구해 봅시다.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="660" height="552" viewBox="0 0 660 552" fill="none" lang="y">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="220" y="335.392">수연</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                letter-spacing="-0.5px">
+                <tspan x="87.3555" y="389.392">민찬아! 내 운동 기록 한번 볼래?
+                </tspan>
+                <tspan x="81.4023" y="405.392">앞으로는 이 중에서 같은 시간 동안
+                </tspan>
+                <tspan x="82.6523" y="421.392">가장 많은 열량을 소모하는 운동을
+                </tspan>
+                <tspan x="86.2051" y="437.392">하고싶은데 어떤 운동이 좋을까?</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                letter-spacing="-0.5px">
+                <tspan x="429.428" y="414.266">1분 동안 가장 많은 열량을 소모한
+                </tspan>
+                <tspan x="445.447" y="430.266">운동을 어리셈하여 찾아본
+                </tspan>
+                <tspan x="431.791" y="446.266">다음 직접 계산하여 확인해 보자.</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="422" y="355.392">민찬</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA613_09_SU/0002_img03.png" alt="자치회 활동 이미지" />
+            <button class="zoom"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">수연이가 한 운동별 1분 동안 소모한 열량은 몇 킬로칼로리일지 어림셈해 보고, 어떻게 어림셈했는지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">테니스: 59÷20을 60÷20으로 어림셈하면 약 3킬로칼로리입니다.</li>
+                <li lang="y">줄넘기: 41.25÷11을 40÷10으로 어림셈하면 약 4킬로칼로리입니다.</li>
+                <li lang="y">자전거 타기: 19.5÷13을 20÷10으로 어림셈하면 약 2킬로칼로리입니다.</li>
+                <li lang="y">등산: 149.5÷46을 150÷50으로 어림셈하면 약 3킬로칼로리입니다.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <div class="img_row">
+          <div class="picture_wrap"
+            data-tit="수연이가 4일 동안 한 운동과 운동별 소모한 열량, 운동 시간을 기록한 표입니다. 수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 구해 봅시다.">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="660" height="552" viewBox="0 0 660 552" fill="none" lang="y">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="220" y="335.392">수연</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                letter-spacing="-0.5px">
+                <tspan x="87.3555" y="389.392">민찬아! 내 운동 기록 한번 볼래?
+                </tspan>
+                <tspan x="81.4023" y="405.392">앞으로는 이 중에서 같은 시간 동안
+                </tspan>
+                <tspan x="82.6523" y="421.392">가장 많은 열량을 소모하는 운동을
+                </tspan>
+                <tspan x="86.2051" y="437.392">하고싶은데 어떤 운동이 좋을까?</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                letter-spacing="-0.5px">
+                <tspan x="429.428" y="414.266">1분 동안 가장 많은 열량을 소모한
+                </tspan>
+                <tspan x="445.447" y="430.266">운동을 어리셈하여 찾아본
+                </tspan>
+                <tspan x="431.791" y="446.266">다음 직접 계산하여 확인해 보자.</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="422" y="355.392">민찬</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA613_09_SU/0002_img03.png" alt="자치회 활동 이미지" />
+            <button class="zoom"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">어림셈한 결과를 비교하여 수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 고르세요.</h3>
+            <div class="question_box justify_center dir_col">
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="줄넘기">
+                  <option></option>
+                  <!--최초선택데이터 생성 방지용-->
+                  <option value="테니스" lang="y">테니스</option>
+                  <option value="줄넘기" lang="y">줄넘기</option>
+                  <option value="자전거 타기" lang="y">자전거 타기</option>
+                  <option value="등산" lang="y">등산</option>
+                </select>
+              </div>
+              <div class="hint_area f32b" lang="y">줄넘기</div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_4">
+        <div class="input_area">
+          <h3 lang="y">수연이가 한 운동별 1분 동안 소모한 열량은 몇 킬로칼로리인지 소수로 나타내어 보세요.</h3>
+
+          <table>
+            <colgroup>
+              <col style="width: 294px" />
+              <col />
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col" lang="y">운동</th>
+                <th scope="col" lang="y">1분 동안 소모한 열량(킬로칼로리)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td headers="column1" lang="y">테니스</td>
+                <td headers="column2">
+                  <div class="question_box justify_center">
+                    <div class="input_wrap answer1">
+                      <math-field data-answer-single="2.95"></math-field>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td headers="column1" lang="y">줄넘기</td>
+                <td headers="column2">
+                  <div class="question_box justify_center">
+                    <div class="input_wrap answer1">
+                      <math-field data-answer-single="3.75"></math-field>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td headers="column1">자전거 타기</td>
+                <td headers="column2">
+                  <div class="question_box justify_center">
+                    <div class="input_wrap answer1">
+                      <math-field data-answer-single="1.5"></math-field>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td headers="column1">등산</td>
+                <td headers="column2">
+                  <div class="question_box justify_center">
+                    <div class="input_wrap answer1">
+                      <math-field data-answer-single="3.25"></math-field>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+      <article class="page page_5">
+        <div class="img_row">
+          <div class="picture_wrap"
+            data-tit="수연이가 4일 동안 한 운동과 운동별 소모한 열량, 운동 시간을 기록한 표입니다. 수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 구해 봅시다.">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="660" height="552" viewBox="0 0 660 552" fill="none" lang="y">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="220" y="335.392">수연</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                letter-spacing="-0.5px">
+                <tspan x="87.3555" y="389.392">민찬아! 내 운동 기록 한번 볼래?
+                </tspan>
+                <tspan x="81.4023" y="405.392">앞으로는 이 중에서 같은 시간 동안
+                </tspan>
+                <tspan x="82.6523" y="421.392">가장 많은 열량을 소모하는 운동을
+                </tspan>
+                <tspan x="86.2051" y="437.392">하고싶은데 어떤 운동이 좋을까?</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                letter-spacing="-0.5px">
+                <tspan x="429.428" y="414.266">1분 동안 가장 많은 열량을 소모한
+                </tspan>
+                <tspan x="445.447" y="430.266">운동을 어리셈하여 찾아본
+                </tspan>
+                <tspan x="431.791" y="446.266">다음 직접 계산하여 확인해 보자.</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12"
+                font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="422" y="355.392">민찬</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA613_09_SU/0002_img03.png" alt="자치회 활동 이미지" />
+            <button class="zoom"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 문동은 무엇인지 구하고, 어림셈하여 구한 운동과 비교해 보세요.</h3>
+            <div class="question_box gap_20">
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="줄넘기">
+                  <option></option>
+                  <!--최초선택데이터 생성 방지용-->
+                  <option value="테니스" lang="y">테니스</option>
+                  <option value="줄넘기" lang="y">줄넘기</option>
+                  <option value="자전거 타기" lang="y">자전거 타기</option>
+                  <option value="등산" lang="y">등산</option>
+                </select>
+              </div>
+              <div class="hint_area f24b">줄넘기</div>
+            </div>
+            <div class="input_wrap">
+              <math-field class="textarea" placeholder="​" contenteditable="true" tabindex="0"></math-field>
+              <div class="example_box">
+                <p lang="y">어림셈하여 구한 운동과 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSubmit">제출</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

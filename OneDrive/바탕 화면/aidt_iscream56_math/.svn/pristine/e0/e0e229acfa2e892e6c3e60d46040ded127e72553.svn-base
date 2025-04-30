@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA621_10_SU_0002_s </title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+     <!-- 개별별 -->
+     <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+     <link rel="stylesheet" href="./../../common_contents/css/ema621_10.css" />
+</head>
+<body>
+    <div id="app_wrap" class="ema621_10_SU_0002 play-howto-layout">
+        <section class="title">
+            <h2 data-text="놀이방법" lang="y">
+                <span class="title-ready"><span class="point">놀이</span> 방법</span>
+                <span class="howto num1">모둠별로 <span class="label_bogi pink">보기</span> 중 수 카드 한 세트를 고릅니다.</span>
+                <span class="howto num2">고른 세트의 수 카드를 한 번씩 모두 사용하여 각자 활동지에 분수의 나눗셈을 만들고 계산합니다.</span>
+                <span class="howto num3">각자 작성한 활동지를 친구들과 함께 확인하고 <span class="label_rule">규칙</span>에 따라 점수를 얻습니다.</span>
+                <span class="howto num4">순서에 따라<img src="../../common_contents/common/img/icon_howto_num1_3.svg" alt="">을 6회 반복합니다. 이때 사용한 수 카드 세트는 다시 사용하지 않습니다.</span>
+                <span class="howto num5">6회 동안 얻은 점수의 합이 가장 큰 사람이 이깁니다.</span>
+            </h2>
+
+        </section>
+        <section class="contents paging_layout">
+            <div class="flex align_start conts_cover">
+                <div class="input_area conts_cover">
+                    <article class="page page_1">
+                        <!-- flex dir_col -->
+                        <img src="../../common_contents/img/EMA621_10_SU/0002_img_1.png" alt="">
+                    </article>
+                    <article class="page page_2">
+                        <img src="../../common_contents/img/EMA621_10_SU/0002_img_2.png" alt="">
+                    </article>
+                    <article class="page page_3">
+                        <img src="../../common_contents/img/EMA621_10_SU/0002_img_3.png" alt="">
+                        <div class="image-text">
+                            <p lang="y">• 같은 나눗셈이 없으면 2점을 얻습니다.</p>
+                            <p lang="y">• 같은 나눗셈이 있으면 1점을 얻습니다.</p>
+                            <p lang="y">• 옳게 계산하면 1점을 추가로 얻습니다.</p>
+                        </div>
+                    </article>
+                    <article class="page page_4">
+                        <img src="../../common_contents/img/EMA621_10_SU/0002_img_4.png" alt="">
+                    </article>
+                    <article class="page page_5">
+                        
+                        
+                        <img src="../../common_contents/img/EMA621_10_SU/0002_img_5.png" alt="">
+                    </article>
+
+                </div>
+            </div>
+            
+            <div class="btn_area">
+                <div class="btn-play-video">
+                    <button class="btnBgDefault"  onclick="navigate('../guide_sample/vedio_player')"lang="y">활동 영상</button>
+                </div>
+                <div><button class="btnBgDefault student" lang="y" disabled>내 모둠 확인하기</button></div>
+                <div><button class="btnBgDefault teacher" lang="y">모둠 구성하기</button></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

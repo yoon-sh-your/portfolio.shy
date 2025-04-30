@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA516_06_SU_0009_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_06_su_0009" >
+      <!-- D&D 적용예정, 개발 업그레이드 진행 -->
+      <section class="title type3 page-1-title">
+        <h2 lang="y" data-head="7">
+          <span class="view"></span>에서 알맞은 단위를 골라 빈칸에 넣어 봅시다.
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="dragndrop_fraction_wrap">
+            <span class="view_base"></span>
+            <div class="drag_group">
+                <div class="drag_item" data-value="㎠">㎠</div>
+                <div class="drag_item" data-value="㎡">㎡</div>
+                <div class="drag_item" data-value="㎢">㎢</div>
+            </div>
+            <ul class="drop_group1">
+                <li class="drop_area1">
+                    <span>우리 학교 운동장의 넓이는 약 1750&nbsp;</span>
+                    <div class="drop_item" data-answer-single="㎡"></div>
+                    <span>&nbsp;입니다.</span>
+                </li>
+                <li class="drop_area2">
+                    <span>수첩의 넓이는 96&nbsp;</span>
+                    <div class="drop_item" data-answer-single="㎠"></div>
+                    <span>&nbsp;입니다.</span>
+                </li>
+                <li class="drop_area3">
+                    <span>덕유산 국립 공원의 넓이는 약 232&nbsp;</span>
+                    <div class="drop_item" data-answer-single="㎢"></div>
+                    <span>&nbsp;입니다.</span>
+                </li>
+              </ul>
+        </div>
+    </section>
+
+    <div class="btn_area">
+        <!-- 불필요한 태그 제외 후 사용 -->
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+</div>
+      </section>
+    </div>
+  </body>
+</html>

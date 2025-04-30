@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema515_10_su_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_10.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_10_su_0007">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="6_light_purple" class="is_star" lang="y">잘못 계산한 부분을 찾아 이유를 쓰고, 옳게 계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="container_515 col_515">
+            <div>
+              <div class="col_515-1">
+                <!-- <img src="../../common_contents/img/EMA515_10_SU/0007_operation.png" alt=""> -->
+
+                <div class="operations">
+                  <div class="mixed_fraction">
+                    <span>4</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>8</span>
+                    </div>
+                  </div>
+                  -
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>7</span>
+                      <span>12</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>4</span>
+                    <div class="fraction_box">
+                      <span>9</span>
+                      <span>24</span>
+                    </div>
+                  </div>
+                  -
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>14</span>
+                      <span>24 </span>
+                    </div>
+                  </div>
+                  =
+                  <!-- 박스 하나 끝 -->
+                  <div class="mixed_fraction">
+                    <span>4</span>
+                    <div class="fraction_box">
+                      <span>33</span>
+                      <span>24</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>3</span>
+                    <div class="fraction_box">
+                      <span>14</span>
+                      <span>24</span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>2 </span>
+                    <div class="fraction_box">
+                      <span>19</span>
+                      <span>24</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col_515-2">
+                <div class="reason">이유</div>
+
+                <div class="fraction_container">
+                  <div class="input_wrap">
+                    <math-field class="textarea"></math-field>
+                    <div class="example_box">
+                      <div class="fraction_row">
+                        <div class="fraction_inn">
+                          분수 부분끼리 뺄 수 없으므로
+                          <div class="mixed_fraction">
+                            <span>4</span>
+                            <div class="fraction_box">
+                              <span>9</span>
+                              <span>24</span>
+                            </div>
+                          </div>
+                          의 자연수 부분에서 1만큼을 분수로 나타내어야 하는데
+                          <div class="mixed_fraction">
+                            <span>4</span>
+                            <div class="fraction_box">
+                              <span>9</span>
+                              <span>24</span>
+                            </div>
+                          </div>
+                          의 자연수 부
+                        </div>
+                        <div class="fraction_inn">
+                          분에서 1만큼을 분수로 나타내어야 하는데
+                          <div class="mixed_fraction">
+                            <span>4</span>
+                            <div class="fraction_box">
+                              <span>9</span>
+                              <span>24</span>
+                            </div>
+                          </div>
+                          의 자연수부분을 그대로 두어 잘못 계산했습니다.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col_515-3">
+              <div class="correct_calculation">옳은 계산</div>
+
+              <div>
+                <div class="operations">
+                  <div class="mixed_fraction">
+                    <span>4</span>
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>8</span>
+                    </div>
+                  </div>
+                  -
+                  <div class="mixed_fraction">
+                    <span>2</span>
+                    <div class="fraction_box">
+                      <span>7</span>
+                      <span>12</span>
+                    </div>
+                  </div>
+                  =
+                  <!-- 여기 부터 인풋으로 -->
+                  <div class="mixed_fraction">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="4"></math-field>
+                      </div>
+                    </span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="9"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="24"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  -
+                  <div class="mixed_fraction">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="2"></math-field>
+                      </div>
+                    </span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="14"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="24"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  =
+                  <!-- 박스 하나 끝 -->
+                  <div class="mixed_fraction">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="3"></math-field>
+                      </div>
+                    </span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="33"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="24"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  -
+                  <div class="mixed_fraction">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="2"></math-field>
+                      </div>
+                    </span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="14"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="24"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  =
+                  <div class="mixed_fraction">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="1"></math-field>
+                      </div>
+                    </span>
+                    <div class="fraction_box">
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="19"></math-field>
+                        </div>
+                      </span>
+                      <span>
+                        <div class="input_wrap">
+                          <math-field data-answer-single="24"></math-field>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

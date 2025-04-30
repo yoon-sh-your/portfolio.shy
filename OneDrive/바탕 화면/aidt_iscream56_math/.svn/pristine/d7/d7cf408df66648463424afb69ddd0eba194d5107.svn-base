@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_06_IH_0005</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema613_04_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_06_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_pink" lang="y">몫이 가장 작은 것을 찾아 기호를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_06_IH/0005_01.png" alt="" />
+            <div class="texts">
+              <p><i class="num_sign">ㄱ</i> 5.35÷5</p>
+              <p><i class="num_sign">ㄴ</i> 4.2÷4</p>
+              <p><i class="num_sign">ㄷ</i> 9.54÷9</p>
+              <p><i class="num_sign">ㄹ</i> 2.16÷2</p>
+            </div>
+            <div class="boolean_wrap type_chk">
+              <div>
+                <button class="button1" data-answer-single="false"></button>
+                <button class="button2" data-answer-single="true"></button>
+                <button class="button3" data-answer-single="false"></button>
+                <button class="button4" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">
+                  ㉠ 5.35÷5=1.07 ㉡ 4.2÷4=1.05<br />
+                  ㉢ 9.54÷9=1.06 ㉣ 2.16÷2=1.08<br />
+                  1.05&lt;1.06&lt;1.07&lt;1.08이므로 몫이 가장 작은것은 ㉡입니다.
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,709 @@
+/* 분수 연산 */
+.operations {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  /* gap: 4px; */
+}
+
+/* 분수 - 인풋 사이즈 */
+.input_wrap {
+  align-items: center;
+  min-width: 80px;
+}
+
+.input_wrap math-field:not(.textarea) {
+  width: 80px;
+  height: 60px;
+}
+
+/* 서술형 예시 답 분수 문장 */
+.example_box .fraction-text-column {
+  display: flex;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--primary-blue-800);
+}
+
+.example_box .fraction-text-column .f32b {
+  color: var(--Blue-scale_T-Blue-800, #1454B9);
+  /* Title/H_04_BOLD */
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* 150% */
+  letter-spacing: -0.5px;
+}
+
+.fraction_container .input_wrap .example_box::before {
+  margin-top: 20px;
+}
+
+/* 비디오, 사진 페이지 공통 */
+.contents>.flex {
+  gap: 26px;
+}
+
+.video_wrap .play {
+  z-index: 999;
+}
+
+.video_wrap {
+  background: none;
+}
+
+.flex.align_start textarea {
+  width: 797px;
+  height: 250px;
+}
+
+/* .title h2[data-type="1"] .title_head,
+.title h2[data-type="2"] .title_head {
+  margin-top: 35px;
+} */
+
+/* 슬라이드 페이지 공통 */
+.page math-field.textarea {
+  width: 1208px;
+  height: 250px;
+}
+
+/* 커스텀 페이지 공통 */
+.container_515 h3::before {
+  display: none;
+}
+
+.container_515 {
+  /* padding: 20px; */
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: row;
+  /* min-height: 348px; */
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1635px;
+  /* height: 448px; */
+  gap: 40px;
+}
+
+.container_515.col_515 {
+  flex-direction: column;
+  gap: 0;
+}
+
+.top_515 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom_515 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.left_515 {
+  /* padding: 20px; */
+  /* background-color: antiquewhite; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.right_515 {
+  /* padding: 20px; */
+  /* background-color: beige; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.row_515-1,
+.row_515-2,
+.row_515-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.row_515-1 {
+  /* padding: 10px; */
+  /* background-color: orange; */
+  justify-content: center;
+  align-items: center;
+}
+
+.row_515-2 {
+  /* padding: 10px; */
+  /* background-color: yellow; */
+}
+
+.row_515-3 {
+  /* padding: 10px; */
+  /* background-color: green; */
+}
+
+/* 분수 색칠 */
+.count_row {
+  display: flex;
+  flex-direction: column;
+}
+
+.count_row .nums {
+  font-size: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boolean-counts {
+  display: flex;
+  gap: 20px
+}
+
+/* 색칠 - 그리드 */
+.boolean_count_wrap.grid_515 {
+  display: grid;
+  gap: 0;
+}
+
+.boolean_count_wrap.grid_515.c4r3 {
+  grid-template-columns: repeat(4, 1fr);
+  /* 가로 4칸 */
+  grid-template-rows: repeat(3, 1fr);
+  /* 세로 3칸 */
+}
+
+.boolean_count_wrap.grid_515.c5r3 {
+  grid-template-columns: repeat(5, 1fr);
+  /* 가로 4칸 */
+  grid-template-rows: repeat(3, 1fr);
+  /* 세로 3칸 */
+}
+
+.boolean_count_wrap.grid_515 button {
+  /* border: 1px dashed black; */
+  border: 1px solid;
+  border-image-source: repeating-linear-gradient(45deg, black 0px, black 3px, white 3px, white 5px);
+  border-image-slice: 3;
+  min-width: auto;
+  width: 30px;
+  height: 40px;
+}
+
+.boolean_count_wrap.grid_515 button:not(:first-child)::before {
+  display: none;
+}
+
+/* 네모 안에 */
+.nemo {
+  border-radius: 4px;
+  border: 2px solid var(--Blue-scale_T-Blue-600, #3B71FE);
+  background: var(--Text-White, #FFF);
+  display: flex;
+  width: 32px;
+  height: 32px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+/* 유나 예준이와 다른 방법으로 */
+.other_method_name {
+  color: #FFF;
+  /* Title/H_04_BOLD */
+  font-family: Pretendard;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* 150% */
+  letter-spacing: -0.5px;
+  transform: rotate(4.002deg);
+  position: absolute;
+  top: 132px;
+  left: 140px;
+}
+
+/* 보기 */
+.look {
+  display: flex;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  border: 2px solid var(--Secondary-Red, #EE4F24);
+  background: var(--Text-White, #FFF);
+  color: var(--Secondary-Red, #EE4F24);
+  /* Caption/Caption_01_BOLD */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: -0.5px;
+}
+
+/* 방법 1,2 */
+.method {
+  color: #ffffff;
+  text-shadow: -2px 0px #5BB8A1, 0px 2px #5BB8A1, 2px 0px #5BB8A1, 0px -2px #5BB8A1;
+  position: relative;
+  width: 115px;
+  height: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-repeat: no-repeat;
+  background-position: bottom right 10px;
+  /* background-color: tomato; */
+  padding-right: 50px;
+}
+
+.method[circle-number="1"] {
+  background-image: url(../img/EMA515_04_SU/0005_cricle-1.png);
+}
+
+.method[circle-number="2"] {
+  background-image: url(../img/EMA515_04_SU/0005_cricle-2.png);
+}
+
+.method::before {
+  content: '';
+  width: 97px;
+  height: 23px;
+  background-color: #5BB8A1;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+
+/* 새로운 스타일 추가 */
+.input_wrap math-field:not(.textarea) {
+  width: 80px;
+  height: 60px;
+}
+
+.flex.align_start math-field.textarea {
+  width: 797px;
+  height: 250px;
+}
+
+.page math-field.textarea {
+  width: 1208px;
+  height: 250px;
+}
+
+/* 아이콘 - 기호 */
+.circle-gieok {
+  width: 30.21px;
+  height: 30.21px;
+  background-image: url(../img/EMA515_08_SU/0002_circle-gieok.png);
+  margin-top: 6px;
+}
+
+.circle-nieun {
+  width: 30.21px;
+  height: 30.21px;
+  background-image: url(../img/EMA515_08_SU/0002_circle-nieun.png);
+  margin-top: 6px;
+}
+
+.ema515_08_su_0004 .to_be .main .red {
+  font-size: 64px;
+  color: #FF4D4D;
+}
+
+/* ==============================================
+   🎨 차시 스타일
+   ============================================== */
+/* 0001 */
+.ema515_08_su_0001 .blue {
+  color: rgba(59, 113, 254, 1);
+}
+
+/* 0002 */
+/* 확인 버튼 가리기 */
+.ema515_08_su_0002:not([data-current-page="page_3"]) .btn_area .btnSubmit,
+.ema515_08_su_0002[data-current-page="page_1"] .btn_area {
+  display: none;
+}
+
+/* ** 스크롤로 만들기 */
+.ema515_08_su_0002 .page.page_1 .question_box {
+  height: 502px;
+  /* padding-top: 700px; */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* background-color: aqua; */
+}
+
+.ema515_08_su_0002 .page.page_1 .container_515 {
+  width: 632px;
+  height: 680px;
+
+  position: relative;
+}
+
+.ema515_08_su_0002 .page.page_1 .picture_wrap {
+  transform: scale(1.5) translate(0px, 200px);
+  border-radius: unset;
+  width: 632px;
+  height: 680px;
+
+}
+
+.ema515_08_su_0002 .page.page_1 .picture_wrap img,
+.ema515_08_su_0002 .page.page_1 .picture_wrap svg {
+  transform: translate(-50%, -50%);
+}
+
+.ema515_08_su_0002 .page.page_1 .texts_515 {
+  font-family: Pretendard;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  vertical-align: middle;
+
+  width: 1635px;
+  height: 578px;
+
+  position: absolute;
+  top: 150px;
+  left: -10px;
+
+}
+
+.ema515_08_su_0002 .page.page_1 .fraction-text-align {
+  font-family: Pretendard;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ema515_08_su_0002 .page.page_1 .fraction-text-column {
+  align-items: center;
+}
+
+.ema515_08_su_0002 .page.page_1 .text-1 {
+  position: absolute;
+  top: 56px;
+  left: 604px;
+}
+
+.ema515_08_su_0002 .page.page_1 .text-2 {
+  position: absolute;
+  top: 43px;
+  left: 762px;
+}
+
+.ema515_08_su_0002 .page.page_1 .text-3 {
+  position: absolute;
+  top: 414px;
+  left: 560px;
+}
+
+.ema515_08_su_0002 .page.page_1 .text-4 {
+  position: absolute;
+  top: 462px;
+  left: 761px;
+}
+
+.ema515_08_su_0002 .page.page_2 .container_515 {
+  width: 757px;
+  height: 427.396484375px;
+
+  background-image: url(../img/EMA515_08_SU/0002_bg-2.png);
+
+  flex-direction: column;
+
+  font-family: Pretendard;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  /* background-color: aliceblue; */
+
+  position: relative;
+
+  /* color: #1454B9; */
+}
+
+.ema515_08_su_0002 .page.page_2 .text-1 {
+  position: absolute;
+  top: 82px;
+  left: 152px;
+  background-color: #EDEDED;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-2 {
+  position: absolute;
+  top: 77px;
+  left: 432px;
+  background-color: #EDEDED;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-3 {
+  position: absolute;
+  top: 126px;
+  left: 129px;
+  background-color: white;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-4 {
+  position: absolute;
+  top: 125px;
+  left: 615px;
+  background-color: white;
+  padding: 2px;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-5 {
+  position: absolute;
+  top: 176px;
+  left: 129px;
+  background-color: white;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-6 {
+  position: absolute;
+  top: 163px;
+  left: 612px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-7 {
+  position: absolute;
+  top: 228px;
+  left: 129px;
+  background-color: white;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-8 {
+  position: absolute;
+  top: 218px;
+  left: 610px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.ema515_08_su_0002 .page.page_2 .text-9 {
+  position: absolute;
+  top: 324px;
+  left: 83px;
+  background-color: #DCEAC5;
+}
+
+.ema515_08_su_0002 .page.page_2 .container_515 .operations {
+  transform: scale(0.55);
+  position: absolute;
+  top: 265px;
+  left: 425px;
+  z-index: 3;
+  background-color: #FDECEF;
+  padding: 0 12px;
+  /* border: 1px solid red; */
+}
+
+/* 0002 page 3 */
+.ema515_08_su_0002 .page.page_3 .container_515 {
+  width: 1435px;
+  /* align-items: start; */
+  /* background-color: #1454B9; */
+  gap: 80px;
+}
+
+.ema515_08_su_0002 .page.page_3 .container_515 .left_515 {
+  /* background-color: #5BB8A1; */
+  width: 700px;
+  /* height: auto; */
+}
+
+.ema515_08_su_0002 .page.page_3 .container_515 .right_515 {
+  /* background-color: #EE4F24; */
+  width: auto;
+}
+
+.ema515_08_su_0002 .page.page_3 .container_515 > div {
+  /* width: auto; */
+  flex: unset;
+  justify-content: start;
+}
+
+/* 0002 pagge 4 */
+.ema515_08_su_0002 .page.page_4 .container_515 {
+  position: relative;
+}
+
+.ema515_08_su_0002 .page.page_4 .container_515 .drag_group {
+  background-color: #F2F4F7;
+  width: 480px;
+  height: 140px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.ema515_08_su_0002 .page.page_4 .container_515 .drag_group>* {
+  background-color: white;
+  width: 80px;
+  height: 60px;
+  border-radius: 12px;
+  border: 4px solid #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ema515_08_su_0002 .page.page_4 .dragndrop_fraction_wrap .drop_item[data-pair="1"] {
+  min-width: unset;
+  width: 66.035888671875px;
+  height: 171.3790283203125px;
+  border-width: 2.71px;
+
+  position: absolute;
+  top: 120px;
+  left: 452px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ema515_08_su_0002 .page.page_4 .dragndrop_fraction_wrap .drag_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ema515_08_su_0002 .page.page_4 .dragndrop_fraction_wrap .drag_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.ema515_08_su_0002 .page.page_4 .drag_item.ui-draggable.ui-draggable-handle.dropped {
+  width: 62px;
+  height: 168px;
+}
+
+.ema515_08_su_0002 .page.page_4 .dragndrop_fraction_wrap .drop_item::after {
+  content: "";
+  display: inline-block;
+  width: 32x;
+  /* 원하는 크기 */
+  height: 41px;
+  background-image: url('../img/EMA515_08_SU/0002_answer_note.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: calc(100% + 15px);
+  left: 15px;
+}
+
+/* 0003 */
+.ema515_08_su_0003 .container_515 {
+  width: 1408.3516845703125px;
+  height: 480px;
+  background-color: teal;
+  background-image: url(../img/EMA515_08_SU/0003_bg.png);
+  flex-direction: column;
+  gap: 0;
+}
+
+.ema515_08_su_0003 .top_515 {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex: 1.2;
+}
+
+.ema515_08_su_0003 .top_515 .some_515-1 {
+  margin-right: 100px;
+}
+
+.ema515_08_su_0003 .top_515 .some_515-2 {
+  margin-right: 180px;
+}
+
+.ema515_08_su_0003 .top_515 .some_515-3 {
+  margin-right: 80px;
+}
+
+.ema515_08_su_0003 .top_515 .some_515-4 {
+  margin-right: 80px;
+}
+
+.ema515_08_su_0003 .top_515 .input_wrap math-field {
+  min-width: unset;
+  min-height: unset;
+  width: 120px;
+  height: 112px;
+}
+
+.ema515_08_su_0003 .top_515 .input_wrap .example_box {
+  position: absolute;
+  top: -110px;
+}
+
+.ema515_08_su_0003 .bottom_515 .input_wrap math-field.textarea {
+  min-height: auto !important;
+  width: 1200px;
+}
+
+.ema515_08_su_0003 .top_515 .input_wrap .example_box {
+  width: auto;
+}
+
+.ema515_08_su_0003 .example_box img {
+  max-width: fit-content;
+  width: 42px;
+  height: 42px;
+}
+
+.ema515_08_su_000 .bottom_515 {
+  display: flex;
+  gap: 9px;
+}

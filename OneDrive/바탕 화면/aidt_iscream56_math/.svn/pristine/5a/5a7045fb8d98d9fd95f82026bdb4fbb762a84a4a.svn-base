@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_07_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_07_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">수학 체험 마을에 정원이 있습니다. 빨간색 꽃밭의 모양을 살펴보고 넓이를 어떻게 구할 수 있을지 생각해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 760" fill="none">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-size="24" letter-spacing="-0.5px" lang="y">
+                <tspan x="523.266" y="156.64">빨간색 꽃밭 안에 작은</tspan>
+                <tspan x="521.594" y="190.64">원 모양의 분수가 있어.</tspan>
+              </text>
+            </svg>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고 원의 넓이를 구하는 방법을 이야기해 보세요. </h3>
+
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <P lang="y">(반지름)×(반지름)×(원주율)로 구합니다.</P>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

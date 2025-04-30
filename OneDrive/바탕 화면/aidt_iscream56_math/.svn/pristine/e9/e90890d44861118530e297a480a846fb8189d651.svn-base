@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_06_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_06.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_06_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">계산 결과가 다른 하나를 찾아 기호를 골라 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <ul class="flex dir_col gap_40">
+            <li><span class="chr">ㄱ</span>10-8÷4+5×2</li>
+            <li><span class="chr">ㄴ</span>21-12×3÷6+4</li>
+            <li><span class="chr">ㄷ</span>(16-4)÷4+3×5</li>
+          </ul>
+          <div class="boolean_wrap type_chk">
+            <button class="button1" data-answer-single="false"><img src="../../common_practice/img/EMA511_06_IH/0004_check.svg" alt="" /></button>
+            <button class="button2" data-answer-single="true"><img src="../../common_practice/img/EMA511_06_IH/0004_check.svg" alt="" /></button>
+            <button class="button3" data-answer-single="false"><img src="../../common_practice/img/EMA511_06_IH/0004_check.svg" alt="" /></button>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <table>
+                  <tr>
+                    <td>㉠ 10-8÷4+5×2</td>
+                    <td>=10-2+5×2</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=10-2+10</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=8+10=<span class="text_bg_red">18</span></td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>㉡ 21-12×3÷6+4</td>
+                    <td>=21-36÷6+4</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=21-6+4</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=15+4=19</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td>㉢ (16-4)÷4+3×5</td>
+                    <td>=12÷4+3×5</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=3+3×5</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td>=3+15=<span class="text_bg_red">18</span></td>
+                  </tr>
+                </table>
+                <p lang="y">따라서 계산 결과가 다른 하나는 ㉡입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

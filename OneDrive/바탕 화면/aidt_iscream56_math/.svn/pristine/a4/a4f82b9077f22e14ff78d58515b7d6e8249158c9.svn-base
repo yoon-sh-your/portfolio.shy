@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_03_IH_0007</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_03_ih_0007">
+			<section class="title type2">
+				<i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+				<h2 data-head="7" class="is_star2" lang="y">
+					<span class="label_bread">조건</span>을 만족하는 (진분수)÷(진분수)의 나눗셈을 만들고 계산해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center gap_120">
+					<div class="bogi_box">
+						<span class="label_bread" lang="y">조건</span>
+						<div class="conts_bogi justify_start">
+							<ul class="flex dir_col gap_12">
+								<li class="text_bullet">두 분수의 분모는 같습니다.</li>
+								<li class="text_bullet">7÷10을 이용하여 계산할 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex align_center">
+						<div class="input_wrap fraction_wrap">
+							<math-field data-answer-single="(7)/(11)"></math-field>
+						</div>÷
+						<div class="input_wrap fraction_wrap">
+							<math-field data-answer-single="(10)/(11)"></math-field>
+						</div>÷
+						<div class="input_wrap fraction_wrap">
+							<math-field data-answer-single="(7)/(10)"></math-field>
+						</div>
+					</div>
+				</div>
+				
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve">
+ㄴ						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

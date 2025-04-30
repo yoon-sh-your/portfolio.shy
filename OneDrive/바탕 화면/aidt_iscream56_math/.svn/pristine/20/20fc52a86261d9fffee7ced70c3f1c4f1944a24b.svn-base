@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_03_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_03_su_0005">
+      <section class="title type2">
+        <h2 data-head="3_light_purple" lang="y">직육면체의 겨냥도를 완성해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex_col_box2">
+          <div class="img_box">
+            <img src="../../common_contents/img/EMA525_02_SU/0005_contents.png" alt="모눈종이위의 직육면체의 겨냥도"/>
+            
+            <div class="img_paper part1">
+              <div class="dropdown_wrap line_01 direction01">
+                <select class="custom_dropdown math_symbol" data-answer-single="solid">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+            
+              <div class="dropdown_wrap line_02 direction03">
+                <select class="custom_dropdown math_symbol" data-answer-single="solid">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap line_03 direction01">
+                <select class="custom_dropdown math_symbol" data-answer-single="dotted">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap line_04 direction04">
+                <select class="custom_dropdown math_symbol" data-answer-single="solid">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+
+              <div class="dropdown_wrap line_05 direction03">
+                <select class="custom_dropdown math_symbol" data-answer-single="solid">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+              <div class="dropdown_wrap line_06 direction02">
+                <select class="custom_dropdown math_symbol" data-answer-single="solid">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+              
+              <div class="dropdown_wrap line_07 direction04">
+                <select class="custom_dropdown math_symbol" data-answer-single="dotted">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+              
+              <div class="dropdown_wrap line_08 direction02">
+                <select class="custom_dropdown math_symbol" data-answer-single="dotted">
+                  <option></option>
+                  <option value="solid">solid</option>
+                  <option value="dotted">dotted</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

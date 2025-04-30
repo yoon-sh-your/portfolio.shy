@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_03_IH_0005</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema625_03_ih_0005">
+			<section class="title group">
+				<h2 lang="y"><span class="puple">[4~5]</span> 원주와 지름을 나타난 표입니다. 물음에 답해 보세요.</h2>
+			</section>
+			<section class="title type2">
+				<h2 data-head="5_light_purple" class="is_star" lang="y">
+					원주율을 어림하여 사용하는 이유를 써 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="input_area">
+						<span lang="y" class="label_reason">이유</span>
+						<div class="input_wrap">
+							<math-field class="textarea"></math-field>
+							<div class="example_box">
+								<p lang="y">원주율은 소수로 나타내면 끝없이 계속되기 때문에 어림하여 사용합니다.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+									원주율을 소수로 나타내면 끝없이 계속되므로 반올림하여 소수 둘째 자리까지 나타낸 값인
+									3.14로 사용합니다
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnSubmit" data-submit="true">제출</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

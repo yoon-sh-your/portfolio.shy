@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA621_01_IH_0004</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema621_01.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema621_01_ih_0004">
+			<section class="title flex_wrap">
+				<h2 lang="y">
+					<span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+					<span class="title_text" lang="y">『수학 6-1』 (분수)÷(자연수)</span>
+				</h2>
+			</section>
+			<section class="title type2">
+				<h2 data-head="4" lang="y" class="fraction_box_title">
+					우유
+					<div class="fraction_box">
+						<span>3</span>
+						<span>4</span>
+					</div>
+					L를 3명이 똑같이 나누어 마셨습니다. 한 명이 마신 우유는 몇 L인지 식을 쓰고 답을 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center gap_120">
+					<div class="flex gap_10">
+						<span class="label_gray">식</span>
+						<div class="input_wrap fraction_wrap answer1">
+							<math-field data-answer-single="(3)/(4)-:3"></math-field>
+						</div>
+					</div>
+					<div class="flex gap_10">
+						<span class="label_gray">답</span>
+						<div class="flex align_center gap_4">
+							<div class="input_wrap fraction_wrap answer2">
+								<math-field data-answer-single="(1)/(4)"></math-field>
+							</div>
+							L
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>(한 명이 마신 우유의 양)</p>
+								<p class="in_flex mt_15">
+								  =
+								  <span class="fraction_box">
+									<span>3</span><span>4</span>
+								  </span>
+								  ÷ 3 =
+								  <span class="fraction_box">
+									<span>3÷3</span><span>4</span>
+								  </span>
+								  =
+								  <span class="fraction_box">
+									<span>1</span><span>4</span>
+								  </span>
+								  (L)
+								</p>
+							  </div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

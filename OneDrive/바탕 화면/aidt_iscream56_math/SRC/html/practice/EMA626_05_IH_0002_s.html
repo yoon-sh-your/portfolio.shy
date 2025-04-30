@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA626_02_IH_0002</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema626_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema626_05_ih_0002">
+			<section class="title type2">
+				<h2 data-head="2_orange">
+					<span class="label_bogi">보기</span>
+					<span lang="y">에서 알맞은 말을 골라</span>
+					<span class="empty_box nemo"></span>
+					<span lang="y" class="ml-6">안에 나타내어 보세요.</span>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center align_center">
+					<div class="dragndrop_fraction_wrap">
+						<dl class="bogi_area">
+							<dt class="label_bogi" lang="y">보기</dt>
+							<dd>
+								<ul class="drag_group">
+									<li>
+										<span class="drag_item" data-pair="1" data-value="밑면">밑면</span>
+										<span class="drag_item" data-pair="1" data-value="옆면">옆면</span>
+									</li>
+									<li>
+										<span class="drag_item" data-pair="1" data-value="높이">높이</span>
+										<span class="drag_item" data-pair="1" data-value="모선">모선</span>
+									</li>
+									<li>
+										<span class="drag_item" data-pair="1" data-value="원뿔의 꼭짓점"
+											>원뿔의 꼭짓점</span
+										>
+									</li>
+								</ul>
+							</dd>
+						</dl>
+
+						<div class="drop_area">
+							<img src="./../../common_practice/img/EMA626_05_IH/0002_01.png" alt="" />
+							<div class="drop_group">
+								<div class="drop_item drop1" data-pair="1" data-answer-single="원뿔의 꼭짓점"></div>
+								<div class="drop_item drop2" data-pair="1" data-answer-single="높이"></div>
+								<div class="drop_item drop3" data-pair="1" data-answer-single="옆면"></div>
+								<div class="drop_item drop4" data-pair="1" data-answer-single="밑면"></div>
+								<div class="drop_item drop5" data-pair="1" data-answer-single="모선"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">
+									원뿔에서 평평한 면을 밑면, 옆을 둘러싼 굽은 면을 옆면이라고 합니다.
+								</p>
+								<p lang="y" class="text_bullet">
+									뾰족한 부분의 점을 원뿔의 꼭짓점, 원뿔의 꼭짓 점과 밑면의 둘레의 한 점을 이은 선분을
+									모선이라고 합니다.
+								</p>
+								<p lang="y" class="text_bullet">원뿔의 꼭짓점과 밑면 사이의 거리를 높이라고 합니다.</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<!-- <button class="btnType key">입력타입토글</button> -->
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

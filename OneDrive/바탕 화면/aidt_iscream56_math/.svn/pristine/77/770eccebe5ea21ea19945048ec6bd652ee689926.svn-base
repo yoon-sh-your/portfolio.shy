@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_05_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_05_ih_0005">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="5_pink" class="is_star2" lang="y">대응 관계를 나타낸 식을 보고, 식에 알맞은 상황을 생활 속에서 찾아 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box gap_60 align_start">
+          <div class="tabbox">
+            <strong class="tit_tabbox" lang="y">대응 관계를 나타낸 식</strong>
+            <div class="conts_tabbox">
+              <div class="flex justify_center align_center">□=△×6</div>
+            </div>
+          </div>
+          <div class="question_box">
+            <div class="flex gap_10">
+              <span class="label_gray" lang="y">상황</span>
+              <div class="input_wrap">
+                <math-field placeholder=" " class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">한 칸에 6명씩 탈 수 있는 관람차가 있습니다. 관람차에 탈 수 있는 사람 수(□)는 관람차 칸의 수(△)의 6배입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">생활 속에서 □가 △의 6배인 대응 관계가 있는 두 양을 찾아 알맞은 상황을 만들어 봅니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

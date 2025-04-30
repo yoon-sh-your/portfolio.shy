@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema514_03_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_03_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star fraction_box_title" lang="y">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              수 카드 5장 중에서 2장을 골라 한 번씩만 사용하여
+              <div class="fraction_box">
+                <span>3</span>
+                <span>7</span>
+              </div>
+              과 크기가 같은 분수를 만들어 보세요.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align_center gap_20">
+          <div class="img"><img src="../../common_practice/img/EMA514_03_IH/0006_img.png" alt="" /></div>
+          <div class="question_box bracket">
+            <span class="bracket-l"></span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(9)/(21)" text-align="center"></math-field>
+            </div>
+            <span class="bracket-r"></span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div lang="y">
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>7</span> </span
+                  ><span>과 크기가 같은 분수는&nbsp;</span>
+
+                  <div class="fraction_box">
+                    <span>6</span>
+                    <span>14</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>9</span>
+                    <span>21</span>
+                  </div>
+                  ,
+                  <div class="fraction_box">
+                    <span>12</span>
+                    <span>28</span>
+                  </div>
+                  , ...이므로 수 카드 9와 21을 사용하여
+                  <br />
+
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>7</span> </span
+                  ><span>과 크기가 같은 분수&nbsp;</span>
+
+                  <span class="fraction_box">
+                    <span>9</span>
+                    <span>21</span></span
+                  ><span>를 만들 수 있습니다.</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

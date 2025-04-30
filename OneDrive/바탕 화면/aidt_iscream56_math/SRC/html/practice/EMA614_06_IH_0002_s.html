@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_06_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_06">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">
+          <span lang="y">그림을 보고 전체에 대한 색칠한 부분의 비율을 백분율로 나타내어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents p_bottom">
+        <div class="ema614_06_0002 flex align_center justify_center gap_40">
+          <img src="../../common_practice/img/EMA614_06_IH/left.png" />
+          <div class="box_are">
+            <div class="box">
+              <img src="../../common_practice/img/EMA614_06_IH/item01.png" />
+              <div class="flex align_center justify_center">
+                <div class="input_wrap">
+                  <math-field data-answer-single="30"></math-field>
+                </div>
+                <p class="ml_5">％</p>
+              </div>
+            </div>
+            <div class="dot_line"></div>
+            <div class="box">
+              <img src="../../common_practice/img/EMA614_06_IH/item02.png" />
+              <div class="flex align_center justify_center">
+                <div class="input_wrap">
+                  <math-field data-answer-single="57"></math-field>
+                </div>
+                <p class="ml_5">％</p>
+              </div>
+            </div>
+          </div>
+          <img src="../../common_practice/img/EMA614_06_IH/right.png" />
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>전체 100칸 중 색칠한 부분은 30칸이므로</p>
+                  <div class="fraction_box">
+                    <span>30</span>
+                    <span>100</span>
+                  </div>
+                  <p>=30 ％입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>전체 100칸 중 색칠한 부분은 57칸이므로</p>
+                  <div class="fraction_box">
+                    <span>57</span>
+                    <span>100</span>
+                  </div>
+                  <p>=57 ％입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

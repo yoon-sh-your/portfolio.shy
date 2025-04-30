@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema525_05_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_04_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">로봇이 정육면체 모양의 상자를 펼치고 있습니다. 정육면체 모양의 상자를 펼치면 어떤 모양이 되는지 생각해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align-start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+          <div class="leftside input_area">
+            <div class="input_wrap">
+              <h3 lang="y">영상을 보고 남은 정육면체 모양의 상자를 펼치면 어떤 모양이 <br/>되는지 이야기해 봅시다.</h3>
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">상자의 모서리를 잘라서 펼치면 어떤 모양이 되는지 생각합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

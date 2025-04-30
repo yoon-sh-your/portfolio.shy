@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA511_06_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_06.css">
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema511_06_ih_0002">
+        <section class="title type2">
+            <h2 data-head="2" lang="y">
+                <span class="label_bogi" lang="y">보기</span>와 같이 계산 순서를 나타내고, 계산해 보세요.
+            </h2>
+        </section>
+
+        <section class="contents">
+            <div class="flex justify_center gap_60">
+                <div class="bogi_box">
+                    <span class="label_bogi" lang="y">보기</span>
+                    <div class="conts_bogi justify_center">
+                        <div class="question_box align_start">
+                            <div class="flex dir_col">
+                                <span>13×5-28÷7+9</span>
+                                <div class="drawing_area_ex">
+                                    <svg class="connection_lines"
+                                        data-user-connections="[[1,2],[3,4],[12,34],[5,1234]]">
+                                        <path d="M 20 12 V 42 H 45.5 H 71 V 12" stroke="#000" stroke-width="2"
+                                            fill="none" class="connection_line line_1"></path>
+                                        <path d="M 116 12 V 42 H 143.5 H 171 V 12" stroke="#000" stroke-width="2"
+                                            fill="none" class="connection_line line_2"></path>
+                                        <path d="M 143.5 82 V 112 H 94.5 H 45.5 V 82" stroke="#000" stroke-width="2"
+                                            fill="none" class="connection_line line_3"></path>
+                                        <path d="M 207 12 V 182 H 150.75 H 94.5 V 152" stroke="#000" stroke-width="2"
+                                            fill="none" class="connection_line line_4"></path>
+                                    </svg>
+                                    <div class="dot dot_1"></div>
+                                    <div class="dot dot_2"></div>
+                                    <div class="dot dot_3"></div>
+                                    <div class="dot dot_4"></div>
+                                    <div class="dot dot_5"></div>
+                                    <div class="connection_label label_1">1</div>
+                                    <div class="dot dot_12"></div>
+                                    <div class="connection_label label_2">2</div>
+                                    <div class="dot dot_34"></div>
+                                    <div class="connection_label label_3">3</div>
+                                    <div class="dot dot_1234"></div>
+                                    <div class="connection_label label_4">4</div>
+                                </div>
+                            </div>
+                            <div class="flex dir_col gap_12">
+                                <span>= 65-28÷7+9</span>
+                                <span>= 65-4+9</span>
+                                <span>= 61+9</span>
+                                <span>= 70</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input_area">
+                    <div class="flex gap_60">
+                        <div class="question_box align_start">
+                            <div class="flex dir_col">
+                                <span class="txt_calc">81÷3-5×4+11</span>
+                                <div class="drawing_area area2" data-dot-count="5"
+                                    data-answer-single='[[1,2],[3,4],[12,34],[1234,5]]'>
+                                    <svg class="connection_lines"></svg> <!-- 선을 그릴 SVG -->
+                                </div>
+                            </div>
+                            <div class="flex dir_col gap_50">
+                                <div class="flex align_center gap_12 item1">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="27-5×4+11"></math-field>
+                                    </div>
+                                </div>
+                                <div class="flex align_center gap_12 item2">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="27-20+11"></math-field>
+                                    </div>
+                                </div>
+                                <div class="flex align_center gap_12 item3">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="7+11"></math-field>
+                                    </div>
+                                </div>
+                                <div class="flex align_center gap_12 item4">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="18"></math-field>
+                                    </div>
+                                </div>
+                                </divv>
+                            </div>
+
+                        </div>
+                        <div class="question_box align_start">
+                            <div class="flex dir_col">
+                                <span class="txt_calc">(42+6)÷8×2+7</span>
+                                <div class="drawing_area area3" data-dot-count="5"
+                                    data-answer-single='[[1,2],[12,3],[123,4],[1234,5]]'>
+                                    <svg class="connection_lines"></svg> <!-- 선을 그릴 SVG -->
+                                </div>
+                            </div>
+                            <div class="flex dir_col gap_50">
+                                <div class="flex align_center gap_12 item1">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="48÷8×2+7"></math-field>
+                                    </div>
+                                </div>
+                                <div class="flex align_center gap_12 item2">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="6×2+7"></math-field>
+                                    </div>
+                                </div>
+                                <div class="flex align_center gap_12 item3">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="12+7"></math-field>
+                                    </div>
+                                </div>
+                                <div class="flex align_center gap_12 item4">
+                                    =
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="19"></math-field>
+                                    </div>
+                                </div>
+                                </divv>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="solve_area">
+                <div class="inner_solve">
+                    <div class="flex">
+                        <strong class="tit_solve" lang="y">해설</strong>
+                        <div class="conts_solve">
+                            <p lang="y">
+                                덧셈, 뺄셈, 곱셈, 나눗셈이 섞여 있는 식은 곱셈과 나눗셈을 먼저 계산하고, 덧셈과 뺄셈을 계산합니다. (<span class="gh"></span>)가 있는 식은 (<span class="gh"></span>) 안을 가장 먼저 계산합니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="buttons_solve">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

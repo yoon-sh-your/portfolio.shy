@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_06_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_06_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          <div class="fraction_row">
+            <div class="fraction_inn">
+              크기가 같은 통에 딸기 맛 젤라토는 <span class="fraction_box"><span>5</span><span>6</span></span> 만큼, 초코 맛 젤라토는 <span class="fraction_box"><span>7</span><span>10</span></span> 만큼 남아 있습니다. 어느 맛 젤라토가 더 많이 남아 있는지 알아
+            </div>
+            봅시다.
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">
+              <span class="fraction_box ml_0"><span>5</span><span>6</span></span
+              >와<span class="fraction_box"><span>7</span><span>10</span></span
+              >을 통분하여 크기를 비교해 보세요.
+            </h3>
+            <div class="question_box justify_center">
+              <div class="fraction_row">
+                <div class="fra_ex fra_arr">
+                  <div class="fra_parens">
+                    <span class="fraction_box f32b"><span>5</span><span>6</span></span
+                    >,
+                    <span class="fraction_box f32b"><span>7</span><span>10</span></span>
+                  </div>
+                </div>
+                <div class="fra_inn fra_arr arr2">
+                  <div class="fra_parens">
+                    <span class="fraction_box f32b">
+                      <span>
+                        <span>5&times;</span>
+                        <span class="input_wrap">
+                          <math-field data-answer-single="5"></math-field>
+                        </span>
+                      </span>
+                      <span>
+                        <span>6&times;</span>
+                        <span class="input_wrap answer2">
+                          <math-field data-answer-single="5"></math-field>
+                        </span>
+                      </span>
+                    </span>,
+                    <span class="fraction_box f32b">
+                      <span>
+                        <span>7&times;</span>
+                        <span class="input_wrap">
+                          <math-field data-answer-single="3"></math-field>
+                        </span>
+                      </span>
+                      <span>
+                        <span>10&times;</span>
+                        <span class="input_wrap answer2">
+                          <math-field data-answer-single="3"></math-field>
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="fra_inn fra_arr arr3">
+                  <div class="fra_drop_down">
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(25)/(30)"></math-field>
+                    </div>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown math_symbol" data-answer-single=">">
+                        <option></option>
+                        <option value=">">></option>
+                        <option value="=">=</option>
+                        <option value="<"><</option>
+                      </select>
+                    </div>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(21)/(30)"></math-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_inn">
+                  <div class="fra_drop_down">
+                    <span class="fraction_box f32b">
+                      <span>5</span>
+                      <span>6</span>
+                    </span>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown math_symbol" data-answer-single=">">
+                        <option></option>
+                        <option value=">">></option>
+                        <option value="=">=</option>
+                        <option value="<"><</option>
+                      </select>
+                    </div>
+                    <span class="fraction_box f32b">
+                      <span>7</span>
+                      <span>10</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <h3 lang="y">어느 맛 젤라토가 더 많이 남아 있나요?</h3>
+            <div class="question_box justify_center">
+              <div class="flex align_center justify_center gap_12 mt_20 f32b">
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown" data-answer-single="딸기 맛 젤라토">
+                    <option></option>
+                    <option value="딸기 맛 젤라토"></option>
+                    <option value="초코 맛 젤라토"></option>
+                  </select>
+                </div>
+                <span lang="y">가 더 많이 남아 있습니다.</span>
+              </div>
+            </div>
+          </article>
+          <article class="page page_3">
+            <h3 lang="y">분모가 다른 두 분수의 크기를 비교하는 방법을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">두 분수를 통분하여 비교합니다.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <article class="page page_4">
+          <div class="summarize_wrap">
+            <div class="summarize">
+              <label lang="y">정리해 볼까요</label>
+              <div class="summarize_inn">
+                <div class="summarize_row text_center">
+                  <span lang="y">분모가 다른 두 분수의 크기를 비교할 때에는 두 분수를</span>
+                  <button class="reveal_btn" data-pair="1">통분</button>
+                  <span lang="y" class="small-gap">하여 비교합니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

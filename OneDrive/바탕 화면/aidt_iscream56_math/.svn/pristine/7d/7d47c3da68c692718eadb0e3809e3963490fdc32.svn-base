@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA516_04_SU_0003_s</title>
+
+    <!-- jQuery와 jQuery UI CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 개별 -->
+    <script src="../../common_contents/js/516_04_0003.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_04.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+    <div id="app_wrap" class="ema516_04_su_0003" data-current-page="page_1, page_2">
+        <section class="title type2 page-1-title">
+            <h2 lang="y" data-head="1">직접 대어 벽돌의 넓이를 비교해 봅시다.</h2>
+        </section> 
+        <section class="contents paging_layout">
+            <article class="page page_1">
+                    <h3 lang="y"><span>가</span> 와 <span>나</span> 를 직접 움직여 넓이를 비교해 보세요.</h3>
+                    <div class="input_area">     
+                            <div class="flex align_center gap_12">
+                                <div class="ractangleWrap">
+                                    <div class="ractangleBox1">
+                                        <div class="text1">
+                                            <span>가</span>
+                                        </div>
+                                    </div>
+                                    <div class="ractangleBox2">
+                                        <div class="text2">
+                                            <span>나</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            </article><!-- 1page -->
+            
+            <article class="page page_2 page2">
+                    <h3 lang="y">직접 대어 넓이를 비교할 때 불편한 점을 이야기해 보세요.</h3>
+                    <div class="input_area"> 
+                        <div class="flex mt_20"> 
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <ol class="example_box ">  
+                                    <li lang="y">모양이 달라서 비교하기 어렵습니다.</li>
+                                    <li lang="y">어느 것이 얼마나 더 넓은지 정확하게 비교하기 어렵습니다.</li>
+                                    <li lang="y">서로 부족하거나 넘치는 부분이 있어 비교하기 어렵습니다.</li>
+                                </ol> 
+                            </div>
+                        </div>
+            </article><!-- 2page -->
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset btnReset-page1">리셋</button>
+                <button class="btnReset btnReset-page2">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

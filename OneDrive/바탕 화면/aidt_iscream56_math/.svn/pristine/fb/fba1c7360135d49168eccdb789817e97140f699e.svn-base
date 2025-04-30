@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_02_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_02.css" />
+  <script src="../../common_contents/js/ema523_02_0003.js"></script>
+
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_02_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_pink" lang="y">모양과 크기가 같은 도형을 만들어 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start gap_26">
+        <article class="page page_1">
+          <h3 lang="y">색종이 한 장에 도형을 그리고, 그 아래에 다른 색종이 한 장을 겹쳐서 오려 보세요.</h3>
+          <div class="question_box mt_20 justify_center">
+            <div class="dragndrop_fraction_wrap drow_wrap">
+              <canvas id="pathCanvas"></canvas>
+              <div class="icon_hand"><img src="../../common_contents/common/img/cursor_pointer_small.svg" alt="손모양 이미지"></div>
+              <div class="drag_group">
+                  <div class="drag_item dragpable" data-pair="1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="280" height="239" viewBox="0 0 280 239" fill="none">
+                      <path d="M2.17725 68.4618H159.273V2.82764L277.453 120.267L159.273 236.856V172.338H2.17725V68.4618Z" stroke="#1D1D1B" stroke-width="3.97745" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div class="drag_item dragpable scissors" data-pair="2">
+                    <img src="../../common_contents/img/EMA523_02_SU/img_scissors.svg" alt="가위 이미지">
+                  </div>
+              </div>
+              <div class="icon_arrow">
+                <img src="../../common_contents/img/EMA523_02_SU/icon_arrow.svg" alt="화살표 이미지">
+              </div>
+              <div class="drop_group">
+                  <div class="drop_item droppable" data-pair="1" data-answer-single="empty_answer"></div>
+                  <div class="drop_item droppable scissors" data-pair="2"></div>
+                  <div class="img_motion"><img src="../../common_contents/img/EMA523_02_SU/img_motion.gif" alt="종이 오리기 모션 이미지"></div>
+              </div>
+              <div class="spread-piece_group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="280" height="239" viewBox="0 0 280 239" fill="#EF7D00" class="spread-piece1">
+                  <path d="M2.17725 68.4618H159.273V2.82764L277.453 120.267L159.273 236.856V172.338H2.17725V68.4618Z" stroke="#1D1D1B" stroke-width="3.97745" stroke-linejoin="round"></path>
+                </svg>
+                <div class="icon_arrow">
+                  <img src="../../common_contents/img/EMA523_02_SU/icon_arrow.svg" alt="화살표 이미지">
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="280" height="239" viewBox="0 0 280 239" fill="#6368AE" class="spread-piece2">
+                  <path d="M2.17725 68.4618H159.273V2.82764L277.453 120.267L159.273 236.856V172.338H2.17725V68.4618Z" stroke="#1D1D1B" stroke-width="3.97745" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </article>
+      <article class="page page_2">
+        <h3 lang="y">오려 낸 두 도형의 모양과 크기를 비교해 보세요.</h3>
+        <div class="img_area"><img src="../../common_contents/img/EMA523_02_SU/0003_content01.svg" alt="화살표 이미지"></div>
+        <div class="question_box justify_center">
+          <span lang="y">두 도형의 모양과 크기는</span>
+          <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="같습니다.">
+                  <option value=""> </option>
+                  <option value="같습니다.">같습니다.</option>
+                  <option value="다릅니다.">다릅니다.</option>
+              </select>
+          </div>
+      </div>
+      </article>
+
+      <div class="btn_area">
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+    </div>
+    </section>
+  </div>
+</body>
+</html>

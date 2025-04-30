@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA511_02_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema511_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema511_02_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" lang="y">
+          계산 결과의 크기를 비교하여&nbsp;<span class="circle_blank"></span>&nbsp;안에 <img src="./../../common_contents//common/img/icon_arrow_right.svg" alt="크다" /><span class="ml-14">,</span> <img src="./../../common_contents//common/img/icon_equal.svg" alt="같다" /><span class="ml-14">,</span>
+          <img src="./../../common_contents//common/img/icon_arrow_left.svg" alt="작다" />
+          중 알맞은 것을 고르세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="question_box justify_center">
+            <span>30-19+3</span>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single=">">
+                <option></option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<"><< /option></option>
+              </select>
+            </div>
+            <span>30-(19+3)</span>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>30-19+3=11+3=14</p>
+                <p>30-(19+3)=30-22=8</p>
+                <p>➔ 14 > 8</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

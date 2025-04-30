@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change answer</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <script src="./change_answer1.js"></script>
+    <style>
+      .change_answer {
+        background-color: #fff;
+      }
+      .filed_box {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+      }
+      .filed_box .box {
+        align-items: flex-end;
+        width: 100%;
+        height: 100px;
+        background-color: #000;
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      .filed_box .box.show {
+        animation: boxDrop 0.5s forwards;
+      }
+      @keyframes boxDrop {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 화면명 클래스로 구분 -->
+    <div id="app_wrap" class="change_answer">
+      <section class="contents">
+        <div class="filed_box change_answer1">
+          <div class="box show"></div>
+        </div>
+
+        <div class="counting_wrap change_answer1">
+          <button class="btn_plus">+</button>
+          <button class="btn_minus">-</button>
+          <input type="number" class="input_count" value="1" placeholder="0" />
+        </div>
+
+        <div class="flex gap_12">
+          <div class="input_wrap change_answer1">
+            <math-field type="number" data-answer-single="36" text-align="center" placeholder="숫자만"></math-field>
+          </div>
+          개
+        </div>
+        <div class="flex gap_12">
+          <div class="input_wrap change_answer1">
+            <math-field type="number" data-answer-single="36" text-align="center" placeholder="숫자만"></math-field>
+          </div>
+          ㎤
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="filed_box change_answer2">
+          <div class="box show"></div>
+        </div>
+        <div class="counting_wrap change_answer2">
+          <button class="btn_plus">+</button>
+          <button class="btn_minus">-</button>
+          <input type="number" class="input_count" value="1" placeholder="0" />
+        </div>
+        <div class="flex gap_12">
+          <div class="input_wrap change_answer2">
+            <math-field type="number" data-answer-single="40" text-align="center" placeholder="숫자만"></math-field>
+          </div>
+          개
+        </div>
+        <div class="flex gap_12">
+          <div class="input_wrap change_answer2">
+            <math-field type="number" data-answer-single="40" text-align="center" placeholder="숫자만"></math-field>
+          </div>
+          ㎤
+        </div>
+      </section>
+
+      <div class="btn_area">
+        <!-- 불필요한 태그 제외 후 사용 -->
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </div>
+  </body>
+</html>

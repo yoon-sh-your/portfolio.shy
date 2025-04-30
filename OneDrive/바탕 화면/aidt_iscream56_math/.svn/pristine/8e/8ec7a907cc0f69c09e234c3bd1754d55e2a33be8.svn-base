@@ -1,0 +1,668 @@
+/* ema616_09_su_0002 */
+
+.ema616_09_su_0002 .right_box {
+  position: relative;
+}
+.ema616_09_su_0002 .left_box {
+  position: relative;
+}
+
+.ema616_09_su_0002 .flex {
+  justify-content: center;
+}
+
+.ema616_09_su_0002 .color {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  color: #3b71fe;
+}
+
+.ema616_09_su_0002 .txt_title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  color: #444;
+  white-space: nowrap;
+  position: absolute;
+  top: 48px;
+  left: 187px;
+  letter-spacing: -2px;
+}
+
+.ema616_09_su_0002 .main_txt {
+  text-indent: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #444;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  position: absolute;
+  top: 137px;
+  left: 373px;
+}
+
+.ema616_09_su_0002 .main_txt2 {
+  text-indent: 10px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #444;
+  line-height: 32px;
+  letter-spacing: -0.5px;
+  position: absolute;
+  top: 250px;
+  left: 364px;
+}
+
+.ema616_09_su_0002 .name {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.5px;
+  color: #fff;
+  position: absolute;
+  bottom: 51px;
+  left: 127px;
+}
+
+.ema616_09_su_0002 .source {
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.5px;
+  position: absolute;
+  right: 135px;
+  bottom: 67px;
+}
+
+.ema616_09_su_0002 .unit1 {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.95px; /* 150% */
+  letter-spacing: -0.999px;
+  position: absolute;
+  top: 359px;
+  left: 124px;
+}
+.ema616_09_su_0002 .unit2 {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.95px; /* 150% */
+  letter-spacing: -0.999px;
+  position: absolute;
+  top: 315px;
+  left: 267px;
+}
+.ema616_09_su_0002 .unit3 {
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47.95px; /* 150% */
+  letter-spacing: -0.999px;
+  position: absolute;
+  top: 250px;
+  left: 287px;
+}
+
+.ema616_09_su_0003 .title h2[data-head] {
+  display: inline-block;
+}
+
+.ema616_09_su_0003 .input_wrap .example_box::before {
+  top: 28px;
+}
+
+.ema616_09_su_0003 .btn.calculator {
+  position: absolute;
+  top: 62px;
+  left: 212px;
+}
+.ema616_09_su_0004 .btn.calculator {
+  position: absolute;
+  top: 62px;
+  left: 305px;
+}
+
+.border1::before,
+.border2::before {
+  content: "";
+  position: absolute;
+  left: -44px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: #3b82f6;
+  font-size: 24px;
+}
+
+/* 각각에 텍스트 삽입 */
+.border1::before {
+  content: "가";
+}
+
+.border2::before {
+  content: "나";
+}
+
+.img_box {
+  position: relative; /* 자식 요소들의 absolute 기준 */
+  display: inline-block;
+}
+
+.border3::before,
+.border4::before {
+  content: "";
+  display: inline-flex;
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  background-color: #3b82f6;
+  font-size: 24px;
+  margin: 0 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.ema616_09_su_0003 .length_a {
+  position: absolute;
+  top: 250px;
+  left: 193px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema616_09_su_0003 .length_b {
+  position: absolute;
+  top: 118px;
+  left: 290px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema616_09_su_0003 .length_c {
+  position: absolute;
+  top: 120px;
+  right: 87px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema616_09_su_0003 .length_d {
+  position: absolute;
+  top: 198px;
+  right: 90px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema616_09_su_0003 .length_e {
+  position: absolute;
+  top: 251px;
+  right: 206px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* 가 위치 (좌측 위 상자 위쪽 중앙) */
+.ema616_09_su_0003 .page_1 .border3::before {
+  content: "가";
+  top: 25px;
+  left: 126px;
+}
+.ema616_09_su_0003 .page_2 .border3::before {
+  content: "가";
+  top: 85px;
+  left: 126px;
+}
+.ema616_09_su_0003 .page_3 .border3::before {
+  content: "가";
+  top: 25px;
+  left: 126px;
+}
+.ema616_09_su_0003 .page_4 .border3::before {
+  content: "가";
+  top: 25px;
+  left: 126px;
+}
+.ema616_09_su_0003 .page_5 .border3::before {
+  content: "가";
+  top: 25px;
+  left: 126px;
+}
+
+.ema616_09_su_0004 .page_1 .border3::before {
+  content: "가";
+  top: 21px;
+  left: 120px;
+}
+
+.ema616_09_su_0004 .page_2 .border3::before {
+  content: "가";
+  top: 49px;
+  left: 148px;
+}
+
+.ema616_09_su_0004 .page_3 .border3::before {
+  content: "가";
+  top: 49px;
+  left: 148px;
+}
+.ema616_09_su_0004 .page_4 .border3::before {
+  content: "가";
+  top: 49px;
+  left: 148px;
+}
+/* 나 위치 (우측 위 상자 위쪽 중앙) */
+.ema616_09_su_0003 .page_1 .border4::before {
+  content: "나";
+  top: 25px;
+  left: 332px;
+}
+.ema616_09_su_0003 .page_2 .border4::before {
+  content: "나";
+  top: 84px;
+  left: 393px;
+}
+.ema616_09_su_0003 .page_3 .border4::before {
+  content: "나";
+  top: 25px;
+  left: 440px;
+}
+.ema616_09_su_0003 .page_4 .border4::before {
+  content: "나";
+  top: 25px;
+  left: 440px;
+}
+
+.ema616_09_su_0003 .page_5 .border4::before {
+  content: "나";
+  top: 25px;
+  left: 440px;
+}
+
+.ema616_09_su_0004 .page_1 .border4::before {
+  content: "나";
+  top: 30px;
+  left: 618px;
+}
+
+.ema616_09_su_0004 .page_2 .border4::before {
+  content: "나";
+  top: 49px;
+  left: 391px;
+}
+
+.ema616_09_su_0004 .page_3 .border4::before {
+  content: "나";
+  top: 49px;
+  left: 391px;
+}
+
+.ema616_09_su_0004 .page_4 .border4::before {
+  content: "나";
+  top: 49px;
+  left: 391px;
+}
+
+/* .ema616_09_su_0003 .contents h3 {
+  display: inline-block;
+  align-items: center;
+  text-align: left;
+  white-space: nowrap;
+} */
+
+.ema616_09_su_0003 .lunch_box {
+  position: absolute;
+  top: 59px;
+  left: 306px;
+}
+.ema616_09_su_0004 .lunch_box {
+  position: absolute;
+  top: 59px;
+  left: 398px;
+}
+
+.ema616_09_su_0003 .page_5 .custom_select {
+  width: 200px;
+}
+
+.ema616_09_su_0003 .page_5 .input_wrap {
+  width: 794px;
+}
+
+.ema616_09_su_0003 .page_1 .input_wrap math-field.textarea {
+  width: 794px;
+  height: 210px;
+}
+
+.ema616_09_su_0003 .page_3 .input_wrap math-field.textarea {
+  width: 794px;
+  height: 210px;
+}
+.ema616_09_su_0003 .page_4 .input_wrap math-field.textarea {
+  width: 794px;
+  height: 210px;
+}
+.ema616_09_su_0003 .page_5 .input_wrap math-field.textarea {
+  width: 794px;
+  height: 210px;
+}
+.ema616_09_su_0004 .page_2 .input_wrap math-field.textarea {
+  width: 794px;
+  height: 110px;
+}
+.ema616_09_su_0004 .page_3 .input_wrap math-field.textarea {
+  width: 794px;
+  height: 110px;
+}
+.ema616_09_su_0004 .page_4 .input_wrap math-field.textarea {
+  width: 794px;
+  height: 110px;
+}
+
+.ema616_09_su_0003 .page_1 .input_area,
+.ema616_09_su_0003 .page_3 .input_area,
+.ema616_09_su_0003 .page_4 .input_area {
+  width: 794px;
+}
+
+.ema616_09_su_0004 .page_2 .input_area,
+.ema616_09_su_0004 .page_3 .input_area,
+.ema616_09_su_0004 .page_4 .input_area {
+  width: 794px;
+}
+
+.ema616_09_su_0003 .page_5 .input_area {
+  width: 794px;
+}
+
+.ema616_09_su_0003 .input_wrap .example_box > p {
+  display: inline-block;
+}
+
+.ema616_09_su_0003 .page_2 .flex {
+  justify-content: center;
+}
+
+/* 가 위치 (좌측 위 상자 위쪽 중앙) */
+.ema616_09_su_0003 .page_2 .border3::before {
+  content: "가";
+  top: 9px;
+  left: 111px;
+}
+
+/* 나 위치 (우측 위 상자 위쪽 중앙) */
+.ema616_09_su_0003 .page_2 .border4::before {
+  content: "나";
+  top: 9px;
+  left: 440px;
+}
+
+.ema616_09_su_0003 .page_2 .answer1 {
+  position: absolute;
+  top: 85px;
+  left: 339px;
+}
+.ema616_09_su_0003 .page_2 .answer2 {
+  position: absolute;
+  top: 284px;
+  left: 178px;
+}
+.ema616_09_su_0003 .page_2 .answer3 {
+  position: absolute;
+  top: 221px;
+  left: 322px;
+}
+.ema616_09_su_0003 .page_2 .answer4 {
+  position: absolute;
+  top: 91px;
+  left: 708px;
+}
+.ema616_09_su_0003 .page_2 .answer5 {
+  position: absolute;
+  top: 282px;
+  left: 514px;
+}
+.ema616_09_su_0003 .page_2 .answer6 {
+  position: absolute;
+  top: 202px;
+  left: 679px;
+}
+
+.ema616_09_su_0003 .page_2 .input_wrap {
+  flex-direction: row;
+  /*   gap: 10px; */
+}
+
+.ema616_09_su_0003 .page_2 .input_wrap span {
+  font-size: 32px;
+  font-weight: 700;
+}
+.ema616_09_su_0004 .page_3 .input_wrap span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema616_09_su_0004 .title h2 {
+  display: inline-block;
+}
+
+.ema616_09_su_0003 .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  line-height: 1;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.ema616_09_su_0004 .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  line-height: 1;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.ema616_09_su_0004 .answer_wrap {
+  gap: 75px;
+  margin-bottom: 45px;
+  padding-left: 47px;
+}
+
+.ema616_09_su_0004 .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  line-height: 1;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.ema616_09_su_0004 .page_2 .answer1 {
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  /*  gap: 10px; */
+}
+.ema616_09_su_0004 .page_3 .answer1 {
+  flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
+  /* gap: 10px; */
+}
+.ema616_09_su_0004 .page_2 .answer1 span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema616_09_su_0004 .input_wrap math-field.hint + .text_hint {
+  left: -12px;
+}
+
+.ema616_09_su_0003 .input_wrap math-field.hint + .text_hint {
+  left: -18px;
+}
+
+.ema616_09_su_0003 .custom_select .text_hint {
+  top: 100%;
+}
+
+.ema616_09_su_0003 .answer_wrap {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 45px;
+  padding-left: 47px;
+}
+.ema616_09_su_0004 .answer_wrap {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 60px;
+}
+
+.ema616_09_su_0003 .answer_wrap .border1,
+.ema616_09_su_0003 .answer_wrap .border2 {
+  margin-right: 10px;
+}
+
+.ema616_09_su_0003 .page_3 .answer1,
+.ema616_09_su_0003 .page_4 .answer1 {
+  flex-direction: row;
+  align-items: center;
+  /*   gap: 10px; */
+}
+
+.ema616_09_su_0003 .page_3 .answer1 span,
+.ema616_09_su_0003 .page_4 .answer1 span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema616_09_su_0004 .page_1 .input_wrap {
+  flex-direction: row;
+  align-items: center;
+  /* gap: 10px; */
+}
+
+.ema616_09_su_0004 .page_1 .input_wrap span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.ema616_09_su_0003 .page_5 .dropdown_wrap,
+.ema616_09_su_0004 .page_4 .dropdown_wrap {
+  margin-bottom: 30px;
+}
+
+.ema616_09_su_0003 .page_5 .input_wrap .example_box.on {
+  padding: 15px 24px 20px 82px;
+}
+
+.ema616_09_su_0003 .page_5 .input_wrap .example_box::before {
+  top: 15px;
+}
+.ema616_09_su_0004 .input_wrap .example_box::before {
+  top: 28px;
+}
+
+.ema616_09_su_0004 .page_1 .flex {
+  justify-content: center;
+  align-items: center;
+}
+
+.ema616_09_su_0004 .page_1 .answer1 {
+  position: absolute;
+  top: 270px;
+  left: 170px;
+}
+.ema616_09_su_0004 .page_1 .answer2 {
+  position: absolute;
+  top: 200px;
+  left: 403px;
+}
+.ema616_09_su_0004 .page_1 .answer3 {
+  position: absolute;
+  top: 93px;
+  left: 435px;
+}
+.ema616_09_su_0004 .page_1 .answer4 {
+  position: absolute;
+  top: 86px;
+  right: 47px;
+}
+.ema616_09_su_0004 .page_1 .answer5 {
+  position: absolute;
+  top: 280px;
+  right: 276px;
+}
+.ema616_09_su_0004 .page_1 .answer6 {
+  position: absolute;
+  top: 232px;
+  right: 65px;
+}
+
+.ema616_09_su_0004 .custom_select .text_hint {
+  top: 100%;
+}
+
+/* .ema616_09_su_0004 .page_2 h3,
+.ema616_09_su_0004 .page_3 h3,
+.ema616_09_su_0004 .page_4 h3 {
+  display: inline-block;
+} */
+
+.ema616_09_su_0004 .input_wrap .example_box > p {
+  gap: 0;
+}
+
+/* .ema616_09_su_0004 .page_4 .input_wrap .example_box > p {
+  align-items: center;
+} */
+
+.to_be .main .top_txt {
+  color: #ee4f24;
+}
+
+.ema616_09_su_0003[data-current-page="page_1"] .btnCheck,
+.ema616_09_su_0003[data-current-page="page_2"] .btnSubmit,
+.ema616_09_su_0003[data-current-page="page_3"] .btnSubmit,
+.ema616_09_su_0003[data-current-page="page_4"] .btnSubmit,
+.ema616_09_su_0003[data-current-page="page_5"] .btnSubmit {
+  display: none;
+}

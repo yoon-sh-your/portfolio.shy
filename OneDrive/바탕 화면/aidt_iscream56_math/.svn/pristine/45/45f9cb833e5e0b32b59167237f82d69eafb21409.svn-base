@@ -1,0 +1,475 @@
+/* ema514_06_su_0002 */
+
+.ema514_06_su_0004 .input_wrap math-field {
+  width: 80px;
+  
+}
+
+.ema514_06_su_0003:not([data-current-page='page_3']) .btn_area .btnSubmit,
+.ema514_06_su_0003[data-current-page='page_3'] .btn_area .btnCheck,
+.ema514_06_su_0003[data-current-page='page_4'] .title {
+  display: none;
+}
+.ema514_06_su_0002 .fraction_inn {
+  display: flex;
+  align-items: center;
+}
+
+.ema514_06_su_0002 .video_wrap {
+  background: url(../img/EMA514_06_SU/0002_content.png) no-repeat 100% -125px / 106%;
+}
+
+/* .ema514_06_su_0003 */
+.dropdown_wrap .text_hint {
+  font-weight: 800;
+}
+.ema514_06_su_0003 .fraction_row {
+  line-height: 1;
+}
+.ema514_06_su_0003 .fraction_inn {
+  display: flex;
+  align-items: center;
+}
+
+.ema514_06_su_0003 .page_1 .input_wrap,
+.ema514_06_su_0003 .page_1 .input_wrap input,
+.ema514_06_su_0003 .page_1 .input_wrap math-field{
+  min-width: 80px;
+  width: 80px;
+}
+
+.ema514_06_su_0003 .page_1 .question_box {
+  margin-top: 40px;
+}
+.ema514_06_su_0003 .page_1 .fraction_row {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+}
+.ema514_06_su_0003 .page_1 .fra_ex {
+  position: relative;
+}
+.ema514_06_su_0003 .page_1 .fra_arr::before {
+  content: '';
+  background: url(../img/EMA514_06_SU/0003_bg.png) no-repeat 0 0;
+  height: 42px;
+  width: 48px;
+  position: absolute;
+  top: 14px;
+  left:calc(50% + 99px)
+}
+.ema514_06_su_0003 .page_1 .fra_parens {
+  display: flex;
+}
+.ema514_06_su_0003 .page_1 .fra_ex.fra_arr .fra_parens::before {
+  top: -18px;
+}
+.ema514_06_su_0003 .page_1 .fra_ex.fra_arr .fra_parens:after {
+  top: -18px;
+}
+.ema514_06_su_0003 .page_1 .fraction_box span {
+  display: flex;
+  align-items: center;
+}
+.ema514_06_su_0003 .page_1 .fra_inn {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  position: relative;
+}
+.ema514_06_su_0003 .page_1 .fra_drop_down {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.ema514_06_su_0003 .page_1 .fra_ex {
+  top: -5px;
+}
+.ema514_06_su_0003 .page_1 .fra_inn.arr2::before {
+  left: 378px;
+  top: 43px;
+}
+.ema514_06_su_0003 .page_1 .fra_inn.arr3::before {
+  left: 298px;
+  top: 34px;
+}
+.ema514_06_su_0003 .page_1 .fra_parens {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
+.ema514_06_su_0003 .page_1 .fra_parens:before {
+  content: '';
+  background: url(../img/EMA514_06_SU/0003_bg2.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 12px;
+  left: -31px;
+}
+
+.ema514_06_su_0003 .page_1 .fra_parens:after {
+  content: '';
+  background: url(../img/EMA514_06_SU/0003_bg3.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 12px;
+  right: -31px;
+}
+.ema514_06_su_0003 .page_2 .custom_select {
+  width: 204px;
+}
+
+.ema514_06_su_0003 .page_3 .input_wrap {
+  display: block;
+  margin: 0 auto;
+}
+.ema514_06_su_0003 .page_3 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 250px;
+}
+
+/* .ema514_06_su_0004 */
+
+.ema514_06_su_0004[data-current-page='page_3'] .btn_area .btnSubmit,
+.ema514_06_su_0004[data-current-page='page_1'] .btn_area .btnCheck,
+.ema514_06_su_0004[data-current-page='page_2'] .btn_area .btnCheck,
+.ema514_06_su_0004[data-current-page='page_4'] .btn_area .btnCheck{
+  display: none;
+}
+.ema514_06_su_0004 .page_1 .input_wrap {
+  display: block;
+  margin: 0 auto;
+}
+.ema514_06_su_0004 .page_1 .input_wrap {
+  width: 1280px;
+}
+.ema514_06_su_0004 .page_1 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 200px;
+}
+.ema514_06_su_0004 .page_2 .question_box {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ema514_06_su_0004 .page_2 .fraction_row,
+.ema514_06_su_0004 .page_3 .fraction_row,
+.ema514_06_su_0004 .page_4 .fraction_row {
+  display: flex;
+  gap: 160px;
+  align-items: center;
+}
+.ema514_06_su_0004 .fra_ex {
+  position: relative;
+}
+.ema514_06_su_0004 .fra_arr::before {
+  content: '';
+  background: url(../img/EMA514_06_SU/0003_bg.png) no-repeat 0 0;
+  height: 42px;
+  width: 48px;
+  position: absolute;
+  top: 48px;
+  left: 130px;
+}
+.ema514_06_su_0004 .fra_ex .fra_parens {
+  display: flex;
+  gap: 8px;
+}
+.ema514_06_su_0004 .page_2 .example_box .ex_col {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+.ema514_06_su_0004 .page_2 .example_box .comma {
+  position: absolute;
+  top: -6px;
+  left: 36px;
+}
+.ema514_06_su_0004 .fra_inn {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+  position: relative;
+}
+.ema514_06_su_0004 .fra_drop_down {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.ema514_06_su_0004 .fra_inn.arr2::before {
+  left: 254px;
+  top: 35px;
+}
+.ema514_06_su_0004 .fra_inn.arr3::before {
+  left: 312px;
+  top: 40px;
+}
+.ema514_06_su_0004 .fra_parens {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+}
+
+.ema514_06_su_0004 .fra_parens:before {
+  content: '';
+  background: url(../img/EMA514_06_SU/0003_bg2.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 8px;
+  left: -31px;
+}
+
+.ema514_06_su_0004 .fra_parens:after {
+  content: '';
+  background: url(../img/EMA514_06_SU/0003_bg3.png) no-repeat 0 0;
+  height: 107px;
+  width: 22px;
+  position: absolute;
+  top: 8px;
+  right: -31px;
+}
+
+.ema514_06_su_0004 .page_2 .fraction_row .fra_ex .fra_parens:before {
+  top:-14px;
+}
+.ema514_06_su_0004 .page_2 .fraction_row .fra_ex .fra_parens:after {
+  top:-14px;
+}
+.ema514_06_su_0004 .page_2 .fraction_row .fra_ex.fra_arr:before {
+  top: 14px;
+}
+
+.ema514_06_su_0004 .page_2 math-field::part(placeholder) {
+  background-position: 1px -7px;
+}
+
+.ema514_06_su_0004 .page_2 .input_wrap[data-hint-position="left"] .text_hint {
+  right: calc(100% + 31px);
+}
+.ema514_06_su_0004 .page_2 .input_wrap[data-hint-position="right"] .text_hint {
+  left: calc(100% + 30px);
+}
+
+
+.ema514_06_su_0004 .page_2 .example_input {
+  height: 120px;
+  width: 100%
+}
+.ema514_06_su_0004 .page_2 .example_input .example_box {
+  display: flex;
+  gap: 100px;
+}
+.ema514_06_su_0004 .page_2 .example_input .example_box:before {
+  top: 14px;
+}
+.ema514_06_su_0004 .page_2 .example_input .example_box span {
+  font-size: 28px;
+}
+.ema514_06_su_0004 .page_3 .fraction_col {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ema514_06_su_0004 .page_3 .fraction_col .fraction_box:nth-of-type(2),
+.ema514_06_su_0004 .page_3 .fraction_col .fraction_box:nth-of-type(3) {
+  margin-left: 18px;
+}
+
+.ema514_06_su_0004 .page_3 .input_wrap,
+.ema514_06_su_0004 .page_3 .input_wrap math-field.textarea {
+  width: 100%;
+  
+}
+.ema514_06_su_0004 .page_3 .input_wrap math-field.textarea {
+  display: none;
+}
+.ema514_06_su_0004 .page_3 .input_wrap.textarea_wrap {
+  margin-top: 20px;
+}
+.ema514_06_su_0004 .page_3 .input_wrap.textarea_wrap .example_box {
+  padding: 24px 0 0 82px
+}
+.ema514_06_su_0004 .page_3 .input_wrap.textarea_wrap .example_box div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ema514_06_su_0004 .page_4 .input_wrap {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.ema514_06_su_0004 .page_4 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 200px;
+}
+
+/* ema514_06_su_0005 */
+.ema514_06_su_0005 .ico_round {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin-left: 8px;
+  border-radius: 50%;
+  border-color: #3b71fe;
+}
+
+.ema514_06_su_0005 .question_box {
+  gap: 100px;
+}
+.ema514_06_su_0005 .fra_drop_down {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* ema514_06_su_0006 */
+
+.ema514_06_su_0006 .textarea_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ema514_06_su_0006 .textarea_wrap .input_wrap {
+  width: 100%;
+}
+.ema514_06_su_0006 .textarea_wrap .example_box:before {
+  top: 60px;
+}
+.ema514_06_su_0006 .textarea_wrap .example_box .fraction_box {
+  width: 32px;
+}
+.ema514_06_su_0006 .drag_share {
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+  height: 300px;
+  flex-wrap: wrap;
+  background: url(../../common_contents/img/EMA514_06_SU/0006_bg.png) no-repeat center;
+}
+.ema514_06_su_0006 .draggable_wrap {
+  width: 400px;
+  padding: 10px 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+.ema514_06_su_0006 .draggable {
+  width: 80px;
+  height: 114px;
+  position: absolute;
+  top: 90px;
+  left: 40px;
+  cursor: grab;
+}
+.ema514_06_su_0006 .draggable.used {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.ema514_06_su_0006 .draggable.obj2 {
+  left: 160px;
+}
+.ema514_06_su_0006 .draggable.obj3 {
+  left: 280px;
+}
+.ema514_06_su_0006 .draggable::after {
+  /*드래그영역 클릭 가능영역 확장용*/
+  content: '';
+  width: 100px;
+  height: 108px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ema514_06_su_0006 .drag_group_box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 400px;
+  padding: 38px 50px 10px;
+}
+.ema514_06_su_0006 .drag_group_box .fraction_box span:first-child {
+  height: 84px;
+}
+.ema514_06_su_0006 .drag_group_box .fraction_box:before {
+  top: calc(50% - 55px);
+}
+
+.ema514_06_su_0006 .droppable {
+  width: 80px;
+  height: 105px;
+  border: 1px solid #3b71fe;
+  border-radius: 12px;
+}
+.ema514_06_su_0006 .droppable.ui-state-hover {
+  height: 105px;
+}
+.ema514_06_su_0006 .droppable span {
+  width: 80px;
+  height: 60px;
+  border: 1px solid #3b71fe;
+  border-radius: 12px;
+}
+.ema514_06_su_0006 .single_draggable.used {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.ema514_06_su_0006 .example_box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.ema514_06_su_0006 .btn_area {
+  display: flex;
+  left: 40px;
+}
+.ema514_06_su_0006 .btn_area > button.btnDraw {
+  position: absolute;
+  left: 0;
+  width: 64px;
+  min-width: unset;
+  height: 64px;
+  border-radius: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--Line-Gray-300, #D2D2D2);
+  background-color: var(--black-white-white, #FFF);
+  box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.12);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  font-size: 0;
+  background-image:url(../../common_contents/common/img/icon_drawline.svg);
+}
+.ema514_06_su_0006 .btn_area > button.btnDraw.active {
+  background-color: #fff;
+}
+
+.ema514_06_su_0006 .row {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+/* .ema514_06_su_0006 .btn_area>button.btnCheck {
+  background-image: url(../../common_contents/common/img/icon_submit_disabled.svg);
+}
+.ema514_06_su_0006 .btn_area>button.btnCheck.active {
+  background-image: url(../../common_contents/common/img/icon_submit_white.svg);
+} */

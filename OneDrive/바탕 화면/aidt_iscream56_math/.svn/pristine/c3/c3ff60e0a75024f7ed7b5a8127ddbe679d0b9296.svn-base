@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA623_01_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema623_01.css" />
+    <script src="../../common_practice/js/ema623_01_ih_0003.js"></script>
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema623_03_ih_0003">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+          <span class="title_text" lang="y">『수학 4-1』 평면도형 돌리기</span>
+        </h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_orange" lang="y">도형을 시계 반대 방향으로 90°만큼 돌렸을 때의 도형을 그려 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+
+          <section class="exercise">
+            <h3>③ 도형을 시계 반대 방향으로 90°만큼 돌렸을 때의 도형을 그려 보세요.</h3>
+            <div class="shape_grid_area flex align_center">
+              <div class="shape-grid">
+                <svg viewBox="0 0 390 390" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <pattern id="grid" width="78" height="78" patternUnits="userSpaceOnUse">
+                      <path d="M78 0 L0 0 0 78"
+                            fill="none"
+                            stroke="#009FE3"
+                            stroke-width="1"
+                            stroke-dasharray="4,4"/>
+                    </pattern>
+                  </defs>
+              
+                  <!-- 배경격자 -->
+                  <rect width="390" height="390" fill="url(#grid)"/>
+              
+                  <!-- 1) 그룹으로 묶어서 2) 계산된 tx, ty 만큼 이동 -->
+                  <g transform="translate(74.90,75.40)">
+                    <path
+                      d="M81.0905 2.23438H2.95654V236.967H237.248V80.5154H159.169V158.686H81.0905V2.23438Z"
+                      fill="none"
+                      stroke="#222"
+                      stroke-width="4"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div class="img_area">
+                <img src="./../../common_practice/img/EMA623_01_IH/0003_02.png" alt="" /> 
+              </div>
+
+              <div class="canvas_area">
+                <canvas id="gridCanvas"  width="390" height="390"></canvas>
+                <!-- 스타일 선택 팝업 -->
+                <div id="lineSelectLayer">
+                  <button class="to_solid" title="실선"></button>
+                  <button class="to_dotted" title="점선"></button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y" class="text_bullet"></p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

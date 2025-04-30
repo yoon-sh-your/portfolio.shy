@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_04_IH_0007</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_04.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema625_04_ih_0007">
+			<section class="title type2">
+				<h2 data-head="7_light_purple" class="is_star" lang="y">
+					우리 주변에서 원 모양 물건을 찾아 지름을 재고, 원주를 구해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="table_wrap">
+						<table>
+							<colgroup>
+								<col />
+								<col />
+								<col />
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col" lang="y">물건</th>
+									<th scope="col" lang="y">지름(㎝)</th>
+									<th scope="col" lang="y">원주(㎝)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td lang="y">
+										<div class="input_wrap">
+											<math-field></math-field>
+											<div class="example_box">
+												<p lang="y">냄비 받침</p>
+											</div>
+										</div>
+									</td>
+									<td lang="y">
+										<div class="input_wrap">
+											<math-field data-answer-single="14"></math-field>
+										</div>
+									</td>
+									<td lang="y">
+										<div class="input_wrap">
+											<math-field data-answer-single="43.96"></math-field>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y">
+									원 모양 물건을 찾아 지름을 재어 보고, (원주)=(지름)×(원주율)을 이용하여 원주를 구합
+									니다
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnSubmit" data-submit="true">제출</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

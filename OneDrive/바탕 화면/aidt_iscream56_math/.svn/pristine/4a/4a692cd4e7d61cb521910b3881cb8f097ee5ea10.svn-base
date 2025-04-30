@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_05_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_05_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y">
+          두 기약분수를 통분하였더니
+          <div class="fraction_box">
+            <span>36</span>
+            <span>㉠</span>
+          </div>
+          ,
+          <div class="fraction_box">
+            <span>56</span>
+            <span>63</span>
+          </div>
+          이 되었습니다. 통분하기 전의 두 기약분수를 구하려고 합니다. 물음에 답해 보세요.
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 class="title" lang="y">㉠에 알맞은 수를 구해 보세요.</h3>
+          <div class="question_box justify_center gap_12">
+            (
+            <div class="input_wrap"><math-field data-answer-single="63"></math-field></div>
+            )
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">통분하면 두 분수의 분모가 같아지므로 ㉠에 알맞은 수는 63입니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 class="title" lang="y">통분하기 전의 두 기약분수를 구해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="bracket">
+              <span class="bracket-l"></span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(4)/(7)"></math-field>
+              </div>
+              <span class="comma">,</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(8)/(9)"></math-field>
+              </div>
+              <span class="bracket-r"></span>
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve top0">
+                  <p lang="y">분모와 분자의 최대공약수로 나눕니다.</p>
+                  <div>
+                    <div class="fraction_box">
+                      <span>36</span>
+                      <span>63</span>
+                    </div>
+                    =
+                    <div class="fraction_box">
+                      <span>36÷9</span>
+                      <span>63÷9</span>
+                    </div>
+                    =
+                    <div class="fraction_box">
+                      <span>4</span>
+                      <span>7</span>
+                    </div>
+                    ,
+                    <div class="fraction_box">
+                      <span>56</span>
+                      <span>63</span>
+                    </div>
+                    =
+                    <div class="fraction_box">
+                      <span>56÷7</span>
+                      <span>63÷7</span>
+                    </div>
+                    =
+                    <div class="fraction_box">
+                      <span>8</span>
+                      <span>9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

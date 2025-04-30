@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_04_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_04_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">동굴에 있는 상자는 각기둥 모양입니다. 각기둥의 이름을 말하면 보물 지도를 얻을 수 있습니다. 각기둥 모양 상자를 살펴봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align_start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고 각기둥 모양 상자의 밑면과 옆면은 각각 어떤 모양인<br>지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">각기둥 모양 상자의 밑면은 각각 삼각형, 사각형, 오각형 모양입니다.</li>
+                <li lang="y">각기둥 모양 상자의 옆면은 모두 직사각형 모양입니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMA515_03_SU_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema515_03.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema515_03_su_0006">
+    <section class="title type2">
+      <h2 data-type="3" lang="y">수 카드 5장 중에서 2장을 골라 한 번씩만 사용하여 진분수를 만들고, 내가 만든 진분수와 친구가 만든 진분수의 합을 구해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="input_area">
+        <div class="question_box justify_center">
+          <div class="container_515">
+            <div class="left_515">
+            </div>
+            <div class="right_515">
+
+              <div class="col_515-1">
+                <div class="text_515">내가 만든<br>진분수</div>
+                <div class="input_wrap">
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <math-field data-answer-single="7"></math-field>
+                      </span>
+                      <span>
+                        <math-field data-answer-single="8"></math-field>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="example_box">
+                    <p>
+
+                    <div class="operations">
+                      <div class="mixed_fraction">
+                        <span></span>
+                        <div class="fraction_box">
+                          <span>7</span>
+                          <span>8</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col_515-2">
+                <div class="text_515">친구가 만든<br>진분수</div>
+                <div class="input_wrap">
+                  <div class="mixed_fraction">
+                    <span></span>
+                    <div class="fraction_box">
+                      <span>
+                        <math-field data-answer-single="5"></math-field>
+                      </span>
+                      <span>
+                        <math-field data-answer-single="6"></math-field>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="example_box">
+                    <p>
+
+                    <div class="operations">
+                      <div class="mixed_fraction">
+                        <span></span>
+                        <div class="fraction_box">
+                          <span>5</span>
+                          <span>6</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col_515-3">
+                <div class="text_515">합</div>
+                <div class="input_wrap">
+                  <math-field class="textarea" placeholder=" "></math-field>
+                  <div class="example_box">
+                    <p>
+
+                    <div class="operations">
+                      <div class="mixed_fraction">
+                        <span>1</span>
+                        <div class="fraction_box">
+                          <span>17</span>
+                          <span>24</span>
+                        </div>
+                      </div>
+                      (=
+                      <div class="mixed_fraction">
+                        <span></span>
+                        <div class="fraction_box">
+                          <span>41</span>
+                          <span>24</span>
+                        </div>
+                      </div>
+                      )
+                    </div>
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnSample">예시</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

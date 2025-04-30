@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_04_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_04_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">소희네 학교 5학년 학생들이 주운 밤의 수를 나타낸 표입니다. 1반부터 4반까지 주운 밤 수의 평균이 55개일 때 3반이 주운 밤은 몇 개인지 구하여 표를 완성해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="tit_data">
+          <div class="inner">
+            <span lang="y">반별 주운 밤의 수</span>
+          </div>
+        </div>
+        <div class="table_wrap row">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" lang="y">반</th>
+                <td lang="y">1반</td>
+                <td lang="y">2반</td>
+                <td lang="y">3반</td>
+                <td lang="y">4반</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" lang="y">밤의 수(개)</th>
+                <td>64</td>
+                <td>48</td>
+                <td>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="51"></math-field>
+                  </div>
+                </td>
+                <td>57</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(네 반이 주운 밤 수의 합)=55×4=220(개)</p>
+                <p lang="y">(3반 학생들이 주운 밤의 수)=220-(64+48+57)=51(개)</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

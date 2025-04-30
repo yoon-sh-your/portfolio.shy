@@ -1,0 +1,80 @@
+.video_wrap {
+    .ema623_02_SU_0002 & {
+        background: url("../../common_contents/img/ema623_02_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_03_SU_0002 & {
+        background: url("../../common_contents/img/ema623_03_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_04_SU_0002 & {
+        background: url("../../common_contents/img/ema623_04_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_05_SU_0002 & {
+        background: url("../../common_contents/img/ema623_05_SU/0002_contents.png") no-repeat center center / cover;
+    }
+    .ema623_06_SU_0002 & {
+        background: url("../../common_contents/img/ema623_06_SU/0002_contents.png") no-repeat center center / cover;
+    }
+}
+.gray_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px 30px 50px 30px;
+    background-color: #eef0f4;
+    width: 100%;
+    border-radius: 30px;
+    button {
+        position: relative;
+        padding: initial;
+        width: initial;
+        height: initial;
+        min-width: initial;
+        background-color: initial;
+        &::before, &::after {
+            display: inline-block;
+            content: '';
+            
+        }
+    }
+    .box_title {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        line-height: 48px;
+        font-weight: 700;
+        
+        .minus {
+            &::before {
+                padding-right: 30px;
+                width: 40px;
+                height: 40px;
+                background: url(../../common_contents/img/EMA623_03_SU/minus.png) no-repeat center center / contain;
+            }
+        }
+        .plus {
+            &::after {
+                padding-left: 30px;
+                width: 40px;
+                height: 40px;
+                background: url(../../common_contents/img/EMA623_03_SU/plus.png) no-repeat center center / contain;
+            }
+        }
+    }
+    .wood_box_area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        .wood_box {
+            &::before {
+                content: '';
+                width: 60px;
+                height: 60px;
+                background: url(../../common_contents/img/EMA623_03_SU/0003_img01.png) no-repeat center center / contain;
+
+            }
+        }
+    }
+}

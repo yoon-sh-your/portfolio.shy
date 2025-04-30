@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_08_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_08_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">축제에서 올림, 버림, 반올림이 활용되는 경우를 살펴봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row flex align_start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+
+            <p class="t01" lang="y">124명이 모두 타려면 <br>버스는 최소 몇 번 <br>운행해야 하는 걸까?</p>
+            <p class="t02" lang="y">사과파이 485개를  <br>한 상자에 10개씩 담아  <br>판매하고 있어요.</p>
+            <p class="t03" lang="y">그럼 사과파이를 <br>최대 몇 상자까지 <br>판매할 수 있나요?</p>
+            <p class="t04" lang="y">어제 판매액은 <br>4836200원이었고, <br>오늘 예상 판매액은 <br>5370000원이에요.</p>
+            <p class="t05" lang="y">어제 판매액과 오늘 <br>예상 판매액은 각각 <br>약 얼마라고 <br>할 수 있을까요?</p>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고 어림이 활용되는 상황을 찾아 이야기해 봅시다.</h3>
+
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">최대로 팔 수 있는 사과파이의 상자 수를 구할 때 어림이 활용됩니다.</li>
+                <li lang="y">최소로 버스를 운행해야 하 는 횟수를 구할 때 어림이 활용됩니다.</li>
+                <li lang="y">어제 판매액과 오늘 예상 판매액을 간단하게 말할 때 어림이 활용됩니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

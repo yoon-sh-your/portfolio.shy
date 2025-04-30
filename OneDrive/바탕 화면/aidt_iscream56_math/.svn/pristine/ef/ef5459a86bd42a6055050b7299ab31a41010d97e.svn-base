@@ -1,0 +1,690 @@
+/* ema616_02_su_0002 */
+
+.ema616_02_su_0002 .video_wrap {
+  background: url(../img/EMA616_02_SU/616_02_002.png) no-repeat center right 0 /
+    100%;
+}
+
+/* .ema616_02_su_0002 .flex {
+  gap: 26px;
+} */
+
+/* .ema616_02_su_0002 .input_wrap math-field.textarea {
+  height: 262px;
+}
+ */
+/* ema616_02_su_0003 */
+.ema616_02_su_0003 .page_1 .flex {
+  gap: 120px;
+  align-items: center;
+}
+
+.ema616_02_su_0003 .left_box {
+  position: relative;
+}
+.ema616_02_su_0003 .right_box {
+  position: relative;
+}
+
+.ema616_02_su_0003 .left_box::before {
+  content: "가";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 27px;
+  left: -78px;
+}
+.ema616_02_su_0003 .right_box::before {
+  content: "나";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: -13px;
+  left: -38px;
+}
+
+.ema616_02_su_0003 .page_2 .flex {
+  gap: 30px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 80px;
+}
+/* .ema616_02_su_0003 .page_3 .flex {
+  gap: 180px;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 80px;
+} */
+.ema616_02_su_0003 .page_3 .flex {
+  width: 1600px;
+  gap: 75px;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+.ema616_02_su_0003 .page_2 .drag_area {
+  position: relative;
+  width: 1600px;
+  height: 500px;
+}
+.ema616_02_su_0003 .page_3 .drag_area {
+  display: flex;
+  position: relative;
+  /*   width: 1600px;
+  height: 500px; */
+  gap: 128px;
+}
+
+.ema616_02_su_0003 .page_2 .drop_item1 {
+  position: absolute;
+  transition: none;
+}
+
+.ema616_02_su_0003 .page_2 .drop_item2 {
+  position: absolute;
+  transition: none;
+}
+
+.ema616_02_su_0003 .page_3 .drop_item1 {
+  position: relative;
+}
+
+.ema616_02_su_0003 .page_3 .drop_item2 {
+  position: relative;
+}
+
+.ema616_02_su_0003 .page_2 .drop_item1::before {
+  content: "가";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: -22px; /* 적절히 위치 조정 */
+  left: -78px;
+  z-index: 10; /* 가상 요소가 실제 요소 위로 올라오도록 설정 */
+}
+
+/* drop_item2의 가상 요소 ::before */
+.ema616_02_su_0003 .page_2 .drop_item2::before {
+  content: "나";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: -22px; /* 적절히 위치 조정 */
+  left: -38px;
+  z-index: 10; /* 가상 요소가 실제 요소 위로 올라오도록 설정 */
+}
+.ema616_02_su_0003 .page_3 .drop_item1::before {
+  content: "가";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: -22px; /* 적절히 위치 조정 */
+  left: -78px;
+  z-index: 10; /* 가상 요소가 실제 요소 위로 올라오도록 설정 */
+}
+
+/* drop_item2의 가상 요소 ::before */
+.ema616_02_su_0003 .page_3 .drop_item2::before {
+  content: "나";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: -22px; /* 적절히 위치 조정 */
+  left: -38px;
+  z-index: 10; /* 가상 요소가 실제 요소 위로 올라오도록 설정 */
+}
+
+.ema616_02_su_0003 li {
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.ema616_02_su_0003 li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -17px;
+  background-color: #222;
+}
+
+.ema616_02_su_0003 .text_box {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.ema616_02_su_0003 .badge {
+  position: relative;
+}
+/* .ema616_02_su_0003 .border2 {
+  position: relative;
+} */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  line-height: 1;
+  vertical-align: middle;
+  margin-right: 4px;
+  z-index: 10;
+}
+
+.ema616_02_su_0003 .page_2 .input_wrap .example_box {
+  max-height: 150px;
+}
+/* .ema616_02_su_0003 .border2::before {
+  content: "나";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* z-index 설정 */
+/* } */ */
+
+.ema616_02_su_0003 .page_2 .custom_select .text_hint {
+  font-size: 24px;
+  left: 94px;
+}
+
+.ema616_02_su_0004 .input_wrap math-field.textarea {
+  width: 100%;
+  height: 226px;
+}
+.ema616_02_su_0004 .input_wrap {
+  width: 800px;
+  /* height: 333px; */
+}
+
+.ema616_02_su_0004 .border1 {
+  position: relative;
+}
+.ema616_02_su_0004 .border2 {
+  position: relative;
+}
+
+.ema616_02_su_0003 .page_2 .input_area {
+  width: 740px;
+  margin-right: 30px;
+}
+.ema616_02_su_0004 .page_1 .input_area,
+.ema616_02_su_0004 .page_2 .input_area {
+  width: 797px;
+}
+.ema616_02_su_0004 .page_3 .input_area {
+  width: 797px;
+}
+
+.ema616_02_su_0004 .border1::before {
+  content: "가";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ema616_02_su_0004 .border2::before {
+  content: "나";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ema616_02_su_0004 .left_area .border3::before {
+  content: "가";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+.ema616_02_su_0004 .border5::before {
+  content: "가";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+
+.ema616_02_su_0004 .border4::before {
+  content: "나";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 7px;
+  left: 218px;
+}
+.ema616_02_su_0004 .border6::before {
+  content: "나";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: var(--primary-blue);
+  color: var(--font-main-reverse);
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 12px;
+  position: absolute;
+  top: 7px;
+  left: 224px;
+}
+
+.border_bubble1::before,
+.border_bubble2::before {
+  content: "";
+  display: inline-block;
+  background-color: #4275f4;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 0.3em 0.6em;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* 각각 다른 문자 넣기 */
+.border_bubble1::before {
+  content: "가";
+}
+
+.border_bubble2::before {
+  content: "나";
+}
+.ema616_02_su_0004 .top_name {
+  position: absolute;
+  top: 29px;
+  right: 193px;
+}
+.ema616_02_su_0004 .top_name p,
+.ema616_02_su_0004 .bottom_name p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.ema616_02_su_0004 .top_name p span {
+  display: inline-block;
+}
+
+.ema616_02_su_0004 .bubble1_wrap {
+  position: absolute;
+  right: 18px;
+  top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ema616_02_su_0004 .bubble1_wrap p,
+.ema616_02_su_0004 .bubble1_wrap2 p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.ema616_02_su_0004 .bubble1_wrap2 {
+  position: absolute;
+  right: 22px;
+  top: 47px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ema616_02_su_0004 .flex_text {
+  display: flex;
+  align-items: center;
+}
+
+/* .top_name .name_1 {
+  transform: rotate(341deg);
+}
+.top_name .name_2 {
+  transform: rotate(11deg);
+}
+ */
+.bottom_name {
+  position: absolute;
+  top: 29px;
+  right: 196px;
+}
+
+.ema616_02_su_0003 .select_trigger {
+  width: 200px;
+}
+
+.ema616_02_su_0003 .selectbox_wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 16px 0;
+  white-space: nowrap;
+}
+
+/* ema616_04_su_0004 */
+
+.ema616_02_su_0004 h2 {
+  display: flex;
+}
+
+.ema616_02_su_0004 .page_1 .flex,
+.ema616_02_su_0004 .page_2 .flex,
+.ema616_02_su_0004 .page_3 .flex {
+  width: 1435px;
+  gap: 26px;
+  justify-content: center;
+}
+
+.ema616_02_su_0004 .area_wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ema616_02_su_0004 .boolean1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.ema616_02_su_0004 .boolean_wrap button {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+}
+.ema616_02_su_0004 .boolean2 {
+  position: absolute;
+  top: 284px;
+  left: 453px;
+}
+.ema616_02_su_0004 .boolean1 {
+  position: absolute;
+  top: 36px;
+  left: 453px;
+}
+
+/* .ema616_02_su_0004 .input_wrap math-field.textarea {
+  width: 797px;
+  height: 262px;
+} */
+
+.ema616_02_su_0004 .page_2 .input_wrap .example_box.on {
+  padding: 28px 24px 14px 82px;
+}
+/* .ema616_02_su_0004 .check_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+.ema616_02_su_0004 .left_area {
+  position: relative;
+}
+
+.ema616_02_su_0004 .right_area {
+  position: relative;
+}
+
+.check_box1,
+.check_box2 {
+  position: absolute;
+  top: 0;
+  right: -183px;
+}
+
+/* .ema616_02_su_0004 .check_box1 {
+    position: absolute;
+    top: -24px;
+    left: 336px;
+    width: 300px;
+    height: 250px;
+}
+
+.ema616_02_su_0004 .check_box2 {
+    position: absolute;
+    top: 0px;
+    left: 338px;
+    width: 300px;
+    height: 250px;
+} */
+
+.ema616_02_su_0003 .page_2 .input_wrap math-field.textarea {
+  width: 769px;
+  height: 225px;
+}
+.ema616_02_su_0003 .page_3 .input_wrap math-field.textarea {
+  width: 769px;
+  height: 225px;
+}
+
+.text_area {
+  align-items: center;
+}
+
+.sub_area {
+  position: absolute;
+  bottom: 0;
+  left: -280px;
+}
+
+.sub_img {
+  position: relative;
+}
+
+.length1 {
+  position: absolute;
+  top: 40px;
+  left: 170px;
+}
+.length2 {
+  position: absolute;
+  top: 115px;
+  left: 16px;
+}
+.length3 {
+  position: absolute;
+  top: 117px;
+  left: 139px;
+}
+
+/* ema616_02_su_0005 */
+.ema616_02_su_0005 .left_img_area {
+  position: relative;
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble_a {
+  position: absolute;
+  top: 121px;
+  left: 389px;
+}
+
+.bubble_a p {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.ema616_02_su_0005 .input_wrap math-field.textarea {
+  width: 797px;
+  height: 397px;
+}
+
+.ema616_02_su_0003[data-current-page="page_1"] .btnSubmit,
+.ema616_02_su_0003[data-current-page="page_1"] .btnCheck,
+.ema616_02_su_0003[data-current-page="page_1"] .btnType,
+.ema616_02_su_0003[data-current-page="page_1"] .btnReset-page2,
+.ema616_02_su_0003[data-current-page="page_1"] .btnReset-page3 {
+  display: none;
+}
+.ema616_02_su_0003[data-current-page="page_2"] .btnCheck,
+.ema616_02_su_0003[data-current-page="page_2"] .btnReset-page1,
+.ema616_02_su_0003[data-current-page="page_2"] .btnReset-page3 {
+  display: none;
+}
+.ema616_02_su_0003[data-current-page="page_3"] .btnCheck,
+.ema616_02_su_0003[data-current-page="page_3"] .btnReset-page1,
+.ema616_02_su_0003[data-current-page="page_3"] .btnReset-page2 {
+  display: none;
+}
+.ema616_02_su_0004[data-current-page="page_1"] .btnSubmit,
+.ema616_02_su_0004[data-current-page="page_1"] .btn_draw {
+  display: none;
+}
+.ema616_02_su_0004[data-current-page="page_2"] .btnCheck,
+.ema616_02_su_0004[data-current-page="page_3"] .btnCheck,
+.ema616_02_su_0004[data-current-page="page_2"] .btn_draw,
+.ema616_02_su_0004[data-current-page="page_3"] .btn_draw {
+  display: none;
+}
+.ema616_02_su_0004[data-current-page="page_4"] .btnType,
+.ema616_02_su_0004[data-current-page="page_4"] .btnSubmit {
+  display: none;
+}
+
+.ema616_02_su_0003 .page_3 .input_area {
+  width: 740px;
+  margin-right: 30px;
+}
+
+.input_wrap .example_box > p {
+  display: inline-block;
+}
+
+.ema616_02_su_0004 .btn_draw {
+  position: absolute;
+  bottom: 19px;
+  left: 45px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA516_13_SU_0007_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+  <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema516_06.css">
+  <link rel="stylesheet" href="./../../common_contents/css/ema516_10.css">
+  <script src="../../common_contents/js/ema516_13_0007.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema516_13_su_0007">
+    <section class="title type2">
+      <h2 data-type="3">사다리꼴의 넓이를 여러 가지 방법으로 구해 봅시다.</h2>
+      <div class="title_right"></div>
+    </section>
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">
+          여러 가지 도형을 이용하여 사다리꼴의 넓이는 몇 ㎠인지 구해 보세요.
+        </h3>
+        <div class="input_area">
+          <div class="align_center gap_20">
+            <div class="ractangle_img">
+              <img src="../../common_contents/img/EMA516_10_SU/10_07_01.png" alt="사다리꼴 이미지">
+              <!-- <div class="unit1">
+                <span>1㎠</span>
+              </div> -->
+            </div>
+            <div class="question_box justify_center align_end">
+              <div class="click_area">
+                <div class="drawline_grid">
+                  <div class="drawing_grid_area" id="drawingArea1" data-grid-size="50">
+                    <svg class="line_canvas"></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="result_box">
+              <img src="../../common_contents/img/EMA516_10_SU/10_07_02.png" alt="사다리꼴 이미지">
+            </div>
+          </div>
+          <div class="flex justify_start">
+            <div class="top_txt">
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown custom_check_target" data-answer-single="직사각형">
+                  <option></option>
+                  <!--최초선택데이터 생성 방지용-->
+                  <option value="직사각형"></option>
+                  <option value="평행사변형"></option>
+                  <option value="삼각형"></option>
+                </select>
+              </div>
+              <span lang="y">의 넓이는</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="2×4" text-align="center" class="custom_check_target">
+                </math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="8" text-align="center" class="custom_check_target">
+                </math-field>
+                <span>㎠</span>
+              </div>
+              
+            </div>
+            <div class="top_txt">
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown custom_check_target" data-answer-single="삼각형">
+                  <option></option>
+                  <!--최초선택데이터 생성 방지용-->
+                  <option value="직사각형"></option>
+                  <option value="평행사변형"></option>
+                  <option value="삼각형"></option>
+                </select>
+              </div>
+              <span lang="y">의 넓이는</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="4×4÷2" text-align="center" class="custom_check_target">
+                </math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="8" text-align="center" class="custom_check_target">
+                </math-field>
+                <span>㎠</span>
+              </div>
+              
+            </div>
+            <div class="top_txt">
+              <span lang="y">이므로 사다리꼴의 넓이는</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="8+8" text-align="center" class="custom_check_target">
+                </math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap">
+                <math-field type="number" data-answer-single="16" text-align="center" class="custom_check_target">
+                </math-field>
+                <span> ㎠ 입니다.</span>
+              </div>
+              
+            </div>
+            <div class="input_wrap">
+              <div class="example_box">
+                <p lang="y">직사각형의 넓이는 2×4=8 (㎠)이고, 삼각형의 넓이는 4×4÷2=8 (㎠)이므로 사다리꼴의 넓이는 8+8=16 (㎠)입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 1page -->
+      <article class="page page_2 page2">
+        <h3 lang="y">구한 방법을 친구와 비교해 보세요.</h3>
+        <div class="input_area">
+          <div class="flex align_center gap_12">
+            <div class="ractangle_img">
+              <img src="../../common_contents/img/EMA516_10_SU/10_07_01.png" alt="사다리꼴 이미지">
+              <div class="unit1">
+                <!-- <span>1㎠</span> -->
+              </div>
+            </div>
+            <div class="bubble_img">
+              <img src="../../common_contents/img/EMA516_10_SU/10_bubble_img.png" alt="남자아이 버블 이미지">
+              <div class="bubble_area">
+                <p lang="y">사다리꼴에 대각선을<br />1개 그어서 삼각형 2개로 나누어<br />넓이를 구했어.</p>
+              </div>
+            </div>
+            <div class="sub_area_img">
+              <img src="../../common_contents/img/EMA516_10_SU/10_sub_img.png" alt="메모 이미지">
+              <div class="unit_txt"><span>1㎠</span></div>
+            </div>
+          </div>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">구한 방법은 달라도 넓이는 같습니다.</p>
+              </div>
+            </div>
+
+      </article>
+      <!-- 2page -->
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+<script>
+
+</script>
+
+</html>

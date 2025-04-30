@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema617_03_su_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema617_03_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema617_03_su_0004">
+    <section class="title">
+      <h2 data-head="2">
+        <span lang="y">활동을 하고 나서 느낀 점을 이야기해 보세요.
+          ​​</span>
+      </h2>
+    </section>
+
+    <section class="contents">
+      <div class="text_center">
+        <!-- <div class="img_wrap">
+          <img src="./../../common_project/img/EMA617_03_SU/EMA617_03_SU_0005_img.png" alt="" />
+          <div class="img_txt">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="883"
+              height="111"
+              viewBox="0 0 883 111"
+              fill="none">
+              <text
+                fill="#222222"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="Pretendard"
+                font-size="24"
+                letter-spacing="-0.5px">
+                <tspan x="708.914" y="27.4598" lang="y">여러 가지 그래프를</tspan>
+                <tspan x="743.711" y="63.4598" lang="y">활용하니....</tspan>
+              </text>
+              <text
+                fill="#222222"
+                xml:space="preserve"
+                style="white-space: pre"
+                font-family="Pretendard"
+                font-size="24"
+                letter-spacing="-0.5px">
+                <tspan x="20.9062" y="29.4598" lang="y">주어진 정보를</tspan>
+                <tspan x="0.664062" y="65.4598" lang="y">비판적으로 생각할</tspan>
+                <tspan x="18.1094" y="101.46" lang="y">필요가 있구나.</tspan>
+              </text>
+            </svg>
+          </div>
+        </div> -->
+        <div class="input_area">
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <ol class="example_box" style="display: none;">
+              <li>더미</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

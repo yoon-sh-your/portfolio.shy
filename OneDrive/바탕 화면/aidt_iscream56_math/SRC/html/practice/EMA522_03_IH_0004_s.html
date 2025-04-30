@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_03_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_03_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">가장 큰 수와 가장 작은 수의 곱을 구해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_03_IH/0004_01.png" alt="" />
+            <div class="texts">
+              <div><span>4</span></div>
+              <div>
+                <span class="mr_10">4</span>
+                <div class="fraction_box">
+                  <span>7</span>
+                  <span>8</span>
+                </div>
+              </div>
+              <div>
+                <span class="mr_10">6</span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span>2</span>
+                </div>
+              </div>
+              <div>
+                <span>5</span>
+              </div>
+            </div>
+          </div>
+          <div class="input_area mt_20 align_center">
+            <span>(</span>
+            <div class="input_wrap answer1">
+              <math-field data-answer-single="26"></math-field>
+            </div>
+            <span>)</span>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <span>6</span>
+                  <div class="fraction_box"><span>1</span><span>2</span></div>
+                  <span>></span>
+                  <span>5</span>
+                  <span>></span>
+                  <span>4</span>
+                  <div class="fraction_box"><span>7</span><span>8</span></div>
+                  <span>></span>
+                  <span>4이므로 가장 큰 수는</span>
+                  <span>6</span>
+                  <div class="fraction_box"><span>1</span><span>2</span></div>
+                  <span>, 가장 작은 수는 4입니다.</span>
+                </div>
+                <div class="flex align_center gap_10">
+                  <span>두 수의 곱을 구하면</span>
+                  <span>6</span>
+                  <div class="fraction_box"><span>1</span><span>2</span></div>
+                  <span>×</span>
+                  <span>4</span>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span>13</span><span class="mark_error">2<i>1</i></span>
+                  </div>
+                  <span>×</span>
+                  <span class="mark_error up">4<i>2</i></span>
+                  <span>=</span>
+                  <span>13</span>
+                  <span>×</span>
+                  <span>2</span>
+                  <span>=</span>
+                  <span>26입니다.</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_01_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_01_ih_0002">
+      <section class="title flex_wrap">
+        <h2 lang="y">
+          <span class="recap" lang="y">이전에 <span>배웠어요</span></span>
+        </h2>
+        <div class="title_sub">
+          <span lang="y">『수학 3-2』 분모가 같은 분수의 크기 비교</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="2" lang="y">
+          분수만큼 색칠하고, 두 분수의 크기를 비교하여 <span class="circle_blank"></span>&nbsp;안에 <img src="./../../common_contents/common/img/icon_arrow_right.svg" alt="크다" /><span class="ml-14"></span>, <img src="./../../common_contents/common/img/icon_equal.svg" alt="같다" /><span class="ml-14"></span>,
+          <img src="./../../common_contents/common/img/icon_arrow_left.svg" alt="작다" />
+          중 알맞은 것을 고르세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box">
+          <div class="block_group">
+            <div class="item">
+              <div class="boolean_count_wrap" data-answer-single="1">
+                <button type="button">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="boolean_count_wrap" data-answer-single="1">
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="boolean_count_wrap" data-answer-single="1">
+                <button type="button">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="boolean_count_wrap" data-answer-single="5">
+                <button type="button">
+                  <span></span>
+                </button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+                <button type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="fraction_group">
+            <div class="fraction_box_mixed">
+              <span>1</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <span>6</span>
+              </div>
+            </div>
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown math_symbol" data-answer-single="<">
+                <option></option>
+                <option value=">">></option>
+                <option value="=">=</option>
+                <option value="<"><</option>
+              </select>
+            </div>
+            <div class="fraction_box_mixed">
+              <div class="fraction_box">
+                <span>11</span>
+                <span>6</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">분수만큼 색칠하면</p>
+                <div class="flex align_center gap_20" lang="y">
+                  <div class="fraction_box_mixed">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>1</span>
+                      <span>6</span>
+                    </div>
+                  </div>
+                  <span class="ml-14">보다</span>
+
+                  <div class="fraction_box">
+                    <span>11</span>
+                    <span>6</span>
+                  </div>
+                  <span class="ml-14">이 더 많이 색칠됩니다. 따라서</span>
+
+                  <div class="fraction_box_mixed">
+                    <span>1</span>
+                    <div class="fraction_box">
+                      <span>1</span>
+                      <span>6</span>
+                    </div>
+                  </div>
+                  &lt;
+                  <div class="fraction_box">
+                    <span>11</span>
+                    <span>6</span>
+                  </div>
+                  <span class="ml-14">입니다.</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

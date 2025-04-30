@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+
+    <script src="../../common_contents/js/ema512_04_0005.js"></script>
+</head>
+
+<body>
+    <div id="app_wrap" class="ema512_04_su_0005" data-current-page="page_2, page_5">
+      <section class="title type2">
+        <h2 data-head="3_green" lang="y">24와 32의 공약수와 최대공약수의 관계를 알아봅시다.</h2>
+      </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">24와 32의 약수를 각각 모두 써 보세요.</h3>
+                    <div class="page_1_cont flex justify_center">
+                        <div>
+                            <div class="problem1">
+                                <h4 lang="y">24의 약수</h4>
+
+                                <div class="multi_input_wrap flex justify_center gap_12 ">
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap">
+                                        <math-field data-answer-single="1, 2, 3, 4, 6, 8, 12, 24 중 하나"
+                                            data-answer-multi='{"values": ["1","2","3","4","6","8","12","24"]}'
+                                            text-align="center"></math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="problem2">
+                                <h4 lang="y">32의 약수</h4>
+
+                                <div class="multi_input_wrap flex justify_center gap_12 ">
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 4, 8, 16, 32 중 하나"
+                                            data-answer-multi='{"values":["1","2","4","8","16","32"]}'
+                                            text-align="center" ">
+                                        </math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 4, 8, 16, 32 중 하나"
+                                            data-answer-multi='{"values":["1","2","4","8","16","32"]}'
+                                            text-align="center" ">
+                                        </math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 4, 8, 16, 32 중 하나"
+                                            data-answer-multi='{"values":["1","2","4","8","16","32"]}'
+                                            text-align="center" ">
+                                        </math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 4, 8, 16, 32 중 하나"
+                                            data-answer-multi='{"values":["1","2","4","8","16","32"]}'
+                                            text-align="center" ">
+                                        </math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 4, 8, 16, 32 중 하나"
+                                            data-answer-multi='{"values":["1","2","4","8","16","32"]}'
+                                            text-align="center" ">
+                                        </math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                        ,
+                                    </div>
+                                    <div class="input_wrap align_end">
+                                        <math-field data-answer-single="1, 2, 4, 8, 16, 32 중 하나"
+                                            data-answer-multi='{"values":["1","2","4","8","16","32"]}'
+                                            text-align="center" ">
+                                        </math-field>
+                                        <!-- 멀티케이스 정답 힌트 표시 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_2">
+                    <h3 lang="y">24와 32의 공약수에 모두 O표 하세요.</h3>
+                    <div class="page_1_cont flex justify_center">
+                        <!--page_1_cont class지우면 page2내용 틀어짐-->
+                        <div>
+                            <div>
+                                <h4 lang="y">24의 약수</h4>
+                                <div class="boolean_wrap">
+                                    <button data-answer-single="true">1</button>
+                                    <button data-answer-single="true">2</button>
+                                    <button data-answer-single="false">3</button>
+                                    <button data-answer-single="true">4</button>
+                                    <button data-answer-single="false">6</button>
+                                    <button data-answer-single="true">8</button>
+                                    <button data-answer-single="false">12</button>
+                                    <button data-answer-single="false">24</button>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 lang="y">32의 약수</h4>
+                                <div class="boolean_wrap">
+                                    <button data-answer-single="true">1</button>
+                                    <button data-answer-single="true">2</button>
+                                    <button data-answer-single="true">4</button>
+                                    <button data-answer-single="true">8</button>
+                                    <button data-answer-single="false">16</button>
+                                    <button data-answer-single="false">32</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_3">
+                    <h3 lang="y">24와 32의 최대공약수를 써 보세요.</h3>
+                    <div class="question_box flex justify_center">
+                        <div class="flex">
+                            <div class="input_wrap answer1">
+                                <math-field data-answer-single="8"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_4">
+                    <h3 lang="y">24와 32의 최대공약수의 약수를 모두 써 보세요.</h3>
+                    <div class="question_box flex justify_center">
+                        <div class="flex gap_12">
+                            <div class="input_wrap answer1 align_end">
+                                <math-field data-answer-single="1"></math-field>
+                                ,
+                            </div>
+                            <div class="input_wrap answer1 align_end">
+                                <math-field data-answer-single="2"></math-field>
+                                ,
+                            </div>
+                            <div class="input_wrap answer1 align_end">
+                                <math-field data-answer-single="4"></math-field>
+                                ,
+                            </div>
+                            <div class="input_wrap answer1 align_end">
+                                <math-field data-answer-single="8"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="page page_5">
+                    <h3 lang="y">최대공약수의 약수와 공약수를 비교하여 알게 된 점을 이야기해 보세요.</h3>
+                    <div class="page_5_cont margin_center">
+                        <div class="input_wrap">
+                            <math-field class="textarea"></math-field>
+                            <div class="example_box">
+                                <p lang="y">최대공약수의 약수는 공약수와 같습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn_area">
+                <button class="btnType key" lang="y">입력타입토글</button>
+                <button class="btnReset" lang="y">리셋</button>
+                <button class="btnCheck" lang="y">확인</button>
+                <button class="btnSubmit" lang="y" data-submit="true">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

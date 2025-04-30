@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_02_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema616_02_ih_05.js"></script>
+    <!-- <script src="./../../common_practice/js/btn_act.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema616_02.css" />
+
+
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_02_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5_orange" lang="y">
+            모양과 크기가 같은 과자 상자를 쌓아서 직육면체를 만들었습니다. 만든 직육면체의 부피가 같은 사람의 이름을 써 보세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="boolean_wrap">
+            <div>
+              <button type="button" data-answer-multi="false">
+                <p class="name"></p>
+              </button>
+              <button type="button" class="" data-answer-multi="true">
+                <p class="name"></p>
+              </button>
+              <button type="button" class="" data-answer-multi="true">
+                <p class="name"></p>
+              </button>
+            </div>
+          </div>
+
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+    <script>
+
+    </script>
+  </body>
+</html>

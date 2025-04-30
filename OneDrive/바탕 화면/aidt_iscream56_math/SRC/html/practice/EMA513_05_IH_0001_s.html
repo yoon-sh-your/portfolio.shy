@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_05_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_05_ih_0001">
+      <section class="title group">
+        <h2 lang="y"><span class="pink">[1~2]</span> 그림에서 대응 관계를 찾아 식으로 나타내려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="img_box mt_20 mb_20">
+        <img src="../../common_practice/img/EMA513_05_IH/0001_img.png" alt="" />
+      </section>
+      <section class="title type2">
+        <h2 data-head="1_pink" lang="y">서로 대응하는 두 양을 찾아 쓰고, 두 양 사이의 대응 관계를 써 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box dir_col">
+          <div class="flex gap_10">
+            <span class="label_gray mt_12" lang="y">서로 대응하는 두 양</span>
+            <div class="input_wrap_underline">
+              <div class="input_wrap answer1">
+                <math-field type="text"></math-field>
+                <div class="example_box">
+                  <p>케이크의 수</p>
+                </div>
+              </div>
+              ,
+              <div class="input_wrap answer2">
+                <math-field type="text"></math-field>
+                <div class="example_box">
+                  <p>체리의 수</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap_10">
+            <span class="label_gray mt_12" lang="y">대응 관계</span>
+            <div class="input_wrap_underline">
+              <div class="input_wrap answer3">
+                <math-field type="text"></math-field>
+                <div class="example_box">
+                  <p>체리의 수는 케이크의 수의 4배입니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">서로 대응하는 두 양은 케이크의 수와 체리의 수입니다. 케이크가 1개씩 늘어날 때마다 체리는 4개씩 늘어나므로 체리의 수는 케이크의 수의 4배입니다. 또는 케이크의 수는 체리의 수를 4로 나눈 것과 같습니다.</p>
+                <p class="text_bullet" lang="y">서로 대응하는 두 양은 케이크의 수와 과자의 수입니다. 케이크가 1개씩 늘어날 때마다 과자는 2개씩 늘어나므로 과자의 수는 케이크의 수의 2배입니다. 또는 케이크의 수는 과자의 수를 2로 나눈 것과 같습니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

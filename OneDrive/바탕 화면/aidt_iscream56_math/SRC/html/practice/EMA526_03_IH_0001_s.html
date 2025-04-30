@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_03_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_03_ih_0001">
+      <section class="title group">
+        <h2 lang="y"><span class="blue">[1~2]</span>아린이네 모둠이 한 달 동안 사용한 용돈을 나타낸 표입니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          한 달 동안 사용한 용돈의 평균을 구하려고 합니다.
+          <span class="empty_box nemo"></span>
+          안에 알맞은 수를 써넣으세요.
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page">
+          <div class="tit_data">
+            <div class="inner">
+              <span lang="y">학생별 사용한 용돈</span>
+            </div>
+          </div>
+          <div class="table_wrap row">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col" lang="y">이름</th>
+                  <td lang="y">아린</td>
+                  <td lang="y">선우</td>
+                  <td lang="y">윤하</td>
+                  <td lang="y">우빈</td>
+                  <td lang="y">서진</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">사용한 용돈(원)</th>
+                  <td>9000</td>
+                  <td>12000</td>
+                  <td>8000</td>
+                  <td>7000</td>
+                  <td>14000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="question_box justify_center">
+            <div class="inner" lang="y">
+              한 달 동안 사용한 용돈은 모두 9000+12000+
+              <div class="input_wrap">
+                <math-field data-answer-single="8000"></math-field>
+              </div>
+              +
+              <div class="input_wrap">
+                <math-field data-answer-single="7000"></math-field>
+              </div>
+              +
+              <div class="input_wrap">
+                <math-field data-answer-single="14000"></math-field>
+              </div>
+              =
+              <div class="input_wrap">
+                <math-field data-answer-single="50000"></math-field>
+              </div>
+              (원)입니다.
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">9000+12000+8000+7000+14000=50000</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page">
+          <div class="tit_data">
+            <div class="inner">
+              <span lang="y">학생별 사용한 용돈</span>
+            </div>
+          </div>
+          <div class="table_wrap row">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col" lang="y">이름</th>
+                  <td lang="y">아린</td>
+                  <td lang="y">선우</td>
+                  <td lang="y">윤하</td>
+                  <td lang="y">우빈</td>
+                  <td lang="y">서진</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">사용한 용돈(원)</th>
+                  <td>9000</td>
+                  <td>12000</td>
+                  <td>8000</td>
+                  <td>7000</td>
+                  <td>14000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="question_box justify_center">
+            <div class="inner" lang="y">
+              한 달 동안 사용한 용돈의 평균은
+              <div class="input_wrap">
+                <math-field data-answer-single="50000"></math-field>
+              </div>
+              ÷5=
+              <div class="input_wrap">
+                <math-field data-answer-single="10000"></math-field>
+              </div>
+              (원)입니다.
+            </div>
+          </div>
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="conts_solve">
+                    <p lang="y">(한 달 동안 사용한 용돈의 평균)</p>
+                    <p>=(9000+12000+8000+7000+14000)÷5</p>
+                    <p>=50000÷5</p>
+                    <p>=10000(원)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

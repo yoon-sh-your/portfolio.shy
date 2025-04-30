@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_04_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_04_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3"><span class="nemo"></span><span lang="y" class="ml-5">안에 알맞은 수를 써넣으세요.</span></h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="flex dir_col">
+            <div class="input_row flex align_center gap_10">
+              <div class="fraction_box"><span>10</span><span>17</span></div>
+              ÷5=
+              <div class="fraction_box">
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="10" text-align="center" class="w_80"></math-field>
+                  </div>
+                  ÷5
+                </span>
+                <span>17</span>
+              </div>
+              =
+              <div class="fraction_box">
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="2" text-align="center" class="w_80"></math-field>
+                  </div>
+                </span>
+                <span>17</span>
+              </div>
+            </div>
+            <div class="input_row flex align_center gap_10">
+              <div class="fraction_box"><span>5</span><span>12</span></div>
+              ÷6=
+              <div class="fraction_box">
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="30" text-align="center" class="w_80"></math-field>
+                  </div>
+                </span>
+                <span>72</span>
+              </div>
+              ÷6=
+              <div class="fraction_box">
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="30" text-align="center" class="w_80"></math-field>
+                  </div>
+                  ÷6
+                </span>
+                <span>72</span>
+              </div>
+              =
+              <div class="fraction_box">
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="5" text-align="center" class="w_80"></math-field>
+                  </div>
+                </span>
+                <span>72</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0">
+                  <div class="fraction_box">
+                    <span>10</span>
+                    <span>17</span>
+                  </div>
+                  ÷5=
+                  <div class="fraction_box">
+                    <span>10÷5</span>
+                    <span>17</span>
+                  </div>
+                  =
+                  <div class="fraction_box"><span>2</span><span>17</span></div>
+                </div>
+                <div class="flex align_center gap_0">
+                  <div class="fraction_box"><span>5</span><span>12</span></div>
+                  ÷6=
+                  <div class="fraction_box"><span>30</span><span>72</span></div>
+                  ÷6=
+                  <div class="fraction_box"><span>30÷6</span><span>72</span></div>
+                  =
+                  <div class="fraction_box"><span>5</span><span>72</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

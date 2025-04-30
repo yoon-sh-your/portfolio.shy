@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>EMA623_01_SU_0001_s</title>
+
+        <!-- 공통 js-->
+        <script src="../../common_contents/common/js/app.js"></script>
+
+        <!-- 공통 css-->
+        <link rel="stylesheet" href="./../../common_contents/common/css/app.css"/>
+
+        <!-- 개별 -->
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_common.css"/>
+        <link rel="stylesheet" href="./../../common_contents/css/ema623_01.css"/>
+    </head>
+    <body>
+        <div id="app_wrap" class="ema623_01_su_0001 intro_page">
+            <section class="title type1">
+                <h1 data-number="3" lang="y">공간과 입체</h1>
+                <button class="goal" onclick="openPop('.pop_goal_wrap')" lang="y">학습 목표</button>
+            </section>
+
+            <div class="pop_goal_wrap">
+                <div class="pop_goal">
+                    <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+                    <div class="pop_goal_inner">
+                        <label>이번 시간에 공부할 내용</label>
+                        <p>우리 주변의 다양한 물체를 여러 방향에서 보는 상황을 살펴보고, 이 단원에서 배울 내용을 생각해 봅니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text_box">
+                <p class="f20b" lang="y">
+                    제주특별자치도에 있는 성산 일출봉은​<br/>
+                    화산 활동으로 만들어졌어.​<br/>
+                    성산 일출봉을 위에서 보면 어떤 모습일까?
+                </p>
+            </div>
+            <section class="contents">
+               
+                <div class="input_area">
+                    <label for="inputElement01" class="img" lang="y">그림은 어떤 상황을 나타내고 있나요?</label>
+                    <div class="input_wrap">
+                        <math-field class="textarea"></math-field>
+                        <ol class="example_box">
+                            <li lang="y">제주특별자치도에 있는 성산 일출봉입니다.</li>
+                            <li lang="y">성산 일출봉은 화산 활동으로 만들어졌다고 합니다.</li>
+                            <li lang="y">성산 일출봉을 위에서 보면 어떤 모습일지 궁금해하고 있습니다.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="btn_area">
+                    <!-- 예시 필드에서 사용 -->
+                    <button class="btnType key">입력타입토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnSample">예시</button>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

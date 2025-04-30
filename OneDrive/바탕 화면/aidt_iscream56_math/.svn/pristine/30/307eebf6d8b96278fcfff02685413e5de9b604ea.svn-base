@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema525_06
+      _SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_05_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">연서는 기념품으로 받은 직육면체 모양의 선물 상자를 펼치고 있습니다. 직육면체 모양의 선물 상자를 펼치면 어떤 모양이 되<br/>는지 생각해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align-start">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+          <div class="leftside input_area">
+            <div class="input_wrap">
+              <h3 lang="y">영상을 보고 직육면체의 모서리를 잘라서 펼치면 어떤 모양이 되<br/>는지 이야기해 봅시다.</h3>
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">펼친 모양은 직사각형 6개로 이루어져 있습니다.</li>
+                <li lang="y">6개의 면이 있습니다.</li>
+                <li lang="y">잘린 모서리와 잘리지 않은 모서리가 있습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

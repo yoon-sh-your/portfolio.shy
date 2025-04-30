@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_06_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_06_ih_0001 paging">
+			<section class="title type2 score">
+				<h2 data-head="1_deep_green" lang="y">
+					10분 동안 충전하면 32 km를 갈 수 있는 전기 자동차가 있습니다. 이 전기 자동차를 25분 동안 충전했을 때
+					갈 수 있는 거리는 몇 km인지 구하려고 합니다. 물음에 답해 보세요.
+				</h2>
+			</section>
+
+			<section class="contents paging_layout">
+				<article class="page page_1">
+					<h3>
+						<span lang="y">전기 자동차를 25분 동안 충전했을 때 갈 수 있는 거리를</span>
+						<span class="empty_box nemo green ml_5"></span>
+						<span lang="y">㎞라고 하고, 비례식을 세워 보세요.</span>
+					</h3>
+					<div class="question_box justify_center mt_30">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA624_06_IH/0001_01.png" alt="" />
+						</div>
+						<div class="input_area flex align_center">
+							10 : 32=
+							<div class="input_wrap">
+								<math-field data-answer-single="23"></math-field>
+							</div>
+							:
+							<span class="nemo green empty_box"></span>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p>비례식의 성질을 이용하여 전기 자동차를 25분 동안 충전했을 때 갈 수 있는 거리를 구합니다.</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+				<article class="page page_2">
+					<h3>
+						<span lang="y">비례식의 성질을 이용하여</span>
+						<span class="empty_box nemo green ml_5"></span>
+						<span lang="y">에 알맞은 수를 구해 보세요.</span>
+					</h3>
+					<div class="question_box justify_center mt_30">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA624_06_IH/0001_01.png" alt="" />
+						</div>
+						<div class="input_area">
+							<div class="flex align_center">
+								10×<span class="nemo green empty_box"></span>=32×
+								<div class="input_wrap">
+									<math-field data-answer-single="25"></math-field>
+								</div>
+							</div>
+							<div class="flex align_center">
+								10×<span class="nemo green empty_box"></span>=
+								<div class="input_wrap">
+									<math-field data-answer-single="800"></math-field>
+								</div>
+							</div>
+							<div class="flex align_center">
+								<span class="blank"></span><span class="nemo green empty_box"></span>=
+								<div class="input_wrap">
+									<math-field data-answer-single="80"></math-field>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p>비례식의 성질을 이용하여 전기 자동차를 25분 동안 충전했을 때 갈 수 있는 거리를 구합니다.</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+				<article class="page page_3">
+					<h3 lang="y">전기 자동차를 25분 동안 충전했을 때 갈 수 있는 거리는 몇 ㎞인지 구해 보세요.</h3>
+					<div class="question_box justify_center mt_30">
+						<div class="img_area">
+							<img src="./../../common_practice/img/EMA624_06_IH/0001_01.png" alt="" />
+						</div>
+						<div class="input_area flex align_center">
+							<div class="input_wrap">
+								<math-field data-answer-single="80"></math-field>
+							</div>
+							㎞
+						</div>
+					</div>
+					<!-- 해설 -->
+					<div class="solve_area">
+						<div class="inner_solve">
+							<div class="flex">
+								<strong class="tit_solve" lang="y">해설</strong>
+								<div class="conts_solve">
+									<p>비례식의 성질을 이용하여 전기 자동차를 25분 동안 충전했을 때 갈 수 있는 거리를 구합니다.</p>
+								</div>
+							</div>
+							<div class="buttons_solve"></div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button class="btnType key">입력타입토글</button>
+						<button class="btnReset">리셋</button>
+						<button class="btnCheck">확인</button>
+					</div>
+				</article>
+			</section>
+		</div>
+	</body>
+</html>

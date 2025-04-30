@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA625_03_IH_0001</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema625_03.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema625_03_ih_0001">
+			<section class="title type2">
+				<h2 data-head="1_light_purple">
+					<span lang="y"> 지름이 20 ㎝인 원의 원주가 62.8 ㎝일 때 원주율을 구하려고 합니다. </span
+					><span class="empty_box nemo"></span>
+					<span lang="y">안에 알맞은 수를 써넣으세요.</span>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center dir_col">
+					<div class="img_area">
+						<img src="./../../common_practice/img/EMA625_03_IH/0001_bg.png" alt="" />
+						<p class="text1">20 ㎝</p>
+						<div class="text_area">
+							<div class="text_row" lang="y">(원주율)=‌ (원주)÷(지름)</div>
+							<div class="text_row">
+								=
+								<div class="input_wrap">
+									<math-field data-answer-single="62.8"></math-field>
+								</div>
+								÷
+								<div class="input_wrap">
+									<math-field data-answer-single="20"></math-field>
+								</div>
+							</div>
+							<div class="text_row">
+								=
+								<div class="input_wrap">
+									<math-field data-answer-single="3.14"></math-field>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">해설 수급 필요</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

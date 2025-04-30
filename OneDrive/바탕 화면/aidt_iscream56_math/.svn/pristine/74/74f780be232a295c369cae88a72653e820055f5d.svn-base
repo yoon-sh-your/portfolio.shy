@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_03_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_03.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_03_su_0004" data-current-page="page_1, page_2">
+        <section class="title type2">
+            <h2 data-head="2_green" lang="y" class="fraction_box_title">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <div class="operation_box ml_0">
+                        <div class="fraction_box"><span>2</span><span>3</span></div>:
+                        <div class="fraction_box"><span>4</span><span>9</span></div>
+                    </div>
+                    <span lang="y">를 간단한 자연수의 비로 나타내는 방법을 알아봅시다.</span>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y">비의 성질을 이용하여 자연수의 비로 나타내려면 전항과 후항에 어떤 수를 곱해야 할지 이야기해 보세요.</h3>
+                    <div class="input_area">
+                        <div class="question_box justify_center">
+                            <div class="input_wrap">
+                                <math-field class="textarea"></math-field>
+                                <div class="example_box">
+                                    <p> 두 분모 3과 9의 공배수를 곱해야 합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </article><!-- 1페이지 -->
+
+
+            <article class="page page_2">
+                <h3 lang="y">비의 성질을 이용하여 간단한 자연수의 비로 나타내어 보고, 나타낸 방법을 이야기해 보세요.</h3>
+                <div class="img_row flex align_start">
+                    <div class="picture_wrap">
+                        <img src="../../common_contents/img/EMA624_03_SU/624_03_0005.png" alt="">
+                        <div class="flex_txt">
+                            <div class="txt_1">
+                                <div class="fraction_box f32b"><span>2</span><span>3</span></div>:<div
+                                    class="fraction_box f32b">
+                                    <span>4</span><span>9</span>
+                                </div>
+                            </div>
+                            <div class="txt_wrap">
+                                <div class="txt_2">
+                                    <div class="input_wrap input_wrap1 answer_4">
+                                        <math-field type="number" data-answer-single="6"
+                                            text-align="center"></math-field>
+                                        <span>:4</span>
+                                    </div>
+                                </div>
+                                <div class="txt_3">
+                                    <div class="input_wrap input_wrap1 answer_1">
+                                        <span>3:</span>
+                                        <math-field type="number" data-answer-single="2"
+                                            text-align="center"></math-field>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="txt_4">×9</div>
+                        <div class="txt_5">
+                            <div class="input_wrap input_wrap1 answer_2">
+                                <span>÷</span>
+                                <math-field type="number" data-answer-single="9" text-align="center"></math-field>
+                            </div>
+                        </div>
+                        <div class="txt_6">
+                            <div class="input_wrap input_wrap1 answer_2">
+                                <span>÷</span>
+                                <math-field type="number" data-answer-single="2" text-align="center"></math-field>
+                            </div>
+                        </div>
+                        <div class="txt_7">
+                            <div class="input_wrap input_wrap1 answer_2">
+                                <span>÷</span>
+                                <math-field type="number" data-answer-single="2" text-align="center"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input_area">
+                        <div class="input_wrap">
+                            <math-field class="textarea"></math-field>
+                            <ol class="example_box">
+                                <li lang="y">
+                                    <div class="fraction_box f32b"><span>2</span><span>3</span></div>:<div
+                                        class="fraction_box f32b">
+                                        <span>4</span><span>9</span>
+                                    </div>의 전항과 후항에 9를 곱하여 6 : 4로 나타냈습니다.
+                                </li>
+                                <li lang="y">6:4의 전항과 후항을 2로 나누어 3:2로 나타냈습니다.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article><!-- 2페이지 -->
+
+
+
+            <div class="btn_area">
+                <button class="btnType">입력토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit" data-submit="true">확인</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

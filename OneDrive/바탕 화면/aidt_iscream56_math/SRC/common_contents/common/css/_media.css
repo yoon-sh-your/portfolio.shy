@@ -1,0 +1,273 @@
+/**
+* 비디오 플레이어 ui
+*/
+.video_wrap {
+  max-width: 100%;
+  max-height: 100%;
+  aspect-ratio: 16 / 9;
+  flex: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  border: solid 2px #F4F4F4;
+}
+
+.video_wrap button.play {
+  width: 120px;
+  height: 120px;
+  background: url(../../common/img/icon_play.svg) no-repeat center / 72px, var(--bg-default);
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.video_wrap svg {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.video_wrap img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.video_wrap.type2 img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+}
+
+/**
+  * 비디오 플레이어
+  */
+#app_wrap.video_player {
+  padding: 0;
+}
+
+.video_player_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: relative;
+}
+
+.video_player_wrap>video {
+  width: 100%;
+  height: calc(100% - 112px);
+}
+
+.video_player_wrap .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video_player_wrap .controls {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 112px;
+  gap: 20px;
+  background: #222;
+  padding: 24px 32px;
+  color: white;
+  position: relative;
+}
+
+.video_player_wrap .controls>button {
+  min-width: unset;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  background-color: #fff;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid var(--stroke-default);
+  box-shadow: 0px 2.133px 2.133px 0px rgba(0, 0, 0, 0.16), 0px 4.267px 12.8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.video_player_wrap .volume_controller_wrap {
+  display: none;
+  width: 65px;
+  height: 196px;
+  background-color: rgb(34, 34, 34, 0.5);
+  border: 1px solid var(--font-main-800);
+  border-radius: 12px;
+  padding: 12px;
+  position: absolute;
+  bottom: 134px;
+  left: 203px;
+}
+
+.video_player_wrap .volume_controller_wrap.on {
+  display: block;
+}
+
+.volumebar {
+  width: 104px;
+  height: 8px;
+  border-radius: 4px;
+  background: grey;
+  position: absolute;
+  top: 76px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-90deg);
+}
+
+.volumebar input[type='range'] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 104px;
+  height: 10px;
+  border-radius: 9px;
+  background: transparent;
+  touch-action: manipulation;
+  /* 터치 이벤트 활성화 */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.volumebar input[type='range']:focus {
+  outline: none;
+}
+
+.volumebar input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.volumebar .gague {
+  width: 10px;
+  height: 8px;
+  background-color: var(--font-main-reverse);
+  border-radius: 4px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.video_player_wrap .time_wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.video_player_wrap .seekbar {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 8px;
+  background-color: #9e9e9e;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video_player_wrap .seekbar>input[type='range'] {
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  touch-action: manipulation;
+  /* 터치 이벤트 활성화 */
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.video_player_wrap .seekbar>input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--primary-blue);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.video_player_wrap .seekbar .gague {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: linear-gradient(270deg, var(--primary-blue) 0.01%, var(--secondary-green) 100%);
+}
+
+.video_player_wrap .controls>button.play {
+  background-image: url(../img/icon_play.svg);
+}
+
+.video_player_wrap .controls>button.pause {
+  background-image: url(../img/icon_pause.svg);
+}
+
+.video_player_wrap .controls>button.stop {
+  background-image: url(../img/icon_stop.svg);
+}
+
+.video_player_wrap .controls>button.volume {
+  background-image: url(../img/icon_speaker.svg);
+}
+
+.video_player_wrap .controls>button.cc {
+  background-image: url(../img/icon_subtitle.svg);
+}
+
+.video_player_wrap .controls>button.fullscreen {
+  background-image: url(../img/icon_full.svg);
+}
+
+.video_player_wrap button.mute {
+  min-width: unset;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon_speaker_white.svg) no-repeat center bottom / 100%;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.video_player_wrap button.mute.on {
+  opacity: 0.5;
+}
+
+.video_player_wrap button.close {
+  min-width: unset;
+  width: 40px;
+  height: 40px;
+  background: url(../img/icon_close_white.svg) no-repeat center / 100%;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA612_01_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema612_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema612_01_su_0003">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 2">
+          <span class="blue line" lang="y">배운 내용을 떠올려요</span>
+          <span lang="y">카드를 선택하여 이전에 배운 내용을 확인해 봅시다.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <ul class="letCheck">
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">다각형 알아보기</p>
+            </div>
+            <div class="back">
+              <p class="f32b tit" lang="y">다각형 알아보기</p>
+              <div class="flex gap_20 align_center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="194" height="145" viewBox="0 0 194 145" fill="none">
+                  <path d="M154.811 1.00354H43.9217L2 56.4484L48.6548 142.996L146.021 128.797L192 56.4484L154.811 1.00354Z" stroke="#636365" stroke-width="2" />
+                </svg>
+                <span class="f32r" lang="y">육각형</span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">직육면체의 구성 요소 <br />알아보기</p>
+            </div>
+            <div class="back">
+              <p class="f32b tit" lang="y">직육면체의 구성 요소 알아보기</p>
+
+              <div class="flex align_center">
+                <img src="../../common_contents/img/EMA612_01_SU/0003_01.png" alt="직육면체" class="img-0003-01" />
+
+                <div class="flex dir_col gap_14 align_start">
+                  <span class="f32r" lang="y">꼭짓점</span>
+                  <span class="f32r" lang="y">면</span>
+                  <span class="f32r" lang="y">모서리</span>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">직육면체의 <br />전개도 그리기</p>
+            </div>
+            <div class="back">
+              <p class="f32b tit" lang="y">직육면체의 전개도 그리기</p>
+
+              <div class="po_relative">
+                <img src="../../common_contents/img/EMA612_01_SU/0003_02.png" alt="직육면체" class="img-0003-02" />
+                <img src="../../common_contents/img/EMA612_01_SU/0003_arrow.png" alt="화살표" class="img-0003-arrow" />
+                <img src="../../common_contents/img/EMA612_01_SU/0003_03.png" alt="직육면체 전개도" class="img-0003-03" />
+
+                <span class="t01" lang="y">2 ㎝</span>
+                <span class="t02" lang="y">4 ㎝</span>
+                <span class="t03" lang="y">3 ㎝</span>
+                <span class="t04" lang="y">1 ㎝</span>
+                <span class="t05" lang="y">1 ㎝</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="bubble_charactor" data-charactor="1" style="display: none">
+          <!-- 말풍선 영역 point-position 데이터 top legt, top right, bottom right, bottom left 중 하나 선택하면 말풍선 위치가 캐릭터 기준으로 변경됩니다.-->
+          <div class="bubble" data-point-position="bottom left">
+            <p lnag="y">카드를 한 번 더 선택하면</p>
+            <p lnag="y">내용을 볼 수 있어요.</p>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 불필요한 태그 제외 후 사용 -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

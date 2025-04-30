@@ -1,0 +1,90 @@
+.ema511_01_ih_0001 .question_box {
+  min-width: 17%;
+}
+.ema511_01_ih_0001 .calc_vertical {
+  justify-content: flex-end;
+}
+.ema511_01_ih_0001 .calc_vertical .top {
+  padding-right: 20px;
+}
+.ema511_01_ih_0001 .calc_vertical math-field:not(.textarea)::part(content) {
+  justify-content: flex-end
+}
+
+.ema511_01_ih_0002 .question_box {
+  padding: 0 38px;
+}
+
+.ema511_01_ih_0002 .inout_box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 32px;
+}
+
+.ema511_01_ih_0002 .inout_box .in_box {
+  padding: 8px;
+  border: 4px solid var(--secondary-coral);
+  border-radius: 20px;
+}
+
+.ema511_01_ih_0002 .inout_box .in_box .in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 350px;
+  min-height: 128px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #ffe6e2;
+}
+
+.ema511_01_ih_0002 .inout_box .to_in {
+  position: relative;
+  width: 104px;
+  padding-bottom: 40px;
+  background: url(../img/EMA511_01_IH/0002_arrow.svg) no-repeat center 50px / 32px auto;
+}
+
+.ema511_01_ih_0002 .inout_box .to_in:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 104px;
+  height: 40px;
+  background: url(../img/EMA511_01_IH/0002_line.svg) no-repeat center bottom / contain;
+}
+
+.ema511_01_ih_0002 .inout_box .in_box {
+  margin: 20px 0 6px;
+}
+
+.ema511_01_ih_0002 .inout_box .to_out {
+  text-align: right;
+}
+
+.ema511_01_ih_0002 .inout_box .to_out .input_wrap {
+  position: relative;
+  padding-top: 52px;
+  background: url(../img/EMA511_01_IH/0002_arrow.svg) no-repeat center 3px / 32px auto;
+}
+
+.ema511_01_ih_0002 .inout_box .to_out .input_wrap:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 104px;
+  height: 40px;
+  margin-left: -52px;
+  background: url(../img/EMA511_01_IH/0002_line.svg) no-repeat center top / contain;
+  transform: rotate(180deg);
+}
+
+.ema511_01_ih_0003 .answer3 {
+  padding-left: 12px;
+}
+.ema511_01_ih_0003 .solve_area p {
+  display: inline;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_02_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_02.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_02_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7_deep_green" class="is_star2" lang="y">비의 성질에 대해 잘못 설명한 사람을 찾아 이름을 쓰고, 그 이유를 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA624_02_IH/0007_01.png" alt="" />
+            <dl class="text1">
+              <dt lang="y">시은</dt>
+              <dd lang="y">
+                비의 전항과 후항에<br />
+                7을 곱하여도<br />
+                비율은 같아.
+              </dd>
+            </dl>
+            <dl class="text2">
+              <dd lang="y">
+                비의 전황과 후항을<br />
+                4로 나누어도<br />
+                비율은 같아.
+              </dd>
+              <dt lang="y">이준</dt>
+            </dl>
+            <dl class="text3">
+              <dt lang="y">나현</dt>
+              <dd lang="y">
+                그럼 비의 전항과 후항을<br />
+                0으로 나누어도<br />
+                비율이 같겠네.
+              </dd>
+            </dl>
+          </div>
+          <div class="text_area">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="나현">
+                <option value=""></option>
+                <option value="시은">시은</option>
+                <option value="이준">이준</option>
+                <option value="나현">나현</option>
+              </select>
+            </div>
+            <div class="flex align_start gap_10">
+              <span class="label_gray" lang="y">이유</span>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">비의 전항과 후항을 0이 아닌 같은 수로 나누어야 비율이 같습니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">
+									도형을 오른쪽으로 뒤집으면 도형의 왼쪽과 오른쪽이 서로 바뀝니다.
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div> -->
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

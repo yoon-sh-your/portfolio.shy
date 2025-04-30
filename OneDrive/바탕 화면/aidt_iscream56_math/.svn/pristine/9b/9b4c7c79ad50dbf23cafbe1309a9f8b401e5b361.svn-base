@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_05_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema614_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_05">
+      <section class="title type2">
+        <h2 data-head="4_green" lang="y">
+          <span lang="y"
+            >두 학급의 전체 학생 수와 진로 체험 지원 센터를 방문하는 것에 찬성하는 학생 수를 나타낸 표입니다. 전체 학생 수에 대한<br />
+            찬성하는 학생 수의 비율이 더 낮은 학급을 구해 보세요.</span
+          >
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ena614_05_0004">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th>학급</th>
+                  <td class="bg">1반</td>
+                  <td class="bg">2반</td>
+                </tr>
+                <tr>
+                  <th>전체 학생 수(명)</th>
+                  <td>20</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <th>찬성하는 학생 수(명)</th>
+                  <td>16</td>
+                  <td>12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="boolean_wrap">
+            <button data-answer-single="false"></button>
+            <button data-answer-single="true"></button>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>1반은 20명 중 16명이 찬성하므로 전체 학생 수 에 대한 찬성하는 학생 수의 비율은</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <div class="fraction_box">
+                    <span>16</span>
+                    <span>20</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>5</span>
+                  </div>
+                  <p>), 0.8입니다. 2반은 16명 중 12명이 찬성하므로 전체 학생 수에 대한 찬성하는</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>학생 수의 비율은</p>
+                  <div class="fraction_box">
+                    <span>13</span>
+                    <span>16</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>4</span>
+                  </div>
+                  <p>), 0.75입니다. 0.8>0.75이므로 전체 학생 수에 대한 찬성하는</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>학생 수의 비율이 더 낮은 학급은 2반입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

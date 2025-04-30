@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_02_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_02_ih_0007 paging">
+      <section class="title type2 score">
+        <h2 data-head="7" class="is_star2" lang="y">두 정사각형의 둘레가 같을 때, 정팔각형의 한 변의 길이를 구하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="img_row justify_center">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA516_02_IH/0007_01.png" alt="" />
+              <p lang="y" class="text1">정육각형</p>
+              <span class="cm">24 ㎝</span>
+              <p lang="y" class="text2">정팔각형</p>
+            </div>
+            <div class="question_box dir_col">
+              <h3 lang="y">정육각형의 둘레는 몇 ㎝인지 구해 보세요.</h3>
+              <div class="input_area">
+                <span>&#40;</span>
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="144"></math-field>
+                </div>
+                <span>&#41;cm </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(정육각형의 둘레)=24×6=144(㎝)</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="img_row justify_center">
+            <div class="img_area">
+              <img src="./../../common_practice/img/EMA516_02_IH/0007_01.png" alt="" />
+              <p lang="y" class="text1">정육각형</p>
+              <span class="cm">24 ㎝</span>
+              <p lang="y" class="text2">정팔각형</p>
+            </div>
+            <div class="question_box dir_col">
+              <h3 lang="y">정팔각형의 한 변의 길이는 몇 ㎝인지 구해 보세요.</h3>
+              <div class="input_area">
+                <span>&#40;</span>
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="18"></math-field>
+                </div>
+                <span>&#41;cm </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">(정팔각형의 둘레)=(정육각형의 둘레)=144 ㎝</p>
+                  <p>
+                    ➔
+                    <span lang="y">(정팔각형의 한 변의 길이)</span>
+                    <span lang="y">=144÷8=18 (㎝)</span>
+                  </p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

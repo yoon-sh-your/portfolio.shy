@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_04_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_03">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          <span class="empty_box nemo"></span>
+          <span lang="y">안에 알맞은 말이나 수를 써넣으세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1 on">
+          <div class="flex justify_center">
+            <h3 lang="y">
+              <span>기준량에 대한 비교하는 양의 크기를</span> &nbsp;
+              <div class="input_wrap">
+                <math-field data-answer-single="비율"></math-field>
+              </div>
+              <span>(이)라고 합니다.</span>
+            </h3>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <h3>기준량에 대한 비교하는 양의 크기를 비율이라고 합니다.</h3>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <div class="flex justify_center">
+            <h3 lang="y" class="fraction">
+              <span>비 4 : 10을 비율로 나타내면</span> &nbsp;
+              <span class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(4)/(10),(2)/(5)" data-answer-multi='{"values": ["(4)/(10)", "(2)/(5)"]}' text-align="center" placeholder=" "></math-field>
+              </span>
+              <span>&nbsp;또는&nbsp;</span>
+              <span class="input_wrap">
+                <math-field data-answer-single="0.4"></math-field>
+              </span>
+              <span>입니다.</span>
+            </h3>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex align_center gap_4">
+                    <p>비 4 : 10을 비율로 나타내면</p>
+                    <div class="fraction_box">
+                      <span>4</span>
+                      <span>10</span>
+                    </div>
+
+                    <div class="bracket">
+                      <span class="bracket-l"></span>
+                      =
+                      <span class="fraction_box ml-10">
+                        <span>2</span>
+                        <span>5</span>
+                      </span>
+                      <span class="bracket-r"></span>
+                    </div>
+
+                    <p>또는 0.4입니다.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

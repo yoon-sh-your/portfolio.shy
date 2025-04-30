@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_08_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_08_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">어느 마트에 한 개의 무게가 14.35 g인 초콜릿이 있습니다. 똑같은 초콜릿 10개, 100개, 1000개의 무게는 각각 몇 g인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center gap_40">
+          <div class="img">
+            <img src="../../common_practice/img/EMA524_08_IH/0006_img.png" alt="" />
+            <span class="txt" lang="y">초콜릿</span>
+          </div>
+          <div class="flex dir_col">
+            <div class="flex align_center gap_4">
+              <span lang="y">초콜릿 10개</span>
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="143.5"></math-field>
+              </div>
+              )g
+            </div>
+            <div class="flex align_center gap_4">
+              <span lang="y">초콜릿 100개</span>
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="1435"></math-field>
+              </div>
+              )g
+            </div>
+            <div class="flex align_center gap_4">
+              <span lang="y">초콜릿 1000개</span>
+              (
+              <div class="input_wrap">
+                <math-field data-answer-single="14350"></math-field>
+              </div>
+              )g
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>14.35x10=143.5 (g)</p>
+                <p>14.35x100=1435 (g)</p>
+                <p>14.35x1000=14350 (g)</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

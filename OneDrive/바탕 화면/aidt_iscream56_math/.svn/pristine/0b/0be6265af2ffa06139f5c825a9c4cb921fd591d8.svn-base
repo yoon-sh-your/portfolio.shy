@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ema617_03_su_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_project/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_project/common/css/app.css" />
+  <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_project/css/ema617_03_SU.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema617_03_su_0003">
+    <section class="title">
+      <h2 data-head="1">
+        <span lang="y">다른 모둠의 기사를 보고 잘한 점과 보완할 점을 써 봅시다.​​</span>
+      </h2>
+    </section>
+
+    <section class="contents">
+      <div class="input_area">
+        <div class="input_wrap">
+          <div class="table_wrap">
+            <table>
+              <thead class="text_center">
+                <tr>
+                  <th class="f32b" lang="y">모둠원</th>
+                  <th class="f32b" lang="y">점수</th>
+                  <th class="f32b" lang="y">칭찬할 점 또는 보완할 점​</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+                <tr>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+                <tr>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+                <tr>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                  <td><math-field class="textarea" type="text"></math-field></td>
+                </tr>
+              </tbody>
+            </table>  
+            <ol class="example_box" style="display: none;">
+              <li>더미</li>
+            </ol>
+          </div>          
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <!-- <button class="btnCheck">확인</button> -->
+        <button class="btnSubmit" data-submit="true">제출</button>
+      </div>
+    </section> 
+  </div>
+</body>
+
+</html>

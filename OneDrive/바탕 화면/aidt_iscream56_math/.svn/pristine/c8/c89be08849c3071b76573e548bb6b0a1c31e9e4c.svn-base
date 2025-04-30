@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_06_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_01.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_02.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_03.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_06_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">윤우는 2초마다, 할머니는 3초마다 박수를 치며 걸으려고 합니다. 윤우와 할머니가 동시에 박수를 치기 시작해서 다시 박수를 동시에 치는 때는 몇 초 후인지 알아보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align-start img_row">
+          <div class="video_wrap">
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="leftside input_area">
+            <h3 lang="y">영상을 보고 윤우와 할머니가 동시에 박수를 치기 시작해서 다시 박수를 동시에 치는 때는 몇 초 후인지 알려면 어떻게 해야 할지 이야기해 봅시다.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">윤우와 할머니가 각각 몇 초 후에 박수를 치는지 찾아 동시에 박수를 치는 때는 몇 초 후인지 구해 보아야 할 것 같습니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnSubmit" lang="y" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

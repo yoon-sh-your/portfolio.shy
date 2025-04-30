@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_05_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema513_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_05_ih_0003">
+      <section class="title group">
+        <h2 lang="y"><span class="pink">[3~4]</span> 서울이 오전 7시일 때, 같은 날 태국의 방콕은 오전 5시이고 케냐의 나이로비는 오전 1시입니다.물음에 답해 보세요.</h2>
+      </section>
+      <section class="img_box">
+        <div class="img_wrap mt_20">
+          <img src="../../common_practice/img/EMA513_05_IH/0003_img.png" alt="" />
+          <span class="txt1" lang="y">서울</span>
+          <span class="txt2" lang="y">방콕</span>
+          <span class="txt3" lang="y">나이로비</span>
+        </div>
+      </section>
+      <section class="title type2">
+        <h2 data-head="3_pink" lang="y">서울의 시각과 대응하는 양을 찾아 두 양 사이의 대응 관계를 표로 나타내어 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box">
+          <div class="table_wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="row" lang="y">서울의 시각</th>
+                  <th scope="col" lang="y">오후 8시</th>
+                  <th scope="col" lang="y">오후 9시</th>
+                  <th scope="col" lang="y">오후 10시</th>
+                  <th scope="col" lang="y">오후 11시</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    <div class="flex">
+                      <div class="dropdown_wrap">
+                        <select class="custom_dropdown">
+                          <option></option>
+                          <option value="방콕" lang="y">방콕</option>
+                          <option value="나이로비" lang="y">나이로비</option>
+                        </select>
+                      </div>
+                      <span lang="y">의 시각</span>
+                    </div>
+                  </th>
+                  <td>
+                    <div class="flex" lang="y">
+                      오후
+                      <div class="input_wrap"><math-field data-answer-single="6"></math-field></div>
+                      시
+                    </div>
+                  </td>
+                  <td>
+                    <div class="flex" lang="y">
+                      오후
+                      <div class="input_wrap"><math-field data-answer-single="7"></math-field></div>
+                      시
+                    </div>
+                  </td>
+                  <td>
+                    <div class="flex" lang="y">
+                      오후
+                      <div class="input_wrap"><math-field data-answer-single="8"></math-field></div>
+                      시
+                    </div>
+                  </td>
+                  <td>
+                    <div class="flex" lang="y">
+                      오후
+                      <div class="input_wrap"><math-field data-answer-single="9"></math-field></div>
+                      시
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">방콕의 시각은 서울의 시각보다 2시간 느리고,<br />나이로비의 시각은 서울의 시각보다 6시간 느립니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

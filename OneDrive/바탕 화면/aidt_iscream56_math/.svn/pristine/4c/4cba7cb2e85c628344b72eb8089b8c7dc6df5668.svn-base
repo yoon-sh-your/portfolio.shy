@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_07_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/common/js/puzzle.js"></script>
+    <script src="../../common_practice/common/js/practice_zoom.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_07_ih_0001">
+      <section class="title type2">
+        <h2 data-puzzle="purple">
+          <span class="empty_box nemo head"></span></span>
+          <span lang="y">안에 알맞은 수만큼 순서대로 다람쥐를 이동하여 먹이를 찾아보세요.</span>
+          <div class="picture_wrap" data-head="" data-tit=" ">
+            <div class="img_box">
+              <div class="img_wrap">
+                <img src="../../common_practice/img/EMA611_07_IH/0001_01.png" alt="" />
+              </div>
+            </div>
+            <button class="zoom"></button>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <div class="map_area">
+            <img src="../../common_practice/img/EMA611_07_IH/0001_01.png" alt="" />
+            <div class="text_group">
+              <div class="texts text1">
+                <i class="num">1</i>
+                <div class="fraction_box"><span>1</span><span>11</span></div>
+                ÷3=
+                <div class="fraction_box">
+                  <span>
+                    <span class="empty_box nemo"></span></span>
+                  </span>
+                  <span>33</span>
+                </div>
+                <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <p lang="y">왼쪽으로</p>
+                <span class="empty_box nemo"></span></span>
+                <p lang="y">칸 이동</p>
+              </div>
+
+              <div class="texts text2">
+                <i class="num">2</i>
+                <div class="mixed_fraction">
+                  <span>2</span>
+                  <div class="fraction_box"><span>1</span><span>2</span></div>
+                </div>
+                ÷5=
+                <div class="fraction_box">
+                  <span>
+                    <span class="empty_box nemo"></span></span>
+                  </span>
+                  <span>2</span>
+                </div>
+                <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <p lang="y">아래쪽으로</p>
+                <span class="empty_box nemo"></span></span>
+                <p lang="y">칸 이동</p>
+              </div>
+
+              <div class="texts text3">
+                <i class="num">3</i>
+                <div class="mixed_fraction">
+                  <span>1</span>
+                  <div class="fraction_box"><span>1</span><span>3</span></div>
+                </div>
+                ÷2=
+                <div class="fraction_box">
+                  <span>2</span>
+                  <span>
+                    <span class="empty_box nemo"></span></span>
+                  </span>
+                </div>
+                <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <p lang="y">오른쪽으로</p>
+                <span class="empty_box nemo"></span></span>
+                <p lang="y">칸 이동</p>
+              </div>
+
+              <div class="texts text4">
+                <i class="num">4</i>
+                5÷2=<span class="empty_box nemo"></span></span>
+                <div class="fraction_box">
+                  <span>1</span>
+                  <span> 2 </span>
+                </div>
+                <img src="../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                <p lang="y">위쪽으로</p>
+                <span class="empty_box nemo"></span></span>
+                <p lang="y">칸 이동</p>
+              </div>
+              <p class="text_direction up" lang="y">위쪽</p>
+              <p class="text_direction right" lang="y">오른쪽</p>
+              <p class="text_direction down" lang="y">아래쪽</p>
+              <p class="text_direction left" lang="y">왼쪽</p>
+            </div>
+            <svg viewBox="0 0 746.1 747.9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path class="load1" d="M366.8,368.5c-34.6,0-69.3,0-104,0" stroke="transparent" data-quiz="1" />
+              <path class="load2" d="M258.3,365.9c0,41.4,0,82.8,0,124.2" stroke="transparent" data-quiz="1" />
+              <path class="load3" d="M266.9,487.3c103.5,0,207,0,310.5,0" stroke="transparent" data-quiz="1" />
+              <path class="load4" d="M586.8,484.6c0-68.9,0-137.7,0-206.6" stroke="transparent" data-quiz="1" />
+              <image id="obj_move" href="../../common_practice/img/EMA611_07_IH/0001_obj.png" x="319" y="290" width="120" height="132" />
+            </svg>
+            <!-- <span class="obj_arrival"
+							><img src="../../common_practice/img/EMA523_12_IH/0001_obj1.png" alt="도착 이미지"
+						/></span> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const obj = document.getElementById('obj_move');
+        const pathElements = document.querySelectorAll("svg path[class^='load']");
+        let currentPathIndex = 0;
+        let state = 'ready'; // ready, quiz, moving, done
+
+        const data = [
+          {
+            id: 1,
+            html: `<div class="fraction_box">
+									<span>1</span>
+									<span>11</span>
+								</div>
+								÷3=
+								<div class="fraction_box">
+									<span>
+										<div class="input_wrap">
+											<math-field data-answer-single="1"></math-field>
+										</div>
+									</span>
+									<span>33</span>
+								</div>
+								<img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="arrow" />
+								<span lang="y">왼쪽으로</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="1"></math-field>
+								</div>
+								<span lang="y">칸 이동</span>
+						`,
+          },
+          {
+            id: 2,
+            html: `<div class="mixed_fraction">
+								<span>2</span>
+								<div class="fraction_box">
+									<span>1</span>
+									<span>2</span>
+								</div>
+								</div>
+								÷5=
+								<div class="fraction_box">
+									<span>
+										<div class="input_wrap">
+											<math-field data-answer-single="1"></math-field>
+										</div>
+									</span>
+									<span>2</span>
+								</div>
+								<img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="arrow" />
+								<span lang="y">아래쪽으로</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="1"></math-field>
+								</div>
+								<span lang="y">칸 이동</span>
+						`,
+          },
+          {
+            id: 3,
+            html: `<div class="mixed_fraction">
+								<span>1</span>
+								<div class="fraction_box">
+									<span>1</span>
+									<span>3</span>
+								</div>
+								</div>
+								÷2=
+								<div class="fraction_box">
+									<span>2</span>
+									<span>
+										<div class="input_wrap">
+											<math-field data-answer-single="3"></math-field>
+										</div>
+									</span>
+									
+								</div>
+								<img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="arrow" />
+								<span lang="y">오른쪽으로</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="3"></math-field>
+								</div>
+								<span lang="y">칸 이동</span>
+						`,
+          },
+          {
+            id: 4,
+            html: `5÷2=
+								<div class="mixed_fraction">
+								<span><div class="input_wrap">
+											<math-field data-answer-single="2"></math-field>
+										</div></span>
+								<div class="fraction_box">
+									<span>1</span>
+									<span>2</span>
+								</div>
+								</div>
+								<img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="arrow" />
+								<span lang="y">위쪽으로</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="2"></math-field>
+								</div>
+								<span lang="y">칸 이동</span>
+						`,
+          },
+        ];
+
+        function moveAlongPath(pathEl, callback) {
+          state = 'moving';
+          const pathLength = pathEl.getTotalLength();
+          const speed = 200;
+          const duration = (pathLength / speed) * 1000;
+          const fps = 60;
+          const steps = Math.round(duration / (1000 / fps));
+          let step = 0;
+
+          const start = pathEl.getPointAtLength(0);
+          obj.setAttribute('x', start.x - obj.width.baseVal.value / 2);
+          obj.setAttribute('y', start.y - obj.height.baseVal.value / 2);
+
+          const interval = setInterval(() => {
+            const progress = step / steps;
+            const point = pathEl.getPointAtLength(progress * pathLength);
+
+            obj.setAttribute('x', point.x - obj.width.baseVal.value / 2);
+            obj.setAttribute('y', point.y - obj.height.baseVal.value / 2);
+
+            step++;
+            if (step > steps) {
+              clearInterval(interval);
+              state = 'ready';
+              currentPathIndex++;
+              if (typeof callback === 'function') callback();
+            }
+          }, 1000 / fps);
+        }
+
+        function showQuiz(pathEl) {
+          state = 'quiz';
+
+          const popArea = document.createElement('div');
+          popArea.className = 'pop_area';
+          popArea.innerHTML = `
+            <div class="quiz_pop">
+                <button type="button" class="close" style="display: none;"></button>
+                <div class="inner_pop quiz${currentPathIndex + 1}">
+                    <div class="question_box">
+                        <div class="question_inner">
+                            ${data[currentPathIndex].html}
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_area">
+                    <button class="btnType key">입력타입토글</button>
+                    <button class="btnReset">리셋</button>
+                    <button class="btnCheck">확인</button>
+                </div>
+            </div>
+        `;
+          document.querySelector('.contents')?.after(popArea);
+
+          // MathLive 강제 렌더링
+          setTimeout(() => {
+            if (window.MathfieldElement && window.MathfieldElement.renderMathInDocument) {
+              window.MathfieldElement.renderMathInDocument();
+            } else if (window.MathLive && window.MathLive.renderMathInElement) {
+              window.MathLive.renderMathInElement(document.querySelector('.pop_area'));
+            }
+          }, 0);
+
+          const btnCheck = popArea.querySelector('.btnCheck');
+          const btnReset = popArea.querySelector('.btnReset');
+          const btnClose = popArea.querySelector('.close');
+          const mathFields = popArea.querySelectorAll('math-field[data-answer-single]');
+
+          // 입력시 버튼활성화
+          mathFields.forEach((field) => {
+            field.addEventListener('input', () => {
+              let hasValue = false;
+              mathFields.forEach((f) => {
+                if (f.value && f.value.trim() !== '') hasValue = true;
+              });
+              if (hasValue) {
+                btnCheck.classList.add('active');
+                btnReset.classList.add('active');
+              } else {
+                btnCheck.classList.remove('active');
+                btnReset.classList.remove('active');
+              }
+            });
+          });
+
+          // 리셋
+          btnReset.addEventListener('click', () => {
+            mathFields.forEach((field) => {
+              field.value = '';
+              if (typeof field.setValue === 'function') field.setValue('');
+            });
+            btnCheck.classList.remove('active');
+            btnReset.classList.remove('active');
+          });
+
+          // 정답체크
+          btnCheck.addEventListener('click', () => {
+            let isCorrect = true;
+            mathFields.forEach((field) => {
+              const answer = field.getAttribute('data-answer-single');
+              const value = field.value?.trim() || '';
+              if (value !== answer) isCorrect = false;
+            });
+
+            if (isCorrect) {
+              popArea.querySelector('.quiz_pop').classList.remove('error');
+              popArea.querySelector('.quiz_pop').classList.add('result');
+              btnClose.style.display = 'block';
+            } else {
+              popArea.querySelector('.quiz_pop').classList.remove('result');
+              popArea.querySelector('.quiz_pop').classList.add('error');
+              setTimeout(() => {
+                popArea.querySelector('.quiz_pop').classList.remove('error');
+              }, 1000);
+            }
+          });
+
+          // 클로즈: 다람쥐 이동, 다음문제 준비
+          btnClose.addEventListener('click', () => {
+            document.querySelector('.pop_area').remove();
+            // 리셋버튼 활성화
+            setTimeout(() => {
+              document.querySelector('.contents .btn_area .btnReset').classList.add('active');
+            }, 100);
+            if (currentPathIndex < pathElements.length) {
+              moveAlongPath(pathElements[currentPathIndex], () => {
+                // 마지막 문제가 끝났을 땐 showQuiz를 더이상 실행하지 않음
+                if (currentPathIndex < data.length) {
+                  // 다람쥐 클릭시 다음문제 showQuiz가 동작함
+                  state = 'ready';
+                } else {
+                  state = 'done';
+                }
+              });
+            }
+            // 스크롤탑 이동
+            document.getElementById('app_wrap').scrollTo({ top: 550, left: 0, behavior: 'auto' });
+          });
+        }
+
+        // 다람쥐 클릭시에 다음 문제(진행중) 팝업 노출
+        obj.addEventListener('click', () => {
+          if (state === 'ready' && currentPathIndex < pathElements.length) {
+            showQuiz(pathElements[currentPathIndex]);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

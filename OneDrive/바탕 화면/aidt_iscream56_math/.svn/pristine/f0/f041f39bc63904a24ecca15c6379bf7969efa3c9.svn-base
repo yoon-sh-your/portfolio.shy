@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/*EMA522_01_SU_0001_s*/
+.ema522_01_su_0001#app_wrap {
+    background: url(../img/EMA522_01_SU/0001_content.png) no-repeat left bottom / 857px, #91C14A;
+}
+
+.ema522_01_su_0001#app_wrap .input_area label.img,
+.ema522_01_su_0001#app_wrap .input_area label::after {
+    background-color: #008834;
+}
+
+.ema522_01_su_0001#app_wrap .text_box {
+    color: #008834;
+}
+
+.ema522_01_su_0001#app_wrap .text_box .mixed_fraction {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin: 0 !important;
+}
+
+.ema522_01_su_0001#app_wrap .info {
+    position: absolute;
+    bottom: 231px;
+    left: 343px;
+    font-size: 16px;
+}
+
+.ema522_01_su_0001#app_wrap .fraction_box::before {
+    background-color: #008834;
+}
+
+/* .EMA522_01_su_0002 */
+/* .ema522_01_su_0002 { */
+
+.ema522_01_su_0002 .video_wrap {
+    background: url(../img/EMA522_01_SU/0002_img01.png) no-repeat;
+    border-radius: 20px;
+}
+
+.ema522_01_su_0002 .video_wrap .txt1 {
+    position: absolute;
+    left: 60px;
+    top: 116px;
+    width: 168px;
+    height: 50px;
+    text-align: center;
+}
+
+.ema522_01_su_0002 .video_wrap .txt2 {
+    position: absolute;
+    left: 500px;
+    top: 110px;
+    width: 190px;
+    height: 50px;
+    text-align: center;
+}
+
+/* } */
+
+/*EMA522_01_SU_0003_s*/
+/* .ema522_01_su_0003 { */
+/* .ema522_01_su_0003 .fraction_box { */
+.ema522_01_su_0003 .fraction_box+[class^="mr_"] {
+    margin-bottom: -6px;
+}
+
+/* } */
+
+.ema522_01_su_0003 .mixed_fraction {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 
+.ema522_01_su_0003 .mixed_fraction .fraction_box {
+    .ema522_01_su_0003 .mixed_fraction .fraction_box span { */
+/* .ema522_01_su_0003 .mixed_fraction .fraction_box span span {
+    display: inline-flex;
+    font-size: 18px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 11px;
+} */
+
+/* }
+} */
+
+/* } */
+
+/*EMA522_01_SU_0004_s*/
+.ema522_01_su_0004 {
+    .video_wrap button.play {
+        top: 42%;
+    }
+
+    .video_wrap {
+        background: url(../img/EMA522_01_SU/0004_content.png) no-repeat center 0 / 100%;
+        border: none;
+    }
+
+    .input_wrap math-field.textarea {
+        height: 374px;
+    }
+
+    .input_area {
+        width: 797px;
+    }
+
+}
+
+/*EMA522_01_SU_0005_s*/
+/*EMA522_01_SU_0006_s*/

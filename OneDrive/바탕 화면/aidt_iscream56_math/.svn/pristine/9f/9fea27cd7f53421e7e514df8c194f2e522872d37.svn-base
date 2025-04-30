@@ -1,0 +1,214 @@
+/* ema521_11_ih_0001 */
+.ema521_11_ih_0001#app_wrap {
+	max-height: unset;
+}
+.ema521_11_ih_0001 .title .square {
+	display: inline-block;
+	font-size: 0;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #7dc058;
+	margin-right: 6px;
+}
+
+.ema521_11_ih_0001 .title .btn_zoom {
+	margin-left: 10px;
+}
+
+.ema521_11_ih_0001 .question_box {
+	width: 1331px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.ladder-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+.ema521_11_ih_0001 .bubble {
+	width: 274px;
+	height: 184px;
+	background: url("../img/EMA521_11_IH/0001_blue.svg") center no-repeat;
+	padding: 18px 0 0 18px;
+}
+
+.ema521_11_ih_0001 .bubble.orange {
+	background-image: url("../img/EMA521_11_IH/0001_orange.svg");
+}
+
+.ema521_11_ih_0001 .bubble .square {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	width: 25px;
+	height: 25px;
+	border-radius: 2px;
+	background-color: #7dc058;
+}
+
+.ema521_11_ih_0001 .btn_area {
+	position: relative;
+	bottom: 0;
+	margin-top: 30px;
+}
+
+.obj_box {
+	position: absolute;
+}
+
+.obj_box1 {
+	top: 334px;
+	left: 243px;
+	width: 832px;
+	height: 661px;
+}
+
+.obj_box2 {
+	top: 339px;
+	left: 247px;
+	width: 827px;
+	height: 654px;
+}
+
+.obj_box3 {
+	top: 330px;
+	left: 521px;
+	width: 556px;
+	height: 665px;
+}
+
+.obj_box4 {
+	top: 334px;
+	left: 243px;
+	width: 834px;
+	height: 660px;
+}
+
+.path-draw {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.path-draw path {
+	display: flex;
+	align-items: flex-end;
+	stroke: #ff6b6b;
+	stroke-width: 8;
+	stroke-linecap: round;
+	fill: none;
+	stroke-dasharray: 4000;
+	stroke-dashoffset: 4000;
+}
+
+@keyframes dummyAni {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.obj {
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	visibility: hidden;
+	animation: dummyAni 6.5s linear forwards;
+}
+.obj_box2 .obj {
+	animation-duration: 6.5s;
+}
+.obj_box3 .obj {
+	animation-duration: 8.3s;
+}
+.obj_box4 .obj {
+	animation-duration: 7.5s;
+}
+
+.obj_box1 .obj {
+	offset-path: path(
+		"M0.5 0.5V128.5H273.5V207.5L551 59.5V109H831.5V241L551 200V328.5H273.5V410.5L0.5 295.5V573L273.5 537.5V578L551 631V661"
+	);
+}
+
+.obj_box2 .obj {
+	offset-path: path("M272.5 0V124H1V290.5L272.5 405.5V444.5H550V504L826.5 444.5V570.5H550V625L272.5 570.5V653.5");
+}
+
+.obj_box3 .obj {
+	offset-path: path("M278 0.5V65L0.5 211.5V335H278V367H555V457L278 516.5V579.5H555V664.5");
+}
+
+.obj_box4 .obj {
+	offset-path: path("M833.5 0.5V110.5H553.5V200.5L833.5 242.5V363H553.5V450H277V537L0.5 574V659.5");
+}
+
+.active .path-draw.path1 path {
+	animation: drawPath 5.5s linear forwards;
+}
+
+.active .path-draw.path2 path {
+	animation: drawPath 5.5s linear forwards;
+}
+
+.active .path-draw.path3 path {
+	animation: drawPath 7.3s linear forwards;
+}
+
+.active .path-draw.path4 path {
+	animation: drawPath 6.5s linear forwards;
+}
+
+@keyframes drawPath {
+	to {
+		stroke-dashoffset: 100%;
+	}
+}
+
+.start-point {
+	position: absolute;
+	width: 274px;
+	padding-bottom: 183px;
+	top: 0;
+	cursor: pointer;
+}
+
+.start-point1 {
+	left: 105px;
+}
+
+.start-point2 {
+	left: 387px;
+}
+
+.start-point3 {
+	left: 669px;
+}
+
+.start-point4 {
+	left: 951px;
+}
+
+.input_wrap_area {
+	position: absolute;
+	bottom: 59px;
+	left: 185px;
+	gap: 157px;
+}
+
+.picture_wrap {
+	display: none;
+}

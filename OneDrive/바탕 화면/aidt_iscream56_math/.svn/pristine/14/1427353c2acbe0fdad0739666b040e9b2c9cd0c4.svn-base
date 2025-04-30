@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_04_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_04_su_0005">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">채린이는 포도즙 1 L를 넣어 포도 음료 2 L를 만들었고, 도훈이는 포도즙 2 L를 넣어 포도 음료 8 L를 만들었습니다. 두 사람이 만든 포도 음료의 양에 대한 포도즙의 양의 비율을 각각 구하여 비교해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">포도 음료의 양에 대한 포도즙의 양의 비율을 분수와 소수로 각각 나타내어 보세요.</h3>
+            <div class="flex">
+              <div class="question_box justify_center">
+                <div class="col">
+                  <span class="nm">채린</span>
+                  <div class="col_inner">
+                    <div class="col1">
+                      <span class="f32b">분수: </span>
+                      <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="(1)/(4)"></math-field>
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <span class="f32b">소수: </span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="0.25"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <span class="nm">도훈</span>
+                  <div class="col_inner">
+                    <div class="col1">
+                      <span class="f32b">분수: </span>
+                      <div class="input_wrap fraction_wrap">
+                        <math-field data-answer-single="(4)/(8)" data-answer-multi='{"values": ["(4)/(8)", "(1)/(2)"]}' data-multi-hint="y"></math-field>
+                      </div>
+                    </div>
+                    <div class="col2">
+                      <span class="f32b">소수: </span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="0.5"></math-field>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <h3 lang="y">누가 만든 포도 음료의 포도 맛이 더 진할지 써 보고, 그 이유를 이야기해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="도훈">
+                  <option></option>
+                  <option value="채린"></option>
+                  <option value="도훈"></option>
+                </select>
+              </div>
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p>도훈이가 만든 포도 음료의 탄산수의 양에 대한 포도즙의 양의 비율이 더 높기 때문입니다.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

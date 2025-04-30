@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA613_11_SU_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema613_11.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_11_su_0004">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="3" lang="y">계산해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="flex-container">
+            <!-- <div class="input_area">
+              <div class="question_box">
+                <span>12.96</span><span>4</span>
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="0.12"></math-field>
+                </div>
+              </div>
+            </div> -->
+            <div class="input_area">
+              <div class="question_box">
+                <span>12.96÷4=</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="3.24"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="question_box">
+                <span>6.3÷6=</span>
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="1.05"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-container">
+            <!-- <div class="input_area">
+              <div class="question_box">
+                <span>0.8</span><span>5</span>
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="0.16"></math-field>
+                </div>
+              </div>
+            </div> -->
+            <div class="input_area">
+              <div class="question_box">
+                <span>4.16÷8=</span>
+                <div class="input_wrap answer4">
+                  <math-field data-answer-single="0.52"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="input_area">
+              <div class="question_box">
+                <span>12.95÷5=</span>
+                <div class="input_wrap answer4">
+                  <math-field data-answer-single="1.05"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

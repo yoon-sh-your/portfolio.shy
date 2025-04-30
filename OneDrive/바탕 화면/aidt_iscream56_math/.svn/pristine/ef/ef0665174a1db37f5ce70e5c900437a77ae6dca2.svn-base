@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_05_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_05">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">
+          <span lang="y"
+            >시은이는 레몬즙 60 mL를 넣어 레모네이드 250 mL를 만들었고, 은호는 레몬즙 48 mL를 넣어 레모네이드 240 mL를<br />
+            만들었습니다. 레모네이드 양에 대한 레몬즙량의 비율이 더 높은 사람을 구하려고 합니다. 물음에 답해 보세요.</span
+          >
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1 on">
+          <h3 lang="y">두 사람이 만든 레모네이드 양에 대한 레몬즙량의 비율을 각각 구해 보세요.</h3>
+
+          <div class="flex justify_center align_center gap_40">
+            <div class="flex justify_center align_center gap_4">
+              <p lang="y">
+                <span>시은</span>
+              </p>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(60)/(250)(=(6)/(25)=0.24)"
+                data-answer-multi='{"values": ["(60)/(250)", "(6)/(25)","0.24"]}' text-align="center"
+                placeholder=" "></math-field>
+              </div>
+            </div>
+            <div class="flex justify_center align_center gap_4">
+              <p lang="y">
+                <span>은호</span>
+              </p>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(100)/(250)(=(1)/(5)=0.2)"
+                data-answer-multi='{"values": ["(100)/(250)", "(1)/(5)","0.2"]}' text-align="center"
+                placeholder=" "></math-field>
+              </div>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex gap_4 align_center">
+                    <p>시은이는 레몬즙 60 mL를 넣어 레모네이드 250 mL를 만들었으므로 레모네이드 양에 대한</p>
+                  </div>
+                  <div class="flex gap_4 align_center">
+                    <p>레몬즙량의 비율은</p>
+                    <div class="fraction_box">
+                      <span>60</span>
+                      <span>250</span>
+                    </div>
+                    <p>(=</p>
+                    <div class="fraction_box">
+                      <span>6</span>
+                      <span>25</span>
+                    </div>
+                    <p>), 0.24입니다. 은호는 레몬즙 48 mL를 넣어 레모네이드</p>
+                  </div>
+                  <div class="flex gap_4 align_center">
+                    <p>240 mL를 만들었으므로 레모네이드 양에 대한 레몬즙량의 비율은</p>
+                    <div class="fraction_box">
+                      <span>48</span>
+                      <span>240</span>
+                    </div>
+                    <p>(=</p>
+                    <div class="fraction_box">
+                      <span>1</span>
+                      <span>5</span>
+                    </div>
+                    <p>), 0.2입니다.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_2">
+          <h3 lang="y">레모네이드 양에 대한 레몬즙량의 비율이 더 높은 사람의 이름을 써 보세요.</h3>
+
+          <div class="flex justify_center align_center gap_40">
+            <div class="flex justify_center align_center gap_4">
+              <div class="input_wrap">
+                <math-field data-answer-single="시은"></math-field>
+              </div>
+            </div>
+          </div>
+          <!-- 해설 -->
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <div class="flex gap_4 align_center">
+                    <p>0.24>0.2이므로 레모네이드 양에 대한 레몬즙량의 비율이 더 높은 사람은 시은입니다.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

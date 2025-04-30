@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema617_01_su_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" /> <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema617_01_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema617_01_su_0003">
+      <section class="title">
+        <h2 data-head="notice">
+          <span lang="y">주어진 기사와 민지, 희준이의 대화를 살펴보고 물음에 답해 봅시다.​</span>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">            
+          <h3 lang="y">기사에서 잘못된 부분을 찾아 밑줄을 그어 보세요.​</h3>
+          <div class="img_wrap">
+            <img src="./../../common_project/img/EMA617_01_SU/EMA617_01_SU_0003_bg.png">
+            <div class="img_txt">            
+              <svg xmlns="http://www.w3.org/2000/svg" width="973" height="434" viewBox="0 0 973 434" fill="none">
+                <text fill="#222222" xml:space="preserve" style="white-space: pre"  font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan lang="y" x="134.029" y="55.5312">햇빛 마을 학생들의
+                </tspan><tspan lang="y" x="146.666" y="91.5312">교통사고 위험이
+                </tspan><tspan lang="y" x="166.287" y="127.531">낮아졌구나.</tspan></text>
+                <text fill="#222222" xml:space="preserve" style="white-space: pre"  font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan lang="y" x="736.203" y="88.5312">정말 그럴까?
+                </tspan><tspan lang="y" x="739.273" y="124.531">뭔가 이상해.</tspan></text>
+                <rect x="331" y="377" width="82" height="39" rx="19.5" fill="#E27475"/>
+                <rect x="331" y="377" width="82" height="39" rx="19.5" stroke="white" stroke-width="2"/>
+                <text fill="white" xml:space="preserve" style="white-space: pre"  font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan lang="y" x="351.508" y="405.031">민지</tspan></text>
+                <rect x="603" y="377" width="82" height="39" rx="19.5" fill="#71C593"/>
+                <rect x="603" y="377" width="82" height="39" rx="19.5" stroke="white" stroke-width="2"/>
+                <text fill="white" xml:space="preserve" style="white-space: pre"  font-size="24" font-weight="bold" letter-spacing="-0.5px"><tspan lang="y" x="623.508" y="405.031">희준</tspan></text>
+                </svg> 
+            </div>            
+            <div class="canvas_wrap">
+              <canvas
+                  class="draw-area"
+                  id="canvas"
+                  width="973"
+                  height="434"
+                  data-canvas-id="canvas_1">
+              </canvas>
+            </div>
+          </div>          
+          <!-- 그리기도구 팝업 -->
+          <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+            <div class="draw-tool-wrap-header">
+                <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+                <div class="close_but add_cursor">
+                <img
+                    src="../../common_contents/common/img/tool_drawing/tools_close.svg"
+                    alt="ic_cancel" />
+                </div>
+            </div>
+            <div class="draw-tool-wrap-body">
+            <div class="tool-row function-item">
+              <button type="button" class="ic_pen active"></button>
+              <button type="button" class="ic_txt"></button>
+              <button type="button" class="ic_eraser"></button>
+              </div>
+              <div class="tool-row function-item">
+              <button type="button" class="ic_triangle"></button>
+              <button type="button" class="ic_square"></button>
+              <button type="button" class="ic_circle"></button>
+              <button type="button" class="ic_polygon"></button>
+              </div>
+              <div class="tool-row function-item">
+              <button type="button" class="ic_line"></button>
+              <button type="button" class="ic_dash"></button>
+              <button type="button" class="ic_draw"></button>
+              <button type="button" class="ic_pull"></button>
+              </div>
+              <div class="tool-row palette-item">
+              <button type="button" class="p_red"></button>
+              <button type="button" class="p_yellow"></button>
+              <button type="button" class="p_green"></button>
+              <button type="button" class="p_blue"></button>
+              <button type="button" class="p_purple"></button>
+              <button type="button" class="p_black active"></button>
+              </div>
+              <div class="tool-row range-item">
+              <input type="range" name="thickness" class="draw-scale-range" />
+              </div>
+              <div class="tool-row range-item">
+              <input type="range" name="opacity" class="draw-trans-range" />
+              </div>
+              <div class="tool-row function-item">
+              <div class="arrow-item">
+                  <button type="button" class="ic_undo"></button>
+                  <button type="button" class="ic_redo"></button>
+              </div>
+              <button type="button" class="ic_del"></button>
+              </div>
+
+              <div class="ic_polygon_pop">
+              <span>꼭지점</span>
+              <button type="button" class="ipp_minus"></button>
+              <div>
+                  <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                  <label for="ipp_num">개</label>
+              </div>
+              <button type="button" class="ipp_plus"></button>
+              </div>
+            </div>
+          </div>
+          <!-- //그리기도구 팝업 -->   
+          <button type="button" class="btn btn_draw"></button>
+        </article>
+        <article class="page page_2">            
+          <h3 lang="y">잘못되었다고 생각하는 이유를 써 보세요.​​​​</h3>
+          <div class="input_area">
+            <div class="input_wrap align_center">
+              <math-field class="textarea" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">햇빛 마을의 전체 학생 수가 2018년에 비해 2023년에 줄었는데 이 점을 고려하지 않고, 햇빛 마을 학생들의 교통사고로 인한 부상자 수만 보고 교통사고 위험이 낮아졌다고 하였습니다.​</li>
+                <li lang="y">부상자 수만 비교하면 전체 학생 수에 대한 부상자 수의 비율이 어떻게 달라졌는지 알 수 없으므로 기사의 내용처럼 햇빛 마을 학생들의 교통사고 위험이 낮아졌는지 알 수 없습니다.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">            
+          <h3 lang="y">햇빛 마을 학생들의 교통사고 위험이 정말 낮아졌는지 확인하기 위해 무엇을 비교해야 할지 이야기해 보세요.​​</h3>
+          <div class="input_area">
+            <div class="input_wrap align_center">
+              <math-field class="textarea" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">전체 학생 수의 변화를 고려하여 교통사고 부상자 수가 어떻게 달라졌는지 비교해야 합니다.​</li>
+                <li lang="y">2018년에 비해 2023년에 초등학교와 중·고등학교의 전체 학생 수에 대한 교통사고 부상자 수의 비율이 어떻게 달라졌는지 비교해야 합니다.​</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">            
+          <h3 lang="y">기사의 내용을 효과적으로 전달하기 위해 자료를 나타낼 수 있는 방법을 이야기해 보세요.​​​</h3>
+          <div class="input_area">
+            <div class="input_wrap align_center">
+              <math-field class="textarea" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">항목별 수를 정확하게 알아보기 위해 자료를 표로 나타낼 수 있습니다.​</li>
+                <li lang="y">그림의 크기와 수로 수량의 많고 적음을 쉽게 알아보기 위해 자료를 그림그래프로 나타낼 수 있습니다.​</li>
+                <li lang="y">막대의 길이로 수량의 많고 적음을 한눈에 비교하기 위해 자료를 막대그래프로 나타낼 수 있습니다.​</li>
+                <li lang="y">시간의 흐름에 따른 수량의 변화하는 모습과 정도를 쉽게 알아보기 위해 자료를 꺾은선그래프로 나타낼 수 있습니다.​</li> 
+                <li lang="y">전체에 대한 각 부분의 비율을 쉽게 비교하기 위해 자료를 띠그래프 또는 원그래프로 나타낼 수 있습니다.​</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

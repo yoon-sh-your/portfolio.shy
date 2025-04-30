@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_06_SU_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_01.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_02.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_03.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_04.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema512_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class=" ema512_06_su_0008">
+      <section class="title type2">
+        <h2 data-head="6_green" lang="y">9와 21의 최소공배수를 두 가지 방법으로 구해 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div>
+          <div class="question_box ml_40">
+            <div>
+              <div class="flex justify_between">
+                <div class="flex align_center">
+                  <span>9=</span>
+                  <div class="input_wrap answer1 flex">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                  <span>&times;3</span>
+                </div>
+                <div class="flex align_center">
+                  <span>21=</span>
+                  <div class="input_wrap answer1 flex">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                  <span>&times;7</span>
+                </div>
+              </div>
+              <div class="example_comment">
+                <div class="flex align_center">
+                  <span lang="y">9와 21의 최소공배수:</span>
+                  <div class="input_wrap answer1 flex ml_12">
+                    <math-field data-answer-single="3"></math-field>
+                  </div>
+                  <span>&times;3&times;7=</span>
+                  <div class="input_wrap answer1 flex">
+                    <math-field data-answer-single="63"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="question_box">
+            <div>
+              <div class="flex justify_evenly mt_20 mb_20">
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+                <span>&nbsp;</span>
+              </div>
+              <div class="flex justify_evenly mb_20">
+                <div class="input_wrap answer1 flex">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+                <span class="example_number">9</span>
+                <span class="example_number">21</span>
+              </div>
+              <div class="flex justify_end gap_12 mr_12">
+                <div class="input_wrap answer1 flex">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+                <div class="input_wrap answer1 flex">
+                  <math-field data-answer-single="7"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="example_comment">
+              <div class="flex align_center">
+                <span lang="y">9와 21의 최소공배수:</span>
+                <div class="input_wrap answer1 flex ml_12">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+                <span>&times;</span>
+                <div class="input_wrap answer1 flex">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+                <span>&times;</span>
+                <div class="input_wrap answer1 flex">
+                  <math-field data-answer-single="7"></math-field>
+                </div>
+                <span>=</span>
+                <div class="input_wrap answer1 flex">
+                  <math-field data-answer-single="63"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+          <!-- <button class="btnSubmit">확인</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_11_SU_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_11_su.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema522_11_su_0008">
+      <div class="scroll_page">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 4">
+            <span class="blue line" lang="y">확인하고 정리해요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+        </section>
+
+        <section class="title type2 jgjd_4_sub_title">
+          <h2>
+            <div class="title_row">
+              <span class="nemo_blank"></span>
+              <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+            </div>
+          </h2>
+        </section>
+
+        <section class="contents">
+          <div class="question_box justify_center align_start">
+            
+            <div class="tag1">분모는 그대로 쓰고, 분자에 자연수를 곱하여 계산해요.</div>
+            <div class="tag2">분자는 분자끼리, 분모는<br />
+              분모끼리 곱하여 계산해요.</div>
+            <div class="container flex gap_20">
+              <div class="box flex justify_center dir_col f32b gap_16">
+                <div class="flex justify_center">(분수)×(자연수)</div>
+
+                <div class="flex align_center gap_0 m_auto">
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>7</span>
+                  </span>
+                  <span>&times;3</span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>
+                      2&times;
+                      <div class="input_wrap">
+                        <math-field data-answer-single="3" text-align="center" placeholder=" "></math-field>
+                      </div>
+                    </span>
+                    <span>7</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>6</span>
+                    <span>7</span>
+                  </span>
+                </div>
+
+                <div class="flex align_center gap_0 m_auto bg">
+                  <span>1</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>4</span>
+                  </span>
+                  <span>&times;5</span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>5</span>
+                    <span>4</span>
+                  </span>
+                  <span>&times;5</span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>25</span>
+                    <span>4</span>
+                  </span>
+                  <span>=</span>
+                  <span>6</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>4</span>
+                  </span>
+                </div>
+                <div class="f20b text_center">대분수를 가분수로 나타내어 계산해요.</div>
+              </div>
+
+              <div class="box flex justify_center dir_col f32b">
+                <div class="flex justify_center">(자연수)×(분수)</div>
+
+                <div class="flex align_center gap_0 m_auto">
+                  <span>4&times;</span>
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>5</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span> 4&times;3 </span>
+                    <span>5</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>12</span>
+                    <span>5</span>
+                  </span>
+                  <span>=</span>
+                  <span>2</span>
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>5</span>
+                  </span>
+                </div>
+
+                <div class="flex align_center gap_0 m_auto">
+                  <span> 2&times; </span>
+                  <span>1</span>
+                  <span class="fraction_box">
+                    <span>5</span>
+                    <span>6</span>
+                  </span>
+                  <span>=</span>
+                  <span>2&times;</span>
+                  <span class="fraction_box">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="11" text-align="center" placeholder=" "></math-field>
+                      </div>
+                    </span>
+                    <span>6</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>11</span>
+                    <span>3</span>
+                  </span>
+                  <span>=</span>
+                  <span>3</span>
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>3</span>
+                  </span>
+                </div>
+              </div>
+
+              <div class="box flex justify_center dir_col f32b">
+                <div class="flex justify_center">(진분수)×(진분수)</div>
+
+                <div class="flex align_center gap_0 m_auto">
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>9</span>
+                  </span>
+                  <span>&times;</span>
+                  <span class="fraction_box">
+                    <span>4</span>
+                    <span>5</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span> 2&times;4 </span>
+                    <span> 9&times;5 </span>
+                  </span>
+                  <span>=</span>
+
+                  <!-- 단답형 분수식 -->
+                  <div class="input_wrap fraction_wrap flex align_center">
+                    <math-field data-answer-single="(8)/(45)" text-align="center" placeholder=" "></math-field>
+                    <!-- 분수식 ex) 15(1)/(2) -->
+                    <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                    <!-- (분자)/(분모) 형식으로 표시 -->
+                    <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                    <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="box flex justify_center dir_col f32b">
+                <div class="flex justify_center"> (대분수)×(대분수)</div>
+
+                <div class="flex align_center gap_0 m_auto">
+                  <span>1</span>
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>7</span>
+                  </span>
+                  <span>&times;</span>
+                  <span>2</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>10</span>
+                    <span>7</span>
+                  </span>
+                  <span>&times;</span>
+                  <span class="fraction_box">
+                    <span>
+                      <div class="input_wrap">
+                        <math-field data-answer-single="5" text-align="center" placeholder=" "></math-field>
+                      </div>
+                    </span>
+                    <span>2</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>25</span>
+                    <span>7</span>
+                  </span>
+                  <span>=</span>
+                  <span>3</span>
+                  <span class="fraction_box">
+                    <span>4</span>
+                    <span>7</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn_area relative">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnSubmit">확인</button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

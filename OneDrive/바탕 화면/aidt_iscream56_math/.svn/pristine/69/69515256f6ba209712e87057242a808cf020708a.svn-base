@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_08_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_08_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2" lang="y">학생 36명에게 쿠키를 2개씩 나누어 주려고 합니다. 제과점에서 쿠키를 한 상자에 10개씩 담아서 팔고 있을 때 사야 하는 쿠키의 수를 알맞게 어림한 사람을 찾아 이름을 써 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center mt_10 align_end">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA521_08_IH/0007_01.png" alt="" />
+            <p lang="y" class="text1">반올림하여 쿠키 70개를 사야 해.</p>
+            <p lang="y" class="text2">올림하여 쿠키 80개를 사야 해.</p>
+            <p lang="y" class="text3">버림하여 쿠키 70개를 사야 해.</p>
+            <p lang="y" class="name1">은서</p>
+            <p lang="y" class="name2">재윤</p>
+            <p lang="y" class="name3">채윤</p>
+          </div>
+          <div class="input_area">
+            <span>(</span>
+            <div class="input_wrap">
+              <math-field data-answer-single="재윤"></math-field>
+            </div>
+            <span lang="y">)</span>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">학생 36명에게 쿠키를 2개씩 나누어 주려면 사야 하는 쿠키는 모두 2×36=72(개)입니다.</p>
+                <p lang="y">제과점에서 쿠키를 한 상자에 10개씩 담아서 팔고 있으므로 사야 하는 쿠키의 수를 올림하여 십의 자리까지 나타내야 합니다. 72개를 올림하여 십의 자리까지 나타내면 80개이므로 사야 하는 쿠키의 수를 알맞게 어림한 사람은 재윤입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

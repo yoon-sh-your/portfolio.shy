@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA626_06_IH_0004</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="./../../common_practice/js/ema626_06_ih_0004.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema626_06.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema626_06_ih_0004">
+			<section class="title type2">
+				<h2 data-head="4_orange" lang="y">구에 대해 옳게 설명한 것에 ○표, 잘못 설명한 것에 ×표 하세요.</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center align_center">
+					<div class="drag_checkout">
+						<div class="draggable_wrap">
+							<span class="single_draggable draggable circle"></span>
+							<span class="single_draggable draggable triangle"></span>
+						</div>
+
+						<ul
+							class="drag_group g1"
+							data-group-limit="3"
+							data-answer-single="[[true, false], [false, true], [false, true]]"
+						>
+							<li class="item1">
+								<p class="text_bullet" lang="y">구의 중심은 셀 수 없이 많습니다.</p>
+								<div class="l_right">
+									(
+									<span class="droppable" data-value="false false"> </span>
+									)
+								</div>
+							</li>
+							<li class="item2">
+								<p class="text_bullet" lang="y">구의 반지름은 셀 수 없이 많고, 길이가 모두 같습니다.</p>
+								<div class="l_right">
+									(
+									<span class="droppable" data-value="false false"> </span>
+									)
+								</div>
+							</li>
+							<li class="item3">
+								<p class="text_bullet" lang="y">구의 지름은 구의 중심을 지납니다.</p>
+								<div class="l_right">
+									(
+									<span class="droppable" data-value="false false"> </span>
+									)
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">해설 수급 필요</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<!-- <button class="btnType key">입력타입토글</button> -->
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

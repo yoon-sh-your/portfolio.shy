@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_03_SU_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_04.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="dragndrop fraction drawline ema523_03_su_0004 ema523_03_su_0006">
+    <section class="title type2">
+      <h2 data-head="4_pink" lang="y">삼각형 ㄱㄴㄷ을 비어 있는 부분에 채우면 퍼즐이 완성됩니다. 서로 합동인 두 삼각형에서 대응점, 대응변, 대응각을 각각 찾아 친구에게 설명해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <div class="figure_wrap">
+          <div class="figure_box">
+              <div class="figure_triangle"><span class="txt_1" lang="y">ㄱ</span><span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span></div>
+              <div class="figure_triangle"><span class="txt_4" lang="y">ㄹ</span><span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span></div>
+          </div>
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>점 ㄱ</li>
+              <li>점 ㄴ</li>
+              <li>점 ㄷ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e3"],["s2","e1"],["s3","e2"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s1"></div>
+                    <div class="connect_point" data-id="s2"></div>
+                    <div class="connect_point" data-id="s3"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e1"></div>
+                    <div class="connect_point" data-id="e2"></div>
+                    <div class="connect_point" data-id="e3"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+                <li>점 ㅂ</li>
+                <li>점 ㄹ</li>
+                <li>점 ㅁ</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="page page_2">
+        <div class="figure_wrap">
+          <div class="figure_box">
+              <div class="figure_triangle"><span class="txt_1" lang="y">ㄱ</span><span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span></div>
+              <div class="figure_triangle"><span class="txt_4" lang="y">ㄹ</span><span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span></div>
+          </div>
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>변 ㄱㄴ</li>
+              <li>변 ㄴㄷ</li>
+              <li>변 ㄷㄱ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s4","e5"],["s5","e4"],["s6","e6"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s4"></div>
+                    <div class="connect_point" data-id="s5"></div>
+                    <div class="connect_point" data-id="s6"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e4"></div>
+                    <div class="connect_point" data-id="e5"></div>
+                    <div class="connect_point" data-id="e6"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+                <li>변 ㅂㄹ</li>
+                <li>변 ㅁㅂ</li>
+                <li>변 ㄹㅁ</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <div class="figure_wrap">
+          <div class="figure_box">
+              <div class="figure_triangle"><span class="txt_1" lang="y">ㄱ</span><span class="txt_2" lang="y">ㄴ</span><span class="txt_3" lang="y">ㄷ</span></div>
+              <div class="figure_triangle"><span class="txt_4" lang="y">ㄹ</span><span class="txt_5" lang="y">ㅁ</span><span class="txt_6" lang="y">ㅂ</span></div>
+          </div>
+          <div class="connect_box_wrap">
+            <ul class="connect_text_box start">
+              <li>각 ㄱㄴㄷ</li>
+              <li>각 ㄴㄷㄱ</li>
+              <li>각 ㄷㄱㄴ</li>
+            </ul>
+            <div class="connect_wrap" data-connections="[]" data-answer-single='[["s7","e8"],["s8","e9"],["s9","e7"]]'>
+                <div class="start_group">
+                    <div class="connect_point" data-id="s7"></div>
+                    <div class="connect_point" data-id="s8"></div>
+                    <div class="connect_point" data-id="s9"></div>
+                </div>
+                <div class="end_group">
+                    <div class="connect_point" data-id="e7"></div>
+                    <div class="connect_point" data-id="e8"></div>
+                    <div class="connect_point" data-id="e9"></div>
+                </div>
+                <svg class="connect_lines"></svg>
+            </div>
+            <ul class="connect_text_box end">
+                <li>각 ㄹㅁㅂ</li>
+                <li>각 ㅁㅂㄹ</li>
+                <li>각 ㅂㄹㅁ</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

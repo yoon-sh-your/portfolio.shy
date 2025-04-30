@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_05_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_05_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y">실제 거리 300 m를 1 ㎝로 나타낸 산책로 안내 지도와 실제 거리 700 m를 1 ㎝로 나타낸 휴양림 안내 지도가 있습니다. 두 지도의 실제 거리에 대한 지도에서의 거리의 비율을 비교해 봅시다.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <div class="img_row flex align_start">
+              <div class="picture_wrap">
+                <img src="../../common_contents/img/EMA614_05_SU/0002_content.png" alt="" />
+                <button class="zoom"></button>
+              </div>
+
+              <div class="input_area">
+                <h3 lang="y">기준량과 비교하는 양은 각각 무엇인지 이어 보세요.</h3>
+
+                <div class="question_box justify_center gap_12">
+                  <ul class="connect_line_box start">
+                    <li>기준량</li>
+                    <li>비교하는 양</li>
+                  </ul>
+                  <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","e2"],["s2","e1"]]'>
+                    <div class="start_group">
+                      <div class="connect_point" data-id="s1"></div>
+                      <div class="connect_point" data-id="s2"></div>
+                    </div>
+                    <div class="end_group">
+                      <div class="connect_point" data-id="e1"></div>
+                      <div class="connect_point" data-id="e2"></div>
+                    </div>
+                    <svg class="connect_lines"></svg>
+                  </div>
+                  <ul class="connect_line_box end">
+                    <li>지도에서의 거리</li>
+                    <li>실제 거리</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_2">
+            <div class="img_row flex align_start">
+              <div class="picture_wrap">
+                <img src="../../common_contents/img/EMA614_05_SU/0002_content.png" alt="" />
+                <button class="zoom"></button>
+              </div>
+
+              <div class="input_area">
+                <h3 lang="y">실제 거리를 ㎝로 나타내어 두 지도의 실제 거리에 대한 ​지도에서의 거리의 비를 각각 써 보세요.</h3>
+                <div class="speech_bubble">
+                  <div class="bubble_txt">
+                    거리를 비교할 때에는​<br />
+                    먼저 단위를 같게 <br />
+                    나타내어야 해.
+                  </div>
+                </div>
+                <div class="question_box justify_center">
+                  <div class="row">
+                    <span class="f32b">산책로 안내 지도:</span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="1 : 30000" data-hint-position="up"></math-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <span class="f32b">휴양림 안내 지도:</span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="1 : 70000"></math-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="page page_3">
+            <div class="img_row flex align_start">
+              <div class="picture_wrap">
+                <img src="../../common_contents/img/EMA614_05_SU/0002_content.png" alt="" />
+                <button class="zoom"></button>
+              </div>
+
+              <div class="input_area">
+                <h3 lang="y">앞에서 구한 비를 각각 비율로 나타내어 보세요.</h3>
+                <div class="question_box justify_center">
+                  <div class="row">
+                    <span class="f32b">산책로 안내 지도:​ </span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(1)/(30000)"></math-field>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <span class="f32b">휴양림 안내 지도:​ </span>
+                    <div class="input_wrap fraction_wrap">
+                      <math-field data-answer-single="(1)/(70000)"></math-field>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_4">
+            <h3 lang="y">실제 거리에 대한 지도에서의 거리의 비율이 높아질수록 같은 장소가 지도에서 어떻게 나타내어질지 이야기해 보세요.</h3>
+            <div class="question_box justify-center">
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">실제 거리에 대한 지도에서의 거리의 비율이 높아질수록 같은 장소가 지도에서 더 자세하게 나타내어집니다.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

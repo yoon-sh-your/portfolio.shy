@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_01_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_01_su_0003">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 2">
+          <span class="blue line" lang="y">배운 내용을 떠올려요</span>
+          <span lang="y">카드를 선택하여 이전에 배운 내용을 확인해 봅시다.</span>
+        </h2>
+      </section>
+
+
+      <section class="contents">
+        <ul class="letCheck">
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">분수와 소수 사이의 관계<br>알아보기</p>
+            </div>
+            <div class="back">
+              <p class="f32b flex align_center"><span class="fraction_box"><span>4</span><span>10</span></span> &equals; 0.4</p>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">소수 사이의 관계<br>알아보기</p>
+            </div>
+            <div class="back">
+              <p class="f32b">0.047, 0.47, 4.7</p>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">소수의 덧셈과 뺄셈하기</p>
+            </div>
+            <div class="back">
+              <p class="f32b">0.35 &plus; 2.7 &equals; 3.05</p>
+            </div>
+          </li>
+          <li>
+            <div class="cover pointer large"></div>
+            <div class="front">
+              <p class="f32b" lang="y">(분수)×(자연수),<br>(자연수)×(분수)<br>알아보기</p>
+            </div>
+            <div class="back">
+              <p class="f32b">   
+                <div class="flex dir_col align_center" lang="y">
+                  <div class="f32b flex align_center">
+                    <span class="fraction_box"><span>3</span><span>16</span></span> 
+                    × 4 &equals;
+                    <span class="fraction_box"><span>3</span><span>4</span></span>,
+                  </div>
+                  <div class="f32b flex align_center">
+                    4 × 1 
+                    <span class="fraction_box"><span>1</span><span>3</span></span> 
+                    &equals;
+                    5
+                    <span class="fraction_box"><span>1</span><span>3</span></span> 
+                    (
+                      &equals;<span class="fraction_box"><span>16</span><span>3</span></span> 
+                    )
+                  </div>
+                </div>
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="bubble_charactor" data-charactor="1" style="display: none;">
+          <div class="bubble" data-point-position="bottom left">
+              <p lang="y">카드를 한 번 더 선택하면</p>
+              <p lang="y">내용을 볼 수 있어요.</p>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

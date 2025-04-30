@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_04_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_04">
+      <section class="title type2">
+        <h2 data-head="3_green" lang="y">
+          <span lang="y">비율이 같은 것끼리 이어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ena614_04_0003 flex justify_center align_center gap_12">
+          <ul class="connect_line_box start">
+            <li>3:10</li>
+            <li>3과 10의 비</li>
+            <li>3의 4에 대한 비</li>
+          </ul>
+          <div class="connect_wrap" data-connections="[]" data-answer-single='[["s1","m2"],["s2","m3"],["s3","m1"]]'>
+            <div class="start_group">
+              <div class="connect_point" data-id="s1"></div>
+              <div class="connect_point" data-id="s2"></div>
+              <div class="connect_point" data-id="s3"></div>
+            </div>
+            <div class="end_group">
+              <div class="connect_point" data-id="m1"></div>
+              <div class="connect_point" data-id="m2"></div>
+              <div class="connect_point" data-id="m3"></div>
+            </div>
+            <svg class="connect_lines"></svg>
+          </div>
+          <ul class="connect_line_box mid1">
+            <li>
+              <span class="fraction_box">
+                <span>3</span>
+                <span>4</span>
+              </span>
+            </li>
+            <li>
+              <span class="fraction_box">
+                <span>9</span>
+                <span>10</span>
+              </span>
+            </li>
+            <li>
+              <span class="fraction_box">
+                <span>3</span>
+                <span>10</span>
+              </span>
+            </li>
+          </ul>
+          <div class="connect_wrap" data-connections="[]" data-answer-single='[["ms1","e2"],["ms2","e3"],["ms3","e1"]]'>
+            <div class="start_group">
+              <div class="connect_point" data-id="ms1"></div>
+              <div class="connect_point" data-id="ms2"></div>
+              <div class="connect_point" data-id="ms3"></div>
+            </div>
+            <div class="end_group">
+              <div class="connect_point" data-id="e1"></div>
+              <div class="connect_point" data-id="e2"></div>
+              <div class="connect_point" data-id="e3"></div>
+            </div>
+            <svg class="connect_lines"></svg>
+          </div>
+          <ul class="connect_line_box mid2">
+            <li>0.3</li>
+            <li>0.75</li>
+            <li>0.9</li>
+          </ul>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4">
+                  <p>비 9 : 10을 비율로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <p>, 0.9입니다.</p>
+                </div>
+                <div class="flex gap_4">
+                  <p>3과 10의 비는 3 : 10이고, 비율로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>9</span>
+                    <span>10</span>
+                  </div>
+                  <p>, 0.3입니다.</p>
+                </div>
+                <div class="flex gap_4">
+                  <p>3의 4에 대한 비는 3 : 4이고, 비율로 나타내면</p>
+                  <div class="fraction_box">
+                    <span>3</span>
+                    <span>4</span>
+                  </div>
+                  <p>, 0.75입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

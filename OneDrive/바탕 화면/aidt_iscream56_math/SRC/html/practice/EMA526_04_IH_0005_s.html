@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_04_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_04_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star2" lang="y">
+          <div>
+            준호의 회별 100 m 수영 기록을 나타낸 표입니다. 수영 기록의 평균이 102초 이하일 때 결승에 올라갈 수 있습니다. 준호가 결승에 올라가려면 5회의 기록이 몇 초 이하여야 하는지 구해 보세요.
+            <button type="button" class="btn calculator"></button>
+          </div>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="tit_data">
+          <div class="inner">
+            <span lang="y">회별 100 m 수영 기록</span>
+          </div>
+        </div>
+        <div class="table_wrap row">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col" lang="y">회</th>
+                <td lang="y">1회</td>
+                <td lang="y">2회</td>
+                <td lang="y">3회</td>
+                <td lang="y">4회</td>
+                <td lang="y">5회</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" lang="y">기록(초)</th>
+                <td>107</td>
+                <td>101</td>
+                <td>98</td>
+                <td>104</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="question_box justify_center gap_4" lang="y">
+          (
+          <div class="input_wrap">
+            <math-field data-answer-single="100"></math-field>
+          </div>
+          )초
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">준호가 결승에 올라가려면 5회까지 수영 기록의 합이 102×5=510(초) 이하여야 합니다. 따라서 5회의 기록은 510-(107+101+98+104)=100(초) 이하여야 합니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

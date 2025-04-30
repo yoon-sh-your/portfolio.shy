@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_04_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_04.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_04_su_0003">
+    <section class="title type2">
+      <h2 data-head="1_green" lang="y">1초 동안 빨간색 로봇은 5.89 m, 파란색 로봇은 3.1 m 이동했습니다. 빨간색 로봇이 이동한 거리는 파란색 로봇이 이동한 거리의 몇 배인지
+        구해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start">
+        <div class="picture_wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="848" height="685" viewBox="0 0 848 685" fill="none">
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="218" y="500.712" lang="y">빨간색 로봇이 이동한 거리는
+              </tspan>
+              <tspan x="218" y="548.712" lang="y">파란색 로봇이 이동한 거리의
+              </tspan>
+              <tspan x="218" y="596.712" lang="y">몇 배인지 어떻게 구할 수 있을까?</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="152" y="139.712" lang="y">1초</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="628.344" y="139.375" lang="y">출발</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="527.453" y="298.375">5.89 m</tspan>
+            </text>
+            <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="32"
+              font-weight="bold" letter-spacing="-1px">
+              <tspan x="541.25" y="416.375">3.1 m</tspan>
+            </text>
+          </svg>
+          <img src="../../common_contents/img/EMA622_04_SU/0002_content.png" alt="자치회 활동 이미지" /> <button
+            class="zoom"></button>
+        </div>
+
+        <article class="page page_1">
+          <div class="input_area">
+            <h3 lang="y">구하는 식을 써 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="input_wrap">
+                <math-field data-answer-single="5.89÷3.1"></math-field>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="input_area">
+            <h3 lang="y">빨간색 로봇이 이동한 거리는 파란색 로봇이 이동한 거리의 몇 배일지 어림셈해 보고, 어떻게 어림셈했는지 이야기해 보세요.</h3>
+            <div class="question_box justify_center">
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">5.89를 6으로, 3.1을 3으로 어림하면 6÷3=2이므로 2배쯤 될 것 같습니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="input_area">
+            <h3 lang="y">5.89÷3.1을 어떻게 계산할 수 있을지 이야기해 보세요.</h3>
+            <div class="question_box justify_center">
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">자연수의 나눗셈이나 (소수)÷(자연수)를 이용하여 계산할 수 있습니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <h3 lang="y">589÷310을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요. </h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <div class="op1">
+                5.89
+                <div class="g-16"></div>
+                ÷
+                <div class="g-19 "></div>
+                3.1
+              </div>
+
+              <div class="g-108"></div>
+
+              <div class="op2">
+                589
+                <div class="g-20"></div>
+                ÷
+                <div class="g-20"></div>
+                310
+                <div class="g-18"> </div>
+                =
+                <div class="g-14"> </div>
+
+                <div class="input_wrap">
+                  <math-field data-answer-single="1.9"></math-field>
+                </div>
+              </div>
+
+              <div class="g-79"></div>
+
+              <div class="op3">
+                5.89
+                ÷
+                3.1
+                =
+                <div class="g-34"></div>
+
+                <div class="input_wrap">
+                  <math-field data-answer-single="1.9"></math-field>
+                </div>
+              </div>
+
+              <div class="times100 t1">100배</div>
+              <div class="times100 t2">100배</div>
+
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_5">
+          <h3 lang="y">589÷310을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요.</h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_6">
+          <h3 lang="y">589÷310을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요. </h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <div class="op1">
+                5.89
+                <div class="g-16"></div>
+                ÷
+                <div class="g-19 "></div>
+                3.1
+              </div>
+
+              <div class="g-108"></div>
+
+              <div class="op2">
+                58.9
+                <div class="g-20"></div>
+                ÷
+                <div class="g-20"></div>
+                31
+                <div class="g-18"> </div>
+                =
+                <div class="g-14"> </div>
+
+                <div class="input_wrap">
+                  <math-field data-answer-single="1.9"></math-field>
+                </div>
+              </div>
+
+              <div class="g-79"></div>
+
+              <div class="op3">
+                5.89
+                ÷
+                3.1
+                =
+                <div class="g-34"></div>
+
+                <div class="input_wrap">
+                  <math-field data-answer-single="1.9"></math-field>
+                </div>
+              </div>
+
+              <div class="times100 t1">100배</div>
+              <div class="times100 t2">100배</div>
+
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_7">
+          <h3 lang="y">58.9÷31을 이용하여 5.89÷3.1을 계산하는 방법을 알아보세요.</h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_8">
+          <h3 lang="y">빨간색 로봇이 이동한 거리는 파란색 로봇이 이동한 거리의 몇 배인지 구하고, 어림셈한 결과와 비교해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="container">
+
+              <div>
+                <div class="input_wrap">
+                  <math-field data-answer-single="1.9"></math-field>
+                </div>
+                배
+              </div>
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">어림셈한 결과인 2배와 비슷합니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_9">
+          <h3 lang="y">(소수 두 자리 수)÷(소수 한 자리 수)를 계산하는 방법을 이야기해 보세요.</h3>
+          <div class="question_box justify_center">
+            <div class="container">
+
+              <div class="input_wrap">
+                <math-field class="textarea"></math-field>
+                <div class="example_box">
+                  <p lang="y">나누어지는 수와 나누는 수를 각각 100배 하여 자연수의 나눗셈과 같은 방법으로 계산하거나 나누어지는 수와 나누는 수를 각각 10배 하여 (소수)÷(자연수)와 같은 방법으로 계산합니다.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

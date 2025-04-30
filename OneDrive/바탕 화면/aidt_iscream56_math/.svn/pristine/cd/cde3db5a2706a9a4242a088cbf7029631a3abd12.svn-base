@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_04_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_04_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7_deep_green" class="is_star2">
+          <span class="label_bread">조건</span>
+          <span lang="y">을 만족하는 비례식을 완성해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_start">
+          <div class="condition_area">
+            <dl>
+              <dt lang="y" class="label_bread">조건</dt>
+              <dd class="text_bullet mb_20">
+                <span lang="y">비율은</span>
+                <div class="fraction_box ml_10"><span>3</span><span>8</span></div>
+                <span lang="y">입니다.</span>
+              </dd>
+              <dd class="text_bullet" lang="y">외항은 3과 56입니다.</dd>
+            </dl>
+          </div>
+          <div class="input_area flex align_center">
+            <div class="input_wrap">
+              <math-field data-answer-single="3"></math-field>
+            </div>
+            : 8=
+            <div class="input_wrap">
+              <math-field data-answer-single="21"></math-field>
+            </div>
+            :
+            <div class="input_wrap">
+              <math-field data-answer-single="56"></math-field>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>
+                  주어진 비례식을 ㉠ : 8 = ㉡ : ㉢이라 하면
+                  비율이
+                  <span class="fraction_box align-middle">
+                    <span>3</span>
+                    <span>8</span>
+                  </span>
+                  이므로
+                  <span class="fraction_box align-middle">
+                    <span>㉠</span>
+                    <span>8</span>
+                  </span>
+                  <span class="fraction-equation">
+                    <span class="eq-middle">=</span>
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>8</span>
+                    </span>
+                  </span>,
+                  ㉠ = 3입니다.
+                </p>
+                <p>3 : 8 = ㉡ : ㉢에서 외항은 3과 56이므로 ㉢ = 56입니다.</p>
+                <p class="mt_15">3 : 8 = ㉡ : 56에서 3 : 8은 전항과 후항에 7을 곱한 21 : 56과 그 비율이 같으므로<br/> ㉡ = 21입니다.</p>   
+                <p class="mt_15">따라서&nbsp;<span class="label_bread trans_y_center">조건</span>&nbsp;을 만족하는 비례식은 3 : 8=21 : 56입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

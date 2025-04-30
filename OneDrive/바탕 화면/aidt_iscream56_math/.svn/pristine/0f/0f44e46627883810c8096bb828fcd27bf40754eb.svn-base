@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_04_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_04_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star">
+          <span lang="y">넓이가</span>
+          <div class="fraction_box"><span>11</span><span>15</span></div>
+          <span lang="y"> ㎡인 텃밭을 똑같이 물로 나누어 상추와 오이를 각각 심었습니다. 오이를 심은 텃밭의 넓이는 몇 ㎡인지 식을 쓰고 답을</span>
+          <span lang="y">구해 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA611_04_IH/0006_01.png" alt="" />
+          </div>
+          <div class="input_area flex justify_center mt_30">
+            <div class="input_col">
+              <span class="label_gray">식</span>
+              <div class="input_wrap fraction_wrap input1">
+                <math-field data-answer-single="(11)/(15)÷2" text-align="center"></math-field>
+              </div>
+              =
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(11)/(30)" text-align="center" class="w_80"></math-field>
+              </div>
+            </div>
+            <div class="input_col">
+              <span class="label_gray">답</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(11)/(30)" text-align="center" class="w_80"></math-field>
+              </div>
+              ㎡
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve top0">
+                <p lang="y">(오이를 심은 텃밭의 넓이)</p>
+                <div class="flex align_center gap_0" lang="y">
+                  =<span class="fraction_box">
+                    <span>11</span>
+                    <span>15</span> </span
+                  >÷2=<span class="fraction_box">
+                    <span>22</span>
+                    <span>30</span> </span
+                  >÷2=<span class="fraction_box">
+                    <span>22÷2</span>
+                    <span>30</span> </span
+                  >=<span class="fraction_box">
+                    <span>11</span>
+                    <span>30</span>
+                  </span>
+                  (㎡)
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

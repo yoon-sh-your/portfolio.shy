@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_04_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_04.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_04_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              예준이는 자전거를 어제는
+              <div class="fraction_box">
+                <span>2</span>
+                <span>15</span>
+              </div>
+              시간, 오늘은
+              <div class="fraction_box">
+                <span>1</span>
+                <span>3</span>
+              </div>
+              시간 탔습니다. 예준이가 어제와 오늘 자전거를 탄 시간은 모두 몇 시간인지
+            </div>
+            <div class="fraction_txt" lang="y">
+              구해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="question_box justify_center">
+            <div class="operations">
+              <div class="input_wrap fraction_wrap frac1">
+                <math-field data-answer-single="2(43)/(60)" data-answer-multi='{"values": ["2(43)/(60)","(163)/(60)"]}' data-multi-hint="y"></math-field>
+              </div>
+              &nbsp;시간
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

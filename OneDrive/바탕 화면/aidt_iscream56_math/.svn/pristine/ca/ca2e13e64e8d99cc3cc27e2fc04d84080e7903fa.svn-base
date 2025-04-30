@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ema521_11_su_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema521_su_11.css">
+
+</head>
+<body>
+    <div id="app_wrap" class="ema521_11_su_0008">
+		<div class="scroll_page">
+			<section class="title type2">
+			  <h2 data-type="1" data-text="자기주도 4">
+				<span class="blue line" lang="y">확인하고 정리해요</span>
+				<span lang="y">공부한 내용을 확인해요</span>
+			  </h2>
+			</section>
+
+			<section class="title type2 jgjd_4_sub_title">
+				<h2>
+					<div class="title_row">
+						<span class="nemo_blank"></span>
+						<span lang="y">안에 알맞은 수를 써넣으세요.</span>
+					</div>
+				</h2>
+			</section>
+
+			<section class="contents">
+			  <div class="scroll_area">
+				<img src="../../common_contents/img/EMA521_11_SU/0008_bg_contents.png" alt="배경이미지">
+		
+				<dl class="question_box q01">
+				  <dt class="tit" lang="y">수의 범위</dt>
+
+				  <dd class="info part1">
+					<div class="ruler_img">
+					  <img src="../../common_contents/img/EMA521_11_SU/0008_ruler_01.png" alt="자 이미지">
+
+					  <div class="num_range">
+						<span class="t01">5</span>
+						<span class="t02">6</span>
+						<span class="t03">7</span>
+						<span class="t04">8</span>
+						<span class="t05">9</span>
+						<span class="t06">10</span>
+						<span class="t07">11</span>
+					  </div>
+					</div>
+
+					<div class="input_wrap">
+					  <span class="f32b" lang="y">6이상 10</span>
+					  <div class="dropdown_wrap">
+						<select class="custom_dropdown" data-answer-single="이하">
+						  <option></option>
+						  <option value="이상">이상</option>
+						  <option value="이하">이하</option>
+						  <option value="초과">초과</option>
+						  <option value="미만">미만</option>
+						</select>
+					  </div>
+					  <span class="f32b" lang="y">인 수</span>
+					</div>
+				  </dd>
+
+				  <dd class="info part2">
+					<div class="ruler_img">
+					  <img src="../../common_contents/img/EMA521_11_SU/0008_ruler_02.png" alt="자 이미지">
+
+					  <div class="num_range">
+						<span class="t01">12</span>
+						<span class="t02">13</span>
+						<span class="t03">14</span>
+						<span class="t04">15</span>
+						<span class="t05">16</span>
+						<span class="t06">17</span>
+					  </div>
+					</div>
+
+					<div class="input_wrap">
+					  <span class="f32b" lang="y">13</span>
+					  <div class="dropdown_wrap">
+						<select class="custom_dropdown" data-answer-single="초과">
+						  <option></option>
+						  <option value="이상">이상</option>
+						  <option value="이하">이하</option>
+						  <option value="초과">초과</option>
+						  <option value="미만">미만</option>
+						</select>
+					  </div>
+					  <span class="f32b" lang="y">16 미만인 수</span>
+					</div>
+				  </dd>
+				</dl>
+
+				<dl class="question_box q02">
+				  <dt class="tit" lang="y">어림하기</dt>
+
+				  <dd class="flow_box part1">
+					<span class="num" lang="y">252</span>
+					<span class="arrow"></span>
+
+					<span class="txt" lang="y">올림하여 십의 자리까지 나타내기</span>
+					<span class="arrow"></span>
+
+					<span class="txt" lang="y">260</span>
+				  </dd>
+				  
+				  <dd class="flow_box part2">
+					<span class="num" lang="y">417</span>
+					<span class="arrow"></span>
+
+					<span class="txt" lang="y">버림하여 십의 자리까지 나타내기</span>
+					<span class="arrow"></span>
+
+					<div class="input_wrap" data-hint-position="right">
+					  <math-field data-answer-single="410"></math-field>
+					</div>
+				  </dd>     
+
+				  <dd class="flow_box part3">
+					<span class="num" lang="y">791</span>
+					<span class="arrow"></span>
+
+					<span class="txt" lang="y">반올림하여 백의 자리까지 나타내기</span>
+					<span class="arrow"></span>
+
+					<div class="input_wrap" data-hint-position="right">
+					  <math-field data-answer-single="800"></math-field>
+					</div>
+				  </dd>     
+				</dl>
+			  </div>
+
+			  <div class="btn_area relative">
+				<button class="btnType key">입력타입토글</button>
+				<button class="btnReset">리셋</button>
+				<button class="btnCheck">확인</button>
+			  </div>
+			</section>
+		</div>
+    </div>
+</body>
+</html>

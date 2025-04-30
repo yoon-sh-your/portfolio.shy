@@ -1,0 +1,271 @@
+@charset "uft-8";
+/* .ema513_07_su_0003 */
+.ema513_07_su_0003#app_wrap {
+    flex-direction: row;
+    gap: 30px;
+}
+.ema513_07_su_0003 section:first-of-type {
+    flex: 1;
+}
+.ema513_07_su_0003 section:last-of-type {
+    display: flex;
+    align-items: center;
+    padding-bottom: 72px;
+    width: 360px;
+}
+.ema513_07_su_0003 .top-wrap {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.ema513_07_su_0003 #drawCard {
+    width: 198px;
+    height: 229px;
+    background: url("../../common_contents/img/EMA513_07_SU/random.png") no-repeat center;
+    font-size: 32px;
+    padding: 0;
+}
+.ema513_07_su_0003 #drawCard[data-card] {
+    font-size: 0;
+}
+.ema513_07_su_0003 #drawCard[data-card="끈"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-1.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="의자"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-2.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="토끼풀"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-3.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="밀가루"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-4.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="꼭짓점"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-5.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="자동차"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-6.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="기차"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-7.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="물통"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-8.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="도형"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-9.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="털실"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-10.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="꽃"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-11.png") no-repeat center;
+}
+.ema513_07_su_0003 #drawCard[data-card="놀이기구"] {
+    background: url("../../common_contents/img/EMA513_07_SU/cards/card-12.png") no-repeat center;
+}
+.ema513_07_su_0003 .input-area {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    height: 180px;
+    background: var(--primary-blue-100);
+    padding: 20px 30px;
+    border-radius: 12px;
+    .left > p {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 20px;
+        margin-bottom: 30px;
+        span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #222;
+        }
+    }
+    .right {
+        position: static;
+        display: flex;
+        align-items: flex-end;
+    }
+    .input-wrap {
+        display: inline-flex;
+        gap: 20px;
+        span {
+            display: flex;
+            align-items: center;
+            font-size: 32px;
+            font-weight: 700;
+            color: #000;
+        }
+        math-field {
+            width: 200px !important;
+            height: 60px;
+            padding: 8px 10px;
+        }
+    }
+    .input-wrap + .input-wrap {
+        margin-left: 50px;
+    }
+    .symbol-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        padding: 0;
+        min-width: auto;
+        border: 1px solid var(--stroke-default);
+        background: url("../../common_contents/img/EMA513_07_SU/hand.png") no-repeat center #fff;
+        box-shadow: 0px 8px 24px 0px #0000001f;
+    }
+    .symbol-button[data-op] {
+        border: 2px solid #222;
+        box-shadow: none;
+    }
+    .symbol-button[data-op="+"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-1.png") no-repeat center #fff;
+    }
+    .symbol-button[data-op="-"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-2.png") no-repeat center #fff;
+    }
+    .symbol-button[data-op="*"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-3.png") no-repeat center #fff;
+    }
+    .symbol-button[data-op="/"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-4.png") no-repeat center #fff;
+    }
+}
+.ema513_07_su_0003 .score-table {
+    margin-top: 50px;
+    background: var(--primary-blue-100);
+    border-radius: 20px;
+    overflow: hidden;
+    table {
+        width: 100%;
+    }
+    th,
+    td {
+        height: 80px;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    th {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    tr:nth-of-type(1) {
+        background: var(--primary-blue);
+        th {
+            color: #fff;
+            width: 150px;
+        }
+    }
+    .input_wrap {
+        width: 100%;
+        align-items: center;
+        math-field {
+            width: 222px;
+            padding: 8px 10px;
+        }
+    }
+}
+.ema513_07_su_0003 .dice-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #eef0f4;
+    border-radius: 30px;
+    padding: 30px;
+    gap: 30px;
+}
+
+.ema513_07_su_0003 #diceResult {
+    position: relative;
+    width: 132px;
+    height: 136px;
+    background: url("../../common_contents/img/EMA513_07_SU/dice-1.png") no-repeat center;
+    span {
+        position: absolute;
+        top: -20px;
+        right: -106px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 102px;
+        height: 78px;
+        font-size: 24px;
+        font-weight: 700;
+        background: url("../../common_contents/img/EMA513_07_SU/score.png") no-repeat center;
+    }
+}
+.ema513_07_su_0003 #diceResult[data-number="1"] {
+    background: url("../../common_contents/img/EMA513_07_SU/dice-1.png") no-repeat center;
+}
+.ema513_07_su_0003 #diceResult[data-number="2"] {
+    background: url("../../common_contents/img/EMA513_07_SU/dice-2.png") no-repeat center;
+}
+.ema513_07_su_0003 #diceResult[data-number="3"] {
+    background: url("../../common_contents/img/EMA513_07_SU/dice-3.png") no-repeat center;
+}
+.ema513_07_su_0003 #diceResult[data-number="4"] {
+    background: url("../../common_contents/img/EMA513_07_SU/dice-4.png") no-repeat center;
+}
+.ema513_07_su_0003 #diceResult[data-number="5"] {
+    background: url("../../common_contents/img/EMA513_07_SU/dice-5.png") no-repeat center;
+}
+.ema513_07_su_0003 #diceResult[data-number="6"] {
+    background: url("../../common_contents/img/EMA513_07_SU/dice-6.png") no-repeat center;
+}
+
+.ema513_07_su_0003 .operator-list {
+    display: none;
+    position: absolute;
+    gap: 4px;
+    z-index: 100;
+    width: 248px;
+    height: 83px;
+    background: url("../../common_contents/img/EMA513_07_SU/operator-bg.png") no-repeat center;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 9px;
+    gap: 8px;
+    button {
+        width: 52px;
+        height: 52px;
+        min-width: auto;
+        background: #fff;
+        border-radius: 50%;
+        border: 1px solid #d2d2d2;
+        font-size: 0;
+    }
+    button[data-op="+"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-1.png") no-repeat center #fff;
+    }
+    button[data-op="-"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-2.png") no-repeat center #fff;
+    }
+    button[data-op="*"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-3.png") no-repeat center #fff;
+    }
+    button[data-op="/"] {
+        background: url("../../common_contents/img/EMA513_07_SU/data-op-4.png") no-repeat center #fff;
+    }
+}
+
+.device_change {
+    background-color: var(--secondary-red);
+}
+
+.device_change {
+    display: none;
+}
+.teacher .device_change {
+    display: block;
+}

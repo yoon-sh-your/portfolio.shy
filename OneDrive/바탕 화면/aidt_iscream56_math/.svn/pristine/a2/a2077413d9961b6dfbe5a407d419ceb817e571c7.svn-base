@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA516_04_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+    <!-- 개별 -->
+    <script src="../../common_contents/js/ema516_04_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema516_04.css">
+
+</head>
+<body>
+    <article id="app_wrap" class="ema516_04_su_0004">
+        <section class="title type2">
+            <h2 lang="y" data-head="2">여러 가지 모양을 단위로 사용하여&nbsp;<span class="line1"></span> 와 <span class="line2"></span> 의 넓이를 비교해 봅시다.</h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <article class="page page_1">
+                <section class="title type2">
+                </section>
+                    <h3 lang="y"><span class="line1"></span> 와 <span class="line2"></span> 위에&nbsp;<p class="miniRactangle"></p>, <p class="ractangle"></p>, <p class="circle"></p> 를 각각 서로 겹치지 않게 이어 붙여 표를 완성하고, 넓이를 비교해 보세요.</h3>
+                    <div class="input_area po_absolute">
+                        <div class="flex align_start gap_26 flexList">
+                            <div class="Area">
+                                <div class="drag_share">
+                                    <div class="draggable_wrap">
+                                        <!-- single_draggable  -->
+                                      <div class="draggable draggable1"></div>
+                                      <div class="draggable draggable2"></div>
+                                      <div class="draggable draggable3"></div>
+                                    </div>
+                          
+                                    <div class="drag_group g1" data-group-limit="6" data-answer-single="[3,3]">
+                                      <div class="droppable droppable1"></div>
+                                      <div class="droppable droppable2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_area">
+                                <div class="question_box align_start dir_col">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th></th>
+                                                <th class="row1" lang="y"><span class="line1"></span></th>
+                                                <th class="row2" lang="y"><span class="line2"></span></th>
+                                            </tr>
+                                        </thead> 
+                                        <tbody>
+                                            <tr>
+                                                <td class="vertical1" lang="y"><p class="miniRactangle"></p><span lang="y">&nbsp;의 개수</span></td>
+                                                <td><div class="input_wrap input2">
+                                                    <math-field type="number" data-answer-single="6"></math-field>
+                                                </div></td>
+                                                <td><div class="input_wrap input2">
+                                                    <math-field type="number" data-answer-single="6"></math-field>
+                                                </div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="vertical2" lang="y"><p class="ractangle"></p><span lang="y">&nbsp;의 개수</span></td>
+                                                <td><div class="input_wrap input2">
+                                                    <math-field type="number" data-answer-single="10"></math-field>
+                                                </div></td>
+                                                <td><div class="input_wrap input2">
+                                                    <math-field type="number" data-answer-single="9"></math-field>
+                                                </div></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="vertical3" lang="y"><p class="circle"></p><span lang="y">의 개수</span></td>
+                                                <td><div class="input_wrap input2">
+                                                    <math-field type="number" data-answer-single="10"></math-field>
+                                                </div></td>
+                                                <td class="radius">
+                                                    <div class="input_wrap input2">
+                                                        <math-field type="number" data-answer-single="9"></math-field>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <!--정답 예시 이미지-->
+                                <div class="answer_img">
+                                        <img src="../../common_contents/img/EMA516_04_SU/correctAns0101.png" alt="정답 예시 이미지" />
+                                        <img src="../../common_contents/img/EMA516_04_SU/correctAns0102.png" alt="정답 예시 이미지" />
+                                        <img src="../../common_contents/img/EMA516_04_SU/correctAns0201.png" alt="정답 예시 이미지" />
+                                        <img src="../../common_contents/img/EMA516_04_SU/correctAns0202.png" alt="정답 예시 이미지" />
+                                        <img src="../../common_contents/img/EMA516_04_SU/correctAns0301.png" alt="정답 예시 이미지" />
+                                        <img src="../../common_contents/img/EMA516_04_SU/correctAns0302.png" alt="정답 예시 이미지" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </article><!-- 1page -->
+            
+            <article class="page page_2">
+                <h3 lang="y">여러 가지 모양을 단위로 사용하여 넓이를 비교할 때 불편한 점을 이야기해 보세요.</h3>
+                <div class="input_area">
+                        <div class="flex">
+                            <div class="box1">
+                                <div class="img">
+                                    <img src="../../common_contents/img/EMA516_04_SU/childs.png" alt="">
+                                </div>
+                                <div class="txt1">
+                                    <div class="buble" lang="y">
+                                        <span class="ractangle1"></span> , <span class="circle1"></span> 를 단위로<br>
+                                        사용하면 빈틈없이 붙일 수 없어.
+                                    </div>
+                                </div>
+                                <div class="txt2">
+                                    <div class="buble" lang="y">
+                                        <div class="wrap"><span class="line1"></span>&nbsp;는&nbsp;<span class="ractangle1"></span>&nbsp;를 단위로<br></div>
+                                        사용하면 6개야.
+                                    </div>
+                                </div>
+                                <div class="txt3">
+                                    <div class="buble" lang="y">
+                                        <div class="wrap"><span class="line1"></span>&nbsp;는&nbsp;<span class="ractangle1"></span>&nbsp;를 단위로 사용하면 10개야.<br></div>
+                                        같은 도형인데 단위에 따라 개수가 달라지네.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="input_wrap inputBox">
+                                <math-field class="textarea"></math-field>
+                                <ol class="example_box">
+                                    <li lang="y">빈틈없이 붙일 수 없어 넓이 측정이 정확하지 않은 단위가 있습니다.</li>
+                                    <li lang="y">같은 도형이지만 어떤 단위로 넓이를 측정하는가에 따라 개수가 달라집니다.</li>
+                                    <li lang="y">넓이를 측정할 때 사용하는 단위가 전부 달라서 넓이를 비교할 때 불편하고 정확하지 않습니다.</li>
+                                </ol>
+                            </div>
+                    </div>
+            </article><!-- 2page -->
+
+            <article class="page page_3"> 
+                <h3 lang="y">
+                    <span class="miniRactangle"></span>, 
+                    <span class="ractangle"></span>, 
+                    <span class="circle"></span> 중 넓이의 단위로 알맞은 모양은 무엇인가요? 
+                    그 이유를 이야기해 보세요.
+                </h3>
+            
+                <div class="input_area">
+                        <div class="imgBox">
+                            <div class="img_wrap">
+                                <div class="ractangle_1">
+                                    <img src="../../common_contents/img/EMA516_04_SU/oblong.png" alt="">
+                                </div>
+                                <div class="ractangle_2">
+                                    <img src="../../common_contents/img/EMA516_04_SU/square.png" alt="">
+                                </div>
+                                <div class="circle_1">
+                                    <img src="../../common_contents/img/EMA516_04_SU/circle.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    <div class="flex mt_40"> 
+                        <div class="input_wrap">
+                            <math-field class="textarea"></math-field>
+                            <div class="example_box">
+                                <p lang="y">
+                                    <span class="ractangle"></span>를 사용하면 겹치지 않고 빈틈없이 이어 붙일 수 있어 
+                                    넓이를 더 정확하게 측정할 수 있을 것 같습니다.
+                                </p>
+                            </div> 
+                        </div> 
+                    </div> 
+                </div>
+
+            </article> 
+
+            <article class="page page_4">
+                <div class="summarize_wrap">
+                    <div class="summarize promise">
+                        <label lang="y">약속해 볼까요</label>
+    
+                        <div class="text_area">
+                            <span lang="y">넓이의 단위로 한 변의 길이가 1 m인 정사각형의 넓이를 사용할 수 있습니다.</span>
+                        </div>
+                        <div class="text_area">
+                            <span lang="y">한 변의  길이가 1 ㎝인 정사각형의 넓이를</span>
+                            <button class="reveal_btn btn_1" data-pair="1 ㎠">1 ㎠</button>
+                            <span lang="y" class="small-gap">라 쓰고,</span>
+                        </div>
+                        <div class="text_area">
+                            <button class="reveal_btn btn_2" data-pair="1 제곱센티미터">1 제곱센티미터</button>
+                            <span lang="y" class="small-gap">라고 읽습니다.</span>
+                        </div>
+                        <div class="draw_area">
+                            <div class="left_area">
+                                <img src="../../common_contents/img/EMA516_04_SU/left_img1.png" alt="">
+                            </div>
+                            <div class="right_area">
+                                <img src="../../common_contents/img/EMA516_04_SU/right_img2.png" alt="">
+                            </div>
+                            <div class="sub_area">
+                                <div class="sub_img">
+                                    <img src="../../common_contents/img/EMA516_04_SU/fingger_img.png" alt="손가락 이미지">
+                                </div>
+                                <div class="length1">1 ㎝</div>
+                                <div class="length2">1 ㎝</div>
+                                <span class="length_img"><img src="../../common_contents/img/EMA516_04_SU/1 cm².svg" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas_wrap">
+                    <!-- 선을 그릴 캔버스 -->
+                    <canvas
+                        class="draw-area"
+                        id="canvas"
+                        width="1600"
+                        height="600"
+                        data-canvas-id="canvas_1"></canvas>
+                </div>
+                <!-- 그리기도구 팝업 -->
+                <div class="draw-tool-wrap" id="dragWrap" data-canvas-id="canvas_1">
+                    <div class="draw-tool-wrap-header">
+                        <div class="draw-tool-wrap-title" id="dragMe">그리기 도구</div>
+                        <div class="close_but add_cursor">
+                        <img
+                            src="../../common_contents/common/img/tool_drawing/tools_close.svg"
+                            alt="ic_cancel" />
+                        </div>
+                    </div>
+                    <div class="draw-tool-wrap-body">
+                        <div class="tool-row function-item">
+                        <button type="button" class="ic_pen active"></button>
+                        <button type="button" class="ic_txt"></button>
+                        <button type="button" class="ic_eraser"></button>
+                        </div>
+                        <div class="tool-row function-item">
+                        <button type="button" class="ic_triangle"></button>
+                        <button type="button" class="ic_square"></button>
+                        <button type="button" class="ic_circle"></button>
+                        <button type="button" class="ic_polygon"></button>
+                        </div>
+                        <div class="tool-row function-item">
+                        <button type="button" class="ic_line"></button>
+                        <button type="button" class="ic_dash"></button>
+                        <button type="button" class="ic_draw"></button>
+                        <button type="button" class="ic_pull"></button>
+                        </div>
+                        <div class="tool-row palette-item">
+                        <button type="button" class="p_red"></button>
+                        <button type="button" class="p_yellow"></button>
+                        <button type="button" class="p_green"></button>
+                        <button type="button" class="p_blue"></button>
+                        <button type="button" class="p_purple"></button>
+                        <button type="button" class="p_black active"></button>
+                        </div>
+                        <div class="tool-row range-item">
+                        <input type="range" name="thickness" class="draw-scale-range" />
+                        </div>
+                        <div class="tool-row range-item">
+                        <input type="range" name="opacity" class="draw-trans-range" />
+                        </div>
+                        <div class="tool-row function-item">
+                        <div class="arrow-item">
+                            <button type="button" class="ic_undo"></button>
+                            <button type="button" class="ic_redo"></button>
+                        </div>
+                        <button type="button" class="ic_del"></button>
+                        </div>
+
+                        <div class="ic_polygon_pop">
+                        <span>꼭지점</span>
+                        <button type="button" class="ipp_minus"></button>
+                        <div>
+                            <input type="text" name="ipp_num" id="ipp_num" value="5" readonly="readonly" />
+                            <label for="ipp_num">개</label>
+                        </div>
+                        <button type="button" class="ipp_plus"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //그리기도구 팝업 -->
+            </article>
+            <!-- 4page -->
+            <button type="button" class="btn btn_draw"></button>
+            <div class="btn_area"> 
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnErase">지우개</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+                <button class="btnSubmit">확인</button>
+            </div>
+        </section>
+</body>
+</html>
+    
+    
+  
+    
+    
+    

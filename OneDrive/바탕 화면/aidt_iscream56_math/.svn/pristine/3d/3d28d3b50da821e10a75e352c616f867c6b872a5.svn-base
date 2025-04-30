@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_11_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_11.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_11_su_0003">
+    <section class="title type2">
+      <h2 data-type="1" data-text="자기주도 3">
+        <span class="blue line" lang="y">내 힘으로 풀어요</span>
+        <span lang="y">공부한 내용을 확인해요</span>
+      </h2>
+    </section>
+    <section class="title type2 jgjd_3_sub_title">
+      <h2 data-head="2" lang="y">
+        <span class="mini_box"><img src="../../common_contents/img/EMA616_09_SU/mini_box.svg" alt="" /></span>
+        안에 알맞은 수를 써넣으세요.
+      </h2>
+    </section>
+    <section class="contents">
+      <div class="flex">
+        <div class="input_wrap answer2">
+          <span>2 ㎥=</span>
+          <math-field data-answer-single="2000000"></math-field>
+          <span>㎤</span>
+        </div>
+        <div class="input_wrap answer3">
+          <span>130000000 ㎤=</span>
+          <math-field data-answer-single="130000000"></math-field>
+          <span>㎥</span>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

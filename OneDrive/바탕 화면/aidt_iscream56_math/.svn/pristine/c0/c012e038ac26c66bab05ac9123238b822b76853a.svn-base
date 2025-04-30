@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_06_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_06_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star fraction_box_title" lang="y">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">              
+              <span lang="y">플라스틱 병뚜껑 
+              <div class="mixed_fraction">
+                <span>22</span>
+                <div class="fraction_box"><span>5</span><span>7</span></div>
+              </div>
+              <span lang="y">g을 새 활용하여 똑같은 열쇠고리 3개를 만들었습니다. 열쇠고리 한 개를 만드는 데 사용한 병뚜껑의 무게는</span>
+            </div>
+            <div class="fraction_txt" lang="y">
+              몇 g인지 식을 쓰고 답을 구해 보세요.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="input_col">
+            <span class="label_gray">식</span>
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="22(5)/(7)÷3" text-align="center"></math-field>
+            </div>
+            =
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="7(4)/(7)" text-align="center" class="w_80"></math-field>
+            </div>
+          </div>
+
+          <div class="input_col">
+            <span class="label_gray">답</span>
+            <div class="input_wrap fraction_wrap">
+              <!-- <math-field data-answer-single="7(4)/(7)(=(53)/(7))" text-align="center"></math-field> -->
+              <math-field data-answer-single="7(4)/(7)" data-answer-multi='{"values": ["7(4)/(7)","(53)/(7)"]}' data-multi-hint="y"></math-field>
+            </div>
+            g
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve flex align_center gap_0">
+                <p lang="y">(열쇠고리 한 개를 만드는 데 사용한 병뚜껑의 무게)</p>
+                <!-- 1 -->
+                <div class="flex align_center gap_0" lang="y">
+                  =<span class="mixed_fraction">
+                    <span>22</span>
+                    <span class="fraction_box">
+                      <span>5</span>
+                      <span>7</span>
+                    </span> </span
+                  >÷3=
+                  <span class="fraction_box">
+                    <span>159</span>
+                    <span>7</span> </span
+                  >÷3=
+                  <span class="fraction_box">
+                    <span>159÷3</span>
+                    <span>7</span>
+                  </span>
+                </div>
+                <!-- 2 -->
+                <div class="flex align_center gap_0" lang="y">
+                  =<span class="fraction_box">
+                    <span>53</span>
+                    <span>7</span> </span
+                  >=
+                  <span class="mixed_fraction">
+                    <span>7</span>
+                    <span class="fraction_box">
+                      <span>4</span>
+                      <span>7</span>
+                    </span>
+                  </span>
+                  &nbsp;(g)
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA622_05_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema622_05.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema622_05_su_0004">
+    <section class="title type2">
+      <h2 data-head="1_green" lang="y">1초 동안 빨간색 로봇은 5.89 m, 파란색 로봇은 3.1 m 이동했습니다. 빨간색 로봇이 이동한 거리는 파란색 로봇이 이동한 거리의 몇 배인지
+        구해 봅시다.</h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start">
+        <article class="page page_1">
+          <h3 lang="y">300÷75를 이용하여 3÷0.75를 계산하는 방법을 알아보세요.​</h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <div class="op1">
+                3
+                <div class="g-21"></div>
+                ÷
+                <div class="g-31"></div>
+                0.75
+              </div>
+
+              <div class="g-128"></div>
+
+              <div class="op2">
+                300
+                <div class="g-26"></div>
+                ÷
+                <div class="g-24"></div>
+                75
+                <div class="g-21"> </div>
+                =
+                <div class="g-14"> </div>
+
+                <div class="input_wrap">
+                  <math-field data-answer-single="4"></math-field>
+                </div>
+              </div>
+
+              <div class="g-68"></div>
+
+              <div class="op3">
+                5.89÷3.1=
+                <div class="g-4"></div>
+
+                <div class="input_wrap">
+                  <math-field data-answer-single="4"></math-field>
+                </div>
+              </div>
+
+              <div class="times100 t1" lang="y">100배</div>
+              <div class="times100 t2" lang="y">100배</div>
+
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">300÷75를 이용하여 3÷0.75를 계산하는 방법을 알아보세요.​</h3>
+          <div class="question_box justify_center">
+
+            <div class="container">
+              <ul class="letCheck">
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b">나누는 수가 자연수가 되도록 나누어지는 수와 나누는 수에 각각 100씩 곱해요.​</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="cover pointer large"></div>
+                  <div class="front">
+                    <p class="f32b">300을 75로 나눈 몫을 써요.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </article>
+        <article class="page page_3">
+          <div class="input_area">
+            <h3 lang="y">분수의 나눗셈으로 나타내어 계산하는 방법을 알아보세요.​</h3>
+            <div class="question_box justify_center">
+
+              <div class="operation">
+
+                3.75％1.25=
+                <span class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="375"></math-field>
+                    </div>
+                  </span>
+                  <span>100</span>
+                </span>
+                ％
+                <span class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="125"></math-field>
+                    </div>
+                  </span>
+                  <span>100</span>
+                </span>
+                <div class="g-20"></div>
+                =
+                <div class="input_wrap">
+                  <math-field data-answer-single="375"></math-field>
+                </div>
+                ％
+                <div class="input_wrap">
+                  <math-field data-answer-single="125"></math-field>
+                </div>
+                =
+                <div class="input_wrap">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </article>
+        <article class="page page_4">
+          <h3 lang="y">(자연수)÷(소수)를 계산하는 방법을 이야기해 보세요</h3>
+          <div class="question_box justify_center">
+
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">나누는 수가 자연수가 되도록 나누어지는 수와 나누는 수를 각각 10배 또는 각각 100배 하여 자연수의 나눗셈과 같은 방법으로 계산하거나 분수의 나눗셈으로 나타내어
+                  계산합니다.</p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

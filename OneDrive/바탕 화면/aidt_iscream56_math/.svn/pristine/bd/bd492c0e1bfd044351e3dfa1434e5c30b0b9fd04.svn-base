@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_03_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema523_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_03_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3">
+          <span lang="y">두 삼각형은 서로 합동입니다.</span>
+          <span class="nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA523_03_IH/0003_01.png" alt="" />
+            <span class="text text1">65º</span>
+            <span class="text text2">35º</span>
+            <span class="text text3">12 ㎝</span>
+
+            <div class="input_position input1">
+              <div class="input_wrap">
+                <math-field data-answer-single="12" text-align="center"></math-field>
+              </div>
+              <span>㎝</span>
+            </div>
+
+            <div class="input_position input2">
+              <div class="input_wrap">
+                <math-field data-answer-single="65" text-align="center"></math-field>
+              </div>
+              <span>º</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="img_area">
+                  <img src="./../../common_practice/img/EMA523_03_IH/0003_02.png" alt="" />
+                  <span class="text text1">65º</span>
+                  <span class="text text2">35º</span>
+                  <span class="text text3">12 ㎝</span>
+                  <span class="text text4">ㄱ</span>
+                  <span class="text text5">ㄴ</span>
+                  <span class="text text6">ㄷ</span>
+                  <span class="text text7">ㄹ</span>
+                  <span class="text text8">ㅁ</span>
+                  <span class="text text9">ㅂ</span>
+                </div>
+                <br />
+                <p lang="y" class="text_bullet">두 삼각형은 서로 합동이므로 대응변의 길이가 같습니다.</p>
+                <p lang="y">➔ (변 ㄱㄴ)=(변 ㅁㄹ)=12 ㎝</p>
+                <br />
+                <p lang="y" class="text_bullet">두 삼각형은 서로 합동이므로 대응각의 크기가 같습니다.</p>
+                <p lang="y">➔ (각 ㅁㅂㄹ)=(각 ㄱㄷㄴ)=65°</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

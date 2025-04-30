@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA522_06_SU_0008_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_06_su.css">
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_06_su_0008_s">
+        <section class="title type2">
+            <h2 data-type="12" data-text="창의+" lang="y">
+                <!-- <span class="label_bogi">보기</span> -->수 카드 6장 중에서 4장을 골라 한 번씩만 사용하여 진분수의 곱셈을 만들고, 계산해 봅시다.
+            </h2>
+        </section>
+
+        <section class="contents">
+
+            <div class="flex dir_col">
+                <img class="m_auto" src="../../common_contents/img/EMA522_06_SU/0008_img01.png" alt="자치회 활동 이미지" />
+
+
+                <div class="img_box">
+                    <div class="mixed_fraction f32b m_auto">
+                        <span class="fraction_box">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="2"></math-field>
+                            </span>
+                            <span class="input_wrap">
+                                <math-field data-answer-single="5"></math-field>
+                            </span>
+                        </span>
+                        <span>&times;</span>
+                        <span class="fraction_box">
+                            <span class="input_wrap">
+                                <math-field data-answer-single="8"></math-field>
+                            </span>
+                            <span class="input_wrap">
+                                <math-field data-answer-single="9"></math-field>
+                            </span>
+                        </span>
+                        <span>=</span>
+                        <!-- 단답형 분수식 -->
+                        <div class="input_wrap fraction_wrap">
+                            <math-field data-answer-single="(16)/(45)" text-align="center" placeholder=" "></math-field>
+                            <!-- 분수식 ex) 15(1)/(2) -->
+                            <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                            <!-- (분자)/(분모) 형식으로 표시 -->
+                            <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                            <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <!-- 예시 필드에서 사용 -->
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit">제출</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

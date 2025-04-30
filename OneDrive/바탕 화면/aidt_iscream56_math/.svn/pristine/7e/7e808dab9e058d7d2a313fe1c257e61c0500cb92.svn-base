@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_09_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_09.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_09_su_0003">         
+      <section class="title type2">
+        <h2 data-head="2_deep_green" lang="y">5학년 여학생의 한 끼 식사로 적절한 열량은 600 킬로칼로리라고 합니다. 예은이가 저녁에 먹은 음식의 열량을 구해 보고, 적절한 한끼 식사 열량과 비교해 봅시다.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="example_img">
+          <div>
+            <div class="image-preview _3">
+              <div class="box_wrap">
+                <div class="box">
+                  <p lang="y">참치김밥 1줄<br/>435 킬로칼로리</p>
+                  <p lang="y">꿀떡 1개<br/>45.6 킬로칼로리</p>
+                  <p lang="y">해물된장국 1그릇<br/>56 킬로칼로리</p>
+                </div>
+                <div class="box flex dir_col">
+                  <p lang="y">예은이가 점심에 먹은 음식</p>
+                  <p lang="y">참치김밥 0.7 줄</p>
+                  <p lang="y">꿀떡 3 개</p>
+                  <p lang="y">해물된장국 0.5 그릇</p>
+                </div>
+                <div class="box">
+                  <span lang="y">(출처: 식품안전나라, 2024)</span>
+                </div>
+              </div>
+            </div>
+            <div class="input_wrap answer1 hint_120">
+              <math-field data-answer-single="469.3"></math-field>
+              <span class="f32b">킬로칼로리</span>
+            </div>
+          </div>
+        </div>
+        <div class="input_area text-align_center">
+          <div class="input_wrap answer2">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">저녁 한 끼 열량으로 적절하지 않습니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

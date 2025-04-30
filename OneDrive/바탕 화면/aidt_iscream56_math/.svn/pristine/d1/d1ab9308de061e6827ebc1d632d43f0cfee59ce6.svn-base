@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA523_05_SU_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema523_su_06.css" />
+  <script src="../../common_contents/js/ema523_gridDot.js"></script>
+  <script src="../../common_contents/js/ema523_05_0006.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema523_05_su_0006 paging">
+    <section class="title type2">
+      <h2 data-head="4_pink">
+        <div>
+          <span lang="y">직선 ㅁㅂ을 대칭축으로 하는 선대칭도형의 일부가 그려져 있습니다. 선대칭도형을 완성하는 방법을 알아봅시다.</span>
+          <button type="button" class="icon_supplies" lang="y" data-supplies="pop_supplies_area_1">준비물</button>
+        </div>
+      </h2>
+      
+    </section>
+
+    <div class="pop_area pop_supplies_area pop_supplies_area_1">
+      <div class="supplies_zoom_wrap">
+        <button type="button" class="close"></button>
+        <div class="pop_supplies_contents">
+          <span lang="y" style="font-size: 60px; font-weight: 700; color: red;">준비물 이미지 추후 삽입 예정</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <h3 lang="y">대응점을 찾으려면 선대칭도형의 어떤 성질을 이용해야 할지 이야기해 보세요.​</h3>
+        <div class="input_area">
+          <div class="figure_box">
+            <div class="img_area">
+              <span class="img"><img src="../../common_contents/img/EMA523_05_SU/0006_content01.svg" alt="도형이미지"></span>
+              <div class="figure_triangle">
+                <span class="txt_1" lang="y">ㄱ</span>
+                <span class="txt_2" lang="y">ㄴ</span>
+                <span class="txt_3" lang="y">ㄷ</span>
+                <span class="txt_4" lang="y">ㄹ</span>
+                <span class="txt_5" lang="y">ㅁ</span>
+                <span class="txt_6" lang="y">ㅂ</span>
+              </div>
+            </div>
+          </div>
+          <div class="question_box dir_col align_start">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">선대칭도형에서 대응점끼리 이은 선분은 대칭축과 수직으로 만나고,<br> 대응점에서 대칭축까지의 거리는 같다는 것을 이용합니다.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </article>
+      <article class="page page_2">
+        <h3 lang="y">점 ㄴ과 점 ㄷ의 대응점을 찾아 각각 점 ㅅ과 점 ㅇ으로 표시해 보세요.​</h3>
+        <div class="input_area">
+          <div class="figure_box grid-container" data-grid-size="40" data-answer-single='[{"x":360,"y":80,"value":"ㅅ"},{"x":440,"y":280,"value":"ㅇ"}]'> 
+            <div class="img_area">
+              <span class="img"><img src="../../common_contents/img/EMA523_05_SU/0006_content01.svg" alt="도형이미지"></span>
+              <div class="figure_triangle">
+                <span class="txt_1" lang="y">ㄱ</span>
+                <span class="txt_2" lang="y">ㄴ</span>
+                <span class="txt_3" lang="y">ㄷ</span>
+                <span class="txt_4" lang="y">ㄹ</span>
+                <span class="txt_5" lang="y">ㅁ</span>
+                <span class="txt_6" lang="y">ㅂ</span>
+              </div>
+            </div>
+          </div>
+
+          <!--팝업-->
+          <div class="popup">
+            <button class="icon_txt01" data-value="ㅅ">ㅅ</button>
+            <button class="icon_txt02" data-value="ㅇ">ㅇ</button>
+          </div>
+
+          <div class="question_box dir_col align_start mt_30">
+            <div class="text_wrap">
+              <p lang="y">각 점에서 대칭축에<br> 수선을 그어 봐.</p>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_3">
+        <h3 lang="y">점 ㄱ, 점 ㅅ, 점 ㅇ, 점 ㄹ을 차례대로 이어 선대칭도형을 완성해 보세요.​</h3>
+        <div class="input_area">
+          <div class="figure_box drawline_grid">
+            <div class="drawing_grid_area" data-grid-size='40'
+                     data-answer-single='[[{"x":240,"y":80},{"x":360,"y":120},{"x":440,"y":320},{"x":240,"y":280}]]' 
+                     data-sample-line='[]'>
+                <span class="img"><img src="../../common_contents/img/EMA523_05_SU/0006_content01.svg" alt="도형이미지"></span>
+                <svg class="line_canvas"></svg>
+              </div>
+              <div class="dot_wrap">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+              </div>
+              <div class="figure_triangle">
+                <span class="txt_1" lang="y">ㄱ</span>
+                <span class="txt_2" lang="y">ㄴ</span>
+                <span class="txt_3" lang="y">ㄷ</span>
+                <span class="txt_4" lang="y">ㄹ</span>
+                <span class="txt_5" lang="y">ㅁ</span>
+                <span class="txt_6" lang="y">ㅂ</span>
+                <span class="txt_7" lang="y">ㅅ</span>
+                <span class="txt_8" lang="y">ㅇ</span>
+              </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_4">
+        <h3 lang="y">완성한 도형이 선대칭도형인지 확인해 보세요.</h3>
+        <div class="input_area">
+          <div class="figure_box">
+            <div class="line_chk">
+                <span class="img img_left"><img src="../../common_contents/img/EMA523_05_SU/0006_content01.svg" alt="도형이미지"></span>
+                <span class="img img_right"><img src="../../common_contents/img/EMA523_05_SU/0006_content01.svg" alt="도형이미지"></span>
+              </div>
+              <div class="dot_wrap">
+                <div class="dot dot1"></div>
+                <div class="dot dot2"></div>
+                <div class="dot dot3"></div>
+                <div class="dot dot4"></div>
+              </div>
+              <div class="figure_triangle">
+                <span class="txt_1" lang="y">ㄱ</span>
+                <span class="txt_2" lang="y">ㄴ</span>
+                <span class="txt_3" lang="y">ㄷ</span>
+                <span class="txt_4" lang="y">ㄹ</span>
+                <span class="txt_5" lang="y">ㅁ</span>
+                <span class="txt_6" lang="y">ㅂ</span>
+                <span class="txt_7" lang="y">ㅅ</span>
+                <span class="txt_8" lang="y">ㅇ</span>
+              </div>
+          </div>
+
+          <div class="question_box">
+            <div class="flex align_center gap_12 mt_20 f32b">
+              <span lang="y">도형은 선대칭도형이 </span>
+  
+              <div class="dropdown_wrap">
+                <select class="custom_dropdown" data-answer-single="맞습니다.">
+                  <option></option>
+                  <option value="맞습니다."></option>
+                  <option value="아닙니다."></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page page_5">
+        <h3 lang="y">선대칭도형을 완성하는 방법을 정리해 보세요.</h3>
+        <div class="noti_wrap">
+          <ol class="noti_list">
+            <li>
+              <span class="txt_num" lang="y">1</span>
+              <button class="reveal_btn margin" lang="y">각 점에서 대칭축에 수선을 긋습니다.</button>
+            </li>
+            <li>
+              <span class="txt_num" lang="y">2</span>
+              <button class="reveal_btn margin" lang="y">각 점에서 대칭축까지의 거리가 같도록 대응점을 찾아 표시합니다.</button>
+            </li>
+            <li>
+              <span class="txt_num" lang="y">3</span>
+              <button class="reveal_btn margin" lang="y">각 점을 차례대로 이어 선대칭도형을 완성합니다.</button>
+            </li>
+          </ol>
+        </div>
+      </article>
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit" data-submit="true" lang="y">제출</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+.ico_round {
+	display: inline-block;
+	position: relative;
+	top: 4px;
+}
+
+/* ema521_06_ih_0001 */
+.ema521_06_ih_0001 .boolean_wrap {
+	padding: 0 216px;
+	margin-bottom: 30px;
+}
+.ema521_06_ih_0001 .boolean_row {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
+.ema521_06_ih_0001 .boolean_row .text {
+	font-size: 32px;
+	width: 600px;
+	height: 80px;
+	background: #daefea;
+	border-radius: 999px;
+	position: relative;
+}
+.ema521_06_ih_0001 .boolean_row .text:after {
+	content: "";
+	display: inline-block;
+	width: 52px;
+	height: 46px;
+	background: url(./../common/img/icon_arrow_right_navy.svg) no-repeat 50% / 52px auto;
+	position: absolute;
+	top: 18px;
+	left: calc(100% + 60px);
+}
+.ema521_06_ih_0001 .boolean_row .text p {
+	display: block;
+	text-align: center;
+	height: 100%;
+	line-height: 78px;
+	letter-spacing: -1px;
+}
+.ema521_06_ih_0001 .boolean_box {
+	width: 430px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.ema521_06_ih_0001 .boolean_box > span {
+	display: inline-block;
+	font-size: 32px;
+	vertical-align: middle;
+	padding-top: 4px;
+}
+.ema521_06_ih_0001 .boolean_wrap button + button {
+	margin-left: 30px;
+	position: relative;
+}
+.ema521_06_ih_0001 button + button:before {
+	content: ",";
+	display: inline-block;
+	font-size: 32px;
+	position: absolute;
+	left: -30px;
+}
+/* .result .ema521_06_ih_0001 button.selected {
+	border-color: var(--font-main);
+} */
+.result .ema521_06_ih_0001 button[data-answer-single="true"] {
+	border-color: var(--primary-blue);
+	background-color: rgba(59, 113, 254, 0.3);
+}
+
+/* ema521_06_ih_0002 */
+
+.label_bogi {
+	color: #e76eb7;
+	border-color: #e76eb7;
+}
+
+.ema521_06_ih_0002 .question_box {
+	padding: 0 157px;
+}
+.ema521_06_ih_0002 .text_wrap {
+	/* width: 100%; */
+	padding: 76px 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 3px solid #e76eb7;
+	border-radius: 20px;
+	position: relative;
+}
+.ema521_06_ih_0002 .text_wrap dt {
+	position: absolute;
+}
+.ema521_06_ih_0002 .text_wrap dd + dd {
+	margin-top: 10px;
+}
+.ema521_06_ih_0002 .text_wrap .label_bogi {
+	top: -16px;
+	left: 40px;
+}
+.ema521_06_ih_0002 .input_area {
+	width: 100%;
+}
+.ema521_06_ih_0002 .input_row {
+	padding-left: 40px;
+}
+.ema521_06_ih_0002 .input_row + .input_row {
+	margin-top: 50px;
+}
+.ema521_06_ih_0002 .input_row .text_bullet:before {
+	top: 15px;
+}
+.ema521_06_ih_0002 .input_wrap {
+	margin-left: 12px;
+}
+
+/* ema521_06_ih_0003 */
+.ema521_06_ih_0003 .boolean_wrap {
+	width: 687px;
+	height: 174px;
+	background: url(./../../common_practice/img/EMA521_06_IH/0003_01.png) no-repeat 50% / 100% auto;
+	margin: 0 auto;
+}
+.ema521_06_ih_0003 .button_box {
+	display: flex;
+	gap: 50px;
+}
+.ema521_06_ih_0003 .button_box button {
+	background: none;
+	width: 68px;
+	height: 68px;
+}
+.ema521_06_ih_0003 .button_box button.selected {
+	border-color: var(--font-main);
+}
+.ema521_06_ih_0003 .button_box button[data-answer-single="true"].correct {
+	border-color: var(--primary-blue-800);
+	background: rgba(59, 113, 254, 0.3);
+	border-width: 6px;
+}
+
+/* ema521_06_ih_0004 */
+.ema521_06_ih_0004 .boolean_wrap {
+	width: 680px;
+	height: 148px;
+	background: url(./../../common_practice/img/EMA521_06_IH/0004_01.png) no-repeat 50% / 100% auto;
+	margin: 0 auto;
+}
+.ema521_06_ih_0004 .button_box {
+	display: flex;
+	gap: 67px;
+}
+.ema521_06_ih_0004 .button_box button {
+	width: auto;
+	height: auto;
+	border-radius: 0;
+	background: none;
+	aspect-ratio: unset;
+	padding: 0;
+	border: 0;
+	position: relative;
+	background: transparent !important;
+}
+.ema521_06_ih_0004 .button_box button:after {
+	content: "";
+	width: 60px;
+	height: 60px;
+	mask: url(./../../common_practice/common/img/icon_checked_round.svg) no-repeat 50% / 100% auto;
+	position: absolute;
+	top: -22px;
+	left: -45px;
+}
+.ema521_06_ih_0004 .button_box button.selected:after {
+	background-color: var(--font-main);
+}
+.ema521_06_ih_0004 .button_box button.hint[data-answer-single="true"]:after {
+	background-color: var(--secondary-red);
+}
+.ema521_06_ih_0004 .button_box button[data-answer-single="true"].correct:after {
+	background-color: var(--primary-blue);
+}
+
+/* ema521_06_ih_0005 */
+.ema521_06_ih_0005 .img_area {
+	position: relative;
+}
+.ema521_06_ih_0005 .img_area ul {
+	position: absolute;
+	top: 44px;
+	left: 100px;
+	width: 290px;
+}
+.ema521_06_ih_0005 .img_area li {
+	height: 114px;
+	margin-bottom: 22px;
+	padding: 25px 30px 0 60px;
+	position: relative;
+}
+.ema521_06_ih_0005 .img_area .text {
+	font-size: 20px;
+	font-weight: 700;
+	white-space: normal;
+	word-break: keep-all;
+	line-height: 1.4;
+	letter-spacing: -2px;
+}
+.ema521_06_ih_0005 .img_area .name {
+	font-size: 20px;
+	font-weight: 700;
+	position: absolute;
+	color: #fff;
+}
+.ema521_06_ih_0005 .img_area .name1 {
+	transform: rotate(-5deg);
+	top: -11px;
+	left: 15px;
+}
+.ema521_06_ih_0005 .img_area .name2 {
+	right: -1px;
+	transform: rotate(4deg);
+	top: -12px;
+}
+
+.ema521_06_ih_0005 .input_area {
+	margin-top: 262px;
+	margin-left: 80px;
+}
+.ema521_06_ih_0005 .input_area > span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* ema521_06_ih_0006 */
+.ema521_06_ih_0006 .img_area p {
+	top: 173px;
+	left: 128px;
+	font-size: 28px;
+}
+.ema521_06_ih_0006 .input_area {
+	margin-left: 80px;
+}
+.ema521_06_ih_0006 .input_area span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ema521_06_ih_0006 .contents h3 {
+	margin: 0;
+}
+.ema521_06_ih_0006 .img_area > p {
+	position: absolute;
+	color: #682c1a;
+}
+.ema521_06_ih_0006 .img_area .text1 {
+	top: 183px;
+	left: 528px;
+}
+.ema521_06_ih_0006 .img_area .text2 {
+	top: 260px;
+	left: 377px;
+}
+.ema521_06_ih_0006 .img_area .text3 {
+	top: 248px;
+	left: 568px;
+}
+
+/* ema521_06_ih_0007 */
+
+.ema521_06_ih_0007 .question_box {
+	padding: 0 157px;
+}
+.ema521_06_ih_0007 .text_wrap {
+	width: 800px;
+	padding: 76px 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 3px solid #f9bd88;
+	border-radius: 20px;
+	position: relative;
+}
+.ema521_06_ih_0007 .text_wrap dt {
+	position: absolute;
+	top: -18px;
+}
+.ema521_06_ih_0007 .text_wrap dd + dd {
+	margin-top: 10px;
+}
+.ema521_06_ih_0007 .text_wrap .label_condition {
+	top: -16px;
+	left: 40px;
+}
+.ema521_06_ih_0007 .input_area {
+	width: 100%;
+}
+.ema521_06_ih_0007 .input_row {
+	text-align: right;
+}

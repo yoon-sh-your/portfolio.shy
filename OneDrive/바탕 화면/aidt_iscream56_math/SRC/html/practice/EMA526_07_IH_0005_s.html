@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_07_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema526_07_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_07.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_07_ih_0005">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="5" class="is_star2" lang="y">수 카드 6장 중에서 한 장을 뽑을 때 일이 일어날 가능성을 나타낸 수에 알맞은 일을 한 가지씩 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex justify_center">
+          <img src="../../common_practice/img/EMA526_07_IH/0005_img.svg" alt="" />
+        </div>
+        <div class="table_wrap">
+          <table>
+            <thead>
+              <tr>
+                <th lang="y">가능성</th>
+                <th lang="y">일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>0</th>
+                <td>
+                  <div class="input_wrap">
+                    <math-field></math-field>
+                    <div class="example_box">
+                      <p lang="y">뽑은 수 카드는 홀수일 것입니다.</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                </th>
+                <td>
+                  <div class="input_wrap">
+                    <math-field></math-field>
+                    <div class="example_box">
+                      <p lang="y">뽑은 수 카드는 6 이하인 수일 것입니다.</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>
+                  <div class="input_wrap">
+                    <math-field></math-field>
+                    <div class="example_box">
+                      <p lang="y">뽑은 수 카드는 2의 배수일 것입니다.</p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">0: 일이 일어날 가능성이 불가능한 경우를 씁니다.</p>
+                <p class="text_bullet flex align_center gap_0" lang="y">
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>2</span> </span
+                  >: 일이 일어날 가능성이 반반인 경우를 씁니다.
+                </p>
+                <p class="text_bullet" lang="y">1: 일이 일어날 가능성이 확실한 경우를 씁니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">전송</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

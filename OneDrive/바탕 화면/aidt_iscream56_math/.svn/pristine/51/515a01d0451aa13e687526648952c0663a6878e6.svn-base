@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardflip</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+    
+</head>
+<body>
+    <div id="app_wrap" class="cardflip">
+        <section class="title type2">
+            <h2 data-type="3">이전에 배운 내용을 확인해 봅시다.</h2>
+            <div class="title_right">
+                <button class="goal">학습목표</button>
+            </div>
+        </section>
+
+        <section class="contents">
+            <!-- ul.letCheck > li 구조로 기능 발현 -->
+            <!-- 최초클릭시 커버 태그 remove -->
+            <!-- 이후 클릭시 li태그에 .flip 토글링 -->
+            <ul class="letCheck">
+                <li>
+                    <div class="cover pointer large"></div>
+                    <div class="front">
+                        <p class="f32b">세 자리 수의 덧셈하기</p>
+                    </div>
+                    <div class="back">
+                        <p class="f32b">316&plus;235</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover pointer large"></div>
+                    <div class="front">
+                        <p class="f32b">세 자리 수의 뺄셈하기</p>
+                    </div>
+                    <div class="back">
+                        <p class="f32b">814&minus;357</p>
+                    </div>
+                </li>
+            </ul>
+            <br/>
+            <!-- li에 .back 태그가 없는 경우 3단 플립 동작하지 않습니다.-->
+            <ul class="letCheck">
+                <li>
+                    <div class="cover pointer large"></div>
+                    <div class="front">
+                        <p class="f32b">세 자리 수의 덧셈하기</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cover pointer large"></div>
+                    <div class="front">
+                        <p class="f32b">세 자리 수의 뺄셈하기</p>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 버블 캐릭터 영역 charactor데이터 1~3 중 하나 선택-->
+            <div class="bubble_charactor" data-charactor="1" style="display: none;">
+                <!-- 말풍선 영역 point-position 데이터 top legt, top right, bottom right, bottom left 중 하나 선택하면 말풍선 위치가 캐릭터 기준으로 변경됩니다.-->
+                <div class="bubble" data-point-position="bottom left">
+                    <p lnag="y">카드를 한번더 선택하면</p>
+                    <p lnag="y">카드를 볼수 있어요.</p>
+                </div>
+            </div>
+
+            <div class="btn_area">
+                <!-- 불필요한 태그 제외 후 사용 -->
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

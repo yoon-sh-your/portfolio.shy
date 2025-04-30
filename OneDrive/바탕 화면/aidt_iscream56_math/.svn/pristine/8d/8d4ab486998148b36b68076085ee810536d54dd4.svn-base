@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_04_IH_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_04_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2">
+          <span lang="y">그림을 선택하여</span>
+          <div class="fraction_box"><span>5</span><span>6</span></div>
+          <span lang="y">÷3을  그림에 빗금으로 나타내고, </span>
+          <span class="nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA611_04_IH/0002_01.png" alt="" />
+
+            <div>
+              <div class="flex">
+                <div class="boolean_col">
+                  <div class="text_wrap">
+                    <div class="fraction_box"><span>5</span><span>6</span></div>
+                  </div>
+
+                  <div class="boolean_count_wrap" data-answer-single="5">
+                    <button type="button" class="selected" disabled></button>
+                    <button type="button" class="selected" disabled></button>
+                    <button type="button" class="selected" disabled></button>
+                    <button type="button" class="selected" disabled></button>
+                    <button type="button" class="selected" disabled></button>
+                    <button type="button" disabled></button>
+                  </div>
+                </div>
+                <div class="boolean_col">
+                  <div class="text_wrap">
+                    <div class="fraction_box"><span>5</span><span>6</span></div>
+                    ÷3
+                  </div>
+
+                  <div class="boolean_count_wrap grid_3 bgrd" data-answer-single="15">
+                    <button type="button" class="border_t0 selected"></button>
+                    <button type="button" class="border_t0 selected"></button>
+                    <button type="button" class="border_t0 selected"></button>
+                    <button type="button" class="selected"></button>
+                    <button type="button" class="selected"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                  </div>
+                </div>
+              </div>
+              <div class="input_area">
+                <div class="fraction_box"><span>5</span><span>6</span></div>
+                ÷3=
+                <div class="fraction_box">
+                  <span>
+                    5×
+                    <div class="input_wrap">
+                      <math-field data-answer-single="3" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>
+                    6×
+                    <div class="input_wrap">
+                      <math-field data-answer-single="3" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                </div>
+                ÷3=
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="15" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>18</span>
+                </div>
+                ÷3=
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="15" text-align="center" class="w_80"></math-field>
+                    </div>
+                    ÷3
+                  </span>
+                  <span> 18 </span>
+                </div>
+                =
+                <div class="fraction_box">
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="5" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                  <span>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="18" text-align="center" class="w_80"></math-field>
+                    </div>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div lang="y">
+                  <div class="fraction_box"><span>5</span><span>6</span></div>
+                  분자가 3으로 나누어떨어지도록 분모와 분자에 3을 곱하여 크기가 같은 분수인
+                  <div class="fraction_box"><span>15</span><span>18</span></div>
+                  로 바꾸어 계산합니다.
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

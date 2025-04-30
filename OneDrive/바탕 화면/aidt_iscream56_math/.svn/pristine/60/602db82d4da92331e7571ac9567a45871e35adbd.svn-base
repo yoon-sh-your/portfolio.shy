@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_04_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_04_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">승민이의 키는 150 ㎝이고, 어머니의 키는 승민이의 키의 1.1배입니다. 어머니의 키는 몇 ㎝인지 식을 쓰고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center gap_40">
+          <div class="img"><img src="../../common_practice/img/EMA524_04_IH/0006_img.png" alt="" /></div>
+          <div class="div flex dir_col gap_20">
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap_underline align_center">
+                <div class="input_wrap answer1"><math-field data-answer-single="150×1.1"></math-field></div>
+                =
+                <div class="input_wrap"><math-field data-answer-single="165"></math-field></div>
+              </div>
+            </div>
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">답</span>
+              <div class="input_wrap_underline align_end">
+                <div class="input_wrap">
+                  <math-field data-answer-single="165"></math-field>
+                </div>
+                &nbsp;
+                <span>㎝</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(어머니의 키)=(승민이의 키)×1.1=150×1.1=165 (㎝)</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

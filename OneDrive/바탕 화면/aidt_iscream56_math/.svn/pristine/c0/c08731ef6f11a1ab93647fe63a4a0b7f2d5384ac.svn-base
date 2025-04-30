@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_08_IH_0003</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema613_04_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema613_08_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3_pink" lang="y">어림셈한 결과를 이용하여 몫의 소수점을 옳게 찍은 것을 찾아 ○표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA613_08_IH/0003_01.png" alt="" />
+            <div class="boolean_area">
+              <div class="boolean_wrap">
+                <dl>
+                  <dt>4.96÷8</dt>
+                  <dd>
+                    <button data-answer-single="false">620</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="false">62</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="false">6.2</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="true">0.62</button>
+                  </dd>
+                </dl>
+              </div>
+
+              <div class="boolean_wrap">
+                <dl>
+                  <dt>23.45÷7</dt>
+                  <dd>
+                    <button data-answer-single="false">335</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="false">33.5</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="true">3.35</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="false">0.335</button>
+                  </dd>
+                </dl>
+              </div>
+
+              <div class="boolean_wrap">
+                <dl>
+                  <dt>54.36÷6</dt>
+                  <dd>
+                    <button data-answer-single="false">906</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="false">90.6</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="true">9.06</button>
+                  </dd>
+                  <dd>
+                    <button data-answer-single="false">0.906</button>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">4.96÷8을 5÷8로 어림셈하면 몫은 0보다 크고 1보다 작으므로 0.62입니다.<br />
+                  23.45÷7을 21÷7로 어림셈하면 약 3이므로몫은 3.35입니다.<br />
+                  54.36÷6을 54÷6으로 어림셈하면 약 9이므로 몫은 9.06입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

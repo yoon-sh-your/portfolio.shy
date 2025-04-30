@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA622_05_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema622_05.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema622_05_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">길이가 10 ㎝인 종이를 한 칸의 길이가 2.5 ㎝가 되도록 똑같이 나누어 접으려고 합니다. 종이를 몇 칸으로 나누어 접을 수 있는지 알아봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex align_start">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="931" height="621" viewBox="0 0 931 621" fill="none">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="20" letter-spacing="-0.5px">
+                <tspan x="296.687" y="434.309" lang="y">2.5 ㎝</tspan>
+              </text>
+              <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="12" letter-spacing="-0.5px">
+                <tspan x="126" y="465.266" lang="y">인공위성 등 첨단</tspan>
+                <tspan x="126" y="481.266" lang="y">과학 기술에 활용</tspan>
+                <tspan x="126" y="497.266" lang="y">되는 종이접기 기술을</tspan>
+                <tspan x="126" y="513.266">알아보세요.</tspan>
+              </text>
+              <text fill="#FFDE6A" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="16" font-weight="bold" letter-spacing="-0.5px">
+                <tspan x="150.866" y="298.76" lang="y">종이접기</tspan>
+                <tspan x="164.194" y="322.76" lang="y">체험</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA622_05_SU/0002_content.png" alt="자치회 활동 이미지" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고, 종이를 몇 칸으로 나누어 접을 수 있는지를 어떻게 구할 수 있을지 이야기해 봅시다.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">전체 종이의 길이를 한 칸의 길이로 나눕니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

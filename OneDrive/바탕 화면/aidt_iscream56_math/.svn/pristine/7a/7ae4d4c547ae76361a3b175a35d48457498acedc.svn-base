@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_06_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_06_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              세 분수
+              <span class="fraction_box f32b"><span>4</span><span>6</span></span>, 
+              <span class="fraction_box f32b"><span>3</span><span>8</span></span>,
+              <span class="fraction_box f32b"><span>5</span><span>9</span></span>
+              의 크기를 비교해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">
+              <div class="fraction_txt_wrap">
+                <div class="fraction_txt" lang="y">
+                  <span class="fraction_box ml_0"><span>4</span><span>6</span></span>, 
+                  <span class="fraction_box"><span>3</span><span>8</span></span>,
+                  <span class="fraction_box"><span>5</span><span>9</span></span>
+                  의 크기를 어떻게 비교할 수 있을지 이야기해 보세요.
+                </div>
+              </div>              
+            </h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">두 분수끼리 통분하여 차례대로 크기를 비교하면 될 것 같습니다.</p>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <h3 lang="y">두 분수끼리 통분하여 크기를 비교해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="fraction_row row1">
+                <div class="fra_ex fra_arr">
+                  <div class="fra_parens">
+                    <span class="fraction_box f32b"><span>4</span><span>6</span></span
+                    >,
+                    <span class="fraction_box f32b"><span>3</span><span>8</span></span>
+                  </div>
+                </div>
+                <div class="fra_inn fra_arr arr2">
+                  <div class="fra_parens">
+                    <div class="input_wrap fraction_wrap" data-hint-position="left">
+                      <math-field data-answer-single="(16)/(24)"></math-field>
+                    </div>
+                    ,
+                    <div class="input_wrap fraction_wrap" data-hint-position="right">
+                      <math-field data-answer-single="(9)/(24)"></math-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_inn">
+                  <div class="fra_drop_down">
+                    <span class="fraction_box f32b"> 
+                      <span>4</span>
+                      <span>6</span>
+                    </span>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown math_symbol" data-answer-single=">">
+                        <option></option>
+                        <option value=">">></option>
+                        <option value="=">=</option>
+                        <option value="<"><</option>
+                      </select>
+                    </div>
+                    <span class="fraction_box f32b">
+                      <span>3</span>
+                      <span>8</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fraction_row row2">
+                <div class="fra_ex fra_arr">
+                  <div class="fra_parens">
+                    <span class="fraction_box f32b"><span>3</span><span>8</span></span
+                    >,
+                    <span class="fraction_box f32b"><span>5</span><span>9</span></span>
+                  </div>
+                </div>
+                <div class="fra_inn fra_arr arr2">
+                  <div class="fra_parens">
+                    <div class="input_wrap fraction_wrap" data-hint-position="left">
+                      <math-field data-answer-single="(27)/(72)"></math-field>
+                    </div>
+                    ,
+                    <div class="input_wrap fraction_wrap" data-hint-position="right">
+                      <math-field data-answer-single="(40)/(72)"></math-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_inn">
+                  <div class="fra_drop_down">
+                    <span class="fraction_box f32b">
+                      <span>3</span>
+                      <span>8</span>
+                    </span>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown math_symbol" data-answer-single="<">
+                        <option></option>
+                        <option value=">">></option>
+                        <option value="=">=</option>
+                        <option value="<"><</option>
+                      </select>
+                    </div>
+                    <span class="fraction_box f32b">
+                      <span>5</span>
+                      <span>9</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="fraction_row row3">
+                <div class="fra_ex fra_arr">
+                  <div class="fra_parens">
+                    <span class="fraction_box f32b"><span>4</span><span>6</span></span
+                    >,
+                    <span class="fraction_box f32b"><span>5</span><span>9</span></span>
+                  </div>
+                </div>
+                <div class="fra_inn fra_arr arr2">
+                  <div class="fra_parens">
+                    <div class="input_wrap fraction_wrap" data-hint-position="left">
+                      <math-field data-answer-single="(12)/(18)"></math-field>
+                    </div>
+                    ,
+                    <div class="input_wrap fraction_wrap" data-hint-position="right">
+                      <math-field data-answer-single="(10)/(18)"></math-field>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_inn">
+                  <div class="fra_drop_down">
+                    <span class="fraction_box f32b">
+                      <span>4</span>
+                      <span>6</span>
+                    </span>
+                    <div class="dropdown_wrap">
+                      <select class="custom_dropdown math_symbol" data-answer-single=">">
+                        <option></option>
+                        <option value=">">></option>
+                        <option value="=">=</option>
+                        <option value="<"><</option>
+                      </select>
+                    </div>
+                    <span class="fraction_box f32b">
+                      <span>5</span>
+                      <span>9</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="input_wrap example_input">
+                <div class="example_box">
+                  <div class="ex_col">
+                    <span class="fraction_box"><span>16</span><span>24</span></span>
+                    <span class="comma">,</span>
+                    <span class="fraction_box"><span>9</span><span>24</span></span>
+                  </div>
+                  <div class="ex_col">
+                    <span class="fraction_box"><span>27</span><span>72</span></span>
+                    <span class="comma">,</span>
+                    <span class="fraction_box"><span>40</span><span>72</span></span>
+                  </div>
+                  <div class="ex_col">
+                    <span class="fraction_box"><span>12</span><span>18</span></span>
+                    <span class="comma">,</span>
+                    <span class="fraction_box"><span>10</span><span>18</span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_3">
+            <h3 lang="y">크기가 큰 분수부터 차례대로 써 보세요.</h3>
+            <div class="question_box justify_center dir_col">
+              <div class="fraction_col">
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(4)/(6)"></math-field>
+                </div>
+                ,
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(5)/(9)"></math-field>
+                </div>
+                ,
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="(3)/(8)"></math-field>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_4">
+            <h3 lang="y">분모가 다른 세 분수의 크기를 비교하는 방법을 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">두 분수끼리 통분하여 차례대로 크기를 비교합니다.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

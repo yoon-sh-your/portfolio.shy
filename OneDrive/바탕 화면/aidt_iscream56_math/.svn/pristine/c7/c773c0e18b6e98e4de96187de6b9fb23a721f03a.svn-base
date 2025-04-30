@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_05_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema614_05_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_05">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">
+          <span lang="y"
+            >어느 기념품 가게에서 하루 동안 모자를 260개 중 130개 팔았고, 부채를 120개 중 78개 팔았습니다. 처음에 있던 개수에 대한<br />
+            판매한 개수의 비율이 더 낮은 물건을 구해 보세요.</span
+          >
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ena614_05_0003">
+          <div class="img_are">
+            <img src="../../common_practice/img/EMA614_05_IH/item.png" />
+          </div>
+
+          <div class="boolean_wrap">
+            <button data-answer-single="true"></button>
+            <button data-answer-single="false"></button>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>모자를 260개 중 130개 팔았으므로 처음에 있던 개수에 대한 판매한 개수의 비율은</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <div class="fraction_box">
+                    <span>130</span>
+                    <span>260</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>1</span>
+                    <span>2</span>
+                  </div>
+                  <p>), 0.5입니다. 부채를 120개 중 78개 팔았으므로 처음에 있던 개수에 대한 팔린 개수의</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>비율은</p>
+                  <div class="fraction_box">
+                    <span>75</span>
+                    <span>120</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>13</span>
+                    <span>20</span>
+                  </div>
+                  <p>), 0.65입니다. 0.5 < 0.65이므로 처음에 있던 개수에 대한 판매한</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>개수의 비율이 더 낮은 물건은 모자입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

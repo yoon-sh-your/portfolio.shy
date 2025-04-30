@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_02_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_02_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">계산해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div class="flex gap_100 dir_col">
+            <div class="flex align_center gap_10">
+              <div class="fraction_box">
+                <span>6</span>
+                <span>7</span>
+              </div>
+              <span>× 5 = </span>
+              <!-- 단답형 분수식 -->
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="4(2)/(7)(=(30)/(7))" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+              </div>
+            </div>
+            <div class="flex align_center gap_10">
+              <div class="fraction_box">
+                <span>9</span>
+                <span>16</span>
+              </div>
+              <span>× 12 = </span>
+              <!-- 단답형 분수식 -->
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="6(3)/(4)(=(27)/(4))" text-align="center" placeholder="&nbsp;" class="w_80"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <div class="fraction_box"><span>6</span><span>7</span></div>
+                  <span>×</span>
+                  <span>5</span>
+                  <span>=</span>
+                  <div class="fraction_box"><span>6×5</span><span>7</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>30</span><span>7</span></div>
+                  <span>=</span>
+                  <span>4</span>
+                  <div class="fraction_box"><span>2</span><span>7</span></div>
+                </div>
+                <div class="flex align_center gap_10">
+                  <div class="fraction_box">
+                    <span>9</span><span class="mark_error">16<i>4</i></span>
+                  </div>
+                  <span>×</span>
+                  <span class="mark_error up">12<i>3</i></span>
+                  <span>=</span>
+                  <div class="fraction_box"><span>9×3</span><span>4</span></div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>27</span><span>4</span></div>
+                  <span>=</span>
+                  <span>6</span>
+                  <div class="fraction_box"><span>3</span><span>4</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

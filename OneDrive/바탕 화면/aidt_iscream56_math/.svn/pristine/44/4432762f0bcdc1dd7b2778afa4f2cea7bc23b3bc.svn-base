@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_07_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_07">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">
+          <span lang="y"
+            >소망 은행과 사랑 은행에 1년 동안 예금한 돈과 받은 이자를 나타낸 표입니다. 두 은행에 예금한 돈에 대한 이자의 비율을 <br />
+            각각 백분율로 나타내어 빈칸에 써넣고, 비율이 더 낮은 은행을 구해 보세요.
+          </span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema614_07_0002">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th>은행</th>
+                  <td class="bg">소망</td>
+                  <td class="bg">사랑</td>
+                </tr>
+                <tr>
+                  <th>예금한 돈(원)</th>
+                  <td>500000</td>
+                  <td>600000</td>
+                </tr>
+                <tr>
+                  <th>이자(원)</th>
+                  <td>20000</td>
+                  <td>18000</td>
+                </tr>
+                <tr>
+                  <th>
+                    예금한 돈에 대한<br />
+                    이자의 비율(％)
+                  </th>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="4"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="3"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="flex justify_center align_center gap_4">
+            <div class="input_wrap">
+              <math-field data-answer-single="사랑"></math-field>
+            </div>
+            <p>은행</p>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>소망 은행에 예금한 돈은 500000원이고 이자는 20000원이므로 예금한 돈에 대한 이자의</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>비율은</p>
+                  <div class="fraction_box ml_5">
+                    <span>20000</span>
+                    <span>500000</span>
+                  </div>
+                  <p>×100=4</p>
+                  ➔
+                  <p>4 ％입니다. 사랑 은행에 예금한 돈은 600000원이고 이자는</p>
+                </div>
+
+                <div class="flex gap_4 align_center">
+                  <p>18000원이므로 예금한 돈에 대한 이자의 비율은</p>
+                  <div class="fraction_box">
+                    <span>18000</span>
+                    <span>600000</span>
+                  </div>
+                  <p>×100=3</p>
+                  ➔
+                  <p>3 ％입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>4>3이므로 예금한 돈에 대한 이자의 비율이 더 낮은 은행은 사랑 은행입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

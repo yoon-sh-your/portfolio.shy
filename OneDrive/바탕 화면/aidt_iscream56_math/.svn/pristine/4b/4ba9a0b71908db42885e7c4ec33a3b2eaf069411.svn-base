@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA513_05_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema513_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema513_05_ih_0004">
+      <section class="title group">
+        <h2 lang="y"><span class="pink">[3~4]</span> 서울이 오전 7시일 때, 같은 날 태국의 방콕은 오전 5시이고 케냐의 나이로비는 오전 1시입니다.물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="4_pink" lang="y"><img src="../../common_contents/common/img/title_heading_num_3_pink.svg" class="heading" />에서 찾은 두 양 사이의 대응 관계를 기호를 사용하여 식으로 나타내어 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box dir_col">
+          <div class="question_box gap_12" lang="y">
+            서울의 시각을
+            <div class="input_wrap"><math-field data-answer-single="△"></math-field></div>
+            ,
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="방콕">
+                <option></option>
+                <option value="방콕" lang="y">방콕</option>
+                <option value="나이로비" lang="y">나이로비</option>
+              </select>
+            </div>
+            의 시각을
+            <div class="input_wrap"><math-field data-answer-single="○"></math-field></div>
+            (이)라고 할 때,
+          </div>
+          <div class="question_box gap_12" lang="y">
+            두 양 사이의 대응 관계를 식으로 나타내면
+            <div class="input_wrap"><math-field data-answer-single="○"></math-field></div>
+            =
+            <div class="input_wrap"><math-field data-answer-single="△-2"></math-field></div>
+            입니다.
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">방콕의 시각은 서울의 시각보다 2시간 느리므로 (방콕의 시각)=(서울의 시각)-2입니다. <br />또는 서울의 시각은 방콕의 시각보다 2시간 빠르므로 (서울의 시각)=(방콕의 시각)＋2입니다.</p>
+
+                <p class="text_bullet" lang="y">나이로비의 시각은 서울의 시각보다 6시간 느리므로 (나이로비의 시각)=(서울의 시각)-6입니다. <br />또는 서울의 시각은 나이로비의 시각보다 6시간 빠르므로 (서울의 시각)=(나이로비의 시각)+6입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

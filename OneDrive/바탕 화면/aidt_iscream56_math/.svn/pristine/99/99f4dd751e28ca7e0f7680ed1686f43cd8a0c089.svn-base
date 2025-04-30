@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_06_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_06_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">계산해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="flex justify_center gap_120">
+            <div class="question_box dir_col">
+              <div class="flex align_start dir_col gap_40">
+                <div class="flex align_center mt_6">
+                  0.6×0.7=
+                  <div class="input_wrap">
+                    <math-field data-answer-single="0.42"></math-field>
+                  </div>
+                </div>
+                <div class="flex align_center mt_6">
+                  3.8×0.4=
+                  <div class="input_wrap">
+                    <math-field data-answer-single="1.52"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="question_box dir_col">
+              <div class="flex align_start dir_col gap_40">
+                <div class="flex align_center mt_6">
+                  1.5×0.4=
+                  <div class="input_wrap">
+                    <math-field data-answer-single="0.6"></math-field>
+                  </div>
+                </div>
+                <div class="flex align_center mt_6">
+                  5.3×2.7=
+                  <div class="input_wrap">
+                    <math-field data-answer-single="14.31"></math-field>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0">
+                  0.6×0.7=
+                  <div class="fraction_box">
+                    <span>6</span>
+                    <span>10</span>
+                  </div>
+                  ×
+                  <div class="fraction_box">
+                    <span>7</span>
+                    <span>10</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>42</span>
+                    <span>100</span>
+                  </div>
+                  =0.42
+                </div>
+                <div class="flex align_center gap_0 mt_20">
+                  1.5×0.4=
+                  <div class="fraction_box">
+                    <span>15</span>
+                    <span>10</span>
+                  </div>
+                  ×
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>10</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>60</span>
+                    <span>100</span>
+                  </div>
+                  =0.6
+                </div>
+
+                <div class="flex align_center gap_0 mt_20">
+                  3.8×0.4=
+                  <div class="fraction_box">
+                    <span>38</span>
+                    <span>10</span>
+                  </div>
+                  ×
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>10</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>152</span>
+                    <span>100</span>
+                  </div>
+                  =1.52
+                </div>
+
+                <div class="flex align_center gap_0 mt_20">
+                  5.3×2.7=
+                  <div class="fraction_box">
+                    <span>53</span>
+                    <span>10</span>
+                  </div>
+                  ×
+                  <div class="fraction_box">
+                    <span>27</span>
+                    <span>10</span>
+                  </div>
+                  =
+                  <div class="fraction_box">
+                    <span>1431</span>
+                    <span>100</span>
+                  </div>
+                  =14.31
+                </div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

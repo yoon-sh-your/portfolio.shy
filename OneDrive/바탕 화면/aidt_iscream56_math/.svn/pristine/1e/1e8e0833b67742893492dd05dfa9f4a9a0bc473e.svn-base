@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA616_03_SU_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema616_03.css" />
+  <script src="../../common_contents/js/ema616_03_0003.js"></script>
+</head>
+
+<body>
+  <div id="app_wrap" class="ema616_03_su_0003" data-current-page="page_1, page_2">
+    <section class="title type2">
+      <h2 class="flex" data-head="1" lang="y">
+        생필품을 담은 직육면체 모양 상자를 드론으로 운반하려고 합니다.
+        직육면체 모양 상자의 부피를 구해 봅시다.
+      </h2>
+    </section>
+
+    <section class="contents paging_layout">
+      <article class="page page_1">
+        <!-- 기능구현 필요 -->
+        <h3 lang="y">
+          부피가 1 ㎤인 쌓기나무의 수를 세어 상자의 부피를 구해 보세요.
+        </h3>
+        <div class="flex">
+          <div class="top_box">
+            <img src="../../common_contents/img/EMA616_03_SU/top_box.png" alt="" />
+            <div class="first_box">
+              <div class="box_show"></div>
+              <div class="wrap_box">
+                <div class="btn_wrap">
+                  <button class="btn_plus">-</button>
+                  <p lang="y">쌓기나무 개수</p>
+                  <button class="btn_minus">+</button>
+                </div>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown">
+                    <option></option>
+                    <!--최초선택데이터 생성 방지용-->
+                    <option value="12"></option>
+                    <option value="24"></option>
+                    <option value="36"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="second_box">
+              <div class="top_input">
+                <div class="input_wrap answer1">
+                  <span lnag="y">쌓기나무의 수:</span>
+                  <math-field type="number" data-answer-single="36" text-align="center"></math-field>
+                  <span>개</span>
+                </div>
+
+                <div class="input_wrap answer2">
+                  <span lnag="y">부피:</span>
+                  <math-field type="number" data-answer-single="36" text-align="center"></math-field>
+                  <span>&nbsp;㎤</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottom_box">
+            <img src="../../common_contents/img/EMA616_03_SU/bottom_box.png" alt="" />
+            <div class="first_box">
+              <div class="box_show box_show2"></div>
+              <div class="wrap_box">
+                <div class="btn_wrap">
+                  <button class="btn_plus">-</button>
+                  <p lang="y">쌓기나무 개수</p>
+                  <button class="btn_minus">+</button>
+                </div>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown">
+                    <option></option>
+                    <!--최초선택데이터 생성 방지용-->
+                    <option value="20"></option>
+                    <option value="40"></option>
+                    <option value="60"></option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="second_box">
+              <div class="top_input">
+                <div class="input_wrap answer1">
+                  <span lnag="y">쌓기나무의 수:</span>
+                  <math-field type="number" data-answer-single="40" text-align="center"></math-field>
+                  <span>개</span>
+                </div>
+
+                <div class="input_wrap answer2">
+                  <span lnag="y">부피:</span>
+                  <math-field type="number" data-answer-single="40" text-align="center"></math-field>
+                  <span>&nbsp;㎤</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 1page -->
+
+      <article class="page page_2">
+        <h3 lang="y">쌓기나무의 수를 어떻게 세었는지 이야기해 보세요.</h3>
+        <div class="po_absolute">
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea" id="inputElement01" type="text"></math-field>
+              <ol class="example_box">
+                <li lang="y">쌓기나무의 수를 하나씩 세었습니다.</li>
+                <li lang="y">
+                  한 층에 놓인 쌓기나무의 수를 센 다음 몇 층까지 쌓여 있는지
+                  세었습니다.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- 2page -->
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+        <button class="btnSubmit">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
+<script></script>

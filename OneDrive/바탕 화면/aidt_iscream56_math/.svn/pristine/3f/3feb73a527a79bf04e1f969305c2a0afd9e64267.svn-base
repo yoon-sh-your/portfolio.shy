@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA515_05_SU_0006_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema515_05.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema515_05_su_0006">
+    <section class="title type2">
+      <h2 data-head="4_light_purple" lang="y">케이크를 만드는 데 다연이는 시우보다 우유를 몇 L 더 많이 사용했는지 구해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="container_515">
+        <div class="left_515">
+          <div class="img_515">
+            <span class="other_method_name dayeon" lang="y">다연</span>
+            <span class="other_method_name seewoo" lang="y">시우</span>
+            <img src="../../common_contents/img/EMA515_05_SU/0006_content.png" alt="" />
+            <div class="texts_515">
+
+              <div class="fraction_row">
+                나는 우유를
+                <div class="fraction_inn">
+                  <div class="fraction_box">
+                    <span>6</span>
+                    <span>7</span>
+                  </div>
+                  &nbsp;L 사용했어.
+                </div>
+              </div>
+
+              <div class="fraction_row">
+                나는 우유를
+                <div class="fraction_inn">
+                  <div class="fraction_box">
+                    <span>2</span>
+                    <span>5</span>
+                  </div>
+                  &nbsp;L 사용했어.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="right_515">
+          <div class="operations">
+            <div class="input_wrap fraction_wrap frac1">
+              <math-field data-answer-single="(16)/(35)"></math-field>
+            </div>
+            &nbsp;L
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_area">
+        <button class="btnType key">입력타입토글</button>
+        <button class="btnReset">리셋</button>
+        <button class="btnCheck">확인</button>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

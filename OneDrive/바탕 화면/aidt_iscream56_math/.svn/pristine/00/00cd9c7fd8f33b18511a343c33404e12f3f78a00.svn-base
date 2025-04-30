@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA616_05_SU_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema616_09 (2).css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema616_05_su_0007">
+      <section class="title type2">
+        <h2 data-head="5">
+          <div>
+            <span lang="y">직육면체의 부피는 몇 ㎥인지 구해 봅시다.</span>
+            <button type="button" class="btn calculator">계산기</button>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex">
+          <div class="box_a">
+            <img src="../../common_contents/img/EMA616_09_SU/616_05_005.png" alt="" />
+            <div class="length_a">3 m</div>
+            <div class="length_b">3 m</div>
+            <div class="length_c">6 m</div>
+            <div class="input_wrap answer2">
+              <math-field data-answer-single="54"></math-field>
+              <span>㎥</span>
+            </div>
+          </div>
+          <div class="box_b">
+            <img src="../../common_contents/img/EMA616_09_SU/616_05_006.png" alt="" />
+            <div class="length_a">250 ㎝</div>
+            <div class="length_b">400 ㎝</div>
+            <div class="length_c">300 ㎝</div>
+            <div class="input_wrap answer2">
+              <math-field data-answer-single="30"></math-field>
+              <span>㎥</span>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

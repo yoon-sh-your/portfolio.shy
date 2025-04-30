@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_02_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema514_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_02_su_0003">
+      <section class="title type2">
+        <h2 data-head="1" lang="y" class="fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              퐁뒤를 먹기 위해 치즈를 녹인 후 크기가 같은 그릇에 준서는
+              <span class="fraction_box"><span>1</span><span>2</span></span>만큼,
+              하은이는 <span class="fraction_box"><span>2</span><span>4</span></span>만큼 각각 담았습니다. 준서와 하은이가 담은 치즈의
+            </div>
+            <div class="fraction_txt" lang="y">
+              양을 비교해 봅시다.
+            </div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+          <article class="page page_1">
+            <h3 lang="y">준서와 하은이가 담은 치즈의 양만큼 색칠해 보세요.</h3>
+            <div class="question_box justify_center">
+              <div class="count_wrap">
+                <div class="count_col">
+                  <span lang="y" class="nm">준서</span>
+                  <div class="fraction_box f32r" lang="y"><span>1</span><span>2</span></div>
+                  <div class="boolean_count_wrap col" data-answer-single="1">
+                    <button></button>
+                    <button></button>
+                  </div>
+                </div>
+                <div class="count_col">
+                  <span lang="y" class="nm">하은</span>
+                  <div class="fraction_box f32r" lang="y"><span>2</span><span>4</span></div>
+                  <div class="boolean_count_wrap col" data-answer-single="2">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_2">
+            <div class="question_box">
+              <div class="col1">
+              <div class="count_wrap">
+                <img src="./../../common_contents/img/EMA514_02_SU/0003_content.png" alt="">
+                <div class="count_col">
+                  <span lang="y" class="nm">준서</span>
+                  <div class="fraction_box f20r" lang="y"><span>1</span><span>2</span></div>
+                </div>
+                <div class="count_col">
+                  <span lang="y" class="nm">하은</span>
+                  <div class="fraction_box f20r" lang="y"><span>2</span><span>4</span></div>                  
+                </div>
+              </div>
+            </div>
+              <div class="col2">
+                <div class="col2_inner">
+                <h3 lang="y">
+                  <div class="fraction_txt_wrap">
+                    <div class="fraction_txt" lang="y">
+                      <span class="fraction_box ml_0"><span>1</span><span>2</span></span>과 
+                      <span class="fraction_box"><span>2</span><span>4</span></span>의 크기를 비교해 보세요.
+                    </div>
+                  </div>
+                </h3>
+                <div class="compare_wrap">
+                <span lang="y" class="f32b">두 분수의 크기가</span>
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown" data-answer-single="같습니다.">
+                    <option value=""></option>
+                    <option value="같습니다."></option>
+                    <option value="다릅니다."></option>
+                  </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="page page_3">
+            <h3 lang="y">준서와 하은이가 담은 치즈의 양을 비교해 보세요.</h3>
+            <div class="question_box justify_center">
+                <span lang="y" class="f32b">두 사람이 담은 치즈의 양은</span>
+
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown" data-answer-single="같습니다.">
+                    <option value=""></option>
+                    <option value="같습니다."></option>
+                    <option value="다릅니다."></option>
+                  </select>
+                </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

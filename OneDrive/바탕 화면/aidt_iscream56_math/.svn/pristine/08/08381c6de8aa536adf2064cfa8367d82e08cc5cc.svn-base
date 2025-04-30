@@ -1,0 +1,60 @@
+/* ema627_01 common */
+.input_wrap:has(math-field.textarea) {
+  width: 100%;
+}
+.input_wrap math-field.textarea {
+  width: 100%;
+  height: 250px;
+}
+
+/* ema627_01_su_0002 */
+.ema627_01_su_0002 .img_wrap {
+  position: relative;
+}
+.ema627_01_su_0002 .page_1 .img_wrap .img_txt {
+  position: absolute;
+  left: 114px;
+  bottom: 15px;
+  gap:2px;
+}
+.ema627_01_su_0002 .page_1 .img_wrap .img_txt p {
+  position: relative;
+  padding-left: 8px;
+  font-size: 10px;
+  line-height: 14px;
+}
+.ema627_01_su_0002 .page_1 .img_wrap .img_txt p::before {
+  content: "";
+  position: absolute;
+  top:4px;
+  left:0;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #222;
+  border-radius: 50em;
+}
+.ema627_01_su_0002 .page_1 .desc_wrap p {
+  position: relative;
+  padding-left: 16px;
+}
+.ema627_01_su_0002 .page_1 .desc_wrap p::before {
+  content: "";
+  position: absolute;
+  top:20px;
+  left:0;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #222;
+  border-radius: 50em;
+}
+.ema627_01_su_0002 .page_2 .img_wrap {
+  margin:0 auto;
+  width: max-content;
+}
+.ema627_01_su_0002 .page_2 .img_wrap .img_txt {
+  position: absolute;
+  left: 15px;
+  top: 27px;
+}

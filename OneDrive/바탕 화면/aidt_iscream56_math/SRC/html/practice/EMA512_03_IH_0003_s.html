@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA512_03_IH_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema512_03_ih_0003.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema512_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema512_03_ih_0003">
+      <section class="title type2">
+        <h2 data-head="3" lang="y">6의 배수에 모두 ○표, 10의 배수에 모두 △표 하세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="drag_checkout">
+          <div class="draggable_wrap">
+            <div class="single_draggable draggable circle"></div>
+            <div class="single_draggable draggable triangle"></div>
+          </div>
+
+          <div class="drag_group g1" data-group-limit="9" data-answer-single="[[false, false],[false, false],[false, false],[false, false],[false, false],[false, true],[false, false],[false, false],[false, false],[true, false],[false, false],[false, true],[false, false],[false, false],[false, false],[false, false],[false, false],[false, true],[false, false],[true, false],[false, false],[false, false],[false, false],[false, true],[false, false],[false, false],[false, false],[false, false],[false, false],[true, true],[false, false],[false, false],[false, false],[false, false],[false, false],[false, true],[false, false],[false, false],[false, false],[true, false]]">
+            <div class="inner_group">
+              <div class="droppable" data-value="false false">1</div>
+              <div class="droppable" data-value="false false">2</div>
+              <div class="droppable" data-value="false false">3</div>
+              <div class="droppable" data-value="false false">4</div>
+              <div class="droppable" data-value="false false">5</div>
+              <div class="droppable" data-value="false true">6</div>
+              <div class="droppable" data-value="false false">7</div>
+              <div class="droppable" data-value="false false">8</div>
+              <div class="droppable" data-value="false false">9</div>
+              <div class="droppable" data-value="true false">10</div>
+              <div class="droppable" data-value="false false">11</div>
+              <div class="droppable" data-value="false true">12</div>
+              <div class="droppable" data-value="false false">13</div>
+              <div class="droppable" data-value="false false">14</div>
+              <div class="droppable" data-value="false false">15</div>
+              <div class="droppable" data-value="false false">16</div>
+              <div class="droppable" data-value="false false">17</div>
+              <div class="droppable" data-value="false true">18</div>
+              <div class="droppable" data-value="false false">19</div>
+              <div class="droppable" data-value="true false">20</div>
+              <div class="droppable" data-value="false false">21</div>
+              <div class="droppable" data-value="false false">22</div>
+              <div class="droppable" data-value="false false">23</div>
+              <div class="droppable" data-value="false true">24</div>
+              <div class="droppable" data-value="false false">25</div>
+              <div class="droppable" data-value="false false">26</div>
+              <div class="droppable" data-value="false false">27</div>
+              <div class="droppable" data-value="false false">28</div>
+              <div class="droppable" data-value="false false">29</div>
+              <div class="droppable" data-value="true true">30</div>
+              <div class="droppable" data-value="false false">31</div>
+              <div class="droppable" data-value="false false">32</div>
+              <div class="droppable" data-value="false false">33</div>
+              <div class="droppable" data-value="false false">34</div>
+              <div class="droppable" data-value="false false">35</div>
+              <div class="droppable" data-value="false true">36</div>
+              <div class="droppable" data-value="false false">37</div>
+              <div class="droppable" data-value="false false">38</div>
+              <div class="droppable" data-value="false false">39</div>
+              <div class="droppable" data-value="true false">40</div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p class="text_bullet" lang="y">6의 배수: 6×1=6, 6×2=12, 6×3=18, 6×4=24, 6×5=30, 6×6=36</p>
+                <p class="text_bullet" lang="y">10의 배수: 10×1=10, 10×2=20, 10×3=30, 10×4=40</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key" lang="y">입력타입토글</button> -->
+          <button class="btnReset" lang="y">리셋</button>
+          <button class="btnCheck" lang="y">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_02_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614">
+      <section class="title group">
+        <h2 lang="y"><span class="green">[4~5]</span> 가위 2개와 풀 4개를 한 상자에 담아 포장하고 있습니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="title type2">
+        <h2 data-head="5_green" lang="y">
+          <span lang="y">상자 수에 따른 가위의 수와 풀의 수를 비교해 보세요. </span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema614_02">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">상자 수</th>
+                  <td>한 상자</td>
+                  <td>두 상자</td>
+                  <td>세 상자</td>
+                  <td>네 상자</td>
+                  <td>다섯상자</td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">가위의 수(개)</th>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field class="correct" value="8"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field class="correct" value="10"></math-field>
+                    </div>
+                  </td>
+                  <td>...</td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">풀의 수(개)</th>
+                  <td>4</td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field class="correct" value="8"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field class="correct" value="12"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field class="correct" value="16"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field class="correct" value="20"></math-field>
+                    </div>
+                  </td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="ema614_02_txt mt_40">
+            <div class="input_wrap">
+              <math-field class="textarea input"></math-field>
+
+              <div class="example_box">
+                <p>상자 수에 따른 풀의 수는 가위의 수의 2배입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve flex align_center gap_4">
+                <p>가위 2개, 풀 4개를 한 상자에 담아 포장하므로 상자 수가 한 상자, 두 상자, 세 상자, 네 상자, 다 섯 상자, ...일 때 가위의 수는 2개, 4개, 6개, 8개, 10개, ...이고, 풀의 수는 4개, 8개, 12개, 16개, 20개, ...입니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSample btnCheck">예시</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

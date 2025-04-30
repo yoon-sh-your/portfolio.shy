@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_05_IH_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema524_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_05_ih_0007">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="7" class="is_star">50×1.45에 알맞은 문제를 만들고, 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="tabbox">
+            <strong class="tit_tabbox" lang="y">문제 만들기</strong>
+            <div class="conts_tabbox">
+              <div class="inner">
+                <p lang="y">길이가 50㎝인 막대가 있습니다.</p>
+                <div class="input_wrap answer1 mt_10">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                    <p lang="y">막대의 그림자 길이를 재었더니 막대 길이의 1.45배였습니다.</p>
+                    <p lang="y">막대의 그림자 길이는 몇 ㎝인지 구해 보세요.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify_end gap_4 mt_20">
+                <span class="label_gray">답</span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="72.5"></math-field>
+                </div>
+                <span>㎝</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(자연수)×(소수 두 자리 수)의 상황에 알맞은 문제를 만듭니다.</p>
+                <div class="flex align_center gap_12">→ 50×1.45=72.5</div>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

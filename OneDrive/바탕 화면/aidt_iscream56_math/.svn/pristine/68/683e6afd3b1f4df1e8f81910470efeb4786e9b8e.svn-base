@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_06_SU_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema526_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_06_su_0002">
+      <section class="title type2">
+        <h2 data-type="2" data-text="생각 깨우기" lang="y">건강 체조를 하기 위해 주머니에서 손수건 한 장을 꺼내려고 합니다. 빨간색 손수건이 나올 가능성을 비교해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="img_row">
+          <div class="video_wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1573 830" fill="none">
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="27.1207" letter-spacing="-0.968596px" lang="y">
+                <tspan x="1019.74" y="414.514">손수건 한 장을 꺼낼 때,</tspan>
+                <tspan x="1017.35" y="453.258">꺼낸 손수건이 빨간색일</tspan>
+                <tspan x="1028.59" y="492.002">가능성을 비교해 보자</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="27.1207" letter-spacing="-0.968596px" lang="y">
+                <tspan x="222.28" y="726.012">가</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="27.1207" letter-spacing="-0.968596px" lang="y">
+                <tspan x="435.28" y="726.012">나</tspan>
+              </text>
+              <text fill="black" xml:space="preserve" style="white-space: pre" font-family="Pretendard" font-size="27.1207" letter-spacing="-0.968596px" lang="y">
+                <tspan x="647.28" y="726.012">다</tspan>
+              </text>
+            </svg>
+            <img src="../../common_contents/img/EMA526_06_SU/0002_content.png" alt="" />
+            <button class="play" data-video="1"></button>
+          </div>
+
+          <div class="input_area">
+            <h3 lang="y">영상을 보고, 어떤 상황을 나타내고 있는지 이야기해 보세요.</h3>
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <div class="example_box">
+                <p lang="y">각각의 주머니에서 손수건 한 장을 꺼낼 때 빨간색 손수건이 나올 가능성을 비교해 보려는 상황입니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

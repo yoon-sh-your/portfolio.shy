@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA524_01_SU_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_01_su_0001 intro_page">
+      <section class="title type1">
+        <h1 data-number="4" lang="y">소수의 곱셈</h1>
+        <button class="goal" onclick="openPop('.pop_goal_wrap')" lang="y">학습 목표</button>
+      </section>
+
+      <div class="pop_goal_wrap">
+        <div class="pop_goal">
+          <button class="close" onclick="closePop('.pop_goal_wrap')">닫기</button>
+          <div class="pop_goal_inner">
+            <label>이번 시간에 배울 내용</label>
+            <p>우리 주변에서 볼 수 있는 소수의 곱셈이 필요한 상황을 찾아보면서 학습에 흥미를 가질 수 있어요.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="contents">
+        <div class="text_box">
+          <p class="f20b" lang="y">
+            살아 있는 나무 중 세계에서 키가 가장 큰 나무는 <br />
+            키가 기린 22마리를 쌓아 올린 만큼이나 된대.<br />
+            기린의 키가 약 5.2 m이니까 이 나무의 키는 약 <br /> 
+            몇 m일까?
+          </p>
+        </div>
+        <div class="input_area">
+          <label for="inputElement01" class="img" lang="y">그림은 어떤 상황을 나타내고 있나요?</label>
+          <div class="input_wrap">
+            <math-field class="textarea" id="inputElement01" type="text"></math-field>
+            <ol class="example_box">
+              <li lang="y">키가 큰 나무가 있습니다.</li>
+              <li lang="y">키가 큰 나무 옆에 기린이 있습니다.</li>
+              <li lang="y">살아 있는 나무 중 세계에서 가장 키가 큰 나무의 키는 기린 22마리를 쌓아올린 만큼이나 된다고 이야기하고 있습니다.</li>
+              <li lang="y">기린의 키가 약 5.2 m이면 이 나무의 키는 약 몇 m인지 궁금해하고 있습니다.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <!-- 예시 필드에서 사용 -->
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button lang="y" class="btnSample">예시</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

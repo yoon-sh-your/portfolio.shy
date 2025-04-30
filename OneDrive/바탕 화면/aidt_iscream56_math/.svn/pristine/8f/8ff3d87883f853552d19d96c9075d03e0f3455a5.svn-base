@@ -1,0 +1,44 @@
+let r1;
+let r2;
+
+runAfterAppReady(function () {
+    const boxContainer = document.querySelector('.box_container');
+    r1 = boxContainer.querySelector('.r1');
+    r2 = boxContainer.querySelector('.r2');
+
+    createBigDiv(r1);
+    createBigDiv(r1);
+    createBigDiv(r1);
+    createSmallDiv(r1);
+    createSmallDiv(r1);
+    createSmallDiv(r1);
+    createSmallDiv(r1);
+    createSmallDiv(r1);
+    createSmallDiv(r1);
+});
+
+const createBigDiv = (row) => {
+    const div = document.createElement('div');
+    div.classList.add('big_div');
+    div.textContent = '1';
+
+    div.addEventListener('click', () => {
+        for (let i = 0; i < 10; i++) {
+            createSmallDiv(r2);
+        }
+    });
+
+    row.appendChild(div);
+};
+
+const createSmallDiv = (row) => {
+    const div = document.createElement('div');
+    div.classList.add('small_div');
+    div.textContent = '0.1';
+
+    div.addEventListener('click', () => {
+        createSmallDiv(r2);
+    });
+
+    row.appendChild(div);
+}

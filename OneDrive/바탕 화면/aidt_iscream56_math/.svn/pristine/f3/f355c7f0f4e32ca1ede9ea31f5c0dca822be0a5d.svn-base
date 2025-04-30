@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_08_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="../../common_practice/js/ema521_01_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_08.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_08_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">4928을 서로 다른 두 가지 방법으로 어림했더니 모두 4900이 되었습니다. 알맞은 말에 ○표 하세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box">
+          <div class="l_left">
+            <dl>
+              <dt lang="y" class="label_method">방법1</dt>
+              <dd lang="y">
+                4928을 (
+                <span> 올림 </span>
+                <span> 버림 </span>
+                <span class="mr_4">반올림</span>)하여<br />
+                (
+                <span>천</span>
+                <span>백</span>
+                <span class="mr_4">십</span>
+                )의 자리까지 나타냈습니다.
+              </dd>
+            </dl>
+            <div class="boolean_wrap boolean1">
+              <div>
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="true"></button>
+                <button type="button" data-answer-single="false"></button>
+              </div>
+            </div>
+            <div class="boolean_wrap boolean2">
+              <div>
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="true"></button>
+                <button type="button" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+          <div class="l_right">
+            <dl>
+              <dt lang="y" class="label_method">방법2</dt>
+              <dd lang="y">
+                4928을 (
+                <span> 올림 </span>
+                <span> 버림 </span>
+                <span class="mr_4">반올림</span>)하여<br />
+                (
+                <span>천</span>
+                <span>백</span>
+                <span class="mr_4">십</span>)의 자리까지 나타냈습니다.
+              </dd>
+            </dl>
+            <div class="boolean_wrap boolean1">
+              <div>
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="true"></button>
+              </div>
+            </div>
+            <div class="boolean_wrap boolean2">
+              <div>
+                <button type="button" data-answer-single="false"></button>
+                <button type="button" data-answer-single="true"></button>
+                <button type="button" data-answer-single="false"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>
+                  <span class="label_method">방법1</span> <br />
+                  <span lang="y"> 4928을 버림하여 백의 자리까지 나타내면 백의 자리 아래 수인 28을 0으로 생각하여 4900입니다. </span>
+                </p>
+                <p>
+                  <span class="label_method">방법2</span> <br />
+                  <span lang="y"> 4928을 반올림하여 백의 자리까지 나타내면 십의 자리 숫자가 2이므로 버림하여 4900입니다. </span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <!-- <button class="btnType key">입력타입토글</button> -->
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

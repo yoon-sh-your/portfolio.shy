@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMA621_11_su_0008_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema621_11.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema621_11_su_0008">
+    <div class="scroll_page">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 4">
+            <span class="blue line" lang="y">확인하고 정리해요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_4_sub_title">
+        <h2 lang="y">
+          <div class="title_row">
+            <span class="nemo_blank"></span>
+            <span lang="y">안에 알맞은 말이나 수를 써넣으세요.</span>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="scroll_area">
+        <div class="question_box">
+        
+          <div class="row1">
+            <p lang="y" class="tit">(분수)&divide;(분수)</p>
+            <div class="col_wrap">
+              <div class="col1">
+                <p lang="y" class="col_tit">
+                  <span class="label">방법1</span>
+                  통분하여 분자끼리 나누어 계산합니다.
+                </p>
+                <div class="col_inn f32b">
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>9</span>
+                  </span>
+                  &divide;
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>4</span>
+                  </span>
+                  =
+                  <span class="fraction_box">
+                    <span>8</span>
+                    <span>36</span>
+                  </span>
+                  &divide;
+                  <span class="fraction_box">
+                    <span>27</span>
+                    <span>36</span>
+                  </span>
+                  =
+                  <div class="input_wrap">
+                    <math-field data-answer-single="8"></math-field>
+                  </div>
+                  &divide;
+                  <span>27</span>
+                  =
+                  <span class="fraction_box">
+                    <span>8</span>
+                    <span>27</span>
+                  </span>
+
+                </div>
+              </div>
+              <div class="col2">
+                <p lang="y" class="col_tit">
+                  <span class="label">방법2</span>
+                  분수의 곱셈으로 나타내어 계산합니다.
+                </p>
+                <div class="col_inn f32b">
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>9</span>
+                  </span>
+                  &divide;
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span>
+                  </span>
+                  =
+                  <span class="fraction_box">
+                    <span>2</span>
+                    <span>9</span>
+                  </span>
+                  &times;
+                  <span class="fraction_box">
+                    <span>4</span>
+                    <span class="input_wrap">
+                      <math-field data-answer-single="3"></math-field>
+                    </span>
+                  </span>
+                  =
+                  <span class="fraction_box">
+                    <span>8</span>
+                    <span>27</span>
+                  </span>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row2">
+            <p lang="y" class="tit">(자연수)&divide;(분수)</p>
+            <div class="col1">
+              <p lang="y" class="col_tit">
+                통분하여 분자끼리 나누어 계산합니다.
+              </p>
+              <div class="col_inn f32b">
+                <span>2</span>
+                &divide;
+                <span class="fraction_box">
+                  <span>2</span>
+                  <span>3</span>
+                </span>
+                =
+                (2&divide;<span class="input_wrap"><math-field data-answer-single="2"></math-field></span>)
+                &times;3=3
+              </div>
+            </div>    
+          </div>
+          <div class="row3">
+            <p lang="y" class="tit">(대분수)&divide;(분수)</p>
+            <p lang="y" class="txt f32b">대분수를 <span class="input_wrap" data-hint-position="up"><math-field data-answer-single="가분수"></math-field></span>(으)로 바꾼 다음 통분하여<br>
+            계산하거나 분수의 곱셈으로 나타내어 계산합니다.</p>
+          </div>
+
+
+        </div>
+          <div class="btn_area relative">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+          </div>
+        
+        
+        
+      </div>
+      
+      </section>
+    </div>    
+  </div>
+</body>
+
+</html>

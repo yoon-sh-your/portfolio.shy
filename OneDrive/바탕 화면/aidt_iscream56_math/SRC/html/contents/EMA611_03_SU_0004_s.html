@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_03_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema611_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_03_su_0004">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">나눗셈의 몫을 분수로 나타내어 봅시다.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="input_area">
+          <div class="question_box">
+            <div class="quiz quiz1">
+              <span>7÷5=</span>
+              <div class="mixed_fraction">
+                <div class="input_wrap answer1">
+                  <math-field data-answer-single="1"></math-field>
+                </div>
+                <div class="fraction_box">
+                  <div class="input_wrap answer2">
+                    <math-field data-answer-single="2"></math-field>
+                  </div>
+                  <span>5</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="quiz quiz2">
+              <span>8÷3=</span>
+              <div class="fraction_box">
+                <div class="input_wrap answer3">
+                  <math-field data-answer-single="8"></math-field>
+                </div>
+                <div class="input_wrap answer4">
+                  <math-field data-answer-single="3"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="question_box">
+            <div class="quiz quiz3">
+              <span>13÷8=</span>
+              <div class="input_wrap fraction_wrap custom custom1">
+                <math-field data-answer-single="1(5)/(8)" data-answer-multi='{"values": ["(13)/(8)", "1(5)/(8)"]}' data-multi-hint="y"></math-field>
+              </div>
+            </div>
+
+            <div class="quiz quiz4">
+              <span>16÷9=</span>
+              <div class="input_wrap fraction_wrap custom custom2">
+                <math-field data-answer-single="1(7)/(9)" data-answer-multi='{"values": ["(16)/(9)", "1(7)/(9)"]}' data-multi-hint="y"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

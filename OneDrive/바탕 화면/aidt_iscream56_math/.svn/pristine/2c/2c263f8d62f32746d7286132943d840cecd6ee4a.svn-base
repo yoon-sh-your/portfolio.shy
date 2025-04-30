@@ -1,0 +1,33 @@
+runAfterAppReady(() => {
+    console.log("custom_answer_check.js 실행");
+
+    // 말풍선 요소 선택
+    const bubbleImg = document.querySelector(".page_4 .bubble_img");
+    const bubble = document.querySelector(".page_4 .bubble");
+
+    // ✅ 커서 스타일 grab 적용
+    if (bubbleImg) {
+      bubbleImg.style.cursor = "grab";
+    }
+
+    // 초기 상태 숨김
+    if (bubble) {
+      bubble.style.display = "none";
+    }
+
+    // ✅ bubble_img 클릭 시 bubble 토글
+    if (bubbleImg && bubble) {
+      bubbleImg.addEventListener("click", () => {
+        const isVisible = window.getComputedStyle(bubble).display !== "none";
+        bubble.style.display = isVisible ? "none" : "block";
+      });
+    }
+
+    // ✅ 리셋 시 숨기기 포함
+    window.resetCustom = function () {
+      $(".page_2 .example_box").css("opacity", "0");
+      if (bubble) bubble.style.display = "none";
+    };
+
+    // (기타 정답/오답 로직 생략)
+  });

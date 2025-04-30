@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_03_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_03_ih_0006">
+      <section class="title type2">
+        <i class="icon_creative" lang="y"><span>창</span><span>의</span></i>
+        <h2 data-head="6" class="is_star2">
+          <span>1</span>
+          <div class="fraction_box">
+            <span>4</span>
+            <span>9</span>
+          </div>
+          <span lang="y">×3에 알맞은 문제를 완성하고 답을 구해 보세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box">
+          <div class="l_left">
+            <dl>
+              <dt lang="y">문제 만들기</dt>
+              <dd class="question_row">
+                <div class="text_area flex align_center gap_10">
+                  <span lang="y">준희는 어제 귤을 1</span>
+                  <div class="fraction_box">
+                    <span>4</span>
+                    <span>9</span>
+                  </div>
+                  <span lang="y">kg 땄습니다.</span>
+                </div>
+                <div class="input_area">
+                  <!-- <math-field
+										class="textarea"
+										data-answer-single=""
+									></math-field> -->
+                  <div class="input_wrap">
+                    <math-field class="textarea" placeholder="&nbsp;"></math-field>
+                    <div class="example_box">
+                      <p lang="y">준희가 오늘 딴 귤의 양은 어제 딴 귤의 양의 3배일 때, 오늘 딴 귤은 몇 kg인가요?</p>
+                    </div>
+                  </div>
+                </div>
+              </dd>
+              <dd class="answer_row">
+                <span class="bg_white mr_10" lang="y">답</span>
+                <div class="input_wrap fraction_wrap">
+                  <math-field data-answer-single="4(1)/(3)" text-align="center"></math-field>
+                </div>
+                <span>kg</span>
+              </dd>
+            </dl>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">(대분수)×(자연수) 상황이 되도록 문제를 만듭니다.</p>
+                <div class="flex align_center gap_10 mt_20">
+                  <span>1</span>
+                  <div class="fraction_box"><span>4</span><span>9</span></div>
+                  <span>×</span>
+                  <span>3</span>
+                  <span>=</span>
+                  <div class="fraction_box">
+                    <span>13</span><span class="mark_error">3<i>3</i></span>
+                  </div>
+                  <span>×</span>
+                  <span class="mark_error up">3<i>1</i></span>
+                  <span>=</span>
+                  <div class="fraction_box"><span>13</span><span>3</span></div>
+                  <span>=</span>
+                  <span>4</span>
+                  <div class="fraction_box"><span>1</span><span>3</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <!-- <button class="btnCheck">확인</button> -->
+          <button class="btnSample">예시</button>
+        </div>
+      </section>
+    </div>
+    <script>
+      runAfterAppReady(() => {
+        $('.btnSample').click(function () {
+          $('.solve_area').addClass('active');
+        });
+        $('.btnReset').click(function () {
+          $('.solve_area').removeClass('active');
+        });
+      });
+    </script>
+  </body>
+</html>

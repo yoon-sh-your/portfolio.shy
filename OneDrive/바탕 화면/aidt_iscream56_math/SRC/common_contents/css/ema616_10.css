@@ -1,0 +1,196 @@
+/*EMA616_10_SU_0004_s*/
+.ema616_10_su_0004#app_wrap {
+    flex-direction: column;
+    /* gap: 30px; */
+}
+
+/* ---------------------------------- s:tab --------------------------------- */
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.tab {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 188px;
+    background: #f2f4f7;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    border: 1px solid #d2d2d2;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black, 1px 0 0 black;
+    opacity: 0.5;
+    box-sizing: initial;
+}
+
+.tab.active {
+    background: #ffcb05;
+    color: #222;
+    opacity: 1;
+    border-top: 2px solid #c89200;
+    border-right: 2px solid #c89200;
+    border-left: 2px solid #c89200;
+    box-sizing: initial;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white, 1px 0 0 white;
+    .badge {
+        font-weight: 700;
+        color: #1454b9;
+    }
+}
+
+.tab.disabled {
+    color: white;
+    box-sizing: initial;
+    pointer-events: none;
+    border: 1px solid #d2d2d2;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 0 -1px 0 black, 0 1px 0 black, -1px 0 0 black, 1px 0 0 black;
+}
+
+.storage {
+    margin-top: -3px;
+    position: relative;
+    padding: 16px;
+    height: 50px;
+    background: #fffae7;
+    border-top: 4px solid #ffcb05;
+    border-left: 4px solid #ffcb05;
+    border-right: 4px solid #ffcb05;
+    border-radius: 20px 20px 0 0;
+}
+
+.storage li {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    width: calc(100% + 8px);
+    margin: 0 -4px;
+}
+
+.storage li.active {
+    display: flex;
+}
+
+/* ----------------------------------- e:tab ---------------------------------- */
+.box-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    padding: 20px;
+    box-sizing: initial;
+    border-radius: 0 0 20px 20px;
+    border-right: 4px solid #ffcb06;
+    border-bottom: 4px solid #ffcb06;
+    border-left: 4px solid #ffcb06;
+    background-color: #fffae7;
+    box-sizing: initial;
+}
+.box {
+    border-radius: 8px;
+    width: 400px;
+}
+.box-inner {
+    text-align: center;
+    position: relative;
+    background: #fff8fb;
+    border: 2px solid #d2d2d2;
+    padding: 30px;
+}
+.box-inner.disabled-box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.box h3 {
+    text-align: center;
+    font-size: 32px;
+}
+.box label {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    font-weight: 400;
+}
+.volume-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 35px 0 15px 0;
+}
+input[type="number"] {
+    text-align: center;
+    padding: 16px 20px;
+    box-sizing: initial;
+    width: 80px;
+    height: 36px;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid var(--Color-Primary-blue, #3b71fe);
+}
+.volume-check {
+    font-size: 32px;
+    input[type="number"] {
+        height: 28px;
+    }
+}
+button {
+    all: unset;
+    box-shadow: 0 8px 24px 0px rgba(0, 0, 0, 0.12);
+    &.check,
+    &.btnReset {
+        font-size: 0;
+        width: 64px;
+        height: 64px;
+        border-radius: 12px;
+    }
+    &.check {
+        background: #3b71fe url("../../common_contents/common/img/icon_check_white.svg") no-repeat center/ contain;
+        background-size: 40px;
+        &:disabled {
+            border-color: var(--stroke-default);
+            background: var(--btn-disabled-bg) url("../../common_contents/common/img/icon_check_disabled.svg") no-repeat center;
+        }
+    }
+    &.btnReset {
+        background: #3b71fe url("../../common_contents/common/img/icon_reset_white.svg") no-repeat center/ contain;
+        background-size: 40px;
+        &:disabled {
+            border-color: var(--stroke-default);
+            background: var(--btn-disabled-bg) url("../../common_contents/common/img/icon_reset_disabled.svg") no-repeat center;
+        }
+    }
+}
+
+.device_change {
+    background-color: var(--secondary-red);
+}
+.device_change {
+    display: none;
+}
+.teacher .device_change {
+    display: block;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

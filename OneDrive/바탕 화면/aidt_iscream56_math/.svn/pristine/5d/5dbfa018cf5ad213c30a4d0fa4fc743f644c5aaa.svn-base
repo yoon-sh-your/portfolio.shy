@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_05_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema624_05.css" />
+</head>
+
+<body>
+    <div id="app_wrap" class="ema624_05_su_0004" data-current-page="page_1, page_2, page_3">
+        <section class="title type2">
+            <h2 data-head="2_green" lang="y">
+                비례식을 세우고 비례식의 성질을 이야기해 봅시다.
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+
+            <div class="input_area">
+                <article class="page page_1">
+                    <h3 lang="y"><span class="mini_box"><img src="../../common_contents/img/EMA624_05_SU/mini_box.svg"
+                                alt=""></span>&nbsp;안에 알맞은 수를 써넣고, 위의 두 비를 이용하여 비례식을 세워 보세요.</h3>
+                    <div class="flex justify_center mt_40">
+                        <div class="modification_img">
+                            <img src="../../common_contents/img/EMA624_05_SU/624_05_0005.png" alt="">
+                            <div class="txt_a"><span>×3</span></div>
+                            <div class="txt_b">
+                                <span>2:11</span>
+                                <div class="input_wrap answer1">
+                                    <math-field type="number" data-answer-single="6" text-align="center"></math-field>
+                                    <span>:33</span>
+                                </div>
+                            </div>
+                            <div class="txt_c">
+                                <div class="input_wrap answer2">
+                                    <span>×</span>
+                                    <math-field type="number" data-answer-single="3" text-align="center"></math-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="input_wrap">
+                                <math-field type="number" data-answer-single="2:11" text-align="center"></math-field>
+                                <span>=</span>
+                            </div>
+                            <div class="input_wrap">
+                                <math-field type="number" data-answer-single="6:33" text-align="center"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 1페이지 -->
+
+
+                <article class="page page_2">
+                    <h3 lang="y">비례식에서 외항의 곱과 내항의 곱은 각각 얼마인가요?</h3>
+                    <div class="flex justify_center mt_40">
+                        <div class="modification_img">
+                            <img src="../../common_contents/img/EMA624_05_SU/624_05_0006.png" alt="">
+                            <div class="txt_a"><span>×3</span></div>
+                            <div class="txt_b">
+                                <span>2:11</span>
+                                <span>6:33</span>
+                            </div>
+                            <div class="txt_c">
+                                <span>×3</span>
+                            </div>
+                        </div>
+                        <div class="input_area">
+                            <div class="input_wrap">
+                                <span>외항의 곱:</span>
+                                <math-field type="number" data-answer-single="66" text-align="center"></math-field>
+                            </div>
+                            <div class="input_wrap">
+                                <span>내항의 곱:</span>
+                                <math-field type="number" data-answer-single="66" text-align="center"></math-field>
+                            </div>
+                        </div>
+                    </div>
+                </article><!-- 2페이지 -->
+
+                <article class="page page_3">
+                    <h3 lang="y">
+                        비의 성질을 이용하여 외항의 곱과 내항의 곱이 같은 이유를 이야기해 보세요.
+                    </h3>
+                    <div class="flex justify_center">
+                        <div class="input_wrap">
+                            <math-field class="textarea"></math-field>
+                            <div class="example_box">
+                                <p>비의 성질에 따라 2 : 11=6:33은 2:11=2×3:11×3이므로 외항의 곱은 2×33=2×11×3=66이고, 내항의
+                                    곱은11×6=11×2×3=66입니다. 따라서 외항의 곱과 내항의 곱은 같습니다</p>
+                            </div>
+                        </div>
+                    </div>
+                </article> <!-- 3페이지 -->
+            </div>
+            <div class="btn_area">
+                <button class="btnType">입력토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnSubmit" data-submit="true">확인</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_03_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_03.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_03_su_0003">
+      <section class="title type2">
+        <h2 data-head="1_light_purple" lang="y">
+          <div>
+            <span lang="y">원 모양 물건의 원주와 지름을 재어 나타내었습니다. 지름에 대한 원주의 비율을 알아봅시다.</span>
+            <button type="button" class="btn calculator">계산기</button>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">세 물건의 지름에 대한 원주의 비율을 반올림하여 소수 둘째 자리까지 나타내어 보세요.</h3>
+
+          <div class="tb_area">
+            <table>
+              <thead>
+                <tr>
+                  <th lang="y" scope="col">물건</th>
+                  <th lang="y" scope="col">원주 (㎝)</th>
+                  <th lang="y" scope="col">지름 (㎝)</th>
+                  <th lang="y" scope="col">지름에 대한 원주의 비율</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">양초</th>
+                  <td lang="y">22</td>
+                  <td lang="y">7</td>
+                  <td lang="y">
+                    <div class="input_wrap answer1" data-hint-position="right">
+                      <math-field data-answer-single="3.14"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">시계</th>
+                  <td lang="y">55</td>
+                  <td lang="y">17.5</td>
+                  <td lang="y">
+                    <div class="input_wrap answer2" data-hint-position="right">
+                      <math-field data-answer-single="3.14"></math-field>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">쟁반</th>
+                  <td lang="y">77</td>
+                  <td lang="y">24.5</td>
+                  <td lang="y">
+                    <div class="input_wrap answer3" data-hint-position="right">
+                      <math-field data-answer-single="3.14"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <article class="page page_2"> 
+          <h3 lang="y">세 물건의 지름에 대한 원주의 비율을 비교해 보세요.</h3>
+          
+          <div class="tb_area">
+            <table>
+              <thead>
+                <tr>
+                  <th lang="y" scope="col">물건</th>
+                  <th lang="y" scope="col">원주 (㎝)</th>
+                  <th lang="y" scope="col">지름 (㎝)</th>
+                  <th lang="y" scope="col">지름에 대한 원주의 비율</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" lang="y">양초</th>
+                  <td lang="y">22</td>
+                  <td lang="y">7</td>
+                  <td>
+                    <span class="empty_box" lang="y">3.14</span>
+                    <!-- <div class="input_wrap answer1" data-hint-position="right">
+                      <math-field data-answer-single="3.14"></math-field>
+                    </div> -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">시계</th>
+                  <td lang="y">55</td>
+                  <td lang="y">17.5</td>
+                  <td>
+                    <span class="empty_box" lang="y">3.14</span>
+                    <!-- <div class="input_wrap answer2" data-hint-position="right">
+                      <math-field data-answer-single="3.14"></math-field>
+                    </div> -->
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row" lang="y">쟁반</th>
+                  <td lang="y">77</td>
+                  <td lang="y">24.5</td>
+                  <td>
+                    <span class="empty_box" lang="y">3.14</span>
+                    <!-- <div class="input_wrap answer3" data-hint-position="right">
+                      <math-field data-answer-single="3.14"></math-field>
+                    </div> -->
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="input_area">
+            <div class="input_wrap">
+              <math-field class="textarea"></math-field>
+              <ol class="example_box">
+                <li lang="y">지름에 대한 원주의 비율은 약 3.14로 모두 같습니다.</li>
+                <li lang="y">원의 크기와 상관없이 지름에 대한 원주의 비율은 일정합니다.</li>
+              </ol>
+            </div>
+          </div>
+        </article>
+
+        <article class="page page_3">
+          <div class="summarize_wrap">
+            <div class="summarize promise">
+              <label lang="y">약속해 볼까요</label>
+              
+              <div>
+                <span lang="y">원의 지름에 대한 원주의 비율을</span>
+                <button class="reveal_btn" data-pair="1" lang="y">원주율</button><span class="small-gap" lang="y">이라고 합니다.</span>
+              </div>
+
+              <div>
+                <span lang="y">(원주율)=(원주)÷(지름)</span>
+              </div>
+
+              <div class="text_center">
+                <span lang="y">원주율을 소수로 나타내면 3.1415926535897932...와 같이<br> 끝없이 계속되므로 반올림하여 소수 둘째 자리까지 <br>나타낸 값인 3.14로 사용합니다.</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnCheck" data-look="submit">제출</button>
+          <button class="btnSubmit" data-submit="true">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

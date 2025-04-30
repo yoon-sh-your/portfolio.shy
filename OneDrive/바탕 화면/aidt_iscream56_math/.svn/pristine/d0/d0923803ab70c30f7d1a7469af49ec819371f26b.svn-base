@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA522_02_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema522_02_su.css" />
+
+</head>
+
+<body>
+    <div id="app_wrap" class="ema522_02_su_0003">
+        <section class="title type2">
+            <h2 data-head="1_green" class="fraction_box_title">
+                <div class="fraction_txt_wrap">
+                  <div class="fraction_txt" lang="y">
+                    <span>나은이는 맷돌로 콩을 가는 데 같은 컵을 사용하여 물을&nbsp;</span>
+                    <div class="fraction_box">
+                        <span>1</span>
+                        <span>4</span>
+                    </div>컵씩 3번 넣었습니다. 콩을 가는 데 넣은 물은 모두 몇 컵인지 구해 봅시다.
+                  </div>
+                </div>
+            </h2>
+        </section>
+
+        <section class="contents paging_layout">
+            <article class="page page_1">
+                <div class="img_row">
+
+                    <div class="video_wrap type2">
+                        <img src="../../common_contents/img/EMA522_02_SU/0002_img01.png" alt="자치회 활동 이미지" />
+                        <div class="txt1 f16r">넣은 물은 모두 몇 컵인지 <br />어떻게 구할 수 있을까?</div>
+                        <div class="txt2 f16r"><span class="mixed_fraction"><span
+                                    class="fraction_box"><span>1</span><span>4</span></span>컵씩 3번 넣었으니까 </span>
+                            <span class="mixed_fraction"><span
+                                    class="fraction_box"><span>1</span><span>4</span></span>컵의 3배와 같아.</span>
+                        </div>
+                        <!-- <button class="play" data-video="1"></button> -->
+                    </div>
+
+                    <div class="input_area">
+                        <h3>구하는 식을 써 보세요.</h3>
+
+                        <!-- 단답형 분수식 -->
+                        <div class="input_wrap fraction_wrap flex align_center">
+                            <math-field data-answer-single="(1)/(4)xx3" text-align="center"
+                               ></math-field>
+                            <!-- 분수식 ex) 15(1)/(2) -->
+                            <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                            <!-- (분자)/(분모) 형식으로 표시 -->
+                            <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                            <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <article class="page page_2">
+                <h3>
+                    <div class="fraction_txt_wrap">
+                      <div class="fraction_txt" lang="y">
+                        <div class="operation_box ml_0">
+                            <div class="fraction_box">
+                                <span>1</span>
+                                <span>4</span>
+                            </div>
+                            &times;3
+                        </div>
+                        을 그림에 색칠하여 구해 보세요.
+                      </div>
+                    </div>
+                </h3>
+                <div class="question_box justify_center dir_col gap_20">
+                    <div class="boolean-counts flex justify_end">
+
+                        <div class="fraction_box f24b abs_1">
+                            <span>1</span>
+                            <span>4</span>
+                        </div>
+                        <div class="boolean_count_wrap col justify_start" data-answer-single="3">
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+
+                    <div class="mixed_fraction gap_0 f32b mt_30">
+                        <div class="fraction_box">
+                            <span>1</span>
+                            <span>4</span>
+                        </div>
+                        &times;3
+                        <div>=</div>
+                        <div class="fraction_box">
+                            <span>1</span>
+                            <span>4</span>
+                        </div>
+                        +
+                        <div class="fraction_box">
+                            <span>1</span>
+                            <span>4</span>
+                        </div>
+                        +
+                        <div class="fraction_box">
+                            <span>1</span>
+                            <span>4</span>
+                        </div>
+                        =
+                        <div class="fraction_box">
+                            <div class="input_wrap">
+                                <math-field data-answer-single="3"></math-field>
+                            </div>
+                            <span>4</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="page page_3">
+                <div class="img_row">
+                    <div class="picture_wrap type2">
+                        <img src="../../common_contents/img/EMA522_02_SU/0002_img01.png" alt="자치회 활동 이미지" />
+
+                        <div class="txt1 f16r">넣은 물은 모두 몇 컵인지 <br />어떻게 구할 수 있을까?</div>
+                        <div class="txt2 f16r"><span class="mixed_fraction"><span
+                                    class="fraction_box"><span>1</span><span>4</span></span>컵씩 3번 넣었으니까 </span>
+                            <span class="mixed_fraction"><span
+                                    class="fraction_box"><span>1</span><span>4</span></span>컵의 3배와 같아.</span>
+                        </div>
+                    </div>
+
+                    <div class="input_area">
+                        <h3>콩을 가는 데 넣은 물은 모두 몇 컵인가요?</h3>
+                        <div class="mixed_fraction justify_center gap_8">
+
+
+                            <!-- 단답형 분수식 -->
+                            <div class="input_wrap fraction_wrap">
+                                <math-field data-answer-single="(3)/(4)" text-align="center"
+                                   ></math-field>
+                                <!-- 분수식 ex) 15(1)/(2) -->
+                                <!-- 매스필드 키패드 입력으로 분수 입력하는경우 정답 표기방법 -->
+                                <!-- (분자)/(분모) 형식으로 표시 -->
+                                <!-- xx, -:, ⋯ 는 수식 표시 형식으로 표시 각각 곱기호, 나눗셈기호, 중간점3개 -->
+                                <!-- 힌트도 같은 형식으로 처리되서 나옴 -->
+                            </div>
+
+                            <span class="f32b">컵</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="btn_area">
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA613_09_su_0003_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema613_09.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema613_09_su_0003">
+    <section class="title type2">
+      <h2 data-head="2" lang="y">민찬이가 3일 동안 한 운동과 운동별 소모한 열량, 운동 시간을 기록한 표입니다. 민찬이가 한 운동 중 1분 동안 가장 적은 열량을 소모한 운동은 무엇인지
+        구해 봅시다.</h2>
+    </section>
+
+    <section class="contents">
+      <div class="input_area">
+        <!-- <h3 lang="y">수연이가 한 운동 중 1분 동안 가장 많은 열량을 소모한 운동은 무엇인지 구하고, 어림셈하여 구한 운동과 비교해 보세요.</h3> -->
+        <div class="flex gap_26">
+
+          <div class="table_wrap">
+            <table>
+              <caption lang="y">
+                민찬이의 운동 기록
+              </caption>
+              <colgroup>
+                <col style="width: 73px" />
+                <col style="width: 200px" />
+                <col style="width: 202px" />
+                <col />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col" lang="y">날짜</th>
+                  <th scope="col" lang="y">운동</th>
+                  <th scope="col" lang="y">소모한 열량(킬로칼로리)</th>
+                  <th scope="col" lang="y">운동 시간(분)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td headers="column1">5/15</td>
+                  <td headers="column2" lang="y">계단 오르기</td>
+                  <td headers="column3">41.85</td>
+                  <td headers="column4">9</td>
+                </tr>
+                <tr>
+                  <td headers="column1">5/16</td>
+                  <td headers="column2" lang="y">빨리 걷기</td>
+                  <td headers="column3">63.36</td>
+                  <td headers="column4">18</td>
+                </tr>
+                <tr>
+                  <td headers="column1">5/17</td>
+                  <td headers="column2" lang="y">수영</td>
+                  <td headers="column3">187.84</td>
+                  <td headers="column4">32</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="4" lang="y">(출처: 황경순, 2011)</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <div class="question_box dir_col align_center">
+            <div class="dropdown_wrap">
+              <select class="custom_dropdown" data-answer-single="계단 오르기">
+                <option></option>
+                <!--최초선택데이터 생성 방지용-->
+                <option value="계단 오르기" lang="y">계단 오르기</option>
+                <option value="빨리 걷기" lang="y">빨리 걷기</option>
+                <option value="수영" lang="y">수영</option>
+              </select>
+            </div>
+            <div class="hint_area f32b" lang="y">계단 오르기</div>
+          </div>
+        </div>
+      </div>
+      <div class="btn_area">
+        <button class="btnReset" lang="y">리셋</button>
+        <!-- <button class="btnCheck" lang="y">확인</button> -->
+        <button class="btnSubmit">확인</button>
+        <!-- <button lang="y" class="btnSample">예시</button> -->
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

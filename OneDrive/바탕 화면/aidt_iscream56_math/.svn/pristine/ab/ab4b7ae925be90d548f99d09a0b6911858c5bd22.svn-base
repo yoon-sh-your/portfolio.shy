@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_06_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema525_06_ih_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema525_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_06_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">직육면체의 겨냥도를 보고 직육면체의 전개도를 그려 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_start gap_40">
+          <div class="img">
+            <img src="../../common_practice/img/EMA525_06_IH/0004_img.png" alt="" />
+          </div>
+          <div class="img_box" style="position: relative">
+            <div class="drawline_grid">
+              <!-- 선 속성 선택 팝업 -->
+              <div class="select_line_type">
+                <ul class="select_type_options">
+                  <li data-value="solid">solid</li>
+                  <li data-value="dotted">dotted</li>
+                </ul>
+              </div>
+              <!--drawing-->
+              <div class="drawing_grid_area" data-grid-size="40" id="drawingArea" data-sample-line="">
+                <svg class="line_canvas"></svg>
+              </div>
+            </div>
+            <div class="input_wrap">
+              <div class="example_box">
+                <img src="../../common_practice/img/EMA525_06_IH/0004_img3.png" alt="" width="380" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">접었을 때 마주 보는 면끼리 모양과 크기가 같고 서로 겹치는 면이 없으며 겹치는 모서리의 길이가 같도록 그립니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit chk">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

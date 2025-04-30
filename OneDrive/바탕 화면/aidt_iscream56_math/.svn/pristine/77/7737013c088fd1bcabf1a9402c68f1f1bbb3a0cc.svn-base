@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA523_12_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema523_su_12.css" />
+
+  </head>
+  <body>
+    <div id="app_wrap" class="ema523_12_su_0003">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="2_pink" lang="y">두 도형은 서로 합동입니다. 물음에 답해 보세요.</h2>
+      </section>
+
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <h3 lang="y">변 ㄱㄴ의 대응변을 고르세요.​</h3>
+          
+        <div class="flex align_start justify_center">
+          <div class="input_area">
+            <div class="figure_box">
+              <div class="img_area">
+                <span class="img"><img src="../../common_contents/img/EMA523_12_SU/0003_content01.svg" alt="도형이미지"></span>
+                <div class="figure_triangle">
+                  <span class="txt_1" lang="y">ㄱ</span>
+                  <span class="txt_2" lang="y">ㄴ</span>
+                  <span class="txt_3" lang="y">ㄷ</span>
+                  <span class="txt_4" lang="y">ㄹ</span>
+                </div>
+              </div>
+              <div class="img_area img2">
+                <span class="img"><img src="../../common_contents/img/EMA523_12_SU/0003_content01.svg" alt="도형이미지"></span>
+                <div class="figure_triangle">
+                  <span class="txt_1" lang="y">ㅁ</span>
+                  <span class="txt_2" lang="y">ㅂ</span>
+                  <span class="txt_3" lang="y">ㅅ</span>
+                  <span class="txt_4" lang="y">ㅇ</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="question_box">
+              <div class="flex align_center gap_12 mt_20 f32b">
+                <span lang="y">변 ㄱㄴ의 대응변은</span>
+    
+                <div class="dropdown_wrap">
+                  <select class="custom_dropdown" data-answer-single="변 ㅅㅇ">
+                    <option></option>
+                    <option value="변 ㅅㅇ"></option>
+                    <option value="변 ㅁㅂ"></option>
+                    <option value="변 ㅂㅅ"></option>
+                  </select>
+                </div>
+                <span lang="y">입니다.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">각 ㄴㄷㄹ의 대응각을 고르세요.</h3>
+          <div class="flex align_start justify_center">
+            <div class="input_area">
+              <div class="figure_box">
+                <div class="img_area">
+                  <span class="img"><img src="../../common_contents/img/EMA523_12_SU/0003_content01.svg" alt="도형이미지"></span>
+                  <div class="figure_triangle">
+                    <span class="txt_1" lang="y">ㄱ</span>
+                    <span class="txt_2" lang="y">ㄴ</span>
+                    <span class="txt_3" lang="y">ㄷ</span>
+                    <span class="txt_4" lang="y">ㄹ</span>
+                  </div>
+                </div>
+                <div class="img_area img2">
+                  <span class="img"><img src="../../common_contents/img/EMA523_12_SU/0003_content01.svg" alt="도형이미지"></span>
+                  <div class="figure_triangle">
+                    <span class="txt_1" lang="y">ㅁ</span>
+                    <span class="txt_2" lang="y">ㅂ</span>
+                    <span class="txt_3" lang="y">ㅅ</span>
+                    <span class="txt_4" lang="y">ㅇ</span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="question_box">
+                <div class="flex align_center gap_12 mt_20 f32b">
+                  <span lang="y">각 ㄴㄷㄹ의 대응각</span>
+      
+                  <div class="dropdown_wrap">
+                    <select class="custom_dropdown" data-answer-single="각 ㅇㅁㅂ">
+                      <option></option>
+                      <option value="각 ㅇㅁㅂ"></option>
+                      <option value="각 ㅁㅂㅅ"></option>
+                      <option value="각 ㅅㅇㅁ"></option>
+                    </select>
+                  </div>
+                  <span lang="y">입니다.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

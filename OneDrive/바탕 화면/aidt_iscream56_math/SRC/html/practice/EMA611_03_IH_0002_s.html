@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_03_IH_0002_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_03.css" />
+  </head>
+
+  <style>
+    .input_wrap math-field.hint + .text_hint .mixed_fraction {
+      gap: 0;
+    }
+    .input_wrap .text_hint.multiple_hint_wrap .multiple_hint {
+      margin-left: 0;
+      gap: 1px;
+    }
+  </style>
+
+<body>
+    <div id="app_wrap" class="ema611_03_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">나눗셈의 몫을 분수로 나타내어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center dir_col">
+          <div>
+            <div class="input_row">
+              <div>
+                8÷5=
+                <div class="input_wrap fraction_wrap">
+                  <!-- <math-field
+										data-answer-single="1(3)/(5)= ((8)/(5))"
+										data-multi-hint="y"
+										data-answer-multi='{"values": ["1(3)/(5)= ((8)/(5))"]}'
+									></math-field> -->
+                  <math-field data-answer-single="1(3)/(5)" data-answer-multi='{"values": ["1(3)/(5)","(8)/(5)"]}' data-multi-hint="y"></math-field>
+                </div>
+              </div>
+              <div>
+                9÷4=
+                <div class="input_wrap fraction_wrap">
+                  <!-- <math-field
+										data-answer-single="2(1)/(4)= ((9)/(4))"
+										data-multi-hint="y"
+									></math-field> -->
+                  <math-field data-answer-single="2(1)/(4)" data-answer-multi='{"values": ["2(1)/(4)","(9)/(4)"]}' data-multi-hint="y"></math-field>
+                </div>
+              </div>
+            </div>
+            <div class="input_row">
+              <div>
+                13÷3=
+                <div class="input_wrap fraction_wrap">
+                  <!-- <math-field
+										data-answer-single="4(1)/(3)= ((13)/(3))"
+										data-multi-hint="y"
+									></math-field> -->
+                  <math-field data-answer-single="4(1)/(3)" data-answer-multi='{"values": ["4(1)/(3)","(13)/(3)"]}' data-multi-hint="y"></math-field>
+                </div>
+              </div>
+              <div>
+                20÷11=
+                <div class="input_wrap fraction_wrap">
+                  <!-- <math-field
+										data-answer-single="1(9)/(11)= ((20)/(11))"
+										data-multi-hint="y"
+									></math-field> -->
+                  <math-field data-answer-single="1(9)/(11)" data-answer-multi='{"values": ["1(9)/(11)","(20)/(11)"]}' data-multi-hint="y"></math-field>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0" lang="y">
+                  8÷5=<span class="fraction_box">
+                    <span>8</span>
+                    <span>5</span> </span
+                  >=
+                  <span class="mixed_fraction">
+                    <span>1</span>
+                    <span class="fraction_box">
+                      <span>3</span>
+                      <span>5</span>
+                    </span>
+                  </span>, 
+                </div>
+                <div class="flex align_center gap_0" lang="y">9÷4=<span class="fraction_box">
+                    <span>9</span>
+                    <span>4</span> </span
+                  >=
+                  <span class="mixed_fraction">
+                    <span>2</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>4</span>
+                    </span>
+                  </span>
+                  ,
+                </div>
+
+                <div class="flex align_center gap_0" lang="y">
+                  13÷3=<span class="fraction_box">
+                    <span>13</span>
+                    <span>3</span> </span
+                  >=
+                  <span class="mixed_fraction">
+                    <span>4</span>
+                    <span class="fraction_box">
+                      <span>1</span>
+                      <span>3</span>
+                    </span>
+                  </span>
+                  , 
+                </div>
+                <div class="flex align_center gap_0" lang="y">
+                  20÷11=<span class="fraction_box">
+                    <span>20</span>
+                    <span>11</span> </span
+                  >=
+                  <span class="mixed_fraction">
+                    <span>1</span>
+                    <span class="fraction_box">
+                      <span>9</span>
+                      <span>11</span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

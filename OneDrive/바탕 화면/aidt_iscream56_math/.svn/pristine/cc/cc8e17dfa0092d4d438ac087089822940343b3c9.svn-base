@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_04_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_04">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">
+          <span lang="y"
+            >발명품 경진 대회에 참가한 전체 학생 200명 중 초등학생은 170명입니다. 전체 학생 수에 대한 초등학생 수의 비율을 <br />
+            분수와 소수로 각각 나타내어 보세요.</span
+          >
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ena614_04_0004 flex justify_center">
+          <div class="box">
+            <span class="point_t"> 분수 </span>
+            <div class="in_box">
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="(170)/(200)(=(17)/(20))" data-answer-multi='{"values": ["(170)/(200)", "(17)/(20)"]}' text-align="center" placeholder=" "></math-field>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <span class="point_t"> 소수 </span>
+            <div class="in_box">
+              <div class="input_wrap">
+                <math-field data-answer-single="0.85"></math-field>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4">
+                  <p>
+                    전체 학생은 200명이고 초등학생은 170명이므로 전체 학생 수에 대한 초등학생 수의 비는 <br />
+                    170 : 200입니다.
+                  </p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>비 170 : 200을 비율로 나타내면&nbsp;</p>
+                  <div class="fraction_box">
+                    <span>170</span>
+                    <span>200</span>
+                  </div>
+                  <p>(=</p>
+                  <div class="fraction_box">
+                    <span>17</span>
+                    <span>20</span>
+                  </div>
+                  <p>), 0.85입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

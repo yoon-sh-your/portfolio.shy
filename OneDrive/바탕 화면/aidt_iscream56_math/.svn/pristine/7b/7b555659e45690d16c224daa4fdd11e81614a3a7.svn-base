@@ -1,0 +1,537 @@
+/* 창의 프로젝트 공통 인트로 페이지 */
+.intro_wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project_title_box {
+    position: absolute;
+    top: 108px;
+    right: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: start;
+}
+
+.project_title_box .title_box {
+    width: 625px;
+    background-color: #71AD47;
+    border-radius: 40px;
+    border: solid 12px #548235;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project_title_box .title_box .project_title {
+    width: 146px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: #8CB08A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project_title_box .title_box .main_title {
+    text-align: center;
+    padding: 44px 0 56px;
+    font-size: 64px;
+    line-height: 1.375;
+    font-weight: 700;
+    color: #fff;
+}
+
+.project_title_box .title_box .main_title .highlight {
+    color: #FFFF00;
+}
+
+.project_title_box .title_box .sub_title {
+    padding: 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.project_title_box .title_box .sub_title>li {
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.project_title_box .title_box .sub_title>li+li {
+    margin-top: 8px;
+}
+
+.project_title_box .title_box .sub_title>li .badge {
+    width: 125px;
+    height: 36px;
+    border-radius: 36px;
+    background-color: #E2EDC1;
+    padding-left: 24px;
+    position: relative;
+    margin-right: 8px;
+}
+
+.project_title_box .title_box .sub_title>li .badge::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #41AD49;
+    position: absolute;
+    top: 14px;
+    left: 8px;
+}
+
+.project_title_box .title_box .sub_title>li .text {
+    line-height: 36px;
+}
+
+.project_title_box .btn_box {
+    margin-top: 46px;
+}
+
+/* 그리기도구 관련 */
+.draw-tool-wrap.show {
+display: block;
+}
+
+.draw-tool-wrap {
+display: none;
+position: absolute;
+bottom: 120px;
+left: 40px;
+width: 284px;
+height: 464px;
+background-color: #fff;
+border-radius: 20px;
+padding: 20px;
+box-shadow: 0px 8px 24px 0px #0000001F;
+}
+
+.draw-tool-wrap-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 12px;
+}
+
+.draw-tool-wrap-title {
+float: left;
+width: 200px;
+font-size: 24px;
+font-weight: 700;
+letter-spacing: -1px;
+cursor: move;
+user-select: none;
+}
+
+.draw-tool-wrap-body {
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.tool-row {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.tool-row.function-item button[type='button'] {
+width: 52px;
+min-width: 52px;
+height: 52px;
+border: 1px solid #d2d2d2;
+border-radius: 12px;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #fff;
+}
+
+.tool-row.function-item button[type='button'].active {
+border: 2px solid #3B71FE;
+background-color: #EEF9FF;
+}
+
+.tool-row.function-item button[type='button'].inactive {
+background-color: #F2F4F7;
+opacity: 0.4;
+}
+
+.ic_pen {
+background-image: url('../common/img/draw/ic_pen.svg');
+}
+
+.ic_txt {
+background-image: url('../common/img/draw/ic_txt.svg');
+}
+
+.ic_eraser {
+background-image: url('../common/img/draw/ic_eraser.svg');
+}
+
+.ic_triangle {
+background-image: url('../common/img/draw/ic_triangle.svg');
+}
+
+.ic_square {
+background-image: url('../common/img/draw/ic_square.svg');
+}
+
+.ic_circle {
+background-image: url('../common/img/draw/ic_circle.svg');
+}
+
+.ic_polygon {
+background-image: url('../common/img/draw/ic_polygon.svg');
+}
+
+.ic_line {
+background-image: url('../common/img/draw/ic_line.svg');
+}
+
+.ic_dash {
+background-image: url('../common/img/draw/ic_dash.svg');
+}
+
+.ic_draw {
+background-image: url('../common/img/draw/ic_draw.svg');
+}
+
+.ic_pull {
+background-image: url('../common/img/draw/ic_pull.svg');
+}
+
+.ic_undo {
+background-image: url('../common/img/draw/ic_undo.svg');
+}
+
+.ic_redo {
+background-image: url('../common/img/draw/ic_redo.svg');
+}
+
+.ic_del {
+background-image: url('../common/img/draw/ic_del.svg');
+}
+
+.tool-row.palette-item button[type='button'] {
+width: 32px;
+min-width: 32px;
+height: 32px;
+padding:0;
+border: 1px solid #d2d2d2;
+border-radius: 999px;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.tool-row.palette-item button[type='button'].active {
+background-image: url('../common/img/draw/ic_check.svg');
+}
+
+.p_red {
+background-color: #EE4F24;
+}
+
+.p_yellow {
+background-color: #FFDE6A;
+}
+
+.p_green {
+background-color: #07BBA9;
+}
+
+.p_blue {
+background-color: #3B71FE;
+}
+
+.p_purple {
+background-color: #6247DC;
+}
+
+.p_black {
+background-color: #000000;
+}
+
+.range-item {
+margin: 11px 0;
+}
+
+.draw-scale-range {
+position: relative;
+-webkit-appearance: none;
+width: 100%;
+height: 8px;
+background: #9E9E9E;
+}
+
+.draw-scale-range.inactive {
+background: #D2D2D2;
+}
+
+.draw-trans-range {
+position: relative;
+-webkit-appearance: none;
+width: 100%;
+height: 8px;
+background: url('../common/img/draw/range_bg.png') no-repeat center / cover;
+}
+
+.draw-trans-range.inactive {
+background: url('../common/img/draw/range_bg_in.png') no-repeat center / cover;
+}
+
+.draw-scale-range:focus,
+.draw-trans-range:focus {
+border: none;
+}
+
+.draw-scale-range::-webkit-slider-thumb,
+.draw-trans-range::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 16px;
+height: 16px;
+border-radius: 50%;
+background: #ffffff;
+border: 2px solid #222222;
+cursor: pointer;
+}
+
+.draw-scale-range.inactive::-webkit-slider-thumb,
+.draw-trans-range.inactive::-webkit-slider-thumb {
+border-color: #D2D2D2;
+background-color: #F2F4F7;
+}
+
+.draw-scale-range::before {
+content: "";
+display: inline-block;
+width: 16px;
+height: 16px;
+background-color: #222222;
+border: 1px solid #D2D2D2;
+border-radius: 999px;
+position: absolute;
+left: -1px;
+top: -4px;
+}
+
+.draw-scale-range::after {
+content: "";
+display: inline-block;
+width: 24px;
+height: 24px;
+background-color: #222222;
+border: 1px solid #D2D2D2;
+border-radius: 999px;
+position: absolute;
+right: -3px;
+top: -8px;
+}
+
+.draw-trans-range::before {
+content: "";
+display: inline-block;
+width: 24px;
+height: 24px;
+background: url('../common/img/draw/range_before.png') no-repeat center / cover;
+border: 1px solid transparent;
+border-radius: 999px;
+position: absolute;
+left: -3px;
+top: -8px;
+}
+
+.draw-trans-range::after {
+content: "";
+display: inline-block;
+width: 24px;
+height: 24px;
+background: url('../common/img/draw/range_after.png') no-repeat center / cover;
+position: absolute;
+right: -3px;
+top: -8px;
+}
+
+.draw-scale-range.inactive::before,
+.draw-scale-range.inactive::after,
+.draw-trans-range.inactive::before {
+background: #F2F4F7;
+border-color: #D2D2D2;
+}
+
+.arrow-item {
+display: flex;
+flex-direction: row;
+gap: 12px;
+}
+
+.ic_polygon_pop {
+display: none;
+position: absolute;
+top: 0px;
+left: 0px;
+padding: 20px;
+background: #fff;
+border: 1px solid #444;
+border-radius: 8px;
+}
+
+.ic_polygon_pop.active {
+display: flex;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.ic_polygon_pop .ipp_minus {
+background: #fff url("../common/img/draw/icon_polygon_minus.svg") no-repeat center;
+}
+
+.ic_polygon_pop .ipp_plus {
+background: #fff url("../common/img/draw/icon_polygon_plus.svg") no-repeat center;
+}
+
+.ic_polygon_pop button {
+width: 40px;
+height: 40px;
+min-width: 40px;
+padding:0;
+border: 2px solid #D2D2D2;
+border-radius: 100%;
+}
+
+.ic_polygon_pop span,
+.ic_polygon_pop input,
+.ic_polygon_pop label {
+    display: inline;
+    min-height: auto;
+    padding:0;
+    font-family: "Pretendard";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.5px;
+}
+
+.ic_polygon_pop label {
+position: relative;
+top: 4px;
+left: -14px;
+}
+
+.ic_polygon_pop input {
+width: 100%;
+min-width: unset;
+height: unset;
+background: none;
+border: none;
+padding: 0px !important;
+display: inline;
+margin-left: -10px;
+}
+
+.ic_polygon_pop div {
+width: 40px;
+white-space: nowrap;
+}
+
+.p_red.inactive,
+.p_yellow.inactive,
+.p_green.inactive,
+.p_blue.inactive,
+.p_purple.inactive,
+.p_black.inactive {
+background-color: #808080;
+}
+
+/* //그리기도구 관련 */
+
+  
+
+/************ 공통 css 수정 ************/
+/* _layout.css */
+.title h2[data-head="notice"] .heading {
+    min-width: auto;
+    height: auto;
+    top:auto;
+    left:32px;
+}
+/* _component.css */
+.paging_layout {
+    padding: 0 72px;
+}
+.paging_controller>button.prev {
+    left:16px;
+}
+.paging_controller>button.next {
+    right:16px;
+}
+.picture_wrap {
+    border: none;
+}
+.picture_wrap img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: top center;
+}
+
+/* _template.css */
+.to_be .inwrap {
+    padding:0 0 0 169px;
+    justify-content: center;
+}
+.to_be .orange {
+    color: var(--secondary-red);
+}
+.self_check li {
+    padding: 16px 442px 16px 32px;
+}
+
+/* _button.css */
+.btn_area > button.btnDraw {
+    background-color: #fff;
+    background-image: url(../common/img/icon_drawline.svg);
+    border-color: var(--stroke-default);
+} 
+.btn_area > button.btnDraw.active {
+    border-color: var(--stroke-default);
+    background-color: #fff;
+}
+.btn_area > button.hide {
+    display: none;
+}
+  
+/* _dropdown.css */
+
+.custom_select.math_symbol .select_options li[data-value='+'],
+.custom_select.math_symbol .select_trigger.completion[data-value='+'] {
+    background-image: url(../../common_project/common/img/icon_plus.svg);
+}
+.custom_select.math_symbol .select_options li[data-value='-'],
+.custom_select.math_symbol .select_trigger.completion[data-value='-'] {
+    background-image: url(../../common_project/common/img/icon_minus.svg);
+}
+

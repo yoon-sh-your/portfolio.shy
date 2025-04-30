@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA525_09_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema525_su_09.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema525_09_su_0006">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="5_light_purple" lang="y">직육면체에 대해 옳게 말한 사람을 모두 찾아 이름을 써 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="wrap">
+          <div class="flex_col_box2">
+            <div class="img_box">
+              <div class="ex_box f24b">
+                <span lang="y">한 면과 수직으로​<br/>만나는 면은​​<br/>모두 3개야.</span>
+                <span lang="y">한 꼭짓점에서​<br/>만나는 면은​<br/>모두 3개야</span>
+                <span lang="y">서로 평행한 면은​​<br/>모두 3쌍이야.</span>
+              </div>
+              <img src="../../common_contents/img/EMA525_07_SU/0006_bg.png" alt="직육면체에 대해 얘기중인 아이들"/>
+              <div class="boolean_wrap span_type">
+                <button data-answer-single="false"><span class="f24b" lang="y">윤호</span></button>
+                <button data-answer-single="true"><span class="f24b" lang="y">주아</span></button>
+                <button data-answer-single="true"><span class="f24b" lang="y">은찬</span></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema515_06_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema515_06.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema515_06_su_0006">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">
+          <div class="fraction_row">
+            <div class="fraction_inn">
+              지금까지 발견된 세계에서 가장 긴 공룡 발자국의 길이는
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              &nbsp;m, 두 번째로 긴 공룡 발자국의 길이는
+              <div class="mixed_fraction">
+                <span></span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>20</span>
+                </div>
+              </div>
+              &nbsp;m 입니다. 두 공룡 발자국의
+            </div>
+            길이의 차는 몇 m인지 구해 봅시다. <span class="from">(출처: 한겨레, 2024)
+            </span>
+          </div>
+          <!-- <div class="fraction-text-column">
+            <div class="fraction-text-align" lang="y">
+              지금까지 발견된 세계에서 가장 긴 공룡 발자국의 길이는
+              <div class="mixed_fraction">
+                <span>1</span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>4</span>
+                </div>
+              </div>
+              m, 두 번째로 긴 공룡 발자국의 길이는
+              <div class="mixed_fraction">
+                <span>1</span>
+                <div class="fraction_box">
+                  <span>3</span>
+                  <span>20 </span>
+                </div>
+              </div>
+              m 입니다. 두 공룡 발자국의
+            </div>
+            <div class="fraction-text-align" lang="y">길이의 차는 몇 m인지 구해 봅시다. <span class="from">(출처: 한겨레, 2024)
+            </span></div>
+          </div> -->
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="container_515">
+          <div class="operations">
+            <div class="input_wrap fraction_wrap">
+              <math-field data-answer-single="(3)/(5)"></math-field>
+          </div>
+           &nbsp;m
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

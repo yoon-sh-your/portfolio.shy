@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA516_10_IH_0007</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema516_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema516_10_ih_0007">
+      <section class="title type2">
+        <h2 data-head="7" class="is_star2">
+          <span class="nemo"></span>
+          <span lang="y">안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center mt_40 align_end">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA516_10_IH/0007_01.png" alt="" />
+            <p class="text1">20 m</p>
+            <p class="text2">12 m</p>
+            <p class="text3">15 m</p>
+            <div class="input_position">
+              <div class="input_wrap">
+                <math-field data-answer-single="25" class="w_136"></math-field>
+              </div>
+              <span>m</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>
+                  <span lang="y"
+                    >삼각형의 밑변의 길이를 20 m라고 할 때 높이는 15 m이므로 넓이는 20×15÷2=150 (㎡) 입니다.<br />
+                    밑변의 길이를</span
+                  >
+                  <span class="nemo"></span>
+                  <span lang="y"> m라고 할 때 높이는 12 m이므로</span>
+                  <span class="nemo"></span>
+                  <span lang="y">×12÷2=150, </span>
+                  <span class="nemo"></span>
+                  <span lang="y">×12=300, </span>
+                  <span class="nemo ml_5"></span><span lang="y">=25입니다.</span>
+                </p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

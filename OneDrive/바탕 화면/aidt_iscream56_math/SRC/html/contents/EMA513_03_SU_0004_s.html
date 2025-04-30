@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMA513_03_SU_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css">
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema513_03.css">
+
+    <style>
+        /* 인라인 스타일은 쓰지마세요. 이거는 예시를 위한 예외 사용입니다. */
+        article{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="app_wrap" class="ema513_03_su_0004">
+        <section class="title type2">
+            <h2 data-head="2_pink" lang="y">
+                <img src="../../common_contents/img/EMA513_03_SU/obj1.png" alt="">
+                모양 막대의 수와 
+                <img src="../../common_contents/img/EMA513_03_SU/obj2.png" alt="">
+                모양 막대의 수 사이의 대응 관계를 알아봅시다.</h2>
+        </section>
+
+        <!-- section.contents 에 pagine_layout 클래스를 추가하고 article.page.page_n 태그를 추가하면 슬라이드 페이지 개수에 맞는 페이징컨트롤러가 동적으로 생성됩니다. -->
+        <section class="contents paging_layout">
+            <!-- 아티클 태그 묶음은 위치에 상관없이 내부 컨텐츠가 전환 됩니다.(다른 태그로 감싸도 괜찮음) -->
+            <article class="page page_1">
+                <div class="contents">
+                <h3 lang="y"> 
+                    <div class="img_wrap">
+                        <img src="../../common_contents/img/EMA513_03_SU/obj1.png" alt="">
+                    </div>
+                    모양 막대가 1개, 2개, 3개, 4개일 때,
+                    <div class="img_wrap">
+                        <img src="../../common_contents/img/EMA513_03_SU/obj2.png" alt="">
+                    </div>
+                    모양 막대는 각각 몇 개인가요? </h3>
+                </div>
+                <img src="./../../common_contents/img/EMA513_03_SU/trees.png" alt="">
+                <div class="obj_box">
+                    <div class="obj_text">
+                        모양 막대 1개
+                    </div>
+                    <div class="obj_text">
+                        모양 막대 2개
+                    </div>
+                    <div class="obj_text">
+                        모양 막대 3개
+                    </div>
+                    <div class="obj_text">
+                        모양 막대 4개
+                    </div>
+                </div>
+                <div class="answer_text_area">
+                    <div class="answer_text">
+                        <div class="input_wrap">
+                            <math-field data-answer-single="0"></math-field> 
+                        </div>
+                        <span lang="y">개</span>
+                    </div>
+
+                    <div class="answer_text">
+                        <div class="input_wrap">
+                            <math-field data-answer-single="1"></math-field> 
+                        </div>
+                        <span lang="y">개</span>
+                    </div>
+
+                    <div class="answer_text">
+                        <div class="input_wrap">
+                            <math-field data-answer-single="2"></math-field> 
+                        </div>
+                        <span lang="y">개</span>
+                    </div>
+
+                    <div class="answer_text">
+                        <div class="input_wrap">
+                            <math-field data-answer-single="3"></math-field> 
+                        </div>
+                        <span lang="y">개</span>
+                    </div>
+                </div>
+            </article>
+            <article class="page page_2">
+                <div class="contents">
+                <h3 lang="y">
+                    <div class="img_wrap">
+                        <img src="../../common_contents/img/EMA513_03_SU/obj1.png" alt="">
+                    </div>모양 막대의 수와 
+                    <div class="img_wrap">
+                        <img src="../../common_contents/img/EMA513_03_SU/obj2.png" alt="">
+                    </div>모양 막대의 수가 어떻게 변하는지 이야기해 보세요.
+                </h3>
+            </div>
+
+                <img src="../../common_contents/img/EMA513_03_SU/trees.png" alt="">
+
+                <div class="table_box">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th lang="y">
+                                    <!-- <img src="../../common_contents/img/EMA513_03_SU/rectangle.png" alt="">  -->
+                                    모양 막대의 수(개) </th>
+                                <th lang="y">1</th>
+                                <th lang="y">2</th>
+                                <th lang="y">3</th>
+                                <th lang="y">4</th>
+                                <th lang="y">...</th>
+                            </tr>
+                        </thead> 
+                        <tbody>
+                            <ul class="imgposition">
+                                <li><img src="../../common_contents/img/EMA513_03_SU/rectangle.png" alt=""> </li>
+                                <li><img src="../../common_contents/img/EMA513_03_SU/tree.png " alt=""></li>
+                            </ul>
+                            
+    
+                            <tr>
+                                <td lang="y">
+                                   모양 막대의 수(개) </td>
+                                <td >0</td>
+                                <td >
+                                    <div class="input_wrap input2">
+                                    <math-field data-answer-single="1"></math-field>
+                                </div>
+                                </td>
+                                
+                                <td>
+                                    <div class="input_wrap input2">
+                                        <math-field data-answer-single="2"></math-field>
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <div class="input_wrap input2">
+                                        <math-field data-answer-single="3"></math-field>
+                                    </div>
+                                </td>
+                                <td lang="y">
+                                    ...
+                                    </td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+
+                    <div class="text_wrapper">
+                        <h2>
+                            <img src="../../common_contents/img/EMA513_03_SU/tall_tree.png" alt="">모양 막대가
+                            <div class="input_wrap input2">
+                                <math-field data-answer-single="1"></math-field></div> 개씩 늘어날 때 마다
+                            <img src="../../common_contents/img/EMA513_03_SU/tree.png" alt="">
+                            모양 막대도
+                            <div class="input_wrap input2">
+                                <math-field data-answer-single="1"></math-field>
+                            </div> 개씩 <div class="dropdown_wrap">
+                                <select class="custom_dropdown" data-answer-single="늘어납니다.">
+                                    <option></option><!--최초선택데이터 생성 방지용-->
+                                    <option value="늘어납니다."></option>
+                                    <option value="줄어듭니다."></option>
+                                </select>
+                            </div>
+                        </h2>
+                    </div>
+                </div>
+            </article>
+
+            <article class="page page_3">
+                <div class="contents">
+            <h3 lang="y">
+                <div class="img_wrap">
+                    <img src="../../common_contents/img/EMA513_03_SU/obj1.png" alt="">
+                </div>모양 막대의 수와 
+                <div class="img_wrap">
+                    <img src="../../common_contents/img/EMA513_03_SU/obj2.png" alt="">
+                </div>모양 막대의 수 사이의 대응 관계를 이야기해 보세요.
+              </h3>
+            </div>
+            <img src="../../common_contents/img/EMA513_03_SU/trees.png" alt="">
+
+            <div class="text_wrapper2">
+                <h2>
+                    <img src="../../common_contents/img/EMA513_03_SU/tree.png" alt="">모양 막대의 수는
+                    <img src="../../common_contents/img/EMA513_03_SU/tall_tree.png" alt="">
+                    모양 막대의 수에서 
+                    <div class="input_wrap input2">
+                        <math-field data-answer-single="1"></math-field> </div> 을 뺀 것과 같습니다.                
+                </h2>
+
+                <h2>
+                    <img src="../../common_contents/img/EMA513_03_SU/tall_tree.png" alt="">모양 막대의 수는
+                    <img src="../../common_contents/img/EMA513_03_SU/tree.png" alt="">
+                    모양 막대의 수에서 
+                    <div class="input_wrap input2">
+                        <math-field data-answer-single="1"></math-field> </div>
+                        을 더한 것과 같습니다.                
+                </h2>
+            </div>
+                </article>
+            <article class="page page_4">
+                <div class="contents">
+                <h3 lang="y">
+                    <div class="img_wrap">
+                        <img src="../../common_contents/img/EMA513_03_SU/obj1.png" alt="">
+                    </div>모양 막대가 10개일 때,
+                    <div class="img_wrap">
+                        <img src="../../common_contents/img/EMA513_03_SU/obj2.png" alt="">
+                    </div>모양 막대는 몇 개인지 구해 보세요.
+                   </h3>
+                </div>
+                <img src="../../common_contents/img/EMA513_03_SU/trees.png" alt="">
+
+                <div class="answer_text_area">
+                    <div class="answer_text">
+                        <div class="input_wrap input2">
+                            <math-field data-answer-single="9"></math-field>
+                        </div>      
+                        <span lang="y">개</span> 
+                    </div> 
+                </div> 
+            </article>
+        </section>
+        <div class="btn_area">
+            <!-- 불필요한 태그 제외 후 사용 -->
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <button class="btnCheck">확인</button>
+        </div>
+    </div>
+</body>
+</html>

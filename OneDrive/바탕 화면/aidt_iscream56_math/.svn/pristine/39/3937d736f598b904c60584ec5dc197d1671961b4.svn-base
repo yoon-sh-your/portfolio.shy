@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA611_05_IH_0001</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema611_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema611_05_ih_0001">
+      <section class="title type2">
+        <h2 data-head="1">
+          <div class="fraction_box"><span>3</span><span>8</span></div>
+          <span lang="y"> ÷8을 그림에 빗금으로 나타내고,</span>
+          <span class="nemo"></span>
+          <span lang="y"> 안에 알맞은 수를 써넣으세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_start">
+          <div class="boolean_area">
+            <div class="boolean_count_wrap" data-answer-single="1">
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+              <button type="button"></button>
+            </div>
+            <img src="./../../common_practice/img/EMA611_05_IH/0001_02.png" alt="" class="border_img" />
+            <div class="texts">
+              <p>0</p>
+              <div class="fraction_box"><span>1</span><span>8</span></div>
+              <p>1</p>
+            </div>
+          </div>
+          <div class="input_area">
+            <div class="input_row">
+              <div class="fraction_box"><span>1</span><span>4</span></div>
+              <span lang="y">을 8등분한 것 중의 하나는</span>
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              <span lang="y">의</span>
+              <div class="fraction_box">
+                <span>1</span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="8" text-align="center" class="w_80"></math-field>
+                </div>
+              </div>
+              <span lang="y">이므로</span>
+            </div>
+            <div class="input_row">
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              <span lang="y">÷8은</span>
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              ×
+              <div class="fraction_box">
+                <span>1</span>
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="8" text-align="center" class="w_80"></math-field>
+                  </div>
+                </span>
+              </div>
+              <span lang="y">로 나타낼 수 있습니다.</span>
+            </div>
+            <div class="input_row">
+              <img src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" class="img" />
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              ÷8=
+              <div class="fraction_box"><span>3</span><span>4</span></div>
+              ×
+              <div class="fraction_box">
+                <span>1</span>
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="8" text-align="center" class="w_80"></math-field>
+                  </div>
+                </span>
+              </div>
+              =
+              <div class="fraction_box">
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="3" text-align="center" class="w_80"></math-field>
+                  </div>
+                </span>
+                <span>
+                  <div class="input_wrap">
+                    <math-field data-answer-single="32" text-align="center" class="w_80"></math-field>
+                  </div>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_0" lang="y">
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span> </span
+                  >을 8등분한 것 중의 하나는 &nbsp;
+
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span> </span
+                  >의&nbsp;
+
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>8</span> </span
+                  >이므로
+                </div>
+
+                <div class="flex align_center gap_0" lang="y">
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span> </span
+                  >÷8은&nbsp;
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span> </span
+                  >×<span class="fraction_box">
+                    <span>1</span>
+                    <span>8</span> </span
+                  >로 나타낼 수 있습니다.
+                </div>
+
+                <div class="flex align_center gap_0" lang="y">
+                  ➔ &nbsp;
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span> </span
+                  >÷8=<span class="fraction_box">
+                    <span>3</span>
+                    <span>4</span> </span
+                  >×<span class="fraction_box">
+                    <span>1</span>
+                    <span>8</span> </span
+                  >=<span class="fraction_box">
+                    <span>3</span>
+                    <span>32</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck"></button>
+          <!-- <button class="btnSubmit">제출</button> -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_02_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_02.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_02_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" class="is_star" lang="y">재현이네 모둠이 한 달 동안 급식을 남기지 않은 날수를 나타낸 표입니다. 한 달 동안 급식을 남기지 않은 날수의 평균을 구하는 방법을 준희가 말한 방법으로 설명해 보고, 평균은 며칠인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align_center">
+          <div class="top">
+            <div class="tit_data">
+              <div class="inner">
+                <span lang="y">학생별 급식을 남기지 않은 날수</span>
+              </div>
+            </div>
+            <div class="table_wrap row">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col" lang="y">이름</th>
+                    <td lang="y">재현</td>
+                    <td lang="y">소연</td>
+                    <td lang="y">승준</td>
+                    <td lang="y">유진</td>
+                    <td lang="y">예성</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" lang="y">급식을 남기지<br />않은 날수(일)</th>
+                    <td>10</td>
+                    <td>13</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>9</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="flex justify_center align_center gap_20 mt_20">
+            <div class="img">
+              <img src="../../common_practice/img/EMA526_02_IH/0004_img.png" alt="" />
+              <span class="name" lang="y">준희</span>
+              <span class="txt" lang="y">급식을 남기지 않은 날수를 고르게 해 봐!</span>
+            </div>
+            <div class="question_box">
+              <span class="label_gray">설명</span>
+              <div class="input_wrap iw1">
+                <math-field class=""></math-field>
+                <div class="example_box">
+                  <p lang="y">급식을 남기지 않은 날수 10, 13, 8, 10, 9를 고르게 하면 10, 10, 10, 10, 10이 되므로 평균은 10일입니다.</p>
+                </div>
+              </div>
+              <div class="flex align_center gap_8 answer1" lang="y">
+                (
+                <div class="input_wrap">
+                  <math-field data-answer-single="10"></math-field>
+                </div>
+                )일
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">급식을 남기지 않은 날수를 고르게 하여 평균을 구합니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

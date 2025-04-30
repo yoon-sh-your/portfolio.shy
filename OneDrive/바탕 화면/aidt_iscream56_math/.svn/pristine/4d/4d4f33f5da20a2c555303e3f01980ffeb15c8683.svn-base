@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMA615_04_SU_0004_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema615_common.css" />
+  <link rel="stylesheet" href="./../../common_contents/css/ema615_04.css" />
+  <!-- <script src="../../common_contents/js/ema615_11_0003.js"></script> -->
+  <!-- <script src="../../common_contents/js/ema615_03_0005-2.js"></script> -->
+</head>
+
+<body>
+  <div id="app_wrap" class="ema615_04_su_0004">
+    <section class="title type2">
+      <h2 data-head="2_light_purple" lang="y">
+        <img src="../../common_contents/common/img/title_heading_num_1_light_purple.svg" alt="" width="32px"
+          height="32px">
+        에서 우리 모둠이 조사한 자료를 띠그래프와 원그래프로 나타내어 봅시다.
+    </section>
+
+    <section class="contents paging_layout">
+      <div class="flex align_start">
+
+        <article class="page page_1">
+          <h3>
+              <div>
+                  <span lang="y">조사한 자료를 정리하여 표를 완성해 보세요. (단, 백분율은 반올림하여 소수 첫째 자리까지 나타냅니다.)</span>
+                  <button type="button" class="btn calculator">계산기</button>
+              </div>
+          </h3>
+
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <div class="r1">
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                     <p lang="y">친구에게 듣고 싶은 말별 학생 수의 비율</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="r2">
+                <div class="table-container">
+                  <table class="my-table">
+                    <thead>
+                      <tr>
+                        <th>
+                          <div class="input_wrap ip1" data-hint-position="up">
+                            <math-field data-answer-single="듣고 싶은 말" lang="y"></math-field>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="input_wrap ip2" data-hint-position="up">
+                            <math-field data-answer-single="같이 놀자" lang="y"></math-field>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="input_wrap ip3" data-hint-position="up">
+                            <math-field data-answer-single="정말 잘한다" lang="y"></math-field>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="input_wrap ip4" data-hint-position="up">
+                            <math-field data-answer-single="고마워" lang="y"></math-field>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="input_wrap ip5" data-hint-position="up">
+                            <math-field data-answer-single="넌 좋은 친구야" lang="y"></math-field>
+                          </div>
+                        </th>
+                        <th>
+                          <div class="input_wrap ip6" data-hint-position="up">
+                            <math-field data-answer-single="기타" lang="y"></math-field>
+                          </div>
+                        </th>
+                        <th lang="y">합계</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y">학생 수(명)</th>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="8"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="6"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="5"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="4"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="2"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="25"></math-field>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th lang="y">백분율(％)</th>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="32"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="24"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="20"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="16"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="8"></math-field>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="input_wrap" data-hint-position="right">
+                            <math-field data-answer-single="100"></math-field>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> 
+              </div>
+
+            </div>
+          
+          </div>
+ 
+        </article>
+        <article class="page page_2">
+          <h3 lang="y">앞의 표를 보고 띠그래프로 나타내어 보세요.</h3>
+
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <div class="r1">
+
+                <div class="table-container">
+                  <div class="table-title" lang="y">친구에게 듣고 싶은 말별 학생 수의 비율</div>
+                  <table class="my-table">
+                    <thead>
+                      <tr>
+                        <th lang="y">듣고 싶은 말</th>
+                        <th lang="y">같이 놀자</th>
+                        <th lang="y">정말 잘한다</th>
+                        <th lang="y">고마워</th>
+                        <th lang="y">넌 좋은 친구야</th>
+                        <th lang="y">기타</th>
+                        <th lang="y">합계</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y">학생 수(명)</th>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <th lang="y">백분율(％)</th>
+                        <td>32</td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>16</td>
+                        <td>8</td>
+                        <td>100</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <div class="r2">
+
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                     <p lang="y">친구에게 듣고 싶은 말별 학생 수의 비율</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="r3">
+
+                <!-- <div class="bar-graph-division bar-container1" data-single-answer='[32,24,20,16,8]' data-base-percent="1">
+                  <svg id="barSvg" width="1245" height="120" viewBox="0 0 1245 120">
+                    <rect class="bar" x="0" y="44" width="1232" height="75"/>
+                  </svg>
+                  <div class="option-selector" id="optionSelector"></div>
+                </div> -->
+
+              </div>
+
+            </div>
+          
+          </div>
+
+        </article>
+
+        <article class="page page_3">
+          <h3 lang="y">앞의 표를 보고 원그래프로 나타내어 보세요.</h3>
+
+          <div class="question_box justify_center">
+
+            <div class="container">
+
+              <div class="c1">
+
+                <div class="table-container">
+                  <!-- <div class="table-title">친구에게 듣고 싶은 말별 학생 수의 비율</div> -->
+                   <div class="completed_table_title" lang="y">
+                    친구에게 듣고 싶은 말별 학생 수의 비율
+                   </div>
+                  <table class="my-table">
+                    <thead>
+                      <tr>
+                        <th lang="y">듣고 싶은 말</th>
+                        <th lang="y">같이 놀자</th>
+                        <th lang="y">정말 잘한다</th>
+                        <th lang="y">고마워</th>
+                        <th lang="y">넌 좋은 친구야</th>
+                        <th lang="y">기타</th>
+                        <th lang="y">합계</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th lang="y">학생 수(명)</th>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>5</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <th lang="y">백분율(％)</th>
+                        <td>32</td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>16</td>
+                        <td>8</td>
+                        <td>100</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <div class="c2">
+
+                <div class="input_wrap">
+                  <math-field class="textarea"></math-field>
+                  <div class="example_box">
+                     <p lang="y">친구에게 듣고 싶은 말별 학생 수의 비율</p>
+                  </div>
+                </div>
+
+                <div class="circle-graph-division" data-single-answer='[40,25,20,10,5]'>
+                  <svg id="circleSvg" width="500" height="500" viewBox="0 0 500 500">
+                    <circle class="circle" cx="250" cy="250" r="200"/>
+                    <circle class="center-point" cx="250" cy="250" r="5" />
+                  </svg>
+                  <div class="option-selector" id="optionSelector"></div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- <div class="input_group">
+              <div class="input_wrap ip1">
+                <math-field data-answer-single="고마워(20 ％)"></math-field>
+              </div>
+              <div class="input_wrap ip2">
+                <math-field data-answer-single="넌 좋은 친구야(16 ％)"></math-field>
+              </div>
+              <div class="input_wrap ip3">
+                <math-field data-answer-single="기타(8 ％)"></math-field>
+              </div>
+              <div class="input_wrap ip4">
+                <math-field data-answer-single="같이 놀자(32 ％)"></math-field>
+              </div>
+              <div class="input_wrap ip5">
+                <math-field data-answer-single="정말 잘한다(24 ％)"></math-field>
+              </div>
+            </div> -->
+          
+          </div>
+
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+          <button class="btnSubmit">확인</button>
+        </div>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA521_05_IH_0006</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <!-- <script src="../../common_practice/js/ema521_01_02_ih.js"></script> -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema521_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema521_05_ih_0006 paging">
+      <section class="title type2 score">
+        <h2 data-head="6" class="is_star" lang="y">서하는 21500원짜리 책을 1000원짜리 지폐로만 계산하려고 합니다. 물음에 답해 보세요.</h2>
+      </section>
+      <section class="contents paging_layout">
+        <article class="page page_1">
+          <div class="img_row">
+            <div class="img_area flex justify_center">
+              <img src="./../../common_practice/img/EMA521_05_IH/0006_01.png" alt="" />
+              <p lang="y">21500원</p>
+            </div>
+
+            <div class="question_box justify_center dir_col mt_30">
+              <h3 lang="y">최소 얼마를 내야 하는지 구해 보세요.</h3>
+              <div class="input_area mt_30">
+                <span>(</span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="22000"></math-field>
+                </div>
+                <span lang="y">)원</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">
+                    책을 1000원짜리 지폐로만 계산하려면 책의 값을 올림하여 천의 자리까지 나타내야 합니다. <br />
+                    21<span class="text_bg_red">500</span> ➔ 22000 <br />
+                    따라서 최소 22000원을 내야 합니다.
+                  </p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+        <article class="page page_2">
+          <div class="img_row">
+            <div class="img_area flex justify_center">
+              <img src="./../../common_practice/img/EMA521_05_IH/0006_01.png" alt="" />
+              <p lang="y">21500원</p>
+            </div>
+
+            <div class="question_box justify_center dir_col mt_30">
+              <h3 lang="y">1000원짜리 지폐를 최소 몇 장 내야 하는지 구해 보세요.</h3>
+              <div class="input_area mt_30">
+                <span>(</span>
+                <div class="input_wrap">
+                  <math-field data-answer-single="22"></math-field>
+                </div>
+                <span lang="y">)장</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="solve_area">
+            <div class="inner_solve">
+              <div class="flex">
+                <strong class="tit_solve" lang="y">해설</strong>
+                <div class="conts_solve">
+                  <p lang="y">22000원을 내려면 1000원짜리 지폐를 22장 내야 합니다.</p>
+                </div>
+              </div>
+              <div class="buttons_solve"></div>
+            </div>
+          </div>
+        </article>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

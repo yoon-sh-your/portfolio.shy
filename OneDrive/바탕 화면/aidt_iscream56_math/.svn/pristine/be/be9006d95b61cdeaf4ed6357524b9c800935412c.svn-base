@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA526_06_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema526_06_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema526_06.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema526_06_ih_0004">
+      <section class="title type2">
+        <h2 data-head="4" class="is_star" lang="y">빨간색, 노란색, 파란색으로 이루어진 회전판과 회전판을 100회 돌려 화살이 멈춘 횟수를 나타낸 표입니다. 일이 일어날 가능성이 가장 비슷한 회전판을 찾아 기호를 고르세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align_center justify_center">
+          <div class="tit_data">
+            <div class="inner"><span lang="y">색별 화살이 멈춘 횟수</span></div>
+          </div>
+          <div class="table_wrap row">
+            <table>
+              <thead>
+                <tr>
+                  <th lang="y">색</th>
+                  <td lang="y">빨간색</td>
+                  <td lang="y">노란색</td>
+                  <td lang="y">파란색</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th lang="y">횟수(회)</th>
+                  <td>76</td>
+                  <td>12</td>
+                  <td>12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="boolean_wrap type_chk">
+          <button type="button" data-answer-single="false">
+            <span class="circle">㉠</span>
+            <div class="img"><img src="../../common_practice/img/EMA526_06_IH/0004_img1.svg" alt="" /></div>
+          </button>
+          <button type="button" data-answer-single="true">
+            <span class="circle">㉡</span>
+            <div class="img"><img src="../../common_practice/img/EMA526_06_IH/0004_img2.svg" alt="" /></div>
+          </button>
+          <button type="button" data-answer-single="false">
+            <span class="circle">㉢</span>
+            <div class="img"><img src="../../common_practice/img/EMA526_06_IH/0004_img3.svg" alt="" /></div>
+          </button>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p lang="y">빨간색 부분이 가장 넓고, 노란색과 파란색 부분의 넓이가 같은 회전판을 찾습니다. 따라서 일이 일어날 가능성이 가장 비슷한 회전판은 ㉡입니다.</p>
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

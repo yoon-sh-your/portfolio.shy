@@ -1,0 +1,646 @@
+.input_wrap .example_box>p {
+  flex-wrap: wrap;
+}
+
+.fraction_row {
+  display: flex;
+  align-items: center;
+}
+
+.blue_txt {
+  color: #33b4f1;
+}
+
+.red_txt {
+  color: #e6007e;
+}
+
+/*EMA613_06_SU_0002_s*/
+.ema613_06_su_0002 {
+  .video_wrap {
+    flex: 1;
+    aspect-ratio: 16 / 9;
+    border-radius: 20px;
+    border: 2px solid #f4f4f4;
+    overflow: hidden;
+    position: relative;
+    background: url(../../common_contents/img/EMA613_06_SU/0002_img01.png) no-repeat bottom center / 100%;
+  }
+}
+
+/* ema613_06_SU_0003_s */
+.ema613_06_su_0003 {
+  .page_1 {
+    h3 {
+      margin-bottom: 40px;
+    }
+
+    .answer1 math-field:not(.textarea) {
+      width: 212px;
+    }
+  }
+
+  .page_2 {
+    .input_wrap {
+      math-field.textarea {
+        max-height: 154px;
+        min-height: auto;
+      }
+    }
+  }
+
+  .page_3 {
+    .info {
+      position: absolute;
+      top: -10px;
+      left: 70px;
+      background: url(../img/EMA613_06_SU/0003_img04.png) no-repeat right center;
+      font-size: 24px;
+      padding-right: 40px;
+    }
+
+    .container_boolean {
+      position: relative;
+      background: url(../img/EMA613_06_SU/0003_img01.png) no-repeat center 0;
+
+      .balloon_txt {
+        position: absolute;
+        top: 10px;
+        right: -230px;
+        width: 309px;
+        height: 191px;
+        background: url(../img/EMA613_06_SU/0003_img02.png) no-repeat center 0;
+        font-size: 23px;
+        padding: 17px 110px 10px 20px;
+        text-align: center;
+        white-space: normal;
+      }
+
+      .row_boolean {
+        display: flex;
+        gap: 100px;
+        margin-top: 224px;
+      }
+
+      /* 분수 문장 */
+      .fraction-text-align {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+      }
+
+      .fraction-text-align>.f32b {
+        padding: 0px 8px;
+      }
+
+      .fraction-text-column {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .fraction-text-column .fraction-text-align:nth-child(1) {
+        margin-top: -4px;
+      }
+
+      .fraction-text-column .fraction-text-align:nth-child(2) {
+        margin-top: -10px;
+      }
+
+      /* 분수 - 예시 답안 */
+      .fraction_container .fraction-text-column {
+        /* gap: 12px; */
+        font-size: 24px;
+        color: var(--primary-blue-800);
+      }
+
+      .fraction_container .fraction_box::before {
+        background-color: #1454b9;
+      }
+
+      .fraction_container .f32b {
+        font-size: unset;
+      }
+
+      .fraction_container .fraction-text-column .fraction-text-align:nth-child(1) {
+        margin-top: -4px;
+      }
+
+      .fraction_container .fraction-text-column .fraction-text-align:nth-child(2) {
+        margin-top: -4px;
+      }
+
+      .fraction_container .fraction-text-column .fraction-text-align:nth-child(3) {
+        margin-top: 12px;
+      }
+
+      /* 분수 타이틀 */
+      .fraction_title .title_head {
+        margin-top: 30px !important;
+      }
+
+      .fraction_title h2[data-text="생각 깨우기"] {
+        margin-top: -28px !important;
+      }
+
+      .fraction_title h2[data-text="생각 깨우기"] .fraction-text-column {
+        margin-top: unset;
+      }
+
+      .fraction_title .fraction-text-column {
+        margin-top: -28px;
+      }
+
+      /* 분수 - whole */
+      .f32b {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      /* 분수 - 연산 */
+      .operations {
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        font-weight: 700;
+        gap: 4px;
+      }
+
+      /* 분수 - 인풋 사이즈 */
+      .input_wrap {
+        align-items: center;
+        min-width: 80px;
+      }
+
+      .input_wrap math-field:not(.textarea) {
+        width: 80px;
+        height: 60px;
+      }
+
+      /* 분수 색칠 */
+      .count_row {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .count_row .nums {
+        font-size: 32px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .boolean-counts {
+        display: flex;
+        gap: 20px;
+        border: 2px solid #e60012;
+        padding: 16px;
+        border-radius: 16px;
+      }
+
+      /* 색칠 - 그리드 */
+      .boolean_count_wrap.grid_boolean {
+        display: grid;
+        gap: 0;
+      }
+
+      .boolean_count_wrap.grid_boolean.c10r10 {
+        grid-template-columns: repeat(10, 1fr);
+        /* 가로 4칸 */
+        grid-template-rows: repeat(3, 1fr);
+        /* 세로 3칸 */
+        border-color: #00a0e9;
+      }
+
+      .boolean_count_wrap.grid_boolean.c5r3 {
+        grid-template-columns: repeat(5, 1fr);
+        /* 가로 4칸 */
+        grid-template-rows: repeat(3, 1fr);
+        /* 세로 3칸 */
+      }
+
+      .boolean_count_wrap.grid_boolean button {
+        border: 1px solid #00a0e9;
+        border-image-source: repeating-linear-gradient(45deg,
+            #00a0e9 0,
+            #00a0e9 0,
+            white 1px,
+            white 1px);
+        border-image-slice: 1;
+        min-width: auto;
+        width: 16px;
+        height: 16px;
+      }
+
+      .boolean_count_wrap.grid_boolean button:not(:first-child)::before {
+        display: none;
+      }
+    }
+  }
+
+  .page_4 {
+    .question_box {
+      &+.question_box {
+        margin-top: 72px;
+      }
+    }
+
+    .input_area h3 {
+      margin-bottom: 40px;
+      letter-spacing: -1px;
+    }
+  }
+
+  &[data-current-page="page_2"] .contents>div.flex,
+  &[data-current-page="page_3"] .contents>div.flex,
+  &[data-current-page="page_4"] .contents>div.flex,
+  &[data-current-page="page_2"] .btn_area .btnCheck,
+  &[data-current-page="page_1"] .btn_area .btnSample,
+  &[data-current-page="page_1"] .btn_area .btnSubmit,
+  &[data-current-page="page_2"] .btn_area .btnSample,
+  &[data-current-page="page_3"] .btn_area .btnSample,
+  &[data-current-page="page_3"] .btn_area .btnType,
+  &[data-current-page="page_3"] .btn_area .btnSubmit,
+  &[data-current-page="page_4"] .btn_area .btnSubmit,
+  &[data-current-page="page_4"] .btn_area .btnSample {
+    display: none;
+  }
+}
+
+/*ema613_06_su_0004_s*/
+.ema613_06_su_0004 {
+  .compair {
+    display: flex;
+    justify-content: center;
+    /* height: 427px; */
+    padding: 0 10px;
+    gap: 69px;
+  }
+
+  .direction-column {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .question_box {
+    &:nth-child(1) {
+      position: relative;
+      width: 586px;
+      height: 281px;
+      background: url(../img/EMA613_06_SU/0004_img02.png) no-repeat center 8px / 100%;
+
+      .abs_1 {
+        position: absolute;
+        top: 130px;
+        left: 15px;
+      }
+
+      .abs_2 {
+        position: absolute;
+        top: 34px;
+        left: 172px;
+      }
+
+      .abs_3 {
+        position: absolute;
+        top: 120px;
+        left: 337px;
+        display: flex;
+        align-items: center;
+      }
+
+      .abs_4 {
+        position: absolute;
+        top: 217px;
+        left: 332px;
+        display: flex;
+        align-items: center;
+
+        .input_wrap {
+          min-width: auto;
+        }
+
+        math-field:not(.textarea) {
+          width: 80px;
+          height: 102px;
+          line-height: 74px;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      width: 410px;
+      height: 428px;
+      position: relative;
+      background: url(../img/EMA613_06_SU/0004_img03.png) no-repeat center 0 / 100%;
+      letter-spacing: -0.5px;
+      color: #000;
+
+      .abs_1 {
+        position: absolute;
+        top: 42px;
+        left: 55px;
+        color: #a55935;
+      }
+
+      .abs_2 {
+        position: absolute;
+        top: 293px;
+        left: 26px;
+        text-align: center;
+      }
+
+      .abs_3 {
+        position: absolute;
+        top: 293px;
+        left: 242px;
+        text-align: center;
+      }
+    }
+  }
+
+  .fraction_row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 0 50px; */
+    justify-content: center;
+
+    &:has(.inner) {
+      gap: 70px;
+    }
+  }
+
+  .group_box {
+    min-height: 80px;
+    padding: 10px 5px;
+    gap: 0;
+  }
+
+  .page_1 {
+    [class^="unit"] {
+      width: 37px;
+      height: 32px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .unit1-1 {
+      position: absolute;
+      top: 132px;
+      left: 134px;
+    }
+
+    .unit1-2 {
+      position: absolute;
+      top: 132px;
+      left: 172px;
+    }
+
+    .unit1-3 {
+      position: absolute;
+      top: 132px;
+      left: 106px;
+      width: 24px;
+    }
+
+    .unit1-4 {
+      position: absolute;
+      top: 97px;
+      left: 134px;
+    }
+
+    .unit1-5 {
+      position: absolute;
+      top: 162px;
+      left: 134px;
+    }
+
+    .unit1-6 {
+      position: absolute;
+      top: 200px;
+      left: 172px;
+    }
+
+    .unit2-1 {
+      position: absolute;
+      top: 132px;
+      left: 416px;
+    }
+
+    .unit2-2 {
+      position: absolute;
+      top: 132px;
+      left: 456px;
+    }
+
+    .unit2-3 {
+      position: absolute;
+      top: 132px;
+      left: 390px;
+      width: 24px;
+    }
+
+    .unit2-4 {
+      position: absolute;
+      top: 97px;
+      left: 416px;
+    }
+
+    .unit2-5 {
+      position: absolute;
+      top: 97px;
+      left: 456px;
+    }
+
+    .unit2-6 {
+      position: absolute;
+      top: 162px;
+      left: 416px;
+    }
+
+    .unit2-7 {
+      position: absolute;
+      top: 200px;
+      left: 456px;
+    }
+
+    .unit2-8 {
+      position: absolute;
+      top: 230px;
+      left: 456px;
+    }
+
+    .unit2-9 {
+      position: absolute;
+      top: 266px;
+      left: 456px;
+    }
+
+    .unit1-arr {
+      position: absolute;
+      top: 124px;
+      left: 166.6px;
+      width: 9px;
+      height: 30px;
+      background: url(../img/EMA613_02_SU/0004_img01.png) no-repeat center 0;
+      opacity: 0;
+    }
+
+    &:has(.reveal_btn.on[data-pair="1"]) {
+      .unit1-arr {
+        opacity: 1;
+      }
+
+      .unit1-3,
+      .unit1-4,
+      .unit1-5 {
+        background-color: #bbe5ff;
+      }
+    }
+
+    &:has(.reveal_btn.on[data-pair="2"]) {
+
+      .unit2-3,
+      .unit2-5,
+      .unit2-8 {
+        background-color: #ff8c78;
+      }
+    }
+
+    .reveal_wrap {
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      gap: 23px;
+      margin: 0 auto;
+      width: 853px;
+      height: 407px;
+      background: url(../img/EMA613_06_SU/0004_img01.png) no-repeat center 0 / 100%;
+
+      .reveal_btn[data-pair="1"] {
+        background-color: #feeee7;
+        width: 269px;
+        height: 112px;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 0;
+      }
+
+      .reveal_btn[data-pair="2"] {
+        background-color: #feeee7;
+        width: 269px;
+        height: 112px;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 0;
+      }
+
+      .reveal_btn[data-pair="3"] {
+        background-color: #feeee7;
+        width: 269px;
+        height: 112px;
+        font-size: 20px;
+        line-height: 32px;
+        padding: 0;
+      }
+
+      .reveal_btn[data-pair="1"]::before,
+      .reveal_btn[data-pair="2"]::before,
+      .reveal_btn[data-pair="3"]::before {
+        top: 10px;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        background-color: #feeee7;
+      }
+
+      .reveal_btn {
+        padding: 0px 10px 21px;
+        border: none;
+        background: none;
+        width: 158px;
+        height: 90px;
+      }
+
+      .reveal_btn::before {
+        width: auto;
+        height: auto;
+        top: 10px;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+      }
+
+      .reveal_btn:not(:disabled):after {
+        bottom: 10px;
+      }
+
+      .reveal_btn span {
+        position: absolute;
+        overflow: hidden;
+        width: 0;
+        height: 0;
+      }
+    }
+  }
+
+  .page_1,
+  .page_3 .input_wrap {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .input_wrap math-field.textarea {
+    height: 330px;
+  }
+}
+
+.ema613_06_su_0004[data-current-page="page_1"] .btn_area .btnType,
+.ema613_06_su_0004[data-current-page="page_1"] .btn_area .btnSubmit,
+.ema613_06_su_0004[data-current-page="page_2"] .btn_area .btnSubmit,
+.ema613_06_su_0004[data-current-page="page_3"] .btn_area .btnCheck {
+  display: none;
+}
+
+/*EMA613_06_SU_0005_s*/
+.ema613_06_su_0005 {
+  .flex {
+    display: flex;
+    justify-content: center;
+    gap: 240px;
+    flex-direction: row;
+    align-items: center;
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+    }
+  }
+}
+
+/*ema613_06_SU_0006_s*/
+.ema613_06_su_0006 {
+  .to_be .inwrap {
+    gap: 16px;
+  }
+
+  .to_be .what_do li {
+    font-size: 32px;
+    /* line-height: 48px; */
+    ` letter-spacing: -1px;
+  }
+
+  .to_be .what_do li::before {
+    content: "-";
+    width: 16px;
+    margin-top: unset;
+    background-color: transparent;
+  }
+}
+
+.boolean_count_wrap button.filled {
+  background-color: #bbe5ff;
+  border-color: #00a0e9;
+}

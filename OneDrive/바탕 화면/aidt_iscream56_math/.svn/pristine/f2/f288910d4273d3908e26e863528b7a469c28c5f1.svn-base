@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema527_01_su_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_project/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_project/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_project/css/ema56_common.css" />
+    <!-- 창의 프로젝트 공통 -->
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_project/css/ema527_01_SU.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema527_01_su_0003">
+      <section class="title">
+        <h2 data-head="1">
+          <span lang="y">택배 드론의 사고 원인에 대해 이야기해 봅시다.​</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="flex dir_col align_center gap_20">
+          <div class="img_wrap">
+            <img src="./../../common_project/img/EMA527_01_SU/ema527_01_SU_0003.png" alt="" class="img" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="1208" height="192" viewBox="0 0 1208 192" fill="none">
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="24" letter-spacing="-0.5px">
+                <tspan x="822.918" y="86.784">택배 드론의 모양이 대칭이</tspan>
+                <tspan x="802.676" y="122.784">되어야 안전한 비행이 가능한데</tspan>
+                <tspan x="820.121" y="158.784">대칭이 아니었을 수도 있어.</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="24" letter-spacing="-0.5px">
+                <tspan x="536.145" y="86.784">이동 거리가</tspan>
+                <tspan x="482.789" y="122.784">멀어서 배터리가 부족한</tspan>
+                <tspan x="530.629" y="158.784">것은 아닐까?</tspan>
+              </text>
+              <text fill="#222222" xml:space="preserve" style="white-space: pre" lang="y" font-size="24" letter-spacing="-0.5px">
+                <tspan x="219.645" y="86.784">택배 드론이</tspan>
+                <tspan x="173.66" y="122.784">배송할 수 있는 무게를</tspan>
+                <tspan x="193.855" y="158.784">넘었을 수도 있어.</tspan>
+              </text>
+            </svg>
+            <!-- <div class="img_txt flex justify_center f24b text_center">
+              <div lang="y">택배 드론이<br>배송할 수 있는<br>무게를 ​넘었을 수도 있어.​</div>
+              <div lang="y">이동 거리가<br>멀어서 배터리가 부족한​<br>것은 아닐까?​</div>
+              <div class="ml_8" lang="y">택배 드론의 모양이 대칭이<br> 되어야 안전한 비행이 가능한데​ <br>대칭이 아니었을 수도 있어.​</div>
+            </div> -->
+          </div>
+          <div class="input_wrap">
+            <math-field class="textarea" type="text"></math-field>
+            <ol class="example_box ex">
+              <li lang="y">배송 물품의 무게가 5 kg 초과였을 것 같습니다.​</li>
+              <li lang="y">출발지에서 배송지까지 갔다가 돌아오는 거리가 30 ㎞를 넘었을 것 같습니다.​</li>
+              <li lang="y">택배 드론의 균형이 맞지 않았을 것 같습니다.​</li>
+            </ol>
+          </div>
+          <div class="btn_area">
+            <button class="btnType key">입력타입토글</button>
+            <button class="btnReset">리셋</button>
+            <!-- <button class="btnCheck">확인</button> -->
+            <button class="btnSubmit">확인</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

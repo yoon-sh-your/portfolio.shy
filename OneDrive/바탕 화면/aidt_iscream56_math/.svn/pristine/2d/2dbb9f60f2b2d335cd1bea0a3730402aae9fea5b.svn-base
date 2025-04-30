@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ema514_10_su_0009_s</title>
+
+  <!-- 공통 js-->
+  <script src="../../common_contents/common/js/app.js"></script>
+
+  <!-- 공통 css-->
+  <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+  <!-- 개별 -->
+  <link rel="stylesheet" href="./../../common_contents/css/ema514_10.css" />
+</head>
+
+<body>
+  <div id="app_wrap" class="ema514_10_su_0009">
+    <div class="scroll_page">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 4">
+          <span class="blue line" lang="y">확인하고 정리해요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_4_sub_title">
+        <h2 lang="y">
+          <span class="empty_box"></span>
+          안에 알맞은 수를 써넣고,
+          <span class="empty_box ico_round"></span>
+          안에
+          <span class="flex align-center">
+            <img src="./../../common_contents//common/img/icon_arrow_right.svg" alt="크다">,
+            <img src="./../../common_contents//common/img/icon_equal.svg" alt="같다">,
+            <img src="./../../common_contents//common/img/icon_arrow_left.svg" alt="작다">
+            중 알맞은 것을 써넣으세요.
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="scroll_area">
+        <div class="question_box">
+          <div class="box_row row1">
+            <span class="txt" lang="y"><b>크기가 같은<br>분수 만들기</b></span>
+            <div class="box_col col1">
+              <span class="txt1_1">&times;2</span>
+              <span class="txt2_1">&times;3</span>
+              <span class="txt1_2">&times;2</span>
+              <span class="txt2_2">&times;3</span>
+              <div class="fraction_box">
+                <span>2</span>
+                <span>3</span>
+              </div>
+              <span class="equal1">=</span>
+              <div class="fraction_box">
+                <span class="input_wrap answer1">
+                  <math-field data-answer-single="4"></math-field>
+                </span>
+                <span>6</span>
+              </div>
+              <span class="equal2">=</span>
+              <div class="fraction_box">
+                <span>6</span>
+                <span>9</span>
+              </div>
+            </div>
+            <div class="box_col col2">
+              <span class="txt1_1">&divide;2</span>
+              <span class="txt2_1">&divide;3</span>
+              <span class="txt1_2">&divide;2</span>
+              <span class="txt2_2">&divide;3</span>
+              <div class="fraction_box">
+                <span>6</span>
+                <span>18</span>
+              </div>
+              <span class="equal3">=</span>
+              <div class="fraction_box">
+                <span>3</span>
+                <span>9</span>
+              </div>
+              <span class="equal4">=</span>
+              <div class="fraction_box">
+                <span>2</span>
+                <span>6</span>
+              </div>
+            </div>
+          </div>
+          <div class="box_row row2">
+            <span class="txt" lang="y"><b>약분한다:</b> 분모와 분자를 1이 아닌 공약수로 나누어 간단한 분수로 나타내는 것</span>
+            <div class="box_col col3">
+              <div class="fraction_box">
+                <span>12</span>
+                <span>15</span>
+              </div>
+              <span>=</span>
+              <div class="fraction_box">
+                <span>12&divide;3</span>
+                <span>
+                  15&divide;
+                  <span class="input_wrap answer2">
+                    <math-field data-answer-single="3"></math-field>
+                  </span>
+                </span>
+              </div>
+              <span>=</span>
+              <div class="fraction_box">
+                <span>4 </span>
+                <span>5</span>
+              </div>
+            </div>
+            <span class="tag" lang="y">기약분수</span>
+          </div>
+          <div class="box_row row3">
+            <span class="txt" lang="y"><b>통분한다</b>: 분모가 다른 분수의 분모를 같게 나타내는 것</span>
+            <div class="box_col col4">
+              <div class="col4_row">
+                <div class="fra_arr arr1">
+                  <div class="fra_parens">
+                    <div class="fraction_box">
+                      <span>3</span>    
+                      <span>4</span>
+                    </div>,
+                    <div class="fraction_box">
+                      <span>5</span>    
+                      <span>8</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_arr arr2">
+                  <div class="fra_parens">
+                    <div class="fraction_box">
+                      <span>3&times;8</span>    
+                      <span>4&times;8</span>
+                    </div>,
+                    <div class="fraction_box">
+                      <span>
+                        5&times;
+                        <span class="input_wrap answer3" data-hint-position="right">
+                          <math-field data-answer-single="4"></math-field>
+                        </span>
+                      </span>    
+                      <span>8&times;4</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_arr arr3">
+                  <div class="fra_parens">
+                    <div class="fraction_box">
+                      <span>24</span>
+                      <span>32</span>
+                    </div>,
+                    <div class="fraction_box">
+                      <span>20</span>
+                      <span>32</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col4_row">
+                <div class="fra_arr arr4">
+                  <div class="fra_parens">
+                    <div class="fraction_box">
+                      <span>3</span>    
+                      <span>4</span>
+                    </div>,
+                    <div class="fraction_box">
+                      <span>5</span>    
+                      <span>8</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_arr arr5">
+                  <div class="fra_parens">
+                    <div class="fraction_box">
+                      <span>3&times;2</span>    
+                      <span>4&times;2</span>
+                    </div>,
+                    <div class="fraction_box">
+                      <span>5</span>    
+                      <span>8</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="fra_arr arr6">
+                  <div class="fra_parens">
+                    <div class="fraction_box">
+                      <span>6</span>    
+                      <span>8</span>
+                    </div>
+                    <span class="comma">,</span>
+                    <div class="fraction_box">
+                      <span>5</span>    
+                      <span>8</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="box_row row4">
+            
+            <div class="box_col col5">
+              <span class="txt" lang="y">분수의 크기 비교</span>
+              <div class="fraction_inn">
+                <div class="fraction_box">
+                  <span>2</span>    
+                  <span>9</span>
+                </div>
+                <img src="./../../common_contents/img/EMA514_10_SU/0009_bg4.svg" alt="크다">
+                <div class="fraction_box">
+                  <span>1</span>    
+                  <span>6</span>
+                </div>
+              </div>
+            </div>
+            <div class="box_col col6">
+              <span class="txt" lang="y">분수와 소수의 크기 비교</span>
+              <div class="fraction_inn">
+                <div class="fraction_box">
+                  <span>1</span>    
+                  <span>4</span>
+                </div>
+                <div class="dropdown_wrap answer4">
+                  <select class="custom_dropdown math_symbol" data-answer-single="<">
+                    <option></option>
+                    <option value=">">></option>
+                    <option value="=">=</option>
+                    <option value="<"><</option>
+                  </select>
+                </div>
+                <span>0.5</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="btn_area relative">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </div>
+      
+      </section>
+    </div>    
+  </div>
+</body>
+
+</html>

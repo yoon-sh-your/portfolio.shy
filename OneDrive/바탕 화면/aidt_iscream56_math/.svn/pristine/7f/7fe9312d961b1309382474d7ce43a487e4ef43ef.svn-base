@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA624_05_IH_0005</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<script src="./../../common_practice/js/ema624_02_ih_0005.js"></script>
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema624_05.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema624_05_ih_0005">
+			<section class="title type2">
+				<h2 data-head="5_deep_green" class="is_star">
+					<span lang="y">비례식의 성질을 이용하여</span>
+					<span class="empty_box nemo"></span>
+					<span lang="y" class="ml-6">안에 알맞은 수가 더 큰 것의 기호를 써 보세요.</span>
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center">
+					<div class="text_area">
+						<ul>
+							<li>
+								<i class="num_sign mr_10">ㄱ</i>
+								3:<span class="empty_box nemo"></span>=5:10
+							</li>
+							<li>
+								<i class="num_sign mr_10">ㄴ</i>
+								1.4:0.6=<span class="empty_box nemo"></span>:3
+							</li>
+						</ul>
+						<div class="boolean_wrap">
+							<div>
+								<button data-answer-single="false" class="button1"></button>
+								<button data-answer-single="true" class="button2"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p>
+									㉠ 3×10=<span class="empty_box nemo"></span>×5,
+									<span class="empty_box nemo"></span>×5=30, <span class="empty_box nemo"></span>=6
+								</p>
+								<p>
+									㉡ 1.4×3=0.6×<span class="empty_box nemo"></span>, 0.6×<span
+										class="empty_box nemo"
+									></span
+									>= 4.2, <span class="empty_box nemo"></span>=7
+								</p>
+								<p>
+									6 &lt; 7이므로 <span class="empty_box nemo"></span>안에 알맞은 수가 더 큰 것은
+									㉡입니다.
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div>
+				<div class="btn_area">
+					<!-- <button class="btnType key">입력타입토글</button> -->
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

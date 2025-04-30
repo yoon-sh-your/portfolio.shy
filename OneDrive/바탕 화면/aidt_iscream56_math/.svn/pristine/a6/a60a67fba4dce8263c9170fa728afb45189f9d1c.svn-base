@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_10_SU_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema614_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema614_10_su_0006">
+        <section class="title type2">
+          <h2 data-type="1" data-text="자기주도 3">
+            <span class="blue line" lang="y">내 힘으로 풀어요</span>
+            <span lang="y">공부한 내용을 확인해요</span>
+          </h2>
+          </section>
+          <section class="title type2 jgjd_3_sub_title">
+            <h2 data-head="5" class="is_star" lang="y">
+              서희네 반 학생 25명 중 남학생은 10명입니다. 잘못 설명한 것을 찾아 기호를 고르고, 그 이유를 써 보세요.​
+            </h2>
+          </section>
+
+      <section class="contents paging_layout">
+        <div class="input_area">
+            <div class="question_box justify_center">
+                <div class="ex_box">
+                  <p lang="y">㉠&nbsp;전체 학생 수에 대한 남학생 수의 비율은 <span class="fraction_box"><span>2</span><span>5</span></span>입니다.</p>
+                  <p lang="y">㉡&nbsp;여학생 수에 대한 남학생 수의 비는 10:15 입니다.</p>
+                  <p lang="y">㉢&nbsp;여학생 수는 전체 학생 수의 6 ％ 입니다.</p>
+                </div>
+                <div class="input_wrap">
+                  <math-field class="textarea" ></math-field>
+                  <div class="example_box">
+                      <p class="gap_0">여학생 수는 전체 학생 수의 <span class="fraction_box"><span>15</span><span>25</span></span>&times;100=60→60 ％이기 때문입니다.</p>
+                  </div>
+              </div>
+            </div>    
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnSubmit">제출</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

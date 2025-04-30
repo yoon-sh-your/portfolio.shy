@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA614_07_IH_0004_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema614_01.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ena614_07">
+      <section class="title type2">
+        <h2 data-head="4" lang="y">
+          <span lang="y"
+            >두 상영관의 전체 좌석 수와 예매 좌석 수를 나타낸 표입니다. 두 상영관의 전체 좌석 수에 대한 예매 좌석 수의 비율을 각각 백분율로 <br />
+            나타내어 빈칸에 써넣고, 비율이 더 높은 상영관을 구해 보세요.
+          </span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="ema614_07_0002">
+          <div class="table_wrap">
+            <table>
+              <tbody>
+                <tr>
+                  <th>상영관</th>
+                  <td class="bg">1관</td>
+                  <td class="bg">2관</td>
+                </tr>
+                <tr>
+                  <th>전체 좌석 수(석)</th>
+                  <td>180</td>
+                  <td>150</td>
+                </tr>
+                <tr>
+                  <th>예매 좌석 수(석)</th>
+                  <td>144</td>
+                  <td>129</td>
+                </tr>
+                <tr>
+                  <th>
+                    전체 좌석 수에 대한<br />
+                    예매 좌석 수의 비율(％)
+                  </th>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="80"></math-field>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="input_wrap">
+                      <math-field data-answer-single="86"></math-field>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="flex justify_center align_center gap_4">
+            <div class="input_wrap">
+              <math-field data-answer-single="2"></math-field>
+            </div>
+            <p>관</p>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex gap_4 align_center">
+                  <p>1관은 전체 좌석 180석 중 예매 좌석이 144석이므로 전체 좌석 수에 대한 예매 좌석 수의 비율은</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <div class="fraction_box">
+                    <span>144</span>
+                    <span>180</span>
+                  </div>
+                  <p>×100=80</p>
+                  ➔
+                  <p>80 ％입니다. 2관은 전체 좌석 150석 중 예매 좌석이 129석 이므로 전체 좌석</p>
+                </div>
+
+                <div class="flex gap_4 align_center">
+                  <p>수에 대한 예매 좌석 수의 비율은</p>
+                  <div class="fraction_box ml_0">
+                    <span>129</span>
+                    <span>150</span>
+                  </div>
+                  <p>×100=86</p>
+                  ➔
+                  <p>86％입니다.</p>
+                </div>
+                <div class="flex gap_4 align_center">
+                  <p>80&lt;86이므로 전체 좌석 수에 대한 예매 좌석 수의 비율이 더 높은 상영관은 2관입니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

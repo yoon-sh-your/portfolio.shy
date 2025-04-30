@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_05_IH_0005_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_05_ih_0005">
+      <section class="title type2">
+        <h2 data-head="5" class="is_star fraction_box_title">
+          <div class="fraction_txt_wrap">
+            <div class="fraction_txt" lang="y">
+              <span lang="y">산 입구에서 쉼터까지의 길이는 2㎞이고, 쉼터에서 산 정상까지의 길이는 산 입구에서 쉼터까지 길이의</span>
+              <div class="mixed_fraction">
+                <span>1</span>
+                <div class="fraction_box"><span>3</span><span>10</span></div>
+              </div>
+              <span lang="y">배입니다.</span>
+              <span lang="y">쉼터에서</span>
+            </div>
+            <div class="fraction_txt" lang="y">산 정상까지의 길이는 몇 ㎞인지 식을 쓰고 답을 구해 보세요.</div>
+          </div>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center justify_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_05_IH/0005_01.png" alt="" />
+            <p class="text1" lang="y">산 정상</p>
+            <p class="text2" lang="y">쉼터</p>
+            <p class="text3" lang="y">산 입구</p>
+          </div>
+          <div class="input_area">
+            <div class="input_row flex align_center gap_10">
+              <div class="label_gray" lang="y">식</div>
+              <div class="input_wrap fraction_wrap fraction1">
+                <math-field data-answer-single="3×1(3)/(10)" text-align="center" placeholder="&nbsp;"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap fraction2">
+                <math-field data-answer-single="2(3)/(5)" text-align="center" placeholder="&nbsp;"></math-field>
+              </div>
+            </div>
+            <div class="input_row flex align_center gap_10">
+              <div class="label_gray" lang="y">답</div>
+              <div class="input_wrap fraction_wrap fraction3">
+                <math-field data-answer-single="2(3)/(5)(=(64)/(5))" text-align="center" placeholder="&nbsp;"></math-field>
+              </div>
+              <span>㎞</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">(쉼터에서 산 정상까지의 길이)</div>
+                <div class="flex align_center gap_10 mt_20">
+                  <span>=</span>
+                  <span>2</span>
+                  <span>×</span>
+                  <span>1</span>
+                  <div class="fraction_box"><span>3</span><span>10</span></div>
+                  <span>=</span>
+                  <span class="mark_error up">2<i>1</i></span>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>13</span><span class="mark_error">10<i>5</i></span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>13</span><span>5</span></div>
+                  <span>=</span>
+                  <span>2</span>
+                  <div class="fraction_box"><span>3</span><span>5</span></div>
+                  <span>(㎞)</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key" lang="y">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

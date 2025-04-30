@@ -1,0 +1,356 @@
+.nemo {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border: 2px solid var(--primary-blue);
+	border-radius: 4px;
+}
+
+.title .icon_badge {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 90px;
+	height: 28px;
+	background: url(../img/EMA516_03_IH/0007_icon.png) no-repeat 0 0;
+	padding: 0 10px 0 35px;
+	margin-left: 28px;
+	border-radius: 0 4px 4px 0;
+	font-style: normal;
+	font-size: 20px;
+	color: #774e92;
+	font-weight: 700;
+	gap: 4px;
+}
+.title .icon_badge::before {
+	content: "";
+	position: absolute;
+	left: -26px;
+	top: -1px;
+	width: 28px;
+	height: 27px;
+
+	background-size: 100%;
+}
+.title .icon_badge > span {
+	font-size: 16px;
+	font-weight: 400;
+	color: #222;
+}
+.layout_grid.question_box {
+	width: 100%;
+	justify-content: center;
+	margin-top: 60px;
+}
+.layout_grid .input_area {
+	margin: 20px 0 0 30px;
+}
+.layout_grid .input_row {
+	margin-bottom: 40px;
+}
+.layout_grid .input_row > span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.layout_grid .input_row:first-of-type {
+	margin-bottom: 28px;
+}
+.layout_grid .img_area {
+	position: relative;
+}
+
+/* ema516_03_ih_0001 */
+.ema516_03_ih_0001 .img_area p {
+	position: absolute;
+}
+.ema516_03_ih_0001 .img_area p:first-of-type {
+	top: 0;
+	left: 140px;
+}
+.ema516_03_ih_0001 .img_area p:last-of-type {
+	top: 128px;
+	left: 345px;
+}
+
+/* ema516_03_ih_0002 */
+.ema516_03_ih_0002 .question_box {
+	flex-direction: column;
+}
+.ema516_03_ih_0002 .img_area {
+	position: relative;
+	margin-bottom: 60px;
+}
+.ema516_03_ih_0002 .img_area p {
+	position: absolute;
+	font-weight: 700;
+}
+.ema516_03_ih_0002 .img_area .text1 {
+	top: 3px;
+	left: 36px;
+}
+.ema516_03_ih_0002 .img_area .text2 {
+	top: 3px;
+	right: 24px;
+}
+.ema516_03_ih_0002 .img_area .text3 {
+	top: 145px;
+	left: 191px;
+}
+.ema516_03_ih_0002 .img_area .text4 {
+	bottom: -24px;
+	left: 100px;
+}
+.ema516_03_ih_0002 .img_area .text5 {
+	top: 90px;
+	right: 100px;
+}
+.ema516_03_ih_0002 .input_area {
+	display: flex;
+	gap: 68px;
+}
+.input_col > span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* ema516_03_ih_0003 */
+.ema516_03_ih_0003 .question_box {
+	flex-direction: column;
+	align-items: center;
+}
+.ema516_03_ih_0003 .img_area {
+	position: relative;
+}
+.ema516_03_ih_0003 .img_area p {
+	position: absolute;
+}
+.ema516_03_ih_0003 .text1 {
+	top: 0;
+	left: 143px;
+}
+.ema516_03_ih_0003 .text2 {
+	top: 155px;
+	right: 19px;
+}
+.ema516_03_ih_0003 .input_area {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 34px;
+}
+.ema516_03_ih_0003 .input_row {
+	display: flex;
+	align-items: center;
+}
+.ema516_03_ih_0003 .label_gray {
+	margin-right: 10px;
+}
+.ema516_03_ih_0003 .answer01 math-field {
+	width: 190px;
+}
+.ema516_03_ih_0003 .answer02 math-field {
+	width: 190px;
+}
+
+/* ema516_03_ih_0004 */
+.ema516_03_ih_0004 .boolean_wrap > div {
+	width: 638px;
+	height: 381px;
+	margin: 0 auto;
+	background: url(./../img/EMA516_03_IH/0004_01.png) no-repeat 50% / 100% auto;
+	position: relative;
+}
+
+.ema516_03_ih_0004 .boolean_wrap button {
+	position: absolute;
+	background: none;
+	font-size: 28px;
+	top: 45px;
+	transform: rotate(-2deg);
+	color: #fff;
+	/* border: 3px solid transparent; */
+}
+.ema516_03_ih_0004 .boolean_wrap button.selected {
+	border-color: var(--font-main);
+}
+.ema516_03_ih_0004 .boolean_wrap button:first-of-type {
+	left: 178px;
+}
+.ema516_03_ih_0004 .boolean_wrap button:nth-of-type(2) {
+	right: 25px;
+}
+.ema516_03_ih_0004 .boolean_wrap button p {
+	display: block;
+	white-space: nowrap;
+}
+.ema516_03_ih_0004 .boolean_wrap button[data-answer-single="true"].correct {
+	border-color: var(--primary-blue);
+	background-color: rgba(59, 113, 254, 0.3);
+}
+.ema516_03_ih_0004 .boolean_wrap p:not(.name) {
+	font-size: 32px;
+	position: absolute;
+}
+.ema516_03_ih_0004 .boolean_wrap .text1 {
+	top: 146px;
+	left: 168px;
+}
+.ema516_03_ih_0004 .boolean_wrap .text2 {
+	top: 228px;
+	left: 67px;
+}
+.ema516_03_ih_0004 .boolean_wrap .text3 {
+	top: 156px;
+	right: 37px;
+}
+
+/* ema516_03_ih_0005 */
+.ema516_03_ih_0005 .input_area > span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.ema516_03_ih_0005 .input_area math-field {
+	width: 136px;
+}
+
+/* ema516_03_ih_0006 */
+.ema516_03_ih_0006 .img_area {
+	position: relative;
+	margin-top: 80px;
+}
+.ema516_03_ih_0006 .img_area .question_box p {
+	position: absolute;
+	top: 257px;
+	left: 178px;
+}
+.ema516_03_ih_0006 .input_area {
+	position: absolute;
+	top: 79px;
+	right: 0;
+}
+.ema516_03_ih_0006 .unit {
+	position: absolute;
+	top: 259px;
+	right: 370px;
+}
+
+.icon_badge {
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 1;
+	padding: 16px 18px;
+	background: var(--primary-blue);
+	border-radius: 12px;
+	min-width: auto;
+	height: auto;
+}
+
+/* ema516_03_ih_0007 */
+.ema516_03_ih_0007 .icon_badge {
+	margin-left: 12px;
+}
+.ema516_03_ih_0007 .paper_wrap {
+	/* width: 615px; */
+	width: 1152px;
+	margin: 30px auto 0;
+	display: flex;
+	align-items: flex-end;
+}
+.ema516_03_ih_0007 .paper_wrap > div {
+	position: relative;
+}
+.ema516_03_ih_0007 .click_area {
+	width: 584px;
+	height: 414px;
+	background: url(./../../common_practice/img/EMA516_03_IH/0007_01.png) no-repeat 50% / 100% auto;
+}
+.ema516_03_ih_0007 .paper_wrap > div [class^="text"] {
+	position: absolute;
+	font-size: 14px;
+}
+.ema516_03_ih_0007 .click_area .text1 {
+	top: -17px;
+	left: 11px;
+}
+.ema516_03_ih_0007 .click_area .text2 {
+    top: 24px;
+    left: -26px;
+}
+.ema516_03_ih_0007 .answer_area {
+	display: none;
+}
+.ema516_03_ih_0007 .answer_area.show {
+	display: block;
+}
+.ema516_03_ih_0007 .answer_area .text1 {
+	top: -18px;
+	left: 5px;
+}
+.ema516_03_ih_0007 .answer_area .text2 {
+	top: 4px;
+	left: -23px;
+}
+.ema516_03_ih_0007 .click_area .btns button {
+	background: rgba(0, 0, 0, 0.1);
+	padding: 0;
+	font-size: 0;
+	min-width: auto;
+	height: auto;
+	border-radius: 0;
+	width: 30px;
+	height: 30px;
+}
+.ema516_03_ih_0007 .click_area .btns button {
+	position: absolute;
+}
+.ema516_03_ih_0007 .click_area .btns .btn1 {
+	top: 21px;
+	left: 85px;
+}
+.ema516_03_ih_0007 .click_area .btns .btn2 {
+	top: 138px;
+	left: 84px;
+}
+.ema516_03_ih_0007 .drawing_grid_area {
+	position: absolute;
+	top: 15px;
+	left: 7px;
+	background-color: transparent;
+	border-color: lightblue;
+	border-width: 1px;
+	border-top: none;
+	border-left: none;
+	background-size: 44px 44px;
+	width: calc(44px * 13);
+	height: 398px;
+}
+.ema516_03_ih_0007 .line {
+	position: absolute;
+	top: 192px;
+	left: 96px;
+	width: 1px;
+	height: 176px;
+	background: #000;
+	pointer-events: none;
+}
+.ema516_03_ih_0007 .line.l2 {
+	top: 58px;
+	width: 131px;
+	height: 1px;
+}
+
+.ema516_03_ih_0007 .ex_txt {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	background-color: var(--primary-blue);
+	color: var(--font-main-reverse);
+	font-size: 26px;
+	font-weight: 700;
+	border-radius: 12px;
+	position: absolute;
+	top: -70px;
+}

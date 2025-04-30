@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema524_09_su_0007_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_contents/js/ema524_09_0004.js"></script>
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema524_09.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema524_09_su_0007">
+      <section class="title type2">
+        <h2 data-type="1" data-text="자기주도 3">
+          <span class="blue line" lang="y">내 힘으로 풀어요</span>
+          <span lang="y">공부한 내용을 확인해요</span>
+        </h2>
+      </section>
+
+      <section class="title type2 jgjd_3_sub_title">
+        <h2 data-head="6" lang="y">가로가 3.04 m, 세로가 2 m인 직사각형 모양의 돗자리가 있습니다. 이 돗자리의 넓이는 몇 ㎡인지 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box flex justify_center">
+          <div class="f32b custom_check_radio" data-answer-custom="2">
+            <span class="example_text1">
+              <input type="radio" name="friend" id="friend1" value="1">
+              <label for="friend1" class="radio-label">
+                클릭
+              </label>
+              <p class="f20b" lang="y">
+                나는 물 4 L를<br />가지고 있어.
+              </p>
+              <span class="f24b" lang="y">예린</span>
+              <img src="../../common_contents/img/EMA524_09_SU/0007_contents1.png" alt="예린">
+            </span>
+            <span class="example_text2">
+              <input type="radio" name="friend" id="friend2" value="2">
+              <label for="friend2" class="radio-label">
+                클릭
+              </label>
+              <p class="f20b" lang="y">
+                나는 예린이가 가지고<br />있는 물의 0.89배만큼<br />가지고 있어.
+              </p>
+              <span class="f24b" lang="y">윤호</span>
+              <img src="../../common_contents/img/EMA524_09_SU/0007_contents2.png" alt="윤호">
+            </span>
+            <span class="example_text3">
+                <input type="radio" name="friend" id="friend3" value="3">
+                <label for="friend3" class="radio-label">
+                  클릭
+                </label>
+              <p class="f20b" lang="y">
+                나는 예린이가 가지고<br />있는 물의 1.01배만큼<br />가지고 있어.
+              </p>
+              <span class="f24b" lang="y">예린</span>
+              <img src="../../common_contents/img/EMA524_09_SU/0007_contents3.png" alt="예린이의 물 4 L">
+            </span>
+          </div>
+        </div>
+
+        <div class="text-align_center">
+          <span class="gray_Box f24b" lang="y">이유</span>
+          <div class="input_wrap">
+            <math-field class="textarea"></math-field>
+            <div class="example_box">
+              <p lang="y">1보다 큰 수를 곱하면 계산 결과는 곱해지는 수보다 커지므로 색점토를 더 많이 사용한 사람은 예린입니다.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    
+    </div>
+  </body>
+</html>

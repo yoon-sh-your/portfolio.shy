@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EMA622_07_IH_0002</title>
+
+		<!-- 공통 js-->
+		<script src="../../common_contents/common/js/app.js"></script>
+		<script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+		<!-- 공통 css-->
+		<link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+		<!-- 개별 -->
+		<link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+		<link rel="stylesheet" href="./../../common_practice/css/ema622_07.css" />
+	</head>
+
+	<body>
+		<div id="app_wrap" class="ema622_07_ih_0002">
+			<section class="title group">
+				<h2 lang="y"><span class="green">[1~2]</span> 쌀 23.5 kg을 한 자루에 5 kg씩 나누어 담아 판매하려고 합니다. 쌀을 5 kg씩 몇 자루까지 나누어 담을 수 있고, 남는 쌀은 몇 kg인지 구하려고 합니다. 물음에 답해 보세요.
+			</section>
+			<section class="title type2">
+				<h2 data-head="2_green" lang="y">
+					다음과 같이 세로로 나타내어 계산하려고 합니다. <span class="empty_box nemo"></span>안에 알맞은 수를 써넣으세요.
+				</h2>
+			</section>
+
+			<section class="contents">
+				<div class="question_box justify_center gap_120">
+					<div class="long_division">
+						<div class="top">
+							<div class="input_wrap">
+								<math-field data-answer-single="4"></math-field>
+							</div>
+						</div>
+						<div class="row">
+							<span class="left">5</span>
+							<div class="right">
+								<span>
+									<em>2</em><em>3</em><em class="dot">.</em><em>5</em>
+								</span>
+							</div>
+							<div class="under">
+								<span><em>2</em><em>0</em></span>
+							</div>
+							<div class="bottom">
+								<div class="input_wrap">
+									<math-field data-answer-single="3.5"></math-field>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="flex align_start gap_20">
+						<img src="../../common_practice/common/img/icon_arrow_right_navy.svg" class="mt_7" alt="">
+						<div class="flex dir_col gap_40">
+							<div class="flex align_center gap_8">
+								<span lang="y">나누어 담을 수 있는 자루 수 :</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="4"></math-field>
+								</div>
+								<span lang="y">자루</span>
+							</div>
+							<div class="flex align_center gap_8">
+								<span lang="y">남는 쌀의 무게 :</span>
+								<div class="input_wrap">
+									<math-field data-answer-single="3.5"></math-field>
+								</div>
+								<span>kg</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 해설 -->
+				<!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+							</div>
+						</div>
+						<div class="buttons_solve">
+						</div>
+					</div>
+				</div> -->
+				<div class="btn_area">
+					<button class="btnType key">입력타입토글</button>
+					<button class="btnReset">리셋</button>
+					<button class="btnCheck">확인</button>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

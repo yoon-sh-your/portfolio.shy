@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA625_10_SU_0003_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_contents/css/ema5_6_su_common.css" />
+    <link rel="stylesheet" href="./../../common_contents/css/ema625_10.css" />
+    <script src="../../common_contents/js/ema625_10_0003.js"></script>
+  </head>
+  <body>
+    <div id="app_wrap" class="ema625_10_su_0003">
+      <section class="contents">
+        <div class="form_wrap">
+          <div class="left_area">
+            <img src="../../common_contents/img/EMA625_10_SU/625_dice_1.svg" alt="주사위" class="dice_image" />
+
+            <button class="dice_button" lang="y">주사위 돌리기</button>
+
+            <div class="answer_wrap">
+              <div>
+                <span class="answer_title" lang="y">원의 반지름: </span>
+                <div class="input_wrap">
+                  <math-field></math-field>
+                </div>
+                <span>㎝</span>
+              </div>
+              <div>
+                <span class="answer_title" lang="y">원의 넓이: </span>
+                <div class="input_wrap">
+                  <math-field></math-field>
+                </div>
+                <span>㎝<sup>2</sup></span>
+              </div>
+              <div>
+                <button class="left_reset_btn" lang="y" disabled>리셋</button>
+                <button class="left_check_btn" lang="y" disabled>확인</button>
+              </div>
+              <div>
+                <span class="answer_title" lang="y">원의 넓이: </span>
+                <div class="input_wrap">
+                  <math-field></math-field>
+                </div>
+                <span>㎝<sup>2</sup></span>
+              </div>
+            </div>
+          </div>
+          <div class="center_area">
+            <div class="grid_container">
+              <div class="scale_marker_top">
+                <svg class="curve_line" width="30" height="30">
+                  <path d="M0,0 Q7,10 14,0" stroke="#000000" fill="transparent" stroke-width="1" />
+                </svg>
+                <span>1㎝</span>
+              </div>
+              <div class="scale_marker_left">
+                <svg class="curve_line" width="30" height="30">
+                  <path d="M0,0 Q7,6 13,0" stroke="#000000" fill="transparent" stroke-width="1" />
+                </svg>
+                <span>1㎝</span>
+              </div>
+            </div>
+          </div>
+          <div class="right_area">
+            <img src="../../common_contents/img/EMA625_10_SU/625_dice_1.svg" alt="주사위" class="dice_image" />
+
+            <button class="dice_button" lang="y">주사위 돌리기</button>
+
+            <div class="answer_wrap">
+              <div>
+                <span class="answer_title" lang="y">원의 반지름: </span>
+                <div class="input_wrap">
+                  <math-field></math-field>
+                </div>
+                <span>㎝</span>
+              </div>
+              <div>
+                <span class="answer_title" lang="y">원의 넓이: </span>
+                <div class="input_wrap">
+                  <math-field></math-field>
+                </div>
+                <span>㎝<sup>2</sup></span>
+              </div>
+              <div>
+                <button class="right_reset_btn" disabled lang="y">리셋</button>
+                <button class="right_check_btn" disabled lang="y">확인</button>
+              </div>
+              <div>
+                <span class="answer_title" lang="y">원의 넓이: </span>
+                <div class="input_wrap">
+                  <math-field></math-field>
+                </div>
+                <span>㎝<sup>2</sup></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn_area">
+          <div class="device_change_wrap">
+            <button class="device_change teacher" lang="y">대표 기기 변경하기</button>
+          </div>
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

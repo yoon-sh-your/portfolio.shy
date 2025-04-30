@@ -1,0 +1,1257 @@
+/* ema615_03_su_0002 */
+.ema615_03_su_0002 .video_wrap {
+    width: 812px;
+    height: 428px;
+    /* border: 1px solid red; */
+}
+
+.ema615_03_su_0002 .video_wrap img {
+    /* transform: translate(-50%, -50%) scale(.86); */
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.ema615_03_su_0002 .video_wrap svg {
+    /* height: 100%; */
+    height: 116%;
+}
+
+.ema615_03_su_0002 .flex.align_start {
+    gap: 26px;
+}
+
+.ema615_03_su_0002 .input_area {
+    width: 797px;
+    height: calc(502px - 96px);
+}
+
+.ema615_03_su_0002 .input_wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.ema615_03_su_0002 .input_wrap math-field.textarea {
+    height: 42%;
+}
+
+.ema615_03_su_0002 .video_wrap img {
+    width: auto;
+}
+
+
+
+
+
+
+
+
+
+/* ema615_03_su_0003 */
+/* 페이지 수: ~ 3 페이지 */
+/* picture_wrap 가리는 페이지: 2, 3*/
+/* 서술형 페이지: 1, 3 */
+.ema615_03_su_0003 .picture_wrap {
+    width: 700px;
+    height: 490px;
+    border: none;
+    /* border: 1px solid orange; */
+}
+
+/* picture_wrap 가리는 페이지 */
+.ema615_03_su_0003[data-current-page='page_2'] .contents>div.flex,
+.ema615_03_su_0003[data-current-page='page_2'] .contents>div.flex>.picture_wrap,
+.ema615_03_su_0003[data-current-page='page_3'] .contents>div.flex,
+.ema615_03_su_0003[data-current-page='page_3'] .contents>div.flex>.picture_wrap {
+    display: none;
+}
+
+/* picture_wrap 안 가리는 페이지 */
+.ema615_03_su_0003[data-current-page='page_1'] .flex.align_start {
+    padding: 0 20px;
+    gap: 26px;
+}
+
+/* 서술형 페이지 버튼 */
+.ema615_03_su_0003:not([data-current-page='page_1']):not([data-current-page='page_3']) .btn_area .btnSubmit,
+.ema615_03_su_0003[data-current-page='page_1'] .btn_area .btnCheck,
+.ema615_03_su_0003[data-current-page='page_3'] .btn_area .btnCheck {
+    display: none;
+}
+
+section.title h2 > div > span img {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+section.title.type2+section.contents {
+    /* background-color: aqua; */
+}
+
+
+section.contents.paging_layout {
+    /* background-color: aquamarine; */
+}
+
+.page {
+    /* background-color: orange; */
+}
+
+.ema615_03_su_0003 .flex.align_start>.picture_wrap img {
+    width: auto;
+}
+
+.ema615_03_su_0003 .page_1 .input_area {
+    width: 709px;
+    /* height: calc(502px - 96px - 20px); */
+}
+
+.ema615_03_su_0003 .page_1 .input_wrap {
+    width: 100%;
+}
+
+.ema615_03_su_0003 .page_1 .input_wrap math-field.textarea {
+    /* min-height: unset; */
+    height: 272px;
+}
+
+.ema615_03_su_0003 .page_2 .table-container {
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 320px;
+    left: 120px;
+    transform: scale(.9);
+}
+
+.ema615_03_su_0003 .page_2 .bubble {
+    position: absolute;
+    top: 220px;
+    right: 140px;
+}
+
+.ema615_03_su_0003 .page_3 .question_box {
+    width: calc(1635px - 160px);
+    /* background-color: #504D7C; */
+}
+
+.ema615_03_su_0003 .page_3 .input_wrap {
+    width: 100%;
+}
+
+.help_ballon {
+    position: relative;
+    /* left: 1121px;
+    top: -175px; */
+    width: 339px;
+    height: 353px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 339px;
+        height: 353px;
+        background: url("../img/EMA615_03_SU/0003_help_balloon.png") center / contain no-repeat;
+    }
+
+    .help_ballon_text {
+        position: absolute;
+        top: 60px;
+        left: -31px;
+
+        .formula-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.6;
+
+        }
+
+        .fraction {
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        .fraction .top {
+            border-bottom: 2px solid black;
+            padding-bottom: 4px;
+        }
+
+        .fraction .bottom {
+            padding-top: 4px;
+        }
+    }
+}
+
+.help_ballon {
+    position: relative;
+    /* left: 1121px;
+    top: -175px; */
+    width: 339px;
+    height: 353px;
+
+    &::before {
+        margin-top: 3px;
+        margin-left: -80px;
+        content: '';
+        display: inline-block;
+        width: 411px;
+        height: 353px;
+        background: url("../img/EMA615_03_SU/0003_help_balloon_2.png") center / contain no-repeat;
+    }
+}
+
+.ema615_03_su_0003 .title_right {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.ema615_03_su_0003 .image_zoom_wrap .image_zoom svg {
+    height: 109% !important;
+}
+
+.ema615_03_su_0003 .image_zoom_wrap .image-content {
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+/* ema615_03_su_0004 */
+/* 페이지 수: ~ 3 페이지 */
+/* picture_wrap 가리는 페이지: */
+/* 서술형 페이지: */
+.ema615_03_su_0004 .title h2,
+.ema615_03_su_0005 .title h2 {
+    /* 수정 요청 개별 작업 */
+    gap: 0;
+}
+
+.ema615_03_su_0004 .page_1 .table-container {
+    position: absolute;
+    width: 954px;
+    height: 204px;
+    top: 230px;
+    left: 158px;
+}
+
+.ema615_03_su_0004 .graph {
+    position: absolute;
+    width: 994px;
+    height: 179px;
+    left: 150px;
+    top: 480px;
+    background: url(../img/EMA615_03_SU/0004_bar-graph_bg.png);
+    z-index: 3;
+}
+
+.ema615_03_su_0004 .graph svg {
+    margin-top: 72.63px;
+    margin-left: 12px;
+}
+
+.ema615_03_su_0004 .bubble {
+    position: absolute;
+    width: 395px;
+    height: 193px;
+    top: 230px;
+    right: 140px;
+}
+
+.ema615_03_su_0004 .page_2 .table-container {
+    position: absolute;
+    width: 954px;
+    height: 204px;
+    top: 200px;
+    left: 158px;
+    transform: scale(.8);
+}
+
+.ema615_03_su_0004[data-current-page='page_2'] .graph {
+    top: 420px;
+}
+
+.ema615_03_su_0004 .page_2 .input_1,
+.ema615_03_su_0004 .page_2 .input_2,
+.ema615_03_su_0004 .page_2 .input_3,
+.ema615_03_su_0004 .page_2 .input_4 {
+    display: flex;
+    position: absolute;
+    /* background-color: #FFDE6A; */
+    gap: 6px;
+
+    color: #000;
+
+    /* 수학/수학_BODY_01_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* border: 3px solid purple; */
+}
+
+.ema615_03_su_0004 .page_2 .input_1 {
+    left: 363px;
+    bottom: 74px;
+}
+
+.ema615_03_su_0004 .page_2 .input_2 {
+    left: 691px;
+    bottom: 74px;
+}
+
+.ema615_03_su_0004 .page_2 .input_3 {
+    right: 223px;
+    bottom: 110px;
+}
+
+.ema615_03_su_0004 .page_2 .input_4 {
+    right: 223px;
+    bottom: 209px;
+}
+
+.ema615_03_su_0004 .page_2 .custom_select {
+    width: 148px;
+    height: 48px;
+}
+
+.ema615_03_su_0004 .page_2 .input_group>div::before {
+    content: "";
+    position: absolute;
+    background-color: #3B71FE;
+}
+
+.ema615_03_su_0004 .page_2 .input_1::before {
+    top: -50px;
+    left: 210px;
+    width: 2px;
+    height: 50px;
+}
+
+.ema615_03_su_0004 .page_2 .input_2::before {
+    top: -50px;
+    left: 210px;
+    width: 2px;
+    height: 50px;
+}
+
+.ema615_03_su_0004 .page_2 .input_3::before {
+    top: 30px;
+    left: -210px;
+    width: 210px;
+    height: 2px;
+}
+
+.ema615_03_su_0004 .page_2 .input_3::after {
+    content: "";
+    position: absolute;
+    background-color: #3B71FE;
+    top: -18px;
+    left: -210px;
+    width: 2px;
+    height: 50px;
+}
+
+.ema615_03_su_0004 .page_2 .input_4::before {
+    top: 30px;
+    left: -115px;
+    width: 115px;
+    height: 2px;
+}
+
+.ema615_03_su_0004 .page_3 .table-container {
+    position: absolute;
+    width: 954px;
+    height: 204px;
+    top: 200px;
+    left: 158px;
+    transform: scale(.8);
+}
+
+.ema615_03_su_0004[data-current-page='page_3'] .graph {
+    top: 420px;
+}
+
+.ema615_03_su_0004 .page_3 .input_1,
+.ema615_03_su_0004 .page_3 .input_2,
+.ema615_03_su_0004 .page_3 .input_3,
+.ema615_03_su_0004 .page_3 .input_4 {
+    display: flex;
+    position: absolute;
+    /* background-color: #FFDE6A; */
+    gap: 6px;
+
+    color: #000;
+
+    /* 수학/수학_BODY_01_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* border: 3px solid purple; */
+}
+
+.ema615_03_su_0004 .page_3 .input_1 {
+    left: 363px;
+    bottom: 74px;
+}
+
+.ema615_03_su_0004 .page_3 .input_2 {
+    left: 691px;
+    bottom: 74px;
+}
+
+.ema615_03_su_0004 .page_3 .input_3 {
+    right: 223px;
+    bottom: 110px;
+}
+
+.ema615_03_su_0004 .page_3 .input_4 {
+    right: 223px;
+    bottom: 209px;
+}
+
+.ema615_03_su_0004 .page_3 .custom_select {
+    width: 148px;
+    height: 48px;
+}
+
+.ema615_03_su_0004 .page_3 .input_group>div::before {
+    content: "";
+    position: absolute;
+    background-color: #3B71FE;
+}
+
+.ema615_03_su_0004 .page_3 .input_1::before {
+    top: -50px;
+    left: 210px;
+    width: 2px;
+    height: 50px;
+}
+
+.ema615_03_su_0004 .page_3 .input_2::before {
+    top: -50px;
+    left: 210px;
+    width: 2px;
+    height: 50px;
+}
+
+.ema615_03_su_0004 .page_3 .input_3::before {
+    top: 30px;
+    left: -210px;
+    width: 210px;
+    height: 2px;
+}
+
+.ema615_03_su_0004 .page_3 .input_3::after {
+    content: "";
+    position: absolute;
+    background-color: #3B71FE;
+    top: -18px;
+    left: -210px;
+    width: 2px;
+    height: 50px;
+}
+
+.ema615_03_su_0004 .page_3 .input_4::before {
+    top: 30px;
+    left: -115px;
+    width: 115px;
+    height: 2px;
+}
+
+.ema615_03_su_0004 .page_3 .input_wrap.graph_title_input {
+    position: absolute;
+    top: 200px;
+    right: 160px;
+    width: 460px;
+}
+
+.ema615_03_su_0004 .page_3 .input_wrap math-field.textarea {
+    min-height: unset;
+}
+
+
+
+
+
+
+
+
+/* ema615_03_su_0005 */
+/* 페이지 수: ~ 3 페이지 */
+/* picture_wrap 가리는 페이지: */
+/* 서술형 페이지: */
+.ema615_03_su_0005 .page_1 .table-container {
+    position: absolute;
+    width: 954px;
+    height: 204px;
+    top: 340px;
+    left: 158px;
+}
+
+.ema615_03_su_0005 .graph {
+    position: absolute;
+    width: 411px;
+    height: 418px;
+    right: calc(40px + 80px + 5px);
+    top: calc(30px + 96px + 30px + 48px + 20px);
+    background: url(../img/EMA615_03_SU/0005_circle-graph_bg.png);
+    z-index: 3;
+}
+
+.ema615_03_su_0005 .graph svg {
+    /* margin-top: 42.83px; 
+    margin-left: 38.88px; */
+    /* width: 332px;
+    height: 332px; */
+    width: 411px;
+    height: 418px;
+}
+
+.ema615_03_su_0005 .bubble {
+    position: absolute;
+    width: 395px;
+    height: 193px;
+    top: calc(30px + 96px + 30px);
+    right: 427px;
+}
+
+.ema615_03_su_0005 .page_2 .table-container {
+    position: absolute;
+    width: 954px;
+    height: 204px;
+    top: 300px;
+    left: 80px;
+    transform: scale(.8);
+}
+
+.ema615_03_su_0005[data-current-page='page_2'] .graph {
+    background: url(../img/EMA615_03_SU/0005_circle-graph_bg-2.png);
+    width: 356.5px;
+    height: 328px;
+    top: calc(30px + 96px + 155px);
+}
+
+.ema615_03_su_0005[data-current-page='page_2'] .graph svg {
+    width: 322px;
+    height: 328px;
+    margin-left: 35px;
+}
+
+.ema615_03_su_0005 .page_2 .input_1,
+.ema615_03_su_0005 .page_2 .input_2,
+.ema615_03_su_0005 .page_2 .input_3,
+.ema615_03_su_0005 .page_2 .input_4 {
+    display: flex;
+    position: absolute;
+    /* background-color: #FFDE6A; */
+    gap: 6px;
+
+    color: #000;
+
+    /* 수학/수학_BODY_01_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* border: 3px solid purple; */
+}
+
+.ema615_03_su_0005 .page_2 .input_1 {
+    right: 330px;
+    bottom: 135px;
+}
+
+.ema615_03_su_0005 .page_2 .input_2 {
+    right: 446px;
+    bottom: 230px;
+}
+
+.ema615_03_su_0005 .page_2 .input_3 {
+    right: 428px;
+    bottom: 365px;
+}
+
+.ema615_03_su_0005 .page_2 .input_4 {
+    right: 316px;
+    bottom: 465px;
+}
+
+.ema615_03_su_0005 .page_2 .custom_select {
+    width: 148px;
+    height: 48px;
+}
+
+.ema615_03_su_0005 .page_3 .table-container {
+    position: absolute;
+    width: 954px;
+    height: 204px;
+    top: calc(300px - 100px);
+    left: 80px;
+    transform: scale(.8);
+}
+
+.ema615_03_su_0005[data-current-page='page_3'] .graph {
+    background: url(../img/EMA615_03_SU/0005_circle-graph_bg-2.png);
+    width: 356.5px;
+    height: 328px;
+    top: calc(30px + 96px + 155px);
+}
+
+.ema615_03_su_0005[data-current-page='page_3'] .graph svg {
+    width: 322px;
+    height: 328px;
+    margin-left: 35px;
+}
+
+.ema615_03_su_0005 .page_3 .input_1,
+.ema615_03_su_0005 .page_3 .input_2,
+.ema615_03_su_0005 .page_3 .input_3,
+.ema615_03_su_0005 .page_3 .input_4 {
+    display: flex;
+    position: absolute;
+    /* background-color: #FFDE6A; */
+    gap: 6px;
+
+    color: #000;
+
+    /* 수학/수학_BODY_01_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* border: 3px solid purple; */
+}
+
+.ema615_03_su_0005 .page_3 .input_1 {
+    right: 330px;
+    bottom: 135px;
+}
+
+.ema615_03_su_0005 .page_3 .input_2 {
+    right: 446px;
+    bottom: 230px;
+}
+
+.ema615_03_su_0005 .page_3 .input_3 {
+    right: 428px;
+    bottom: 365px;
+}
+
+.ema615_03_su_0005 .page_3 .input_4 {
+    right: 316px;
+    bottom: 465px;
+}
+
+.ema615_03_su_0005 .page_3 .custom_select {
+    width: 148px;
+    height: 48px;
+}
+
+.ema615_03_su_0005 .page_3 .input_wrap.graph_title_input {
+    position: absolute;
+    top: 480px;
+    left: 320px;
+    width: 460px;
+}
+
+.ema615_03_su_0005 .page_3 .input_wrap math-field.textarea {
+    min-height: unset;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.question_box.justify_center {
+    color: var(--Secondary-Text-Gray-900, #222);
+
+    /* Title/H_02_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.operation {
+    display: flex;
+    align-items: center;
+}
+
+.fraction_box .input_wrap,
+.fraction_box .input_wrap math-field:not(.textarea) {
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* table */
+.table-container {
+    /* width: 100%; */
+    /* max-width: 600px; */
+    /* margin: 40px auto; */
+    /* font-family: Arial, sans-serif; */
+}
+
+.table-title {
+    /* text-align: center; */
+    color: #504D7C;
+
+    /* Title/H_02_BOLD */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* width: 592.195px;
+    height: 55.486px; */
+
+    /* background-color: #504D7C; */
+    background: url(../../common_contents/img/EMA615_11_SU/0002_table_title_bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+table {
+    /* width: 100%; */
+    /* height: 229px; */
+    border-collapse: collapse;
+    /* border: 1px solid #ccc; */
+    /* overflow: hidden; */
+
+    color: #000;
+    text-align: center;
+
+    /* Title/H_02_REGULAR */
+    font-family: Pretendard;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    /* 150% */
+    letter-spacing: -1px;
+
+    /* border: 2px solid white; */
+
+    border-collapse: separate;
+}
+
+thead {
+    background-color: #EFEEEE;
+}
+
+thead th {
+    background-color: #EFEEEE;
+}
+
+thead th:nth-of-type(1),
+tbody th {
+    background-color: #E4E9F7;
+    border-right: 3.47px solid #fff;
+    width: 200px;
+}
+
+th {
+    /* border: 3.47px solid #fff; */
+    border: 1px solid #fff;
+}
+
+th,
+td {
+    text-align: center;
+    width: 160px;
+    height: 70px;
+}
+
+tbody tr {
+    background-color: #fff;
+}
+
+tbody td {
+    /* border: 1.74px solid #DADADA; */
+    border: 1px solid #DADADA;
+}
+
+/* 왼쪽 위 */
+.my-table thead tr:first-child th:first-child {
+    border-top-left-radius: 30px;
+}
+
+/* 오른쪽 위 */
+.my-table tr:first-child th:last-child {
+    border-top-right-radius: 30px;
+}
+
+/* 왼쪽 아래 */
+.my-table tbody tr:last-child th:first-child {
+    border-bottom-left-radius: 30px;
+}
+
+/* 오른쪽 아래 */
+.my-table tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 30px;
+    /* border: 2px solid purple; */
+    /* border-radius: 40px; */
+}
+
+
+
+
+
+
+
+
+/* popup */
+.title.type2:has(.title_right) {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+/* .title.type2:has(.title_right) .title_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid orange;
+} */
+
+.pop_goal_title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    >h3 {
+        display: initial;
+        padding: 0;
+        margin: 0;
+
+        .popup_page_2 &,
+        .popup_page_3 & {
+            padding-left: 16px;
+        }
+    }
+}
+
+.pop_goal_title h3::before {
+    display: none;
+}
+
+.popup_page_1,
+.popup_page_2,
+.popup_page_3 {
+    .popup_page_content_wrap {
+        display: flex;
+        flex-direction: column;
+
+        .box_wrap {
+            display: flex;
+            justify-content: center;
+
+        }
+    }
+}
+
+.popup_page_1 .pop_goal_title {
+    color: #A80000;
+
+    &::before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        width: 400px;
+        height: 23px;
+        bottom: 0;
+        background-color: #f9d4d4;
+        /* background-image: url(../img/EMA615_03_SU/popup_title_bg.png); */
+        /* background-repeat: no-repeat; */
+        /* background-position: left -20px bottom 20px; */
+    }
+}
+
+.popup_page_2 .pop_goal_title,
+.popup_page_3 .pop_goal_title {
+    color: #F46C32;
+    position: relative;
+}
+
+.popup_page_2 .pop_goal_title::before,
+.popup_page_3 .pop_goal_title::before {
+    content: '';
+    width: 10px;
+    height: 39px;
+    background-color: #F46C32;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    border-radius: 100px;
+}
+
+.popup_page_2 .pop_goal_title::after,
+.popup_page_3 .pop_goal_title::after {
+    content: '';
+    width: 9px;
+    height: 38px;
+    background-color: #F46C32;
+    position: absolute;
+    top: 5px;
+    left: 273px;
+    border-radius: 100px;
+}
+
+.pop_goal_wrap .paging_layout article.popup_page {
+    display: none;
+    width: 100%;
+}
+
+.pop_goal_wrap .paging_layout article.popup_page.on {
+    display: block;
+}
+
+.pop_goal_wrap .paging_controller>button {
+    font-size: 0;
+}
+
+.pop_goal {
+    padding: 40px;
+    background: #FDEFE0;
+    height: 632px;
+}
+
+.pop_goal_inner {
+    width: 100%;
+}
+
+.pop_goal_inner label {
+    background: url("../img/EMA514_07_SU/0004_bg.png") no-repeat;
+    background-size: contain;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    border-radius: 0;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.pop_goal_inner .h4 {
+    display: flex;
+    align-items: center;
+}
+
+.pop_goal_inner .h4:before {
+    display: none;
+}
+
+.pop_goal_inner .question_box .pop_inn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 364px;
+}
+
+.pop_goal_inner .question_box .pop_inn .reveal_btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.pop_goal_inner .question_box .pop_inn .reveal_btn span {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+}
+
+.pop_goal_inner .question_box .pop_inn .reveal_btn:not(:disabled):after {
+    bottom: 5px;
+}
+
+.pop_goal_inner .question_box .pop_inn .reveal_btn .fraction_box {
+    display: none;
+}
+
+.pop_goal_inner .question_box .pop_inn .reveal_btn.on .fraction_box {
+    display: inline-flex;
+}
+
+.pop_goal_inner .question_box {
+    /* width: calc(1431px - 160px); */
+    /* height: 552px; */
+    /* background-color: #eeeeee; */
+}
+
+/* .pop_goal_inner .popup_page_1 .question_box {
+    padding: 0 80px;
+  } */
+
+.popup_container {
+    width: 1061px;
+    height: 452px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.pop_goal_inner .contents {
+    width: 100%;
+}
+
+.pop_goal_inner .picture_wrap img,
+.pop_goal_inner .picture_wrap svg {
+    /* border: 1px solid blue; */
+    /* height: auto; */
+}
+
+.popup_page.popup_page_3 .picture_wrap {
+    margin-top: 10px;
+    /* border: 2px solid orange; */
+}
+
+.popup_page.popup_page_2 .popup_container,
+.popup_page.popup_page_3 .popup_container {
+    /* margin-left: 80px; */
+}
+
+
+
+
+
+
+
+/* graph */
+svg {
+    /* border: 1px solid #ccc; */
+    background: transparent;
+}
+
+.bar {
+    fill: transparent;
+    stroke: #000;
+    stroke-width: 2;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.circle {
+    fill: transparent;
+    /* stroke: #000;
+    stroke-width: 2; */
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.center-point {
+    fill: #000;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.diameter-point-area {
+    fill: transparent;
+    cursor: pointer;
+}
+
+.diameter-point {
+    fill: #ff0000;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.diameter-point:hover {
+    fill: #ff6666;
+    r: 8;
+}
+
+.click-line {
+    stroke: #0000ff;
+    stroke-width: 3;
+    pointer-events: none;
+}
+
+.click-point {
+    fill: #0000ff;
+    pointer-events: none;
+}
+
+.preview-line {
+    stroke: #0000ff;
+    stroke-width: 2;
+    stroke-dasharray: 5, 5;
+    opacity: 0.5;
+}
+
+.percentage-text {
+    font-size: 14px;
+    fill: #000;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.option-selector {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.option-button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    cursor: pointer;
+    text-align: left;
+}
+
+.option-button:hover {
+    background: #e0e0e0;
+}
+
+.click-line {
+    stroke: #000;
+    stroke-width: 2;
+}
+
+.click-point {
+    fill: #000;
+    cursor: pointer;
+}
+
+.diameter-point {
+    fill: #ccc;
+    cursor: pointer;
+}
+
+.diameter-point-area {
+    fill: transparent;
+    cursor: pointer;
+}
+
+.preview-line {
+    stroke: #ccc;
+    stroke-width: 1;
+    stroke-dasharray: 5, 5;
+}
+
+.percentage-text {
+    font-size: 14px;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.percentage-text {
+    color: #1D1D1B;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 22.011px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 33.017px;
+    /* 150% */
+    letter-spacing: -0.688px;
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+tspan[lang="y"] {
+    fill: red;
+    font-weight: bold;
+}
+
+*[lang="y"] {
+    color: green !important;
+    font-weight: bold;
+} */

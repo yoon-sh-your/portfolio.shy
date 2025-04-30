@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drawline_grid</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="../../common_contents/common/css/app.css">
+
+    <style>
+        .drawing_grid_area .hit_area {
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        .point {
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+        }
+
+        .point.end-point {
+            background-color: #0066cc;
+        }
+
+        #drawingArea2 .default_line {
+            stroke: #ff0000;
+            stroke-width: 2px;
+        }   
+    </style>
+</head>
+
+<body>
+    <div id="app_wrap">
+        <section class="contents">
+            <!-- input_wrap에 부여되는 상태 클래스는 btnCheck 기능에 포함되어 있음. 별도로 부여할 필요 x-->
+
+            <div class="drawline_grid">
+
+                <!-- 정답 라인은 data-answer-single 속성에 좌표 배열 추가-->
+                <!-- 예시 라인은 data-sample-line 속성에 좌표 배열 추가-->
+                <label for="">왼쪽으로 5칸 밀기</label>
+                <div class="drawing_grid_area" id="drawingArea1" 
+                     data-grid-size='50'
+                     data-answer-single='[[{"x":100,"y":100},{"x":300,"y":100},{"x":250,"y":300}]]' 
+                     data-sample-line='[[{"x":350,"y":100},{"x":550,"y":100},{"x":500,"y":300},{"x":350,"y":100}]]'><svg class="line_canvas"></svg></div>
+
+                     
+                <!-- 선 구분은 배열 안에 배열로 구분으로 변경되었습니다/ -->
+                <label for="">여러선 이어 그리기</label>
+                <div class="drawing_grid_area" id="drawingArea2" 
+                data-answer-single='[[{"x":100,"y":100},{"x":150,"y":200}],[{"x":200,"y":50},{"x":250,"y":150}],[{"x":200,"y":300},{"x":300,"y":250}],[{"x":300,"y":350},{"x":400,"y":300}]]' 
+                data-sample-line='[[{"x":300,"y":250},{"x":400,"y":300}],[{"x":300,"y":350},{"x":200,"y":300}],[{"x":100,"y":100},{"x":200,"y":50}],[{"x":250,"y":150},{"x":150,"y":200}]]'><svg class="line_canvas"></svg></div>
+                <!-- 예시 라인 data-sample-line은 마지막 점과 시작점을 연결시킬때 배열의 첫점과 마지막점을 연결하는 형태로 구성 첫 점좌표와 마지막 점좌표가 같아야함. -->
+                <!-- 점그리기 어려우시면 직접 찍어 보면 connection 데이터 속성에 저장된 데이터를 확인하시면 됩니다. -->
+            </div>
+
+            <div class="btn_area">
+                <!-- 불필요한 태그 제외 후 사용 -->
+                <button class="btnType key">입력타입토글</button>
+                <button class="btnReset">리셋</button>
+                <button class="btnCheck">확인</button>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA624_03_IH_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema624_03.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema624_03_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2_deep_green">
+          <div class="mixed_fraction">
+            <span>0.7:</span>
+            <div class="fraction_box"><span>4</span><span>9</span></div>
+          </div>
+          <span lang="y">을 간단한 자연수의 비로 나타내려고 합니다. 두 가지 방법으로 나타내어 보세요.</span>
+        </h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center align_start">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA624_03_IH/0002_bg.png" alt="" />
+            <div>
+              <div class="l_left">
+                <dl>
+                  <dt>
+                    <span class="label_method" lang="y">방법1</span>
+                    <p lang="y">후항을 소수로 바꾸어 나타내기</p>
+                  </dt>
+                  <dd>
+                    <div class="text_row">
+                      <div class="mixed_fraction">
+                        <span>0.7: </span>
+                        <div class="fraction_box">
+                          <span>3</span>
+                          <span>5</span>
+                        </div>
+                      </div>
+                      <img class="arrow" src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                      <div class="flex align_center">
+                        0.7:
+                        <div class="input_wrap">
+                          <math-field data-answer-single="0.6"></math-field>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text_row">
+                      <div class="blank"></div>
+                      <img class="arrow" src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                      <div class="flex align_center">
+                        7:
+                        <div class="input_wrap">
+                          <math-field data-answer-single="6"></math-field>
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+              <div class="l_right">
+                <dl>
+                  <dt>
+                    <span class="label_method" lang="y">방법2</span>
+                    <p lang="y">전항을 분수로 바꾸어 나타내기</p>
+                  </dt>
+                  <dd>
+                    <div class="text_row">
+                      <div class="mixed_fraction">
+                        <span>0.7: </span>
+                        <div class="fraction_box">
+                          <span>3</span>
+                          <span>5</span>
+                        </div>
+                      </div>
+                      <img class="arrow" src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                      <div class="flex align_center">
+                        <div class="input_wrap fraction_wrap">
+                          <math-field data-answer-single="(7)/(10)" class="w_80"></math-field>
+                        </div>
+                        :
+                        <div class="fraction_box"><span>3</span><span>5</span></div>
+                      </div>
+                    </div>
+
+                    <div class="text_row">
+                      <div class="blank"></div>
+                      <img class="arrow" src="./../../common_practice/common/img/icon_arrow_right_navy.svg" alt="" />
+                      <div class="flex align_center">
+                        <div class="input_wrap">
+                          <math-field data-answer-single="7"></math-field>
+                        </div>
+                        :6
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 해설 -->
+        <!-- <div class="solve_area">
+					<div class="inner_solve">
+						<div class="flex">
+							<strong class="tit_solve" lang="y">해설</strong>
+							<div class="conts_solve">
+								<p lang="y" class="text_bullet">
+									도형을 오른쪽으로 뒤집으면 도형의 왼쪽과 오른쪽이 서로 바뀝니다.
+								</p>
+							</div>
+						</div>
+						<div class="buttons_solve"></div>
+					</div>
+				</div> -->
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

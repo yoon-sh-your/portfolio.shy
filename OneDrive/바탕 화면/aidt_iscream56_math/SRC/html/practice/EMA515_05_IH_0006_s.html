@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA515_05_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <script src="./../../common_practice/js/ema511_ih.js"></script>
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema515_05.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema515_05_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">은서의 일기를 보고 오늘 은서가 산책을 한 시간은 책을 읽은 시간보다 얼마나 더 긴지 식을 쓰고 답을 구해 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box justify_center">
+          <div class="img_box">
+            <img src="../../common_practice/img/EMA515_05_IH/0006_img.svg" alt="" />
+            <span class="txt1" lang="y">6월 9일</span>
+            <span class="txt2" lang="y">날씨 :</span>
+            <div class="txt3" lang="y">
+              &nbsp;&nbsp;&nbsp;오늘 낮에는 날씨가 화창해서 가족과 함께<br />
+              <div class="fraction_box">
+                <span>17</span>
+                <span>20</span>
+              </div>
+              시간 동안 산책을 했고, 저녁에는
+              <div class="fraction_box">
+                <span>3</span>
+                <span>5</span>
+              </div>
+              시간 동안 책을 읽었다.<br />
+              &nbsp;&nbsp;&nbsp;알차게 보내서 뿌듯한 하루였다.
+            </div>
+          </div>
+          <div class="div flex dir_col gap_20">
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap_underline align_center">
+                <div class="input_wrap fraction_wrap answer1 top">
+                  <math-field data-answer-single="(17)/(20)-(3)/(5)"></math-field>
+                </div>
+                =
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="1"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="4"></math-field></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex align_end gap_10">
+              <span class="label_gray" lang="y">답</span>
+              <div class="input_wrap_underline align_end">
+                <div class="fraction_box">
+                  <div class="input_wrap"><math-field data-answer-single="1"></math-field></div>
+                  <div class="input_wrap"><math-field data-answer-single="4"></math-field></div>
+                </div>
+              </div>
+              <span lang="y" class="line_height_1">시간</span>
+            </div>
+          </div>
+        </div>
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <!--start solve-->
+                <div class="flex align_center gap_4 mt_10">
+                  <span class="fraction_box">
+                    <span>17</span>
+                    <span>20</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>3</span>
+                    <span>5</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>17</span>
+                    <span>20</span>
+                  </span>
+                  <span>-</span>
+                  <span class="fraction_box">
+                    <span>12</span>
+                    <span>20</span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span class="slash">5<span class="slash_txt">1</span></span>
+                    <span class="slash">20<span class="slash_txt">4</span></span>
+                  </span>
+                  <span>=</span>
+                  <span class="fraction_box">
+                    <span>1</span>
+                    <span>4</span>
+                  </span>
+                  <span>&nbsp;(시간)</span>
+                </div>
+                <p lang="y" class="flex align_center mt_20 gap_4">
+                  따라서 오늘 은서가 산책을 한 시간은 책을 읽은 시간보다
+                  <span class="fraction_box ml_6">
+                    <span>1</span>
+                    <span>4</span> </span
+                  >시간 더 깁니다
+                </p>
+                <!--end solve-->
+              </div>
+            </div>
+            <!-- <div class="buttons_solve">
+                  
+              </div> -->
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

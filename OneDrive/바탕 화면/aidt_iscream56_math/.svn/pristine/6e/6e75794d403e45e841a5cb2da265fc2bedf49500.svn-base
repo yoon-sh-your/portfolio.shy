@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ema613_07_IH_0002</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema613_07.css" />
+  </head>
+
+  <body>
+    <div id="app_wrap" class="ema613_07_ih_0002">
+      <section class="title type2">
+        <h2 data-head="2" lang="y">나눗셈의 몫을 분수로 나타낸 다음, 소수로 나타내어 보세요.</h2>
+      </section>
+
+      <section class="contents">
+        <div class="question_box align_center dir_col">
+          <div class="flex align_center">
+            8÷5=
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap">
+                  <math-field data-answer-single="8" text-align="center" class="w_80"></math-field></div
+              ></span>
+              <span>5</span>
+            </div>
+            =
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap">
+                  <math-field data-answer-single="8" text-align="center" class="w_80"></math-field>
+                </div>
+                ×
+                <div class="input_wrap">
+                  <math-field data-answer-single="2" text-align="center" class="w_80"></math-field>
+                </div>
+              </span>
+              <span>
+                5×
+                <div class="input_wrap">
+                  <math-field data-answer-single="2" text-align="center" class="w_80"></math-field>
+                </div>
+              </span>
+            </div>
+            =
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap">
+                  <math-field data-answer-single="16" text-align="center" class="w_80"></math-field></div
+              ></span>
+              <span>10</span>
+            </div>
+            =
+            <div class="input_wrap">
+              <math-field data-answer-single="1.6" text-align="center"></math-field>
+            </div>
+          </div>
+          <div class="flex align_center">
+            11÷20=
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap">
+                  <math-field data-answer-single="11" text-align="center" class="w_80"></math-field></div
+              ></span>
+              <span>20</span>
+            </div>
+            =
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap">
+                  <math-field data-answer-single="11" text-align="center" class="w_80"></math-field>
+                </div>
+                ×
+                <div class="input_wrap">
+                  <math-field data-answer-single="5" text-align="center" class="w_80"></math-field>
+                </div>
+              </span>
+              <span>
+                20×
+                <div class="input_wrap">
+                  <math-field data-answer-single="5" text-align="center" class="w_80"></math-field>
+                </div>
+              </span>
+            </div>
+            =
+            <div class="fraction_box">
+              <span
+                ><div class="input_wrap">
+                  <math-field data-answer-single="55" text-align="center" class="w_80"></math-field>
+                </div>
+              </span>
+              <span>100</span>
+            </div>
+            =
+            <div class="input_wrap">
+              <math-field data-answer-single="0.55" text-align="center"></math-field>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <p>나눗셈의 몫을 분수로 나타낸 다음 분모를 10, 100 등으로 바꾸어 소수로 나타냅니다.</p>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+/* EMA526_SU_0003_s  */
+section.contents {
+  overflow-y: visible;
+}
+
+.form_wrap {
+  gap: 52px;
+}
+
+.form_group {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form_group .input_wrap math-field.textarea {
+  min-width: 370px;
+  min-height: 130px;
+}
+
+.form_group .form_grid {
+  display: flex; 
+  flex-direction: column;
+  margin-top: 10px;
+  width: 370px;
+}
+
+.form_group .form_grid .form_row {
+  flex: 0 0 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_group .form_grid .form_row:nth-child(1) {
+  font-weight: 700;
+}
+
+.form_group .form_grid .form_row > div {
+  height: 80px;
+}
+
+.form_group .form_grid .form_row > div:nth-child(1) {
+  flex: 0 0 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #D2D2D2;
+  border-top: 1px solid #D2D2D2;
+}
+
+.form_group .form_grid .form_row > div:nth-child(2) {
+  border-left: 1px solid #D2D2D2;
+  border-top: 1px solid #D2D2D2;
+  border-right: 1px solid #D2D2D2;
+  flex: 0 0 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_group .form_grid .form_row > div:nth-child(2) .input_wrap math-field {
+  width: 180px;
+}
+
+.form_group .form_grid .form_row > div {
+  font-size: 24px;
+  color: #222222;
+}
+
+.form_group .form_grid .form_row:nth-child(1) > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #222222;
+  background: #EEF0F4;
+}
+
+.form_group .form_grid .form_row:nth-child(1) div:nth-child(1) {
+  border-radius: 20px 0 0 0;
+}
+
+.form_group .form_grid .form_row:nth-child(1) div:nth-child(2) {
+  border-radius: 0 20px 0 0;
+}
+
+.form_group .form_grid .form_row:nth-child(1) div:nth-child(2) .input_wrap {
+  flex: 0 0 120px;
+}
+
+.form_group .form_grid .form_row:nth-child(1) div:nth-child(2) .input_wrap math-field  {
+  width: 120px;
+}
+
+.form_group .form_grid .form_row:last-child > div {
+  border-bottom: 1px solid #D2D2D2;
+}
+
+.btnFormula {
+  margin-left: 10px;
+  width: 64px;
+  min-width: unset;
+  height: 64px;
+  border-radius: 16px;
+  border: 1px solid var(--primary-blue-800);
+  background-color: var(--bg-default);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  font-size: 0;
+  background-image: url(../../common_contents/common/img/icon_calculator.svg);
+  border-color: var(--stroke-default);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.btnFormula:hover {
+  background-color: var(--bg-default);
+}
+
+.input_wrap.error.error_empty::after {
+  content: '값을 입력해 주세요.';
+  width: 190px;
+  z-index: 1;
+}
+
+.input_wrap.error.error_number::after {
+  content: '숫자로 입력해 주세요.';
+  width: 190px;
+  z-index: 1;
+}
+
+.input_wrap.error.error_fialed::after {
+  content: '다시 생각해 보세요.';
+  width: 190px;
+  z-index: 1;
+}
+
+/* 계산기 */
+.calculator-group {
+  position: relative;
+}
+
+.cal-icon {
+  cursor: pointer;
+}
+
+.calculator {
+  display: none;
+  position: absolute;
+  top: -387px;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+  width: 290px;
+  height: 360px;
+  padding: 30px;
+  border: 4px solid #1454B9;
+  border-radius: 20px;
+  background-color: #F6F9FBDD;
+  z-index: 10;
+}
+
+.calculator .btn-close-calculator {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  border-radius: 16.5px;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  min-height: 36px;
+  font-size: 0;
+  background: url(../../common_contents/img/EMA526_SU/calculator_close.png) no-repeat center center;
+  background-size: contain;
+  background-color: unset;
+}
+
+.calculator .calculator-area {
+  position: relative;
+  width: 230px;
+  height: 300px;
+  background: url(../../common_contents/img/EMA526_SU/calculator.png) no-repeat center center;
+  background-size: contain;
+}
+
+.calculator .calculator-buttons {
+  position: absolute;
+  top: 87px;
+  left: 19px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.calculator .calculator-buttons .btn-calculator {
+  padding: 0;
+  width: 43px;
+  height: 34px;
+  min-width: 43px;
+  min-height: 32px;
+  font-size: 0;
+  cursor: pointer;
+  background: none;
+}
+
+.calculator .calculator-buttons .btn-calculator.btn-calculator-plus {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 74px;
+  min-height: 74px;
+}
+
+.calculator .calculator-buttons .btn-calculator:nth-child(16) {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.calculator .calculator-buttons .btn-calculator:nth-child(17) {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.calculator .calculator-buttons .btn-calculator:nth-child(18) {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+.calculator-area input[type="text"].cal-display {
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  /* border: 1px solid #ffffff; */
+  padding: 15px 15px;
+  width: 195px;
+  height: 57px;
+  text-align: right;
+  color: #222222;
+  font-size: 32px;
+  background: none;
+}
+
+.calculator-area input[type="text"].cal-display:hover {
+  background: none !important;
+  border: none !important;
+}
+
+.calculator-group .calculator-tail {
+  position: absolute;
+  bottom: -18px;
+  width: 30px;
+  height: 18px;
+  background: url(../../common_contents/img/EMA526_SU/calculator_tail.png) no-repeat center center;
+  background-size: contain;
+}
+
+.text-area.cal-page {
+  width: 30%;
+}
+/* ./계산기 */

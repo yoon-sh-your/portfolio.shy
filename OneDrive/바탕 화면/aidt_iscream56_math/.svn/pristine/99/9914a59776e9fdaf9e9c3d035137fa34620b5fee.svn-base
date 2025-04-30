@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA514_10_IH_0001_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema514_10.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema514_10_ih_0001">
+      <section class="title puzzle type2">
+        <div class="puzzle_tit">
+          <span class="tag" lang="y">창의</span>
+          <span class="tit" lang="y">
+            <span class="emph">퍼즐</span>
+            <span class="txt1">로</span>
+            <span class="txt2">정리해요</span>
+          </span>
+        </div>
+        <h2 lang="y">문제를 풀어 답에 해당하는 물건을 그림에서 찾아 ○표 하세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box">
+          <div class="picture_wrap" data-head=" " data-tit=" ">
+            <img src="../../common_practice/img/EMA514_10_IH/0001_img.png" alt="" />
+            <div class="boolean_wrap">
+              <button type="button" data-answer-single="true" class="button1"></button>
+              <button type="button" data-answer-single="true" class="button2"></button>
+              <button type="button" data-answer-single="true" class="button3"></button>
+              <button type="button" data-answer-single="true" class="button4"></button>
+            </div>
+            <button class="btn_zoom" data-target="target1"></button>
+          </div>
+          <div class="right">
+            <div class="img_box">
+              <img src="../../common_practice/img/EMA514_10_IH/0001_table.png" alt="" />
+              <span class="th1" lang="y">문제</span>
+              <span class="th2" lang="y">답</span>
+              <div class="flex dir_col">
+                <div class="flex align_center">
+                  <span class="num">1</span>
+                  <div class="txt">
+                    <div class="fraction_box">
+                      <span>6</span>
+                      <span>16</span>
+                    </div>
+                    과
+                    <div class="fraction_box">
+                      <span>3</span>
+                      <span>4</span>
+                    </div>
+                    은 크기가 같은 분수입니다.
+                  </div>
+                </div>
+                <div class="flex align_center">
+                  <span class="num">2</span>
+                  <div class="txt">
+                    <div class="fraction_box">
+                      <span>15</span>
+                      <span>18</span>
+                    </div>
+                    를 기약분수로 나타내면
+                    <div class="fraction_box">
+                      <span>5</span>
+                      <span>6</span>
+                    </div>
+                    입니다.
+                  </div>
+                </div>
+                <div class="flex align_center">
+                  <span class="num">3</span>
+                  <div class="txt flex align_center">
+                    <div class="fraction_box">
+                      <span>4</span>
+                      <span>5</span>
+                    </div>
+                    와
+                    <div class="fraction_box">
+                      <span>8</span>
+                      <span>15</span>
+                    </div>
+                    을
+                    <div class="bracket sm">
+                      <span class="bracket-l"></span>
+                      <div class="fraction_box">
+                        <span>12</span>
+                        <span>15</span>
+                      </div>
+                      <span class="comma">,</span>
+                      <div class="fraction_box">
+                        <span>8</span>
+                        <span>15</span>
+                      </div>
+                      <span class="bracket-r"></span>
+                    </div>
+                    로 통분할 수 있습니다.
+                  </div>
+                </div>
+                <div class="flex align_center">
+                  <span class="num">4</span>
+                  <div class="txt">
+                    0.42는
+                    <div class="fraction_box">
+                      <span>11</span>
+                      <span>25</span>
+                    </div>
+                    보다 더 큽니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+      <div class="picture_wrap target1">
+        <img src="../../common_practice/img/EMA514_10_IH/0001_zoom.png" alt="" />
+        <div class="txt">텍스트</div>
+      </div>
+    </div>
+    <script>
+      runAfterAppReady(() => {
+        $('.image-content').text(`
+        팝업텍스트
+      `);
+      });
+    </script>
+  </body>
+</html>

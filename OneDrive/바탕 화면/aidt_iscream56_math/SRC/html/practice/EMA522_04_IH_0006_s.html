@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EMA522_04_IH_0006_s</title>
+
+    <!-- 공통 js-->
+    <script src="../../common_contents/common/js/app.js"></script>
+    <script src="../../common_practice/common/js/solve_area_act.js"></script>
+
+    <!-- 공통 css-->
+    <link rel="stylesheet" href="./../../common_contents/common/css/app.css" />
+
+    <!-- 개별 -->
+    <link rel="stylesheet" href="./../../common_practice/common/css/app.css" />
+    <link rel="stylesheet" href="./../../common_practice/css/ema522_04.css" />
+  </head>
+  <body>
+    <div id="app_wrap" class="ema522_04_ih_0006">
+      <section class="title type2">
+        <h2 data-head="6" class="is_star" lang="y">평행사변형의 넓이는 몇 ㎠인지 식을 쓰고 답을 구해 보세요.</h2>
+      </section>
+      <section class="contents">
+        <div class="question_box justify_center align_center">
+          <div class="img_area">
+            <img src="./../../common_practice/img/EMA522_04_IH/0006_01.png" alt="" />
+            <p class="text1">2 ㎝</p>
+            <div class="text2 flex align_center gap_10">
+              <div class="fraction_box">
+                <span>5</span>
+                <span>6</span>
+              </div>
+              <span>㎝</span>
+            </div>
+          </div>
+          <div class="input_area flex align_center dir_col">
+            <div class="input_row">
+              <span class="label_gray" lang="y">식</span>
+              <div class="input_wrap fraction_wrap hint_up">
+                <math-field data-answer-single="2×(5)/(6)" text-align="center"></math-field>
+              </div>
+              <span>=</span>
+              <div class="input_wrap fraction_wrap hint_up">
+                <math-field data-answer-single="1(2)/(4)" text-align="center"></math-field>
+              </div>
+            </div>
+            <div class="input_row">
+              <span class="label_gray" lang="y">답</span>
+              <div class="input_wrap fraction_wrap">
+                <math-field data-answer-single="1(2)/(3)(=(5)/(3))" text-align="center"></math-field>
+              </div>
+              <span>㎠</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 해설 -->
+        <div class="solve_area">
+          <div class="inner_solve">
+            <div class="flex">
+              <strong class="tit_solve" lang="y">해설</strong>
+              <div class="conts_solve">
+                <div class="flex align_center gap_10">
+                  <span>(평행사변형의 넓이)=(밑변의 길이)×(높이)</span>
+                </div>
+                <div class="flex align_center gap_10 mt_12">
+                  <span>=</span>
+                  <span class="mark_error up">2<i>1</i></span>
+                  <span>×</span>
+                  <div class="fraction_box">
+                    <span>5</span><span class="mark_error">6<i>3</i></span>
+                  </div>
+                  <span>=</span>
+                  <div class="fraction_box"><span>5</span><span>3</span></div>
+                  <span>=</span>
+                  <span>1</span>
+                  <div class="fraction_box"><span>2</span><span>3</span></div>
+                  <span>(㎠)</span>
+                </div>
+              </div>
+            </div>
+            <div class="buttons_solve"></div>
+          </div>
+        </div>
+        <div class="btn_area">
+          <button class="btnType key">입력타입토글</button>
+          <button class="btnReset">리셋</button>
+          <button class="btnCheck">확인</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
